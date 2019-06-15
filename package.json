@@ -1,0 +1,44 @@
+{
+  "name": "ryanatkn.com",
+  "version": "0.1.0",
+  "description": "homepage for Ryan Atkinson",
+  "license": "MIT",
+  "homepage": "https://ryanatkn.com",
+  "scripts": {
+    "start": "echo :D"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryanatkn/ryanatkn.com.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ryanatkn/ryanatkn.com/issues"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Ryan Atkinson",
+    "email": "ryanatkn@gmail.com",
+    "url": "https://ryanatkn.com"
+  },
+  "engines": {
+    "node": ">=12"
+  },
+  "type": "module",
+  "prettier": {
+    "useTabs": true,
+    "singleQuote": true,
+    "trailingComma": "all",
+    "bracketSpacing": false,
+    "overrides": [
+      {
+        "files": "*.json",
+        "options": {
+          "useTabs": false
+        }
+      }
+    ]
+  },
+  "devDependencies": {
+    "prettier": "^1.17.1"
+  }
+}
