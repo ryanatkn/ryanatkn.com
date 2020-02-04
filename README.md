@@ -1,10 +1,6 @@
-# ryanatkn.com
+# [ryanatkn.com](https://ryanatkn.com)
 
 > personal homepage :dolphin::rat:
-
-```ts
-// work in progress
-```
 
 ## credits :turtle: <sub>:turtle:</sub><sub><sub>:turtle:</sub></sub>
 
