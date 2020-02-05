@@ -6,21 +6,21 @@
      felt.dev
      <img
        src="assets/characters/feltf.png"
-       style="width: 256px; height: 256px;"
+       width="256" height="256"
       >
    </a>
 1. <a href="https://cosmicplayground.org">
      cosmicplayground.org
      <img
        src="assets/characters/cosmic-kitty.jpg"
-       style="width: 192px; height: 192px; border-radius: 50%;"
+       width="192" height="192"
       >
    </a>
 1. <a href="https://felt.social">
      felt.social
      <img
        src="assets/characters/felt.png"
-       style="width: 192px; height: 178px;"
+       width="192" height="178"
       >
    </a>
 1. <a href="https://github.com/ryanatkn">
