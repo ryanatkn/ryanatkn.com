@@ -39,5 +39,5 @@ tech: [`prettier`](https://github.com/prettier/prettier),
 
 ## license :bird:
 
-[ISC](license) <3
+[ISC](license)
 <sub>permissive, [learn more at Wikipedia](https://en.wikipedia.org/wiki/ISC_license)</sub>
