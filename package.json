@@ -2,7 +2,7 @@
   "name": "ryanatkn.com",
   "version": "0.1.0",
   "description": "personal homepage",
-  "license": "MIT",
+  "license": "ISC",
   "homepage": "https://ryanatkn.com",
   "scripts": {
     "start": "echo :D"
