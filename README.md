@@ -24,18 +24,10 @@
       >
    </a>
 1. <a href="https://github.com/ryanatkn">
-     github.com/ryanatkn
-     <img
-       style="width: 120px; height: 120px;"
-       src="assets/characters/octocat.png"
-      >
+     github.com/ryanatkn :octopus::cat:
    </a>
 1. <a href="https://twitter.com/ryanatkn">
      twitter.com/ryanatkn
-     <img
-       style="width: 110px; height: 110px;"
-       src="assets/characters/twit.png"
-      >
    </a>
 
 ## credits :turtle: <sub>:turtle:</sub><sub><sub>:turtle:</sub></sub>
