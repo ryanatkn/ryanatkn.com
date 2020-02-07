@@ -24,14 +24,14 @@
       >
    </a>
 1. <a href="https://github.com/ryanatkn">
-     github.com/ryanatkn :octopus::cat:
-   </a>
+     github.com/ryanatkn
+   </a> :octopus::cat:
 1. <a href="https://twitter.com/ryanatkn">
      twitter.com/ryanatkn
    </a>
-1. ✉ <a href="mailto:mail@ryanatkn.com">
+1. <a href="mailto:mail@ryanatkn.com">
    mail@ryanatkn.com
-   </a>
+   </a>✉
 
 ## credits :turtle: <sub>:turtle:</sub><sub><sub>:turtle:</sub></sub>
 
