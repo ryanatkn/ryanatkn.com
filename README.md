@@ -29,6 +29,9 @@
 1. <a href="https://twitter.com/ryanatkn">
      twitter.com/ryanatkn
    </a>
+1. ✉ <a href="mailto:mail@ryanatkn.com">
+   mail@ryanatkn.com
+   </a>
 
 ## credits :turtle: <sub>:turtle:</sub><sub><sub>:turtle:</sub></sub>
 
