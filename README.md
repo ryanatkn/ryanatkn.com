@@ -39,6 +39,7 @@
 ## credits :turtle: <sub>:turtle:</sub><sub><sub>:turtle:</sub></sub>
 
 tech: [`prettier`](https://github.com/prettier/prettier),
+[`node`](https://nodejs.org),
 [`github`](https://github.com), [`git`](https://git-scm.com/)
 
 > :rainbow::sparkles: did you know? `emoji` can be punctuation :snail: neat huh
