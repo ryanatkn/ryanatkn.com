@@ -25,7 +25,7 @@
    </a>
 1. <a href="https://patreon.com/ryanatkn">
      patreon.com/ryanatkn
-   </a>
+   </a> :moneybag:
 1. <a href="https://github.com/ryanatkn">
      github.com/ryanatkn
    </a> :octopus::cat:
