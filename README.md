@@ -38,13 +38,13 @@
 
 ## credits :turtle: <sub>:turtle:</sub><sub><sub>:turtle:</sub></sub>
 
-tech: [`prettier`](https://github.com/prettier/prettier),
-[`node`](https://nodejs.org),
-[`github`](https://github.com), [`git`](https://git-scm.com/)
+tech: [`prettier`](https://github.com/prettier/prettier) .
+[`node`](https://nodejs.org) .
+[`github`](https://github.com) . [`git`](https://git-scm.com/)
 
 > :rainbow::sparkles: did you know? `emoji` can be punctuation :snail: neat huh
 
 ## license :bird:
 
 [ISC](license)
-<sub>permissive, [learn more at Wikipedia](https://en.wikipedia.org/wiki/ISC_license)</sub>
+<sub>permissive — [learn more at Wikipedia](https://en.wikipedia.org/wiki/ISC_license)</sub>
