@@ -1,6 +1,6 @@
-# [ryanatkn.com](https://ryanatkn.com)
+# [ryanatkn.com](https://ryanatkn.com) :dolphin::rat:
 
-> personal homepage :dolphin::rat:
+> personal homepage
 
 1. <a href="https://felt.dev">
      felt.dev
