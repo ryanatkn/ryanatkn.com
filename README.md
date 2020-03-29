@@ -2,6 +2,13 @@
 
 > personal homepage
 
+1. <a href="https://felt.social">
+     felt.social
+     <img
+       src="assets/characters/felt.png"
+       width="192" height="178"
+      >
+   </a>
 1. <a href="https://felt.dev">
      felt.dev
      <img
@@ -14,13 +21,6 @@
      <img
        src="assets/characters/cosmic-kitty.jpg"
        width="192" height="192"
-      >
-   </a>
-1. <a href="https://felt.social">
-     felt.social
-     <img
-       src="assets/characters/felt.png"
-       width="192" height="178"
       >
    </a>
 1. <a href="https://github.com/ryanatkn">
