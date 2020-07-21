@@ -39,6 +39,9 @@ tech: [`prettier`](https://github.com/prettier/prettier) .
 [`node`](https://nodejs.org) .
 [`github`](https://github.com) . [`git`](https://git-scm.com/)
 
+[flower texture](/assets/flowers.jpg)
+from [Pixar](https://renderman.pixar.com/pixar-one-twenty-eight) (CC-BY-4.0)
+
 > :rainbow::sparkles: did you know? `emoji` can be punctuation :snail: neat huh
 
 ## license :bird:
