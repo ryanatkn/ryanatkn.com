@@ -2,36 +2,12 @@
 
 > personal homepage
 
-1. <a href="https://felt.social">
-     felt.social
-     <img
-       src="assets/characters/felt.png"
-       width="192" height="178"
-      >
-   </a>
-1. <a href="https://felt.dev">
-     felt.dev
-     <img
-       src="assets/characters/feltf.png"
-       width="256" height="256"
-      >
-   </a>
-1. <a href="https://cosmicplayground.org">
-     cosmicplayground.org
-     <img
-       src="assets/characters/cosmic-kitty.jpg"
-       width="192" height="192"
-      >
-   </a>
-1. <a href="https://github.com/ryanatkn">
-     github.com/ryanatkn
-   </a> :octopus::cat:
-1. <a href="https://twitter.com/ryanatkn">
-     twitter.com/ryanatkn
-   </a>
-1. <a href="mailto:mail@ryanatkn.com">
-   mail@ryanatkn.com
-   </a>✉
+1. [felt.social](https://felt.social) 💚
+1. [felt.dev](https://felt.dev)
+1. [cosmicplayground.org](https://cosmicplayground.org)
+1. [github.com/ryanatkn](https://github.com/ryanatkn) :octopus::cat:
+1. [twitter.com/ryanatkn](https://twitter.com/ryanatkn)
+1. [mail@ryanatkn.com](mailto:mail@ryanatkn.com) ✉
 
 ## credits :turtle: <sub>:turtle:</sub><sub><sub>:turtle:</sub></sub>
 
