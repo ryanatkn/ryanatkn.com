@@ -2,7 +2,7 @@
   "name": "ryanatkn.com",
   "version": "0.1.0",
   "description": "personal homepage",
-  "license": "ISC",
+  "license": "AGPL-3.0-only",
   "homepage": "https://ryanatkn.com",
   "scripts": {
     "start": "echo :D"
@@ -17,7 +17,7 @@
   "keywords": [],
   "author": {
     "name": "Ryan Atkinson",
-    "email": "ryanatkn@gmail.com",
+    "email": "mail@ryanatkn.com",
     "url": "https://ryanatkn.com"
   },
   "engines": {
