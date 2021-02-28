@@ -11,24 +11,34 @@
 	</head>
 
 	<style>
+		*,
+		*::before,
+		*::after {
+			box-sizing: border-box;
+			margin: 0;
+			overflow-wrap: break-word;
+		}
 		html {
 			height: 100%;
+			width: 100%;
 			padding: 0;
-			margin: 0;
 		}
 		body {
 			height: 100%;
 			background-color: #000;
 			color: rgb(255, 247, 247);
 			padding: 0;
-			margin: 0;
 			font-size: 16px;
-			font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen,
-				Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+			font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+				Ubuntu, Cantarell, 'Open Sans', Fira Sans, Droid Sans, Helvetica Neue,
+				sans-serif;
 			font-weight: 100;
 		}
 		a {
 			color: #ebb;
+		}
+		img {
+			max-width: 100%;
 		}
 		#root {
 			height: 100%;
@@ -66,16 +76,22 @@
 		}
 		#content {
 			position: relative;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
 		}
 		.item {
 			padding: 20px;
 			transition: transform 0.04s ease-out;
+			border: 5px dotted transparent;
 		}
 		.item:hover {
 			transform: scale3d(1.06, 1.06, 1.06);
+			border-color: #343;
 		}
 		.item:active {
 			transform: scale3d(0.94, 0.94, 0.94);
+			border-color: #556;
 		}
 	</style>
 
@@ -97,44 +113,49 @@
 					<a class="item" href="https://felt.social">
 						<img
 							src="assets/characters/felt.png"
-							style="width: 192px; height: 178px;"
+							style="width: 192px; max-height: 178px;"
+							alt="felt.social green heart"
 						/>
 					</a>
 					<a class="item" href="https://cosmicplayground.org">
 						<img
 							src="assets/characters/cosmic-kitty.jpg"
-							style="width: 192px; height: 192px; border-radius: 50%;"
+							style="width: 192px; max-height: 192px; border-radius: 50%;"
+							alt="cosmic kitty of cosmicplayground"
 						/>
 					</a>
 					<a class="item" href="https://github.com/ryanatkn">
 						<img
-							style="width: 120px; height: 120px;"
+							style="width: 120px; max-height: 120px;"
+							alt="octokitty"
 							src="assets/characters/octocat.png"
 						/>
 					</a>
 					<a class="item" href="https://twitter.com/ryanatkn">
 						<img
-							style="width: 110px; height: 110px;"
+							style="width: 110px; max-height: 110px;"
+							alt="twitterbird"
 							src="assets/characters/twit.png"
 						/>
 					</a>
-					<a
-						class="item"
-						href="mailto:mail@ryanatkn.com"
-						style="
-							font-size: 24px;
-							color: #fff;
-							text-decoration: none;
-							font-weight: 100;
-							display: flex;
-							flex-direction: column;
-							align-items: center;
-						"
-					>
-						<span style="font-size: 3em; line-height: 1;">✉</span>
-						<span style="font-size: 1.5em;">mail@ryanatkn.com</span>
-					</a>
 				</section>
+				<img src="/favicon.png" style="padding: 20px;" alt="avatar" />
+				<a
+					class="item"
+					href="mailto:mail@ryanatkn.com"
+					style="
+						font-size: 24px;
+						color: #fff;
+						text-decoration: none;
+						font-weight: 100;
+						display: flex;
+						flex-direction: column;
+						align-items: center;
+					"
+				>
+					<span style="font-size: 3em; line-height: 1;">✉</span>
+					<span>mail@ryanatkn.com</span>
+				</a>
 			</div>
 		</div>
 	</body>
