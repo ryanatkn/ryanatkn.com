@@ -1,5 +1,7 @@
 # [ryanatkn.com](https://www.ryanatkn.com) :dolphin::rat:
 
+[<img src="favicon.png" align="right" width="100">](https://www.ryanatkn.com)
+
 > personal homepage
 
 1. [felt.social](https://felt.social) 💚
