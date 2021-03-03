@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "personal homepage",
   "license": "AGPL-3.0-only",
-  "homepage": "https://ryanatkn.com",
+  "homepage": "https://www.ryanatkn.com",
   "scripts": {
     "start": "echo :D"
   },
@@ -18,7 +18,7 @@
   "author": {
     "name": "Ryan Atkinson",
     "email": "mail@ryanatkn.com",
-    "url": "https://ryanatkn.com"
+    "url": "https://www.ryanatkn.com"
   },
   "engines": {
     "node": ">=12"

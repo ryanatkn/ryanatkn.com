@@ -1,4 +1,4 @@
-# [ryanatkn.com](https://ryanatkn.com) :dolphin::rat:
+# [ryanatkn.com](https://www.ryanatkn.com) :dolphin::rat:
 
 > personal homepage
 
