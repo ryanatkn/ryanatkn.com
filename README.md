@@ -14,3 +14,5 @@
 
 [flower texture](/assets/flowers.jpg)
 from [Pixar](https://renderman.pixar.com/pixar-one-twenty-eight) (CC-BY-4.0)
+
+everything else: public domain ([The Unlicense](license))

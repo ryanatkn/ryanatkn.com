@@ -1,8 +1,13 @@
 {
   "name": "ryanatkn.com",
+  "license": "Unlicense",
+  "description": "a personal homepage",
+  "author": {
+    "name": "Ryan Atkinson",
+    "email": "mail@ryanatkn.com",
+    "url": "https://www.ryanatkn.com"
+  },
   "version": "0.1.0",
-  "description": "personal homepage",
-  "license": "AGPL-3.0-only",
   "homepage": "https://www.ryanatkn.com",
   "scripts": {
     "start": "echo :D"
@@ -15,11 +20,6 @@
     "url": "https://github.com/ryanatkn/ryanatkn.com/issues"
   },
   "keywords": [],
-  "author": {
-    "name": "Ryan Atkinson",
-    "email": "mail@ryanatkn.com",
-    "url": "https://www.ryanatkn.com"
-  },
   "engines": {
     "node": ">=12"
   },
