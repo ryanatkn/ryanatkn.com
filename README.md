@@ -12,7 +12,7 @@
 
 ## credits :turtle: <sub>:turtle:</sub><sub><sub>:turtle:</sub></sub>
 
-[Prettier](https://github.com/prettier/prettier) ∙
+[Prettier](https://github.com/prettier/prettier)
 & [more](package.json)
 
 ## license 🐦
