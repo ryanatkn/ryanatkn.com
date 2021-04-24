@@ -12,7 +12,9 @@
 
 ## credits :turtle: <sub>:turtle:</sub><sub><sub>:turtle:</sub></sub>
 
-[flower texture](/assets/flowers.jpg)
-from [Pixar](https://renderman.pixar.com/pixar-one-twenty-eight) (CC-BY-4.0)
+[Prettier](https://github.com/prettier/prettier) ∙
+& [more](package.json)
 
-everything else: public domain ([The Unlicense](license))
+## license 🐦
+
+public domain ([The Unlicense](license))
