@@ -24,21 +24,24 @@
     "node": ">=12"
   },
   "type": "module",
+  "devDependencies": {
+    "prettier": "^2.2.1"
+  },
   "prettier": {
     "useTabs": true,
+    "printWidth": 100,
     "singleQuote": true,
     "trailingComma": "all",
     "bracketSpacing": false,
+    "svelteSortOrder": "options-scripts-markup-styles",
+    "svelteBracketNewLine": true,
     "overrides": [
       {
-        "files": "*.json",
+        "files": "package.json",
         "options": {
           "useTabs": false
         }
       }
     ]
-  },
-  "devDependencies": {
-    "prettier": "^2.2.1"
   }
 }
