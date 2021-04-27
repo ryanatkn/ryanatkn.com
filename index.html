@@ -114,23 +114,41 @@
 						/>
 					</a>
 				</section>
-				<a
-					class="item"
-					href="mailto:mail@ryanatkn.com"
-					style="
-						font-size: 24px;
-						color: #fff;
-						text-decoration: none;
-						font-weight: 100;
-						display: flex;
-						flex-direction: column;
-						align-items: center;
-					"
-				>
-					<span style="font-size: 3em; line-height: 1">✉</span>
-					<span>mail@ryanatkn.com</span>
+				<a class="item email" href="mailto:mail@ryanatkn.com">
+					<span class="email-icon">✉</span>
+					<span class="email-text">mail@ryanatkn.com</span>
 				</a>
 			</div>
 		</div>
+		<style>
+			@media (max-width: 300px) {
+				.email-text {
+					display: none;
+				}
+			}
+			.email-icon {
+				font-size: 3em;
+				line-height: 1;
+			}
+			@media (max-width: 130px) {
+				.email-icon {
+					font-size: 2em;
+				}
+			}
+			@media (max-width: 100px) {
+				.email-icon {
+					font-size: 1em;
+				}
+			}
+			.email {
+				font-size: 24px;
+				color: #fff;
+				text-decoration: none;
+				font-weight: 100;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+		</style>
 	</body>
 </html>
