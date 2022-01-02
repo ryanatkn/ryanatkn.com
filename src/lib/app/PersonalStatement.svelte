@@ -7,8 +7,8 @@
 </p>
 
 <p>
-	If you would like to geek out, please reach out! Maybe we could collaborate on something
-	noncommercial? I can't promise a response but I'll do my best: <a href="mailto:mail@ryanatkn.com"
+	If you would like to geek out, please reach out! I'm always looking for noncommercial
+	collaborators. I can't promise a response but I'll do my best: <a href="mailto:mail@ryanatkn.com"
 		>mail@ryanatkn.com</a
 	>. I'm also @ryanatkn on <a href="https://twitter.com/ryanatkn">Twitter</a> and
 	<a href="https://github.com/ryanatkn">GitHub</a>.
