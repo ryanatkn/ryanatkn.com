@@ -18,6 +18,11 @@
 		overflow: hidden;
 		margin-top: var(--spacing_xl5);
 	}
+	a {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
 	img {
 		width: 1600px;
 		height: 1600px;
