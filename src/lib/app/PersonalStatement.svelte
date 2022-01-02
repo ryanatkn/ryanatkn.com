@@ -34,8 +34,7 @@
 		How can we design technology that respects and reinforces our personal consent boundaries?
 	</li>
 	<li>
-		How can we make software systems that afford programming powers throughout everyone's everyday
-		life?
+		How can we make software systems that afford programming powers in everyone's everyday life?
 	</li>
 	<li>
 		What modes of cooperation are available in the meaningful aspects of life? How can technology
