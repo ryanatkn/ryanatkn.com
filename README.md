@@ -1,9 +1,8 @@
-# ryanatkn.com
+# [ryanatkn.com](https://www.ryanatkn.com) :dolphin::rat:
 
-> [@ryanatkn](https://github.com/ryanatkn)'s personal homepage
+[<img src="favicon.png" align="right" width="100">](https://www.ryanatkn.com)
 
-deployed:
-[ryanatkn.com](https://www.ryanatkn.com)
+> personal homepage
 
 ## usage
 
