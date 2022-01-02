@@ -1,6 +1,4 @@
 <script lang="ts">
-	import Message from '@feltcoop/felt/ui/Message.svelte';
-
 	import Header from '$lib/app/Header.svelte';
 	import Footer from '$lib/app/Footer.svelte';
 	import PersonalStatement from '$lib/app/PersonalStatement.svelte';

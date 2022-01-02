@@ -1,10 +1,11 @@
 <script lang="ts">
 	export let src: string = '/favicon.png';
+	export let alt: string = 'my avatar image';
 </script>
 
 <footer>
 	<a title="View source" href="https://github.com/ryanatkn/ryanatkn.com"
-		><img class="pixelated" {src} /></a
+		><img class="pixelated" {src} {alt} /></a
 	>
 </footer>
 
