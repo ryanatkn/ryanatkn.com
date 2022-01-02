@@ -30,6 +30,7 @@
 <h2>Questions I'm asking:</h2>
 
 <ul>
+	<li>How can the web improve our lives?</li>
 	<li>
 		How can we design technology that respects and reinforces our personal consent boundaries?
 	</li>
@@ -46,7 +47,7 @@
 	</li>
 </ul>
 
-<h2>Projects I'm involved with:</h2>
+<h2>Projects I'm working on:</h2>
 
 <ul>
 	<li>
