@@ -8,8 +8,10 @@
 
 <p>
 	Want to geek out? Please reach out! I'm always looking for noncommercial collaborators. I can't
-	promise a response but I'll do my best: <a href="mailto:mail@ryanatkn.com">mail@ryanatkn.com</a>.
-	I'm also @ryanatkn on <a href="https://twitter.com/ryanatkn">Twitter</a> and
+	promise a response but I'll do my best: email <a href="mailto:mail@ryanatkn.com"
+		>mail@ryanatkn.com</a
+	>
+	& @ryanatkn on <a href="https://twitter.com/ryanatkn">Twitter</a> &
 	<a href="https://github.com/ryanatkn">GitHub</a>.
 </p>
 
@@ -36,12 +38,12 @@
 		life?
 	</li>
 	<li>
-		What modes of cooperation are available in all meaningful aspects of life? How can technology
+		What modes of cooperation are available in the meaningful aspects of life? How can technology
 		help?
 	</li>
 	<li>
 		How can we play better games together? Examples? What are the lessons and how can we apply them
-		throughout everyday life?
+		throughout everyday life? How can we make our worlds more safe, fair, and fun?
 	</li>
 </ul>
 
