@@ -1,19 +1,14 @@
-# felt-template
+# ryanatkn.com
 
-> a web app template with [SvelteKit](https://github.com/sveltejs/kit),
-> [Felt](https://github.com/feltcoop/felt), and [Gro](https://github.com/feltcoop/gro)
+> [@ryanatkn](https://github.com/ryanatkn)'s personal homepage
 
 deployed:
-[feltcoop.github.io/felt-template](https://feltcoop.github.io/felt-template)
+[ryanatkn.com](https://www.ryanatkn.com)
 
 ## usage
 
-If you're logged into GitHub, click "Use this template" above or clone with
-[`degit`](https://github.com/Rich-Harris/degit):
-
 ```bash
-npx degit feltcoop/felt-template cooltoy
-cd cooltoy
+# node >= 16.6
 npm i
 # then
 npm run dev
@@ -21,28 +16,9 @@ npm run dev
 gro dev # npm i -g @feltcoop/gro
 ```
 
-> learn more about [Gro](https://github.com/feltcoop/gro)
-
-The template includes
-[`@sveltejs/adapter-static`](https://github.com/sveltejs/kit/tree/master/packages/adapter-static)
-so it can deploy with no further configuration.
-To learn how to swap it out for another deployment target, see
-[the SvelteKit adapter docs](https://kit.svelte.dev/docs#adapters).
-
-To make it your own, change `felt-template` to your project name in the following files:
-
-- [`package.json`](package.json)
-- [`svelte.config.js`](svelte.config.js)
-- [`src/routes/__layout.svelte`](src/routes/__layout.svelte)
-- [`src/routes/index.svelte`](src/routes/index.svelte)
-
-Then run `npm i` to update `package-lock.json`.
-
-Optionally add a [license file](https://choosealicense.com/)
-and [`package.json` value](https://spdx.org/licenses/), like `"license": "MIT"`.
-
-See [SvelteKit](https://github.com/sveltejs/kit)
-and [Vite](https://github.com/vitejs/vite) for more.
+See [SvelteKit](https://github.com/sveltejs/kit),
+[Vite](https://github.com/vitejs/vite),
+and [Gro](https://github.com/feltcoop/gro) for more.
 
 ## build
 
@@ -77,4 +53,6 @@ gro deploy
 [@lukeed\/\*](https://github.com/lukeed)
 & [more](package.json)
 
-## [🐦](https://wikipedia.org/wiki/Free_and_open-source_software)
+## license [🐦](https://wikipedia.org/wiki/Free_and_open-source_software)
+
+public domain ⚘ [The Unlicense](license)

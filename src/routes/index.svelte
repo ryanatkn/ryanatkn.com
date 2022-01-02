@@ -1,23 +1,27 @@
 <script lang="ts">
 	import Message from '@feltcoop/felt/ui/Message.svelte';
 
-	import Mreows from '$lib/ui/Mreows.svelte';
+	import Header from '$lib/app/Header.svelte';
+	import Footer from '$lib/app/Footer.svelte';
+	import PersonalStatement from '$lib/app/PersonalStatement.svelte';
 </script>
 
-<main class="column markup">
-	<section class="column-min">
-		<h1>felt-template</h1>
-		<Message>hello and welcome</Message>
-	</section>
-	<Mreows />
+<main>
+	<Header />
+	<div class="column markup">
+		<PersonalStatement />
+	</div>
+	<Footer />
 </main>
 
 <style>
 	main {
-		text-align: center;
+		width: 100%;
+		position: relative;
 		/* TODO should these be on `.column` ? */
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		justify-content: center;
 	}
 </style>
