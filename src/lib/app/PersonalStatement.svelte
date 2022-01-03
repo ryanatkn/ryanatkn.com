@@ -33,9 +33,10 @@
 </ul>
 <p>
 	Collaborations can take many forms in many different spaces, public and private, and I'm open to
-	all of the noncommercial variety: if you read this document and have something in mind, I would
-	enjoy hearing about it, and if it's something in the open source, go do, don't ask for permission!
-	Some of my public collaborations include:
+	all of the noncommercial variety (I work at <a href="https://felt.social">@feltcoop</a> mostly on open
+	source software): if you read this document and have something in mind, I would enjoy hearing about
+	it, and if it's something in the open source, go do, don't ask for permission! Some of my public collaborations
+	include:
 </p>
 <ul>
 	<li><a href="https://github.com/ryanatkn">my GitHub repos</a> which are mostly web apps</li>
