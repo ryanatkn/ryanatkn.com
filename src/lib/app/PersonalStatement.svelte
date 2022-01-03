@@ -120,8 +120,8 @@ along anonymously.
 	</li>
 	<li>
 		What modes of cooperation are available to us in the various meaningful aspects of our lives?
-		How can technology help? How can we build robust trusted networks? How can we make power
-		dynamics in groups more explicit?
+		How can technology help? How can we build trusted networks with high quality information flows?
+		How can we make power dynamics in groups more explicit?
 	</li>
 	<li>
 		How can we support social systems where participation is positive sum, nonfinancialized, and
