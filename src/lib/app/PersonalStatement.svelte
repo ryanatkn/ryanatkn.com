@@ -97,9 +97,9 @@
 
 <ul>
 	<li>
-		How can technology improve our lives? What roles should technology play to improve our thinking,
-		communication, health, and social environments? What else do we need to realize more of
-		technology's liberatory potential?
+		How can technology improve our lives and ecologies? What roles should technology play to improve
+		our thinking, communication, health, and social environments? What else do we need to realize
+		more of technology's liberatory potential?
 	</li>
 	<li>
 		How can we design technology that respects and reinforces our personal consent boundaries?
