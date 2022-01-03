@@ -8,13 +8,13 @@
 
 <h2>Purpose:</h2>
 
-<p>This webpage has two primary purposes:</p>
+<p>This webpage has two main purposes:</p>
 <ol>
-	<li>to convey basic public information about my work and work persona, like a résumé or CV</li>
-	<li>to fish for possible collaborations</li>
+	<li>convey info about my work and work persona, like a résumé or CV</li>
+	<li>fish for possible collaborations</li>
 </ol>
 <p>
-	Want to geek out? Reach out~~ I'm always seeking noncommercial collaborations around the topics
+	Want to geek out? Reach out~! I'm always seeking noncommercial collaborations around the topics
 	and projects that interest me. I can't promise a response but I'll do my best:
 </p>
 <ul>
@@ -41,7 +41,7 @@
 
 <p>
 	If you read this document and a potential collab springs to mind, I would enjoy hearing about it,
-	and if it's something in the open source, go do! No need to ask for permission! Some of my public
+	and if it's something in the open source, don't make me a gatekeeper, go do! Some of my public
 	collaborations include:
 </p>
 <ul>
@@ -63,18 +63,16 @@
 	</li>
 </ul>
 
-<p>But why cooperate?</p>
+<p>But why cooperate with me?</p>
 
 <ul>
 	<li>some really fun/cool/useful/important things are possible only in groups</li>
+	<li>you don't have all the answers and skills but you have some</li>
 	<li>
 		you prefer open source and research-oriented collabs over commercial and investor-backed ones
 	</li>
-	<li>you don't have all the answers and skills but you have some</li>
-	<li>
-		you want to limit your public interactions and control how you're credited, maybe ghosting along
-		anonymously
-	</li>
+	<li>you like the idea of practicing democratic ownership and control</li>
+	<li>I appear to be a colleague you could vibe with</li>
 	<li>
 		Mozilla says: <em
 			>"The collective endowment of an exponentially growing, decentralized, global super-network
@@ -83,6 +81,11 @@
 	</li>
 	<li>idk lol, do what u want, be free~</li>
 </ul>
+
+This is my public work persona. I publish code and this website using my IRL legal name, but that's
+a choice that's not right for everyone. If we collaborate, know that you can limit your public
+exposure and control how you're credited; you can use your legal name, a pseudonym, or even ghost
+along anonymously.
 
 <h2>I'm curious about:</h2>
 
