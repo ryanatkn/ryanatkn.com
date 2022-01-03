@@ -33,9 +33,9 @@
 </ul>
 <p>
 	Collaborations can take many forms in many different spaces, public and private, and I'm open to
-	all of the noncommercial variety (I work at <a href="https://felt.social">@feltcoop</a>, a
+	all of the noncommercial variety. I work at <a href="https://felt.social">@feltcoop</a>, a
 	commercial <a href="https://platform.coop">platform co-op</a>, mostly on open source software; I
-	don't mind if you commercialize the open source if that's your thing, but please no solicitations)
+	don't mind if you commercialize the open source if that's your thing, but please no solicitations.
 	If you read this document and a potential collab springs to mind, I would enjoy hearing about it,
 	and if it's something in the open source, go do, no need to ask for permission! Some of my public
 	collaborations include:
