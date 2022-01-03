@@ -70,7 +70,7 @@
 
 <ul>
 	<li>some really fun/cool/useful/important things are possible only in groups</li>
-	<li>you and I are interested in similar questions and problems</li>
+	<li>you and I are interested in similar questions, problems, and/or technologies</li>
 	<li>you don't have all the answers and skills but you have some</li>
 	<li>
 		you prefer open source and research-oriented collabs over commercial and investor-backed ones
@@ -124,13 +124,14 @@ along anonymously.
 		dynamics in groups more explicit?
 	</li>
 	<li>
-		How can we play better games together? Examples? What are the lessons and how can we apply them
-		throughout everyday life? How can we make our worlds more safe, fair, and fun?
+		How can we support social systems where participation is positive sum, nonfinancialized, and
+		intrinsically motivated? What open source communities are thriving, and where is there room for
+		improvement? How can we make our communities and worlds more safe, fair, fun, and useful?
 	</li>
 	<li>
-		How can we implement things to realize our goals? In other words, what actions should we take?
-		Make apps? Curate datasets? Publish research? Blogs? Create audio and video content? Which
-		mediums do we want to work in and why?
+		What can we do to realize our goals? Make apps? Write and document libraries? Curate datasets?
+		Publish research? Blogs? Create audio and video content? Which mediums should we work in and
+		why?
 	</li>
 </ul>
 
