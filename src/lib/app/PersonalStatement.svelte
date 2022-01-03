@@ -14,8 +14,8 @@
 	<li>Fish for possible collaborations</li>
 </ol>
 <p>
-	Want to geek out? Reach out~~ I'm always looking for noncommercial collaborations around the
-	topics and projects that interest me. I can't promise a response but I'll do my best:
+	Want to geek out? Reach out~~ I'm always seeking noncommercial collaborations around the topics
+	and projects that interest me. I can't promise a response but I'll do my best:
 </p>
 <ul>
 	<li>
@@ -169,4 +169,4 @@
 	</li>
 </ul>
 
-<p>I'm always looking for noncommercial collaborators!</p>
+<p>I'm always seeking noncommercial collaborations!</p>
