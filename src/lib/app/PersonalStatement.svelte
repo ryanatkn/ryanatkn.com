@@ -107,7 +107,7 @@
 	</li>
 	<li>
 		What modes of cooperation are available to us in the various meaningful aspects of our lives?
-		How can technology help?
+		How can technology help? How can we build robust trusted networks?
 	</li>
 	<li>
 		How can we play better games together? Examples? What are the lessons and how can we apply them
