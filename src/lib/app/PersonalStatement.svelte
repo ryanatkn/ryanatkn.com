@@ -121,8 +121,9 @@ along anonymously.
 	<li>
 		What modes of cooperation are available to us in the various meaningful aspects of our lives?
 		How can technology help? How can we build trusted networks with high quality information flows?
-		How can we make power dynamics in groups more explicit? How can we support democratic community
-		governance with more desirable dynamics around labor and power?
+		How can we design tools to improve collective decision making and discussion? How can we make
+		power dynamics in groups more explicit? How can we support democratic community governance with
+		more desirable dynamics around labor and power?
 	</li>
 	<li>
 		How can we support social systems where participation is positive sum, nonfinancialized, and
