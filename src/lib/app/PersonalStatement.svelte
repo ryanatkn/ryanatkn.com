@@ -119,8 +119,8 @@
 	</li>
 	<li>
 		How can we implement things to realize our goals? In other words, what actions should we take?
-		Make apps? Publish research? Create audio and video content? Blogs? Which mediums do we want to
-		work in and why?
+		Make apps? Curate datasets? Publish research? Create audio and video content? Blogs? Which
+		mediums do we want to work in and why?
 	</li>
 </ul>
 
