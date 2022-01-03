@@ -121,17 +121,18 @@ along anonymously.
 	<li>
 		What modes of cooperation are available to us in the various meaningful aspects of our lives?
 		How can technology help? How can we build trusted networks with high quality information flows?
-		How can we make power dynamics in groups more explicit?
+		How can we make power dynamics in groups more explicit? How can we support democratic community
+		governance with more desirable dynamics around labor and power?
 	</li>
 	<li>
 		How can we support social systems where participation is positive sum, nonfinancialized, and
 		intrinsically motivated? What open source communities are thriving, and where is there room for
-		improvement? How can we make our communities and worlds more safe, fair, fun, and useful?
+		improvement? How can we make our communities and worlds more safe, welcoming, fair, fun, and
+		useful?
 	</li>
 	<li>
-		What can we do to realize our goals? Make apps? Write and document libraries? Curate datasets?
-		Publish research? Blogs? Create audio and video content? Which mediums should we work in and
-		why?
+		What can we do to realize our goals? Make apps and software libraries? Curate datasets? Publish
+		research? Blogs? Create audio and video content? Which mediums should we work in and why?
 	</li>
 </ul>
 
