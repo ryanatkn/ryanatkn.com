@@ -31,13 +31,17 @@
 		<small>(TODO and Mastodon/Matrix?)</small>
 	</li>
 </ul>
+
 <p>
 	Collaborations can take many forms in many different spaces, public and private, and I'm open to
 	all of the noncommercial variety. I work at <a href="https://felt.social">@feltcoop</a>, a
 	commercial <a href="https://platform.coop">platform co-op</a>, mostly on open source software; I
-	don't mind if you commercialize the open source if that's your thing, but please no solicitations.
+	don't mind if you commercialize open source if that's your thing, but please no solicitations.
+</p>
+
+<p>
 	If you read this document and a potential collab springs to mind, I would enjoy hearing about it,
-	and if it's something in the open source, go do, no need to ask for permission! Some of my public
+	and if it's something in the open source, go do! No need to ask for permission! Some of my public
 	collaborations include:
 </p>
 <ul>
@@ -62,19 +66,22 @@
 <p>But why cooperate?</p>
 
 <ul>
-	<li>idk lol. do what u want, be free~</li>
 	<li>some really fun/cool/useful/important things are possible only in groups</li>
 	<li>
 		you prefer open source and research-oriented collabs over commercial and investor-backed ones
 	</li>
-	<li>you like the idea of democratic ownership and control</li>
-	<li>you can control how you're credited, or ghost along anonymously</li>
+	<li>you don't have all the answers and skills but you have some</li>
+	<li>
+		you want to limit your public interactions and control how you're credited, maybe ghosting along
+		anonymously
+	</li>
 	<li>
 		Mozilla says: <em
 			>"The collective endowment of an exponentially growing, decentralized, global super-network
 			will always vastly exceed anything that can be created without it."</em
 		>
 	</li>
+	<li>idk lol, do what u want, be free~</li>
 </ul>
 
 <h2>I'm curious about:</h2>
@@ -116,7 +123,7 @@
 	</li>
 	<li>
 		How can we implement things to realize our goals? In other words, what actions should we take?
-		Make apps? Curate datasets? Publish research? Create audio and video content? Blogs? Which
+		Make apps? Curate datasets? Publish research? Blogs? Create audio and video content? Which
 		mediums do we want to work in and why?
 	</li>
 </ul>
