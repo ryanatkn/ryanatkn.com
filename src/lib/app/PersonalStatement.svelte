@@ -3,7 +3,7 @@
 </h2>
 <p>
 	Ryan Atkinson is a web developer interested in exploring collaborative digital mediums and
-	realizing more of their potential to help humans and humanity.
+	realizing more of their potential to help us live well.
 </p>
 
 <h2>Purpose:</h2>
