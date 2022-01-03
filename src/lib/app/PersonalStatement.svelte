@@ -13,8 +13,11 @@
 	<li>convey my work persona like a résumé or CV</li>
 	<li>fish for possible collaborations</li>
 </ol>
+
+<h2>Seeking collaborations:</h2>
+
 <p>
-	I'm always seeking noncommercial collaborations around the topics and projects that interest me.
+	I'm always looking for noncommercial collaborations around topics and projects that interest me.
 	Want to geek out? Reach out~~! I can't promise a response but I'll do my best:
 </p>
 <ul>
@@ -63,7 +66,7 @@
 	</li>
 </ul>
 
-<p>But why cooperate with me?</p>
+<p>But why collaborate with me?</p>
 
 <ul>
 	<li>some really fun/cool/useful/important things are possible only in groups</li>
@@ -161,8 +164,10 @@ along anonymously.
 		<a href="https://consentful.systems">consentful.systems</a> and
 		<a href="https://www.consentfultech.io">The Consentful Tech Project</a>
 	</li>
-	<li><a href="https://communityrule.info">CommunityRule</a></li>
-	<li><a href="https://metagov.org">The Metagovernance Project</a></li>
+	<li>
+		<a href="https://metagov.org">The Metagovernance Project</a> and
+		<a href="https://communityrule.info">CommunityRule</a>
+	</li>
 </ul>
 
 <h2>Find me on the web:</h2>
