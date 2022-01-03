@@ -2,20 +2,20 @@
 	Welcome <span style="font-size: var(--font_size_xl5)">🐢</span>
 </h2>
 <p>
-	I'm a web developer interested in exploring collaborative digital mediums and realizing more of
-	their human-and-humanity-helping potential.
+	Ryan Atkinson is a web developer interested in exploring collaborative digital mediums and
+	realizing more of their potential to help humans and humanity.
 </p>
 
 <h2>Purpose:</h2>
 
 <p>This webpage has two main purposes:</p>
 <ol>
-	<li>convey info about my work and work persona, like a résumé or CV</li>
+	<li>convey my work persona like a résumé or CV</li>
 	<li>fish for possible collaborations</li>
 </ol>
 <p>
-	Want to geek out? Reach out~! I'm always seeking noncommercial collaborations around the topics
-	and projects that interest me. I can't promise a response but I'll do my best:
+	I'm always seeking noncommercial collaborations around the topics and projects that interest me.
+	Want to geek out? Reach out~~! I can't promise a response but I'll do my best:
 </p>
 <ul>
 	<li>
