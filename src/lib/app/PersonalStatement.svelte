@@ -10,8 +10,8 @@
 
 <p>This webpage has two primary purposes:</p>
 <ol>
-	<li>Convey basic public information about my work and work persona, like a resume or CV</li>
-	<li>Fish for possible collaborations</li>
+	<li>to convey basic public information about my work and work persona, like a résumé or CV</li>
+	<li>to fish for possible collaborations</li>
 </ol>
 <p>
 	Want to geek out? Reach out~~ I'm always seeking noncommercial collaborations around the topics
@@ -34,21 +34,22 @@
 <p>
 	Collaborations can take many forms in many different spaces, public and private, and I'm open to
 	all of the noncommercial variety (I work at <a href="https://felt.social">@feltcoop</a>, a
-	commercial platform co-op, mostly on open source software; I don't mind if you commercialize the
-	open source if that's your thing, but please no solicitations) If you read this document and a
-	potential collab springs to mind, I would enjoy hearing about it, and if it's something in the
-	open source, go do, don't ask for permission! Some of my public collaborations include:
+	commercial <a href="https://platform.coop">platform co-op</a>, mostly on open source software; I
+	don't mind if you commercialize the open source if that's your thing, but please no solicitations)
+	If you read this document and a potential collab springs to mind, I would enjoy hearing about it,
+	and if it's something in the open source, go do, no need to ask for permission! Some of my public
+	collaborations include:
 </p>
 <ul>
 	<li><a href="https://github.com/ryanatkn">my GitHub repos</a> which are mostly web apps</li>
 	<li>
+		the Felt.dev <a href="https://www.felt.dev/sketch/onboard/">Consentful Onboarding Sketch</a>
+		inspired by and in cooperation with <a href="https://consentful.systems">consentful.systems</a>
+	</li>
+	<li>
 		the
 		<a href="https://github.com/spiderspace/spiderspace/discussions">spiderspace discussions</a>
 		for web tech prototypes
-	</li>
-	<li>
-		the Felt.dev <a href="https://www.felt.dev/sketch/onboard/">Consentful Onboarding Sketch</a>
-		inspired by and in cooperation with <a href="https://consentful.systems">consentful.systems</a>
 	</li>
 	<li>
 		<a href="https://www.cosmicplayground.org">cosmicplayground.org</a> for coding and refactoring a
@@ -61,18 +62,13 @@
 <p>But why cooperate?</p>
 
 <ul>
-	<li>idk lol. do what u want be free~</li>
-	<li>
-		I can code and not everyone can or should. Little things like ideas are valued contributions
-	</li>
-	<li>teamwork makes the ___ work</li>
+	<li>idk lol. do what u want, be free~</li>
 	<li>some really fun/cool/useful/important things are possible only in groups</li>
-	<li>you can control how you're credited, or ghost along anonymously</li>
 	<li>
-		you prefer open source and research-oriented collabs over commercial ones (I work at <a
-			href="https://felt.social">@feltcoop</a
-		>)
+		you prefer open source and research-oriented collabs over commercial and investor-backed ones
 	</li>
+	<li>you like the idea of democratic ownership and control</li>
+	<li>you can control how you're credited, or ghost along anonymously</li>
 	<li>
 		Mozilla says: <em
 			>"The collective endowment of an exponentially growing, decentralized, global super-network
