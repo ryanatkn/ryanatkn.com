@@ -151,6 +151,7 @@
 		<a href="https://consentful.systems">consentful.systems</a> and
 		<a href="https://www.consentfultech.io">The Consentful Tech Project</a>
 	</li>
+	<li><a href="https://communityrule.info">CommunityRule</a></li>
 	<li><a href="https://metagov.org">The Metagovernance Project</a></li>
 </ul>
 
