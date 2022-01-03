@@ -30,7 +30,9 @@
 <h2>Questions I'm asking:</h2>
 
 <ul>
-	<li>How can the web improve our lives?</li>
+	<li>
+		How can the web improve our lives? How can technology improve our thinking and communication?
+	</li>
 	<li>
 		How can we design technology that respects and reinforces our personal consent boundaries?
 	</li>
