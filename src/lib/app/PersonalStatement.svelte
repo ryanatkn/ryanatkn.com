@@ -48,7 +48,7 @@
 	</li>
 	<li>
 		the Felt.dev <a href="https://www.felt.dev/sketch/onboard/">Consentful Onboarding Sketch</a>
-		inspired by <a href="https://consentful.systems">consentful.systems</a>
+		inspired by and in cooperation with <a href="https://consentful.systems">consentful.systems</a>
 	</li>
 	<li>
 		<a href="https://www.cosmicplayground.org">cosmicplayground.org</a> for coding and refactoring a
