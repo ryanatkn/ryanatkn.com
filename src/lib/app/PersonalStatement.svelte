@@ -6,8 +6,6 @@
 	realizing more of their potential to help us live well.
 </p>
 
-<h2>Purpose:</h2>
-
 <p>This webpage has two main purposes:</p>
 <ol>
 	<li>convey my work persona like a résumé or CV</li>
