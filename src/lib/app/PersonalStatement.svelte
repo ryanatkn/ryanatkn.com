@@ -26,6 +26,7 @@
 		join me in the open source on <a href="https://github.com/ryanatkn">GitHub</a>, like the
 		<a href="https://github.com/spiderspace/spiderspace/discussions">spiderspace discussions</a> or
 		<a href="https://github.com/ryanatkn/cosmicplayground">cosmicplayground</a>
+		<small>(TODO and Felt once we figure out what that looks like)</small>
 	</li>
 	<li>
 		public social media on <a href="https://twitter.com/ryanatkn">Twitter</a>
