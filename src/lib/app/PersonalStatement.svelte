@@ -2,8 +2,8 @@
 	Welcome <span style="font-size: var(--font_size_xl5)">🐢</span>
 </h2>
 <p>
-	Ryan Atkinson is a web developer interested in exploring collaborative digital mediums and
-	realizing more of their potential to help us live well.
+	I'm a web developer interested in exploring collaborative digital mediums and realizing more of
+	their potential to help us live well.
 </p>
 
 <p>This webpage has two main purposes:</p>
@@ -23,7 +23,7 @@
 		email me at <a href="mailto:mail@ryanatkn.com">mail@ryanatkn.com</a>
 	</li>
 	<li>
-		join me in the open source on <a href="https://github.com/ryanatkn">GitHub</a>, like the
+		join me doing open source on <a href="https://github.com/ryanatkn">GitHub</a>, like the
 		<a href="https://github.com/spiderspace/spiderspace/discussions">spiderspace discussions</a> or
 		<a href="https://github.com/ryanatkn/cosmicplayground">cosmicplayground</a>
 		<small>(TODO and Felt once we figure out what that looks like)</small>
