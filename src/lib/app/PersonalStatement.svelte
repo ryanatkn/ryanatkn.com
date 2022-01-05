@@ -6,7 +6,10 @@
 	their potential to help us live well.
 </p>
 
-<p>His main skill is coding frontend webapps, and he thinks this third person CV voice is weird.</p>
+<p>
+	His main skill is coding frontend webapps, and he thinks this third person CV voice feels slightly
+	too serious.
+</p>
 
 <ul>
 	<li>
