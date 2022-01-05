@@ -22,7 +22,7 @@
 
 <ul>
 	<li>
-		<a href="https://felt.social">@feltcoop</a> — a
+		<a href="https://felt.social">@feltcoop</a> — a pre-alpha
 		<a href="https://platform.coop">platform co-op</a> making
 		<a href="https://en.wikipedia.org/wiki/Free_and_open-source_software">FOSS</a>
 		community software (<a href="https://github.com/feltcoop">GitHub</a>,
