@@ -7,8 +7,8 @@
 </p>
 
 <p>
-	His main skill is coding frontend webapps, and he thinks this third person CV voice feels slightly
-	too serious.
+	His main skill is coding frontend webapps, and he thinks this third person CV voice feels a little
+	too serious but he wants to appear professional.
 </p>
 
 <ul>
