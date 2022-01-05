@@ -2,8 +2,8 @@
 	Welcome <span style="font-size: var(--font_size_xl5)">🐢</span>
 </h2>
 <p>
-	Ryan Atkinson is a web developer interested in exploring collaborative digital mediums and
-	realizing more of their potential to help us live well.
+	Ryan Atkinson is a web developer interested in collaborative digital mediums and realizing more of
+	their potential to help us live well.
 </p>
 
 <p>His main skill is coding frontend webapps, and he thinks this third person CV voice is weird.</p>
