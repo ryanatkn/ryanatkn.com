@@ -2,17 +2,110 @@
 	Welcome <span style="font-size: var(--font_size_xl5)">🐢</span>
 </h2>
 <p>
-	I'm a web developer interested in exploring collaborative digital mediums and realizing more of
-	their potential to help us live well.
+	Ryan Atkinson is a web developer interested in exploring collaborative digital mediums and
+	realizing more of their potential to help us live well.
 </p>
 
-<p>This webpage has two main purposes:</p>
-<ol>
-	<li>convey my work persona like a résumé or CV</li>
-	<li>fish for possible collaborations</li>
-</ol>
+<p>His main skill is coding frontend webapps, and he thinks this third person CV voice is weird.</p>
 
-<h2>Seeking collaborations:</h2>
+<ul>
+	<li>
+		<a href="mailto:mail@ryanatkn.com">mail@ryanatkn.com</a>
+	</li>
+	<li>
+		@ryanatkn on <a href="https://github.com/ryanatkn">GitHub</a> and
+		<a href="https://twitter.com/ryanatkn">Twitter</a>
+	</li>
+</ul>
+
+<h2>Projects I'm working on:</h2>
+
+<ul>
+	<li>
+		<a href="https://felt.social">@feltcoop</a> — a
+		<a href="https://platform.coop">platform co-op</a> making
+		<a href="https://en.wikipedia.org/wiki/Free_and_open-source_software">FOSS</a>
+		community software (<a href="https://github.com/feltcoop">GitHub</a>,
+		<a href="https://twitter.com/feltcoop">Twitter</a>)
+	</li>
+	<li>
+		<a href="https://www.cosmicplayground.org">cosmicplayground.org</a> — for fun and learning,
+		<em>"tools and toys for expanding minds"</em> (<a
+			href="https://github.com/ryanatkn/cosmicplayground">GitHub</a
+		>)
+	</li>
+	<li>
+		<a href="https://www.spiderspace.org">spiderspace.org</a> — web prototypes that aren't ready for
+		daylight (<a href="https://github.com/spiderspace">GitHub</a>)
+	</li>
+</ul>
+
+<h2>I'm curious about:</h2>
+
+<ul>
+	<li>creative tools</li>
+	<li>community environments</li>
+	<li>participatory governance</li>
+	<li>distributed power</li>
+	<li>consentful design</li>
+	<li>being intentional about the systems and games we want</li>
+	<li>the intersections of the above^^</li>
+</ul>
+
+<h2>Questions I'm asking:</h2>
+
+<ul>
+	<li>
+		How can technology improve our lives and ecologies? What roles should technology play to improve
+		our thinking, communication, health, and social environments? What else do we need to realize
+		more of technology's liberatory potential?
+	</li>
+	<li>
+		How can we design technology that respects and reinforces our personal consent boundaries?
+	</li>
+	<li>
+		How can we include more people in designing, making, and sharing the building blocks of digital
+		mediums? How can we make software systems that afford programming powers in everyone's everyday
+		life? How far can we run with the web? How can we further leverage the web's capabilities?
+	</li>
+	<li>
+		What modes of cooperation are available to us in the various meaningful aspects of our lives?
+		How can technology help? How can we build trusted networks? And sustain them? How can we design
+		tools to improve collective decision making and information quality? How can we make power
+		dynamics in groups more explicit? How can we support democratic community governance with more
+		desirable dynamics around labor and power?
+	</li>
+	<li>
+		How can we support social systems where participation is positive sum, nonfinancialized, and
+		intrinsically motivated? Which open source communities are thriving, and where is there room for
+		improvement? How can we make our communities and worlds more safe, welcoming, fair, fun, and
+		useful?
+	</li>
+	<li>
+		What can we do to realize our goals? Make apps and software libraries? Curate datasets? Publish
+		research? Blogs? Create audio and video content? Which mediums should we work in and why?
+	</li>
+</ul>
+
+<h2>Related things I like:</h2>
+
+<ul>
+	<li>free and open source software and data</li>
+	<li>the web and <a href="https://getdweb.net/principles/">the DWeb principles</a></li>
+	<li>
+		<a href="https://svelte.dev">Svelte</a> and <a href="https://kit.svelte.dev">SvelteKit</a>
+	</li>
+	<li>
+		<a href="https://consentful.systems">consentful.systems</a> and
+		<a href="https://www.consentfultech.io">The Consentful Tech Project</a>
+	</li>
+	<li>
+		<a href="https://metagov.org">The Metagovernance Project</a> and
+		<a href="https://communityrule.info">CommunityRule</a>
+	</li>
+</ul>
+
+<h2>Fishing for collaborations:</h2>
 
 <p>
 	I'm always looking for noncommercial collaborations around topics and projects that interest me.
@@ -42,9 +135,8 @@
 </p>
 
 <p>
-	If you read this document and a potential collab springs to mind, I would enjoy hearing about it,
-	and if it's something in the open source, don't make me a gatekeeper, go do! Some of my public
-	collaborations include:
+	If a potential collab springs to your mind, I would enjoy hearing about it, and if it's something
+	in the open source, don't make me a gatekeeper, go do! Some of my public collaborations include:
 </p>
 <ul>
 	<li><a href="https://github.com/ryanatkn">my GitHub repos</a> which are mostly web apps</li>
@@ -83,105 +175,3 @@
 	</li>
 	<li>idk lol, do what u want, be free~</li>
 </ul>
-
-This is my public work persona. I publish code and this website using my IRL legal name, but that's
-a choice that's not right for everyone. If we collaborate, know that you can limit your public
-exposure and control how you're credited; you can use your legal name, a pseudonym, or even ghost
-along anonymously.
-
-<h2>I'm curious about:</h2>
-
-<ul>
-	<li>creative tools</li>
-	<li>community environments</li>
-	<li>participatory governance</li>
-	<li>distributed power</li>
-	<li>consentful design</li>
-	<li>being intentional about the systems and games we want</li>
-	<li>the intersections of the above^^</li>
-</ul>
-
-<h2>Questions I'm asking:</h2>
-
-<ul>
-	<li>
-		How can technology improve our lives and ecologies? What roles should technology play to improve
-		our thinking, communication, health, and social environments? What else do we need to realize
-		more of technology's liberatory potential?
-	</li>
-	<li>
-		How can we design technology that respects and reinforces our personal consent boundaries?
-	</li>
-	<li>
-		How can we include more people in designing, making, and sharing the building blocks of digital
-		mediums? How can we make software systems that afford programming powers in everyone's everyday
-		life? How far can we run with the web? How can we further leverage the web's capabilities?
-	</li>
-	<li>
-		What modes of cooperation are available to us in the various meaningful aspects of our lives?
-		How can technology help? How can we build trusted networks with high quality information flows?
-		How can we design tools to improve collective decision making and discussion? How can we make
-		power dynamics in groups more explicit? How can we support democratic community governance with
-		more desirable dynamics around labor and power?
-	</li>
-	<li>
-		How can we support social systems where participation is positive sum, nonfinancialized, and
-		intrinsically motivated? What open source communities are thriving, and where is there room for
-		improvement? How can we make our communities and worlds more safe, welcoming, fair, fun, and
-		useful?
-	</li>
-	<li>
-		What can we do to realize our goals? Make apps and software libraries? Curate datasets? Publish
-		research? Blogs? Create audio and video content? Which mediums should we work in and why?
-	</li>
-</ul>
-
-<h2>Projects I'm working on:</h2>
-
-<ul>
-	<li>
-		<a href="https://felt.social">@feltcoop</a> (<a href="https://github.com/feltcoop">GitHub</a>,
-		<a href="https://twitter.com/feltcoop">Twitter</a>)
-	</li>
-	<li>
-		<a href="https://www.cosmicplayground.org">cosmicplayground.org</a>
-		(<a href="https://github.com/ryanatkn/cosmicplayground">GitHub</a>)
-	</li>
-	<li>
-		<a href="https://www.spiderspace.org">spiderspace.org</a> (<a
-			href="https://github.com/spiderspace">GitHub</a
-		>)
-	</li>
-</ul>
-
-<h2>Related things I like:</h2>
-
-<ul>
-	<li>free and open source software and data</li>
-	<li>the web and <a href="https://getdweb.net/principles/">the DWeb principles</a></li>
-	<li>
-		<a href="https://svelte.dev">Svelte</a> and <a href="https://kit.svelte.dev">SvelteKit</a>
-	</li>
-	<li>
-		<a href="https://consentful.systems">consentful.systems</a> and
-		<a href="https://www.consentfultech.io">The Consentful Tech Project</a>
-	</li>
-	<li>
-		<a href="https://metagov.org">The Metagovernance Project</a> and
-		<a href="https://communityrule.info">CommunityRule</a>
-	</li>
-</ul>
-
-<h2>Find me on the web:</h2>
-
-<ul>
-	<li>
-		email me at <a href="mailto:mail@ryanatkn.com">mail@ryanatkn.com</a>
-	</li>
-	<li>
-		@ryanatkn on <a href="https://github.com/ryanatkn">GitHub</a> and
-		<a href="https://twitter.com/ryanatkn">Twitter</a>
-	</li>
-</ul>
-
-<p>I'm always seeking noncommercial collaborations!</p>
