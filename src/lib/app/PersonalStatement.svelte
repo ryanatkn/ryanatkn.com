@@ -87,7 +87,8 @@
 	</li>
 	<li>
 		What can we do to realize our goals? Make apps and software libraries? Curate datasets? Publish
-		research? Blogs? Create audio and video content? Which mediums should we work in and why?
+		research? Blogs? Exchange some private emails? Create audio and video content? Which mediums
+		should we work in and why?
 	</li>
 </ul>
 
