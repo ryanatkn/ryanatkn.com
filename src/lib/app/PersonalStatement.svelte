@@ -7,7 +7,7 @@
 </p>
 
 <p>
-	My main skill is coding frontend webapps, and I know enough backend and database stuff to make
+	My main skill is coding frontend web apps, and I know enough backend and database stuff to make
 	frontends happen. I enjoy trying to make powerful tools that are easy to use, and I have a geeky
 	interest in user interfaces and social systems.
 </p>
@@ -93,7 +93,8 @@
 	<li>free and open source software and data</li>
 	<li>the web and <a href="https://getdweb.net/principles/">the DWeb principles</a></li>
 	<li>
-		<a href="https://svelte.dev">Svelte</a> and <a href="https://kit.svelte.dev">SvelteKit</a>
+		<a href="https://svelte.dev">Svelte</a> and <a href="https://kit.svelte.dev">SvelteKit</a>,
+		TypeScript, Node, Postgres
 	</li>
 	<li>
 		<a href="https://consentful.systems">consentful.systems</a> and
