@@ -26,9 +26,8 @@
 <ul>
 	<li>
 		<a href="https://felt.social">@feltcoop</a> — a pre-alpha
-		<a href="https://platform.coop">platform co-op</a> making
-		<a href="https://en.wikipedia.org/wiki/Free_and_open-source_software">FOSS</a>
-		community software (<a href="https://github.com/feltcoop">GitHub</a>,
+		<a href="https://platform.coop">platform co-op</a> making free and open source community
+		software (<a href="https://github.com/feltcoop">GitHub</a>,
 		<a href="https://twitter.com/feltcoop">Twitter</a>)
 	</li>
 	<li>
@@ -60,8 +59,8 @@
 <ul>
 	<li>
 		How can technology improve our lives and ecologies? What roles should technology play to improve
-		our thinking, communication, health, and social environments? What else do we need to realize
-		more of technology's liberatory potential?
+		our thinking, communication, health, and social environments? What are the big opportunities and
+		low hanging fruit? What else do we need to realize more of technology's liberatory potential?
 	</li>
 	<li>
 		How can we design technology that respects and reinforces our personal consent boundaries?
@@ -73,22 +72,17 @@
 	</li>
 	<li>
 		What modes of cooperation are available to us in the various meaningful aspects of our lives?
-		How can we structure organizations to achieve better outcomes? How can technology help? How can
-		we build trusted networks? And sustain them? How can we design tools to improve collective
-		decision making and information quality? How can we make power dynamics in groups more explicit?
-		How can we support democratic community governance with more desirable dynamics around labor and
-		power?
+		How can we structure and develop organizations to achieve better outcomes? How can we grow
+		institutions that support individual agency and autonomy? How can technology help? How can we
+		build trusted networks? And sustain them? How can we design tools to improve collective decision
+		making and shared understanding? How can we make power dynamics in groups more explicit? How can
+		we support democratic community governance with more desirable dynamics around labor and power?
 	</li>
 	<li>
 		How can we support social systems where participation is positive sum, nonfinancialized, and
 		intrinsically motivated? Which open source communities are thriving, and where is there room for
-		improvement? How can we make our communities and worlds more safe, welcoming, fair, fun, and
-		useful?
-	</li>
-	<li>
-		What can we do to realize our goals? Make apps and software libraries? Curate datasets? Publish
-		research? Blogs? Exchange some private emails? Create audio and video content? Which mediums
-		should we work in and why?
+		improvement? What are some optimistic visions of a robust and benevolent commons? How can we
+		make our communities and worlds more safe, welcoming, fair, fun, and useful?
 	</li>
 </ul>
 
@@ -114,8 +108,49 @@
 
 <p>
 	I'm always looking for noncommercial collaborations around topics and projects that interest me.
-	Want to geek out? Reach out~~! I can't promise a response but I'll do my best:
+	There's never enough hours in the day but if you want to geek out, reach out! I can't promise a
+	response but I'll do my best. Some of my public collaborations include:
 </p>
+<ul>
+	<li><a href="https://github.com/ryanatkn">my GitHub repos</a> which are mostly web apps</li>
+	<li>
+		the Felt.dev <a href="https://www.felt.dev/sketch/onboard/">Consentful Onboarding Sketch</a>
+		inspired by and in cooperation with <a href="https://consentful.systems">consentful.systems</a>
+	</li>
+	<li>
+		<a href="https://www.cosmicplayground.org">cosmicplayground.org</a> for coding and refactoring a
+		web app with
+		<a href="https://svelte.dev">Svelte</a>, <a href="https://kit.svelte.dev">SvelteKit</a>, and
+		TypeScript
+	</li>
+	<li>
+		the
+		<a href="https://github.com/spiderspace/spiderspace/discussions">spiderspace discussions</a>
+		for web tech prototypes
+	</li>
+</ul>
+
+<p>But why collaborate with me?</p>
+<ul>
+	<li>some really fun/cool/useful/important things are possible only in groups</li>
+	<li>you and I are interested in similar questions, problems, and/or technologies</li>
+	<li>you don't have all the knowledge and skills but you have some</li>
+	<li>
+		you prefer open source and research-oriented collabs over commercial and investor-backed ones
+	</li>
+	<li>
+		you want to contribute to the commons and like the sound of democratic ownership and control
+	</li>
+	<li>
+		Mozilla says: <em
+			>"The collective endowment of an exponentially growing, decentralized, global super-network
+			will always vastly exceed anything that can be created without it."</em
+		>
+	</li>
+	<li>idk lol, do what u want, be free~</li>
+</ul>
+
+<p>Is something sparked?</p>
 <ul>
 	<li>
 		email me at <a href="mailto:mail@ryanatkn.com">mail@ryanatkn.com</a>
@@ -130,53 +165,4 @@
 		public social media on <a href="https://twitter.com/ryanatkn">Twitter</a>
 		<small>(TODO and Mastodon/Matrix?)</small>
 	</li>
-</ul>
-
-<p>
-	Collaborations can take many forms in many different spaces, public and private, and I'm open to
-	all of the noncommercial variety. I work at <a href="https://felt.social">@feltcoop</a>, a
-	commercial <a href="https://platform.coop">platform co-op</a>, mostly on open source software; I
-	don't mind if you commercialize open source if that's your thing, but please no solicitations.
-</p>
-
-<p>
-	If a potential collab springs to your mind, I would enjoy hearing about it, and if it's something
-	in the open source, don't make me a gatekeeper, go do! Some of my public collaborations include:
-</p>
-<ul>
-	<li><a href="https://github.com/ryanatkn">my GitHub repos</a> which are mostly web apps</li>
-	<li>
-		the Felt.dev <a href="https://www.felt.dev/sketch/onboard/">Consentful Onboarding Sketch</a>
-		inspired by and in cooperation with <a href="https://consentful.systems">consentful.systems</a>
-	</li>
-	<li>
-		the
-		<a href="https://github.com/spiderspace/spiderspace/discussions">spiderspace discussions</a>
-		for web tech prototypes
-	</li>
-	<li>
-		<a href="https://www.cosmicplayground.org">cosmicplayground.org</a> for coding and refactoring a
-		web app with
-		<a href="https://svelte.dev">Svelte</a>, <a href="https://kit.svelte.dev">SvelteKit</a>, and
-		TypeScript
-	</li>
-</ul>
-
-<p>But why collaborate with me?</p>
-
-<ul>
-	<li>some really fun/cool/useful/important things are possible only in groups</li>
-	<li>you and I are interested in similar questions, problems, and/or technologies</li>
-	<li>you don't have all the answers and skills but you have some</li>
-	<li>
-		you prefer open source and research-oriented collabs over commercial and investor-backed ones
-	</li>
-	<li>you like the idea of practicing democratic ownership and control</li>
-	<li>
-		Mozilla says: <em
-			>"The collective endowment of an exponentially growing, decentralized, global super-network
-			will always vastly exceed anything that can be created without it."</em
-		>
-	</li>
-	<li>idk lol, do what u want, be free~</li>
 </ul>
