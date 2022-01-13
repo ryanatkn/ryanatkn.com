@@ -50,6 +50,7 @@
 	<li>community environments</li>
 	<li>participatory governance</li>
 	<li>distributed power</li>
+	<li>crowd wisdom</li>
 	<li>consentful design</li>
 	<li>being intentional about the systems and games we want</li>
 	<li>the intersections of the above^^</li>
@@ -69,7 +70,8 @@
 	<li>
 		How can we include more people in designing, making, and sharing the building blocks of digital
 		mediums? How can we make software systems that afford programming powers in everyone's everyday
-		life? How far can we run with the web? How can we further leverage the web's capabilities?
+		life? How can we further leverage the web's existing capabilities? Where is the web going and
+		how far can we run with it?
 	</li>
 	<li>
 		What modes of cooperation are available to us in the various meaningful aspects of our lives?
@@ -82,8 +84,9 @@
 	<li>
 		How can we support social systems where participation is positive sum, nonfinancialized, and
 		intrinsically motivated? Which open source communities are thriving, and where is there room for
-		improvement? What are some optimistic visions of a robust and benevolent commons? How can we
-		make our communities and worlds more safe, welcoming, fair, fun, and useful?
+		improvement? Who is being systematically excluded from participating, and what are the best
+		remedies? What are some optimistic visions of a robust and benevolent commons? How can we make
+		our communities and worlds more safe, welcoming, fair, fun, and useful?
 	</li>
 </ul>
 
