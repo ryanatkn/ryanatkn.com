@@ -48,9 +48,9 @@
 <ul>
 	<li>creative tools</li>
 	<li>community environments</li>
+	<li>crowd wisdom</li>
 	<li>participatory governance</li>
 	<li>distributed power</li>
-	<li>crowd wisdom</li>
 	<li>consentful design</li>
 	<li>being intentional about the systems and games we want</li>
 	<li>the intersections of the above^^</li>
