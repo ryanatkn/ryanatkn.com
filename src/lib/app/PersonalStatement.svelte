@@ -52,6 +52,7 @@
 	<li>participatory governance</li>
 	<li>distributed power</li>
 	<li>consentful design</li>
+	<li>networked trust and safety</li>
 	<li>being intentional about the systems and games we want</li>
 	<li>the intersections of the above^^</li>
 </ul>
@@ -155,7 +156,7 @@
 	<li>idk lol, do what u want, be free~</li>
 </ul>
 
-<p>Is something sparked?</p>
+<p>Any sparks?</p>
 <ul>
 	<li>
 		email me at <a href="mailto:mail@ryanatkn.com">mail@ryanatkn.com</a>
