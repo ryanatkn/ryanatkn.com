@@ -7,12 +7,12 @@
 	<div class="bg">
 		<img class="pixelated" {src} {alt} />
 	</div>
-	<h1>About me</h1>
+	<h1>about me</h1>
 </header>
 
 <style>
 	header {
-		--img_size: 512px;
+		--img_size: 1024px;
 		--header_height: 110px;
 		position: relative;
 		display: flex;
@@ -40,7 +40,6 @@
 		font-size: var(--font_size_xl3);
 		font-weight: var(--font_weight_3);
 		white-space: nowrap;
-		text-transform: lowercase;
 	}
 	img {
 		width: var(--img_size);

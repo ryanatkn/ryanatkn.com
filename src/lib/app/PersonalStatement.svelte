@@ -2,13 +2,14 @@
 	Welcome <span style="font-size: var(--font_size_xl5)">🐢</span>
 </h2>
 <p>
-	Ryan Atkinson is a web developer interested in collaborative digital mediums and realizing more of
-	their potential to help us live well.
+	I'm Ryan Atkinson, a web developer interested in collaborative digital mediums and realizing more
+	of their potential to help us live well.
 </p>
 
 <p>
-	His main skill is coding frontend webapps, and he thinks this third person CV voice feels a little
-	too serious but he wants to appear professional.
+	My main skill is coding frontend webapps, and I know enough backend and database stuff to make
+	frontends happen. I enjoy trying to make powerful tools that are easy to use, and I have a geeky
+	interest in user interfaces and social systems.
 </p>
 
 <ul>
