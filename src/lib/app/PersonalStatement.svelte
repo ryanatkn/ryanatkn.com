@@ -66,14 +66,15 @@
 		low hanging fruit? What else do we need to realize more of technology's liberatory potential?
 	</li>
 	<li>
-		How can we design technology that respects and reinforces our personal consent boundaries?
+		How can we design technology that respects and reinforces our personal consent boundaries? Is
+		our technology working for our collective and individual benefit? If not, why not, and how can
+		we fix it?
 	</li>
 	<li>
 		How can we include more people in designing, making, and sharing the building blocks of digital
 		mediums? How can we make software systems that afford programming powers in everyone's everyday
-		life? Is our technology working for our collective and individual benefit? If not, why not, and
-		how can we fix it? How can we further leverage the web's existing capabilities? Where is the web
-		going and how far can we run with it?
+		life? How can we further leverage the web's existing capabilities? Where is the web going and
+		how far can we run with it?
 	</li>
 	<li>
 		What modes of cooperation are available to us in the various meaningful aspects of our lives?
