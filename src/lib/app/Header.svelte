@@ -38,7 +38,7 @@
 		color: #fff;
 		font-family: var(--font_family_mono);
 		font-size: var(--font_size_xl3);
-		font-weight: var(--font_weight_3);
+		font-weight: var(--font_weight_5);
 		white-space: nowrap;
 	}
 	img {
