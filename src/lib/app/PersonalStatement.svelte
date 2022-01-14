@@ -119,7 +119,7 @@
 
 <p>
 	I'm always looking for noncommercial collaborations around topics and projects that interest me.
-	There's never enough hours in the day but if you want to geek out, reach out! I can't promise a
+	There's never enough hours in the day, but if you want to geek out, reach out! I can't promise a
 	response but I'll do my best. Some of my public collaborations include:
 </p>
 <ul>
