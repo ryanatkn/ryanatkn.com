@@ -71,8 +71,8 @@
 	<li>
 		How can we include more people in designing, making, and sharing the building blocks of digital
 		mediums? How can we make software systems that afford programming powers in everyone's everyday
-		life? How can we further leverage the web's existing capabilities? Where is the web going and
-		how far can we run with it?
+		life? And where power is working for our collective and individual benefit? How can we further
+		leverage the web's existing capabilities? Where is the web going and how far can we run with it?
 	</li>
 	<li>
 		What modes of cooperation are available to us in the various meaningful aspects of our lives?
