@@ -2,8 +2,8 @@
 	Welcome <span style="font-size: var(--font_size_xl5)">🐢</span>
 </h2>
 <p>
-	I'm Ryan Atkinson, a web developer interested in collaborative digital mediums and realizing more
-	of their potential to help us live well.
+	hello web surfer! I'm Ryan Atkinson, a web developer interested in collaborative digital mediums
+	and realizing more of their potential to help us live well.
 </p>
 
 <p>
