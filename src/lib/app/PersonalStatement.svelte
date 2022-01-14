@@ -144,7 +144,7 @@
 <p>But why collaborate with me?</p>
 <ul>
 	<li>some really fun/cool/useful/important things are possible only in groups</li>
-	<li>you and I are interested in similar questions, problems, and/or technologies</li>
+	<li>you and I are interested in similar <em>quest</em>ions, problems, and/or technologies</li>
 	<li>
 		you prefer open source and research-oriented collabs over commercial and investor-backed ones
 	</li>
