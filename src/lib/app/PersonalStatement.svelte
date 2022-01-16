@@ -62,8 +62,9 @@
 <ul>
 	<li>
 		How can technology improve our lives and ecologies? What roles should technology play to improve
-		our thinking, communication, health, and social environments? What are the big opportunities and
-		low hanging fruit? What else do we need to realize more of technology's liberatory potential?
+		our thinking, communication, health, and social environments? How can we ensure our efforts
+		reduce inequalities? What are the big opportunities and low hanging fruit? What else do we need
+		to realize more of technology's liberatory potential?
 	</li>
 	<li>
 		How can we design technology that respects and reinforces our personal consent boundaries? Is
