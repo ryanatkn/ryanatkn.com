@@ -68,8 +68,8 @@
 	</li>
 	<li>
 		How can we design technology that respects and reinforces our personal consent boundaries? Is
-		our technology working for our collective and individual benefit? If not, why not, and how can
-		we fix it?
+		our technology working for our individual and collective benefit? If not, why not, and how can
+		we fix it? What false stories are blocking our imaginations?
 	</li>
 	<li>
 		How can we include more people in designing, making, and sharing the building blocks of digital
