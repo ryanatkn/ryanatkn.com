@@ -53,6 +53,7 @@
 	<li>distributed power</li>
 	<li>consentful design</li>
 	<li>networked trust and safety</li>
+	<li>small scale groups with strong bonds</li>
 	<li>being intentional about the systems and games we want</li>
 	<li>the intersections of the above^^</li>
 </ul>
