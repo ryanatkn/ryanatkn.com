@@ -78,13 +78,14 @@
 		How can we include more people in designing, making, and sharing the building blocks of digital
 		mediums? How can we make software systems that afford programming powers in everyone's everyday
 		life? How can we further leverage the web's existing capabilities? Where is the web going and
-		where should we try to steer it?
+		where should we invest our time and attention to steer it?
 	</li>
 	<li>
 		What modes of cooperation are available to us in the various meaningful aspects of our lives?
 		How can we structure and develop organizations to achieve better outcomes? How can we grow
-		institutions that support individual agency and autonomy? How can technology help? How can we
-		build trusted networks? And sustain them? How can we design tools to improve collective decision
+		institutions that support individual agency and autonomy? What forms of participation work for
+		the majority of us that aren't highly motivated? How can technology help? How can we build
+		trusted networks? And sustain them? How can we design tools to improve collective decision
 		making and shared understanding? How can we make power dynamics in groups more explicit? How can
 		we support democratic community governance with more desirable dynamics around labor and power?
 	</li>
