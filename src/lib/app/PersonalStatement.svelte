@@ -81,17 +81,18 @@
 		going and where should we invest our time and attention to steer it?
 	</li>
 	<li>
-		What modes of cooperation are available to us in the various meaningful aspects of our lives?
-		How can we structure and develop organizations to achieve better outcomes? How can we grow
-		institutions that support individual agency and autonomy? What forms of participation work for
-		the majority of us that aren't highly motivated? How can technology help? How can we build
-		trusted networks? And sustain them? How can we design tools to improve collective decision
-		making and shared understanding? How can we make power dynamics in groups more explicit? How can
-		we support democratic community governance with more desirable dynamics around labor and power?
+		How can we grow sustainable institutions to protect the things we care about? How can we
+		structure and develop organizations to achieve better outcomes while supporting individual
+		agency and autonomy? What forms of participation work for the majority of us that aren't highly
+		motivated? How can technology help? How can we build robust trusted networks? How can we design
+		tools to improve collective decision making and shared understanding? How can we make power
+		dynamics in groups more explicit? What does it mean for democratic community governance to have
+		desirable dynamics around labor and power?
 	</li>
 	<li>
 		How can we support social systems where participation is positive sum, nonfinancialized, and
-		intrinsically motivated? Which open source communities are thriving, and where is there room for
+		intrinsically motivated? What modes of cooperation are available to us in the various meaningful
+		aspects of our lives? Which open source communities are thriving, and where is there room for
 		improvement? Who is being systematically excluded from participating, and what are the best
 		remedies? What are some optimistic visions of a robust and benevolent commons? How can we make
 		our communities and worlds more safe, welcoming, fair, fun, and useful?
