@@ -87,14 +87,15 @@
 		motivated? How can technology help? How can we build robust trusted networks? How can we design
 		tools to improve collective decision making and shared understanding? How can we make power
 		dynamics in groups more explicit? What does it mean for democratic community governance to have
-		desirable dynamics around labor and power?
+		desirable dynamics around labor and power? In what ways can we practice low-stakes democracy so
+		we're better at it when the stakes are higher?
 	</li>
 	<li>
 		How can we support social systems where participation is positive sum, nonfinancialized, and
 		intrinsically motivated? What modes of cooperation are available to us in the various meaningful
 		aspects of our lives? Which open source communities are thriving, and where is there room for
 		improvement? Who is being systematically excluded from participating, and what are the best
-		remedies? What are some optimistic visions of a robust and benevolent commons? How can we make
+		remedies? What are some optimistic visions of a vibrant and benevolent commons? How can we make
 		our communities and worlds more safe, welcoming, fair, fun, and useful?
 	</li>
 </ul>
