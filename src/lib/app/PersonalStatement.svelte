@@ -125,9 +125,9 @@
 <h2>Fishing for collaborations:</h2>
 
 <p>
-	I'm always looking for noncommercial collaborations around topics and projects that interest me.
-	There's never enough hours in the day, but if you want to geek out, reach out! I can't promise a
-	response but I'll do my best. Some of my public collaborations include:
+	There's never enough hours in the day, but I currently have surplus time for noncommercial
+	collaborations around topics and projects that interest me. If you want to geek out, reach out!
+	Some of my public collaborations include:
 </p>
 <ul>
 	<li><a href="https://github.com/ryanatkn">my GitHub repos</a> which are mostly web apps</li>
@@ -150,8 +150,8 @@
 
 <p>But why collaborate with me?</p>
 <ul>
-	<li>some really fun/cool/useful/important things are possible only in groups</li>
 	<li>you and I are interested in similar <em>quest</em>ions, problems, and/or technologies</li>
+	<li>some really fun/cool/useful/important things are possible only in groups</li>
 	<li>
 		you prefer open source and research-oriented collabs over commercial and investor-backed ones
 	</li>
