@@ -122,8 +122,8 @@
 	</li>
 </ul>
 <p>
-	There's never enough hours in the day, but if you want to geek out on any of this, reach out! Some
-	of my public collaborations include:
+	There's never enough hours in the day, but if you're interested in this stuff and want to geek
+	out, reach out! Email is good or find me on the web. Some of my public collaborations include:
 </p>
 <ul>
 	<li><a href="https://github.com/ryanatkn">my GitHub repos</a> which are mostly web apps</li>
