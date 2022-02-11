@@ -122,12 +122,9 @@
 	</li>
 </ul>
 
-<h2>Fishing for collaborations:</h2>
-
 <p>
-	There's never enough hours in the day, but I currently have surplus time for noncommercial
-	collaborations around topics and projects that interest me. If you want to geek out, reach out!
-	Some of my public collaborations include:
+	There's never enough hours in the day, but if you want to geek out on any of this, reach out! Some
+	of my public collaborations include:
 </p>
 <ul>
 	<li><a href="https://github.com/ryanatkn">my GitHub repos</a> which are mostly web apps</li>
@@ -148,26 +145,7 @@
 	</li>
 </ul>
 
-<p>But why collaborate with me?</p>
-<ul>
-	<li>you and I are interested in similar <em>quest</em>ions, problems, and/or technologies</li>
-	<li>some really fun/cool/useful/important things are possible only in groups</li>
-	<li>
-		you prefer open source and research-oriented collabs over commercial and investor-backed ones
-	</li>
-	<li>
-		you want to contribute to the commons and like the sound of democratic ownership and control
-	</li>
-	<li>
-		Mozilla says: <em
-			>"The collective endowment of an exponentially growing, decentralized, global super-network
-			will always vastly exceed anything that can be created without it."</em
-		>
-	</li>
-	<li>idk lol, do what u want, be free~</li>
-</ul>
-
-<p>Any sparks?</p>
+<p>Contact</p>
 <ul>
 	<li>
 		email me at <a href="mailto:mail@ryanatkn.com">mail@ryanatkn.com</a>
