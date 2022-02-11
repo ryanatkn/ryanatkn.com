@@ -121,7 +121,6 @@
 		<a href="https://communityrule.info">CommunityRule</a>
 	</li>
 </ul>
-
 <p>
 	There's never enough hours in the day, but if you want to geek out on any of this, reach out! Some
 	of my public collaborations include:
@@ -145,7 +144,7 @@
 	</li>
 </ul>
 
-<p>Contact</p>
+<h2>Contact:</h2>
 <ul>
 	<li>
 		email me at <a href="mailto:mail@ryanatkn.com">mail@ryanatkn.com</a>
