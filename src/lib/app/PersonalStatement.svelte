@@ -121,12 +121,12 @@
 		<a href="https://communityrule.info">CommunityRule</a>
 	</li>
 </ul>
-<p>
-	There's never enough hours in the day, but if you're interested in this stuff and want to geek
-	out, reach out~~email is good or find me on the web. Some of my public collaborations include:
-</p>
+<p>Some of my public collaborations include:</p>
 <ul>
-	<li><a href="https://github.com/ryanatkn">my GitHub repos</a> which are mostly web apps</li>
+	<li>
+		<a href="https://github.com/ryanatkn">my GitHub repos</a> which are mostly web apps; I'd be interested
+		in interacting on any that aren't archived
+	</li>
 	<li>
 		the Felt.dev <a href="https://www.felt.dev/sketch/onboard/">Consentful Onboarding Sketch</a>
 		inspired by and in cooperation with <a href="https://consentful.systems">consentful.systems</a>
