@@ -64,22 +64,25 @@
 
 <ul>
 	<li>
-		How can technology improve our lives and ecologies? What roles should technology play to improve
-		our thinking, communication, health, and social environments? How can we ensure our efforts
-		reduce inequalities? What are our blind spots, and what perspectives are we missing and
-		minimizing? What else do we need to realize more of technology's liberatory potential? What are
-		the big opportunities and low hanging fruit?
+		What roles can and should technology play to improve our communication, relationships,
+		wellbeing, and social and physical ecologies? How can we ensure our efforts reduce inequalities
+		and increase agency? What are our blind spots, and what perspectives are we missing and
+		minimizing? What does supporting plurality look like? What else do we need to realize more of
+		technology's liberatory potential? What are the ripe opportunities and low hanging fruit?
 	</li>
 	<li>
-		How can we design technology that respects and reinforces our personal consent boundaries? Is
-		our technology working for our individual and collective benefit? If not, why not, and how can
-		we fix it? What false stories are blocking our imaginations?
+		How can we balance the needs of individuals and groups? When needs come into conflict, can we
+		find creative positive-sum solutions? How can we design technology that respects and reinforces
+		our personal consent boundaries? Should we make social contracts more explicit? Is our
+		technology working for our personal and collective benefit? If not, why not, and how can we fix
+		it? What false stories and invisible assumptions are blocking our imaginations?
 	</li>
 	<li>
 		How can we include more people in designing, making, and sharing the building blocks of digital
 		mediums? How can we make software systems that afford programming powers in everyone's everyday
-		life? How can we further leverage the capabilities of the web and our devices? Where is the web
-		going and where should we invest our time and attention to steer it?
+		life? What fun creative tools can we make? How can we further leverage the capabilities of the
+		web and our devices? Where is the web going and where should we contribute our time and
+		attention?
 	</li>
 	<li>
 		How can we grow sustainable institutions to protect the things we care about? How can we
