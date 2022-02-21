@@ -100,7 +100,7 @@
 		aspects of our lives? Which open source communities are thriving, and where is there room for
 		improvement? Who is being systemically excluded from participating, and what are the best
 		remedies? What are some optimistic visions of a vibrant and benevolent commons? How can we make
-		our communities and worlds more safe, welcoming, fair, fun, and useful?
+		our communities and worlds more safe, welcoming, fair, fun, and fruitful?
 	</li>
 </ul>
 
