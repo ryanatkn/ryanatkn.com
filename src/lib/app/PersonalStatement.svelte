@@ -95,12 +95,12 @@
 		we're better at it when the stakes are higher?
 	</li>
 	<li>
-		How can we support social systems where participation is positive sum, nonfinancialized, and
-		intrinsically motivated? What modes of cooperation are available to us in the various meaningful
-		aspects of our lives? Which open source communities are thriving, and where is there room for
-		improvement? Who is being systemically excluded from participating, and what are the best
-		remedies? What are some optimistic visions of a vibrant and benevolent commons? How can we make
-		our communities and worlds more safe, welcoming, fair, fun, and fruitful?
+		What modes of cooperation are available to us where participation is positive sum,
+		nonfinancialized, and intrinsically motivated? How can we support social systems in the various
+		meaningful aspects of our lives? Which open source communities are thriving, and where is there
+		room for improvement? Who is being systemically excluded from participating, and what are the
+		best remedies? What are some optimistic visions of a vibrant and benevolent commons? How can we
+		make our communities and worlds more safe, welcoming, fair, fun, and fruitful?
 	</li>
 </ul>
 
