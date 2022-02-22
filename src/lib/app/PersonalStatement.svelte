@@ -30,7 +30,9 @@
 		<a href="https://felt.social">@feltcoop</a> — a pre-alpha
 		<a href="https://platform.coop">platform co-op</a> making free and open source community
 		software (<a href="https://github.com/feltcoop">GitHub</a>,
-		<a href="https://twitter.com/feltcoop">Twitter</a>)
+		<a href="https://twitter.com/feltcoop">Twitter</a>,
+		<a href="mailto:ryan@felt.social">ryan@felt.social</a>,
+		<a href="mailto:team@felt.social">team@felt.social</a>)
 	</li>
 	<li>
 		<a href="https://www.cosmicplayground.org">cosmicplayground.org</a> — for fun and learning,
