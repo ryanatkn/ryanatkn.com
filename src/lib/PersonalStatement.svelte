@@ -66,9 +66,9 @@
 
 <ul>
 	<li>
-		What roles can and should technology play to improve our communication, relationships,
-		wellbeing, and social and physical ecologies? Are we building towards a more just world? Do our
-		systems make us more responsible for negative externalities? How can we ensure our efforts
+		What roles can and should technology play to improve our communication, relationships, health
+		and wellbeing, and social and physical ecologies? Are we building towards a more just world? Do
+		our systems make us more responsible for negative externalities? How can we ensure our efforts
 		reduce inequalities and increase agency? What are our blind spots, and what perspectives are we
 		missing and minimizing? What else do we need to realize more of technology's liberatory
 		potential? What are the ripe opportunities and low hanging fruit?
@@ -95,8 +95,8 @@
 		How can we balance the needs of individuals and groups? When needs come into conflict, can we
 		find creative positive-sum solutions? How can we design technology that respects and reinforces
 		our personal consent boundaries? Should we make social contracts more explicit? Is our
-		technology working for our personal and collective benefit? If not, why not, and how can we fix
-		it? What false stories and invisible assumptions are blocking our imaginations?
+		technology working for our personal and collective benefit? If sometimes not, why not, and how
+		can we fix it? What false stories and invisible assumptions are blocking our imaginations?
 	</li>
 	<li>
 		What modes of cooperation are available to us where participation is positive sum,
