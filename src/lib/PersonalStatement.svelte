@@ -74,13 +74,6 @@
 		potential? What are the ripe opportunities and low hanging fruit?
 	</li>
 	<li>
-		How can we balance the needs of individuals and groups? When needs come into conflict, can we
-		find creative positive-sum solutions? How can we design technology that respects and reinforces
-		our personal consent boundaries? Should we make social contracts more explicit? Is our
-		technology working for our personal and collective benefit? If not, why not, and how can we fix
-		it? What false stories and invisible assumptions are blocking our imaginations?
-	</li>
-	<li>
 		What are the interesting and useful frontiers of digital mediums? What fun creative tools can we
 		make? How can we include more people in designing, making, and sharing the building blocks of
 		digital mediums? How can we make software systems that afford programming powers in everyday
@@ -97,6 +90,13 @@
 		make power dynamics in groups more explicit? What does it mean for democratic community
 		governance to have desirable dynamics around labor and power? In what ways can we practice
 		low-stakes democracy so we're better at it when the stakes are higher?
+	</li>
+	<li>
+		How can we balance the needs of individuals and groups? When needs come into conflict, can we
+		find creative positive-sum solutions? How can we design technology that respects and reinforces
+		our personal consent boundaries? Should we make social contracts more explicit? Is our
+		technology working for our personal and collective benefit? If not, why not, and how can we fix
+		it? What false stories and invisible assumptions are blocking our imaginations?
 	</li>
 	<li>
 		What modes of cooperation are available to us where participation is positive sum,
