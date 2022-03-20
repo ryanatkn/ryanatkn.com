@@ -132,8 +132,8 @@
 <p>Some of my public collaborations include:</p>
 <ul>
 	<li>
-		<a href="https://github.com/ryanatkn">my GitHub repos</a> which are mostly web apps; I'd be interested
-		in interacting on any that aren't archived
+		<a href="https://github.com/ryanatkn">my GitHub repos</a> which are mostly web apps; I'm interested
+		in your input on any that aren't archived
 	</li>
 	<li>
 		the Felt.dev <a href="https://www.felt.dev/sketch/onboard/">Consentful Onboarding Sketch</a>

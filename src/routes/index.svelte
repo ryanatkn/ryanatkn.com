@@ -1,7 +1,7 @@
 <script lang="ts">
-	import Header from '$lib/app/Header.svelte';
-	import Footer from '$lib/app/Footer.svelte';
-	import PersonalStatement from '$lib/app/PersonalStatement.svelte';
+	import Header from '$lib/Header.svelte';
+	import Footer from '$lib/Footer.svelte';
+	import PersonalStatement from '$lib/PersonalStatement.svelte';
 </script>
 
 <main>

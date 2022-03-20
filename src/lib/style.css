@@ -1,0 +1,4 @@
+/* TODO upstream a similar style tweak to Felt */
+.markup h2 {
+	margin-top: var(--spacing_xl3);
+}

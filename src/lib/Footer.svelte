@@ -1,6 +1,6 @@
 <script lang="ts">
-	export let src: string = '/favicon.png';
-	export let alt: string = 'my avatar image';
+	export let src = '/favicon.png';
+	export let alt = 'my avatar image';
 </script>
 
 <footer>
