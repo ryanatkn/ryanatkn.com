@@ -66,7 +66,7 @@
 
 <ul>
 	<li>
-		What roles can and should technology play to improve our communication, relationships, health
+		What roles can and should technology play to improve our communication and relationships, health
 		and wellbeing, and social and physical ecologies? Are we building towards a more just world? Do
 		our systems make us more responsible for negative externalities? How can we ensure our efforts
 		reduce inequalities and increase agency? What are our blind spots, and what perspectives are we
@@ -84,12 +84,12 @@
 	<li>
 		How can we grow sustainable and ever-evolving institutions to protect the things we care about?
 		How can we structure and develop organizations to achieve better outcomes while supporting
-		individual agency and autonomy? What forms of participation work for the majority of us that
-		aren't highly motivated? How can technology help? How can we build robust trusted networks? What
-		tools can we design to improve collective decision making and shared understanding? How can we
-		make power dynamics in groups more explicit? What does it mean for democratic community
-		governance to have desirable dynamics around labor and power? In what ways can we practice
-		low-stakes democracy so we're better at it when the stakes are higher?
+		individual agency and autonomy? How can we build robust trusted networks? What forms of
+		participation work for the majority of us that aren't highly motivated? How can we all be better
+		informed with minimal effort? What tools can we design to improve collective decision making and
+		shared understanding? How can we make power dynamics in groups more explicit? What does it mean
+		for democratic community governance to have desirable dynamics around labor and power? In what
+		ways can we practice low-stakes democracy so we're better at it when the stakes are higher?
 	</li>
 	<li>
 		How can we balance the needs of individuals and groups? When needs come into conflict, can we
