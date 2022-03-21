@@ -93,10 +93,11 @@
 	</li>
 	<li>
 		How can we balance the needs of individuals and groups? When needs come into conflict, can we
-		find creative positive-sum solutions? How can we design technology that respects and reinforces
-		our personal consent boundaries? Should we make social contracts more explicit? Is our
-		technology working for our personal and collective benefit? If sometimes not, why not, and how
-		can we fix it? What false stories and invisible assumptions are blocking our imaginations?
+		find creative positive-sum solutions? Like, how can we all just get along? How can we design
+		technology that respects and reinforces our personal consent boundaries? How can we make social
+		contracts more explicit and innovate new ones? Is our technology working for our personal and
+		collective benefit? If sometimes not, why not, and how can we fix it? What false stories and
+		invisible assumptions are blocking our imaginations?
 	</li>
 	<li>
 		What modes of cooperation are available to us where participation is positive sum,
