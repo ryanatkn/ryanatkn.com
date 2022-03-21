@@ -114,7 +114,8 @@
 <ul>
 	<li>free and open source software and data</li>
 	<li>
-		the web, the <a href="https://getdweb.net/principles/">DWeb Principles</a>, and the
+		the web, the <a href="https://getdweb.net/principles/">DWeb Principles</a>, the
+		<a href="https://santaclaraprinciples.org">Santa Clara Principles</a>, and the
 		<a href="https://wikipedia.org/wiki/Rochdale_Principles">Rochdale Principles</a>
 	</li>
 	<li>
