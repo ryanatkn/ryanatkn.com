@@ -1,3 +1,8 @@
+<!-- TODO weird bug in sveltekit where this specifically errors on click --
+	it's not fixed by adding a trailing slash, and uhh, not sure what else it could be,
+	so using target="_blank" for now
+-->
+
 <h2>
 	Welcome <span style="font-size: var(--font_size_xl5)">🐢</span>
 </h2>
@@ -15,11 +20,12 @@
 
 <ul>
 	<li>
-		<a href="mailto:mail@ryanatkn.com">mail@ryanatkn.com</a>
+		<a target="_blank" rel="noreferrer" href="mailto:mail@ryanatkn.com">mail@ryanatkn.com</a>
 	</li>
 	<li>
-		@ryanatkn on <a href="https://github.com/ryanatkn">GitHub</a> and
-		<a href="https://twitter.com/ryanatkn">Twitter</a>
+		@ryanatkn on <a target="_blank" rel="noreferrer" href="https://github.com/ryanatkn">GitHub</a>
+		and
+		<a target="_blank" rel="noreferrer" href="https://twitter.com/ryanatkn">Twitter</a>
 	</li>
 </ul>
 
@@ -27,22 +33,33 @@
 
 <ul>
 	<li>
-		<a href="https://felt.social">@feltcoop</a> — a pre-alpha
-		<a href="https://platform.coop">platform co-op</a> making free and open source community
-		software (<a href="https://github.com/feltcoop">GitHub</a>,
-		<a href="https://twitter.com/feltcoop">Twitter</a>,
-		<a href="mailto:ryan@felt.social">ryan@felt.social</a>,
-		<a href="mailto:team@felt.social">team@felt.social</a>)
+		<a target="_blank" rel="noreferrer" href="https://felt.social">@feltcoop</a> — a pre-alpha
+		<a target="_blank" rel="noreferrer" href="https://platform.coop">platform co-op</a> making free
+		and open source community software (<a
+			target="_blank"
+			rel="noreferrer"
+			href="https://github.com/feltcoop">GitHub</a
+		>,
+		<a target="_blank" rel="noreferrer" href="https://twitter.com/feltcoop">Twitter</a>,
+		<a target="_blank" rel="noreferrer" href="mailto:ryan@felt.social">ryan@felt.social</a>,
+		<a target="_blank" rel="noreferrer" href="mailto:team@felt.social">team@felt.social</a>)
 	</li>
 	<li>
-		<a href="https://www.cosmicplayground.org">cosmicplayground.org</a> — for fun and learning,
+		<a target="_blank" rel="noreferrer" href="https://www.cosmicplayground.org"
+			>cosmicplayground.org</a
+		>
+		— for fun and learning,
 		<em>"tools and toys for expanding minds"</em> (<a
 			href="https://github.com/ryanatkn/cosmicplayground">GitHub</a
 		>)
 	</li>
 	<li>
-		<a href="https://www.spiderspace.org">spiderspace.org</a> — web prototypes that aren't ready for
-		daylight (<a href="https://github.com/spiderspace">GitHub</a>)
+		<a target="_blank" rel="noreferrer" href="https://www.spiderspace.org">spiderspace.org</a> — web
+		prototypes that aren't ready for daylight (<a
+			target="_blank"
+			rel="noreferrer"
+			href="https://github.com/spiderspace">GitHub</a
+		>)
 	</li>
 </ul>
 
@@ -114,45 +131,61 @@
 <ul>
 	<li>free and open source software and data</li>
 	<li>
-		the web, the <a href="https://getdweb.net/principles/">DWeb Principles</a>, the
-		<!-- TODO weird bug in sveltekit where this specifically errors on click --
-		it's not fixed by adding a trailing slash, and uhh, not sure what else it could be,
-		so using target="_blank" for now -->
-		<a href="https://santaclaraprinciples.org" target="_blank">Santa Clara Principles</a>, and the
-		<a href="https://wikipedia.org/wiki/Rochdale_Principles">Rochdale Principles</a>
+		the web, the <a target="_blank" rel="noreferrer" href="https://getdweb.net/principles/"
+			>DWeb Principles</a
+		>, the
+		<a target="_blank" rel="noreferrer" href="https://santaclaraprinciples.org"
+			>Santa Clara Principles</a
+		>, and the
+		<a target="_blank" rel="noreferrer" href="https://wikipedia.org/wiki/Rochdale_Principles"
+			>Rochdale Principles</a
+		>
 	</li>
 	<li>
-		<a href="https://svelte.dev">Svelte</a> and <a href="https://kit.svelte.dev">SvelteKit</a>,
-		TypeScript, Node, Postgres
+		<a target="_blank" rel="noreferrer" href="https://svelte.dev">Svelte</a> and
+		<a target="_blank" rel="noreferrer" href="https://kit.svelte.dev">SvelteKit</a>, TypeScript,
+		Node, Postgres
 	</li>
 	<li>
-		<a href="https://consentful.systems">consentful.systems</a> and
-		<a href="https://www.consentfultech.io">The Consentful Tech Project</a>
+		<a target="_blank" rel="noreferrer" href="https://consentful.systems">consentful.systems</a> and
+		<a target="_blank" rel="noreferrer" href="https://www.consentfultech.io"
+			>The Consentful Tech Project</a
+		>
 	</li>
 	<li>
-		<a href="https://metagov.org">The Metagovernance Project</a> and
-		<a href="https://communityrule.info">CommunityRule</a>
+		<a target="_blank" rel="noreferrer" href="https://metagov.org">The Metagovernance Project</a>
+		and
+		<a target="_blank" rel="noreferrer" href="https://communityrule.info">CommunityRule</a>
 	</li>
 </ul>
 <p>Some of my public collaborations include:</p>
 <ul>
 	<li>
-		<a href="https://github.com/ryanatkn">my GitHub repos</a> which are mostly web apps; I'm interested
-		in your input on any that aren't archived
+		<a target="_blank" rel="noreferrer" href="https://github.com/ryanatkn">my GitHub repos</a> which
+		are mostly web apps; I'm interested in your input on any that aren't archived
 	</li>
 	<li>
-		the Felt.dev <a href="https://www.felt.dev/sketch/onboard/">Consentful Onboarding Sketch</a>
-		inspired by and in cooperation with <a href="https://consentful.systems">consentful.systems</a>
+		the Felt.dev <a target="_blank" rel="noreferrer" href="https://www.felt.dev/sketch/onboard/"
+			>Consentful Onboarding Sketch</a
+		>
+		inspired by and in cooperation with
+		<a target="_blank" rel="noreferrer" href="https://consentful.systems">consentful.systems</a>
 	</li>
 	<li>
-		<a href="https://www.cosmicplayground.org">cosmicplayground.org</a> for coding and refactoring a
-		web app with
-		<a href="https://svelte.dev">Svelte</a>, <a href="https://kit.svelte.dev">SvelteKit</a>, and
-		TypeScript
+		<a target="_blank" rel="noreferrer" href="https://www.cosmicplayground.org"
+			>cosmicplayground.org</a
+		>
+		for coding and refactoring a web app with
+		<a target="_blank" rel="noreferrer" href="https://svelte.dev">Svelte</a>,
+		<a target="_blank" rel="noreferrer" href="https://kit.svelte.dev">SvelteKit</a>, and TypeScript
 	</li>
 	<li>
 		the
-		<a href="https://github.com/spiderspace/spiderspace/discussions">spiderspace discussions</a>
+		<a
+			target="_blank"
+			rel="noreferrer"
+			href="https://github.com/spiderspace/spiderspace/discussions">spiderspace discussions</a
+		>
 		for web tech prototypes
 	</li>
 </ul>
@@ -160,16 +193,31 @@
 <h2>Contact:</h2>
 <ul>
 	<li>
-		email me at <a href="mailto:mail@ryanatkn.com">mail@ryanatkn.com</a>
+		email me at <a target="_blank" rel="noreferrer" href="mailto:mail@ryanatkn.com"
+			>mail@ryanatkn.com</a
+		>
 	</li>
 	<li>
-		join me doing open source on <a href="https://github.com/ryanatkn">GitHub</a>, like the
-		<a href="https://github.com/spiderspace/spiderspace/discussions">spiderspace discussions</a> or
-		<a href="https://github.com/ryanatkn/cosmicplayground">cosmicplayground</a>
+		join me doing open source on <a
+			target="_blank"
+			rel="noreferrer"
+			href="https://github.com/ryanatkn">GitHub</a
+		>, like the
+		<a
+			target="_blank"
+			rel="noreferrer"
+			href="https://github.com/spiderspace/spiderspace/discussions">spiderspace discussions</a
+		>
+		or
+		<a target="_blank" rel="noreferrer" href="https://github.com/ryanatkn/cosmicplayground"
+			>cosmicplayground</a
+		>
 		<small>(TODO and Felt once we figure out what that looks like)</small>
 	</li>
 	<li>
-		public social media on <a href="https://twitter.com/ryanatkn">Twitter</a>
+		public social media on <a target="_blank" rel="noreferrer" href="https://twitter.com/ryanatkn"
+			>Twitter</a
+		>
 		<small>(TODO and Mastodon/Matrix?)</small>
 	</li>
 </ul>
