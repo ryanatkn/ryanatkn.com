@@ -115,7 +115,10 @@
 	<li>free and open source software and data</li>
 	<li>
 		the web, the <a href="https://getdweb.net/principles/">DWeb Principles</a>, the
-		<a href="https://santaclaraprinciples.org">Santa Clara Principles</a>, and the
+		<!-- TODO weird bug in sveltekit where this specifically errors on click --
+		it's not fixed by adding a trailing slash, and uhh, not sure what else it could be,
+		so using target="_blank" for now -->
+		<a href="https://santaclaraprinciples.org" target="_blank">Santa Clara Principles</a>, and the
 		<a href="https://wikipedia.org/wiki/Rochdale_Principles">Rochdale Principles</a>
 	</li>
 	<li>
