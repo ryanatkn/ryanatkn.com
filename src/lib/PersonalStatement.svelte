@@ -1,7 +1,10 @@
 <blockquote class="panel-inset">
-	hello web surfer! You've reached the web site of Ryan Atkinson. He's an open source web developer
-	interested in collaborative digital mediums and realizing more of their potential to help us live
-	well 🐢🏞
+	<p>
+		hello web surfer! You've reached the web site of Ryan Atkinson. He's an open source web
+		developer interested in collaborative digital mediums and realizing more of their potential to
+		help us live well
+	</p>
+	<p class="emojis panel-outset">🏔⛰🏞🐢🌲🥬🌳⛰</p>
 </blockquote>
 
 <p>
@@ -57,8 +60,8 @@
 	<li>networked trust and safety</li>
 	<li>small scale groups with strong bonds</li>
 	<li>large scale groups with scalable interactivity</li>
-	<li>being intentional about the systems and games we want</li>
-	<li>the intersections of the above^^</li>
+	<li>how to bridge the technical and nontechnical worlds</li>
+	<li>how to build powerful user interfaces for working with information</li>
 </ul>
 
 <h2>Questions I'm asking:</h2>
@@ -161,10 +164,10 @@
 		email me at <a href="mailto:mail@ryanatkn.com">mail@ryanatkn.com</a>
 	</li>
 	<li>
-		join me doing open source on <a href="https://github.com/ryanatkn">GitHub</a>, like the
-		<a href="https://github.com/spiderspace/spiderspace/discussions">spiderspace discussions</a>
-		or
+		join me doing open source on <a href="https://github.com/ryanatkn">GitHub</a>, like
 		<a href="https://github.com/ryanatkn/cosmicplayground">cosmicplayground</a>
+		or the
+		<a href="https://github.com/spiderspace/spiderspace/discussions">spiderspace discussions</a>
 		<small>(TODO and Felt once we figure out what that looks like)</small>
 	</li>
 	<li>
@@ -172,3 +175,17 @@
 		<small>(TODO and Mastodon/Matrix?)</small>
 	</li>
 </ul>
+
+<style>
+	blockquote {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.emojis {
+		font-size: 3em;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+</style>
