@@ -1,10 +1,7 @@
-<h2>
-	Welcome <span style="font-size: var(--font_size_xl5)">🐢</span>
-</h2>
 <blockquote class="panel-inset">
 	hello web surfer! You've reached the web site of Ryan Atkinson. He's an open source web developer
 	interested in collaborative digital mediums and realizing more of their potential to help us live
-	well.
+	well 🐢🏞
 </blockquote>
 
 <p>
