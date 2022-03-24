@@ -1,11 +1,11 @@
 <h2>
 	Welcome <span style="font-size: var(--font_size_xl5)">🐢</span>
 </h2>
-<p>
+<blockquote class="panel-inset">
 	hello web surfer! You've reached the web site of Ryan Atkinson. He's an open source web developer
 	interested in collaborative digital mediums and realizing more of their potential to help us live
 	well.
-</p>
+</blockquote>
 
 <p>
 	My main skill is coding frontend web apps, and I know enough backend and database stuff to make
@@ -107,7 +107,7 @@
 		where is there room for improvement? How can we get more of them? Who is being systemically
 		excluded from participating, and what are the best remedies? What are some optimistic visions of
 		a vibrant and benevolent commons? How can we make our communities and worlds more safe,
-		welcoming, kind, fair, fun, and fruitful?
+		welcoming, kind, fair, fun, and adventuresome?
 	</li>
 </ul>
 
