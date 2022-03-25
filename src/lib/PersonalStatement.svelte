@@ -107,7 +107,7 @@
 		where is there room for improvement? How can we get more of them? Who is being systemically
 		excluded from participating, and what are the best remedies? What are some optimistic visions of
 		a vibrant and benevolent commons? How can we make our communities and worlds more safe,
-		welcoming, kind, fair, fun, and adventuresome?
+		welcoming, kind, fair, joyful, and adventuresome?
 	</li>
 </ul>
 
