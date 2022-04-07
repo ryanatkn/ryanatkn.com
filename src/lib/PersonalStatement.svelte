@@ -68,7 +68,7 @@
 
 <ul>
 	<li>
-		How can we design our technology to bring out the best in ourselves? What roles can and should
+		How can we design our technologies to bring out the best in ourselves? What roles can and should
 		technology play to improve our communication and relationships, health and wellbeing, and social
 		and physical ecologies? Are we building towards a more just world? Do our systems make us more
 		responsible for negative externalities? How can we ensure our efforts reduce inequalities and
