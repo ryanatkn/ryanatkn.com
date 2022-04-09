@@ -68,13 +68,15 @@
 
 <ul>
 	<li>
-		How can we design our technologies to bring out the best in ourselves? What roles can and should
-		technology play to improve our communication and relationships, health and wellbeing, and social
-		and physical ecologies? Are we building towards a more just world? Do our systems make us more
-		responsible for negative externalities? How can we ensure our efforts reduce inequalities and
-		increase agency? What are our blind spots, and what perspectives are we missing and minimizing?
-		What else do we need to realize more of technology's liberatory potential? What are the ripe
-		opportunities and low hanging fruit?
+		How can we design our technologies to bring out the best in ourselves? Can't we design our
+		social media to help us say "thank you" in better understood and felt ways? What other good
+		qualities can be evoked from us when we think in those terms? Where are the boundaries to be
+		aware of? What roles can and should technology play to improve our communication and
+		relationships, health and wellbeing, and social and physical ecologies? Are we building towards
+		a more just world? Do our systems make us more responsible for negative externalities? How can
+		we ensure our efforts reduce inequalities and increase agency? What are our blind spots, and
+		what perspectives are we missing and minimizing? What else do we need to realize more of
+		technology's liberatory potential? What are the ripe opportunities and low hanging fruit?
 	</li>
 	<li>
 		What are the interesting and useful frontiers of digital mediums? What fun creative tools can we
