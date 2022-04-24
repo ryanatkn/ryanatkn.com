@@ -7,56 +7,65 @@
 	<p class="emojis panel-outset">🏔⛰🏞🐢🌲🥬🌳⛰</p>
 </blockquote>
 
-<p>
-	My main skill is coding frontend web apps, and I do just enough backend and database stuff to make
-	frontends. I enjoy trying to make powerful tools that are easy to use, and I have a geeky interest
-	in user interfaces and social systems.
-</p>
-
-<ul>
-	<li>
-		<a href="mailto:mail@ryanatkn.com">mail@ryanatkn.com</a>
-	</li>
-	<li>
-		@ryanatkn on <a href="https://github.com/ryanatkn">GitHub</a>
-		and
-		<a href="https://twitter.com/ryanatkn">Twitter</a>
-	</li>
-</ul>
+<section>
+	<p>
+		My main skill is coding frontend web apps, and I do just enough backend and database stuff to
+		make frontends. I enjoy trying to make powerful tools that are easy to use, and I have a geeky
+		interest in user interfaces and social systems.
+	</p>
+	<ul>
+		<li>
+			<a href="mailto:mail@ryanatkn.com">mail@ryanatkn.com</a>
+		</li>
+		<li>
+			@ryanatkn on <a href="https://github.com/ryanatkn">GitHub</a>
+			and
+			<a href="https://twitter.com/ryanatkn">Twitter</a>
+		</li>
+	</ul>
+</section>
 
 <h2>Projects I'm working on:</h2>
 
-<ul>
-	<li>
-		<a href="https://felt.social">@feltcoop</a> — a
-		<a href="https://wikipedia.org/wiki/Software_release_life_cycle">pre-alpha</a>
-		<a href="https://platform.coop">platform co-op</a> making free and open source community
-		software (<a href="https://github.com/feltcoop">GitHub</a>,
-		<a href="https://twitter.com/feltcoop">Twitter</a>,
-		<a href="mailto:ryan@felt.social">ryan@felt.social</a>,
-		<a href="mailto:team@felt.social">team@felt.social</a>)
-	</li>
-	<li>
-		<a href="https://www.cosmicplayground.org">cosmicplayground.org</a>
-		— hobby project for fun and learning,
-		<em>"tools and toys for expanding minds"</em>
-	</li>
-	<li>
-		@blitwagon — open source hobbyist persona at <a href="https://www.blitwagon.net"
-			>blitwagon.net</a
-		>
-		(<a href="https://github.com/blitwagon">GitHub</a>,
-		<a href="https://twitter.com/blitwagon">Twitter</a>)
-	</li>
-	<li>
-		<a href="https://www.spiderspace.org">spiderspace.org</a> — web prototypes that aren't ready for
-		daylight (<a href="https://github.com/spiderspace">GitHub</a>)
-	</li>
-</ul>
+<table>
+	<tbody
+		><tr
+			><td><a href="https://felt.social">@feltcoop</a></td><td
+				>a
+				<a href="https://wikipedia.org/wiki/Software_release_life_cycle">pre-alpha</a>
+				<a href="https://platform.coop">platform co-op</a> making free and open source community software</td
+			><td
+				><a href="https://github.com/feltcoop">GitHub</a>,
+				<a href="https://twitter.com/feltcoop">Twitter</a>,
+				<a href="mailto:ryan@felt.social">ryan@felt.social</a>,
+				<a href="mailto:team@felt.social">team@felt.social</a></td
+			></tr
+		><tr
+			><td><a href="https://www.cosmicplayground.org">cosmicplayground.org</a></td><td
+				>hobby project for fun and learning,
+				<em>"tools and toys for expanding minds"</em></td
+			><td
+				><a href="https://github.com/cosmicplayground">GitHub</a>,
+				<a href="https://twitter.com/cosmicplaygroun">Twitter</a></td
+			></tr
+		><tr
+			><td><a href="https://www.blitwagon.net">blitwagon.net</a></td><td
+				>open source hobbyist persona</td
+			><td
+				><a href="https://github.com/blitwagon">GitHub</a>,
+				<a href="https://twitter.com/blitwagon">Twitter</a></td
+			></tr
+		><tr
+			><td><a href="https://www.spiderspace.org">spiderspace.org</a></td><td
+				>web prototypes that aren't ready for daylight</td
+			><td><a href="https://github.com/spiderspace">GitHub</a></td></tr
+		></tbody
+	>
+</table>
 
 <section>
 	<details>
-		<summary><h3>I'm curious about:</h3></summary>
+		<summary><h2>I'm curious about:</h2></summary>
 
 		<ul>
 			<li>creative tools</li>
@@ -72,9 +81,10 @@
 			<li>how to build powerful user interfaces for working with information</li>
 		</ul>
 	</details>
-
+</section>
+<section>
 	<details>
-		<summary><h3>Questions I'm asking:</h3></summary>
+		<summary><h2>Questions I'm asking:</h2></summary>
 
 		<ul>
 			<li>
@@ -125,9 +135,10 @@
 			</li>
 		</ul>
 	</details>
-
+</section>
+<section>
 	<details>
-		<summary><h3>Related things I like:</h3></summary>
+		<summary><h2>Related things I like:</h2></summary>
 
 		<ul>
 			<li>free and open source software and data</li>
@@ -183,11 +194,14 @@
 		justify-content: center;
 		align-items: center;
 	}
-	summary h3 {
+	summary h2 {
 		display: inline;
-		font-weight: 400;
+		margin-top: 0;
 	}
 	section {
-		margin: var(--spacing_xl) 0 0 0;
+		margin: var(--spacing_xl3) 0 0 0;
+	}
+	td:first-child {
+		white-space: nowrap;
 	}
 </style>

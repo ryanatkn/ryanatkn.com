@@ -2,3 +2,17 @@
 .markup h2 {
 	margin-top: var(--spacing_xl3);
 }
+
+table {
+	border: var(--border);
+	border-color: var(--border_color_lighter);
+	border-radius: var(--border_radius);
+}
+thead tr {
+	background-color: var(--tint_dark_1);
+}
+td,
+th {
+	padding: var(--spacing_sm);
+	word-break: break-word;
+}
