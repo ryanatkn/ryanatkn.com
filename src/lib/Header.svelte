@@ -31,15 +31,6 @@
 		justify-content: center;
 		align-items: center;
 	}
-	h1 {
-		position: relative;
-		z-index: 1;
-		color: #fff;
-		font-family: var(--font_family_mono);
-		font-size: var(--font_size_xl3);
-		font-weight: var(--font_weight_5);
-		white-space: nowrap;
-	}
 	img {
 		width: var(--img_size);
 		height: var(--img_size);

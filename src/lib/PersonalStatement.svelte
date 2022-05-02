@@ -70,7 +70,7 @@
 <h2>Contact:</h2>
 <ul>
 	<li>
-		email me at <a href="mailto:mail@ryanatkn.com">mail@ryanatkn.com</a> (not looking for work)
+		email <a href="mailto:mail@ryanatkn.com">mail@ryanatkn.com</a> (not looking for work)
 	</li>
 	<li>
 		join me doing open source on <a href="https://github.com/ryanatkn">GitHub</a>, like
@@ -96,10 +96,6 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-	}
-	summary h2 {
-		display: inline;
-		margin-top: 0;
 	}
 	section {
 		margin: var(--spacing_xl3) 0 0 0;
