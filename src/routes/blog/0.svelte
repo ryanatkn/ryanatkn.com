@@ -53,7 +53,8 @@
 	<p>
 		e.g. devs get open source where they can author and extend components, and endusers get a
 		composable text language with a rich vocabulary that can be used to write chat messages, forum
-		and blog posts, todo items, and so on, and also construct the client's entire UI
+		and blog posts, todo items, and so on, and also construct both their social spaces and the
+		client's entire UI
 	</p>
 	<p>
 		We're calling it <a href="https://github.com/feltcoop/felt-server"
