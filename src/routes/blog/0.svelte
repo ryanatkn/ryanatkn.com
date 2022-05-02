@@ -37,7 +37,7 @@
 		please note this pre-alpha software should absolutely in no circumstances be piped data that you
 		don't want public, <strong>it is not yet secure</strong>
 	</blockquote>
-	<p>what are these underserved niches?</p>
+	<p>What are these underserved niches?</p>
 	<ul>
 		<li>small communities</li>
 		<li>
@@ -56,7 +56,7 @@
 		and blog posts, todo items, and so on, and also construct the client's entire UI
 	</p>
 	<p>
-		we're calling it <a href="https://github.com/feltcoop/felt-server"
+		We're calling it <a href="https://github.com/feltcoop/felt-server"
 			>"a tool for building and maintaining communities"</a
 		>:
 	</p>
@@ -76,34 +76,34 @@
 		scale to more users like blogs and similar web publishing, much for free thanks to SvelteKit
 	</p>
 	<blockquote>
-		today, felt-server only supports `@sveltejs/adapter-node` -- we'd like to be compatible with as
-		many of SvelteKit's adapters as possible, but that's a distant hope
+		Today, felt-server only supports `@sveltejs/adapter-node` -- we'd like to be compatible with as
+		many of SvelteKit's adapters as possible, but that's a distant hope.
 	</blockquote>
 	<p>
-		even though our code isn't pushing the boundaries of performance and enterprise readiness, we're
+		Even though our code isn't pushing the boundaries of performance and enterprise readiness, we're
 		trying to write it modularly & w/ good principles, like a unified serializable event stream for
-		the client and server, so better tools could be built on this foundation, we hope
+		the client and server, so better tools could be built on this foundation, we hope.
 	</p>
 	<p>
-		we also tried to be thoughtful about our tech stack, given the assumption that we'll be in the
-		JS+node+npm ecosystem
+		We also tried to be thoughtful about our tech stack, given the assumption that we'll be in the
+		JS+node+npm ecosystem.
 	</p>
 	<p>
-		one choice was to use SvelteKit, and although we don't yet use some of its flagship features, we
-		feel productive working with it and in awe of its flexibility and promise
+		One choice was to use SvelteKit, and although we don't yet use some of its flagship features, we
+		feel productive working with it and in awe of its flexibility and promise.
 	</p>
 	<p>
-		we'll use SvelteKit features like endpoints eventually; we may let 1.0 shake out because we're
-		deprioritizing full SSR
+		We'll use SvelteKit features like endpoints eventually; we may let 1.0 shake out because we're
+		deprioritizing full SSR.
 	</p>
 	<p>(btw, SvelteKit🧡🧡 it's so good)</p>
 	<blockquote>
-		though we have a centralized Node server today, one future possibility is to also support a
-		decentralized backend like Matrix
+		Though we have a centralized Node server today, one future possibility is to also support a
+		decentralized backend like Matrix.
 	</blockquote>
 	<hr />
 	<p>
-		one goal is to build software tools that anyone can use to explore the endless terrain of
+		One goal is to build software tools that anyone can use to explore the endless terrain of
 		collaborative experiences, so you could take a larger role in designing your media, if u want
 	</p>
 	<p>
@@ -111,59 +111,62 @@
 	</p>
 	<hr />
 	<p>
-		business model: no ads, no krypt0, <a href="https://en.wikipedia.org/wiki/MIT_License"
-			>free & fully open source</a
-		>; users pay for service & if it's sustainable we'll creatively subsidize users
+		<strong>business model</strong>: no ads, no krypt0,
+		<a href="https://en.wikipedia.org/wiki/MIT_License">free & fully open source</a>; users pay for
+		service & if it's sustainable we'll creatively subsidize users
 	</p>
 	<p>
-		ownership/control: self-funded worker co-op with plans to become a <a
-			href="https://platform.coop">platform co-op</a
-		>, is forprofit but co-op could choose to become a nonprofit
+		<strong>ownership/control</strong>: self-funded worker co-op with plans to become a
+		<a href="https://platform.coop">platform co-op</a>, is forprofit but co-op could choose to
+		become a nonprofit
 	</p>
 	<p>
-		how does this business model work, giving away the software for free? because the product we're
-		selling isn't the open source software, it's the service and network
+		How does this business model work, giving away the software for free? Because the product we're
+		selling isn't the open source software, it's the service and network.
 	</p>
 	<p>
-		we think we can reach sustainability at usercounts that look *very* small compared to a typical
-		ambitious startup
+		We think we can reach sustainability at usercounts that look *very* small compared to a typical
+		ambitious startup.
 	</p>
-	<p>we don't feel threatened by other service providers taking some or most of the pie</p>
+	<p>We don't feel threatened by other service providers taking some or most of the pie.</p>
 	<hr />
-	<p>what does success look like?</p>
+	<p>What does success look like?</p>
 	<p>
 		I would consider it a great success if one day, democratically elected experts make the
 		difficult operational decisions and I, web developer, get to stick to webdev
 	</p>
-	<p>today? structuring incentives to create the best software we can & executing capably</p>
+	<p>
+		And success today? Structuring incentives to create the best software we can & executing
+		capably, while enjoying the process and focusing on principles.
+	</p>
 	<hr />
 	<p>
-		one aspect of community software full of interesting opportunities is how to govern shared
+		One aspect of community software full of interesting opportunities is how to govern shared
 		spaces -- exercising power, communicating rules and nudging norms, making collective decisions,
-		scripting governance processes over time, etc
+		scripting governance processes over time, etc.
 	</p>
-	<p>we'll give this a lot of attention before beta</p>
+	<p>We'll give this a lot of attention before beta.</p>
 	<hr />
 	<p>
-		as toolmakers we want to help users execute their own visions. we'll provide defaults &
-		templates, and users can modify the software for their own needs
+		As toolmakers we want to help users execute their own visions. We'll provide defaults &
+		templates, and users can modify the software for their own needs.
 	</p>
 	<p>
-		we'll support simple+scalable static web publishing like blogs, along with hobby-grade realtime
-		social experiences & games
+		We'll support simple+scalable static web publishing like blogs, along with hobby-grade realtime
+		social experiences & games.
 	</p>
-	<p>as users, we want a professional, trusted, incentives-aligned operator & we'll pay for it</p>
+	<p>As users, we want a professional, trusted, incentives-aligned operator & we'll pay for it.</p>
 	<p>
-		as service providers, we want to build reliable orgs to operate infra to help our users succeed
+		As service providers, we want to build reliable orgs to operate infra to help our users succeed.
 	</p>
 	<p>
-		as devs, we want to build great software for our users, prioritizing endusers over operators
+		As devs, we want to build great software for our users, prioritizing endusers over operators
 	</p>
 	<hr />
 	<p>
-		the idea is to make the software we want to use, at <a href="https://www.felt.social"
+		The idea is to make the software we want to use, at <a href="https://www.felt.social"
 			>the company</a
-		> we want to work for, providing the service we want to pay for
+		> we want to work for, providing the service we want to pay for.
 	</p>
 	<hr />
 	<blockquote>
