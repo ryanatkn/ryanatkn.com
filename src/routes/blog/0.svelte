@@ -35,7 +35,7 @@
 	</ul>
 	<blockquote>
 		please note this pre-alpha software should absolutely in no circumstances be piped data that you
-		don't want public
+		don't want public, <strong>it is not yet secure</strong>
 	</blockquote>
 	<p>what are these underserved niches?</p>
 	<ul>
