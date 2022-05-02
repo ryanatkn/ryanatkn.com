@@ -49,15 +49,17 @@
 		<li>
 			fullstack modding, so devs and endusers have proper access and power over their UX, so we
 			bridge more of the gap between programming & using
+			<ul>
+				<li>devs get open source where they can author and extend components</li>
+				<li>
+					endusers get a composable text language with a rich vocabulary that can be used to write
+					chat messages, forum and blog posts, todo items, and so on, and also construct both their
+					social spaces and the client's entire UI
+				</li>
+				<li>security and performance are unfortunate constraints and sometimes buzzkills :\</li>
+			</ul>
 		</li>
 	</ul>
-	<blockquote>unfortunately, coolness is often limited by security</blockquote>
-	<p>
-		e.g. devs get open source where they can author and extend components, and endusers get a
-		composable text language with a rich vocabulary that can be used to write chat messages, forum
-		and blog posts, todo items, and so on, and also construct both their social spaces and the
-		client's entire UI
-	</p>
 	<p>
 		We're calling it <a href="https://github.com/feltcoop/felt-server"
 			>"a tool for building and maintaining communities"</a
