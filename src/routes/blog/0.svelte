@@ -50,7 +50,9 @@
 			fullstack modding, so devs and endusers have proper access and power over their UX, so we
 			bridge more of the gap between programming & using
 			<ul>
-				<li>devs get open source where they can author and extend components</li>
+				<li>
+					devs get open source where they can author and extend components, clients, and servers
+				</li>
 				<li>
 					endusers get a composable text language with a rich vocabulary that can be used to write
 					chat messages, forum and blog posts, todo items, and so on, and also construct both their
