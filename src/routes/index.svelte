@@ -5,6 +5,7 @@
 	import Header from '$lib/Header.svelte';
 	import Footer from '$lib/Footer.svelte';
 	import PersonalStatement from '$lib/PersonalStatement.svelte';
+	import Favicon from '$lib/Favicon.svelte';
 </script>
 
 <main>
@@ -12,7 +13,9 @@
 	<div class="column markup">
 		<PersonalStatement />
 	</div>
-	<LinkPath path={$page.url.pathname} selectedPath={$page.url.pathname}>ryanatkn.com🥬</LinkPath>
+	<LinkPath path={$page.url.pathname} selectedPath={$page.url.pathname}
+		>ryanatkn.com<Favicon /></LinkPath
+	>
 	<Footer />
 </main>
 

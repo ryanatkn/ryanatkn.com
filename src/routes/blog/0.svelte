@@ -1,10 +1,12 @@
 <script lang="ts">
 	import LinkPath from '@feltcoop/felt/ui/LinkPath.svelte';
 	import {page} from '$app/stores';
+
+	import Favicon from '$lib/Favicon.svelte';
 </script>
 
 <div class="blog">
-	<LinkPath path={$page.url.pathname}>🥬</LinkPath>
+	<LinkPath path={$page.url.pathname}><Favicon /></LinkPath>
 </div>
 
 <div class="markup">

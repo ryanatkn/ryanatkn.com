@@ -4,6 +4,7 @@
 
 	import Header from '$lib/Header.svelte';
 	import Footer from '$lib/Footer.svelte';
+	import Favicon from '$lib/Favicon.svelte';
 </script>
 
 <main>
@@ -11,7 +12,7 @@
 	<div class="column markup">
 		<slot />
 	</div>
-	<LinkPath path={$page.url.pathname} selectedPath={$page.url.pathname}>🥬</LinkPath>
+	<LinkPath path={$page.url.pathname} selectedPath={$page.url.pathname}><Favicon /></LinkPath>
 	<Footer />
 </main>
 
