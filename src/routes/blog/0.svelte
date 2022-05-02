@@ -28,7 +28,7 @@
 	<ul>
 		<li>
 			is a toolkit and server for building and maintaining communities, publishing to the web, and
-			and collaboratively working with information
+			collaboratively working with information
 		</li>
 		<li>is currently still pre-alpha, and we hope to reach alpha this year, beta optimistically</li>
 		<li>targets underserved niches</li>
