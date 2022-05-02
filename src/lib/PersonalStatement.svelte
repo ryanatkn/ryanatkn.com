@@ -51,7 +51,7 @@
 			></tr
 		><tr
 			><td><a href="https://www.spiderspace.org">spiderspace.org</a></td><td
-				>web prototypes that aren't ready for daylight</td
+				>web prototypes shy of daylight</td
 			><td><a href="https://github.com/spiderspace">GitHub</a></td></tr
 		></tbody
 	>
