@@ -107,7 +107,9 @@
 	<p>(btw, SvelteKit🧡🧡 it's so good)</p>
 	<blockquote>
 		Though we have a centralized Node server today, one future possibility is to also support a
-		decentralized backend like Matrix.
+		decentralized backend like Matrix. We're trying to follow <a
+			href="https://www.w3.org/TR/activitystreams-core/">the ActivityStreams vocabulary spec</a
+		> that's used in the fediverse and Mastodon.
 	</blockquote>
 	<hr />
 	<p>
