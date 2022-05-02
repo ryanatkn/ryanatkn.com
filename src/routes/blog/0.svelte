@@ -44,7 +44,7 @@
 		<li>small communities</li>
 		<li>
 			a single app with chats+forums+todos+etc that's perhaps less slick than each but far more
-			powerful in 1 (both realtime and asynchronous communications)
+			powerful in 1 -- both realtime and asynchronous communications, collaborative to the core
 		</li>
 		<li>
 			fullstack modding, so devs and endusers have proper access and power over their UX, so we
