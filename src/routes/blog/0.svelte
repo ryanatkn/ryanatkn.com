@@ -6,9 +6,10 @@
 			>@greatbaconbits</a
 		>
 		fulltime for a year & we <a href="https://twitter.com/feltcoop">@feltcoop</a> recently
-		<a href="https://twitter.com/feltcoop/status/1519703424433934336">tweeted about it</a>.
+		<a href="https://twitter.com/feltcoop/status/1519703424433934336">tweeted about it</a> and
+		<a href="https://tinyletter.com/FeltCoop">started a newsletter</a>.
 	</p>
-	<p><a href="https://github.com/feltcoop/felt-server">The software</a>💚:</p>
+	<p><a href="https://github.com/feltcoop/felt-server">The software</a>:</p>
 	<ul>
 		<li>
 			is a toolkit and server for building and maintaining communities, publishing to the web, and
@@ -99,39 +100,6 @@
 		capably, while enjoying the process, focusing on principles, and building good relationships.
 	</p>
 	<hr />
-	<p>More on the tech:</p>
-	<p>
-		Our focus on "small communities" relates to a deflating fact about our software: the realtime
-		stuff doesn't (yet?) scale. We're optimizing for realtime interactive social environments with
-		human-scale groups of people on a single machine w/ web tech. We also support non-realtime
-		usecases that scale to more users like blogs and similar web publishing, much for free thanks to
-		SvelteKit.
-	</p>
-	<blockquote>
-		Today, felt-server only supports `@sveltejs/adapter-node` -- we'd like to be compatible with as
-		many of SvelteKit's adapters as possible, but that's a distant hope.
-	</blockquote>
-	<p>
-		Even though our code isn't pushing the boundaries of performance and enterprise readiness, we're
-		trying to write it modularly & w/ good principles, like a unified serializable event stream for
-		the client and server, so better tools could be built on this foundation, we hope.
-	</p>
-	<p>
-		We also tried to be thoughtful about our tech stack, given the assumption that we'll be in the
-		JS+node+npm ecosystem.
-	</p>
-	<p>
-		One choice was to use SvelteKit, and although we don't yet use some of its flagship features, we
-		feel productive working with it and it's amazingly flexible. We'll use more of its features like
-		endpoints eventually; we may let 1.0 shake out because we're deprioritizing full SSR.
-	</p>
-	<blockquote>
-		Though we have a centralized Node server today, one future possibility is to also support a
-		decentralized backend like Matrix. We're trying to follow <a
-			href="https://www.w3.org/TR/activitystreams-core/">the ActivityStreams vocabulary spec</a
-		> that's used in the fediverse and Mastodon.
-	</blockquote>
-	<hr />
 	<p>
 		As toolmakers we want to help users execute their own visions. We'll provide defaults &
 		templates, and users can modify the software for their own needs.
@@ -149,16 +117,53 @@
 	</p>
 	<hr />
 	<p>
-		The idea is to make the software we want to use, at <a href="https://www.felt.social"
-			>the company</a
-		> we want to work for, providing the service we want to pay for.
+		The idea is to make <a href="https://github.com/feltcoop">the software</a> we want to use, at
+		<a href="https://www.felt.social">the company</a> we want to work for, providing the service we want
+		to pay for.
 	</p>
 	<hr />
-	<blockquote>
-		all of this is subject to change, because I'm just speaking as one member with no knowledge of
-		the future
-	</blockquote>
 	<p>
-		more here: <a href="https://github.com/feltcoop">github.com/feltcoop</a>
+		Of course, all of this is subject to change. I'm just speaking as one member with no knowledge
+		of the future.
 	</p>
+	<p>
+		More at <a href="https://github.com/feltcoop">github.com/feltcoop</a> and
+		<a href="https://www.felt.social">felt.social</a>
+	</p>
+	<hr />
+	<div class="markup panel-inset">
+		<p>More about the tech:</p>
+		<p>
+			Our focus on "small communities" relates to a deflating fact about our software: the realtime
+			stuff doesn't (yet?) scale. We're optimizing for realtime interactive social environments with
+			human-scale groups of people on a single machine w/ web tech. We also support non-realtime
+			usecases that scale to more users like blogs and similar web publishing, much for free thanks
+			to SvelteKit.
+		</p>
+		<blockquote>
+			Today, <a href="https://github.com/feltcoop/felt-server">felt-server</a> supports only
+			<code>@sveltejs/adapter-node</code> -- we'd like to be compatible with as many of SvelteKit's adapters
+			as possible, but that's a distant hope.
+		</blockquote>
+		<p>
+			Even though our code isn't pushing the boundaries of performance and enterprise readiness,
+			we're trying to write it modularly & w/ good principles, like a unified serializable event
+			stream for the client and server, so better tools could be built on this foundation, we hope.
+		</p>
+		<p>
+			We also tried to be thoughtful about our tech stack, given the assumption that we'll be in the
+			JS+node+npm ecosystem.
+		</p>
+		<p>
+			One choice was to use SvelteKit, and although we don't yet use some of its flagship features,
+			we feel productive working with it and it's amazingly flexible. We'll use more of its features
+			like endpoints eventually; we may let 1.0 shake out because we're deprioritizing full SSR.
+		</p>
+		<p>
+			Though we have a centralized Node server today, one future possibility is to also support a
+			decentralized backend like Matrix. We're trying to follow <a
+				href="https://www.w3.org/TR/activitystreams-core/">the ActivityStreams vocabulary spec</a
+			> that's used in the fediverse and Mastodon.
+		</p>
+	</div>
 </div>
