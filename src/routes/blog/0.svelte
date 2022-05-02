@@ -147,7 +147,7 @@
 	</p>
 	<p>
 		And success today? Structuring incentives to create the best software we can & executing
-		capably, while enjoying the process and focusing on principles.
+		capably, while enjoying the process, focusing on principles, and building good relationships.
 	</p>
 	<hr />
 	<p>
