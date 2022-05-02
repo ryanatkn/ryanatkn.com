@@ -1,4 +1,14 @@
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	min-height: 100%;
+}
+
 /* TODO upstream a similar style tweak to Felt */
+
 .markup h2 {
 	margin-top: var(--spacing_xl3);
 }
