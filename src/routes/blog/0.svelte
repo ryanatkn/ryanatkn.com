@@ -1,14 +1,3 @@
-<script lang="ts">
-	import LinkPath from '@feltcoop/felt/ui/LinkPath.svelte';
-	import {page} from '$app/stores';
-
-	import Favicon from '$lib/Favicon.svelte';
-</script>
-
-<div class="blog">
-	<LinkPath path={$page.url.pathname}><Favicon /></LinkPath>
-</div>
-
 <div class="markup">
 	<h1>What we're doing @feltcoop</h1>
 	<p>2022 May 1</p>
@@ -75,6 +64,48 @@
 		<li>goal is to become a <a href="https://platform.coop">platform co-op</a></li>
 	</ul>
 	<p>
+		We want to build software tools that anyone can use to explore the endless terrain of
+		collaborative experiences, so you could take a larger role in designing your media, if you want.
+		A key here is to make a great media sharing UX, so some % of ppl make+share useful+cool stuff🏞
+	</p>
+	<p>
+		One aspect of community software full of interesting opportunities is how to govern shared
+		spaces -- exercising power, communicating rules and nudging norms, making collective decisions,
+		scripting governance processes over time, etc. We'll give this a lot of attention before beta.
+	</p>
+	<hr />
+	<p>
+		<strong>business model</strong>: no ads, no krypt0,
+		<a href="https://en.wikipedia.org/wiki/MIT_License">free & fully open source</a>; users pay for
+		service & if it's sustainable we'll creatively subsidize users
+	</p>
+	<p>
+		<strong>ownership/control</strong>: self-funded worker co-op with plans to become a
+		<a href="https://platform.coop">platform co-op</a>, is forprofit but co-op could choose to
+		become a nonprofit
+	</p>
+	<p>
+		How does this business model work, giving away the software for free? Because the product we're
+		selling isn't the open source software, it's the service and network.
+	</p>
+	<p>
+		We think we can reach sustainability at usercounts that look *very* small compared to a typical
+		ambitious startup, and we don't feel threatened by other service providers taking some or most
+		of the pie. The terms we're competing on don't require that we have a monopoly on hosting the
+		service.
+	</p>
+	<p>So what does success look like?</p>
+	<p>
+		I would consider it a great success if one day, democratically elected experts make the
+		difficult operational decisions and I, web developer, get to stick to webdev
+	</p>
+	<p>
+		And success today? Structuring incentives to create the best software we can & executing
+		capably, while enjoying the process, focusing on principles, and building good relationships.
+	</p>
+	<hr />
+	<p>More on the tech:</p>
+	<p>
 		Our focus on "small communities" relates to a deflating fact about our software: the realtime
 		stuff doesn't (yet?) scale. We're optimizing for realtime interactive social environments with
 		human-scale groups of people on a single machine w/ web tech. We also support non-realtime
@@ -96,64 +127,15 @@
 	</p>
 	<p>
 		One choice was to use SvelteKit, and although we don't yet use some of its flagship features, we
-		feel productive working with it and in awe of its flexibility and promise.
+		feel productive working with it and it's amazingly flexible. We'll use more of its features like
+		endpoints eventually; we may let 1.0 shake out because we're deprioritizing full SSR.
 	</p>
-	<p>
-		We'll use SvelteKit features like endpoints eventually; we may let 1.0 shake out because we're
-		deprioritizing full SSR.
-	</p>
-	<p>(btw, SvelteKit🧡🧡 it's so good)</p>
 	<blockquote>
 		Though we have a centralized Node server today, one future possibility is to also support a
 		decentralized backend like Matrix. We're trying to follow <a
 			href="https://www.w3.org/TR/activitystreams-core/">the ActivityStreams vocabulary spec</a
 		> that's used in the fediverse and Mastodon.
 	</blockquote>
-	<hr />
-	<p>
-		One goal is to build software tools that anyone can use to explore the endless terrain of
-		collaborative experiences, so you could take a larger role in designing your media, if u want
-	</p>
-	<p>
-		a key here is to make a great media sharing UX, so some % of ppl make+share useful+cool stuff🏞
-	</p>
-	<hr />
-	<p>
-		<strong>business model</strong>: no ads, no krypt0,
-		<a href="https://en.wikipedia.org/wiki/MIT_License">free & fully open source</a>; users pay for
-		service & if it's sustainable we'll creatively subsidize users
-	</p>
-	<p>
-		<strong>ownership/control</strong>: self-funded worker co-op with plans to become a
-		<a href="https://platform.coop">platform co-op</a>, is forprofit but co-op could choose to
-		become a nonprofit
-	</p>
-	<p>
-		How does this business model work, giving away the software for free? Because the product we're
-		selling isn't the open source software, it's the service and network.
-	</p>
-	<p>
-		We think we can reach sustainability at usercounts that look *very* small compared to a typical
-		ambitious startup.
-	</p>
-	<p>We don't feel threatened by other service providers taking some or most of the pie.</p>
-	<hr />
-	<p>What does success look like?</p>
-	<p>
-		I would consider it a great success if one day, democratically elected experts make the
-		difficult operational decisions and I, web developer, get to stick to webdev
-	</p>
-	<p>
-		And success today? Structuring incentives to create the best software we can & executing
-		capably, while enjoying the process, focusing on principles, and building good relationships.
-	</p>
-	<hr />
-	<p>
-		One aspect of community software full of interesting opportunities is how to govern shared
-		spaces -- exercising power, communicating rules and nudging norms, making collective decisions,
-		scripting governance processes over time, etc.
-	</p>
-	<p>We'll give this a lot of attention before beta.</p>
 	<hr />
 	<p>
 		As toolmakers we want to help users execute their own visions. We'll provide defaults &
@@ -185,12 +167,3 @@
 		more here: <a href="https://github.com/feltcoop">github.com/feltcoop</a>
 	</p>
 </div>
-
-<style>
-	.blog {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		font-size: var(--font_size_xl3);
-	}
-</style>

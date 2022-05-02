@@ -9,6 +9,9 @@
 
 <main>
 	<Header />
+	<div class="blog">
+		<LinkPath path={$page.url.pathname}><Favicon /></LinkPath>
+	</div>
 	<div class="column markup">
 		<slot />
 	</div>
@@ -29,5 +32,11 @@
 	}
 	.column {
 		flex: 1;
+	}
+	.blog {
+		margin-top: var(--spacing_xl);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 </style>

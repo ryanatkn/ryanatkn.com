@@ -20,6 +20,10 @@
 <table>
 	<tbody
 		><tr
+			><td><a href="/blog">/blog</a></td><td>trying to explain myself in few words</td><td
+				><a href="/blog">/blog</a></td
+			></tr
+		><tr
 			><td><a href="https://felt.social">@feltcoop</a></td><td
 				>a
 				<a href="https://wikipedia.org/wiki/Software_release_life_cycle">pre-alpha</a>
@@ -44,10 +48,6 @@
 			><td
 				><a href="https://github.com/blitwagon">GitHub</a>,
 				<a href="https://twitter.com/blitwagon">Twitter</a></td
-			></tr
-		><tr
-			><td><a href="/blog">/blog</a></td><td>trying to explain myself in few words</td><td
-				><a href="/blog">/blog</a></td
 			></tr
 		><tr
 			><td><a href="https://www.spiderspace.org">spiderspace.org</a></td><td
