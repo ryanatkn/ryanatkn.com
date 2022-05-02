@@ -13,16 +13,6 @@
 		make frontends. I enjoy trying to make powerful tools that are easy to use, and I have a geeky
 		interest in user interfaces and social systems.
 	</p>
-	<ul>
-		<li>
-			<a href="mailto:mail@ryanatkn.com">mail@ryanatkn.com</a>
-		</li>
-		<li>
-			@ryanatkn on <a href="https://github.com/ryanatkn">GitHub</a>
-			and
-			<a href="https://twitter.com/ryanatkn">Twitter</a>
-		</li>
-	</ul>
 </section>
 
 <h2>Projects I'm working on:</h2>
