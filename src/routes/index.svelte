@@ -1,4 +1,7 @@
 <script lang="ts">
+	import LinkPath from '@feltcoop/felt/ui/LinkPath.svelte';
+	import {page} from '$app/stores';
+
 	import Header from '$lib/Header.svelte';
 	import Footer from '$lib/Footer.svelte';
 	import PersonalStatement from '$lib/PersonalStatement.svelte';
@@ -9,6 +12,7 @@
 	<div class="column markup">
 		<PersonalStatement />
 	</div>
+	<LinkPath path={$page.url.pathname} selectedPath={$page.url.pathname}>ryanatkn.com🥬</LinkPath>
 	<Footer />
 </main>
 

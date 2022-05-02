@@ -1,4 +1,7 @@
 <script lang="ts">
+	import LinkPath from '@feltcoop/felt/ui/LinkPath.svelte';
+	import {page} from '$app/stores';
+
 	import Header from '$lib/Header.svelte';
 	import Footer from '$lib/Footer.svelte';
 </script>
@@ -8,6 +11,7 @@
 	<div class="column markup">
 		<slot />
 	</div>
+	<LinkPath path={$page.url.pathname} selectedPath={$page.url.pathname}>🥬</LinkPath>
 	<Footer />
 </main>
 
