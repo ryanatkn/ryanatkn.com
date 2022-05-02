@@ -21,10 +21,8 @@
 		I've been building an open source web project with <a href="https://twitter.com/greatbaconbits"
 			>@greatbaconbits</a
 		>
-		fulltime for a year & we <a href="https://twitter.com/feltcoop">@feltcoop</a>
-		<a href="https://twitter.com/feltcoop/status/1519703424433934336" rel="noreferrer"
-			>tweeted about it</a
-		>
+		fulltime for a year & we <a href="https://twitter.com/feltcoop">@feltcoop</a> recently
+		<a href="https://twitter.com/feltcoop/status/1519703424433934336">tweeted about it</a>.
 	</p>
 	<p><a href="https://github.com/feltcoop/felt-server">The software</a>💚:</p>
 	<ul>
