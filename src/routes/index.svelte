@@ -14,6 +14,7 @@
 
 <style>
 	main {
+		min-height: 100%;
 		width: 100%;
 		position: relative;
 		/* TODO should these be on `.column` ? */
@@ -21,5 +22,8 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
+	}
+	.column {
+		flex: 1;
 	}
 </style>
