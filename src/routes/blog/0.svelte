@@ -77,10 +77,11 @@
 		<li>goal is to become a <a href="https://platform.coop">platform co-op</a></li>
 	</ul>
 	<p>
-		"small communities" relates to a deflating fact about our software: the realtime stuff doesn't
-		(yet?) scale. we're optimizing for realtime interactive social environments with human-scale
-		groups of people on a single machine w/ web tech. we also support non-realtime usecases that
-		scale to more users like blogs and similar web publishing, much for free thanks to SvelteKit
+		Our focus on "small communities" relates to a deflating fact about our software: the realtime
+		stuff doesn't (yet?) scale. We're optimizing for realtime interactive social environments with
+		human-scale groups of people on a single machine w/ web tech. We also support non-realtime
+		usecases that scale to more users like blogs and similar web publishing, much for free thanks to
+		SvelteKit.
 	</p>
 	<blockquote>
 		Today, felt-server only supports `@sveltejs/adapter-node` -- we'd like to be compatible with as
