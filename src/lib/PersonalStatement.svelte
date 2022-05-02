@@ -60,7 +60,7 @@
 <h2>Contact:</h2>
 <ul>
 	<li>
-		email <a href="mailto:mail@ryanatkn.com">mail@ryanatkn.com</a> (not looking for work)
+		<a href="mailto:mail@ryanatkn.com">mail@ryanatkn.com</a> (not looking for work)
 	</li>
 	<li>
 		join me doing open source on <a href="https://github.com/ryanatkn">GitHub</a>, like
