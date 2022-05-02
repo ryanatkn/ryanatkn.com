@@ -20,7 +20,7 @@
 <table>
 	<tbody
 		><tr
-			><td><a href="/blog">/blog</a></td><td>trying to explain myself in few words</td><td
+			><td><a href="/blog">blog</a></td><td>trying to explain myself in few words</td><td
 				><a href="/blog">/blog</a></td
 			></tr
 		><tr
