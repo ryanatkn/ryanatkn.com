@@ -24,7 +24,7 @@
 			>tweeted about it</a
 		>
 	</p>
-	<p><a href="https://github.com/feltcoop/felt-server">the software</a>:</p>
+	<p><a href="https://github.com/feltcoop/felt-server">the software💚</a>:</p>
 	<ul>
 		<li>
 			is a toolkit and server for building and maintaining communities, publishing to the web, and
