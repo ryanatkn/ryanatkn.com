@@ -7,7 +7,6 @@
 	<div class="bg">
 		<img class="pixelated" {src} {alt} />
 	</div>
-	<h1>about me</h1>
 </header>
 
 <style>

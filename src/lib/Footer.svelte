@@ -24,6 +24,12 @@
 		display: flex;
 		justify-content: center;
 	}
+	a:hover {
+		transform: scale3d(1.01, 1.01, 1.01);
+	}
+	a:active {
+		transform: scale3d(0.99, 0.99, 0.99);
+	}
 	img {
 		width: 1600px;
 		height: 1600px;
