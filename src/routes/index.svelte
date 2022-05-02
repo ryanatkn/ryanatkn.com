@@ -35,6 +35,7 @@
 	}
 	.column {
 		flex: 1;
+		margin-bottom: var(--spacing_xl3);
 	}
 	.linkpath {
 		display: flex;
