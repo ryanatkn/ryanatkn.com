@@ -27,7 +27,8 @@
 	<p><a href="https://github.com/feltcoop/felt-server">the software</a>:</p>
 	<ul>
 		<li>
-			is a toolkit and server for building and maintaining communities and publishing to the web
+			is a toolkit and server for building and maintaining communities, publishing to the web, and
+			and collaboratively working with information
 		</li>
 		<li>is currently still pre-alpha, and we hope to reach alpha this year, beta optimistically</li>
 		<li>targets underserved niches</li>
