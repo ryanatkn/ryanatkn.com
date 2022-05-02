@@ -14,7 +14,10 @@
 		<PersonalStatement />
 	</div>
 	<LinkPath path={$page.url.pathname} selectedPath={$page.url.pathname}
-		>ryanatkn.com<Favicon /></LinkPath
+		><div class="linkpath">
+			<Favicon />
+			<div class="url">ryanatkn.com</div>
+		</div></LinkPath
 	>
 	<Footer />
 </main>
@@ -32,5 +35,13 @@
 	}
 	.column {
 		flex: 1;
+	}
+	.linkpath {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.url {
+		margin-top: var(--spacing_sm);
 	}
 </style>
