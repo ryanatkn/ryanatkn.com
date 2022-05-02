@@ -4,22 +4,27 @@
 </script>
 
 <div class="blog">
-	<p>
+	<div class="linkpath">
 		<LinkPath path={$page.url.pathname + '/0'} selectedPath={$page.url.pathname}>🥬</LinkPath>
-	</p>
+	</div>
 	<h2><a href="/blog/0">What we're doing @feltcoop</a> <small>2022 May 1</small></h2>
 </div>
 
 <style>
 	.blog {
 		display: flex;
-		flex-direction: column;
-		align-items: center;
+		align-items: flex-end;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		padding: var(--spacing_xl3) 0;
 	}
-	p {
-		font-size: var(--font_size_xl3);
+	.linkpath {
+		flex: 1;
+		display: flex;
+		justify-content: flex-end;
+		padding-right: var(--spacing_xl);
 	}
 	h2 {
-		margin-top: 0;
+		margin: 0;
 	}
 </style>
