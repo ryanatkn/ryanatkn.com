@@ -1,11 +1,6 @@
 <div class="markup">
 	<h1>What we're doing @feltcoop</h1>
 	<p>2022 May 1</p>
-	<blockquote>
-		this is an extended and more polished version of <a
-			href="https://twitter.com/ryanatkn/status/1520521806091849729">this Twitter thread</a
-		>
-	</blockquote>
 	<p>
 		I've been building an open source web project with <a href="https://twitter.com/greatbaconbits"
 			>@greatbaconbits</a
