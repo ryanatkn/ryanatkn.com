@@ -26,7 +26,7 @@
 		><tr
 			><td><a href="https://felt.social">@feltcoop</a></td><td
 				>a
-				<a href="https://wikipedia.org/wiki/Software_release_life_cycle">pre-alpha</a>
+				<a href="https://wikipedia.org/wiki/Software_release_life_cycle">pre-alpha</a> aspiring
 				<a href="https://platform.coop">platform co-op</a> making free and open source community software</td
 			><td
 				><a href="https://github.com/feltcoop">GitHub</a>,
