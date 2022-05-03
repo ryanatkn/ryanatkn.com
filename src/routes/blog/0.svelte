@@ -41,6 +41,10 @@
 					chat messages, forum and blog posts, todo items, and so on, and also construct both their
 					social spaces and the client's entire UI
 				</li>
+				<li>
+					our clients are open source and our APIs are open, so clients can be modified and created
+					from scratch
+				</li>
 				<li>security and performance are unfortunate constraints and sometimes buzzkills :\</li>
 			</ul>
 		</li>
