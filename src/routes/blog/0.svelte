@@ -13,7 +13,12 @@
 	<ul>
 		<li>
 			is a toolkit and server for building and maintaining communities, publishing to the web, and
-			collaboratively working with information
+			collaboratively working with information. It has aspects of a <a
+				href="https://wikipedia.org/wiki/Content_management_system">content management system</a
+			>,
+			<a href="https://wikipedia.org/wiki/Knowledge_management_software"
+				>knowledge management software</a
+			>, and other <a href="https://wikipedia.org/wiki/Social_software">social software</a>
 		</li>
 		<li>is currently still pre-alpha, and we hope to reach alpha this year, beta optimistically</li>
 		<li>targets underserved niches</li>
@@ -27,7 +32,8 @@
 		<li>small communities</li>
 		<li>
 			a single app with chats+forums+todos+etc that's perhaps less slick than each but far more
-			powerful in 1 -- both realtime and asynchronous communications, collaborative to the core
+			powerful in 1, supporting both realtime and asynchronous communications, collaborative to the
+			core
 		</li>
 		<li>
 			fullstack modding, so devs and endusers have proper access and power over their UX, so we
@@ -50,14 +56,16 @@
 		</li>
 	</ul>
 	<p>
-		We're calling it <a href="https://github.com/feltcoop/felt-server"
+		We're calling Felt <a href="https://github.com/feltcoop/felt-server"
 			>"a tool for building and maintaining communities"</a
 		>:
 	</p>
 	<ul>
 		<li>easily selfhosted, targeting $5/mo VPS</li>
 		<li>
-			using tech like Postgres, Node, TypeScript, Svelte, SvelteKit, websockets, thicknsmart clients
+			using tech like Postgres, Node, TypeScript, Svelte, SvelteKit, websockets, and clients with a <a
+				href="https://wikipedia.org/wiki/Client_(computing)#Thick">thickness</a
+			> optimized for UX
 		</li>
 		<li>we're using it professionally to build itself under democratic control</li>
 		<li>we want to use it personally</li>
@@ -75,8 +83,8 @@
 	</p>
 	<hr />
 	<p>
-		<strong>business model</strong>: no ads, no krypt0,
-		<a href="https://en.wikipedia.org/wiki/MIT_License">free & fully open source</a>; users pay for
+		<strong>business model</strong>: no ads, no crypto,
+		<a href="https://wikipedia.org/wiki/MIT_License">free & fully open source</a>; users pay for
 		service & if it's sustainable we'll creatively subsidize users
 	</p>
 	<p>
@@ -105,7 +113,7 @@
 	</p>
 	<hr />
 	<p>
-		As toolmakers we want to help users execute their own visions. We'll provide defaults &
+		As toolmakers we want to help users bring their own visions to life. We'll provide defaults &
 		templates, and users can modify the software for their own needs.
 	</p>
 	<p>
