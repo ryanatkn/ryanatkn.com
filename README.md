@@ -43,13 +43,12 @@ gro deploy
 [Svelte](https://github.com/sveltejs/svelte) ∙
 [SvelteKit](https://github.com/sveltejs/kit) ∙
 [Vite](https://github.com/vitejs/vite) ∙
-[Rollup](https://github.com/rollup/rollup) ∙
 [esbuild](https://github.com/evanw/esbuild) ∙
 [TypeScript](https://github.com/microsoft/TypeScript) ∙
+[ESLint](https://github.com/eslint/eslint) ∙
 [Prettier](https://github.com/prettier/prettier) ∙
 [Felt](https://github.com/feltcoop/felt) ∙
-[Gro](https://github.com/feltcoop/gro) ∙
-[@lukeed\/\*](https://github.com/lukeed)
+[Gro](https://github.com/feltcoop/gro)
 & [more](package.json)
 
 ## license [🐦](https://wikipedia.org/wiki/Free_and_open-source_software)

@@ -65,8 +65,6 @@
 	<li>
 		join me doing open source on <a href="https://github.com/ryanatkn">GitHub</a>, like
 		<a href="https://github.com/cosmicplayground/cosmicplayground">cosmicplayground</a>
-		or the
-		<a href="https://github.com/spiderspace/spiderspace/discussions">spiderspace discussions</a>
 		<small>(TODO and Felt once we figure out what that looks like)</small>
 	</li>
 	<li>
