@@ -1,5 +1,5 @@
 <div class="markup">
-	<h1>What we're doing @feltcoop</h1>
+	<h1>What we're doing <a href="https://github.com/feltcoop">@feltcoop</a></h1>
 	<p>2022 May 1</p>
 	<p>
 		I've been building an open source web project with <a href="https://twitter.com/greatbaconbits"
