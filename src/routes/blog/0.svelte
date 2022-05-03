@@ -46,9 +46,15 @@
 					devs get open source where they can author and extend components, clients, and servers
 				</li>
 				<li>
-					endusers get a <a href="https://github.com/pngwn/MDsveX">composable text language</a> with
-					a rich vocabulary that can be used to write chat messages, forum and blog posts, todo items,
-					and so on, and also construct both their social spaces and the client's entire UI
+					endusers get:
+					<ul>
+						<li>
+							a <a href="https://github.com/pngwn/MDsveX">composable text language</a> with a rich vocabulary
+							that can be used to write chat messages, forum and blog posts, todo items, and so on, and
+							also construct both their social spaces and the client's entire UI
+						</li>
+						<li>programmery-things like recording events and authoring scripts</li>
+					</ul>
 				</li>
 				<li>
 					clients have a <a href="https://wikipedia.org/wiki/Client_(computing)#Thick">thickness</a>
