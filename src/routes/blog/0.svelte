@@ -46,9 +46,9 @@
 					devs get open source where they can author and extend components, clients, and servers
 				</li>
 				<li>
-					endusers get a composable text language with a rich vocabulary that can be used to write
-					chat messages, forum and blog posts, todo items, and so on, and also construct both their
-					social spaces and the client's entire UI
+					endusers get a <a href="https://github.com/pngwn/MDsveX">composable text language</a> with
+					a rich vocabulary that can be used to write chat messages, forum and blog posts, todo items,
+					and so on, and also construct both their social spaces and the client's entire UI
 				</li>
 				<li>
 					clients have a <a href="https://wikipedia.org/wiki/Client_(computing)#Thick">thickness</a>
@@ -65,7 +65,7 @@
 	<p>
 		It's a big set of goals, and we think we have useful contributions particularly around UX. We
 		care about interoperability, so we want our software to play nicely with standardized
-		ecosystems.
+		ecosystems. (see below for more)
 	</p>
 	<p>
 		We're calling Felt <a href="https://github.com/feltcoop/felt-server"
