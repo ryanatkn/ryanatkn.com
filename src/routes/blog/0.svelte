@@ -51,7 +51,7 @@
 						<li>
 							a <a href="https://github.com/pngwn/MDsveX">composable text language</a> with a rich vocabulary
 							that can be used to write chat messages, forum and blog posts, todo items, and so on, and
-							also construct both their social spaces and the client's entire UI
+							also construct both social spaces and the entire client UI
 						</li>
 						<li>
 							programmery-things like recording events and authoring scripts, and lots more we think
