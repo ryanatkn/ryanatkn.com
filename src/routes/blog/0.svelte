@@ -53,7 +53,9 @@
 							that can be used to write chat messages, forum and blog posts, todo items, and so on, and
 							also construct both their social spaces and the client's entire UI
 						</li>
-						<li>programmery-things like recording events and authoring scripts</li>
+						<li>
+							programmery-things like recording events and authoring scripts, and lots more we think
+						</li>
 					</ul>
 				</li>
 				<li>
