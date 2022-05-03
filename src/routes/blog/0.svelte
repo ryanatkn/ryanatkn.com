@@ -116,7 +116,7 @@
 		<a href="https://www.felt.social">felt.social</a>
 	</p>
 	<hr />
-	<h2>More on the design</h2>
+	<h2>More on the design:</h2>
 	<p>
 		We want to build software tools that anyone can use to explore the endless terrain of
 		collaborative experiences, so you could take a larger role in designing your media, if you want.
@@ -128,7 +128,7 @@
 		scripting governance processes over time, etc. We'll give this a lot of attention before beta.
 	</p>
 	<hr />
-	<h2>Business and ownership</h2>
+	<h2>Business and ownership:</h2>
 	<p>
 		<strong>business model</strong>: no ads, no crypto,
 		<a href="https://wikipedia.org/wiki/MIT_License">free & fully open source</a>; users pay for
@@ -159,14 +159,14 @@
 		capably, while enjoying the process, focusing on principles, and building good relationships.
 	</p>
 	<hr />
-	<h2>Tech notes</h2>
+	<h2>Tech notes:</h2>
 	<p>
 		We tried to be thoughtful about our tech stack given the assumption that we'll be in the
 		JS+node+npm ecosystem. We chose the web because we think it's the best way to deliver the UX we
 		want to the most people, and we chose these specific technologies because of familiarity and
 		fondness.
 	</p>
-	<h3>on the shoulders of giants on the backs of turtles</h3>
+	<h3>on the shoulders of giants on the backs of turtles:</h3>
 	<p>Postgres and nginx are solid</p>
 	<p>Node and TypeScript are productive</p>
 	<p>
@@ -176,7 +176,7 @@
 		relief to know it's there when we're ready for it.
 	</p>
 	<p>the Web has unrealized potential</p>
-	<h3>scaling (and not)</h3>
+	<h3>scaling (and not):</h3>
 	<p>
 		Our focus on "small communities" relates to a deflating fact about our software: the realtime
 		stuff doesn't (yet?) scale. We're optimizing for realtime interactive social environments with
@@ -200,7 +200,7 @@
 		trying to write it modularly and with good principles, like a unified serializable event stream
 		for the client and server, so better tools could be built on parts of the foundation, we hope.
 	</p>
-	<h3>interop and decentralization</h3>
+	<h3>interop and decentralization:</h3>
 	<p>
 		We care a lot about interoperability and giving users choices. We try to use
 		<a href="https://json-schema.org/">JSON Schema</a>
@@ -220,7 +220,7 @@
 	</p>
 	<p>nothing's set in stone🪨</p>
 	<hr />
-	<h2>Cool ok</h2>
+	<h2>Cool ok:</h2>
 	<p>
 		find us @feltcoop on <a href="https://twitter.com/feltcoop">Twitter</a> and
 		<a href="https://github.com/feltcoop">GitHub</a>
