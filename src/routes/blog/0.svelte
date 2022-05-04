@@ -213,7 +213,8 @@
 			>the ActivityStreams vocabulary spec</a
 		>
 		that's used in the fediverse and Mastodon, but we have our own bespoke client-server protocol that
-		works over http and websockets.
+		works over http and websockets. I think we can generate OpenAPI schemas from our source of truth,
+		which would give us greatly expanded access to existing tooling.
 	</p>
 	<p>
 		Though we have a centralized Node server today, one future possibility is to support
