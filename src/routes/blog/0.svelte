@@ -179,8 +179,9 @@
 	<h3>scaling (and not):</h3>
 	<p>
 		Our focus on "small communities" relates to a deflating fact about our software: the realtime
-		stuff doesn't (yet?) scale. We're optimizing for realtime interactive social environments with
-		human-scale groups of people on a single machine w/ web tech. That sets quite a few limits.
+		stuff doesn't (yet?) scale. We're optimizing for quickly iterating on realtime interactive
+		social environments with human-scale groups of people on a single machine w/ web tech. That sets
+		quite a few limits.
 	</p>
 	<p>
 		We also support non-realtime usecases that scale to more users like blogs and similar web
