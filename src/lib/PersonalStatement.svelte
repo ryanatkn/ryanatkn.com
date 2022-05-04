@@ -43,13 +43,6 @@
 				<a href="https://twitter.com/cosmicplaygroun">Twitter</a></td
 			></tr
 		><tr
-			><td><a href="https://www.blitwagon.net">blitwagon.net</a></td><td
-				>open source hobbyist persona</td
-			><td
-				><a href="https://github.com/blitwagon">GitHub</a>,
-				<a href="https://twitter.com/blitwagon">Twitter</a></td
-			></tr
-		><tr
 			><td><a href="https://www.spiderspace.org">spiderspace.org</a></td><td
 				>web prototypes shy of daylight</td
 			><td><a href="https://github.com/spiderspace">GitHub</a></td></tr
