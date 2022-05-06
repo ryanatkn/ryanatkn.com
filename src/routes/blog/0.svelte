@@ -18,7 +18,8 @@
 			>,
 			<a href="https://wikipedia.org/wiki/Knowledge_management_software"
 				>knowledge management software</a
-			>, and other <a href="https://wikipedia.org/wiki/Social_software">social software</a>
+			>, and other <a href="https://wikipedia.org/wiki/Social_software">social</a> and
+			<a href="https://wikipedia.org/wiki/Collaborative_software">collaborative software</a>
 		</li>
 		<li>
 			is currently <a href="https://wikipedia.org/wiki/Software_release_life_cycle">pre-alpha</a>,
