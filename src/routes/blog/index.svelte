@@ -3,7 +3,7 @@
 
 <div class="blog">
 	<ol start="0">
-		<li><a href="/blog/0">Making community software @feltcoop</a> <small>2022 May 1</small></li>
+		<li><a href="/blog/0">Making community software @feltcoop</a> <small>2022 May</small></li>
 	</ol>
 </div>
 

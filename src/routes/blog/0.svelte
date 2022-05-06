@@ -1,6 +1,6 @@
 <div class="markup">
 	<h1>Making community software <a href="https://github.com/feltcoop">@feltcoop</a></h1>
-	<p>2022 May 1</p>
+	<p>2022 May</p>
 	<p>
 		I've been building an open source web project with <a href="https://twitter.com/greatbaconbits"
 			>@greatbaconbits</a
