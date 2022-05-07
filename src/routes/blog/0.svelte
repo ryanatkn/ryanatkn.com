@@ -19,7 +19,8 @@
 			<a href="https://wikipedia.org/wiki/Knowledge_management_software"
 				>knowledge management software</a
 			>, and other <a href="https://wikipedia.org/wiki/Social_software">social</a> and
-			<a href="https://wikipedia.org/wiki/Collaborative_software">collaborative software</a>
+			<a href="https://wikipedia.org/wiki/Collaborative_software">collaborative software</a>. We're
+			aiming for a batteries-included feel with a small footprint.
 		</li>
 		<li>
 			is currently <a href="https://wikipedia.org/wiki/Software_release_life_cycle">pre-alpha</a>,
@@ -72,14 +73,14 @@
 		</li>
 	</ul>
 	<p>
-		It's a big set of goals, and we think we have useful contributions particularly around UX. We
-		care about interoperability, so we want our software to play nicely with standardized
-		ecosystems. (see below for more)
+		It's a big set of goals, and we think we have useful contributions particularly around UX. (see
+		below for <a href="#interop">more on interop</a>)
 	</p>
+	<h2>Some details:</h2>
 	<p>
 		We're calling Felt <a href="https://github.com/feltcoop/felt-server"
 			>"a tool for building and maintaining communities"</a
-		>. Some details:
+		>.
 	</p>
 	<ul>
 		<li>easily selfhosted, targeting $5/mo VPS</li>
@@ -181,8 +182,9 @@
 	<p>
 		Our focus on "small communities" relates to a deflating fact about our software: the realtime
 		stuff doesn't (yet?) scale. We're optimizing for quickly iterating on realtime interactive
-		social environments with human-scale groups of people on a single machine w/ web tech. That sets
-		quite a few limits.
+		social environments with human-scale groups of people on a single machine with web tech. Those
+		limits may appear restrictive compared to the infinite cloud worlds, but it also gives us a
+		highly productive environment that's powerful in the small.
 	</p>
 	<p>
 		We also support non-realtime usecases that scale to more users like blogs and similar web
@@ -202,9 +204,15 @@
 		trying to write it modularly and with good principles, like a unified serializable event stream
 		for the client and server, so better tools could be built on parts of the foundation, we hope.
 	</p>
-	<h3>interop and decentralization:</h3>
+	<h3 id="interop">interop and decentralization:</h3>
 	<p>
-		We care a lot about interoperability and giving users choices. We try to use
+		Giving users choices is a principle I want to adhere to, and that includes interoperability, but
+		we're a 2 person team with limited resources trying to deliver a specific UX. Today this means
+		we have a centralized Node server, and a future possibility is to support decentralized backends
+		like ActivityPub and Matrix.
+	</p>
+	<p>
+		We try to use
 		<a href="https://json-schema.org/">JSON Schema</a>
 		where it makes sense, and we support both RESTful-ish http endpoints and websockets using
 		<a href="https://www.jsonrpc.org/specification">JSON-RPC 2.0</a>.
@@ -217,15 +225,12 @@
 		works over http and websockets. I think we can generate OpenAPI schemas from our source of truth,
 		which would give us greatly expanded access to existing tooling.
 	</p>
-	<p>
-		Though we have a centralized Node server today, one future possibility is to support
-		decentralized backends like ActivityPub and Matrix.
-	</p>
-	<p>nothing's set in stone🪨</p>
 	<hr />
 	<h2>Cool ok:</h2>
 	<p>
-		find us @feltcoop on <a href="https://twitter.com/feltcoop">Twitter</a> and
+		find <a href="https://www.felt.social">us</a> @feltcoop on
+		<a href="https://twitter.com/feltcoop">Twitter</a>
+		and
 		<a href="https://github.com/feltcoop">GitHub</a>
 		and read
 		<a href="https://tinyletter.com/FeltCoop">our monthly newsletter</a>
