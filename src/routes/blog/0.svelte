@@ -20,7 +20,7 @@
 				>knowledge management software</a
 			>, and other <a href="https://wikipedia.org/wiki/Social_software">social</a> and
 			<a href="https://wikipedia.org/wiki/Collaborative_software">collaborative software</a>. We're
-			aiming for a batteries-included feel with a small footprint.
+			aiming for a batteries-included, deeply customizable experience with a small footprint.
 		</li>
 		<li>
 			is currently <a href="https://wikipedia.org/wiki/Software_release_life_cycle">pre-alpha</a>,
