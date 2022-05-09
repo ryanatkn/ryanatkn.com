@@ -1,6 +1,5 @@
 <script lang="ts">
 	import LinkPath from '@feltcoop/felt/ui/LinkPath.svelte';
-	import {page} from '$app/stores';
 
 	import Header from '$lib/Header.svelte';
 	import Footer from '$lib/Footer.svelte';
@@ -10,12 +9,12 @@
 <main>
 	<Header />
 	<div class="blog">
-		<LinkPath path={$page.url.pathname}><Favicon /></LinkPath>
+		<LinkPath><Favicon /></LinkPath>
 	</div>
 	<div class="column markup">
 		<slot />
 	</div>
-	<LinkPath path={$page.url.pathname} selectedPath={$page.url.pathname}><Favicon /></LinkPath>
+	<LinkPath><Favicon /></LinkPath>
 	<Footer />
 </main>
 
