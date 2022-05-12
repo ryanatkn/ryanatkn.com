@@ -302,7 +302,7 @@
 	<h2>Cool ok:</h2>
 	<p>
 		find <a href="https://www.felt.social">us</a> @feltcoop on
-		<a href="https://twitter.com/feltcoop">Twitter</a>,
+		<a href="https://twitter.com/feltcoop">Twitter</a> and
 		<a href="https://github.com/feltcoop">GitHub</a>, read
 		<a href="https://tinyletter.com/FeltCoop">our monthly newsletter</a>, and look
 		<a href="https://www.felt.social/toolmakersforum">a podcast</a>
