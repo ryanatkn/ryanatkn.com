@@ -5,10 +5,10 @@
 		I've been building an open source web project focused on community software with <a
 			href="https://twitter.com/greatbaconbits">Hamilton Reed</a
 		>
-		fulltime for a year. We <a href="https://twitter.com/feltcoop">@feltcoop</a> recently
-		<a href="https://twitter.com/feltcoop/status/1519703424433934336">tweeted about it</a> and
-		started a <a href="https://tinyletter.com/FeltCoop">monthly newsletter</a> and (gulp) a podcast
-		called <a href="https://www.felt.social/toolmakersforum">Toolmakers Forum</a>. I also
+		fulltime for a year. We <a href="https://twitter.com/feltcoop">@feltcoop</a> recently started a
+		<a href="https://tinyletter.com/FeltCoop">monthly newsletter</a>
+		and (gulp) a podcast called
+		<a href="https://www.felt.social/toolmakersforum">Toolmakers Forum</a>. I also
 		<a href="https://twitter.com/ryanatkn/status/1524796706675621888">tweeted about the podcast</a> and
 		my plans to write about its ideas on this blog.
 	</p>
