@@ -4,7 +4,7 @@
 <div class="blog">
 	<ol start="0">
 		<li>
-			<a href="/blog/0">A year of making open source community software and related web tools</a>
+			<a href="/blog/0">A year of making open source web community software</a>
 			<small>2022 May</small>
 		</li>
 	</ol>
