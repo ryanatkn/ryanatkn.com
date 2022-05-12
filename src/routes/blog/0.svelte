@@ -96,13 +96,13 @@
 		<li>easily selfhosted, targeting $5/mo VPS</li>
 		<li>uses tech like Postgres, Node, TypeScript, Svelte, SvelteKit, and websockets</li>
 		<li>we're using it professionally to build itself under democratic control</li>
-		<li>we want to use it personally</li>
+		<li>we want to use it personally and make stuff with it</li>
 		<li>goal is to become a <a href="https://platform.coop">platform co-op</a></li>
 	</ul>
 	<p>
 		It's a big set of goals, and we think we have useful contributions particularly around UX. (see
-		below for <a href="#interop">more on interop</a>) We think we see an opportunity to hit a
-		particular sweet spot for small communities with our set of design and tech choices.
+		below for <a href="#interop">more on interop</a>) We think we see an opportunity to hit a sweet
+		spot for small communities with our set of design and tech choices.
 	</p>
 	<h2>The projects:</h2>
 	<p>We have a handful of software repos, none of which are yet production ready:</p>
@@ -117,7 +117,7 @@
 		</li>
 		<li>
 			<a href="https://github.com/feltcoop/felt-template">@feltcoop/felt-template</a> – a static web
-			app template for SvelteKit and Felt for quickly creating new projects
+			app template with SvelteKit and Felt for quickly creating new projects
 		</li>
 		<li>
 			<a href="https://github.com/feltcoop/gro">@feltcoop/gro</a> – a toolkit that extends SvelteKit
@@ -138,9 +138,9 @@
 	<p>
 		As service providers, we want to build reliable orgs to operate infra to help users succeed.
 	</p>
-	<p>As devs, we want to build great software for users, prioritizing endusers over operators.</p>
+	<p>As devs, we want to build great software for people, prioritizing endusers over operators.</p>
 	<p>
-		As toolmakers we want to help users bring their own visions to life and nurture a beneficial
+		As toolmakers we want to help users bring their own visions to life and support a beneficial
 		relationship with technology. We'll provide defaults and templates, and users can modify the
 		software for their own needs. We'll support simple and scalable static web publishing like blogs
 		and RSS feeds, along with the tools to make hobby-grade realtime social experiences and games.
@@ -161,9 +161,9 @@
 	<h2>Everyone can be a toolmaker:</h2>
 	<p>
 		Instead of being limited to filling digital boxes designed by tech companies, anyone should be
-		able to design their own box. Or forget boxes even, we're in the digital realm. We see this with
-		all sorts of products over decades, especially in games, and I believe there's fresh
-		opportunities to do this with web tech.
+		able to design their own box. Or forget boxes even, we're in the digital realm. We see examples
+		of what's possible in all sorts of products over decades, especially in games, and I believe
+		there's fresh opportunities to do this with web tech.
 	</p>
 	<p>
 		We want to build software tools that anyone can use to explore the vast terrain of collaborative
@@ -237,17 +237,19 @@
 	<p>Postgres and nginx are solid</p>
 	<p>
 		Svelte and SvelteKit have been a fantastic set of tools for making UIs. We don't yet use some of
-		SvelteKit's flagship features like endpoints, but we feel very productive working with it and
-		its flexibility is a wonder. We've been deprioritizing full SSR but it's a relief to know it's
-		there when we're ready for it. It's amazing how much SvelteKit takes off our shoulders.
+		SvelteKit's flagship features like endpoints, but we feel productive and delighted working with
+		it, and its flexibility is a wonder. We've been deprioritizing full SSR but it's a relief to
+		know it's there when we're ready for it. It's amazing how much of the load SvelteKit takes off
+		our shoulders.
 	</p>
 	<h3>scaling (and not):</h3>
 	<p>
-		Our focus on "small communities" relates to a deflating fact about our software: the realtime
-		stuff doesn't (yet?) scale. We're optimizing to quickly iterate on interactive realtime social
-		environments with human-scale groups of people on a single machine with web tech. The limits may
-		appear restrictive compared to the infinite cloud worlds, but these tradeoffs give us a simple,
-		highly productive environment that's powerful in the small.
+		Our focus on "small communities" relates to a potentially deflating fact about our software: the
+		realtime stuff doesn't scale. (yet? idk) We're optimizing to quickly iterate on interactive
+		social environments with human-scale groups of people on a single machine with web tech. The
+		limits may appear restrictive compared to the infinite cloud worlds, but these tradeoffs give us
+		a simple, highly productive environment that's powerful in the small, and maybe small
+		communities are good too.
 	</p>
 	<p>
 		We (will) also support non-realtime usecases that scale to more users like blogs and similar web
@@ -265,10 +267,10 @@
 	<p>
 		Even though our code isn't pushing the boundaries of performance and enterprise readiness, we're
 		trying to write it modularly and with good principles, so hopefully it evolves gracefully and
-		enables better tools to be built on its foundations. (for example, a unified serializable event
-		stream for the client and server API that works for frictionless realtime broadcasting and
-		already has bare-but-never-out-of-date docs -- we're cutting a lot of corners but also investing
-		a lot in tech up front)
+		enables better tools to be built on its foundations. (for example, we have a unified
+		serializable event stream for the client and server API that works for frictionless realtime
+		broadcasting and already has bare-but-never-out-of-date docs -- we're cutting a lot of corners
+		but also investing a lot in tech up front)
 	</p>
 	<h3 id="interop">interop and decentralization:</h3>
 	<p>
@@ -281,9 +283,11 @@
 		We're trying to follow <a href="https://www.w3.org/TR/activitystreams-core/"
 			>the ActivityStreams vocabulary spec</a
 		>
-		that's used in the fediverse and Mastodon, but we have our own bespoke client-server protocol that
-		works over http and websockets. I think we can generate OpenAPI schemas from our source of truth,
-		which would give us greatly expanded access to existing tooling.
+		that's used in the fediverse and Mastodon (and I made some
+		<a href="https://ryanatkn.github.io/corpus-activity-streams/">unofficial docs</a>), but we have
+		our own bespoke client-server protocol that works over http and websockets. I think we can
+		generate OpenAPI schemas from our source of truth, which would give us greatly expanded access
+		to existing tooling.
 	</p>
 	<p>
 		We try to use
@@ -292,11 +296,11 @@
 		<a href="https://www.jsonrpc.org/specification">JSON-RPC 2.0</a>.
 	</p>
 	<p>
-		We want to be good citizens of open source standards, not just do our own thing off in the
-		corner, but we have very specific ideas of what we want to build for small communities, and
-		decentralized tech isn't optimal for today's goals. I personally think decentralized
-		technologies are the future and I would love to help Felt be compatible with standard protocols
-		once we have our desired UX.
+		We want to be good citizens of open standards, not just do our own thing off in the corner, but
+		we have very specific ideas of what we want to build for small communities, and decentralized
+		tech isn't optimal for today's goals. I personally think decentralized technologies are the
+		future and I would love to help Felt be compatible with standard protocols once we have our
+		desired UX.
 	</p>
 	<hr />
 	<h2>Cool ok:</h2>
