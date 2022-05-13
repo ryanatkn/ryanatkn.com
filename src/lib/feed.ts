@@ -1,5 +1,7 @@
 /**
- * This is designed to extend JSON Feed 1.1 with other things like Atom namespaced.
+ * This is designed to extend JSON Feed 1.1 with namespaced data for other specs like Atom.
+ * It's still a work in progress, and I'll add features as I need them,
+ * and eventually this will be extracted to a standalone library.
  * https://www.jsonfeed.org/version/1.1/
  */
 export interface FeedData {
