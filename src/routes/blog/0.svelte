@@ -53,34 +53,29 @@
 		</li>
 		<li>
 			fullstack modding, so devs and endusers have proper access and power over their UX and
-			systems, so we bridge more of the gap between programming and using
-			<ul>
-				<li>
-					devs get open source where they can author and extend components, clients, and servers
-				</li>
-				<li>
-					endusers get:
-					<ul>
-						<li>
-							a comfortably familiar environment that looks like existing social apps, but more
-							deeply customizable and flexible
-						</li>
-						<li>
-							a <a href="https://github.com/pngwn/MDsveX">composable text language</a> with a rich vocabulary
-							that can be used to write chat messages, forum and blog posts, todo items, and so on, and
-							also construct both social spaces and the entire client UI
-						</li>
-						<li>
-							easy-to-use plugins, mods, modules, etc, made by us at Felt and hopefully a community
-							of developer-users
-						</li>
-						<li>
-							programmery-things like recording events and authoring scripts, and lots more we think
-						</li>
-					</ul>
-				</li>
-			</ul>
+			systems, and we bridge more of the gap between programming and using
 		</li>
+	</ul>
+	<p>
+		Fullstack modding is key to why I want to work on Felt, but it has a lot of unknowns and we need
+		to implement it to understand it. For devs, it means we'll have open source components, clients,
+		and servers that are designed to be extended and replaced. For endusers it means:
+	</p>
+	<ul>
+		<li>
+			a comfortably familiar environment that looks like existing social apps, but more deeply
+			customizable and flexible
+		</li>
+		<li>
+			a <a href="https://github.com/pngwn/MDsveX">composable text language</a> with a rich vocabulary
+			that can be used to write chat messages, forum and blog posts, todo items, and so on, and also
+			construct both social spaces and the entire client UI
+		</li>
+		<li>
+			easy-to-use plugins, mods, modules, etc, made by us at Felt and hopefully a community of
+			developer-users, and clear paths to learning the technical skills to make your own stuff
+		</li>
+		<li>programmery-things like recording events and authoring scripts, and lots more we think</li>
 	</ul>
 	<p>
 		We're calling Felt <a href="https://github.com/feltcoop/felt-server"
@@ -90,9 +85,9 @@
 	<ul>
 		<li>easily selfhosted, targeting $5/mo VPS</li>
 		<li>uses tech like Postgres, Node, TypeScript, Svelte, SvelteKit, and websockets</li>
-		<li>we're using it professionally to build itself under democratic control</li>
 		<li>we want to use it personally and make stuff with it</li>
-		<li>goal is to become a <a href="https://platform.coop">platform co-op</a></li>
+		<li>we're using it professionally to build itself under democratic control</li>
+		<li>we plan to become a <a href="https://platform.coop">platform co-op</a></li>
 	</ul>
 	<p>
 		It's a big set of goals, and we think we have useful contributions particularly around UX. (see
@@ -125,7 +120,7 @@
 		</li>
 	</ul>
 	<h2>In summary:</h2>
-	<p>As software users, we want awesome tools that we can tailor to our needs.</p>
+	<p>As software users, we want easy-to-use and powerful tools that we can tailor to our needs.</p>
 	<p>
 		As platform users, we want a professional, trusted, incentives-aligned operator, and we'll pay
 		for it.
