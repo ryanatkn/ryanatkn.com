@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <id>https://www.ryanatkn.com/</id>
+  <title>Ryan Atkinson</title>
+  <subtitle>blog of a web developer making open source community software</subtitle>
+  <link href="https://www.ryanatkn.com/" />
+  <link href="https://www.ryanatkn.com/feed.xml" rel="self" type="application/atom+xml" />
+	<updated>2022-05-13T01:42:23.000Z</updated>
+  <icon>https://www.ryanatkn.com/favicon.png</icon>
+  <author>
+    <name>Ryan Atkinson</name>
+    <email>mail@ryanatkn.com</email>
+    <uri>https://www.ryanatkn.com/</uri>
+  </author>
+  
+  <entry>
+    <id>https://www.ryanatkn.com/blog/0</id>
+    <title>A year of making open source web community software</title>
+    <link rel="alternate" href="https://www.ryanatkn.com/blog/0" />
+    <published>2022-05-13T01:42:23.000Z</published>
+    <updated>2022-05-13T01:42:23.000Z</updated>
+    <summary>I discuss my work on open source community software called Felt over the last year, giving a brief overview of the design and technology choices, and announcing our newsletter and podcast at FeltCoop.</summary>
+    <category term="web" /><category term="technology" /><category term="software" /><category term="opensource" /><category term="community" />
+  </entry>
+
+</feed>

@@ -1,6 +1,12 @@
+<script lang="ts">
+	import BlogPostHeader from '$lib/BlogPostHeader.svelte';
+	import {feedData} from '$lib/feedData';
+
+	const post = feedData.items[0];
+</script>
+
 <div class="markup">
-	<h1>A year of making open source web community software</h1>
-	<p>2022 May</p>
+	<BlogPostHeader {post} />
 	<p>
 		I've been building an open source web project focused on community software with <a
 			href="https://twitter.com/greatbaconbits">Hamilton Reed</a
@@ -72,18 +78,6 @@
 						</li>
 					</ul>
 				</li>
-				<li>
-					both server and clients are open source and our APIs are open, so clients can be modified
-					and created from scratch
-				</li>
-				<li>
-					clients have a <a href="https://wikipedia.org/wiki/Client_(computing)#Thick">thickness</a>
-					optimized for UX over long sessions, which means a lot of JS and client-side caching, and thanks
-					to
-					<a href="https://kit.svelte.dev/">SvelteKit</a> we think we'll also be able to deliver good
-					experiences in many cases with fast loadtimes and minimal JS
-				</li>
-				<li>security and performance are unfortunate constraints and sometimes buzzkills :\</li>
 			</ul>
 		</li>
 	</ul>
@@ -241,6 +235,18 @@
 		it, and its flexibility is a wonder. We've been deprioritizing full SSR but it's a relief to
 		know it's there when we're ready for it. It's amazing how much of the load SvelteKit takes off
 		our shoulders.
+	</p>
+	<h3>customizable and extensible:</h3>
+	<p>
+		Both the server and clients are open source and our APIs are open, so clients can be modified or
+		created from scratch. We'll try to maximize the freedoms of users and developers, but security
+		and performance are unfortunate constraints and sometimes buzzkills :\
+	</p>
+	<p>
+		Our client has a <a href="https://wikipedia.org/wiki/Client_(computing)#Thick">thickness</a>
+		optimized for UX over long sessions, which means a lot of JS and client-side caching, and thanks
+		to SvelteKit we think we'll also be able to deliver good experiences in many cases with fast loadtimes
+		and minimal JS.
 	</p>
 	<h3>scaling (and not):</h3>
 	<p>

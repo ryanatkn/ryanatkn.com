@@ -7,6 +7,12 @@
 <svelte:head>
 	<title>ryanatkn.com</title>
 	<link rel="icon" href="/favicon.png" />
+	<link
+		rel="alternate"
+		type="application/atom+xml"
+		title="Atom"
+		href="https://www.ryanatkn.com/feed.xml"
+	/>
 </svelte:head>
 
 <slot />
