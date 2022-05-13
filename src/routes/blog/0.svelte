@@ -2,6 +2,7 @@
 	import BlogPostHeader from '$lib/BlogPostHeader.svelte';
 	import {feedData} from '$lib/feedData';
 
+	// TODO refactor this probably, maybe putting the post in context
 	const post = feedData.items[0];
 </script>
 
