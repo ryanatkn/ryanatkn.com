@@ -46,11 +46,7 @@
 	<p>What are these underserved niches?</p>
 	<ul>
 		<li>small communities</li>
-		<li>
-			a single app with chats+forums+todos+etc that's perhaps less slick than each but far more
-			powerful in 1, supporting both realtime and asynchronous communications, collaborative
-			everywhere
-		</li>
+		<li>multipurpose</li>
 		<li>
 			fullstack modding, so devs and endusers have proper access and power over their UX and
 			systems, and we bridge more of the gap between programming and using
@@ -77,6 +73,13 @@
 		</li>
 		<li>programmery-things like recording events and authoring scripts, and lots more we think</li>
 	</ul>
+	<p>
+		We think of Felt similar to a smartphone or Swiss army knife: it performs well for many tasks
+		and often it's all you need and want, but sometimes you need more specialized tools. The current
+		featureset is a single app with chats+forums+todos+more that's perhaps less slick than each but
+		far more powerful in 1, supporting both realtime and asynchronous communications, and
+		collaborative everywhere.
+	</p>
 	<p>
 		We're calling Felt <a href="https://github.com/feltcoop/felt-server"
 			>"a tool for building and maintaining communities"</a
@@ -246,16 +249,12 @@
 	</p>
 	<h3>scaling (and not):</h3>
 	<p>
-		Our focus on "small communities" relates to a potentially deflating fact about our software: the
-		realtime stuff doesn't scale. (yet? idk) We're optimizing to quickly iterate on interactive
-		social environments with human-scale groups of people on a single machine with web tech. The
-		limits may appear restrictive compared to the infinite cloud worlds, but these tradeoffs give us
-		a simple, highly productive environment that's powerful in the small, and maybe small
-		communities are good too.
-	</p>
-	<p>
-		We (will) also support non-realtime usecases that scale to more users like blogs and similar web
-		publishing, much for free thanks to SvelteKit.
+		Our focus on "small communities" relates to a potentially deflating fact about our software: it
+		doesn't scale to large numbers of people or some kinds of heavy load. We're optimizing to
+		quickly iterate on social experiences with human-scale groups of people on a single machine with
+		web tech. The limits may appear restrictive compared to the infinite cloud worlds, but these
+		tradeoffs give us a simple, highly productive environment that's powerful in the small, and
+		maybe small communities are good too.
 	</p>
 	<blockquote>
 		Today, <a href="https://github.com/feltcoop/felt-server">felt-server</a> supports only
@@ -263,15 +262,21 @@
 			><a href="https://github.com/sveltejs/kit/tree/master/packages/adapter-node"
 				>@sveltejs/adapter-node</a
 			></code
-		> -- we'd like to be compatible with as many of SvelteKit's adapters as possible, but that's a distant
-		hope.
+		> – we'd like to be compatible with as many SvelteKit adapters as possible, giving operators access
+		to more scalable cloud backends, but that's a distant hope.
 	</blockquote>
+	<p>
+		We should be able to support non-realtime usecases that scale to more users like blogs and
+		similar web publishing, much for free thanks to SvelteKit. Felt can't be the solution to all
+		problems, and we're prioritizing flexibility over the ability to handle massive amounts of data,
+		and we'll be able to improve its scalability over time.
+	</p>
 	<p>
 		Even though our code isn't pushing the boundaries of performance and enterprise readiness, we're
 		trying to write it modularly and with good principles, so hopefully it evolves gracefully and
 		enables better tools to be built on its foundations. (for example, we have a unified
 		serializable event stream for the client and server API that works for frictionless realtime
-		broadcasting and already has bare-but-never-out-of-date docs -- we're cutting a lot of corners
+		broadcasting and already has bare-but-never-out-of-date docs – we're cutting a lot of corners
 		but also investing a lot in tech up front)
 	</p>
 	<h3 id="interop">interop and decentralization:</h3>
