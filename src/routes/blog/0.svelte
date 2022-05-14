@@ -151,6 +151,13 @@
 		We're working in the open at <a href="https://github.com/feltcoop">github.com/feltcoop</a>
 	</p>
 	<hr />
+	<h2>Wait the blog post isn't done?</h2>
+	<p>
+		I'm having difficulty summarizing the project: it's big, there's many unknowns, and my
+		summarization skills could certainly improve. I'll write more followup blog posts, hopefully
+		more coherent than this one, but for now I'll add a few more thoughts below.
+	</p>
+	<hr />
 	<h2>Everyone can be a toolmaker:</h2>
 	<p>
 		Instead of being limited to filling digital boxes designed by tech companies, anyone should be
@@ -250,11 +257,12 @@
 	<h3>scaling (and not):</h3>
 	<p>
 		Our focus on "small communities" relates to a potentially deflating fact about our software: it
-		doesn't scale to large numbers of people or some kinds of heavy load. We're optimizing to
-		quickly iterate on social experiences with human-scale groups of people on a single machine with
-		web tech. The limits may appear restrictive compared to the infinite cloud worlds, but these
-		tradeoffs give us a simple, highly productive environment that's powerful in the small, and
-		maybe small communities are good too.
+		doesn't scale to large numbers of people or some kinds of heavy load. Felt can't be the best
+		solution to all problems, and tradeoffs are unavoidable. We're optimizing to quickly iterate on
+		social experiences with human-scale groups of people on a single machine with web tech. The
+		limits may appear restrictive compared to the infinite cloud worlds, but these tradeoffs give us
+		a simple, highly productive environment that's powerful in the small, and maybe small
+		communities are good too.
 	</p>
 	<blockquote>
 		Today, <a href="https://github.com/feltcoop/felt-server">felt-server</a> supports only
@@ -267,9 +275,9 @@
 	</blockquote>
 	<p>
 		We should be able to support non-realtime usecases that scale to more users like blogs and
-		similar web publishing, much for free thanks to SvelteKit. Felt can't be the solution to all
-		problems, and we're prioritizing flexibility over the ability to handle massive amounts of data,
-		and we'll be able to improve its scalability over time.
+		similar web publishing, much for free thanks to SvelteKit. We're prioritizing flexibility and UX
+		over the ability to handle massive amounts of data, and we'll improve various kinds of scaling
+		over time.
 	</p>
 	<p>
 		Even though our code isn't pushing the boundaries of performance and enterprise readiness, we're
@@ -310,7 +318,7 @@
 		desired UX.
 	</p>
 	<hr />
-	<h2>Cool ok:</h2>
+	<h2>Ok cool?</h2>
 	<p>
 		find <a href="https://www.felt.social">us</a> @feltcoop on
 		<a href="https://twitter.com/feltcoop">Twitter</a> and
