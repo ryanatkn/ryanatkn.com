@@ -77,6 +77,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		text-align: center;
 	}
 	section {
 		margin: var(--spacing_xl3) 0 0 0;

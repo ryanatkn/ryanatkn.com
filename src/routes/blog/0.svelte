@@ -46,7 +46,10 @@
 	<p>What are these underserved niches?</p>
 	<ul>
 		<li>small communities</li>
-		<li>multipurpose</li>
+		<li>
+			multipurpose, so the same toolkit can be used for many kinds of communities along with
+			standalone websites
+		</li>
 		<li>
 			fullstack modding, so devs and endusers have proper access and power over their UX and
 			systems, and we bridge more of the gap between programming and using
@@ -55,7 +58,7 @@
 	<p>
 		Fullstack modding is key to why I want to work on Felt, but it has a lot of unknowns and we need
 		to implement it to understand it. For devs, it means we'll have open source components, clients,
-		and servers that are designed to be extended and replaced. For endusers it means:
+		and servers that are designed to be extended and swapped out. For endusers it means:
 	</p>
 	<ul>
 		<li>
@@ -110,7 +113,7 @@
 		</li>
 		<li>
 			<a href="https://github.com/feltcoop/felt-template">@feltcoop/felt-template</a> – a static web
-			app template with SvelteKit and Felt for quickly creating new projects
+			app template with SvelteKit, TypeScript, and Felt for quickly creating new projects
 		</li>
 		<li>
 			<a href="https://github.com/feltcoop/gro">@feltcoop/gro</a> – a toolkit that extends SvelteKit
@@ -180,18 +183,29 @@
 		people has distinct needs.
 	</p>
 	<p>
-		Our perspective as toolmakers is that we'll attempt to support a wide range possibilities, from
-		traditional moderator setups to democratic control and much more, and provide templates and
+		We're fortunate and grateful to be collaborating with PhD student Jane Im (<a
+			href="https://imjane.net/">imjane.net</a
+		>) on designs including research-backed user-driven governance. Her paper "Yes: Affirmative
+		Consent as a Theoretical Framework for Reimagining Social Platforms" (<a
+			href="https://consentful.systems">consentful.systems</a
+		>), which credits <a href="https://www.consentfultech.io/">The Consentful Tech Project</a>, has
+		been a major source of inspiration for how we think about designing software.
+	</p>
+	<p>
+		Our perspective as toolmakers is that we'll attempt to support a wide range of possibilities,
+		from traditional moderator setups to democratic control and much more, and provide templates and
 		guidance to help communities achieve their goals. We'll give this a lot of attention before
 		beta, but I suspect the truly good stuff is years away, maybe using standards that
-		<a href="https://metagov.org/">Metagov</a> is developing.
+		<a href="https://metagov.org/">Metagov</a> is developing. I'm also keeping related projects
+		<a href="https://communityrule.info/">CommunityRule</a>
+		and <a href="https://policykit.org/">PolicyKit</a> in mind.
 	</p>
 	<hr />
 	<h2>Business and ownership:</h2>
 	<p>
 		<strong>business model</strong>: no ads, no crypto,
 		<a href="https://wikipedia.org/wiki/MIT_License">free and fully open source</a>; users pay for
-		service and if it's sustainable we'll creatively subsidize users
+		service and if it's sustainable we'll creatively subsidize users for more equitable access
 	</p>
 	<p>
 		<strong>ownership/control</strong>: self-funded worker co-op with plans to become a
@@ -213,7 +227,7 @@
 		In the not-too-distant future, I'm excited to find and fund three more colleagues and turn our <a
 			href="https://github.com/feltcoop/felt/blob/main/GOVERNANCE.md"
 			>Temporary Benevolent Dictatorship</a
-		> into a real co-op.
+		> into a real co-op. (5 is the number required to form a Colorado cooperative)
 	</p>
 	<p>
 		I would consider it a great success if one day, democratically selected experts make the
@@ -239,7 +253,7 @@
 		Svelte and SvelteKit have been a fantastic set of tools for making UIs. We don't yet use some of
 		SvelteKit's flagship features like endpoints, but we feel productive and delighted working with
 		it, and its flexibility is a wonder. We've been deprioritizing full SSR but it's a relief to
-		know it's there when we're ready for it. It's amazing how much of the load SvelteKit takes off
+		know it's there when we're ready for it. It's amazing how much of the load SvelteKit lifts from
 		our shoulders.
 	</p>
 	<h3>customizable and extensible:</h3>
@@ -251,8 +265,8 @@
 	<p>
 		Our client has a <a href="https://wikipedia.org/wiki/Client_(computing)#Thick">thickness</a>
 		optimized for UX over long sessions, which means a lot of JS and client-side caching, and thanks
-		to SvelteKit we think we'll also be able to deliver good experiences in many cases with fast loadtimes
-		and minimal JS.
+		to SvelteKit we should be able to deliver good experiences in many cases with fast loadtimes and
+		minimal JS.
 	</p>
 	<h3>scaling (and not):</h3>
 	<p>
@@ -289,10 +303,12 @@
 	</p>
 	<h3 id="interop">interop and decentralization:</h3>
 	<p>
-		Giving users choices is a principle I want to adhere to, and that includes interoperability, but
-		we're a 2 person team with limited resources trying to deliver a specific UX. Today this means
-		we have a centralized Node server, and a future possibility is to support decentralized backends
-		like ActivityPub and Matrix.
+		Giving users choices is a principle I want to adhere to, and that includes <a
+			href="https://www.eff.org/deeplinks/2019/10/adversarial-interoperability"
+			>cooperative interoperability</a
+		>, but we're a 2 person team with limited resources trying to deliver a specific UX. Today this
+		means we have a centralized Node server, and a future possibility is to support decentralized
+		backends like ActivityPub and Matrix.
 	</p>
 	<p>
 		We're trying to follow <a href="https://www.w3.org/TR/activitystreams-core/"
