@@ -16,8 +16,9 @@
   },
   "devDependencies": {
     "@feltcoop/eslint-config": "^0.1.5",
-    "@feltcoop/felt": "^0.28.0",
-    "@feltcoop/gro": "^0.55.0",
+    "@feltcoop/felt": "^0.30.0",
+    "@feltcoop/gro": "^0.55.2",
+    "@prettier/plugin-xml": "^2.2.0",
     "@sveltejs/adapter-static": "^1.0.0-next.29",
     "@sveltejs/kit": "^1.0.0-next.324",
     "@typescript-eslint/eslint-plugin": "^5.15.0",

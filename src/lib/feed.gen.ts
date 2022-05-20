@@ -8,5 +8,5 @@ const ATOM_FEED_PATH = `../static/feed.xml`;
 // const JSON_FEED_PATH = `../static/feed.json`;
 
 export const gen: Gen = async () => {
-	return [{content: toAtomXml(feedData), filename: ATOM_FEED_PATH, format: false}];
+	return [{content: toAtomXml(feedData), filename: ATOM_FEED_PATH}];
 };
