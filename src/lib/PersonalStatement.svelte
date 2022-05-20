@@ -135,4 +135,7 @@
 		border-radius: var(--border_radius);
 		padding: var(--spacing_md);
 	}
+	.card p:first-child {
+		font-size: var(--font_size_lg);
+	}
 </style>
