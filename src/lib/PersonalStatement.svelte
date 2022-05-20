@@ -1,3 +1,36 @@
+<script lang="ts">
+	interface ProjectInfo {
+		title: string;
+		description: string;
+		links: string;
+	}
+
+	const projects: ProjectInfo[] = [
+		{
+			title: '<a href="/blog">blog</a>',
+			description: 'trying to explain myself in few words',
+			links: '<a href="/blog">/blog</a>',
+		},
+		{
+			title: '<a href="https://felt.social">@feltcoop</a>',
+			description: `a <a href="https://wikipedia.org/wiki/Software_release_life_cycle">pre-alpha</a> aspiring <a href="https://platform.coop">platform co-op</a> making free and open source community software`,
+			links: `<a href="https://github.com/feltcoop">GitHub</a>, <a href="https://twitter.com/feltcoop">Twitter</a>, <a href="mailto:ryan@felt.social">ryan@felt.social</a>, <a href="mailto:team@felt.social">team@felt.social</a>`,
+		},
+		{
+			title: '<a href="https://www.cosmicplayground.org">cosmicplayground.org</a>',
+			description:
+				'hobby project for fun and learning, <em>"tools and toys for expanding minds"</em>',
+			links:
+				'<a href="https://github.com/cosmicplayground">GitHub</a>, <a href="https://twitter.com/cosmicplaygroun">Twitter</a>',
+		},
+		{
+			title: '<a href="https://www.spiderspace.org">spiderspace.org</a>',
+			description: 'web prototypes shy of daylight',
+			links: '<a href="https://github.com/spiderspace">GitHub</a>',
+		},
+	];
+</script>
+
 <blockquote class="panel-inset">
 	<p>
 		hello web surfer! You've reached the web site of Ryan Atkinson. He's an open source web
@@ -17,38 +50,23 @@
 
 <h2>Projects I'm working on:</h2>
 
+<!-- TODO do this responsive thing better, probably with CSS grid -->
 <table>
 	<tbody
-		><tr
-			><td><a href="/blog">blog</a></td><td>trying to explain myself in few words</td><td
-				><a href="/blog">/blog</a></td
-			></tr
-		><tr
-			><td><a href="https://felt.social">@feltcoop</a></td><td
-				>a
-				<a href="https://wikipedia.org/wiki/Software_release_life_cycle">pre-alpha</a> aspiring
-				<a href="https://platform.coop">platform co-op</a> making free and open source community software</td
-			><td
-				><a href="https://github.com/feltcoop">GitHub</a>,
-				<a href="https://twitter.com/feltcoop">Twitter</a>,
-				<a href="mailto:ryan@felt.social">ryan@felt.social</a>,
-				<a href="mailto:team@felt.social">team@felt.social</a></td
-			></tr
-		><tr
-			><td><a href="https://www.cosmicplayground.org">cosmicplayground.org</a></td><td
-				>hobby project for fun and learning,
-				<em>"tools and toys for expanding minds"</em></td
-			><td
-				><a href="https://github.com/cosmicplayground">GitHub</a>,
-				<a href="https://twitter.com/cosmicplaygroun">Twitter</a></td
-			></tr
-		><tr
-			><td><a href="https://www.spiderspace.org">spiderspace.org</a></td><td
-				>web prototypes shy of daylight</td
-			><td><a href="https://github.com/spiderspace">GitHub</a></td></tr
-		></tbody
+		>{#each projects as project}<tr
+				><td>{@html project.title}</td><td>{@html project.description}</td><td
+					>{@html project.links}</td
+				></tr
+			>{/each}</tbody
 	>
 </table>
+<div class="cards">
+	{#each projects as project}<div class="card markup">
+			<p>{@html project.title}</p>
+			<p>{@html project.description}</p>
+			<p>{@html project.links}</p>
+		</div>{/each}
+</div>
 
 <h2>Contact:</h2>
 <ul>
@@ -79,10 +97,42 @@
 		align-items: center;
 		text-align: center;
 	}
+	@media (max-width: 570px) {
+		.emojis {
+			font-size: 2em;
+		}
+	}
+	@media (max-width: 410px) {
+		.emojis {
+			font-size: 1.7em;
+		}
+	}
+	@media (max-width: 360px) {
+		.emojis {
+			font-size: 1.4em;
+		}
+	}
 	section {
 		margin: var(--spacing_xl3) 0 0 0;
 	}
 	td:first-child {
 		white-space: nowrap;
+	}
+	.cards {
+		display: none;
+	}
+	@media (max-width: 640px) {
+		table {
+			display: none;
+		}
+		.cards {
+			display: block;
+		}
+	}
+	.card {
+		border: var(--border);
+		margin-bottom: var(--spacing_lg);
+		border-radius: var(--border_radius);
+		padding: var(--spacing_md);
 	}
 </style>
