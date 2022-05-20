@@ -334,6 +334,13 @@
 		future and I would love to help Felt be compatible with standard protocols once we have our
 		desired UX.
 	</p>
+	<blockquote>
+		"decentralized" means a lot of things, and while I think it's a broadly inevitable future, I
+		believe the rather important details of ownership and power have yet to be determined, and my
+		hope is that justice-oriented movements like <a href="https://getdweb.net/principles/"
+			>the DWeb</a
+		> prevail over the rent-seekers; I want to own the digital ground under my own feet, don't you?
+	</blockquote>
 	<hr />
 	<h2>Ok cool?</h2>
 	<p>
