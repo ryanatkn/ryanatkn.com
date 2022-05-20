@@ -339,7 +339,9 @@
 		believe the rather important details of ownership and power have yet to be determined, and my
 		hope is that justice-oriented movements like <a href="https://getdweb.net/principles/"
 			>the DWeb</a
-		> prevail over the rent-seekers; I want to own the digital ground under my own feet, don't you?
+		>
+		prevail over the rent-seekers; I want to own the digital ground under my own feet,
+		<a href="https://wikipedia.org/wiki/Golden_Rule">don't you?</a>
 	</blockquote>
 	<hr />
 	<h2>Ok cool?</h2>
