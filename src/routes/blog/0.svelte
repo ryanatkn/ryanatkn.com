@@ -191,7 +191,7 @@
 	Our perspective as toolmakers is that we'll attempt to support a wide range of possibilities, from
 	traditional moderator setups to democratic control and much more, and provide templates and
 	guidance to help communities achieve their goals. We'll give this a lot of attention before beta,
-	but I suspect the truly good stuff is years away, maybe using standards that
+	but I suspect the delightfully good stuff is 1-2+ years away, maybe using standards that
 	<a href="https://metagov.org/">Metagov</a> is developing. I'm also keeping related projects
 	<a href="https://communityrule.info/">CommunityRule</a>
 	and <a href="https://policykit.org/">PolicyKit</a> in mind.
