@@ -333,8 +333,8 @@
 	believe the rather important details of ownership and power have yet to be determined, and my hope
 	is that justice-oriented movements like <a href="https://platform.coop/">platform cooperatives</a>
 	and <a href="https://getdweb.net/principles/">the DWeb</a>
-	prevail over the <a href="https://wikipedia.org/wiki/Rent-seeking">rent-seekers</a>; I want to own
-	the digital ground under my own feet,
+	do better than the <a href="https://wikipedia.org/wiki/Rent-seeking">rent-seeking</a> that
+	dominates today; I want to own the digital ground under my own feet,
 	<a href="https://wikipedia.org/wiki/Golden_Rule">don't you?</a>
 </blockquote>
 <hr />
