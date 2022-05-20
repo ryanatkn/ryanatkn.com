@@ -5,6 +5,9 @@
 		links: string;
 	}
 
+	// TODO I moved the project info to this data format to quicky slap together a responsive layout
+	// without changing the original tables, but it'd be much better
+	// to write this in normal Svelte markup and use CSS to make a responsive layout
 	const projects: ProjectInfo[] = [
 		{
 			title: '<a href="/blog">blog</a>',
@@ -50,7 +53,6 @@
 
 <h2>Projects I'm working on:</h2>
 
-<!-- TODO do this responsive thing better, probably with CSS grid -->
 <table>
 	<tbody
 		>{#each projects as project}<tr
