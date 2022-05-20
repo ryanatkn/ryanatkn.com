@@ -51,7 +51,7 @@ export const toAtomXml = (data: FeedData): string => {
 		}, new Date(0))
 		.toISOString();
 
-	return `<?xml version="1.0" encoding="UTF-8"?>
+	return `<?xml version="1.0" encoding="UTF-8" ?>
 
 <feed xmlns="http://www.w3.org/2005/Atom">
 
