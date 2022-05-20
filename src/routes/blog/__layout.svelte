@@ -8,13 +8,15 @@
 
 <main>
 	<Header />
-	<div class="blog">
+	<div class="breadcrumbs">
 		<LinkPath><Favicon /></LinkPath>
 	</div>
 	<div class="column markup">
 		<slot />
 	</div>
-	<LinkPath><Favicon /></LinkPath>
+	<div class="breadcrumbs">
+		<LinkPath><Favicon /></LinkPath>
+	</div>
 	<Footer />
 </main>
 
@@ -32,8 +34,8 @@
 	.column {
 		flex: 1;
 	}
-	.blog {
-		margin-top: var(--spacing_xl);
+	.breadcrumbs {
+		margin-top: var(--spacing_xl3);
 		display: flex;
 		flex-direction: column;
 		align-items: center;
