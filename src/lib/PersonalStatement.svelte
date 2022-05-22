@@ -27,6 +27,12 @@
 				'<a href="https://github.com/cosmicplayground">GitHub</a>, <a href="https://twitter.com/cosmicplaygroun">Twitter</a>',
 		},
 		{
+			title: '<a href="https://www.blitwagon.net">blitwagon.net</a>',
+			description: 'hobby persona for cosmicplayground',
+			links:
+				'<a href="https://github.com/blitwagon">GitHub</a>, <a href="https://twitter.com/blitwagon">Twitter</a>',
+		},
+		{
 			title: '<a href="https://www.spiderspace.org">spiderspace.org</a>',
 			description: 'web prototypes shy of daylight',
 			links: '<a href="https://github.com/spiderspace">GitHub</a>',
