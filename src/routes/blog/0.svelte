@@ -224,7 +224,8 @@
 		href="https://github.com/feltcoop/felt/blob/main/GOVERNANCE.md"
 		>Temporary Benevolent Dictatorship</a
 	> into a real co-op. (5 is the number required to form a Colorado cooperative; Hamilton lives there
-	and although we're a remote team, it has some of the best-developed cooperative laws in the country)
+	and although we're a remote team, it has some of the best-developed cooperative laws in the United
+	States)
 </p>
 <p>
 	I would consider it a great success if one day, democratically selected experts make the difficult
