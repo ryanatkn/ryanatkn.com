@@ -102,6 +102,8 @@
 	</li>
 	<li><a href="https://metagov.org/">metagov.org</a></li>
 	<li><a href="https://platform.coop/">platform.coop</a></li>
+	<li><a href="https://consentful.systems/">consentful.systems</a></li>
+	<li><a href="https://www.consentfultech.io/">consentfultech.io</a></li>
 	<li>
 		<a href="https://publicinfrastructure.org/">Initiative for Digital Public Infrastructure</a>
 	</li>
@@ -110,7 +112,6 @@
 	<li><a href="https://homes.cs.washington.edu/~axz/">Amy Zhang</a></li>
 	<li><a href="https://www.joshuatan.com/">Joshua Tan</a></li>
 	<li><a href="https://imjane.net">Jane Im</a></li>
-	<li><a href="https://www.consentfultech.io/">consentfultech.io</a></li>
 	<li><a href="https://twitter.com/divyasiddarth">Divya Siddarth</a></li>
 	<li><a href="https://opencollective.com/">Open Collective</a></li>
 </ul>
