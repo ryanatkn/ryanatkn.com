@@ -9,7 +9,8 @@
 <BlogPostHeader {post} />
 <p>
 	Giving proper credit to all of one's influences is an impossible task but why not try? Maybe these
-	lists could help you discover new and interesting people & things.
+	lists could help you discover new and interesting people & things. I am definitely forgetting
+	important people and things, so this will be an evolving document.
 </p>
 <h3>languages that obviously influenced my thinking, roughly chronological:</h3>
 <ul>
@@ -89,13 +90,21 @@
 </ul>
 <h3>a cluster around my current professional work:</h3>
 <ul>
-	<li><a href="https://nathanschneider.info/">Nathan Schneider</a></li>
+	<li>
+		<a href="https://wikipedia.org/wiki/Fediverse">the fediverse</a> and
+		<a href="https://wikipedia.org/wiki/Matrix_(protocol)">Matrix protocol</a>
+	</li>
 	<li><a href="https://metagov.org/">metagov.org</a></li>
 	<li><a href="https://platform.coop/">platform.coop</a></li>
+	<li>
+		<a href="https://publicinfrastructure.org/">Initiative for Digital Public Infrastructure</a>
+	</li>
+	<li><a href="https://communityrule.info/">CommunityRule</a></li>
+	<li><a href="https://nathanschneider.info/">Nathan Schneider</a></li>
+	<li><a href="https://homes.cs.washington.edu/~axz/">Amy Zhang</a></li>
+	<li><a href="https://www.joshuatan.com/">Joshua Tan</a></li>
 	<li><a href="https://imjane.net">Jane Im</a></li>
 	<li><a href="https://www.consentfultech.io/">consentfultech.io</a></li>
-	<li><a href="https://homes.cs.washington.edu/~axz/">Amy Zhang</a></li>
 	<li><a href="https://twitter.com/divyasiddarth">Divya Siddarth</a></li>
-	<li><a href="https://www.joshuatan.com/">Joshua Tan</a></li>
 	<li><a href="https://opencollective.com/">Open Collective</a></li>
 </ul>
