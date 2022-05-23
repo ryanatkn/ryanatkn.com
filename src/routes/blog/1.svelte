@@ -94,8 +94,9 @@
 </ul>
 <h3>a cluster around my current professional work:</h3>
 <ul>
-	<li><a href="https://futureofcoding.org/">Future of Coding</a></li>
+	<li><a href="https://futureofcoding.org/">Future of Coding</a> community</li>
 	<li><a href="https://toolsforthought.rocks/">toolsforthought.rocks</a></li>
+	<li><a href="https://kit.svelte.dev/">SvelteKit</a></li>
 	<li><a href="https://socialhub.activitypub.rocks/">socialhub.activitypub.rocks</a></li>
 	<li>
 		<a href="https://wikipedia.org/wiki/Fediverse">the fediverse</a> and
