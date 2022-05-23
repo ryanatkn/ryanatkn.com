@@ -23,6 +23,10 @@
 		some <a href="https://wikipedia.org/wiki/Lua_(programming_language)">Lua</a>- and
 		<a href="https://wikipedia.org/wiki/PHP">PHP</a>-like scripting languages for games
 	</li>
+	<li>
+		<a href="https://wikipedia.org/wiki/Microsoft_Excel">Excel</a> and
+		<a href="https://wikipedia.org/wiki/Visual_Basic_for_Applications">VBA</a>
+	</li>
 	<li><a href="https://www.python.org/">Python</a></li>
 	<li>
 		<a href="https://wikipedia.org/wiki/ActionScript">Action Script 3</a> for Flash (whats flash)
