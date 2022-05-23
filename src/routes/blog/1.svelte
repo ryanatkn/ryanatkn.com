@@ -77,6 +77,7 @@
 	<li><a href="https://andrewclark.io/">Andrew Clark</a></li>
 	<li><a href="https://overreacted.io/">Dan Abramov</a></li>
 	<li><a href="https://github.com/lhorie">Leo Horie</a></li>
+	<li><a href="https://github.com/swannodette">David Nolen</a></li>
 	<li><a href="https://ncase.me/">Nicky Case</a></li>
 	<li><a href="https://jlongster.com/">James Long</a></li>
 	<li><a href="https://twitter.com/Rich_Harris">Rich Harris</a></li>
