@@ -72,12 +72,15 @@
 	<li><a href="https://wikipedia.org/wiki/Douglas_Crockford">Douglas Crockford</a></li>
 	<li><a href="https://github.com/tj">TJ Holowaychuk</a></li>
 	<li><a href="https://substack.net/">substack</a></li>
+	<li><a href="https://tomdale.net/">Tom Dale</a></li>
+	<li><a href="https://yehudakatz.com/">Yehuda Katz</a></li>
 	<li><a href="https://andrewclark.io/">Andrew Clark</a></li>
-	<li><a href="https://twitter.com/dan_abramov">Dan Abramov</a></li>
+	<li><a href="https://overreacted.io/">Dan Abramov</a></li>
 	<li><a href="https://github.com/lhorie">Leo Horie</a></li>
 	<li><a href="https://ncase.me/">Nicky Case</a></li>
 	<li><a href="https://jlongster.com/">James Long</a></li>
 	<li><a href="https://twitter.com/Rich_Harris">Rich Harris</a></li>
+	<li><a href="https://github.com/lukeed">Luke Edwards</a></li>
 	<li><a href="https://andymatuschak.org/">Andy Matuschak</a></li>
 	<li><a href="https://twitter.com/yoshikischmitz">Yoshiki Schmitz</a></li>
 	<li><a href="https://www.geoffreylitt.com/">Geoffrey Litt</a></li>
@@ -86,7 +89,6 @@
 	<li><a href="https://wattenberger.com/">Amelia Wattenberger</a></li>
 	<li><a href="https://tinysubversions.com/">Darius Kazemi</a></li>
 	<li><a href="https://maggieappleton.com/">Maggie Appleton</a></li>
-	<li><a href="https://github.com/lukeed">Luke Edwards</a></li>
 	<li><a href="https://www.swyx.io/">Shawn Wang</a></li>
 	<li><a href="https://twitter.com/RyanCarniato">Ryan Carniato</a></li>
 	<li><a href="https://homes.cs.washington.edu/~axz/">Amy Zhang</a></li>
