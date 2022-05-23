@@ -113,6 +113,7 @@
 	<li>
 		<a href="https://publicinfrastructure.org/">Initiative for Digital Public Infrastructure</a>
 	</li>
+	<li><a href="https://www.humanetech.com/">Center for Humane Technology</a></li>
 	<li><a href="https://communityrule.info/">CommunityRule</a></li>
 	<li><a href="https://policykit.org/">PolicyKit</a></li>
 	<li><a href="https://nathanschneider.info/">Nathan Schneider</a></li>
