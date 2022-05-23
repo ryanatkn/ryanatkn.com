@@ -86,6 +86,7 @@
 	<li><a href="https://wattenberger.com/">Amelia Wattenberger</a></li>
 	<li><a href="https://tinysubversions.com/">Darius Kazemi</a></li>
 	<li><a href="https://maggieappleton.com/">Maggie Appleton</a></li>
+	<li><a href="https://github.com/lukeed">Luke Edwards</a></li>
 	<li><a href="https://www.swyx.io/">Shawn Wang</a></li>
 	<li><a href="https://twitter.com/RyanCarniato">Ryan Carniato</a></li>
 	<li><a href="https://homes.cs.washington.edu/~axz/">Amy Zhang</a></li>
