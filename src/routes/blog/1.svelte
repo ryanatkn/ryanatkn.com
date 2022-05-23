@@ -81,6 +81,7 @@
 	<li><a href="https://jlongster.com/">James Long</a></li>
 	<li><a href="https://twitter.com/Rich_Harris">Rich Harris</a></li>
 	<li><a href="https://github.com/lukeed">Luke Edwards</a></li>
+	<li>my coworker <a href="https://12mod12.com/">Hamilton Reed</a></li>
 	<li><a href="https://andymatuschak.org/">Andy Matuschak</a></li>
 	<li><a href="https://twitter.com/yoshikischmitz">Yoshiki Schmitz</a></li>
 	<li><a href="https://www.geoffreylitt.com/">Geoffrey Litt</a></li>
