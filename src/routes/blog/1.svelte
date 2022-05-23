@@ -96,6 +96,7 @@
 <ul>
 	<li><a href="https://futureofcoding.org/">Future of Coding</a></li>
 	<li><a href="https://toolsforthought.rocks/">toolsforthought.rocks</a></li>
+	<li><a href="https://socialhub.activitypub.rocks/">socialhub.activitypub.rocks</a></li>
 	<li>
 		<a href="https://wikipedia.org/wiki/Fediverse">the fediverse</a> and
 		<a href="https://wikipedia.org/wiki/Matrix_(protocol)">Matrix protocol</a>
@@ -108,6 +109,7 @@
 		<a href="https://publicinfrastructure.org/">Initiative for Digital Public Infrastructure</a>
 	</li>
 	<li><a href="https://communityrule.info/">CommunityRule</a></li>
+	<li><a href="https://policykit.org/">PolicyKit</a></li>
 	<li><a href="https://nathanschneider.info/">Nathan Schneider</a></li>
 	<li><a href="https://homes.cs.washington.edu/~axz/">Amy Zhang</a></li>
 	<li><a href="https://www.joshuatan.com/">Joshua Tan</a></li>
