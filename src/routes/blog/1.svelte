@@ -20,7 +20,7 @@
 		<a href="https://wikipedia.org/wiki/HTML">HTML</a> (making silly things with friends in highschool)
 	</li>
 	<li>
-		some <a href="https://wikipedia.org/wiki/Lua_(programming_language)">Lua</a>- and
+		<a href="https://wikipedia.org/wiki/Lua_(programming_language)">Lua</a> and some
 		<a href="https://wikipedia.org/wiki/PHP">PHP</a>-like scripting languages for games
 	</li>
 	<li>
@@ -49,7 +49,7 @@
 	<li><a href="https://reactjs.org/docs/introducing-jsx.html">JSX and React</a>/vdom</li>
 	<li><a href="https://clojurescript.org/">ClojureScript</a></li>
 	<li>
-		dabbling with <a href="https://elm-lang.org/">Elm</a> and
+		a little <a href="https://elm-lang.org/">Elm</a> and
 		<a href="https://www.purescript.org/">PureScript</a>
 	</li>
 	<li><a href="https://www.typescriptlang.org/">TypeScript</a></li>
@@ -94,6 +94,8 @@
 </ul>
 <h3>a cluster around my current professional work:</h3>
 <ul>
+	<li><a href="https://futureofcoding.org/">Future of Coding</a></li>
+	<li><a href="https://toolsforthought.rocks/">toolsforthought.rocks</a></li>
 	<li>
 		<a href="https://wikipedia.org/wiki/Fediverse">the fediverse</a> and
 		<a href="https://wikipedia.org/wiki/Matrix_(protocol)">Matrix protocol</a>
