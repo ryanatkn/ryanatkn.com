@@ -95,6 +95,15 @@
 	<li>we plan to become a <a href="https://platform.coop">platform co-op</a></li>
 </ul>
 <p>
+	We'll provide defaults and templates, and users can modify the software for their own needs. We'll
+	support simple and scalable static web publishing like blogs and RSS feeds, along with the tools
+	to make hobby-grade realtime social experiences and games.
+</p>
+<blockquote>
+	"hobby-grade" is how I like to frame it today, but "for srs Professionals" is an eventual target;
+	it's still early and I don't want to overpromise
+</blockquote>
+<p>
 	It's a big set of goals, and we think we have useful contributions particularly around UX. (see
 	below for <a href="#interop">more on interop</a>) We think we see an opportunity to hit a sweet
 	spot for small communities with our set of design and tech choices.
@@ -133,14 +142,8 @@
 <p>As devs, we want to build great software for people, prioritizing endusers over operators.</p>
 <p>
 	As toolmakers we want to help users bring their own visions to life and support a beneficial
-	relationship with technology. We'll provide defaults and templates, and users can modify the
-	software for their own needs. We'll support simple and scalable static web publishing like blogs
-	and RSS feeds, along with the tools to make hobby-grade realtime social experiences and games.
+	relationship with technology.
 </p>
-<blockquote>
-	"hobby-grade" is how I like to frame it today, but "for srs Professionals" is an eventual target;
-	it's still early and I don't want to overpromise
-</blockquote>
 <p>
 	The idea is to make <a href="https://github.com/feltcoop">the software</a> we want to use, at
 	<a href="https://www.felt.social">the company</a> we want to work for, providing the service we want
