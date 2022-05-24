@@ -65,6 +65,7 @@
 	<li><a href="https://wikipedia.org/wiki/Douglas_Engelbart">Douglas Engelbart</a></li>
 	<li><a href="https://wikipedia.org/wiki/Seymour_Papert">Seymour Papert</a></li>
 	<li><a href="https://wikipedia.org/wiki/Ted_Nelson">Ted Nelson</a></li>
+	<li><a href="https://wikipedia.org/wiki/Marshall_McLuhan">Marshall McLuhan</a></li>
 	<li><a href="https://wikipedia.org/wiki/Rich_Hickey">Rich Hickey</a></li>
 	<li>my coworker <a href="https://github.com/mgutz">Mario Gutierrez</a></li>
 	<li><a href="https://wikipedia.org/wiki/Ryan_Dahl">Ryan Dahl</a></li>
@@ -82,8 +83,10 @@
 	<li><a href="https://jlongster.com/">James Long</a></li>
 	<li><a href="https://twitter.com/Rich_Harris">Rich Harris</a></li>
 	<li><a href="https://github.com/lukeed">Luke Edwards</a></li>
+	<li><a href="https://twitter.com/evilpingwin">pngwn</a></li>
 	<li>my coworker <a href="https://12mod12.com/">Hamilton Reed</a></li>
 	<li><a href="https://andymatuschak.org/">Andy Matuschak</a></li>
+	<li><a href="https://wikipedia.org/wiki/Christopher_Alexander">Christopher Alexander</a></li>
 	<li><a href="https://twitter.com/yoshikischmitz">Yoshiki Schmitz</a></li>
 	<li><a href="https://www.geoffreylitt.com/">Geoffrey Litt</a></li>
 	<li><a href="https://www.galaxykate.com/">Kate Compton</a></li>
@@ -91,7 +94,7 @@
 	<li><a href="https://wattenberger.com/">Amelia Wattenberger</a></li>
 	<li><a href="https://tinysubversions.com/">Darius Kazemi</a></li>
 	<li><a href="https://maggieappleton.com/">Maggie Appleton</a></li>
-	<li><a href="https://www.swyx.io/">Shawn Wang</a></li>
+	<li><a href="https://www.swyx.io/">swyx</a></li>
 	<li><a href="https://twitter.com/RyanCarniato">Ryan Carniato</a></li>
 	<li><a href="https://homes.cs.washington.edu/~axz/">Amy Zhang</a></li>
 	<li><a href="https://imjane.net">Jane Im</a></li>
