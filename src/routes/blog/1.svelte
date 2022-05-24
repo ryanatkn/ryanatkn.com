@@ -83,6 +83,7 @@
 	<li><a href="https://github.com/evancz">Evan Czaplicki</a></li>
 	<li><a href="https://ncase.me/">Nicky Case</a></li>
 	<li><a href="https://jlongster.com/">James Long</a></li>
+	<li>my coworker <a href="https://twitter.com/bmajz">Bilal Aijazi</a></li>
 	<li><a href="https://twitter.com/Rich_Harris">Rich Harris</a></li>
 	<li><a href="https://github.com/lukeed">Luke Edwards</a></li>
 	<li><a href="https://twitter.com/evilpingwin">pngwn</a></li>
