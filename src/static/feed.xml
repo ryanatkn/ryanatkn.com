@@ -6,7 +6,7 @@
   <subtitle>blog of a web developer making open source community software</subtitle>
   <link href="https://www.ryanatkn.com/" />
   <link href="https://www.ryanatkn.com/feed.xml" rel="self" type="application/atom+xml" />
-	<updated>2022-05-23T18:38:44.607Z</updated>
+	<updated>2022-05-13T01:42:23.000Z</updated>
   <icon>https://www.ryanatkn.com/favicon.png</icon>
   <author>
     <name>Ryan Atkinson</name>
@@ -25,17 +25,6 @@
     <category term="web" /><category term="technology" /><category term="software" /><category
 			term="opensource"
 		/><category term="community" />
-  </entry>
-
-  <entry>
-    <id>https://www.ryanatkn.com/blog/1</id>
-    <title>An ongoing attempt to credit my influences</title>
-    <link rel="alternate" href="https://www.ryanatkn.com/blog/1" />
-    <published>2022-05-23T18:38:44.607Z</published>
-    <updated>2022-05-23T18:38:44.607Z</updated>
-    <summary
-		>I attempt to give credit to the people and projects that have influenced my work. This is an impossible task so it will be an evolving process.</summary>
-    <category term="credit" />
   </entry>
 
 </feed>

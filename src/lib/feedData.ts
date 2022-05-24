@@ -26,15 +26,5 @@ export const feedData: FeedData = {
 				'I discuss my work on open source community software called Felt over the last year, giving a brief overview of the design and technology choices, and announcing our newsletter and podcast at FeltCoop.',
 			tags: ['web', 'technology', 'software', 'opensource', 'community'],
 		},
-		{
-			id: 'https://www.ryanatkn.com/blog/1',
-			title: 'An ongoing attempt to credit my influences',
-			url: 'https://www.ryanatkn.com/blog/1',
-			date_published: '2022-05-23T18:38:44.607Z',
-			date_modified: '2022-05-23T18:38:44.607Z',
-			summary:
-				'I attempt to give credit to the people and projects that have influenced my work. This is an impossible task so it will be an evolving process.',
-			tags: ['credit'],
-		},
 	],
 };

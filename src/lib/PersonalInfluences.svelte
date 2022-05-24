@@ -1,12 +1,8 @@
 <script lang="ts">
-	import BlogPostHeader from '$lib/BlogPostHeader.svelte';
-	import {feedData} from '$lib/feedData';
-
-	// TODO refactor this probably, maybe putting the post in context
-	const post = feedData.items[1];
+	// 'I attempt to give credit to the people and projects that have influenced my work. This is an impossible task so it will be an evolving process.'
 </script>
 
-<BlogPostHeader {post} />
+<h1>An ongoing attempt to credit my influences</h1>
 <p>
 	Giving proper credit to all of one's influences is an impossible task but why not try? Maybe these
 	lists could help you discover new and interesting people & things. I am definitely forgetting
