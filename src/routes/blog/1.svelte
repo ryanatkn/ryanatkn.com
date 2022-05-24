@@ -10,7 +10,7 @@
 <p>
 	Giving proper credit to all of one's influences is an impossible task but why not try? Maybe these
 	lists could help you discover new and interesting people & things. I am definitely forgetting
-	important ones, so this will be an evolving document.
+	important ones, so this will be an evolving document. I
 </p>
 <h3>programming languages, roughly chronological:</h3>
 <ul>
@@ -43,6 +43,7 @@
 		with <a href="https://jquery.com/">jQuery</a>/<a href="https://backbonejs.org/">Backbone</a>
 	</li>
 	<li><a href="https://coffeescript.org/">CoffeeScript</a></li>
+	<li><a href="https://wikipedia.org/wiki/Bash_(Unix_shell)">Bash</a> and Unix/Linux</li>
 	<li><a href="https://livescript.net/">LiveScript</a></li>
 	<li><a href="https://wikipedia.org/wiki/Lisp_(programming_language)">Lisp</a></li>
 	<li><a href="https://clojure.org/">Clojure</a></li>
@@ -124,6 +125,7 @@
 	</li>
 	<li><a href="https://metagov.org/">metagov.org</a></li>
 	<li><a href="https://platform.coop/">platform.coop</a></li>
+	<li><a href="https://wikipedia.org/wiki/Elinor_Ostrom">Elinor Ostrom</a></li>
 	<li><a href="https://consentful.systems/">consentful.systems</a></li>
 	<li><a href="https://www.consentfultech.io/">consentfultech.io</a></li>
 	<li>
@@ -134,7 +136,6 @@
 	<li><a href="https://communityrule.info/">CommunityRule</a></li>
 	<li><a href="https://policykit.org/">PolicyKit</a></li>
 	<li><a href="https://nathanschneider.info/">Nathan Schneider</a></li>
-	<li><a href="https://wikipedia.org/wiki/Elinor_Ostrom">Elinor Ostrom</a></li>
 	<li><a href="https://homes.cs.washington.edu/~axz/">Amy Zhang</a></li>
 	<li><a href="https://www.joshuatan.com/">Joshua Tan</a></li>
 	<li><a href="https://imjane.net">Jane Im</a></li>
