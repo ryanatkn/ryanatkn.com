@@ -85,11 +85,12 @@
 	<li><a href="https://github.com/lukeed">Luke Edwards</a></li>
 	<li><a href="https://twitter.com/evilpingwin">pngwn</a></li>
 	<li>my coworker <a href="https://12mod12.com/">Hamilton Reed</a></li>
+	<li><a href="https://www.galaxykate.com/">Kate Compton</a></li>
 	<li><a href="https://andymatuschak.org/">Andy Matuschak</a></li>
 	<li><a href="https://wikipedia.org/wiki/Christopher_Alexander">Christopher Alexander</a></li>
 	<li><a href="https://twitter.com/yoshikischmitz">Yoshiki Schmitz</a></li>
 	<li><a href="https://www.geoffreylitt.com/">Geoffrey Litt</a></li>
-	<li><a href="https://www.galaxykate.com/">Kate Compton</a></li>
+	<li><a href="https://a9.io/">Max Krieger</a></li>
 	<li><a href="https://jasonyuan.design/">Jason Yuan</a></li>
 	<li><a href="https://wattenberger.com/">Amelia Wattenberger</a></li>
 	<li><a href="https://tinysubversions.com/">Darius Kazemi</a></li>
