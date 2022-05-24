@@ -12,7 +12,7 @@
 	lists could help you discover new and interesting people & things. I am definitely forgetting
 	important ones, so this will be an evolving document.
 </p>
-<h3>languages that obviously influenced my thinking, roughly chronological:</h3>
+<h3>programming languages, roughly chronological:</h3>
 <ul>
 	<li>whatever <a href="https://wikipedia.org/wiki/DOS">DOS</a> is</li>
 	<li>config files for games like <a href="https://wikipedia.org/wiki/INI_file">.ini</a></li>
@@ -30,6 +30,10 @@
 	<li><a href="https://www.python.org/">Python</a></li>
 	<li>
 		<a href="https://wikipedia.org/wiki/ActionScript">Action Script 3</a> for Flash (whats flash)
+	</li>
+	<li>
+		<a href="https://wikipedia.org/wiki/C_Sharp_(programming_language)">C#</a> with the discontinued
+		game tools <a href="https://wikipedia.org/wiki/Microsoft_XNA">XNA</a>
 	</li>
 	<li><a href="https://wikipedia.org/wiki/JavaScript">JavaScript</a></li>
 	<li><a href="https://wikipedia.org/wiki/CSS">CSS</a></li>
