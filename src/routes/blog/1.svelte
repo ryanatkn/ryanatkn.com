@@ -81,6 +81,7 @@
 	<li><a href="https://github.com/lhorie">Leo Horie</a></li>
 	<li><a href="https://github.com/swannodette">David Nolen</a></li>
 	<li><a href="https://github.com/evancz">Evan Czaplicki</a></li>
+	<li><a href="https://steveklabnik.com/">Steve Klabnik</a></li>
 	<li><a href="https://ncase.me/">Nicky Case</a></li>
 	<li><a href="https://jlongster.com/">James Long</a></li>
 	<li>my coworker <a href="https://twitter.com/bmajz">Bilal Aijazi</a></li>
@@ -100,6 +101,7 @@
 	<li><a href="https://tinysubversions.com/">Darius Kazemi</a></li>
 	<li><a href="https://maggieappleton.com/">Maggie Appleton</a></li>
 	<li><a href="https://www.swyx.io/">swyx</a></li>
+	<li><a href="https://andrewkelley.me/">Andrew Kelley</a></li>
 	<li><a href="https://twitter.com/RyanCarniato">Ryan Carniato</a></li>
 	<li><a href="https://homes.cs.washington.edu/~axz/">Amy Zhang</a></li>
 	<li><a href="https://imjane.net">Jane Im</a></li>
