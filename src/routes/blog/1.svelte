@@ -10,7 +10,7 @@
 <p>
 	Giving proper credit to all of one's influences is an impossible task but why not try? Maybe these
 	lists could help you discover new and interesting people & things. I am definitely forgetting
-	important ones, so this will be an evolving document. I
+	important ones, so this will be an evolving document.
 </p>
 <h3>programming languages, roughly chronological:</h3>
 <ul>
