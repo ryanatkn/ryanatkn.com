@@ -75,10 +75,12 @@
 	<li><a href="https://substack.net/">substack</a></li>
 	<li><a href="https://tomdale.net/">Tom Dale</a></li>
 	<li><a href="https://yehudakatz.com/">Yehuda Katz</a></li>
+	<li><a href="https://evanyou.me/">Evan You</a></li>
 	<li><a href="https://andrewclark.io/">Andrew Clark</a></li>
 	<li><a href="https://overreacted.io/">Dan Abramov</a></li>
 	<li><a href="https://github.com/lhorie">Leo Horie</a></li>
 	<li><a href="https://github.com/swannodette">David Nolen</a></li>
+	<li><a href="https://github.com/evancz">Evan Czaplicki</a></li>
 	<li><a href="https://ncase.me/">Nicky Case</a></li>
 	<li><a href="https://jlongster.com/">James Long</a></li>
 	<li><a href="https://twitter.com/Rich_Harris">Rich Harris</a></li>
@@ -86,12 +88,13 @@
 	<li><a href="https://twitter.com/evilpingwin">pngwn</a></li>
 	<li>my coworker <a href="https://12mod12.com/">Hamilton Reed</a></li>
 	<li><a href="https://www.galaxykate.com/">Kate Compton</a></li>
+	<li><a href="https://charliegerard.dev/">Charlie Gerard</a></li>
 	<li><a href="https://andymatuschak.org/">Andy Matuschak</a></li>
 	<li><a href="https://wikipedia.org/wiki/Christopher_Alexander">Christopher Alexander</a></li>
 	<li><a href="https://twitter.com/yoshikischmitz">Yoshiki Schmitz</a></li>
 	<li><a href="https://www.geoffreylitt.com/">Geoffrey Litt</a></li>
-	<li><a href="https://a9.io/">Max Krieger</a></li>
 	<li><a href="https://jasonyuan.design/">Jason Yuan</a></li>
+	<li><a href="https://a9.io/">Max Krieger</a></li>
 	<li><a href="https://wattenberger.com/">Amelia Wattenberger</a></li>
 	<li><a href="https://tinysubversions.com/">Darius Kazemi</a></li>
 	<li><a href="https://maggieappleton.com/">Maggie Appleton</a></li>
