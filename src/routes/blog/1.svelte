@@ -125,10 +125,12 @@
 	<li>
 		<a href="https://publicinfrastructure.org/">Initiative for Digital Public Infrastructure</a>
 	</li>
+	<li><a href="https://getdweb.net/principles/">DWeb</a></li>
 	<li><a href="https://www.humanetech.com/">Center for Humane Technology</a></li>
 	<li><a href="https://communityrule.info/">CommunityRule</a></li>
 	<li><a href="https://policykit.org/">PolicyKit</a></li>
 	<li><a href="https://nathanschneider.info/">Nathan Schneider</a></li>
+	<li><a href="https://wikipedia.org/wiki/Elinor_Ostrom">Elinor Ostrom</a></li>
 	<li><a href="https://homes.cs.washington.edu/~axz/">Amy Zhang</a></li>
 	<li><a href="https://www.joshuatan.com/">Joshua Tan</a></li>
 	<li><a href="https://imjane.net">Jane Im</a></li>
