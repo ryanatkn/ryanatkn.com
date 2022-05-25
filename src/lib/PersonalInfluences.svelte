@@ -1,5 +1,6 @@
 <script lang="ts">
 	// 'I attempt to give credit to the people and projects that have influenced my work. This is an impossible task so it will be an evolving process.'
+	// I wrote this document and then it felt weird but I'm keeping it for now.
 </script>
 
 <h1>An ongoing attempt to credit my influences</h1>
