@@ -30,7 +30,7 @@
 			description:
 				'hobby project for fun and learning, <em>"tools and toys for expanding minds"</em>',
 			links:
-				'<a href="https://github.com/cosmicplayground">GitHub</a>, <a href="https://twitter.com/cosmicplaygroun">Twitter</a>',
+				'<a href="https://github.com/cosmicplayground/cosmicplayground">GitHub</a>, <a href="https://twitter.com/cosmicplaygroun">Twitter</a>',
 		},
 		{
 			title: '<a href="https://www.cosmicplayground.dev">cosmicplayground.dev</a>',
