@@ -20,11 +20,22 @@
 			links: `<a href="https://github.com/feltcoop">GitHub</a>, <a href="https://twitter.com/feltcoop">Twitter</a>, <a href="mailto:ryan@felt.social">ryan@felt.social</a>, <a href="mailto:team@felt.social">team@felt.social</a>`,
 		},
 		{
+			title: '<a href="https://flat.cosmicplayground.org">flat.cosmicplayground.org</a>',
+			description:
+				'a forkable game and creative educational environment featuring hobby-grade web tools for playing with 2d things in Svelte, SvelteKit, TypeScript, and PixiJS',
+			links: '<a href="https://github.com/cosmicplayground/flat">GitHub</a>',
+		},
+		{
 			title: '<a href="https://www.cosmicplayground.org">cosmicplayground.org</a>',
 			description:
 				'hobby project for fun and learning, <em>"tools and toys for expanding minds"</em>',
 			links:
 				'<a href="https://github.com/cosmicplayground">GitHub</a>, <a href="https://twitter.com/cosmicplaygroun">Twitter</a>',
+		},
+		{
+			title: '<a href="https://www.cosmicplayground.dev">cosmicplayground.dev</a>',
+			description: 'hobby community for cosmicplayground',
+			links: '<a href="https://github.com/cosmicplayground/community">GitHub</a>',
 		},
 		{
 			title: '<a href="https://www.blitwagon.net">blitwagon.net</a>',
@@ -122,6 +133,9 @@
 	}
 	section {
 		margin: var(--spacing_xl3) 0 0 0;
+	}
+	tr:hover {
+		background-color: var(--tint_dark_1);
 	}
 	td:first-child {
 		white-space: nowrap;
