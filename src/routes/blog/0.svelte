@@ -182,10 +182,10 @@
 	has distinct needs.
 </p>
 <p>
-	We're fortunate to be collaborating with Jane Im (<a href="https://imjane.net/">imjane.net</a>) on
+	We're collaborating with PhD student Jane Im (<a href="https://imjane.net/">imjane.net</a>) on
 	designs including research-backed user-driven governance. Her paper "Yes: Affirmative Consent as a
-	Theoretical Framework for Reimagining Social Platforms" (<a href="https://consentful.systems"
-		>consentful.systems</a
+	Theoretical Framework for Understanding and Imagining Social Platforms" (<a
+		href="https://consentful.systems">consentful.systems</a
 	>), which credits <a href="https://www.consentfultech.io/">The Consentful Tech Project</a>, has
 	been a major source of inspiration for how we think about designing software.
 </p>
