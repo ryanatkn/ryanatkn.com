@@ -1,5 +1,5 @@
 <script lang="ts">
-	import LinkPath from '@feltcoop/felt/ui/LinkPath.svelte';
+	import Breadcrumbs from '@feltcoop/felt/ui/Breadcrumbs.svelte';
 
 	import Header from '$lib/Header.svelte';
 	import Footer from '$lib/Footer.svelte';
@@ -9,14 +9,14 @@
 
 <main>
 	<Header />
-	<div class="column markup">
+	<div class="column markup padded-md">
 		<PersonalStatement />
 	</div>
-	<LinkPath
+	<Breadcrumbs
 		><div class="linkpath">
 			<Favicon />
 			<div class="url">ryanatkn.com</div>
-		</div></LinkPath
+		</div></Breadcrumbs
 	>
 	<Footer />
 </main>

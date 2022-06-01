@@ -1,5 +1,5 @@
 <script lang="ts">
-	import LinkPath from '@feltcoop/felt/ui/LinkPath.svelte';
+	import Breadcrumbs from '@feltcoop/felt/ui/Breadcrumbs.svelte';
 
 	import Header from '$lib/Header.svelte';
 	import Footer from '$lib/Footer.svelte';
@@ -9,13 +9,13 @@
 <main>
 	<Header />
 	<div class="breadcrumbs">
-		<LinkPath><Favicon /></LinkPath>
+		<Breadcrumbs><Favicon /></Breadcrumbs>
 	</div>
-	<div class="column markup">
+	<div class="column markup padded-md">
 		<slot />
 	</div>
 	<div class="breadcrumbs">
-		<LinkPath><Favicon /></LinkPath>
+		<Breadcrumbs><Favicon /></Breadcrumbs>
 	</div>
 	<Footer />
 </main>

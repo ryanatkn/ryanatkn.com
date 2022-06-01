@@ -80,7 +80,7 @@
 	>
 </table>
 <div class="cards">
-	{#each projects as project}<div class="card markup">
+	{#each projects as project}<div class="card markup padded-md">
 			<p>{@html project.title}</p>
 			<p>{@html project.description}</p>
 			<p>{@html project.links}</p>
