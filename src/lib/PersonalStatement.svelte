@@ -53,7 +53,7 @@
 
 <blockquote class="panel-inset">
 	<p>
-		hello web surfer! You've reached the web site of Ryan Atkinson. He's an open source web
+		hello web surfer! You've reached the home page of Ryan Atkinson. He's an open source web
 		developer interested in collaborative digital mediums and realizing more of their potential to
 		help us live well
 	</p>
