@@ -9,9 +9,12 @@
 <BlogPostHeader {post} />
 <p>
 	I've been building an open source web project focused on community software with <a
-		href="https://twitter.com/greatbaconbits">Hamilton Reed</a
+		href="https://12mod12.com/">Hamilton Reed</a
 	>
-	fulltime for a year. We <a href="https://twitter.com/feltcoop">@feltcoop</a> recently started a
+	(<a href="https://twitter.com/greatbaconbits">Twitter</a>,
+	<a href="https://github.com/greatbacon">GitHub</a>) fulltime for a year. We
+	<a href="https://twitter.com/feltcoop">@feltcoop</a>
+	recently started a
 	<a href="https://tinyletter.com/FeltCoop">monthly newsletter</a>
 	and (gulp) a podcast called
 	<a href="https://www.felt.social/toolmakersforum">Toolmakers Forum</a>. I also
