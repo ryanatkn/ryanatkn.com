@@ -53,9 +53,10 @@
 
 <blockquote class="panel-inset">
 	<p>
-		hello web surfer! You've reached the home page of Ryan Atkinson. He's an open source web
-		developer interested in collaborative digital mediums and realizing more of their potential to
-		help us live well
+		hello web surfer! You've reached the home page of Ryan Atkinson. He's an <a
+			href="https://github.com/ryanatkn">open source</a
+		> web developer interested in collaborative digital mediums and realizing more of their potential
+		to help us live well
 	</p>
 	<p class="emojis panel-outset">🏔⛰🏞🐢🌲🥬🌳⛰</p>
 </blockquote>
