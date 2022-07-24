@@ -17,9 +17,8 @@
 	recently started a
 	<a href="https://tinyletter.com/FeltCoop">monthly newsletter</a>
 	and (gulp) a podcast called
-	<a href="https://www.felt.social/toolmakersforum">Toolmakers Forum</a>. I also
-	<a href="https://twitter.com/ryanatkn/status/1524796706675621888">tweeted about the podcast</a> and
-	my plans to write about its ideas on this blog.
+	<a href="https://www.felt.social/toolmakersforum">Toolmakers Forum</a>. I plan to write about its
+	ideas on this blog.
 </p>
 <p><a href="https://github.com/feltcoop/felt-server">The software</a>:</p>
 <ul>
@@ -109,7 +108,16 @@
 <p>
 	It's a big set of goals, and we think we have useful contributions particularly around UX. (see
 	below for <a href="#interop">more on interop</a>) We think we see an opportunity to hit a sweet
-	spot for small communities with our set of design and tech choices.
+	spot for small communities with our set of design and tech choices. Our
+	<a
+		href="https://www.felt.social/toolmakersforum/episode/9-big-ideas-in-our-community-software-part-1"
+		>9th</a
+	>
+	and
+	<a
+		href="https://www.felt.social/toolmakersforum/episode/10-big-ideas-in-our-community-software-part-2"
+		>10th</a
+	> podcast episodes go into more detail on the main ideas.
 </p>
 <h2>The projects:</h2>
 <p>We have a handful of software repos, none of which are yet production ready:</p>
@@ -127,8 +135,8 @@
 		template with SvelteKit, TypeScript, and Felt for quickly creating new projects
 	</li>
 	<li>
-		<a href="https://github.com/feltcoop/gro">@feltcoop/gro</a> – a toolkit that extends SvelteKit with
-		things we find useful for making web apps; it's used by all of our other projects
+		<a href="https://github.com/feltcoop/gro">@feltcoop/gro</a> – a toolkit that extends SvelteKit and
+		Vite with things we find useful for making web apps; it's used by all of our other projects
 	</li>
 	<li>
 		<a href="https://github.com/feltcoop/dealt">@feltcoop/dealt</a> – we haven't touched it in a minute,
@@ -166,9 +174,9 @@
 <h2>Everyone can be a toolmaker:</h2>
 <p>
 	Instead of being limited to filling digital boxes designed by tech companies, anyone should be
-	able to design their own box. Or forget boxes even, we're in the digital realm. We see examples of
-	what's possible in all sorts of products over decades, especially in games, and I believe there's
-	fresh opportunities to do this with web tech.
+	able to design their own box. Or forget boxes even, we're in the digital realms. We see examples
+	of what's possible in all sorts of products over decades, especially in games, and I believe
+	there's fresh opportunities to do this with web tech.
 </p>
 <p>
 	We want to build software tools that anyone can use to explore the vast terrain of collaborative
@@ -230,7 +238,8 @@
 		>Temporary Benevolent Dictatorship</a
 	> into a real co-op. (5 is the number required to form a Colorado cooperative; Hamilton lives there
 	and although we're a remote team, it has some of the best-developed cooperative laws in the United
-	States)
+	States) If you're interested in joining a team like this (it's not for everyone) we'd love to hear
+	from you.
 </p>
 <p>
 	I would consider it a great success if one day, democratically selected experts make the difficult
@@ -253,11 +262,11 @@
 <p>Node and TypeScript are productive</p>
 <p>Postgres and nginx are solid</p>
 <p>
-	Svelte and SvelteKit have been a fantastic set of tools for making UIs. We don't yet use some of
-	SvelteKit's flagship features like endpoints, but we feel productive and delighted working with
-	it, and its flexibility is a wonder. We've been deprioritizing full SSR but it's a relief to know
-	it's there when we're ready for it. It's amazing how much of the load SvelteKit lifts from our
-	shoulders.
+	Svelte, SvelteKit, and Vite have been a fantastic set of tools for making UIs. We don't yet use
+	some of SvelteKit's flagship features like endpoints, but we feel productive and delighted working
+	with it, and its flexibility is a wonder. We've been deprioritizing full SSR but it's a relief to
+	know it's there when we're ready for it. It's amazing how much of the load SvelteKit lifts from
+	our shoulders.
 </p>
 <h3>customizable and extensible:</h3>
 <p>
