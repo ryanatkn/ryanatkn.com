@@ -82,8 +82,9 @@
 		<small>(TODO and Felt once we figure out what that looks like)</small>
 	</li>
 	<li>
-		public social media on <a href="https://twitter.com/ryanatkn">Twitter</a> and
-		<a href="https://www.reddit.com/user/overtowed">Reddit</a>
+		public social media on <a href="https://twitter.com/ryanatkn">Twitter</a>,
+		<a href="https://www.reddit.com/user/overtowed">Reddit</a>, and
+		<a href="https://lobste.rs/u/ryanatkn">Lobste.rs</a>
 		<small>(TODO and Mastodon/Matrix?)</small>
 	</li>
 </ul>
