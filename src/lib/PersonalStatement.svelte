@@ -11,7 +11,7 @@
 	const projects: ProjectInfo[] = [
 		{
 			title: '<a href="/blog">blog</a>',
-			description: 'trying to explain myself in few words',
+			description: 'sentences with optional meaning',
 			links: '<a href="/blog">/blog</a>',
 		},
 		{
