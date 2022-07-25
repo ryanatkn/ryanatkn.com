@@ -86,7 +86,7 @@
 		<a rel="me" href="https://mastodon.technology/@ryanatkn">Mastodon</a>,
 		<a href="https://www.reddit.com/user/overtowed">Reddit</a>, and
 		<a href="https://lobste.rs/u/ryanatkn">Lobste.rs</a>
-		<small>(TODO and Mastodon/Matrix?)</small>
+		<small>(TODO and Matrix?)</small>
 	</li>
 </ul>
 
