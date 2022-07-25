@@ -1,5 +1,5 @@
 import {typescript} from 'svelte-preprocess-esbuild';
-import static_adapter from '@sveltejs/adapter-static';
+import adapter from '@sveltejs/adapter-static';
 
 /** @type {import('@sveltejs/kit').Config} */
 export default {
@@ -8,16 +8,8 @@ export default {
 		immutable: true,
 	},
 	kit: {
-		adapter: static_adapter(),
+		adapter: adapter(),
 		files: {assets: 'src/static'},
 		prerender: {default: true},
-		vite: {
-			ssr: {
-				noExternal: ['@feltcoop/felt'],
-			},
-			optimizeDeps: {
-				exclude: ['@feltcoop/felt'],
-			},
-		},
 	},
 };
