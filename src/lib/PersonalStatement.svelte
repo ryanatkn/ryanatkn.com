@@ -74,19 +74,19 @@
 <h2>Contact:</h2>
 <ul>
 	<li>
+		public social media on <a href="https://twitter.com/ryanatkn">Twitter</a>,
+		<a rel="me" href="https://mastodon.technology/@ryanatkn">Mastodon</a>,
+		<a href="https://www.reddit.com/user/overtowed">Reddit</a>, and
+		<a href="https://lobste.rs/u/ryanatkn">Lobste.rs</a>
+		<small>(TODO and Matrix?)</small>
+	</li>
+	<li>
 		<a href="mailto:mail@ryanatkn.com">mail@ryanatkn.com</a> (not looking for work)
 	</li>
 	<li>
 		join me doing open source on <a href="https://github.com/ryanatkn">GitHub</a>, like
 		<a href="https://github.com/cosmicplayground/cosmicplayground">cosmicplayground</a>
 		<small>(TODO and Felt once we figure out what that looks like)</small>
-	</li>
-	<li>
-		public social media on <a href="https://twitter.com/ryanatkn">Twitter</a>,
-		<a rel="me" href="https://mastodon.technology/@ryanatkn">Mastodon</a>,
-		<a href="https://www.reddit.com/user/overtowed">Reddit</a>, and
-		<a href="https://lobste.rs/u/ryanatkn">Lobste.rs</a>
-		<small>(TODO and Matrix?)</small>
 	</li>
 </ul>
 
