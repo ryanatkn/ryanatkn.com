@@ -11,7 +11,7 @@
 	const projects: ProjectInfo[] = [
 		{
 			title: '<a href="/blog">blog</a>',
-			description: 'sentences with optional meaning',
+			description: '<a href="https://www.ryanatkn.com/feed.xml">rss</a>',
 			links: '<a href="/blog">/blog</a>',
 		},
 		{
