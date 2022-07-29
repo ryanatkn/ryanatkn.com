@@ -79,10 +79,11 @@
 </ul>
 <p>
 	We think of Felt similar to a smartphone or Swiss army knife: it performs well for many tasks and
-	often it's all you need and want, but sometimes you need more specialized tools. The current
-	featureset is a single app with chats+forums+todos+more that's perhaps less slick than each but
-	far more powerful in 1, supporting both realtime and asynchronous communications, and
-	collaborative everywhere.
+	often it's all you need and want, but sometimes you need more specialized tools instead. The
+	current featureset is a single app with chats+forums+todos+more that's perhaps less slick than
+	each but far more powerful in 1, supporting both realtime and asynchronous communications, and
+	collaborative everywhere, and we'll prioritize interoperability to make Felt fit into workflows it
+	doesn't know about. (this is complicated, see below for <a href="#interop">more on interop</a>)
 </p>
 <p>
 	We're calling Felt <a href="https://github.com/feltcoop/felt-server"
@@ -103,12 +104,13 @@
 </p>
 <blockquote>
 	"hobby-grade" is how I like to frame it today, but "for srs Professionals" is an eventual target;
-	it's still early and I don't want to overpromise
+	it's still early and I don't want to overpromise. Security is going to be a challenge, so treat it
+	like a dangerous toy for now.
 </blockquote>
 <p>
-	It's a big set of goals, and we think we have useful contributions particularly around UX. (see
-	below for <a href="#interop">more on interop</a>) We think we see an opportunity to hit a sweet
-	spot for small communities with our set of design and tech choices. Our
+	It's a big set of goals, and we think we have useful contributions particularly around UX. We
+	think we see an opportunity to hit a sweet spot for small communities with our set of design and
+	tech choices. Our
 	<a
 		href="https://www.felt.social/toolmakersforum/episode/9-big-ideas-in-our-community-software-part-1"
 		>9th</a
@@ -152,8 +154,8 @@
 <p>As service providers, we want to build reliable orgs to operate infra to help users succeed.</p>
 <p>As devs, we want to build great software for people, prioritizing endusers over operators.</p>
 <p>
-	As toolmakers we want to help users bring their own visions to life and support a beneficial
-	relationship with technology.
+	As toolmakers we want to help users bring their own visions to life and support beneficial
+	relationships with technology.
 </p>
 <p>
 	The idea is to make <a href="https://github.com/feltcoop">the software</a> we want to use, at
@@ -161,7 +163,7 @@
 	to pay for.
 </p>
 <p>
-	We're working in the open at <a href="https://github.com/feltcoop">github.com/feltcoop</a>
+	more at <a href="https://github.com/feltcoop">github.com/feltcoop</a>
 </p>
 <hr />
 <h2>Wait the blog post isn't done?</h2>
