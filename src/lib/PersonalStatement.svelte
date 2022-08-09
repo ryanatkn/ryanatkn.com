@@ -10,6 +10,11 @@
 	// to write this in normal Svelte markup and use CSS to make a responsive layout
 	const projects: ProjectInfo[] = [
 		{
+			title: '<a href="https://github.com/ryanatkn">github.com/ryanatkn</a>',
+			description: 'coding on open source free software',
+			links: '<a href="https://github.com/ryanatkn">GitHub</a>',
+		},
+		{
 			title: '<a href="/blog">blog</a>',
 			description: '<a href="https://www.ryanatkn.com/feed.xml">feed.xml</a>',
 			links: '<a href="/blog">/blog</a>',
@@ -26,20 +31,14 @@
 			links:
 				'<a href="https://github.com/cosmicplayground/cosmicplayground">GitHub</a>, <a href="https://twitter.com/cosmicplaygroun">Twitter</a>',
 		},
-		{
-			title: '<a href="https://www.spiderspace.org">spiderspace.org</a>',
-			description: 'web prototypes shy of daylight',
-			links: '<a href="https://github.com/spiderspace">GitHub</a>',
-		},
 	];
 </script>
 
 <blockquote class="panel-inset">
 	<p>
-		hello web surfer! You've reached the home page of Ryan Atkinson. He's an <a
-			href="https://github.com/ryanatkn">open source</a
-		> web developer interested in collaborative digital mediums and realizing more of their potential
-		to help us live well
+		hello web surfer! You've reached the home page of Ryan Atkinson. He's an open source web
+		developer interested in collaborative digital mediums and realizing more of their potential to
+		help us live well
 	</p>
 	<p class="emojis panel-outset">🏔⛰🏞🐢🌲🥬🌳⛰</p>
 </blockquote>
