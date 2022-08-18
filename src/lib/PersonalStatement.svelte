@@ -25,17 +25,17 @@
 			links: `<a href="https://github.com/feltcoop">GitHub</a>, <a href="https://twitter.com/feltcoop">Twitter</a>, <a href="mailto:ryan@felt.social">ryan@felt.social</a>, <a href="mailto:team@felt.social">team@felt.social</a>`,
 		},
 		{
-			title: '<a href="https://ryanatkn.github.io/svelte-snake-sports">svelte snake sports</a>',
-			description:
-				'games of <a href="https://wikipedia.org/wiki/Snake_game">Snake</a> in <a href="https://svelte.dev/">Svelte</a> and <a href="https://kit.svelte.dev/">SvelteKit</a>',
-			links: '<a href="https://github.com/ryanatkn/svelte-snake-sports">GitHub</a>',
-		},
-		{
 			title: '<a href="https://www.cosmicplayground.org">cosmicplayground.org</a>',
 			description:
 				'hobby project for fun and learning, <em>"tools and toys for expanding minds"</em>',
 			links:
 				'<a href="https://github.com/cosmicplayground/cosmicplayground">GitHub</a>, <a href="https://twitter.com/cosmicplaygroun">Twitter</a>',
+		},
+		{
+			title: '<a href="https://ryanatkn.github.io/svelte-snake-sports">svelte snake sports</a>',
+			description:
+				'games of <a href="https://wikipedia.org/wiki/Snake_game">Snake</a> in <a href="https://svelte.dev/">Svelte</a> and <a href="https://kit.svelte.dev/">SvelteKit</a>',
+			links: '<a href="https://github.com/ryanatkn/svelte-snake-sports">GitHub</a>',
 		},
 	];
 </script>
