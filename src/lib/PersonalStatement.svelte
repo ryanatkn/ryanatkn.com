@@ -29,10 +29,10 @@
 			description:
 				'hobby project for fun and learning, <em>"tools and toys for expanding minds"</em>',
 			links:
-				'<a href="https://github.com/cosmicplayground/cosmicplayground">GitHub</a>, <a href="https://twitter.com/cosmicplaygroun">Twitter</a>',
+				'<a href="https://github.com/ryanatkn/cosmicplayground">GitHub</a>, <a href="https://twitter.com/cosmicplaygroun">Twitter</a>',
 		},
 		{
-			title: '<a href="https://ryanatkn.github.io/svelte-snake-sports">svelte snake sports</a>',
+			title: '<a href="https://ryanatkn.github.io/svelte-snake-sports">Svelte Snake Sports</a>',
 			description:
 				'games of <a href="https://wikipedia.org/wiki/Snake_game">Snake</a> in <a href="https://svelte.dev/">Svelte</a> and <a href="https://kit.svelte.dev/">SvelteKit</a>',
 			links: '<a href="https://github.com/ryanatkn/svelte-snake-sports">GitHub</a>',
@@ -79,6 +79,9 @@
 <h2>Contact:</h2>
 <ul>
 	<li>
+		<a href="mailto:mail@ryanatkn.com">mail@ryanatkn.com</a> (not looking for work)
+	</li>
+	<li>
 		public social media on <a href="https://twitter.com/ryanatkn">Twitter</a>,
 		<a rel="me" href="https://mastodon.technology/@ryanatkn">Mastodon</a>,
 		<a href="https://www.reddit.com/user/overtowed">Reddit</a>, and
@@ -86,11 +89,8 @@
 		<small>(TODO and Matrix?)</small>
 	</li>
 	<li>
-		<a href="mailto:mail@ryanatkn.com">mail@ryanatkn.com</a> (not looking for work)
-	</li>
-	<li>
 		join me doing open source on <a href="https://github.com/ryanatkn">GitHub</a>, like
-		<a href="https://github.com/cosmicplayground/cosmicplayground">cosmicplayground</a>
+		<a href="https://github.com/ryanatkn/cosmicplayground">cosmicplayground</a>
 		<small>(TODO and Felt once we figure out what that looks like)</small>
 	</li>
 </ul>
