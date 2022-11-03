@@ -83,7 +83,7 @@
 	</li>
 	<li>
 		public social media on <a href="https://twitter.com/ryanatkn">Twitter</a>,
-		<a rel="me" href="https://mastodon.technology/@ryanatkn">Mastodon</a>,
+		<a rel="me" href="https://fosstodon.org/@ryanatkn">Mastodon</a>,
 		<a href="https://www.reddit.com/user/overtowed">Reddit</a>, and
 		<a href="https://lobste.rs/u/ryanatkn">Lobste.rs</a>
 		<small>(TODO and Matrix?)</small>
