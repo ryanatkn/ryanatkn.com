@@ -40,13 +40,13 @@
 	];
 </script>
 
-<blockquote class="panel-inset">
+<blockquote class="panel">
 	<p>
 		hello web surfer! You've reached the home page of Ryan Atkinson. He's an open source web
 		developer interested in collaborative digital mediums and realizing more of their potential to
 		help us live well
 	</p>
-	<p class="emojis panel-outset">🏔⛰🏞🐢🌲🥬🌳⛰</p>
+	<p class="emojis panel">🏔⛰🏞🐢🌲🥬🌳⛰</p>
 </blockquote>
 
 <section>
@@ -144,9 +144,11 @@
 		}
 	}
 	.card {
-		border: var(--border);
-		margin-bottom: var(--spacing_lg);
+		border-width: var(--border_width);
+		border-style: var(--border_style);
+		border-color: var(--border_color);
 		border-radius: var(--border_radius);
+		margin-bottom: var(--spacing_lg);
 		padding: var(--spacing_md);
 	}
 	.card p:first-child {

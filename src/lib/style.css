@@ -14,7 +14,8 @@ body {
 }
 
 table {
-	border: var(--border);
+	border-width: var(--border_width);
+	border-style: var(--border_style);
 	border-color: var(--border_color_lighter);
 	border-radius: var(--border_radius);
 }
