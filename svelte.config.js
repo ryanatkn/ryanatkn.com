@@ -10,6 +10,5 @@ export default {
 	kit: {
 		adapter: adapter(),
 		files: {assets: 'src/static'},
-		prerender: {default: true},
 	},
 };
