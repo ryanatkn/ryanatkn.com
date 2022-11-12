@@ -235,12 +235,12 @@
 </p>
 <p>So what does success look like?</p>
 <p>
-	In the not-too-distant future, I'm excited to find and fund three more colleagues and turn our <a
-		href="https://github.com/feltcoop/felt/blob/main/GOVERNANCE.md"
+	The goal for sustainability is to be able to fund, and then find, three more colleagues and turn
+	our <a href="https://github.com/feltcoop/felt/blob/main/GOVERNANCE.md"
 		>Temporary Benevolent Dictatorship</a
-	> into a real co-op. (5 is the number required to form a Colorado cooperative; Hamilton lives there
-	and although we're a remote team, it has some of the best-developed cooperative laws in the United
-	States)
+	> into a real co-op. Five is the number of people required to form a Colorado cooperative; Hamilton
+	lives there and although we're a remote team, it has some of the best-developed cooperative laws in
+	the United States.
 </p>
 <p>
 	I would consider it a great success if one day, democratically selected experts make the difficult
