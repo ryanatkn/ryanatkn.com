@@ -83,17 +83,13 @@
 	</li>
 	<li>
 		public social media on
+		<a href="https://github.com/ryanatkn">GitHub</a>,
 		<a rel="me" href="https://toolsforthought.rocks/@ryanatkn">@ryanatkn@toolsforthought.rocks</a>
 		on Mastodon and the fedi,
 		<a href="https://twitter.com/ryanatkn">Twitter</a>,
 		<a href="https://www.reddit.com/user/overtowed">Reddit</a>, and
 		<a href="https://lobste.rs/u/ryanatkn">Lobste.rs</a>
 		<small>(TODO and Matrix?)</small>
-	</li>
-	<li>
-		join me doing open source on <a href="https://github.com/ryanatkn">GitHub</a>, like
-		<a href="https://github.com/ryanatkn/cosmicplayground">cosmicplayground</a>
-		<small>(TODO and Felt once we figure out what that looks like)</small>
 	</li>
 </ul>
 
