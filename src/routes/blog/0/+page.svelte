@@ -214,7 +214,8 @@
 <hr />
 <h2>Business and ownership:</h2>
 <p>
-	<strong>business model</strong>: no ads, no crypto,
+	<strong>business model</strong> for <a href="https://www.felt.social">felt.social</a>: no ads, no
+	crypto,
 	<a href="https://wikipedia.org/wiki/MIT_License">free and fully open source</a>; users pay for
 	service and if it's sustainable we'll creatively subsidize users for more equitable access
 </p>
