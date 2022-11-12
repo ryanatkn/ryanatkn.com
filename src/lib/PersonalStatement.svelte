@@ -85,7 +85,7 @@
 		public social media on
 		<a href="https://github.com/ryanatkn">GitHub</a>,
 		<a rel="me" href="https://toolsforthought.rocks/@ryanatkn">@ryanatkn@toolsforthought.rocks</a>
-		on Mastodon and the fedi,
+		on Mastodon & <a href="https://wikipedia.org/wiki/Fediverse">fediverse</a>,
 		<a href="https://twitter.com/ryanatkn">Twitter</a>,
 		<a href="https://www.reddit.com/user/overtowed">Reddit</a>, and
 		<a href="https://lobste.rs/u/ryanatkn">Lobste.rs</a>
