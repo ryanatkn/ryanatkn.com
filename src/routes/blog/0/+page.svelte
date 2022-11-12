@@ -223,9 +223,9 @@
 	the public open source community that these are community assets.
 </p>
 <p>
-	<strong>felt.social business model</strong>: no ads, no crypto,
-	<a href="https://wikipedia.org/wiki/MIT_License">free and fully open source</a>; users pay for
-	service and if it's sustainable we'll creatively subsidize users for more equitable access
+	<strong>felt.social business model</strong>: no ads, no crypto, free and fully open source (not
+	"open core", <a href="https://wikipedia.org/wiki/MIT_License">permissively licensed</a>); users
+	pay for service and if it's sustainable we'll creatively subsidize users for more equitable access
 </p>
 <p>
 	<strong>felt.social ownership/control</strong>: self-funded worker co-op with plans to become a
