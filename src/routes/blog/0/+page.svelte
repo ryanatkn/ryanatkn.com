@@ -223,12 +223,12 @@
 	the public open source community that these are community assets.
 </p>
 <p>
-	<strong>business model</strong>: no ads, no crypto,
+	<strong>felt.social business model</strong>: no ads, no crypto,
 	<a href="https://wikipedia.org/wiki/MIT_License">free and fully open source</a>; users pay for
 	service and if it's sustainable we'll creatively subsidize users for more equitable access
 </p>
 <p>
-	<strong>ownership/control</strong>: self-funded worker co-op with plans to become a
+	<strong>felt.social ownership/control</strong>: self-funded worker co-op with plans to become a
 	<a href="https://platform.coop">platform co-op</a>, is forprofit but co-op could choose to become
 	a nonprofit
 </p>
