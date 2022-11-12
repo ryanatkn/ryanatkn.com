@@ -240,8 +240,7 @@
 		>Temporary Benevolent Dictatorship</a
 	> into a real co-op. (5 is the number required to form a Colorado cooperative; Hamilton lives there
 	and although we're a remote team, it has some of the best-developed cooperative laws in the United
-	States) If you're interested in joining a team like this (it's not for everyone) we'd love to hear
-	from you.
+	States)
 </p>
 <p>
 	I would consider it a great success if one day, democratically selected experts make the difficult
