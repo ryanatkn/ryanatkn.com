@@ -84,7 +84,7 @@
 	<li>
 		public social media on
 		<a href="https://github.com/ryanatkn">GitHub</a>,
-		<a rel="me" href="https://toolsforthought.rocks/@ryanatkn">@ryanatkn@toolsforthought.rocks</a>
+		<a rel="me" href="https://hci.social/@ryanatkn">@ryanatkn@hci.social</a>
 		on <a href="https://joinmastodon.org/">Mastodon</a> &
 		<a href="https://wikipedia.org/wiki/Fediverse">fediverse</a>,
 		<a href="https://twitter.com/ryanatkn">Twitter</a>,
