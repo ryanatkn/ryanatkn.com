@@ -27,7 +27,7 @@
 		{
 			title: '<a href="https://wikipedia.org/wiki/Fediverse">fediverse</a> stuff',
 			description: `learning mostly, made these <a href="https://ryanatkn.github.io/corpus-activity-streams">alternative ActivityStreams docs</a>`,
-			links: `<a href="https://github.com/ryanatkn/corpus-activity-streams">GitHub</a>`,
+			links: `<a href="https://hci.social/@ryanatkn">@ryanatkn@hci.social</a>, <a href="https://github.com/ryanatkn/corpus-activity-streams">GitHub</a>`,
 		},
 		{
 			title: '<a href="https://www.cosmicplayground.org">cosmicplayground.org</a>',
