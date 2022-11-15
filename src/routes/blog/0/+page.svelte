@@ -33,29 +33,25 @@
 		<a href="https://wikipedia.org/wiki/Collaborative_software">collaborative software</a>. We're
 		aiming for a batteries-included, deeply customizable experience with a small footprint.
 	</li>
+	<li>is designed for small communities</li>
+	<li>
+		is multipurpose, so the same toolkit can be used for many kinds of communities along with
+		standalone websites
+	</li>
+	<li>
+		is open source and designed for fullstack modding, so devs and endusers have proper access and
+		power over their UX and systems, and we bridge more of the gap between programming and using
+	</li>
 	<li>
 		is currently <a href="https://wikipedia.org/wiki/Software_release_life_cycle">pre-alpha</a>, and
 		we hope to reach alpha this year, beta optimistically
 	</li>
-	<li>targets underserved niches</li>
 </ul>
 <blockquote>
 	‼ please note this pre-alpha software is <strong>not yet secure</strong>, so use it at your own
 	risk and please don't pipe it data that you don't want public (also, we don't yet operate a public
 	instance)
 </blockquote>
-<p>What are these underserved niches?</p>
-<ul>
-	<li>small communities</li>
-	<li>
-		multipurpose, so the same toolkit can be used for many kinds of communities along with
-		standalone websites
-	</li>
-	<li>
-		fullstack modding, so devs and endusers have proper access and power over their UX and systems,
-		and we bridge more of the gap between programming and using
-	</li>
-</ul>
 <p>
 	Fullstack modding is key to why I want to work on Felt, but it has a lot of unknowns and we need
 	to implement it to understand it. For devs, it means we'll have open source components, clients,
