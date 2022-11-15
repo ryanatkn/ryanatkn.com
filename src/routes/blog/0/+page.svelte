@@ -74,12 +74,14 @@
 	<li>programmery-things like recording events and authoring scripts, and lots more we think</li>
 </ul>
 <p>
-	We think of Felt similar to a smartphone or Swiss army knife: it performs well for many tasks and
-	often it's all you need and want, but sometimes you need more specialized tools instead. The
-	current featureset is a single app with chats+forums+todos+more that's perhaps less slick than
-	each but far more powerful in 1, supporting both realtime and asynchronous communications, and
-	collaborative everywhere, and we'll prioritize interoperability to make Felt fit into workflows it
-	doesn't know about. (this is complicated, see below for <a href="#interop">more on interop</a>)
+	We think of Felt similar to a smartphone, in terms of packing many tools into one object: it
+	performs well for many tasks and often it's all you need and want, but sometimes you need more
+	specialized tools for a task. The current featureset is a single app with chats+forums+todos+more
+	that's perhaps less slick than each but far more powerful in 1, supporting both realtime and
+	asynchronous communications, and collaborative everywhere, and we'll prioritize interoperability
+	to make Felt fit into workflows it doesn't know about. (this is complicated, see below for <a
+		href="#interop">more on interop</a
+	>)
 </p>
 <p>
 	We're calling Felt <a href="https://github.com/feltcoop/felt-server"
