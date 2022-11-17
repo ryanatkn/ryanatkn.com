@@ -11,7 +11,7 @@
 	const projects: ProjectInfo[] = [
 		{
 			title: '<a href="https://github.com/ryanatkn">github.com/ryanatkn</a>',
-			description: 'coding on open source free software',
+			description: 'free and open source software',
 			links: '<a href="https://github.com/ryanatkn">GitHub</a>',
 		},
 		{
