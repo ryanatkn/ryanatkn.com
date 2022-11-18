@@ -90,7 +90,7 @@
 		public social media on
 		<a href="https://github.com/ryanatkn">GitHub</a>,
 		<a rel="me" href="https://hci.social/@ryanatkn">@ryanatkn@hci.social</a>
-		on <a href="https://joinmastodon.org/">Mastodon</a>,
+		on Mastodon,
 		<a href="https://twitter.com/ryanatkn">Twitter</a>,
 		<a href="https://www.reddit.com/user/overtowed">Reddit</a>, and
 		<a href="https://lobste.rs/u/ryanatkn">Lobste.rs</a>
