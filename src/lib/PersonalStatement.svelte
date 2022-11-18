@@ -56,9 +56,9 @@
 
 <section>
 	<p>
-		My main skill is coding frontend web apps, and I do just enough backend and database stuff to
-		make frontends. I enjoy trying to make powerful tools that are easy to use, and I have a geeky
-		interest in user interfaces and social systems.
+		My main skill is coding frontend web apps, and I do some backend and database stuff too. I enjoy
+		trying to make powerful tools that are easy to use, and I have a geeky interest in user
+		interfaces and social systems.
 	</p>
 </section>
 
