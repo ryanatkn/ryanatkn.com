@@ -331,14 +331,15 @@
 	backends like ActivityPub and Matrix.
 </p>
 <p>
-	We're trying to follow <a href="https://www.w3.org/TR/activitystreams-core/"
+	In our data system, we're trying to follow <a href="https://www.w3.org/TR/activitystreams-core/"
 		>the ActivityStreams vocabulary spec</a
 	>
 	that's used in the fediverse and Mastodon (and I made some
 	<a href="https://ryanatkn.github.io/corpus-activity-streams/">unofficial docs</a>), but we have
-	our own bespoke client-server protocol that works over http and websockets. I think we can
-	generate OpenAPI schemas from our source of truth, which would give us greatly expanded access to
-	existing tooling.
+	our own bespoke client-server protocol that works over http and websockets, and our database
+	tables don't map to ActivityStreams vocabulary, only <code>Entity</code> objects do. I think we can
+	generate OpenAPI schemas from our source of truth, which would give us greatly expanded access to existing
+	tooling.
 </p>
 <p>
 	We try to use
