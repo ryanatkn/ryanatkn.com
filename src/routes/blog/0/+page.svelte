@@ -267,9 +267,8 @@
 	productivity.
 </p>
 <h3>on the shoulders of giants on the backs of turtles:</h3>
-<p>the Web has vast unrealized potential</p>
-<p>Node and TypeScript are productive</p>
-<p>Postgres and nginx are solid</p>
+<p>the Web is everywhere and has vast unrealized potential</p>
+<p>Node, TypeScript, Postgres, and nginx are productive and solid</p>
 <p>
 	Svelte, SvelteKit, and Vite have been a fantastic set of tools for making UIs. We don't yet use
 	some of SvelteKit's flagship features like endpoints, but we feel productive and literally
