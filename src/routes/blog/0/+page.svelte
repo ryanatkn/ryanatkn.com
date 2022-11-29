@@ -223,13 +223,13 @@
 <p>
 	<strong>felt.social business model</strong>: no ads, no crypto, free and fully open source (<a
 		href="https://wikipedia.org/wiki/MIT_License">permissively licensed</a
-	>, not "<a href="https://en.wikipedia.org/wiki/Open-core_model">open core</a>"); users pay for
+	>, not "<a href="https://en.wikipedia.org/wiki/Open-core_model">open core</a>") - users pay for
 	service and if it's sustainable we'll creatively subsidize users for more equitable access
 </p>
 <p>
 	<strong>felt.social ownership/control</strong>: self-funded worker co-op with plans to become a
 	<a href="https://platform.coop">platform co-op</a>, is forprofit but co-op could choose to become
-	a nonprofit
+	a nonprofit (this seems likely? we just don't know yet)
 </p>
 <p>
 	How does this business model work, giving away the software for free? Because the product we're
@@ -272,10 +272,10 @@
 <p>Postgres and nginx are solid</p>
 <p>
 	Svelte, SvelteKit, and Vite have been a fantastic set of tools for making UIs. We don't yet use
-	some of SvelteKit's flagship features like endpoints, but we feel productive and delighted working
-	with it, and its flexibility is a wonder. We've been deprioritizing full SSR but it's a relief to
-	know it's there when we're ready for it. It's amazing how much of the load SvelteKit lifts from
-	our shoulders.
+	some of SvelteKit's flagship features like endpoints, but we feel productive and literally
+	delighted working with it, and its flexibility is a wonder. We've been deprioritizing full SSR but
+	it's a relief to know it's there when we're ready for it. It's amazing how much of the load
+	SvelteKit lifts from our shoulders.
 </p>
 <h3>customizable and extensible:</h3>
 <p>
