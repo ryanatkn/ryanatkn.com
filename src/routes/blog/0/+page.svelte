@@ -84,7 +84,7 @@
 	>)
 </p>
 <p>
-	We're calling Felt <a href="https://github.com/feltcoop/felt-server"
+	We're calling Felt's server <a href="https://github.com/feltcoop/felt-server"
 		>"a tool for building and maintaining communities"</a
 	>.
 </p>
@@ -128,7 +128,7 @@
 	<li>
 		<a href="https://github.com/feltcoop/felt">@feltcoop/felt</a> – reusable library of components and
 		other code for building things from simple websites to realtime interactive multiplayer experiences
-		(eventually this will include much of what's currently in felt-server)
+		(eventually this will include much of what's currently in @feltcoop/felt-server)
 	</li>
 	<li>
 		<a href="https://github.com/feltcoop/felt-template">@feltcoop/felt-template</a> – a static web app
@@ -287,26 +287,36 @@
 	Our client has a <a href="https://wikipedia.org/wiki/Client_(computing)#Thick">thickness</a>
 	optimized for UX over long sessions, which means a lot of JS and client-side caching, and thanks to
 	SvelteKit we should be able to deliver good experiences in many cases with fast loadtimes and minimal
-	JS.
+	and zero JS.
 </p>
 <h3>scaling (and not):</h3>
 <p>
 	Our focus on "small communities" relates to a potentially deflating fact about our software: it
 	doesn't scale to large numbers of people or some kinds of heavy load. Felt can't be the best
-	solution to all problems, and tradeoffs are unavoidable. We're optimizing to quickly iterate on
-	social experiences with human-scale groups of people on a single machine with web tech. The limits
-	may appear restrictive compared to the infinite cloud worlds, but these tradeoffs give us a
-	simple, highly productive environment that's powerful in the small, and maybe small communities
-	are good too.
+	solution to all problems, and tradeoffs are unavoidable.
+</p>
+<div>We're optimizing to:</div>
+<ul>
+	<li>quickly iterate on social experiences with human-scale groups of people</li>
+	<li>
+		on a single machine (running a server and local database with light resource requirements)
+	</li>
+	<li>with web tech (this puts us in a particular ecosystem of software)</li>
+</ul>
+<p>
+	The limits may appear restrictive compared to the infinite cloud worlds that can host a global
+	social network, but these choices and tradeoffs give us a highly productive environment with low
+	resource needs that's powerful in the small, and maybe small communities are good too.
 </p>
 <blockquote>
-	Today, <a href="https://github.com/feltcoop/felt-server">felt-server</a> supports only
+	Today, <a href="https://github.com/feltcoop/felt-server"><code>@feltcoop/felt-server</code></a>
+	supports only
 	<code
 		><a href="https://github.com/sveltejs/kit/tree/master/packages/adapter-node"
 			>@sveltejs/adapter-node</a
 		></code
 	> – we'd like to be compatible with as many SvelteKit adapters as possible, giving operators access
-	to more scalable cloud backends, but that's a distant hope.
+	to more scalable cloud backends, but we haven't worked it into our roadmap
 </blockquote>
 <p>
 	We should be able to support non-realtime usecases that scale to more users like blogs and similar
@@ -317,9 +327,10 @@
 	Even though our code isn't pushing the boundaries of performance and enterprise readiness, we're
 	trying to write it modularly and with good principles, so hopefully it evolves gracefully and
 	enables better tools to be built on its foundations. (for example, we have a unified serializable
-	event stream for the client and server API that works for frictionless realtime broadcasting and
-	already has bare-but-never-out-of-date docs – we're cutting a lot of corners but also investing a
-	lot in tech up front)
+	(mostly) event stream for the client and server API that works for frictionless realtime
+	broadcasting both with websockets and HTTP – we're cutting a lot of corners but also investing a
+	lot in particular parts of the tech up front, trying to plan for the long run to maximize power
+	for the user)
 </p>
 <h3 id="interop">interop and decentralization:</h3>
 <p>
@@ -327,8 +338,10 @@
 		href="https://www.eff.org/deeplinks/2019/10/adversarial-interoperability"
 		>cooperative interoperability</a
 	>, but we're a 2 person team with limited resources trying to deliver a specific UX. Today this
-	means we have a centralized Node server, and a future possibility is to support decentralized
-	backends like ActivityPub and Matrix.
+	means we have a centralized Node server with a lot of homemade solutions. One of my
+	long/medium-term goals is to support at least one decentralized standard like
+	<a href="https://www.w3.org/TR/activitypub/">ActivityPub</a>
+	(my current interest) and Matrix.
 </p>
 <p>
 	In our data system, we're trying to follow <a href="https://www.w3.org/TR/activitystreams-core/"
@@ -337,9 +350,9 @@
 	that's used in the fediverse and Mastodon (and I made some
 	<a href="https://ryanatkn.github.io/corpus-activity-streams/">unofficial docs</a>), but we have
 	our own bespoke client-server protocol that works over http and websockets, and our database
-	tables don't map to ActivityStreams vocabulary, only <code>Entity</code> objects do. I think we can
-	generate OpenAPI schemas from our source of truth, which would give us greatly expanded access to existing
-	tooling.
+	tables don't map to ActivityStreams vocabulary, only <code>Entity</code> objects do. We could generate
+	OpenAPI schemas from our source of truth, which would give us greatly expanded access to existing tooling,
+	but we have no plans yet.
 </p>
 <p>
 	We try to use
@@ -348,10 +361,11 @@
 	<a href="https://www.jsonrpc.org/specification">JSON-RPC 2.0</a>.
 </p>
 <p>
-	We want to be good citizens of open standards, not just do our own thing off in the corner, but we
-	have very specific ideas of what we want to build for small communities, and decentralized tech
-	isn't optimal for today's goals. I personally think decentralized technologies are the future and
-	I would love to help Felt be compatible with standard protocols once we have our desired UX.
+	We want to be good citizens of open standards, not just do our own thing detached from open
+	ecosystems, but we have very specific ideas of what we want to build for small communities, and
+	decentralized tech isn't optimal for today's goals. I personally think decentralized technologies
+	are the future and I would love to help Felt be compatible with standard protocols once we have
+	our desired UX.
 </p>
 <blockquote>
 	"decentralized" means a lot of things, and while I think it's a broadly inevitable future, I
@@ -367,8 +381,9 @@
 <h2>Ok cool?</h2>
 <p>
 	find <a href="https://www.felt.social">us</a> @feltcoop on
-	<a href="https://twitter.com/feltcoop">Twitter</a> and
-	<a href="https://github.com/feltcoop">GitHub</a>, read
+	<a href="https://twitter.com/feltcoop">Twitter</a> &
+	<a href="https://github.com/feltcoop">GitHub</a> &
+	<a href="https://www.youtube.com/@feltcoop">YouTube</a>, read
 	<a href="https://tinyletter.com/FeltCoop">our monthly newsletter</a>, and look
 	<a href="https://www.felt.social/toolmakersforum">a podcast</a>
 </p>

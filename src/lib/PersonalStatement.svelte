@@ -54,13 +54,13 @@
 	<p class="emojis panel">🏔⛰🏞🐢🌲🥬🌳⛰</p>
 </blockquote>
 
-<section>
-	<p>
-		My main skill is coding frontend web apps, and I do some backend and database stuff too. I enjoy
-		trying to make powerful tools that are easy to use, and I have a geeky interest in user
-		interfaces and social systems.
-	</p>
-</section>
+<h2>Professionally:</h2>
+
+<p>
+	My main skill is coding frontend web apps, and I do some backend and database stuff too. I enjoy
+	trying to make powerful tools that are easy to use, and I have a geeky interest in user interfaces
+	and social systems.
+</p>
 
 <h2>Projects I'm working on:</h2>
 
@@ -126,9 +126,6 @@
 		.emojis {
 			font-size: 1.4em;
 		}
-	}
-	section {
-		margin: var(--spacing_xl3) 0 0 0;
 	}
 	tr:hover {
 		background-color: var(--tint_dark_1);
