@@ -229,7 +229,8 @@
 <p>
 	<strong>felt.social ownership/control</strong>: self-funded worker co-op with plans to become a
 	<a href="https://platform.coop">platform co-op</a>, is forprofit but co-op could choose to become
-	a nonprofit (this seems likely? we just don't know yet)
+	a nonprofit (this seems likely? we just don't know yet, and we promise we won't sell out our
+	community for a bigmoney #exit)
 </p>
 <p>
 	How does this business model work, giving away the software for free? Because the product we're
