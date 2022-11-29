@@ -1,5 +1,5 @@
 import {format} from 'date-fns';
-import {stripEnd, stripStart} from '@feltcoop/felt/util/string.js';
+import {stripEnd, stripStart} from '@feltcoop/util/string.js';
 
 // TODO rename?
 export const formatDate = (date: string | number | Date): string =>
