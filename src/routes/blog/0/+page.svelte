@@ -326,11 +326,9 @@
 <p>
 	Even though our code isn't pushing the boundaries of performance and enterprise readiness, we're
 	trying to write it modularly and with good principles, so hopefully it evolves gracefully and
-	enables better tools to be built on its foundations. (for example, we have a unified serializable
-	(mostly) event stream for the client and server API that works for frictionless realtime
-	broadcasting both with websockets and HTTP – we're cutting a lot of corners but also investing a
-	lot in particular parts of the tech up front, trying to plan for the long run to maximize power
-	for the user)
+	enables better tools to be built on its foundations. (we're cutting a lot of corners but also
+	investing a lot in particular parts of the tech up front, trying to plan for the long run to
+	maximize power for the user)
 </p>
 <h3 id="interop">interop and decentralization:</h3>
 <p>
