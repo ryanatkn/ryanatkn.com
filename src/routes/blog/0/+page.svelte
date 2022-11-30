@@ -6,6 +6,10 @@
 	const post = feedData.items[0];
 </script>
 
+<svelte:head>
+	<title>ryanatkn.com/blog - {post.title}</title>
+</svelte:head>
+
 <BlogPostHeader {post} />
 <p>
 	I've been building an open source web project focused on community software with <a

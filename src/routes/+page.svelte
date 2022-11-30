@@ -7,6 +7,10 @@
 	import Favicon from '$lib/Favicon.svelte';
 </script>
 
+<svelte:head>
+	<title>ryanatkn.com</title>
+</svelte:head>
+
 <main>
 	<Header />
 	<div class="column markup padded-md">

@@ -4,6 +4,10 @@
 	import {toPathname} from '$lib/util';
 </script>
 
+<svelte:head>
+	<title>ryanatkn.com/blog</title>
+</svelte:head>
+
 <div class="blog">
 	<ol start="0">
 		{#each feedData.items as item}
