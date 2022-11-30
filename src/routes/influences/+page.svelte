@@ -158,5 +158,6 @@
 			<a href="https://dustycloud.org/">Christine Lemmer-Webber</a> and
 			<a href="https://spritely.institute/">spritely.institute</a>
 		</li>
+		<li><a href="https://erinshepherd.net">Erin Shepherd</a></li>
 	</ul>
 </div>
