@@ -154,6 +154,9 @@
 		<li><a href="https://opencollective.com/">Open Collective</a></li>
 		<li><a href="https://www.piamancini.com/">Pia Mancini</a></li>
 		<li><a href="http://shaunagm.net/">Shauna Gordon-McKeon</a><!-- TODO https --></li>
-		<li><a href="https://dustycloud.org/">Christine Lemmer-Webber</a></li>
+		<li>
+			<a href="https://dustycloud.org/">Christine Lemmer-Webber</a> and
+			<a href="https://spritely.institute/">spritely.institute</a>
+		</li>
 	</ul>
 </div>
