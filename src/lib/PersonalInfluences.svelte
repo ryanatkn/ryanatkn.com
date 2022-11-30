@@ -57,9 +57,8 @@
 	<li><a href="https://www.typescriptlang.org/">TypeScript</a></li>
 	<li><a href="https://svelte.dev/">Svelte</a></li>
 </ul>
-<h3>a tech/design cluster roughly chronological:</h3>
+<h3>programmers/designers/developers:</h3>
 <ul>
-	<li>developers and designers:</li>
 	<li><a href="https://wikipedia.org/wiki/Tim_Berners-Lee">Tim Berners-Lee</a></li>
 	<li><a href="https://wikipedia.org/wiki/John_Carmack">John Carmack</a></li>
 	<li><a href="https://wikipedia.org/wiki/Alan_Kay">Alan Kay</a></li>
