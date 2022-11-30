@@ -57,7 +57,7 @@
 	<li><a href="https://www.typescriptlang.org/">TypeScript</a></li>
 	<li><a href="https://svelte.dev/">Svelte</a></li>
 </ul>
-<h3>programmers/designers/developers:</h3>
+<h3>related to the craft of programmers/designers/developers:</h3>
 <ul>
 	<li><a href="https://wikipedia.org/wiki/Tim_Berners-Lee">Tim Berners-Lee</a></li>
 	<li><a href="https://wikipedia.org/wiki/John_Carmack">John Carmack</a></li>
@@ -114,7 +114,7 @@
 	<li><a href="https://imjane.net">Jane Im</a></li>
 	<li><a href="https://alexanderobenauer.com/">Alexander Obenauer</a></li>
 </ul>
-<h3>a cluster around my current professional work:</h3>
+<h3>related to my professional work, not the programming craft:</h3>
 <ul>
 	<li><a href="https://futureofcoding.org/">Future of Coding</a> community</li>
 	<li><a href="https://toolsforthought.rocks/">toolsforthought.rocks</a></li>
