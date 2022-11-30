@@ -47,7 +47,7 @@
 			with <a href="https://jquery.com/">jQuery</a>/<a href="https://backbonejs.org/">Backbone</a>
 		</li>
 		<li><a href="https://coffeescript.org/">CoffeeScript</a></li>
-		<li><a href="https://wikipedia.org/wiki/Bash_(Unix_shell)">Bash</a> and Unix/Linux</li>
+		<li><a href="https://wikipedia.org/wiki/Bash_(Unix_shell)">Bash</a> and Unix/Linux/GNU</li>
 		<li><a href="https://livescript.net/">LiveScript</a></li>
 		<li><a href="https://wikipedia.org/wiki/Lisp_(programming_language)">Lisp</a></li>
 		<li><a href="https://clojure.org/">Clojure</a></li>
