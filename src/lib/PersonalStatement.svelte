@@ -20,13 +20,18 @@
 			links: '<a href="/blog">/blog</a>',
 		},
 		{
+			title: '<a href="/influences">influences</a>',
+			description: 'an ongoing attempt to credit my influences',
+			links: '<a href="/influences">/influences</a>',
+		},
+		{
 			title: '<a href="https://felt.social">@feltcoop</a>',
 			description: `a <a href="https://wikipedia.org/wiki/Software_release_life_cycle">pre-alpha</a> aspiring <a href="https://platform.coop">platform co-op</a> making free and open source community software`,
 			links: `<a href="https://github.com/feltcoop">GitHub</a>, <a href="https://twitter.com/feltcoop">Twitter</a>, <a href="mailto:ryan@felt.social">ryan@felt.social</a>, <a href="mailto:team@felt.social">team@felt.social</a>`,
 		},
 		{
 			title: '<a href="https://wikipedia.org/wiki/Fediverse">fediverse</a> stuff',
-			description: `learning mostly, made these <a href="https://ryanatkn.github.io/corpus-activity-streams">alternative ActivityStreams docs</a>`,
+			description: `learning and slowly integrating with <code><a href="https://github.com/feltcoop/felt-server">@feltcoop/felt-server</a></code>, made these <a href="https://ryanatkn.github.io/corpus-activity-streams">alternative ActivityStreams docs</a>`,
 			links: `<a href="https://hachyderm.io/@ryanatkn">@ryanatkn@hachyderm.io</a>, <a href="https://hci.social/@ryanatkn">@ryanatkn@hci.social</a>, <a href="https://github.com/ryanatkn/corpus-activity-streams">GitHub</a>`,
 		},
 		{

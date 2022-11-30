@@ -128,6 +128,7 @@
 <ul>
 	<li>
 		<a href="https://github.com/feltcoop/felt-server">@feltcoop/felt-server</a> – the community software
+		that's both deployable and available as a library on npm
 	</li>
 	<li>
 		<a href="https://github.com/feltcoop/felt">@feltcoop/felt</a> – reusable library of components and
@@ -136,7 +137,8 @@
 	</li>
 	<li>
 		<a href="https://github.com/feltcoop/felt-template">@feltcoop/felt-template</a> – a static web app
-		template with SvelteKit, TypeScript, and Felt for quickly creating new projects
+		template with SvelteKit, TypeScript, and Felt for quickly creating new projects - in the future it
+		will support quickly creating a custom server project, too.
 	</li>
 	<li>
 		<a href="https://github.com/feltcoop/gro">@feltcoop/gro</a> – a toolkit that extends SvelteKit and
