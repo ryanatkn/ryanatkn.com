@@ -21,7 +21,7 @@ export const feedData: FeedData = {
 			title: 'A year of making open source web community software',
 			url: 'https://www.ryanatkn.com/blog/0',
 			date_published: '2022-05-13T01:42:23.000Z',
-			date_modified: '2022-05-13T01:42:23.000Z',
+			date_modified: '2022-11-29T01:42:23.000Z',
 			summary:
 				'I discuss my work on open source community software called Felt over the last year, giving a brief overview of the design and technology choices, and announcing our newsletter and podcast at FeltCoop.',
 			tags: ['web', 'technology', 'software', 'opensource', 'community'],

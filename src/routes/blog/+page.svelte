@@ -1,6 +1,7 @@
 <script lang="ts">
 	import {feedData} from '$lib/feedData';
-	import {formatDate, toPathname} from '$lib/util';
+	import FeedItemDate from '$lib/FeedItemDate.svelte';
+	import {toPathname} from '$lib/util';
 </script>
 
 <div class="blog">
@@ -8,7 +9,9 @@
 		{#each feedData.items as item}
 			<li>
 				<a href={toPathname(item.url, feedData.home_page_url)}>{item.title}</a>
-				<small>{formatDate(item.date_modified)}</small>
+				<div>
+					<small><FeedItemDate {item} /></small>
+				</div>
 			</li>
 		{/each}
 	</ol>

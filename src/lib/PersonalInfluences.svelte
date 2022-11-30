@@ -133,6 +133,7 @@
 	<li><a href="https://communityrule.info/">CommunityRule</a></li>
 	<li><a href="https://policykit.org/">PolicyKit</a></li>
 	<li><a href="https://nathanschneider.info/">Nathan Schneider</a></li>
+	<li><a href="https://www.loomio.com/">Loomio</a></li>
 	<li><a href="https://homes.cs.washington.edu/~axz/">Amy Zhang</a></li>
 	<li><a href="https://www.joshuatan.com/">Joshua Tan</a></li>
 	<li><a href="https://imjane.net">Jane Im</a></li>
