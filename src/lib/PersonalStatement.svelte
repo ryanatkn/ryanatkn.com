@@ -62,9 +62,9 @@
 <h2>Professionally:</h2>
 
 <p>
-	My main skill is coding frontend web apps, and I do some backend/database/systems stuff. I enjoy
-	trying to make powerful tools that are easy to use, and I have a geeky interest in user interfaces
-	and social systems.
+	My main skill is coding frontend web apps, and I do some backend/database/systems stuff too. I
+	enjoy trying to make powerful tools that are easy to use, and I have a geeky interest in user
+	interfaces and social systems.
 </p>
 
 <h2>Projects I'm working on:</h2>
