@@ -20,7 +20,7 @@
 			links: '<a href="/blog">/blog</a>',
 		},
 		{
-			title: '<a href="/influences">influences</a>',
+			title: '<a href="/influences">my influences</a>',
 			description: 'an ongoing attempt to credit my influences',
 			links: '<a href="/influences">/influences</a>',
 		},
