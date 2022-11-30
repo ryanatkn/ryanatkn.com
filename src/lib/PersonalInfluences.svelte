@@ -59,7 +59,7 @@
 </ul>
 <h3>a tech/design cluster roughly chronological:</h3>
 <ul>
-	<li>many game designers, developers, and modders</li>
+	<li>developers, designers, researchers, & more:</li>
 	<li><a href="https://wikipedia.org/wiki/Tim_Berners-Lee">Tim Berners-Lee</a></li>
 	<li><a href="https://wikipedia.org/wiki/John_Carmack">John Carmack</a></li>
 	<li><a href="https://wikipedia.org/wiki/Alan_Kay">Alan Kay</a></li>
@@ -139,4 +139,5 @@
 	<li><a href="https://imjane.net">Jane Im</a></li>
 	<li><a href="https://twitter.com/divyasiddarth">Divya Siddarth</a></li>
 	<li><a href="https://opencollective.com/">Open Collective</a></li>
+	<li><a href="https://www.piamancini.com/">Pia Mancini</a></li>
 </ul>
