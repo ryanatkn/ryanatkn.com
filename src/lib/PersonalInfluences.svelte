@@ -7,7 +7,7 @@
 <p>
 	Giving proper credit to all of one's influences is an impossible task but why not try? Maybe these
 	lists could help you discover new and interesting people & things. I am definitely forgetting
-	important ones, so this will be an evolving document.
+	people to whom I owe credit, so this will be an evolving document.
 </p>
 <h3>programming languages, roughly chronological:</h3>
 <ul>
@@ -59,7 +59,7 @@
 </ul>
 <h3>a tech/design cluster roughly chronological:</h3>
 <ul>
-	<li>developers, designers, researchers, & more:</li>
+	<li>developers and designers:</li>
 	<li><a href="https://wikipedia.org/wiki/Tim_Berners-Lee">Tim Berners-Lee</a></li>
 	<li><a href="https://wikipedia.org/wiki/John_Carmack">John Carmack</a></li>
 	<li><a href="https://wikipedia.org/wiki/Alan_Kay">Alan Kay</a></li>
@@ -69,19 +69,23 @@
 	<li><a href="https://wikipedia.org/wiki/Ted_Nelson">Ted Nelson</a></li>
 	<li><a href="https://wikipedia.org/wiki/Marshall_McLuhan">Marshall McLuhan</a></li>
 	<li><a href="https://wikipedia.org/wiki/Rich_Hickey">Rich Hickey</a></li>
+	<li><a href="https://johnresig.com/">John Resig</a></li>
 	<li>my coworker <a href="https://github.com/mgutz">Mario Gutierrez</a></li>
 	<li><a href="https://wikipedia.org/wiki/Ryan_Dahl">Ryan Dahl</a></li>
 	<li><a href="https://wikipedia.org/wiki/Jeremy_Ashkenas">Jeremy Ashkenas</a></li>
 	<li><a href="https://wikipedia.org/wiki/Douglas_Crockford">Douglas Crockford</a></li>
 	<li><a href="https://github.com/tj">TJ Holowaychuk</a></li>
 	<li><a href="https://substack.net/">substack</a></li>
+	<li><a href="https://marijnhaverbeke.nl/">Marijn Haverbeke</a></li>
 	<li><a href="https://tomdale.net/">Tom Dale</a></li>
 	<li><a href="https://yehudakatz.com/">Yehuda Katz</a></li>
+	<li><a href="https://braythwayt.com/">Reginald Braithwaite</a></li>
 	<li><a href="https://evanyou.me/">Evan You</a></li>
 	<li><a href="https://andrewclark.io/">Andrew Clark</a></li>
 	<li><a href="https://overreacted.io/">Dan Abramov</a></li>
 	<li><a href="https://github.com/lhorie">Leo Horie</a></li>
-	<li><a href="https://github.com/swannodette">David Nolen</a></li>
+	<li><a href="https://addyosmani.com/">Addy Osmani</a></li>
+	<li><a href="https://swannodette.github.io/">David Nolen</a></li>
 	<li><a href="https://github.com/evancz">Evan Czaplicki</a></li>
 	<li><a href="https://steveklabnik.com/">Steve Klabnik</a></li>
 	<li><a href="https://wikipedia.org/wiki/Jonathan_Blow">Jonathan Blow</a></li>
@@ -89,6 +93,7 @@
 	<li><a href="https://jlongster.com/">James Long</a></li>
 	<li>my coworker <a href="https://twitter.com/bmajz">Bilal Aijazi</a></li>
 	<li><a href="https://twitter.com/Rich_Harris">Rich Harris</a></li>
+	<li><a href="https://infrequently.org/">Alex Russell</a></li>
 	<li><a href="https://github.com/lukeed">Luke Edwards</a></li>
 	<li><a href="https://twitter.com/evilpingwin">pngwn</a></li>
 	<li>my coworker <a href="https://12mod12.com/">Hamilton Reed</a></li>
