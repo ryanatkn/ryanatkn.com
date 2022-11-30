@@ -12,7 +12,8 @@
 	<p>
 		Giving proper credit to all of one's influences is an impossible task but why not try? Maybe
 		these lists could help you discover new and interesting people & things. I am definitely
-		forgetting people to whom I owe credit, so this will be an evolving document.
+		forgetting people to whom I owe credit, so this will be an evolving document. I'm also omitting
+		entire categories of influence. (love you mom)
 	</p>
 	<h3>programming languages, roughly chronological:</h3>
 	<ul>
