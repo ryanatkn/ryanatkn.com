@@ -7,7 +7,7 @@
 </script>
 
 <svelte:head>
-	<title>ryanatkn.com/blog - {post.title}</title>
+	<title>{post.title}</title>
 </svelte:head>
 
 <BlogPostHeader {post} />

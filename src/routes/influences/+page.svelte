@@ -4,7 +4,7 @@
 </script>
 
 <svelte:head>
-	<title>ryanatkn.com/influences - {title}</title>
+	<title>{title}</title>
 </svelte:head>
 
 <div class="column markup padded-md">
