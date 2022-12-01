@@ -156,7 +156,9 @@
 	it.
 </p>
 <p>As service providers, we want to build reliable orgs to operate infra to help users succeed.</p>
-<p>As devs, we want to build great software for people, prioritizing endusers over operators.</p>
+<p>
+	As devs, we want to build great software for people, usually prioritizing endusers over operators.
+</p>
 <p>
 	As toolmakers we want to help users bring their own visions to life and support beneficial
 	relationships with technology.
