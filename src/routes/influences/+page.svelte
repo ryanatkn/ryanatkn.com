@@ -15,7 +15,8 @@
 		forgetting people to whom I owe credit, so this will be an evolving document. I'm also omitting
 		entire categories of influence. (love you mom)
 	</p>
-	<h3>programming languages, roughly chronological:</h3>
+	<p>Each list is roughly chronological:</p>
+	<h3>programming languages:</h3>
 	<ul>
 		<li>whatever <a href="https://wikipedia.org/wiki/DOS">DOS</a> is</li>
 		<li>config files for games like <a href="https://wikipedia.org/wiki/INI_file">.ini</a></li>
