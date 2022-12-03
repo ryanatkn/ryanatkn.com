@@ -43,8 +43,9 @@
 		standalone websites
 	</li>
 	<li>
-		is open source and designed for fullstack modding, so devs and endusers have proper access and
-		power over their UX and systems, and we bridge more of the gap between programming and using
+		is open source and designed for fullstack customization, which means devs and endusers have
+		proper access and power over their UX and systems and code, and we bridge more of the gap
+		between programming and using
 	</li>
 	<li>
 		is currently <a href="https://wikipedia.org/wiki/Software_release_life_cycle">pre-alpha</a>, and
@@ -57,9 +58,9 @@
 	instance)
 </blockquote>
 <p>
-	Fullstack modding is key to why I want to work on Felt, but it has a lot of unknowns and we need
-	to implement it to understand it. For devs, it means we'll have open source components, clients,
-	and servers that are designed to be extended and swapped out. For endusers it means:
+	Fullstack customization is key to why I want to work on Felt, but it has a lot of unknowns and we
+	need to implement it to understand it. For devs, it means we'll have open source components,
+	clients, and servers that are designed to be extended and swapped out. For endusers it means:
 </p>
 <ul>
 	<li>
@@ -75,7 +76,10 @@
 		easy-to-use plugins, mods, modules, etc, made by us at Felt and hopefully a community of
 		developer-users, and clear paths to learning the technical skills to make your own stuff
 	</li>
-	<li>programmery-things like recording events and authoring scripts, and lots more we think</li>
+	<li>
+		programmery-things like recording events and authoring scripts, and composing them with things
+		like governance processes (e.g. "execute this script when this motion passes")
+	</li>
 </ul>
 <p>
 	We think of Felt similar to a smartphone, in terms of packing many tools into one object: it
@@ -97,18 +101,16 @@
 	<li>uses tech like Postgres, Node, TypeScript, Svelte, SvelteKit, and websockets</li>
 	<li>we want to use it personally and make stuff with it</li>
 	<li>we're using it professionally to build itself under democratic control</li>
-	<li>we plan to become a <a href="https://platform.coop">platform co-op</a></li>
+	<li>
+		we plan for the operator to become a <a href="https://platform.coop">platform co-op</a> and the software
+		project a nonprofit
+	</li>
 </ul>
 <p>
 	We'll provide defaults and templates, and users can modify the software for their own needs. We'll
 	support simple and scalable static web publishing like blogs and RSS feeds, along with the tools
-	to make hobby-grade realtime social experiences and games.
+	to make realtime social experiences and games.
 </p>
-<blockquote>
-	"hobby-grade" is how I like to frame it today, but "for srs Professionals" is an eventual target;
-	it's still early and I don't want to overpromise. Security is going to be a challenge, so treat it
-	like a dangerous toy for now.
-</blockquote>
 <p>
 	It's a big set of goals, and we think we have useful contributions particularly around UX. We
 	think we see an opportunity to hit a sweet spot for small communities with our set of design and
