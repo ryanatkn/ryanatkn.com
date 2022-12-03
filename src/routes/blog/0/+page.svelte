@@ -50,7 +50,7 @@
 	</li>
 	<li>
 		is currently <a href="https://wikipedia.org/wiki/Software_release_life_cycle">pre-alpha</a>, and
-		we hope to reach alpha this year, beta optimistically
+		we hope to reach alpha in Q1 2023
 	</li>
 </ul>
 <blockquote>
