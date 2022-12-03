@@ -348,7 +348,7 @@
 		>cooperative interoperability</a
 	>, but we're a 2 person team with limited resources trying to deliver a specific UX. Today this
 	means we have a centralized Node server with a lot of homemade solutions. One of my
-	long/medium-term goals is to support at least one decentralized standard like
+	long/medium-long term goals is to support at least one decentralized standard like
 	<a href="https://www.w3.org/TR/activitypub/">ActivityPub</a>
 	(my current interest) and Matrix.
 </p>
