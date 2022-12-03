@@ -78,7 +78,7 @@
 	</li>
 	<li>
 		programmery-things like recording events and authoring scripts, and composing them with things
-		like governance processes (e.g. "execute this script when this motion passes")
+		like governance processes (e.g. "execute this script if the vote passes")
 	</li>
 </ul>
 <p>
