@@ -35,7 +35,8 @@
 			>knowledge management software</a
 		>, and other <a href="https://wikipedia.org/wiki/Social_software">social</a> and
 		<a href="https://wikipedia.org/wiki/Collaborative_software">collaborative software</a>. We're
-		aiming for a batteries-included, deeply customizable experience with a small footprint.
+		aiming for a batteries-included, deeply customizable experience with a small footprint, that
+		feels familiar but is surprisingly powerful.
 	</li>
 	<li>is designed for small communities</li>
 	<li>
