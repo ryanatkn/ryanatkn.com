@@ -386,9 +386,8 @@
 	is that justice-oriented movements like <a href="https://platform.coop/">platform cooperatives</a>
 	and <a href="https://getdweb.net/principles/">the DWeb</a>
 	do better than the <a href="https://wikipedia.org/wiki/Rent-seeking">rent-seeking</a> and
-	financializing that dominates today; I want to own the digital ground under my own feet, don't you<a
-		href="https://wikipedia.org/wiki/Golden_Rule">?</a
-	>
+	financializing that dominates today; I want to own (or at least co-own) the digital ground under
+	my own feet, don't you<a href="https://wikipedia.org/wiki/Golden_Rule">?</a>
 </blockquote>
 <hr />
 <h2>Ok cool?</h2>
