@@ -1,4 +1,6 @@
 <script lang="ts">
+	import {base} from '$app/paths';
+
 	import BlogPostHeader from '$lib/BlogPostHeader.svelte';
 	import {feedData} from '$lib/feedData';
 
@@ -226,11 +228,12 @@
 <p>
 	<a href="https://www.felt.social">felt.social</a> is a separate entity from Felt the software
 	project. We haven't done the legal work to make it official, but the Felt software trademarks and
-	domains (like the green heart logo, <a href="https://www.felt.dev">felt.dev</a> and
-	<a href="https://www.grogarden.org">grogarden.org</a>) will be owned and managed by some kind of
-	nonprofit entity, not the <a href="https://www.felt.social">felt.social</a> co-op. The co-op is just
-	one stakeholder from the perspective of governing the Felt software project. This is a commitment to
-	the public open source community that these are community assets.
+	domains (like <a href="{base}/felt.png">the green heart logo</a> and
+	<a href="https://www.felt.dev">felt.dev</a>) will be owned and managed by some kind of nonprofit
+	entity, not the
+	<a href="https://www.felt.social">felt.social</a> co-op. The co-op is just one stakeholder from the
+	perspective of governing the Felt software project. This is a commitment to the public open source
+	community that these are community assets.
 </p>
 <p>
 	<strong>felt.social business model</strong>: no ads, no crypto, free and fully open source (<a
