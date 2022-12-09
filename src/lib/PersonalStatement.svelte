@@ -93,10 +93,10 @@
 	</li>
 	<li>
 		public social media on
-		<a href="https://github.com/ryanatkn">GitHub</a>,
-		<a rel="me" href="https://hachyderm.io/@ryanatkn">@ryanatkn@hachyderm.io</a> and
-		<a rel="me" href="https://hci.social/@ryanatkn">@ryanatkn@hci.social</a>
-		on Mastodon,
+		<a href="https://github.com/ryanatkn">GitHub</a>, Mastodon as
+		<a rel="me" href="https://hachyderm.io/@ryanatkn">@ryanatkn@hachyderm.io</a>
+		and
+		<a rel="me" href="https://hci.social/@ryanatkn">@ryanatkn@hci.social</a>,
 		<a href="https://twitter.com/ryanatkn">Twitter</a>,
 		<a href="https://www.reddit.com/user/overtowed">Reddit</a>, and
 		<a href="https://lobste.rs/u/ryanatkn">Lobste.rs</a>

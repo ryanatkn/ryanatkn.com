@@ -11,11 +11,11 @@
 	<h1>{title}</h1>
 	<p>
 		Giving proper credit to all of one's influences is an impossible task but why not try? Maybe
-		these lists could help you discover new and interesting people & things. I am definitely
-		forgetting people to whom I owe credit, so this will be an evolving document. I'm also omitting
-		entire categories of influence. (love you mom)
+		these lists could help you discover new and interesting people and things. I am definitely
+		forgetting people to whom I owe credit, so this is a living document. I'm also omitting entire
+		categories of influence. (love you mom)
 	</p>
-	<p>Each list is roughly chronological:</p>
+	<p>(each list is roughly chronological)</p>
 	<h3>programming languages:</h3>
 	<ul>
 		<li>whatever <a href="https://wikipedia.org/wiki/DOS">DOS</a> is</li>
@@ -71,6 +71,7 @@
 	<ul>
 		<li><a href="https://wikipedia.org/wiki/Tim_Berners-Lee">Tim Berners-Lee</a></li>
 		<li><a href="https://wikipedia.org/wiki/John_Carmack">John Carmack</a></li>
+		<li><a href="https://en.wikipedia.org/wiki/Gabe_Newell">Gabe Newell</a></li>
 		<li><a href="https://wikipedia.org/wiki/Alan_Kay">Alan Kay</a></li>
 		<li><a href="https://wikipedia.org/wiki/Bret_Victor">Bret Victor</a></li>
 		<li><a href="https://wikipedia.org/wiki/Douglas_Engelbart">Douglas Engelbart</a></li>
