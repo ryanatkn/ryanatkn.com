@@ -16,57 +16,6 @@
 		categories of influence. (love you mom)
 	</p>
 	<p>(each list is roughly chronological)</p>
-	<h3>programming languages:</h3>
-	<ul>
-		<li>whatever <a href="https://wikipedia.org/wiki/DOS">DOS</a> is</li>
-		<li>config files for games like <a href="https://wikipedia.org/wiki/INI_file">.ini</a></li>
-		<li>
-			<a href="https://wikipedia.org/wiki/HTML">HTML</a> (making silly things with friends in highschool)
-		</li>
-		<li>
-			<a href="https://wikipedia.org/wiki/Lua_(programming_language)">Lua</a> and some
-			<a href="https://wikipedia.org/wiki/PHP">PHP</a>-like scripting languages for games
-		</li>
-		<li>
-			<a href="https://wikipedia.org/wiki/Microsoft_Excel">Excel</a> and
-			<a href="https://wikipedia.org/wiki/Visual_Basic_for_Applications">VBA</a>
-		</li>
-		<li><a href="https://www.python.org/">Python</a></li>
-		<li>
-			<a href="https://wikipedia.org/wiki/ActionScript">Action Script 3</a> for Flash (whats flash)
-			with <a href="https://flixel.org/">Flixel</a> and
-			<a href="http://useflashpunk.net/">FlashPunk</a>
-		</li>
-		<li>
-			<a href="https://wikipedia.org/wiki/C_Sharp_(programming_language)">C#</a> with the
-			discontinued game tools <a href="https://wikipedia.org/wiki/Microsoft_XNA">XNA</a>
-		</li>
-		<li><a href="https://wikipedia.org/wiki/CSS">CSS</a></li>
-		<li><a href="https://wikipedia.org/wiki/JavaScript">JavaScript</a></li>
-		<li>
-			<a href="https://wikipedia.org/wiki/Document_Object_Model">DOM</a> templating langs like
-			<a href="https://underscorejs.org/">Underscore.js</a>/<a href="https://jade-lang.com/">Jade</a
-			>
-			with <a href="https://jquery.com/">jQuery</a>/<a href="https://backbonejs.org/">Backbone</a>
-		</li>
-		<li><a href="https://coffeescript.org/">CoffeeScript</a></li>
-		<li><a href="https://wikipedia.org/wiki/Bash_(Unix_shell)">Bash</a> and Unix/Linux/GNU</li>
-		<li><a href="https://livescript.net/">LiveScript</a></li>
-		<li><a href="https://wikipedia.org/wiki/Lisp_(programming_language)">Lisp</a></li>
-		<li><a href="https://clojure.org/">Clojure</a></li>
-		<li><a href="https://wikipedia.org/wiki/JSON">JSON</a> (post-lisp understanding)</li>
-		<li><a href="https://www.haskell.org/">Haskell</a></li>
-		<li><a href="https://www.rust-lang.org/">Rust</a></li>
-		<li>DOM templating with <a href="https://angular.io/">Angular</a></li>
-		<li><a href="https://reactjs.org/docs/introducing-jsx.html">JSX and React</a>/vdom</li>
-		<li><a href="https://clojurescript.org/">ClojureScript</a></li>
-		<li>
-			a little <a href="https://elm-lang.org/">Elm</a> and
-			<a href="https://www.purescript.org/">PureScript</a>
-		</li>
-		<li><a href="https://www.typescriptlang.org/">TypeScript</a></li>
-		<li><a href="https://svelte.dev/">Svelte</a></li>
-	</ul>
 	<h3>related to the crafts of programmers/designers/developers:</h3>
 	<ul>
 		<li><a href="https://wikipedia.org/wiki/Tim_Berners-Lee">Tim Berners-Lee</a></li>
@@ -164,5 +113,56 @@
 			<a href="https://spritely.institute/">spritely.institute</a>
 		</li>
 		<li><a href="https://erinshepherd.net">Erin Shepherd</a></li>
+	</ul>
+	<h3>programming languages:</h3>
+	<ul>
+		<li>whatever <a href="https://wikipedia.org/wiki/DOS">DOS</a> is</li>
+		<li>config files for games like <a href="https://wikipedia.org/wiki/INI_file">.ini</a></li>
+		<li>
+			<a href="https://wikipedia.org/wiki/HTML">HTML</a> (making silly things with friends in highschool)
+		</li>
+		<li>
+			<a href="https://wikipedia.org/wiki/Lua_(programming_language)">Lua</a> and some
+			<a href="https://wikipedia.org/wiki/PHP">PHP</a>-like scripting languages for games
+		</li>
+		<li>
+			<a href="https://wikipedia.org/wiki/Microsoft_Excel">Excel</a> and
+			<a href="https://wikipedia.org/wiki/Visual_Basic_for_Applications">VBA</a>
+		</li>
+		<li><a href="https://www.python.org/">Python</a></li>
+		<li>
+			<a href="https://wikipedia.org/wiki/ActionScript">Action Script 3</a> for Flash (whats flash)
+			with <a href="https://flixel.org/">Flixel</a> and
+			<a href="http://useflashpunk.net/">FlashPunk</a>
+		</li>
+		<li>
+			<a href="https://wikipedia.org/wiki/C_Sharp_(programming_language)">C#</a> with the
+			discontinued game tools <a href="https://wikipedia.org/wiki/Microsoft_XNA">XNA</a>
+		</li>
+		<li><a href="https://wikipedia.org/wiki/CSS">CSS</a></li>
+		<li><a href="https://wikipedia.org/wiki/JavaScript">JavaScript</a></li>
+		<li>
+			<a href="https://wikipedia.org/wiki/Document_Object_Model">DOM</a> templating langs like
+			<a href="https://underscorejs.org/">Underscore.js</a>/<a href="https://jade-lang.com/">Jade</a
+			>
+			with <a href="https://jquery.com/">jQuery</a>/<a href="https://backbonejs.org/">Backbone</a>
+		</li>
+		<li><a href="https://coffeescript.org/">CoffeeScript</a></li>
+		<li><a href="https://wikipedia.org/wiki/Bash_(Unix_shell)">Bash</a> and Unix/Linux/GNU</li>
+		<li><a href="https://livescript.net/">LiveScript</a></li>
+		<li><a href="https://wikipedia.org/wiki/Lisp_(programming_language)">Lisp</a></li>
+		<li><a href="https://clojure.org/">Clojure</a></li>
+		<li><a href="https://wikipedia.org/wiki/JSON">JSON</a> (post-lisp understanding)</li>
+		<li><a href="https://www.haskell.org/">Haskell</a></li>
+		<li><a href="https://www.rust-lang.org/">Rust</a></li>
+		<li>DOM templating with <a href="https://angular.io/">Angular</a></li>
+		<li><a href="https://reactjs.org/docs/introducing-jsx.html">JSX and React</a>/vdom</li>
+		<li><a href="https://clojurescript.org/">ClojureScript</a></li>
+		<li>
+			a little <a href="https://elm-lang.org/">Elm</a> and
+			<a href="https://www.purescript.org/">PureScript</a>
+		</li>
+		<li><a href="https://www.typescriptlang.org/">TypeScript</a></li>
+		<li><a href="https://svelte.dev/">Svelte</a></li>
 	</ul>
 </div>
