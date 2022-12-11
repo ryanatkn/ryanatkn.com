@@ -90,6 +90,7 @@
 		<li><a href="https://tomdale.net/">Tom Dale</a></li>
 		<li><a href="https://yehudakatz.com/">Yehuda Katz</a></li>
 		<li><a href="https://braythwayt.com/">Reginald Braithwaite</a></li>
+		<li><a href="https://www.destroyallsoftware.com/">Gary Bernhardt</a></li>
 		<li><a href="https://evanyou.me/">Evan You</a></li>
 		<li><a href="https://andrewclark.io/">Andrew Clark</a></li>
 		<li><a href="https://overreacted.io/">Dan Abramov</a></li>
@@ -102,10 +103,10 @@
 		<li><a href="https://ncase.me/">Nicky Case</a></li>
 		<li><a href="https://jlongster.com/">James Long</a></li>
 		<li>my coworker <a href="https://twitter.com/bmajz">Bilal Aijazi</a></li>
-		<li><a href="https://twitter.com/Rich_Harris">Rich Harris</a></li>
+		<li><a href="https://github.com/rich-harris/">Rich Harris</a></li>
 		<li><a href="https://infrequently.org/">Alex Russell</a></li>
 		<li><a href="https://github.com/lukeed">Luke Edwards</a></li>
-		<li><a href="https://twitter.com/evilpingwin">pngwn</a></li>
+		<li><a href="https://github.com/pngwn/">pngwn</a></li>
 		<li>my coworker <a href="https://12mod12.com/">Hamilton Reed</a></li>
 		<li><a href="https://www.galaxykate.com/">Kate Compton</a></li>
 		<li><a href="https://charliegerard.dev/">Charlie Gerard</a></li>
@@ -120,7 +121,7 @@
 		<li><a href="https://maggieappleton.com/">Maggie Appleton</a></li>
 		<li><a href="https://www.swyx.io/">swyx</a></li>
 		<li><a href="https://andrewkelley.me/">Andrew Kelley</a></li>
-		<li><a href="https://twitter.com/RyanCarniato">Ryan Carniato</a></li>
+		<li><a href="https://github.com/ryansolid">Ryan Carniato</a></li>
 		<li><a href="https://homes.cs.washington.edu/~axz/">Amy Zhang</a></li>
 		<li><a href="https://imjane.net">Jane Im</a></li>
 		<li><a href="https://alexanderobenauer.com/">Alexander Obenauer</a></li>
