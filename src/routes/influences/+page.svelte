@@ -1,6 +1,161 @@
 <script lang="ts">
+	import {shuffle} from '$lib/util';
+
 	// i may regret this
 	const title = 'An ongoing attempt to credit my influences';
+
+	interface Influence {
+		name: string;
+		url: string;
+		coworker?: boolean;
+	}
+
+	let influences: Array<Influence | Influence[]> = [
+		{name: 'Tim Berners-Lee', url: 'https://wikipedia.org/wiki/Tim_Berners-Lee'},
+		{name: 'John Carmack', url: 'https://wikipedia.org/wiki/John_Carmack'},
+		{name: 'Gabe Newell', url: 'https://en.wikipedia.org/wiki/Gabe_Newell'},
+		{name: 'Alan Kay', url: 'https://wikipedia.org/wiki/Alan_Kay'},
+		{name: 'Bret Victor', url: 'https://wikipedia.org/wiki/Bret_Victor'},
+		{name: 'Douglas Engelbart', url: 'https://wikipedia.org/wiki/Douglas_Engelbart'},
+		{name: 'Seymour Papert', url: 'https://wikipedia.org/wiki/Seymour_Papert'},
+		{name: 'Ted Nelson', url: 'https://wikipedia.org/wiki/Ted_Nelson'},
+		{name: 'Marshall McLuhan', url: 'https://wikipedia.org/wiki/Marshall_McLuhan'},
+		{name: 'Rich Hickey', url: 'https://wikipedia.org/wiki/Rich_Hickey'},
+		{name: 'John Resig', url: 'https://johnresig.com/'},
+		{name: 'Mario Gutierrez', url: 'https://github.com/mgutz', coworker: true},
+		{name: 'Ryan Dahl', url: 'https://wikipedia.org/wiki/Ryan_Dahl'},
+		{name: 'Jeremy Ashkenas', url: 'https://wikipedia.org/wiki/Jeremy_Ashkenas'},
+		{name: 'Douglas Crockford', url: 'https://wikipedia.org/wiki/Douglas_Crockford'},
+		{name: 'TJ Holowaychuk', url: 'https://github.com/tj'},
+		{name: 'substack', url: 'https://substack.net/'},
+		{name: 'Marijn Haverbeke', url: 'https://marijnhaverbeke.nl/'},
+		{name: 'Tom Dale', url: 'https://tomdale.net/'},
+		{name: 'Yehuda Katz', url: 'https://yehudakatz.com/'},
+		{name: 'Reginald Braithwaite', url: 'https://braythwayt.com/'},
+		{name: 'Gary Bernhardt', url: 'https://www.destroyallsoftware.com/'},
+		{name: 'Evan You', url: 'https://evanyou.me/'},
+		{name: 'Andrew Clark', url: 'https://andrewclark.io/'},
+		{name: 'Dan Abramov', url: 'https://overreacted.io/'},
+		{name: 'Leo Horie', url: 'https://github.com/lhorie'},
+		{name: 'Addy Osmani', url: 'https://addyosmani.com/'},
+		{name: 'David Nolen', url: 'https://swannodette.github.io/'},
+		{name: 'Evan Czaplicki', url: 'https://github.com/evancz'},
+		{name: 'Steve Klabnik', url: 'https://steveklabnik.com/'},
+		{name: 'Jonathan Blow', url: 'https://wikipedia.org/wiki/Jonathan_Blow'},
+		{name: 'Nicky Case', url: 'https://ncase.me/'},
+		{name: 'James Long', url: 'https://jlongster.com/'},
+		{name: 'Bilal Aijazi', url: 'https://twitter.com/bmajz', coworker: true},
+		{name: 'Rich Harris', url: 'https://github.com/rich-harris'},
+		{name: 'Alex Russell', url: 'https://infrequently.org/'},
+		{name: 'Luke Edwards', url: 'https://github.com/lukeed'},
+		{name: 'pngwn', url: 'https://github.com/pngwn/'},
+		{name: 'Hamilton Reed', url: 'https://12mod12.com/', coworker: true},
+		{name: 'Kate Compton', url: 'https://www.galaxykate.com/'},
+		{name: 'Charlie Gerard', url: 'https://charliegerard.dev/'},
+		{name: 'Andy Matuschak', url: 'https://andymatuschak.org/'},
+		{name: 'Christopher Alexander', url: 'https://wikipedia.org/wiki/Christopher_Alexander'},
+		{name: 'Yoshiki Schmitz', url: 'https://twitter.com/yoshikischmitz'},
+		{name: 'Geoffrey Litt', url: 'https://www.geoffreylitt.com/'},
+		{name: 'Jason Yuan', url: 'https://jasonyuan.design/'},
+		{name: 'Max Krieger', url: 'https://a9.io/'},
+		{name: 'Amelia Wattenberger', url: 'https://wattenberger.com/'},
+		{name: 'Darius Kazemi', url: 'https://tinysubversions.com/'},
+		{name: 'Maggie Appleton', url: 'https://maggieappleton.com/'},
+		{name: 'swyx', url: 'https://www.swyx.io/'},
+		{name: 'Andrew Kelley', url: 'https://andrewkelley.me/'},
+		{name: 'Ryan Carniato', url: 'https://github.com/ryansolid'},
+		{name: 'Amy Zhang', url: 'https://homes.cs.washington.edu/~axz/'},
+		{name: 'Jane Im', url: 'https://imjane.net'},
+		{name: 'Shagun Jhaver', url: 'https://shagunjhaver.com/'},
+		{name: 'Alexander Obenauer', url: 'https://alexanderobenauer.com/'},
+		{name: 'Future of Coding community', url: 'https://futureofcoding.org/'},
+		{name: 'toolsforthought.rocks', url: 'https://toolsforthought.rocks/'},
+		{name: 'SvelteKit', url: 'https://kit.svelte.dev/'},
+		{name: 'socialhub.activitypub.rocks', url: 'https://socialhub.activitypub.rocks/'},
+		[
+			{name: 'the fediverse', url: 'https://wikipedia.org/wiki/Fediverse'},
+			{name: 'ActivityPub', url: 'https://www.w3.org/TR/activitypub/'},
+			{name: 'ActivityStreams', url: 'https://www.w3.org/TR/activitystreams-core/'},
+		],
+		{name: 'the Matrix protocol', url: 'https://wikipedia.org/wiki/Matrix_(protocol)'},
+		{name: 'metagov.org', url: 'https://metagov.org/'},
+		{name: 'platform.coop', url: 'https://platform.coop/'},
+		{name: 'Elinor Ostrom', url: 'https://wikipedia.org/wiki/Elinor_Ostrom'},
+		{name: 'consentful.systems', url: 'https://consentful.systems/'},
+		{name: 'consentfultech.io', url: 'https://www.consentfultech.io/'},
+		{
+			name: 'Initiative for Digital Public Infrastructure',
+			url: 'https://publicinfrastructure.org/',
+		},
+		{name: 'DWeb', url: 'https://getdweb.net/principles/'},
+		{name: 'Center for Humane Technology', url: 'https://www.humanetech.com/'},
+		{name: 'CommunityRule', url: 'https://communityrule.info/'},
+		{name: 'PolicyKit', url: 'https://policykit.org/'},
+		{name: 'Nathan Schneider', url: 'https://nathanschneider.info/'},
+		{name: 'Loomio', url: 'https://www.loomio.com/'},
+		{name: 'Amy Zhang', url: 'https://homes.cs.washington.edu/~axz/'},
+		{name: 'Joshua Tan', url: 'https://www.joshuatan.com/'},
+		{name: 'Jane Im', url: 'https://imjane.net/'},
+		{name: 'Divya Siddarth', url: 'https://divyasiddarth.com/'},
+		{name: 'Open Collective', url: 'https://opencollective.com/'},
+		{name: 'Pia Mancini', url: 'https://www.piamancini.com/'},
+		{name: 'Shauna Gordon-McKeon', url: 'http://shaunagm.net/'}, // TODO https
+		[
+			{name: 'Christine Lemmer-Webber', url: 'https://dustycloud.org/'},
+			{name: 'spritely.institute', url: 'https://spritely.institute/'},
+		],
+		{name: 'Erin Shepherd', url: 'https://erinshepherd.net/'},
+	];
+
+	shuffle(influences);
+
+	const shuffleAll = () => {
+		influences = shuffle(influences.slice());
+	};
+
+	// TODO maybe expand this to tech, frameworks?
+	const langs: Array<{html: string}> = [
+		{html: 'whatever <a href="https://wikipedia.org/wiki/DOS">DOS</a> is'},
+		{html: 'config files for games like <a href="https://wikipedia.org/wiki/INI_file">.ini</a>'},
+		{
+			html: '<a href="https://wikipedia.org/wiki/HTML">HTML</a> (making silly things with friends in highschool)',
+		},
+		{
+			html: '<a href="https://wikipedia.org/wiki/Lua_(programming_language)">Lua</a> and some <a href="https://wikipedia.org/wiki/PHP">PHP</a>-like scripting languages for games',
+		},
+		{
+			html: '<a href="https://wikipedia.org/wiki/Microsoft_Excel">Excel</a> and <a href="https://wikipedia.org/wiki/Visual_Basic_for_Applications">VBA</a>',
+		},
+		{html: '<a href="https://www.python.org/">Python</a>'},
+		{
+			html: '<a href="https://wikipedia.org/wiki/ActionScript">Action Script 3</a> for Flash (whats flash) with <a href="https://flixel.org/">Flixel</a> and <a href="http://useflashpunk.net/">FlashPunk</a>',
+		},
+		{
+			html: '<a href="https://wikipedia.org/wiki/C_Sharp_(programming_language)">C#</a> with the discontinued game tools <a href="https://wikipedia.org/wiki/Microsoft_XNA">XNA</a>',
+		},
+		{html: '<a href="https://wikipedia.org/wiki/CSS">CSS</a>'},
+		{html: '<a href="https://wikipedia.org/wiki/JavaScript">JavaScript</a>'},
+		{
+			html: '<a href="https://wikipedia.org/wiki/Document_Object_Model">DOM</a> templating langs like <a href="https://underscorejs.org/">Underscore.js</a>/<a href="https://jade-lang.com/">Jade</a> with <a href="https://jquery.com/">jQuery</a>/<a href="https://backbonejs.org/">Backbone</a>',
+		},
+		{html: '<a href="https://coffeescript.org/">CoffeeScript</a>'},
+		{html: '<a href="https://wikipedia.org/wiki/Bash_(Unix_shell)">Bash</a> and Unix/Linux/GNU'},
+		{html: '<a href="https://livescript.net/">LiveScript</a>'},
+		{html: '<a href="https://wikipedia.org/wiki/Lisp_(programming_language)">Lisp</a>'},
+		{html: '<a href="https://clojure.org/">Clojure</a>'},
+		{html: '<a href="https://wikipedia.org/wiki/JSON">JSON</a> (post-lisp understanding)'},
+		{html: '<a href="https://www.haskell.org/">Haskell</a>'},
+		{html: '<a href="https://www.rust-lang.org/">Rust</a>'},
+		{html: 'DOM templating with <a href="https://angular.io/">Angular</a>'},
+		{html: '<a href="https://reactjs.org/docs/introducing-jsx.html">JSX and React</a>/vdom'},
+		{html: '<a href="https://clojurescript.org/">ClojureScript</a>'},
+		{
+			html: 'a little <a href="https://elm-lang.org/">Elm</a> and <a href="https://www.purescript.org/">PureScript</a>',
+		},
+		{html: '<a href="https://www.typescriptlang.org/">TypeScript</a>'},
+		{html: '<a href="https://svelte.dev/">Svelte</a>'},
+	];
+	langs.reverse();
 </script>
 
 <svelte:head>
@@ -10,160 +165,34 @@
 <div class="column markup padded-md">
 	<h1>{title}</h1>
 	<p>
-		Giving proper credit to all of one's influences is an impossible task but why not try? Maybe
-		these lists could help you discover new and interesting people and things. I am definitely
-		forgetting people to whom I owe credit, so this is a living document. I'm also omitting entire
-		categories of influence. (love you mom)
+		Giving proper credit to all of one's influences is an impossible task and embarrassingly biased
+		but why not try? Maybe these lists could help you discover new and interesting people and
+		things. I am definitely forgetting people to whom I owe credit, so this is a living document.
+		I'm also omitting entire categories of influence. (love you mom)
 	</p>
-	<p>(each list is roughly chronological)</p>
-	<h3>related to the crafts of programmers/designers/developers:</h3>
+	<p>
+		<button on:click={shuffleAll} class="inline" style:background="transparent">give credit</button>
+	</p>
+	<h3>people, orgs, etc:</h3>
 	<ul>
-		<li><a href="https://wikipedia.org/wiki/Tim_Berners-Lee">Tim Berners-Lee</a></li>
-		<li><a href="https://wikipedia.org/wiki/John_Carmack">John Carmack</a></li>
-		<li><a href="https://en.wikipedia.org/wiki/Gabe_Newell">Gabe Newell</a></li>
-		<li><a href="https://wikipedia.org/wiki/Alan_Kay">Alan Kay</a></li>
-		<li><a href="https://wikipedia.org/wiki/Bret_Victor">Bret Victor</a></li>
-		<li><a href="https://wikipedia.org/wiki/Douglas_Engelbart">Douglas Engelbart</a></li>
-		<li><a href="https://wikipedia.org/wiki/Seymour_Papert">Seymour Papert</a></li>
-		<li><a href="https://wikipedia.org/wiki/Ted_Nelson">Ted Nelson</a></li>
-		<li><a href="https://wikipedia.org/wiki/Marshall_McLuhan">Marshall McLuhan</a></li>
-		<li><a href="https://wikipedia.org/wiki/Rich_Hickey">Rich Hickey</a></li>
-		<li><a href="https://johnresig.com/">John Resig</a></li>
-		<li>my coworker <a href="https://github.com/mgutz">Mario Gutierrez</a></li>
-		<li><a href="https://wikipedia.org/wiki/Ryan_Dahl">Ryan Dahl</a></li>
-		<li><a href="https://wikipedia.org/wiki/Jeremy_Ashkenas">Jeremy Ashkenas</a></li>
-		<li><a href="https://wikipedia.org/wiki/Douglas_Crockford">Douglas Crockford</a></li>
-		<li><a href="https://github.com/tj">TJ Holowaychuk</a></li>
-		<li><a href="https://substack.net/">substack</a></li>
-		<li><a href="https://marijnhaverbeke.nl/">Marijn Haverbeke</a></li>
-		<li><a href="https://tomdale.net/">Tom Dale</a></li>
-		<li><a href="https://yehudakatz.com/">Yehuda Katz</a></li>
-		<li><a href="https://braythwayt.com/">Reginald Braithwaite</a></li>
-		<li><a href="https://www.destroyallsoftware.com/">Gary Bernhardt</a></li>
-		<li><a href="https://evanyou.me/">Evan You</a></li>
-		<li><a href="https://andrewclark.io/">Andrew Clark</a></li>
-		<li><a href="https://overreacted.io/">Dan Abramov</a></li>
-		<li><a href="https://github.com/lhorie">Leo Horie</a></li>
-		<li><a href="https://addyosmani.com/">Addy Osmani</a></li>
-		<li><a href="https://swannodette.github.io/">David Nolen</a></li>
-		<li><a href="https://github.com/evancz">Evan Czaplicki</a></li>
-		<li><a href="https://steveklabnik.com/">Steve Klabnik</a></li>
-		<li><a href="https://wikipedia.org/wiki/Jonathan_Blow">Jonathan Blow</a></li>
-		<li><a href="https://ncase.me/">Nicky Case</a></li>
-		<li><a href="https://jlongster.com/">James Long</a></li>
-		<li>my coworker <a href="https://twitter.com/bmajz">Bilal Aijazi</a></li>
-		<li><a href="https://github.com/rich-harris/">Rich Harris</a></li>
-		<li><a href="https://infrequently.org/">Alex Russell</a></li>
-		<li><a href="https://github.com/lukeed">Luke Edwards</a></li>
-		<li><a href="https://github.com/pngwn/">pngwn</a></li>
-		<li>my coworker <a href="https://12mod12.com/">Hamilton Reed</a></li>
-		<li><a href="https://www.galaxykate.com/">Kate Compton</a></li>
-		<li><a href="https://charliegerard.dev/">Charlie Gerard</a></li>
-		<li><a href="https://andymatuschak.org/">Andy Matuschak</a></li>
-		<li><a href="https://wikipedia.org/wiki/Christopher_Alexander">Christopher Alexander</a></li>
-		<li><a href="https://twitter.com/yoshikischmitz">Yoshiki Schmitz</a></li>
-		<li><a href="https://www.geoffreylitt.com/">Geoffrey Litt</a></li>
-		<li><a href="https://jasonyuan.design/">Jason Yuan</a></li>
-		<li><a href="https://a9.io/">Max Krieger</a></li>
-		<li><a href="https://wattenberger.com/">Amelia Wattenberger</a></li>
-		<li><a href="https://tinysubversions.com/">Darius Kazemi</a></li>
-		<li><a href="https://maggieappleton.com/">Maggie Appleton</a></li>
-		<li><a href="https://www.swyx.io/">swyx</a></li>
-		<li><a href="https://andrewkelley.me/">Andrew Kelley</a></li>
-		<li><a href="https://github.com/ryansolid">Ryan Carniato</a></li>
-		<li><a href="https://homes.cs.washington.edu/~axz/">Amy Zhang</a></li>
-		<li><a href="https://imjane.net">Jane Im</a></li>
-		<li><a href="https://shagunjhaver.com/">Shagun Jhaver</a></li>
-		<li><a href="https://alexanderobenauer.com/">Alexander Obenauer</a></li>
-	</ul>
-	<h3>related to my professional work but not the programming craft:</h3>
-	<ul>
-		<li><a href="https://futureofcoding.org/">Future of Coding</a> community</li>
-		<li><a href="https://toolsforthought.rocks/">toolsforthought.rocks</a></li>
-		<li><a href="https://kit.svelte.dev/">SvelteKit</a></li>
-		<li><a href="https://socialhub.activitypub.rocks/">socialhub.activitypub.rocks</a></li>
-		<li>
-			<a href="https://wikipedia.org/wiki/Fediverse">the fediverse</a> and
-			<a href="https://www.w3.org/TR/activitypub/">ActivityPub</a> and
-			<a href="https://www.w3.org/TR/activitystreams-core/">ActivityStreams</a>
-		</li>
-		<li>the <a href="https://wikipedia.org/wiki/Matrix_(protocol)">Matrix protocol</a></li>
-		<li><a href="https://metagov.org/">metagov.org</a></li>
-		<li><a href="https://platform.coop/">platform.coop</a></li>
-		<li><a href="https://wikipedia.org/wiki/Elinor_Ostrom">Elinor Ostrom</a></li>
-		<li><a href="https://consentful.systems/">consentful.systems</a></li>
-		<li><a href="https://www.consentfultech.io/">consentfultech.io</a></li>
-		<li>
-			<a href="https://publicinfrastructure.org/">Initiative for Digital Public Infrastructure</a>
-		</li>
-		<li><a href="https://getdweb.net/principles/">DWeb</a></li>
-		<li><a href="https://www.humanetech.com/">Center for Humane Technology</a></li>
-		<li><a href="https://communityrule.info/">CommunityRule</a></li>
-		<li><a href="https://policykit.org/">PolicyKit</a></li>
-		<li><a href="https://nathanschneider.info/">Nathan Schneider</a></li>
-		<li><a href="https://www.loomio.com/">Loomio</a></li>
-		<li><a href="https://homes.cs.washington.edu/~axz/">Amy Zhang</a></li>
-		<li><a href="https://www.joshuatan.com/">Joshua Tan</a></li>
-		<li><a href="https://imjane.net">Jane Im</a></li>
-		<li><a href="https://twitter.com/divyasiddarth">Divya Siddarth</a></li>
-		<li><a href="https://opencollective.com/">Open Collective</a></li>
-		<li><a href="https://www.piamancini.com/">Pia Mancini</a></li>
-		<li><a href="http://shaunagm.net/">Shauna Gordon-McKeon</a><!-- TODO https --></li>
-		<li>
-			<a href="https://dustycloud.org/">Christine Lemmer-Webber</a> and
-			<a href="https://spritely.institute/">spritely.institute</a>
-		</li>
-		<li><a href="https://erinshepherd.net">Erin Shepherd</a></li>
+		{#each influences as influence (influence)}
+			<li>
+				{#if Array.isArray(influence)}
+					{#each influence as inf, i (inf)}
+						{#if inf.coworker}my coworker {/if}<a href={inf.url}>{inf.name}</a
+						>{#if i !== influence.length - 1}&nbsp;and&nbsp;{/if}
+					{/each}
+				{:else}
+					{#if influence.coworker}my coworker {/if}<a href={influence.url}>{influence.name}</a>
+				{/if}
+			</li>
+		{/each}
 	</ul>
 	<h3>programming languages:</h3>
+	<p>(roughly reverse chronological order)</p>
 	<ul>
-		<li>whatever <a href="https://wikipedia.org/wiki/DOS">DOS</a> is</li>
-		<li>config files for games like <a href="https://wikipedia.org/wiki/INI_file">.ini</a></li>
-		<li>
-			<a href="https://wikipedia.org/wiki/HTML">HTML</a> (making silly things with friends in highschool)
-		</li>
-		<li>
-			<a href="https://wikipedia.org/wiki/Lua_(programming_language)">Lua</a> and some
-			<a href="https://wikipedia.org/wiki/PHP">PHP</a>-like scripting languages for games
-		</li>
-		<li>
-			<a href="https://wikipedia.org/wiki/Microsoft_Excel">Excel</a> and
-			<a href="https://wikipedia.org/wiki/Visual_Basic_for_Applications">VBA</a>
-		</li>
-		<li><a href="https://www.python.org/">Python</a></li>
-		<li>
-			<a href="https://wikipedia.org/wiki/ActionScript">Action Script 3</a> for Flash (whats flash)
-			with <a href="https://flixel.org/">Flixel</a> and
-			<a href="http://useflashpunk.net/">FlashPunk</a>
-		</li>
-		<li>
-			<a href="https://wikipedia.org/wiki/C_Sharp_(programming_language)">C#</a> with the
-			discontinued game tools <a href="https://wikipedia.org/wiki/Microsoft_XNA">XNA</a>
-		</li>
-		<li><a href="https://wikipedia.org/wiki/CSS">CSS</a></li>
-		<li><a href="https://wikipedia.org/wiki/JavaScript">JavaScript</a></li>
-		<li>
-			<a href="https://wikipedia.org/wiki/Document_Object_Model">DOM</a> templating langs like
-			<a href="https://underscorejs.org/">Underscore.js</a>/<a href="https://jade-lang.com/">Jade</a
-			>
-			with <a href="https://jquery.com/">jQuery</a>/<a href="https://backbonejs.org/">Backbone</a>
-		</li>
-		<li><a href="https://coffeescript.org/">CoffeeScript</a></li>
-		<li><a href="https://wikipedia.org/wiki/Bash_(Unix_shell)">Bash</a> and Unix/Linux/GNU</li>
-		<li><a href="https://livescript.net/">LiveScript</a></li>
-		<li><a href="https://wikipedia.org/wiki/Lisp_(programming_language)">Lisp</a></li>
-		<li><a href="https://clojure.org/">Clojure</a></li>
-		<li><a href="https://wikipedia.org/wiki/JSON">JSON</a> (post-lisp understanding)</li>
-		<li><a href="https://www.haskell.org/">Haskell</a></li>
-		<li><a href="https://www.rust-lang.org/">Rust</a></li>
-		<li>DOM templating with <a href="https://angular.io/">Angular</a></li>
-		<li><a href="https://reactjs.org/docs/introducing-jsx.html">JSX and React</a>/vdom</li>
-		<li><a href="https://clojurescript.org/">ClojureScript</a></li>
-		<li>
-			a little <a href="https://elm-lang.org/">Elm</a> and
-			<a href="https://www.purescript.org/">PureScript</a>
-		</li>
-		<li><a href="https://www.typescriptlang.org/">TypeScript</a></li>
-		<li><a href="https://svelte.dev/">Svelte</a></li>
+		{#each langs as lang (lang)}
+			<li>{@html lang.html}</li>
+		{/each}
 	</ul>
 </div>
