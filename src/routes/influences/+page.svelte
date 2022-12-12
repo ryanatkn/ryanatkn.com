@@ -73,6 +73,7 @@
 		<li><a href="https://github.com/ryansolid">Ryan Carniato</a></li>
 		<li><a href="https://homes.cs.washington.edu/~axz/">Amy Zhang</a></li>
 		<li><a href="https://imjane.net">Jane Im</a></li>
+		<li><a href="https://shagunjhaver.com/">Shagun Jhaver</a></li>
 		<li><a href="https://alexanderobenauer.com/">Alexander Obenauer</a></li>
 	</ul>
 	<h3>related to my professional work but not the programming craft:</h3>
