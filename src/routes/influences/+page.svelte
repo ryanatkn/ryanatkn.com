@@ -64,19 +64,16 @@
 		{name: 'swyx', url: 'https://www.swyx.io/'},
 		{name: 'Andrew Kelley', url: 'https://andrewkelley.me/'},
 		{name: 'Ryan Carniato', url: 'https://github.com/ryansolid'},
-		{name: 'Amy Zhang', url: 'https://homes.cs.washington.edu/~axz/'},
-		{name: 'Jane Im', url: 'https://imjane.net'},
-		{name: 'Shagun Jhaver', url: 'https://shagunjhaver.com/'},
 		{name: 'Alexander Obenauer', url: 'https://alexanderobenauer.com/'},
 		{name: 'Future of Coding community', url: 'https://futureofcoding.org/'},
 		{name: 'toolsforthought.rocks', url: 'https://toolsforthought.rocks/'},
 		{name: 'SvelteKit', url: 'https://kit.svelte.dev/'},
-		{name: 'socialhub.activitypub.rocks', url: 'https://socialhub.activitypub.rocks/'},
 		[
 			{name: 'the fediverse', url: 'https://wikipedia.org/wiki/Fediverse'},
 			{name: 'ActivityPub', url: 'https://www.w3.org/TR/activitypub/'},
 			{name: 'ActivityStreams', url: 'https://www.w3.org/TR/activitystreams-core/'},
 		],
+		{name: 'socialhub.activitypub.rocks', url: 'https://socialhub.activitypub.rocks/'},
 		{name: 'the Matrix protocol', url: 'https://wikipedia.org/wiki/Matrix_(protocol)'},
 		{name: 'metagov.org', url: 'https://metagov.org/'},
 		{name: 'platform.coop', url: 'https://platform.coop/'},
@@ -95,8 +92,10 @@
 		{name: 'Loomio', url: 'https://www.loomio.com/'},
 		{name: 'Amy Zhang', url: 'https://homes.cs.washington.edu/~axz/'},
 		{name: 'Joshua Tan', url: 'https://www.joshuatan.com/'},
+		{name: 'Seth Frey', url: 'https://enfascination.com/'},
 		{name: 'Jane Im', url: 'https://imjane.net/'},
 		{name: 'Divya Siddarth', url: 'https://divyasiddarth.com/'},
+		{name: 'Shagun Jhaver', url: 'https://shagunjhaver.com/'},
 		{name: 'Open Collective', url: 'https://opencollective.com/'},
 		{name: 'Pia Mancini', url: 'https://www.piamancini.com/'},
 		{name: 'Shauna Gordon-McKeon', url: 'http://shaunagm.net/'}, // TODO https
@@ -173,7 +172,7 @@
 	<p>
 		<button on:click={shuffleAll} class="inline" style:background="transparent">give credit</button>
 	</p>
-	<h3>people, orgs, etc:</h3>
+	<h3>people, orgs, tech, etc:</h3>
 	<ul>
 		{#each influences as influence (influence)}
 			<li>
