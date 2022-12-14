@@ -120,7 +120,7 @@
 			html: '<a href="https://wikipedia.org/wiki/HTML">HTML</a> (making silly things with friends in highschool)',
 		},
 		{
-			html: '<a href="https://wikipedia.org/wiki/Lua_(programming_language)">Lua</a> and some <a href="https://wikipedia.org/wiki/PHP">PHP</a>-like scripting languages for games',
+			html: 'a couple <a href="https://wikipedia.org/wiki/PHP">PHP</a>-like scripting languages for games',
 		},
 		{
 			html: '<a href="https://wikipedia.org/wiki/Microsoft_Excel">Excel</a> and <a href="https://wikipedia.org/wiki/Visual_Basic_for_Applications">VBA</a>',
