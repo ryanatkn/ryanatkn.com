@@ -75,9 +75,9 @@
 		customizable and flexible
 	</li>
 	<li>
-		a <a href="https://github.com/pngwn/MDsveX">composable text language</a> with a rich vocabulary that
-		can be used to write chat messages, forum and blog posts, todo items, and so on, and also construct
-		both social spaces and the entire client UI
+		a <a href="https://svelte.dev/">composable text language</a> with a rich vocabulary that can be used
+		to write chat messages, forum and blog posts, todo items, and so on, and also construct both social
+		spaces and the entire client UI
 	</li>
 	<li>
 		easy-to-use plugins, mods, modules, etc, made by us at Felt and hopefully a community of
