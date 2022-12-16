@@ -18,7 +18,8 @@
 		href="https://12mod12.com/">Hamilton Reed</a
 	>
 	(<a href="https://twitter.com/greatbaconbits">Twitter</a>,
-	<a href="https://github.com/greatbacon">GitHub</a>) fulltime for a year. We
+	<a href="https://github.com/greatbacon">GitHub</a>) fulltime for a year, after first meeting in
+	December 2019 to talk about a potential collaboration. We
 	<a href="https://twitter.com/feltcoop">@feltcoop</a>
 	recently started a
 	<a href="https://tinyletter.com/FeltCoop">monthly newsletter</a>
