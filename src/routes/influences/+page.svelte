@@ -125,7 +125,9 @@
 		{
 			html: '<a href="https://wikipedia.org/wiki/Microsoft_Excel">Excel</a> and <a href="https://wikipedia.org/wiki/Visual_Basic_for_Applications">VBA</a>',
 		},
-		{html: '<a href="https://www.python.org/">Python</a>'},
+		{
+			html: '<a href="https://www.python.org/">Python</a> and <a href="https://www.pygame.org/">pygame</a>',
+		},
 		{
 			html: '<a href="https://wikipedia.org/wiki/ActionScript">Action Script 3</a> for Flash (whats flash) with <a href="https://flixel.org/">Flixel</a> and <a href="http://useflashpunk.net/">FlashPunk</a>',
 		},

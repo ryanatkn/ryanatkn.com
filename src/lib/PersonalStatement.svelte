@@ -20,11 +20,6 @@
 			links: '<a href="/blog">/blog</a>',
 		},
 		{
-			title: '<a href="/influences">my influences</a>',
-			description: 'an ongoing attempt to credit my influences',
-			links: '<a href="/influences">/influences</a>',
-		},
-		{
 			title: '<a href="https://felt.social">@feltcoop</a>',
 			description: `a <a href="https://wikipedia.org/wiki/Software_release_life_cycle">pre-alpha</a> aspiring <a href="https://platform.coop">platform co-op</a> making free and open source community software`,
 			links: `<a href="https://github.com/feltcoop">GitHub</a>, <a href="https://twitter.com/feltcoop">Twitter</a>, <a href="mailto:ryan@felt.social">ryan@felt.social</a>, <a href="mailto:team@felt.social">team@felt.social</a>`,
@@ -47,6 +42,11 @@
 				'games of <a href="https://wikipedia.org/wiki/Snake_game">Snake</a> in <a href="https://svelte.dev/">Svelte</a> and <a href="https://kit.svelte.dev/">SvelteKit</a>',
 			links: '<a href="https://github.com/ryanatkn/svelte-snake-sports">GitHub</a>',
 		},
+		{
+			title: '<a href="/influences">my influences</a>',
+			description: 'an ongoing attempt to credit my influences',
+			links: '<a href="/influences">/influences</a>',
+		},
 	];
 </script>
 
@@ -64,7 +64,7 @@
 <p>
 	My main skill is coding frontend web apps and I also do some backend/database/systems stuff. I
 	enjoy trying to make powerful tools that are easy to use, and I have a geeky interest in user
-	interfaces and social systems.
+	interfaces and social systems
 </p>
 
 <h2>Projects I'm working on:</h2>
@@ -92,15 +92,26 @@
 		<a href="mailto:mail@ryanatkn.com">mail@ryanatkn.com</a> (not looking for work)
 	</li>
 	<li>
-		public social media on
-		<a href="https://github.com/ryanatkn">GitHub</a>, Mastodon as
-		<a rel="me" href="https://hachyderm.io/@ryanatkn">@ryanatkn@hachyderm.io</a> (coding account)
-		and
-		<a rel="me" href="https://hci.social/@ryanatkn">@ryanatkn@hci.social</a> (professional account),
-		<a href="https://twitter.com/ryanatkn">Twitter</a>,
-		<a href="https://www.reddit.com/user/overtowed">Reddit</a>, and
-		<a href="https://lobste.rs/u/ryanatkn">Lobste.rs</a>
-		<small>(TODO and Matrix?)</small>
+		public social media:
+		<ul>
+			<li><a href="https://github.com/ryanatkn">GitHub</a></li>
+			<li>
+				Mastodon coding account: <a rel="me" href="https://hachyderm.io/@ryanatkn"
+					>@ryanatkn@hachyderm.io</a
+				>
+			</li>
+			<li>
+				Mastodon professional account: <a rel="me" href="https://hci.social/@ryanatkn"
+					>@ryanatkn@hci.social</a
+				>
+			</li>
+			<li>
+				<a href="https://www.reddit.com/user/overtowed">Reddit</a>,
+				<a href="https://twitter.com/ryanatkn">Twitter</a>, and
+				<a href="https://lobste.rs/u/ryanatkn">Lobste.rs</a>
+				<small>(TODO and Matrix?)</small>
+			</li>
+		</ul>
 	</li>
 </ul>
 
