@@ -303,9 +303,9 @@
 </p>
 <p>
 	Our client has a <a href="https://wikipedia.org/wiki/Client_(computing)#Thick">thickness</a>
-	optimized for UX over long sessions, which means a lot of JS and client-side caching, and thanks to
-	SvelteKit we should be able to deliver good experiences in many cases with fast loadtimes and minimal
-	and zero JS.
+	optimized for a powerful and low-latency UX over long sessions, which means a lot of JS and client-side
+	caching, and thanks to SvelteKit we should be able to deliver good experiences in many cases with fast
+	loadtimes and minimal or zero JS.
 </p>
 <h3>scaling (and not):</h3>
 <p>
