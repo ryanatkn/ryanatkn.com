@@ -25,11 +25,6 @@
 			links: `<a href="https://github.com/feltcoop">GitHub</a>, <a href="https://twitter.com/feltcoop">Twitter</a>, <a href="mailto:ryan@felt.social">ryan@felt.social</a>, <a href="mailto:team@felt.social">team@felt.social</a>`,
 		},
 		{
-			title: '<a href="https://wikipedia.org/wiki/Fediverse">fediverse</a> stuff',
-			description: `learning and slowly integrating with <code><a href="https://github.com/feltcoop/felt-server">@feltcoop/felt-server</a></code>, made these <a href="https://ryanatkn.github.io/corpus-activity-streams">alternative ActivityStreams docs</a>`,
-			links: `<a href="https://hachyderm.io/@ryanatkn">@ryanatkn@hachyderm.io</a>, <a href="https://hci.social/@ryanatkn">@ryanatkn@hci.social</a>, <a href="https://github.com/ryanatkn/corpus-activity-streams">GitHub</a>`,
-		},
-		{
 			title: '<a href="https://www.cosmicplayground.org">cosmicplayground.org</a>',
 			description:
 				'hobby project for fun and learning, <em>"tools and toys for expanding minds"</em>',
