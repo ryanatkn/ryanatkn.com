@@ -1,5 +1,11 @@
 import type {FeedData} from '$lib/feed';
 
+// TODO BLOCK probably generate `feedData.json` or `blog.json` from the svelte files,
+// and for the top-level data, could use a gen file
+// that imports the blog json from a specific module, or perhaps from the root +page exports that data
+// (similar to frontmatter, but using Svelte semantics, problem is we may want tools to write back to this data,
+// so maybe we'd prefer a JSON file instead that's imported by the svelte?)
+
 export const feedData: FeedData = {
 	title: 'Ryan Atkinson',
 	id: 'https://www.ryanatkn.com/',
@@ -19,7 +25,7 @@ export const feedData: FeedData = {
 		{
 			id: 'https://www.ryanatkn.com/blog/0',
 			title: 'A year of making open source web community software',
-			url: 'https://www.ryanatkn.com/blog/0',
+			url: 'https://www.ryanatkn.com/blog/a-year-of-making-open-source-web-community-software',
 			date_published: '2022-05-13T01:42:23.000Z',
 			date_modified: '2022-11-29T01:42:23.000Z',
 			summary:
