@@ -25,11 +25,6 @@
 			links: `<a href="https://github.com/feltcoop">GitHub</a>, <a href="https://twitter.com/feltcoop">Twitter</a>, <a href="mailto:ryan@felt.social">ryan@felt.social</a>, <a href="mailto:team@felt.social">team@felt.social</a>`,
 		},
 		{
-			title: '<a href="https://wikipedia.org/wiki/Fediverse">fediverse</a> stuff',
-			description: `learning and slowly integrating with <code><a href="https://github.com/feltcoop/felt-server">@feltcoop/felt-server</a></code>, made these <a href="https://ryanatkn.github.io/corpus-activity-streams">alternative ActivityStreams docs</a>`,
-			links: `<a href="https://hachyderm.io/@ryanatkn">@ryanatkn@hachyderm.io</a>, <a href="https://hci.social/@ryanatkn">@ryanatkn@hci.social</a>, <a href="https://github.com/ryanatkn/corpus-activity-streams">GitHub</a>`,
-		},
-		{
 			title: '<a href="https://www.cosmicplayground.org">cosmicplayground.org</a>',
 			description:
 				'hobby project for fun and learning, <em>"tools and toys for expanding minds"</em>',
@@ -52,9 +47,9 @@
 
 <blockquote class="panel">
 	<p>
-		hello web surfer! You've reached the home page of Ryan Atkinson. He's an open source web
-		developer interested in collaborative digital mediums and realizing more of their potential to
-		help us live well
+		hello surfer! You're at the home page of Ryan Atkinson. He's an open source web developer
+		interested in collaborative digital mediums and realizing more of their potential to help us
+		live well
 	</p>
 	<p class="emojis panel">🏔⛰🏞🐢🌲🥬🌳⛰</p>
 </blockquote>
@@ -66,6 +61,39 @@
 	enjoy trying to make powerful tools that are easy to use, and I have a geeky interest in user
 	interfaces and social systems
 </p>
+
+<h2>Contact:</h2>
+<ul>
+	<li>
+		<a href="mailto:mail@ryanatkn.com">mail@ryanatkn.com</a>
+	</li>
+	<li>
+		public social media, mostly @ryanatkn:
+		<ul>
+			<li>
+				@ryanatkn on
+				<a rel="me" href="https://github.com/ryanatkn">GitHub</a>,
+				<a rel="me" href="https://twitter.com/ryanatkn">Twitter</a>, and
+				<a rel="me" href="https://lobste.rs/u/ryanatkn">Lobste.rs</a>
+			</li>
+			<li>
+				Mastodon coding account: <a rel="me" href="https://hachyderm.io/@ryanatkn"
+					>@ryanatkn@hachyderm.io</a
+				>
+			</li>
+			<li>
+				Mastodon professional account: <a rel="me" href="https://hci.social/@ryanatkn"
+					>@ryanatkn@hci.social</a
+				>
+			</li>
+			<li>
+				@overtowed on
+				<a rel="me" href="https://www.reddit.com/user/overtowed">Reddit</a> and
+				<a rel="me" href="https://news.ycombinator.com/user?id=overtowed">orangesite</a>
+			</li>
+		</ul>
+	</li>
+</ul>
 
 <h2>Projects I'm working on:</h2>
 
@@ -85,35 +113,6 @@
 			<p>{@html project.links}</p>
 		</div>{/each}
 </div>
-
-<h2>Contact:</h2>
-<ul>
-	<li>
-		<a href="mailto:mail@ryanatkn.com">mail@ryanatkn.com</a> (not looking for work)
-	</li>
-	<li>
-		public social media:
-		<ul>
-			<li><a href="https://github.com/ryanatkn">GitHub</a></li>
-			<li>
-				Mastodon coding account: <a rel="me" href="https://hachyderm.io/@ryanatkn"
-					>@ryanatkn@hachyderm.io</a
-				>
-			</li>
-			<li>
-				Mastodon professional account: <a rel="me" href="https://hci.social/@ryanatkn"
-					>@ryanatkn@hci.social</a
-				>
-			</li>
-			<li>
-				<a href="https://www.reddit.com/user/overtowed">Reddit</a>,
-				<a href="https://twitter.com/ryanatkn">Twitter</a>, and
-				<a href="https://lobste.rs/u/ryanatkn">Lobste.rs</a>
-				<small>(TODO and Matrix?)</small>
-			</li>
-		</ul>
-	</li>
-</ul>
 
 <style>
 	blockquote {
