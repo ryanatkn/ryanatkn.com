@@ -33,8 +33,8 @@
 <ul>
 	<li>
 		is a toolkit and server for building and maintaining communities, publishing to the web, and
-		collaboratively working with information. The main UI looks like Discord and Slack, and it has
-		aspects of a <a href="https://wikipedia.org/wiki/Content_management_system"
+		collaboratively working with information. The main UI looks like Discord and Slack on the
+		surface, and it has aspects of a <a href="https://wikipedia.org/wiki/Content_management_system"
 			>content management system</a
 		>
 		and

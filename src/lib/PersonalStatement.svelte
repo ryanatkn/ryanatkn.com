@@ -109,7 +109,6 @@
 				<a href="https://www.reddit.com/user/overtowed">Reddit</a>,
 				<a href="https://twitter.com/ryanatkn">Twitter</a>, and
 				<a href="https://lobste.rs/u/ryanatkn">Lobste.rs</a>
-				<small>(TODO and Matrix?)</small>
 			</li>
 		</ul>
 	</li>
