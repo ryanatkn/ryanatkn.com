@@ -20,9 +20,9 @@
 	(<a href="https://twitter.com/greatbaconbits">Twitter</a>,
 	<a href="https://github.com/greatbacon">GitHub</a>) fulltime for a year,
 	<a href="https://github.com/feltcoop/felt-server/graphs/contributors">since April 2021</a>. It's
-	been two and a half years since we first met in December 2019 to talk about a potential
-	collaboration. We
-	<a href="https://twitter.com/feltcoop">@feltcoop</a>
+	been two and a half years since we first met in December 2019 and started work on preproduction
+	and peripheral projects.
+	<a href="https://www.felt.social">We</a>
 	recently started a
 	<a href="https://tinyletter.com/FeltCoop">monthly newsletter</a>
 	and (gulp) a podcast called
@@ -33,15 +33,15 @@
 <ul>
 	<li>
 		is a toolkit and server for building and maintaining communities, publishing to the web, and
-		collaboratively working with information. It has aspects of a <a
-			href="https://wikipedia.org/wiki/Content_management_system">content management system</a
-		>,
+		collaboratively working with information. The main UI looks like Discord and Slack, and it has
+		aspects of a <a href="https://wikipedia.org/wiki/Content_management_system"
+			>content management system</a
+		>
+		and
 		<a href="https://wikipedia.org/wiki/Knowledge_management_software"
 			>knowledge management software</a
-		>, and other <a href="https://wikipedia.org/wiki/Social_software">social</a> and
-		<a href="https://wikipedia.org/wiki/Collaborative_software">collaborative software</a>. We're
-		aiming for a batteries-included, deeply customizable experience with a small footprint, that
-		feels familiar and surprisingly powerful.
+		> in a collaborative environment. We're aiming for a batteries-included, deeply customizable experience
+		with a small footprint, that feels familiar and surprisingly powerful.
 	</li>
 	<li>is designed for small communities</li>
 	<li>
