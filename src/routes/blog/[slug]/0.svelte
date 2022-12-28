@@ -1,22 +1,30 @@
+<script lang="ts" context="module">
+	import type {FeedItemData} from '$lib/feed';
+
+	export const post: FeedItemData = {
+		id: 'https://www.ryanatkn.com/blog/0',
+		title: 'A year of making open source web community software',
+		url: 'https://www.ryanatkn.com/blog/a-year-of-making-open-source-web-community-software',
+		date_published: '2022-05-13T01:42:23.000Z',
+		date_modified: '2022-11-29T01:42:23.000Z',
+		summary:
+			'I discuss my work on open source community software called Felt over the last year, giving a brief overview of the design and technology choices, and announcing our newsletter and podcast at FeltCoop.',
+		tags: ['web', 'technology', 'software', 'opensource', 'community'],
+		// TODO BLOCK impl? where does this belong? think about Felt views too
+		load: () => import('./0.svelte'),
+	};
+</script>
+
 <script lang="ts">
 	import {base} from '$app/paths';
-
-	import BlogPostHeader from '$lib/BlogPostHeader.svelte';
-	import {feedData} from '$lib/feedData';
 
 	// TODO BLOCK maybe define the data here, exported and then read with gen compiling with accessors,
 	// so the authoring experience for a new blog post is just to create the next integer-named Svelte file in this directory
 	// Should these be exported props or module-level exports? `Post.data`?
 
 	// TODO refactor this probably, maybe putting the post in context
-	const post = feedData.items[0];
 </script>
 
-<svelte:head>
-	<title>{post.title}</title>
-</svelte:head>
-
-<BlogPostHeader {post} />
 <p>
 	I've been building an open source web project focused on community software with <a
 		href="https://12mod12.com/">Hamilton Reed</a
@@ -113,8 +121,9 @@
 	<li>we want to use it personally and make stuff with it</li>
 	<li>we're using it professionally to build itself under democratic control</li>
 	<li>
-		we plan for the operator to become a <a href="https://platform.coop">platform co-op</a> and the software
-		project a nonprofit
+		the software project will be a nonprofit and we plan for the operator to become a <a
+			href="https://platform.coop">platform co-op</a
+		>
 	</li>
 </ul>
 <p>
@@ -187,9 +196,9 @@
 <hr />
 <h2>Wait the blog post isn't done?</h2>
 <p>
-	I'm having difficulty summarizing the project: it's big, there's many unknowns, and my
-	summarization skills could certainly improve. I'll write more followup blog posts, hopefully more
-	coherent than this one, but for now I'll add a few more thoughts below.
+	I'm having difficulty summarizing the project: it's big and there's many unknowns. I'll write more
+	followup blog posts, hopefully more coherent than this one, but for now I'll add a few more
+	thoughts below.
 </p>
 <hr />
 <h2>Everyone can be a toolmaker:</h2>

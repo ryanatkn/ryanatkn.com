@@ -1,4 +1,5 @@
 import type {FeedData} from '$lib/feed';
+import {post as post0} from '../routes/blog/[slug]/0.svelte';
 
 // TODO BLOCK probably generate `feedData.json` or `blog.json` from the svelte files,
 // and for the top-level data, could use a gen file
@@ -21,16 +22,5 @@ export const feedData: FeedData = {
 	atom: {
 		feed_url: 'https://www.ryanatkn.com/feed.xml',
 	},
-	items: [
-		{
-			id: 'https://www.ryanatkn.com/blog/0',
-			title: 'A year of making open source web community software',
-			url: 'https://www.ryanatkn.com/blog/a-year-of-making-open-source-web-community-software',
-			date_published: '2022-05-13T01:42:23.000Z',
-			date_modified: '2022-11-29T01:42:23.000Z',
-			summary:
-				'I discuss my work on open source community software called Felt over the last year, giving a brief overview of the design and technology choices, and announcing our newsletter and podcast at FeltCoop.',
-			tags: ['web', 'technology', 'software', 'opensource', 'community'],
-		},
-	],
+	items: [post0],
 };

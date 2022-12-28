@@ -2,21 +2,17 @@
 	import BlogPostHeader from '$lib/BlogPostHeader.svelte';
 	import type {FeedItemData} from '$lib/feed';
 
-	// TODO BLOCK
-	/*
-
-should we just name the files the slug?
-We could compile the svelte with `accessors: true` and read an `export const meta` property (data?)
-But what about the order?
-
-*/
-
-	// TODO extract
-
-	// TODO import dynamically
 	export let post: FeedItemData;
 
-	$: console.log(`post`, post);
+	// TODO BLOCK move this and implement correctly
+	const loadPost = async (post: FeedItemData) => {
+		console.log(`loading post`, post);
+		const p = await post.load();
+		console.log(`p`, p);
+		return p;
+	};
+
+	$: loading = loadPost(post);
 </script>
 
 <svelte:head>
@@ -24,4 +20,8 @@ But what about the order?
 </svelte:head>
 
 <BlogPostHeader {post} />
-TODO import body
+{#await loading}
+	loading
+{:then mod}
+	<svelte:component this={mod.default} />
+{/await}

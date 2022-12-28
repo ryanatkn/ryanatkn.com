@@ -1,7 +1,10 @@
 import {typescript} from 'svelte-preprocess-esbuild';
 import adapter from '@sveltejs/adapter-static';
+import {readFileSync} from 'fs';
 
-import blogEntries from './src/lib/blogEntries.json' assert {type: 'json'};
+// TODO import json directly when stable, don't want to deal with the warning for now
+// import blog from './src/lib/blog.json' assert {type: 'json'};
+const blog = JSON.parse(readFileSync('./src/lib/blog.json', 'utf8'));
 
 /** @type {import('@sveltejs/kit').Config} */
 export default {
@@ -10,6 +13,6 @@ export default {
 	kit: {
 		adapter: adapter(),
 		files: {assets: 'src/static'},
-		prerender: {entries: blogEntries},
+		prerender: {entries: blog.entries},
 	},
 };
