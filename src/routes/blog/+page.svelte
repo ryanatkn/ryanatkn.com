@@ -1,5 +1,5 @@
 <script lang="ts">
-	import {feedData} from '$lib/feedData';
+	import {feed} from './feed';
 	import FeedItemDate from '$lib/FeedItemDate.svelte';
 	import {toPathname} from '$lib/util';
 </script>
@@ -10,9 +10,9 @@
 
 <div class="blog">
 	<ol start="0">
-		{#each feedData.items as item}
+		{#each feed.items as item}
 			<li>
-				<a href={toPathname(item.url, feedData.home_page_url)}>{item.title}</a>
+				<a href={toPathname(item.url, feed.home_page_url)}>{item.title}</a>
 				<div>
 					<small><FeedItemDate {item} /></small>
 				</div>

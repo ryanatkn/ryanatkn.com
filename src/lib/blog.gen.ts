@@ -1,6 +1,6 @@
 import type {Gen} from '@feltcoop/gro';
 
-import {feedData} from '$lib/feedData';
+import {feed} from '../routes/blog/feed';
 
 /* eslint-disable no-await-in-loop */
 
@@ -35,7 +35,7 @@ export const gen: Gen = async ({fs}) => {
 		},
 		{
 			filename: './blog.json',
-			content: JSON.stringify(feedData),
+			content: JSON.stringify(feed),
 		},
 		{
 			filename: './blog.json.d.ts',

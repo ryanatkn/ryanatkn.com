@@ -1,7 +1,9 @@
 import type {FeedData} from '$lib/feed';
 import {posts} from '$lib/blog';
 
-export const feedData: FeedData = {
+// TODO should this module be `blog` instead of `feed`?
+
+export const feed: FeedData = {
 	title: 'Ryan Atkinson',
 	id: 'https://www.ryanatkn.com/',
 	home_page_url: 'https://www.ryanatkn.com/',

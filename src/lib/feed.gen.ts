@@ -1,6 +1,6 @@
 import type {Gen} from '@feltcoop/gro';
 
-import {feedData} from '$lib/feedData';
+import {feed} from '../routes/blog/feed';
 import {toAtomXml} from '$lib/feed';
 
 const ATOM_FEED_PATH = `../static/feed.xml`;
@@ -8,5 +8,5 @@ const ATOM_FEED_PATH = `../static/feed.xml`;
 // const JSON_FEED_PATH = `../static/feed.json`;
 
 export const gen: Gen = async () => {
-	return [{content: toAtomXml(feedData), filename: ATOM_FEED_PATH}];
+	return [{content: toAtomXml(feed), filename: ATOM_FEED_PATH}];
 };
