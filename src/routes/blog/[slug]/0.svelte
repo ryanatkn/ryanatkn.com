@@ -15,12 +15,6 @@
 
 <script lang="ts">
 	import {base} from '$app/paths';
-
-	// TODO BLOCK maybe define the data here, exported and then read with gen compiling with accessors,
-	// so the authoring experience for a new blog post is just to create the next integer-named Svelte file in this directory
-	// Should these be exported props or module-level exports? `Post.data`?
-
-	// TODO refactor this probably, maybe putting the post in context
 </script>
 
 <p>
