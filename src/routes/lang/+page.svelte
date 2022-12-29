@@ -1,13 +1,7 @@
 <script lang="ts">
-	/*
+	import langJson from './lang.json';
 
-  - vocab
-    - Universe
-    - Domain
-    - Realm
-    - Space
-  - sigil ~ is a shortcut for `/lang/` in this context
-  - more granular than the space? next time we'll propose ~Cell!
-
-  */
+	console.log(`langJson`, langJson);
 </script>
+
+<pre>{JSON.stringify(langJson, null, 2)}</pre>
