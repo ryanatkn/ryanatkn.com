@@ -1,18 +1,10 @@
 <script lang="ts">
 	import BlogPostHeader from '$lib/BlogPostHeader.svelte';
 	import type {FeedItemData} from '$lib/feed';
+	import type {SvelteComponent} from 'svelte';
 
 	export let post: FeedItemData;
-
-	// TODO BLOCK move this and implement correctly
-	const loadPost = async (post: FeedItemData) => {
-		console.log(`loading post`, post);
-		const p = await post.load();
-		console.log(`p`, p);
-		return p;
-	};
-
-	$: loading = loadPost(post);
+	export let Component: typeof SvelteComponent;
 </script>
 
 <svelte:head>
@@ -20,8 +12,4 @@
 </svelte:head>
 
 <BlogPostHeader {post} />
-{#await loading}
-	loading
-{:then mod}
-	<svelte:component this={mod.default} />
-{/await}
+<svelte:component this={Component} />

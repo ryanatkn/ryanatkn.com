@@ -10,8 +10,6 @@
 		summary:
 			'I discuss my work on open source community software called Felt over the last year, giving a brief overview of the design and technology choices, and announcing our newsletter and podcast at FeltCoop.',
 		tags: ['web', 'technology', 'software', 'opensource', 'community'],
-		// TODO BLOCK impl? where does this belong? think about Felt views too
-		load: () => import('./0.svelte'),
 	};
 </script>
 
