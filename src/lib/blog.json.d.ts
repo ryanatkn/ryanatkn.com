@@ -1,5 +1,5 @@
 declare module '$lib/blog.json' {
-	import type {FeedItemData} from '$lib/feed';
-	const data: {posts: FeedItemData[]};
+	import type {FeedData} from '$lib/feed';
+	const data: FeedData;
 	export default data;
 }
