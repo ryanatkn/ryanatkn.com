@@ -16,6 +16,6 @@ export default {
 	kit: {
 		adapter: adapter(),
 		files: {assets: 'src/static'},
-		prerender: {entries: blog?.posts?.map((p) => toPrerenderEntry(p.url))},
+		prerender: {entries: blog.items.map((p) => toPrerenderEntry(p.url))},
 	},
 };
