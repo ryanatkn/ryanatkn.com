@@ -1,7 +1,8 @@
 <script lang="ts">
+	import type {SvelteComponent} from 'svelte';
+
 	import BlogPostHeader from '$lib/BlogPostHeader.svelte';
 	import type {FeedItemData} from '$lib/feed';
-	import type {SvelteComponent} from 'svelte';
 
 	export let post: FeedItemData;
 	export let Component: typeof SvelteComponent;
