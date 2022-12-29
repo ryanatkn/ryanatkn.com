@@ -9,8 +9,8 @@ import {feed} from '../routes/blog/feed';
 // TODO should this be `blog` or a more generic `feedData`?
 
 export const gen: Gen = async ({fs}) => {
-	const TODO_get_from_args = 'blog/[slug]'; // TODO args? process.argv?
-	const path = stripStart(stripEnd(TODO_get_from_args, '/'), '/');
+	const TODO_get_from_maybe_args = 'blog/[slug]'; // TODO args? process.argv? something else?
+	const path = stripStart(stripEnd(TODO_get_from_maybe_args, '/'), '/');
 
 	const items: number[] = [];
 
