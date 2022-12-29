@@ -25,7 +25,6 @@ export const gen: Gen = async () => {
 		i++;
 	}
 
-	// TODO BLOCK read slug dir and generate
 	return [
 		{
 			filename: './blog.json',
