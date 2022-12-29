@@ -8,7 +8,11 @@
 	// TODO automate (generate?)
 	const components = [Component0];
 
-	$: index = Number($page.params.slug) || 0;
+	$: ({slug} = $page.params);
+	$: rawIndex = /^\d+$/u.test(slug)
+		? Number(slug)
+		: feedData.items.findIndex((f) => f.url.endsWith(slug));
+	$: index = rawIndex === -1 || Number.isNaN(rawIndex) ? 0 : rawIndex;
 	$: post = feedData.items[index];
 	$: Component = components[index];
 </script>
