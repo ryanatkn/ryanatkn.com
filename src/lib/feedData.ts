@@ -16,5 +16,5 @@ export const feedData: FeedData = {
 	atom: {
 		feed_url: 'https://www.ryanatkn.com/feed.xml',
 	},
-	items: [post0], // TODO BLOCK
+	items: [post0],
 };
