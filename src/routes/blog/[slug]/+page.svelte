@@ -3,10 +3,7 @@
 
 	import BlogPost from '$lib/BlogPost.svelte';
 	import {feedData} from '$lib/feedData';
-	import Component0 from './0.svelte';
-
-	// TODO automate (generate?)
-	const components = [Component0];
+	import {Components} from '$lib/blog';
 
 	$: ({slug} = $page.params);
 	$: rawIndex = /^\d+$/u.test(slug)
@@ -14,7 +11,7 @@
 		: feedData.items.findIndex((f) => f.url.endsWith(slug));
 	$: index = rawIndex === -1 || Number.isNaN(rawIndex) ? 0 : rawIndex;
 	$: post = feedData.items[index];
-	$: Component = components[index];
+	$: Component = Components[index];
 </script>
 
 <svelte:head>

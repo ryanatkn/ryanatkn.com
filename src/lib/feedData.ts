@@ -1,5 +1,5 @@
 import type {FeedData} from '$lib/feed';
-import {post as post0} from '../routes/blog/[slug]/0.svelte';
+import {posts} from '$lib/blog';
 
 export const feedData: FeedData = {
 	title: 'Ryan Atkinson',
@@ -16,5 +16,5 @@ export const feedData: FeedData = {
 	atom: {
 		feed_url: 'https://www.ryanatkn.com/feed.xml',
 	},
-	items: [post0],
+	items: posts,
 };
