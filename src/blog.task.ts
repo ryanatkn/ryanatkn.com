@@ -23,6 +23,7 @@ export const task: Task<Args> = {
 
 		const path = stripEnd(stripStart(pathname, '/'), '/');
 
+		// Find the next module to create.
 		let postPath: string;
 		let index = 0;
 		while (true) {
