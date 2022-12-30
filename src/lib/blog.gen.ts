@@ -2,6 +2,7 @@ import type {Gen} from '@feltcoop/gro';
 import {stripStart, stripEnd} from '@feltcoop/util/string.js';
 
 import {feed} from '../routes/blog/feed';
+import type {FeedData} from '$lib/feed';
 
 /* eslint-disable no-await-in-loop */
 
@@ -38,7 +39,8 @@ export const gen: Gen = async ({fs}) => {
 		},
 		{
 			filename: './blog.json',
-			content: JSON.stringify(feed),
+			// TODO `entries` isn't included in `FeedData` but we use it from the SvelteKit config
+			content: JSON.stringify({...feed, entries: toPrerenderEntries(feed)}),
 		},
 		{
 			filename: './blog.json.d.ts',
@@ -49,4 +51,21 @@ export const gen: Gen = async ({fs}) => {
       }`,
 		},
 	];
+};
+
+const toPrerenderEntries = (blog: FeedData): string[] => {
+	const entries = [];
+	for (let index = 0; index < blog.items.length; index++) {
+		const item = blog.items[index];
+		const {pathname} = new URL(item.url);
+		entries.push(pathname);
+		// replace the last segment with the index
+		for (let i = pathname.length - 1; i >= 0; i--) {
+			if (pathname[i] === '/') {
+				entries.push(pathname.substring(0, i + 1) + index);
+				break;
+			}
+		}
+	}
+	return entries;
 };
