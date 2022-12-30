@@ -9,7 +9,7 @@
 		date_modified: '2022-11-29T01:42:23.000Z',
 		summary:
 			'I discuss my work on open source community software called Felt over the last year, giving a brief overview of the design and technology choices, and announcing our newsletter and podcast at FeltCoop.',
-		tags: ['web', 'technology', 'software', 'opensource', 'community'],
+		tags: ['web', 'technology', 'software', 'open source', 'community'],
 	};
 </script>
 
