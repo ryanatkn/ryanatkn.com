@@ -8,7 +8,7 @@ const Args = z
 		url: z
 			.string({description: 'path to the blog post directory'})
 			.default('https://www.ryanatkn.com/blog'),
-		date: z.string({description: 'the date_published'}).default(new Date().toISOString()),
+		date: z.string({description: "the item's date_published"}).default(new Date().toISOString()),
 	})
 	.strict();
 type Args = z.infer<typeof Args>;
