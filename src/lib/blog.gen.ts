@@ -6,11 +6,10 @@ import {feed} from '../routes/blog/feed';
 /* eslint-disable no-await-in-loop */
 
 // TODO refactor this to be reusable (see args below)
-// TODO should this be `blog` or a more generic `feedData`?
 
 export const gen: Gen = async ({fs}) => {
-	const TODO_get_from_maybe_args = 'blog/[slug]'; // TODO args? process.argv? something else?
-	const path = stripStart(stripEnd(TODO_get_from_maybe_args, '/'), '/');
+	const TODO_get_from_maybe_args = 'blog'; // TODO args? process.argv? something else? see `blog.task.ts`'s `url` arg
+	const path = stripStart(stripEnd(TODO_get_from_maybe_args, '/'), '/') + '/[slug]';
 
 	const items: number[] = [];
 
