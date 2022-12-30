@@ -4,19 +4,19 @@ import {withGetType} from 'zod-to-ts';
 export const name = z.string();
 
 export const DomainSchema = z.object({
-	name: name.optional(),
+	name,
 });
 
 // TODO BLOCK make these reusable, modify during gen? need to get identifier, maybe through data?
 // TODO BLOCK these `required` calls are used because `withGetType` mutates the schema, how to clone or do better?
 
 export const RealmSchema = z.object({
-	name: name.optional(),
+	name,
 	domain: withGetType(DomainSchema.required(), (ts) => ts.factory.createIdentifier('Domain')),
 });
 
 export const SpaceSchema = z.object({
-	name: name.optional(),
+	name,
 	realm: withGetType(RealmSchema.required(), (ts) => ts.factory.createIdentifier('Realm')),
 });
 

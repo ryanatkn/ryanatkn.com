@@ -3,13 +3,13 @@ export type Cell = {
 	space: Space;
 };
 export type Domain = {
-	name?: string | undefined;
+	name: string;
 };
 export type Realm = {
-	name?: string | undefined;
+	name: string;
 	domain: Domain;
 };
 export type Space = {
-	name?: string | undefined;
+	name: string;
 	realm: Realm;
 };
