@@ -6,9 +6,9 @@ import {formatFile} from '@feltcoop/gro/dist/format/formatFile.js';
 const Args = z
 	.object({
 		url: z
-			.string({description: 'path to the blog post directory'})
+			.string({description: 'full URL to the blog post directory'})
 			.default('https://www.ryanatkn.com/blog'),
-		date: z.string({description: "the item's date_published"}).default(new Date().toISOString()),
+		date: z.string({description: "the post's date_published"}).default(new Date().toISOString()),
 	})
 	.strict();
 type Args = z.infer<typeof Args>;
