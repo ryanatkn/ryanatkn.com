@@ -12,8 +12,10 @@
 
 	let influences: Array<Influence | Influence[]> = [
 		{name: 'Tim Berners-Lee', url: 'https://wikipedia.org/wiki/Tim_Berners-Lee'},
+		{name: 'Sid Meier', url: 'https://wikipedia.org/wiki/Sid_Meier'},
+		{name: 'Will Wright', url: 'https://wikipedia.org/wiki/Will_Wright_(game_designer)'},
 		{name: 'John Carmack', url: 'https://wikipedia.org/wiki/John_Carmack'},
-		{name: 'Gabe Newell', url: 'https://en.wikipedia.org/wiki/Gabe_Newell'},
+		{name: 'Gabe Newell', url: 'https://wikipedia.org/wiki/Gabe_Newell'},
 		{name: 'Alan Kay', url: 'https://wikipedia.org/wiki/Alan_Kay'},
 		{name: 'Bret Victor', url: 'https://wikipedia.org/wiki/Bret_Victor'},
 		{name: 'Douglas Engelbart', url: 'https://wikipedia.org/wiki/Douglas_Engelbart'},
@@ -28,6 +30,7 @@
 		{name: 'Douglas Crockford', url: 'https://wikipedia.org/wiki/Douglas_Crockford'},
 		{name: 'TJ Holowaychuk', url: 'https://github.com/tj'},
 		{name: 'substack', url: 'https://substack.net/'},
+		{name: 'Jenova Chen', url: 'http://jenovachen.info/'},
 		{name: 'Marijn Haverbeke', url: 'https://marijnhaverbeke.nl/'},
 		{name: 'Tom Dale', url: 'https://tomdale.net/'},
 		{name: 'Yehuda Katz', url: 'https://yehudakatz.com/'},
@@ -45,6 +48,10 @@
 		{name: 'Nicky Case', url: 'https://ncase.me/'},
 		{name: 'James Long', url: 'https://jlongster.com/'},
 		{name: 'Bilal Aijazi', url: 'https://twitter.com/bmajz', coworker: true},
+		[
+			{name: 'Mark Brown', url: 'https://www.youtube.com/@GMTK'},
+			{name: "Game Maker's Toolkit", url: 'https://gmtk.itch.io/'},
+		],
 		{name: 'Rich Harris', url: 'https://github.com/rich-harris'},
 		{name: 'Alex Russell', url: 'https://infrequently.org/'},
 		{name: 'Luke Edwards', url: 'https://github.com/lukeed'},
