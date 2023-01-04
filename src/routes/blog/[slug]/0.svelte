@@ -25,8 +25,8 @@
 	<a href="https://hachyderm.io/@greatbacon">Mastodon</a>,
 	<a href="https://github.com/greatbacon">GitHub</a>) fulltime for a year,
 	<a href="https://github.com/feltcoop/felt-server/graphs/contributors">since April 2021</a>. It's
-	been two and a half years since we first met in December 2019 and started work on preproduction
-	and peripheral projects.
+	been two and a half years since we first met in December 2019 and started self-funded work on
+	preproduction and <a href="https://github.com/feltcoop">peripheral projects</a>.
 	<a href="https://www.felt.social">We</a>
 	recently started a
 	<a href="https://tinyletter.com/FeltCoop">monthly newsletter</a>
@@ -245,8 +245,9 @@
 	that these are community assets.
 </p>
 <p>
-	<strong>felt.social business model</strong>: no ads, no crypto, free and fully open source (<a
-		href="https://wikipedia.org/wiki/MIT_License">permissively licensed</a
+	<strong>felt.social business model</strong>: no ads, no investors (so we need a real busines
+	model), no crypto, free and fully open source (<a href="https://wikipedia.org/wiki/MIT_License"
+		>permissively licensed</a
 	>, not "<a href="https://wikipedia.org/wiki/Open-core_model">open core</a>") - users pay for
 	service and if it's sustainable we'll creatively subsidize users for more equitable access
 </p>
