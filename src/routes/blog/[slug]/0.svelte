@@ -247,7 +247,7 @@
 <p>
 	<strong>felt.social business model</strong>: no ads, no crypto, free and fully open source (<a
 		href="https://wikipedia.org/wiki/MIT_License">permissively licensed</a
-	>, not "<a href="https://en.wikipedia.org/wiki/Open-core_model">open core</a>") - users pay for
+	>, not "<a href="https://wikipedia.org/wiki/Open-core_model">open core</a>") - users pay for
 	service and if it's sustainable we'll creatively subsidize users for more equitable access
 </p>
 <p>
@@ -361,9 +361,15 @@
 		>cooperative interoperability</a
 	>, but we're a 2 person team with limited resources trying to deliver a specific UX. Today this
 	means we have a centralized Node server with a lot of homemade solutions. One of my
-	long/medium-long term goals is to support at least one decentralized standard like
+	long/medium-long term goals is to support at least one federated/decentralized standard like
 	<a href="https://www.w3.org/TR/activitypub/">ActivityPub</a>
 	(my current interest) and Matrix.
+</p>
+<p>
+	Given Felt's small-scale design and selfhostability, it may help to think of it as "<a
+		href="https://wikipedia.org/wiki/Polycentric">polycentric</a
+	>", and in combination with clients that connect to multiple services, I think "decentralized" is
+	an appropriate description.
 </p>
 <p>
 	In our data system, we're trying to follow <a href="https://www.w3.org/TR/activitystreams-core/"
@@ -385,9 +391,9 @@
 <p>
 	We want to be good citizens of open standards, not just do our own thing detached from open
 	ecosystems, but we have very specific ideas of what we want to build for small communities, and
-	decentralized tech isn't optimal for today's goals. I personally think decentralized technologies
-	are the future and I would love to help Felt be compatible with standard protocols once we have
-	our desired UX.
+	federated tech isn't optimal for today's goals. I personally think decentralized technologies are
+	the future and I would love to help Felt be compatible with standard protocols once we have our
+	desired UX.
 </p>
 <blockquote>
 	"decentralized" means a lot of things, and while I think it's a broadly inevitable future, I
