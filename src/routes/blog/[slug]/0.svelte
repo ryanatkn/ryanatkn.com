@@ -246,8 +246,8 @@
 </p>
 <p>
 	<strong>felt.social business model</strong>: no ads, no investors (so we need a real busines
-	model), no crypto, free and fully open source (<a href="https://wikipedia.org/wiki/MIT_License"
-		>permissively licensed</a
+	model), no crypto, and the software is free and fully open source (<a
+		href="https://wikipedia.org/wiki/MIT_License">permissively licensed</a
 	>, not "<a href="https://wikipedia.org/wiki/Open-core_model">open core</a>") - users pay for
 	service and if it's sustainable we'll creatively subsidize users for more equitable access
 </p>
