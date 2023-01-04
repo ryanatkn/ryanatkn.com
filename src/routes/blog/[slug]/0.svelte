@@ -368,8 +368,10 @@
 <p>
 	Given Felt's small-scale design and selfhostability, it may help to think of it as "<a
 		href="https://wikipedia.org/wiki/Polycentric">polycentric</a
-	>", and in combination with clients that connect to multiple services, I think "decentralized" is
-	an appropriate description.
+	>", where each community is a silo of self-governed data, and a service may host one or more
+	communities. In combination with clients that connect to multiple services, I think
+	"decentralized" is an appropriate description, but not in the way some people want. I won't be
+	satisfied until Felt can federate with the wider world, especially for user identity.
 </p>
 <p>
 	In our data system, we're trying to follow <a href="https://www.w3.org/TR/activitystreams-core/"
