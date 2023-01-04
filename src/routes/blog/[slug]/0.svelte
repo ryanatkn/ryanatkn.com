@@ -363,8 +363,7 @@
 	>, but we're a 2 person team with limited resources trying to deliver a specific UX. Today this
 	means we have a centralized Node server with a lot of homemade solutions. One of my
 	long/medium-long term goals is to support at least one federated/decentralized standard like
-	<a href="https://www.w3.org/TR/activitypub/">ActivityPub</a>
-	(my current interest) and Matrix.
+	<a href="https://www.w3.org/TR/activitypub/">ActivityPub</a>.
 </p>
 <p>
 	Given Felt's small-scale design and selfhostability, it may help to think of it as "<a
