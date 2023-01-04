@@ -5,7 +5,7 @@
 </script>
 
 <p>
-	Want to talk about this post privately with the author? <a
+	Want to talk about this post privately with me? <a
 		href="mailto:mail@ryanatkn.com?subject=Reply to post: {post.title}">↪ reply by email!</a
 	>
 </p>
