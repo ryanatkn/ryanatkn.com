@@ -21,7 +21,8 @@
 	I've been building an open source web project focused on community software with <a
 		href="https://12mod12.com/">Hamilton Reed</a
 	>
-	(<a href="https://twitter.com/greatbaconbits">Twitter</a>,
+	(
+	<a href="https://hachyderm.io/@greatbacon">Mastodon</a>,
 	<a href="https://github.com/greatbacon">GitHub</a>) fulltime for a year,
 	<a href="https://github.com/feltcoop/felt-server/graphs/contributors">since April 2021</a>. It's
 	been two and a half years since we first met in December 2019 and started work on preproduction
@@ -401,8 +402,8 @@
 <h2>Ok cool?</h2>
 <p>
 	find <a href="https://www.felt.social">us</a> @feltcoop on
-	<a href="https://twitter.com/feltcoop">Twitter</a> &
 	<a href="https://github.com/feltcoop">GitHub</a> &
+	<a href="https://twitter.com/feltcoop">Twitter</a> &
 	<a href="https://www.youtube.com/@feltcoop">YouTube</a>, read
 	<a href="https://tinyletter.com/FeltCoop">our monthly newsletter</a>, and look
 	<a href="https://www.felt.social/toolmakersforum">a podcast</a>

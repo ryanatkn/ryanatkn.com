@@ -28,8 +28,7 @@
 			title: '<a href="https://www.cosmicplayground.org">cosmicplayground.org</a>',
 			description:
 				'hobby project for fun and learning, <em>"tools and toys for expanding minds"</em>',
-			links:
-				'<a href="https://github.com/ryanatkn/cosmicplayground">GitHub</a>, <a href="https://twitter.com/cosmicplaygroun">Twitter</a>',
+			links: '<a href="https://github.com/ryanatkn/cosmicplayground">GitHub</a>',
 		},
 		{
 			title: '<a href="https://ryanatkn.github.io/svelte-snake-sports">Svelte Snake Sports</a>',
@@ -45,74 +44,75 @@
 	];
 </script>
 
-<blockquote class="panel">
+<section class="panel">
+	<blockquote class="panel">
+		<p>
+			hello surfer! 🌤🌳🐿 You're at the web home of Ryan Atkinson. He's an open source web developer
+			interested in collaborative digital mediums and realizing more of their potential to help us
+			live well
+		</p>
+	</blockquote>
 	<p>
-		hello surfer! You're at the home page of Ryan Atkinson. He's an open source web developer
-		interested in collaborative digital mediums and realizing more of their potential to help us
-		live well
+		My main skill is coding frontend web apps and I also do some backend and database programming. I
+		enjoy trying to make powerful tools that are easy to use, and I have a geeky interest in user
+		interfaces and social systems. Almost <a href="https://log.ryanatkn.com/">everything I do</a> is
+		open source and I program as a hobby too.
 	</p>
-	<p class="emojis panel">🏔⛰🏞🐢🌲🥬🌳⛰</p>
-</blockquote>
+</section>
 
-<h2>Professionally:</h2>
+<section class="panel">
+	<h2>Contact</h2>
+	<ul>
+		<li>
+			<a href="mailto:mail@ryanatkn.com">mail@ryanatkn.com</a>
+		</li>
+		<li>
+			public social media:
+			<ul>
+				<li>
+					@ryanatkn on
+					<a rel="me" href="https://github.com/ryanatkn">GitHub</a> and
+					<a rel="me" href="https://lobste.rs/u/ryanatkn">Lobste.rs</a>
+				</li>
+				<li>
+					Mastodon coding account: <a rel="me" href="https://hachyderm.io/@ryanatkn"
+						>@ryanatkn@hachyderm.io</a
+					>
+				</li>
+				<li>
+					Mastodon professional account: <a rel="me" href="https://hci.social/@ryanatkn"
+						>@ryanatkn@hci.social</a
+					>
+				</li>
+				<li>
+					@overtowed on
+					<a rel="me" href="https://www.reddit.com/user/overtowed">Reddit</a> and
+					<a rel="me" href="https://news.ycombinator.com/user?id=overtowed">orangesite</a>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</section>
 
-<p>
-	My main skill is coding frontend web apps and I also do some backend/database/systems stuff. I
-	enjoy trying to make powerful tools that are easy to use, and I have a geeky interest in user
-	interfaces and social systems
-</p>
-
-<h2>Contact:</h2>
-<ul>
-	<li>
-		<a href="mailto:mail@ryanatkn.com">mail@ryanatkn.com</a>
-	</li>
-	<li>
-		public social media, mostly @ryanatkn:
-		<ul>
-			<li>
-				@ryanatkn on
-				<a rel="me" href="https://github.com/ryanatkn">GitHub</a>,
-				<a rel="me" href="https://twitter.com/ryanatkn">Twitter</a>, and
-				<a rel="me" href="https://lobste.rs/u/ryanatkn">Lobste.rs</a>
-			</li>
-			<li>
-				Mastodon coding account: <a rel="me" href="https://hachyderm.io/@ryanatkn"
-					>@ryanatkn@hachyderm.io</a
-				>
-			</li>
-			<li>
-				Mastodon professional account: <a rel="me" href="https://hci.social/@ryanatkn"
-					>@ryanatkn@hci.social</a
-				>
-			</li>
-			<li>
-				@overtowed on
-				<a rel="me" href="https://www.reddit.com/user/overtowed">Reddit</a> and
-				<a rel="me" href="https://news.ycombinator.com/user?id=overtowed">orangesite</a>
-			</li>
-		</ul>
-	</li>
-</ul>
-
-<h2>Projects I'm working on:</h2>
-
-<table>
-	<tbody
-		>{#each projects as project}<tr
-				><td>{@html project.title}</td><td>{@html project.description}</td><td
-					>{@html project.links}</td
-				></tr
-			>{/each}</tbody
-	>
-</table>
-<div class="cards">
-	{#each projects as project}<div class="card markup padded-md">
-			<p>{@html project.title}</p>
-			<p>{@html project.description}</p>
-			<p>{@html project.links}</p>
-		</div>{/each}
-</div>
+<section class="panel">
+	<h2>Ongoing projects</h2>
+	<table>
+		<tbody
+			>{#each projects as project}<tr
+					><td>{@html project.title}</td><td>{@html project.description}</td><td
+						>{@html project.links}</td
+					></tr
+				>{/each}</tbody
+		>
+	</table>
+	<div class="cards">
+		{#each projects as project}<div class="card markup padded-md">
+				<p>{@html project.title}</p>
+				<p>{@html project.description}</p>
+				<p>{@html project.links}</p>
+			</div>{/each}
+	</div>
+</section>
 
 <style>
 	blockquote {
@@ -120,27 +120,18 @@
 		flex-direction: column;
 		align-items: center;
 	}
-	.emojis {
-		font-size: 3em;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		text-align: center;
+	section {
+		padding: var(--spacing_lg);
 	}
-	@media (max-width: 570px) {
-		.emojis {
-			font-size: 2em;
-		}
+	section > *:last-child {
+		margin-bottom: 0;
 	}
-	@media (max-width: 410px) {
-		.emojis {
-			font-size: 1.7em;
-		}
+	h2 {
+		margin-top: 0;
 	}
-	@media (max-width: 360px) {
-		.emojis {
-			font-size: 1.4em;
-		}
+	table {
+		border-spacing: 0;
+		background-color: var(--bg);
 	}
 	tr:hover {
 		background-color: var(--tint_dark_1);
@@ -160,14 +151,18 @@
 		}
 	}
 	.card {
+		background-color: var(--bg);
 		border-width: var(--border_width);
 		border-style: var(--border_style);
-		border-color: var(--border_color);
+		border-color: var(--border_color_light);
 		border-radius: var(--border_radius);
 		margin-bottom: var(--spacing_lg);
 		padding: var(--spacing_md);
 	}
 	.card p:first-child {
 		font-size: var(--font_size_lg);
+	}
+	.card:hover {
+		background-color: var(--tint_dark_1);
 	}
 </style>
