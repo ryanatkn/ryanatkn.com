@@ -382,7 +382,7 @@
 	our own bespoke client-server protocol that works over http and websockets, and our database
 	tables don't map to ActivityStreams vocabulary, only <code>Entity</code> objects do. We could generate
 	OpenAPI schemas from our source of truth, which would give us greatly expanded access to existing tooling,
-	but we have no plans yet.
+	but we have no plans for that yet.
 </p>
 <p>
 	We try to use
