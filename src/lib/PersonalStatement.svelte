@@ -36,12 +36,6 @@
 			links: '<a href="https://github.com/ryanatkn/cosmicplayground">GitHub</a>',
 		},
 		{
-			title: '<a href="https://ryanatkn.github.io/svelte-snake-sports">Svelte Snake Sports</a>',
-			description:
-				'games of <a href="https://wikipedia.org/wiki/Snake_game">Snake</a> in <a href="https://svelte.dev/">Svelte</a> and <a href="https://kit.svelte.dev/">SvelteKit</a>',
-			links: '<a href="https://github.com/ryanatkn/svelte-snake-sports">GitHub</a>',
-		},
-		{
 			title: '<a href="/influences">my influences</a>',
 			description: 'an ongoing attempt to credit my influences',
 			links: '<a href="/influences">/influences</a>',
