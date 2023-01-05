@@ -54,7 +54,7 @@
 	<p>
 		My main skill is coding frontend web apps and I also do some backend and database programming. I
 		enjoy trying to make powerful tools that are easy to use, and I have a geeky interest in user
-		interfaces and social systems. I work on open source software both as a fulltime profession and
+		interfaces and social systems. I work on open source software both as a full-time profession and
 		as a hobby.
 	</p>
 </section>
