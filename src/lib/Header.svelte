@@ -40,6 +40,6 @@
 		/* TODO there's definitely a better way to do this */
 		left: calc(50% - var(--img_size) / 2);
 		transform-origin: center;
-		animation: rotating 840s linear infinite;
+		animation: rotating 1260s linear infinite;
 	}
 </style>
