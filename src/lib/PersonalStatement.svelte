@@ -46,9 +46,9 @@
 <section class="panel">
 	<blockquote class="panel">
 		<p>
-			hello surfer! 🌤🌳🐿 You're at the web home of Ryan Atkinson. He's an open source web developer
+			hello surfer! 🌄🌳🐿 You're at the web home of Ryan Atkinson. He's an open source web developer
 			interested in collaborative digital mediums and realizing more of their potential to help us
-			live well
+			live well.
 		</p>
 	</blockquote>
 	<p>
