@@ -1,4 +1,4 @@
-# [ryanatkn.com](https://www.ryanatkn.com) :dolphin::rat:
+# [ryanatkn.com](https://www.ryanatkn.com) 🌤🌳🐿
 
 [<img src="src/static/favicon.png" align="right" width="100">](https://www.ryanatkn.com)
 
