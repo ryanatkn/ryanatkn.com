@@ -19,7 +19,6 @@
 		{name: 'Alan Kay', url: 'https://wikipedia.org/wiki/Alan_Kay'},
 		{name: 'Bret Victor', url: 'https://wikipedia.org/wiki/Bret_Victor'},
 		{name: 'Douglas Engelbart', url: 'https://wikipedia.org/wiki/Douglas_Engelbart'},
-		{name: 'Seymour Papert', url: 'https://wikipedia.org/wiki/Seymour_Papert'},
 		{name: 'Ted Nelson', url: 'https://wikipedia.org/wiki/Ted_Nelson'},
 		{name: 'Marshall McLuhan', url: 'https://wikipedia.org/wiki/Marshall_McLuhan'},
 		{name: 'Rich Hickey', url: 'https://wikipedia.org/wiki/Rich_Hickey'},

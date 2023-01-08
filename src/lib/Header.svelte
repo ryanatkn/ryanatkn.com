@@ -36,8 +36,10 @@
 		height: var(--img_size);
 		min-width: var(--img_size);
 		position: absolute;
-		bottom: 0;
+		bottom: 10px;
 		/* TODO there's definitely a better way to do this */
 		left: calc(50% - var(--img_size) / 2);
+		transform-origin: center;
+		animation: rotating 840s linear infinite;
 	}
 </style>

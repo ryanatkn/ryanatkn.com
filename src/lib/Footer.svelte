@@ -31,8 +31,12 @@
 		transform: scale3d(0.99, 0.99, 0.99);
 	}
 	img {
+		position: relative;
+		top: 15px;
 		width: 1600px;
 		height: 1600px;
 		min-width: 1600px;
+		transform-origin: center;
+		animation: rotating 1667s linear infinite;
 	}
 </style>

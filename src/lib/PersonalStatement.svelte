@@ -128,13 +128,6 @@
 	h2 {
 		margin-top: 0;
 	}
-	table {
-		border-spacing: 0;
-		background-color: var(--bg);
-	}
-	tr:hover {
-		background-color: var(--tint_dark_1);
-	}
 	td:first-child {
 		white-space: nowrap;
 	}

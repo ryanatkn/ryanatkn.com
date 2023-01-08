@@ -18,6 +18,8 @@ table {
 	border-style: var(--border_style);
 	border-color: var(--border_color_lighter);
 	border-radius: var(--border_radius);
+	border-spacing: 0;
+	background-color: var(--bg);
 }
 thead tr {
 	background-color: var(--tint_dark_1);
@@ -26,4 +28,18 @@ td,
 th {
 	padding: var(--spacing_sm);
 	word-break: break-word;
+}
+tr:hover {
+	background-color: var(--tint_dark_1);
+}
+
+/* offset to avoid visual artifacts on init,
+probably fixable with a better image, I tried briefly but didn't get a great result */
+@keyframes rotating {
+	from {
+		transform: rotate3d(0, 0, 1, 42deg);
+	}
+	to {
+		transform: rotate3d(0, 0, 1, 402deg);
+	}
 }
