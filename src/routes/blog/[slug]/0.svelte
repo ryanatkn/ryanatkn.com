@@ -296,11 +296,9 @@
 <p>the Web is everywhere and has vast unrealized potential</p>
 <p>Node, TypeScript, Postgres, and nginx are productive and solid</p>
 <p>
-	Svelte, SvelteKit, and Vite have been a fantastic set of tools for making UIs. We don't yet use
-	some of SvelteKit's flagship features like endpoints, but we feel productive and literally
-	delighted working with it, and its flexibility is a wonder. We've been deprioritizing full SSR but
-	it's a relief to know it's there when we're ready for it. It's amazing how much of the load
-	SvelteKit lifts from our shoulders.
+	Svelte, SvelteKit, and Vite have been a fantastic set of tools for making UIs. We don't yet make
+	full use of SvelteKit's features, but we feel highly productive and literally delighted working
+	with it, and its flexibility is a wonder.
 </p>
 <h3>customizable and extensible:</h3>
 <p>
