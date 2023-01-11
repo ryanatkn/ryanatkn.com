@@ -70,7 +70,8 @@
 			<ul>
 				<li>
 					@ryanatkn on
-					<a rel="me" href="https://github.com/ryanatkn">GitHub</a> and
+					<a rel="me" href="https://github.com/ryanatkn">GitHub</a>,
+					<a rel="me" href="https://www.linkedin.com/in/ryanatkn">LinkedIn</a>, and
 					<a rel="me" href="https://lobste.rs/u/ryanatkn">Lobste.rs</a>
 				</li>
 				<li>
