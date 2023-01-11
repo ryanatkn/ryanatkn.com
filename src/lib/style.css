@@ -43,3 +43,21 @@ probably fixable with a better image, I tried briefly but didn't get a great res
 		transform: rotate3d(0, 0, 1, 402deg);
 	}
 }
+
+/* TODO upstream to Felt */
+aside {
+	border-radius: var(--border_radius_xs);
+	padding: var(--spacing_lg);
+	color: var(--text_color_light);
+	background-color: var(--tint_dark_0);
+	border: var(--border_width) var(--border_style) var(--border_color_lighter);
+	border-left-width: var(--border_width_2);
+	margin-bottom: var(--spacing_lg);
+}
+aside > *:last-child {
+	margin-bottom: 0;
+}
+
+.markup div + ul {
+	margin-top: var(--spacing_xs2);
+}

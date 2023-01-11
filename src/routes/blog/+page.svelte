@@ -2,6 +2,8 @@
 	import {feed} from './feed';
 	import FeedItemDate from '$lib/FeedItemDate.svelte';
 	import {toPathname} from '$lib/util';
+
+	$: items = feed.items.slice().reverse();
 </script>
 
 <svelte:head>
@@ -9,8 +11,8 @@
 </svelte:head>
 
 <div class="blog">
-	<ol start="0">
-		{#each feed.items as item}
+	<ol start={items.length - 1} reversed>
+		{#each items as item}
 			<li>
 				<a href={toPathname(item.url, feed.home_page_url)}>{item.title}</a>
 				<div>
@@ -30,6 +32,7 @@
 	}
 	li {
 		font-size: var(--font_size_lg);
+		margin-bottom: var(--spacing_xl);
 	}
 	a {
 		/* TODO hacky */
