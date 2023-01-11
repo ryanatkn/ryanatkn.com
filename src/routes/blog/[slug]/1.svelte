@@ -18,6 +18,10 @@
 	const dunbars_number = writable(144);
 </script>
 
+<h1>toot</h1>
+
+<h2>ChatGPT</h2>
+
 <p>1d ryanatkn@hci.social Ryan Atkinson @ryanatkn@hci.social</p>
 
 <p>
@@ -117,3 +121,46 @@
 </p>
 
 <p>3/3</p>
+
+<h2>Google</h2>
+
+<p>https://google.com</p>
+<p>was #svelte the first #js component framework to popularize extending #HTML?</p>
+<p>About 10,400 results (0.52 seconds)</p>
+<p>
+	<br />Componentizing our Svelte app - Learn web developmenthttps://developer.mozilla.org › docs ›
+	Svelte_components
+	<br />Nov 23, 2022 — A component is a reusable, self-contained block of code that encapsulates
+	HTML, CSS, and JavaScript that belong together, written into a ...
+	<br />‎Breaking The App Into... · ‎Updating To-Dos · ‎Updating The Markup
+</p>
+<p>
+	<br />Why Svelte is our choice for a large web project in 2020 - GitHubhttps://github.com ›
+	feltcoop › why-svelte
+	<br />tldr — Svelte is a JavaScript framework for building user interfaces. Its compiler
+	architecture enables amazing tradeoffs for UX and DX.
+	<br />People also ask
+	<br />Why is Svelte so popular?
+	<br />Who made Sveltejs?
+	<br />When was Svelte created?
+	<br />Is Svelte the best framework?
+	<br />Feedback
+</p>
+<p>
+	<br />Svelte • Cybernetically enhanced web appshttps://svelte.dev
+	<br />The Svelte compiler packaging up your component code ... Svelte compiles your code to tiny,
+	framework-less vanilla JS — your app starts fast and stays fast.
+	<br />Missing: first ‎popularize ‎extending
+</p>
+<p>
+	<br />Frameworks without the framework: why didn't we think of this ...https://svelte.dev › blog ›
+	frameworks-without-the-fram...
+	<br />Nov 26, 2016 — Svelte is a new framework that does exactly that. You write your components
+	using HTML, CSS and JavaScript (plus a few extra bits you can ...
+</p>
+<p>
+	<br />Svelte - Wikipediahttps://en.wikipedia.org › wiki › Svelte
+	<br />Svelte is a free and open-source front end component framework or language created by Rich
+	Harris and maintained by the Svelte core team members.
+	<br />Missing: popularize ‎extending
+</p>
