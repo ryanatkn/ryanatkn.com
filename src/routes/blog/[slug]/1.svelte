@@ -18,8 +18,6 @@
 	const dunbars_number = writable(144);
 </script>
 
-<h1>toot</h1>
-
 <h2>ChatGPT</h2>
 
 <p>1d ryanatkn@hci.social Ryan Atkinson @ryanatkn@hci.social</p>
