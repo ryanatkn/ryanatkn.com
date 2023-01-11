@@ -13,9 +13,7 @@
 </script>
 
 <script lang="ts">
-	import {writable} from 'svelte/store';
-
-	const dunbars_number = writable(144);
+	//
 </script>
 
 <h2>ChatGPT</h2>
@@ -28,45 +26,41 @@
 	to your stuff but it's almost all bots designed to monetize your attention
 </p>
 
-<p>imagine that it's _you and your loved ones_ stuck in that matrix without knowing it</p>
+<p>imagine that it's *you and your loved ones* stuck in that matrix without knowing it</p>
 
-<p>
-	humanity and trust matter more than ever, and our culture and tools need to catch up
-	ryanatkn@hci.social Ryan Atkinson @ryanatkn@hci.social
-</p>
+<p>humanity and trust matter more than ever, and our culture and tools need to catch up</p>
 
 <p>"humanity and trust matter more than ever"</p>
 
 <p>
-	hm does it actually matter more today than in the past? maybe ya kinda? thinking about the tight
-	knit groups of about {$dunbars_number} (yes I made the reference lol) tribespeople we evolved in, and
-	how detached I/family/friends are from that tribal mutual aid oxytocin cocktail, in our modern hyperconnected
-	hyperaliented hyperworld
+	hm do they actually matter more today than in the past? maybe ya kinda? thinking about the tight
+	knit groups of about $dunbars_number (yes I made the reference lol) tribespeople we evolved in,
+	and how detached I/family/friends are from that tribal mutual aid oxytocin cocktail, in our modern
+	hyperconnected hyperalienated hyperworld
 </p>
 
 <p>
 	my mind just panics and blurts out "free and open source software and data" and then
-	thought-terminatingly, "governance" Jan 10, 2023, 22:23 · · 0 · 0 1h ryanatkn@hci.social Ryan
-	Atkinson @ryanatkn@hci.social
+	thought-terminatingly, "governance"
 </p>
 
 <p>
-	the thing is with that cocktail, tmaoc, it's not hard to be a good person, just don't be fucked up
-	and you can function as a happy tribe when times are good, if you have a culture that enforces
-	accountability for behavior, hopefully with positive psychology and good vibes
+	with that cocktail, it'd be less effort for people to be good tribemembers, just dont be an
+	asshole and you can function as a happy tribe when times are good, if you have a culture that
+	enforces accountability for behavior, hopefully with positive psychology and good vibes
 </p>
 
 <p>
-	we couldn't possibly have evolved with the dysfunctional societal relationships we see dominate
-	the planet today
+	we couldnt possibly have evolved with the dysfunctional societal relationships we see dominate the
+	planet today
 </p>
 
 <p>scale did us in</p>
 
 <p>
 	we could intentionally form groups at every scale, then #interconnect#interoperate#interdepend#
-	13m ryanatkn Ryan Atkinson @ryanatkn
 </p>
+<p>13m ryanatkn Ryan Atkinson @ryanatkn</p>
 
 <p>@ryanatkn@hci.social</p>
 
