@@ -355,7 +355,7 @@
 </p>
 <h3 id="interop">interop and decentralization:</h3>
 <p>
-	Giving users choices is a principle I want to adhere to, and that includes <a
+	Giving users choices is a principle I want to strive for, and that includes <a
 		href="https://www.eff.org/deeplinks/2019/10/adversarial-interoperability"
 		>cooperative interoperability</a
 	>, but we're a 2 person team with limited resources trying to deliver a specific UX. Today this
