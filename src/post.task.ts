@@ -24,25 +24,6 @@ export const task: Task<Args> = {
 
 		const path = stripEnd(stripStart(pathname, '/'), '/');
 
-		// First the $path/page.svelte exists
-		const slugPagePath = `src/routes/${path}/[slug]/+page.svelte`;
-		if (!(await fs.exists(slugPagePath))) {
-			await fs.writeFile(
-				slugPagePath,
-				await formatFile(
-					fs,
-					slugPagePath,
-					`
-					<script lang="ts">
-						import Blog from '$lib/blog/Blog.svelte';
-						import {feed} from '../feed';
-					</script>
-					<Blog {feed} />
-				`,
-				),
-			);
-		}
-
 		// Find the next module to create.
 		let postPath: string;
 		let index = 0;
