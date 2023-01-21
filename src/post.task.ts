@@ -39,7 +39,7 @@ export const task: Task<Args> = {
 
 		const unformatted = `
 			<script lang="ts" context="module">
-				import type {FeedItemData} from '$lib/blog/blogFeed';
+				import type {FeedItemData} from '$lib/feed';
 				export const post: FeedItemData = {
 					id: '${origin}/${path}/${index}',
 					title: 'Some title todo',
