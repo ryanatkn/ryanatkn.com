@@ -16,7 +16,7 @@ type Args = z.infer<typeof Args>;
 export const task: Task<Args> = {
 	summary: 'add initial dataset to the the database',
 	Args,
-	run: async ({args, fs}) => {
+	run: async ({args, fs, invokeTask}) => {
 		const {url, date} = args;
 
 		const {origin, pathname} = new URL(url);
@@ -62,6 +62,8 @@ export const task: Task<Args> = {
 		const formatted = await formatFile(fs, postPath, unformatted);
 
 		await fs.writeFile(postPath, formatted);
+
+		await invokeTask('gen');
 	},
 };
 
