@@ -131,7 +131,7 @@
 <ul>
 	<li>social media share buttons (only to the good sites in our case)</li>
 	<li>a lightweight way to embed a post on any website</li>
-	<li>a data service that sends specific post data to anyone who asks for it (an API)</li>
+	<li>a data service that sends post data to anyone who asks for it (an API)</li>
 </ul>
 <p>
 	By intentionally designing how distribution works in the space, we unlock another dimension of
@@ -139,12 +139,18 @@
 	already has the data, but explicit distribution powers enable an ecosystem more readily.
 </p>
 <h2>Conclusion</h2>
+<div>We started with the notion of control over a virtual social space, and then:</div>
+<ul>
+	<li>decided who gets access (public or private)</li>
+	<li>and what interactions are available to them</li>
+	<li>
+		and then how they're able to curate the data from those interactions, which creates new metadata
+	</li>
+	<li>and then how we can support distribution of that data and metadata to the wider world</li>
+</ul>
 <p>
-	We started with the notion of control over a virtual social space, then decided who gets access
-	and how they can interact, and then how they're able to curate the data from those interactions,
-	and then how we can design distribution of that data and metadata to the wider world. This model
-	may be helpful when we want to think about exploring the rich territory available to us when
-	designing our social spaces.
+	This model is hopefully helpful when we want to think about exploring the rich territory available
+	to us when designing our social spaces.
 </p>
 <p>
 	So when dog folks come along with their predictable request, we can say, ah yes, they want us to <em
