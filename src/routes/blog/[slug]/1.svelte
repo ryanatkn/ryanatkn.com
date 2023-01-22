@@ -87,7 +87,7 @@
 		a BIG emoji, or a tiny bit of text (let's say max 24 characters)
 	</li>
 </ul>
-<p>Note the three core interactions: posting, reading, and reacting</p>
+<aside>Note the three core interactions: posting, reading, and reacting.</aside>
 <div>
 	Now that we've defined the rules of interaction, let's talk about the meta layer around those
 	interactions. When people visit the space, I want them to be able to choose how they see and use
@@ -159,8 +159,9 @@
 </p>
 <p>
 	ChatGPT (<a href="https://openai.com/">openai.com</a>) helped me flesh out the model beyond
-	control and access. Some of its output was exactly what I was looking for, and some of it was
-	helpful as a negative example of what to think. I find it to be a great mirror.
+	control and access. Some of its conceptual output (I didn't use its actual text) was exactly what
+	I was looking for, and some of it was helpful as a negative example of what to think. I find it to
+	be a great mirror.
 </p>
 
 <hr />
