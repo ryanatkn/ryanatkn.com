@@ -135,10 +135,12 @@
 	We started with the notion of control over a virtual social space, then decided who gets access
 	and how they interact, and then how they're able to curate and distribute the data from those
 	interactions. This model may be helpful when we want to think about exploring the rich territory
-	available to us when designing our social spaces. So when dog folks come along with their
-	predictable request, we can see they want us to <em
+	available to us when designing our social spaces.
+</p>
+<p>
+	So when dog folks come along with their predictable request, we can say, ah yes, they want us to <em
 		>exercise our control over the space to change the rules of interaction</em
-	>, so maybe every dog could have its day.
+	>, so every dog can have its day too.
 </p>
 
 <hr />
