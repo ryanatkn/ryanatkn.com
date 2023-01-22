@@ -27,7 +27,7 @@
 	<strong>virtual social space</strong>.
 </p>
 <!-- TODO semantics? stackoverflow said h3 or aria-label on the ul, both seem wrong to me -->
-<div>To be precise about those terms:</div>
+<div>To be precise about our terms:</div>
 <ul>
 	<li><strong>virtual</strong>: existing not physically but through software</li>
 	<li><strong>social</strong>: including multiple people</li>
@@ -182,6 +182,11 @@
 	meantime, here's some questions on my mind:
 </div>
 <ul>
+	<li>
+		We've defined some hard-to-enforce rules of interaction, like personally knowing the cat. How
+		might we go about making sure participants follow the rules to ensure we're sharing
+		authentically?
+	</li>
 	<li>
 		What mechanisms can we use to collectively exert control over each of the other powers in the
 		model?
