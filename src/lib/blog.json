@@ -20,7 +20,21 @@
 			"date_modified": "2022-11-29T01:42:23.000Z",
 			"summary": "I discuss my work on open source community software called Felt over the last year, giving a brief overview of the design and technology choices, and announcing our newsletter and podcast at FeltCoop.",
 			"tags": ["web", "technology", "software", "open source", "community"]
+		},
+		{
+			"id": "https://www.ryanatkn.com/blog/1",
+			"title": "Modeling virtual social spaces: in this house we post cat pics on Saturday",
+			"url": "https://www.ryanatkn.com/blog/modeling-virtual-social-spaces-in-this-house-we-post-cat-pics-on-saturday",
+			"date_published": "2023-01-22T21:44:17.224Z",
+			"date_modified": "2023-01-22T21:44:17.224Z",
+			"summary": "This post attempts to model one\tof the central aspects of online communities: the virtual social space.",
+			"tags": ["web", "community", "social media", "design", "technology", "software"]
 		}
 	],
-	"entries": ["/blog/a-year-of-making-open-source-web-community-software", "/blog/0"]
+	"entries": [
+		"/blog/a-year-of-making-open-source-web-community-software",
+		"/blog/0",
+		"/blog/modeling-virtual-social-spaces-in-this-house-we-post-cat-pics-on-saturday",
+		"/blog/1"
+	]
 }
