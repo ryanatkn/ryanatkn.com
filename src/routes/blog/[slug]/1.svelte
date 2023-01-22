@@ -116,9 +116,9 @@
 		>curation</strong
 	>. Depending on your point of view, good curation may be even more important than the core
 	interactions of posting and reacting. If our goal is to maximize our collaborative agency,
-	creativity, and utility in the space, which it is in this case, we want users to be able to create
-	those views themselves, and then easily share them with others. So, we exercise our control over
-	the space to grant participants powers of curation.
+	creativity, and utility within the constraints of the space, which it is in this case, we want
+	users to be able to create those views themselves, and then easily share them with others. So, we
+	exercise our control over the space to grant participants powers of curation.
 </p>
 <h3>distribution</h3>
 <div>
