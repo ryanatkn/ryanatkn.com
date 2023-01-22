@@ -49,13 +49,13 @@
 		href="https://wikipedia.org/wiki/Affordance">afforded</a
 	> to actors in the space. You can probably think of more, but these get us pretty far:
 </div>
-<ul>
+<ol>
 	<li><strong>control</strong></li>
 	<li><strong>access</strong></li>
 	<li><strong>interaction</strong></li>
 	<li><strong>curation</strong></li>
 	<li><strong>distribution</strong></li>
-</ul>
+</ol>
 <h3>control</h3>
 <p>
 	When I first create my forum and the cat pic space, I am given <strong>control</strong> over it by
