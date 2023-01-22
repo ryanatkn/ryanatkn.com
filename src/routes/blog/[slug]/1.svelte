@@ -39,13 +39,13 @@
 	Except neither humans nor networked computers are simple...
 </p>
 <p>
-	To help us along, we'll analyze the concept through the lens of a concrete hypothetical usecase.
-	Let's say I have a public web forum containing a specific space that has some very strict rules:
-	participants are allowed to post only on Saturday, and posts must contain pictures of cats they
-	know personally.
+	To help us along, we'll analyze virtual social spaces through the lens of a concrete hypothetical
+	usecase. Let's say I have a public web forum containing a specific space that has some very strict
+	rules: participants are allowed to post only on Saturday, and posts must contain pictures of cats
+	they know personally.
 </p>
 <div>
-	To construct our model of virtual social spaces, we define 5 powers or abilities <a
+	To construct our model, we define 5 powers or abilities <a
 		href="https://wikipedia.org/wiki/Affordance">afforded</a
 	> to actors in the space. You can probably think of more, but these get us pretty far:
 </div>
