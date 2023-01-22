@@ -133,9 +133,10 @@
 </p>
 <p>
 	We started with the notion of control over a virtual social space, then decided who gets access
-	and how they interact, and then how they're able to curate and distribute the data from those
-	interactions. This model may be helpful when we want to think about exploring the rich territory
-	available to us when designing our social spaces.
+	and how they can interact, and then how they're able to curate the data from those interactions,
+	and then how we can design distribution of that data and metadata to the wider world. This model
+	may be helpful when we want to think about exploring the rich territory available to us when
+	designing our social spaces.
 </p>
 <p>
 	So when dog folks come along with their predictable request, we can say, ah yes, they want us to <em
@@ -147,7 +148,7 @@
 
 <h2>Acknowledgements</h2>
 <p>
-	This post was inspired by my work on <a href="https://github.com/feltcoop">Felt</a>
+	This post was informed by my work on <a href="https://github.com/feltcoop">Felt</a>
 	and many conversations with my coworker <a href="https://12mod12.com">Hamilton Reed</a>.
 </p>
 <p>
@@ -168,12 +169,17 @@
 
 <h2>P.S.</h2>
 <div>
-	I wanted to use the model to think through more of the possibilities available to us in virtual
-	social spaces, but the post was getting long so I'll save it for a followup. In the meantime,
-	here's some questions on my mind:
+	I wanted to use the model to generatively think through more of the possibilities available to us
+	in virtual social spaces, but the post was getting long so I'll save it for a followup. In the
+	meantime, here's some questions on my mind:
 </div>
 <ul>
+	<li>
+		What mechanisms can we use to collectively exert control over each of the other powers in the
+		model?
+	</li>
 	<li>What does it mean to have public control over the space? Or partially public control?</li>
+	<li>What are the various ways we can gate public and private access?</li>
 	<li>
 		(I'm sure I'll add to this list soon, I wrote and published this post in a day and my mind is
 		done)

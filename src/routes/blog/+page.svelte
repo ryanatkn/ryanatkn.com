@@ -33,14 +33,10 @@
 	li {
 		font-size: var(--font_size_lg);
 		margin-bottom: var(--spacing_xl);
-	}
-	a {
-		/* TODO hacky */
 		padding-left: var(--spacing_sm);
 	}
 	small {
 		white-space: nowrap;
 		font-size: var(--font_size_md);
-		padding-left: var(--spacing_sm);
 	}
 </style>
