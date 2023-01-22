@@ -17,6 +17,7 @@
 	import {base} from '$app/paths';
 </script>
 
+<h2>Introduction</h2>
 <p>
 	While working on the community software project I described in <a
 		href="{base}/blog/a-year-of-making-open-source-web-community-software">my first blog post</a
@@ -32,6 +33,7 @@
 	<li><strong>social</strong>: including multiple people</li>
 	<li><strong>space</strong>: a context containing and governing our interactions</li>
 </ul>
+<h2>The model</h2>
 <p>
 	In the software I work on, a community is composed of any number of virtual social spaces. Simple!
 	Except neither humans nor networked computers are simple...
@@ -54,6 +56,7 @@
 	<li><strong>curation</strong></li>
 	<li><strong>distribution</strong></li>
 </ul>
+<h3>control</h3>
 <p>
 	When I first create my forum and the cat pic space, I am given <strong>control</strong> over it by
 	the software. One manifestation of this power is the ability to name the space. I choose the
@@ -63,6 +66,7 @@
 	infinite virtual void. The software doesn't necessarily have to grant all of that control to
 	<em>me</em>, but it does in this case.
 </p>
+<h3>access</h3>
 <p>
 	Now that I have control over my tiny world, I grant <strong>access</strong> to others so we can
 	enjoy it together. Access determines who can walk through the door. In this case, I use my control
@@ -70,6 +74,7 @@
 	<em>public</em> access, meaning anyone is welcome, even those creepy surveillance drones, because I'm
 	prioritizing open participation, and we're choosing to sacrifice privacy to get more cat pics.
 </p>
+<h3>interaction</h3>
 <div>
 	Now that we have a publicly accessible space, I again exercise my control over the software to
 	define the rules of <strong>interaction</strong> in the space. In this case, I define the parameters
@@ -88,6 +93,7 @@
 	</li>
 </ul>
 <aside>Note the three core interactions: posting, reading, and reacting.</aside>
+<h3>curation</h3>
 <div>
 	Now that we've defined the rules of interaction, let's talk about the meta layer around those
 	interactions. When people visit the space, I want them to be able to choose how they see and use
@@ -114,6 +120,7 @@
 	those views themselves, and then easily share them with others. So, we exercise our control over
 	the space to grant participants powers of curation.
 </p>
+<h3>distribution</h3>
 <div>
 	We now have posts, reactions, and all sorts of ways to view them. The final power in our model is <strong
 		>distribution</strong
@@ -131,6 +138,7 @@
 	creativity that reaches the wider world beyond our little web forum. Technically every observer
 	already has the data, but explicit distribution powers enable an ecosystem more readily.
 </p>
+<h2>Conclusion</h2>
 <p>
 	We started with the notion of control over a virtual social space, then decided who gets access
 	and how they can interact, and then how they're able to curate the data from those interactions,
