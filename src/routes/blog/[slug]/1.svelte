@@ -63,13 +63,15 @@
 	abstractly, control is the center around which the space exists: I, as the creator and
 	administrator of this tiny web forum world, have carved a distinct boundary of control out of the
 	infinite virtual void. The software doesn't necessarily have to grant all of that control to
-	<em>me</em>, but it does in this case.
+	<em>me</em>, but it does in this case. In our model, the control power controls the other 4
+	powers, naturally.
 </p>
 <h3>access</h3>
 <p>
 	Now that I have control over my tiny world, I grant <strong>access</strong> to others so we can
-	enjoy it together. Our space is now social! Access determines who can walk through the door. In
-	this case, I use my control over the space to choose
+	enjoy it together. Access determines who can walk through the door. It's similar to the "read
+	permission" of a document. Our space is now social! In this case, I use my control over the space
+	to choose
 	<em>public</em> access, meaning anyone is welcome, even those creepy surveillance drones disguised
 	as well-meaning people, because I'm prioritizing open participation, and because we're choosing to
 	sacrifice privacy to get more cat pics.
@@ -77,8 +79,9 @@
 <h3>interaction</h3>
 <div>
 	We now have a publicly accessible social space, but what can people, you know, <em>do</em>? Again
-	I exercise my control, this time defining the rules of <strong>interaction</strong> in the space. I
-	define the parameters such that:
+	I exercise my control, this time defining the rules of <strong>interaction</strong> in the space. It's
+	like the "write permission" of a document. In the cat pic space, I define the parameters of interaction
+	such that:
 </div>
 <ul>
 	<li>actors can <em>post</em> only on Saturday</li>
@@ -95,15 +98,15 @@
 <aside>Note the three core interactions: posting, reading, and reacting.</aside>
 <h3>curation</h3>
 <div>
-	Now that we've defined the rules of interaction, let's talk about the meta layer around those
-	interactions. When people visit the space, I want them to be able to choose how they see and use
-	the content. People may choose to:
+	Now that we've defined the rules of interaction, let's talk about the meta layer of activities
+	around those interactions. When people visit the cat pic space, I want them to be able to choose
+	how they see and use the content. People may choose to:
 </div>
 <ul>
 	<li>view all of the posts in a single feed with the most recent at the top</li>
 	<li>view the most reacted-to posts from the most recent Saturday</li>
 	<li>view posts sorted by most all-time BIG ❤️ reactions</li>
-	<li>view each Saturday in its own little sub-space</li>
+	<li>view each Saturday in its own little sub-space, and don't show the text reactions</li>
 	<li>
 		today is Saturday! view the flurry of furry activity with random sorting, excluding posts
 		they've personally reacted to
@@ -184,7 +187,8 @@
 	ChatGPT (<a href="https://openai.com/">openai.com</a>) helped me flesh out the model beyond
 	control and access. Some of its conceptual output was exactly what I was looking for (I didn't use
 	its actual text), and some of it was helpful as a negative example of what to think. I find it to
-	be a great mirror.
+	be a great mirror. I surely could have gotten better results with better prompting, but it was an
+	eye-openingly positive experience as a useful thinking aid.
 </p>
 
 <hr />
