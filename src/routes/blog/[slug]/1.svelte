@@ -118,7 +118,7 @@
 	interactions of posting and reacting. If our goal is to maximize our collaborative agency,
 	creativity, and utility (joy) within the constraints of the space, which it is in this case, we
 	want users to be able to create those views themselves, and then easily share them with others.
-	So, we exercise our control over the space to grant participants powers of curation.
+	So, I exercise control over the space to grant participants powers of curation.
 </p>
 <h3>distribution</h3>
 <div>
