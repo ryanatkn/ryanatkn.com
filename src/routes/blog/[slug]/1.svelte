@@ -206,8 +206,4 @@
 		model? What could it look like to have public control over the space?
 	</li>
 	<li>What are the various ways we can gate public and private access?</li>
-	<li>
-		(I'm sure I'll add to this list soon, I wrote and published this post in a day and my mind is
-		done)
-	</li>
 </ul>
