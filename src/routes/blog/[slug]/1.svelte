@@ -68,17 +68,17 @@
 <h3>access</h3>
 <p>
 	Now that I have control over my tiny world, I grant <strong>access</strong> to others so we can
-	enjoy it together. Access determines who can walk through the door. In this case, I use my control
-	over the space to choose
+	enjoy it together. Our space is now social! Access determines who can walk through the door. In
+	this case, I use my control over the space to choose
 	<em>public</em> access, meaning anyone is welcome, even those creepy surveillance drones disguised
 	as well-meaning people, because I'm prioritizing open participation, and because we're choosing to
 	sacrifice privacy to get more cat pics.
 </p>
 <h3>interaction</h3>
 <div>
-	Now that we have a publicly accessible space, I again exercise my control over the software to
-	define the rules of <strong>interaction</strong> in the space. In this case, I define the parameters
-	such that:
+	We now have a publicly accessible social space, but what can people, you know, <em>do</em>? Again
+	I exercise my control, this time defining the rules of <strong>interaction</strong> in the space. I
+	define the parameters such that:
 </div>
 <ul>
 	<li>actors can <em>post</em> only on Saturday</li>
