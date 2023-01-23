@@ -112,8 +112,8 @@
 		they've personally reacted to
 	</li>
 	<li>view the posts they've reacted to, with the most recent listed first</li>
-	<li>...and so on, deep into the kaleidoscope of human creativity...</li>
 </ul>
+<p>...and so on, deep into the kaleidoscope of human creativity.</p>
 <p>
 	In our model, we define these meta-interactions of organizing and managing posts as <strong
 		>curation</strong
@@ -152,8 +152,8 @@
 	<li>and then how we can support distribution of that data and metadata to the wider world</li>
 </ul>
 <p>
-	This model is hopefully helpful when we want to think about exploring the rich territory available
-	to us when designing our social spaces.
+	This model seems useful to think about exploring the rich territory available to us when designing
+	our social spaces.
 </p>
 <p>
 	So when dog folks come along with their predictable request, we can say, ah yes, they want us to <em
