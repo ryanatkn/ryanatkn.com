@@ -22,8 +22,7 @@
 	While working on the community software project I described in <a
 		href="{base}/blog/a-year-of-making-open-source-web-community-software">my first blog post</a
 	>, I've been wanting clarity on some concepts that sit above the code. This post attempts to model
-	(<a href="https://wikipedia.org/wiki/All_models_are_wrong">wrongly but hopefully usefully</a>) one
-	of the central aspects of online communities: the
+	one of the central aspects of online communities: the
 	<strong>virtual social space</strong>.
 </p>
 <!-- TODO semantics? stackoverflow said h3 or aria-label on the ul, both seem wrong to me -->
@@ -71,8 +70,9 @@
 	Now that I have control over my tiny world, I grant <strong>access</strong> to others so we can
 	enjoy it together. Access determines who can walk through the door. In this case, I use my control
 	over the space to choose
-	<em>public</em> access, meaning anyone is welcome, even those creepy surveillance drones, because I'm
-	prioritizing open participation, and because we're choosing to sacrifice privacy to get more cat pics.
+	<em>public</em> access, meaning anyone is welcome, even those creepy surveillance drones disguised
+	as well-meaning people, because I'm prioritizing open participation, and because we're choosing to
+	sacrifice privacy to get more cat pics.
 </p>
 <h3>interaction</h3>
 <div>
