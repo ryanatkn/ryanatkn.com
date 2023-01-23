@@ -138,7 +138,7 @@
 </ul>
 <p>
 	By intentionally designing how distribution works in the space, we unlock another dimension of
-	creativity that reaches the wider world beyond our little web forum. Technically every observer
+	creativity that reaches the wider world beyond our little web forum. Technically every reader
 	already has the data, but explicit distribution powers enable an ecosystem more readily.
 </p>
 <h2>Conclusion</h2>
