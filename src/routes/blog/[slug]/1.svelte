@@ -147,13 +147,14 @@
 	<li>decided who gets access (public or private)</li>
 	<li>and what interactions are available to them</li>
 	<li>
-		and then how they're able to curate the data from those interactions, which creates new metadata
+		and then how they're able to curate the data from those interactions, creating new metadata and
+		interactions
 	</li>
 	<li>and then how we can support distribution of that data and metadata to the wider world</li>
 </ul>
 <p>
 	This model seems useful to think about exploring the rich territory available to us when designing
-	our social spaces.
+	our virtual social spaces.
 </p>
 <p>
 	So when dog folks come along with their predictable request, we can say, ah yes, they want us to <em
