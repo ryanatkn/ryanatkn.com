@@ -26,7 +26,7 @@
 	<strong>virtual social space</strong>.
 </p>
 <!-- TODO semantics? stackoverflow said h3 or aria-label on the ul, both seem wrong to me -->
-<div>To be precise about our terms:</div>
+<p>To be precise about our terms:</p>
 <ul>
 	<li><strong>virtual</strong>: existing not physically but through software</li>
 	<li><strong>social</strong>: including multiple people</li>
@@ -43,11 +43,11 @@
 	rules: participants are allowed to post only on Saturday, and posts must contain pictures of cats
 	they know personally.
 </p>
-<div>
+<p>
 	To construct our model, we define 5 powers or abilities <a
 		href="https://wikipedia.org/wiki/Affordance">afforded</a
 	> to actors in the space. You can probably think of more, but these get us pretty far:
-</div>
+</p>
 <ol>
 	<li><strong>control</strong></li>
 	<li><strong>access</strong></li>
@@ -77,12 +77,12 @@
 	sacrifice privacy to get more cat pics.
 </p>
 <h3>interaction</h3>
-<div>
+<p>
 	We now have a publicly accessible social space, but what can people, you know, <em>do</em>? Again
 	I exercise my control, this time defining the rules of <strong>interaction</strong> in the space. It's
 	like the "write permission" of a document. In the cat pic space, I define the parameters of interaction
 	such that:
-</div>
+</p>
 <ul>
 	<li>actors can <em>post</em> only on Saturday</li>
 	<li>actors can <em>read</em> posts any time</li>
@@ -97,11 +97,11 @@
 </ul>
 <aside>Note the three core interactions: posting, reading, and reacting.</aside>
 <h3>curation</h3>
-<div>
+<p>
 	Now that we've defined the rules of interaction, let's talk about the meta layer of activities
 	around those interactions. When people visit the cat pic space, I want them to be able to choose
 	how they see and use the content. People may choose to:
-</div>
+</p>
 <ul>
 	<li>view all of the posts in a single feed with the most recent at the top</li>
 	<li>view the most reacted-to posts from the most recent Saturday</li>
@@ -124,13 +124,13 @@
 	So, I exercise control over the space to grant participants powers of curation.
 </p>
 <h3>distribution</h3>
-<div>
+<p>
 	We now have posts, reactions, and all sorts of ways to view them. The final power in our model is <strong
 		>distribution</strong
 	>, the ability to communicate the space's data beyond its boundaries. In our hypothetical, we
 	explicitly support distribution in a few ways, so the joy of each post can spread wherever it's
 	wanted:
-</div>
+</p>
 <ul>
 	<li>social media share buttons (only to the good sites in our case)</li>
 	<li>a lightweight way to embed a post on any website</li>
@@ -142,7 +142,7 @@
 	already has the data, but explicit distribution powers enable an ecosystem more readily.
 </p>
 <h2>Conclusion</h2>
-<div>We started with the notion of control over a virtual social space, and then:</div>
+<p>We started with the notion of control over a virtual social space, and then:</p>
 <ul>
 	<li>decided who gets access (public or private)</li>
 	<li>and what interactions are available to them</li>
@@ -193,11 +193,11 @@
 <hr />
 
 <h2>P.S.</h2>
-<div>
+<p>
 	I wanted to use the model to generatively think through more of the possibilities available to us
 	in virtual social spaces, but the post was getting long so I'll save it for a followup. In the
 	meantime, here's some questions on my mind:
-</div>
+</p>
 <ul>
 	<li>
 		We've defined some hard-to-enforce rules of interaction, like personally knowing the cat. How
