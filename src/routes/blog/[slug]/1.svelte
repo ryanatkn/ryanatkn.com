@@ -184,11 +184,9 @@
 	by Jane Im (<a href="https://imjane.net/">imjane.net</a>) and colleagues.
 </p>
 <p>
-	ChatGPT (<a href="https://openai.com/">openai.com</a>) helped me flesh out the model beyond
-	control and access. Some of its conceptual output was exactly what I was looking for (I didn't use
-	its actual text), and some of it was helpful as a negative example of what to think. I find it to
-	be a great mirror. I surely could have gotten better results with better prompting, but it was an
-	eye-openingly positive experience as a useful thinking aid.
+	I used ChatGPT (<a href="https://openai.com/">openai.com</a>) not to use its text output, but as a
+	thinking aid for developing the model beyond control and access. I found it very useful for idea
+	exploration.
 </p>
 
 <hr />
