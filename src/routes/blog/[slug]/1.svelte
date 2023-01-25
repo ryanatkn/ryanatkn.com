@@ -95,7 +95,10 @@
 		a BIG emoji, or a tiny bit of text (let's say max 24 characters)
 	</li>
 </ul>
-<aside>Note the three core interactions: posting, reading, and reacting.</aside>
+<aside>
+	The two core interactions are posting and reacting. Reading seems more about access than
+	interaction, but I included it here for clarity.
+</aside>
 <h3>curation</h3>
 <p>
 	Now that we've defined the rules of interaction, let's talk about the meta layer of activities
