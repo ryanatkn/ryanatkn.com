@@ -73,7 +73,7 @@
 	permission" of a document. Our space is now social! I exercise my control over the space to choose
 	<em>public</em> access, meaning anyone is welcome, even those creepy surveillance drones disguised
 	as well-meaning people, because I'm prioritizing open participation over privacy to get more cat
-	pics. Additionally, even though it's caturday, actors can <em>read</em> posts any time.
+	pics and joy. Additionally, even though it's caturday, actors can <em>read</em> posts any time.
 </p>
 <h3>interaction</h3>
 <p>
