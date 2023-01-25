@@ -70,10 +70,10 @@
 <p>
 	Now that I have control over my tiny world, I grant <strong>access</strong> to others so we can
 	enjoy it together. Access determines who can walk through the door. It's similar to the "read
-	permission" of a document. Our space is now social! I use my control over the space to choose
+	permission" of a document. Our space is now social! I exercise my control over the space to choose
 	<em>public</em> access, meaning anyone is welcome, even those creepy surveillance drones disguised
 	as well-meaning people, because I'm prioritizing open participation over privacy to get more cat
-	pics. Additionally, even those it's caturday, actors can <em>read</em> posts any time.
+	pics. Additionally, even though it's caturday, actors can <em>read</em> posts any time.
 </p>
 <h3>interaction</h3>
 <p>
