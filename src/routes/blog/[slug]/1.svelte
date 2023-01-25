@@ -70,11 +70,10 @@
 <p>
 	Now that I have control over my tiny world, I grant <strong>access</strong> to others so we can
 	enjoy it together. Access determines who can walk through the door. It's similar to the "read
-	permission" of a document. Our space is now social! In this case, I use my control over the space
-	to choose
+	permission" of a document. Our space is now social! I use my control over the space to choose
 	<em>public</em> access, meaning anyone is welcome, even those creepy surveillance drones disguised
-	as well-meaning people, because I'm prioritizing open participation, and because we're choosing to
-	sacrifice privacy to get more cat pics.
+	as well-meaning people, because I'm prioritizing open participation over privacy to get more cat
+	pics. Additionally, even those it's caturday, actors can <em>read</em> posts any time.
 </p>
 <h3>interaction</h3>
 <p>
@@ -85,7 +84,6 @@
 </p>
 <ul>
 	<li>actors can <em>post</em> only on Saturday</li>
-	<li>actors can <em>read</em> posts any time</li>
 	<li>
 		each post must include exactly one image (photograph, painting, etc) of a cat or cats that the
 		poster personally knows, with an optional short bit of text
@@ -95,10 +93,6 @@
 		a BIG emoji, or a tiny bit of text (let's say max 24 characters)
 	</li>
 </ul>
-<aside>
-	The two core interactions are posting and reacting. Reading seems more about access than
-	interaction, but I included it here for clarity.
-</aside>
 <h3>curation</h3>
 <p>
 	Now that we've defined the rules of interaction, let's talk about the meta layer of activities
