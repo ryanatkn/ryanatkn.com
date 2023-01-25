@@ -167,19 +167,16 @@
 	and many conversations with my coworker <a href="https://12mod12.com">Hamilton Reed</a>.
 </p>
 <p>
-	One of my primary influences on this work is <a href="https://arxiv.org/abs/2005.13701"
-		>Modular Politics: Toward a Governance Layer for Online Communities</a
-	>
-	by Nathan Schneider (<a href="https://nathanschneider.info/">nathanschneider.info</a>) and
+	One of my primary influences on this work is "Modular Politics: Toward a Governance Layer for
+	Online Communities" (<a href="https://arxiv.org/abs/2005.13701">arxiv.org/abs/2005.13701</a>) by
+	Nathan Schneider (<a href="https://nathanschneider.info/">nathanschneider.info</a>) and
 	colleagues.
 </p>
 <p>
 	My thinking on this subject is rooted in the perspective of consent for all involved parties,
-	informed by the paper <a href="https://consentful.systems"
-		>"Yes: Affirmative Consent as a Theoretical Framework for Understanding and Imagining Social
-		Platforms"</a
-	>
-	by Jane Im (<a href="https://imjane.net/">imjane.net</a>) and colleagues.
+	informed by the paper "Yes: Affirmative Consent as a Theoretical Framework for Understanding and
+	Imagining Social Platforms" (<a href="https://consentful.systems">consentful.systems</a>) by Jane
+	Im (<a href="https://imjane.net/">imjane.net</a>) and colleagues.
 </p>
 <p>
 	I used ChatGPT (<a href="https://openai.com/">openai.com</a>) not to use its text output, but as a
