@@ -6,7 +6,7 @@
 		title: 'Modeling virtual social spaces: in this house we post cat pics on Saturday',
 		url: 'https://www.ryanatkn.com/blog/modeling-virtual-social-spaces-in-this-house-we-post-cat-pics-on-saturday',
 		date_published: '2023-01-22T21:44:17.224Z',
-		date_modified: '2023-01-22T21:44:17.224Z',
+		date_modified: '2023-01-28T17:20:51.259Z',
 		summary:
 			'This post attempts to model one	of the central aspects of online communities: the virtual social space.',
 		tags: ['web', 'community', 'social media', 'design', 'technology', 'software'],
@@ -32,21 +32,25 @@
 	<li><strong>social</strong>: including multiple people</li>
 	<li><strong>space</strong>: a context containing and governing our interactions</li>
 </ul>
-<h2>The model</h2>
+<p>
+	Simply, a virtual social space is a software-mediated context of social interaction. We're all
+	familiar with them - they include our messaging apps, social media feeds, forums, and so on. By
+	modeling the virtual social space, we can more easily imagine reshaping them for our individual
+	and collective benefit.
+</p>
+<h2>The example</h2>
 <p>
 	In the software I work on, a community is composed of any number of virtual social spaces. Simple!
-	Except neither humans nor networked computers are simple...
+	Except neither humans nor networked computers are simple. To help us along, we'll analyze virtual
+	social spaces through the lens of a concrete hypothetical usecase. Let's say I have a public web
+	forum containing a specific space that has some very strict rules: participants are allowed to
+	post only on Saturday, and posts must contain pictures of cats they know personally. We'll use
+	this example to think concretely about the model.
 </p>
+<h2>The model</h2>
 <p>
-	To help us along, we'll analyze virtual social spaces through the lens of a concrete hypothetical
-	usecase. Let's say I have a public web forum containing a specific space that has some very strict
-	rules: participants are allowed to post only on Saturday, and posts must contain pictures of cats
-	they know personally.
-</p>
-<p>
-	To construct our model, we define 5 powers or abilities <a
-		href="https://wikipedia.org/wiki/Affordance">afforded</a
-	> to actors in the space. You can probably think of more, but these get us pretty far:
+	To construct our model, we define 5 powers or abilities provided to actors in the space. You can
+	probably think of more, but these get us pretty far:
 </p>
 <ol>
 	<li><strong>control</strong></li>
@@ -57,30 +61,34 @@
 </ol>
 <h3>control</h3>
 <p>
-	When I first create my forum and the cat pic space, I am given <strong>control</strong> over it by
-	the software. One manifestation of this power is the ability to name the space. I choose the
-	common and descriptive name <a href="https://mastodon.social/tags/caturday">"caturday"</a>. More
-	abstractly, control is the center around which the space exists: I, as the creator and
-	administrator of this tiny web forum world, have carved a distinct boundary of control out of the
-	infinite virtual void. The software doesn't necessarily have to grant all of that control to
-	<em>me</em>, but it does in this case. In our model, the control power controls the other 4
-	powers, naturally.
+	<strong>Control</strong> is the manifestation of power over the space. When I first create my
+	forum and the space containing the cat pictures, the software gives me control over everything.
+	One example is the ability to name the space. Given the design goals of the space, I choose the
+	common and descriptive name
+	<a href="https://mastodon.social/tags/caturday">Caturday</a>. More abstractly, control is the
+	center around which the space exists: I, as the creator and administrator of this tiny web forum,
+	have carved a distinct boundary of control out of the infinite virtual void. The software doesn't
+	necessarily have to grant all of that control to me, but it does in this case. In our model, the
+	control power controls the other 4 powers. Naturally.
 </p>
 <h3>access</h3>
 <p>
-	Now that I have control over my tiny world, I grant <strong>access</strong> to others so we can
-	enjoy it together. Access determines who can walk through the door. It's similar to the "read
-	permission" of a document. Our space is now social! I exercise my control over the space to choose
-	<em>public</em> access, meaning anyone is welcome, even those creepy surveillance drones disguised
-	as well-meaning people, because I'm prioritizing open participation over privacy to get more cat
-	pics and joy. Additionally, even though it's caturday, actors can <em>read</em> posts any time.
+	Now that I have control over my tiny world, I want others to join so we can enjoy it together. <strong
+		>Access</strong
+	>
+	is the ability to enter the space. It's similar to the "read permission" of a document. For Caturday
+	I exercise my control over the space to choose public access, meaning anyone is welcome, even those
+	creepy surveillance drones disguised as well-meaning people, because I'm prioritizing open participation
+	over privacy to get more cat pics and joy. Additionally, even though we have a Saturday-themed space,
+	actors can <em>read</em> posts any time. Now that people can access it, our space is now social!
 </p>
 <h3>interaction</h3>
 <p>
-	We now have a publicly accessible social space, but what can people, you know, <em>do</em>? Again
-	I exercise my control, this time defining the rules of <strong>interaction</strong> in the space. It's
-	like the "write permission" of a document. In the cat pic space, I define the parameters of interaction
-	such that:
+	We now have a publicly accessible social space, but nothing much is happening yet. <strong
+		>Interaction</strong
+	> describes the things people can do in the space. It's like the "write permission" of a document.
+	To make Caturday live up to its name, I again exercise my control, this time defining the rules of
+	interaction in the space:
 </p>
 <ul>
 	<li>actors can <em>post</em> only on Saturday</li>
@@ -96,21 +104,23 @@
 <h3>curation</h3>
 <p>
 	Now that we've defined the rules of interaction, let's talk about the meta layer of activities
-	around those interactions. When people visit the cat pic space, I want them to be able to choose
-	how they see and use the content. People may choose to:
+	around those interactions. When people visit the space with cat pictures, I want them to be able
+	to choose how they see and use the content. People may choose to:
 </p>
 <ul>
 	<li>view all of the posts in a single feed with the most recent at the top</li>
-	<li>view the most reacted-to posts from the most recent Saturday</li>
-	<li>view posts sorted by most all-time BIG ❤️ reactions</li>
-	<li>view each Saturday in its own little sub-space, and don't show the text reactions</li>
+	<li>view posts sorted by most all-time big emoji reactions, excluding the text reactions</li>
+	<li>view posts grouped by cat, so we can see each cat change over time</li>
+	<li>
+		view only the posts they've reacted to, with the most recent listed first, so they can show
+		their friend their favorites in person
+	</li>
 	<li>
 		today is Saturday! view the flurry of furry activity with random sorting, excluding posts
 		they've personally reacted to
 	</li>
-	<li>view the posts they've reacted to, with the most recent listed first</li>
 </ul>
-<p>...and so on, deep into the kaleidoscope of human creativity.</p>
+<p>And so on, deep into the kaleidoscope of human creativity.</p>
 <p>
 	In our model, we define these meta-interactions of organizing and managing posts as <strong
 		>curation</strong
@@ -118,15 +128,15 @@
 	interactions of posting and reacting. If our goal is to maximize our collaborative agency,
 	creativity, and utility (joy) within the constraints of the space, which it is in this case, we
 	want users to be able to create those views themselves, and then easily share them with others.
-	So, I exercise control over the space to grant participants powers of curation.
+	So, I exercise control over the space to grant participants various powers of curation.
 </p>
 <h3>distribution</h3>
 <p>
 	We now have posts, reactions, and all sorts of ways to view them. The final power in our model is <strong
 		>distribution</strong
 	>, the ability to communicate the space's data beyond its boundaries. In our hypothetical, we
-	explicitly support distribution in a few ways, so the joy of each post can spread wherever it's
-	wanted:
+	explicitly support distribution in a few open-ended ways, so the joy of each post can spread
+	wherever it's wanted:
 </p>
 <ul>
 	<li>social media share buttons (only to the good sites in our case)</li>
@@ -154,9 +164,9 @@
 	virtual social spaces. In a followup post we'll try to use it!
 </p>
 <p>
-	So when dog folks come along with their predictable request, we can say, ah yes, they want us to <em
-		>exercise our control over the space to change the rules of interaction</em
-	>, so every dog can have its day too.
+	So when dog folks come along with their predictable request, we can say, ah yes, they want us to
+	exercise our control over the space to change the rules of interaction, so every dog can have its
+	day too.
 </p>
 
 <hr />
@@ -165,6 +175,12 @@
 <p>
 	This post was informed by my work on <a href="https://github.com/feltcoop">Felt</a>
 	and many conversations with my coworker <a href="https://12mod12.com">Hamilton Reed</a>.
+</p>
+<p>
+	Special thanks to <a
+		href="https://sipa.fiu.edu/people/faculty/modern-languages/rosario-medardo.html"
+		>Medardo Rosario</a
+	> for help revising this post.
 </p>
 <p>
 	One of my primary influences on this work is "Modular Politics: Toward a Governance Layer for
@@ -180,17 +196,16 @@
 </p>
 <p>
 	I used ChatGPT (<a href="https://openai.com/">openai.com</a>) not to use its text output, but as a
-	thinking aid for developing the model beyond control and access. I found it very useful for idea
-	exploration.
+	thinking aid for developing the model beyond control and access. I found it useful for
+	accelerating idea exploration.
 </p>
 
 <hr />
 
 <h2>P.S.</h2>
 <p>
-	I wanted to use the model to generatively think through more of the possibilities available to us
-	in virtual social spaces, but the post was getting long so I'll save it for a followup. In the
-	meantime, here's some questions on my mind:
+	In a followup, I'll use the model to generatively think through more of the possibilities
+	available to us in virtual social spaces. Here's some questions on my mind:
 </p>
 <ul>
 	<li>
@@ -204,3 +219,9 @@
 	</li>
 	<li>What are the various ways we can gate public and private access?</li>
 </ul>
+<p>
+	If you'd like to discuss this with me or have any other feedback, <a
+		href="mailto:mail@ryanatkn.com?subject={post.title}">email me</a
+	>
+	or find me on Mastodon at <a href="https://hci.social/ryanatkn">@ryanatkn@hci.social</a>.
+</p>
