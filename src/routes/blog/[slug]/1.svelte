@@ -32,21 +32,25 @@
 	<li><strong>social</strong>: including multiple people</li>
 	<li><strong>space</strong>: a context containing and governing our interactions</li>
 </ul>
-<h2>The model</h2>
+<p>
+	Simply, a virtual social space is a software-mediated context of social interaction. We're all
+	familiar with them - they include our messaging apps, social media feeds, forums, and so on. By
+	modeling the virtual social space, we can more easily imagine reshaping them for our individual
+	and collective benefit.
+</p>
+<h2>The example</h2>
 <p>
 	In the software I work on, a community is composed of any number of virtual social spaces. Simple!
-	Except neither humans nor networked computers are simple.
+	Except neither humans nor networked computers are simple. To help us along, we'll analyze virtual
+	social spaces through the lens of a concrete hypothetical usecase. Let's say I have a public web
+	forum containing a specific space that has some very strict rules: participants are allowed to
+	post only on Saturday, and posts must contain pictures of cats they know personally. We'll use
+	this example to think concretely about the model.
 </p>
+<h2>The model</h2>
 <p>
-	To help us along, we'll analyze virtual social spaces through the lens of a concrete hypothetical
-	usecase. Let's say I have a public web forum containing a specific space that has some very strict
-	rules: participants are allowed to post only on Saturday, and posts must contain pictures of cats
-	they know personally.
-</p>
-<p>
-	To construct our model, we define 5 powers or abilities <a
-		href="https://wikipedia.org/wiki/Affordance">afforded</a
-	> to actors in the space. You can probably think of more, but these get us pretty far:
+	To construct our model, we define 5 powers or abilities provided to actors in the space. You can
+	probably think of more, but these get us pretty far:
 </p>
 <ol>
 	<li><strong>control</strong></li>
@@ -57,13 +61,16 @@
 </ol>
 <h3>control</h3>
 <p>
-	When I first create my forum and the cat pic space, I am given <strong>control</strong> over it by
-	the software. One manifestation of this power is the ability to name the space. I choose the
-	common and descriptive name <a href="https://mastodon.social/tags/caturday">"caturday"</a>. More
-	abstractly, control is the center around which the space exists: I, as the creator and
-	administrator of this tiny web forum world, have carved a distinct boundary of control out of the
-	infinite virtual void. The software doesn't necessarily have to grant all of that control to me,
-	but it does in this case. In our model, the control power controls the other 4 powers, naturally.
+	When I first create my forum and the space containing the cat pictures, I am given <strong
+		>control</strong
+	>
+	over it by the software. One manifestation of this power is the ability to name the space. I choose
+	the common and descriptive name
+	<a href="https://mastodon.social/tags/caturday">"Caturday"</a>. More abstractly, control is the
+	center around which the space exists: I, as the creator and administrator of this tiny web forum
+	world, have carved a distinct boundary of control out of the infinite virtual void. The software
+	doesn't necessarily have to grant all of that control to me, but it does in this case. In our
+	model, the control power controls the other 4 powers, naturally.
 </p>
 <h3>access</h3>
 <p>
@@ -72,7 +79,7 @@
 	permission" of a document. Our space is now social! I exercise my control over the space to choose
 	public access, meaning anyone is welcome, even those creepy surveillance drones disguised as
 	well-meaning people, because I'm prioritizing open participation over privacy to get more cat pics
-	and joy. Additionally, even though it's caturday, actors can <em>read</em> posts any time.
+	and joy. Additionally, even though it's Caturday, actors can <em>read</em> posts any time.
 </p>
 <h3>interaction</h3>
 <p>
