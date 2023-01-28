@@ -47,7 +47,7 @@ gro deploy
 [TypeScript](https://github.com/microsoft/TypeScript) ∙
 [ESLint](https://github.com/eslint/eslint) ∙
 [Prettier](https://github.com/prettier/prettier) ∙
-[`@feltjs/felt-ui`](https://github.com/feltjs/felt-ui) ∙
+[felt-ui](https://github.com/feltjs/felt-ui) ∙
 [Gro](https://github.com/feltjs/gro)
 & [more](package.json)
 

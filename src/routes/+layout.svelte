@@ -6,7 +6,6 @@
 
 <svelte:head>
 	<title>ryanatkn.com</title>
-	<link rel="icon" href="/favicon.png" />
 	<link
 		rel="alternate"
 		type="application/atom+xml"
