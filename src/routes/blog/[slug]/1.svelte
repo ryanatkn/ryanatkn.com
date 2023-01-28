@@ -35,7 +35,7 @@
 <h2>The model</h2>
 <p>
 	In the software I work on, a community is composed of any number of virtual social spaces. Simple!
-	Except neither humans nor networked computers are simple...
+	Except neither humans nor networked computers are simple.
 </p>
 <p>
 	To help us along, we'll analyze virtual social spaces through the lens of a concrete hypothetical
@@ -62,23 +62,22 @@
 	common and descriptive name <a href="https://mastodon.social/tags/caturday">"caturday"</a>. More
 	abstractly, control is the center around which the space exists: I, as the creator and
 	administrator of this tiny web forum world, have carved a distinct boundary of control out of the
-	infinite virtual void. The software doesn't necessarily have to grant all of that control to
-	<em>me</em>, but it does in this case. In our model, the control power controls the other 4
-	powers, naturally.
+	infinite virtual void. The software doesn't necessarily have to grant all of that control to me,
+	but it does in this case. In our model, the control power controls the other 4 powers, naturally.
 </p>
 <h3>access</h3>
 <p>
 	Now that I have control over my tiny world, I grant <strong>access</strong> to others so we can
 	enjoy it together. Access determines who can walk through the door. It's similar to the "read
 	permission" of a document. Our space is now social! I exercise my control over the space to choose
-	<em>public</em> access, meaning anyone is welcome, even those creepy surveillance drones disguised
-	as well-meaning people, because I'm prioritizing open participation over privacy to get more cat
-	pics and joy. Additionally, even though it's caturday, actors can <em>read</em> posts any time.
+	public access, meaning anyone is welcome, even those creepy surveillance drones disguised as
+	well-meaning people, because I'm prioritizing open participation over privacy to get more cat pics
+	and joy. Additionally, even though it's caturday, actors can <em>read</em> posts any time.
 </p>
 <h3>interaction</h3>
 <p>
-	We now have a publicly accessible social space, but what can people, you know, <em>do</em>? Again
-	I exercise my control, this time defining the rules of <strong>interaction</strong> in the space. It's
+	We now have a publicly accessible social space, but what can people, you know, do? Again I
+	exercise my control, this time defining the rules of <strong>interaction</strong> in the space. It's
 	like the "write permission" of a document. In the cat pic space, I define the parameters of interaction
 	such that:
 </p>
@@ -102,7 +101,7 @@
 <ul>
 	<li>view all of the posts in a single feed with the most recent at the top</li>
 	<li>view the most reacted-to posts from the most recent Saturday</li>
-	<li>view posts sorted by most all-time BIG ❤️ reactions</li>
+	<li>view posts sorted by most all-time big emoji reactions</li>
 	<li>view each Saturday in its own little sub-space, and don't show the text reactions</li>
 	<li>
 		today is Saturday! view the flurry of furry activity with random sorting, excluding posts
@@ -110,7 +109,7 @@
 	</li>
 	<li>view the posts they've reacted to, with the most recent listed first</li>
 </ul>
-<p>...and so on, deep into the kaleidoscope of human creativity.</p>
+<p>And so on, deep into the kaleidoscope of human creativity.</p>
 <p>
 	In our model, we define these meta-interactions of organizing and managing posts as <strong
 		>curation</strong
