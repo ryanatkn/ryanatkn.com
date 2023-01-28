@@ -81,11 +81,11 @@
 	I exercise my control over the space to choose public access, meaning anyone is welcome, even those
 	creepy surveillance drones disguised as well-meaning people, because I'm prioritizing open participation
 	over privacy to get more cat pics and joy. Additionally, even though we have a Saturday-themed space,
-	actors can <em>read</em> posts any time. Now that people can access it, our space is now social!
+	actors can <em>read</em> posts any time. Now that people can access it, our virtual space is social!
 </p>
 <h3>interaction</h3>
 <p>
-	We now have a publicly accessible social space, but nothing much is happening yet. <strong
+	We have a publicly accessible social space, but nothing much is happening yet. <strong
 		>Interaction</strong
 	> describes the things people can do in the space. It's like the "write permission" of a document.
 	To make Caturday live up to its name, I again exercise my control, this time defining the rules of
