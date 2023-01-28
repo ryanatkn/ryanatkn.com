@@ -160,7 +160,7 @@
 		with things we find useful for making web apps; it's used by all of our other projects
 	</li>
 	<li>
-		<a href="https://github.com/feltjs/dealt">@feltjs/dealt</a> – we haven't touched it in a minute,
+		<a href="https://github.com/feltcoop/dealt">@feltcoop/dealt</a> – we haven't touched it in a minute,
 		and there's not much there yet, but it's a fun side project to showcase how the software can be used
 	</li>
 </ul>
