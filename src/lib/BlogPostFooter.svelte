@@ -9,8 +9,8 @@
 	<a href="mailto:mail@ryanatkn.com?subject=Reply to post: {post.title}">↪ reply by email ↩</a>
 </p>
 <p>publicly? Mastodon & Fediverse:</p>
-<p>professional: <a href="https://hci.social/ryanatkn">@ryanatkn@hci.social</a></p>
-<p>coder: <a href="https://hachyderm.io/ryanatkn">@ryanatkn@hachyderm.io</a></p>
+<p>professional: <a href="https://hci.social/@ryanatkn">@ryanatkn@hci.social</a></p>
+<p>coder: <a href="https://hachyderm.io/@ryanatkn">@ryanatkn@hachyderm.io</a></p>
 
 <style>
 	p {

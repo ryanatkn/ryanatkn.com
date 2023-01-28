@@ -223,5 +223,5 @@
 	If you'd like to discuss this with me or have any other feedback, <a
 		href="mailto:mail@ryanatkn.com?subject={post.title}">email me</a
 	>
-	or find me on Mastodon at <a href="https://hci.social/ryanatkn">@ryanatkn@hci.social</a>.
+	or find me on Mastodon at <a href="https://hci.social/@ryanatkn">@ryanatkn@hci.social</a>.
 </p>
