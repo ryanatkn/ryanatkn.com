@@ -173,7 +173,7 @@
 
 <h2>Acknowledgements</h2>
 <p>
-	This post was informed by my work on <a href="https://github.com/feltcoop">Felt</a>
+	This post was informed by my work on <a href="https://github.com/feltjs">Felt</a>
 	and many conversations with my coworker <a href="https://12mod12.com">Hamilton Reed</a>.
 </p>
 <p>
