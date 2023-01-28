@@ -117,7 +117,7 @@
 	</li>
 	<li>
 		today is Saturday! view the flurry of furry activity with random sorting, excluding posts
-		they've personally reacted to
+		they've already seen
 	</li>
 </ul>
 <p>And so on, deep into the kaleidoscope of human creativity.</p>
