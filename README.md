@@ -12,12 +12,12 @@ npm i
 # then
 npm run dev
 # or
-gro dev # npm i -g @feltcoop/gro
+gro dev # npm i -g @feltjs/gro
 ```
 
 See [SvelteKit](https://github.com/sveltejs/kit),
 [Vite](https://github.com/vitejs/vite),
-and [Gro](https://github.com/feltcoop/gro) for more.
+and [Gro](https://github.com/feltjs/gro) for more.
 
 ## build
 
@@ -29,7 +29,7 @@ gro build
 
 ## deploy
 
-[Deploy](https://github.com/feltcoop/gro/blob/main/src/docs/deploy.md)
+[Deploy](https://github.com/feltjs/gro/blob/main/src/docs/deploy.md)
 (build, commit, and push) to the `deploy` branch, e.g. for GitHub Pages:
 
 ```bash
@@ -47,8 +47,8 @@ gro deploy
 [TypeScript](https://github.com/microsoft/TypeScript) ∙
 [ESLint](https://github.com/eslint/eslint) ∙
 [Prettier](https://github.com/prettier/prettier) ∙
-[Felt](https://github.com/feltcoop/felt) ∙
-[Gro](https://github.com/feltcoop/gro)
+[Felt](https://github.com/feltjs/felt) ∙
+[Gro](https://github.com/feltjs/gro)
 & [more](package.json)
 
 ## license [🐦](https://wikipedia.org/wiki/Free_and_open-source_software)

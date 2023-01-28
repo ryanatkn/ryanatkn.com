@@ -2,7 +2,7 @@
 	import {page} from '$app/stores';
 	import {goto} from '$app/navigation';
 	import {browser} from '$app/environment';
-	import Message from '@feltcoop/felt/Message.svelte';
+	import Message from '@feltjs/felt-ui/Message.svelte';
 
 	import BlogPost from '$lib/BlogPost.svelte';
 	import {Components} from '$lib/blog';

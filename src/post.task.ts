@@ -1,7 +1,7 @@
-import type {Task} from '@feltcoop/gro';
+import type {Task} from '@feltjs/gro';
 import {z} from 'zod';
-import {stripStart, stripEnd} from '@feltcoop/util/string.js';
-import {formatFile} from '@feltcoop/gro/dist/format/formatFile.js';
+import {stripStart, stripEnd} from '@feltjs/util/string.js';
+import {formatFile} from '@feltjs/gro/dist/format/formatFile.js';
 
 // TODO probably source this from `gro.config.ts` or other config
 const DEFAULT_URL = 'https://www.ryanatkn.com/blog';

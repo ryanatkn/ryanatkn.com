@@ -25,7 +25,7 @@
 			links: '<a href="https://log.ryanatkn.com/">log.ryanatkn.com</a>',
 		},
 		{
-			title: '<a href="https://felt.social">@feltcoop</a>',
+			title: '<a href="https://felt.social">@feltjs</a>',
 			description: `a <a href="https://wikipedia.org/wiki/Software_release_life_cycle">pre-alpha</a> aspiring <a href="https://platform.coop">platform co-op</a> making free and open source community software`,
 			links: `<a href="https://github.com/feltcoop">GitHub</a>, <a href="https://twitter.com/feltcoop">Twitter</a>, <a href="mailto:ryan@felt.social">ryan@felt.social</a>, <a href="mailto:team@felt.social">team@felt.social</a>`,
 		},

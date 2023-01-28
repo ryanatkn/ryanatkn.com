@@ -1,4 +1,4 @@
-import type {Gen} from '@feltcoop/gro';
+import type {Gen} from '@feltjs/gro';
 
 import {feed} from '../routes/blog/feed';
 import {toAtomXml} from '$lib/feed';

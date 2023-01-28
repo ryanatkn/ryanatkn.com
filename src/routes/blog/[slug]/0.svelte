@@ -24,9 +24,9 @@
 	(
 	<a href="https://hachyderm.io/@greatbacon">Mastodon</a>,
 	<a href="https://github.com/greatbacon">GitHub</a>) full-time for a year,
-	<a href="https://github.com/feltcoop/felt-server/graphs/contributors">since April 2021</a>. It's
+	<a href="https://github.com/feltjs/felt-server/graphs/contributors">since April 2021</a>. It's
 	been two and a half years since we first met in December 2019 and started self-funded work on
-	preproduction and <a href="https://github.com/feltcoop">peripheral projects</a>.
+	preproduction and <a href="https://github.com/feltjs">peripheral projects</a>.
 	<a href="https://www.felt.social">We</a>
 	recently started a
 	<a href="https://tinyletter.com/FeltCoop">monthly newsletter</a>
@@ -34,7 +34,7 @@
 	<a href="https://www.felt.social/toolmakersforum">Toolmakers Forum</a>. I plan to write about its
 	ideas on this blog.
 </p>
-<p><a href="https://github.com/feltcoop/felt-server">The software</a>:</p>
+<p><a href="https://github.com/feltjs/felt-server">The software</a>:</p>
 <ul>
 	<li>
 		is a toolkit and server for building and maintaining communities, publishing to the web, and
@@ -104,7 +104,7 @@
 	>)
 </p>
 <p>
-	We're calling Felt's server <a href="https://github.com/feltcoop/felt-server"
+	We're calling Felt's server <a href="https://github.com/feltjs/felt-server"
 		>"a tool for building and maintaining communities"</a
 	>.
 </p>
@@ -142,25 +142,25 @@
 <p>We have a handful of software repos, none of which are yet production ready:</p>
 <ul>
 	<li>
-		<a href="https://github.com/feltcoop/felt-server">@feltcoop/felt-server</a> – the community software
+		<a href="https://github.com/feltjs/felt-server">@feltjs/felt-server</a> – the community software
 		that's both deployable and available as a library on npm
 	</li>
 	<li>
-		<a href="https://github.com/feltcoop/felt">@feltcoop/felt</a> – reusable library of components and
-		other code for building things from simple websites to realtime interactive multiplayer experiences
-		(eventually this will include much of what's currently in @feltcoop/felt-server)
+		<a href="https://github.com/feltjs/felt-ui">@feltjs/felt-ui</a> – reusable library of components
+		and other code for building things from simple websites to realtime interactive multiplayer experiences
+		(eventually this will include much of what's currently in @feltjs/felt-server)
 	</li>
 	<li>
-		<a href="https://github.com/feltcoop/felt-template">@feltcoop/felt-template</a> – a static web app
-		template with SvelteKit, TypeScript, and Felt for quickly creating new projects - in the future it
-		will support quickly creating a custom server project, too.
+		<a href="https://github.com/feltjs/felt-template">@feltjs/felt-template</a> – a static web app template
+		with SvelteKit, TypeScript, and Felt for quickly creating new projects - in the future it will support
+		quickly creating a custom server project, too.
 	</li>
 	<li>
-		<a href="https://github.com/feltcoop/gro">@feltcoop/gro</a> – a toolkit that extends SvelteKit and
-		Vite with things we find useful for making web apps; it's used by all of our other projects
+		<a href="https://github.com/feltjs/gro">@feltjs/gro</a> – a toolkit that extends SvelteKit and Vite
+		with things we find useful for making web apps; it's used by all of our other projects
 	</li>
 	<li>
-		<a href="https://github.com/feltcoop/dealt">@feltcoop/dealt</a> – we haven't touched it in a minute,
+		<a href="https://github.com/feltjs/dealt">@feltjs/dealt</a> – we haven't touched it in a minute,
 		and there's not much there yet, but it's a fun side project to showcase how the software can be used
 	</li>
 </ul>
@@ -179,12 +179,12 @@
 	relationships with technology.
 </p>
 <p>
-	The idea is to make <a href="https://github.com/feltcoop">the software</a> we want to use, at
+	The idea is to make <a href="https://github.com/feltjs">the software</a> we want to use, at
 	<a href="https://www.felt.social">the company</a> we want to work for, providing the service we want
 	to pay for.
 </p>
 <p>
-	more at <a href="https://github.com/feltcoop">github.com/feltcoop</a>
+	more at <a href="https://github.com/feltjs">github.com/feltjs</a>
 </p>
 <hr />
 <h2>Wait the blog post isn't done?</h2>
@@ -270,7 +270,7 @@
 <p>So what does success look like?</p>
 <p>
 	The goal for sustainability is to be able to fund, and then find, three more colleagues and turn
-	our <a href="https://github.com/feltcoop/felt/blob/main/GOVERNANCE.md"
+	our <a href="https://github.com/feltjs/felt-ui/blob/main/GOVERNANCE.md"
 		>Temporary Benevolent Dictatorship</a
 	> into a real co-op. Five is the number of people required to form a Colorado cooperative; Hamilton
 	lives there and although we're a remote team, it has some of the best-developed cooperative laws in
@@ -332,7 +332,7 @@
 	resource needs that's powerful in the small, and maybe small communities are good too.
 </p>
 <blockquote>
-	Today, <a href="https://github.com/feltcoop/felt-server"><code>@feltcoop/felt-server</code></a>
+	Today, <a href="https://github.com/feltjs/felt-server"><code>@feltjs/felt-server</code></a>
 	supports only
 	<code
 		><a href="https://github.com/sveltejs/kit/tree/master/packages/adapter-node"
@@ -407,10 +407,10 @@
 <hr />
 <h2>Ok cool?</h2>
 <p>
-	find <a href="https://www.felt.social">us</a> @feltcoop on
-	<a href="https://github.com/feltcoop">GitHub</a> &
-	<a href="https://twitter.com/feltcoop">Twitter</a> &
-	<a href="https://www.youtube.com/@feltcoop">YouTube</a>, read
+	find <a href="https://www.felt.social">us</a> @feltjs on
+	<a href="https://github.com/feltjs">GitHub</a> &
+	<a href="https://twitter.com/feltjs">Twitter</a> &
+	<a href="https://www.youtube.com/@feltjs">YouTube</a>, read
 	<a href="https://tinyletter.com/FeltCoop">our monthly newsletter</a>, and look
 	<a href="https://www.felt.social/toolmakersforum">a podcast</a>
 </p>

@@ -1,6 +1,6 @@
 import {format} from 'date-fns';
-import {stripEnd, stripStart} from '@feltcoop/util/string.js';
-import {randomInt} from '@feltcoop/util/random.js';
+import {stripEnd, stripStart} from '@feltjs/util/string.js';
+import {randomInt} from '@feltjs/util/random.js';
 
 // TODO rename?
 export const formatDate = (date: string | number | Date): string =>
@@ -9,7 +9,7 @@ export const formatDate = (date: string | number | Date): string =>
 export const toPathname = (url: string, root: string): string =>
 	stripStart(url, stripEnd(root, '/'));
 
-// TODO probably upstream to `@feltcoop/util/random.js`
+// TODO probably upstream to `@feltjs/util/random.js`
 /**
  * Shuffles `array` in place.
  * @param array

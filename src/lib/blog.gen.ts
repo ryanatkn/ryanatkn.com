@@ -1,5 +1,5 @@
-import type {Gen} from '@feltcoop/gro';
-import {stripStart, stripEnd} from '@feltcoop/util/string.js';
+import type {Gen} from '@feltjs/gro';
+import {stripStart, stripEnd} from '@feltjs/util/string.js';
 
 import {feed} from '../routes/blog/feed';
 import type {FeedData} from '$lib/feed';
