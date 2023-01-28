@@ -221,8 +221,8 @@
 		model? What could it look like to have public control over the space?
 	</li>
 	<li>
-		What are the various ways we can gate public and private access? How does gating fit into this
-		model? It's different than the public/private divide!
+		How does gating fit into this model? What are the various ways we can gate public and private
+		access? And the other powers?
 	</li>
 </ul>
 <p>
