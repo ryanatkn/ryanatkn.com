@@ -149,9 +149,11 @@
 	already has the data, but explicit distribution powers enable an ecosystem more readily.
 </p>
 <h2>Conclusion</h2>
-<p>We started with the notion of control over a virtual social space, and then:</p>
+<p>We started with the idea of control over a virtual social space, and then:</p>
 <ul>
-	<li>decided who gets access (public or private)</li>
+	<li>
+		decided who gets access, public in this case (and mostly ungated, but that's another post)
+	</li>
 	<li>and what interactions are available to them</li>
 	<li>
 		and then how they're able to curate the data from those interactions, creating new metadata and
