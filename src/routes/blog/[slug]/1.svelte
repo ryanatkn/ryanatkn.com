@@ -8,7 +8,7 @@
 		date_published: '2023-01-22T21:44:17.224Z',
 		date_modified: '2023-01-28T17:20:51.259Z',
 		summary:
-			'This post attempts to model one	of the central aspects of online communities: the virtual social space.',
+			'Proposing a model for one of the central aspects of online communities: the virtual social space.',
 		tags: ['web', 'community', 'social media', 'design', 'technology', 'software'],
 	};
 </script>
@@ -21,7 +21,7 @@
 <p>
 	While working on the community software project I described in <a
 		href="{base}/blog/a-year-of-making-open-source-web-community-software">my first blog post</a
-	>, I've been wanting clarity on some concepts that sit above the code. This post attempts to model
+	>, I've wanted clarity on some concepts that sit above the code. This post proposes a model for
 	one of the central aspects of online communities: the
 	<strong>virtual social space</strong>.
 </p>
