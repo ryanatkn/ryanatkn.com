@@ -219,7 +219,10 @@
 		What mechanisms can we use to collectively exert control over each of the other powers in the
 		model? What could it look like to have public control over the space?
 	</li>
-	<li>What are the various ways we can gate public and private access?</li>
+	<li>
+		What are the various ways we can gate public and private access? How does gating fit into this
+		model? It's different than the public/private divide!
+	</li>
 </ul>
 <p>
 	If you'd like to discuss this with me or have any other feedback, <a
