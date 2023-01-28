@@ -66,10 +66,10 @@
 	One example is the ability to name the space. Given the design goals of the space, I choose the
 	common and descriptive name
 	<a href="https://mastodon.social/tags/caturday">Caturday</a>. More abstractly, control is the
-	center around which the space exists: I, as the creator and administrator of this tiny web forum
-	world, have carved a distinct boundary of control out of the infinite virtual void. The software
-	doesn't necessarily have to grant all of that control to me, but it does in this case. In our
-	model, the control power controls the other 4 powers. Naturally.
+	center around which the space exists: I, as the creator and administrator of this tiny web forum,
+	have carved a distinct boundary of control out of the infinite virtual void. The software doesn't
+	necessarily have to grant all of that control to me, but it does in this case. In our model, the
+	control power controls the other 4 powers. Naturally.
 </p>
 <h3>access</h3>
 <p>
@@ -80,7 +80,7 @@
 	I exercise my control over the space to choose public access, meaning anyone is welcome, even those
 	creepy surveillance drones disguised as well-meaning people, because I'm prioritizing open participation
 	over privacy to get more cat pics and joy. Additionally, even though we have a Saturday-themed space,
-	actors can <em>read</em> posts any time. Through access, our space is now social!
+	actors can <em>read</em> posts any time. Now that people can access it, our space is now social!
 </p>
 <h3>interaction</h3>
 <p>
@@ -104,19 +104,21 @@
 <h3>curation</h3>
 <p>
 	Now that we've defined the rules of interaction, let's talk about the meta layer of activities
-	around those interactions. When people visit the cat pic space, I want them to be able to choose
-	how they see and use the content. People may choose to:
+	around those interactions. When people visit the space with cat pictures, I want them to be able
+	to choose how they see and use the content. People may choose to:
 </p>
 <ul>
 	<li>view all of the posts in a single feed with the most recent at the top</li>
-	<li>view the most reacted-to posts from the most recent Saturday</li>
-	<li>view posts sorted by most all-time big emoji reactions</li>
-	<li>view each Saturday in its own little sub-space, and don't show the text reactions</li>
+	<li>view posts sorted by most all-time big emoji reactions, excluding the text reactions</li>
+	<li>view posts grouped by cat, so we can see each cat change over time</li>
+	<li>
+		view only the posts they've reacted to, with the most recent listed first, so they can show
+		their friend their favorites in person
+	</li>
 	<li>
 		today is Saturday! view the flurry of furry activity with random sorting, excluding posts
 		they've personally reacted to
 	</li>
-	<li>view the posts they've reacted to, with the most recent listed first</li>
 </ul>
 <p>And so on, deep into the kaleidoscope of human creativity.</p>
 <p>
@@ -126,15 +128,15 @@
 	interactions of posting and reacting. If our goal is to maximize our collaborative agency,
 	creativity, and utility (joy) within the constraints of the space, which it is in this case, we
 	want users to be able to create those views themselves, and then easily share them with others.
-	So, I exercise control over the space to grant participants powers of curation.
+	So, I exercise control over the space to grant participants various powers of curation.
 </p>
 <h3>distribution</h3>
 <p>
 	We now have posts, reactions, and all sorts of ways to view them. The final power in our model is <strong
 		>distribution</strong
 	>, the ability to communicate the space's data beyond its boundaries. In our hypothetical, we
-	explicitly support distribution in a few ways, so the joy of each post can spread wherever it's
-	wanted:
+	explicitly support distribution in a few open-ended ways, so the joy of each post can spread
+	wherever it's wanted:
 </p>
 <ul>
 	<li>social media share buttons (only to the good sites in our case)</li>
@@ -162,9 +164,9 @@
 	virtual social spaces. In a followup post we'll try to use it!
 </p>
 <p>
-	So when dog folks come along with their predictable request, we can say, ah yes, they want us to <em
-		>exercise our control over the space to change the rules of interaction</em
-	>, so every dog can have its day too.
+	So when dog folks come along with their predictable request, we can say, ah yes, they want us to
+	exercise our control over the space to change the rules of interaction, so every dog can have its
+	day too.
 </p>
 
 <hr />
@@ -188,17 +190,16 @@
 </p>
 <p>
 	I used ChatGPT (<a href="https://openai.com/">openai.com</a>) not to use its text output, but as a
-	thinking aid for developing the model beyond control and access. I found it very useful for idea
-	exploration.
+	thinking aid for developing the model beyond control and access. I found it useful for
+	accelerating idea exploration.
 </p>
 
 <hr />
 
 <h2>P.S.</h2>
 <p>
-	I wanted to use the model to generatively think through more of the possibilities available to us
-	in virtual social spaces, but the post was getting long so I'll save it for a followup. In the
-	meantime, here's some questions on my mind:
+	In a followup, I'll use the model to generatively think through more of the possibilities
+	available to us in virtual social spaces. Here's some questions on my mind:
 </p>
 <ul>
 	<li>
@@ -212,3 +213,9 @@
 	</li>
 	<li>What are the various ways we can gate public and private access?</li>
 </ul>
+<p>
+	If you'd like to discuss this with me or have any other feedback, <a
+		href="mailto:mail@ryanatkn.com?subject={post.title}">email me</a
+	>
+	or find me on Mastodon at <a href="https://hci.social/ryanatkn">@ryanatkn@hci.social</a>.
+</p>
