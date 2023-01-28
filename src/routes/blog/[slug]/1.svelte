@@ -61,32 +61,34 @@
 </ol>
 <h3>control</h3>
 <p>
-	When I first create my forum and the space containing the cat pictures, I am given <strong
-		>control</strong
-	>
-	over it by the software. One manifestation of this power is the ability to name the space. I choose
-	the common and descriptive name
-	<a href="https://mastodon.social/tags/caturday">"Caturday"</a>. More abstractly, control is the
+	<strong>Control</strong> is the manifestation of power over the space. When I first create my
+	forum and the space containing the cat pictures, the software gives me control over everything.
+	One example is the ability to name the space. Given the design goals of the space, I choose the
+	common and descriptive name
+	<a href="https://mastodon.social/tags/caturday">Caturday</a>. More abstractly, control is the
 	center around which the space exists: I, as the creator and administrator of this tiny web forum
 	world, have carved a distinct boundary of control out of the infinite virtual void. The software
 	doesn't necessarily have to grant all of that control to me, but it does in this case. In our
-	model, the control power controls the other 4 powers, naturally.
+	model, the control power controls the other 4 powers. Naturally.
 </p>
 <h3>access</h3>
 <p>
-	Now that I have control over my tiny world, I grant <strong>access</strong> to others so we can
-	enjoy it together. Access determines who can walk through the door. It's similar to the "read
-	permission" of a document. Our space is now social! I exercise my control over the space to choose
-	public access, meaning anyone is welcome, even those creepy surveillance drones disguised as
-	well-meaning people, because I'm prioritizing open participation over privacy to get more cat pics
-	and joy. Additionally, even though it's Caturday, actors can <em>read</em> posts any time.
+	Now that I have control over my tiny world, I want others to join so we can enjoy it together. <strong
+		>Access</strong
+	>
+	is the ability to enter the space. It's similar to the "read permission" of a document. For Caturday
+	I exercise my control over the space to choose public access, meaning anyone is welcome, even those
+	creepy surveillance drones disguised as well-meaning people, because I'm prioritizing open participation
+	over privacy to get more cat pics and joy. Additionally, even though we have a Saturday-themed space,
+	actors can <em>read</em> posts any time. Through access, our space is now social!
 </p>
 <h3>interaction</h3>
 <p>
-	We now have a publicly accessible social space, but what can people, you know, do? Again I
-	exercise my control, this time defining the rules of <strong>interaction</strong> in the space. It's
-	like the "write permission" of a document. In the cat pic space, I define the parameters of interaction
-	such that:
+	We now have a publicly accessible social space, but nothing much is happening yet. <strong
+		>Interaction</strong
+	> describes the things people can do in the space. It's like the "write permission" of a document.
+	To make Caturday live up to its name, I again exercise my control, this time defining the rules of
+	interaction in the space:
 </p>
 <ul>
 	<li>actors can <em>post</em> only on Saturday</li>
