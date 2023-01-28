@@ -177,6 +177,12 @@
 	and many conversations with my coworker <a href="https://12mod12.com">Hamilton Reed</a>.
 </p>
 <p>
+	Special thanks to <a
+		href="https://sipa.fiu.edu/people/faculty/modern-languages/rosario-medardo.html"
+		>Medardo Rosario</a
+	> for help revising this post.
+</p>
+<p>
 	One of my primary influences on this work is "Modular Politics: Toward a Governance Layer for
 	Online Communities" (<a href="https://arxiv.org/abs/2005.13701">arxiv.org/abs/2005.13701</a>) by
 	Nathan Schneider (<a href="https://nathanschneider.info/">nathanschneider.info</a>) and
