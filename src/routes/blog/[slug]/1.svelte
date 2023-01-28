@@ -213,8 +213,7 @@
 <ul>
 	<li>
 		We've defined some hard-to-enforce rules of interaction, like personally knowing the cat. How
-		might we go about making sure participants follow the rules to ensure we're sharing
-		authentically?
+		might we go about incentivizing or enforcing authentic participation?
 	</li>
 	<li>
 		What mechanisms can we use to collectively exert control over each of the other powers in the
