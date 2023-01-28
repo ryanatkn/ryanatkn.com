@@ -189,8 +189,8 @@
 <hr />
 <h2>Wait the blog post isn't done?</h2>
 <p>
-	I'm having difficulty summarizing the project: it's big and there's many unknowns. I'll write more
-	followup blog posts, hopefully more coherent than this one, but for now I'll add a few more
+	I'm having difficulty summarizing the project: it's big and there are many unknowns. I'll write
+	more followup blog posts, hopefully more coherent than this one, but for now I'll add a few more
 	thoughts below.
 </p>
 <hr />

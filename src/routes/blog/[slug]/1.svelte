@@ -208,7 +208,7 @@
 <h2>P.S.</h2>
 <p>
 	In a followup, I'll use the model to generatively think through more of the possibilities
-	available to us in virtual social spaces. Here's some questions on my mind:
+	available to us in virtual social spaces. Some questions on my mind:
 </p>
 <ul>
 	<li>
