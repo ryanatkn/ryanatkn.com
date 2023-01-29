@@ -8,7 +8,9 @@ body {
 }
 
 /* TODO upstream a similar style tweak to Felt */
-
+.markup h1 {
+	margin-top: var(--spacing_xl3) !important;
+}
 .markup h2 {
 	margin-top: var(--spacing_xl3);
 }
