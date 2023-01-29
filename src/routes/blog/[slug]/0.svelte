@@ -146,6 +146,10 @@
 		that's both deployable and available as a library on npm
 	</li>
 	<li>
+		<a href="https://github.com/feltcoop/felt.social">Felt.social</a> – an aspiring platform co-op to
+		support communities, operates instances of felt-server
+	</li>
+	<li>
 		<a href="https://github.com/feltjs/felt-ui">@feltjs/felt-ui</a> – reusable library of components
 		and other code for building things from simple websites to realtime interactive multiplayer experiences
 		(eventually this will include much of what's currently in @feltjs/felt-server)
@@ -158,10 +162,6 @@
 	<li>
 		<a href="https://github.com/feltjs/gro">@feltjs/gro</a> – a toolkit that extends SvelteKit and Vite
 		with things we find useful for making web apps; it's used by all of our other projects
-	</li>
-	<li>
-		<a href="https://github.com/feltcoop/felt.social">Felt.social</a> – an aspiring platform co-op to
-		support communities
 	</li>
 	<li>
 		<a href="https://github.com/feltcoop/dealt">@feltcoop/dealt</a> – we haven't touched it in a minute,
