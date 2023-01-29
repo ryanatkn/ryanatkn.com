@@ -25,16 +25,16 @@
 	<a href="https://hachyderm.io/@greatbacon">Mastodon</a>,
 	<a href="https://github.com/greatbacon">GitHub</a>) full-time for a year,
 	<a href="https://github.com/feltjs/felt-server/graphs/contributors">since April 2021</a>. It's
-	been two and a half years since we first met in December 2019 and started self-funded work on
+	been two and a half years since we first met in December 2019 and started self-funded part-work on
 	preproduction and <a href="https://github.com/feltjs">peripheral projects</a>.
-	<a href="https://www.felt.social">We</a>
+	<a href="https://www.felt.social/">We</a>
 	recently started a
 	<a href="https://tinyletter.com/FeltCoop">monthly newsletter</a>
-	and (gulp) a podcast called
-	<a href="https://www.felt.social/toolmakersforum">Toolmakers Forum</a>. I plan to write about its
-	ideas on this blog.
+	and a podcast produced by Hamilton called
+	<a href="https://www.felt.social/toolmakersforum">Toolmakers Forum</a>. I plan to write about
+	Felt's ideas on this blog.
 </p>
-<p><a href="https://github.com/feltjs/felt-server">The software</a>:</p>
+<p>The main software <a href="https://github.com/feltjs/felt-server">felt-server</a>:</p>
 <ul>
 	<li>
 		is a toolkit and server for building and maintaining communities, publishing to the web, and
@@ -81,8 +81,8 @@
 	</li>
 	<li>
 		a <a href="https://svelte.dev/">composable text language</a> with a rich vocabulary that can be used
-		to write chat messages, forum and blog posts, todo items, and so on, and also construct both social
-		spaces and the entire client UI
+		to write chat messages, blog posts, forum replies, todo items, and so on, and also construct both
+		social spaces and the entire client UI
 	</li>
 	<li>
 		easy-to-use plugins, mods, modules, etc, made by us at Felt and hopefully a community of
@@ -138,7 +138,7 @@
 		>10th</a
 	> podcast episodes go into more detail on the main ideas.
 </p>
-<h2>The projects:</h2>
+<h2>The projects</h2>
 <p>We have a handful of software repos, none of which are yet production ready:</p>
 <ul>
 	<li>
@@ -164,7 +164,7 @@
 		and there's not much there yet, but it's a fun side project to showcase how the software can be used
 	</li>
 </ul>
-<h2>In summary:</h2>
+<h2>In summary</h2>
 <p>As software users, we want easy-to-use and powerful tools that we can tailor to our needs.</p>
 <p>
 	As platform users, we want a professional, trusted, incentives-aligned operator, and we'll pay for
@@ -180,11 +180,12 @@
 </p>
 <p>
 	The idea is to make <a href="https://github.com/feltjs">the software</a> we want to use, at
-	<a href="https://www.felt.social">the company</a> we want to work for, providing the service we want
+	<a href="https://www.felt.social/">the company</a> we want to work for, providing the service we want
 	to pay for.
 </p>
 <p>
-	more at <a href="https://github.com/feltjs">github.com/feltjs</a>
+	more at <a href="https://github.com/feltjs">github.com/feltjs</a> and
+	<a href="https://github.com/feltcoop">github.com/feltcoop</a>
 </p>
 <hr />
 <h2>Wait the blog post isn't done?</h2>
@@ -194,12 +195,12 @@
 	thoughts below.
 </p>
 <hr />
-<h2>Everyone can be a toolmaker:</h2>
+<h2>Everyone can be a toolmaker</h2>
 <p>
 	Instead of being limited to filling digital boxes designed by tech companies, anyone should be
-	able to design their own box. Or forget boxes even, we're in the digital realms. We see examples
-	of what's possible in all sorts of products over decades, especially in games, and I believe
-	there's fresh opportunities to do this with web tech.
+	able to design their own box. Or forget boxes even, we're digitized. We see examples of what's
+	possible in all sorts of products over decades, especially in games, and I believe there's fresh
+	opportunities to do this with web tech.
 </p>
 <p>
 	We want to build software tools that anyone can use to explore the vast terrain of collaborative
@@ -208,7 +209,7 @@
 	everyone benefits.
 </p>
 <hr />
-<h2>Sharing spaces with others:</h2>
+<h2>Sharing spaces with others</h2>
 <p>
 	One aspect of community software that's full of interesting opportunities is how to govern shared
 	spaces: things like exercising power, communicating and enforcing rules, nudging norms, making
@@ -219,7 +220,7 @@
 	We're collaborating with PhD student Jane Im (<a href="https://imjane.net/">imjane.net</a>) on
 	designs including research-backed user-driven governance. Her paper "Yes: Affirmative Consent as a
 	Theoretical Framework for Understanding and Imagining Social Platforms" (<a
-		href="https://consentful.systems">consentful.systems</a
+		href="https://consentful.systems/">consentful.systems</a
 	>), which credits <a href="https://www.consentfultech.io/">The Consentful Tech Project</a>, has
 	been a major source of inspiration for how we think about designing software.
 </p>
@@ -233,27 +234,30 @@
 	and <a href="https://policykit.org/">PolicyKit</a> in mind.
 </p>
 <hr />
-<h2>Business and ownership:</h2>
+<h2>Business and ownership</h2>
 <p>
-	<a href="https://www.felt.social">felt.social</a> is a separate entity from Felt the software
-	project. We haven't done the legal work to make it official, but the Felt project trademarks and
+	<a href="https://www.felt.social/">Felt.social</a> (<a href="https://github.com/feltcoop"
+		>@feltcoop@github.com</a
+	>) is a separate entity from <a href="https://www.felt.dev/">Felt</a> the software project (<a
+		href="https://github.com/feltjs">@feltjs@github.com</a
+	>). We haven't done the legal work to make it official, but the Felt project trademarks and
 	domains (like <a href="{base}/felt.png">the green heart logo</a> and
-	<a href="https://www.felt.dev">felt.dev</a>) will be owned and managed by some kind of nonprofit
+	<a href="https://www.felt.dev/">felt.dev</a>) will be owned and managed by some kind of nonprofit
 	entity, not the
-	<a href="https://www.felt.social">felt.social</a> co-op. The co-op is just one stakeholder from the
+	<a href="https://www.felt.social/">Felt.social</a> co-op. The co-op is just one stakeholder from the
 	perspective of governing the Felt project. This is a commitment to the public open source community
 	that these are community assets.
 </p>
 <p>
-	<strong>felt.social business model</strong>: no ads, no investors (so we need a real busines
+	<strong>Felt.social business model</strong>: no ads, no investors (so we need a real busines
 	model), no crypto, and the software is free and fully open source (<a
 		href="https://wikipedia.org/wiki/MIT_License">permissively licensed</a
 	>, not "<a href="https://wikipedia.org/wiki/Open-core_model">open core</a>") - users pay for
 	service and if it's sustainable we'll creatively subsidize users for more equitable access
 </p>
 <p>
-	<strong>felt.social ownership/control</strong>: self-funded worker co-op with plans to become a
-	<a href="https://platform.coop">platform co-op</a>, is forprofit but co-op could choose to become
+	<strong>Felt.social ownership/control</strong>: self-funded worker co-op with plans to become a
+	<a href="https://platform.coop/">platform co-op</a>, is forprofit but co-op could choose to become
 	a nonprofit (this seems likely? we just don't know yet, and we promise we won't sell out our
 	community for a bigmoney #exit)
 </p>
@@ -269,8 +273,8 @@
 </p>
 <p>So what does success look like?</p>
 <p>
-	The goal for sustainability is to be able to fund, and then find, three more colleagues and turn
-	our <a href="https://github.com/feltjs/felt-ui/blob/main/GOVERNANCE.md"
+	The goal for sustainability is to be able to find and fund three more colleagues and turn our <a
+		href="https://github.com/feltjs/felt-ui/blob/main/GOVERNANCE.md"
 		>Temporary Benevolent Dictatorship</a
 	> into a real co-op. Five is the number of people required to form a Colorado cooperative; Hamilton
 	lives there and although we're a remote team, it has some of the best-developed cooperative laws in
@@ -285,22 +289,22 @@
 	capably, while enjoying the process, focusing on principles, and building good relationships.
 </p>
 <hr />
-<h2>Tech notes:</h2>
+<h2>Tech notes</h2>
 <p>
 	We tried to be thoughtful about our tech stack given the assumption that we'll be in the
 	JS+node+npm ecosystem. We chose the web because we think it's the best way to deliver the UX we
 	want to the most people, and we chose these specific technologies because of fit, familiarity, and
 	productivity.
 </p>
-<h3>on the shoulders of giants on the backs of turtles:</h3>
+<h3>on the shoulders of giants on the backs of turtles</h3>
 <p>the Web is everywhere and has vast unrealized potential</p>
-<p>Node, TypeScript, Postgres, and nginx are productive and solid</p>
+<p>Node, TypeScript, Postgres, nginx, and Linux are productive and solid</p>
 <p>
 	Svelte, SvelteKit, and Vite have been a fantastic set of tools for making UIs. We don't yet make
 	full use of SvelteKit's features, but we feel highly productive and literally delighted working
 	with it, and its flexibility is a wonder.
 </p>
-<h3>customizable and extensible:</h3>
+<h3>customizable and extensible</h3>
 <p>
 	Both the server and clients are open source and our APIs are open, so clients can be modified or
 	created from scratch. We'll try to maximize the freedoms of users and developers, but security and
@@ -312,7 +316,7 @@
 	caching, and thanks to SvelteKit we should be able to deliver good experiences in many cases with fast
 	loadtimes and minimal or zero JS.
 </p>
-<h3>scaling (and not):</h3>
+<h3>scaling (and not)</h3>
 <p>
 	Our focus on "small communities" relates to a potentially deflating fact about our software: it
 	doesn't scale to large numbers of people or some kinds of heavy load. Felt can't be the best
@@ -353,7 +357,7 @@
 	investing a lot in particular parts of the tech up front, trying to plan for the long run to
 	maximize power for the user.
 </p>
-<h3 id="interop">interop and decentralization:</h3>
+<h3 id="interop">interop and decentralization</h3>
 <p>
 	Giving users choices is a principle I want to strive for, and that includes <a
 		href="https://www.eff.org/deeplinks/2019/10/adversarial-interoperability"
@@ -405,12 +409,23 @@
 	my own feet, don't you<a href="https://wikipedia.org/wiki/Golden_Rule">?</a>
 </blockquote>
 <hr />
-<h2>Ok cool?</h2>
-<p>
-	find <a href="https://www.felt.social">us</a> @feltjs on
-	<a href="https://github.com/feltjs">GitHub</a> &
-	<a href="https://twitter.com/feltjs">Twitter</a> &
-	<a href="https://www.youtube.com/@feltjs">YouTube</a>, read
-	<a href="https://tinyletter.com/FeltCoop">our monthly newsletter</a>, and look
-	<a href="https://www.felt.social/toolmakersforum">a podcast</a>
-</p>
+<h2>Find us</h2>
+<ul>
+	<li>
+		@feltjs on
+		<a href="https://github.com/feltjs">GitHub</a> &
+		<a href="https://www.npmjs.com/org/feltjs">npm</a>
+	</li>
+	<li>
+		@feltcoop on
+		<a href="https://github.com/feltcoop">GitHub</a>,
+		<a href="https://www.npmjs.com/org/feltcoop">npm</a>,
+		<a href="https://twitter.com/feltcoop">Twitter</a> &
+		<a href="https://www.youtube.com/@feltcoop">YouTube</a>
+	</li>
+	<li>
+		read
+		<a href="https://tinyletter.com/FeltCoop">our monthly newsletter</a> and look
+		<a href="https://www.felt.social/toolmakersforum">a podcast</a>
+	</li>
+</ul>
