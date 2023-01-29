@@ -78,7 +78,7 @@
 		>Access</strong
 	>
 	is the ability to enter the space. It's similar to the "read permission" of a document. For Caturday
-	I exercise my control over the space to choose public access, meaning anyone is welcome, even those
+	I exercise my control over the space to choose public access, meaning everyone is welcome, even those
 	creepy surveillance drones disguised as well-meaning people, because I'm prioritizing open participation
 	over privacy to get more cat pics and joy. Additionally, even though we have a Saturday-themed space,
 	actors can <em>read</em> posts any time. Now that people can access it, our virtual space is social!
