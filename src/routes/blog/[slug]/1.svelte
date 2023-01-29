@@ -228,5 +228,6 @@
 	If you'd like to discuss this with me or have any other feedback, <a
 		href="mailto:mail@ryanatkn.com?subject={post.title}">email me</a
 	>
-	or find me on Mastodon at <a href="https://hci.social/@ryanatkn">@ryanatkn@hci.social</a>.
+	or reply to <a href="https://hci.social/@ryanatkn">me</a> or
+	<a href="https://hci.social/@ryanatkn/109768104377997044">the thread</a> on Mastodon.
 </p>
