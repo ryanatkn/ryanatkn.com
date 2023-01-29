@@ -211,7 +211,7 @@
 		href="mailto:mail@ryanatkn.com?subject={post.title}">email me</a
 	>
 	or reply on Mastodon to <a href="https://hci.social/@ryanatkn">me</a> or
-	<a href="https://hci.social/@ryanatkn/109768104377997044">the thread</a>.
+	<a href="https://hci.social/@ryanatkn/109768104377997044">the post's thread</a>.
 </p>
 
 <p>
