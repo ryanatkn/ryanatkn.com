@@ -6,15 +6,15 @@
 
 <div class="blog-post-footer">
 	<div class="panel markup">
-		<p class="email">
-			<span
-				><a href="mailto:mail@ryanatkn.com?subject=Reply to post: {post.title}">↪ reply by email</a>
-				or find me</span
-			>
-			<span>on Mastodon and the Fediverse:</span>
+		<p>
+			<span> find me on Mastodon and the Fediverse:</span>
 			<br />
-			<span><a href="https://hci.social/@ryanatkn">@ryanatkn@hci.social</a> (professional)</span>
-			<span><a href="https://hachyderm.io/@ryanatkn">@ryanatkn@hachyderm.io</a> (coder)</span>
+			<a href="https://hci.social/@ryanatkn">@ryanatkn@hci.social</a> (professional)
+			<br />
+			<a href="https://hachyderm.io/@ryanatkn">@ryanatkn@hachyderm.io</a> (coder)
+			<br />
+			or
+			<a href="mailto:mail@ryanatkn.com?subject=Reply to post: {post.title}">↪ reply by email</a>
 		</p>
 	</div>
 </div>
@@ -29,8 +29,5 @@
 	.panel {
 		width: auto;
 		padding: var(--spacing_lg);
-	}
-	span {
-		white-space: nowrap;
 	}
 </style>
