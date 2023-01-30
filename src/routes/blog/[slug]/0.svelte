@@ -73,10 +73,10 @@
 	instance)
 </blockquote>
 <p>
-	Fullstack customization is key to why I want to work on Felt, but it has a lot of unknowns and we
-	need to implement it to understand it. For devs, it means we'll have open source components,
-	clients, and servers that are designed to be extended and plugged and swapped. For endusers it
-	means:
+	Fullstack customization (name pending) is key to why I want to work on Felt, but it has a lot of
+	unknowns and we need to implement it to understand it. For devs, it means we'll have open source
+	components, clients, and servers that are designed to be extended and plugged and swapped. For
+	endusers it means:
 </p>
 <ul>
 	<li>
