@@ -207,10 +207,7 @@
 
 <h2>P.S.</h2>
 <p><a href="https://hci.social/@ryanatkn/109768104377997044">Mastodon/Fediverse thread</a></p>
-<p>
-	In a followup, I'll use the model to generatively think through more of the possibilities
-	available to us in virtual social spaces. Some questions on my mind:
-</p>
+<p>In a followup, I'll try to do something useful with the model. Some questions on my mind:</p>
 <ul>
 	<li>
 		We've defined some hard-to-enforce rules of interaction, like personally knowing the cat. How
