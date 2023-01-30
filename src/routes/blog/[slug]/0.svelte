@@ -359,11 +359,11 @@
 	ability to handle massive amounts of data, and we'll improve various kinds of scaling over time.
 </p>
 <p>
-	Even though our code isn't pushing the boundaries of performance and enterprise readiness, we're
-	trying to write it modularly and with good principles, so hopefully it evolves gracefully and
-	enables better tools to be built on its foundations. We're cutting a lot of corners but also
-	investing a lot in particular parts of the tech up front, trying to plan for the long run to
-	maximize power for the user.
+	Even though our code isn't pushing the boundaries of gamedev-level performance and enterprise
+	readiness, we're trying to write it modularly and with good principles, so hopefully it evolves
+	gracefully and enables better tools to be built on its foundations. We're cutting a lot of corners
+	but also investing a lot in particular parts of the tech up front, trying to plan for the long run
+	to maximize power for the user.
 </p>
 <h3 id="interop">interop and decentralization</h3>
 <p>
