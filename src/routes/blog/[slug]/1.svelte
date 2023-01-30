@@ -210,7 +210,7 @@
 	If you'd like to discuss this with me or have any other feedback, <a
 		href="mailto:mail@ryanatkn.com?subject={post.title}">email me</a
 	>
-	or reply on Mastodon to <a href="https://hci.social/@ryanatkn">me</a> or
+	or reply on Mastodon/Fediverse to <a href="https://hci.social/@ryanatkn">me</a> or
 	<a href="https://hci.social/@ryanatkn/109768104377997044">the post's thread</a>.
 </p>
 
