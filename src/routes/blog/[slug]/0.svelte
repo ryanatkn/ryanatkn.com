@@ -109,7 +109,7 @@
 </p>
 <ul>
 	<li>easily selfhosted, targeting the low end VPS tier (~$4/mo)</li>
-	<li>uses tech like Postgres, Node, TypeScript, Svelte, SvelteKit, and websockets</li>
+	<li>uses tech like Postgres, Node, TypeScript, Svelte, and SvelteKit</li>
 	<li>we want to use it personally and make stuff with it</li>
 	<li>we're using it professionally to build itself under democratic control</li>
 	<li>
