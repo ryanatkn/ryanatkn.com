@@ -33,9 +33,9 @@
 	<li><strong>space</strong>: a context containing and governing our interactions</li>
 </ul>
 <p>
-	Simply, a virtual social space is a software-mediated context of social interaction. We're all
-	familiar with them - they include our messaging apps, social media feeds, forums, and so on. By
-	modeling the virtual social space, we can more easily imagine reshaping them for our individual
+	Simply, a virtual social space is a software-mediated context of multiplayer interaction. We're
+	all familiar with them - they include our messaging apps, social media feeds, forums, and so on.
+	By modeling the virtual social space, we can more easily imagine reshaping them for our individual
 	and collective benefit.
 </p>
 <h2>The example</h2>
