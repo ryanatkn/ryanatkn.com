@@ -206,14 +206,7 @@
 <hr />
 
 <h2>P.S.</h2>
-<p>
-	If you'd like to discuss this with me or have any other feedback, <a
-		href="mailto:mail@ryanatkn.com?subject={post.title}">email me</a
-	>
-	or reply on Mastodon/Fediverse to <a href="https://hci.social/@ryanatkn">me</a> or
-	<a href="https://hci.social/@ryanatkn/109768104377997044">the post's thread</a>.
-</p>
-
+<p><a href="https://hci.social/@ryanatkn/109768104377997044">Mastodon/Fediverse thread</a></p>
 <p>
 	In a followup, I'll use the model to generatively think through more of the possibilities
 	available to us in virtual social spaces. Some questions on my mind:
