@@ -404,8 +404,7 @@
 	We want to be good citizens of open standards, not just do our own thing detached from open
 	ecosystems, but we have very specific ideas of what we want to build for small communities, and
 	federated tech isn't optimal for today's goals. I personally think decentralized technologies are
-	the future and I would love to help Felt be compatible with standard protocols once we have our
-	desired UX.
+	the future and I would want to help Felt move with the times.
 </p>
 <blockquote>
 	"decentralized" means a lot of things, and while I think it's a broadly inevitable future, I
