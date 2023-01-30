@@ -18,11 +18,18 @@
 </script>
 
 <p>
-	I've been building an open source web project focused on community software with <a
-		href="https://12mod12.com/">Hamilton Reed</a
+	<a href="https://www.felt.dev/">
+		<img
+			style:float="right"
+			style:width="100px"
+			src="{base}/felt.png"
+			alt="a microscopic-fiber-textured green heart with the word felt cut out"
+			title="felt.dev"
+		/></a
 	>
-	(
-	<a href="https://hachyderm.io/@greatbacon">Mastodon</a>,
+	I've been building an open source web project focused on community software with
+	<a href="https://12mod12.com/">Hamilton Reed</a>
+	(<a href="https://hachyderm.io/@greatbacon">Mastodon</a>,
 	<a href="https://github.com/greatbacon">GitHub</a>) full-time for a year,
 	<a href="https://github.com/feltjs/felt-server/graphs/contributors">since April 2021</a>. It's
 	been two and a half years since we first met in December 2019 and started self-funded part-work on
