@@ -154,7 +154,7 @@
 		support communities, operates instances of felt-server
 	</li>
 	<li>
-		<a href="https://github.com/feltjs/felt-ui">@feltjs/felt-ui</a> – reusable library of styles, components,
+		<a href="https://github.com/feltjs/felt-ui">@feltjs/felt-ui</a> – a library with styles, Svelte components,
 		and other code for building things from simple websites to realtime interactive multiplayer experiences
 		(eventually this will include much of what's currently in @feltjs/felt-server)
 	</li>
