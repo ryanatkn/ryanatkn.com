@@ -192,7 +192,7 @@
 	colleagues.
 </p>
 <p>
-	My thinking on this subject is rooted in the perspective of consent for all involved parties,
+	My thinking on this subject is rooted in the perspective of consent for all involved actors,
 	informed by the paper "Yes: Affirmative Consent as a Theoretical Framework for Understanding and
 	Imagining Social Platforms" (<a href="https://consentful.systems">consentful.systems</a>) by Jane
 	Im (<a href="https://imjane.net/">imjane.net</a>) and colleagues.
