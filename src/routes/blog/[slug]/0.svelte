@@ -33,10 +33,8 @@
 	<a href="https://github.com/greatbacon">GitHub</a>) full-time for a year,
 	<a href="https://github.com/feltjs/felt-server/graphs/contributors">since April 2021</a>. It's
 	been two and a half years since we first met in December 2019 and started self-funded part-time
-	work on preproduction and <a href="https://github.com/feltjs">peripheral projects</a>.
-	<a href="https://www.felt.social/">We</a>
-	recently started a
-	<a href="https://tinyletter.com/FeltCoop">monthly newsletter</a>
+	work on preproduction and <a href="https://github.com/feltjs">peripheral projects</a>. We recently
+	started a <a href="https://tinyletter.com/FeltCoop">monthly newsletter</a>
 	and a podcast produced by Hamilton called
 	<a href="https://www.felt.social/toolmakersforum">Toolmakers Forum</a>. I plan to write about
 	Felt's ideas on this blog.
