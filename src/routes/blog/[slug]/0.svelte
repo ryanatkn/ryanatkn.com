@@ -113,9 +113,9 @@
 	<li>we want to use it personally and make stuff with it</li>
 	<li>we're using it professionally to build itself under democratic control</li>
 	<li>
-		the software project will be a nonprofit and we plan for the operator to become a <a
-			href="https://platform.coop">platform co-op</a
-		>
+		<a href="https://www.felt.dev/">the software project</a> will be a nonprofit and we plan for
+		<a href="https://www.felt.social/">the operator</a>
+		to become a <a href="https://platform.coop">platform co-op</a>
 	</li>
 </ul>
 <p>
