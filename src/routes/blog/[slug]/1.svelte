@@ -183,7 +183,7 @@
 	Special thanks to <a
 		href="https://sipa.fiu.edu/people/faculty/modern-languages/rosario-medardo.html"
 		>Medardo Rosario</a
-	> for help revising this post.
+	> for help with revisions.
 </p>
 <p>
 	One of my primary influences on this work is "Modular Politics: Toward a Governance Layer for
