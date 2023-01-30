@@ -282,7 +282,7 @@
 <p>So what does success look like?</p>
 <p>
 	The goal for sustainability is first to pay our own bills, then find and fund three more
-	colleagues and turn our <a href="https://github.com/feltjs/felt-ui/blob/main/GOVERNANCE.md"
+	colleagues and turn our <a href="https://github.com/feltjs/felt/blob/main/GOVERNANCE.md"
 		>Temporary Benevolent Dictatorship</a
 	> into a real co-op. Five is the number of people required to form a Colorado cooperative; Hamilton
 	lives there and although we're a remote team, it has some of the best-developed cooperative laws in
