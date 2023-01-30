@@ -9,9 +9,9 @@
 		<p class="email">
 			<span
 				><a href="mailto:mail@ryanatkn.com?subject=Reply to post: {post.title}">↪ reply by email</a>
-				or contact me</span
+				or find me</span
 			>
-			<span> on Mastodon and the Fediverse:</span>
+			<span>on Mastodon and the Fediverse:</span>
 			<br />
 			<span><a href="https://hci.social/@ryanatkn">@ryanatkn@hci.social</a> (professional)</span>
 			<span><a href="https://hachyderm.io/@ryanatkn">@ryanatkn@hachyderm.io</a> (coder)</span>
