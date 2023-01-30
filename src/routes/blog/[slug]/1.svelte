@@ -206,7 +206,11 @@
 <hr />
 
 <h2>P.S.</h2>
-<p><a href="https://hci.social/@ryanatkn/109768104377997044">Mastodon/Fediverse thread</a></p>
+<p>
+	for more see <a href="https://hci.social/@ryanatkn/109768104377997044"
+		>the Mastodon/Fediverse thread</a
+	>
+</p>
 <p>In a followup, I'll try to do something useful with the model. Some questions on my mind:</p>
 <ul>
 	<li>
