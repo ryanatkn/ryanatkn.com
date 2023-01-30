@@ -50,8 +50,7 @@
 	</li>
 	<li>is designed for small communities</li>
 	<li>
-		is multipurpose, so the same toolkit can be used for many kinds of communities along with
-		standalone websites
+		is multipurpose, so the same toolkit can be used for many kinds of communities and websites
 	</li>
 	<li>
 		is open source and designed for fullstack customization, which means devs and endusers have
