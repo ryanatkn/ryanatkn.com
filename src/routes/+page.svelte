@@ -1,9 +1,7 @@
 <script lang="ts">
 	import Breadcrumbs from '@feltjs/felt-ui/Breadcrumbs.svelte';
 
-	import Header from '$lib/Header.svelte';
-	import Footer from '$lib/Footer.svelte';
-	import PersonalStatement from '$lib/PersonalStatement.svelte';
+	import PersonalStatement from './PersonalStatement.svelte';
 	import Favicon from '$lib/Favicon.svelte';
 </script>
 
@@ -11,31 +9,17 @@
 	<title>ryanatkn.com</title>
 </svelte:head>
 
-<main>
-	<Header />
-	<div class="column markup padded-md">
-		<PersonalStatement />
-	</div>
-	<Breadcrumbs
-		><div class="linkpath">
-			<Favicon />
-			<div class="url">ryanatkn.com</div>
-		</div></Breadcrumbs
-	>
-	<Footer />
-</main>
+<div class="column markup padded-md">
+	<PersonalStatement />
+</div>
+<Breadcrumbs
+	><div class="linkpath">
+		<Favicon />
+		<div class="url">ryanatkn.com</div>
+	</div></Breadcrumbs
+>
 
 <style>
-	main {
-		min-height: 100%;
-		width: 100%;
-		position: relative;
-		/* TODO should these be on `.column` ? */
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-	}
 	.column {
 		flex: 1;
 		margin-bottom: var(--spacing_xl3);
