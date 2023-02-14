@@ -27,7 +27,6 @@
 		align-items: center;
 	}
 	.panel {
-		width: auto;
 		padding: var(--spacing_lg);
 	}
 </style>
