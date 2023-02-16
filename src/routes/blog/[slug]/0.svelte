@@ -58,7 +58,7 @@
 		is multipurpose, so the same toolkit can be used for many kinds of communities and websites
 	</li>
 	<li>
-		is open source and designed for fullstack customization, which means devs and endusers have
+		is open source and designed for fullstack customization, which means devs and end-users have
 		proper access and power over their UX and systems and code, and we bridge more of the gap
 		between programming and using
 	</li>
@@ -76,7 +76,7 @@
 	Fullstack customization is key to why I want to work on Felt, but it has a lot of unknowns and we
 	need to implement it to understand it. (name pending - maybe "web engine" is a helpful framing)
 	For devs, it means we'll have open source components, clients, and servers that are designed to be
-	extended and plugged and swapped. For endusers it means:
+	extended and plugged and swapped. For end-users it means:
 </p>
 <ul>
 	<li>
@@ -180,7 +180,8 @@
 </p>
 <p>As service providers, we want to build reliable orgs to operate infra to help users succeed.</p>
 <p>
-	As devs, we want to build great software for people, usually prioritizing endusers over operators.
+	As devs, we want to build great software for people, usually prioritizing end-users over
+	operators.
 </p>
 <p>
 	As toolmakers we want to help users bring their own visions to life and support beneficial
@@ -225,7 +226,7 @@
 	has distinct needs.
 </p>
 <p>
-	We're collaborating with PhD student Jane Im (<a href="https://imjane.net/">imjane.net</a>) on
+	We're collaborating with PhD candidate Jane Im (<a href="https://imjane.net/">imjane.net</a>) on
 	designs including research-backed user-driven governance. Her paper "Yes: Affirmative Consent as a
 	Theoretical Framework for Understanding and Imagining Social Platforms" (<a
 		href="https://consentful.systems/">consentful.systems</a
