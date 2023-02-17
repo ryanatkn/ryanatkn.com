@@ -44,9 +44,10 @@
 				a <em>lot</em>.
 			</li>
 			<li>
-				My work drive stops when I don't believe my work contributes towards a more just society. To
-				that end <a href="https://www.felt.social/">Felt.social</a> is a co-owned platform without ads,
-				investors, or other major compromises, and almost everything I code is open source.
+				My work drive stops when I don't believe my work contributes towards a more just and
+				equitable society. To that end <a href="https://www.felt.social/">Felt.social</a> is a co-owned
+				platform without ads, investors, or other major compromises, and almost everything I code is
+				open source.
 			</li>
 			<li>
 				here's an ongoing attempt to credit <a href="/influences">my influences</a>
