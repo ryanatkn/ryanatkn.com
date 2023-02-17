@@ -35,9 +35,8 @@
 			<li>
 				My interest in making games lives on as a hobby in <a
 					href="https://www.cosmicplayground.org/">cosmicplayground.org</a
-				>
-				and
-				<a href="https://www.dealt.dev/">dealt.dev</a>.
+				>, <a href="https://www.dealt.dev/">dealt.dev</a>, and
+				<a href="https://github.com/ryanatkn">others</a>.
 			</li>
 			<li>
 				From my experience with games, I care more about performance than most, but I'm no expert.
