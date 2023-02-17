@@ -24,6 +24,7 @@
 		{name: 'Rich Hickey', url: 'https://wikipedia.org/wiki/Rich_Hickey'},
 		{name: 'John Resig', url: 'https://johnresig.com/'},
 		{name: 'Mario Gutierrez', url: 'https://github.com/mgutz', coworker: true},
+		{name: 'Grant Farwell', url: 'https://www.linkedin.com/in/grantfarwell', coworker: true},
 		{name: 'Ryan Dahl', url: 'https://wikipedia.org/wiki/Ryan_Dahl'},
 		{name: 'Jeremy Ashkenas', url: 'https://wikipedia.org/wiki/Jeremy_Ashkenas'},
 		{name: 'Douglas Crockford', url: 'https://wikipedia.org/wiki/Douglas_Crockford'},

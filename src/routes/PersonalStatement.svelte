@@ -1,4 +1,6 @@
 <script lang="ts">
+	import ContactInfo from '$routes/ContactInfo.svelte';
+
 	interface ProjectInfo {
 		title: string;
 		description: string;
@@ -40,11 +42,6 @@
 				'hobby project for fun and learning, <em>"tools and toys for expanding minds"</em>',
 			links: '<a href="https://github.com/ryanatkn/cosmicplayground">GitHub</a>',
 		},
-		{
-			title: '<a href="/influences">my influences</a>',
-			description: 'an ongoing attempt to credit my influences',
-			links: '<a href="/influences">/influences</a>',
-		},
 	];
 </script>
 
@@ -57,50 +54,21 @@
 		</p>
 	</blockquote>
 	<p>
-		My main skill is coding frontend web apps and I also do some backend and database programming. I
-		enjoy trying to make powerful tools that are easy to use, and I have a geeky interest in user
-		interfaces and social systems. I work on open source software both as a full-time profession and
-		as a hobby.
+		My main skill is coding frontend web apps and I also do some backend programming. I enjoy trying
+		to make powerful tools that are easy to use, and I have a geeky interest in user interfaces and
+		social systems. I work on open source software both as a full-time profession and hobby. Here's <a
+			href="/about">more about me</a
+		>.
 	</p>
 </section>
 
 <section class="panel">
-	<h2>Contact</h2>
-	<ul>
-		<li>
-			<a href="mailto:mail@ryanatkn.com">mail@ryanatkn.com</a>
-		</li>
-		<li>
-			public social media:
-			<ul>
-				<li>
-					@ryanatkn on
-					<a rel="me" href="https://github.com/ryanatkn">GitHub</a>,
-					<a rel="me" href="https://www.linkedin.com/in/ryanatkn">LinkedIn</a>, and
-					<a rel="me" href="https://lobste.rs/u/ryanatkn">Lobste.rs</a>
-				</li>
-				<li>
-					Mastodon coding account: <a rel="me" href="https://hachyderm.io/@ryanatkn"
-						>@ryanatkn@hachyderm.io</a
-					>
-				</li>
-				<li>
-					Mastodon professional account: <a rel="me" href="https://hci.social/@ryanatkn"
-						>@ryanatkn@hci.social</a
-					>
-				</li>
-				<li>
-					@overtowed on
-					<a rel="me" href="https://www.reddit.com/user/overtowed">Reddit</a> and
-					<a rel="me" href="https://news.ycombinator.com/user?id=overtowed">orangesite</a>
-				</li>
-			</ul>
-		</li>
-	</ul>
+	<ContactInfo />
 </section>
 
 <section class="panel">
-	<h2>Ongoing projects</h2>
+	<h2>ongoing projects</h2>
+	<!-- TODO refactor this so there's not both a table and .cards -->
 	<table>
 		<tbody
 			>{#each projects as project}<tr
@@ -125,13 +93,13 @@
 		flex-direction: column;
 		align-items: center;
 	}
-	section {
+	.panel {
 		padding: var(--spacing_lg);
 	}
-	section > *:last-child {
+	.panel > :global(*:last-child) {
 		margin-bottom: 0;
 	}
-	h2 {
+	.panel :global(h2) {
 		margin-top: 0;
 	}
 	td:first-child {
