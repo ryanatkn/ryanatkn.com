@@ -39,9 +39,6 @@
 				<a href="https://github.com/ryanatkn">others</a>.
 			</li>
 			<li>
-				From my experience with games, I care more about performance than most, but I'm no expert.
-			</li>
-			<li>
 				I like <a href="https://svelte.dev/">Svelte</a> and
 				<a href="https://kit.svelte.dev/">SvelteKit</a>
 				a <em>lot</em>.
