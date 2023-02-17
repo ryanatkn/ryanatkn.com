@@ -33,8 +33,8 @@
 				<a href="https://12mod12.com/">Hamilton Reed</a> in January 2020 and we're still going.
 			</li>
 			<li>
-				My interest in making games lives on as a hobby in <a href="https://cosmicplayground.org/"
-					>cosmicplayground.org</a
+				My interest in making games lives on as a hobby in <a
+					href="https://www.cosmicplayground.org/">cosmicplayground.org</a
 				>
 				and
 				<a href="https://www.dealt.dev/">dealt.dev</a>.
