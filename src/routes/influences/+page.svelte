@@ -116,6 +116,8 @@
 			{name: 'spritely.institute', url: 'https://spritely.institute/'},
 		],
 		{name: 'Erin Shepherd', url: 'https://erinshepherd.net/'},
+		{name: 'Ethan Zuckerman', url: 'https://ethanzuckerman.com/'},
+		{name: 'Ariadne Conill', url: 'https://ariadne.space/'},
 	];
 
 	shuffle(influences);
