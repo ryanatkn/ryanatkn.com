@@ -98,7 +98,10 @@
 			name: 'Initiative for Digital Public Infrastructure',
 			url: 'https://publicinfrastructure.org/',
 		},
-		{name: 'Divya Siddarth', url: 'https://divyasiddarth.com/'},
+		[
+			{name: 'Divya Siddarth', url: 'https://divyasiddarth.com/'},
+			{name: 'pluriverse.world', url: 'https://pluriverse.world/'},
+		],
 		{name: 'Elinor Ostrom', url: 'https://wikipedia.org/wiki/Elinor_Ostrom'},
 		{name: 'DWeb', url: 'https://getdweb.net/principles/'},
 		{name: 'Shagun Jhaver', url: 'https://shagunjhaver.com/'},
