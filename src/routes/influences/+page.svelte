@@ -118,6 +118,10 @@
 		{name: 'Erin Shepherd', url: 'https://erinshepherd.net/'},
 		{name: 'Ethan Zuckerman', url: 'https://ethanzuckerman.com/'},
 		{name: 'Ariadne Conill', url: 'https://ariadne.space/'},
+		[
+			{name: 'Eli Pariser', url: 'https://www.elipariser.org'},
+			{name: 'New_ Public', url: 'https://newpublic.org/'},
+		],
 	];
 
 	shuffle(influences);
