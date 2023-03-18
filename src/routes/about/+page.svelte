@@ -35,7 +35,8 @@
 			<li>
 				My interest in making games lives on as a hobby in <a
 					href="https://www.cosmicplayground.org/">cosmicplayground.org</a
-				>, <a href="https://www.dealt.dev/">dealt.dev</a>, and
+				>, <a href="https://www.dealt.dev/">dealt.dev</a>,
+				<a href="https://earworm.ryanatkn.com/">earworm.ryanatkn.com</a>, and
 				<a href="https://github.com/ryanatkn">others</a>.
 			</li>
 			<li>

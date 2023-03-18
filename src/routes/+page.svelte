@@ -40,6 +40,11 @@
 			links: `<a href="https://www.felt.social/">felt.social</a>, <a href="https://github.com/feltcoop">GitHub</a>, <a href="https://fosstodon.org/@feltcoop">Mastodon</a>, <a href="https://twitter.com/feltcoop">Twitter</a>, <a href="mailto:ryan@felt.social">ryan@felt.social</a>, <a href="mailto:team@felt.social">team@felt.social</a>`,
 		},
 		{
+			title: '<a href="https://earworm.ryanatkn.com/">earworm.ryanatkn.com</a>',
+			description: 'ear training game and tools for programming music and audio',
+			links: '<a href="https://github.com/ryanatkn/earworm">GitHub</a>',
+		},
+		{
 			title: '<a href="https://www.cosmicplayground.org">cosmicplayground.org</a>',
 			description:
 				'hobby project for fun and learning, <em>"tools and toys for expanding minds"</em>',
