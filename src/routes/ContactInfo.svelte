@@ -28,6 +28,7 @@
 				<a rel="me" href="https://www.reddit.com/user/overtowed">Reddit</a> and
 				<a rel="me" href="https://news.ycombinator.com/user?id=overtowed">orangesite</a>
 			</li>
+			<li>I don't have any other social media accounts, if you see one elsewhere it's not me</li>
 		</ul>
 	</li>
 </ul>
