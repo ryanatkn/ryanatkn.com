@@ -2,7 +2,7 @@
 	import {shuffle} from '$lib/util';
 
 	// i may regret this
-	const title = 'An ongoing attempt to credit my influences';
+	const title = 'some of my professional influences';
 
 	interface Influence {
 		name: string;
