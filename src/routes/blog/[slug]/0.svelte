@@ -27,7 +27,7 @@
 			title="felt.dev"
 		/></a
 	>
-	I've been building an open source web project focused on community software with
+	I've been making open source web community software with
 	<a href="https://12mod12.com/">Hamilton Reed</a>
 	(<a href="https://hachyderm.io/@greatbacon">Mastodon</a>,
 	<a href="https://github.com/greatbacon">GitHub</a>) full-time for a year,

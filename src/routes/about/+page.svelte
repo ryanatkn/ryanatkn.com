@@ -11,10 +11,10 @@
 	<header class="centered"><h1 class="panel">about me</h1></header>
 	<section class="column panel">
 		<p>
-			Hi, my name is Ryan Atkinson and I'm a web developer. I'm focused on building powerful and
-			simple tools to help people be creative and productive in social contexts. I'm driven by
-			curiosity and wanting to improve our lives with technology. This website's homepage lists <a
-				href="/">my ongoing projects</a
+			Hi, my name is Ryan Atkinson and I'm a web developer. I'm trying to build powerful and simple
+			tools to help people be creative and productive in social contexts. I'm driven by curiosity
+			and wanting to improve our lives with technology. This website's homepage lists <a href="/"
+				>my ongoing projects</a
 			>.
 		</p>
 		<p>Some more info:</p>
