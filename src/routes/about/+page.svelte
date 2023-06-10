@@ -19,17 +19,20 @@
 		</p>
 		<p>Some more info:</p>
 		<ul>
-			<li>I'm self taught and I've been working as a web dev since 2011.</li>
+			<li>
+				I'm self taught and I've been working as a web dev since 2011, and <a
+					href="https://github.com/ryanatkn">I've been doing</a
+				> full-time open source since 2019.
+			</li>
 			<li>
 				I learned to code with the intention to be a game programmer, but I fell in love with the
-				web at my first job. I owe much to the people there, including my mentor <a
+				web at my first job. I owe a lot to the people there, including my mentor <a
 					href="https://github.com/mgutz">Mario Gutierrez</a
 				>
 				and CEO <a href="https://www.linkedin.com/in/grantfarwell">Grant Farwell</a>.
 			</li>
 			<li>
-				I started <a href="https://www.felt.dev/">Felt</a> and
-				<a href="https://www.felt.social/">Felt.social</a> with
+				I started <a href="https://www.felt.dev/">Felt</a> with
 				<a href="https://12mod12.com/">Hamilton Reed</a> in January 2020 and we're still going.
 			</li>
 			<li>
@@ -49,9 +52,6 @@
 				equitable society. To that end <a href="https://www.felt.social/">Felt.social</a> is a co-owned
 				platform without ads, investors, or other major compromises, and almost everything I code is
 				open source.
-			</li>
-			<li>
-				here's an ongoing attempt to credit <a href="/influences">my influences</a>
 			</li>
 		</ul>
 	</section>

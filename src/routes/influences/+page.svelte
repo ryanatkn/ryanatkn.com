@@ -186,8 +186,8 @@
 	<p>
 		Giving proper credit to all of one's influences is an impossible task and embarrassingly biased
 		but why not try? Maybe these lists could help you discover new and interesting people and
-		things. I am definitely forgetting people to whom I owe credit, so this is a living document.
-		I'm also omitting entire categories of influence. (love you mom)
+		things. I am definitely forgetting people to credit, so this is a living document. I'm also
+		omitting entire categories of influence. (love you mom)
 	</p>
 	<p>
 		<button on:click={shuffleAll} class="inline" style:background="transparent">give credit</button>
