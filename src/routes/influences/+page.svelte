@@ -165,7 +165,7 @@
 		{html: '<a href="https://wikipedia.org/wiki/JSON">JSON</a> (post-lisp understanding)'},
 		{html: '<a href="https://www.haskell.org/">Haskell</a>'},
 		{html: '<a href="https://www.rust-lang.org/">Rust</a>'},
-		{html: 'DOM templating with <a href="https://angular.io/">Angular</a>'},
+		{html: 'DOM templating with <a href="https://angular.io/">Angular</a> and <a href="https://vuejs.org/">Vue</a>'},
 		{html: '<a href="https://reactjs.org/docs/introducing-jsx.html">JSX and React</a>/vdom'},
 		{html: '<a href="https://clojurescript.org/">ClojureScript</a>'},
 		{
