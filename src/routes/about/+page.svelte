@@ -45,7 +45,7 @@
 			<li>
 				I like <a href="https://svelte.dev/">Svelte</a> and
 				<a href="https://kit.svelte.dev/">SvelteKit</a>
-				a <em>lot</em>.
+				so much that you shouldn't trust my opinion on it.
 			</li>
 			<li>
 				here's an ongoing attempt to credit <a href="/influences">my influences</a>
