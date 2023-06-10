@@ -35,11 +35,6 @@
 			links: `<a href="https://www.felt.dev/">felt.dev</a>, <a href="https://github.com/feltjs">GitHub</a>`,
 		},
 		{
-			title: '<a href="https://www.felt.social/">@feltcoop</a>',
-			description: `an aspiring <a href="https://platform.coop">platform co-op</a> making and using <a href="https://github.com/feltjs">@feltjs</a>`,
-			links: `<a href="https://www.felt.social/">felt.social</a>, <a href="https://github.com/feltcoop">GitHub</a>, <a href="https://fosstodon.org/@feltcoop">Mastodon</a>, <a href="https://twitter.com/feltcoop">Twitter</a>, <a href="mailto:ryan@felt.social">ryan@felt.social</a>, <a href="mailto:team@felt.social">team@felt.social</a>`,
-		},
-		{
 			title: '<a href="https://earbetter.ryanatkn.com/">earbetter.ryanatkn.com</a>',
 			description: 'ear training game and tools for programming music and audio',
 			links: '<a href="https://github.com/ryanatkn/earbetter">GitHub</a>',
