@@ -132,7 +132,6 @@
 
 	// TODO maybe expand this to tech, frameworks?
 	const langs: Array<{html: string}> = [
-		{html: 'whatever <a href="https://wikipedia.org/wiki/DOS">DOS</a> is'},
 		{html: 'config files for games like <a href="https://wikipedia.org/wiki/INI_file">.ini</a>'},
 		{
 			html: '<a href="https://wikipedia.org/wiki/HTML">HTML</a> (making silly things with friends in highschool)',
@@ -165,7 +164,9 @@
 		{html: '<a href="https://wikipedia.org/wiki/JSON">JSON</a> (post-lisp understanding)'},
 		{html: '<a href="https://www.haskell.org/">Haskell</a>'},
 		{html: '<a href="https://www.rust-lang.org/">Rust</a>'},
-		{html: 'DOM templating with <a href="https://angular.io/">Angular</a> and <a href="https://vuejs.org/">Vue</a>'},
+		{
+			html: 'DOM templating with <a href="https://angular.io/">Angular</a> and <a href="https://vuejs.org/">Vue</a>',
+		},
 		{html: '<a href="https://reactjs.org/docs/introducing-jsx.html">JSX and React</a>/vdom'},
 		{html: '<a href="https://clojurescript.org/">ClojureScript</a>'},
 		{
