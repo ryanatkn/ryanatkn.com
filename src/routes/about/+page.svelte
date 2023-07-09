@@ -7,9 +7,9 @@
 	// ...
 </script>
 
-<div class="about markup">
+<div class="about prose">
 	<header class="centered"><h1 class="panel">about me</h1></header>
-	<section class="column panel">
+	<section class="width_md panel">
 		<p>
 			Hi, my name is Ryan Atkinson and I'm a web developer. I'm trying to build powerful and simple
 			tools to help people be creative and productive in social contexts. I'm driven by curiosity

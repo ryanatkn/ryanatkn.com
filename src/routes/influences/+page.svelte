@@ -182,7 +182,7 @@
 	<title>{title}</title>
 </svelte:head>
 
-<div class="column markup padded-md">
+<div class="width_md prose padded_md">
 	<h1>{title}</h1>
 	<p>
 		Giving proper credit to all of one's influences is an impossible task and embarrassingly biased
@@ -212,6 +212,7 @@
 	<p>(roughly reverse chronological order)</p>
 	<ul>
 		{#each langs as lang (lang)}
+			<!-- eslint-disable-next-line svelte/no-at-html-tags -->
 			<li>{@html lang.html}</li>
 		{/each}
 	</ul>

@@ -2,7 +2,7 @@
 
 [<img src="src/static/favicon.png" align="right" width="100">](https://www.ryanatkn.com)
 
-> [@ryanatkn](https://github.com/ryanatkn)'s web home and blog
+> [@ryanatkn](https://github.com/ryanatkn)'s homepage and blog
 
 ## usage
 

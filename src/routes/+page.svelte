@@ -4,6 +4,8 @@
 	import Favicon from '$lib/Favicon.svelte';
 	import ContactInfo from '$routes/ContactInfo.svelte';
 
+	/* eslint-disable svelte/no-at-html-tags */
+
 	interface ProjectInfo {
 		title: string;
 		description: string;
@@ -47,11 +49,11 @@
 	<title>ryanatkn.com</title>
 </svelte:head>
 
-<div class="column markup padded-md">
+<div class="width_md prose padded_md">
 	<section class="panel">
 		<blockquote class="panel">
 			<p>
-				hello surfer! 🌄🌳🐿 You're at the web home of Ryan Atkinson. He's an open source web
+				hello surfer! 🌄🌳🐿 You're at the homepage of Ryan Atkinson. He's an open source web
 				developer interested in collaborative digital mediums and realizing more of their potential
 				to help us live well.
 			</p>
@@ -79,7 +81,7 @@
 			>
 		</table>
 		<div class="cards">
-			{#each projects as project}<div class="card markup padded-md">
+			{#each projects as project}<div class="card prose padded_md">
 					<p>{@html project.title}</p>
 					<p>{@html project.description}</p>
 					<p>{@html project.links}</p>
@@ -95,7 +97,7 @@
 >
 
 <style>
-	.column {
+	.width_md {
 		flex: 1;
 		margin-bottom: var(--spacing_xl3);
 	}
@@ -146,7 +148,7 @@
 		padding: var(--spacing_md);
 	}
 	.card p:first-child {
-		font-size: var(--font_size_lg);
+		font-size: var(--size_lg);
 	}
 	.card:hover {
 		background-color: var(--tint_dark_1);

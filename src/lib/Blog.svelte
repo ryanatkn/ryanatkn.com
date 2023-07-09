@@ -6,7 +6,7 @@
 
 	import BlogPost from '$lib/BlogPost.svelte';
 	import {Components} from '$lib/blog';
-	import type {FeedData} from './feed';
+	import type {FeedData} from '$lib/feed';
 
 	export let feed: FeedData;
 
