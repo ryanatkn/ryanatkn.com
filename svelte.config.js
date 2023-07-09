@@ -17,6 +17,9 @@ export default {
 		adapter: adapter(),
 		files: {assets: 'src/static'},
 		alias: {$routes: 'src/routes'},
-		prerender: {entries: blog?.entries},
+		// TODO is very messy and error prone, didn't used to need to enumerate the paths like this (blog.entries used to be enough before an upgrade)
+		prerender: blog
+			? {entries: ['/', '/about', '/blog', '/influences'].concat(blog.entries)}
+			: undefined,
 	},
 };
