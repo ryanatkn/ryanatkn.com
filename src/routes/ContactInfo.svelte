@@ -23,7 +23,9 @@
 					>@ryanatkn@hci.social</a
 				>
 			</li>
-			<li>I don't use any other social media accounts, if you see one elsewhere it's not me</li>
+			<li>
+				I don't use any other public social media accounts except an orange site for self promotion
+			</li>
 		</ul>
 	</li>
 </ul>
