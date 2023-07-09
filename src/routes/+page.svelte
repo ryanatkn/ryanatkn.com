@@ -35,11 +35,6 @@
 			links: `<a href="https://www.felt.dev/">felt.dev</a>, <a href="https://github.com/feltjs">GitHub</a>`,
 		},
 		{
-			title: '<a href="https://earbetter.ryanatkn.com/">earbetter.ryanatkn.com</a>',
-			description: 'ear training game and tools for programming music and audio',
-			links: '<a href="https://github.com/ryanatkn/earbetter">GitHub</a>',
-		},
-		{
 			title: '<a href="https://www.cosmicplayground.org">cosmicplayground.org</a>',
 			description:
 				'hobby project for fun and learning, <em>"tools and toys for expanding minds"</em>',
