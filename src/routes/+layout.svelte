@@ -1,5 +1,6 @@
 <script lang="ts">
 	import '@feltjs/felt-ui/style.css';
+	import '@feltjs/felt-ui/theme.css';
 	import '$lib/style.css';
 
 	import Themed from '@feltjs/felt-ui/Themed.svelte';
@@ -31,7 +32,6 @@
 		min-height: 100%;
 		width: 100%;
 		position: relative;
-		/* TODO should these be on `.column` ? */
 		display: flex;
 		flex-direction: column;
 		align-items: center;

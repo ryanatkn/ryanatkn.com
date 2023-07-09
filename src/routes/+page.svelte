@@ -142,7 +142,7 @@
 		background-color: var(--bg);
 		border-width: var(--border_width);
 		border-style: var(--border_style);
-		border-color: var(--border_color_light);
+		border-color: var(--border_2);
 		border-radius: var(--border_radius);
 		margin-bottom: var(--spacing_lg);
 		padding: var(--spacing_md);
@@ -151,6 +151,6 @@
 		font-size: var(--size_lg);
 	}
 	.card:hover {
-		background-color: var(--tint_dark_1);
+		background-color: var(--fg_2);
 	}
 </style>

@@ -8,7 +8,7 @@
 </script>
 
 <div class="about prose">
-	<header class="centered"><h1 class="panel">about me</h1></header>
+	<header class="box"><h1 class="panel">about me</h1></header>
 	<section class="width_md panel">
 		<p>
 			Hi, my name is Ryan Atkinson and I'm a web developer. I'm trying to build powerful and simple

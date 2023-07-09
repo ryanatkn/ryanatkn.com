@@ -18,21 +18,20 @@ body {
 table {
 	border-width: var(--border_width);
 	border-style: var(--border_style);
-	border-color: var(--border_color_lighter);
+	border-color: var(--border_1);
 	border-radius: var(--border_radius);
 	border-spacing: 0;
 	background-color: var(--bg);
 }
 thead tr {
-	background-color: var(--tint_dark_1);
+	background-color: var(--fg_2);
 }
 td,
 th {
 	padding: var(--spacing_sm);
-	word-break: break-word;
 }
 tr:hover {
-	background-color: var(--tint_dark_1);
+	background-color: var(--fg_2);
 }
 
 /* offset to avoid visual artifacts on init,
@@ -44,20 +43,6 @@ probably fixable with a better image, I tried briefly but didn't get a great res
 	to {
 		transform: rotate3d(0, 0, 1, 402deg);
 	}
-}
-
-/* TODO upstream to Felt */
-aside {
-	border-radius: var(--border_radius_xs);
-	padding: var(--spacing_lg);
-	color: var(--text_color_light);
-	background-color: var(--tint_dark_0);
-	border: var(--border_width) var(--border_style) var(--border_color_lighter);
-	border-left-width: var(--border_width_2);
-	margin-bottom: var(--spacing_lg);
-}
-aside > *:last-child {
-	margin-bottom: 0;
 }
 
 .prose div + ul {
