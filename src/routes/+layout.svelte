@@ -1,9 +1,12 @@
 <script lang="ts">
 	import '@feltjs/felt-ui/style.css';
-
+	import '@feltjs/felt-ui/theme.css';
 	import '$lib/style.css';
-	import Header from './Header.svelte';
-	import Footer from './Footer.svelte';
+
+	import Themed from '@feltjs/felt-ui/Themed.svelte';
+
+	import Header from '$routes/Header.svelte';
+	import Footer from '$routes/Footer.svelte';
 </script>
 
 <svelte:head>
@@ -16,18 +19,19 @@
 	/>
 </svelte:head>
 
-<main>
-	<Header />
-	<slot />
-	<Footer />
-</main>
+<Themed>
+	<main>
+		<Header />
+		<slot />
+		<Footer />
+	</main>
+</Themed>
 
 <style>
 	main {
 		min-height: 100%;
 		width: 100%;
 		position: relative;
-		/* TODO should these be on `.column` ? */
 		display: flex;
 		flex-direction: column;
 		align-items: center;

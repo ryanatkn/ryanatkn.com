@@ -13,14 +13,10 @@
 	};
 </script>
 
-<script lang="ts">
-	import {base} from '$app/paths';
-</script>
-
 <h2>Introduction</h2>
 <p>
 	While working on the community software project I described in <a
-		href="{base}/blog/a-year-of-making-open-source-web-community-software">my first blog post</a
+		href="/blog/a-year-of-making-open-source-web-community-software">my first blog post</a
 	>, I've wanted clarity on some concepts that sit above the code. This post proposes a model for
 	one of the central aspects of online communities: the
 	<strong>virtual social space</strong>.

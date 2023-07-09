@@ -3,7 +3,7 @@
 	import FeedItemDate from '$lib/FeedItemDate.svelte';
 	import {toPathname} from '$lib/util';
 
-	$: items = feed.items.slice().reverse();
+	const items = feed.items.slice().reverse();
 </script>
 
 <svelte:head>
@@ -31,12 +31,12 @@
 		padding: var(--spacing_xl3) 0;
 	}
 	li {
-		font-size: var(--font_size_lg);
+		font-size: var(--size_lg);
 		margin-bottom: var(--spacing_xl);
 		padding-left: var(--spacing_sm);
 	}
 	small {
 		white-space: nowrap;
-		font-size: var(--font_size_md);
+		font-size: var(--size_md);
 	}
 </style>

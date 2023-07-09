@@ -6,7 +6,7 @@
 	import type {FeedItemData} from '$lib/feed';
 
 	export let post: FeedItemData;
-	export let Component: typeof SvelteComponent;
+	export let Component: typeof SvelteComponent<any>;
 </script>
 
 <svelte:head>

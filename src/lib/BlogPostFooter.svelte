@@ -5,7 +5,7 @@
 </script>
 
 <div class="blog-post-footer">
-	<div class="panel markup">
+	<div class="panel prose">
 		<p>
 			<span> find me on Mastodon and the Fediverse:</span>
 			<br />
