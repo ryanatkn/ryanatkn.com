@@ -13,16 +13,13 @@
 	};
 </script>
 
-<script lang="ts">
-	import {base} from '$app/paths';
-</script>
-
 <p>
 	<a href="https://www.felt.dev/">
 		<img
 			style:float="right"
 			style:width="100px"
-			src="{base}/felt.png"
+			style:margin-left="20px"
+			src="/felt.png"
 			alt="a microscopic-fiber-textured green heart with the word felt cut out"
 			title="felt.dev"
 		/></a
@@ -250,7 +247,7 @@
 	>) is a separate entity from <a href="https://www.felt.dev/">Felt</a> the software project (<a
 		href="https://github.com/feltjs">@feltjs@github.com</a
 	>). We haven't done the legal work to make it official, but the Felt project trademarks and
-	domains (like <a href="{base}/felt.png">the green heart logo</a> and
+	domains (like <a href="/felt.png">the green heart logo</a> and
 	<a href="https://www.felt.dev/">felt.dev</a>) will be owned and managed by some kind of nonprofit
 	entity, not the
 	<a href="https://www.felt.social/">Felt.social</a> co-op. The co-op is just one stakeholder from the
