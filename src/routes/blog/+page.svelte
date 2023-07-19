@@ -10,7 +10,7 @@
 	<title>ryanatkn.com/blog</title>
 </svelte:head>
 
-<div class="blog">
+<div class="blog prose">
 	<ol start={items.length - 1} reversed>
 		{#each items as item}
 			<li>
