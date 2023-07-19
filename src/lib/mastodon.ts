@@ -89,13 +89,13 @@ export const parse_status_context_url = (url: string): {host: string; id: string
 	return {host, id};
 };
 
-// TODO BLOCK implement
+// TODO BLOCK implement for direct links
 export const fetch_post_by_url = async (url: string): Promise<MastodonContext | null> => {
 	console.log(`url`, url);
 	const parsed = parse_status_context_url(url);
 	if (!parsed) return null;
 	const {host, id} = parsed;
-	return host && id ? fetch_post(host, id) : null;
+	return fetch_post(host, id);
 };
 
 export const fetch_post = async (host: string, id: string): Promise<MastodonContext> => {
