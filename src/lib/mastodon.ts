@@ -1,3 +1,5 @@
+import {parse, inject} from 'regexparam';
+
 /**
  * https://docs.joinmastodon.org/entities/Context/
  *
@@ -14,7 +16,7 @@ export interface MastodonStatus {
 	created_at: string;
 	in_reply_to_id: string;
 	in_reply_to_account_id: string;
-	sensitive: false;
+	sensitive: boolean;
 	spoiler_text: string;
 	visibility: string;
 	language: string;
@@ -24,22 +26,22 @@ export interface MastodonStatus {
 	reblogs_count: number;
 	favourites_count: number;
 	edited_at: null | string;
-	favourited: false;
-	reblogged: false;
-	muted: false;
-	bookmarked: false;
+	favourited: boolean;
+	reblogged: boolean;
+	muted: boolean;
+	bookmarked: boolean;
 	content: string;
 	filtered: unknown[];
-	reblog: null;
+	reblog: unknown; // | null;
 	account: {
 		id: string;
 		username: string;
 		acct: string;
 		display_name: string;
-		locked: false;
-		bot: false;
-		discoverable: false;
-		group: false;
+		locked: boolean;
+		bot: boolean;
+		discoverable: boolean;
+		group: boolean;
 		created_at: string;
 		note: string;
 		url: string;
@@ -70,23 +72,22 @@ export interface MastodonStatus {
 		},
 	];
 	emojis: unknown[];
-	card: null;
-	poll: null;
+	card: unknown; // | null;
+	poll: unknown; // | null;
 }
 
-// TODO maybe use trouter?
-// const PATH = 'https://:host/api/v1/statuses/:id/context';
-export const serialize_status_context_url = (host: string, id: string) =>
-	`https://${host}/api/v1/statuses/${id}/context`;
+const MASTODON_STATUS_CONTEXT_PATH = 'https://:host/api/v1/statuses/:id/context';
+const get_mastodon_status_context = parse(MASTODON_STATUS_CONTEXT_PATH);
+
+export const serialize_status_context_url = (host: string, id: string): string =>
+	inject(MASTODON_STATUS_CONTEXT_PATH, {host, id, '': ''}); // TODO BLOCK types?
 
 export const parse_status_context_url = (url: string): {host: string; id: string} | null => {
-	const matches = /^.+($1)\/api\/v1\/statuses\/($2)\/context$/u.exec(url);
+	console.log(`url`, url);
+	const matches = get_mastodon_status_context.pattern.exec(url);
 	console.log(`matches`, matches);
 	if (!matches) return null;
-	console.log(`matches`, matches);
-	const host = matches?.[1];
-	const id = matches?.[2];
-	return {host, id};
+	return {host: matches.host, id: matches.id};
 };
 
 // TODO BLOCK implement for direct links
