@@ -142,12 +142,13 @@
 	<p>We have a handful of software repos, none of which are yet production ready:</p>
 	<ul>
 		<li>
-			<a href="https://github.com/feltjs/felt-server">@feltjs/felt-server</a> – the Node.js software
-			that's both deployable and available as a library on npm
+			<a href="https://github.com/feltjs/felt-server">@feltjs/felt-server</a> – a programmable platform
+			for hobbyists and human-scale communities, the Node.js software that's selfhostable and available
+			as a library on npm
 		</li>
 		<li>
 			<a href="https://github.com/feltjs/felt-ui">@feltjs/felt-ui</a> – styles and UI components for
-			Svelte and SvelteKit
+			Svelte and SvelteKit 💚
 		</li>
 		<li>
 			<a href="https://github.com/feltjs/felt-template">@feltjs/felt-template</a> – a static web app
