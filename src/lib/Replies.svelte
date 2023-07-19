@@ -17,11 +17,13 @@
 	 * Either `url` or `host` and `id` are required.
 	 */
 	export let url: string | undefined = undefined;
+
 	/**
 	 * The host part of the url, like `'hachyderm.io'`.
 	 * Either `url` or `host` and `id` are required.
 	 */
 	export let host: string | undefined = undefined;
+
 	/**
 	 * The status id to fetch, like `'110702983310017651'`.
 	 * Either `url` or `host` and `id` are required.

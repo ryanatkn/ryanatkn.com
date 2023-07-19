@@ -1,4 +1,5 @@
-import {parse, inject} from 'regexparam';
+import {stripEnd} from '@feltjs/util/string.js';
+import type {Flavored} from '@feltjs/util/types.js';
 
 /**
  * https://docs.joinmastodon.org/entities/Context/
@@ -76,18 +77,29 @@ export interface MastodonStatus {
 	poll: unknown; // | null;
 }
 
-const MASTODON_STATUS_CONTEXT_PATH = 'https://:host/api/v1/statuses/:id/context';
-const get_mastodon_status_context = parse(MASTODON_STATUS_CONTEXT_PATH);
+export interface MastodonStatusContextParams {
+	host: string;
+	id: string;
+}
+// const parse_mastodon_status = parse(MASTODON_STATUS_PATH);
+
+export type Url = Flavored<string, 'Url'>;
 
 export const serialize_status_context_url = (host: string, id: string): string =>
-	inject(MASTODON_STATUS_CONTEXT_PATH, {host, id, '': ''}); // TODO BLOCK types?
+	`https://${host}/api/v1/statuses/${id}/context`;
 
-export const parse_status_context_url = (url: string): {host: string; id: string} | null => {
-	console.log(`url`, url);
-	const matches = get_mastodon_status_context.pattern.exec(url);
-	console.log(`matches`, matches);
-	if (!matches) return null;
-	return {host: matches.host, id: matches.id};
+/**
+ * Parses a url to a post or API endpoint for a post, aka Mastodon status context.
+ * @param url
+ * @returns the parsed host and id params, if any
+ */
+export const parse_status_context_url = (url: string): MastodonStatusContextParams | null => {
+	const u = new URL(url);
+	const parts = stripEnd(u.pathname, '/context').split('/');
+	return {
+		host: u.host,
+		id: parts[parts.length - 1],
+	};
 };
 
 // TODO BLOCK implement for direct links
