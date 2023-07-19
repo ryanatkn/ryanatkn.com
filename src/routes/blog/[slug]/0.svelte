@@ -307,18 +307,24 @@
 		and productivity.
 	</p>
 	<h3>on the shoulders of giants on the backs of turtles</h3>
-	<p>the Web is everywhere and has vast unrealized potential</p>
-	<p>Node, TypeScript, Postgres, nginx, and Linux are productive and solid</p>
+	<p>The web is everywhere and has much unrealized potential.</p>
 	<p>
-		Svelte, SvelteKit, and Vite have been a fantastic set of tools for making UIs. We don't yet make
-		full use of SvelteKit's features, but we feel highly productive and literally delighted working
-		with it, and its flexibility is a wonder.
+		Node, TypeScript, Postgres, nginx, and Linux are all productive and capable of delivering a good
+		UX in combination.
+	</p>
+	<p>
+		Svelte, SvelteKit, and Vite have been fantastic for making UIs. We don't yet make
+		<a
+			href="https://github.com/feltjs/felt-server/blob/main/src/docs/known-issues.md#not-using-sveltekits-server-side-data-loading"
+			>full use of SvelteKit's features</a
+		>, but we feel highly productive and literally delighted working with it, and its flexibility is
+		a wonder.
 	</p>
 	<h3>customizable and extensible</h3>
 	<p>
-		Both the server and clients are open source and our APIs are open, so clients can be modified or
-		created from scratch. We'll try to maximize the freedoms of users and developers, but security
-		and performance are unfortunate constraints and sometimes buzzkills :\
+		Both the server and (future) clients are open source and our APIs are open, so clients can be
+		modified or created from scratch. We'll try to maximize the freedoms of users and developers,
+		but security and performance are unfortunate constraints and sometimes buzzkills :\
 	</p>
 	<p>
 		Our client has a <a href="https://wikipedia.org/wiki/Client_(computing)#Thick">thickness</a>
@@ -393,9 +399,11 @@
 		that's used in the fediverse and Mastodon (and I made some
 		<a href="https://ryanatkn.github.io/corpus-activity-streams/">unofficial docs</a>), but we have
 		our own bespoke client-server protocol that works over http and websockets, and our database
-		tables don't map to ActivityStreams vocabulary, only <code>Entity</code> objects do. We could generate
-		OpenAPI schemas from our source of truth, which would give us greatly expanded access to existing
-		tooling, but we have no plans for that yet.
+		tables don't map to ActivityStreams vocabulary, only <code>Entity</code> objects do. We publish
+		<a href="https://github.com/feltjs/felt-server/blob/main/src/static/schemas/vocab.json"
+			>a JSON Schema with our vocabulary</a
+		>, and we could generate OpenAPI schemas from our source of truth, which would give us greatly
+		expanded access to existing tooling, but we have no plans for that yet.
 	</p>
 	<p>
 		We try to use
