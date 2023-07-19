@@ -1,4 +1,4 @@
-export interface Toot {
+export interface Post {
 	id: string;
 	created_at: string;
 	in_reply_to_id: string;

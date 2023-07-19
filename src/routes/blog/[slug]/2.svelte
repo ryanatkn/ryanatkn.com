@@ -1,5 +1,5 @@
 <script lang="ts" context="module">
-	import Toot from '$lib/TootDetail.svelte';
+	import Post from '$lib/PostDetail.svelte';
 	import type {FeedItemData} from '$lib/feed';
 	import data from '$routes/blog/[slug]/2/data.json';
 
@@ -29,6 +29,6 @@
 <blockquote>https://hci.social/api/v1/statuses/110702983634003233/context</blockquote>
 <div>
 	{#each data.descendants as item}
-		<Toot {item} />
+		<Post {item} />
 	{/each}
 </div>

@@ -1,22 +1,24 @@
 <script lang="ts">
-	import type {Toot} from '$lib/toot';
+	import type {Post} from '$lib/post';
 
 	// tOot
-	export let item: Toot;
+	export let item: Post;
 
 	let debug = true;
 </script>
 
-<div class="toot_detail">
+<div class="post_detail">
 	<header>
 		<img class="icon" src={item.account.avatar_static} alt="avatar for {item.account.username}" />
-		<div
-			class="name"
-			title="{item.account.followers_count} followers, following {item.account.following_count}"
-		>
-			{item.account.display_name}
+		<div class="names">
+			<a href={item.account.url} class="name">
+				{item.account.display_name}
+			</a>
+			<small
+				title="{item.account.followers_count} followers, following {item.account.following_count}"
+				>{item.account.acct}</small
+			>
 		</div>
-		<small><code>{item.account.acct}</code></small>
 	</header>
 	<!-- eslint-disable-next-line svelte/no-at-html-tags -->
 	<div class="content">{@html item.content}</div>
@@ -28,7 +30,7 @@
 {/if}
 
 <style>
-	.toot_detail {
+	.post_detail {
 		display: flex;
 		flex-direction: column;
 		background-color: var(--panel_bg, var(--fg_1));
@@ -38,14 +40,21 @@
 	header {
 		display: flex;
 		align-items: center;
-		margin-bottom: var(--spacing_xs);
+		margin-bottom: var(--spacing_sm);
 	}
 	.icon {
 		width: var(--icon_size_sm);
 	}
+	.names {
+		display: flex;
+		flex-direction: column;
+		padding: 0 var(--spacing_md);
+	}
 	.name {
 		font-size: var(--font_size_lg);
-		padding: 0 var(--spacing_md);
+	}
+	.names small {
+		font-weight: 600;
 	}
 	.json {
 		width: var(--width_sm);

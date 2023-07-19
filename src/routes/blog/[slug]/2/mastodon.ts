@@ -1,6 +1,6 @@
-import type {Toot} from '$lib/toot';
+import type {Post} from '$lib/post';
 
 export interface MastodonContext {
-	ancestors: Toot[];
-	descendants: Toot[];
+	ancestors: Post[];
+	descendants: Post[];
 }
