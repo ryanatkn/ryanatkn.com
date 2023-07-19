@@ -3,13 +3,13 @@
 	import {slide} from 'svelte/transition';
 
 	import StatusCard from '$lib/StatusCard.svelte';
-	import Replies from '$lib/Replies.svelte';
+	import MastodonReplies from '$lib/MastodonnReplies.svelte';
 
 	export let host: string;
 	export let id: string;
 </script>
 
-<Replies {host} {id} let:data let:api_url let:post_url let:load let:loading>
+<MastodonReplies {host} {id} let:data let:api_url let:post_url let:load let:loading>
 	<div class="row spaced">
 		<div class="load_button">
 			<PendingButton pending={loading || false} disabled={!!data} on:click={() => load()}>
@@ -45,7 +45,7 @@
 	{:else if loading === false}
 		<div>something went wrong (TODO proper error message)</div>
 	{/if}
-</Replies>
+</MastodonReplies>
 
 <style>
 	ul {
