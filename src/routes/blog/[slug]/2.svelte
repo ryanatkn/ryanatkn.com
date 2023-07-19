@@ -43,9 +43,23 @@
 			<HashLink slug="introduction">Introduction</HashLink>
 		</h2>
 		<p>
-			This website's <a href="https://github.com/ryanatkn/ryanatkn.com">source code</a> is hosted on
-			<a href="https://pages.github.com/">GitHub Pages</a>, a free static host that lets me use my
-			own domain.
+			This static website is hosted for free by <a href="https://pages.github.com/">GitHub Pages</a
+			>. The site is just a bunch of static files made with <a href="https://svelte.dev/">Svelte</a>
+			and
+			<a href="https://kit.svelte.dev/">SvelteKit</a>
+			- here's the
+			<a href="https://github.com/ryanatkn/ryanatkn.com">source code</a>.
+		</p>
+		<p>
+			Static sites are cheap to serve and easy to reason about, but they have limitations. I like
+			computers because they are dynamic, and static sites seem to be in friction with this idea.
+			Big tech companies made big platforms by making their content dynamic in the 00's and 10's of
+			the 21st century.
+		</p>
+		<p>
+			The comments below are powered by <a href="https://joinmastodon.org/">Mastodon</a>, an
+			<a href="https://en.wikipedia.org/wiki/ActivityPub">ActivityPub</a>-compatible app in the
+			<a href="https://wikipedia.org/wiki/Fediverse">Fediverse</a>.
 		</p>
 	</section>
 	<hr />
