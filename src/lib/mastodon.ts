@@ -158,8 +158,6 @@ export const fetch_post_by_url = async (url: string): Promise<MastodonContext | 
 export const fetch_post = async (host: string, id: string): Promise<MastodonContext | null> => {
 	const url = serialize_status_context_url(host, id);
 	console.log(`url`, url);
-	const p = new Promise();
-	await p;
 	const res = await fetch(url);
 	if (!res.ok) return null;
 	const fetched = await res.json();

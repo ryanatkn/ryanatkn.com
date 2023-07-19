@@ -58,7 +58,7 @@
 		</p>
 		<p>
 			The comments below are powered by <a href="https://joinmastodon.org/">Mastodon</a>, an
-			<a href="https://en.wikipedia.org/wiki/ActivityPub">ActivityPub</a>-compatible app in the
+			<a href="https://wikipedia.org/wiki/ActivityPub">ActivityPub</a>-compatible app in the
 			<a href="https://wikipedia.org/wiki/Fediverse">Fediverse</a>.
 		</p>
 	</section>
