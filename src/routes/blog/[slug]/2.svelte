@@ -47,8 +47,32 @@
 			<a href="https://pages.github.com/">GitHub Pages</a>, a free static host that lets me use my
 			own domain.
 		</p>
-		<hr />
 	</section>
+	<hr />
+	<section class="prose">
+		<h2>
+			<HashLink slug="implementation">Implementation</HashLink>
+		</h2>
+		<p>
+			Here's <a href="https://github.com/ryanatkn/ryanatkn.com/pull/12/files">the GitHub PR</a>.
+		</p>
+	</section>
+	<hr />
+	<section class="prose">
+		<h2>
+			<HashLink slug="conclusion">Conclusion</HashLink>
+		</h2>
+		<p>So,..</p>
+		<p>
+			I also maintain <a href="https://ryanatkn.github.io/corpus-activity-streams"
+				>these alternative docs</a
+			>
+			for the <a href="https://wikipedia.org/wiki/ActivityStreams">ActivityStreams</a> vocabulary of
+			<a href="https://wikipedia.org/wiki/ActivityPub">ActivityPub</a>, the protocol behind
+			Mastodon.
+		</p>
+	</section>
+	<hr />
 	<section>
 		<div class="prose"><h2><HashLink slug="replies">Replies</HashLink></h2></div>
 		<BlogReplies {host} {id} />
