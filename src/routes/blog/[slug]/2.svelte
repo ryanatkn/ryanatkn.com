@@ -28,5 +28,9 @@
 	const id = '110702983310017651';
 </script>
 
-<h2>Introduction</h2>
-<BlogReplies {host} {id} />
+<div>
+	<div class="prose">
+		<h2>Introduction</h2>
+	</div>
+	<BlogReplies {host} {id} />
+</div>

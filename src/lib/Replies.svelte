@@ -6,7 +6,8 @@
 		// fetch_post,
 		fetch_post_by_url,
 		type MastodonContext,
-		serialize_status_context_url,
+		to_api_url,
+		to_post_url,
 	} from '$lib/mastodon';
 
 	// TODO BLOCK handle difference with https://mstdn.social/@feditips/110702983310017651 and  https://hci.social/api/v1/statuses/110702983310017651/context
@@ -32,20 +33,10 @@
 
 	// TODO BLOCK fetch data
 	let data: MastodonContext | undefined | null;
-	console.log(`data`, data);
-
-	const to_api_url = (
-		url: string | undefined,
-		host: string | undefined,
-		id: string | undefined,
-	): string | null => {
-		if (!url && !host && !id) {
-			throw new Error('either url or host+id must be provided');
-		}
-		return url || (host && id ? serialize_status_context_url(host, id) : null);
-	};
+	$: console.log(`data`, data);
 
 	$: api_url = to_api_url(url, host, id);
+	$: post_url = to_post_url(api_url);
 
 	// const load = async (host: string, id: string) => {
 	// 	console.log(`loading host, id`, host, id);
@@ -74,4 +65,4 @@
 	};
 </script>
 
-<slot {data} {api_url} {load} {loading} />
+<slot {data} {api_url} {post_url} {load} {loading} />

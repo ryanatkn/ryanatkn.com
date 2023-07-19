@@ -81,12 +81,41 @@ export interface MastodonStatusContextParams {
 	host: string;
 	id: string;
 }
+export interface MastodonPostParams {
+	host: string;
+	author: string;
+	id: string;
+}
 // const parse_mastodon_status = parse(MASTODON_STATUS_PATH);
 
 export type Url = Flavored<string, 'Url'>;
 
 export const serialize_status_context_url = (host: string, id: string): string =>
 	`https://${host}/api/v1/statuses/${id}/context`;
+
+export const serialize_status_url = (host: string, author: string, id: string): string =>
+	`https://${host}/@${author}/${id}`;
+
+export const to_api_url = (
+	url: string | undefined,
+	host: string | undefined,
+	id: string | undefined,
+): string | null => {
+	if (!url && !host && !id) {
+		throw new Error('either url or host+id must be provided');
+	}
+	return url || (host && id ? serialize_status_context_url(host, id) : null);
+};
+
+// TODO BLOCK rename with the above
+
+export const to_post_url = (api_url: string | null): string | null => {
+	if (!api_url) return null;
+	const parsed = parse_status_url(api_url);
+	if (!parsed) return null;
+	parsed.host, parsed.id;
+	return serialize_status_url(parsed.host, parsed.author, parsed.id);
+};
 
 /**
  * Parses a url to a post or API endpoint for a post, aka Mastodon status context.
@@ -102,6 +131,21 @@ export const parse_status_context_url = (url: string): MastodonStatusContextPara
 	};
 };
 
+/**
+ * Parses a url to a post or API endpoint for a post, aka Mastodon status context.
+ * @param url
+ * @returns the parsed host and id params, if any
+ */
+export const parse_status_url = (url: string): MastodonPostParams | null => {
+	const u = new URL(url);
+	const parts = stripEnd(u.pathname, '/context').split('/');
+	const author = parts[0][0] === '@' ? parts[0].substring(1) : null; // eslint-disable-line @typescript-eslint/prefer-string-starts-ends-with
+	if (!author) return null;
+	const id = parts.length > 1 ? parts[parts.length - 1] : null;
+	if (!id) return null;
+	return {host: u.host, author, id};
+};
+
 // TODO BLOCK implement for direct links
 export const fetch_post_by_url = async (url: string): Promise<MastodonContext | null> => {
 	console.log(`url`, url);
@@ -114,6 +158,8 @@ export const fetch_post_by_url = async (url: string): Promise<MastodonContext | 
 export const fetch_post = async (host: string, id: string): Promise<MastodonContext | null> => {
 	const url = serialize_status_context_url(host, id);
 	console.log(`url`, url);
+	const p = new Promise();
+	await p;
 	const res = await fetch(url);
 	if (!res.ok) return null;
 	const fetched = await res.json();

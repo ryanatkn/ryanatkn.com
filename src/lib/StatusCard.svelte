@@ -1,6 +1,8 @@
 <script lang="ts">
-	import type {MastodonStatus} from '$lib/mastodon';
 	import {format, formatDistance} from 'date-fns';
+	import {slide} from 'svelte/transition';
+
+	import type {MastodonStatus} from '$lib/mastodon';
 
 	export let item: MastodonStatus;
 
@@ -15,17 +17,25 @@
 	$: account_followers_count = account.followers_count;
 	$: account_following_count = account.following_count;
 	$: account_acct = account.acct;
+	$: account_note = account.note;
 
 	$: created = format(new Date(account_created), 'PPpp');
 	$: created_ago = formatDistance(new Date(), new Date(created_at));
 	$: edited = edited_at ? format(new Date(edited_at), 'PPpp') : null;
 	$: edited_ago = edited_at ? formatDistance(new Date(), new Date(edited_at)) : null;
 	$: joined = format(new Date(account_created), 'MMM yyyy');
+
+	let show_note = false;
+	const toggle_note = (): void => {
+		show_note = !show_note;
+	};
 </script>
 
 <div class="post_detail">
 	<header>
-		<img class="icon" src={account_avatar} alt="avatar for {account_username}" />
+		<button class="avatar plain icon_button" on:click={account_note ? toggle_note : undefined}
+			><img class="icon" src={account_avatar} alt="avatar for {account_username}" /></button
+		>
 		<div class="names">
 			<div>
 				<a href={account_url} title={account_url} class="name">
@@ -40,8 +50,14 @@
 			>
 		</div>
 	</header>
+	{#if account_note}
+		<div class="content prose" transition:slide>
+			<!-- eslint-disable-next-line svelte/no-at-html-tags -->
+			{@html account_note}
+		</div>
+	{/if}
 	<!-- eslint-disable-next-line svelte/no-at-html-tags -->
-	<div class="content">{@html content}</div>
+	<div class="content prose">{@html content}</div>
 </div>
 {#if debug}
 	<pre class="json">
@@ -63,6 +79,10 @@
 		display: flex;
 		align-items: center;
 		margin-bottom: var(--spacing_sm);
+	}
+	.avatar {
+		margin-bottom: 0;
+		border-radius: 0;
 	}
 	.icon {
 		width: var(--icon_size);
