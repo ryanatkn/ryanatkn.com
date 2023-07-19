@@ -1,10 +1,9 @@
 <script lang="ts">
 	import type {Post} from '$lib/post';
 
-	// tOot
 	export let item: Post;
 
-	let debug = true;
+	const debug = false;
 </script>
 
 <div class="post_detail">
