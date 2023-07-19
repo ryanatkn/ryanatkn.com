@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Favicon from '$lib/Favicon.svelte';
 	import Breadcrumbs from '@feltjs/felt-ui/Breadcrumbs.svelte';
+	import {base} from '$app/paths';
 
 	import ContactInfo from '$routes/ContactInfo.svelte';
 
@@ -13,8 +14,8 @@
 		<p>
 			Hi, my name is Ryan Atkinson and I'm a web developer. I'm trying to build powerful and simple
 			tools to help people be creative and productive in social contexts. I'm driven by curiosity
-			and wanting to improve our lives with technology. This website's homepage lists <a href="/"
-				>my ongoing projects</a
+			and wanting to improve our lives with technology. This website's homepage lists <a
+				href="{base}/">my ongoing projects</a
 			>.
 		</p>
 		<p>Some more info:</p>
@@ -48,7 +49,7 @@
 				so much that you shouldn't trust my opinion on it.
 			</li>
 			<li>
-				here's an ongoing attempt to credit <a href="/influences">my influences</a>
+				here's an ongoing attempt to credit <a href="{base}/influences">my influences</a>
 			</li>
 		</ul>
 	</section>
