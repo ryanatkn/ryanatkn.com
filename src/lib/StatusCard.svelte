@@ -6,8 +6,6 @@
 
 	const debug = false;
 
-	$: console.log(`item`, item);
-
 	$: ({created_at, edited_at, content, account} = item);
 	$: account_created = account.created_at;
 	$: account_avatar = account.avatar_static;
@@ -20,7 +18,6 @@
 
 	$: created = format(new Date(account_created), 'PPpp');
 	$: created_ago = formatDistance(new Date(), new Date(created_at));
-	$: console.log(`created_at`, created_at);
 	$: edited = edited_at ? format(new Date(edited_at), 'PPpp') : null;
 	$: edited_ago = edited_at ? formatDistance(new Date(), new Date(edited_at)) : null;
 	$: joined = format(new Date(account_created), 'MMM yyyy');

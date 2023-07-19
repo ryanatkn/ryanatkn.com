@@ -1,9 +1,9 @@
 <script lang="ts" context="module">
-	import Post from '$lib/StatusCard.svelte';
-	import type {FeedItemData} from '$lib/feed';
-	import data from '$routes/blog/[slug]/2/data.json';
+	import PendingAnimation from '@feltjs/felt-ui/PendingAnimation.svelte';
 
-	console.log(`data`, data);
+	import StatusCard from '$lib/StatusCard.svelte';
+	import Replies from '$lib/Replies.svelte';
+	import type {FeedItemData} from '$lib/feed';
 
 	export const post: FeedItemData = {
 		id: 'https://www.ryanatkn.com/blog/2',
@@ -26,9 +26,14 @@
 </script>
 
 <h2>Introduction</h2>
-<blockquote>https://hci.social/api/v1/statuses/110702983634003233/context</blockquote>
-<div>
-	{#each data.descendants as item}
-		<Post {item} />
-	{/each}
-</div>
+<Replies host="hci.social" id="110702983310017651" let:data>
+	{#if data}
+		{#each data.descendants as item}
+			<StatusCard {item} />
+		{/each}
+	{:else if data === null}
+		<div>something went wrong (TODO get error message)</div>
+	{:else}
+		<PendingAnimation />
+	{/if}
+</Replies>
