@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Breadcrumbs from '@feltjs/felt-ui/Breadcrumbs.svelte';
+	import {base} from '$app/paths';
 
 	import Favicon from '$lib/Favicon.svelte';
 	import ContactInfo from '$routes/ContactInfo.svelte';
@@ -22,9 +23,9 @@
 			links: '<a href="https://github.com/ryanatkn">GitHub</a>',
 		},
 		{
-			title: '<a href="/blog">blog</a>',
+			title: `<a href="${base}/blog">blog</a>`,
 			description: '<a href="https://www.ryanatkn.com/feed.xml">feed.xml</a>',
-			links: '<a href="/blog">/blog</a>',
+			links: `<a href="${base}/blog">/blog</a>`,
 		},
 		{
 			title: '<a href="https://log.ryanatkn.com/">log</a>',
@@ -62,7 +63,7 @@
 			My main skill is coding frontend web apps and I also do some backend programming. I enjoy
 			trying to make powerful tools that are easy to use, and I have a geeky interest in user
 			interfaces and social systems. I work on open source software both as a full-time profession
-			and hobby. More <a href="/about">about me</a>.
+			and hobby. More <a href="{base}/about">about me</a>.
 		</p>
 	</section>
 	<section class="panel">
