@@ -209,7 +209,7 @@
 		{/each}
 	</ul>
 	<h3>programming languages:</h3>
-	<p>(roughly reverse chronological order)</p>
+	<p>(roughly reverse chronological order, mostly beginner-level)</p>
 	<ul>
 		{#each langs as lang (lang)}
 			<!-- eslint-disable-next-line svelte/no-at-html-tags -->
