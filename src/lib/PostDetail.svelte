@@ -43,7 +43,7 @@
 		margin-bottom: var(--spacing_sm);
 	}
 	.icon {
-		width: var(--icon_size_sm);
+		width: var(--icon_size);
 	}
 	.names {
 		display: flex;
