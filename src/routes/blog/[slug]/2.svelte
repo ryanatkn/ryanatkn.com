@@ -43,7 +43,7 @@
 			<HashLink slug="introduction">Introduction</HashLink>
 		</h2>
 		<p>
-			<a href="https://github.com/ryanatkn/ryanatkn.com">This repo</a> is hosted on
+			This website's <a href="https://github.com/ryanatkn/ryanatkn.com">source code</a> is hosted on
 			<a href="https://pages.github.com/">GitHub Pages</a>, a free static host that lets me use my
 			own domain.
 		</p>
