@@ -1,5 +1,5 @@
 <script lang="ts" context="module">
-	import Post from '$lib/PostDetail.svelte';
+	import Post from '$lib/StatusCard.svelte';
 	import type {FeedItemData} from '$lib/feed';
 	import data from '$routes/blog/[slug]/2/data.json';
 

@@ -1,4 +1,15 @@
-export interface Post {
+/**
+ * https://docs.joinmastodon.org/entities/Context/
+ *
+ * https://:host/api/v1/statuses/:id/context
+ */
+export interface MastodonContext {
+	ancestors: MastodonStatus[];
+	descendants: MastodonStatus[];
+}
+
+// TODO BLOCK link and check name
+export interface MastodonStatus {
 	id: string;
 	created_at: string;
 	in_reply_to_id: string;
@@ -12,7 +23,7 @@ export interface Post {
 	replies_count: number;
 	reblogs_count: number;
 	favourites_count: number;
-	edited_at: null;
+	edited_at: null | string;
 	favourited: false;
 	reblogged: false;
 	muted: false;
@@ -62,3 +73,21 @@ export interface Post {
 	card: null;
 	poll: null;
 }
+
+// TODO BLOCK maybe use?
+const PATH = 'https://:host/api/v1/statuses/:id/context';
+
+export const fetch_post_by_url = (url: string) => {
+	console.log(`fetch_post_by_url url`, url);
+	const u = new URL(url);
+	// TODO BLOCK match pathname with regexp
+	console.log(`u.host`, u.host, u.hostname, u.pathname);
+	const id = u.pathname.match(/^\/api\/v1\/statuses\/($1)\/context$/u);
+	console.log(`id`, id);
+	const host = u.host;
+	return fetch_post(id, host);
+};
+
+export const fetch_post = (id: string, host: string) => {
+	fetch_post_by_url;
+};
