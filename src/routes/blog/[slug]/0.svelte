@@ -105,9 +105,8 @@
 		is complicated, see below for <a href="#interop">more on interop</a>)
 	</p>
 	<p>
-		We're calling Felt's server <a href="https://github.com/feltjs/felt-server"
-			>"a tool for building and maintaining communities"</a
-		>.
+		We're calling <a href="https://github.com/feltjs/felt-server">felt-server</a> "a programmable platform
+		for hobbyists and human-scale communities".
 	</p>
 	<ul>
 		<li>easily selfhosted, targeting the low end VPS tier (~$4/mo)</li>
@@ -143,17 +142,12 @@
 	<p>We have a handful of software repos, none of which are yet production ready:</p>
 	<ul>
 		<li>
-			<a href="https://github.com/feltjs/felt-server">@feltjs/felt-server</a> – the community software
+			<a href="https://github.com/feltjs/felt-server">@feltjs/felt-server</a> – the Node.js software
 			that's both deployable and available as a library on npm
 		</li>
 		<li>
-			<a href="https://github.com/feltcoop/felt.social">Felt.social</a> – an aspiring platform co-op
-			to support communities, operates instances of felt-server
-		</li>
-		<li>
-			<a href="https://github.com/feltjs/felt-ui">@feltjs/felt-ui</a> – a library with styles, Svelte
-			components, and other code for building things from simple websites to realtime interactive multiplayer
-			experiences (eventually this will include much of what's currently in @feltjs/felt-server)
+			<a href="https://github.com/feltjs/felt-ui">@feltjs/felt-ui</a> – styles and UI components for
+			Svelte and SvelteKit
 		</li>
 		<li>
 			<a href="https://github.com/feltjs/felt-template">@feltjs/felt-template</a> – a static web app
@@ -161,13 +155,12 @@
 			it will support quickly creating a custom server project, too.
 		</li>
 		<li>
-			<a href="https://github.com/feltjs/gro">@feltjs/gro</a> – a toolkit that extends SvelteKit and
-			Vite with things we find useful for making web apps; it's used by all of our other projects
+			<a href="https://github.com/feltjs/util">@feltjs/util</a> – JS utilities to complement the modern
+			web platform 🦕🐋
 		</li>
 		<li>
-			<a href="https://github.com/feltcoop/dealt">@feltcoop/dealt</a> – we haven't touched it in a minute,
-			and there's not much there yet, but it's a fun side project to showcase how the software can be
-			used
+			<a href="https://github.com/feltjs/gro">@feltjs/gro</a> – a toolkit that extends SvelteKit and
+			Vite with things we find useful for making web apps; it's used by all of our other projects
 		</li>
 	</ul>
 	<h2>In summary</h2>
@@ -309,8 +302,8 @@
 	<h3>on the shoulders of giants on the backs of turtles</h3>
 	<p>The web is everywhere and has much unrealized potential.</p>
 	<p>
-		Node, TypeScript, Postgres, nginx, and Linux are all productive and capable of delivering a good
-		UX in combination.
+		Node.js, TypeScript, Postgres, nginx, and Linux are all productive and capable of delivering a
+		good UX in combination.
 	</p>
 	<p>
 		Svelte, SvelteKit, and Vite have been fantastic for making UIs. We don't yet make
