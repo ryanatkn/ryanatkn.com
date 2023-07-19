@@ -6,36 +6,44 @@
 		// fetch_post,
 		fetch_post_by_url,
 		type MastodonContext,
-		to_status_context_url,
+		serialize_status_context_url,
 	} from '$lib/mastodon';
 
-// TODO BLOCK handle difference with https://mstdn.social/@feditips/110702983310017651 and  https://hci.social/api/v1/statuses/110702983310017651/context
+	// TODO BLOCK handle difference with https://mstdn.social/@feditips/110702983310017651 and  https://hci.social/api/v1/statuses/110702983310017651/context
 
 	/**
-   * The url to a Mastodon post,
-   * like `'https://hci.social/api/v1/statuses/110702983310017651/context'`.
-   * Either `url` or `host` and `id` are required.
-   */
-  export let url: string;
-  /**
-   * The host part of the url, like `'hachyderm.io'`.
-   * Either `url` or `host` and `id` are required.
-   */
-	export let host: string;
-  /**
-   * The status id to fetch, like `'110702983310017651'`.
-   * Either `url` or `host` and `id` are required.
-   */
-	export let id: string;
+	 * The url to a Mastodon post,
+	 * like `'https://mstdn.social/api/v1/statuses/110702983310017651/context'`.
+	 * Either `url` or `host` and `id` are required.
+	 */
+	export let url: string | undefined = undefined;
+	/**
+	 * The host part of the url, like `'hachyderm.io'`.
+	 * Either `url` or `host` and `id` are required.
+	 */
+	export let host: string | undefined = undefined;
+	/**
+	 * The status id to fetch, like `'110702983310017651'`.
+	 * Either `url` or `host` and `id` are required.
+	 */
+	export let id: string | undefined = undefined;
 
 	// TODO BLOCK fetch data
 	let data: MastodonContext | undefined | null;
 	console.log(`data`, data);
 
-  $: url = 
+	const to_api_url = (
+		url: string | undefined,
+		host: string | undefined,
+		id: string | undefined,
+	): string | null => {
+		if (!url && !host && !id) {
+			throw new Error('either url or host+id must be provided');
+		}
+		return url || (host && id ? serialize_status_context_url(host, id) : null);
+	};
 
-	// $: browser && load(host, id);
-	$: browser && load_by_url(url);
+	$: api_url = to_api_url(url, host, id);
 
 	// const load = async (host: string, id: string) => {
 	// 	console.log(`loading host, id`, host, id);
@@ -51,6 +59,9 @@
 		console.log(`fetched`, fetched);
 		data = fetched;
 	};
+
+	// $: browser && load(host, id);
+	$: browser && api_url && void load_by_url(api_url);
 </script>
 
-<slot {data} />
+<slot {data} {api_url} />

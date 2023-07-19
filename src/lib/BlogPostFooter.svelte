@@ -12,9 +12,6 @@
 			<a href="https://hci.social/@ryanatkn">@ryanatkn@hci.social</a> (professional)
 			<br />
 			<a href="https://hachyderm.io/@ryanatkn">@ryanatkn@hachyderm.io</a> (coder)
-			<br />
-			or
-			<a href="mailto:mail@ryanatkn.com?subject=Reply to post: {post.title}">↪ reply by email</a>
 		</p>
 	</div>
 </div>

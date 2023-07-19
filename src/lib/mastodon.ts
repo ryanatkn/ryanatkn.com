@@ -76,21 +76,30 @@ export interface MastodonStatus {
 
 // TODO maybe use trouter?
 // const PATH = 'https://:host/api/v1/statuses/:id/context';
-export const to_status_context_url = (host: string, id: string) =>
+export const serialize_status_context_url = (host: string, id: string) =>
 	`https://${host}/api/v1/statuses/${id}/context`;
 
-export const fetch_post_by_url = async (url: string): Promise<MastodonContext | null> => {
-	// TODO BLOCK match pathname with regexp
-	const matches = url.match(/^($1)\/api\/v1\/statuses\/($2)\/context$/u);
+export const parse_status_context_url = (url: string): {host: string; id: string} | null => {
+	const matches = /^.+($1)\/api\/v1\/statuses\/($2)\/context$/u.exec(url);
+	console.log(`matches`, matches);
 	if (!matches) return null;
 	console.log(`matches`, matches);
 	const host = matches?.[1];
 	const id = matches?.[2];
-	return id && host ? fetch_post(host, id) : null;
+	return {host, id};
+};
+
+// TODO BLOCK implement
+export const fetch_post_by_url = async (url: string): Promise<MastodonContext | null> => {
+	console.log(`url`, url);
+	const parsed = parse_status_context_url(url);
+	if (!parsed) return null;
+	const {host, id} = parsed;
+	return host && id ? fetch_post(host, id) : null;
 };
 
 export const fetch_post = async (host: string, id: string): Promise<MastodonContext> => {
-	const fetched = await (await fetch(to_status_context_url(host, id))).json();
+	const fetched = await (await fetch(serialize_status_context_url(host, id))).json();
 	console.log(`fetched`, fetched);
 	return fetched;
 };

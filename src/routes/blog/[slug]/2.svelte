@@ -26,7 +26,8 @@
 </script>
 
 <h2>Introduction</h2>
-<Replies host="hci.social" id="110702983310017651" let:data>
+<Replies host="mstdn.social" id="110702983310017651" let:data let:api_url>
+	fetching {api_url}
 	{#if data}
 		{#each data.descendants as item}
 			<StatusCard {item} />
