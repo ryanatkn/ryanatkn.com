@@ -1,5 +1,5 @@
 <script lang="ts" context="module">
-	import PendingAnimation from '@feltjs/felt-ui/PendingAnimation.svelte';
+	import PendingButton from '@feltjs/felt-ui/PendingButton.svelte';
 
 	import StatusCard from '$lib/StatusCard.svelte';
 	import Replies from '$lib/Replies.svelte';
@@ -23,18 +23,22 @@
 			'software',
 		],
 	};
+
+	const host = 'mstdn.social';
+	const id = '110702983310017651';
 </script>
 
 <h2>Introduction</h2>
-<Replies host="mstdn.social" id="110702983310017651" let:data let:api_url>
-	fetching {api_url}
+<Replies {host} {id} let:data let:api_url let:load let:loading>
+	<PendingButton pending={loading || false} on:click={() => load()}
+		>load comments from {host}</PendingButton
+	>
+	<blockquote>fetching from <code>{api_url}</code></blockquote>
 	{#if data}
 		{#each data.descendants as item}
 			<StatusCard {item} />
 		{/each}
-	{:else if data === null}
-		<div>something went wrong (TODO get error message)</div>
-	{:else}
-		<PendingAnimation />
+	{:else if loading === false}
+		<div>something went wrong (TODO proper error message)</div>
 	{/if}
 </Replies>

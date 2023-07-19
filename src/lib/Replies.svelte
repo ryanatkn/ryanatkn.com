@@ -53,15 +53,23 @@
 	// 	data = fetched;
 	// };
 
+	let loading: boolean | null = null;
+
 	const load_by_url = async (url: string) => {
 		console.log(`load_by_url`, url);
+		loading = true;
 		const fetched = await fetch_post_by_url(url);
+		loading = false;
 		console.log(`fetched`, fetched);
 		data = fetched;
 	};
 
 	// $: browser && load(host, id);
-	$: browser && api_url && void load_by_url(api_url);
+
+	const load = async (): Promise<void> => {
+		if (!browser || !api_url) return;
+		await load_by_url(api_url);
+	};
 </script>
 
-<slot {data} {api_url} />
+<slot {data} {api_url} {load} {loading} />
