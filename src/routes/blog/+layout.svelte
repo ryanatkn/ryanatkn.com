@@ -7,7 +7,7 @@
 <div class="breadcrumbs">
 	<Breadcrumbs><Favicon /></Breadcrumbs>
 </div>
-<div class="width_md prose padded_md">
+<div class="width_md padded_md">
 	<slot />
 </div>
 <div class="breadcrumbs">
