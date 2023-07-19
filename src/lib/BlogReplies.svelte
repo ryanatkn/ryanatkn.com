@@ -10,7 +10,7 @@
 </script>
 
 <Replies {host} {id} let:data let:api_url let:post_url let:load let:loading>
-	<div class="row">
+	<div class="row spaced">
 		<div class="load_button">
 			<PendingButton pending={loading || false} disabled={!!data} on:click={() => load()}>
 				<div class="load_button_content">

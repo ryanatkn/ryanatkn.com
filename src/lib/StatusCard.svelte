@@ -50,8 +50,8 @@
 			>
 		</div>
 	</header>
-	{#if account_note}
-		<div class="content prose" transition:slide>
+	{#if show_note && account_note}
+		<div class="content prose panel padded_md spaced" transition:slide>
 			<!-- eslint-disable-next-line svelte/no-at-html-tags -->
 			{@html account_note}
 		</div>

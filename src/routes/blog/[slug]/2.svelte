@@ -29,8 +29,11 @@
 	import HashLink from '$lib/HashLink.svelte';
 	import BlogPostIndex from '$lib/BlogPostIndex.svelte';
 
-	const host = 'mstdn.social';
-	const id = '110702983310017651';
+	// https://fosstodon.org/@rauschma/110728406134660568
+	const host = 'fosstodon.org';
+	const id = '110728406134660568';
+	// const host = 'mstdn.social';
+	// const id = '110702983310017651';
 </script>
 
 <div>
