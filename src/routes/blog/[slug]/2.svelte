@@ -76,7 +76,11 @@
 		<h2>
 			<HashLink slug="conclusion">Conclusion</HashLink>
 		</h2>
-		<p>So,..</p>
+		<p>
+			Recapping, this is a static site hosted by GitHub for free with dynamic commenting powered by
+			Mastodon.
+		</p>
+		<p>The library on npm ... and template project ...</p>
 		<p>
 			I also maintain <a href="https://ryanatkn.github.io/corpus-activity-streams"
 				>these alternative docs</a
