@@ -19,18 +19,38 @@
 			'software',
 		],
 	};
+
+	// TODO use `HashLink` info to automatically generate an index
+	const sections = ['introduction', 'implementation', 'conclusion', 'replies'];
 </script>
 
 <script lang="ts">
 	import BlogReplies from '$lib/BlogReplies.svelte';
+	import HashLink from '$lib/HashLink.svelte';
+	import BlogPostIndex from '$lib/BlogPostIndex.svelte';
 
 	const host = 'mstdn.social';
 	const id = '110702983310017651';
 </script>
 
 <div>
-	<div class="prose">
-		<h2>Introduction</h2>
-	</div>
-	<BlogReplies {host} {id} />
+	<section class="prose">
+		<br />
+		<BlogPostIndex {sections} />
+	</section>
+	<section class="prose">
+		<h2>
+			<HashLink slug="introduction">Introduction</HashLink>
+		</h2>
+		<p>
+			<a href="https://github.com/ryanatkn/ryanatkn.com">This repo</a> is hosted on
+			<a href="https://pages.github.com/">GitHub Pages</a>, a free static host that lets me use my
+			own domain.
+		</p>
+		<hr />
+	</section>
+	<section>
+		<div class="prose"><h2><HashLink slug="replies">Replies</HashLink></h2></div>
+		<BlogReplies {host} {id} />
+	</section>
 </div>
