@@ -1,8 +1,4 @@
 <script lang="ts" context="module">
-	import PendingButton from '@feltjs/felt-ui/PendingButton.svelte';
-
-	import StatusCard from '$lib/StatusCard.svelte';
-	import Replies from '$lib/Replies.svelte';
 	import type {FeedItemData} from '$lib/feed';
 
 	export const post: FeedItemData = {
@@ -23,22 +19,14 @@
 			'software',
 		],
 	};
+</script>
+
+<script lang="ts">
+	import BlogReplies from '$lib/BlogReplies.svelte';
 
 	const host = 'mstdn.social';
 	const id = '110702983310017651';
 </script>
 
 <h2>Introduction</h2>
-<Replies {host} {id} let:data let:api_url let:load let:loading>
-	<PendingButton pending={loading || false} on:click={() => load()}
-		>load comments from {host}</PendingButton
-	>
-	<blockquote>fetching from <code>{api_url}</code></blockquote>
-	{#if data}
-		{#each data.descendants as item}
-			<StatusCard {item} />
-		{/each}
-	{:else if loading === false}
-		<div>something went wrong (TODO proper error message)</div>
-	{/if}
-</Replies>
+<BlogReplies {host} {id} />
