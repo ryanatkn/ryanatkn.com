@@ -2,6 +2,7 @@
 	import type {FeedItemData} from '$lib/feed';
 
 	export let post: FeedItemData;
+	post; // TODO
 </script>
 
 <div class="blog-post-footer">
