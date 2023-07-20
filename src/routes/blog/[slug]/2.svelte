@@ -21,7 +21,7 @@
 	};
 
 	// TODO use `HashLink` info to automatically generate an index
-	const sections = ['introduction', 'implementation', 'conclusion', 'replies'];
+	const sections = ['introduction', 'implementation', 'conclusion', 'references', 'replies'];
 </script>
 
 <script lang="ts">
@@ -83,7 +83,10 @@
 			Recapping, this is a static site hosted by GitHub for free with dynamic commenting powered by
 			Mastodon.
 		</p>
-		<p>The library on npm ... and template project ...</p>
+		<p>
+			We have allowlist-based moderation through likes by the author, and a good effort at
+			efficiency.
+		</p>
 		<p>
 			I also maintain <a href="https://ryanatkn.github.io/corpus-activity-streams"
 				>these alternative docs</a
@@ -92,6 +95,24 @@
 			<a href="https://wikipedia.org/wiki/ActivityPub">ActivityPub</a>, the protocol behind
 			Mastodon.
 		</p>
+	</section>
+	<hr />
+	<section class="prose">
+		<h2>
+			<HashLink slug="conclusion">References</HashLink>
+		</h2>
+		<ul>
+			<li>
+				<a href="https://cassidyjames.com/blog/fediverse-blog-comments-mastodon/">
+					"Toot toot! Mastodon-powered Blog Comments"
+				</a>
+			</li>
+			<li>
+				<a href="https://jan.wildeboer.net/2023/02/Jekyll-Mastodon-Comments/">
+					"Client-side comments with Mastodon on a static Jekyll website"
+				</a>
+			</li>
+		</ul>
 	</section>
 	<hr />
 	<section>
