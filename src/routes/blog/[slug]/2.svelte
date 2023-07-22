@@ -111,7 +111,7 @@
 	<hr />
 	<section class="prose">
 		<h2>
-			<HashLink slug="conclusion">References</HashLink>
+			<HashLink slug="references">References</HashLink>
 		</h2>
 		<ul>
 			<li>
