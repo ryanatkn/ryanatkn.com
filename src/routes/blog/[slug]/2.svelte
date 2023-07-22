@@ -42,7 +42,7 @@
 	const id = '110702983310017651';
 </script>
 
-<div>
+<div class="width_md">
 	<section class="prose">
 		<br />
 		<BlogPostIndex {sections} />
@@ -53,9 +53,10 @@
 		</h2>
 		<p>
 			This website is a bundle of plain static files - HTML, JavaScript, CSS, and some images -
-			hosted for free by <a href="https://pages.github.com/">GitHub Pages</a>. In addition to this
-			blog post content, which is available as <a href="">an Atom feed</a>, this page makes calls to
-			a Mastodon API at <a href="https://hachyderm.io/">hachyderm.io</a> to load blog comments. The
+			hosted for free by <a href="https://pages.github.com/">GitHub Pages</a>. GitHub serves up the
+			blog post content, which is also available as
+			<a href="https://www.ryanatkn.com/feed.xml">an Atom feed</a>, this page makes calls to a
+			Mastodon API at <a href="https://hachyderm.io/">hachyderm.io</a> to load blog comments. The
 			site is just a bunch of static files made with
 			<a href="https://svelte.dev/">Svelte</a>
 			and
@@ -128,6 +129,6 @@
 	<hr />
 	<section>
 		<div class="prose"><h2><HashLink slug="replies">Replies</HashLink></h2></div>
-		<BlogReplies {host} {id} />
 	</section>
 </div>
+<BlogReplies {host} {id} />

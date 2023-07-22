@@ -35,7 +35,7 @@
 		</div>
 	</div>
 	{#if data}
-		<ul>
+		<ul class="statuses">
 			{#each data.descendants as item}
 				<li>
 					<StatusCard {item} />
@@ -48,12 +48,12 @@
 </MastodonReplies>
 
 <style>
-	ul {
+	.statuses {
 		display: flex;
 		flex-wrap: wrap;
-	}
-	.info {
-		flex: 1;
+		flex-direction: row;
+		gap: var(--spacing_md);
+		align-items: flex-start;
 	}
 	.load_button {
 		flex-shrink: 0;

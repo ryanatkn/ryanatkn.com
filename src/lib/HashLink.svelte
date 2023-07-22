@@ -15,7 +15,6 @@
 	a {
 		--icon_size: var(--icon_size_sm);
 		opacity: 0;
-		transition: opacity 0.05s;
 		font-size: var(--size_lg);
 		display: flex;
 		align-items: center;

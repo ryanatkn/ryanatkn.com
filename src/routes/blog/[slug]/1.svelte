@@ -13,7 +13,7 @@
 	};
 </script>
 
-<div class="prose">
+<div class="prose width_md">
 	<h2>Introduction</h2>
 	<p>
 		While working on the community software project I described in <a

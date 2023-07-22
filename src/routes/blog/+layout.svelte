@@ -7,7 +7,7 @@
 <div class="breadcrumbs">
 	<Breadcrumbs><Favicon /></Breadcrumbs>
 </div>
-<div class="width_md padded_md">
+<div class="wrapper padded_md">
 	<slot />
 </div>
 <div class="breadcrumbs">
@@ -15,7 +15,10 @@
 </div>
 
 <style>
-	.width_md {
+	.wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 		flex: 1;
 	}
 	.breadcrumbs {

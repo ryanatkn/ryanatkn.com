@@ -13,9 +13,9 @@
 	<title>{post.title}</title>
 </svelte:head>
 
-<header class="prose">
+<header class="prose width_md">
 	<BlogPostHeader {post} />
 </header>
 <svelte:component this={Component} />
-<hr />
+<hr class="width_md" />
 <BlogPostFooter {post} />

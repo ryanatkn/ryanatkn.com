@@ -13,12 +13,13 @@
 	};
 </script>
 
-<div class="prose">
+<div class="prose width_md">
 	<p>
 		<a href="https://www.felt.dev/">
 			<img
 				style:float="right"
 				style:width="100px"
+				style:height="92.7px"
 				style:margin-left="20px"
 				src="/felt.png"
 				alt="a microscopic-fiber-textured green heart with the word felt cut out"
