@@ -134,46 +134,64 @@
 	const langs: Array<{html: string}> = [
 		{html: 'config files for games like <a href="https://wikipedia.org/wiki/INI_file">.ini</a>'},
 		{
-			html: '<a href="https://wikipedia.org/wiki/HTML">HTML</a> (making silly things with friends in highschool)',
+			html: '<a href="https://wikipedia.org/wiki/HTML">HTML</a>, making silly things with friends in highschool (current)',
 		},
 		{
 			html: 'a couple <a href="https://wikipedia.org/wiki/PHP">PHP</a>-like scripting languages for games',
 		},
 		{
-			html: '<a href="https://wikipedia.org/wiki/Microsoft_Excel">Excel</a> and <a href="https://wikipedia.org/wiki/Visual_Basic_for_Applications">VBA</a>',
+			html: '<a href="https://wikipedia.org/wiki/Microsoft_Excel">Excel</a> and <a href="https://wikipedia.org/wiki/Visual_Basic_for_Applications">VBA</a> paid bills',
 		},
 		{
-			html: '<a href="https://www.python.org/">Python</a> and <a href="https://www.pygame.org/">pygame</a>',
+			html: '<a href="https://www.python.org/">Python</a> and <a href="https://www.pygame.org/">pygame</a>, playing with small toys to learn',
 		},
 		{
-			html: '<a href="https://wikipedia.org/wiki/ActionScript">Action Script 3</a> for Flash (whats flash) with <a href="https://flixel.org/">Flixel</a> and <a href="http://useflashpunk.net/">FlashPunk</a>',
+			html: '<a href="https://wikipedia.org/wiki/ActionScript">Action Script 3</a> for Flash (what\'s Flash? no the other one) with <a href="https://flixel.org/">Flixel</a> and <a href="http://useflashpunk.net/">FlashPunk</a>',
 		},
 		{
-			html: '<a href="https://wikipedia.org/wiki/C_Sharp_(programming_language)">C#</a> with the discontinued game tools <a href="https://wikipedia.org/wiki/Microsoft_XNA">XNA</a>',
+			html: '<a href="https://wikipedia.org/wiki/C_Sharp_(programming_language)">C#</a> with the discontinued game tools <a href="https://wikipedia.org/wiki/Microsoft_XNA">XNA</a>, many game prototypes',
 		},
-		{html: '<a href="https://wikipedia.org/wiki/CSS">CSS</a>'},
-		{html: '<a href="https://wikipedia.org/wiki/JavaScript">JavaScript</a>'},
+		{html: '<a href="https://wikipedia.org/wiki/CSS">CSS</a> (current)'},
+		{html: '<a href="https://wikipedia.org/wiki/JavaScript">JavaScript</a> (current)'},
 		{
 			html: '<a href="https://wikipedia.org/wiki/Document_Object_Model">DOM</a> templating langs like <a href="https://underscorejs.org/">Underscore.js</a>/<a href="https://jade-lang.com/">Jade</a> with <a href="https://jquery.com/">jQuery</a>/<a href="https://backbonejs.org/">Backbone</a>',
 		},
-		{html: '<a href="https://coffeescript.org/">CoffeeScript</a>'},
-		{html: '<a href="https://wikipedia.org/wiki/Bash_(Unix_shell)">Bash</a> and Unix/Linux/GNU'},
-		{html: '<a href="https://livescript.net/">LiveScript</a>'},
-		{html: '<a href="https://wikipedia.org/wiki/Lisp_(programming_language)">Lisp</a>'},
-		{html: '<a href="https://clojure.org/">Clojure</a>'},
-		{html: '<a href="https://wikipedia.org/wiki/JSON">JSON</a> (post-lisp understanding)'},
-		{html: '<a href="https://www.haskell.org/">Haskell</a>'},
-		{html: '<a href="https://www.rust-lang.org/">Rust</a>'},
+		{html: '<a href="https://coffeescript.org/">CoffeeScript</a> hell yeah'},
+		{
+			html: '<a href="https://wikipedia.org/wiki/Bash_(Unix_shell)">Bash</a> and Unix/Linux/GNU so I can work (current)',
+		},
+		{
+			html: '<a href="https://livescript.net/">LiveScript</a>, taking the design direction of CoffeScript to its fun absurd extremes',
+		},
+		{
+			html: '<a href="https://wikipedia.org/wiki/Lisp_(programming_language)">Lisp</a>, good to understand',
+		},
+		{
+			html: '<a href="https://wikipedia.org/wiki/JSON">JSON</a>, hits different post-lisp (current)',
+		},
+		{
+			html: '<a href="https://www.haskell.org/">Haskell</a>, bounced after seeing the inefficiency of hyped FRP UI frameworks',
+		},
+		{
+			html: '<a href="https://www.rust-lang.org/">Rust</a>, bounced because I\'m really just trying to make good web UIs',
+		},
 		{
 			html: 'DOM templating with <a href="https://angular.io/">Angular</a> and <a href="https://vuejs.org/">Vue</a>',
 		},
-		{html: '<a href="https://reactjs.org/docs/introducing-jsx.html">JSX and React</a>/vdom'},
-		{html: '<a href="https://clojurescript.org/">ClojureScript</a>'},
 		{
-			html: 'a little <a href="https://elm-lang.org/">Elm</a> and <a href="https://www.purescript.org/">PureScript</a>',
+			html: '<a href="https://reactjs.org/docs/introducing-jsx.html">JSX and React</a>/vdom, bounced with Svelte v3',
 		},
-		{html: '<a href="https://www.typescriptlang.org/">TypeScript</a>'},
-		{html: '<a href="https://svelte.dev/">Svelte</a>'},
+		{
+			html: '<a href="https://clojure.org/">Clojure</a> and <a href="https://clojurescript.org/">ClojureScript</a>, bounced because Java',
+		},
+		{
+			html: '<a href="https://reasonml.github.io/">Reason</a> briefly, bounced at the lack of async/await',
+		},
+		{
+			html: 'a little <a href="https://elm-lang.org/">Elm</a> and <a href="https://www.purescript.org/">PureScript</a>, bounced because my UX\'s are too messy for purity',
+		},
+		{html: '<a href="https://www.typescriptlang.org/">TypeScript</a> (current)'},
+		{html: '<a href="https://svelte.dev/">Svelte</a> (current)'},
 	];
 	langs.reverse();
 </script>

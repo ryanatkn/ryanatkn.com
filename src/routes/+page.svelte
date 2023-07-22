@@ -54,9 +54,9 @@
 	<section class="panel">
 		<blockquote class="panel">
 			<p>
-				hello surfer! 🌄🌳🐿 You're at the homepage of Ryan Atkinson. He's an open source web
-				developer interested in collaborative digital mediums and realizing more of their potential
-				to help us live well.
+				🌄🌳🐿 welcome, you're at the homepage of Ryan Atkinson - he's an open source web developer
+				interested in collaborative digital mediums and realizing more of their potential to help us
+				live well
 			</p>
 		</blockquote>
 		<p>

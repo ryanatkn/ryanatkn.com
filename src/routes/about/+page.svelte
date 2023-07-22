@@ -21,13 +21,14 @@
 		<p>Some more info:</p>
 		<ul>
 			<li>
-				I'm self-taught and I've been working as a web dev since 2011, and since 2019 I've been <a
-					href="https://github.com/ryanatkn">doing full-time open source</a
+				I'm self-taught, always feeling like a beginner, and I've been working as a web dev since
+				2011, and since 2019 I've been <a href="https://github.com/ryanatkn"
+					>doing full-time open source</a
 				>, releasing everything I write for free with permissive licenses.
 			</li>
 			<li>
-				I learned to code with the intention to be a game programmer, but I fell in love with the
-				web at my first job. I owe a lot to the people there, including my mentor <a
+				I learned to code wanting to be a game programmer, but I fell in love with the web at my
+				first job. I owe a lot to the people there, including my mentor <a
 					href="https://github.com/mgutz">Mario Gutierrez</a
 				>
 				and CEO <a href="https://www.linkedin.com/in/grantfarwell">Grant Farwell</a>.
@@ -37,7 +38,7 @@
 				<a href="https://12mod12.com/">Hamilton Reed</a> in January 2020 and we're still going.
 			</li>
 			<li>
-				My interest in making games lives on as a hobby in <a
+				My interest in making games continues on as a hobby in <a
 					href="https://www.cosmicplayground.org/">cosmicplayground.org</a
 				>, <a href="https://www.dealt.dev/">dealt.dev</a>,
 				<a href="https://earbetter.ryanatkn.com/">earbetter.ryanatkn.com</a>, and
@@ -49,7 +50,8 @@
 				so much that you shouldn't trust my opinion on it.
 			</li>
 			<li>
-				here's an ongoing attempt to credit <a href="{base}/influences">my influences</a>
+				here's an ongoing attempt to credit <a href="{base}/influences">my influences</a> (huh weird
+				not a single <em>influencer</em> on the list)
 			</li>
 		</ul>
 	</section>
