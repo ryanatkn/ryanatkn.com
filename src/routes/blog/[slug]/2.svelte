@@ -101,9 +101,10 @@
 			<HashLink slug="conclusion">Conclusion</HashLink>
 		</h2>
 		<p>
-			Recapping, this is a static site hosted by GitHub with dynamically-loaded-on-demand commenting
-			powered by Mastodon. They charge no money for these services, and you can fund them in
-			different ways.
+			Recapping, this is a static site hosted by GitHub with commenting that's
+			dynamically-loaded-on-demand from Mastodon on <a href="https://hachyderm.io/">hachyderm.io</a>
+			with an allowlist managed by the author through Mastodon. They charge no money for these services,
+			and you can fund them in different ways.
 		</p>
 		<p>
 			We have allowlist-based moderation through likes by the author, and a good effort at
