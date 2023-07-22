@@ -21,7 +21,13 @@
 	};
 
 	// TODO use `HashLink` info to automatically generate an index
-	const sections = ['introduction', 'implementation', 'conclusion', 'references', 'replies'];
+	const sections = [
+		{slug: 'introduction', name: 'Introduction'},
+		{slug: 'implementation', name: 'Implementation'},
+		{slug: 'conclusion', name: 'Conclusion'},
+		{slug: 'references', name: 'References'},
+		{slug: 'replies', name: 'Replies'},
+	];
 </script>
 
 <script lang="ts">
@@ -46,12 +52,16 @@
 			<HashLink slug="introduction">Introduction</HashLink>
 		</h2>
 		<p>
-			This static website is hosted for free by <a href="https://pages.github.com/">GitHub Pages</a
-			>. The site is just a bunch of static files made with <a href="https://svelte.dev/">Svelte</a>
+			This website is a bundle of plain static files - HTML, JavaScript, CSS, and some images -
+			hosted for free by <a href="https://pages.github.com/">GitHub Pages</a>. In addition to this
+			blog post content, which is available as <a href="">an Atom feed</a>, this page makes calls to
+			a Mastodon API at <a href="https://hachyderm.io/">hachyderm.io</a> to load blog comments. The
+			site is just a bunch of static files made with
+			<a href="https://svelte.dev/">Svelte</a>
 			and
 			<a href="https://kit.svelte.dev/">SvelteKit</a>
-			- here's the
-			<a href="https://github.com/ryanatkn/ryanatkn.com">source code</a>.
+			- here's
+			<a href="https://github.com/ryanatkn/ryanatkn.com">the source code</a>.
 		</p>
 		<p>
 			Static sites are cheap to serve and easy to reason about, but they have limitations. I like
@@ -80,12 +90,13 @@
 			<HashLink slug="conclusion">Conclusion</HashLink>
 		</h2>
 		<p>
-			Recapping, this is a static site hosted by GitHub for free with dynamic commenting powered by
-			Mastodon.
+			Recapping, this is a static site hosted by GitHub with dynamic commenting powered by Mastodon.
+			They charge no money for these services, and you can fund them in different ways.
 		</p>
 		<p>
 			We have allowlist-based moderation through likes by the author, and a good effort at
-			efficiency.
+			efficiency. I may have missed it, but I didn't see a way in the API to get favourites for many
+			statuses at once - I make an API call for every post with 1+ likes.
 		</p>
 		<p>
 			I also maintain <a href="https://ryanatkn.github.io/corpus-activity-streams"

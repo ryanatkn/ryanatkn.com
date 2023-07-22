@@ -11,16 +11,15 @@
 </svelte:head>
 
 <div class="blog prose">
-	<ol start={items.length - 1} reversed>
+	<ol class="panel" start={items.length - 1} reversed>
 		{#each items as item}
-			<li>
+			<li class="panel">
 				<a href={toPathname(item.url, feed.home_page_url)}>{item.title}</a>
-				<div>
-					<small><FeedItemDate {item} /></small>
-				</div>
+				<div class="date"><FeedItemDate {item} /></div>
 			</li>
 		{/each}
 	</ol>
+	<blockquote><a href="https://www.ryanatkn.com/feed.xml">Atom feed</a></blockquote>
 </div>
 
 <style>
@@ -30,13 +29,21 @@
 		align-items: center;
 		padding: var(--spacing_xl3) 0;
 	}
+	ol {
+		background-color: var(--fg_1);
+		padding: var(--spacing_sm) var(--spacing_sm) var(--spacing_sm) var(--spacing_xl4);
+	}
 	li {
 		font-size: var(--size_lg);
-		margin-bottom: var(--spacing_xl);
-		padding-left: var(--spacing_sm);
+		padding: var(--spacing_sm);
+		width: var(--width_sm);
+		margin: var(--spacing_sm) 0;
 	}
-	small {
+	.date {
 		white-space: nowrap;
 		font-size: var(--size_md);
+		display: flex;
+		justify-content: space-between;
+		margin-top: var(--spacing_xs);
 	}
 </style>
