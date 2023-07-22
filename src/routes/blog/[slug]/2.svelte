@@ -55,29 +55,25 @@
 		</h2>
 		<p>
 			This website is a bundle of plain static files - HTML, JavaScript, CSS, and some images -
-			hosted for free by <a href="https://pages.github.com/">GitHub Pages</a>. GitHub serves up the
-			blog post content, including the <a href="https://www.ryanatkn.com/feed.xml">an Atom feed</a>.
+			hosted for free by <a href="https://pages.github.com/">GitHub Pages</a>. GitHub efficiently
+			serves the blog post content at scale, including
+			<a href="https://www.ryanatkn.com/feed.xml">the Atom feed</a>, and I don't have to worry about
+			operations or hugs of death.
 			<a href="https://github.com/ryanatkn/ryanatkn.com">The source code</a>
 			that generates these files is written in <a href="https://svelte.dev/">Svelte</a> with
 			<a href="https://kit.svelte.dev/">SvelteKit</a>.
 		</p>
 		<p>
 			Although static, this site also has dynamic behavior. If you click the "load posts" button
-			below, your browser calls a Mastodon API at <a href="https://hachyderm.io/">hachyderm.io</a>.
-			It requests for information related to
-			<a href="https://hachyderm.io/@ryanatkn">a post I made</a> that references this blog post. If the
-			request is successful, some JavaScript then runs to display them on the page.
-		</p>
-		<p>
-			Static sites are cheap to serve and easy to reason about, but they have limitations. I like
-			computers because they are dynamic, and static sites seem to be in friction with this idea.
-			Big tech companies made big platforms by making their content dynamic in the 00's and 10's of
-			the 21st century.
-		</p>
-		<p>
-			The comments below are powered by <a href="https://joinmastodon.org/">Mastodon</a>, an
+			below, your browser sends a request to a <a href="https://joinmastodon.org/">Mastodon</a>
+			instance that hosts <a href="https://hachyderm.io/@ryanatkn">my account</a> on
+			<a href="https://hachyderm.io/">hachyderm.io</a>. Mastodon is an
 			<a href="https://wikipedia.org/wiki/ActivityPub">ActivityPub</a>-compatible app in the
-			<a href="https://wikipedia.org/wiki/Fediverse">Fediverse</a>.
+			<a href="https://wikipedia.org/wiki/Fediverse">Fediverse</a>. It requests information about a
+			<a href="https://hachyderm.io/@ryanatkn">a post I made</a> that references this blog post
+			using <a href="https://docs.joinmastodon.org/methods/statuses/#context">this API endpoint</a>.
+			If the request is successful, some JavaScript runs on your machine to display the data, and
+			then suddenly, comments.
 		</p>
 	</section>
 	<hr />
@@ -104,12 +100,13 @@
 			statuses at once - I make an API call for every post with 1+ likes.
 		</p>
 		<p>
-			I also maintain <a href="https://ryanatkn.github.io/corpus-activity-streams"
-				>these alternative docs</a
+			If you're technically-minded, you may be interested in <a
+				href="https://ryanatkn.github.io/corpus-activity-streams">these alternative docs</a
 			>
-			for the <a href="https://wikipedia.org/wiki/ActivityStreams">ActivityStreams</a> vocabulary of
-			<a href="https://wikipedia.org/wiki/ActivityPub">ActivityPub</a>, the protocol behind
-			Mastodon.
+			that I maintain for the
+			<a href="https://wikipedia.org/wiki/ActivityStreams">ActivityStreams</a>
+			vocabulary of Mastodon's protocol
+			<a href="https://wikipedia.org/wiki/ActivityPub">ActivityPub</a>.
 		</p>
 	</section>
 	<hr />
