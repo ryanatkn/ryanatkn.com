@@ -13,7 +13,7 @@
 <div class="blog prose">
 	<ol class="panel" start={items.length - 1} reversed>
 		{#each items as item}
-			<li class="panel">
+			<li>
 				<a href={toPathname(item.url, feed.home_page_url)}>{item.title}</a>
 				<div class="date"><FeedItemDate {item} /></div>
 			</li>
@@ -38,6 +38,8 @@
 		padding: var(--spacing_sm);
 		width: var(--width_sm);
 		margin: var(--spacing_sm) 0;
+		background-color: var(--bg);
+		border-radius: var(--border_radius_sm);
 	}
 	.date {
 		white-space: nowrap;
