@@ -38,8 +38,10 @@
 	// https://fosstodon.org/@rauschma/110728406134660568
 	// const host = 'fosstodon.org';
 	// const id = '110728406134660568';
-	const host = 'mstdn.social';
-	const id = '110702983310017651';
+	// const host = 'mstdn.social';
+	// const id = '110702983310017651';
+	const host = 'hachyderm.io';
+	const id = '110729727683117713';
 </script>
 
 <div class="width_md">
@@ -54,15 +56,17 @@
 		<p>
 			This website is a bundle of plain static files - HTML, JavaScript, CSS, and some images -
 			hosted for free by <a href="https://pages.github.com/">GitHub Pages</a>. GitHub serves up the
-			blog post content, which is also available as
-			<a href="https://www.ryanatkn.com/feed.xml">an Atom feed</a>, this page makes calls to a
-			Mastodon API at <a href="https://hachyderm.io/">hachyderm.io</a> to load blog comments. The
-			site is just a bunch of static files made with
-			<a href="https://svelte.dev/">Svelte</a>
-			and
-			<a href="https://kit.svelte.dev/">SvelteKit</a>
-			- here's
-			<a href="https://github.com/ryanatkn/ryanatkn.com">the source code</a>.
+			blog post content, including the <a href="https://www.ryanatkn.com/feed.xml">an Atom feed</a>.
+			<a href="https://github.com/ryanatkn/ryanatkn.com">The source code</a>
+			that generates these files is written in <a href="https://svelte.dev/">Svelte</a> with
+			<a href="https://kit.svelte.dev/">SvelteKit</a>.
+		</p>
+		<p>
+			Although static, this site also has dynamic behavior. If you click the "load posts" button
+			below, your browser calls a Mastodon API at <a href="https://hachyderm.io/">hachyderm.io</a>.
+			It requests for information related to
+			<a href="https://hachyderm.io/@ryanatkn">a post I made</a> that references this blog post. If the
+			request is successful, some JavaScript then runs to display them on the page.
 		</p>
 		<p>
 			Static sites are cheap to serve and easy to reason about, but they have limitations. I like

@@ -5,7 +5,7 @@
 	export let item: FeedItemData;
 </script>
 
-<span>{formatDate(item.date_published || item.date_modified)}</span
->{#if item.date_published && item.date_modified && item.date_published !== item.date_modified}<span
-		style:padding-left="var(--spacing_sm)">updated {formatDate(item.date_modified)}</span
-	>{/if}
+{formatDate(
+	item.date_published || item.date_modified,
+)}{#if item.date_published && item.date_modified && item.date_published !== item.date_modified},
+	updated {formatDate(item.date_modified)}{/if}

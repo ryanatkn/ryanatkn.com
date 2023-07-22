@@ -42,10 +42,7 @@
 		border-radius: var(--border_radius_sm);
 	}
 	.date {
-		white-space: nowrap;
 		font-size: var(--size_md);
-		display: flex;
-		justify-content: space-between;
 		margin-top: var(--spacing_xs);
 	}
 </style>
