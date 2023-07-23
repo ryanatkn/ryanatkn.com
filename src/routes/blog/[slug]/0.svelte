@@ -38,44 +38,40 @@
 		<a href="https://www.felt.social/toolmakersforum">Toolmakers Forum</a>. I plan to write about
 		Felt's ideas on this blog.
 	</p>
-	<p>The main software <a href="https://github.com/feltjs/felt-server">felt-server</a>:</p>
+	<p>
+		The main project is <a href="https://github.com/feltjs/felt-server">felt-server</a>, an
+		extensible NodeJS server and web frontend with the tagline "a programmable platform for
+		hobbyists and human-scale communities". The main UI looks like Discord and Slack on the surface,
+		and it has aspects of a
+		<a href="https://wikipedia.org/wiki/Content_management_system">content management system</a>
+		and
+		<a href="https://wikipedia.org/wiki/Knowledge_management_software"
+			>knowledge management software</a
+		> in a collaborative, repurposeable environment. We're aiming for a batteries-included, deeply customizable
+		experience with a small footprint, and that feels familiar and surprisingly powerful.
+	</p>
+	<p>More about felt-server:</p>
 	<ul>
+		<li>designed for small groups</li>
 		<li>
-			is an extensible NodeJS server and web frontend with the tagline "a programmable platform for
-			hobbyists and human-scale communities". The main UI looks like Discord and Slack on the
-			surface, and it has aspects of a <a
-				href="https://wikipedia.org/wiki/Content_management_system">content management system</a
-			>
-			and
-			<a href="https://wikipedia.org/wiki/Knowledge_management_software"
-				>knowledge management software</a
-			> in a collaborative, repurposeable environment. We're aiming for a batteries-included, deeply
-			customizable experience with a small footprint, and that feels familiar and surprisingly powerful.
-		</li>
-		<li>is designed for small groups</li>
-		<li>
-			is multipurpose, so the same toolkit can be used for many kinds of communities and websites
+			multipurpose, so the same toolkit can be used for many kinds of communities and websites
 		</li>
 		<li>
-			is open source with a documented API, and it's designed for fullstack customization, which
-			means devs and end-users have proper access and power over their UX and systems and code, and
-			we bridge more of the gap between programming and using
+			open source with a documented API, and it's designed for fullstack customization, which means
+			devs and end-users have proper access and power over their UX and systems and code, and we
+			bridge more of the gap between programming and using
 		</li>
 		<li>
-			is currently <a href="https://wikipedia.org/wiki/Software_release_life_cycle">pre-alpha</a>,
-			and we hope to reach alpha in Q3 2023
+			currently <a href="https://wikipedia.org/wiki/Software_release_life_cycle">pre-alpha</a>, and
+			we plan to reach alpha in Q3 2023
 		</li>
 	</ul>
-	<blockquote>
-		‼ please note this pre-alpha software is <strong>not yet secure</strong>, so use it at your own
-		risk and please don't pipe it data that you don't want public (also, we don't yet operate a
-		public instance)
-	</blockquote>
 	<p>
-		Fullstack customization is key to why I want to work on Felt, but it has a lot of unknowns and
-		we need to implement it to understand it. (name pending - maybe "web engine" is a helpful
-		framing) For devs, it means we'll have open source components, clients, and servers that are
-		designed to be extended and plugged and swapped. For end-users it means:
+		Fullstack customization is key to why I want to work on Felt, but it's just a vague idea and we
+		need to implement it to understand it. The point is the system is designed holistically to help
+		you solve your problems - the UX is the DX is the UX. For devs, it means we'll have open source
+		components, clients, and servers that are designed to be extended and plugged and swapped. For
+		end-users it means:
 	</p>
 	<ul>
 		<li>
