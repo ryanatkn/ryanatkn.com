@@ -338,8 +338,17 @@
 		>", where each community is a silo of self-governed data, and a service may host one or more
 		communities. In combination with clients that connect to multiple services, I think
 		"decentralized" is an appropriate description, but not in the way some people want. I won't be
-		satisfied until Felt can federate with the wider world, especially for user identity.
+		satisfied until felt-server can federate with the wider world, especially for user identity.
 	</p>
+	<blockquote>
+		I don't know which standards will or should win with identity, that's out of my expertise, but I
+		have to make decisions, and I'm currently planning on supporting OpenID Connect to complement
+		our current password-in-a-cookie authentication. I like how the <a href="https://atproto.com/"
+			>AT Protocol</a
+		> uses domains for identity. Compared to ActivityPub identities, they offer significantly better
+		portability and stability. Together with subdomains, I like the combination of user-friendliness,
+		flexibility, and DNS-derived authority.
+	</blockquote>
 	<p>
 		In our data system, we're trying to follow <a href="https://www.w3.org/TR/activitystreams-core/"
 			>the ActivityStreams vocabulary spec</a
