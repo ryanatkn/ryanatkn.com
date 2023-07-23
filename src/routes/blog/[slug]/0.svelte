@@ -284,7 +284,7 @@
 		people, and we chose JS, Node.js, and npm because of fit, familiarity, and productivity. The web
 		is everywhere and has a lot of unrealized potential. In combination, Node.js, Postgres, nginx,
 		and Linux are all productive and capable of delivering a good UX. TypeScript, Svelte, SvelteKit,
-		and Vite are fantastic for making UIs.
+		and Vite are excellent for making robust and snappy UIs.
 	</p>
 	<p>
 		Our server-side code is written for Node.js today, but we should be able to offer significant
