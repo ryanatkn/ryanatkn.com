@@ -218,15 +218,22 @@
 		community assets.
 	</p>
 	<p>
-		Originally, I thought I was going to operate a hosting company as a platform co-op at <a
+		Originally I thought I was going to operate a hosting company, <a
 			href="https://www.felt.social/">felt.social</a
-		>. We're making selfhostable software, but not everyone wants to self-host, so we can offer it
-		for a fee and make a sustainable open source endeavor in one move. However, we won't get the
-		best software if a hosting company has too much influence over the software's development, and
-		it turns out that I want my life to be focused on software development, and I'll gladly pay
-		money to people who enjoy operations in exchange for a simpler life. Hamilton may continue
-		pursuing felt.social as a cooperatively owned host, he'll just need 4 cofounders instead of 3 to
-		officially start the co-op in Colorado, and I would love to be a paying customer.
+		>, so we could earn money and make software sustainably. The logic is air-tight: we're making
+		selfhostable software, but not everyone wants to self-host, so we offer it for a fee, do what we
+		love, and make open source sustainable, all in one move.
+	</p>
+	<p>
+		Two problems: we won't get the best software if a hosting company has too much influence over
+		its development, and also, I now accept a fact about myself, that I want to spend my time
+		focused on software development, and I'll gladly pay money to people who enjoy operations in
+		exchange for a simpler life. The opportunity cost I see for myself doing any commercial
+		operations is too high.
+	</p>
+	<p>
+		Hamilton may continue pursuing felt.social as a cooperatively owned host, he'll just need 4
+		cofounders instead of 3 to officially start the co-op in Colorado.. take my money!
 	</p>
 	<hr />
 	<h2>Sharing spaces with others</h2>
