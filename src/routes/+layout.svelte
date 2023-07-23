@@ -4,9 +4,14 @@
 	import '$routes/style.css';
 
 	import Themed from '@feltjs/felt-ui/Themed.svelte';
+	import {dev} from '$app/environment';
 
 	import Header from '$routes/Header.svelte';
 	import Footer from '$routes/Footer.svelte';
+
+	const content_security_poilicy = dev
+		? "default-src 'unsafe-inline' 'self';"
+		: "default-src 'self'; img-src https://*;";
 </script>
 
 <svelte:head>
@@ -17,6 +22,7 @@
 		title="Atom"
 		href="https://www.ryanatkn.com/feed.xml"
 	/>
+	<meta http-equiv="content-security-policy" content={content_security_poilicy} />
 </svelte:head>
 
 <Themed>
