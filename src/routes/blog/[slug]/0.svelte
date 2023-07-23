@@ -244,22 +244,23 @@
 	<hr />
 	<h2>Tech notes</h2>
 	<p>
-		We tried to be thoughtful about our tech stack given the assumption that we'll be in the JS,
-		Node.js, and npm ecosystem. We chose the web because we think it's the best way to deliver the
-		UX we want to the most people, and we chose these specific technologies because of fit,
-		familiarity, and productivity.
+		We tried to be thoughtful about our tech stack to be friendly to beginners without compromising
+		on the UX we deliver. We chose the web because we think it's the best way to deliver the UX we
+		want to the most people, and we chose JS, Node.js, and npm because of fit, familiarity, and
+		productivity.
 	</p>
 	<p>
 		Our code is written for Node.js today, but we should be able to offer significant runtime
 		flexibility in the long term, largely thanks to <a href="https://kit.svelte.dev/">SvelteKit</a>,
-		so you may choose Deno, Bun, or a cloud platform's serverless offerings. We're trying to
-		minimize our exposure to Node-specific APIs to keep portability high.
+		so you may choose Deno, Bun, a cloud platform's serverless offerings, or whatever else is in the
+		Node.js legacy compat space. We're trying to minimize our exposure to Node-specific APIs to keep
+		portability high. Node.js a practical choice, not an idealized one.
 	</p>
 	<h3>on the shoulders of giants on the backs of turtles</h3>
 	<p>
-		The web is everywhere and has a lot of unrealized potential. Node.js, TypeScript, Postgres,
-		nginx, and Linux are all productive and capable of delivering a good UX in combination. Svelte,
-		SvelteKit, and Vite have been fantastic for making UIs. We don't yet make
+		The web is everywhere and has a lot of unrealized potential. Node.js, Postgres, nginx, and Linux
+		are all productive and capable of delivering a good UX in combination. Svelte, SvelteKit, and
+		Vite have been fantastic for making UIs. We don't yet make
 		<a
 			href="https://github.com/feltjs/felt-server/blob/main/src/docs/known-issues.md#not-using-sveltekits-server-side-data-loading"
 			>full use of SvelteKit's features</a
