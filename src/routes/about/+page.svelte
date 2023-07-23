@@ -27,8 +27,8 @@
 				>, releasing everything I write for free with permissive licenses.
 			</li>
 			<li>
-				I learned to code with the intention to be a game programmer, but I fell in love with the
-				web at my first job. I owe a lot to the people there, including my mentor <a
+				I learned to code wanting to be a game programmer, but I fell in love with the web at my
+				first job. I owe a lot to the people there, including my mentor <a
 					href="https://github.com/mgutz">Mario Gutierrez</a
 				>
 				and CEO <a href="https://www.linkedin.com/in/grantfarwell">Grant Farwell</a>.
