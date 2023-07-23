@@ -3,11 +3,12 @@
 
 	export const post: FeedItemData = {
 		id: 'https://www.ryanatkn.com/blog/2',
-		title: 'Blog comments with Mastodon on a static website with SvelteKit',
-		url: 'https://www.ryanatkn.com/blog/blog-comments-with-mastodon-on-a-static-sveltekit-website',
+		title: 'Moderated blog comments with Mastodon on a static website with SvelteKit',
+		url: 'https://www.ryanatkn.com/blog/moderated-blog-comments-with-mastodon-on-a-static-website-with-sveltekit',
 		date_published: '2023-07-19T21:44:17.224Z',
 		date_modified: '2023-07-19T21:44:17.224Z',
-		summary: 'Adding Mastodon comments to my static blog with TypeScript, Svelte, and SvelteKit.',
+		summary:
+			'Enabling moderated comments on my static blog using Mastodon with TypeScript, Svelte, and SvelteKit.',
 		tags: [
 			'web',
 			'ActivityPub',
@@ -55,14 +56,13 @@
 			<HashLink slug="introduction">Introduction</HashLink>
 		</h2>
 		<p>
-			This website is a bundle of plain static files - HTML, JavaScript, CSS, and some images -
-			hosted for free by <a href="https://pages.github.com/">GitHub Pages</a>. GitHub efficiently
-			serves the blog post content at scale, including
-			<a href="https://www.ryanatkn.com/feed.xml">the Atom feed</a>, and I don't have to worry about
-			operations or hugs of death.
+			This website is a bundle of plain static files - HTML, JavaScript, CSS, <a
+				href="https://www.ryanatkn.com/feed.xml">an Atom feed</a
+			>, and some images - hosted for free by <a href="https://pages.github.com/">GitHub Pages</a>.
 			<a href="https://github.com/ryanatkn/ryanatkn.com">The source code</a>
-			that generates these files is written in <a href="https://svelte.dev/">Svelte</a> with
-			<a href="https://kit.svelte.dev/">SvelteKit</a>.
+			that generates these files is written in <a href="https://typescriptlang.org/">TypeScript</a>
+			and <a href="https://svelte.dev/">Svelte</a> with
+			<a href="https://kit.svelte.dev/">SvelteKit</a> and <a href="https://vitejs.dev/">Vite</a>.
 		</p>
 		<p>
 			Although static, this site also has dynamic behavior. If you click the "load posts" button
@@ -92,7 +92,20 @@
 			<HashLink slug="limitations">Limitations</HashLink>
 		</h2>
 		<ul>
-			<li>no authentication</li>
+			<li>
+				Supports only one kind of moderation, allowlisting via favourites. Reactive moderation,
+				where the author could allow all comments by default and block to hide, may be possible with
+				the public API, but I need to look into it more. I also personally don't want anyone
+				publishing content to my website without my explicit approval, and I want to set the
+				expectation that your replies will generally not appear on my website.
+			</li>
+			<li>
+				no authentication
+				<ul>
+					<li>only 60 posts can be fetched</li>
+					<li>no taking actions directly on the page (favouriting, replying)</li>
+				</ul>
+			</li>
 		</ul>
 	</section>
 	<hr />
