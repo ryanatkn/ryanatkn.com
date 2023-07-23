@@ -211,8 +211,10 @@
 	<hr />
 	<h2>Business and ownership</h2>
 	<p>
-		We haven't done the legal work to make it official, but the Felt project trademarks and domains
-		(like <a href="/felt.png">the green heart logo</a> and
+		We haven't done the legal work to make it official, but the feltjs trademarks and domains (like <a
+			href="/felt.png">the green heart logo</a
+		>
+		and
 		<a href="https://www.felt.dev/">felt.dev</a>) will be owned and managed by some kind of
 		nonprofit entity. This is a commitment to the public open source community that these are
 		community assets.
