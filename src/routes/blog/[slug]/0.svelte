@@ -121,8 +121,8 @@
 		We'll provide defaults and templates, and users can modify the software for their own needs.
 		We'll support simple and scalable static web publishing like blogs and RSS/Atom feeds, and also
 		provide tools to make realtime social experiences and games that inherit your social context,
-		enabling beginners to participate in the creative process. We want creating tools and sharing
-		them to be a normal part of the experience.
+		enabling beginners to participate in the creative process. We want the act of creating tools and
+		sharing them to be a normal and expected part of the experience.
 	</p>
 	<p>
 		It's a big set of goals, and we think we have useful contributions particularly around UX. We
