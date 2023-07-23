@@ -361,25 +361,6 @@
 		<a href="https://www.w3.org/TR/activitypub/">ActivityPub</a> or Matrix.
 	</p>
 	<p>
-		Given felt-server's small-scale design and selfhostability, it may help to think of it as "<a
-			href="https://wikipedia.org/wiki/Polycentric">polycentric</a
-		>", where each community or "hub" is a silo of self-governed data, and any particular instance
-		may host one or more hubs. In combination with clients that connect to multiple services, I
-		think "decentralized" is an appropriate description, but not in the way some people want. I
-		don't think felt-server will reach its potential until can federate with the wider world,
-		especially for user identity.
-	</p>
-	<blockquote>
-		I don't know which standards will or should win with identity, that's outside of my expertise,
-		but I have to make decisions for users, and I'm currently planning on supporting <a
-			href="https://en.wikipedia.org/wiki/OpenID#OpenID_Connect_(OIDC)">OpenID Connect</a
-		>
-		(OIDC) to complement our current password-in-a-cookie authentication. I like how the
-		<a href="https://atproto.com/">AT Protocol</a> uses domains for identity - compared to ActivityPub
-		identities, they offer better portability and stability. Together with subdomains, I like the combination
-		of user-friendliness, flexibility, aesthetics, and DNS-derived authority.
-	</blockquote>
-	<p>
 		In our data system, we're following <a href="https://www.w3.org/TR/activitystreams-core/"
 			>the ActivityStreams vocabulary spec</a
 		>
@@ -401,6 +382,25 @@
 		ecosystems, but we have very specific ideas of what we want to build for small communities, and
 		federated tech isn't optimal for today's goals. (if you link me xkcd 927 i swear)
 	</p>
+	<p>
+		Given felt-server's small-scale design and selfhostability, it may help to think of it as "<a
+			href="https://wikipedia.org/wiki/Polycentric">polycentric</a
+		>", where each community or "hub" is a silo of self-governed data, and any particular instance
+		may host one or more hubs. In combination with clients that connect to multiple services, I
+		think "decentralized" is an appropriate description, but not in the way some people want. I
+		don't think felt-server will reach its potential until can federate with the wider world,
+		especially for user identity.
+	</p>
+	<blockquote>
+		I don't know which standards will or should win with identity, that's outside of my expertise,
+		but I have to make decisions for users, and I'm currently planning on supporting <a
+			href="https://en.wikipedia.org/wiki/OpenID#OpenID_Connect_(OIDC)">OpenID Connect</a
+		>
+		(OIDC) to complement our current password-in-a-cookie authentication. I like how the
+		<a href="https://atproto.com/">AT Protocol</a> uses domains for identity - compared to ActivityPub
+		identities, they offer better portability and stability. Together with subdomains, I like the combination
+		of user-friendliness, flexibility, aesthetics, and DNS-derived authority.
+	</blockquote>
 	<p>
 		I personally think decentralized technologies are the future and I want to move with the times.
 		In any case, we need user interfaces that are decoupled from the underlying protocols, and
