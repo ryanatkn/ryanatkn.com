@@ -339,13 +339,6 @@
 		over the ability to handle massive numbers of concurrent users or big data, and we'll improve
 		various kinds of scaling over time.
 	</p>
-	<p>
-		Even though our code isn't pushing the boundaries of gamedev-level performance and enterprise
-		readiness, we're trying to write it modularly and with good principles, so hopefully it evolves
-		gracefully and enables better tools to be built on its foundations. We're cutting a lot of
-		corners but also investing a lot in particular parts of the tech up front, trying to plan for
-		the long run to maximize power for the user.
-	</p>
 	<h3 id="interop">interop and decentralization</h3>
 	<p>
 		I value giving users choices, and that includes <a
@@ -382,11 +375,13 @@
 		<a href="https://joinmastodon.org/">Mastodon</a>
 		(and I made some
 		<a href="https://ryanatkn.github.io/corpus-activity-streams/">unofficial docs</a>), but we have
-		our own bespoke client-server protocol that works over http and websockets, and our database
-		tables don't map to ActivityStreams vocabulary, only <code>Item</code> objects do. We publish
+		our own client-server protocol that works over RESTful http and websockets using
+		<a href="https://www.jsonrpc.org/specification">JSON-RPC 2.0</a>. We publish a
+		<a href="https://json-schema.org/">JSON Schema</a>
+		with
 		<a href="https://github.com/feltjs/felt-server/blob/main/src/static/schemas/vocab.json"
-			>a JSON Schema with our vocabulary</a
-		>, and we could generate OpenAPI schemas from our source of truth, which would give us greatly
+			>our vocabulary</a
+		>. We could feasibly generate OpenAPI schemas from our source of truth, giving us greatly
 		expanded access to existing tooling, but we have no plans for that yet.
 	</p>
 	<p>
@@ -395,10 +390,8 @@
 			>schemas of our vocabulary</a
 		>
 		using
-		<a href="https://json-schema.org/">JSON Schema</a>, and we support both RESTful-ish http
-		endpoints and websockets using
-		<a href="https://www.jsonrpc.org/specification">JSON-RPC 2.0</a>. We'll have a better docs
-		website online soon.
+		<a href="https://json-schema.org/">JSON Schema</a>. We'll have a better docs website online
+		soon.
 	</p>
 	<p>
 		We want to be good citizens of open standards, not just do our own thing detached from open
