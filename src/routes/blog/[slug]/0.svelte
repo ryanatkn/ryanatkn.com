@@ -390,7 +390,7 @@
 		hosts one or more hubs. In combination with clients that connect to multiple services, I think
 		"decentralized" is an appropriate description, but not in the way some people want, for example
 		where their identity isn't mediated by the hub. I don't think felt-server will reach its
-		potential until can federate with the wider world, especially for user identity.
+		potential until it can federate with the wider world, especially for user identity.
 	</p>
 	<blockquote>
 		I don't know which standards will or should win with identity, that's outside of my expertise,
