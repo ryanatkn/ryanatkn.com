@@ -338,10 +338,15 @@
 		expanded access to existing tooling, but we have no plans for that yet.
 	</p>
 	<p>
-		We try to use
-		<a href="https://json-schema.org/">JSON Schema</a>
-		where it makes sense, and we support both RESTful-ish http endpoints and websockets using
-		<a href="https://www.jsonrpc.org/specification">JSON-RPC 2.0</a>.
+		We publish <a
+			href="https://github.com/feltjs/felt-server/blob/main/src/static/schemas/vocab.json"
+			>schemas of our vocabulary</a
+		>
+		using
+		<a href="https://json-schema.org/">JSON Schema</a>, and we support both RESTful-ish http
+		endpoints and websockets using
+		<a href="https://www.jsonrpc.org/specification">JSON-RPC 2.0</a>. We'll have a better docs
+		website online soon.
 	</p>
 	<p>
 		We want to be good citizens of open standards, not just do our own thing detached from open
