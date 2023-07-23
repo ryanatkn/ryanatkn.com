@@ -39,9 +39,9 @@
 	<p>
 		Hamilton and I first met in December 2019 and started self-funded part-time work on what would
 		become <a href="https://github.com/feltjs">@feltjs</a>. One of the main ideas was to make tools
-		to help people be creative together, and so far so good. Head over to
+		to help people be creative together. Visit
 		<a href="https://www.felt.dev/">felt.dev</a>
-		if you're interested in the software. If you want to consume our media, we publish a
+		to see where we are. If you want to consume our media, we publish a
 		<a href="https://tinyletter.com/FeltCoop">monthly newsletter</a>
 		and a podcast produced by Hamilton called
 		<a href="https://www.felt.social/toolmakersforum">Toolmakers Forum</a>.
@@ -56,26 +56,28 @@
 		<a href="https://wikipedia.org/wiki/Knowledge_management_software"
 			>knowledge management software</a
 		> in a collaborative environment. We're aiming for a batteries-included, deeply customizable experience
-		with a small footprint, that feels familiar and surprisingly powerful. Calling is a "programmable
-		platform" seems close enough.
+		with a small footprint, that feels familiar and surprisingly powerful. Calling it a "programmable
+		platform" is the best we have right now.
 	</p>
 	<p>
 		felt-server targets a specific UX. Instead of trying to replace any of today's large platforms,
-		think of felt-server as filling a niche that venture-funded startups and other commercial
-		interests rationally neglect.
+		we think of felt-server as filling a niche that venture-funded startups and other commercial
+		interests rationally ignore.
 	</p>
 	<ul>
 		<li>
-			made by and for hobbyists, selfhosters, devs, tinkerers, doers of tech things, lazy people who
-			enjoy automation - it'll remain a relatively simple project that's easy and cheap to self host
+			it's made by and for devs, hobbyists, selfhosters, tinkerers, techies, lazy automation
+			enjoyers - it should give you all the control you want, and remain a relatively simple project
+			that's easy and cheap to self-host
 		</li>
 		<li>
 			designed for small groups - scaling to many people is less important than depth of interaction
 			and richness of capabilities
 		</li>
 		<li>
-			multipurpose, so the same toolkit can be used for many kinds of communities and websites -
-			felt-server can run some of your friendly bots in the clouds
+			multipurpose, extensible, and interoperable, so the same toolkit can be used for many kinds of
+			communities and websites and problems - felt-server can run some of your friendly bots in the
+			clouds with a nice web GUI
 		</li>
 		<li>
 			is free and open source with a documented API, and it's designed for fullstack customization,
@@ -86,14 +88,16 @@
 	<p>
 		Fullstack customization is key to why I want to work on Felt, but it's just a vague idea with
 		some glimmers of promise scattered around. The point is to help you solve your problems, so we
-		design the system holistcally with that in mind - the UX is the DX is the UX. For devs, it means
-		we'll have open source components, clients, and servers that are designed to be extended and
-		plugged and swapped. For end-users it means:
+		design the system holistcally with that in mind - the UX is the DX is the UX. For devs, this
+		means we'll have open source components, clients, and servers that are designed to be extended
+		and plugged and swapped. It also means our system vocabulary is exposed in the UX, so the system
+		itself is more visible and directly interactive. For end-users it means:
 	</p>
 	<ul>
 		<li>
 			a comfortable environment that looks like existing social apps, but when you go digging you
-			find it's deeply customizable and flexible
+			find it's deeply customizable and flexible, and now it makes sense that people say all these
+			seemingly different web experiences were "made with feltjs"
 		</li>
 		<li>
 			a user-friendly text language (not Markdown but similar) with access to a rich vocabulary that
