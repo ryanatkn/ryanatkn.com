@@ -326,7 +326,8 @@
 	<p>
 		The limits may appear restrictive compared to the infinite cloud worlds that can host a global
 		social network, but these choices give us a highly productive environment with low resource
-		usage. We're trying to be powerful in the small, and maybe small communities are good too.
+		usage that's friendly to beginners. We're trying to be powerful in the small, and maybe small
+		communities are good too.
 	</p>
 	<blockquote>
 		Today, <a href="https://github.com/feltjs/felt-server"><code>@feltjs/felt-server</code></a>
@@ -352,25 +353,26 @@
 		>, but we're a 2 person team with limited resources trying to deliver a specific UX. Today this
 		means we have a centralized Node server with a lot of homemade solutions. One of my
 		long/medium-long term goals is to support at least one federated/decentralized standard like
-		<a href="https://www.w3.org/TR/activitypub/">ActivityPub</a>.
+		<a href="https://www.w3.org/TR/activitypub/">ActivityPub</a> or Matrix.
 	</p>
 	<p>
 		Given felt-server's small-scale design and selfhostability, it may help to think of it as "<a
 			href="https://wikipedia.org/wiki/Polycentric">polycentric</a
-		>", where each community or "hub" is a silo of self-governed data, and a service may host one or
-		more hubs. In combination with clients that connect to multiple services, I think
-		"decentralized" is an appropriate description, but not in the way some people want. I won't be
-		satisfied until felt-server can federate with the wider world, especially for user identity.
+		>", where each community or "hub" is a silo of self-governed data, and any particular instance
+		may host one or more hubs. In combination with clients that connect to multiple services, I
+		think "decentralized" is an appropriate description, but not in the way some people want. I
+		don't think felt-server will reach its potential until can federate with the wider world,
+		especially for user identity.
 	</p>
 	<blockquote>
-		I don't know which standards will or should win with identity, that's out of my expertise, but I
-		have to make decisions for users, and I'm currently planning on supporting <a
+		I don't know which standards will or should win with identity, that's outside of my expertise,
+		but I have to make decisions for users, and I'm currently planning on supporting <a
 			href="https://en.wikipedia.org/wiki/OpenID#OpenID_Connect_(OIDC)">OpenID Connect</a
 		>
 		(OIDC) to complement our current password-in-a-cookie authentication. I like how the
-		<a href="https://atproto.com/">AT Protocol</a> uses domains for identity. Compared to ActivityPub
-		identities, they offer significantly better portability and stability. Together with subdomains,
-		I like the combination of user-friendliness, flexibility, and DNS-derived authority.
+		<a href="https://atproto.com/">AT Protocol</a> uses domains for identity - compared to ActivityPub
+		identities, they offer better portability and stability. Together with subdomains, I like the combination
+		of user-friendliness, flexibility, aesthetics, and DNS-derived authority.
 	</blockquote>
 	<p>
 		In our data system, we're trying to follow <a href="https://www.w3.org/TR/activitystreams-core/"
