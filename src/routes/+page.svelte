@@ -8,9 +8,11 @@
 	/* eslint-disable svelte/no-at-html-tags */
 
 	interface ProjectInfo {
+		name: string;
 		title: string;
 		description: string;
 		links: string;
+		icon?: string;
 	}
 
 	// TODO I moved the project info to this data format to quicky slap together a responsive layout
@@ -18,30 +20,37 @@
 	// to write this in normal Svelte markup and use CSS to make a responsive layout
 	const projects: ProjectInfo[] = [
 		{
+			name: 'github',
 			title: '<a href="https://github.com/ryanatkn">github.com/ryanatkn</a>',
 			description: 'free and open source software',
 			links: '<a href="https://github.com/ryanatkn">GitHub</a>',
 		},
 		{
+			name: 'blog',
 			title: `<a href="${base}/blog">blog</a>`,
 			description: '<a href="https://www.ryanatkn.com/feed.xml">feed.xml</a>',
 			links: `<a href="${base}/blog">/blog</a>`,
 		},
 		{
+			name: 'devlog',
 			title: '<a href="https://log.ryanatkn.com/">log</a>',
 			description: 'devlog',
 			links: '<a href="https://log.ryanatkn.com/">log.ryanatkn.com</a>',
 		},
 		{
+			name: '@feltjs',
 			title: '<a href="https://www.felt.dev/">@feltjs</a>',
-			description: `<a href="https://wikipedia.org/wiki/Software_release_life_cycle">pre-alpha</a> free and open source software and tools for building and maintaining communities, publishing to the web, and collaborating with information`,
+			description: `a free and open source web toolkit for hobbyists and human-scale communities`,
 			links: `<a href="https://www.felt.dev/">felt.dev</a>, <a href="https://github.com/feltjs">GitHub</a>`,
+			icon: '/felt.png',
 		},
 		{
+			name: 'cosmicplayground',
 			title: '<a href="https://www.cosmicplayground.org">cosmicplayground.org</a>',
 			description:
 				'hobby project for fun and learning, <em>"tools and toys for expanding minds"</em>',
 			links: '<a href="https://github.com/ryanatkn/cosmicplayground">GitHub</a>',
+			icon: '/cosmic_kitty.jpg',
 		},
 	];
 </script>
@@ -50,43 +59,46 @@
 	<title>ryanatkn.com</title>
 </svelte:head>
 
-<div class="width_md prose padded_md">
-	<section class="panel">
-		<blockquote class="panel">
+<div class="width_md padded_md">
+	<div class="prose">
+		<section class="panel">
+			<blockquote class="panel">
+				<p>
+					hello surfer! 🌄🌳🐿 You're at the homepage of Ryan Atkinson. He's an open source web
+					developer interested in collaborative digital mediums and realizing more of their
+					potential to help us live well.
+				</p>
+			</blockquote>
 			<p>
-				hello surfer! 🌄🌳🐿 You're at the homepage of Ryan Atkinson. He's an open source web
-				developer interested in collaborative digital mediums and realizing more of their potential
-				to help us live well.
+				My main skill is coding frontend web apps and I also do some backend programming. I enjoy
+				trying to make powerful tools that are easy to use, and I have a geeky interest in user
+				interfaces and social systems. I work on open source software both as a full-time profession
+				and hobby. More <a href="{base}/about">about me</a>.
 			</p>
-		</blockquote>
-		<p>
-			My main skill is coding frontend web apps and I also do some backend programming. I enjoy
-			trying to make powerful tools that are easy to use, and I have a geeky interest in user
-			interfaces and social systems. I work on open source software both as a full-time profession
-			and hobby. More <a href="{base}/about">about me</a>.
-		</p>
-	</section>
+		</section>
+		<section class="panel">
+			<ContactInfo />
+		</section>
+	</div>
 	<section class="panel">
-		<ContactInfo />
-	</section>
-	<section class="panel">
-		<h2>ongoing projects</h2>
-		<!-- TODO refactor this so there's not both a table and .cards -->
-		<table>
-			<tbody
-				>{#each projects as project}<tr
-						><td>{@html project.title}</td><td>{@html project.description}</td><td
-							>{@html project.links}</td
-						></tr
-					>{/each}</tbody
-			>
-		</table>
+		<div class="prose">
+			<h2>ongoing projects</h2>
+		</div>
 		<div class="cards">
-			{#each projects as project}<div class="card prose padded_md">
-					<p>{@html project.title}</p>
-					<p>{@html project.description}</p>
-					<p>{@html project.links}</p>
-				</div>{/each}
+			{#each projects as project}
+				<div class="card prose padded_md">
+					<div>
+						<p>{@html project.title}</p>
+						<p>
+							{@html project.description}
+						</p>
+						<p>{@html project.links}</p>
+					</div>
+					{#if project.icon}
+						<div class="icon"><img src="{base}{project.icon}" alt="icon for {project.name}" /></div>
+					{/if}
+				</div>
+			{/each}
 		</div>
 	</section>
 </div>
@@ -125,21 +137,17 @@
 	.panel :global(h2) {
 		margin-top: 0;
 	}
-	td:first-child {
-		white-space: nowrap;
-	}
 	.cards {
-		display: none;
-	}
-	@media (max-width: 640px) {
-		table {
-			display: none;
-		}
-		.cards {
-			display: block;
-		}
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		justify-content: center;
+		gap: var(--spacing_md);
 	}
 	.card {
+		display: flex;
+		width: var(--width_sm);
 		background-color: var(--bg);
 		border-width: var(--border_width);
 		border-style: var(--border_style);
@@ -153,5 +161,12 @@
 	}
 	.card:hover {
 		background-color: var(--fg_2);
+	}
+	.icon {
+		padding-left: var(--spacing_sm);
+		flex-shrink: 0;
+	}
+	.icon img {
+		width: var(--icon_size_lg);
 	}
 </style>

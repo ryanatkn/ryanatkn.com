@@ -3,8 +3,8 @@
 
 	export const post: FeedItemData = {
 		id: 'https://www.ryanatkn.com/blog/0',
-		title: 'A year of making open source web community software',
-		url: 'https://www.ryanatkn.com/blog/a-year-of-making-open-source-web-community-software',
+		title: 'Making free and open source web community software',
+		url: 'https://www.ryanatkn.com/blog/making-free-and-open-source-web-community-software',
 		date_published: '2022-05-13T01:42:23.000Z',
 		date_modified: '2022-11-29T01:42:23.000Z',
 		summary:
@@ -26,10 +26,10 @@
 			/></a
 		>
 		<br />
-		I've been making open source web community software with
+		I've been making free and open source web community software with
 		<a href="https://12mod12.com/">Hamilton Reed</a>
 		(<a href="https://hachyderm.io/@greatbacon">Mastodon</a>,
-		<a href="https://github.com/greatbacon">GitHub</a>) full-time for a year,
+		<a href="https://github.com/greatbacon">GitHub</a>) full-time
 		<a href="https://github.com/feltjs/felt-server/graphs/contributors">since April 2021</a>. It's
 		been two and a half years since we first met in December 2019 and started self-funded part-time
 		work on what would become <a href="https://github.com/feltjs">@feltjs</a>. We recently started a
