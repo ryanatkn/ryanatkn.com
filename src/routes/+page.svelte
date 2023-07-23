@@ -13,6 +13,7 @@
 		description: string;
 		links?: string;
 		icon?: string;
+		icon_alt?: string;
 		icon_style?: string;
 	}
 
@@ -42,6 +43,7 @@
 			description: `a free and open source web toolkit for hobbyists and human-scale communities`,
 			links: `<a href="https://www.felt.dev/">felt.dev</a>, <a href="https://github.com/feltjs">GitHub</a>`,
 			icon: '/felt.png',
+			icon_alt: "green felt textured heart with the word 'felt' cut out",
 		},
 		{
 			name: 'cosmicplayground',
@@ -50,6 +52,7 @@
 				'hobby project for fun and learning, <em>"tools and toys for expanding minds"</em>',
 			links: '<a href="https://github.com/ryanatkn/cosmicplayground">GitHub</a>',
 			icon: '/cosmic_kitty.jpg',
+			icon_alt: 'the smiling and colorful face of Cosmic Kitty made of rainbow lines in space',
 			icon_style: 'border-radius: 50%',
 		},
 	];
@@ -100,7 +103,7 @@
 						<div class="icon">
 							<img
 								src="{base}{project.icon}"
-								alt="icon for {project.name}"
+								alt={project.icon_alt ?? `icon for ${project.name}`}
 								style={project.icon_style}
 							/>
 						</div>
