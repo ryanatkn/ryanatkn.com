@@ -110,7 +110,8 @@
 		<li>
 			easy-to-use plugins/mods/applets made by both feltjs and hopefully a community of
 			developer-users, and clear paths to learning the technical skills to make your own stuff -
-			making things should be only as complex as necessary
+			making an idea with code should be reduced to the essentials, so you incur no complexity
+			beyond what's needed
 		</li>
 		<li>
 			integration of low-level systems with high-level UX, like integrated interactive
