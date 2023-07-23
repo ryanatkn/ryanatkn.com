@@ -438,9 +438,8 @@
 			<a href="https://www.youtube.com/@feltcoop">YouTube</a>
 		</li>
 		<li>
-			read
-			<a href="https://tinyletter.com/FeltCoop">our monthly newsletter</a> and look
-			<a href="https://www.felt.social/toolmakersforum">a podcast</a>
+			also <a href="https://tinyletter.com/FeltCoop">a monthly newsletter</a> and
+			<a href="https://www.felt.social/toolmakersforum">podcast</a>
 		</li>
 	</ul>
 </div>
