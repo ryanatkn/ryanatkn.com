@@ -239,7 +239,7 @@
 		operations is too high.
 	</p>
 	<p>
-		Hamilton may continue pursuing felt.social as a cooperatively owned host, he'll just need 4
+		Hamilton may continue pursuing felt.social as a cooperatively-owned host, he'll just need 4
 		cofounders instead of 3 to officially start the co-op in Colorado... take my money!!
 	</p>
 	<hr />
