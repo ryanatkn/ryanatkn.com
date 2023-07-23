@@ -20,16 +20,6 @@
 			'software',
 		],
 	};
-
-	// TODO use `HashLink` info to automatically generate an index
-	const sections = [
-		{slug: 'introduction', name: 'Introduction'},
-		{slug: 'implementation', name: 'Implementation'},
-		{slug: 'limitations', name: 'Limitations'},
-		{slug: 'conclusion', name: 'Conclusion'},
-		{slug: 'references', name: 'References'},
-		{slug: 'replies', name: 'Replies'},
-	];
 </script>
 
 <script lang="ts">
@@ -44,6 +34,15 @@
 	// const id = '110702983310017651';
 	const host = 'hachyderm.io';
 	const id = '110729727683117713';
+
+	const sections = [
+		{slug: 'introduction', name: 'Introduction'},
+		{slug: 'implementation', name: 'Implementation'},
+		{slug: 'limitations', name: 'Limitations'},
+		{slug: 'conclusion', name: 'Conclusion'},
+		{slug: 'references', name: 'References'},
+		{slug: 'replies', name: 'Replies'},
+	];
 </script>
 
 <div class="width_md">
