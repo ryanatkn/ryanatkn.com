@@ -176,7 +176,7 @@
 	<h2>P.S.</h2>
 	<p>
 		I'm having difficulty summarizing the project: it's big and there are many unknowns. The ideas
-		below seem important to include but not that important.
+		below seem important to include but not that important, and there's technical jargon.
 	</p>
 	<hr />
 	<h2>Everyone can be a toolmaker</h2>
@@ -207,9 +207,13 @@
 	<p>
 		Originally, I thought I was going to operate a hosting company as a platform co-op at <a
 			href="https://www.felt.social/">felt.social</a
-		>. Hamilton may continue pursuing that goal, and I would love to be a paying customer, but I
-		want my life to be focused on software development, and I'll gladly pay money to people who
-		enjoy operations in exchange for a simpler life.
+		>. We're making selfhostable software, but not everyone wants to self-host, so we can offer it
+		for a fee and make a sustainable open source endeavor in one move. However, we won't get the
+		best software if a hosting company has too much influence over the software's development, and
+		it turns out that I want my life to be focused on software development, and I'll gladly pay
+		money to people who enjoy operations in exchange for a simpler life. Hamilton may continue
+		pursuing felt.social as a cooperatively owned host, he'll just need 4 cofounders instead of 3 to
+		officially start the co-op in Colorado, and I would love to be a paying customer.
 	</p>
 	<hr />
 	<h2>Sharing spaces with others</h2>
