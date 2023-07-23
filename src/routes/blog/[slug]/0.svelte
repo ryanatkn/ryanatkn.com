@@ -243,10 +243,13 @@
 		We tried to be thoughtful about our tech stack given the assumption that we'll be in the JS,
 		Node.js, and npm ecosystem. We chose the web because we think it's the best way to deliver the
 		UX we want to the most people, and we chose these specific technologies because of fit,
-		familiarity, and productivity. Our code is written for Node.js today, but we should be able to
-		offer significant runtime flexibility in the long term, so you may choose Deno, Bun, or a cloud
-		platform's serverless offerings. We're trying to minimize our exposure to Node-specific APIs to
-		keep portability high.
+		familiarity, and productivity.
+	</p>
+	<p>
+		Our code is written for Node.js today, but we should be able to offer significant runtime
+		flexibility in the long term, largely thanks to <a href="https://kit.svelte.dev/">SvelteKit</a>,
+		so you may choose Deno, Bun, or a cloud platform's serverless offerings. We're trying to
+		minimize our exposure to Node-specific APIs to keep portability high.
 	</p>
 	<h3>on the shoulders of giants on the backs of turtles</h3>
 	<p>
@@ -256,8 +259,7 @@
 		<a
 			href="https://github.com/feltjs/felt-server/blob/main/src/docs/known-issues.md#not-using-sveltekits-server-side-data-loading"
 			>full use of SvelteKit's features</a
-		>, but we feel highly productive and literally delighted working with it, and its flexibility is
-		a wonder.
+		>, but we feel productive and literally delighted working with it.
 	</p>
 	<h3>customizable and extensible</h3>
 	<p>
@@ -276,8 +278,8 @@
 	<h3>scaling (and not)</h3>
 	<p>
 		Our focus on "small communities" relates to a potentially deflating fact about our software: it
-		doesn't scale to large numbers of people or some kinds of heavy load. Felt can't be the best
-		solution to all problems, and tradeoffs are unavoidable.
+		doesn't scale to large numbers of people or some kinds of heavy load. felt-server can't be the
+		best solution to all problems, so we make tradeoffs intentionally to serve a particular UX.
 	</p>
 	<div>We're optimizing to:</div>
 	<ul>
