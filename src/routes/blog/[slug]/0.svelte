@@ -369,13 +369,14 @@
 		(and I made some
 		<a href="https://ryanatkn.github.io/corpus-activity-streams/">unofficial docs</a>), but we have
 		our own client-server protocol that works over RESTful http and websockets using
-		<a href="https://www.jsonrpc.org/specification">JSON-RPC 2.0</a>. We publish a
+		<a href="https://www.jsonrpc.org/specification">JSON-RPC 2.0</a>. We also publish a
 		<a href="https://json-schema.org/">JSON Schema</a>
 		with
 		<a href="https://github.com/feltjs/felt-server/blob/main/src/static/schemas/vocab.json"
 			>our vocabulary</a
-		>. We could feasibly generate OpenAPI schemas from our source of truth, giving us greatly
-		expanded access to existing tooling, but we have no plans for that yet.
+		>, including both data objects and actions. We could feasibly generate OpenAPI schemas from our
+		source of truth, giving us greatly expanded access to existing tooling, but we have no plans for
+		that yet.
 	</p>
 	<p>
 		We want to be good citizens of open standards, not just do our own thing detached from open
