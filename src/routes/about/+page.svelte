@@ -34,11 +34,11 @@
 				and CEO <a href="https://www.linkedin.com/in/grantfarwell">Grant Farwell</a>.
 			</li>
 			<li>
-				I started <a href="https://www.felt.dev/">Felt</a> with
+				I started <a href="https://www.felt.dev/">feltjs</a> with
 				<a href="https://12mod12.com/">Hamilton Reed</a> in January 2020 and we're still going.
 			</li>
 			<li>
-				My interest in making games lives on as a hobby in <a
+				My interest in making games continues as a hobby in <a
 					href="https://www.cosmicplayground.org/">cosmicplayground.org</a
 				>, <a href="https://www.dealt.dev/">dealt.dev</a>,
 				<a href="https://earbetter.ryanatkn.com/">earbetter.ryanatkn.com</a>, and
