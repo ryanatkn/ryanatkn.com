@@ -40,10 +40,10 @@
 	<p>The main software <a href="https://github.com/feltjs/felt-server">felt-server</a>:</p>
 	<ul>
 		<li>
-			is a toolkit and server for building and maintaining communities, publishing to the web, and
-			collaboratively working with information. The main UI looks like Discord and Slack on the
-			surface, and it has aspects of a <a
-				href="https://wikipedia.org/wiki/Content_management_system">content management system</a
+			is an extensible NodeJS server that we describe as a programmable platform for hobbyists and
+			human-scale communities. The main UI looks like Discord and Slack on the surface, and it has
+			aspects of a <a href="https://wikipedia.org/wiki/Content_management_system"
+				>content management system</a
 			>
 			and
 			<a href="https://wikipedia.org/wiki/Knowledge_management_software"
@@ -104,10 +104,6 @@
 		we'll prioritize interoperability to make Felt fit into workflows it doesn't know about. (this
 		is complicated, see below for <a href="#interop">more on interop</a>)
 	</p>
-	<p>
-		We're calling <a href="https://github.com/feltjs/felt-server">felt-server</a> "a programmable platform
-		for hobbyists and human-scale communities".
-	</p>
 	<ul>
 		<li>
 			easily selfhosted, targeting the low-end VPS tier (~$4/mo), will remain lightweight but
@@ -118,9 +114,9 @@
 	</ul>
 	<p>
 		We'll provide defaults and templates, and users can modify the software for their own needs.
-		We'll support simple and scalable static web publishing like blogs and RSS feeds, and also
+		We'll support simple and scalable static web publishing like blogs and RSS/Atom feeds, and also
 		provide tools to make realtime social experiences and games that inherit your social context
-		automatically, where creating tools and sharing them is a normal part of the experience.
+		automatically. We want creating tools and sharing them to be a normal part of the experience.
 	</p>
 	<p>
 		It's a big set of goals, and we think we have useful contributions particularly around UX. We
