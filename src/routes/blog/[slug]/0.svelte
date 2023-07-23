@@ -140,7 +140,7 @@
 			>10th</a
 		> podcast episodes go into more detail on the main ideas.
 	</p>
-	<p>We have a handful of software repos, none of which are yet production ready:</p>
+	<p>We have a handful of software repos:</p>
 	<ul>
 		<li>
 			<a href="https://github.com/feltjs/felt-server">@feltjs/felt-server</a> – a programmable platform
