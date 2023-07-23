@@ -25,6 +25,7 @@
 				title="felt.dev"
 			/></a
 		>
+		<br />
 		I've been making open source web community software with
 		<a href="https://12mod12.com/">Hamilton Reed</a>
 		(<a href="https://hachyderm.io/@greatbacon">Mastodon</a>,
