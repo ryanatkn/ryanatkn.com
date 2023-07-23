@@ -387,10 +387,10 @@
 		Given felt-server's small-scale design and selfhostability, it may help to think of it as "<a
 			href="https://wikipedia.org/wiki/Polycentric">polycentric</a
 		>", where each community or "hub" is a silo of self-governed data, and any particular instance
-		may host one or more hubs. In combination with clients that connect to multiple services, I
-		think "decentralized" is an appropriate description, but not in the way some people want. I
-		don't think felt-server will reach its potential until can federate with the wider world,
-		especially for user identity.
+		hosts one or more hubs. In combination with clients that connect to multiple services, I think
+		"decentralized" is an appropriate description, but not in the way some people want. I don't
+		think felt-server will reach its potential until can federate with the wider world, especially
+		for user identity.
 	</p>
 	<blockquote>
 		I don't know which standards will or should win with identity, that's outside of my expertise,
