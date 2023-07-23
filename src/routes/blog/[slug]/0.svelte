@@ -382,7 +382,7 @@
 		(and I made some
 		<a href="https://ryanatkn.github.io/corpus-activity-streams/">unofficial docs</a>), but we have
 		our own bespoke client-server protocol that works over http and websockets, and our database
-		tables don't map to ActivityStreams vocabulary, only <code>Entity</code> objects do. We publish
+		tables don't map to ActivityStreams vocabulary, only <code>Item</code> objects do. We publish
 		<a href="https://github.com/feltjs/felt-server/blob/main/src/static/schemas/vocab.json"
 			>a JSON Schema with our vocabulary</a
 		>, and we could generate OpenAPI schemas from our source of truth, which would give us greatly
@@ -414,8 +414,8 @@
 		>
 		and <a href="https://getdweb.net/principles/">the DWeb</a>
 		do better than the <a href="https://wikipedia.org/wiki/Rent-seeking">rent-seeking</a> and
-		financializing that dominates today; I want to own (or at least co-own) the digital ground under
-		my own feet, don't you<a href="https://wikipedia.org/wiki/Golden_Rule">?</a>
+		financializing that dominates today - I want to own (or at least co-own) the digital ground
+		under my own feet, don't you<a href="https://wikipedia.org/wiki/Golden_Rule">?</a>
 	</blockquote>
 	<hr />
 	<h2>Find us</h2>
