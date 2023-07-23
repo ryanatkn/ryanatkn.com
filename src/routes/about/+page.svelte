@@ -21,7 +21,7 @@
 		<p>Some more info:</p>
 		<ul>
 			<li>
-				I'm self-taught, always feeling like a beginner, and I've been working as a web dev since
+				I was initially self-taught (thanks, internet) and I've been working as a web dev since
 				2011, and since 2019 I've been <a href="https://github.com/ryanatkn"
 					>doing full-time open source</a
 				>, releasing everything I write for free with permissive licenses.
@@ -34,11 +34,11 @@
 				and CEO <a href="https://www.linkedin.com/in/grantfarwell">Grant Farwell</a>.
 			</li>
 			<li>
-				I started <a href="https://www.felt.dev/">Felt</a> with
+				I started <a href="https://www.felt.dev/">feltjs</a> with
 				<a href="https://12mod12.com/">Hamilton Reed</a> in January 2020 and we're still going.
 			</li>
 			<li>
-				My interest in making games continues on as a hobby in <a
+				My interest in making games continues as a hobby in <a
 					href="https://www.cosmicplayground.org/">cosmicplayground.org</a
 				>, <a href="https://www.dealt.dev/">dealt.dev</a>,
 				<a href="https://earbetter.ryanatkn.com/">earbetter.ryanatkn.com</a>, and
@@ -50,13 +50,14 @@
 				so much that you shouldn't trust my opinion on it.
 			</li>
 			<li>
-				here's an ongoing attempt to credit <a href="{base}/influences">my influences</a> (huh weird
-				not a single <em>influencer</em> on the list)
+				here's an ongoing attempt to credit <a href="{base}/influences">my influences</a>
 			</li>
 		</ul>
 	</section>
-	<section class="panel">
-		<ContactInfo />
+	<section class="box">
+		<div class="panel box">
+			<ContactInfo />
+		</div>
 	</section>
 </div>
 <Breadcrumbs>

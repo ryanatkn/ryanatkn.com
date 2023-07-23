@@ -66,8 +66,10 @@
 			and hobby. More <a href="{base}/about">about me</a>.
 		</p>
 	</section>
-	<section class="panel">
-		<ContactInfo />
+	<section class="box">
+		<div class="panel box">
+			<ContactInfo />
+		</div>
 	</section>
 	<section class="panel">
 		<h2>ongoing projects</h2>
