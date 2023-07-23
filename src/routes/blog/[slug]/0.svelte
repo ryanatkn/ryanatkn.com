@@ -365,15 +365,8 @@
 	<ul>
 		<li>
 			@feltjs on
-			<a href="https://github.com/feltjs">GitHub</a> &
+			<a href="https://github.com/feltjs">GitHub</a> and
 			<a href="https://www.npmjs.com/org/feltjs">npm</a>
-		</li>
-		<li>
-			@feltcoop on
-			<a href="https://github.com/feltcoop">GitHub</a>,
-			<a href="https://www.npmjs.com/org/feltcoop">npm</a>,
-			<a href="https://twitter.com/feltcoop">Twitter</a> &
-			<a href="https://www.youtube.com/@feltcoop">YouTube</a>
 		</li>
 		<li>
 			also <a href="https://tinyletter.com/FeltCoop">a monthly newsletter</a> and
