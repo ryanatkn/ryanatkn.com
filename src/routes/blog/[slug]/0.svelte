@@ -109,20 +109,18 @@
 		for hobbyists and human-scale communities".
 	</p>
 	<ul>
-		<li>easily selfhosted, targeting the low end VPS tier (~$4/mo)</li>
-		<li>uses tech like Postgres, Node, TypeScript, Svelte, and SvelteKit</li>
-		<li>we want to use it personally and make stuff with it</li>
-		<li>we're using it professionally to build itself under democratic control</li>
 		<li>
-			<a href="https://www.felt.dev/">the software project</a> will be a nonprofit and we plan for
-			<a href="https://www.felt.social/">the operator</a>
-			to become a <a href="https://platform.coop">platform co-op</a>
+			easily selfhosted, targeting the low-end VPS tier (~$4/mo), will remain lightweight but
+			extensible
 		</li>
+		<li>uses tech like Postgres, Node, TypeScript, Svelte, and SvelteKit</li>
+		<li>we want to make stuff with it</li>
 	</ul>
 	<p>
 		We'll provide defaults and templates, and users can modify the software for their own needs.
-		We'll support simple and scalable static web publishing like blogs and RSS feeds, along with the
-		tools to make realtime social experiences and games.
+		We'll support simple and scalable static web publishing like blogs and RSS feeds, and also
+		provide tools to make realtime social experiences and games that inherit your social context
+		automatically, where creating tools and sharing them is a normal part of the experience.
 	</p>
 	<p>
 		It's a big set of goals, and we think we have useful contributions particularly around UX. We
@@ -164,31 +162,12 @@
 			Vite with things we find useful for making web apps; it's used by all of our other projects
 		</li>
 	</ul>
-	<h2>In summary</h2>
-	<p>As software users, we want easy-to-use and powerful tools that we can tailor to our needs.</p>
+	<h2>Summary</h2>
 	<p>
-		As platform users, we want a professional, trusted, incentives-aligned operator, and we'll pay
-		for it.
-	</p>
-	<p>
-		As service providers, we want to build reliable orgs to operate infra to help users succeed.
-	</p>
-	<p>
-		As devs, we want to build great software for people, usually prioritizing end-users over
-		operators.
-	</p>
-	<p>
-		As toolmakers we want to help users bring their own visions to life and support beneficial
-		relationships with technology.
-	</p>
-	<p>
-		The idea is to make <a href="https://github.com/feltjs">the software</a> we want to use, at
-		<a href="https://www.felt.social/">the company</a> we want to work for, providing the service we
-		want to pay for.
-	</p>
-	<p>
-		more at <a href="https://github.com/feltjs">github.com/feltjs</a> and
-		<a href="https://github.com/feltcoop">github.com/feltcoop</a>
+		With Felt, I hope we can make the role of toolmaker more accessible to more people on the web,
+		to help them bring their ideas to life, while supporting beneficial relationships with
+		technology. I like our combination of solid technical foundations, lightweight implementation,
+		and DIY hackability.
 	</p>
 	<hr />
 	<h2>Wait the blog post isn't done?</h2>
@@ -239,58 +218,11 @@
 	<hr />
 	<h2>Business and ownership</h2>
 	<p>
-		<a href="https://www.felt.social/">Felt.social</a> (<a href="https://github.com/feltcoop"
-			>@feltcoop@github.com</a
-		>) is a separate entity from <a href="https://www.felt.dev/">Felt</a> the software project (<a
-			href="https://github.com/feltjs">@feltjs@github.com</a
-		>). We haven't done the legal work to make it official, but the Felt project trademarks and
-		domains (like <a href="/felt.png">the green heart logo</a> and
+		We haven't done the legal work to make it official, but the Felt project trademarks and domains
+		(like <a href="/felt.png">the green heart logo</a> and
 		<a href="https://www.felt.dev/">felt.dev</a>) will be owned and managed by some kind of
-		nonprofit entity, not the
-		<a href="https://www.felt.social/">Felt.social</a> co-op. The co-op is just one stakeholder from
-		the perspective of governing the Felt project. This is a commitment to the public open source community
-		that these are community assets.
-	</p>
-	<p>
-		<strong>Felt.social business model</strong>: no ads, no investors (so we need a real busines
-		model), no crypto, and the software is free and fully open source (<a
-			href="https://wikipedia.org/wiki/MIT_License">permissively licensed</a
-		>, not "<a href="https://wikipedia.org/wiki/Open-core_model">open core</a>") - users pay for
-		service and if it's sustainable we'll creatively subsidize users for more equitable access
-	</p>
-	<p>
-		<strong>Felt.social ownership/control</strong>: self-funded worker co-op with plans to become a
-		<a href="https://platform.coop/">platform co-op</a>, is forprofit but co-op could choose to
-		become a nonprofit (this seems likely? we just don't know yet, and we promise we won't sell out
-		our community for a bigmoney #exit)
-	</p>
-	<p>
-		How does this business model work, giving away the software for free? Because the product we're
-		selling isn't the open source software, it's the service and network.
-	</p>
-	<p>
-		We think we can reach sustainability at usercounts that look *very* small compared to a typical
-		ambitious startup, and we don't feel threatened by other service providers taking some or most
-		of the pie. The terms we're competing on don't require that we have a monopoly on hosting the
-		service.
-	</p>
-	<p>So what does success look like?</p>
-	<p>
-		The goal for sustainability is first to pay our own bills, then find and fund three more
-		colleagues and turn our <a href="https://github.com/feltjs/felt/blob/main/GOVERNANCE.md"
-			>Temporary Benevolent Dictatorship</a
-		>
-		(via <a href="https://communityrule.info/">CommunityRule</a>) into a real co-op. Five is the
-		number of people required to form a Colorado cooperative; Hamilton lives there and although
-		we're a remote team, it has some of the best-developed cooperative laws in the United States.
-	</p>
-	<p>
-		I would consider it a great success if one day, democratically selected experts make the
-		difficult operational decisions and I, web developer, get to stick to webdev.
-	</p>
-	<p>
-		And success today? Structuring incentives to create the best software we can and executing
-		capably, while enjoying the process, focusing on principles, and building good relationships.
+		nonprofit entity. This is a commitment to the public open source community that these are
+		community assets.
 	</p>
 	<hr />
 	<h2>Tech notes</h2>
@@ -317,8 +249,10 @@
 	<h3>customizable and extensible</h3>
 	<p>
 		Both the server and (future) clients are open source and our APIs are open, so clients can be
-		modified or created from scratch. We'll try to maximize the freedoms of users and developers,
-		but security and performance are unfortunate constraints and sometimes buzzkills :\
+		modified or created from scratch. We use TypeScript and Svelte across the full stack, and we try
+		to leverage the benefits of integration when available, like sharing types, helpers, and
+		schemas. We'll try to maximize the freedoms of users and developers, but security and
+		performance are unfortunate constraints and sometimes buzzkills :\
 	</p>
 	<p>
 		Our client has a <a href="https://wikipedia.org/wiki/Client_(computing)#Thick">thickness</a>
