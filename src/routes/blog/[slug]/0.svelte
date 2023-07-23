@@ -375,7 +375,7 @@
 		of user-friendliness, flexibility, aesthetics, and DNS-derived authority.
 	</blockquote>
 	<p>
-		In our data system, we're trying to follow <a href="https://www.w3.org/TR/activitystreams-core/"
+		In our data system, we're following <a href="https://www.w3.org/TR/activitystreams-core/"
 			>the ActivityStreams vocabulary spec</a
 		>
 		that's used in <a href="https://www.w3.org/TR/activitypub/">ActivityPub</a> and
