@@ -95,7 +95,7 @@
 		],
 		{name: 'consentfultech.io', url: 'https://www.consentfultech.io/'},
 		{
-			name: 'Initiative for Digital Public Infrastructure',
+			name: 'Initiative for Digital Public Infrastructure (iDPI)',
 			url: 'https://publicinfrastructure.org/',
 		},
 		[
