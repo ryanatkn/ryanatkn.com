@@ -287,12 +287,13 @@
 		and Vite are fantastic for making UIs.
 	</p>
 	<p>
-		Our code is written for Node.js today, but we should be able to offer significant runtime
-		flexibility in the long term, largely thanks to <a href="https://kit.svelte.dev/">SvelteKit</a>,
-		so you may choose Deno, Bun, a cloud platform's serverless offerings, or whatever else is in the
-		Node.js legacy compat space. We're trying to minimize our exposure to Node-specific APIs to keep
-		portability high. Node.js a practical choice, not an idealized one. (and we try to move forward
-		- for example feltjs never used any CommonJS)
+		Our server-side code is written for Node.js today, but we should be able to offer significant
+		runtime flexibility in the long term, largely thanks to <a href="https://kit.svelte.dev/"
+			>SvelteKit</a
+		>, so you may choose Deno, Bun, a cloud platform's serverless offerings, or whatever else is in
+		the Node.js legacy compat space. We're trying to minimize our exposure to Node-specific APIs to
+		keep portability high. Node.js a practical choice, not an idealized one. (and we try to move
+		forward - for example feltjs never used any CommonJS)
 	</p>
 	<h3>customizable and extensible</h3>
 	<p>
