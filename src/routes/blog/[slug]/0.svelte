@@ -137,7 +137,7 @@
 	<ul>
 		<li>
 			<a href="https://github.com/feltjs/felt-server">@feltjs/felt-server</a> – a programmable platform
-			for hobbyists and human-scale communities, the Node.js software that's selfhostable and available
+			for hobbyists and human-scale communities, the Node.js server that's selfhostable and available
 			as a library on npm
 		</li>
 		<li>
