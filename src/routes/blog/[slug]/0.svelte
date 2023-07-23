@@ -250,13 +250,14 @@
 		>.
 	</p>
 	<p>
-		For part of 2021 and 2022 we collaborated with PhD candidate Jane Im (<a
+		For part of 2021 and 2022 Hamilton and I collaborated with PhD candidate Jane Im (<a
 			href="https://imjane.net/">imjane.net</a
 		>) on designs related to research-backed user-driven governance. Her paper "Yes: Affirmative
 		Consent as a Theoretical Framework for Understanding and Imagining Social Platforms" (<a
 			href="https://consentful.systems/">consentful.systems</a
 		>), which credits <a href="https://www.consentfultech.io/">The Consentful Tech Project</a>, has
-		been a major source of inspiration for how we think about designing software.
+		been a major source of inspiration for how we think about designing software, and motivated our
+		<a href="https://ui.felt.dev/sketch/onboard">Consentful Onboarding Sketch</a>.
 	</p>
 	<p>
 		Our perspective as toolmakers is that we'll attempt to support a wide range of possibilities,
