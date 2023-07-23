@@ -52,7 +52,7 @@
 			> in a collaborative environment. We're aiming for a batteries-included, deeply customizable experience
 			with a small footprint, that feels familiar and surprisingly powerful.
 		</li>
-		<li>is designed for small communities</li>
+		<li>is designed for small groups</li>
 		<li>
 			is multipurpose, so the same toolkit can be used for many kinds of communities and websites
 		</li>
