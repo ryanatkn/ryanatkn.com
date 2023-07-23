@@ -259,8 +259,8 @@
 	<h3>on the shoulders of giants on the backs of turtles</h3>
 	<p>
 		The web is everywhere and has a lot of unrealized potential. Node.js, Postgres, nginx, and Linux
-		are all productive and capable of delivering a good UX in combination. Svelte, SvelteKit, and
-		Vite have been fantastic for making UIs. We don't yet make
+		are all productive and capable of delivering a good UX in combination. TypeScript, Svelte,
+		SvelteKit, and Vite have been fantastic for making UIs. We don't yet make
 		<a
 			href="https://github.com/feltjs/felt-server/blob/main/src/docs/known-issues.md#not-using-sveltekits-server-side-data-loading"
 			>full use of SvelteKit's features</a
