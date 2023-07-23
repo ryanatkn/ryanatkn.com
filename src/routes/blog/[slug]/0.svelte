@@ -30,9 +30,12 @@
 		<a href="https://12mod12.com/">Hamilton Reed</a>
 		(<a href="https://hachyderm.io/@greatbacon">Mastodon</a>,
 		<a href="https://github.com/greatbacon">GitHub</a>) full-time
-		<a href="https://github.com/feltjs/felt-server/graphs/contributors">since April 2021</a>. It's
-		been two and a half years since we first met in December 2019 and started self-funded part-time
-		work on what would become <a href="https://github.com/feltjs">@feltjs</a>. We recently started a
+		<a href="https://github.com/feltjs/felt-server/graphs/contributors">since April 2021</a>. We
+		won't announce anything for a while, not until it's <em>ready</em>. We'll continue to work
+		quietly in public and document our work through
+		<a href="https://github.com/feltjs/felt-server/pulls">GitHub PRs</a>. It's been two and a half
+		years since we first met in December 2019 and started self-funded part-time work on what would
+		become <a href="https://github.com/feltjs">@feltjs</a>. We recently started a
 		<a href="https://tinyletter.com/FeltCoop">monthly newsletter</a>
 		and a podcast produced by Hamilton called
 		<a href="https://www.felt.social/toolmakersforum">Toolmakers Forum</a>. I plan to write about
@@ -40,51 +43,57 @@
 	</p>
 	<p>
 		The main project is <a href="https://github.com/feltjs/felt-server">felt-server</a>, an
-		extensible NodeJS server and web frontend with the tagline "a programmable platform for
-		hobbyists and human-scale communities". The main UI looks like Discord and Slack on the surface,
-		and it has aspects of a
+		extensible Node.js server and web frontend described as "a programmable platform for hobbyists
+		and human-scale communities". The main UI looks like Discord and Slack on the surface, and it
+		has aspects of a
 		<a href="https://wikipedia.org/wiki/Content_management_system">content management system</a>
 		and
 		<a href="https://wikipedia.org/wiki/Knowledge_management_software"
 			>knowledge management software</a
-		> in a collaborative, repurposeable environment. We're aiming for a batteries-included, deeply customizable
-		experience with a small footprint, and that feels familiar and surprisingly powerful.
+		> in a collaborative environment. We're aiming for a batteries-included, deeply customizable experience
+		with a small footprint, and that feels familiar and surprisingly powerful. Its success will be correlated
+		with how repurposable people find it .
 	</p>
-	<p>More about felt-server:</p>
+	<p>
+		The design of felt-server targets a specific UX. Instead of trying to replace any of today's
+		large platforms, think of felt-server as filling a niche that venture-funded startups and other
+		commercial interests rationally neglect.
+	</p>
 	<ul>
-		<li>designed for small groups</li>
+		<li>made by and for hobbyists, selfhosters, devs, tinkerers - easy and cheap to self host</li>
 		<li>
-			multipurpose, so the same toolkit can be used for many kinds of communities and websites
+			designed for small groups - scaling to many people is less important than depth of interaction
+			and richness of capabilities
 		</li>
 		<li>
-			open source with a documented API, and it's designed for fullstack customization, which means
-			devs and end-users have proper access and power over their UX and systems and code, and we
-			bridge more of the gap between programming and using
+			multipurpose, so the same toolkit can be used for many kinds of communities and websites -
+			think of felt-server as running your friendly bots in the clouds
 		</li>
 		<li>
-			currently <a href="https://wikipedia.org/wiki/Software_release_life_cycle">pre-alpha</a>, and
-			we plan to reach alpha in Q3 2023
+			is free and open source with a documented API, and it's designed for fullstack customization,
+			which means devs and end-users have proper access and power over their UX and systems and
+			code, and we bridge more of the gap between programming and using
 		</li>
 	</ul>
 	<p>
-		Fullstack customization is key to why I want to work on Felt, but it's just a vague idea and we
-		need to implement it to understand it. The point is the system is designed holistically to help
-		you solve your problems - the UX is the DX is the UX. For devs, it means we'll have open source
-		components, clients, and servers that are designed to be extended and plugged and swapped. For
-		end-users it means:
+		Fullstack customization is key to why I want to work on Felt, but it's just a vague idea with
+		some glimmers of promise scattered around the feltjs projects. The point is that the system is
+		designed holistically to help you solve your problems - the UX is the DX is the UX. For devs, it
+		means we'll have open source components, clients, and servers that are designed to be extended
+		and plugged and swapped. For end-users it means:
 	</p>
 	<ul>
 		<li>
-			a comfortably familiar environment that looks like existing social apps, but more deeply
-			customizable and flexible
+			a comfortable environment that looks like existing social apps, but when you go digging you
+			find it's deeply customizable and flexible
 		</li>
 		<li>
-			a composable text language with a rich vocabulary that can be used to write chat messages,
-			blog posts, forum replies, todo items, and so on, and also construct both social spaces and
-			the entire client UI
+			a hypertext language with a rich vocabulary that can be used to write chat messages, blog
+			posts, forum replies, todo items, and so on, and also construct both social spaces and the
+			entire client UI, making it an accessible experience to design and share UI
 		</li>
 		<li>
-			easy-to-use plugins, mods, modules, etc, made by us at Felt and hopefully a community of
+			easy-to-use plugins/mods/applets made by both feltjs and hopefully a community of
 			developer-users, and clear paths to learning the technical skills to make your own stuff
 		</li>
 		<li>
@@ -93,27 +102,11 @@
 		</li>
 	</ul>
 	<p>
-		We think of Felt similar to a smartphone, in terms of packing many tools into one object: it
-		performs well for many tasks and often it's all you need and want, but sometimes you need more
-		specialized tools for a task. The current featureset is a single app with
-		chats+forums+todos+more that's perhaps less slick than each but far more powerful in 1,
-		supporting both realtime and asynchronous communications, and collaborative everywhere, and
-		we'll prioritize interoperability to make Felt fit into workflows it doesn't know about. (this
-		is complicated, see below for <a href="#interop">more on interop</a>)
-	</p>
-	<ul>
-		<li>
-			easily selfhosted, targeting the low-end VPS tier (~$4/mo), will remain lightweight but
-			extensible
-		</li>
-		<li>uses tech like Postgres, Node, TypeScript, Svelte, and SvelteKit</li>
-		<li>we want to make stuff with it</li>
-	</ul>
-	<p>
 		We'll provide defaults and templates, and users can modify the software for their own needs.
 		We'll support simple and scalable static web publishing like blogs and RSS/Atom feeds, and also
-		provide tools to make realtime social experiences and games that inherit your social context
-		automatically. We want creating tools and sharing them to be a normal part of the experience.
+		provide tools to make realtime social experiences and games that inherit your social context,
+		enabling beginners to participate in the creative process. We want creating tools and sharing
+		them to be a normal part of the experience.
 	</p>
 	<p>
 		It's a big set of goals, and we think we have useful contributions particularly around UX. We
