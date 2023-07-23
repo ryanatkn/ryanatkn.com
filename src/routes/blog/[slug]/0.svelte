@@ -187,11 +187,11 @@
 		opportunities to do this with web tech.
 	</p>
 	<p>
-		We want to build software that supports exploring the vast terrain of possible collaborative
-		experiences, so you could take a larger role in designing your media, if you want. A key here is
-		to make a great media sharing UX, so some fraction of people make and share useful and cool
-		stuff, and everyone benefits. Also, creating the tools of creation should be open and
-		ecosystemified, so we can experiment for our particular situations.
+		We want software for exploring the vast potential of collaborative experiences on the web, so
+		you could take a larger role in designing your media, if you want. A key here is to make a great
+		media sharing UX, so some fraction of people make and share useful and cool stuff, and everyone
+		benefits. Also, creating the tools of creation should be open and ecosystemified, so we can
+		experiment for our particular situations.
 	</p>
 	<hr />
 	<h2>Business and ownership</h2>
