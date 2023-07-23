@@ -171,8 +171,8 @@
 	<p>
 		With feltjs, I hope we can make the role of toolmaker more accessible to more people on the web,
 		to help us bring ideas to life while supporting beneficial relationships with technology. I like
-		our combination of solid technical foundations, lightweight implementation, and DIY hackability.
-		It's been fun and there's cooler stuff ahead.
+		feltjs' combination of solid technical foundations, lightweight implementation, and DIY
+		hackability. It's been fun and there's cooler stuff ahead.
 	</p>
 	<hr />
 	<h2>Find us</h2>
