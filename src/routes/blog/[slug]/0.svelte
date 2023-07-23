@@ -334,7 +334,7 @@
 		usage that's friendly to beginners. We're trying to be powerful in the small, and maybe small
 		communities are good too.
 	</p>
-	<blockquote>
+	<aside>
 		Today, <a href="https://github.com/feltjs/felt-server"><code>@feltjs/felt-server</code></a>
 		supports only
 		<code
@@ -343,7 +343,7 @@
 			></code
 		> – we'd like to be compatible with as many SvelteKit adapters as possible, giving operators access
 		to more scalable cloud backends, but we haven't worked it into our roadmap.
-	</blockquote>
+	</aside>
 	<p>
 		We should be able to support non-realtime usecases that scale to more users like blogs and
 		similar web publishing, much for free thanks to SvelteKit. We're prioritizing flexibility and UX
@@ -392,7 +392,7 @@
 		where their identity isn't mediated by the hub. I don't think felt-server will reach its
 		potential until it can federate with the wider world, especially for user identity.
 	</p>
-	<blockquote>
+	<aside>
 		I don't know which standards will or should win with identity, that's outside of my expertise,
 		but I have to make decisions for users, and I'm currently planning on supporting <a
 			href="https://en.wikipedia.org/wiki/OpenID#OpenID_Connect_(OIDC)">OpenID Connect</a
@@ -401,13 +401,13 @@
 		<a href="https://atproto.com/">AT Protocol</a> uses domains for identity - compared to ActivityPub
 		identities, they offer better portability and stability. Together with subdomains, I like the combination
 		of user-friendliness, flexibility, aesthetics, and DNS-derived authority.
-	</blockquote>
+	</aside>
 	<p>
 		I personally think decentralized technologies are the future and I want to move with the times.
 		In any case, we need user interfaces that are decoupled from the underlying protocols, and
 		feltjs wants to be as repurposable as it can be.
 	</p>
-	<blockquote>
+	<aside>
 		"decentralized" means a lot of things, and while I think it's a broadly inevitable future, I
 		believe the rather important details of ownership and power have yet to be determined, and my
 		hope is that justice-oriented movements like <a href="https://platform.coop/"
@@ -417,7 +417,7 @@
 		do better than the <a href="https://wikipedia.org/wiki/Rent-seeking">rent-seeking</a> and
 		financializing that dominates today - I want to own (or at least co-own) the digital ground
 		under my own feet, don't you<a href="https://wikipedia.org/wiki/Golden_Rule">?</a>
-	</blockquote>
+	</aside>
 	<hr />
 	<h2>Find us</h2>
 	<ul>
