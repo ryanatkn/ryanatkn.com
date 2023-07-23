@@ -221,6 +221,13 @@
 		nonprofit entity. This is a commitment to the public open source community that these are
 		community assets.
 	</p>
+	<p>
+		Originally, I thought I was going to operate a hosting company at <a
+			href="https://www.felt.social/">felt.social</a
+		>. Hamilton may continue pursuing that goal, and I would love to be a paying customer, but I
+		want my life to be focused on software development, and I'll leave operations to people who
+		enjoy them.
+	</p>
 	<hr />
 	<h2>Tech notes</h2>
 	<p>
