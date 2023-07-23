@@ -21,8 +21,9 @@
 		<p>Some more info:</p>
 		<ul>
 			<li>
-				I'm self-taught and I've been working as a web dev since 2011, and since 2019 I've been <a
-					href="https://github.com/ryanatkn">doing full-time open source</a
+				I was initially self-taught (thanks, internet) and I've been working as a web dev since
+				2011, and since 2019 I've been <a href="https://github.com/ryanatkn"
+					>doing full-time open source</a
 				>, releasing everything I write for free with permissive licenses.
 			</li>
 			<li>
