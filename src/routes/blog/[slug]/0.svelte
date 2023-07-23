@@ -68,13 +68,13 @@
 	</p>
 	<ul>
 		<li>
-			it's made by and for devs, hobbyists, selfhosters, tinkerers, techies, lazy automation
-			enjoyers - it should give you all the control you want, and remain a relatively simple project
-			that's easy and cheap to self-host
+			it's made by and for devs, students, hobbyists, selfhosters, tinkerers, techies, lazy
+			automation-enjoyers - it should give you all the control you want, be broadly useful, and
+			remain a relatively simple project that's easy and cheap to self-host
 		</li>
 		<li>
-			designed for small groups - scaling to thousands of people is less important than the depth of
-			interaction and richness of capabilities
+			designed for small groups - scaling to thousands of people is less important for feltjs than
+			the depth of interaction and richness of capabilities
 		</li>
 		<li>
 			multipurpose, extensible, and interoperable, so the same toolkit can be used for many kinds of
@@ -89,27 +89,29 @@
 	</ul>
 	<p>
 		Fullstack customization is key to why I want to work on Felt, but it's just a vague idea with
-		some glimmers of promise scattered around. The point is to help you solve your problems, so we
-		design the system holistcally with that in mind - the UX is the DX is the UX. For devs, this
-		means we'll have open source components, clients, and servers that are designed to be extended
-		and plugged and swapped. It also means our programming vocabulary is exposed in the UX, so the
-		system itself is more visible and directly interactive. For end-users it means:
+		some glimmers of promise scattered around. The point is to help you solve your problems, which
+		are unknown and numerous in aggregate, so we design the system holistcally with that in mind -
+		the UX is the DX is the UX. For devs, this means we'll have open source servers, clients, and
+		modules that are designed to be extended and plugged and swapped. It also means our programming
+		vocabulary is exposed in the UX, so the system itself is more visible and directly interactive.
+		For end-users it means:
 	</p>
 	<ul>
 		<li>
 			a comfortable environment that looks like existing social apps, but when you go digging you
 			find it's deeply customizable and flexible, and now it makes sense that people say all these
-			seemingly different web experiences were "made with feltjs"
+			seemingly different web experiences were "made with feltjs" and maybe you could use it to make
+			that thing?
 		</li>
 		<li>
-			a user-friendly text language (not Markdown but similar) with access to a rich vocabulary that
-			can be used to write chat messages, blog posts, forum replies, todo items, and so on, and also
-			construct both social spaces and the entire client UI, making it an accessible experience to
-			design and share UI
+			a user-friendly text language - like Slack and Discord it'll be similar to Markdown - with
+			access to a rich vocabulary that can be used to write chat messages, blog posts, forum
+			replies, todo items, and so on, and also construct both social spaces and the entire client
+			UI, forming the base of an accessible experience to design and share UI
 		</li>
 		<li>
 			easy-to-use plugins/mods/applets made by both feltjs and hopefully a community of
-			developer-users, and clear paths to learning the technical skills to make your own stuff -
+			developer-users, with clear paths to learning the technical skills to make your own stuff -
 			making an idea with code should be reduced to the essentials, so you incur no complexity
 			beyond what's needed
 		</li>
@@ -168,9 +170,9 @@
 	</ul>
 	<p>
 		With feltjs, I hope we can make the role of toolmaker more accessible to more people on the web,
-		to help them bring their ideas to life while supporting beneficial relationships with
-		technology. I like our combination of solid technical foundations, lightweight implementation,
-		and DIY hackability. It's been fun and there's cooler stuff ahead.
+		to help us bring ideas to life while supporting beneficial relationships with technology. I like
+		our combination of solid technical foundations, lightweight implementation, and DIY hackability.
+		It's been fun and there's cooler stuff ahead.
 	</p>
 	<hr />
 	<h2>Find us</h2>
