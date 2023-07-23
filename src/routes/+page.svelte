@@ -61,11 +61,9 @@
 	<div class="prose">
 		<section class="panel">
 			<blockquote class="panel">
-				<p>
-					🌄🌳🐿 welcome, you're at the homepage of Ryan Atkinson - he's an open source web developer
-					interested in collaborative digital mediums and realizing more of their potential to help
-					us live well
-				</p>
+				🌄🌳🐿 welcome, you're at the homepage of Ryan Atkinson - he's an open source web developer
+				interested in collaborative digital mediums and realizing more of their potential to help us
+				live well
 			</blockquote>
 			<p>
 				My main skill is coding frontend web apps and I also do some backend programming. I enjoy
