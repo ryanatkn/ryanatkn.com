@@ -23,7 +23,8 @@
 				>
 			</li>
 			<li>
-				I don't use any other public social media accounts except an orange site for self promotion
+				I don't use any other public social media accounts<br />except an orange site for self
+				promotion
 			</li>
 		</ul>
 	</li>

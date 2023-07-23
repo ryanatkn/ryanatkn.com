@@ -53,8 +53,10 @@
 			</li>
 		</ul>
 	</section>
-	<section class="panel">
-		<ContactInfo />
+	<section class="box">
+		<div class="panel box">
+			<ContactInfo />
+		</div>
 	</section>
 </div>
 <Breadcrumbs>
