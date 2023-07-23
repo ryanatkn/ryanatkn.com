@@ -30,10 +30,7 @@
 			</li>
 			<li>
 				I learned to code wanting to be a game programmer, but I fell in love with the web at my
-				first job. I owe a lot to the people there, including my mentor <a
-					href="https://github.com/mgutz">Mario Gutierrez</a
-				>
-				and CEO <a href="https://www.linkedin.com/in/grantfarwell">Grant Farwell</a>.
+				first job
 			</li>
 			<li>
 				I started <a href="https://www.felt.dev/">feltjs</a> with

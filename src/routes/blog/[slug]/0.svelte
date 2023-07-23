@@ -23,7 +23,7 @@
 				style:width="144px"
 				style:margin-left="20px"
 				style:margin-top="20px"
-				src="/felt.png"
+				src="{base}/felt.png"
 				alt="a microscopic-fiber-textured green heart with the word felt cut out"
 				title="felt.dev"
 			/></a
@@ -88,14 +88,18 @@
 		</li>
 	</ul>
 	<p>
-		Fullstack customization is key to why I want to work on Felt, but it's just a vague idea with
-		some glimmers of promise scattered around. The point is to help you solve your problems, which
-		are unknown and numerous in aggregate, so we design the system holistcally with that in mind -
-		the UX is the DX is the UX. For devs, this means we'll have open source servers, clients, and
-		modules that are designed to be extended and plugged and swapped. It also means our programming
-		vocabulary is exposed in the UX, so the system itself is more visible and directly interactive.
-		For end-users it means:
+		Fullstack customization is part of the point of feltjs, but today it's a vague idea with some
+		interesting glimmers scattered around. The point is to help us solve problems, which are unknown
+		and numerous, so we design the system holistcally with that in mind - the UX is the DX is the
+		UX. It's confusing but so is the problem of solving so many problems.
 	</p>
+	<p>
+		For devs, this means we'll have open source servers, clients, and modules that are designed to
+		be extended and plugged and swapped. It also means our programming vocabulary is exposed in the
+		UX, so the system itself is more visible and directly interactive, blurring lines between the
+		frontend-user and dev experiences.
+	</p>
+	<p>For end-users it means:</p>
 	<ul>
 		<li>
 			a comfortable environment that looks like existing social apps, but when you go digging you
@@ -116,10 +120,10 @@
 			beyond what's needed
 		</li>
 		<li>
-			integration of low-level systems with high-level UX, like integrated interactive
-			documentation, a contextmenu UI pattern that enables direct interaction with everything you
-			see, and recording events and authoring scripts and then composing them, like with governance
-			processes (e.g. "execute this script if the vote passes")
+			integration of low-level systems with high-level UX, so power users can go deep - things like
+			integrated interactive documentation, a contextmenu UI pattern that enables direct interaction
+			with everything you see, and recording events and authoring scripts and then composing them,
+			like with governance processes (e.g. "execute this script if the vote passes")
 		</li>
 	</ul>
 	<p>
@@ -235,7 +239,7 @@
 		operations is too high.
 	</p>
 	<p>
-		Hamilton may continue pursuing felt.social as a cooperatively owned host, he'll just need 4
+		Hamilton may continue pursuing felt.social as a cooperatively-owned host, he'll just need 4
 		cofounders instead of 3 to officially start the co-op in Colorado... take my money!!
 	</p>
 	<hr />
@@ -272,32 +276,33 @@
 	<h2>Tech notes</h2>
 	<p>
 		We tried to be thoughtful about our tech stack to be friendly to beginners without compromising
-		on the delivered UX. We chose the web because we think it's the best way to deliver the UX we
-		want to the most people, and we chose JS, Node.js, and npm because of fit, familiarity, and
-		productivity.
-	</p>
-	<p>
-		Our code is written for Node.js today, but we should be able to offer significant runtime
-		flexibility in the long term, largely thanks to <a href="https://kit.svelte.dev/">SvelteKit</a>,
-		so you may choose Deno, Bun, a cloud platform's serverless offerings, or whatever else is in the
-		Node.js legacy compat space. We're trying to minimize our exposure to Node-specific APIs to keep
-		portability high. Node.js a practical choice, not an idealized one. (and we try to move forward
-		- for example feltjs never used any CommonJS)
+		on the delivered UX.
 	</p>
 	<h3>on the shoulders of giants on the backs of turtles</h3>
 	<p>
-		The web is everywhere and has a lot of unrealized potential. In combination, Node.js, Postgres,
-		nginx, and Linux are all productive and capable of delivering a good UX. TypeScript, Svelte,
-		SvelteKit, and Vite are fantastic for making UIs.
+		We chose the web because we think it's the best way to deliver the UX we want to the most
+		people, and we chose JS, Node.js, and npm because of fit, familiarity, and productivity. The web
+		is everywhere and has a lot of unrealized potential. In combination, Node.js, Postgres, nginx,
+		and Linux are all productive and capable of delivering a good UX. TypeScript, Svelte, SvelteKit,
+		and Vite are fantastic for making UIs.
+	</p>
+	<p>
+		Our server-side code is written for Node.js today, but we should be able to offer significant
+		runtime flexibility in the long term, largely thanks to <a href="https://kit.svelte.dev/"
+			>SvelteKit</a
+		>, so you may choose Deno, Bun, a cloud platform's serverless offerings, or whatever else is in
+		the Node.js legacy compat space. We're trying to minimize our exposure to Node-specific APIs to
+		keep portability high. Node.js a practical choice, not an idealized one. (and we try to move
+		forward - for example feltjs never used any CommonJS)
 	</p>
 	<h3>customizable and extensible</h3>
 	<p>
 		Both the server and clients are open source and our APIs are open, so clients can be modified
 		with low friction or created from scratch. (our client will be decoupled from the server during
 		alpha, stay tuned) We use TypeScript and Svelte across the full stack, and we try to leverage
-		the benefits of integration when available, like sharing types, helpers, and schemas. We'll try
-		to maximize the freedoms of users and developers, but security and performance are unfortunate
-		constraints and sometimes buzzkills :\
+		the benefits of integration when available, like sharing types, helpers, and schemas. We try to
+		maximize the freedoms and degrees of freedom enjoyed by our users and developers, but security
+		and performance are unfortunate constraints and sometimes buzzkills :\
 	</p>
 	<p>
 		Our client has a <a href="https://wikipedia.org/wiki/Client_(computing)#Thick">thickness</a>
@@ -356,13 +361,36 @@
 		<a href="https://www.w3.org/TR/activitypub/">ActivityPub</a> or Matrix.
 	</p>
 	<p>
+		In our data system, we're following <a href="https://www.w3.org/TR/activitystreams-core/"
+			>the ActivityStreams vocabulary spec</a
+		>
+		that's used in <a href="https://www.w3.org/TR/activitypub/">ActivityPub</a> and
+		<a href="https://joinmastodon.org/">Mastodon</a>
+		(and I made some
+		<a href="https://ryanatkn.github.io/corpus-activity-streams/">unofficial docs</a>), but we have
+		our own client-server protocol that works over RESTful http and websockets using
+		<a href="https://www.jsonrpc.org/specification">JSON-RPC 2.0</a>. We also publish a
+		<a href="https://json-schema.org/">JSON Schema</a>
+		with
+		<a href="https://github.com/feltjs/felt-server/blob/main/src/static/schemas/vocab.json"
+			>our vocabulary</a
+		>, including both data objects and actions. We could feasibly generate OpenAPI schemas from our
+		source of truth, giving us greatly expanded access to existing tooling, but we have no plans for
+		that yet.
+	</p>
+	<p>
+		We want to be good citizens of open standards, not just do our own thing detached from open
+		ecosystems, but we have very specific ideas of what we want to build for small communities, and
+		federated tech isn't optimal for today's goals. (if you link me xkcd 927 i swear)
+	</p>
+	<p>
 		Given felt-server's small-scale design and selfhostability, it may help to think of it as "<a
 			href="https://wikipedia.org/wiki/Polycentric">polycentric</a
 		>", where each community or "hub" is a silo of self-governed data, and any particular instance
-		may host one or more hubs. In combination with clients that connect to multiple services, I
-		think "decentralized" is an appropriate description, but not in the way some people want. I
-		don't think felt-server will reach its potential until can federate with the wider world,
-		especially for user identity.
+		hosts one or more hubs. In combination with clients that connect to multiple services, I think
+		"decentralized" is an appropriate description, but not in the way some people want, for example
+		where their identity isn't mediated by the hub. I don't think felt-server will reach its
+		potential until it can federate with the wider world, especially for user identity.
 	</p>
 	<blockquote>
 		I don't know which standards will or should win with identity, that's outside of my expertise,
@@ -374,28 +402,6 @@
 		identities, they offer better portability and stability. Together with subdomains, I like the combination
 		of user-friendliness, flexibility, aesthetics, and DNS-derived authority.
 	</blockquote>
-	<p>
-		In our data system, we're following <a href="https://www.w3.org/TR/activitystreams-core/"
-			>the ActivityStreams vocabulary spec</a
-		>
-		that's used in <a href="https://www.w3.org/TR/activitypub/">ActivityPub</a> and
-		<a href="https://joinmastodon.org/">Mastodon</a>
-		(and I made some
-		<a href="https://ryanatkn.github.io/corpus-activity-streams/">unofficial docs</a>), but we have
-		our own client-server protocol that works over RESTful http and websockets using
-		<a href="https://www.jsonrpc.org/specification">JSON-RPC 2.0</a>. We publish a
-		<a href="https://json-schema.org/">JSON Schema</a>
-		with
-		<a href="https://github.com/feltjs/felt-server/blob/main/src/static/schemas/vocab.json"
-			>our vocabulary</a
-		>. We could feasibly generate OpenAPI schemas from our source of truth, giving us greatly
-		expanded access to existing tooling, but we have no plans for that yet.
-	</p>
-	<p>
-		We want to be good citizens of open standards, not just do our own thing detached from open
-		ecosystems, but we have very specific ideas of what we want to build for small communities, and
-		federated tech isn't optimal for today's goals.
-	</p>
 	<p>
 		I personally think decentralized technologies are the future and I want to move with the times.
 		In any case, we need user interfaces that are decoupled from the underlying protocols, and

@@ -1,4 +1,5 @@
 <script lang="ts" context="module">
+	import {base} from '$app/paths';
 	import type {FeedItemData} from '$lib/feed';
 
 	export const post: FeedItemData = {
@@ -17,7 +18,7 @@
 	<h2>Introduction</h2>
 	<p>
 		While working on the community software project I described in <a
-			href="/blog/a-year-of-making-open-source-web-community-software">my first blog post</a
+			href="{base}/blog/making-free-and-open-source-web-community-software">my first blog post</a
 		>, I've wanted clarity on some concepts that sit above the code. This post proposes a model for
 		one of the central aspects of online communities: the
 		<strong>virtual social space</strong>.
