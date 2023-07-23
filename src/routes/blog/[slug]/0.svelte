@@ -186,8 +186,8 @@
 	<h2>P.S.</h2>
 	<p>
 		I'm having difficulty summarizing the project: it's big and there are many unknowns. The ideas
-		below seem important to include but not that important, and you may not be the right audience,
-		but thanks for reading.
+		below seem important to include but not that important, and you may not be the right audience.
+		Thanks for reading.
 	</p>
 	<hr />
 	<h2>Everyone can be a toolmaker</h2>
