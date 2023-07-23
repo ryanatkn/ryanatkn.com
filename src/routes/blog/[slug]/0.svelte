@@ -92,8 +92,8 @@
 		some glimmers of promise scattered around. The point is to help you solve your problems, so we
 		design the system holistcally with that in mind - the UX is the DX is the UX. For devs, this
 		means we'll have open source components, clients, and servers that are designed to be extended
-		and plugged and swapped. It also means our system vocabulary is exposed in the UX, so the system
-		itself is more visible and directly interactive. For end-users it means:
+		and plugged and swapped. It also means our programming vocabulary is exposed in the UX, so the
+		system itself is more visible and directly interactive. For end-users it means:
 	</p>
 	<ul>
 		<li>
@@ -114,9 +114,9 @@
 		</li>
 		<li>
 			integration of low-level systems with high-level UX, like integrated interactive
-			documentation, a contextmenu UI pattern for digging into anything, and recording events and
-			authoring scripts and then composing them, like with governance processes (e.g. "execute this
-			script if the vote passes")
+			documentation, a contextmenu UI pattern that enables direct interaction with everything you
+			see, and recording events and authoring scripts and then composing them, like with governance
+			processes (e.g. "execute this script if the vote passes")
 		</li>
 	</ul>
 	<p>
