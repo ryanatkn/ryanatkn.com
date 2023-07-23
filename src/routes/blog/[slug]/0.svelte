@@ -41,25 +41,25 @@
 	<p>The main software <a href="https://github.com/feltjs/felt-server">felt-server</a>:</p>
 	<ul>
 		<li>
-			is an extensible NodeJS server that we describe as a programmable platform for hobbyists and
-			human-scale communities. The main UI looks like Discord and Slack on the surface, and it has
-			aspects of a <a href="https://wikipedia.org/wiki/Content_management_system"
-				>content management system</a
+			is an extensible NodeJS server and web frontend with the tagline "a programmable platform for
+			hobbyists and human-scale communities". The main UI looks like Discord and Slack on the
+			surface, and it has aspects of a <a
+				href="https://wikipedia.org/wiki/Content_management_system">content management system</a
 			>
 			and
 			<a href="https://wikipedia.org/wiki/Knowledge_management_software"
 				>knowledge management software</a
-			> in a collaborative environment. We're aiming for a batteries-included, deeply customizable experience
-			with a small footprint, that feels familiar and surprisingly powerful.
+			> in a collaborative, repurposeable environment. We're aiming for a batteries-included, deeply
+			customizable experience with a small footprint, and that feels familiar and surprisingly powerful.
 		</li>
 		<li>is designed for small groups</li>
 		<li>
 			is multipurpose, so the same toolkit can be used for many kinds of communities and websites
 		</li>
 		<li>
-			is open source and designed for fullstack customization, which means devs and end-users have
-			proper access and power over their UX and systems and code, and we bridge more of the gap
-			between programming and using
+			is open source with a documented API, and it's designed for fullstack customization, which
+			means devs and end-users have proper access and power over their UX and systems and code, and
+			we bridge more of the gap between programming and using
 		</li>
 		<li>
 			is currently <a href="https://wikipedia.org/wiki/Software_release_life_cycle">pre-alpha</a>,
