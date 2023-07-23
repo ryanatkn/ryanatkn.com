@@ -23,7 +23,7 @@
 				style:width="144px"
 				style:margin-left="20px"
 				style:margin-top="20px"
-				src="/felt.png"
+				src="{base}/felt.png"
 				alt="a microscopic-fiber-textured green heart with the word felt cut out"
 				title="felt.dev"
 			/></a

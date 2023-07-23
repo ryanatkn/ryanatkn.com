@@ -11,7 +11,7 @@
 
 	const content_security_poilicy = dev
 		? "default-src 'unsafe-inline' 'self';"
-		: "default-src 'self'; img-src https://*;";
+		: "default-src 'unsafe-inline' 'self'; img-src https://*;";
 </script>
 
 <svelte:head>
