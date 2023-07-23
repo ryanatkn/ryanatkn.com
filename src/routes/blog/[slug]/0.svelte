@@ -342,9 +342,9 @@
 	</p>
 	<blockquote>
 		I don't know which standards will or should win with identity, that's out of my expertise, but I
-		have to make decisions, and I'm currently planning on supporting OpenID Connect to complement
-		our current password-in-a-cookie authentication. I like how the <a href="https://atproto.com/"
-			>AT Protocol</a
+		have to make decisions for users, and I'm currently planning on supporting OpenID Connect to
+		complement our current password-in-a-cookie authentication. I like how the <a
+			href="https://atproto.com/">AT Protocol</a
 		> uses domains for identity. Compared to ActivityPub identities, they offer significantly better
 		portability and stability. Together with subdomains, I like the combination of user-friendliness,
 		flexibility, and DNS-derived authority.
