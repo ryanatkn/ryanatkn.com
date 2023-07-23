@@ -169,8 +169,7 @@
 			<a href="https://www.npmjs.com/org/feltjs">npm</a>
 		</li>
 		<li>
-			<a href="https://tinyletter.com/FeltCoop">monthly newsletter</a> and
-			<a href="https://www.felt.social/toolmakersforum">podcast</a>
+			<a href="https://www.felt.dev/">felt.dev</a>
 		</li>
 	</ul>
 	<hr />
@@ -409,8 +408,7 @@
 			<a href="https://www.npmjs.com/org/feltjs">npm</a>
 		</li>
 		<li>
-			<a href="https://tinyletter.com/FeltCoop">monthly newsletter</a> and
-			<a href="https://www.felt.social/toolmakersforum">podcast</a>
+			<a href="https://www.felt.dev/">felt.dev</a>
 		</li>
 	</ul>
 </div>
