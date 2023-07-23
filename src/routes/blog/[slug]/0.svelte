@@ -91,7 +91,7 @@
 		Fullstack customization is part of the point of feltjs, but today it's a vague idea with some
 		interesting glimmers scattered around. The point is to help us solve problems, which are unknown
 		and numerous, so we design the system holistcally with that in mind - the UX is the DX is the
-		UX.
+		UX. It's confusing but so is the problem of solving so many problems.
 	</p>
 	<p>
 		For devs, this means we'll have open source servers, clients, and modules that are designed to
