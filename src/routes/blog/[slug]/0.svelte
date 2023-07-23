@@ -385,20 +385,14 @@
 		expanded access to existing tooling, but we have no plans for that yet.
 	</p>
 	<p>
-		We publish <a
-			href="https://github.com/feltjs/felt-server/blob/main/src/static/schemas/vocab.json"
-			>schemas of our vocabulary</a
-		>
-		using
-		<a href="https://json-schema.org/">JSON Schema</a>. We'll have a better docs website online
-		soon.
-	</p>
-	<p>
 		We want to be good citizens of open standards, not just do our own thing detached from open
 		ecosystems, but we have very specific ideas of what we want to build for small communities, and
-		federated tech isn't optimal for today's goals. I personally think decentralized technologies
-		are the future and I want to move with the times, and we need user interfaces that are decoupled
-		from the underlying protocols.
+		federated tech isn't optimal for today's goals.
+	</p>
+	<p>
+		I personally think decentralized technologies are the future and I want to move with the times.
+		In any case, we need user interfaces that are decoupled from the underlying protocols, and
+		feltjs wants to be as repurposable as it can be.
 	</p>
 	<blockquote>
 		"decentralized" means a lot of things, and while I think it's a broadly inevitable future, I
