@@ -20,6 +20,7 @@
 				style:float="right"
 				style:width="144px"
 				style:margin-left="20px"
+				style:margin-top="20px"
 				src="/felt.png"
 				alt="a microscopic-fiber-textured green heart with the word felt cut out"
 				title="felt.dev"
@@ -27,18 +28,23 @@
 		>
 		<br />
 		I've been making free and open source web community software with
-		<a href="https://12mod12.com/">Hamilton Reed</a>
-		(<a href="https://hachyderm.io/@greatbacon">Mastodon</a>,
-		<a href="https://github.com/greatbacon">GitHub</a>) full-time
-		<a href="https://github.com/feltjs/felt-server/graphs/contributors">since April 2021</a>. We'll
-		continue to work quietly in public and leave a trail of informal documentation through
-		<a href="https://github.com/feltjs/felt-server/pulls">GitHub PRs</a> until we're ready to
-		announce it. Hamilton and I first met in December 2019 and started self-funded part-time work on
-		what would become <a href="https://github.com/feltjs">@feltjs</a>. We publish a
+		<a href="https://12mod12.com/">Hamilton Reed</a> full-time
+		<a href="https://github.com/feltjs/felt-server/graphs/contributors">since April 2021</a>. (he's
+		@greatbacon on <a href="https://github.com/greatbacon">GitHub</a> and
+		<a href="https://hachyderm.io/@greatbacon">Mastodon</a>) We've been working quietly in public
+		and leaving a trail of informal documentation through
+		<a href="https://github.com/feltjs/felt-server/pulls">GitHub PRs</a>. We'll announce when we
+		reach alpha in Q3 2023.
+	</p>
+	<p>
+		Hamilton and I first met in December 2019 and started self-funded part-time work on what would
+		become <a href="https://github.com/feltjs">@feltjs</a>. One of the main ideas was to make tools
+		to help people be creative together, and so far so good. Head over to
+		<a href="https://www.felt.dev/">felt.dev</a>
+		if you're interested in the software. If you want to consume our media, we publish a
 		<a href="https://tinyletter.com/FeltCoop">monthly newsletter</a>
 		and a podcast produced by Hamilton called
-		<a href="https://www.felt.social/toolmakersforum">Toolmakers Forum</a>. We have a lot of work
-		ahead to get our ideas to a functional state, but so far it's been fun.
+		<a href="https://www.felt.social/toolmakersforum">Toolmakers Forum</a>.
 	</p>
 	<p>
 		Our main project is <a href="https://github.com/feltjs/felt-server">felt-server</a>, an
@@ -150,7 +156,7 @@
 		</li>
 		<li>
 			<a href="https://github.com/feltjs/gro">@feltjs/gro</a> – a toolkit that extends SvelteKit and
-			Vite with things we find useful for making web apps; it's used by all of our other projects
+			Vite with things we find useful for making web apps - it's used by all of our other projects
 		</li>
 	</ul>
 	<p>
