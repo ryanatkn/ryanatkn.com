@@ -328,7 +328,9 @@
 		In our data system, we're trying to follow <a href="https://www.w3.org/TR/activitystreams-core/"
 			>the ActivityStreams vocabulary spec</a
 		>
-		that's used in the fediverse and Mastodon (and I made some
+		that's used in <a href="https://www.w3.org/TR/activitypub/">ActivityPub</a> and
+		<a href="https://joinmastodon.org/">Mastodon</a>
+		(and I made some
 		<a href="https://ryanatkn.github.io/corpus-activity-streams/">unofficial docs</a>), but we have
 		our own bespoke client-server protocol that works over http and websockets, and our database
 		tables don't map to ActivityStreams vocabulary, only <code>Entity</code> objects do. We publish
