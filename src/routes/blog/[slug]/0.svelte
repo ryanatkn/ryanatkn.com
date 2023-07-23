@@ -356,8 +356,8 @@
 			href="https://www.eff.org/deeplinks/2019/10/adversarial-interoperability"
 			>cooperative interoperability</a
 		>, but we're a 2 person team with limited resources trying to deliver a specific UX. Today this
-		means we have a centralized Node server with a lot of homemade solutions. One of my
-		long/medium-long term goals is to support at least one federated/decentralized standard like
+		means we have a centralized Node server with a lot of homemade solutions. One of my medium-long
+		term goals is to support at least one federated/decentralized standard like
 		<a href="https://www.w3.org/TR/activitypub/">ActivityPub</a> or Matrix.
 	</p>
 	<p>
