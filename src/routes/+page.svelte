@@ -11,7 +11,7 @@
 		name: string;
 		title: string;
 		description: string;
-		links: string;
+		links?: string;
 		icon?: string;
 	}
 
@@ -22,14 +22,12 @@
 		{
 			name: 'github',
 			title: '<a href="https://github.com/ryanatkn">github.com/ryanatkn</a>',
-			description: 'free and open source software',
-			links: '<a href="https://github.com/ryanatkn">GitHub</a>',
+			description: 'my free and open source software',
 		},
 		{
 			name: 'blog',
 			title: `<a href="${base}/blog">blog</a>`,
 			description: '<a href="https://www.ryanatkn.com/feed.xml">feed.xml</a>',
-			links: `<a href="${base}/blog">/blog</a>`,
 		},
 		{
 			name: 'devlog',
@@ -92,7 +90,9 @@
 						<p>
 							{@html project.description}
 						</p>
-						<p>{@html project.links}</p>
+						{#if project.links}
+							<p>{@html project.links}</p>
+						{/if}
 					</div>
 					{#if project.icon}
 						<div class="icon"><img src="{base}{project.icon}" alt="icon for {project.name}" /></div>
