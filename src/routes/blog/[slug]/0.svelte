@@ -88,14 +88,18 @@
 		</li>
 	</ul>
 	<p>
-		Fullstack customization is key to why I want to work on Felt, but it's just a vague idea with
-		some glimmers of promise scattered around. The point is to help you solve your problems, which
-		are unknown and numerous in aggregate, so we design the system holistcally with that in mind -
-		the UX is the DX is the UX. For devs, this means we'll have open source servers, clients, and
-		modules that are designed to be extended and plugged and swapped. It also means our programming
-		vocabulary is exposed in the UX, so the system itself is more visible and directly interactive.
-		For end-users it means:
+		Fullstack customization is part of the point of feltjs, but today it's a vague idea with some
+		interesting glimmers scattered around. The point is to help us solve problems, which are unknown
+		and numerous, so we design the system holistcally with that in mind - the UX is the DX is the
+		UX.
 	</p>
+	<p>
+		For devs, this means we'll have open source servers, clients, and modules that are designed to
+		be extended and plugged and swapped. It also means our programming vocabulary is exposed in the
+		UX, so the system itself is more visible and directly interactive, blurring lines between the
+		frontend-user and dev experiences.
+	</p>
+	<p>For end-users it means:</p>
 	<ul>
 		<li>
 			a comfortable environment that looks like existing social apps, but when you go digging you
@@ -116,10 +120,10 @@
 			beyond what's needed
 		</li>
 		<li>
-			integration of low-level systems with high-level UX, like integrated interactive
-			documentation, a contextmenu UI pattern that enables direct interaction with everything you
-			see, and recording events and authoring scripts and then composing them, like with governance
-			processes (e.g. "execute this script if the vote passes")
+			integration of low-level systems with high-level UX, so power users can go deep - things like
+			integrated interactive documentation, a contextmenu UI pattern that enables direct interaction
+			with everything you see, and recording events and authoring scripts and then composing them,
+			like with governance processes (e.g. "execute this script if the vote passes")
 		</li>
 	</ul>
 	<p>
