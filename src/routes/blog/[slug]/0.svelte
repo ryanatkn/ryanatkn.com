@@ -399,7 +399,7 @@
 	<p>
 		We want to be good citizens of open standards, not just do our own thing detached from open
 		ecosystems, but we have very specific ideas of what we want to build for small communities, and
-		federated tech isn't optimal for today's goals.
+		federated tech isn't optimal for today's goals. (if you link me xkcd 927 i swear)
 	</p>
 	<p>
 		I personally think decentralized technologies are the future and I want to move with the times.
