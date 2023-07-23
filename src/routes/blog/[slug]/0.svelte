@@ -277,13 +277,14 @@
 		flexibility in the long term, largely thanks to <a href="https://kit.svelte.dev/">SvelteKit</a>,
 		so you may choose Deno, Bun, a cloud platform's serverless offerings, or whatever else is in the
 		Node.js legacy compat space. We're trying to minimize our exposure to Node-specific APIs to keep
-		portability high. Node.js a practical choice, not an idealized one.
+		portability high. Node.js a practical choice, not an idealized one. (and we try to move forward
+		- for example feltjs never used any CommonJS)
 	</p>
 	<h3>on the shoulders of giants on the backs of turtles</h3>
 	<p>
-		The web is everywhere and has a lot of unrealized potential. Node.js, Postgres, nginx, and Linux
-		are all productive and capable of delivering a good UX in combination. TypeScript, Svelte,
-		SvelteKit, and Vite have been fantastic for making UIs. We don't yet make
+		The web is everywhere and has a lot of unrealized potential. In combination, Node.js, Postgres,
+		nginx, and Linux are all productive and capable of delivering a good UX. TypeScript, Svelte,
+		SvelteKit, and Vite are fantastic for making UIs. We don't yet make
 		<a
 			href="https://github.com/feltjs/felt-server/blob/main/src/docs/known-issues.md#not-using-sveltekits-server-side-data-loading"
 			>full use of SvelteKit's features</a
@@ -313,14 +314,14 @@
 	<ul>
 		<li>quickly iterate on social experiences with human-scale groups of people</li>
 		<li>
-			on a single machine (running a server and local database with light resource requirements)
+			on a single machine, running a server and local database with light resource requirements
 		</li>
-		<li>with web tech (this puts us in a particular ecosystem of software)</li>
+		<li>with web tech, putting us in a particular ecosystem of software</li>
 	</ul>
 	<p>
 		The limits may appear restrictive compared to the infinite cloud worlds that can host a global
-		social network, but these choices and tradeoffs give us a highly productive environment with low
-		resource needs that's powerful in the small, and maybe small communities are good too.
+		social network, but these choices give us a highly productive environment with low resource
+		usage. We're trying to be powerful in the small, and maybe small communities are good too.
 	</p>
 	<blockquote>
 		Today, <a href="https://github.com/feltjs/felt-server"><code>@feltjs/felt-server</code></a>
@@ -330,13 +331,13 @@
 				>@sveltejs/adapter-node</a
 			></code
 		> – we'd like to be compatible with as many SvelteKit adapters as possible, giving operators access
-		to more scalable cloud backends, but we haven't worked it into our roadmap
+		to more scalable cloud backends, but we haven't worked it into our roadmap.
 	</blockquote>
 	<p>
 		We should be able to support non-realtime usecases that scale to more users like blogs and
 		similar web publishing, much for free thanks to SvelteKit. We're prioritizing flexibility and UX
-		over the ability to handle massive amounts of data, and we'll improve various kinds of scaling
-		over time.
+		over the ability to handle massive numbers of concurrent users or big data, and we'll improve
+		various kinds of scaling over time.
 	</p>
 	<p>
 		Even though our code isn't pushing the boundaries of gamedev-level performance and enterprise
