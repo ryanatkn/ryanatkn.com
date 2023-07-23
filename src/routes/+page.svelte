@@ -13,6 +13,7 @@
 		description: string;
 		links?: string;
 		icon?: string;
+		icon_style?: string;
 	}
 
 	// TODO I moved the project info to this data format to quicky slap together a responsive layout
@@ -49,6 +50,7 @@
 				'hobby project for fun and learning, <em>"tools and toys for expanding minds"</em>',
 			links: '<a href="https://github.com/ryanatkn/cosmicplayground">GitHub</a>',
 			icon: '/cosmic_kitty.jpg',
+			icon_style: 'border-radius: 50%',
 		},
 	];
 </script>
@@ -95,7 +97,13 @@
 						{/if}
 					</div>
 					{#if project.icon}
-						<div class="icon"><img src="{base}{project.icon}" alt="icon for {project.name}" /></div>
+						<div class="icon">
+							<img
+								src="{base}{project.icon}"
+								alt="icon for {project.name}"
+								style={project.icon_style}
+							/>
+						</div>
 					{/if}
 				</div>
 			{/each}
