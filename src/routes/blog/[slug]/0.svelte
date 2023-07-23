@@ -6,10 +6,10 @@
 		title: 'Making free and open source web community software',
 		url: 'https://www.ryanatkn.com/blog/making-free-and-open-source-web-community-software',
 		date_published: '2022-05-13T01:42:23.000Z',
-		date_modified: '2022-11-29T01:42:23.000Z',
+		date_modified: '2023-07-23T01:42:23.000Z',
 		summary:
 			'I discuss my work on open source community software called Felt over the last year, giving a brief overview of the design and technology choices, and announcing our newsletter and podcast at FeltCoop.',
-		tags: ['web', 'technology', 'software', 'open source', 'community'],
+		tags: ['web', 'technology', 'software', 'open source', 'community', 'FOSS'],
 	};
 </script>
 
@@ -30,19 +30,18 @@
 		<a href="https://12mod12.com/">Hamilton Reed</a>
 		(<a href="https://hachyderm.io/@greatbacon">Mastodon</a>,
 		<a href="https://github.com/greatbacon">GitHub</a>) full-time
-		<a href="https://github.com/feltjs/felt-server/graphs/contributors">since April 2021</a>. We
-		won't announce anything for a while, not until it's <em>ready</em>. We'll continue to work
-		quietly in public and document our work through
-		<a href="https://github.com/feltjs/felt-server/pulls">GitHub PRs</a>. It's been two and a half
-		years since we first met in December 2019 and started self-funded part-time work on what would
-		become <a href="https://github.com/feltjs">@feltjs</a>. We recently started a
+		<a href="https://github.com/feltjs/felt-server/graphs/contributors">since April 2021</a>. We'll
+		continue to work quietly in public and leave a trail of informal documentation through
+		<a href="https://github.com/feltjs/felt-server/pulls">GitHub PRs</a> until we're ready to
+		announce it. Hamilton and I first met in December 2019 and started self-funded part-time work on
+		what would become <a href="https://github.com/feltjs">@feltjs</a>. We publish a
 		<a href="https://tinyletter.com/FeltCoop">monthly newsletter</a>
 		and a podcast produced by Hamilton called
-		<a href="https://www.felt.social/toolmakersforum">Toolmakers Forum</a>. I plan to write about
-		Felt's ideas on this blog.
+		<a href="https://www.felt.social/toolmakersforum">Toolmakers Forum</a>. We have a lot of work
+		ahead to get our ideas to a functional state, but so far it's been fun.
 	</p>
 	<p>
-		The main project is <a href="https://github.com/feltjs/felt-server">felt-server</a>, an
+		Our main project is <a href="https://github.com/feltjs/felt-server">felt-server</a>, an
 		extensible Node.js server and web frontend described as "a programmable platform for hobbyists
 		and human-scale communities". The main UI looks like Discord and Slack on the surface, and it
 		has aspects of a
@@ -51,23 +50,26 @@
 		<a href="https://wikipedia.org/wiki/Knowledge_management_software"
 			>knowledge management software</a
 		> in a collaborative environment. We're aiming for a batteries-included, deeply customizable experience
-		with a small footprint, and that feels familiar and surprisingly powerful. Its success will be correlated
-		with how repurposable people find it .
+		with a small footprint, that feels familiar and surprisingly powerful. Calling is a "programmable
+		platform" seems close enough.
 	</p>
 	<p>
-		The design of felt-server targets a specific UX. Instead of trying to replace any of today's
-		large platforms, think of felt-server as filling a niche that venture-funded startups and other
-		commercial interests rationally neglect.
+		felt-server targets a specific UX. Instead of trying to replace any of today's large platforms,
+		think of felt-server as filling a niche that venture-funded startups and other commercial
+		interests rationally neglect.
 	</p>
 	<ul>
-		<li>made by and for hobbyists, selfhosters, devs, tinkerers - easy and cheap to self host</li>
+		<li>
+			made by and for hobbyists, selfhosters, devs, tinkerers, doers of tech things, lazy people who
+			enjoy automation - it'll remain a relatively simple project that's easy and cheap to self host
+		</li>
 		<li>
 			designed for small groups - scaling to many people is less important than depth of interaction
 			and richness of capabilities
 		</li>
 		<li>
 			multipurpose, so the same toolkit can be used for many kinds of communities and websites -
-			think of felt-server as running your friendly bots in the clouds
+			felt-server can run some of your friendly bots in the clouds
 		</li>
 		<li>
 			is free and open source with a documented API, and it's designed for fullstack customization,
@@ -77,10 +79,10 @@
 	</ul>
 	<p>
 		Fullstack customization is key to why I want to work on Felt, but it's just a vague idea with
-		some glimmers of promise scattered around the feltjs projects. The point is that the system is
-		designed holistically to help you solve your problems - the UX is the DX is the UX. For devs, it
-		means we'll have open source components, clients, and servers that are designed to be extended
-		and plugged and swapped. For end-users it means:
+		some glimmers of promise scattered around. The point is to help you solve your problems, so we
+		design the system holistcally with that in mind - the UX is the DX is the UX. For devs, it means
+		we'll have open source components, clients, and servers that are designed to be extended and
+		plugged and swapped. For end-users it means:
 	</p>
 	<ul>
 		<li>
@@ -88,17 +90,20 @@
 			find it's deeply customizable and flexible
 		</li>
 		<li>
-			a hypertext language with a rich vocabulary that can be used to write chat messages, blog
-			posts, forum replies, todo items, and so on, and also construct both social spaces and the
-			entire client UI, making it an accessible experience to design and share UI
+			a user-friendly text language (not Markdown but similar) with access to a rich vocabulary that
+			can be used to write chat messages, blog posts, forum replies, todo items, and so on, and also
+			construct both social spaces and the entire client UI, making it an accessible experience to
+			design and share UI
 		</li>
 		<li>
 			easy-to-use plugins/mods/applets made by both feltjs and hopefully a community of
-			developer-users, and clear paths to learning the technical skills to make your own stuff
+			developer-users, and clear paths to learning the technical skills to make your own stuff -
+			making things should be only as complex as necessary
 		</li>
 		<li>
-			programmery-things like recording events and authoring scripts, and composing them with things
-			like governance processes (e.g. "execute this script if the vote passes")
+			integration of low-level systems with high-level UX, like integrated interactive
+			documentation, and recording events and authoring scripts and then composing them, like with
+			governance processes (e.g. "execute this script if the vote passes")
 		</li>
 	</ul>
 	<p>
@@ -148,11 +153,24 @@
 		</li>
 	</ul>
 	<p>
-		With Felt, I hope we can make the role of toolmaker more accessible to more people on the web,
+		With feltjs, I hope we can make the role of toolmaker more accessible to more people on the web,
 		to help them bring their ideas to life, while supporting beneficial relationships with
 		technology. I like our combination of solid technical foundations, lightweight implementation,
-		and DIY hackability.
+		and DIY hackability. So far it's been fun.
 	</p>
+	<hr />
+	<h2>Find us</h2>
+	<ul>
+		<li>
+			@feltjs on
+			<a href="https://github.com/feltjs">GitHub</a> and
+			<a href="https://www.npmjs.com/org/feltjs">npm</a>
+		</li>
+		<li>
+			<a href="https://tinyletter.com/FeltCoop">monthly newsletter</a> and
+			<a href="https://www.felt.social/toolmakersforum">podcast</a>
+		</li>
+	</ul>
 	<hr />
 	<h2>Wait the blog post isn't done?</h2>
 	<p>
