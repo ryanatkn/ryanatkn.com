@@ -1,4 +1,6 @@
 <script lang="ts" context="module">
+	import {base} from '$app/paths';
+
 	import type {FeedItemData} from '$lib/feed';
 
 	export const post: FeedItemData = {
@@ -230,9 +232,12 @@
 	<h2>Sharing spaces with others</h2>
 	<p>
 		One aspect of community software that's full of interesting opportunities is how to govern
-		shared spaces: things like exercising power, communicating and enforcing rules, nudging norms,
+		shared spaces - things like exercising power, communicating and enforcing rules, nudging norms,
 		making collective decisions, scripting governance processes over time, and so on. Each group of
-		people has distinct needs.
+		people has distinct needs. I wrote about modeling social spaces in <a
+			href="{base}/blog/modeling-virtual-social-spaces-in-this-house-we-post-cat-pics-on-saturday"
+			>my second blog post</a
+		>.
 	</p>
 	<p>
 		For part of 2021 and 2022 we collaborated with PhD candidate Jane Im (<a
@@ -247,10 +252,10 @@
 		Our perspective as toolmakers is that we'll attempt to support a wide range of possibilities,
 		from traditional moderator setups to democratic control and much more, and provide templates and
 		guidance to help communities achieve their goals. We'll give this a lot of attention before
-		beta, but I suspect the delightfully good stuff is 1-2+ years away, maybe using standards that
-		<a href="https://metagov.org/">Metagov</a> is developing. I'm also keeping related projects
+		beta, but I suspect the good stuff is years away, maybe using standards that
+		<a href="https://metagov.org/">Metagov</a> is developing. I'm also following related projects
 		<a href="https://communityrule.info/">CommunityRule</a>
-		and <a href="https://policykit.org/">PolicyKit</a> in mind.
+		and <a href="https://policykit.org/">PolicyKit</a>.
 	</p>
 	<hr />
 	<h2>Tech notes</h2>
@@ -346,8 +351,8 @@
 	<p>
 		Given felt-server's small-scale design and selfhostability, it may help to think of it as "<a
 			href="https://wikipedia.org/wiki/Polycentric">polycentric</a
-		>", where each community is a silo of self-governed data, and a service may host one or more
-		communities. In combination with clients that connect to multiple services, I think
+		>", where each community or "hub" is a silo of self-governed data, and a service may host one or
+		more hubs. In combination with clients that connect to multiple services, I think
 		"decentralized" is an appropriate description, but not in the way some people want. I won't be
 		satisfied until felt-server can federate with the wider world, especially for user identity.
 	</p>
