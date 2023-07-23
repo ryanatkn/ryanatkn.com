@@ -325,7 +325,7 @@
 		<a href="https://www.w3.org/TR/activitypub/">ActivityPub</a>.
 	</p>
 	<p>
-		Given Felt's small-scale design and selfhostability, it may help to think of it as "<a
+		Given felt-server's small-scale design and selfhostability, it may help to think of it as "<a
 			href="https://wikipedia.org/wiki/Polycentric">polycentric</a
 		>", where each community is a silo of self-governed data, and a service may host one or more
 		communities. In combination with clients that connect to multiple services, I think
