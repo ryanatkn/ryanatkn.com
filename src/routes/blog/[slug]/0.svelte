@@ -102,8 +102,9 @@
 		</li>
 		<li>
 			integration of low-level systems with high-level UX, like integrated interactive
-			documentation, and recording events and authoring scripts and then composing them, like with
-			governance processes (e.g. "execute this script if the vote passes")
+			documentation, a contextmenu UI pattern for digging into anything, and recording events and
+			authoring scripts and then composing them, like with governance processes (e.g. "execute this
+			script if the vote passes")
 		</li>
 	</ul>
 	<p>
