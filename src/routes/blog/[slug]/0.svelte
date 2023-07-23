@@ -97,7 +97,7 @@
 		For devs, this means we'll have open source servers, clients, and modules that are designed to
 		be extended and plugged and swapped. It also means our programming vocabulary is exposed in the
 		UX, so the system itself is more visible and directly interactive, blurring lines between the
-		frontend-user and dev experiences.
+		experiences of devs and end-users.
 	</p>
 	<p>For end-users it means:</p>
 	<ul>
