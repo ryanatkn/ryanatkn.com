@@ -186,7 +186,7 @@
 	<h2>P.S.</h2>
 	<p>
 		I'm having difficulty summarizing the project: it's big and there are many unknowns. The ideas
-		below seem important to include but not that important, and there's technical jargon.
+		below seem important to include but not that important, and you may not be the right audience.
 	</p>
 	<hr />
 	<h2>Everyone can be a toolmaker</h2>
@@ -197,8 +197,8 @@
 		opportunities to do this with web tech.
 	</p>
 	<p>
-		We want software for exploring the vast potential of collaborative experiences on the web, so
-		you could take a larger role in designing your media, if you want. A key here is to make a great
+		I want software for exploring the vast potential of collaborative experiences on the web, so you
+		could take a larger role in designing your media, if you want. A key here is to make a great
 		media sharing UX, so some fraction of people make and share useful and cool stuff, and everyone
 		benefits. Also, creating the tools of creation should be open and ecosystemified, so we can
 		experiment for our particular situations.
