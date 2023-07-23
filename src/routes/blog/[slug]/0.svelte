@@ -280,6 +280,12 @@
 		want to the most people, and we chose JS, Node.js, and npm because of fit, familiarity, and
 		productivity.
 	</p>
+	<h3>on the shoulders of giants on the backs of turtles</h3>
+	<p>
+		The web is everywhere and has a lot of unrealized potential. In combination, Node.js, Postgres,
+		nginx, and Linux are all productive and capable of delivering a good UX. TypeScript, Svelte,
+		SvelteKit, and Vite are fantastic for making UIs.
+	</p>
 	<p>
 		Our code is written for Node.js today, but we should be able to offer significant runtime
 		flexibility in the long term, largely thanks to <a href="https://kit.svelte.dev/">SvelteKit</a>,
@@ -287,12 +293,6 @@
 		Node.js legacy compat space. We're trying to minimize our exposure to Node-specific APIs to keep
 		portability high. Node.js a practical choice, not an idealized one. (and we try to move forward
 		- for example feltjs never used any CommonJS)
-	</p>
-	<h3>on the shoulders of giants on the backs of turtles</h3>
-	<p>
-		The web is everywhere and has a lot of unrealized potential. In combination, Node.js, Postgres,
-		nginx, and Linux are all productive and capable of delivering a good UX. TypeScript, Svelte,
-		SvelteKit, and Vite are fantastic for making UIs.
 	</p>
 	<h3>customizable and extensible</h3>
 	<p>
