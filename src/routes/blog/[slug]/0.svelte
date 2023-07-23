@@ -190,7 +190,7 @@
 	<hr />
 	<h2>P.S.</h2>
 	<p>
-		I'm having difficulty summarizing the project: it's big and there are many unknowns. The ideas
+		I'm having difficulty summarizing the project, it's big and there are many unknowns. The ideas
 		below seem important to include but not that important, and you may not be the right audience.
 		Thanks for reading.
 	</p>
@@ -223,7 +223,7 @@
 	<p>
 		Originally I thought I was going to operate a hosting company, <a
 			href="https://www.felt.social/">felt.social</a
-		>, so we could earn money and make software sustainably. The logic is air-tight: we're making
+		>, so we could earn money and make software sustainably. The logic is air-tight - we're making
 		selfhostable software, but not everyone wants to self-host, so we offer it for a fee, do what we
 		love, and make open source sustainable, all in one move.
 	</p>
@@ -309,7 +309,7 @@
 	</p>
 	<h3>scaling (and not)</h3>
 	<p>
-		Our focus on "small communities" relates to a potentially deflating fact about our software: it
+		Our focus on "small communities" relates to a potentially deflating fact about our software - it
 		doesn't scale to large numbers of people or some kinds of heavy load. felt-server can't be the
 		best solution to all problems, so we make tradeoffs intentionally to serve a particular UX.
 	</p>
