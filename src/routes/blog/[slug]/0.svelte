@@ -110,8 +110,8 @@
 	</p>
 	<p>
 		It's a big set of goals, and we think we have useful contributions particularly around UX. We
-		think we see an opportunity to hit a sweet spot for small communities with our set of design and
-		tech choices. Our
+		think we see an opportunity to hit an under-served sweet spot for small communities with our set
+		of design and tech choices. Our
 		<a
 			href="https://www.felt.social/toolmakersforum/episode/9-big-ideas-in-our-community-software-part-1"
 			>9th</a
@@ -122,7 +122,6 @@
 			>10th</a
 		> podcast episodes go into more detail on the main ideas.
 	</p>
-	<h2>The projects</h2>
 	<p>We have a handful of software repos, none of which are yet production ready:</p>
 	<ul>
 		<li>
@@ -148,7 +147,6 @@
 			Vite with things we find useful for making web apps; it's used by all of our other projects
 		</li>
 	</ul>
-	<h2>Summary</h2>
 	<p>
 		With Felt, I hope we can make the role of toolmaker more accessible to more people on the web,
 		to help them bring their ideas to life, while supporting beneficial relationships with
@@ -166,15 +164,16 @@
 	<h2>Everyone can be a toolmaker</h2>
 	<p>
 		Instead of being limited to filling digital boxes designed by tech companies, anyone should be
-		able to design their own box. Or forget boxes even, we're digitized. We see examples of what's
-		possible in all sorts of products over decades, especially in games, and I believe there's fresh
+		able to design their own box. Wait forget boxes, we're digitized. We see examples of what's
+		possible in all sorts of products over decades, especially in games, and there's fresh
 		opportunities to do this with web tech.
 	</p>
 	<p>
 		We want to build software tools that anyone can use to explore the vast terrain of collaborative
 		experiences, so you could take a larger role in designing your media, if you want. A key here is
-		to make a great media sharing UX, so some % of people make and share useful and cool stuff, and
-		everyone benefits.
+		to make a great media sharing UX, so some fraction of people make and share useful and cool
+		stuff, and everyone benefits. Also, creating the tools of creation should be open, so anyone can
+		experiment for their particular situations.
 	</p>
 	<hr />
 	<h2>Sharing spaces with others</h2>
@@ -222,19 +221,19 @@
 	<hr />
 	<h2>Tech notes</h2>
 	<p>
-		We tried to be thoughtful about our tech stack given the assumption that we'll be in the
-		JS+node+npm ecosystem. We chose the web because we think it's the best way to deliver the UX we
-		want to the most people, and we chose these specific technologies because of fit, familiarity,
-		and productivity.
+		We tried to be thoughtful about our tech stack given the assumption that we'll be in the JS,
+		Node.js, and npm ecosystem. We chose the web because we think it's the best way to deliver the
+		UX we want to the most people, and we chose these specific technologies because of fit,
+		familiarity, and productivity. Our code is written for Node.js today, but we should be able to
+		offer significant runtime flexibility in the long term, so you may choose Deno, Bun, or a cloud
+		platform's serverless offerings. We're trying to minimize our exposure to Node-specific APIs to
+		keep portability high.
 	</p>
 	<h3>on the shoulders of giants on the backs of turtles</h3>
-	<p>The web is everywhere and has much unrealized potential.</p>
 	<p>
-		Node.js, TypeScript, Postgres, nginx, and Linux are all productive and capable of delivering a
-		good UX in combination.
-	</p>
-	<p>
-		Svelte, SvelteKit, and Vite have been fantastic for making UIs. We don't yet make
+		The web is everywhere and has a lot of unrealized potential. Node.js, TypeScript, Postgres,
+		nginx, and Linux are all productive and capable of delivering a good UX in combination. Svelte,
+		SvelteKit, and Vite have been fantastic for making UIs. We don't yet make
 		<a
 			href="https://github.com/feltjs/felt-server/blob/main/src/docs/known-issues.md#not-using-sveltekits-server-side-data-loading"
 			>full use of SvelteKit's features</a
