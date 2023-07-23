@@ -41,12 +41,8 @@
 	<p>
 		Hamilton and I first met in December 2019 and started self-funded part-time work on what would
 		become <a href="https://github.com/feltjs">@feltjs</a>. One of the main ideas was to make tools
-		to help people be creative together. Visit
-		<a href="https://www.felt.dev/">felt.dev</a>
-		to see where we are. If you want to consume our media, we publish a
-		<a href="https://tinyletter.com/FeltCoop">monthly newsletter</a>
-		and a podcast produced by Hamilton called
-		<a href="https://www.felt.social/toolmakersforum">Toolmakers Forum</a>.
+		to help people be creative together - visit <a href="https://www.felt.dev/">felt.dev</a> to see where
+		we are.
 	</p>
 	<p>
 		Our main project is <a href="https://github.com/feltjs/felt-server">felt-server</a>, an
@@ -132,20 +128,6 @@
 		provide tools to make realtime social experiences and games that inherit your social context,
 		enabling beginners to participate in the creative process. We want the act of creating tools and
 		sharing them to be a normal and expected part of the software-user experience.
-	</p>
-	<p>
-		It's a big set of goals, and we think we have useful contributions particularly around UX. We
-		think we see an opportunity to hit an under-served sweet spot for small communities with our set
-		of design and tech choices. Our
-		<a
-			href="https://www.felt.social/toolmakersforum/episode/9-big-ideas-in-our-community-software-part-1"
-			>9th</a
-		>
-		and
-		<a
-			href="https://www.felt.social/toolmakersforum/episode/10-big-ideas-in-our-community-software-part-2"
-			>10th</a
-		> podcast episodes go into more detail on the main ideas.
 	</p>
 	<p>We have a handful of software repos:</p>
 	<ul>
