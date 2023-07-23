@@ -300,9 +300,9 @@
 		Both the server and clients are open source and our APIs are open, so clients can be modified
 		with low friction or created from scratch. (our client will be decoupled from the server during
 		alpha, stay tuned) We use TypeScript and Svelte across the full stack, and we try to leverage
-		the benefits of integration when available, like sharing types, helpers, and schemas. We'll try
-		to maximize the freedoms and degrees of freedom enjoyed by our users and developers, but
-		security and performance are unfortunate constraints and sometimes buzzkills :\
+		the benefits of integration when available, like sharing types, helpers, and schemas. We try to
+		maximize the freedoms and degrees of freedom enjoyed by our users and developers, but security
+		and performance are unfortunate constraints and sometimes buzzkills :\
 	</p>
 	<p>
 		Our client has a <a href="https://wikipedia.org/wiki/Client_(computing)#Thick">thickness</a>
