@@ -172,51 +172,25 @@
 		</li>
 	</ul>
 	<hr />
-	<h2>Wait the blog post isn't done?</h2>
+	<h2>P.S.</h2>
 	<p>
-		I'm having difficulty summarizing the project: it's big and there are many unknowns. I'll write
-		more followup blog posts, hopefully more coherent than this one, but for now I'll add a few more
-		thoughts below.
+		I'm having difficulty summarizing the project: it's big and there are many unknowns. The ideas
+		below seem important to include but not that important.
 	</p>
 	<hr />
 	<h2>Everyone can be a toolmaker</h2>
 	<p>
 		Instead of being limited to filling digital boxes designed by tech companies, anyone should be
-		able to design their own box. Wait forget boxes, we're digitized. We see examples of what's
+		able to design their own box and share that pattern with others. We see examples of what's
 		possible in all sorts of products over decades, especially in games, and there's fresh
 		opportunities to do this with web tech.
 	</p>
 	<p>
-		We want to build software tools that anyone can use to explore the vast terrain of collaborative
+		We want to build software that supports exploring the vast terrain of possible collaborative
 		experiences, so you could take a larger role in designing your media, if you want. A key here is
 		to make a great media sharing UX, so some fraction of people make and share useful and cool
-		stuff, and everyone benefits. Also, creating the tools of creation should be open, so anyone can
-		experiment for their particular situations.
-	</p>
-	<hr />
-	<h2>Sharing spaces with others</h2>
-	<p>
-		One aspect of community software that's full of interesting opportunities is how to govern
-		shared spaces: things like exercising power, communicating and enforcing rules, nudging norms,
-		making collective decisions, scripting governance processes over time, and so on. Each group of
-		people has distinct needs.
-	</p>
-	<p>
-		We're collaborating with PhD candidate Jane Im (<a href="https://imjane.net/">imjane.net</a>) on
-		designs including research-backed user-driven governance. Her paper "Yes: Affirmative Consent as
-		a Theoretical Framework for Understanding and Imagining Social Platforms" (<a
-			href="https://consentful.systems/">consentful.systems</a
-		>), which credits <a href="https://www.consentfultech.io/">The Consentful Tech Project</a>, has
-		been a major source of inspiration for how we think about designing software.
-	</p>
-	<p>
-		Our perspective as toolmakers is that we'll attempt to support a wide range of possibilities,
-		from traditional moderator setups to democratic control and much more, and provide templates and
-		guidance to help communities achieve their goals. We'll give this a lot of attention before
-		beta, but I suspect the delightfully good stuff is 1-2+ years away, maybe using standards that
-		<a href="https://metagov.org/">Metagov</a> is developing. I'm also keeping related projects
-		<a href="https://communityrule.info/">CommunityRule</a>
-		and <a href="https://policykit.org/">PolicyKit</a> in mind.
+		stuff, and everyone benefits. Also, creating the tools of creation should be open and
+		ecosystemified, so we can experiment for our particular situations.
 	</p>
 	<hr />
 	<h2>Business and ownership</h2>
@@ -230,11 +204,37 @@
 		community assets.
 	</p>
 	<p>
-		Originally, I thought I was going to operate a hosting company at <a
+		Originally, I thought I was going to operate a hosting company as a platform co-op at <a
 			href="https://www.felt.social/">felt.social</a
 		>. Hamilton may continue pursuing that goal, and I would love to be a paying customer, but I
-		want my life to be focused on software development, and I'll leave operations to people who
-		enjoy them.
+		want my life to be focused on software development, and I'll gladly pay money to people who
+		enjoy operations in exchange for a simpler life.
+	</p>
+	<hr />
+	<h2>Sharing spaces with others</h2>
+	<p>
+		One aspect of community software that's full of interesting opportunities is how to govern
+		shared spaces: things like exercising power, communicating and enforcing rules, nudging norms,
+		making collective decisions, scripting governance processes over time, and so on. Each group of
+		people has distinct needs.
+	</p>
+	<p>
+		For part of 2021 and 2022 we collaborated with PhD candidate Jane Im (<a
+			href="https://imjane.net/">imjane.net</a
+		>) on designs related to research-backed user-driven governance. Her paper "Yes: Affirmative
+		Consent as a Theoretical Framework for Understanding and Imagining Social Platforms" (<a
+			href="https://consentful.systems/">consentful.systems</a
+		>), which credits <a href="https://www.consentfultech.io/">The Consentful Tech Project</a>, has
+		been a major source of inspiration for how we think about designing software.
+	</p>
+	<p>
+		Our perspective as toolmakers is that we'll attempt to support a wide range of possibilities,
+		from traditional moderator setups to democratic control and much more, and provide templates and
+		guidance to help communities achieve their goals. We'll give this a lot of attention before
+		beta, but I suspect the delightfully good stuff is 1-2+ years away, maybe using standards that
+		<a href="https://metagov.org/">Metagov</a> is developing. I'm also keeping related projects
+		<a href="https://communityrule.info/">CommunityRule</a>
+		and <a href="https://policykit.org/">PolicyKit</a> in mind.
 	</p>
 	<hr />
 	<h2>Tech notes</h2>
