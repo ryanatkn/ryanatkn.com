@@ -212,11 +212,11 @@
 	<hr />
 	<h2>Business and ownership</h2>
 	<p>
-		We haven't done the legal work to make it official, but the feltjs trademarks and domains (like <a
+		We haven't done the legal work to make it official, but the feltjs trademarks and domains, like <a
 			href="/felt.png">the green heart logo</a
 		>
 		and
-		<a href="https://www.felt.dev/">felt.dev</a>) will be owned and managed by some kind of
+		<a href="https://www.felt.dev/">felt.dev</a>, will be owned and managed by some kind of
 		nonprofit entity. This is a commitment to the public open source community that these are
 		community assets.
 	</p>
@@ -236,7 +236,7 @@
 	</p>
 	<p>
 		Hamilton may continue pursuing felt.social as a cooperatively owned host, he'll just need 4
-		cofounders instead of 3 to officially start the co-op in Colorado.. take my money!
+		cofounders instead of 3 to officially start the co-op in Colorado... take my money!!
 	</p>
 	<hr />
 	<h2>Sharing spaces with others</h2>
