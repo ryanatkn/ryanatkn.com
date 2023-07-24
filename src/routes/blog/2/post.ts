@@ -1,3 +1,5 @@
+// TODO maybe revert this to Svelte module context?
+
 import type {FeedItemData} from '$lib/feed';
 
 export const post: FeedItemData = {
