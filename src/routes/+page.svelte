@@ -162,7 +162,7 @@
 		background-color: var(--bg);
 		border-width: var(--border_width);
 		border-style: var(--border_style);
-		border-color: var(--border_1);
+		border-color: transparent;
 		border-radius: var(--border_radius);
 		margin-bottom: var(--spacing_lg);
 		padding: var(--spacing_md);
@@ -171,7 +171,7 @@
 		font-size: var(--size_lg);
 	}
 	.card:hover {
-		border-color: var(--border_2);
+		border-color: var(--border_1);
 	}
 	.icon {
 		padding-left: var(--spacing_sm);

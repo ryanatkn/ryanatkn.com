@@ -37,9 +37,9 @@
 		padding: var(--spacing_sm) var(--spacing_sm) var(--spacing_sm) var(--spacing_xl4);
 		border-width: var(--border_width);
 		border-style: var(--border_style);
-		border-color: var(--border_1);
+		border-color: transparent;
 	}
 	.content:hover {
-		border-color: var(--border_2);
+		border-color: var(--border_1);
 	}
 </style>
