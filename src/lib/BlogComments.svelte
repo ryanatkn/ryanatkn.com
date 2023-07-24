@@ -14,7 +14,7 @@
 		<div class="load_button" out:slide>
 			<PendingButton pending={loading || false} disabled={!!data} on:click={() => load()}>
 				<div class="load_button_content">
-					<div style:font-size="var(--icon_size_md)">💬</div>
+					<div class="icon">💬</div>
 					{#if data}{#if data.ancestors.length}loaded {data.descendants.length} descendants and {data
 								.ancestors.length} ancestors{:else}loaded {data.descendants.length} comments{/if}{:else}load
 						comments from<br />{host}{/if}
@@ -74,5 +74,9 @@
 	.main_post_inner {
 		background-color: var(--bg);
 		padding: var(--spacing_xs);
+	}
+	.icon {
+		font-size: var(--icon_size_md);
+		padding-right: var(--spacing_md);
 	}
 </style>

@@ -5,6 +5,7 @@
 	import HashLink from '$lib/HashLink.svelte';
 	import BlogPostIndex from '$lib/BlogPostIndex.svelte';
 	import {content_security_poilicy} from '$routes/security';
+	import {page} from '$app/stores';
 
 	// https://fosstodon.org/@rauschma/110728406134660568
 	// const host = 'fosstodon.org';
@@ -34,13 +35,16 @@
 			<HashLink slug="introduction">Introduction</HashLink>
 		</h2>
 		<p>
-			This website is a bundle of plain static files, including HTML, JavaScript, CSS, <a
-				href="{base}/blog/feed.xml">an Atom feed</a
-			>, and some images, viewable
-			<a href="https://github.com/ryanatkn/ryanatkn.com/tree/deploy">here</a>. It's hosted for free
-			by
-			<a href="https://pages.github.com/">GitHub Pages</a>, which is a common cloud offering because
-			the cost of serving these static files is very low.
+			This website is a bundle of plain static files, including HTML, JavaScript, CSS, some images,
+			and <a href="{base}/blog/feed.xml">an Atom feed</a>
+			for the blog, viewable
+			<a href="https://github.com/ryanatkn/ryanatkn.com/tree/deploy">here on the 'deploy' branch</a>
+			of <a href="https://github.com/ryanatkn/ryanatkn.com">the git repo</a>.
+			<a href="https://pages.github.com/">GitHub Pages</a>
+			hosts those files for free, published right here as a website to
+			<code>{$page.url.host}</code>. The costs of serving these static files are very low, so "free
+			for open source" and even "free" are common cloud offerings. Thanks, GitHub, for being host of
+			the day.
 		</p>
 		<aside>
 			The website's final output files are HTML, JS, and CSS, but <a
@@ -52,8 +56,9 @@
 			recommend them with enthusiasm.
 		</aside>
 		<p>
-			Although static, this site also has dynamic behavior. If you click the "load comments" button
-			below, your browser sends a request to a <a href="https://joinmastodon.org/">Mastodon</a>
+			Although static to its bones, this site also has dynamic behavior. If you click the "load
+			comments" button below under the <a href="#comments">"Comments"</a> heading of the post, your
+			browser sends a request to a <a href="https://joinmastodon.org/">Mastodon</a>
 			instance that hosts <a href="https://hachyderm.io/@ryanatkn">my account</a> on
 			<a href="https://hachyderm.io/">hachyderm.io</a>. Mastodon is an
 			<a href="https://wikipedia.org/wiki/ActivityPub">ActivityPub</a>-compatible app in the
