@@ -1,7 +1,7 @@
 <script lang="ts">
 	import {page} from '$app/stores';
 
-	export let sections: {slug: string; name: string}[];
+	export let sections: Array<{slug: string; name: string}>;
 
 	$: hash = $page.url.hash.substring(1);
 </script>

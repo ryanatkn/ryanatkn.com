@@ -33,7 +33,6 @@
 	 */
 	export let id: string | undefined = undefined;
 
-	// TODO BLOCK fetch data
 	let data: MastodonContext | undefined | null;
 	let status_data: MastodonStatus | undefined | null;
 
@@ -56,6 +55,10 @@
 			fetch_status_context_by_url(url),
 			fetch_status_by_url(url),
 		]);
+		// data?.ancestors -- not handling these differently,
+		// TODO BLOCK are these siblings? or just the reply tree?
+		data?.descendants;
+		// TODO BLOCK load favourites for all that !== 1
 		loading = false;
 	};
 
