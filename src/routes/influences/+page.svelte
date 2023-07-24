@@ -95,7 +95,7 @@
 		],
 		{name: 'consentfultech.io', url: 'https://www.consentfultech.io/'},
 		{
-			name: 'Initiative for Digital Public Infrastructure',
+			name: 'Initiative for Digital Public Infrastructure (iDPI)',
 			url: 'https://publicinfrastructure.org/',
 		},
 		[
@@ -103,6 +103,7 @@
 			{name: 'pluriverse.world', url: 'https://pluriverse.world/'},
 		],
 		{name: 'Elinor Ostrom', url: 'https://wikipedia.org/wiki/Elinor_Ostrom'},
+		{name: 'Cory Doctorow', url: 'https://pluralistic.net/'},
 		{name: 'DWeb', url: 'https://getdweb.net/principles/'},
 		{name: 'Shagun Jhaver', url: 'https://shagunjhaver.com/'},
 		{name: 'Center for Humane Technology', url: 'https://www.humanetech.com/'},
@@ -118,10 +119,9 @@
 		{name: 'Erin Shepherd', url: 'https://erinshepherd.net/'},
 		{name: 'Ethan Zuckerman', url: 'https://ethanzuckerman.com/'},
 		{name: 'Ariadne Conill', url: 'https://ariadne.space/'},
-		[
-			{name: 'Eli Pariser', url: 'https://www.elipariser.org'},
-			{name: 'New_ Public', url: 'https://newpublic.org/'},
-		],
+		[{name: 'Eli Pariser', url: 'https://www.elipariser.org'}],
+		[{name: 'New_ Public', url: 'https://newpublic.org/'}],
+		[{name: 'Media Economies Design Lab (MEDLab)', url: 'https://www.colorado.edu/lab/medlab/'}],
 	];
 
 	shuffle(influences);
@@ -185,10 +185,10 @@
 <div class="width_md prose padded_md">
 	<h1>{title}</h1>
 	<p>
-		Giving proper credit to all of one's influences is an impossible task and embarrassingly biased
-		but why not try? Maybe these lists could help you discover new and interesting people and
-		things. I am definitely forgetting people to credit, so this is a living document. I'm also
-		omitting entire categories of influence. (love you mom)
+		Giving proper credit to all of one's influences is impossible, embarrassingly biased, and too
+		revealing, but maybe these lists could help you discover new and interesting people and things.
+		I am definitely forgetting people to credit. I'm also omitting entire categories of influence.
+		(love you mom)
 	</p>
 	<p>
 		<button on:click={shuffleAll} class="inline" style:background="transparent">give credit</button>
@@ -209,7 +209,7 @@
 		{/each}
 	</ul>
 	<h3>programming languages:</h3>
-	<p>(roughly reverse chronological order)</p>
+	<p>(roughly reverse chronological order, mostly beginner-level)</p>
 	<ul>
 		{#each langs as lang (lang)}
 			<!-- eslint-disable-next-line svelte/no-at-html-tags -->

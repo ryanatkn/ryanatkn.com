@@ -13,7 +13,9 @@
 	<title>{post.title}</title>
 </svelte:head>
 
-<BlogPostHeader {post} />
+<header class="prose">
+	<BlogPostHeader {post} />
+</header>
 <svelte:component this={Component} />
 <hr />
 <BlogPostFooter {post} />

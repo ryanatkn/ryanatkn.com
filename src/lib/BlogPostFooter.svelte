@@ -2,19 +2,20 @@
 	import type {FeedItemData} from '$lib/feed';
 
 	export let post: FeedItemData;
+	post; // TODO
 </script>
 
 <div class="blog-post-footer">
 	<div class="panel prose">
 		<p>
-			<span> find me on Mastodon and the Fediverse:</span>
+			<span>
+				find me on <a href="https://joinmastodon.org/">Mastodon</a> and
+				<a href="https://wikipedia.org/wiki/ActivityPub">ActivityPub</a>:</span
+			>
 			<br />
 			<a href="https://hci.social/@ryanatkn">@ryanatkn@hci.social</a> (professional)
 			<br />
 			<a href="https://hachyderm.io/@ryanatkn">@ryanatkn@hachyderm.io</a> (coder)
-			<br />
-			or
-			<a href="mailto:mail@ryanatkn.com?subject=Reply to post: {post.title}">↪ reply by email</a>
 		</p>
 	</div>
 </div>
