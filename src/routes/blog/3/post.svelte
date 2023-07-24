@@ -158,6 +158,9 @@
 	<hr />
 	<section>
 		<div class="prose"><h2><HashLink slug="comments">Comments</HashLink></h2></div>
+		<BlogComments {host} {id} />
 	</section>
 </div>
-<BlogComments {host} {id} />
+
+<style>
+</style>

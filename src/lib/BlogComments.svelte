@@ -22,15 +22,21 @@
 			</PendingButton>
 		</div>
 	{/if}
-	{#if status_data}
-		<div class="main_post panel">
-			<div class="panel main_post_inner">
-				<StatusCard item={status_data} />
-			</div>
-		</div>
-	{/if}
 	{#if data}
 		<ul class="statuses">
+			<!-- TODO style differently or something -->
+			{#each data.ancestors as item}
+				<li>
+					<StatusCard {item} />
+				</li>
+			{/each}
+			{#if status_data}
+				<div class="main_post panel">
+					<div class="panel main_post_inner">
+						<StatusCard item={status_data} />
+					</div>
+				</div>
+			{/if}
 			{#each data.descendants as item}
 				<li>
 					<StatusCard {item} />
