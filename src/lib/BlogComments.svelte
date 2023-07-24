@@ -59,7 +59,7 @@
 		margin-right: var(--spacing_md);
 	}
 	.load_button_content {
-		padding: var(--spacing_md);
+		padding: var(--spacing_md) 0;
 		display: flex;
 		align-items: center;
 		text-align: left;
