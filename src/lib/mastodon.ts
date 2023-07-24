@@ -90,6 +90,9 @@ export interface MastodonPostParams {
 
 export type Url = Flavored<string, 'Url'>;
 
+export const serialize_status_url_TODO = (host: string, id: string): string =>
+	`https://${host}/api/v1/statuses/${id}`;
+
 export const serialize_status_context_url = (host: string, id: string): string =>
 	`https://${host}/api/v1/statuses/${id}/context`;
 
@@ -157,10 +160,23 @@ export const fetch_post_by_url = async (url: string): Promise<MastodonContext | 
 
 export const fetch_post = async (host: string, id: string): Promise<MastodonContext | null> => {
 	const url = serialize_status_context_url(host, id);
-	console.log(`url`, url);
 	const res = await fetch(url);
 	if (!res.ok) return null;
 	const fetched = await res.json();
-	console.log(`fetched`, fetched);
+	console.log(`fetched`, url, fetched);
+	return fetched;
+};
+
+// TODO BLOCK implement for direct links
+export const fetch_post_by_url_TODO = async (url: string): Promise<MastodonContext | null> => {
+	console.log(`url`, url);
+	const parsed = parse_status_context_url(url);
+	if (!parsed) return null;
+	const {host, id} = parsed;
+	const u = serialize_status_url_TODO(host, id);
+	const res = await fetch(u);
+	if (!res.ok) return null;
+	const fetched = await res.json();
+	console.log(`fetched`, u, fetched);
 	return fetched;
 };

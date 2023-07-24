@@ -8,6 +8,7 @@
 		type MastodonContext,
 		to_api_url,
 		to_post_url,
+		fetch_post_by_url_TODO,
 	} from '$lib/mastodon';
 
 	// TODO BLOCK handle difference with https://mstdn.social/@feditips/110702983310017651 and  https://hci.social/api/v1/statuses/110702983310017651/context
@@ -48,13 +49,21 @@
 
 	let loading: boolean | null = null;
 
+	let post_data; // TODO BLOCK
+
 	const load_by_url = async (url: string) => {
 		console.log(`load_by_url`, url);
 		loading = true;
+
 		const fetched = await fetch_post_by_url(url);
-		loading = false;
 		console.log(`fetched`, fetched);
 		data = fetched;
+
+		const fetched_TODO = await fetch_post_by_url_TODO(url);
+		console.log(`fetched_TODO`, fetched_TODO);
+		post_data = fetched_TODO;
+
+		loading = false;
 	};
 
 	// $: browser && load(host, id);
