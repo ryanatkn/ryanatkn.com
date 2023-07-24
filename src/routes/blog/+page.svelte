@@ -1,5 +1,7 @@
 <script lang="ts">
-	import {feed} from './feed';
+	import {base} from '$app/paths';
+
+	import {feed} from '$routes/blog/feed';
 	import FeedItemDate from '$lib/FeedItemDate.svelte';
 	import {toPathname} from '$lib/util';
 
@@ -13,13 +15,13 @@
 <div class="blog prose">
 	<ol class="panel" reversed>
 		{#each items as item}
-			<li>
+			<li class="card">
 				<a href={toPathname(item.url, feed.home_page_url)}>{item.title}</a>
 				<div class="date"><FeedItemDate {item} /></div>
 			</li>
 		{/each}
 	</ol>
-	<blockquote><a href="https://www.ryanatkn.com/blog/feed.xml">Atom feed</a></blockquote>
+	<blockquote><a href="{base}/blog/feed.xml">Atom feed</a></blockquote>
 </div>
 
 <style>
@@ -33,13 +35,8 @@
 		background-color: var(--fg_1);
 		padding: var(--spacing_sm) var(--spacing_sm) var(--spacing_sm) var(--spacing_xl4);
 	}
-	li {
+	.card {
 		font-size: var(--size_lg);
-		padding: var(--spacing_sm);
-		width: var(--width_sm);
-		margin: var(--spacing_sm) 0;
-		background-color: var(--bg);
-		border-radius: var(--border_radius_sm);
 	}
 	.date {
 		font-size: var(--size_md);

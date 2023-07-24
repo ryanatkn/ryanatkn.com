@@ -10,8 +10,8 @@
 	import Footer from '$routes/Footer.svelte';
 
 	const content_security_poilicy = dev
-		? "default-src 'unsafe-inline' 'self';"
-		: "default-src 'unsafe-inline' 'self'; img-src https://*;";
+		? "default-src 'unsafe-inline' 'self'; connect-src 'self' https://hachyderm.io/; img-src *;"
+		: "default-src 'unsafe-inline' 'self'; connect-src 'self' https://hachyderm.io/; img-src https://*;";
 </script>
 
 <svelte:head>

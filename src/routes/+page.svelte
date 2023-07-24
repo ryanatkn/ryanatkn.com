@@ -89,7 +89,7 @@
 		</div>
 		<div class="cards">
 			{#each projects as project}
-				<div class="card prose padded_md">
+				<div class="card prose">
 					<div>
 						<p>{@html project.title}</p>
 						<p>
@@ -148,30 +148,8 @@
 	.panel :global(h2) {
 		margin-top: 0;
 	}
-	.cards {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		align-items: flex-start;
-		justify-content: center;
-		gap: var(--spacing_md);
-	}
-	.card {
-		display: flex;
-		width: var(--width_sm);
-		background-color: var(--bg);
-		border-width: var(--border_width);
-		border-style: var(--border_style);
-		border-color: transparent;
-		border-radius: var(--border_radius);
-		margin-bottom: var(--spacing_lg);
-		padding: var(--spacing_md);
-	}
 	.card p:first-child {
 		font-size: var(--size_lg);
-	}
-	.card:hover {
-		border-color: var(--border_1);
 	}
 	.icon {
 		padding-left: var(--spacing_sm);

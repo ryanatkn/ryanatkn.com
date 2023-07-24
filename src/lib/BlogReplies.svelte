@@ -15,8 +15,8 @@
 			<PendingButton pending={loading || false} disabled={!!data} on:click={() => load()}>
 				<div class="load_button_content">
 					{#if data}{#if data.ancestors.length}loaded {data.descendants.length} descendants and {data
-								.ancestors.length} ancestors{:else}loaded {data.descendants.length} posts{/if}{:else}load
-						posts from<br />{host}{/if}
+								.ancestors.length} ancestors{:else}loaded {data.descendants.length} comments{/if}{:else}load
+						comments from<br />{host}{/if}
 				</div>
 			</PendingButton>
 		</div>
