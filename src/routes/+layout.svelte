@@ -20,7 +20,7 @@
 		rel="alternate"
 		type="application/atom+xml"
 		title="Atom"
-		href="https://www.ryanatkn.com/feed.xml"
+		href="https://www.ryanatkn.com/blog/feed.xml"
 	/>
 	<meta http-equiv="content-security-policy" content={content_security_poilicy} />
 </svelte:head>

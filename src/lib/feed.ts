@@ -44,7 +44,11 @@ export interface FeedItemData {
 }
 
 export const toAtomXml = (data: FeedData): string => {
-	const updated: string = data.items
+	const items = data.items
+		.slice()
+		.sort((a, b) => (new Date(a.date_published) > new Date(b.date_published) ? -1 : 1)); // TODO maybe add an option to customize this? maybe by `date_modified`?
+
+	const updated: string = items
 		.reduce((latest, item) => {
 			const modified = new Date(item.date_modified || item.date_published);
 			return modified > latest ? modified : latest;
@@ -67,7 +71,7 @@ export const toAtomXml = (data: FeedData): string => {
     ${data.author.email ? `<email>${data.author.email}</email>` : ''}
     ${data.author.url ? `<uri>${data.author.url}</uri>` : ''}
   </author>
-  ${data.items
+  ${items
 		.map(
 			(item) =>
 				`

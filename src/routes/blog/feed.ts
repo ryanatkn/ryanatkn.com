@@ -16,7 +16,7 @@ export const feed: FeedData = {
 		email: 'mail@ryanatkn.com',
 	},
 	atom: {
-		feed_url: 'https://www.ryanatkn.com/feed.xml',
+		feed_url: 'https://www.ryanatkn.com/blog/feed.xml',
 	},
 	items: posts,
 };

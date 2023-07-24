@@ -1,10 +1,6 @@
 import type {FeedItemData} from '$lib/feed';
-import * as p0 from '../routes/blog/[slug]/0.svelte';
-import * as p1 from '../routes/blog/[slug]/1.svelte';
-import * as p2 from '../routes/blog/[slug]/2.svelte';
+import {post as p1} from '../routes/blog/1/post';
+import {post as p2} from '../routes/blog/2/post';
+import {post as p3} from '../routes/blog/3/post';
 
-// TODO maybe export these zipped together into objects? currently have to match by index
-
-export const posts: FeedItemData[] = [p0.post, p1.post, p2.post];
-
-export const Components = [p0.default, p1.default, p2.default];
+export const posts: FeedItemData[] = [p1, p2, p3];

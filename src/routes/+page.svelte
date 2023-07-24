@@ -29,7 +29,7 @@
 		{
 			name: 'blog',
 			title: `<a href="${base}/blog">blog</a>`,
-			description: '<a href="https://www.ryanatkn.com/feed.xml">feed.xml</a>',
+			description: '<a href="https://www.ryanatkn.com/blog/feed.xml">feed.xml</a>',
 		},
 		{
 			name: 'devlog',

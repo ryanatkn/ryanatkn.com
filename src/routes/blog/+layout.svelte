@@ -1,14 +1,30 @@
 <script lang="ts">
 	import Breadcrumbs from '@feltjs/felt-ui/Breadcrumbs.svelte';
+	import {page} from '$app/stores';
 
+	import {feed} from '$routes/blog/feed';
 	import Favicon from '$lib/Favicon.svelte';
+	import Blog from '$lib/Blog.svelte';
+
+	$: ({
+		url: {pathname},
+	} = $page);
+
+	// TODO hacky
+	$: is_blog_post = !pathname.endsWith('/blog');
 </script>
 
 <div class="breadcrumbs">
 	<Breadcrumbs><Favicon /></Breadcrumbs>
 </div>
 <div class="wrapper padded_md">
-	<slot />
+	{#if is_blog_post}
+		<Blog {feed}>
+			<slot />
+		</Blog>
+	{:else}
+		<slot />
+	{/if}
 </div>
 <div class="breadcrumbs">
 	<Breadcrumbs><Favicon /></Breadcrumbs>

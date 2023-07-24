@@ -1,27 +1,3 @@
-<script lang="ts" context="module">
-	import type {FeedItemData} from '$lib/feed';
-
-	export const post: FeedItemData = {
-		id: 'https://www.ryanatkn.com/blog/2',
-		title: 'Moderated blog comments with Mastodon on a static website with SvelteKit',
-		url: 'https://www.ryanatkn.com/blog/moderated-blog-comments-with-mastodon-on-a-static-website-with-sveltekit',
-		date_published: '2023-07-19T21:44:17.224Z',
-		date_modified: '2023-07-19T21:44:17.224Z',
-		summary:
-			'Enabling moderated comments on my static blog using Mastodon with TypeScript, Svelte, and SvelteKit.',
-		tags: [
-			'web',
-			'ActivityPub',
-			'ActivityStreams',
-			'Fediverse',
-			'social media',
-			'design',
-			'technology',
-			'software',
-		],
-	};
-</script>
-
 <script lang="ts">
 	import BlogReplies from '$lib/BlogReplies.svelte';
 	import HashLink from '$lib/HashLink.svelte';
@@ -56,7 +32,7 @@
 		</h2>
 		<p>
 			This website is a bundle of plain static files - HTML, JavaScript, CSS, <a
-				href="https://www.ryanatkn.com/feed.xml">an Atom feed</a
+				href="https://www.ryanatkn.com/blog/feed.xml">an Atom feed</a
 			>, and some images - hosted for free by <a href="https://pages.github.com/">GitHub Pages</a>.
 			<a href="https://github.com/ryanatkn/ryanatkn.com">The source code</a>
 			that generates these files is written in <a href="https://typescriptlang.org/">TypeScript</a>

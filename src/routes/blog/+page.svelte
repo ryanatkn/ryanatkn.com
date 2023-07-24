@@ -11,7 +11,7 @@
 </svelte:head>
 
 <div class="blog prose">
-	<ol class="panel" start={items.length - 1} reversed>
+	<ol class="panel" reversed>
 		{#each items as item}
 			<li>
 				<a href={toPathname(item.url, feed.home_page_url)}>{item.title}</a>
@@ -19,7 +19,7 @@
 			</li>
 		{/each}
 	</ol>
-	<blockquote><a href="https://www.ryanatkn.com/feed.xml">Atom feed</a></blockquote>
+	<blockquote><a href="https://www.ryanatkn.com/blog/feed.xml">Atom feed</a></blockquote>
 </div>
 
 <style>

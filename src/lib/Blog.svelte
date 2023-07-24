@@ -5,7 +5,7 @@
 	import Message from '@feltjs/felt-ui/Message.svelte';
 
 	import BlogPost from '$lib/BlogPost.svelte';
-	import {Components} from '$lib/blog';
+	import {components} from '$lib/blog_components';
 	import type {FeedData} from '$lib/feed';
 
 	export let feed: FeedData;
@@ -15,8 +15,8 @@
 		? Number(slug)
 		: feed.items.findIndex((f) => f.url.endsWith(slug));
 	$: index = rawIndex === -1 || Number.isNaN(rawIndex) ? null : rawIndex;
-	$: post = index !== null && feed.items[index];
-	$: Component = index !== null && Components[index];
+	$: post = index === null ? null : feed.items[index];
+	$: component = index === null ? null : components[index];
 
 	// redirect from index to slug
 	$: if (browser && typeof rawIndex === 'number' && post) {
@@ -24,8 +24,8 @@
 	}
 </script>
 
-{#if post && Component}
-	<BlogPost {post} {Component} />
+{#if post && component}
+	<BlogPost {post} {component} />
 {:else}
 	<Message status="error">no post found, is the path correct?</Message>
 {/if}
