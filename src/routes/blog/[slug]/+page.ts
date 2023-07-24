@@ -6,3 +6,5 @@ export const entries: EntryGenerator = () => {
 	console.log(`blog`, blog.entries);
 	return blog.entries;
 };
+
+export const prerender = true; // TODO is this needed?
