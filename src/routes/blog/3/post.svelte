@@ -64,9 +64,11 @@
 			Here's <a href="https://github.com/ryanatkn/ryanatkn.com/pull/12/files">the GitHub PR</a>.
 		</p>
 		<p>
-			The <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP">content security policy</a
+			To avoid some potential security and privacy issues, I added a fairly restrictive <a
+				href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP">content security policy</a
 			>
-			that's applied in
+			that may break if my Mastodon host hachyderm.io changes how it loads resources. If something goes
+			wrong, having icons break is an acceptable failure. Here's the CSP that's applied in
 			<a href="https://github.com/ryanatkn/ryanatkn.com/blob/main/src/routes/%2Blayout.svelte"
 				>the main +layout.svelte</a
 			>:
