@@ -138,6 +138,10 @@
 		<h2>
 			<HashLink slug="references">References</HashLink>
 		</h2>
+		<p>
+			I took the main ideas from the following posts, and added the favourite-to-allowlist behavior
+			to implement some basic moderation.
+		</p>
 		<ul>
 			<li>
 				<a href="https://cassidyjames.com/blog/fediverse-blog-comments-mastodon/">
