@@ -71,7 +71,7 @@ const toPrerenderEntries = (blog: FeedData): string[] => {
 		// replace the last segment with the index
 		for (let i = pathname.length - 1; i >= 0; i--) {
 			if (pathname[i] === '/') {
-				entries.push(pathname.substring(0, i + 1) + index);
+				entries.push(pathname.substring(0, i + 1) + (1 + index));
 				break;
 			}
 		}

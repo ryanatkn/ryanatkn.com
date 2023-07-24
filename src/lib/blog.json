@@ -51,10 +51,10 @@
 	],
 	"entries": [
 		"/blog/making-free-and-open-source-web-community-software",
-		"/blog/0",
-		"/blog/modeling-virtual-social-spaces-in-this-house-we-post-cat-pics-on-saturday",
 		"/blog/1",
+		"/blog/modeling-virtual-social-spaces-in-this-house-we-post-cat-pics-on-saturday",
+		"/blog/2",
 		"/blog/moderated-blog-comments-with-mastodon-on-a-static-website-with-sveltekit",
-		"/blog/2"
+		"/blog/3"
 	]
 }
