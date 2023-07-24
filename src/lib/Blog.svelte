@@ -11,15 +11,15 @@
 	export let feed: FeedData;
 
 	$: ({slug} = $page.params);
-	$: rawIndex = /^\d+$/u.test(slug)
+	$: post_id = /^\d+$/u.test(slug)
 		? Number(slug)
-		: feed.items.findIndex((f) => f.url.endsWith(slug));
-	$: index = rawIndex === -1 || Number.isNaN(rawIndex) ? null : rawIndex;
+		: feed.items.findIndex((f) => f.url.endsWith(slug)) + 1;
+	$: index = post_id ? post_id - 1 : null;
 	$: post = index === null ? null : feed.items[index];
 	$: component = index === null ? null : components[index];
 
 	// redirect from index to slug
-	$: if (browser && typeof rawIndex === 'number' && post) {
+	$: if (browser && typeof post_id === 'number' && post) {
 		void goto(new URL(post.url).pathname, {replaceState: true});
 	}
 </script>
