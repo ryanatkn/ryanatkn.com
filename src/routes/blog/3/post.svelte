@@ -46,7 +46,7 @@
 			hosts those files for free, published right here as a website to
 			<code>{$page.url.host}</code>. The cost of serving these static files is very low, so "free
 			for open source" and even "free" are common cloud offerings today in 2023. Thanks, GitHub, for
-			being host of the day.
+			being host of the day. It doesn't get much simpler than this.
 		</p>
 		<aside>
 			The website's final output files are HTML, JS, and CSS, but <a
@@ -66,31 +66,9 @@
 			<a href="https://wikipedia.org/wiki/ActivityPub">ActivityPub</a>-compatible app in the
 			<a href="https://wikipedia.org/wiki/Fediverse">Fediverse</a>. It requests information about a
 			<a href="https://hachyderm.io/@ryanatkn">a post I made</a> that references this blog post. If the
-			request is successful, some JavaScript runs on your machine to display the data, and then suddenly,
-			comments.
+			request is successful, some JavaScript runs on your machine to display the comments. My host hachyderm.io
+			has its unauthenticated API enabled, so we can request data without any logins or other complexity.
 		</p>
-	</section>
-	<hr />
-	<section class="prose">
-		<h2>
-			<HashLink slug="implementation">Implementation</HashLink>
-		</h2>
-		<p>
-			Here's <a href="https://github.com/ryanatkn/ryanatkn.com/pull/12/files">the GitHub PR</a>.
-		</p>
-		<p>
-			To avoid some potential security and privacy issues, I added a fairly restrictive <a
-				href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP">content security policy</a
-			>
-			that may break if my Mastodon host hachyderm.io changes how it loads resources. I don't want anything
-			to make arbitrary third party requests. If something goes wrong or changes, having icons break
-			is an acceptable failure until I can review the situation. For you, it's a potentially worse experience
-			but it's safer. Here's the CSP that's applied in
-			<a href="https://github.com/ryanatkn/ryanatkn.com/blob/main/src/routes/%2Blayout.svelte"
-				>the main +layout.svelte</a
-			>:
-		</p>
-		<blockquote style:font-family="var(--font_family_mono)">{content_security_poilicy}</blockquote>
 	</section>
 	<hr />
 	<section class="prose">
@@ -113,6 +91,28 @@
 				</ul>
 			</li>
 		</ul>
+	</section>
+	<hr />
+	<section class="prose">
+		<h2>
+			<HashLink slug="implementation">Implementation</HashLink>
+		</h2>
+		<p>
+			Here's <a href="https://github.com/ryanatkn/ryanatkn.com/pull/12/files">the GitHub PR</a>.
+		</p>
+		<p>
+			To avoid some potential security and privacy issues, I added a fairly restrictive <a
+				href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP">content security policy</a
+			>
+			that may break if my Mastodon host hachyderm.io changes how it loads resources. I don't want anything
+			to make arbitrary third party requests. If something goes wrong or changes, having icons break
+			is an acceptable failure until I can review the situation. For you, it's a potentially worse experience
+			but it's safer. Here's the CSP that's applied in
+			<a href="https://github.com/ryanatkn/ryanatkn.com/blob/main/src/routes/%2Blayout.svelte"
+				>the main +layout.svelte</a
+			>:
+		</p>
+		<blockquote style:font-family="var(--font_family_mono)">{content_security_poilicy}</blockquote>
 	</section>
 	<hr />
 	<section class="prose">
