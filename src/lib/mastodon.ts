@@ -155,7 +155,7 @@ export const parse_status_url = (url: string): MastodonPostParams | null => {
 };
 
 // TODO BLOCK implement for direct links
-export const fetch_post_by_url = async (url: string): Promise<MastodonContext | null> => {
+export const fetch_status_context_by_url = async (url: string): Promise<MastodonContext | null> => {
 	console.log(`url`, url);
 	const parsed = parse_status_context_url(url);
 	if (!parsed) return null;
@@ -165,23 +165,31 @@ export const fetch_post_by_url = async (url: string): Promise<MastodonContext | 
 
 export const fetch_post = async (host: string, id: string): Promise<MastodonContext | null> => {
 	const url = serialize_status_context_url(host, id);
-	const res = await fetch(url, {headers});
-	if (!res.ok) return null;
-	const fetched = await res.json();
-	console.log(`fetched`, url, fetched);
-	return fetched;
+	try {
+		const res = await fetch(url, {headers});
+		if (!res.ok) return null;
+		const fetched = await res.json();
+		console.log(`fetched`, url, fetched);
+		return fetched;
+	} catch (err) {
+		return null;
+	}
 };
 
 // TODO BLOCK implement for direct links
-export const fetch_post_by_url_TODO = async (url: string): Promise<MastodonContext | null> => {
+export const fetch_status_by_url = async (url: string): Promise<MastodonStatus | null> => {
 	console.log(`url`, url);
 	const parsed = parse_status_context_url(url);
 	if (!parsed) return null;
 	const {host, id} = parsed;
 	const u = serialize_status_url_TODO(host, id);
-	const res = await fetch(u, {headers});
-	if (!res.ok) return null;
-	const fetched = await res.json();
-	console.log(`fetched_TODO`, u, fetched);
-	return fetched;
+	try {
+		const res = await fetch(u, {headers});
+		if (!res.ok) return null;
+		const fetched = await res.json();
+		console.log(`fetched_TODO`, u, fetched);
+		return fetched;
+	} catch (err) {
+		return null;
+	}
 };

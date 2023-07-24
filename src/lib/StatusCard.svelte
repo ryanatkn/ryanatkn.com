@@ -73,7 +73,6 @@
 		border-radius: var(--border_radius_sm);
 		padding: var(--spacing_md);
 		width: var(--width_sm);
-		margin-bottom: var(--spacing_xl3);
 	}
 	header {
 		display: flex;

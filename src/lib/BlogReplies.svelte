@@ -4,12 +4,13 @@
 
 	import StatusCard from '$lib/StatusCard.svelte';
 	import MastodonReplies from '$lib/MastodonnReplies.svelte';
+	import PendingAnimation from '@feltjs/felt-ui/PendingAnimation.svelte';
 
 	export let host: string;
 	export let id: string;
 </script>
 
-<MastodonReplies {host} {id} let:data let:api_url let:post_url let:load let:loading>
+<MastodonReplies {host} {id} let:status_data let:data let:api_url let:post_url let:load let:loading>
 	<div class="row spaced">
 		<div class="load_button">
 			<PendingButton pending={loading || false} disabled={!!data} on:click={() => load()}>
@@ -34,6 +35,15 @@
 			{/if}
 		</div>
 	</div>
+	{#if status_data}
+		<div class="main_post panel">
+			<div class="panel main_post_inner">
+				<StatusCard item={status_data} />
+			</div>
+		</div>
+	{:else if loading}
+		<PendingAnimation />
+	{/if}
 	{#if data}
 		<ul class="statuses">
 			{#each data.descendants as item}
@@ -42,8 +52,8 @@
 				</li>
 			{/each}
 		</ul>
-	{:else if loading === false}
-		<div>something went wrong (TODO proper error message)</div>
+	{:else if loading}
+		<PendingAnimation />
 	{/if}
 </MastodonReplies>
 
@@ -61,5 +71,16 @@
 	}
 	.load_button_content {
 		padding: var(--spacing_md);
+	}
+	.statuses li:not(:last-child) {
+		margin-bottom: var(--spacing_xl3);
+	}
+	.main_post {
+		margin-bottom: var(--spacing_xl3);
+		padding: var(--spacing_md);
+	}
+	.main_post_inner {
+		background-color: var(--bg);
+		padding: var(--spacing_xs);
 	}
 </style>

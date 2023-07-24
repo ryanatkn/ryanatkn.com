@@ -4,11 +4,12 @@
 	// import data from '$routes/blog/[slug]/2/data.json';
 	import {
 		// fetch_post,
-		fetch_post_by_url,
+		fetch_status_context_by_url,
 		type MastodonContext,
 		to_api_url,
 		to_post_url,
-		fetch_post_by_url_TODO,
+		fetch_status_by_url,
+		type MastodonStatus,
 	} from '$lib/mastodon';
 
 	// TODO BLOCK handle difference with https://mstdn.social/@feditips/110702983310017651 and  https://hci.social/api/v1/statuses/110702983310017651/context
@@ -34,6 +35,7 @@
 
 	// TODO BLOCK fetch data
 	let data: MastodonContext | undefined | null;
+	let status_data: MastodonStatus | undefined | null;
 
 	$: api_url = to_api_url(url, host, id);
 	$: post_url = to_post_url(api_url);
@@ -48,17 +50,12 @@
 
 	let loading: boolean | null = null;
 
-	let post_data; // TODO BLOCK
-
 	const load_by_url = async (url: string) => {
 		loading = true;
-
-		const fetched = await fetch_post_by_url(url);
-		data = fetched;
-
-		const fetched_TODO = await fetch_post_by_url_TODO(url);
-		post_data = fetched_TODO;
-
+		[data, status_data] = await Promise.all([
+			fetch_status_context_by_url(url),
+			fetch_status_by_url(url),
+		]);
 		loading = false;
 	};
 
@@ -70,4 +67,4 @@
 	};
 </script>
 
-<slot {data} {api_url} {post_url} {load} {loading} />
+<slot {status_data} {data} {api_url} {post_url} {load} {loading} />
