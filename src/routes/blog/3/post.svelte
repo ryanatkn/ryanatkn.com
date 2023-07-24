@@ -71,9 +71,7 @@
 				>the main +layout.svelte</a
 			>:
 		</p>
-		<blockquote>
-			<code>{content_security_poilicy}</code>
-		</blockquote>
+		<blockquote style:font-family="var(--font_family_mono)">{content_security_poilicy}</blockquote>
 	</section>
 	<hr />
 	<section class="prose">
