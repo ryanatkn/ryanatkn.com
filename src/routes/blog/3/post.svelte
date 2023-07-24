@@ -53,7 +53,7 @@
 				href="https://github.com/ryanatkn/ryanatkn.com">the source code</a
 			>
 			that generates these files is written in <a href="https://typescriptlang.org/">TypeScript</a>
-			and <a href="https://svelte.dev/">Svelte</a> with
+			and <a href="https://svelte.dev/">Svelte</a> using
 			<a href="https://kit.svelte.dev/">SvelteKit</a> and <a href="https://vitejs.dev/">Vite</a>. I
 			recommend them with enthusiasm.
 		</aside>
