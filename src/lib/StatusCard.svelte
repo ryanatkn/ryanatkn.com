@@ -8,7 +8,7 @@
 
 	const debug = false;
 
-	$: ({created_at, edited_at, content, account} = item);
+	$: ({created_at, edited_at, content, account, url} = item);
 	$: account_created = account.created_at;
 	$: account_avatar = account.avatar_static;
 	$: account_url = account.url;
@@ -44,8 +44,10 @@
 			<small title="{account_followers_count} followers, following {account_following_count}"
 				>{account_acct}</small
 			>
-			<small title="created {created}{edited ? `, edited ${edited}` : ''}, joined {joined}"
-				>{created_ago} ago{edited_ago ? `, edited ${edited_ago} ago` : ''}</small
+			<small
+				class="date"
+				title="posted {created}{edited ? `, edited ${edited}` : ''}, joined {joined}"
+				><a href={url}>{created_ago} ago{edited_ago ? `, edited ${edited_ago} ago` : ''}</a></small
 			>
 		</div>
 	</header>
@@ -93,11 +95,13 @@
 	.name {
 		font-size: var(--font_size_lg);
 	}
-	.names small {
-		font-weight: 500;
-	}
 	.json {
 		width: var(--width_sm);
 		overflow: auto;
+	}
+	.names small,
+	.date a {
+		font-weight: 500;
+		color: var(--text_2);
 	}
 </style>

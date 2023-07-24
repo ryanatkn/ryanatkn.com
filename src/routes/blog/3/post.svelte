@@ -1,7 +1,7 @@
 <script lang="ts">
 	import {base} from '$app/paths';
 
-	import BlogReplies from '$lib/BlogReplies.svelte';
+	import BlogComments from '$lib/BlogComments.svelte';
 	import HashLink from '$lib/HashLink.svelte';
 	import BlogPostIndex from '$lib/BlogPostIndex.svelte';
 	import {content_security_poilicy} from '$routes/security';
@@ -20,7 +20,7 @@
 		{slug: 'limitations', name: 'Limitations'},
 		{slug: 'conclusion', name: 'Conclusion'},
 		{slug: 'references', name: 'References'},
-		{slug: 'replies', name: 'Replies'},
+		{slug: 'comments', name: 'Comments'},
 	];
 </script>
 
@@ -34,14 +34,23 @@
 			<HashLink slug="introduction">Introduction</HashLink>
 		</h2>
 		<p>
-			This website is a bundle of plain static files - HTML, JavaScript, CSS, <a
+			This website is a bundle of plain static files, including HTML, JavaScript, CSS, <a
 				href="{base}/blog/feed.xml">an Atom feed</a
-			>, and some images - hosted for free by <a href="https://pages.github.com/">GitHub Pages</a>.
-			<a href="https://github.com/ryanatkn/ryanatkn.com">The source code</a>
+			>, and some images, viewable
+			<a href="https://github.com/ryanatkn/ryanatkn.com/tree/deploy">here</a>. It's hosted for free
+			by
+			<a href="https://pages.github.com/">GitHub Pages</a>, which is a common cloud offering because
+			the cost of serving these static files is very low.
+		</p>
+		<aside>
+			The website's final output files are HTML, JS, and CSS, but <a
+				href="https://github.com/ryanatkn/ryanatkn.com">the source code</a
+			>
 			that generates these files is written in <a href="https://typescriptlang.org/">TypeScript</a>
 			and <a href="https://svelte.dev/">Svelte</a> with
-			<a href="https://kit.svelte.dev/">SvelteKit</a> and <a href="https://vitejs.dev/">Vite</a>.
-		</p>
+			<a href="https://kit.svelte.dev/">SvelteKit</a> and <a href="https://vitejs.dev/">Vite</a>. I
+			recommend them with enthusiasm.
+		</aside>
 		<p>
 			Although static, this site also has dynamic behavior. If you click the "load comments" button
 			below, your browser sends a request to a <a href="https://joinmastodon.org/">Mastodon</a>
@@ -144,7 +153,7 @@
 	</section>
 	<hr />
 	<section>
-		<div class="prose"><h2><HashLink slug="replies">Replies</HashLink></h2></div>
+		<div class="prose"><h2><HashLink slug="comments">Comments</HashLink></h2></div>
 	</section>
 </div>
-<BlogReplies {host} {id} />
+<BlogComments {host} {id} />
