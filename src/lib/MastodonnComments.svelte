@@ -115,4 +115,4 @@
 	};
 </script>
 
-<slot {main_status} {main_context} {api_url} {post_url} {load} {loading} />
+<slot {main_status} {main_context} {replies} {api_url} {post_url} {load} {loading} />
