@@ -66,9 +66,9 @@
 		<p>
 			The <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP">content security policy</a
 			>
-			that's applied in the main
+			that's applied in
 			<a href="https://github.com/ryanatkn/ryanatkn.com/blob/main/src/routes/%2Blayout.svelte"
-				>+layout.svelte</a
+				>the main +layout.svelte</a
 			>:
 		</p>
 		<blockquote>
