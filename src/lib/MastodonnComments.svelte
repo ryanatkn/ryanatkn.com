@@ -70,27 +70,27 @@
 	const to_validated_replies = async (
 		status: MastodonStatus,
 		statuses: MastodonStatus[],
-	): MastodonStatus[] => {
-		const account_url = status.account.url; // maybe `id` is fine to compare? unique on every instance?
-		const allowed = new Set(statuses.filter((s) => s.account.url === account_url).map((s) => s.id));
+	): Promise<MastodonStatus[]> => {
+		const acct = status.account.acct;
+		const allowed = new Set(statuses.filter((s) => s.account.acct === acct).map((s) => s.id));
 		const skipped = new Set(statuses.filter((s) => !s.favourites_count).map((s) => s.id));
+		console.log(`allowed`, allowed);
 		console.log(`skipped`, skipped);
 		const unvalidated_replies = statuses.filter(({id}) => !allowed.has(id) && !skipped.has(id));
 		console.log(`unvalidated_replies`, unvalidated_replies);
+		let validated_replies;
 		if (unvalidated_replies.length) {
 			const mapped = await map_async(unvalidated_replies, async (status) => {
 				const favourites = await fetch_favourites(status);
-				const favourited =
-					favourited_by_author(status, favourites) || favourited_by_author(status, favourites);
-				console.log(`status`, status);
-				console.log(`fetched favourites`, favourites);
-				return status;
+				return favourites?.some((f) => f.acct === acct) ? status : null;
 			});
-			return mapped.filter(Boolean);
-			// TODO BLOCK load favourites for all that !== 1
+			validated_replies = mapped.filter(Boolean);
 		} else {
-			return [];
+			validated_replies = [];
 		}
+		return statuses.filter((s) => {
+			return allowed.has(s.id) ? s : null;
+		});
 	};
 
 	const load_by_url = async (url: string) => {
@@ -99,10 +99,10 @@
 			fetch_status_context_by_url(url),
 			fetch_status_by_url(url),
 		]);
-		console.log(`main_status`, main_status);
-		// data?.ancestors -- not handling these differently,
-		if (main_context) {
-			replies = to_validated_replies(main_status, main_context.descendants);
+		if (main_status && main_context) {
+			replies = await to_validated_replies(main_status, main_context.descendants);
+		} else {
+			replies = null;
 		}
 		loading = false;
 	};

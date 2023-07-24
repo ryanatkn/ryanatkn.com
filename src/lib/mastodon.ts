@@ -228,7 +228,7 @@ export const fetch_status_by_url = async (url: string): Promise<MastodonStatus |
 // TODO BLOCK reduce interface to url/id
 export const fetch_favourites = async (
 	status: MastodonStatus,
-): Promise<MastodonFavourites | null> => {
+): Promise<MastodonFavourites[] | null> => {
 	console.log(`status`, status);
 	const parsed = parse_status_context_url(status.url);
 	if (!parsed) return null;
