@@ -161,6 +161,3 @@
 		<BlogComments {host} {id} />
 	</section>
 </div>
-
-<style>
-</style>
