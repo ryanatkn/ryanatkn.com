@@ -11,35 +11,35 @@
 	// TODO BLOCK chronological, nested, updated, reverse chrono
 </script>
 
-<MastodonComments {host} {id} let:status_data let:data let:load let:loading>
+<MastodonComments {host} {id} let:main_status let:main_context let:load let:loading>
 	{#if loading !== false}
 		<div class="load_button" out:slide>
-			<PendingButton pending={loading || false} disabled={!!data} on:click={() => load()}>
+			<PendingButton pending={loading || false} disabled={!!main_context} on:click={() => load()}>
 				<div class="load_button_content">
 					<div class="icon">💬</div>
-					{#if data}{#if data.ancestors.length}loaded {data.descendants.length} descendants and {data
-								.ancestors.length} ancestors{:else}loaded {data.descendants.length} comments{/if}{:else}load
-						comments from<br />{host}{/if}
+					{#if main_context}{#if main_context.ancestors.length}loaded {main_context.descendants
+								.length} descendants and {main_context.ancestors.length} ancestors{:else}loaded {main_context
+								.descendants.length} comments{/if}{:else}load comments from<br />{host}{/if}
 				</div>
 			</PendingButton>
 		</div>
 	{/if}
-	{#if data}
+	{#if main_context}
 		<ul class="statuses">
 			<!-- TODO style differently or something -->
-			{#each data.ancestors as item}
+			{#each main_context.ancestors as item}
 				<li>
 					<StatusCard {item} />
 				</li>
 			{/each}
-			{#if status_data}
+			{#if main_status}
 				<div class="main_post panel">
 					<div class="panel main_post_inner">
-						<StatusCard item={status_data} />
+						<StatusCard item={main_status} />
 					</div>
 				</div>
 			{/if}
-			{#each data.descendants as item}
+			{#each main_context.descendants as item}
 				<li>
 					<StatusCard {item} />
 				</li>

@@ -36,8 +36,8 @@
 			><img class="icon" src={account_avatar} alt="avatar for {account_acct}" /></button
 		>
 		<div class="names">
-			<div>
-				<a href={account_url} title={account_url} class="name">
+			<div class="name">
+				<a href={account_url} title={account_url}>
 					{account_display_name}
 				</a>
 			</div>
@@ -93,6 +93,7 @@
 		padding: 0 var(--spacing_md);
 	}
 	.name {
+		display: flex;
 		font-size: var(--font_size_lg);
 	}
 	.json {
@@ -103,5 +104,8 @@
 	.date a {
 		font-weight: 500;
 		color: var(--text_2);
+	}
+	.date {
+		display: flex;
 	}
 </style>

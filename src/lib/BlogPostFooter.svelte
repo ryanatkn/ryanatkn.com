@@ -8,14 +8,11 @@
 <div class="blog-post-footer">
 	<div class="panel prose">
 		<p>
-			<span>
-				find me on <a href="https://joinmastodon.org/">Mastodon</a> and
-				<a href="https://wikipedia.org/wiki/ActivityPub">ActivityPub</a>:</span
-			>
+			<span> find me on <a href="https://joinmastodon.org/">Mastodon</a> and ActivityPub:</span>
 			<br />
 			<a href="https://hci.social/@ryanatkn">@ryanatkn@hci.social</a> (professional)
 			<br />
-			<a href="https://hachyderm.io/@ryanatkn">@ryanatkn@hachyderm.io</a> (coder)
+			<a href="https://hachyderm.io/@ryanatkn">@ryanatkn@hachyderm.io</a> (webdev)
 		</p>
 	</div>
 </div>

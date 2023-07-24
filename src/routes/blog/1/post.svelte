@@ -158,12 +158,12 @@
 	<h2>Find us</h2>
 	<ul>
 		<li>
+			<a href="https://www.felt.dev/">felt.dev</a>
+		</li>
+		<li>
 			@feltjs on
 			<a href="https://github.com/feltjs">GitHub</a> and
 			<a href="https://www.npmjs.com/org/feltjs">npm</a>
-		</li>
-		<li>
-			<a href="https://www.felt.dev/">felt.dev</a>
 		</li>
 	</ul>
 	<hr />
@@ -382,12 +382,12 @@
 	<h2>Find us</h2>
 	<ul>
 		<li>
+			<a href="https://www.felt.dev/">felt.dev</a>
+		</li>
+		<li>
 			@feltjs on
 			<a href="https://github.com/feltjs">GitHub</a> and
 			<a href="https://www.npmjs.com/org/feltjs">npm</a>
-		</li>
-		<li>
-			<a href="https://www.felt.dev/">felt.dev</a>
 		</li>
 	</ul>
 </div>

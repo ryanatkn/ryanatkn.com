@@ -82,6 +82,34 @@ export interface MastodonStatus {
 	poll: unknown; // | null;
 }
 
+export interface MastodonFavourites {
+	id: string;
+	username: string;
+	acct: string;
+	display_name: string;
+	locked: boolean;
+	bot: boolean;
+	discoverable: boolean;
+	group: boolean;
+	created_at: string; // Datetime
+	note: string;
+	url: string;
+	avatar: string;
+	avatar_static: string;
+	header: string;
+	header_static: string;
+	followers_count: number;
+	following_count: number;
+	statuses_count: number;
+	last_status_at: string;
+	emojis: unknown[];
+	fields: Array<{
+		name: string;
+		value: string;
+		verified_at: string; // Datetime
+	}>;
+}
+
 export interface MastodonStatusContextParams {
 	host: string;
 	id: string;
@@ -95,6 +123,7 @@ export interface MastodonPostParams {
 
 export type Url = Flavored<string, 'Url'>;
 
+// TODO BLOCK name
 export const serialize_status_url_TODO = (host: string, id: string): string =>
 	`https://${host}/api/v1/statuses/${id}`;
 
@@ -103,6 +132,9 @@ export const serialize_status_context_url = (host: string, id: string): string =
 
 export const serialize_status_url = (host: string, author: string, id: string): string =>
 	`https://${host}/@${author}/${id}`;
+
+export const serialize_favourites_url = (host: string, id: string): string =>
+	`https://${host}/api/v1/statuses/${id}/favourited_by`;
 
 export const to_api_url = (
 	url: string | undefined,
@@ -187,6 +219,26 @@ export const fetch_status_by_url = async (url: string): Promise<MastodonStatus |
 		if (!res.ok) return null;
 		const fetched = await res.json();
 		console.log(`fetch_status_by_url`, u, fetched);
+		return fetched;
+	} catch (err) {
+		return null;
+	}
+};
+
+// TODO BLOCK reduce interface to url/id
+export const fetch_favourites = async (
+	status: MastodonStatus,
+): Promise<MastodonFavourites | null> => {
+	console.log(`status`, status);
+	const parsed = parse_status_context_url(status.url);
+	if (!parsed) return null;
+	const {host, id} = parsed;
+	const u = serialize_favourites_url(host, id);
+	try {
+		const res = await fetch(u, {headers});
+		if (!res.ok) return null;
+		const fetched = await res.json();
+		console.log(`fetch_favourites`, u, fetched);
 		return fetched;
 	} catch (err) {
 		return null;

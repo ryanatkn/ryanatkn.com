@@ -19,8 +19,8 @@
 
 	const sections = [
 		{slug: 'introduction', name: 'Introduction'},
-		{slug: 'implementation', name: 'Implementation'},
 		{slug: 'limitations', name: 'Limitations'},
+		{slug: 'implementation', name: 'Implementation'},
 		{slug: 'conclusion', name: 'Conclusion'},
 		{slug: 'references', name: 'References'},
 		{slug: 'comments', name: 'Comments'},
