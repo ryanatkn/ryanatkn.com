@@ -156,7 +156,6 @@ export const parse_status_url = (url: string): MastodonPostParams | null => {
 
 // TODO BLOCK implement for direct links
 export const fetch_status_context_by_url = async (url: string): Promise<MastodonContext | null> => {
-	console.log(`url`, url);
 	const parsed = parse_status_context_url(url);
 	if (!parsed) return null;
 	const {host, id} = parsed;
@@ -169,7 +168,7 @@ export const fetch_post = async (host: string, id: string): Promise<MastodonCont
 		const res = await fetch(url, {headers});
 		if (!res.ok) return null;
 		const fetched = await res.json();
-		console.log(`fetched`, url, fetched);
+		console.log(`fetch_post`, url, fetched);
 		return fetched;
 	} catch (err) {
 		return null;
@@ -187,7 +186,7 @@ export const fetch_status_by_url = async (url: string): Promise<MastodonStatus |
 		const res = await fetch(u, {headers});
 		if (!res.ok) return null;
 		const fetched = await res.json();
-		console.log(`fetched_TODO`, u, fetched);
+		console.log(`fetch_status_by_url`, u, fetched);
 		return fetched;
 	} catch (err) {
 		return null;
