@@ -110,8 +110,9 @@
 		</p>
 		<p>
 			We have allowlist-based moderation through likes by the author, and a good effort at
-			efficiency. I may have missed it, but I didn't see a way in the API to get favourites for many
-			statuses at once - I make an API call for every post with 1+ likes.
+			efficiency given the constraints of the API. I may have missed it, but I didn't see a way in
+			the API to get favourites for many statuses at once - I make an API call for every post with
+			1+ likes.
 		</p>
 		<p>
 			If you're technically-minded, you may be interested in <a
