@@ -6,8 +6,9 @@ import type {FeedData} from '$lib/feed';
 
 /* eslint-disable no-await-in-loop */
 
-// TODO fix this, the worst part is we eagerly load all components -- loading async is a bad UX,
-// but I'm not sure of the best way to integrate with SvelteKit's routing and a good blog publishing flow
+// TODO fix this, the worst part is I'm eagerly loading all components, see `./blog_components.ts` --
+// loading async is a bad UX, but I'm not sure of the best way
+// to integrate with SvelteKit's routing and a good blog publishing flow
 
 // TODO refactor this to be reusable (see args below)
 
