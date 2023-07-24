@@ -12,10 +12,10 @@
 	// https://fosstodon.org/@rauschma/110728406134660568
 	// const host = 'fosstodon.org';
 	// const id = '110728406134660568';
-	// const host = 'mstdn.social';
-	// const id = '110702983310017651';
-	const host = 'hachyderm.io';
-	const id = '110729727683117713';
+	const host = 'mstdn.social';
+	const id = '110702983310017651';
+	// const host = 'hachyderm.io';
+	// const id = '110729727683117713';
 
 	const sections = [
 		{slug: 'introduction', name: 'Introduction'},
