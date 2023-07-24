@@ -7,6 +7,8 @@
 
 	export let host: string;
 	export let id: string;
+
+	// TODO BLOCK chronological, nested, updated, reverse chrono
 </script>
 
 <MastodonComments {host} {id} let:status_data let:data let:load let:loading>
