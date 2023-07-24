@@ -4,45 +4,30 @@
 
 	import StatusCard from '$lib/StatusCard.svelte';
 	import MastodonReplies from '$lib/MastodonnReplies.svelte';
-	import PendingAnimation from '@feltjs/felt-ui/PendingAnimation.svelte';
 
 	export let host: string;
 	export let id: string;
 </script>
 
-<MastodonReplies {host} {id} let:status_data let:data let:api_url let:post_url let:load let:loading>
-	<div class="row spaced">
-		<div class="load_button">
+<MastodonReplies {host} {id} let:status_data let:data let:load let:loading>
+	{#if loading !== false}
+		<div class="load_button" out:slide>
 			<PendingButton pending={loading || false} disabled={!!data} on:click={() => load()}>
 				<div class="load_button_content">
+					<div style:font-size="var(--icon_size_md)">💬</div>
 					{#if data}{#if data.ancestors.length}loaded {data.descendants.length} descendants and {data
 								.ancestors.length} ancestors{:else}loaded {data.descendants.length} comments{/if}{:else}load
 						comments from<br />{host}{/if}
 				</div>
 			</PendingButton>
 		</div>
-		<div class="info">
-			{#if loading === null}
-				<aside transition:slide>
-					↩ clicking this button fetches Mastodon posts from <a href={api_url}
-						><code>{api_url}</code></a
-					>
-					for post
-					<a href="post_url">{post_url}</a>
-				</aside>
-			{:else}
-				&nbsp;
-			{/if}
-		</div>
-	</div>
+	{/if}
 	{#if status_data}
 		<div class="main_post panel">
 			<div class="panel main_post_inner">
 				<StatusCard item={status_data} />
 			</div>
 		</div>
-	{:else if loading}
-		<PendingAnimation />
 	{/if}
 	{#if data}
 		<ul class="statuses">
@@ -52,8 +37,6 @@
 				</li>
 			{/each}
 		</ul>
-	{:else if loading}
-		<PendingAnimation />
 	{/if}
 </MastodonReplies>
 
@@ -71,6 +54,9 @@
 	}
 	.load_button_content {
 		padding: var(--spacing_md);
+		display: flex;
+		align-items: center;
+		text-align: left;
 	}
 	.statuses li:not(:last-child) {
 		margin-bottom: var(--spacing_xl3);
