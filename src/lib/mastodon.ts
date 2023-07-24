@@ -1,6 +1,11 @@
 import {stripEnd} from '@feltjs/util/string.js';
 import type {Flavored} from '@feltjs/util/types.js';
 
+const headers = {
+	accept: 'application/json',
+	'content-type': 'application/jsno',
+};
+
 /**
  * https://docs.joinmastodon.org/entities/Context/
  *
@@ -160,7 +165,7 @@ export const fetch_post_by_url = async (url: string): Promise<MastodonContext | 
 
 export const fetch_post = async (host: string, id: string): Promise<MastodonContext | null> => {
 	const url = serialize_status_context_url(host, id);
-	const res = await fetch(url);
+	const res = await fetch(url, {headers});
 	if (!res.ok) return null;
 	const fetched = await res.json();
 	console.log(`fetched`, url, fetched);
@@ -174,9 +179,9 @@ export const fetch_post_by_url_TODO = async (url: string): Promise<MastodonConte
 	if (!parsed) return null;
 	const {host, id} = parsed;
 	const u = serialize_status_url_TODO(host, id);
-	const res = await fetch(u);
+	const res = await fetch(u, {headers});
 	if (!res.ok) return null;
 	const fetched = await res.json();
-	console.log(`fetched`, u, fetched);
+	console.log(`fetched_TODO`, u, fetched);
 	return fetched;
 };

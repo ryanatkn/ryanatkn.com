@@ -34,7 +34,6 @@
 
 	// TODO BLOCK fetch data
 	let data: MastodonContext | undefined | null;
-	$: console.log(`data`, data);
 
 	$: api_url = to_api_url(url, host, id);
 	$: post_url = to_post_url(api_url);
@@ -52,15 +51,12 @@
 	let post_data; // TODO BLOCK
 
 	const load_by_url = async (url: string) => {
-		console.log(`load_by_url`, url);
 		loading = true;
 
 		const fetched = await fetch_post_by_url(url);
-		console.log(`fetched`, fetched);
 		data = fetched;
 
 		const fetched_TODO = await fetch_post_by_url_TODO(url);
-		console.log(`fetched_TODO`, fetched_TODO);
 		post_data = fetched_TODO;
 
 		loading = false;
