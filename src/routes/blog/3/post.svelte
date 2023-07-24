@@ -4,6 +4,7 @@
 	import BlogReplies from '$lib/BlogReplies.svelte';
 	import HashLink from '$lib/HashLink.svelte';
 	import BlogPostIndex from '$lib/BlogPostIndex.svelte';
+	import {content_security_poilicy} from '$routes/security';
 
 	// https://fosstodon.org/@rauschma/110728406134660568
 	// const host = 'fosstodon.org';
@@ -62,6 +63,17 @@
 		<p>
 			Here's <a href="https://github.com/ryanatkn/ryanatkn.com/pull/12/files">the GitHub PR</a>.
 		</p>
+		<p>
+			The <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP">content security policy</a
+			>
+			that's applied in the main
+			<a href="https://github.com/ryanatkn/ryanatkn.com/blob/main/src/routes/%2Blayout.svelte"
+				>+layout.svelte</a
+			>:
+		</p>
+		<blockquote>
+			<code>{content_security_poilicy}</code>
+		</blockquote>
 	</section>
 	<hr />
 	<section class="prose">

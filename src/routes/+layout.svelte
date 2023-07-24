@@ -4,14 +4,10 @@
 	import '$routes/style.css';
 
 	import Themed from '@feltjs/felt-ui/Themed.svelte';
-	import {dev} from '$app/environment';
 
 	import Header from '$routes/Header.svelte';
 	import Footer from '$routes/Footer.svelte';
-
-	const content_security_poilicy = dev
-		? "default-src 'unsafe-inline' 'self'; connect-src 'self' https://hachyderm.io/; img-src *;"
-		: "default-src 'unsafe-inline' 'self'; connect-src 'self' https://hachyderm.io/; img-src https://*;";
+	import {content_security_poilicy} from '$routes/security';
 </script>
 
 <svelte:head>
