@@ -12,7 +12,6 @@
 	$: account_created = account.created_at;
 	$: account_avatar = account.avatar_static;
 	$: account_url = account.url;
-	$: account_username = account.username;
 	$: account_display_name = account.display_name;
 	$: account_followers_count = account.followers_count;
 	$: account_following_count = account.following_count;
@@ -34,7 +33,7 @@
 <div class="post_detail">
 	<header>
 		<button class="avatar plain icon_button" on:click={account_note ? toggle_note : undefined}
-			><img class="icon" src={account_avatar} alt="avatar for {account_username}" /></button
+			><img class="icon" src={account_avatar} alt="avatar for {account_acct}" /></button
 		>
 		<div class="names">
 			<div>
