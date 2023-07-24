@@ -7,6 +7,8 @@
 	import {content_security_poilicy} from '$routes/security';
 	import {page} from '$app/stores';
 
+	// TODO BLOCK `a post I made`
+
 	// https://fosstodon.org/@rauschma/110728406134660568
 	// const host = 'fosstodon.org';
 	// const id = '110728406134660568';
@@ -43,8 +45,8 @@
 			<a href="https://pages.github.com/">GitHub Pages</a>
 			hosts those files for free, published right here as a website to
 			<code>{$page.url.host}</code>. The cost of serving these static files is very low, so "free
-			for open source" and even "free" are common cloud offerings. Thanks, GitHub, for being host of
-			the day.
+			for open source" and even "free" are common cloud offerings today in 2023. Thanks, GitHub, for
+			being host of the day.
 		</p>
 		<aside>
 			The website's final output files are HTML, JS, and CSS, but <a
@@ -63,10 +65,9 @@
 			<a href="https://hachyderm.io/">hachyderm.io</a>. Mastodon is an
 			<a href="https://wikipedia.org/wiki/ActivityPub">ActivityPub</a>-compatible app in the
 			<a href="https://wikipedia.org/wiki/Fediverse">Fediverse</a>. It requests information about a
-			<a href="https://hachyderm.io/@ryanatkn">a post I made</a> that references this blog post
-			using <a href="https://docs.joinmastodon.org/methods/statuses/#context">this API endpoint</a>.
-			If the request is successful, some JavaScript runs on your machine to display the data, and
-			then suddenly, comments.
+			<a href="https://hachyderm.io/@ryanatkn">a post I made</a> that references this blog post. If the
+			request is successful, some JavaScript runs on your machine to display the data, and then suddenly,
+			comments.
 		</p>
 	</section>
 	<hr />
@@ -81,8 +82,10 @@
 			To avoid some potential security and privacy issues, I added a fairly restrictive <a
 				href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP">content security policy</a
 			>
-			that may break if my Mastodon host hachyderm.io changes how it loads resources. If something goes
-			wrong, having icons break is an acceptable failure. Here's the CSP that's applied in
+			that may break if my Mastodon host hachyderm.io changes how it loads resources. I don't want anything
+			to make arbitrary third party requests. If something goes wrong or changes, having icons break
+			is an acceptable failure until I can review the situation. For you, it's a potentially worse experience
+			but it's safer. Here's the CSP that's applied in
 			<a href="https://github.com/ryanatkn/ryanatkn.com/blob/main/src/routes/%2Blayout.svelte"
 				>the main +layout.svelte</a
 			>:
