@@ -110,11 +110,18 @@
 		</li>
 	</ul>
 	<p>
-		We'll provide defaults and templates, and users can modify the software for their own needs.
-		We'll support simple and scalable static web publishing like blogs and RSS/Atom feeds, and also
-		provide tools to make realtime social experiences and games that inherit your social context,
-		enabling beginners to participate in the creative process. We want the act of creating tools and
-		sharing them to be a normal and expected part of the software-user experience.
+		Instead of being limited to filling digital boxes designed by tech companies, we could be
+		designing own boxes for our unique situations and sharing the patterns with each other. I want
+		the act of creating tools and sharing them to be a normal part of the software-using experience.
+		One of the ways I think about feltjs is that it's a layer that sits between SvelteKit and your
+		app, that's trying to do as much of the uninteresting parts as possible. You're the person with
+		ideas, the tools should be enabling and out of the way.
+	</p>
+	<p>
+		felt-server will support simple and scalable static web publishing like blogs and RSS/Atom
+		feeds, and also provide tools to make realtime social experiences and games that inherit your
+		social context, enabling beginners to participate in the creative process more easily. Doing a
+		hard thing is much easier when the task is reduced to its essentials.
 	</p>
 	<p>We have a handful of software repos:</p>
 	<ul>
@@ -165,21 +172,6 @@
 		I'm having difficulty summarizing the project, it's big and there are many unknowns. The ideas
 		below seem important to include but not that important, and you may not be the right audience.
 		Thanks for reading.
-	</p>
-	<hr />
-	<h2>Everyone can be a toolmaker</h2>
-	<p>
-		Instead of being limited to filling digital boxes designed by tech companies, anyone should be
-		able to design their own box and share that pattern with others. We see examples of what's
-		possible in all sorts of products over decades, especially in games, and there's fresh
-		opportunities to do this with web tech.
-	</p>
-	<p>
-		I want software for exploring the vast potential of collaborative experiences on the web, so you
-		could take a larger role in designing your media, if you want. A key here is to make a great
-		media sharing UX, so some fraction of people make and share useful and cool stuff, and everyone
-		benefits. Also, creating the tools of creation should be open and ecosystemified, so we can
-		experiment for our particular situations.
 	</p>
 	<hr />
 	<h2>Business and ownership</h2>

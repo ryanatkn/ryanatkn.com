@@ -58,9 +58,10 @@
 			recommend them with enthusiasm.
 		</aside>
 		<p>
-			Although static to its bones, this site also has dynamic behavior. If you click the "load
-			comments" button below under the <a href="#comments">"Comments"</a> heading of the post, your
-			browser sends a request to a <a href="https://joinmastodon.org/">Mastodon</a>
+			Although static to its bones, this site also has dynamic behavior, thanks to the power of
+			scripting. Click the "load comments" button below under the <a href="#comments">"Comments"</a>
+			heading of the post, your browser sends a request to a
+			<a href="https://joinmastodon.org/">Mastodon</a>
 			instance that hosts <a href="https://hachyderm.io/@ryanatkn">my account</a> on
 			<a href="https://hachyderm.io/">hachyderm.io</a>. Mastodon is an
 			<a href="https://wikipedia.org/wiki/ActivityPub">ActivityPub</a>-compatible app in the
