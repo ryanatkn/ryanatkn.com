@@ -58,16 +58,10 @@ probably fixable with a better image, I tried briefly but didn't get a great res
 	display: flex;
 	width: var(--width_sm);
 	background-color: var(--bg);
-	border-width: var(--border_width_2);
-	border-style: dashed;
+	border-width: var(--border_width);
+	border-style: solid;
 	border-color: transparent;
 	border-radius: var(--border_radius);
 	margin-bottom: var(--spacing_lg);
 	padding: var(--spacing_md);
-}
-.card p:first-child {
-	font-size: var(--size_lg);
-}
-.card:hover {
-	border-color: var(--fg_1);
 }
