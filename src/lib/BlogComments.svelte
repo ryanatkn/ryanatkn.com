@@ -3,7 +3,7 @@
 	import {slide} from 'svelte/transition';
 
 	import StatusCard from '$lib/StatusCard.svelte';
-	import MastodonComments from '$lib/MastodonnComments.svelte';
+	import MastodonComments from '$lib/MastodonComments.svelte';
 
 	export let host: string;
 	export let id: string;

@@ -102,13 +102,13 @@
 			Here's <a href="https://github.com/ryanatkn/ryanatkn.com/pull/12/files">the GitHub PR</a>.
 		</p>
 		<p>
-			To avoid some potential security and privacy issues, I added a fairly restrictive <a
+			To avoid some possible security and privacy issues that arise when you inject arbitrary HTML
+			into the page like I'm doing, I added a fairly restrictive <a
 				href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP">content security policy</a
-			>
-			that may break if my Mastodon host hachyderm.io changes how it loads resources. I don't want anything
-			to make arbitrary third party requests. If something goes wrong or changes, having icons break
-			is an acceptable failure until I can review the situation. For you, it's a potentially worse experience
-			but it's safer. Here's the CSP that's applied in
+			>. It disallows arbitrary third party requests, so it may break if my Mastodon host
+			hachyderm.io changes how it loads resources. If something goes wrong or changes, having icons
+			break is an acceptable failure until I can review the situation. For my visitors, it's a
+			potentially worse experience but it's safer. Here's the CSP that's applied in
 			<a href="https://github.com/ryanatkn/ryanatkn.com/blob/main/src/routes/%2Blayout.svelte"
 				>the main +layout.svelte</a
 			>:
@@ -150,8 +150,8 @@
 			<HashLink slug="references">References</HashLink>
 		</h2>
 		<p>
-			I took the main ideas from the following posts, and added the favourite-to-allowlist behavior
-			to implement basic moderation.
+			I took the main ideas from the following posts, and added favourite-to-allowlist for basic
+			moderation.
 		</p>
 		<ul>
 			<li>
