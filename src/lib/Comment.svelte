@@ -28,9 +28,12 @@
 	};
 </script>
 
-<div class="status_card">
+<div class="comment">
 	<header>
-		<button class="avatar plain icon_button" on:click={account_note ? toggle_note : undefined}
+		<button
+			class="avatar plain icon_button"
+			on:click={account_note ? toggle_note : undefined}
+			disabled={!account_note}
 			><img class="icon" src={account_avatar} alt="avatar for {account_acct}" /></button
 		>
 		<div class="names">
@@ -60,13 +63,12 @@
 </div>
 
 <style>
-	.status_card {
+	.comment {
 		display: flex;
 		flex-direction: column;
 		background-color: var(--panel_bg, var(--fg_1));
 		border-radius: var(--border_radius_sm);
 		padding: var(--spacing_md);
-		max-width: var(--width_sm);
 	}
 	header {
 		display: flex;

@@ -2,7 +2,8 @@
 	import PendingButton from '@feltjs/felt-ui/PendingButton.svelte';
 	import {slide} from 'svelte/transition';
 
-	import StatusCard from '$lib/StatusCard.svelte';
+	import CommentTree from '$lib/CommentTree.svelte';
+	import Comment from '$lib/Comment.svelte';
 	import MastodonComments from '$lib/MastodonComments.svelte';
 
 	export let host: string;
@@ -26,26 +27,17 @@
 			</PendingButton>
 		</div>
 	{/if}
-	{#if main_context && replies}
+	{#if main_context}
 		<ul class="statuses">
 			<!-- TODO style differently or something -->
 			{#each main_context.ancestors as item}
 				<li>
-					<StatusCard {item} />
+					<Comment {item} />
 				</li>
 			{/each}
-			{#if main_status}
-				<div class="main_post panel">
-					<div class="panel main_post_inner">
-						<StatusCard item={main_status} />
-					</div>
-				</div>
+			{#if main_status && replies}
+				<CommentTree item={main_status} items={replies} />
 			{/if}
-			{#each replies as item}
-				<li>
-					<StatusCard {item} />
-				</li>
-			{/each}
 		</ul>
 	{/if}
 </MastodonComments>
@@ -55,7 +47,6 @@
 		display: flex;
 		flex-wrap: wrap;
 		flex-direction: row;
-		gap: var(--spacing_md);
 		align-items: flex-start;
 	}
 	.load_button {
@@ -67,17 +58,6 @@
 		display: flex;
 		align-items: center;
 		text-align: left;
-	}
-	.statuses li:not(:last-child) {
-		margin-bottom: var(--spacing_xl3);
-	}
-	.main_post {
-		margin-bottom: var(--spacing_xl3);
-		padding: var(--spacing_md);
-	}
-	.main_post_inner {
-		background-color: var(--bg);
-		padding: var(--spacing_xs);
 	}
 	.icon {
 		font-size: var(--icon_size_md);
