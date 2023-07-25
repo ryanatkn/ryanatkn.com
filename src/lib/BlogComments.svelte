@@ -35,6 +35,13 @@
 					<Comment {item} />
 				</li>
 			{/each}
+			{#if main_status}
+				<div class="main_post panel">
+					<div class="panel main_post_inner">
+						<Comment item={main_status} />
+					</div>
+				</div>
+			{/if}
 			{#if main_status && replies}
 				<CommentTree item={main_status} items={replies} />
 			{/if}
@@ -58,6 +65,13 @@
 		display: flex;
 		align-items: center;
 		text-align: left;
+	}
+	.main_post {
+		padding: var(--spacing_md);
+	}
+	.main_post_inner {
+		background-color: var(--bg);
+		padding: var(--spacing_xs);
 	}
 	.icon {
 		font-size: var(--icon_size_md);

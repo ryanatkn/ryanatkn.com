@@ -9,12 +9,14 @@
 	$: replies = items.filter((i) => i.in_reply_to_id === id);
 </script>
 
-<Comment {item} />
+<slot {item} {items} />
 {#if replies.length}
 	<ul>
-		{#each replies as item (item.id)}
+		{#each replies as reply (reply.id)}
 			<li>
-				<svelte:self {item} {items} />
+				<svelte:self item={reply} {items}>
+					<Comment item={reply} />
+				</svelte:self>
 			</li>
 		{/each}
 	</ul>
