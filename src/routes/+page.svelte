@@ -64,18 +64,22 @@
 
 <div class="width_md padded_md">
 	<div class="prose">
-		<section class="panel">
-			<blockquote class="panel">
-				🌄🌳🐿 welcome, you're at the homepage of Ryan Atkinson - he's an open source web developer
-				interested in collaborative digital mediums and realizing more of their potential to help us
-				live well
-			</blockquote>
-			<p>
-				My main skill is coding frontend web apps and I also do some backend programming. I enjoy
-				trying to make powerful tools that are easy to use, and I have a geeky interest in user
-				interfaces and social systems. I work on open source software both as a full-time profession
-				and hobby. More <a href="{base}/about">about me</a>.
-			</p>
+		<section class="box">
+			<div class="panel box">
+				<div class="row">
+					<div class="emoji">🌄</div>
+					<blockquote class="width_sm">
+						hi this is the homepage of Ryan Atkinson, he's a web developer making free and open
+						source software to help us live well
+					</blockquote>
+					<div class="emoji">🌳</div>
+				</div>
+				<p class="width_sm">
+					My main skill is coding frontend web apps and I also do some backend programming. I enjoy
+					trying to make powerful tools that are easy to use, and I have a geeky interest in user
+					interfaces and social systems. More <a href="{base}/about">about me</a>.
+				</p>
+			</div>
 		</section>
 		<section class="box">
 			<div class="panel box">
@@ -91,23 +95,27 @@
 			{#each projects as project}
 				<div class="card prose padded_md">
 					<div>
-						<p>{@html project.title}</p>
-						<p>
-							{@html project.description}
-						</p>
-						{#if project.links}
-							<p>{@html project.links}</p>
-						{/if}
-					</div>
-					{#if project.icon}
-						<div class="icon">
-							<img
-								src="{base}{project.icon}"
-								alt={project.icon_alt ?? `icon for ${project.name}`}
-								style={project.icon_style}
-							/>
+						<p class="title">{@html project.title}</p>
+						<div class="content">
+							<div>
+								<p>
+									{@html project.description}
+								</p>
+								{#if project.links}
+									<p>{@html project.links}</p>
+								{/if}
+							</div>
+							{#if project.icon}
+								<div class="icon">
+									<img
+										src="{base}{project.icon}"
+										alt={project.icon_alt ?? `icon for ${project.name}`}
+										style={project.icon_style}
+									/>
+								</div>
+							{/if}
 						</div>
-					{/if}
+					</div>
 				</div>
 			{/each}
 		</div>
@@ -134,10 +142,13 @@
 		margin-top: var(--spacing_sm);
 	}
 
-	blockquote {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
+	.emoji {
+		white-space: nowrap;
+		font-size: var(--size_xl3);
+		padding-right: var(--spacing_xl);
+	}
+	.emoji:last-child {
+		padding-left: var(--spacing_xl);
 	}
 	.panel {
 		padding: var(--spacing_lg);
@@ -167,9 +178,6 @@
 		margin-bottom: var(--spacing_lg);
 		padding: var(--spacing_md);
 	}
-	.card p:first-child {
-		font-size: var(--size_lg);
-	}
 	.card:hover {
 		border-color: var(--border_2);
 	}
@@ -179,5 +187,13 @@
 	}
 	.icon img {
 		width: var(--icon_size_lg);
+	}
+	.content {
+		display: flex;
+		align-items: flex-end;
+	}
+	.title {
+		font-size: var(--size_lg);
+		word-break: break-all;
 	}
 </style>
