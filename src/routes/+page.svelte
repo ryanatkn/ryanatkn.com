@@ -187,6 +187,7 @@
 	}
 	.icon img {
 		width: var(--icon_size_lg);
+		max-width: var(--icon_size_lg);
 	}
 	.content {
 		display: flex;
