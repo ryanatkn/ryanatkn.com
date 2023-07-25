@@ -6,8 +6,6 @@
 
 	export let item: MastodonStatus;
 
-	const debug = false;
-
 	$: ({created_at, edited_at, content, account, url} = item);
 	$: account_created = account.created_at;
 	$: account_avatar = account.avatar_static;
@@ -60,11 +58,6 @@
 	<!-- eslint-disable-next-line svelte/no-at-html-tags -->
 	<div class="content prose">{@html content}</div>
 </div>
-{#if debug}
-	<pre class="json">
-	{JSON.stringify(item, null, 2)}
-</pre>
-{/if}
 
 <style>
 	.post_detail {
@@ -73,7 +66,7 @@
 		background-color: var(--panel_bg, var(--fg_1));
 		border-radius: var(--border_radius_sm);
 		padding: var(--spacing_md);
-		width: var(--width_sm);
+		max-width: var(--width_sm);
 	}
 	header {
 		display: flex;
@@ -95,10 +88,6 @@
 	.name {
 		display: flex;
 		font-size: var(--font_size_lg);
-	}
-	.json {
-		width: var(--width_sm);
-		overflow: auto;
 	}
 	.names small,
 	.date a {
