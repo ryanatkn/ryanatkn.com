@@ -22,7 +22,8 @@
 		<p>Some more info:</p>
 		<ul>
 			<li>
-				I was initially self-taught (thanks, internet) and I've been working as a web dev since 2011
+				I was initially self-taught (thanks, internet) and I've been working as a JS-oriented web
+				dev since 2011
 			</li>
 			<li>
 				in 2019 I started <a href="https://github.com/ryanatkn">doing full-time open source</a>,

@@ -50,13 +50,5 @@
 				"software"
 			]
 		}
-	],
-	"entries": [
-		"/blog/making-free-and-open-source-web-community-software",
-		"/blog/1",
-		"/blog/modeling-virtual-social-spaces-in-this-house-we-post-cat-pics-on-saturday",
-		"/blog/2",
-		"/blog/moderated-blog-comments-on-a-static-website-with-mastodon-and-sveltekit",
-		"/blog/3"
 	]
 }

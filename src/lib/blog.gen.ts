@@ -49,7 +49,12 @@ export const gen: Gen = async ({fs}) => {
 		{
 			filename: './blog.json',
 			// TODO `entries` isn't included in `FeedData` but we use it from the SvelteKit config
-			content: JSON.stringify({...feed, entries: toPrerenderEntries(feed)}),
+			content: JSON.stringify(feed),
+		},
+		{
+			filename: './blog_entries.json',
+			// TODO `entries` isn't included in `FeedData` but we use it from the SvelteKit config
+			content: JSON.stringify({entries: toPrerenderEntries(feed)}),
 		},
 		{
 			filename: './blog.json.d.ts',
