@@ -1,9 +1,7 @@
 <script lang="ts">
 	import {browser} from '$app/environment';
 
-	// import data from '$routes/blog/[slug]/2/data.json';
 	import {
-		// fetch_post,
 		fetch_status_context_by_url,
 		type MastodonContext,
 		to_api_url,
