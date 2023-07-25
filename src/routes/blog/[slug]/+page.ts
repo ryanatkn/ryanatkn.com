@@ -8,5 +8,3 @@ export const entries: EntryGenerator = async () => {
 		return {slug: parts[parts.length - 1]};
 	});
 };
-
-export const prerender = true; // TODO is this needed?
