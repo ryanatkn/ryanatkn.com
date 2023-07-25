@@ -1,12 +1,18 @@
 <script lang="ts">
+	import {base} from '$app/paths';
+	import {page} from '$app/stores';
+
 	export let src = '/favicon.png';
-	export let alt = 'my avatar image';
+	export let alt = 'my avatar image, a naturally textured green donut';
+
+	$: ({pathname} = $page.url);
+	$: at_root_path = pathname === base + '/';
 </script>
 
 <header>
-	<div class="bg">
+	<a class="bg" href="{base}/" class:selected={at_root_path}>
 		<img class="pixelated" {src} {alt} />
-	</div>
+	</a>
 </header>
 
 <style>
