@@ -16,20 +16,20 @@
   
   <entry>
     <id>https://www.ryanatkn.com/blog/3</id>
-    <title>Moderated blog comments on a static website with Mastodon and SvelteKit</title>
+    <title>Moderated comments on a static blog with Mastodon and SvelteKit</title>
     <link
 			rel="alternate"
-			href="https://www.ryanatkn.com/blog/moderated-blog-comments-on-a-static-website-with-mastodon-and-sveltekit"
+			href="https://www.ryanatkn.com/blog/moderated-comments-on-a-static-blog-with-mastodon-and-sveltekit"
 		/>
     <published>2023-07-24T01:50:35.017Z</published>
     <updated>2023-07-24T01:50:35.017Z</updated>
     <summary
-		>Enabling moderated comments on my static blog using Mastodon with TypeScript, Svelte, and SvelteKit.</summary>
+		>How I implemented allowlisted comments on my static blog using Mastodon with TypeScript, Svelte, and SvelteKit.</summary>
     <category term="web" /><category term="blog comments" /><category term="Mastodon" /><category
 			term="ActivityPub"
 		/><category term="ActivityStreams" /><category term="Fediverse" /><category
-			term="social media"
-		/><category term="design" /><category term="technology" /><category term="software" />
+			term="design"
+		/><category term="technology" /><category term="software" />
   </entry>
 
   <entry>
