@@ -71,6 +71,8 @@
 		status: MastodonStatus,
 		statuses: MastodonStatus[],
 	): Promise<MastodonStatus[]> => {
+		console.log(`MAIN status`, status);
+		const host = new URL(status.url).host;
 		const acct = status.account.acct;
 		const allowed = new Set(statuses.filter((s) => s.account.acct === acct).map((s) => s.id));
 		const skipped = new Set(statuses.filter((s) => !s.favourites_count).map((s) => s.id));
@@ -78,19 +80,15 @@
 		console.log(`skipped`, skipped);
 		const unvalidated_replies = statuses.filter(({id}) => !allowed.has(id) && !skipped.has(id));
 		console.log(`unvalidated_replies`, unvalidated_replies);
-		let validated_replies;
 		if (unvalidated_replies.length) {
-			const mapped = await map_async(unvalidated_replies, async (status) => {
-				const favourites = await fetch_favourites(status);
-				return favourites?.some((f) => f.acct === acct) ? status : null;
+			await map_async(unvalidated_replies, async (s) => {
+				const favourites = await fetch_favourites(host, s);
+				if (favourites?.some((f) => f.acct === acct)) {
+					allowed.add(s.id);
+				}
 			});
-			validated_replies = mapped.filter(Boolean);
-		} else {
-			validated_replies = [];
 		}
-		return statuses.filter((s) => {
-			return allowed.has(s.id) ? s : null;
-		});
+		return statuses.filter((s) => (allowed.has(s.id) ? s : null));
 	};
 
 	const load_by_url = async (url: string) => {

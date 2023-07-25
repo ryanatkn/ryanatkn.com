@@ -1,9 +1,30 @@
 import {stripEnd} from '@feltjs/util/string.js';
 import type {Flavored} from '@feltjs/util/types.js';
 
+import mastodon_mock_data from '$lib/mastodon_mock_data.json';
+
 const headers = {
 	accept: 'application/json',
 	'content-type': 'application/jsno',
+};
+
+export const fetch_data = async (url: string): Promise<any | null> => {
+	for (const d of mastodon_mock_data) {
+		if (d.url === url) {
+			console.log('fetch_data CACHED');
+			return d.data;
+		}
+	}
+	try {
+		// console.log(`CALL fetch_post`, u);
+		const res = await fetch(url, {headers});
+		if (!res.ok) return null;
+		const fetched = await res.json();
+		console.log('fetch_data FETCHED', url, fetched);
+		return fetched;
+	} catch (err) {
+		return null;
+	}
 };
 
 /**
@@ -124,16 +145,16 @@ export interface MastodonPostParams {
 export type Url = Flavored<string, 'Url'>;
 
 // TODO BLOCK name
-export const serialize_status_url_TODO = (host: string, id: string): string =>
+export const to_status_url_TODO = (host: string, id: string): string =>
 	`https://${host}/api/v1/statuses/${id}`;
 
-export const serialize_status_context_url = (host: string, id: string): string =>
+export const to_status_context_url = (host: string, id: string): string =>
 	`https://${host}/api/v1/statuses/${id}/context`;
 
-export const serialize_status_url = (host: string, author: string, id: string): string =>
+export const to_status_url = (host: string, author: string, id: string): string =>
 	`https://${host}/@${author}/${id}`;
 
-export const serialize_favourites_url = (host: string, id: string): string =>
+export const to_favourites_url = (host: string, id: string): string =>
 	`https://${host}/api/v1/statuses/${id}/favourited_by`;
 
 export const to_api_url = (
@@ -144,7 +165,7 @@ export const to_api_url = (
 	if (!url && !host && !id) {
 		throw new Error('either url or host+id must be provided');
 	}
-	return url || (host && id ? serialize_status_context_url(host, id) : null);
+	return url || (host && id ? to_status_context_url(host, id) : null);
 };
 
 // TODO BLOCK rename with the above
@@ -154,7 +175,7 @@ export const to_post_url = (api_url: string | null): string | null => {
 	const parsed = parse_status_url(api_url);
 	if (!parsed) return null;
 	parsed.host, parsed.id;
-	return serialize_status_url(parsed.host, parsed.author, parsed.id);
+	return to_status_url(parsed.host, parsed.author, parsed.id);
 };
 
 /**
@@ -194,53 +215,27 @@ export const fetch_status_context_by_url = async (url: string): Promise<Mastodon
 	return fetch_post(host, id);
 };
 
+// TODO BLOCK go through a single fetch helper and trace each call to the API,
+// so we can see the history in a tab displayed to any users who want to dig
+
 export const fetch_post = async (host: string, id: string): Promise<MastodonContext | null> => {
-	const url = serialize_status_context_url(host, id);
-	try {
-		const res = await fetch(url, {headers});
-		if (!res.ok) return null;
-		const fetched = await res.json();
-		console.log(`fetch_post`, url, fetched);
-		return fetched;
-	} catch (err) {
-		return null;
-	}
+	const u = to_status_context_url(host, id);
+	return fetch_data(u);
 };
 
 // TODO BLOCK implement for direct links
 export const fetch_status_by_url = async (url: string): Promise<MastodonStatus | null> => {
-	console.log(`url`, url);
 	const parsed = parse_status_context_url(url);
 	if (!parsed) return null;
 	const {host, id} = parsed;
-	const u = serialize_status_url_TODO(host, id);
-	try {
-		const res = await fetch(u, {headers});
-		if (!res.ok) return null;
-		const fetched = await res.json();
-		console.log(`fetch_status_by_url`, u, fetched);
-		return fetched;
-	} catch (err) {
-		return null;
-	}
+	const u = to_status_url_TODO(host, id);
+	return fetch_data(u);
 };
 
-// TODO BLOCK reduce interface to url/id
 export const fetch_favourites = async (
+	host: string,
 	status: MastodonStatus,
 ): Promise<MastodonFavourites[] | null> => {
-	console.log(`status`, status);
-	const parsed = parse_status_context_url(status.url);
-	if (!parsed) return null;
-	const {host, id} = parsed;
-	const u = serialize_favourites_url(host, id);
-	try {
-		const res = await fetch(u, {headers});
-		if (!res.ok) return null;
-		const fetched = await res.json();
-		console.log(`fetch_favourites`, u, fetched);
-		return fetched;
-	} catch (err) {
-		return null;
-	}
+	const u = to_favourites_url(host, status.id);
+	return fetch_data(u);
 };

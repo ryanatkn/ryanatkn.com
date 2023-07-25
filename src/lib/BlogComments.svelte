@@ -8,7 +8,7 @@
 	export let host: string;
 	export let id: string;
 
-	// TODO BLOCK show a link to the original post, with the count of posts hidden (and a message if it maxed out)
+	// TODO BLOCK show a link to the original post, with the count of posts hidden (and a message if it maxed out, with a link to the blog post for discussion?)
 
 	// TODO BLOCK chronological, nested, updated, reverse chrono
 </script>
