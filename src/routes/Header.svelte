@@ -10,7 +10,12 @@
 </script>
 
 <header>
-	<a class="bg" href="{base}/" class:selected={at_root_path}>
+	<a
+		title={at_root_path ? 'You are home' : 'Go home'}
+		class="bg"
+		href="{base}/"
+		class:selected={at_root_path}
+	>
 		<img class="pixelated" {src} {alt} />
 	</a>
 </header>
