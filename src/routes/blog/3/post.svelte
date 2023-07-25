@@ -4,7 +4,7 @@
 	import BlogComments from '$lib/BlogComments.svelte';
 	import HashLink from '$lib/HashLink.svelte';
 	import BlogPostIndex from '$lib/BlogPostIndex.svelte';
-	import {content_security_poilicy} from '$routes/security';
+	import {prod_content_security_policy} from '$routes/security';
 	import {page} from '$app/stores';
 
 	// TODO BLOCK `a post I made`
@@ -113,7 +113,9 @@
 				>the main +layout.svelte</a
 			>:
 		</p>
-		<blockquote style:font-family="var(--font_family_mono)">{content_security_poilicy}</blockquote>
+		<blockquote style:font-family="var(--font_family_mono)">
+			{prod_content_security_policy}
+		</blockquote>
 	</section>
 	<hr />
 	<section class="prose">
