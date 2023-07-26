@@ -67,9 +67,24 @@
 			<a href="https://hachyderm.io/@ryanatkn">my account</a>. Mastodon is an
 			<a href="https://wikipedia.org/wiki/ActivityPub">ActivityPub</a>-compatible app in the
 			<a href="https://wikipedia.org/wiki/Fediverse">Fediverse</a>. It requests information about a
-			<a href="https://hachyderm.io/@ryanatkn">a post I made</a> that references this blog post. If the
-			request is successful, some JavaScript runs on your machine to display the comments. My host hachyderm.io
-			has its unauthenticated API enabled, so we can request data without any logins or other complexity.
+			<a href="https://hachyderm.io/@ryanatkn">a post I made</a> that references this blog post. If
+			the request is successful, some JavaScript runs on your machine to display the comments. My
+			host hachyderm.io has its unauthenticated API enabled (in other words, "secure mode" has not
+			been enabled, meaning
+			<a href="https://docs.joinmastodon.org/admin/config/#authorized_fetch"
+				><code>AUTHORIZED_FETCH</code></a
+			>
+			is the default <code>false</code>), so we can request data without any logins or other
+			complexity.
+		</p>
+		<p>
+			Not every reply to my post appears in the comments section below. It displays only those that
+			I've explicitly favourited, aka liked or starred (here's <a
+				href="https://docs.joinmastodon.org/methods/statuses/#favourited_by">the API endpoint</a
+			>). This way, I have an allowlist managed by my Mastodon account, the same place I
+			microblogged about this blog post, a place out there on the internet that magically operates
+			free infrastructure for us, much like the free black box that is GitHub pages. (free, but
+			also, financially supporting admins is good luck)
 		</p>
 	</section>
 	<hr />
