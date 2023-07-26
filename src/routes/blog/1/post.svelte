@@ -193,14 +193,15 @@
 	</p>
 	<p>
 		Two problems: we won't get the best software if a hosting company has too much influence over
-		its development, and also, I now accept a fact about myself, that I want to spend my time
-		focused on software development, and I'll gladly pay money to people who enjoy operations in
-		exchange for a simpler life. The opportunity cost I see for myself doing any commercial
-		operations is too high.
+		its development, and also, I now accept a fact about myself, that I don't love operations.
+		Instead I want to spend my time making software, and I'll gladly pay money to people who enjoy
+		operations in exchange for a simpler life. The opportunity cost doing commercial operations
+		feels too high for me - making software seems like enough on my plate without adding uptime and
+		moderation and lawyers (oh my) to the mix - so I'll have to look elsewhere for sustainbility.
 	</p>
 	<p>
 		Hamilton may continue pursuing felt.social as a cooperatively-owned host, he'll just need 4
-		cofounders instead of 3 to officially start the co-op in Colorado... take my money!!
+		cofounders instead of 3 to officially start the co-op in Colorado... please take my money!!
 	</p>
 	<hr />
 	<h2>Sharing spaces with others</h2>
