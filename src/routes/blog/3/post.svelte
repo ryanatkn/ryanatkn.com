@@ -4,7 +4,7 @@
 	import PendingButton from '@feltjs/felt-ui/PendingButton.svelte';
 	import {slide} from 'svelte/transition';
 
-	import BlogComments from '$lib/BlogComments.svelte';
+	import Toots from '$lib/Toots.svelte';
 	import HashLink from '$lib/HashLink.svelte';
 	import BlogPostIndex from '$lib/BlogPostIndex.svelte';
 	import {prod_content_security_policy} from '$routes/security';
@@ -31,8 +31,8 @@
 		{slug: 'comments', name: 'Comments'},
 	];
 
-	let loading: boolean | undefined;
 	let loaded_status_key = 1;
+	let loading: boolean | undefined;
 	let load_time: number | undefined;
 </script>
 
@@ -272,12 +272,12 @@
 	<section>
 		<div class="prose spaced">
 			<h2><HashLink slug="comments">Comments</HashLink></h2>
-			<details>
-				<summary>show the code</summary>
-				<CodeExample code={`<BlogComments {host} {id} />`} />
-			</details>
+			<div class="row">
+				<span class="nowrap spaced_hz">the Svelte code:</span>
+				<CodeExample code={`<Toots {host} {id} />`} />
+			</div>
 		</div>
-		<BlogComments {host} {id} />
+		<Toots {host} {id} />
 	</section>
 </div>
 

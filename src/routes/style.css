@@ -61,7 +61,7 @@ probably fixable with a better image, I tried briefly but didn't get a great res
 	border-width: var(--border_width);
 	border-style: solid;
 	border-color: transparent;
-	border-radius: var(--border_radius);
+	border-radius: var(--border_radius_xs);
 	margin-bottom: var(--spacing_lg);
 	padding: var(--spacing_md);
 }
