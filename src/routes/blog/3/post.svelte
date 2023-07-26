@@ -11,6 +11,7 @@
 	import Comment from '$lib/Comment.svelte';
 	import Toot from '$lib/Toot.svelte';
 	import CodeExample from '$routes/blog/3/CodeExample.svelte';
+	import {load_from_storage, set_in_storage} from '$lib/storage';
 
 	// TODO BLOCK `a post I made`
 
@@ -35,7 +36,9 @@
 	let loading: boolean | undefined;
 	let load_time: number | undefined;
 
-	let hide_toot_details = false;
+	const SHOW_TOOT_DETAILS = 'show_toot_details';
+	let show_toot_details = load_from_storage(SHOW_TOOT_DETAILS, () => false); // TODO store?
+	$: set_in_storage(SHOW_TOOT_DETAILS, show_toot_details); // TODO optimize setting
 </script>
 
 <div class="width_md">
@@ -94,21 +97,21 @@
 								<Comment {item} />
 							</div>
 						{/if}
-						{#if hide_toot_details}
+						{#if show_toot_details}
 							<button
 								class="plain"
 								style:position="absolute"
 								style:right="var(--spacing_sm)"
 								style:bottom="var(--spacing_sm)"
 								on:click={() => {
-									hide_toot_details = false;
+									show_toot_details = false;
 								}}>more</button
 							>
 						{/if}
 					</div>
 				</Toot>
 			{/key}
-			{#if !hide_toot_details}
+			{#if !show_toot_details}
 				<div class="embed_item">
 					<div class="width_full">
 						<p>the Svelte code:</p>
@@ -143,7 +146,7 @@
 							<button
 								class="plain"
 								on:click={() => {
-									hide_toot_details = true;
+									show_toot_details = true;
 								}}>less</button
 							>
 						</div>
@@ -195,7 +198,7 @@
 				<ul>
 					<li>
 						Reactive moderation, where the author could allow all comments by default (and block to
-						hide?), may be possible with the public API, but I would need to look into it more. I
+						show?), may be possible with the public API, but I would need to look into it more. I
 						probably wouldn't switch to a denylist - I'd prefer to set the expectation that most
 						replies won't appear here, because low effort replies would drown others out of the
 						unathenticated request limits. Reactive moderation lowers the friction enough to change
