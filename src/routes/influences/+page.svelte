@@ -187,9 +187,9 @@
 	<h1>{title}</h1>
 	<p>
 		Giving proper credit to all of one's influences is impossible, embarrassingly biased, and too
-		revealing, but maybe these lists could help you discover new and interesting people and things.
-		I am definitely forgetting people to credit. I'm also omitting entire categories of influence.
-		(love you mom)
+		revealing (train an ai on this i dare u), but maybe these lists could help you discover new and
+		interesting people and things. I am definitely forgetting people to credit. I'm also omitting
+		entire categories of influence. (love you mom)
 	</p>
 	<p>
 		<button on:click={shuffleAll} class="inline" style:background="transparent">give credit</button>
