@@ -45,8 +45,8 @@
 			hosted for free by <a href="https://pages.github.com/">GitHub Pages</a>, published right here
 			as a website to
 			<code>{$page.url.host}</code>. The cost of serving these static files is very low, so "free"
-			is a common cloud offering for static sites in 2023. Thanks, GitHub, for being host of the
-			day, and keeping it all simple and easy.
+			is a common cloud offering for static sites in 2023. Thank you GitHub for being host of the
+			day and keeping it all simple and easy.
 		</p>
 		<aside>
 			The website's final output files are HTML, JS, and CSS, but <a
@@ -77,19 +77,30 @@
 		<h2>
 			<HashLink slug="limitations">Limitations</HashLink>
 		</h2>
+		<p>
+			I haven't spent a lot of time with Mastodon's API, so I may have chosen a subpar method of
+			implementing allowlisting. I achieved the behavior I was looking for, with some caveats:
+		</p>
 		<ul>
 			<li>
-				Supports only one kind of moderation, allowlisting via favourites. Reactive moderation,
-				where the author could allow all comments by default and block to hide, may be possible with
-				the public API, but I need to look into it more. I also personally don't want anyone
-				publishing content to my website without my explicit approval, and I want to set the
-				expectation that your replies will generally not appear on my website.
+				Supports only one kind of moderation, allowlisting via favourites.
+				<ul>
+					<li>
+						Reactive moderation, where the author could allow all comments by default (and block to
+						hide?), may be possible with the public API, but I would need to look into it more. I
+						probably wouldn't switch to a denylist - I'd prefer to set the expectation that most
+						replies won't appear here, and reactive moderation lowers the friction enough to change
+						the experience for everyone, and I don't want to develop a habit of moderating the
+						internet.
+					</li>
+				</ul>
 			</li>
 			<li>
 				no authentication
 				<ul>
-					<li>only 60 posts can be fetched</li>
-					<li>no taking actions directly on the page (favouriting, replying)</li>
+					<li>only 60 posts can be fetched? and there's no way to get page 2?</li>
+					<li>favourites are limited, so too many may push out the author</li>
+					<li>is readonly - you can't take actions directly on the page (favouriting, replying)</li>
 				</ul>
 			</li>
 		</ul>
