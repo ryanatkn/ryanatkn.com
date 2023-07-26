@@ -17,7 +17,8 @@
 			I'm driven by curiosity and wanting to improve our lives with technology. My work is <a
 				href="https://github.com/ryanatkn">open source on GitHub</a
 			>
-			and this website's homepage lists <a href="{base}/">my ongoing projects</a>.
+			and this website's homepage lists <a href="{base}/">my ongoing projects</a> like
+			<a href="{base}/blog">my blog</a>.
 		</p>
 		<p>Some more info:</p>
 		<ul>
