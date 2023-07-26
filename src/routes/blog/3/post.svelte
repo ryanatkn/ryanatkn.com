@@ -45,8 +45,8 @@
 			<a href="https://pages.github.com/">GitHub Pages</a>
 			hosts those files for free, published right here as a website to
 			<code>{$page.url.host}</code>. The cost of serving these static files is very low, so "free
-			for open source" and even "free" are common cloud offerings today in 2023. Thanks, GitHub, for
-			being host of the day. It doesn't get much simpler than this.
+			for open source" and even "free" are common cloud offerings today for static sites in 2023.
+			Thanks, GitHub, for being host of the day. It doesn't get much simpler than this.
 		</p>
 		<aside>
 			The website's final output files are HTML, JS, and CSS, but <a
