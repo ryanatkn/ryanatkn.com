@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type {MastodonStatus} from '$lib/mastodon';
-	import Message from '$lib/Post.svelte';
+	import Message from '$lib/MastodonStatusItem.svelte';
 
 	export let item: MastodonStatus;
 	export let items: MastodonStatus[];

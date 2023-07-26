@@ -70,6 +70,12 @@
 		border-radius: var(--border_radius_sm);
 		padding: var(--spacing_md);
 	}
+	.content :global(.invisible) {
+		display: none;
+	}
+	.content :global(.ellipsis) {
+		display: inline-block;
+	}
 	header {
 		display: flex;
 		align-items: center;

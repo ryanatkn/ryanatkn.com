@@ -8,7 +8,7 @@
 	import HashLink from '$lib/HashLink.svelte';
 	import BlogPostIndex from '$lib/BlogPostIndex.svelte';
 	import {prod_content_security_policy} from '$routes/security';
-	import Comment from '$lib/Post.svelte';
+	import Comment from '$lib/MastodonStatusItem.svelte';
 	import Toot from '$lib/Toot.svelte';
 	import CodeExample from '$routes/blog/3/CodeExample.svelte';
 	import {load_from_storage, set_in_storage} from '$lib/storage';
@@ -18,10 +18,15 @@
 	// https://fosstodon.org/@rauschma/110728406134660568
 	// const host = 'fosstodon.org';
 	// const id = '110728406134660568';
-	const host = 'mstdn.social';
-	const id = '110702983310017651';
+	// tips
+	// const host = 'mstdn.social';
+	// const id = '110702983310017651';
 	// const host = 'hachyderm.io';
 	// const id = '110729727683117713';
+	// https://hci.social/@cwebber@octodon.social/110775635568526227
+	// https://octodon.social/@cwebber/110775634939683819
+	const host = 'octodon.social';
+	const id = '110775634939683819';
 
 	const sections = [
 		{slug: 'introduction', name: 'Introduction'},
@@ -63,7 +68,7 @@
 			as a website to
 			<code>{$page.url.host}</code>. The cost of serving these static files is very low, so "free"
 			is a common cloud offering for static sites in 2023. Thank you GitHub for being host of the
-			day and keeping it all simple and easy.
+			day and keeping it simple.
 		</p>
 		<aside>
 			The website's final output files are HTML, JS, and CSS, but <a
@@ -76,7 +81,7 @@
 		</aside>
 		<p>
 			Although static to its bones, this site also has dynamic behavior, thanks to the power of
-			scripting. With a bit of JS we can embed a toot:
+			scripting. With some JS (via Svelte in this case) we can embed a toot:
 		</p>
 		<section class="embedded_status">
 			<div class="embedded_status_inner">
@@ -117,7 +122,7 @@
 				{#if show_toot_details}
 					<div class="embed_item" transition:fade>
 						<div class="embed_item_inner">
-							<p>the Svelte code:</p>
+							<p class="width_full">the Svelte code:</p>
 							<CodeExample
 								code={`<Toot
 	host=${'"' + host + '"'}
@@ -324,6 +329,7 @@
 	.embedded_status_inner {
 		display: flex;
 		width: 100%;
+		gap: var(--spacing_md);
 	}
 	.embed_item {
 		width: 100%;
