@@ -25,3 +25,9 @@
 		</ul>
 	</li>
 </ul>
+
+<style>
+	.card {
+		max-width: initial;
+	}
+</style>
