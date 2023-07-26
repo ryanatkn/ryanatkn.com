@@ -1,5 +1,7 @@
 import {browser} from '$app/environment';
 
+// TODO would be nice to support `to_default_value` not being a function
+
 /**
  * Loads `key` and falls back to `defaultValue`.
  * If `validate` is provided and throws, it removes the `key` and returns `undefined`.
