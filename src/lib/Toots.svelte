@@ -20,7 +20,10 @@
 		loaded_status_key++;
 	};
 
-	let show_settings = false;
+	const SHOW_SETTINGS_KEY = 'show_settings';
+	let show_settings = load_from_storage(SHOW_SETTINGS_KEY, () => false); // TODO store?
+	$: set_in_storage(SHOW_SETTINGS_KEY, show_settings); // TODO optimize setting
+
 	const toggle_settings = () => {
 		show_settings = !show_settings;
 	};
@@ -41,52 +44,54 @@
 		let:loading
 		let:load_time
 	>
-		<div class="controls">
-			<PendingButton pending={loading || false} disabled={!!main_context} on:click={() => load()}>
-				<div class="load_button_content">
-					<div class="icon">💬</div>
-					{#if main_context && replies}
-						<div>
+		<div class="panel padded_md spaced">
+			<div class="controls">
+				<PendingButton pending={loading || false} disabled={!!main_context} on:click={() => load()}>
+					<div class="load_button_content">
+						<div class="icon">💬</div>
+						{#if main_context && replies}
 							<div>
-								{#if main_context.ancestors.length}
-									loaded {replies.length} descendants and {main_context.ancestors.length} ancestors
-								{:else}
-									loaded {replies.length} comments
-								{/if}
+								<div>
+									{#if main_context.ancestors.length}
+										loaded {replies.length} descendants and {main_context.ancestors.length} ancestors
+									{:else}
+										loaded {replies.length} comments
+									{/if}
+								</div>
+								<div>in {load_time === undefined ? 'unknown ' : Math.round(load_time)}ms from</div>
+								<code>{host}</code>
 							</div>
-							<div>in {load_time === undefined ? 'unknown ' : Math.round(load_time)}ms from</div>
-							<code>{host}</code>
-						</div>
-					{:else}
-						<div>
-							<div>load comments from</div>
-							<code>{host}</code>
-						</div>
-					{/if}
-				</div>
-			</PendingButton>
-			<div class="box">
-				<button on:click={toggle_settings} class="box"
-					><div>
-						{#if show_settings}hide{:else}show{/if}
+						{:else}
+							<div>
+								<div>load comments from</div>
+								<code>{host}</code>
+							</div>
+						{/if}
 					</div>
-					<div>settings</div></button
-				>
-			</div>
-			<div class="reset">
-				<button on:click={reset} disabled={loading === null}>reset</button
-				>{#if load_time !== undefined}<div class="loaded_message" transition:slide>
-						loaded in {Math.round(load_time)}ms
-					</div>{/if}
-			</div>
-		</div>
-		{#if show_settings}
-			<div transition:slide class="box">
-				<div class="box panel padded_lg">
-					<label><input type="checkbox" bind:checked={autoload} />autoload</label>
+				</PendingButton>
+				<div class="box">
+					<button on:click={toggle_settings} class="box deselectable" class:selected={show_settings}
+						><div>
+							{#if show_settings}hide{:else}show{/if}
+						</div>
+						<div>settings</div></button
+					>
+				</div>
+				<div class="reset">
+					<button on:click={reset} disabled={loading === null}>reset</button
+					>{#if load_time !== undefined}<div class="loaded_message" transition:slide>
+							loaded in {Math.round(load_time)}ms
+						</div>{/if}
 				</div>
 			</div>
-		{/if}
+			{#if show_settings}
+				<div transition:slide class="controls box">
+					<div class="box panel padded_lg">
+						<label><input type="checkbox" bind:checked={autoload} />autoload</label>
+					</div>
+				</div>
+			{/if}
+		</div>
 		{#if main_context}
 			<ul class="statuses" transition:slide>
 				<!-- TODO style differently or something -->
@@ -121,7 +126,6 @@
 		display: flex;
 		flex-wrap: wrap;
 		gap: var(--spacing_md);
-		margin-bottom: var(--spacing_lg);
 	}
 	.load_button_content {
 		padding: var(--spacing_md) 0;

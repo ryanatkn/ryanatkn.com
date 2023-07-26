@@ -37,7 +37,7 @@
 	let load_time: number | undefined;
 
 	const SHOW_TOOT_DETAILS = 'show_toot_details';
-	let show_toot_details = load_from_storage(SHOW_TOOT_DETAILS, () => false); // TODO store?
+	let show_toot_details = load_from_storage(SHOW_TOOT_DETAILS, () => true); // TODO store?
 	$: set_in_storage(SHOW_TOOT_DETAILS, show_toot_details); // TODO optimize setting
 </script>
 
@@ -97,21 +97,21 @@
 								<Comment {item} />
 							</div>
 						{/if}
-						{#if show_toot_details}
+						{#if !show_toot_details}
 							<button
 								class="plain"
 								style:position="absolute"
 								style:right="var(--spacing_sm)"
 								style:bottom="var(--spacing_sm)"
 								on:click={() => {
-									show_toot_details = false;
+									show_toot_details = true;
 								}}>more</button
 							>
 						{/if}
 					</div>
 				</Toot>
 			{/key}
-			{#if !show_toot_details}
+			{#if show_toot_details}
 				<div class="embed_item">
 					<div class="width_full">
 						<p>the Svelte code:</p>
@@ -146,7 +146,7 @@
 							<button
 								class="plain"
 								on:click={() => {
-									show_toot_details = true;
+									show_toot_details = false;
 								}}>less</button
 							>
 						</div>
@@ -298,10 +298,10 @@
 	<section>
 		<div class="prose spaced">
 			<h2><HashLink slug="comments">Comments</HashLink></h2>
-			<div class="row">
-				<span class="nowrap spaced_hz">the Svelte code:</span>
-				<CodeExample code={`<Toots {host} {id} />`} />
-			</div>
+			<details style:max-width="var(--width_sm)">
+				<summary>the Svelte code:</summary>
+				<CodeExample code={`<Toots\n\thost="${host}"\n\tid="${id}"\n/>`} />
+			</details>
 		</div>
 		<Toots {host} {id} />
 	</section>
