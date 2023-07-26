@@ -81,9 +81,9 @@
 							</PendingButton>
 						</div>
 					{:else if item}
-						<Comment {item} />
-					{:else if loading}
-						<PendingAnimation />
+						<div transition:slide>
+							<Comment {item} />
+						</div>
 					{/if}
 				</div>
 			</LoadMastodonStatus>
