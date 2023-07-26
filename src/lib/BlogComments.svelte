@@ -22,7 +22,7 @@
 					<div class="icon">💬</div>
 					{#if main_context && replies}{#if main_context.ancestors.length}loaded {replies.length} descendants
 							and {main_context.ancestors.length} ancestors{:else}loaded {replies.length} comments{/if}{:else}load
-						comments from<br />{host}{/if}
+						comments from<br /><code>{host}</code>{/if}
 				</div>
 			</PendingButton>
 		</div>

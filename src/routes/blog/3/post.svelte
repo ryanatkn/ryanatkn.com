@@ -59,8 +59,9 @@
 		</aside>
 		<p>
 			Although static to its bones, this site also has dynamic behavior, thanks to the power of
-			scripting. Click the "load comments" button below under the <a href="#comments">"Comments"</a>
-			heading of the post, your browser sends a request to a
+			scripting. If you click the "load comments" button below under the heading <a href="#comments"
+				>"Comments"</a
+			>, your browser sends a request to a
 			<a href="https://joinmastodon.org/">Mastodon</a>
 			instance that hosts <a href="https://hachyderm.io/@ryanatkn">my account</a> on
 			<a href="https://hachyderm.io/">hachyderm.io</a>. Mastodon is an
