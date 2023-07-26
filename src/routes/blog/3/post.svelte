@@ -34,6 +34,8 @@
 	let loaded_status_key = 1;
 	let loading: boolean | undefined;
 	let load_time: number | undefined;
+
+	let hide_toot_details = false;
 </script>
 
 <div class="width_md">
@@ -92,14 +94,26 @@
 								<Comment {item} />
 							</div>
 						{/if}
+						{#if hide_toot_details}
+							<button
+								class="plain"
+								style:position="absolute"
+								style:right="var(--spacing_sm)"
+								style:bottom="var(--spacing_sm)"
+								on:click={() => {
+									hide_toot_details = false;
+								}}>more</button
+							>
+						{/if}
 					</div>
 				</Toot>
 			{/key}
-			<div class="embed_item">
-				<div class="width_full">
-					<p>the Svelte code:</p>
-					<CodeExample
-						code={`<Toot
+			{#if !hide_toot_details}
+				<div class="embed_item">
+					<div class="width_full">
+						<p>the Svelte code:</p>
+						<CodeExample
+							code={`<Toot
 	host=${'"' + host + '"'}
 	id=${'"' + id + '"'}
 	let:item
@@ -112,21 +126,30 @@
 		<Comment {item} />
 	{:else ...}
 </Toot>`}
-					/>
-					<div class="reset">
-						<button
-							on:click={() => {
-								loading = undefined;
-								load_time = undefined;
-								loaded_status_key++;
-							}}
-							disabled={loading === undefined}>reset</button
-						>{#if load_time !== undefined}<div class="loaded_message" transition:slide>
-								loaded in {Math.round(load_time)}ms
-							</div>{/if}
+						/>
+						<div class="box row" style:justify-content="space-between">
+							<div class="reset">
+								<button
+									on:click={() => {
+										loading = undefined;
+										load_time = undefined;
+										loaded_status_key++;
+									}}
+									disabled={loading === undefined}>reset</button
+								>{#if load_time !== undefined}<div class="loaded_message" transition:slide>
+										loaded in {Math.round(load_time)}ms
+									</div>{/if}
+							</div>
+							<button
+								class="plain"
+								on:click={() => {
+									hide_toot_details = true;
+								}}>less</button
+							>
+						</div>
 					</div>
 				</div>
-			</div>
+			{/if}
 		</section>
 		<p>
 			But that's not all. If you click the "load comments" button below under the heading <a
@@ -292,6 +315,7 @@
 		background-color: var(--fg_1);
 	}
 	.embed_item {
+		position: relative;
 		flex: 1;
 		display: flex;
 		flex-direction: column;
