@@ -13,7 +13,7 @@
 				<a rel="me" href="https://lobste.rs/u/ryanatkn">Lobste.rs</a>
 			</li>
 			<li>
-				Mastodon coding account: <a rel="me" href="https://hachyderm.io/@ryanatkn"
+				Mastodon webdev account: <a rel="me" href="https://hachyderm.io/@ryanatkn"
 					>@ryanatkn@hachyderm.io</a
 				>
 			</li>

@@ -65,17 +65,13 @@
 <div class="width_md padded_md">
 	<div class="prose">
 		<section class="box">
-			<div class="panel box">
-				<div class="row">
-					<div class="emoji">🌄</div>
-					<blockquote class="width_sm">
-						hi this is the homepage of Ryan Atkinson, he's a web developer making free and open
-						source software to help us live well
-					</blockquote>
-					<div class="emoji">🌳</div>
-				</div>
-				<p class="width_sm">
-					My main skill is coding frontend web apps and I also do some backend programming. I enjoy
+			<div class="panel box width_sm">
+				<blockquote>
+					hello this is the homepage of Ryan Atkinson, he's a web developer making free and open
+					source software
+				</blockquote>
+				<p>
+					My main skill is making frontend web apps and I also do some backend programming. I enjoy
 					trying to make powerful tools that are easy to use, and I have a geeky interest in user
 					interfaces and social systems. More <a href="{base}/about">about me</a>.
 				</p>
