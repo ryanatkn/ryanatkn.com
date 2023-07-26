@@ -1,6 +1,8 @@
 <script lang="ts">
 	import {fetch_status, type MastodonStatus} from '$lib/mastodon';
 
+	// TODO component name?
+
 	export let host: string;
 	export let id: string;
 
