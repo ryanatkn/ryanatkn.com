@@ -105,8 +105,12 @@
 	let:item
 	let:loading
 	let:load
+	bind:loading
+	bind:load_time
 >
-	...
+	{#if item}
+		<Comment {item} />
+	{:else ...}
 </Toot>`}
 					/>
 					<div class="reset">
