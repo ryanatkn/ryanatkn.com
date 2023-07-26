@@ -10,6 +10,12 @@
 
 	export let feed: FeedData;
 
+	// TODO this way of doing things gets the desired UX
+	// with prerendering and eager loading on nav, so no spinners,
+	// but the downside is that it loads all of the blog posts in the bundle.
+	// Importing lazily has the terrible spinner and I need to learn SvelteKit better
+	// to avoid scrolling issues that happen when you have spiners.
+
 	$: ({slug} = $page.params);
 	$: post_id = /^\d+$/u.test(slug)
 		? Number(slug)
