@@ -71,10 +71,12 @@
 					source software
 				</blockquote>
 				<p>
-					Hi I am working on <a href="https://www.felt.dev/">@feltjs</a> and some other things. My
-					main skill is making frontend web apps and I also do some backend programming. I enjoy
-					trying to make powerful tools that are easy to use, and I have a geeky interest in user
-					interfaces and social systems. More <a href="{base}/about">about me</a>.
+					Hi I am a web dev working on <a href="https://www.felt.dev/">@feltjs</a> and some other things.
+					My main skill is making frontend web apps and I also do some backend programming.
+				</p>
+				<p>
+					I enjoy trying to make powerful tools that are easy to use, and I have a geeky interest in
+					user interfaces and social systems. More <a href="{base}/about">about me</a>.
 				</p>
 			</div>
 		</section>
