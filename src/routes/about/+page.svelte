@@ -32,7 +32,7 @@
 			</li>
 			<li>
 				I learned to code wanting to be a game programmer, but I fell in love with the web at my
-				first job
+				first job, the distribution hits different
 			</li>
 			<li>
 				I started <a href="https://www.felt.dev/">feltjs</a> with
@@ -44,7 +44,7 @@
 				>, <a href="https://www.dealt.dev/">dealt.dev</a>,
 				<a href="https://ryanatkn.github.io/svelte-snake-sports/">Svelte Snake Sports</a>,
 				<a href="https://earbetter.ryanatkn.com/">Earbetter</a>, and
-				<a href="https://github.com/ryanatkn">others</a>
+				<a href="https://github.com/ryanatkn">other</a> abandonings
 			</li>
 			<li>
 				I like <a href="https://svelte.dev/">Svelte</a> and
