@@ -7,13 +7,14 @@
 
 	$: ({pathname} = $page.url);
 	$: at_root_path = pathname === base + '/';
+	$: href = at_root_path ? `${base}/blog` : `${base}/`;
 </script>
 
 <header>
 	<a
 		title={at_root_path ? 'this is root' : 'go to root'}
 		class="bg"
-		href="{base}/"
+		{href}
 		class:selected={at_root_path}
 	>
 		<img class="pixelated" {src} {alt} />
