@@ -11,7 +11,7 @@
 
 <header>
 	<a
-		title={at_root_path ? 'You are home' : 'Go home'}
+		title={at_root_path ? 'this is root' : 'go to root'}
 		class="bg"
 		href="{base}/"
 		class:selected={at_root_path}
