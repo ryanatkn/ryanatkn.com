@@ -78,8 +78,13 @@
 	.content :global(.invisible) {
 		display: none;
 	}
+	/* undo felt-ui's `.ellipsis` and implement Mastodon's */
 	.content :global(.ellipsis) {
-		display: inline-block;
+		display: inline;
+		white-space: initial;
+	}
+	.content :global(.ellipsis)::after {
+		content: '...';
 	}
 	header {
 		display: flex;

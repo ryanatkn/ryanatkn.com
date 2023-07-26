@@ -106,13 +106,15 @@
 								{/if}
 								{#if !show_toot_details}
 									<button
-										class="plain"
+										title="show item details"
+										class="plain icon_button"
 										style:position="absolute"
 										style:right="var(--spacing_sm)"
 										style:bottom="var(--spacing_sm)"
+										style:font-size="var(--size_lg)"
 										on:click={() => {
 											show_toot_details = true;
-										}}>more</button
+										}}>ℹ️</button
 									>
 								{/if}
 							</div>
@@ -152,10 +154,11 @@
 										</div>{/if}
 								</div>
 								<button
-									class="plain"
+									title="hide item details"
+									class="plain icon_button"
 									on:click={() => {
 										show_toot_details = false;
-									}}>less</button
+									}}>🗙</button
 								>
 							</div>
 						</div>
