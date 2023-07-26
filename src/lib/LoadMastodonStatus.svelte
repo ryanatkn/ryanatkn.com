@@ -4,7 +4,10 @@
 	export let host: string;
 	export let id: string;
 
-	let loading: boolean | undefined;
+	/**
+	 * @readonly
+	 */
+	export let loading: boolean | undefined = undefined;
 	let item: MastodonStatus | undefined | null;
 
 	// TODO handle error messages

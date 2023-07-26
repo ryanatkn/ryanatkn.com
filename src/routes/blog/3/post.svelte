@@ -1,7 +1,6 @@
 <script lang="ts">
 	import {base} from '$app/paths';
 	import {page} from '$app/stores';
-	import PendingAnimation from '@feltjs/felt-ui/PendingAnimation.svelte';
 	import PendingButton from '@feltjs/felt-ui/PendingButton.svelte';
 	import {slide} from 'svelte/transition';
 
@@ -31,6 +30,9 @@
 		{slug: 'references', name: 'References'},
 		{slug: 'comments', name: 'Comments'},
 	];
+
+	let loading: boolean | undefined;
+	let loaded_status_key = 1;
 </script>
 
 <div class="width_md">
@@ -68,25 +70,27 @@
 			scripting. With a bit of JS we can embed a toot:
 		</p>
 		<section class="embedded_status">
-			<LoadMastodonStatus {host} {id} let:item let:loading let:load>
-				<div class="embed_item">
-					{#if loading !== false}
-						<div transition:slide>
-							<PendingButton pending={!!loading} on:click={load}>
-								<span class="mammoth">🦣</span>
-								<div>
-									<div>load toot from</div>
-									<code>{host}</code>
-								</div>
-							</PendingButton>
-						</div>
-					{:else if item}
-						<div transition:slide>
-							<Comment {item} />
-						</div>
-					{/if}
-				</div>
-			</LoadMastodonStatus>
+			{#key loaded_status_key}
+				<LoadMastodonStatus {host} {id} let:item let:loading let:load bind:loading>
+					<div class="embed_item">
+						{#if loading !== false}
+							<div transition:slide>
+								<PendingButton pending={!!loading} on:click={load}>
+									<span class="mammoth">🦣</span>
+									<div>
+										<div>load toot from</div>
+										<code>{host}</code>
+									</div>
+								</PendingButton>
+							</div>
+						{:else if item}
+							<div transition:slide>
+								<Comment {item} />
+							</div>
+						{/if}
+					</div>
+				</LoadMastodonStatus>
+			{/key}
 			<div class="embed_item">
 				<div class="width_full">
 					<p>the Svelte code:</p>
@@ -101,6 +105,13 @@
 	...
 </LoadMastodonStatus>`}
 					/>
+					<button
+						on:click={() => {
+							loading = undefined;
+							loaded_status_key++;
+						}}
+						disabled={loading === undefined}>reset</button
+					>
 				</div>
 			</div>
 		</section>
