@@ -24,7 +24,7 @@
 	let:loading
 	let:load_time
 >
-	<div class="load_button" out:slide>
+	<div class="load_button">
 		<PendingButton pending={loading || false} disabled={!!main_context} on:click={() => load()}>
 			<div class="load_button_content">
 				<div class="icon">💬</div>
@@ -81,6 +81,7 @@
 	.load_button {
 		flex-shrink: 0;
 		margin-right: var(--spacing_md);
+		margin-bottom: var(--spacing_lg);
 	}
 	.load_button_content {
 		padding: var(--spacing_md) 0;
