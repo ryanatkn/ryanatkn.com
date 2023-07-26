@@ -14,14 +14,16 @@ export const load_from_storage = <T>(
 	validate?: (value: any) => asserts value is T,
 ): T => {
 	if (!browser) return to_default_value();
-	const stored = localStorage.getItem(key);
-	if (!stored) return to_default_value();
 	try {
+		const stored = localStorage.getItem(key);
+		if (!stored) return to_default_value();
 		const parsed = JSON.parse(stored);
 		validate?.(parsed);
 		return parsed;
 	} catch (err) {
-		localStorage.removeItem(key);
+		try {
+			localStorage.removeItem(key);
+		} catch (_err) {}
 		return to_default_value();
 	}
 };
@@ -35,9 +37,11 @@ export const load_from_storage = <T>(
  */
 export const set_in_storage = (key: string, value: any): void => {
 	if (!browser) return;
-	if (value === undefined) {
-		localStorage.removeItem(key);
-	} else {
-		localStorage.setItem(key, JSON.stringify(value));
-	}
+	try {
+		if (value === undefined) {
+			localStorage.removeItem(key);
+		} else {
+			localStorage.setItem(key, JSON.stringify(value));
+		}
+	} catch (_err) {}
 };
