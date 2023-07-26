@@ -160,7 +160,7 @@
 	}
 	.card {
 		display: flex;
-		width: var(--width_sm);
+		max-width: var(--width_sm);
 		background-color: var(--bg);
 		border-width: var(--border_width);
 		border-style: var(--border_style);
