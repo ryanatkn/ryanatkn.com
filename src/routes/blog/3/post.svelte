@@ -33,6 +33,7 @@
 
 	let loading: boolean | undefined;
 	let loaded_status_key = 1;
+	let load_time: number | undefined;
 </script>
 
 <div class="width_md">
@@ -47,9 +48,12 @@
 		<p>
 			This website is a bundle of plain static files, including HTML, JavaScript, CSS, some images,
 			and <a href="{base}/blog/feed.xml">an Atom feed</a>
-			for the blog, viewable
-			<a href="https://github.com/ryanatkn/ryanatkn.com/tree/deploy">here on the 'deploy' branch</a>
-			of <a href="https://github.com/ryanatkn/ryanatkn.com">the git repo</a>. Those files are then
+			for the blog, viewable on
+			<a href="https://github.com/ryanatkn/ryanatkn.com/tree/deploy"
+				>the <code>deploy</code> branch</a
+			>
+			of
+			<a href="https://github.com/ryanatkn/ryanatkn.com">the git repo</a>. Those files are then
 			hosted for free by <a href="https://pages.github.com/">GitHub Pages</a>, published right here
 			as a website to
 			<code>{$page.url.host}</code>. The cost of serving these static files is very low, so "free"
@@ -71,7 +75,7 @@
 		</p>
 		<section class="embedded_status">
 			{#key loaded_status_key}
-				<LoadMastodonStatus {host} {id} let:item let:loading let:load bind:loading>
+				<LoadMastodonStatus {host} {id} let:item let:loading let:load bind:loading bind:load_time>
 					<div class="embed_item">
 						{#if loading !== false}
 							<div transition:slide>
@@ -96,8 +100,8 @@
 					<p>the Svelte code:</p>
 					<CodeExample
 						code={`<LoadMastodonStatus
-	{host}
-	{id}
+	host=${'"' + host + '"'}
+	id=${'"' + id + '"'}
 	let:item
 	let:loading
 	let:load
@@ -105,13 +109,18 @@
 	...
 </LoadMastodonStatus>`}
 					/>
-					<button
-						on:click={() => {
-							loading = undefined;
-							loaded_status_key++;
-						}}
-						disabled={loading === undefined}>reset</button
-					>
+					<div class="reset">
+						<button
+							on:click={() => {
+								loading = undefined;
+								load_time = undefined;
+								loaded_status_key++;
+							}}
+							disabled={loading === undefined}>reset</button
+						>{#if load_time !== undefined}<div class="loaded_message" transition:slide>
+								loaded in {Math.round(load_time)}ms
+							</div>{/if}
+					</div>
 				</div>
 			</div>
 		</section>
@@ -285,5 +294,16 @@
 	.mammoth {
 		font-size: var(--icon_size_md);
 		padding: var(--spacing_md) 0;
+	}
+	.reset {
+		display: flex;
+		align-items: center;
+	}
+	/* TODO hacky */
+	.reset :global(button) {
+		margin-bottom: 0;
+	}
+	.loaded_message {
+		margin-left: var(--spacing_md);
 	}
 </style>
