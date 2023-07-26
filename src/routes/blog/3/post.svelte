@@ -99,8 +99,11 @@
 			<li>
 				no authentication
 				<ul>
-					<li>only 60 posts can be fetched? and there's no way to get page 2?</li>
-					<li>favourites are limited, so too many may push out the author</li>
+					<li>
+						only 60 posts can be fetched? and there's no way to get page 2? maybe I'm holding the
+						API wrong
+					</li>
+					<li>favourites are also limited (but pagination header?)</li>
 					<li>is readonly - you can't take actions directly on the page (favouriting, replying)</li>
 				</ul>
 			</li>
