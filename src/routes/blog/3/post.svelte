@@ -118,8 +118,8 @@
 			Here's <a href="https://github.com/ryanatkn/ryanatkn.com/pull/12/files">the GitHub PR</a>.
 		</p>
 		<p>
-			To avoid some possible security and privacy issues that arise when you inject arbitrary HTML
-			into the page like I'm doing, I added a fairly restrictive <a
+			To avoid some possible security and privacy issues that can arise when injecting arbitrary
+			HTML into the page like I'm doing, I added a fairly restrictive <a
 				href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP">content security policy</a
 			>. It disallows arbitrary third party requests, so it may break if my Mastodon host
 			hachyderm.io changes how it loads resources. If something goes wrong or changes, having icons
