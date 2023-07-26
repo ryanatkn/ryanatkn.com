@@ -46,7 +46,7 @@
 			as a website to
 			<code>{$page.url.host}</code>. The cost of serving these static files is very low, so "free"
 			is a common cloud offering for static sites in 2023. Thanks, GitHub, for being host of the
-			day. It doesn't get much simpler than this for me.
+			day, and keeping it all really simple.
 		</p>
 		<aside>
 			The website's final output files are HTML, JS, and CSS, but <a
