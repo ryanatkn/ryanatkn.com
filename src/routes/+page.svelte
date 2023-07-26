@@ -22,11 +22,6 @@
 	// to write this in normal Svelte markup and use CSS to make a responsive layout
 	const projects: ProjectInfo[] = [
 		{
-			name: 'github',
-			title: '<a href="https://github.com/ryanatkn">github.com/ryanatkn</a>',
-			description: 'my free and open source software',
-		},
-		{
 			name: 'blog',
 			title: `<a href="${base}/blog">blog</a>`,
 			description: '<a href="https://www.ryanatkn.com/feed.xml">feed.xml</a>',
@@ -36,6 +31,11 @@
 			title: '<a href="https://log.ryanatkn.com/">log</a>',
 			description: 'devlog',
 			links: '<a href="https://log.ryanatkn.com/">log.ryanatkn.com</a>',
+		},
+		{
+			name: 'github',
+			title: '<a href="https://github.com/ryanatkn">github.com/ryanatkn</a>',
+			description: 'my free and open source software',
 		},
 		{
 			name: '@feltjs',
