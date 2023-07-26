@@ -11,9 +11,12 @@
 	.hash_link {
 		display: flex;
 		align-items: center;
+		position: relative;
 	}
 	a {
 		--icon_size: var(--icon_size_sm);
+		position: absolute;
+		left: calc(var(--icon_size) * -1 - var(--spacing_xl));
 		opacity: 0;
 		font-size: var(--size_lg);
 		display: flex;
