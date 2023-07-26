@@ -14,22 +14,41 @@
 	// TODO BLOCK chronological, nested, updated, reverse chrono
 </script>
 
-<MastodonComments {host} {id} let:main_status let:main_context let:replies let:load let:loading>
-	{#if loading !== false}
-		<div class="load_button" out:slide>
-			<PendingButton pending={loading || false} disabled={!!main_context} on:click={() => load()}>
-				<div class="load_button_content">
-					<div class="icon">💬</div>
-					{#if main_context && replies}{#if main_context.ancestors.length}loaded {replies.length} descendants
-							and {main_context.ancestors.length} ancestors{:else}loaded {replies.length} comments{/if}{:else}<div
-						>
-							<div>load comments from</div>
-							<code>{host}</code>
-						</div>{/if}
-				</div>
-			</PendingButton>
-		</div>
-	{/if}
+<MastodonComments
+	{host}
+	{id}
+	let:main_status
+	let:main_context
+	let:replies
+	let:load
+	let:loading
+	let:load_time
+>
+	<div class="load_button" out:slide>
+		<PendingButton pending={loading || false} disabled={!!main_context} on:click={() => load()}>
+			<div class="load_button_content">
+				<div class="icon">💬</div>
+				{#if main_context && replies}
+					<div>
+						<div>
+							{#if main_context.ancestors.length}
+								loaded {replies.length} descendants and {main_context.ancestors.length} ancestors
+							{:else}
+								loaded {replies.length} comments
+							{/if}
+						</div>
+						<div>in {load_time === undefined ? 'unknown ' : Math.round(load_time)}ms from</div>
+						<code>{host}</code>
+					</div>
+				{:else}
+					<div>
+						<div>load comments from</div>
+						<code>{host}</code>
+					</div>
+				{/if}
+			</div>
+		</PendingButton>
+	</div>
 	{#if main_context}
 		<ul class="statuses" transition:slide>
 			<!-- TODO style differently or something -->

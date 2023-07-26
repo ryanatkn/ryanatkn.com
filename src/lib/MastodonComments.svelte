@@ -51,6 +51,11 @@
 
 	let loading: boolean | null = null;
 
+	/**
+	 * @readonly
+	 */
+	export let load_time: number | undefined = undefined;
+
 	// TODO BLOCK throttle API with concurrency
 	const map_async = async <T>(
 		items: T[],
@@ -90,6 +95,7 @@
 	};
 
 	const load_by_url = async (url: string) => {
+		const start_time = performance.now();
 		loading = true;
 		[main_context, main_status] = await Promise.all([
 			fetch_status_context_by_url(url),
@@ -101,6 +107,7 @@
 			replies = null;
 		}
 		loading = false;
+		load_time = performance.now() - start_time;
 	};
 
 	// $: browser && load(host, id);
@@ -111,4 +118,4 @@
 	};
 </script>
 
-<slot {main_status} {main_context} {replies} {api_url} {post_url} {load} {loading} />
+<slot {main_status} {main_context} {replies} {api_url} {post_url} {load} {loading} {load_time} />
