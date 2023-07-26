@@ -100,7 +100,7 @@
 										</PendingButton>
 									</div>
 								{:else if item}
-									<div transition:slide>
+									<div transition:slide class="width_full">
 										<Comment {item} />
 									</div>
 								{/if}

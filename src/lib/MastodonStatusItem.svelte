@@ -6,7 +6,10 @@
 
 	export let item: MastodonStatus;
 
-	$: ({created_at, edited_at, content, account, url} = item);
+	// see the CSP in `$routes/security.ts`
+	/* eslint-disable svelte/no-at-html-tags */
+
+	$: ({created_at, edited_at, content, account, url, sensitive, spoiler_text} = item);
 	$: account_created = account.created_at;
 	$: account_avatar = account.avatar_static;
 	$: account_url = account.url;
@@ -28,7 +31,7 @@
 	};
 </script>
 
-<div class="post">
+<div class="mastodon_status_item">
 	<header>
 		<button
 			class="avatar plain icon_button"
@@ -54,16 +57,18 @@
 	</header>
 	{#if show_note && account_note}
 		<div class="content prose panel padded_md spaced" transition:slide>
-			<!-- eslint-disable-next-line svelte/no-at-html-tags -->
 			{@html account_note}
 		</div>
 	{/if}
-	<!-- eslint-disable-next-line svelte/no-at-html-tags -->
-	<div class="content prose">{@html content}</div>
+	<div class="content prose">
+		{#if sensitive}<details>
+				<summary>{spoiler_text || 'view sensitive content'}</summary>{@html content}
+			</details>{:else}{@html content}{/if}
+	</div>
 </div>
 
 <style>
-	.post {
+	.mastodon_status_item {
 		display: flex;
 		flex-direction: column;
 		background-color: var(--panel_bg, var(--fg_1));

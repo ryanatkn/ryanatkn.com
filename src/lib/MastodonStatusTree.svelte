@@ -11,7 +11,7 @@
 
 <slot {item} {items} />
 {#if replies.length}
-	<ul>
+	<ul class="mastodon_status_tree">
 		{#each replies as reply (reply.id)}
 			<li>
 				<svelte:self item={reply} {items}>
@@ -23,7 +23,7 @@
 {/if}
 
 <style>
-	ul {
+	.mastodon_status_tree {
 		padding-left: var(--spacing_xl4);
 		margin: var(--spacing_md) 0;
 	}
