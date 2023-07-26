@@ -2,8 +2,8 @@
 	import PendingButton from '@feltjs/felt-ui/PendingButton.svelte';
 	import {slide} from 'svelte/transition';
 
-	import CommentTree from '$lib/CommentTree.svelte';
-	import Comment from '$lib/Comment.svelte';
+	import PostTree from '$lib/PostTree.svelte';
+	import Post from '$lib/Post.svelte';
 	import MastodonComments from '$lib/MastodonComments.svelte';
 	import {load_from_storage, set_in_storage} from '$lib/storage';
 
@@ -97,18 +97,18 @@
 				<!-- TODO style differently or something -->
 				{#each main_context.ancestors as item}
 					<li>
-						<Comment {item} />
+						<Post {item} />
 					</li>
 				{/each}
 				{#if main_status}
 					<div class="main_post panel">
 						<div class="panel main_post_inner">
-							<Comment item={main_status} />
+							<Post item={main_status} />
 						</div>
 					</div>
 				{/if}
 				{#if main_status && replies}
-					<CommentTree item={main_status} items={replies} />
+					<PostTree item={main_status} items={replies} />
 				{/if}
 			</ul>
 		{/if}

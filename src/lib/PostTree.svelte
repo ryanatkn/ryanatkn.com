@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type {MastodonStatus} from '$lib/mastodon';
-	import Comment from '$lib/Comment.svelte';
+	import Message from '$lib/Post.svelte';
 
 	export let item: MastodonStatus;
 	export let items: MastodonStatus[];
@@ -15,7 +15,7 @@
 		{#each replies as reply (reply.id)}
 			<li>
 				<svelte:self item={reply} {items}>
-					<Comment item={reply} />
+					<Message item={reply} />
 				</svelte:self>
 			</li>
 		{/each}

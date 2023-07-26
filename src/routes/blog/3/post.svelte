@@ -2,13 +2,13 @@
 	import {base} from '$app/paths';
 	import {page} from '$app/stores';
 	import PendingButton from '@feltjs/felt-ui/PendingButton.svelte';
-	import {slide} from 'svelte/transition';
+	import {fade, slide} from 'svelte/transition';
 
 	import Toots from '$lib/Toots.svelte';
 	import HashLink from '$lib/HashLink.svelte';
 	import BlogPostIndex from '$lib/BlogPostIndex.svelte';
 	import {prod_content_security_policy} from '$routes/security';
-	import Comment from '$lib/Comment.svelte';
+	import Comment from '$lib/Post.svelte';
 	import Toot from '$lib/Toot.svelte';
 	import CodeExample from '$routes/blog/3/CodeExample.svelte';
 	import {load_from_storage, set_in_storage} from '$lib/storage';
@@ -79,44 +79,47 @@
 			scripting. With a bit of JS we can embed a toot:
 		</p>
 		<section class="embedded_status">
-			{#key loaded_status_key}
-				<Toot {host} {id} let:item let:loading let:load bind:loading bind:load_time>
-					<div class="embed_item">
-						{#if loading !== false}
-							<div transition:slide>
-								<PendingButton pending={!!loading} on:click={load}>
-									<span class="mammoth">🦣</span>
-									<div>
-										<div>load toot from</div>
-										<code>{host}</code>
+			<div class="embedded_status_inner">
+				{#key loaded_status_key}
+					<Toot {host} {id} let:item let:loading let:load bind:loading bind:load_time>
+						<div class="embed_item">
+							<div class="embed_item_inner">
+								{#if loading !== false}
+									<div transition:slide>
+										<PendingButton pending={!!loading} on:click={load}>
+											<span class="mammoth">🦣</span>
+											<div>
+												<div>load toot from</div>
+												<code>{host}</code>
+											</div>
+										</PendingButton>
 									</div>
-								</PendingButton>
+								{:else if item}
+									<div transition:slide>
+										<Comment {item} />
+									</div>
+								{/if}
+								{#if !show_toot_details}
+									<button
+										class="plain"
+										style:position="absolute"
+										style:right="var(--spacing_sm)"
+										style:bottom="var(--spacing_sm)"
+										on:click={() => {
+											show_toot_details = true;
+										}}>more</button
+									>
+								{/if}
 							</div>
-						{:else if item}
-							<div transition:slide>
-								<Comment {item} />
-							</div>
-						{/if}
-						{#if !show_toot_details}
-							<button
-								class="plain"
-								style:position="absolute"
-								style:right="var(--spacing_sm)"
-								style:bottom="var(--spacing_sm)"
-								on:click={() => {
-									show_toot_details = true;
-								}}>more</button
-							>
-						{/if}
-					</div>
-				</Toot>
-			{/key}
-			{#if show_toot_details}
-				<div class="embed_item">
-					<div class="width_full">
-						<p>the Svelte code:</p>
-						<CodeExample
-							code={`<Toot
+						</div>
+					</Toot>
+				{/key}
+				{#if show_toot_details}
+					<div class="embed_item" transition:fade>
+						<div class="embed_item_inner">
+							<p>the Svelte code:</p>
+							<CodeExample
+								code={`<Toot
 	host=${'"' + host + '"'}
 	id=${'"' + id + '"'}
 	let:item
@@ -129,30 +132,31 @@
 		<Comment {item} />
 	{:else ...}
 </Toot>`}
-						/>
-						<div class="box row" style:justify-content="space-between">
-							<div class="reset">
+							/>
+							<div class="reset_wrapper">
+								<div class="reset">
+									<button
+										on:click={() => {
+											loading = undefined;
+											load_time = undefined;
+											loaded_status_key++;
+										}}
+										disabled={loading === undefined}>reset</button
+									>{#if load_time !== undefined}<div class="loaded_message" transition:slide>
+											loaded in {Math.round(load_time)}ms
+										</div>{/if}
+								</div>
 								<button
+									class="plain"
 									on:click={() => {
-										loading = undefined;
-										load_time = undefined;
-										loaded_status_key++;
-									}}
-									disabled={loading === undefined}>reset</button
-								>{#if load_time !== undefined}<div class="loaded_message" transition:slide>
-										loaded in {Math.round(load_time)}ms
-									</div>{/if}
+										show_toot_details = false;
+									}}>less</button
+								>
 							</div>
-							<button
-								class="plain"
-								on:click={() => {
-									show_toot_details = false;
-								}}>less</button
-							>
 						</div>
 					</div>
-				</div>
-			{/if}
+				{/if}
+			</div>
 		</section>
 		<p>
 			But that's not all. If you click the "load comments" button below under the heading <a
@@ -250,7 +254,7 @@
 			<HashLink slug="conclusion">Conclusion</HashLink>
 		</h2>
 		<p>
-			Recapping, this is a static site hosted by GitHub with commenting that's
+			Recapping, this is a static site hosted by GitHub with embedded toots and comments
 			dynamically-loaded-on-demand from Mastodon on <a href="https://hachyderm.io/">hachyderm.io</a>
 			with an allowlist managed by the author through Mastodon favourites. They charge no money for these
 			services, and you can fund them in different ways.
@@ -317,21 +321,33 @@
 		border-radius: var(--border_radius_sm);
 		background-color: var(--fg_1);
 	}
-	.embed_item {
-		position: relative;
-		flex: 1;
+	.embedded_status_inner {
 		display: flex;
-		flex-direction: column;
-		align-items: center;
-		min-width: var(--width_sm);
+		width: 100%;
+	}
+	.embed_item {
+		width: 100%;
+		position: relative;
 		background-color: var(--bg);
 		border-radius: var(--border_radius_sm);
 		padding: var(--spacing_xs);
+		overflow: hidden;
+	}
+	.embed_item_inner {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 
 	.mammoth {
 		font-size: var(--icon_size_md);
 		padding: var(--spacing_md) 0;
+	}
+	.reset_wrapper {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
 	}
 	.reset {
 		display: flex;

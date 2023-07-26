@@ -28,7 +28,7 @@
 	};
 </script>
 
-<div class="comment">
+<div class="post">
 	<header>
 		<button
 			class="avatar plain icon_button"
@@ -63,7 +63,7 @@
 </div>
 
 <style>
-	.comment {
+	.post {
 		display: flex;
 		flex-direction: column;
 		background-color: var(--panel_bg, var(--fg_1));
