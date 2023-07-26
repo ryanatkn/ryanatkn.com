@@ -9,7 +9,7 @@
 	import BlogPostIndex from '$lib/BlogPostIndex.svelte';
 	import {prod_content_security_policy} from '$routes/security';
 	import Comment from '$lib/Comment.svelte';
-	import LoadMastodonStatus from '$lib/LoadMastodonStatus.svelte';
+	import Toot from '$lib/Toot.svelte';
 	import CodeExample from '$routes/blog/3/CodeExample.svelte';
 
 	// TODO BLOCK `a post I made`
@@ -75,7 +75,7 @@
 		</p>
 		<section class="embedded_status">
 			{#key loaded_status_key}
-				<LoadMastodonStatus {host} {id} let:item let:loading let:load bind:loading bind:load_time>
+				<Toot {host} {id} let:item let:loading let:load bind:loading bind:load_time>
 					<div class="embed_item">
 						{#if loading !== false}
 							<div transition:slide>
@@ -93,13 +93,13 @@
 							</div>
 						{/if}
 					</div>
-				</LoadMastodonStatus>
+				</Toot>
 			{/key}
 			<div class="embed_item">
 				<div class="width_full">
 					<p>the Svelte code:</p>
 					<CodeExample
-						code={`<LoadMastodonStatus
+						code={`<Toot
 	host=${'"' + host + '"'}
 	id=${'"' + id + '"'}
 	let:item
@@ -107,7 +107,7 @@
 	let:load
 >
 	...
-</LoadMastodonStatus>`}
+</Toot>`}
 					/>
 					<div class="reset">
 						<button
