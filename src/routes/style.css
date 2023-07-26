@@ -56,7 +56,7 @@ probably fixable with a better image, I tried briefly but didn't get a great res
 
 .card {
 	display: flex;
-	width: var(--width_sm);
+	max-width: var(--width_sm);
 	background-color: var(--bg);
 	border-width: var(--border_width);
 	border-style: solid;
