@@ -71,9 +71,10 @@
 					source software
 				</blockquote>
 				<p>
-					My main skill is making frontend web apps and I also do some backend programming. I enjoy
-					trying to make powerful tools that are easy to use, and I have a geeky interest in user
-					interfaces and social systems. More <a href="{base}/about">about me</a>.
+					Working on <a href="https://www.felt.dev/">@feltjs</a>. My main skill is making frontend
+					web apps and I also do some backend programming. I enjoy trying to make powerful tools
+					that are easy to use, and I have a geeky interest in user interfaces and social systems.
+					More <a href="{base}/about">about me</a>.
 				</p>
 			</div>
 		</section>
