@@ -1,11 +1,17 @@
 <script lang="ts">
 	import {base} from '$app/paths';
+	import {page} from '$app/stores';
+	import PendingAnimation from '@feltjs/felt-ui/PendingAnimation.svelte';
+	import PendingButton from '@feltjs/felt-ui/PendingButton.svelte';
+	import {slide} from 'svelte/transition';
 
 	import BlogComments from '$lib/BlogComments.svelte';
 	import HashLink from '$lib/HashLink.svelte';
 	import BlogPostIndex from '$lib/BlogPostIndex.svelte';
 	import {prod_content_security_policy} from '$routes/security';
-	import {page} from '$app/stores';
+	import Comment from '$lib/Comment.svelte';
+	import LoadMastodonStatus from '$lib/LoadMastodonStatus.svelte';
+	import CodeExample from '$routes/blog/3/CodeExample.svelte';
 
 	// TODO BLOCK `a post I made`
 
@@ -59,8 +65,48 @@
 		</aside>
 		<p>
 			Although static to its bones, this site also has dynamic behavior, thanks to the power of
-			scripting. If you click the "load comments" button below under the heading <a href="#comments"
-				>"Comments"</a
+			scripting. With a bit of JS we can embed a toot:
+		</p>
+		<section class="embedded_status">
+			<LoadMastodonStatus {host} {id} let:item let:loading let:load>
+				<div class="embed_item">
+					{#if loading !== false}
+						<div transition:slide>
+							<PendingButton pending={!!loading} on:click={load}>
+								<span class="mammoth">🦣</span>
+								<div>
+									<div>load toot from</div>
+									<code>{host}</code>
+								</div>
+							</PendingButton>
+						</div>
+					{:else if item}
+						<Comment {item} />
+					{:else if loading}
+						<PendingAnimation />
+					{/if}
+				</div>
+			</LoadMastodonStatus>
+			<div class="embed_item">
+				<div class="width_full">
+					<p>the Svelte code:</p>
+					<CodeExample
+						code={`<LoadMastodonStatus
+	{host}
+	{id}
+	let:item
+	let:loading
+	let:load
+>
+	...
+</LoadMastodonStatus>`}
+					/>
+				</div>
+			</div>
+		</section>
+		<p>
+			But that's not all. If you click the "load comments" button below under the heading <a
+				href="#comments">"Comments"</a
 			>, your browser sends a request to a
 			<a href="https://joinmastodon.org/">Mastodon</a>
 			instance at <a href="https://hachyderm.io/">hachyderm.io</a> that hosts
@@ -200,7 +246,33 @@
 	</section>
 	<hr />
 	<section>
-		<div class="prose"><h2><HashLink slug="comments">Comments</HashLink></h2></div>
+		<div class="prose spaced">
+			<h2><HashLink slug="comments">Comments</HashLink></h2>
+			<details>
+				<summary>show the code</summary>
+				<CodeExample code={`<BlogComments {host} {id} />`} />
+			</details>
+		</div>
 		<BlogComments {host} {id} />
 	</section>
 </div>
+
+<style>
+	.embedded_status {
+		display: flex;
+		align-items: flex-start;
+		gap: var(--spacing_md);
+		flex-wrap: wrap;
+	}
+	.embed_item {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		min-width: var(--width_sm);
+	}
+	.mammoth {
+		font-size: var(--icon_size_md);
+		padding: var(--spacing_md) 0;
+	}
+</style>

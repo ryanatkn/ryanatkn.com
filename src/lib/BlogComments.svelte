@@ -31,7 +31,7 @@
 		</div>
 	{/if}
 	{#if main_context}
-		<ul class="statuses">
+		<ul class="statuses" transition:slide>
 			<!-- TODO style differently or something -->
 			{#each main_context.ancestors as item}
 				<li>

@@ -145,13 +145,13 @@ export interface MastodonPostParams {
 export type Url = Flavored<string, 'Url'>;
 
 // TODO BLOCK name
-export const to_status_url_TODO = (host: string, id: string): string =>
+export const to_status_url = (host: string, id: string): string =>
 	`https://${host}/api/v1/statuses/${id}`;
 
 export const to_status_context_url = (host: string, id: string): string =>
 	`https://${host}/api/v1/statuses/${id}/context`;
 
-export const to_status_url = (host: string, author: string, id: string): string =>
+export const to_status_url_with_author = (host: string, author: string, id: string): string =>
 	`https://${host}/@${author}/${id}`;
 
 export const to_favourites_url = (host: string, id: string): string =>
@@ -175,7 +175,7 @@ export const to_post_url = (api_url: string | null): string | null => {
 	const parsed = parse_status_url(api_url);
 	if (!parsed) return null;
 	parsed.host, parsed.id;
-	return to_status_url(parsed.host, parsed.author, parsed.id);
+	return to_status_url_with_author(parsed.host, parsed.author, parsed.id);
 };
 
 /**
@@ -212,14 +212,22 @@ export const fetch_status_context_by_url = async (url: string): Promise<Mastodon
 	const parsed = parse_status_context_url(url);
 	if (!parsed) return null;
 	const {host, id} = parsed;
-	return fetch_post(host, id);
+	return fetch_status_context(host, id);
 };
 
 // TODO BLOCK go through a single fetch helper and trace each call to the API,
 // so we can see the history in a tab displayed to any users who want to dig
 
-export const fetch_post = async (host: string, id: string): Promise<MastodonContext | null> => {
+export const fetch_status_context = async (
+	host: string,
+	id: string,
+): Promise<MastodonContext | null> => {
 	const u = to_status_context_url(host, id);
+	return fetch_data(u);
+};
+
+export const fetch_status = async (host: string, id: string): Promise<MastodonStatus | null> => {
+	const u = to_status_url(host, id);
 	return fetch_data(u);
 };
 
@@ -228,7 +236,7 @@ export const fetch_status_by_url = async (url: string): Promise<MastodonStatus |
 	const parsed = parse_status_context_url(url);
 	if (!parsed) return null;
 	const {host, id} = parsed;
-	const u = to_status_url_TODO(host, id);
+	const u = to_status_url(host, id);
 	return fetch_data(u);
 };
 
