@@ -63,8 +63,8 @@
 				>"Comments"</a
 			>, your browser sends a request to a
 			<a href="https://joinmastodon.org/">Mastodon</a>
-			instance that hosts <a href="https://hachyderm.io/@ryanatkn">my account</a> on
-			<a href="https://hachyderm.io/">hachyderm.io</a>. Mastodon is an
+			instance at <a href="https://hachyderm.io/">hachyderm.io</a> that hosts
+			<a href="https://hachyderm.io/@ryanatkn">my account</a>. Mastodon is an
 			<a href="https://wikipedia.org/wiki/ActivityPub">ActivityPub</a>-compatible app in the
 			<a href="https://wikipedia.org/wiki/Fediverse">Fediverse</a>. It requests information about a
 			<a href="https://hachyderm.io/@ryanatkn">a post I made</a> that references this blog post. If the
@@ -89,8 +89,9 @@
 						Reactive moderation, where the author could allow all comments by default (and block to
 						hide?), may be possible with the public API, but I would need to look into it more. I
 						probably wouldn't switch to a denylist - I'd prefer to set the expectation that most
-						replies won't appear here, and reactive moderation lowers the friction enough to change
-						the experience for everyone, and I don't want to develop a habit of moderating the
+						replies won't appear here, because low effort replies would drown others out of the
+						unathenticated request limits. Reactive moderation lowers the friction enough to change
+						the experience for everyone, and also I don't want to develop a habit of moderating the
 						internet.
 					</li>
 				</ul>
