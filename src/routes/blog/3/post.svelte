@@ -287,6 +287,9 @@
 		align-items: flex-start;
 		gap: var(--spacing_md);
 		flex-wrap: wrap;
+		padding: var(--spacing_md);
+		border-radius: var(--border_radius_sm);
+		background-color: var(--fg_1);
 	}
 	.embed_item {
 		flex: 1;
@@ -294,7 +297,11 @@
 		flex-direction: column;
 		align-items: center;
 		min-width: var(--width_sm);
+		background-color: var(--bg);
+		border-radius: var(--border_radius_sm);
+		padding: var(--spacing_xs);
 	}
+
 	.mammoth {
 		font-size: var(--icon_size_md);
 		padding: var(--spacing_md) 0;
