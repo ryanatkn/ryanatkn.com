@@ -138,14 +138,6 @@
 		margin-top: var(--spacing_sm);
 	}
 
-	.emoji {
-		white-space: nowrap;
-		font-size: var(--size_xl3);
-		padding-right: var(--spacing_xl);
-	}
-	.emoji:last-child {
-		padding-left: var(--spacing_xl);
-	}
 	.panel {
 		padding: var(--spacing_lg);
 	}
