@@ -71,8 +71,9 @@
 					source software
 				</blockquote>
 				<p>
-					Hi welcome I'm working on <a href="https://www.felt.dev/">@feltjs</a> and some other things.
-					My main skill is making frontend web apps and I also do some backend programming.
+					Hi I'm working on free software like <a href="https://www.felt.dev/">feltjs</a> and other
+					web <a href="https://github.com/ryanatkn">things</a>. My main skill is making frontend web
+					apps, and I also do some backend programming.
 				</p>
 				<p>
 					I enjoy trying to make powerful tools that are easy to use, and I have a geeky interest in
