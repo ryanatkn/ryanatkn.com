@@ -5,6 +5,7 @@
 	import CommentTree from '$lib/CommentTree.svelte';
 	import Comment from '$lib/Comment.svelte';
 	import MastodonComments from '$lib/MastodonComments.svelte';
+	import {load_from_storage, set_in_storage} from '$lib/storage';
 
 	export let host: string;
 	export let id: string;
@@ -18,6 +19,15 @@
 	const reset = () => {
 		loaded_status_key++;
 	};
+
+	let show_settings = false;
+	const toggle_settings = () => {
+		show_settings = !show_settings;
+	};
+
+	const AUTOLOAD_KEY = 'autoload';
+	let autoload = load_from_storage(AUTOLOAD_KEY, () => false); // TODO store?
+	$: set_in_storage(AUTOLOAD_KEY, autoload); // TODO optimize setting
 </script>
 
 {#key loaded_status_key}
@@ -55,6 +65,14 @@
 					{/if}
 				</div>
 			</PendingButton>
+			<div class="box">
+				<button on:click={toggle_settings} class="box"
+					><div>
+						{#if show_settings}hide{:else}show{/if}
+					</div>
+					<div>settings</div></button
+				>
+			</div>
 			<div class="reset">
 				<button on:click={reset} disabled={loading === null}>reset</button
 				>{#if load_time !== undefined}<div class="loaded_message" transition:slide>
@@ -62,6 +80,13 @@
 					</div>{/if}
 			</div>
 		</div>
+		{#if show_settings}
+			<div transition:slide class="box">
+				<div class="box panel padded_lg">
+					<label><input type="checkbox" bind:checked={autoload} />autoload</label>
+				</div>
+			</div>
+		{/if}
 		{#if main_context}
 			<ul class="statuses" transition:slide>
 				<!-- TODO style differently or something -->
