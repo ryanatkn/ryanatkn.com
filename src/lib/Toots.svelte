@@ -6,6 +6,7 @@
 	import MastodonStatusItem from '$lib/MastodonStatusItem.svelte';
 	import MastodonComments from '$lib/MastodonComments.svelte';
 	import {load_from_storage, set_in_storage} from '$lib/storage';
+	import type {Action} from 'svelte/action';
 
 	export let host: string;
 	export let id: string;
@@ -31,6 +32,44 @@
 	const AUTOLOAD_KEY = 'autoload';
 	let autoload = load_from_storage(AUTOLOAD_KEY, () => false); // TODO store?
 	$: set_in_storage(AUTOLOAD_KEY, autoload); // TODO optimize setting
+
+	let scrolled: Action<Element, {onscreen: () => void}>;
+	// TODO could be improved to handle leaving/entering multiple times
+	const to_scrolled = (autoload: boolean): Action<Element, {onscreen: () => void}> =>
+		autoload
+			? (el, params) => {
+					let p = params;
+					console.log(`el, params`, el, params);
+					let ob: IntersectionObserver | null = new IntersectionObserver((entries) => {
+						console.log(`entries`, entries);
+						if (entries[0].isIntersecting) {
+							console.log(`INTERSECTING`);
+							p.onscreen();
+							cleanup();
+						}
+					});
+					const cleanup = () => {
+						if (!ob) return;
+						// ob.unobserve(el);
+						ob.disconnect();
+						ob = null;
+					};
+					ob.observe(el);
+					return {
+						update: (params) => {
+							p = params;
+						},
+						destroy: () => {
+							cleanup();
+						},
+					};
+			  }
+			: () => {
+					// TODO BLOCK better way?
+					/* no-op */
+			  };
+	$: scrolled = to_scrolled(autoload);
+	$: console.log(`autoload`, autoload);
 </script>
 
 {#key loaded_status_key}
@@ -45,7 +84,15 @@
 		let:load_time
 	>
 		<div class="panel padded_md spaced">
-			<div class="controls">
+			<div
+				class="controls"
+				use:scrolled={{
+					onscreen: () => {
+						console.log(`ONSCREEN autoload`, autoload);
+						if (autoload) load();
+					},
+				}}
+			>
 				<PendingButton pending={loading || false} disabled={!!main_context} on:click={() => load()}>
 					<div class="icon_button_content">
 						<div class="icon">🦣</div>
