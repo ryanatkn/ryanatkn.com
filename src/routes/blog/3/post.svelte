@@ -25,8 +25,8 @@
 	// const id = '110729727683117713';
 	// https://hci.social/@cwebber@octodon.social/110775635568526227
 	// https://octodon.social/@cwebber/110775634939683819
-	const host = 'octodon.social';
-	const id = '110775634939683819';
+	let host = 'octodon.social';
+	let id = '110775634939683819';
 
 	const sections = [
 		{slug: 'introduction', name: 'Introduction'},
@@ -114,7 +114,7 @@
 										style:font-size="var(--size_lg)"
 										on:click={() => {
 											show_toot_details = true;
-										}}>ℹ️</button
+										}}>?</button
 									>
 								{/if}
 							</div>
@@ -125,6 +125,18 @@
 					<div class="embed_item" transition:fade>
 						<div class="embed_item_inner">
 							<p class="width_full">the Svelte code:</p>
+							<form>
+								<fieldset>
+									<label class="row">
+										<div class="title">host</div>
+										<input bind:value={host} />
+									</label>
+									<label class="row">
+										<div class="title">id</div>
+										<input bind:value={id} />
+									</label>
+								</fieldset>
+							</form>
 							<CodeExample
 								code={`<Toot
 	host=${'"' + host + '"'}
