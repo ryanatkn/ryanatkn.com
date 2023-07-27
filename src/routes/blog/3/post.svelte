@@ -191,11 +191,10 @@
 								code={`<Toot
 	host=${'"' + embedded_toot_host + '"'}
 	id=${'"' + embedded_toot_id + '"'}
-	let:item
-	let:loading
 	let:load
-	bind:loading
-	bind:load_time
+	let:loading
+	let:item
+	...
 >
 	{#if item}
 		<Comment {item} />
