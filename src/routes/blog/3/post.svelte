@@ -26,19 +26,28 @@
 	// const id = '110729727683117713';
 	// https://hci.social/@cwebber@octodon.social/110775635568526227
 	// https://octodon.social/@cwebber/110775634939683819
-	let host = 'octodon.social';
-	let id = '110775634939683819';
-	const sync_from_url = (url: string) => {
+	let embedded_toot_host = 'octodon.social';
+	let embedded_toot_id = '110775634939683819';
+	const sync_from_url = (url: string, which: 'embedded' | 'comments') => {
 		const parsed = parse_status_context_url(url);
 		if (parsed) {
-			host = parsed.host;
-			id = parsed.id;
+			if (which === 'embedded') {
+				embedded_toot_host = parsed.host;
+				embedded_toot_id = parsed.id;
+			} else if (which === 'comments') {
+				comments_toot_host = parsed.host;
+				comments_toot_id = parsed.id;
+			}
 		}
 		console.log(`parsed`, parsed);
 	};
+	let embedded_toot_url = to_status_url(embedded_toot_host, embedded_toot_id);
+	$: sync_from_url(embedded_toot_url, 'embedded');
 
-	let toot_url = to_status_url(host, id);
-	$: sync_from_url(toot_url);
+	let comments_toot_host = embedded_toot_host;
+	let comments_toot_id = embedded_toot_id;
+	let comments_toot_url = to_status_url(comments_toot_host, comments_toot_id);
+	$: sync_from_url(comments_toot_url, 'comments');
 
 	const sections = [
 		{slug: 'introduction', name: 'Introduction'},
@@ -69,14 +78,18 @@
 		</h2>
 		<p>
 			This website is a bundle of plain static files, including HTML, JavaScript, CSS, some images,
-			and <a href="{base}/blog/feed.xml">an Atom feed</a>
-			for the blog, viewable on
+			an <a href="{base}/blog/feed.xml">Atom feed</a>, and some other oddities. The files are
+			viewable on
 			<a href="https://github.com/ryanatkn/ryanatkn.com/tree/deploy"
 				>the <code>deploy</code> branch</a
 			>
 			of
-			<a href="https://github.com/ryanatkn/ryanatkn.com">the git repo</a>. Those files are then
-			hosted for free by <a href="https://pages.github.com/">GitHub Pages</a> here at
+			<a href="https://github.com/ryanatkn/ryanatkn.com">the git repo</a> and downloadable as
+			<a href="https://github.com/ryanatkn/ryanatkn.com/archive/refs/heads/deploy.zip"
+				>this zip file</a
+			>. Those files are then hosted for free by
+			<a href="https://pages.github.com/">GitHub Pages</a>
+			here at
 			<code>{$page.url.host}</code>. The cost of serving these static files is very low, so "free"
 			is a common cloud offering for static sites in 2023. Thank you GitHub for being host of the
 			day and keeping it simple.
@@ -98,7 +111,15 @@
 		<section class="embedded_status">
 			<div class="embedded_status_inner">
 				{#key loaded_status_key}
-					<Toot {host} {id} let:item let:loading let:load bind:loading bind:load_time>
+					<Toot
+						host={embedded_toot_host}
+						id={embedded_toot_id}
+						let:item
+						let:loading
+						let:load
+						bind:loading
+						bind:load_time
+					>
 						<div class="embed_item">
 							<div class="embed_item_inner">
 								{#if loading !== false}
@@ -107,7 +128,7 @@
 											<span class="mammoth">🦣</span>
 											<div>
 												<div>load toot from</div>
-												<code>{host}</code>
+												<code>{embedded_toot_host}</code>
 											</div>
 										</PendingButton>
 									</div>
@@ -161,15 +182,15 @@
 								<fieldset>
 									<label>
 										<div class="title">toot url</div>
-										<input bind:value={toot_url} placeholder=">	" />
+										<input bind:value={embedded_toot_url} placeholder=">" />
 									</label>
 								</fieldset>
 							</form>
 							<p class="width_full">the Svelte code:</p>
 							<CodeExample
 								code={`<Toot
-	host=${'"' + host + '"'}
-	id=${'"' + id + '"'}
+	host=${'"' + embedded_toot_host + '"'}
+	id=${'"' + embedded_toot_id + '"'}
 	let:item
 	let:loading
 	let:load
@@ -331,9 +352,19 @@
 		<div class="prose spaced">
 			<h2><HashLink slug="comments">Comments</HashLink></h2>
 		</div>
-		<Toots {host} {id}>
+		<Toots host={comments_toot_host} id={comments_toot_id}>
 			<div slot="settings">
-				<CodeExample code={`<Toots\n\thost="${host}"\n\tid="${id}"\n/>`} />
+				<form>
+					<fieldset>
+						<label>
+							<div class="title">toot url</div>
+							<input bind:value={comments_toot_url} placeholder=">" />
+						</label>
+					</fieldset>
+				</form>
+				<CodeExample
+					code={`<Toots\n\thost="${comments_toot_host}"\n\tid="${comments_toot_id}"\n/>`}
+				/>
 			</div>
 		</Toots>
 	</section>
