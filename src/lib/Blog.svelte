@@ -34,4 +34,5 @@
 	<BlogPost {post} {component} />
 {:else}
 	<Message status="error">no post found, is the path correct?</Message>
+	<slot />
 {/if}

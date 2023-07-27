@@ -19,12 +19,9 @@
 </div>
 <div class="wrapper">
 	{#if is_blog_post}
-		<Blog {feed}>
-			<slot />
-		</Blog>
-	{:else}
-		<slot />
+		<Blog {feed} />
 	{/if}
+	<slot />
 </div>
 <div class="breadcrumbs">
 	<Breadcrumbs><Favicon /></Breadcrumbs>
