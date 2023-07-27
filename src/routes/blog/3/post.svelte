@@ -76,7 +76,7 @@
 			>
 			of
 			<a href="https://github.com/ryanatkn/ryanatkn.com">the git repo</a>. Those files are then
-			hosted for free by <a href="https://pages.github.com/">GitHub Pages</a>, here at
+			hosted for free by <a href="https://pages.github.com/">GitHub Pages</a> here at
 			<code>{$page.url.host}</code>. The cost of serving these static files is very low, so "free"
 			is a common cloud offering for static sites in 2023. Thank you GitHub for being host of the
 			day and keeping it simple.
