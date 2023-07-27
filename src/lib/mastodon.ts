@@ -69,7 +69,7 @@ export const to_post_url = (api_url: string | null): string | null => {
  * @param url
  * @returns the parsed host and id params, if any
  */
-export const parse_status_context_url = (url: string): MastodonStatusContextParams | null => {
+export const parse_status_context_url = (url: string): MastodonStatusParams | null => {
 	try {
 		const u = new URL(url);
 		const parts = stripEnd(u.pathname, '/context').split('/');
@@ -87,7 +87,7 @@ export const parse_status_context_url = (url: string): MastodonStatusContextPara
  * @param url
  * @returns the parsed host and id params, if any
  */
-export const parse_status_url_with_author = (url: string): MastodonPostParams | null => {
+export const parse_status_url_with_author = (url: string): MastodonStatusParams | null => {
 	try {
 		const u = new URL(url);
 		const parts = stripEnd(u.pathname, '/context').split('/');
@@ -246,15 +246,10 @@ export interface MastodonFavourites {
 	}>;
 }
 
-export interface MastodonStatusContextParams {
+export interface MastodonStatusParams {
 	host: string;
 	id: string;
+	author?: string;
 }
-export interface MastodonPostParams {
-	host: string;
-	author: string;
-	id: string;
-}
-// const parse_mastodon_status = parse(MASTODON_STATUS_PATH);
 
 export type Url = Flavored<string, 'Url'>;

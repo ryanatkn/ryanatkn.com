@@ -313,11 +313,13 @@
 				<a href="https://cassidyjames.com/blog/fediverse-blog-comments-mastodon/">
 					"Toot toot! Mastodon-powered Blog Comments"
 				</a>
+				- <a href="https://cassidyjames.com/">Cassidy James</a>
 			</li>
 			<li>
 				<a href="https://jan.wildeboer.net/2023/02/Jekyll-Mastodon-Comments/">
 					"Client-side comments with Mastodon on a static Jekyll website"
 				</a>
+				- <a href="https://jan.wildeboer.net/">Jan Wildeboer</a>
 			</li>
 		</ul>
 	</section>
