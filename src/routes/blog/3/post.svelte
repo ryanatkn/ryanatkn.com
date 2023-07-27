@@ -124,19 +124,19 @@
 				{#if show_toot_details}
 					<div class="embed_item" transition:fade>
 						<div class="embed_item_inner">
-							<p class="width_full">the Svelte code:</p>
 							<form>
 								<fieldset>
-									<label class="row">
-										<div class="title">host</div>
-										<input bind:value={host} />
+									<label>
+										<div class="title">host domain</div>
+										<input bind:value={host} placeholder="> e.g. mastodon.social" />
 									</label>
-									<label class="row">
-										<div class="title">id</div>
-										<input bind:value={id} />
+									<label>
+										<div class="title">Mastodon status id</div>
+										<input bind:value={id} placeholder=">" />
 									</label>
 								</fieldset>
 							</form>
+							<p class="width_full">the Svelte code:</p>
 							<CodeExample
 								code={`<Toot
 	host=${'"' + host + '"'}
@@ -358,7 +358,7 @@
 		width: 100%;
 		display: flex;
 		flex-direction: column;
-		align-items: center;
+		align-items: flex-start;
 	}
 
 	.mammoth {
