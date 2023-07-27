@@ -55,24 +55,18 @@
 				<PendingButton pending={loading || false} disabled={!!main_context} on:click={() => load()}>
 					<div class="icon_button_content">
 						<div class="icon">🦣</div>
-						{#if main_context && replies}
-							<div>
+						<div class="content">
+							{#if main_context && replies}
 								<div>
-									{#if main_context.ancestors.length}
-										loaded {replies.length} descendants and {main_context.ancestors.length} ancestors
-									{:else}
-										loaded {replies.length} comments
-									{/if}
+									loaded {replies.length + main_context.ancestors.length} comments
 								</div>
 								<div>in {load_time === undefined ? 'unknown ' : Math.round(load_time)}ms from</div>
 								<code>{host}</code>
-							</div>
-						{:else}
-							<div>
+							{:else}
 								<div>load comments from</div>
 								<code>{host}</code>
-							</div>
-						{/if}
+							{/if}
+						</div>
 					</div>
 				</PendingButton>
 				<div class="box">
@@ -82,7 +76,7 @@
 						class:selected={show_settings}
 					>
 						<div class="icon">⚙️</div>
-						<div>
+						<div class="content">
 							<div>
 								{#if show_settings}hide{:else}show{/if}
 							</div>
@@ -148,6 +142,9 @@
 		display: flex;
 		align-items: center;
 		text-align: left;
+	}
+	.content {
+		line-height: var(--line_height);
 	}
 	.main_post {
 		padding: var(--spacing_md);
