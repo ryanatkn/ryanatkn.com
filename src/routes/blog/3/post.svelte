@@ -78,8 +78,8 @@
 		</h2>
 		<p>
 			This website is a bundle of plain static files, including HTML, JavaScript, CSS, some images,
-			an <a href="{base}/blog/feed.xml">Atom feed</a>, and some other oddities. The files are
-			viewable on
+			an <a href="{base}/blog/feed.xml">Atom feed</a>, and various oddities. The files are viewable
+			on
 			<a href="https://github.com/ryanatkn/ryanatkn.com/tree/deploy"
 				>the <code>deploy</code> branch</a
 			>
