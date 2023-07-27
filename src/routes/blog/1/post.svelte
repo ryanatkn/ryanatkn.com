@@ -357,7 +357,7 @@
 	<aside>
 		I don't know which standards will or should win with identity, that's outside of my expertise,
 		but I have to make decisions for users, and I'm currently planning on supporting <a
-			href="https://en.wikipedia.org/wiki/OpenID#OpenID_Connect_(OIDC)">OpenID Connect</a
+			href="https://wikipedia.org/wiki/OpenID#OpenID_Connect_(OIDC)">OpenID Connect</a
 		>
 		(OIDC) to complement our current password-in-a-cookie authentication. I like how the
 		<a href="https://atproto.com/">AT Protocol</a> uses domains for identity - compared to ActivityPub

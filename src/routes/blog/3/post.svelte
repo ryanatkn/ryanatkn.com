@@ -92,7 +92,8 @@
 		</aside>
 		<p>
 			Although static to its bones, this site also has dynamic behavior, thanks to the power of
-			scripting. With some JS (via Svelte in this case) we can embed a toot:
+			scripting and <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS">CORS</a>. With
+			some JS (via Svelte in this case) we can embed a toot:
 		</p>
 		<section class="embedded_status">
 			<div class="embedded_status_inner">
