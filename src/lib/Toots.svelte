@@ -147,7 +147,7 @@
 	}
 	.icon {
 		font-size: var(--icon_size_md);
-		padding: var(--spacing_sm);
+		padding: var(--spacing_sm) var(--spacing_md) var(--spacing_sm) 0;
 	}
 	.reset {
 		display: flex;

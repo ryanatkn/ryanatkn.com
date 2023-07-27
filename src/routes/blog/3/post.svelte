@@ -52,7 +52,6 @@
 	const sections = [
 		{slug: 'introduction', name: 'Introduction'},
 		{slug: 'limitations', name: 'Limitations'},
-		{slug: 'implementation', name: 'Implementation'},
 		{slug: 'conclusion', name: 'Conclusion'},
 		{slug: 'references', name: 'References'},
 		{slug: 'comments', name: 'Comments'},
@@ -243,42 +242,16 @@
 			<HashLink slug="limitations">Limitations</HashLink>
 		</h2>
 		<p>
-			I haven't spent a lot of time with Mastodon's API, so I may have chosen a subpar method of
-			implementing allowlisting. I achieved the behavior I was looking for, with some caveats:
+			I haven't spent much time with Mastodon's API, but I achieved the basic behavior I was looking
+			for, allowlisting comments that are fetched at runtime. Many things could be improved:
 		</p>
 		<ul>
-			<li>
-				Supports only one kind of moderation, allowlisting via favourites.
-				<ul>
-					<li>
-						Reactive moderation, where the author could allow all comments by default (and block to
-						show?), may be possible with the public API, but I would need to look into it more. I
-						probably wouldn't switch to a denylist - I'd prefer to set the expectation that most
-						replies won't appear here, because low effort replies would drown others out of the
-						unathenticated request limits. Reactive moderation lowers the friction enough to change
-						the experience for everyone, and also I don't want to develop a habit of moderating the
-						internet.
-					</li>
-				</ul>
-			</li>
-			<li>
-				no authentication
-				<ul>
-					<li>
-						only 60 posts can be fetched? and there's no way to get page 2? maybe I'm holding the
-						API wrong
-					</li>
-					<li>favourites are also limited (but pagination header?)</li>
-					<li>is readonly - you can't take actions directly on the page (favouriting, replying)</li>
-				</ul>
-			</li>
+			<li>supports only one kind of moderation, allowlisting via favourites by the author</li>
+			<li>does not process headers</li>
+			<li>only 60 posts are being fetched, uses no authentication (next page in headers?)</li>
+			<li>favourites are also limited (but pagination header?)</li>
+			<li>is readonly - you can't take actions directly on the page (favouriting, replying)</li>
 		</ul>
-	</section>
-	<hr />
-	<section class="prose">
-		<h2>
-			<HashLink slug="implementation">Implementation</HashLink>
-		</h2>
 		<p>
 			Here's <a href="https://github.com/ryanatkn/ryanatkn.com/pull/12/files">the GitHub PR</a>.
 		</p>
@@ -407,7 +380,7 @@
 
 	.mammoth {
 		font-size: var(--icon_size_md);
-		padding: var(--spacing_md) 0;
+		padding: var(--spacing_sm) var(--spacing_md) var(--spacing_sm) 0;
 	}
 	.reset_wrapper {
 		display: flex;

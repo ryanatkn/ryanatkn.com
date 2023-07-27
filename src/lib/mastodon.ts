@@ -20,8 +20,8 @@ export const fetch_data = async (url: string): Promise<any | null> => {
 		const res = await fetch(url, {headers});
 		if (!res.ok) return null;
 		// console.log(`res`, res);
-		// const headers = Array.from(res.headers.entries());
-		// console.log(`headers`, headers);
+		const h = Array.from(res.headers.entries());
+		console.log(`headers`, h);
 		const fetched = await res.json();
 		console.log('fetch_data FETCHED', url, fetched);
 		return fetched;
