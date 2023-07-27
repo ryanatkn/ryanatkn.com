@@ -351,9 +351,13 @@
 	}
 	.embedded_status_inner {
 		display: flex;
-		/* flex-wrap: wrap; */
 		width: 100%;
 		gap: var(--spacing_md);
+	}
+	@media (max-width: 600px) {
+		.embedded_status_inner {
+			flex-direction: column;
+		}
 	}
 	.embed_item {
 		width: 100%;
