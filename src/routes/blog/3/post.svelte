@@ -17,17 +17,17 @@
 	// TODO BLOCK `a post I made`
 
 	// https://fosstodon.org/@rauschma/110728406134660568
-	// const host = 'fosstodon.org';
-	// const id = '110728406134660568';
+	// let embedded_toot_host = 'fosstodon.org';
+	// let embedded_toot_id = '110728406134660568';
 	// tips
-	// const host = 'mstdn.social';
-	// const id = '110702983310017651';
-	// const host = 'hachyderm.io';
-	// const id = '110729727683117713';
+	let embedded_toot_host = 'mstdn.social';
+	let embedded_toot_id = '110702983310017651';
+	// let embedded_toot_host = 'hachyderm.io';
+	// let embedded_toot_id = '110729727683117713';
 	// https://hci.social/@cwebber@octodon.social/110775635568526227
 	// https://octodon.social/@cwebber/110775634939683819
-	let embedded_toot_host = 'octodon.social';
-	let embedded_toot_id = '110775634939683819';
+	// let embedded_toot_host = 'octodon.social';
+	// let embedded_toot_id = '110775634939683819';
 	const sync_from_url = (url: string, which: 'embedded' | 'comments') => {
 		const parsed = parse_status_context_url(url);
 		if (parsed) {
