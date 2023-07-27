@@ -104,9 +104,10 @@
 			recommend them with enthusiasm.
 		</aside>
 		<p>
-			Although static to its bones, this site also has dynamic behavior, thanks to the power of
-			scripting and <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS">CORS</a>. With
-			some JS (via Svelte in this case) we can embed a toot:
+			Although completely static, this site also has dynamic behavior that fetches data from the
+			wide internet, specifically my Mastodon host, thanks to the power of scripting and <a
+				href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS">CORS</a
+			>. With some JS (via Svelte in this case) we can embed a toot:
 		</p>
 		<section class="embedded_status">
 			<div class="embedded_status_inner">
@@ -208,7 +209,7 @@
 			</div>
 		</section>
 		<p>
-			But that's not all. If you click the "load comments" button below under the heading <a
+			But that's not all. If you click the "load comments" button below under the final heading <a
 				href="#comments">"Comments"</a
 			>, your browser sends a request to a
 			<a href="https://joinmastodon.org/">Mastodon</a>
