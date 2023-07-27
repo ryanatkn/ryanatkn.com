@@ -50,7 +50,7 @@
 	$: sync_from_url(comments_toot_url, 'comments');
 
 	const sections = [
-		{slug: 'introduction', name: 'Introduction'},
+		{slug: 'description', name: 'Description'},
 		{slug: 'limitations', name: 'Limitations'},
 		{slug: 'conclusion', name: 'Conclusion'},
 		{slug: 'references', name: 'References'},
@@ -73,7 +73,7 @@
 	</section>
 	<section class="prose">
 		<h2>
-			<HashLink slug="introduction">Introduction</HashLink>
+			<HashLink slug="description">Description</HashLink>
 		</h2>
 		<p>
 			This website is a bundle of plain static files, including HTML, JavaScript, CSS, some images,
