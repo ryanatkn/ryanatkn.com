@@ -64,8 +64,12 @@
 	const SHOW_TOOT_DETAILS = 'show_toot_details';
 	let show_toot_details = load_from_storage(SHOW_TOOT_DETAILS, () => true); // TODO store?
 	$: set_in_storage(SHOW_TOOT_DETAILS, show_toot_details); // TODO optimize setting
+
+	let embedded_toot_url_el: HTMLInputElement;
 </script>
 
+/** eslint-disable svelte/valid-compile */ /** eslint-disable svelte/valid-compile */ /**
+eslint-disable svelte/valid-compile */
 <div class="width_md">
 	<section class="prose">
 		<br />
@@ -180,9 +184,18 @@
 							</div>
 							<form>
 								<fieldset>
-									<label title="where to get the toot">
+									<label
+										title={embedded_toot_host
+											? 'loading the toot from ' + embedded_toot_host
+											: 'where to load the toot'}
+									>
 										<div class="title">toot url</div>
-										<input bind:value={embedded_toot_url} placeholder=">" />
+										<input
+											bind:this={embedded_toot_url_el}
+											bind:value={embedded_toot_url}
+											placeholder=">"
+											on:focus={(e) => e.currentTarget.select()}
+										/>
 									</label>
 								</fieldset>
 							</form>
@@ -331,9 +344,17 @@
 			<svelte:fragment slot="settings">
 				<form class="width_sm">
 					<fieldset>
-						<label title="where to get the toot">
+						<label
+							title={comments_toot_host
+								? 'loading the toot from ' + comments_toot_host
+								: 'where to load the toot'}
+						>
 							<div class="title">toot url</div>
-							<input bind:value={comments_toot_url} placeholder=">" />
+							<input
+								bind:value={comments_toot_url}
+								placeholder=">"
+								on:focus={(e) => e.currentTarget.select()}
+							/>
 						</label>
 					</fieldset>
 				</form>
