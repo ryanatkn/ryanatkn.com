@@ -122,7 +122,7 @@
 										class="plain icon_button"
 										style:position="absolute"
 										style:right="var(--spacing_sm)"
-										style:bottom="var(--spacing_sm)"
+										style:top="var(--spacing_sm)"
 										style:font-size="var(--size_lg)"
 										on:click={() => {
 											show_toot_details = true;
@@ -136,6 +136,27 @@
 				{#if show_toot_details}
 					<div class="embed_item" transition:fade>
 						<div class="embed_item_inner">
+							<div class="reset_wrapper">
+								<div class="reset">
+									<button
+										on:click={() => {
+											loading = undefined;
+											load_time = undefined;
+											loaded_status_key++;
+										}}
+										disabled={loading === undefined}>reset</button
+									>{#if load_time !== undefined}<div class="loaded_message" transition:slide>
+											loaded in {Math.round(load_time)}ms
+										</div>{/if}
+								</div>
+								<button
+									title="hide item details"
+									class="plain icon_button"
+									on:click={() => {
+										show_toot_details = false;
+									}}>🗙</button
+								>
+							</div>
 							<form>
 								<fieldset>
 									<label>
@@ -160,27 +181,6 @@
 	{:else ...}
 </Toot>`}
 							/>
-							<div class="reset_wrapper">
-								<div class="reset">
-									<button
-										on:click={() => {
-											loading = undefined;
-											load_time = undefined;
-											loaded_status_key++;
-										}}
-										disabled={loading === undefined}>reset</button
-									>{#if load_time !== undefined}<div class="loaded_message" transition:slide>
-											loaded in {Math.round(load_time)}ms
-										</div>{/if}
-								</div>
-								<button
-									title="hide item details"
-									class="plain icon_button"
-									on:click={() => {
-										show_toot_details = false;
-									}}>🗙</button
-								>
-							</div>
 						</div>
 					</div>
 				{/if}
