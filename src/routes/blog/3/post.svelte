@@ -103,8 +103,8 @@
 			recommend them with enthusiasm.
 		</aside>
 		<p>
-			Although completely static, this site also has dynamic behavior that fetches data from the
-			wide internet, specifically my Mastodon host, thanks to the power of scripting and <a
+			Although completely static, this site also has dynamic behavior that fetches data from Out
+			There, specifically my Mastodon host, thanks to the power of scripting and <a
 				href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS">CORS</a
 			>. With some JS (via Svelte in this case) we can embed a toot:
 		</p>
@@ -180,7 +180,7 @@
 							</div>
 							<form>
 								<fieldset>
-									<label>
+									<label title="where to get the toot">
 										<div class="title">toot url</div>
 										<input bind:value={embedded_toot_url} placeholder=">" />
 									</label>
@@ -332,7 +332,7 @@
 			<svelte:fragment slot="settings">
 				<form class="width_sm">
 					<fieldset>
-						<label>
+						<label title="where to get the toot">
 							<div class="title">toot url</div>
 							<input bind:value={comments_toot_url} placeholder=">" />
 						</label>

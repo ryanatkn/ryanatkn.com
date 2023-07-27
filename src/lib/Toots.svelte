@@ -100,7 +100,12 @@
 			</div>
 			{#if show_settings}
 				<div transition:slide class="settings controls panel">
-					<label><input type="checkbox" bind:checked={autoload} />autoload</label>
+					<label
+						title={autoload
+							? 'comments will load when you scroll them into view'
+							: 'comments are not loaded until you request them'}
+						><input type="checkbox" bind:checked={autoload} />autoload</label
+					>
 					<slot name="settings" />
 				</div>
 			{/if}
