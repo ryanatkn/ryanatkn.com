@@ -354,8 +354,8 @@
 			<h2><HashLink slug="comments">Comments</HashLink></h2>
 		</div>
 		<Toots host={comments_toot_host} id={comments_toot_id}>
-			<div slot="settings">
-				<form>
+			<svelte:fragment slot="settings">
+				<form class="width_sm">
 					<fieldset>
 						<label>
 							<div class="title">toot url</div>
@@ -366,7 +366,7 @@
 				<CodeExample
 					code={`<Toots\n\thost="${comments_toot_host}"\n\tid="${comments_toot_id}"\n/>`}
 				/>
-			</div>
+			</svelte:fragment>
 		</Toots>
 	</section>
 </div>

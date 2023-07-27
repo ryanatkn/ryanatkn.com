@@ -40,7 +40,6 @@
 
 <style>
 	.code_example {
-		width: 100%;
 		overflow: auto;
 		background-color: var(--fg_1);
 		border-radius: var(--border_radius_xs);

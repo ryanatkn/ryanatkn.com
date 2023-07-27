@@ -93,9 +93,7 @@
 			</div>
 			{#if show_settings}
 				<div transition:slide class="settings controls panel">
-					<div class="box panel padded_lg">
-						<label><input type="checkbox" bind:checked={autoload} />autoload</label>
-					</div>
+					<label><input type="checkbox" bind:checked={autoload} />autoload</label>
 					<slot name="settings" />
 				</div>
 			{/if}
