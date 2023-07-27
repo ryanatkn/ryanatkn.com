@@ -88,8 +88,8 @@
 			<a href="https://pages.github.com/">GitHub Pages</a>
 			here at
 			<code>{$page.url.host}</code>. The cost of serving these static files is very low, so "free"
-			is a common cloud offering for static sites in 2023. Thank you GitHub for being host of the
-			day and keeping it simple.
+			is a common cloud offering for static sites in 2023. Thank you GitHub for being the freeloaded
+			host of the day.
 		</p>
 		<aside>
 			The website's final output files are HTML, JS, and CSS, but <a
