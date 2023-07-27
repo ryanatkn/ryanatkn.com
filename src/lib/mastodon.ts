@@ -19,6 +19,9 @@ export const fetch_data = async (url: string): Promise<any | null> => {
 		// console.log(`CALL fetch_post`, u);
 		const res = await fetch(url, {headers});
 		if (!res.ok) return null;
+		// console.log(`res`, res);
+		// const headers = Array.from(res.headers.entries());
+		// console.log(`headers`, headers);
 		const fetched = await res.json();
 		console.log('fetch_data FETCHED', url, fetched);
 		return fetched;
@@ -172,7 +175,7 @@ export const to_api_url = (
 
 export const to_post_url = (api_url: string | null): string | null => {
 	if (!api_url) return null;
-	const parsed = parse_status_url(api_url);
+	const parsed = parse_status_url_with_author(api_url);
 	if (!parsed) return null;
 	parsed.host, parsed.id;
 	return to_status_url_with_author(parsed.host, parsed.author, parsed.id);
@@ -197,7 +200,7 @@ export const parse_status_context_url = (url: string): MastodonStatusContextPara
  * @param url
  * @returns the parsed host and id params, if any
  */
-export const parse_status_url = (url: string): MastodonPostParams | null => {
+export const parse_status_url_with_author = (url: string): MastodonPostParams | null => {
 	const u = new URL(url);
 	const parts = stripEnd(u.pathname, '/context').split('/');
 	const author = parts[0][0] === '@' ? parts[0].substring(1) : null; // eslint-disable-line @typescript-eslint/prefer-string-starts-ends-with

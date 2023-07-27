@@ -12,6 +12,7 @@
 	import Toot from '$lib/Toot.svelte';
 	import CodeExample from '$routes/blog/3/CodeExample.svelte';
 	import {load_from_storage, set_in_storage} from '$lib/storage';
+	import {parse_status_context_url, to_status_url} from '$lib/mastodon';
 
 	// TODO BLOCK `a post I made`
 
@@ -27,6 +28,17 @@
 	// https://octodon.social/@cwebber/110775634939683819
 	let host = 'octodon.social';
 	let id = '110775634939683819';
+	const sync_from_url = (url: string) => {
+		const parsed = parse_status_context_url(url);
+		if (parsed) {
+			host = parsed.host;
+			id = parsed.id;
+		}
+		console.log(`parsed`, parsed);
+	};
+
+	let toot_url = to_status_url(host, id);
+	$: sync_from_url(toot_url);
 
 	const sections = [
 		{slug: 'introduction', name: 'Introduction'},
@@ -127,12 +139,8 @@
 							<form>
 								<fieldset>
 									<label>
-										<div class="title">host domain</div>
-										<input bind:value={host} placeholder="> e.g. mastodon.social" />
-									</label>
-									<label>
-										<div class="title">Mastodon status id</div>
-										<input bind:value={id} placeholder=">" />
+										<div class="title">toot url</div>
+										<input bind:value={toot_url} placeholder=">	" />
 									</label>
 								</fieldset>
 							</form>
@@ -358,7 +366,6 @@
 		width: 100%;
 		display: flex;
 		flex-direction: column;
-		align-items: flex-start;
 	}
 
 	.mammoth {
