@@ -64,8 +64,6 @@
 	let embedded_toot_url_el: HTMLInputElement;
 </script>
 
-/** eslint-disable svelte/valid-compile */ /** eslint-disable svelte/valid-compile */ /**
-eslint-disable svelte/valid-compile */
 <div class="width_md">
 	<section class="prose">
 		<br />
