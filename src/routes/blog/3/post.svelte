@@ -59,7 +59,7 @@
 
 	const SHOW_TOOT_DETAILS = 'show_toot_details';
 	let show_toot_details = load_from_storage(SHOW_TOOT_DETAILS, () => true); // TODO store?
-	$: set_in_storage(SHOW_TOOT_DETAILS, show_toot_details); // TODO optimize setting
+	$: set_in_storage(SHOW_TOOT_DETAILS, show_toot_details); // TODO wastefully sets on init
 
 	let embedded_toot_url_el: HTMLInputElement;
 </script>

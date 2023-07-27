@@ -23,7 +23,7 @@
 
 	const SHOW_SETTINGS_KEY = 'show_settings';
 	let show_settings = load_from_storage(SHOW_SETTINGS_KEY, () => false); // TODO store?
-	$: set_in_storage(SHOW_SETTINGS_KEY, show_settings); // TODO optimize setting
+	$: set_in_storage(SHOW_SETTINGS_KEY, show_settings); // TODO wastefully sets on init
 
 	const toggle_settings = () => {
 		show_settings = !show_settings;
@@ -31,7 +31,7 @@
 
 	const AUTOLOAD_KEY = 'autoload';
 	let autoload = load_from_storage(AUTOLOAD_KEY, () => false); // TODO store?
-	$: set_in_storage(AUTOLOAD_KEY, autoload); // TODO optimize setting
+	$: set_in_storage(AUTOLOAD_KEY, autoload); // TODO wastefully sets on init
 </script>
 
 {#key loaded_status_key}
