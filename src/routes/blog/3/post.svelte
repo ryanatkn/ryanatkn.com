@@ -126,7 +126,7 @@
 										style:font-size="var(--size_lg)"
 										on:click={() => {
 											show_toot_details = true;
-										}}>?</button
+										}}>⚙️</button
 									>
 								{/if}
 							</div>
@@ -330,12 +330,12 @@
 	<section>
 		<div class="prose spaced">
 			<h2><HashLink slug="comments">Comments</HashLink></h2>
-			<details style:max-width="var(--width_sm)">
-				<summary>the Svelte code:</summary>
-				<CodeExample code={`<Toots\n\thost="${host}"\n\tid="${id}"\n/>`} />
-			</details>
 		</div>
-		<Toots {host} {id} />
+		<Toots {host} {id}>
+			<div slot="settings">
+				<CodeExample code={`<Toots\n\thost="${host}"\n\tid="${id}"\n/>`} />
+			</div>
+		</Toots>
 	</section>
 </div>
 

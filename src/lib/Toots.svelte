@@ -47,7 +47,7 @@
 		<div class="panel padded_md spaced">
 			<div class="controls">
 				<PendingButton pending={loading || false} disabled={!!main_context} on:click={() => load()}>
-					<div class="load_button_content">
+					<div class="icon_button_content">
 						<div class="icon">🦣</div>
 						{#if main_context && replies}
 							<div>
@@ -70,12 +70,19 @@
 					</div>
 				</PendingButton>
 				<div class="box">
-					<button on:click={toggle_settings} class="box deselectable" class:selected={show_settings}
-						><div>
-							{#if show_settings}hide{:else}show{/if}
-						</div>
-						<div>settings</div></button
+					<button
+						on:click={toggle_settings}
+						class="icon_button_content deselectable"
+						class:selected={show_settings}
 					>
+						<div class="icon">⚙️</div>
+						<div>
+							<div>
+								{#if show_settings}hide{:else}show{/if}
+							</div>
+							<div>settings</div>
+						</div>
+					</button>
 				</div>
 				<div class="reset">
 					<button on:click={reset} disabled={loading === null}>reset</button
@@ -85,10 +92,11 @@
 				</div>
 			</div>
 			{#if show_settings}
-				<div transition:slide class="controls box">
+				<div transition:slide class="settings controls panel">
 					<div class="box panel padded_lg">
 						<label><input type="checkbox" bind:checked={autoload} />autoload</label>
 					</div>
+					<slot name="settings" />
 				</div>
 			{/if}
 		</div>
@@ -127,8 +135,7 @@
 		flex-wrap: wrap;
 		gap: var(--spacing_md);
 	}
-	.load_button_content {
-		padding: var(--spacing_md) 0;
+	.icon_button_content {
 		display: flex;
 		align-items: center;
 		text-align: left;
@@ -142,7 +149,7 @@
 	}
 	.icon {
 		font-size: var(--icon_size_md);
-		padding-right: var(--spacing_md);
+		padding: var(--spacing_sm);
 	}
 	.reset {
 		display: flex;
@@ -154,5 +161,10 @@
 	}
 	.loaded_message {
 		margin-left: var(--spacing_md);
+	}
+	.settings {
+		display: flex;
+		padding: var(--spacing_md);
+		margin-top: var(--spacing_md);
 	}
 </style>
