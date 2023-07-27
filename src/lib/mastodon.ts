@@ -187,12 +187,16 @@ export const to_post_url = (api_url: string | null): string | null => {
  * @returns the parsed host and id params, if any
  */
 export const parse_status_context_url = (url: string): MastodonStatusContextParams | null => {
-	const u = new URL(url);
-	const parts = stripEnd(u.pathname, '/context').split('/');
-	return {
-		host: u.host,
-		id: parts[parts.length - 1],
-	};
+	try {
+		const u = new URL(url);
+		const parts = stripEnd(u.pathname, '/context').split('/');
+		return {
+			host: u.host,
+			id: parts[parts.length - 1],
+		};
+	} catch (err) {
+		return null;
+	}
 };
 
 /**
@@ -201,13 +205,17 @@ export const parse_status_context_url = (url: string): MastodonStatusContextPara
  * @returns the parsed host and id params, if any
  */
 export const parse_status_url_with_author = (url: string): MastodonPostParams | null => {
-	const u = new URL(url);
-	const parts = stripEnd(u.pathname, '/context').split('/');
-	const author = parts[0][0] === '@' ? parts[0].substring(1) : null; // eslint-disable-line @typescript-eslint/prefer-string-starts-ends-with
-	if (!author) return null;
-	const id = parts.length > 1 ? parts[parts.length - 1] : null;
-	if (!id) return null;
-	return {host: u.host, author, id};
+	try {
+		const u = new URL(url);
+		const parts = stripEnd(u.pathname, '/context').split('/');
+		const author = parts[0][0] === '@' ? parts[0].substring(1) : null; // eslint-disable-line @typescript-eslint/prefer-string-starts-ends-with
+		if (!author) return null;
+		const id = parts.length > 1 ? parts[parts.length - 1] : null;
+		if (!id) return null;
+		return {host: u.host, author, id};
+	} catch (err) {
+		return null;
+	}
 };
 
 // TODO BLOCK implement for direct links
