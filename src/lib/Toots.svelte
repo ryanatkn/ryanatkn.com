@@ -48,7 +48,7 @@
 			<div class="controls">
 				<PendingButton pending={loading || false} disabled={!!main_context} on:click={() => load()}>
 					<div class="load_button_content">
-						<div class="icon">💬</div>
+						<div class="icon">🦣</div>
 						{#if main_context && replies}
 							<div>
 								<div>
