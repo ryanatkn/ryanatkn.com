@@ -49,7 +49,6 @@
 			<div
 				class="controls"
 				use:scrolled={() => {
-					console.log(`ONSCREEN autoload`, autoload);
 					if (autoload) load();
 				}}
 			>
