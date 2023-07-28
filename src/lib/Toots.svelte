@@ -94,10 +94,11 @@
 			{#if show_settings}
 				<div transition:slide class="settings controls panel">
 					<label
+						class="row"
 						title={autoload
-							? 'comments will load when you scroll them into view'
+							? 'comments will load automatically when scrolled into view'
 							: 'comments are not loaded until you request them'}
-						><input type="checkbox" bind:checked={autoload} />autoload</label
+						><input type="checkbox" bind:checked={autoload} />autoload when scrolled into view</label
 					>
 					<slot name="settings" />
 				</div>
