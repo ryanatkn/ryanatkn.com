@@ -72,8 +72,11 @@
 		</h2>
 		<p>
 			This website is a bundle of plain static files, including HTML, JavaScript, CSS, some images,
-			an <a href="{base}/blog/feed.xml">Atom feed</a>, and various oddities. The files are viewable
-			on
+			an <a href="{base}/blog/feed.xml">Atom feed</a>, and various oddities, but it also has
+			comments from Out There thanks to Mastodon.
+		</p>
+		<p>
+			The site's files are viewable on
 			<a href="https://github.com/ryanatkn/ryanatkn.com/tree/deploy"
 				>the <code>deploy</code> branch</a
 			>
@@ -81,7 +84,10 @@
 			<a href="https://github.com/ryanatkn/ryanatkn.com">the git repo</a> and downloadable as
 			<a href="https://github.com/ryanatkn/ryanatkn.com/archive/refs/heads/deploy.zip"
 				>this zip file</a
-			>. Those files are then hosted for free by
+			>
+			(idk why'd you'd click a zip file, but you could and continue reading this offline (but you have
+			to serve the directory you can't just click <code>index.html</code>)). Those files are then
+			hosted for free by
 			<a href="https://pages.github.com/">GitHub Pages</a>
 			here at
 			<code>{$page.url.host}</code>. The cost of serving these static files is very low, so "free"
@@ -98,10 +104,15 @@
 			recommend them with enthusiasm.
 		</aside>
 		<p>
-			Although completely static, this site also has dynamic behavior that fetches data from Out
-			There, specifically my Mastodon host, thanks to the power of scripting and <a
-				href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS">CORS</a
-			>. With some JS (via Svelte in this case) we can embed a toot:
+			Although completely static, this site has the dynamic behavior of fetching data from Out
+			There, specifically my Mastodon host, thanks to the power of <button
+				class="inline plain"
+				on:click={() => {
+					alert('js runs here'); // eslint-disable-line no-alert
+				}}>scripting</button
+			>
+			and <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS">CORS</a>. With some JS
+			(via Svelte in this case) we can embed a toot:
 		</p>
 		<section class="embedded_status">
 			<div class="embedded_status_inner">

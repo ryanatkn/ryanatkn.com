@@ -65,3 +65,11 @@ probably fixable with a better image, I tried briefly but didn't get a great res
 	margin-bottom: var(--spacing_lg);
 	padding: var(--spacing_md);
 }
+
+.prose button.inline.plain {
+	padding: var(--spacing_xs2);
+	margin: 0;
+	/* TODO can't go larger without affecting line spacing, maybe fix with negative margin? */
+	height: var(--size_lg);
+	min-height: var(--size_lg);
+}
