@@ -199,17 +199,23 @@
 			</div>
 		</section>
 		<p>
-			But that's not all. If you click the "load comments" button below under the final heading <a
-				href="#comments">"Comments"</a
-			>, your browser sends a request to a
-			<a href="https://joinmastodon.org/">Mastodon</a>
-			instance at <a href="https://hachyderm.io/">hachyderm.io</a> that hosts
+			Above is the <code>Toot</code>, and below under the final heading
+			<a href="#comments">"Comments"</a>
+			is <code>Toots</code>. If you click the "load comments" button below, your browser sends a
+			request to a <a href="https://joinmastodon.org/">Mastodon</a> instance at
+			<a href="https://hachyderm.io/">hachyderm.io</a>
+			that hosts
 			<a href="https://hachyderm.io/@ryanatkn">my account</a>. Mastodon is an
 			<a href="https://wikipedia.org/wiki/ActivityPub">ActivityPub</a>-compatible app in the
-			<a href="https://wikipedia.org/wiki/Fediverse">Fediverse</a>. It requests information about a
-			<a href="https://hachyderm.io/@ryanatkn">a post I made</a> that references this blog post. If
-			the request is successful, some JavaScript runs on your machine to display the comments. My
-			host hachyderm.io has its unauthenticated API enabled (in other words, "secure mode" has not
+			<a href="https://wikipedia.org/wiki/Fediverse">Fediverse</a>.
+		</p>
+		<p>
+			Your browser requests information about a <a href="https://hachyderm.io/@ryanatkn"
+				>a post I made</a
+			>
+			at hachyderm.io that references this blog post at ryanatkn.com. If the request is successful, some
+			JavaScript runs on your machine to display the "comments", replies to my post that I've "favourited".
+			My host hachyderm.io has its unauthenticated API enabled (in other words, "secure mode" has not
 			been enabled, meaning
 			<a href="https://docs.joinmastodon.org/admin/config/#authorized_fetch"
 				><code>AUTHORIZED_FETCH</code></a
