@@ -13,6 +13,7 @@
 	import CodeExample from '$routes/blog/3/CodeExample.svelte';
 	import {load_from_storage, set_in_storage} from '$lib/storage';
 	import {parse_status_context_url, to_status_url} from '$lib/mastodon';
+	import TootInput from '$lib/TootInput.svelte';
 
 	// TODO BLOCK `a post I made`
 
@@ -175,20 +176,7 @@
 								>
 							</div>
 							<form>
-								<fieldset>
-									<label
-										title={embedded_toot_host
-											? 'loading the toot from ' + embedded_toot_host
-											: 'where to load the toot'}
-									>
-										<div class="title">toot url</div>
-										<input
-											bind:value={embedded_toot_url}
-											placeholder=">"
-											on:focus={(e) => e.currentTarget.select()}
-										/>
-									</label>
-								</fieldset>
+								<TootInput bind:host={embedded_toot_host} bind:url={embedded_toot_url} />
 							</form>
 							<p class="width_full">the Svelte code:</p>
 							<CodeExample
@@ -334,20 +322,7 @@
 		<Toots host={comments_toot_host} id={comments_toot_id}>
 			<svelte:fragment slot="settings">
 				<form class="width_sm">
-					<fieldset>
-						<label
-							title={comments_toot_host
-								? 'loading the toot from ' + comments_toot_host
-								: 'where to load the toot'}
-						>
-							<div class="title">toot url</div>
-							<input
-								bind:value={comments_toot_url}
-								placeholder=">"
-								on:focus={(e) => e.currentTarget.select()}
-							/>
-						</label>
-					</fieldset>
+					<TootInput bind:host={comments_toot_host} bind:url={comments_toot_url} />
 				</form>
 				<CodeExample
 					code={`<Toots\n\thost="${comments_toot_host}"\n\tid="${comments_toot_id}"\n/>`}
