@@ -60,8 +60,6 @@
 	const SHOW_TOOT_DETAILS = 'show_toot_details';
 	let show_toot_details = load_from_storage(SHOW_TOOT_DETAILS, () => true); // TODO store?
 	$: set_in_storage(SHOW_TOOT_DETAILS, show_toot_details); // TODO wastefully sets on init
-
-	let embedded_toot_url_el: HTMLInputElement;
 </script>
 
 <div class="width_md">
@@ -185,7 +183,6 @@
 									>
 										<div class="title">toot url</div>
 										<input
-											bind:this={embedded_toot_url_el}
 											bind:value={embedded_toot_url}
 											placeholder=">"
 											on:focus={(e) => e.currentTarget.select()}
