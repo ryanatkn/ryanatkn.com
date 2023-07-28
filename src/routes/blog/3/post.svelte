@@ -309,7 +309,7 @@
 		<ul>
 			<li>
 				<a href="https://docs.joinmastodon.org/methods/statuses/#get">GET /api/v1/statuses/:id</a> -
-				called once for an embedded status
+				called once for an embedded status and comments:
 			</li>
 			<li>
 				<a href="https://docs.joinmastodon.org/methods/statuses/#context"
