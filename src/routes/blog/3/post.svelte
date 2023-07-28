@@ -3,6 +3,7 @@
 	import {page} from '$app/stores';
 	import PendingButton from '@feltjs/felt-ui/PendingButton.svelte';
 	import {fade, slide} from 'svelte/transition';
+	import {dev} from '$app/environment';
 
 	import Toots from '$lib/Toots.svelte';
 	import HashLink from '$lib/HashLink.svelte';
@@ -17,12 +18,9 @@
 
 	// TODO BLOCK `a post I made`
 
-	// https://fosstodon.org/@rauschma/110728406134660568
-	// let embedded_toot_host = 'fosstodon.org';
-	// let embedded_toot_id = '110728406134660568';
 	// tips
-	let embedded_toot_host = 'mstdn.social';
-	let embedded_toot_id = '110702983310017651';
+	let embedded_toot_host = dev ? 'mstdn.social' : 'hachyderm.io';
+	let embedded_toot_id = dev ? '110702983310017651' : 'TODO';
 	// https://hci.social/@author@host/id
 	// https://host/@author/id
 	const sync_from_url = (url: string, which: 'embedded' | 'comments') => {
@@ -309,8 +307,7 @@
 			</li>
 		</ul>
 		<p>
-			Here's how the <a href="https://docs.joinmastodon.org/">Mastodon API</a> is used for each embedded
-			status:
+			<a href="https://docs.joinmastodon.org/">Mastodon API</a> usage:
 		</p>
 		<ul>
 			<li>
