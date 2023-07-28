@@ -302,16 +302,19 @@
 				- <a href="https://jan.wildeboer.net/">Jan Wildeboer</a>
 			</li>
 		</ul>
-		<p><a href="https://docs.joinmastodon.org/">Mastodon API</a>:</p>
+		<p>
+			Here's how the <a href="https://docs.joinmastodon.org/">Mastodon API</a> is used for each embedded
+			status:
+		</p>
 		<ul>
 			<li>
 				<a href="https://docs.joinmastodon.org/methods/statuses/#get">GET /api/v1/statuses/:id</a> -
-				called once for the embedded status
+				called once for an embedded status
 			</li>
 			<li>
 				<a href="https://docs.joinmastodon.org/methods/statuses/#context"
 					>GET /api/v1/statuses/:id/context</a
-				> - called once for the embedded status to get its descendants and ancestors
+				> - called once for comments of an embedded status to get its descendants and ancestors
 			</li>
 			<li>
 				<a href="https://docs.joinmastodon.org/methods/statuses/#favourited_by"
