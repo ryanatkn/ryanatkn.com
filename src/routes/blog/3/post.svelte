@@ -219,12 +219,10 @@
 		</p>
 		<p>
 			Not every reply to my post appears in the comments section below. It displays only those that
-			I've explicitly favourited, aka liked or starred (here's <a
-				href="https://docs.joinmastodon.org/methods/statuses/#favourited_by">the API endpoint</a
-			>). This way, I have an allowlist managed by my Mastodon account, the same place I
-			microblogged about this blog post, a place out there on the internet that magically operates
-			free infrastructure for us, much like the free black box that is GitHub pages. (free, but
-			also, financially supporting admins is good luck)
+			I've explicitly favourited, aka liked or starred. This way, I have an allowlist managed by my
+			Mastodon account, the same place I microblogged about this blog post, a place out there on the
+			internet that magically operates free infrastructure for us, much like the free black box that
+			is GitHub pages. (free, but also, financially supporting admins is good luck)
 		</p>
 	</section>
 	<hr />
@@ -280,15 +278,6 @@
 			particular user had favourited - I make an API call for every post with 1+ likes to see if the
 			author is among them.
 		</p>
-		<p>
-			If you're technically-minded, you may be interested in <a
-				href="https://ryanatkn.github.io/corpus-activity-streams">these alternative docs</a
-			>
-			that I maintain for the
-			<a href="https://wikipedia.org/wiki/ActivityStreams">ActivityStreams</a>
-			vocabulary of Mastodon's protocol
-			<a href="https://wikipedia.org/wiki/ActivityPub">ActivityPub</a>.
-		</p>
 	</section>
 	<hr />
 	<section class="prose">
@@ -296,8 +285,8 @@
 			<HashLink slug="references">References</HashLink>
 		</h2>
 		<p>
-			I took the main ideas from the following posts, and added favourite-to-allowlist for basic
-			moderation.
+			I took the main idea of client-side comments from the following posts, and added
+			favourite-to-allowlist for basic moderation:
 		</p>
 		<ul>
 			<li>
@@ -313,6 +302,32 @@
 				- <a href="https://jan.wildeboer.net/">Jan Wildeboer</a>
 			</li>
 		</ul>
+		<p><a href="https://docs.joinmastodon.org/">Mastodon API</a>:</p>
+		<ul>
+			<li>
+				<a href="https://docs.joinmastodon.org/methods/statuses/#get">GET /api/v1/statuses/:id</a> -
+				called once for the embedded status
+			</li>
+			<li>
+				<a href="https://docs.joinmastodon.org/methods/statuses/#context"
+					>GET /api/v1/statuses/:id/context</a
+				> - called once for the embedded status to get its descendants and ancestors
+			</li>
+			<li>
+				<a href="https://docs.joinmastodon.org/methods/statuses/#favourited_by"
+					>GET /api/v1/statuses/:id/favourited_by</a
+				> - called for each descendent not by main author that has at least one favourite
+			</li>
+		</ul>
+		<p>
+			If you're technically-minded, you may be interested in <a
+				href="https://ryanatkn.github.io/corpus-activity-streams">these alternative docs</a
+			>
+			that I maintain for the
+			<a href="https://wikipedia.org/wiki/ActivityStreams">ActivityStreams</a>
+			vocabulary of Mastodon's protocol
+			<a href="https://wikipedia.org/wiki/ActivityPub">ActivityPub</a>.
+		</p>
 	</section>
 	<hr />
 	<section>
