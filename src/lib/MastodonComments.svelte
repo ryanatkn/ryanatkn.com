@@ -11,9 +11,7 @@
 		fetch_favourites,
 	} from '$lib/mastodon';
 
-	// TODO BLOCK handle difference with https://mstdn.social/@feditips/110702983310017651 and  https://hci.social/api/v1/statuses/110702983310017651/context
-
-	// TODO these are a mess
+	// TODO BLOCK maybe a Load prefix or Loader suffix for this component pattern?
 
 	/**
 	 * The url to a Mastodon post,
