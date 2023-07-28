@@ -31,8 +31,11 @@ export const fetch_data = async (url: string): Promise<any | null> => {
 };
 
 // TODO BLOCK
-// "uri": "https://mastodon.social/users/IamAcand/statuses/110706442663131465",
-// "url": "https://mastodon.social/@IamAcand/110706442663131465",
+// https://${host}/users/${author}/statuses/${id} // uri
+// https://${host}/@${author}/${id} // url
+// https://${host}/api/v1/statuses/${id} // status endpoint
+// https://${host}/api/v1/statuses/${id}/context // status context endpoint
+// https://${host}/api/v1/statuses/${id}/favourited_by // status favourited by endpoint
 
 // TODO BLOCK name
 export const to_status_url = (host: string, id: string): string =>
