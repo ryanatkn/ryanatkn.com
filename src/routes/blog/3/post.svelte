@@ -319,7 +319,7 @@
 			<li>
 				<a href="https://docs.joinmastodon.org/methods/statuses/#favourited_by"
 					>GET /api/v1/statuses/:id/favourited_by</a
-				> - called for each descendent not by main author that has at least one favourite
+				> - called for each descendent not by the main author that has at least one favourite
 			</li>
 		</ul>
 		<p>
