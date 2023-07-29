@@ -108,7 +108,7 @@
 										<div>loaded {replies.length + context.ancestors.length} toots from</div>
 										<code>{host}</code>
 									{:else}
-										<div>load replies from</div>
+										<div>load toots from</div>
 										<code>{host}</code>
 									{/if}
 								</div>
