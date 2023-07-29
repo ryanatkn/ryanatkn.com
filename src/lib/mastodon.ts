@@ -67,8 +67,9 @@ export const to_post_url = (api_url: string | null): string | null => {
 	if (!api_url) return null;
 	const parsed = parse_status_url_with_author(api_url);
 	if (!parsed) return null;
-	parsed.host, parsed.id;
-	return to_status_url_with_author(parsed.host, parsed.author, parsed.id);
+	return parsed.author
+		? to_status_url_with_author(parsed.host, parsed.author, parsed.id)
+		: to_status_url(parsed.host, parsed.id);
 };
 
 /**
@@ -80,6 +81,7 @@ export const parse_status_context_url = (url: string): MastodonStatusParams | nu
 	try {
 		const u = new URL(url);
 		const parts = stripEnd(u.pathname, '/context').split('/');
+		// TODO BLOCK also author if available
 		return {
 			host: u.host,
 			id: parts[parts.length - 1],

@@ -1,34 +1,265 @@
 <script lang="ts">
-	import {fetch_status, type MastodonStatus} from '$lib/mastodon';
+	import PendingButton from '@feltjs/felt-ui/PendingButton.svelte';
+	import {slide} from 'svelte/transition';
 
-	export let host: string;
-	export let id: string;
+	import MastodonStatusTree from '$lib/MastodonStatusTree.svelte';
+	import MastodonStatusItem from '$lib/MastodonStatusItem.svelte';
+	import MastodonComments from '$lib/MastodonComments.svelte';
+	import {load_from_storage, set_in_storage} from '$lib/storage';
+	import {scrolled} from '$lib/scrolled';
+	import {parse_status_context_url, to_status_url} from '$lib/mastodon';
+	import TootLoader from '$lib/TootLoader.svelte';
 
-	/**
-	 * @readonly
-	 */
+	export let url: string | undefined = undefined;
+	export let host: string | undefined = undefined;
+	export let id: string | undefined = undefined;
+	// TODO BLOCK also author?
+
+	export let replies = false;
+	export let ancestors = true; // if `replies` is true, should we also display ancestors?
+
+	export let show_toot_details: boolean | undefined = undefined;
+
+	export let loaded_status_key = 1;
 	export let loading: boolean | undefined = undefined;
-
-	/**
-	 * @readonly
-	 */
-	export let item: MastodonStatus | undefined | null = undefined;
-
-	/**
-	 * @readonly
-	 */
 	export let load_time: number | undefined = undefined;
 
-	// TODO handle error messages
-	const load = async (): Promise<MastodonStatus | null> => {
-		loading = true;
-		const load_time_start = performance.now();
-		load_time = undefined;
-		item = await fetch_status(host, id);
-		load_time = performance.now() - load_time_start;
-		loading = false;
-		return item;
+	// TODO BLOCK show a link to the original post, with the count of posts hidden (and a message if it maxed out, with a link to the blog post for discussion?)
+
+	// TODO BLOCK chronological, nested, updated, reverse chrono
+
+	const reset = () => {
+		loaded_status_key++;
 	};
+
+	const SHOW_SETTINGS_KEY = 'show_settings';
+	let show_settings = load_from_storage(SHOW_SETTINGS_KEY, () => false); // TODO store?
+	$: set_in_storage(SHOW_SETTINGS_KEY, show_settings); // TODO wastefully sets on init
+
+	const toggle_settings = () => {
+		show_settings = !show_settings;
+	};
+
+	const AUTOLOAD_KEY = 'autoload';
+	let autoload = load_from_storage(AUTOLOAD_KEY, () => false); // TODO store?
+	$: set_in_storage(AUTOLOAD_KEY, autoload); // TODO wastefully sets on init
+
+	const parse = (_url: string | undefined, _host: string | undefined, _id: string | undefined) => {
+		if (!(_url || (_host && _id))) {
+			console.error('either `url` or `host` and `id` are required by Toot.svelte');
+		}
+		if (url === _url && host === _host && id === _id) {
+			return;
+		}
+		// TODO parse
+		if (_url) {
+			const parsed = parse_status_context_url(_url);
+			if (parsed) {
+				host = parsed?.host;
+				id = parsed?.id;
+			} else {
+				throw Error(); // TODO BLOCK ?
+			}
+		} else {
+			url = to_status_url(_host!, _id!);
+		}
+		console.log(`_url, _host, _id`, _url, _host, _id);
+	};
+
+	$: parse(url, host, id);
+
+	// TODO BLOCK merge teh two below
 </script>
 
-<slot {item} {loading} {load} {load_time} />
+{#if id && host}
+	{#key loaded_status_key}
+		{#if replies}
+			<MastodonComments
+				{host}
+				{id}
+				let:main_status
+				let:main_context
+				let:replies
+				let:load
+				let:loading
+				let:load_time
+			>
+				<div class="panel padded_md spaced">
+					<div
+						class="controls"
+						use:scrolled={() => {
+							if (autoload) load();
+						}}
+					>
+						<PendingButton
+							pending={loading || false}
+							disabled={!!main_context}
+							on:click={() => load()}
+						>
+							<div class="icon_button_content">
+								<div class="icon">🦣</div>
+								<div class="content">
+									{#if main_context && replies}
+										<div>
+											loaded {replies.length + main_context.ancestors.length} comments
+										</div>
+										<div>
+											in {load_time === undefined ? 'unknown ' : Math.round(load_time)}ms from
+										</div>
+										<code>{host}</code>
+									{:else}
+										<div>load comments from</div>
+										<code>{host}</code>
+									{/if}
+								</div>
+							</div>
+						</PendingButton>
+						<div class="box">
+							<button
+								on:click={toggle_settings}
+								class="icon_button_content deselectable"
+								class:selected={show_settings}
+							>
+								<div class="icon">⚙️</div>
+								<div class="content">
+									<div>
+										{#if show_settings}hide{:else}show{/if}
+									</div>
+									<div>settings</div>
+								</div>
+							</button>
+						</div>
+						<div class="reset">
+							<button on:click={reset} disabled={loading === null}>reset</button
+							>{#if load_time !== undefined}<div class="loaded_message" transition:slide>
+									loaded in {Math.round(load_time)}ms
+								</div>{/if}
+						</div>
+					</div>
+					{#if show_settings}
+						<div transition:slide class="settings controls panel">
+							<label
+								class="row"
+								title={autoload
+									? 'comments will load automatically when scrolled into view'
+									: 'comments are not loaded until you request them'}
+								><input type="checkbox" bind:checked={autoload} />autoload when scrolled into view</label
+							>
+							<slot name="settings" />
+						</div>
+					{/if}
+				</div>
+				{#if main_context}
+					<ul class="statuses" transition:slide>
+						{#if ancestors}
+							<!-- TODO style differently or something -->
+							{#each main_context.ancestors as item}
+								<li>
+									<MastodonStatusItem {item} />
+								</li>
+							{/each}
+						{/if}
+						{#if main_status}
+							<div class="main_post panel">
+								<div class="panel main_post_inner">
+									<MastodonStatusItem item={main_status} />
+								</div>
+							</div>
+						{/if}
+						{#if main_status && replies}
+							<MastodonStatusTree item={main_status} items={replies} />
+						{/if}
+					</ul>
+				{/if}
+			</MastodonComments>
+		{:else}
+			<TootLoader {host} {id} let:item let:loading let:load bind:loading bind:load_time>
+				<div class="embed_item">
+					<div class="embed_item_inner">
+						{#if loading !== false}
+							<div transition:slide class="box">
+								<PendingButton pending={!!loading} on:click={load}>
+									<span class="mammoth">🦣</span>
+									<div>
+										<div>load toot from</div>
+										<code>{host}</code>
+									</div>
+								</PendingButton>
+							</div>
+						{:else if item}
+							<div transition:slide class="width_full">
+								<MastodonStatusItem {item} />
+							</div>
+						{/if}
+						{#if !show_toot_details}
+							<button
+								title="show item details"
+								class="plain icon_button"
+								style:position="absolute"
+								style:right="var(--spacing_sm)"
+								style:top="var(--spacing_sm)"
+								style:font-size="var(--size_lg)"
+								on:click={() => {
+									show_toot_details = true;
+								}}>⚙️</button
+							>
+						{/if}
+					</div>
+				</div>
+			</TootLoader>
+		{/if}
+	{/key}
+{/if}
+
+<style>
+	.statuses {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		align-items: flex-start;
+	}
+	.controls {
+		display: flex;
+		flex-wrap: wrap;
+		gap: var(--spacing_md);
+	}
+	.icon_button_content {
+		display: flex;
+		align-items: center;
+		text-align: left;
+	}
+	.content {
+		line-height: var(--line_height);
+	}
+	.main_post {
+		padding: var(--spacing_md);
+	}
+	.main_post_inner {
+		background-color: var(--bg);
+		padding: var(--spacing_xs);
+	}
+	.icon {
+		font-size: var(--icon_size_md);
+		padding: var(--spacing_sm) var(--spacing_md) var(--spacing_sm) 0;
+	}
+	.reset {
+		display: flex;
+		align-items: center;
+	}
+	/* TODO hacky */
+	.reset :global(button) {
+		margin-bottom: 0;
+	}
+	.loaded_message {
+		margin-left: var(--spacing_md);
+	}
+	.settings {
+		display: flex;
+		padding: var(--spacing_md);
+		margin-top: var(--spacing_md);
+	}
+	.mammoth {
+		font-size: var(--icon_size_md);
+		padding: var(--spacing_sm) var(--spacing_md) var(--spacing_sm) 0;
+	}
+</style>

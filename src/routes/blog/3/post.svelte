@@ -1,16 +1,13 @@
 <script lang="ts">
 	import {base} from '$app/paths';
 	import {page} from '$app/stores';
-	import PendingButton from '@feltjs/felt-ui/PendingButton.svelte';
 	import {fade, slide} from 'svelte/transition';
 	import {dev} from '$app/environment';
 
-	import Toots from '$lib/Toots.svelte';
+	import Toot from '$lib/Toot.svelte';
 	import HashLink from '$lib/HashLink.svelte';
 	import BlogPostIndex from '$lib/BlogPostIndex.svelte';
 	import {prod_content_security_policy} from '$routes/security';
-	import Comment from '$lib/MastodonStatusItem.svelte';
-	import Toot from '$lib/Toot.svelte';
 	import CodeExample from '$routes/blog/3/CodeExample.svelte';
 	import {load_from_storage, set_in_storage} from '$lib/storage';
 	import {parse_status_context_url, to_status_url} from '$lib/mastodon';
@@ -59,6 +56,8 @@
 	const SHOW_TOOT_DETAILS = 'show_toot_details';
 	let show_toot_details = load_from_storage(SHOW_TOOT_DETAILS, () => true); // TODO store?
 	$: set_in_storage(SHOW_TOOT_DETAILS, show_toot_details); // TODO wastefully sets on init
+
+	// TODO BLOCK see `div class="reset"` below
 </script>
 
 <div class="width_md">
@@ -116,50 +115,14 @@
 		</p>
 		<section class="embedded_status">
 			<div class="embedded_status_inner">
-				{#key loaded_status_key}
-					<Toot
-						host={embedded_toot_host}
-						id={embedded_toot_id}
-						let:item
-						let:loading
-						let:load
-						bind:loading
-						bind:load_time
-					>
-						<div class="embed_item">
-							<div class="embed_item_inner">
-								{#if loading !== false}
-									<div transition:slide class="box">
-										<PendingButton pending={!!loading} on:click={load}>
-											<span class="mammoth">🦣</span>
-											<div>
-												<div>load toot from</div>
-												<code>{embedded_toot_host}</code>
-											</div>
-										</PendingButton>
-									</div>
-								{:else if item}
-									<div transition:slide class="width_full">
-										<Comment {item} />
-									</div>
-								{/if}
-								{#if !show_toot_details}
-									<button
-										title="show item details"
-										class="plain icon_button"
-										style:position="absolute"
-										style:right="var(--spacing_sm)"
-										style:top="var(--spacing_sm)"
-										style:font-size="var(--size_lg)"
-										on:click={() => {
-											show_toot_details = true;
-										}}>⚙️</button
-									>
-								{/if}
-							</div>
-						</div>
-					</Toot>
-				{/key}
+				<Toot
+					host={embedded_toot_host}
+					id={embedded_toot_id}
+					bind:loading
+					bind:load_time
+					bind:loaded_status_key
+					bind:show_toot_details
+				/>
 				{#if show_toot_details}
 					<div class="embed_item" transition:fade>
 						<div class="embed_item_inner">
@@ -351,16 +314,16 @@
 		<div class="prose spaced">
 			<h2><HashLink slug="comments">Comments</HashLink></h2>
 		</div>
-		<Toots host={comments_toot_host} id={comments_toot_id}>
+		<Toot host={comments_toot_host} id={comments_toot_id} replies>
 			<svelte:fragment slot="settings">
 				<form class="width_sm">
 					<TootInput bind:host={comments_toot_host} bind:url={comments_toot_url} />
 				</form>
 				<CodeExample
-					code={`<Toots\n\thost="${comments_toot_host}"\n\tid="${comments_toot_id}"\n/>`}
+					code={`<Toot\n\thost="${comments_toot_host}"\n\tid="${comments_toot_id}"\n/>`}
 				/>
 			</svelte:fragment>
-		</Toots>
+		</Toot>
 	</section>
 </div>
 
@@ -398,10 +361,6 @@
 		flex-direction: column;
 	}
 
-	.mammoth {
-		font-size: var(--icon_size_md);
-		padding: var(--spacing_sm) var(--spacing_md) var(--spacing_sm) 0;
-	}
 	.reset_wrapper {
 		display: flex;
 		justify-content: space-between;
