@@ -87,14 +87,14 @@
 								<div class="content">
 									{#if context && replies}
 										<div>
-											loaded {replies.length + context.ancestors.length} comments
+											loaded {replies.length + context.ancestors.length} replies
 										</div>
 										<div>
 											in {load_time === undefined ? 'unknown ' : Math.round(load_time)}ms from
 										</div>
 										<code>{host}</code>
 									{:else}
-										<div>load comments from</div>
+										<div>load replies from</div>
 										<code>{host}</code>
 									{/if}
 								</div>
@@ -127,8 +127,8 @@
 							<label
 								class="row"
 								title={autoload
-									? 'comments will load automatically when scrolled into view'
-									: 'comments are not loaded until you request them'}
+									? 'replies will load automatically when scrolled into view'
+									: 'replies are not loaded until you request them'}
 								><input type="checkbox" bind:checked={autoload} />autoload when scrolled into view</label
 							>
 							<slot name="settings" />

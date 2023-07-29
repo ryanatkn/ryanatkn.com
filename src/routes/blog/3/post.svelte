@@ -20,15 +20,15 @@
 	let embedded_toot_id = dev ? '110702983310017651' : 'TODO';
 	// https://hci.social/@author@host/id
 	// https://host/@author/id
-	const sync_from_url = (url: string, which: 'embedded' | 'comments') => {
+	const sync_from_url = (url: string, which: 'embedded' | 'replies') => {
 		const parsed = parse_status_context_url(url);
 		if (parsed) {
 			if (which === 'embedded') {
 				embedded_toot_host = parsed.host;
 				embedded_toot_id = parsed.id;
-			} else if (which === 'comments') {
-				comments_toot_host = parsed.host;
-				comments_toot_id = parsed.id;
+			} else if (which === 'replies') {
+				replies_toot_host = parsed.host;
+				replies_toot_id = parsed.id;
 			}
 		}
 		console.log(`parsed`, parsed);
@@ -36,17 +36,17 @@
 	let embedded_toot_url = to_status_url(embedded_toot_host, embedded_toot_id);
 	$: sync_from_url(embedded_toot_url, 'embedded');
 
-	let comments_toot_host = embedded_toot_host;
-	let comments_toot_id = embedded_toot_id;
-	let comments_toot_url = to_status_url(comments_toot_host, comments_toot_id);
-	$: sync_from_url(comments_toot_url, 'comments');
+	let replies_toot_host = embedded_toot_host;
+	let replies_toot_id = embedded_toot_id;
+	let replies_toot_url = to_status_url(replies_toot_host, replies_toot_id);
+	$: sync_from_url(replies_toot_url, 'replies');
 
 	const sections = [
 		{slug: 'description', name: 'Description'},
 		{slug: 'limitations', name: 'Limitations'},
 		{slug: 'conclusion', name: 'Conclusion'},
 		{slug: 'references', name: 'References'},
-		{slug: 'comments', name: 'Comments'},
+		{slug: 'replies', name: 'Replies'},
 	];
 
 	let loaded_status_key = 1;
@@ -71,8 +71,8 @@
 		</h2>
 		<p>
 			This website is a bundle of plain static files, including HTML, JavaScript, CSS, some images,
-			an <a href="{base}/blog/feed.xml">Atom feed</a>, and various oddities, but it also has
-			comments from Out There thanks to Mastodon.
+			an <a href="{base}/blog/feed.xml">Atom feed</a>, and various oddities, but it also has replies
+			from Out There thanks to Mastodon.
 		</p>
 		<p>
 			The site's files are viewable on
@@ -172,8 +172,8 @@
 		</section>
 		<p>
 			Above is the <code>Toot</code>, and below under the final heading
-			<a href="#comments">"Comments"</a>
-			is <code>Toots</code>. If you click the "load comments" button below, your browser sends a
+			<a href="#replies">"Replies"</a>
+			is <code>Toots</code>. If you click the "load replies" button below, your browser sends a
 			request to a <a href="https://joinmastodon.org/">Mastodon</a> instance at
 			<a href="https://hachyderm.io/">hachyderm.io</a>
 			that hosts
@@ -186,7 +186,7 @@
 				>a post I made</a
 			>
 			at hachyderm.io that references this blog post at ryanatkn.com. If the request is successful, some
-			JavaScript runs on your machine to display the "comments", replies to my post that I've "favourited".
+			JavaScript runs on your machine to display the "replies", replies to my post that I've "favourited".
 			My host hachyderm.io has its unauthenticated API enabled (in other words, "secure mode" has not
 			been enabled, meaning
 			<a href="https://docs.joinmastodon.org/admin/config/#authorized_fetch"
@@ -196,7 +196,7 @@
 			complexity.
 		</p>
 		<p>
-			Not every reply to my post appears in the comments section below. It displays only those that
+			Not every reply to my post appears in the replies section below. It displays only those that
 			I've explicitly favourited, aka liked or starred. This way, I have an allowlist managed by my
 			Mastodon account, the same place I microblogged about this blog post, a place out there on the
 			internet that magically operates free infrastructure for us, much like the free black box that
@@ -210,7 +210,7 @@
 		</h2>
 		<p>
 			I haven't spent much time with Mastodon's API, but I achieved the basic behavior I was looking
-			for, allowlisting comments that are fetched at runtime. Many things could be improved:
+			for, allowlisting replies that are fetched at runtime. Many things could be improved:
 		</p>
 		<ul>
 			<li>supports only one kind of moderation, allowlisting via favourites by the author</li>
@@ -244,7 +244,7 @@
 			<HashLink slug="conclusion">Conclusion</HashLink>
 		</h2>
 		<p>
-			Recapping, this is a static site hosted by GitHub with embedded toots and comments
+			Recapping, this is a static site hosted by GitHub with embedded toots and replies
 			dynamically-loaded-on-demand from Mastodon on <a href="https://hachyderm.io/">hachyderm.io</a>
 			with an allowlist managed by the author through Mastodon favourites. They charge no money for these
 			services, and you can fund them in different ways.
@@ -263,19 +263,19 @@
 			<HashLink slug="references">References</HashLink>
 		</h2>
 		<p>
-			I took the main idea of client-side comments from the following posts, and added
+			I took the main idea of client-side replies from the following posts, and added
 			favourite-to-allowlist for basic moderation:
 		</p>
 		<ul>
 			<li>
-				<a href="https://cassidyjames.com/blog/fediverse-blog-comments-mastodon/">
-					"Toot toot! Mastodon-powered Blog Comments"
+				<a href="https://cassidyjames.com/blog/fediverse-blog-replies-mastodon/">
+					"Toot toot! Mastodon-powered Blog Replies"
 				</a>
 				- <a href="https://cassidyjames.com/">Cassidy James</a>
 			</li>
 			<li>
-				<a href="https://jan.wildeboer.net/2023/02/Jekyll-Mastodon-Comments/">
-					"Client-side comments with Mastodon on a static Jekyll website"
+				<a href="https://jan.wildeboer.net/2023/02/Jekyll-Mastodon-Replies/">
+					"Client-side replies with Mastodon on a static Jekyll website"
 				</a>
 				- <a href="https://jan.wildeboer.net/">Jan Wildeboer</a>
 			</li>
@@ -286,12 +286,12 @@
 		<ul>
 			<li>
 				<a href="https://docs.joinmastodon.org/methods/statuses/#get">GET /api/v1/statuses/:id</a> -
-				called once for an embedded status and comments:
+				called once for an embedded status and replies:
 			</li>
 			<li>
 				<a href="https://docs.joinmastodon.org/methods/statuses/#context"
 					>GET /api/v1/statuses/:id/context</a
-				> - called once for comments of an embedded status to get its descendants and ancestors
+				> - called once for replies of an embedded status to get its descendants and ancestors
 			</li>
 			<li>
 				<a href="https://docs.joinmastodon.org/methods/statuses/#favourited_by"
@@ -312,16 +312,14 @@
 	<hr />
 	<section>
 		<div class="prose spaced">
-			<h2><HashLink slug="comments">Comments</HashLink></h2>
+			<h2><HashLink slug="replies">Replies</HashLink></h2>
 		</div>
-		<Toot host={comments_toot_host} id={comments_toot_id} replies>
+		<Toot host={replies_toot_host} id={replies_toot_id} replies>
 			<svelte:fragment slot="settings">
 				<form class="width_sm">
-					<TootInput bind:host={comments_toot_host} bind:url={comments_toot_url} />
+					<TootInput bind:host={replies_toot_host} bind:url={replies_toot_url} />
 				</form>
-				<CodeExample
-					code={`<Toot\n\thost="${comments_toot_host}"\n\tid="${comments_toot_id}"\n/>`}
-				/>
+				<CodeExample code={`<Toot\n\thost="${replies_toot_host}"\n\tid="${replies_toot_id}"\n/>`} />
 			</svelte:fragment>
 		</Toot>
 	</section>

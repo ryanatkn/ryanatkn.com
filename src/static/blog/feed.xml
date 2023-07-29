@@ -24,7 +24,7 @@
     <published>2023-07-24T01:50:35.017Z</published>
     <updated>2023-07-24T01:50:35.017Z</updated>
     <summary
-		>How I implemented allowlisted comments on my static blog using Mastodon with TypeScript, Svelte, and SvelteKit.</summary>
+		>How I implemented comments with an allowlist on my static blog using Mastodon with TypeScript, Svelte, and SvelteKit.</summary>
     <category term="web" /><category term="blog comments" /><category term="Mastodon" /><category
 			term="ActivityPub"
 		/><category term="ActivityStreams" /><category term="Fediverse" /><category
