@@ -14,8 +14,15 @@
 	export let id: string | undefined = undefined;
 	// TODO BLOCK also author?
 
+	/**
+	 * Whether to fetch and display replies aka descendants in the status context.
+	 */
 	export let replies = false;
-	export let ancestors = true; // if `replies` is true, should we also display ancestors?
+
+	/**
+	 * Whether to fetch and display the ancestors in the status context.
+	 */
+	export let ancestors = false;
 
 	export let show_toot_details: boolean | undefined = undefined;
 
@@ -72,8 +79,18 @@
 
 {#if id && host}
 	{#key loaded_status_key}
-		{#if replies}
-			<TootLoader {host} {id} let:item let:context let:replies let:load let:loading let:load_time>
+		<TootLoader
+			{host}
+			{id}
+			with_context={replies || ancestors}
+			let:item
+			let:context
+			let:replies
+			let:load
+			let:loading
+			let:load_time
+		>
+			{#if replies}
 				<div class="panel padded_md spaced">
 					<div
 						class="controls"
@@ -157,9 +174,7 @@
 						{/if}
 					</ul>
 				{/if}
-			</TootLoader>
-		{:else}
-			<TootLoader {host} {id} let:item let:loading let:load bind:loading bind:load_time>
+			{:else}
 				<div class="embed_item">
 					<div class="embed_item_inner">
 						{#if loading !== false}
@@ -192,8 +207,8 @@
 						{/if}
 					</div>
 				</div>
-			</TootLoader>
-		{/if}
+			{/if}
+		</TootLoader>
 	{/key}
 {/if}
 
@@ -247,5 +262,19 @@
 	.mammoth {
 		font-size: var(--icon_size_md);
 		padding: var(--spacing_sm) var(--spacing_md) var(--spacing_sm) 0;
+	}
+	/* TODO hacky */
+	.embed_item {
+		width: 100%;
+		position: relative;
+		background-color: var(--bg);
+		border-radius: var(--border_radius_sm);
+		padding: var(--spacing_xs);
+		overflow: hidden;
+	}
+	.embed_item_inner {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
 	}
 </style>

@@ -20,6 +20,11 @@
 	export let id: string;
 
 	/**
+	 * Should we also fetch the status's context, getting its ancestors and descendants?
+	 */
+	export let with_context = false;
+
+	/**
 	 * @readonly
 	 */
 	export let loading: boolean | undefined = undefined;
@@ -81,7 +86,10 @@
 		if (!browser) return;
 		const start_time = performance.now();
 		loading = true;
-		[context, item] = await Promise.all([fetch_status_context(host, id), fetch_status(host, id)]);
+		[context, item] = await Promise.all([
+			with_context ? fetch_status_context(host, id) : null,
+			fetch_status(host, id),
+		]);
 		if (item && context) {
 			replies = await to_validated_replies(item, context.descendants);
 		} else {
