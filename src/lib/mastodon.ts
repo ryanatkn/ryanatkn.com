@@ -110,14 +110,6 @@ export const parse_status_url_with_author = (url: string): MastodonStatusParams 
 	}
 };
 
-// TODO BLOCK implement for direct links
-export const fetch_status_context_by_url = async (url: string): Promise<MastodonContext | null> => {
-	const parsed = parse_status_context_url(url);
-	if (!parsed) return null;
-	const {host, id} = parsed;
-	return fetch_status_context(host, id);
-};
-
 // TODO BLOCK go through a single fetch helper and trace each call to the API,
 // so we can see the history in a tab displayed to any users who want to dig
 
@@ -130,15 +122,6 @@ export const fetch_status_context = async (
 };
 
 export const fetch_status = async (host: string, id: string): Promise<MastodonStatus | null> => {
-	const u = to_status_url(host, id);
-	return fetch_data(u);
-};
-
-// TODO BLOCK implement for direct links
-export const fetch_status_by_url = async (url: string): Promise<MastodonStatus | null> => {
-	const parsed = parse_status_context_url(url);
-	if (!parsed) return null;
-	const {host, id} = parsed;
 	const u = to_status_url(host, id);
 	return fetch_data(u);
 };
