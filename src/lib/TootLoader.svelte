@@ -86,9 +86,9 @@
 		if (!browser) return;
 		const start_time = performance.now();
 		loading = true;
-		[context, item] = await Promise.all([
-			with_context ? fetch_status_context(host, id) : null,
+		[item, context] = await Promise.all([
 			fetch_status(host, id),
+			with_context ? fetch_status_context(host, id) : null,
 		]);
 		if (item && context) {
 			replies = await filter_valid_replies(item, context.descendants);
