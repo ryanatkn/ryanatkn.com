@@ -21,7 +21,7 @@
 			</li>
 		{/each}
 	</ol>
-	<blockquote><a href="{base}/blog/feed.xml">Atom feed</a></blockquote>
+	<blockquote><a href="{base}/blog/feed.xml" download>Atom feed</a></blockquote>
 </div>
 
 <style>

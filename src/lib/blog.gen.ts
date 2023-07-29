@@ -2,7 +2,7 @@ import type {Gen} from '@feltjs/gro';
 import {stripStart, stripEnd} from '@feltjs/util/string.js';
 
 import {feed} from '../routes/blog/feed';
-import type {FeedData} from '$lib/feed';
+import {create_atom_feed, type FeedData} from '$lib/feed';
 
 /* eslint-disable no-await-in-loop */
 
@@ -29,6 +29,10 @@ export const gen: Gen = async ({fs}) => {
 	}
 
 	return [
+		{
+			filename: '../static/blog/feed.xml',
+			content: create_atom_feed(feed),
+		},
 		{
 			filename: './blog.ts',
 			content: `

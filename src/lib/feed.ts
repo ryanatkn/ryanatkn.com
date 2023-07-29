@@ -43,7 +43,7 @@ export interface FeedItemData {
 	tags?: string[];
 }
 
-export const toAtomXml = (data: FeedData): string => {
+export const create_atom_feed = (data: FeedData): string => {
 	const items = data.items
 		.slice()
 		.sort((a, b) => (new Date(a.date_published) > new Date(b.date_published) ? -1 : 1)); // TODO maybe add an option to customize this? maybe by `date_modified`?
