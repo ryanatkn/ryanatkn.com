@@ -18,9 +18,7 @@
 	// tips
 	let embedded_toot_host = dev ? 'mstdn.social' : 'hachyderm.io';
 	let embedded_toot_id = dev ? '110702983310017651' : 'TODO';
-	// https://hci.social/@author@host/id
-	// https://host/@author/id
-	const sync_from_url = (url: string, which: 'embedded' | 'replies') => {
+	const sync = (url: string, which: 'embedded' | 'replies') => {
 		const parsed = parse_status_context_url(url);
 		if (parsed) {
 			if (which === 'embedded') {
@@ -34,12 +32,12 @@
 		console.log(`parsed`, parsed);
 	};
 	let embedded_toot_url = to_status_url(embedded_toot_host, embedded_toot_id);
-	$: sync_from_url(embedded_toot_url, 'embedded');
+	$: sync(embedded_toot_url, 'embedded');
 
 	let replies_toot_host = embedded_toot_host;
 	let replies_toot_id = embedded_toot_id;
 	let replies_toot_url = to_status_url(replies_toot_host, replies_toot_id);
-	$: sync_from_url(replies_toot_url, 'replies');
+	$: sync(replies_toot_url, 'replies');
 
 	const sections = [
 		{slug: 'description', name: 'Description'},

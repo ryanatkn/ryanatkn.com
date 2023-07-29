@@ -74,7 +74,7 @@
 
 	$: parse(url, host, id);
 
-	// TODO BLOCK merge teh two below
+	// TODO BLOCK remove the if guard below -- what about invalid states?
 </script>
 
 {#if id && host}
