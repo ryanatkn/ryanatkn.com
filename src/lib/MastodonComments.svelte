@@ -4,8 +4,7 @@
 	import {
 		fetch_status_context_by_url,
 		type MastodonContext,
-		to_api_url,
-		to_post_url,
+		to_status_url,
 		fetch_status_by_url,
 		type MastodonStatus,
 		fetch_favourites,
@@ -14,30 +13,20 @@
 	// TODO BLOCK maybe a Load prefix or Loader suffix for this component pattern?
 
 	/**
-	 * The url to a Mastodon post,
-	 * like `'https://mstdn.social/api/v1/statuses/110702983310017651/context'`.
-	 * Either `url` or `host` and `id` are required.
-	 */
-	export let url: string | undefined = undefined;
-
-	/**
 	 * The host part of the url, like `'hachyderm.io'`.
-	 * Either `url` or `host` and `id` are required.
 	 */
-	export let host: string | undefined = undefined;
+	export let host: string;
 
 	/**
 	 * The status id to fetch, like `'110702983310017651'`.
-	 * Either `url` or `host` and `id` are required.
 	 */
-	export let id: string | undefined = undefined;
+	export let id: string;
 
 	let main_context: MastodonContext | undefined | null;
 	let main_status: MastodonStatus | undefined | null;
 	let replies: MastodonStatus[] | undefined | null;
 
-	$: api_url = to_api_url(url, host, id);
-	$: post_url = to_post_url(api_url);
+	$: api_url = to_status_url(host, id);
 
 	// const load = async (host: string, id: string) => {
 	// 	console.log(`loading host, id`, host, id);
@@ -116,4 +105,4 @@
 	};
 </script>
 
-<slot {main_status} {main_context} {replies} {api_url} {post_url} {load} {loading} {load_time} />
+<slot {main_status} {main_context} {replies} {load} {loading} {load_time} />
