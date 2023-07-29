@@ -45,7 +45,7 @@ export const gen: Gen = async ({fs}) => {
 		{
 			filename: './blog_components.ts',
 			content: `// TODO this file shouldn't exist, change to SvelteKit load?
-				${items.map((i) => `import s${i} from '../routes/${path}/${i}/post.svelte'`).join(';\n')};
+				${items.map((i) => `import s${i} from '../routes/${path}/${i}/+page.svelte'`).join(';\n')};
 
 				export const components = [${items.map((i) => `s${i}`).join(', ')}];
 			`,

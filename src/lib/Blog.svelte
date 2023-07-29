@@ -1,7 +1,7 @@
 <script lang="ts">
 	import {page} from '$app/stores';
 	import {goto} from '$app/navigation';
-	import {browser} from '$app/environment';
+	import {browser, dev} from '$app/environment';
 	import Message from '@feltjs/felt-ui/Message.svelte';
 
 	import BlogPost from '$lib/BlogPost.svelte';
@@ -25,7 +25,7 @@
 	$: component = index === null ? null : components[index];
 
 	// redirect from index to slug
-	$: if (browser && typeof post_id === 'number' && post) {
+	$: if (browser && !dev && typeof post_id === 'number' && post) {
 		void goto(new URL(post.url).pathname, {replaceState: true});
 	}
 </script>
