@@ -62,7 +62,7 @@
 		);
 	};
 
-	const to_validated_replies = async (
+	const filter_valid_replies = async (
 		status: MastodonStatus,
 		statuses: MastodonStatus[],
 	): Promise<MastodonStatus[]> => {
@@ -91,7 +91,7 @@
 			fetch_status(host, id),
 		]);
 		if (item && context) {
-			replies = await to_validated_replies(item, context.descendants);
+			replies = await filter_valid_replies(item, context.descendants);
 		} else {
 			replies = null;
 		}
