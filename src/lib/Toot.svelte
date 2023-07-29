@@ -4,11 +4,10 @@
 
 	import MastodonStatusTree from '$lib/MastodonStatusTree.svelte';
 	import MastodonStatusItem from '$lib/MastodonStatusItem.svelte';
-	import MastodonComments from '$lib/MastodonComments.svelte';
+	import TootLoader from '$lib/TootLoader.svelte';
 	import {load_from_storage, set_in_storage} from '$lib/storage';
 	import {scrolled} from '$lib/scrolled';
 	import {parse_status_context_url, to_status_url} from '$lib/mastodon';
-	import TootLoader from '$lib/TootLoader.svelte';
 
 	export let url: string | undefined = undefined;
 	export let host: string | undefined = undefined;
@@ -74,16 +73,7 @@
 {#if id && host}
 	{#key loaded_status_key}
 		{#if replies}
-			<MastodonComments
-				{host}
-				{id}
-				let:main_status
-				let:main_context
-				let:replies
-				let:load
-				let:loading
-				let:load_time
-			>
+			<TootLoader {host} {id} let:item let:context let:replies let:load let:loading let:load_time>
 				<div class="panel padded_md spaced">
 					<div
 						class="controls"
@@ -91,17 +81,13 @@
 							if (autoload) load();
 						}}
 					>
-						<PendingButton
-							pending={loading || false}
-							disabled={!!main_context}
-							on:click={() => load()}
-						>
+						<PendingButton pending={loading || false} disabled={!!context} on:click={() => load()}>
 							<div class="icon_button_content">
 								<div class="icon">🦣</div>
 								<div class="content">
-									{#if main_context && replies}
+									{#if context && replies}
 										<div>
-											loaded {replies.length + main_context.ancestors.length} comments
+											loaded {replies.length + context.ancestors.length} comments
 										</div>
 										<div>
 											in {load_time === undefined ? 'unknown ' : Math.round(load_time)}ms from
@@ -149,29 +135,29 @@
 						</div>
 					{/if}
 				</div>
-				{#if main_context}
+				{#if context}
 					<ul class="statuses" transition:slide>
 						{#if ancestors}
 							<!-- TODO style differently or something -->
-							{#each main_context.ancestors as item}
+							{#each context.ancestors as ancestor}
 								<li>
-									<MastodonStatusItem {item} />
+									<MastodonStatusItem item={ancestor} />
 								</li>
 							{/each}
 						{/if}
-						{#if main_status}
+						{#if item}
 							<div class="main_post panel">
 								<div class="panel main_post_inner">
-									<MastodonStatusItem item={main_status} />
+									<MastodonStatusItem {item} />
 								</div>
 							</div>
 						{/if}
-						{#if main_status && replies}
-							<MastodonStatusTree item={main_status} items={replies} />
+						{#if item && replies}
+							<MastodonStatusTree {item} items={replies} />
 						{/if}
 					</ul>
 				{/if}
-			</MastodonComments>
+			</TootLoader>
 		{:else}
 			<TootLoader {host} {id} let:item let:loading let:load bind:loading bind:load_time>
 				<div class="embed_item">
