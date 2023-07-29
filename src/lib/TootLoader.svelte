@@ -86,6 +86,7 @@
 		if (!browser) return;
 		const start_time = performance.now();
 		loading = true;
+		// TODO error handling
 		[item, context] = await Promise.all([
 			fetch_status(host, id),
 			with_context ? fetch_status_context(host, id) : null,
