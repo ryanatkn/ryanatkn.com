@@ -195,12 +195,11 @@
 		Two problems: we won't get the best software if a hosting company has too much influence over
 		its development, and also, I now accept a fact about myself, that I don't love operations.
 		Instead I want to spend my time making software, and I'll gladly pay money to people who enjoy
-		operations in exchange for a simpler life. Opening myself to the complexity of commercial
-		operations - with moderation, security, abuse, legal, international, even basic uptime and
-		operations - feels overwhelming. I think the value I add working directly on the software is
-		high enough that I don't need to add this other huge world to my plate. One of my goals is write
-		the best software, and spending all of that time and emotional energy on a hosting business is
-		counterproductive.
+		operations in exchange for a simpler life. Opening myself to being responsible for commercial
+		hosting - with moderation, security, downtime, abuse, legal, international, even the basic admin
+		- feels overwhelming. I think the value I add working directly on the software is high enough
+		that I don't need to put this other huge scary world on my plate, and I think the software will
+		be better if it gets my focus.
 	</p>
 	<p>
 		I wanted to be the person who does both the software and the hosting business too, but I m not,
