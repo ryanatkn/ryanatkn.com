@@ -103,12 +103,7 @@
 								<div class="icon">🦣</div>
 								<div class="content">
 									{#if context && replies}
-										<div>
-											loaded {replies.length + context.ancestors.length} replies
-										</div>
-										<div>
-											in {load_time === undefined ? 'unknown ' : Math.round(load_time)}ms from
-										</div>
+										<div>loaded {replies.length + context.ancestors.length} toots from</div>
 										<code>{host}</code>
 									{:else}
 										<div>load replies from</div>
