@@ -13,8 +13,6 @@
 	import {parse_status_context_url, to_status_url} from '$lib/mastodon';
 	import TootInput from '$lib/TootInput.svelte';
 
-	// TODO BLOCK `a post I made`
-
 	// tips
 	let embedded_toot_host = dev ? 'mstdn.social' : 'hachyderm.io';
 	let embedded_toot_id = dev ? '110702983310017651' : 'TODO';
@@ -69,47 +67,54 @@
 		</h2>
 		<p>
 			This website is a bundle of plain static files, including HTML, JavaScript, CSS, some images,
-			an <a href="{base}/blog/feed.xml" download>Atom feed</a>, and misc etc, and it also has
-			reader-submitted comments through Mastodon that appear only after I "favourite" them.
-		</p>
-		<p>
-			The site's files are viewable on
-			<a href="https://github.com/ryanatkn/ryanatkn.com/tree/deploy"
-				>the <code>deploy</code> branch</a
-			>
-			of
-			<a href="https://github.com/ryanatkn/ryanatkn.com">the git repo</a> and downloadable as
-			<a href="https://github.com/ryanatkn/ryanatkn.com/archive/refs/heads/deploy.zip"
-				>this zip file</a
-			>
-			(idk why'd you'd click a zip file, but you could and continue reading this offline (but you have
-			to serve the directory you can't just click <code>index.html</code>)). Those files are then
-			hosted for free by
-			<a href="https://pages.github.com/">GitHub Pages</a>
-			here at
-			<code>{$page.url.host}</code>. The cost of serving these static files is very low, so "free"
-			is a common cloud offering for static sites in 2023. Thank you GitHub for being the freeloaded
-			host of the day.
+			an <a href="{base}/blog/feed.xml" download>Atom feed</a> - about 1.5 MB total when I wrote this
+			- and it also has reader-submitted comments through Mastodon.
 		</p>
 		<aside>
-			The website's final output files are HTML, JS, and CSS, but <a
-				href="https://github.com/ryanatkn/ryanatkn.com">the source code</a
-			>
-			that generates these files is written in <a href="https://typescriptlang.org/">TypeScript</a>
-			and <a href="https://svelte.dev/">Svelte</a> using
-			<a href="https://kit.svelte.dev/">SvelteKit</a> and <a href="https://vitejs.dev/">Vite</a>. I
-			recommend them with enthusiasm.
+			<details>
+				<summary>technical details</summary>
+				<p>
+					The site's files are viewable on
+					<a href="https://github.com/ryanatkn/ryanatkn.com/tree/deploy"
+						>the <code>deploy</code> branch</a
+					>
+					of
+					<a href="https://github.com/ryanatkn/ryanatkn.com">the git repo</a> and downloadable as
+					<a href="https://github.com/ryanatkn/ryanatkn.com/archive/refs/heads/deploy.zip" download
+						>a zip file</a
+					>. Those files are then hosted for free by
+					<a href="https://pages.github.com/">GitHub Pages</a>
+					here at
+					<code>{$page.url.host}</code>. The cost of serving these static files is very low, so
+					"free" is a common cloud offering for static sites in 2023. Thank you GitHub for being our
+					freeloaded host of the day.
+				</p>
+				<p>
+					The website's final output files are HTML, JS, and CSS, but <a
+						href="https://github.com/ryanatkn/ryanatkn.com">the source code</a
+					>
+					that generates these files is written in
+					<a href="https://typescriptlang.org/">TypeScript</a>
+					and <a href="https://svelte.dev/">Svelte</a> using
+					<a href="https://kit.svelte.dev/">SvelteKit</a> and
+					<a href="https://vitejs.dev/">Vite</a>. I recommend them with enthusiasm.
+				</p>
+				<p>
+					Although completely static, this site has the dynamic behavior of fetching data at runtime
+					in your browser from my Mastodon host, thanks to the power of <button
+						class="inline plain"
+						on:click={() => {
+							alert('js runs here'); // eslint-disable-line no-alert
+						}}>scripting</button
+					>
+					and <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS">CORS</a>.
+				</p>
+			</details>
 		</aside>
 		<p>
-			Although completely static, this site has the dynamic behavior of fetching data from Out
-			There, specifically my Mastodon host, thanks to the power of <button
-				class="inline plain"
-				on:click={() => {
-					alert('js runs here'); // eslint-disable-line no-alert
-				}}>scripting</button
-			>
-			and <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS">CORS</a>. With some JS
-			(via Svelte in this case) we can embed a toot:
+			With some JS (via Svelte in this case) we can embed a toot, like <a href
+				>this one about this blog post</a
+			>:
 		</p>
 		<section class="embedded_status">
 			<div class="embedded_status_inner">
