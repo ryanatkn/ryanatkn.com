@@ -69,8 +69,8 @@
 		</h2>
 		<p>
 			This website is a bundle of plain static files, including HTML, JavaScript, CSS, some images,
-			an <a href="{base}/blog/feed.xml" download>Atom feed</a>, and various oddities, but it also
-			has reader-submitted comments from Out There thanks to Mastodon.
+			an <a href="{base}/blog/feed.xml" download>Atom feed</a>, and misc etc, and it also has
+			reader-submitted comments through Mastodon that appear only after I "favourite" them.
 		</p>
 		<p>
 			The site's files are viewable on
