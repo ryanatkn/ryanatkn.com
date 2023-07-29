@@ -195,14 +195,20 @@
 		Two problems: we won't get the best software if a hosting company has too much influence over
 		its development, and also, I now accept a fact about myself, that I don't love operations.
 		Instead I want to spend my time making software, and I'll gladly pay money to people who enjoy
-		operations in exchange for a simpler life. The opportunity cost for me to do commercial
-		operations feels too high - making software seems like enough on my plate without adding uptime
-		and moderation and lawyers (oh my) to the mix - so I'll have to look elsewhere for
-		sustainbility.
+		operations in exchange for a simpler life. Opening myself to the complexity of commercial
+		operations - with moderation, security, abuse, legal, international, even basic uptime and
+		operations - feels overwhelming. I think the value I add working directly on the software is
+		high enough that I don't need to add this other huge world to my plate. One of my goals is write
+		the best software, and spending all of that time and emotional energy on a hosting business is
+		counterproductive.
 	</p>
 	<p>
-		Hamilton may continue pursuing felt.social as a cooperatively-owned host, he'll just need 4
-		cofounders instead of 3 to officially start the co-op in Colorado... please take my money!!
+		I wanted to be the person who does both the software and the hosting business too, but I m not,
+		and for the people who do it, my hat off and wallet out. My sustainability plan has to pivot to
+		adjust to reality. Hamilton may continue pursuing <a href="https://www.felt.social/"
+			>felt.social</a
+		> as a cooperatively-owned host, he'll just need 4 cofounders instead of 3 to officially start the
+		co-op in Colorado. Please take my money!!
 	</p>
 	<hr />
 	<h2>Sharing spaces with others</h2>
