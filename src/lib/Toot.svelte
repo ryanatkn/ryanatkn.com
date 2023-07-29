@@ -76,6 +76,8 @@
 
 	// TODO BLOCK remove the if guard below -- what about invalid states?
 
+	// TODO BLOCK slot? bind the let: below and export all?
+
 	$: with_context = replies || ancestors;
 </script>
 
