@@ -75,6 +75,8 @@
 	$: parse(url, host, id);
 
 	// TODO BLOCK remove the if guard below -- what about invalid states?
+
+	$: with_context = replies || ancestors;
 </script>
 
 {#if id && host}
@@ -82,7 +84,7 @@
 		<TootLoader
 			{host}
 			{id}
-			with_context={replies || ancestors}
+			{with_context}
 			let:item
 			let:context
 			let:replies
@@ -90,7 +92,7 @@
 			let:loading
 			let:load_time
 		>
-			{#if replies}
+			{#if with_context}
 				<div class="panel padded_md spaced">
 					<div
 						class="controls"
@@ -173,7 +175,7 @@
 				<div class="embed_item">
 					<div class="embed_item_inner">
 						{#if loading !== false}
-							<div transition:slide class="box">
+							<div transition:slide>
 								<PendingButton pending={!!loading} on:click={load}>
 									<span class="mammoth">🦣</span>
 									<div>
