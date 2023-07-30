@@ -196,17 +196,15 @@
 		a commercial host, and take on responsibilities for admin, moderation, security, uptime, abuse,
 		legal, international, and so on. My todo list for the software I'm working on is already
 		infinite, why not take on another job too? In hindsight I feel silly that I thought I would do
-		it all, like I didn't know myself better. Instead of running a hosting company, I want to spend
-		my time making software, and I'll pay money to people who enjoy operations in exchange for a
-		simpler life.
+		it all, like I didn't know myself better. Even if other people do most of the labor, I can't be
+		responsible for the thing and sleep well at night. Instead of running a hosting company, I'm
+		going to spend my time making software, and I'll pay money to people who enjoy operations in
+		exchange for a simpler life.
 	</p>
 	<p>
-		I wanted to be the person who does both the software and the hosting business too, but I m not,
-		and for the people who do it, my hat off and wallet out. My sustainability plan has to pivot to
-		adjust to reality. Hamilton may continue pursuing <a href="https://www.felt.social/"
-			>felt.social</a
-		> as a cooperatively-owned host, he'll just need 4 cofounders instead of 3 to officially start the
-		co-op in Colorado. Please take my money!!
+		While my plan for financial sustainbility pivots to adjust to reality, Hamilton may continue
+		developing <a href="https://www.felt.social/">felt.social</a> as a cooperatively-owned host, he'll
+		just need 4 cofounders instead of 3 to officially start the co-op in Colorado. Please take my money!!
 	</p>
 	<hr />
 	<h2>Sharing spaces with others</h2>
