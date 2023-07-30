@@ -202,8 +202,9 @@
 	</p>
 	<p>
 		While my plan for financial sustainbility pivots to adjust to reality, Hamilton may continue
-		developing <a href="https://www.felt.social/">felt.social</a> as a cooperatively-owned host, he'll
-		just need 4 cofounders instead of 3 to officially start the co-op in Colorado. Please take my money!!
+		developing <a href="https://www.felt.social/">felt.social</a> as a cooperatively-owned host. Now
+		he'll just need 4 cofounders instead of 3 to officially start the co-op in Colorado. Please take
+		my money!!
 	</p>
 	<hr />
 	<h2>Sharing spaces with others</h2>
