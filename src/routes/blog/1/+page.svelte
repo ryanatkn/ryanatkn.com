@@ -197,8 +197,9 @@
 		legal, international, and so on. My todo list for the software I'm working on is already
 		infinite, why not take on another job too? In hindsight I feel silly that I thought I would do
 		it all, like I didn't know myself better. Even if other people do most of the labor, I can't be
-		responsible for the thing and sleep well at night. Instead of running a hosting company, I'm
-		going to spend my time making software, and I'll gladly pay money to operators to host it.
+		partially responsible for the thing and sleep well at night. Instead of running a hosting
+		company, I'm going to spend my time making software, and I'll gladly pay money to operators to
+		host it.
 	</p>
 	<p>
 		While my plan for financial sustainbility pivots to adjust to reality, Hamilton may continue
