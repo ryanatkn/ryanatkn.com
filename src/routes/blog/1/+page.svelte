@@ -192,14 +192,13 @@
 		love, and make open source sustainable, all in one move.
 	</p>
 	<p>
-		Two problems: we won't get the best software if a hosting company has too much influence over
-		its development, and also, I now accept a fact about myself, that I don't love operations.
-		Instead I want to spend my time making software, and I'll gladly pay money to people who enjoy
-		operations in exchange for a simpler life. Opening myself to being responsible for commercial
-		hosting - with moderation, security, downtime, abuse, legal, international, even the basic admin
-		- feels overwhelming. I think the value I add working directly on the software is high enough
-		that I don't need to put this other huge scary world on my plate, and I think the software will
-		be better if it gets my focus.
+		Sounds good on paper, except I don't love operations. If I did, maybe I would choose to operate
+		a commercial host, and take on responsibilities for admin, moderation, security, uptime, abuse,
+		legal, international, and so on. My todo list for the software I'm working on is already
+		infinite, why not take on another job too? In hindsight I feel silly that I thought I would do
+		it all, like I didn't know myself better. Instead of running a hosting company, I want to spend
+		my time making software, and I'll pay money to people who enjoy operations in exchange for a
+		simpler life.
 	</p>
 	<p>
 		I wanted to be the person who does both the software and the hosting business too, but I m not,
