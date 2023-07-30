@@ -192,13 +192,13 @@
 		love, and make open source sustainable, all in one move.
 	</p>
 	<p>
-		Sounds good on paper, except I don't love operations. If I did, maybe I would choose to operate
-		a commercial host, and take on responsibilities for admin, moderation, security, uptime, abuse,
-		legal, international, and so on. My todo list for the software I'm working on is already
-		infinite, why not take on another job too? In hindsight I feel silly that I thought I would do
-		it all, like I didn't know myself better. Even if coworkers do most of the labor, I won't be
-		able to sleep well at night if I'm partially responsible. Instead of running a hosting company,
-		I'm going to spend my time making software, and I'll gladly pay money to operators to host it.
+		It sounded like a plan, except I don't love operations, not enough to take on the
+		responsibilities for admin, moderation, security, uptime, abuse, legal/international/etc. My
+		todo list for software development is already infinite, and taking a second job of this
+		complexity does not seem possible. Even if coworkers do most of the labor, I won't be able to
+		sleep well at night if I'm one of the people responsible for your critical personal data not
+		catching fire at all times. Instead of running a hosting company, I'm going to spend my time
+		making software, and I'll gladly pay money to operators to host it.
 	</p>
 	<p>
 		While my plan for financial sustainbility pivots to adjust to reality, Hamilton may continue
