@@ -196,7 +196,7 @@
 		a commercial host, and take on responsibilities for admin, moderation, security, uptime, abuse,
 		legal, international, and so on. My todo list for the software I'm working on is already
 		infinite, why not take on another job too? In hindsight I feel silly that I thought I would do
-		it all, like I didn't know myself better. Even if other people do most of the labor, I won't be
+		it all, like I didn't know myself better. Even if coworkers do most of the labor, I won't be
 		able to sleep well at night if I'm partially responsible. Instead of running a hosting company,
 		I'm going to spend my time making software, and I'll gladly pay money to operators to host it.
 	</p>
