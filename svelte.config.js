@@ -5,6 +5,7 @@ import adapter from '@sveltejs/adapter-static';
 export default {
 	preprocess: typescript(),
 	compilerOptions: {immutable: true},
+	vitePlugin: {inspector: true},
 	kit: {
 		adapter: adapter(),
 		files: {assets: 'src/static'},
