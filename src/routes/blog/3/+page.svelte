@@ -68,7 +68,8 @@
 		<p>
 			This website is a bundle of plain static files, including HTML, JavaScript, CSS, some images,
 			an <a href="{base}/blog/feed.xml" download>Atom feed</a> - about 1.5 MB total when I wrote this
-			- and it also has reader-submitted comments through Mastodon.
+			- and it also has reader-submitted comments through Mastodon that are dynamically loaded by your
+			browser.
 		</p>
 		<aside>
 			<details>
@@ -112,9 +113,8 @@
 			</details>
 		</aside>
 		<p>
-			With some JS (via Svelte in this case) we can embed a toot, like <a href
-				>this one about this blog post</a
-			>:
+			With some JS (via <a href="https://svelte.dev/">Svelte</a> in this case) we can embed a toot,
+			like <a href>this one about this blog post</a>:
 		</p>
 		<section class="embedded_status">
 			<div class="embedded_status_inner">
