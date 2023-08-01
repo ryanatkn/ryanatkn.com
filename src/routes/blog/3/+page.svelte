@@ -71,7 +71,7 @@
 				download>Atom feed</a
 			> - about 1.5 MB total of mostly images when I wrote this - and it also has reader-submitted comments
 			through Mastodon that are dynamically loaded by your browser after being allowlisted by me clicking
-			the ★ in my Mastodon client.
+			the favourite button ★ in my Mastodon client.
 		</p>
 		<aside>
 			<details>
@@ -85,7 +85,7 @@
 					<a href="https://github.com/ryanatkn/ryanatkn.com">the git repo</a> and downloadable as
 					<a href="https://github.com/ryanatkn/ryanatkn.com/archive/refs/heads/deploy.zip" download
 						>a zip file</a
-					>. Those files are then hosted for free by
+					>. Those files are being hosted for free by
 					<a href="https://pages.github.com/">GitHub Pages</a>
 					here at
 					<code>{$page.url.host}</code>. The cost of serving these static files is very low, so
@@ -110,7 +110,8 @@
 							alert('js runs here'); // eslint-disable-line no-alert
 						}}>scripting</button
 					>
-					and <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS">CORS</a>.
+					and <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS">CORS</a> wow. Static and
+					dynamic, what a world.
 				</p>
 			</details>
 		</aside>

@@ -179,7 +179,7 @@
 				<div class="embed_item">
 					<div class="embed_item_inner">
 						{#if loading !== false}
-							<div transition:slide>
+							<div transition:slide class="box padded_xl panel">
 								<PendingButton pending={!!loading} on:click={load}>
 									<span class="mammoth">🦣</span>
 									<div>
