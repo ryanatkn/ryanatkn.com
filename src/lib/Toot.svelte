@@ -92,7 +92,9 @@
 			let:replies
 			let:load
 			let:loading
+			bind:loading
 			let:load_time
+			bind:load_time
 		>
 			{#if with_context}
 				<div class="panel padded_md spaced">

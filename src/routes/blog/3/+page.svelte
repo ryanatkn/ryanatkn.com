@@ -3,12 +3,12 @@
 	import {page} from '$app/stores';
 	import {fade, slide} from 'svelte/transition';
 	import {dev} from '$app/environment';
+	import Code from '@feltjs/felt-ui/Code.svelte';
 
 	import Toot from '$lib/Toot.svelte';
 	import HashLink from '$lib/HashLink.svelte';
 	import BlogPostIndex from '$lib/BlogPostIndex.svelte';
 	import {prod_content_security_policy} from '$routes/security';
-	import CodeExample from '$routes/blog/3/CodeExample.svelte';
 	import {load_from_storage, set_in_storage} from '$lib/storage';
 	import {parse_status_context_url, to_status_url} from '$lib/mastodon';
 	import TootInput from '$lib/TootInput.svelte';
@@ -154,8 +154,8 @@
 								<TootInput bind:host={embedded_toot_host} bind:url={embedded_toot_url} />
 							</form>
 							<p class="width_full">the Svelte code:</p>
-							<CodeExample
-								code={`<Toot
+							<Code
+								content={`<Toot
 	host=${'"' + embedded_toot_host + '"'}
 	id=${'"' + embedded_toot_id + '"'}
 	let:load
@@ -322,7 +322,7 @@
 				<form class="width_sm">
 					<TootInput bind:host={replies_toot_host} bind:url={replies_toot_url} />
 				</form>
-				<CodeExample code={`<Toot\n\thost="${replies_toot_host}"\n\tid="${replies_toot_id}"\n/>`} />
+				<Code content={`<Toot\n\thost="${replies_toot_host}"\n\tid="${replies_toot_id}"\n/>`} />
 			</svelte:fragment>
 		</Toot>
 	</section>
