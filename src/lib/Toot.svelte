@@ -105,7 +105,7 @@
 						}}
 					>
 						<PendingButton pending={loading || false} disabled={!!context} on:click={() => load()}>
-							<div class="icon_button_content">
+							<div class="icon_button_content load_replies_button_content_hack">
 								<div class="icon">🦣</div>
 								<div class="content">
 									{#if context && replies}
@@ -229,6 +229,10 @@
 		display: flex;
 		align-items: center;
 		text-align: left;
+	}
+	.load_replies_button_content_hack {
+		/* TODO hack */
+		min-width: 240px;
 	}
 	.content {
 		line-height: var(--line_height);
