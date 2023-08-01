@@ -37,6 +37,9 @@
 	let replies_toot_url = to_status_url(replies_toot_host, replies_toot_id);
 	$: sync(replies_toot_url, 'replies');
 
+	// TODO BLOCK add a button "show the technical stuff" or details?
+	// TODO BLOCK make the `reset` button work for the toot url, including whether it's enabled
+
 	const sections = [
 		{slug: 'description', name: 'Description'},
 		{slug: 'limitations', name: 'Limitations'},
@@ -69,9 +72,9 @@
 			This website is a bundle of plain static files, including HTML, JavaScript, CSS, an <a
 				href="{base}/blog/feed.xml"
 				download>Atom feed</a
-			> - about 1.5 MB total of mostly images when I wrote this - and it also has reader-submitted comments
-			through Mastodon that are dynamically loaded by your browser after being allowlisted by me clicking
-			the favourite button ★ in my Mastodon client.
+			> - about 1.5 MB of mostly images when I wrote this 3rd blog post. This website also has reader-submitted
+			comments through Mastodon that are dynamically loaded by your browser after being allowlisted by
+			me clicking the favourite button ★ in my Mastodon client.
 		</p>
 		<aside>
 			<details>
