@@ -66,10 +66,12 @@
 			<HashLink slug="description">Description</HashLink>
 		</h2>
 		<p>
-			This website is a bundle of plain static files, including HTML, JavaScript, CSS, some images,
-			an <a href="{base}/blog/feed.xml" download>Atom feed</a> - about 1.5 MB total when I wrote this
-			- and it also has reader-submitted comments through Mastodon that are dynamically loaded by your
-			browser.
+			This website is a bundle of plain static files, including HTML, JavaScript, CSS, an <a
+				href="{base}/blog/feed.xml"
+				download>Atom feed</a
+			> - about 1.5 MB total of mostly images when I wrote this - and it also has reader-submitted comments
+			through Mastodon that are dynamically loaded by your browser after being allowlisted by me clicking
+			the ★ in my Mastodon client.
 		</p>
 		<aside>
 			<details>
