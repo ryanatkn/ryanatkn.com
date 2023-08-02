@@ -1,6 +1,7 @@
 <script lang="ts">
 	import PendingButton from '@feltjs/felt-ui/PendingButton.svelte';
 	import {slide} from 'svelte/transition';
+	import {createEventDispatcher} from 'svelte';
 
 	import MastodonStatusTree from '$lib/MastodonStatusTree.svelte';
 	import MastodonStatusItem from '$lib/MastodonStatusItem.svelte';
@@ -8,6 +9,8 @@
 	import {load_from_storage, set_in_storage} from '$lib/storage';
 	import {scrolled} from '$lib/scrolled';
 	import {parse_status_context_url, to_status_url} from '$lib/mastodon';
+
+	const dispatch = createEventDispatcher<{reset: void}>();
 
 	export let url: string | undefined = undefined;
 	export let host: string | undefined = undefined;
@@ -24,9 +27,10 @@
 	 */
 	export let ancestors = false;
 
-	export let show_toot_details: boolean | undefined = undefined;
+	export let show_details: boolean | undefined = undefined;
 
-	export let loaded_status_key = 1;
+	let loaded_status_key = 1;
+
 	export let loading: boolean | undefined = undefined;
 	export let load_time: number | undefined = undefined;
 
@@ -34,8 +38,9 @@
 
 	// TODO BLOCK chronological, nested, updated, reverse chrono
 
-	const reset = () => {
+	export const reset = (): void => {
 		loaded_status_key++;
+		dispatch('reset');
 	};
 
 	const SHOW_SETTINGS_KEY = 'show_settings';
@@ -78,6 +83,7 @@
 
 	// TODO BLOCK slot? bind the let: below and export all?
 
+	// TODO BLOCK this is a hack to branch the markup
 	$: with_context = replies || ancestors;
 </script>
 
@@ -193,7 +199,7 @@
 								<MastodonStatusItem {item} />
 							</div>
 						{/if}
-						{#if !show_toot_details}
+						{#if !show_details}
 							<button
 								title="show item details"
 								class="plain icon_button"
@@ -202,7 +208,7 @@
 								style:top="var(--spacing_sm)"
 								style:font-size="var(--size_lg)"
 								on:click={() => {
-									show_toot_details = true;
+									show_details = true;
 								}}>⚙️</button
 							>
 						{/if}

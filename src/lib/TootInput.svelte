@@ -1,11 +1,11 @@
 <script lang="ts">
-	export let host: string;
 	export let url: string;
+	export let attrs: any = undefined;
 </script>
 
 <fieldset>
-	<label title={host ? 'loading the toot from ' + host : 'where to load the toot'}>
+	<label title="where to load the toot">
 		<div class="title">toot url</div>
-		<input bind:value={url} placeholder=">" on:focus={(e) => e.currentTarget.select()} />
+		<input bind:value={url} placeholder=">" on:focus={(e) => e.currentTarget.select()} {...attrs} />
 	</label>
 </fieldset>

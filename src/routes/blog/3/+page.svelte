@@ -2,6 +2,8 @@
 	import {page} from '$app/stores';
 	import {fade, slide} from 'svelte/transition';
 	import {dev} from '$app/environment';
+	import 'prismjs'; // TODO why are these needed?
+	import 'prism-svelte'; // TODO why are these needed?
 	import Code from '@feltjs/felt-ui/Code.svelte';
 
 	import Toot from '$lib/Toot.svelte';
@@ -13,9 +15,15 @@
 	import TootInput from '$lib/TootInput.svelte';
 
 	// tips
-	let embedded_toot_host = dev ? 'mstdn.social' : 'hachyderm.io';
-	let embedded_toot_id = dev ? '110702983310017651' : 'TODO';
+	const DEFAULT_TOOT_HOST = dev ? 'mstdn.social' : 'hachyderm.io';
+	const DEFAULT_TOOT_ID = dev ? '110702983310017651' : 'TODO';
+	let embedded_toot_host = DEFAULT_TOOT_HOST;
+	let embedded_toot_id = DEFAULT_TOOT_ID;
+	let reset_embedded_toot: () => void;
+
+	// TODO idk about this pattern, weirdly circular
 	const sync = (url: string, which: 'embedded' | 'replies') => {
+		console.log(`sync`, url, which);
 		const parsed = parse_status_context_url(url);
 		if (parsed) {
 			if (which === 'embedded') {
@@ -29,6 +37,7 @@
 		console.log(`parsed`, parsed);
 	};
 	let embedded_toot_url = to_status_url(embedded_toot_host, embedded_toot_id);
+	$: console.log(`embedded_toot_url`, embedded_toot_url);
 	$: sync(embedded_toot_url, 'embedded');
 
 	let replies_toot_host = embedded_toot_host;
@@ -47,15 +56,28 @@
 		{slug: 'replies', name: 'Replies'},
 	];
 
-	let loaded_status_key = 1;
 	let loading: boolean | undefined;
 	let load_time: number | undefined;
 
-	const SHOW_TOOT_DETAILS = 'show_toot_details';
-	let show_toot_details = load_from_storage(SHOW_TOOT_DETAILS, () => true); // TODO store?
-	$: set_in_storage(SHOW_TOOT_DETAILS, show_toot_details); // TODO wastefully sets on init
+	const DEFAULT_SHOW_EMBEDDED_TOOT_DETAILS = 'show_embedded_toot_details';
+	let show_embedded_toot_details = load_from_storage(
+		DEFAULT_SHOW_EMBEDDED_TOOT_DETAILS,
+		() => true,
+	); // TODO store?
+	$: set_in_storage(DEFAULT_SHOW_EMBEDDED_TOOT_DETAILS, show_embedded_toot_details); // TODO wastefully sets on init
 
 	// TODO BLOCK see `div class="reset"` below
+
+	const embedded_toot_reset = () => {
+		console.log('reset embedded');
+		embedded_toot_host = DEFAULT_TOOT_HOST;
+		embedded_toot_id = DEFAULT_TOOT_ID;
+	};
+	const replies_toot_reset = () => {
+		console.log('reset replies');
+		replies_toot_host = DEFAULT_TOOT_HOST;
+		replies_toot_id = DEFAULT_TOOT_ID;
+	};
 </script>
 
 <div class="width_md">
@@ -105,14 +127,16 @@
 				</p>
 				<p>
 					Although completely static, this site has the dynamic behavior of fetching data at runtime
-					in your browser from my Mastodon host, thanks to the power of <button
+					in your browser from <a href="https://hachyderm.io/">my Mastodon host</a>, thanks to the
+					power of
+					<button
 						class="inline plain"
 						on:click={() => {
 							alert('js runs here'); // eslint-disable-line no-alert
 						}}>scripting</button
 					>
-					and <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS">CORS</a> wow. Static and
-					dynamic, what a world.
+					and <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS">CORS</a>. Static AND
+					dynamic??
 				</p>
 			</details>
 		</aside>
@@ -125,21 +149,20 @@
 				<Toot
 					host={embedded_toot_host}
 					id={embedded_toot_id}
+					bind:reset={reset_embedded_toot}
 					bind:loading
 					bind:load_time
-					bind:loaded_status_key
-					bind:show_toot_details
+					bind:show_details={show_embedded_toot_details}
+					on:reset={embedded_toot_reset}
 				/>
-				{#if show_toot_details}
+				{#if show_embedded_toot_details}
 					<div class="embed_item" transition:fade>
 						<div class="embed_item_inner">
 							<div class="reset_wrapper">
 								<div class="reset">
 									<button
 										on:click={() => {
-											loading = undefined;
-											load_time = undefined;
-											loaded_status_key++;
+											reset_embedded_toot();
 										}}
 										disabled={loading === undefined}>reset</button
 									>{#if load_time !== undefined}<div class="loaded_message" transition:slide>
@@ -150,12 +173,12 @@
 									title="hide item details"
 									class="plain icon_button"
 									on:click={() => {
-										show_toot_details = false;
+										show_embedded_toot_details = false;
 									}}>🗙</button
 								>
 							</div>
 							<form>
-								<TootInput bind:host={embedded_toot_host} bind:url={embedded_toot_url} />
+								<TootInput bind:url={embedded_toot_url} />
 							</form>
 							<p class="width_full">the Svelte code:</p>
 							<Code
@@ -321,10 +344,10 @@
 		<div class="prose spaced">
 			<h2><HashLink slug="replies">Replies</HashLink></h2>
 		</div>
-		<Toot host={replies_toot_host} id={replies_toot_id} replies>
+		<Toot host={replies_toot_host} id={replies_toot_id} replies on:reset={replies_toot_reset}>
 			<svelte:fragment slot="settings">
 				<form class="width_sm">
-					<TootInput bind:host={replies_toot_host} bind:url={replies_toot_url} />
+					<TootInput bind:url={replies_toot_url} />
 				</form>
 				<Code content={`<Toot\n\thost="${replies_toot_host}"\n\tid="${replies_toot_id}"\n/>`} />
 			</svelte:fragment>
