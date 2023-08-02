@@ -1,5 +1,4 @@
 <script lang="ts">
-	import {base} from '$app/paths';
 	import {page} from '$app/stores';
 	import {fade, slide} from 'svelte/transition';
 	import {dev} from '$app/environment';
