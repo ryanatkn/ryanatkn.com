@@ -69,18 +69,20 @@
 			<HashLink slug="description">Description</HashLink>
 		</h2>
 		<p>
-			This website is a bundle of plain static files, including HTML, JavaScript, CSS, an <a
-				href="{base}/blog/feed.xml"
-				download>Atom feed</a
-			> - about 1.5 MB of mostly images when I wrote this 3rd blog post. This website also has reader-submitted
-			comments through Mastodon that are dynamically loaded by your browser after being allowlisted by
-			me clicking the favourite button ★ in my Mastodon client.
+			This website is a bundle of static files served from a free host, and it also has
+			reader-submitted comments through Mastodon. I made a Mastodon post and its replies are
+			dynamically loaded by your browser. They're displayed if I've clicked the favourite button ★
+			in my Mastodon client, otherwise your browser ignores the post. So here we have them,
+			allowlisted comments on a static blog with Mastodon.
 		</p>
 		<aside>
 			<details>
 				<summary>technical details</summary>
 				<p>
-					The site's files are viewable on
+					The site's files are being hosted for free by
+					<a href="https://pages.github.com/">GitHub Pages</a>
+					here at
+					<code>{$page.url.host}</code>. They're viewable on
 					<a href="https://github.com/ryanatkn/ryanatkn.com/tree/deploy"
 						>the <code>deploy</code> branch</a
 					>
@@ -88,12 +90,9 @@
 					<a href="https://github.com/ryanatkn/ryanatkn.com">the git repo</a> and downloadable as
 					<a href="https://github.com/ryanatkn/ryanatkn.com/archive/refs/heads/deploy.zip" download
 						>a zip file</a
-					>. Those files are being hosted for free by
-					<a href="https://pages.github.com/">GitHub Pages</a>
-					here at
-					<code>{$page.url.host}</code>. The cost of serving these static files is very low, so
-					"free" is a common cloud offering for static sites in 2023. Thank you GitHub for being our
-					freeloaded host of the day.
+					>. The cost of serving these static files is very low, so "free" is a common cloud
+					offering for static sites in 2023. Thank you GitHub for being our freeloaded host of the
+					day.
 				</p>
 				<p>
 					The website's final output files are HTML, JS, and CSS, but <a
@@ -383,5 +382,9 @@
 	}
 	.loaded_message {
 		margin-left: var(--spacing_md);
+	}
+	/* TODO tricky layout issue, related to the leaky :last-child margin selectors */
+	details:not([open]) summary {
+		margin-bottom: 0;
 	}
 </style>
