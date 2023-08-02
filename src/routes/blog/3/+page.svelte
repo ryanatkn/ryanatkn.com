@@ -299,7 +299,7 @@
 			<li>
 				<a href="https://docs.joinmastodon.org/methods/statuses/#context"
 					>GET /api/v1/statuses/:id/context</a
-				> - called once for replies of an embedded status to get its descendants and ancestors
+				> - called once for the embedded status to get its descendants (replies) and ancestors
 			</li>
 			<li>
 				<a href="https://docs.joinmastodon.org/methods/statuses/#favourited_by"
