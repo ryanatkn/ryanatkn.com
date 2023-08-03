@@ -28,8 +28,6 @@
 	 */
 	export let ancestors = false;
 
-	export let show_details: boolean | undefined = undefined;
-
 	let loaded_status_key = 1;
 
 	export let loading: boolean | undefined = undefined;

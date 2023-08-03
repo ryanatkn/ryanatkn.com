@@ -57,13 +57,6 @@
 	let loading: boolean | undefined;
 	let load_time: number | undefined;
 
-	const DEFAULT_SHOW_EMBEDDED_TOOT_DETAILS = 'show_embedded_toot_details';
-	let show_embedded_toot_details = load_from_storage(
-		DEFAULT_SHOW_EMBEDDED_TOOT_DETAILS,
-		() => true,
-	); // TODO store?
-	$: set_in_storage(DEFAULT_SHOW_EMBEDDED_TOOT_DETAILS, show_embedded_toot_details); // TODO wastefully sets on init
-
 	// TODO BLOCK see `div class="reset"` below
 
 	const embedded_toot_reset = () => {
@@ -146,7 +139,6 @@
 					bind:reset={reset_embedded_toot}
 					bind:loading
 					bind:load_time
-					bind:show_details={show_embedded_toot_details}
 					on:reset={embedded_toot_reset}
 				>
 					<p class="width_full">the Svelte code:</p>
