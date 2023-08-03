@@ -1,6 +1,5 @@
 <script lang="ts">
 	import {page} from '$app/stores';
-	import {fade, slide} from 'svelte/transition';
 	import {dev} from '$app/environment';
 	import 'prismjs'; // TODO why are these needed?
 	import 'prism-svelte'; // TODO why are these needed?
@@ -12,7 +11,6 @@
 	import {prod_content_security_policy} from '$routes/security';
 	import {load_from_storage, set_in_storage} from '$lib/storage';
 	import {parse_status_context_url, to_status_url} from '$lib/mastodon';
-	import TootInput from '$lib/TootInput.svelte';
 
 	// tips
 	const DEFAULT_TOOT_HOST = dev ? 'mstdn.social' : 'hachyderm.io';
@@ -129,15 +127,9 @@
 					<p>
 						Although completely static, this site has the dynamic behavior of fetching data at
 						runtime in your browser from <a href="https://hachyderm.io/">my Mastodon host</a>,
-						thanks to the power of
-						<button
-							class="inline plain"
-							on:click={() => {
-								alert('js runs here'); // eslint-disable-line no-alert
-							}}>scripting</button
-						>
-						and <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS">CORS</a>. Static
-						AND dynamic??
+						thanks to the power of scripting and
+						<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS">CORS</a>. Static AND
+						dynamic??
 					</p>
 				</details>
 			</aside>
@@ -156,35 +148,10 @@
 					bind:load_time
 					bind:show_details={show_embedded_toot_details}
 					on:reset={embedded_toot_reset}
-				/>
-				{#if show_embedded_toot_details}
-					<div class="embed_item" transition:fade>
-						<div class="embed_item_inner">
-							<div class="reset_wrapper">
-								<div class="reset">
-									<button
-										on:click={() => {
-											reset_embedded_toot();
-										}}
-										disabled={loading === undefined}>reset</button
-									>{#if load_time !== undefined}<div class="loaded_message" transition:slide>
-											loaded in {Math.round(load_time)}ms
-										</div>{/if}
-								</div>
-								<button
-									title="hide item details"
-									class="plain icon_button"
-									on:click={() => {
-										show_embedded_toot_details = false;
-									}}>🗙</button
-								>
-							</div>
-							<form>
-								<TootInput bind:url={embedded_toot_url} />
-							</form>
-							<p class="width_full">the Svelte code:</p>
-							<Code
-								content={`<Toot
+				>
+					<p class="width_full">the Svelte code:</p>
+					<Code
+						content={`<Toot
 	host=${'"' + embedded_toot_host + '"'}
 	id=${'"' + embedded_toot_id + '"'}
 	let:load
@@ -196,10 +163,8 @@
 		<Comment {item} />
 	{:else ...}
 </Toot>`}
-							/>
-						</div>
-					</div>
-				{/if}
+					/>
+				</Toot>
 			</div>
 		</section>
 		<div class="prose">
@@ -350,9 +315,6 @@
 		</div>
 		<Toot host={replies_toot_host} id={replies_toot_id} replies on:reset={replies_toot_reset}>
 			<svelte:fragment slot="settings">
-				<form class="width_sm">
-					<TootInput bind:url={replies_toot_url} />
-				</form>
 				<Code content={`<Toot\n\thost="${replies_toot_host}"\n\tid="${replies_toot_id}"\n/>`} />
 			</svelte:fragment>
 		</Toot>
@@ -374,40 +336,10 @@
 		width: 100%;
 		gap: var(--spacing_md);
 	}
-	@media (max-width: 600px) {
+	@media (max-width: 700px) {
 		.embedded_status_inner {
 			flex-direction: column;
 		}
-	}
-	.embed_item {
-		width: 100%;
-		position: relative;
-		background-color: var(--bg);
-		border-radius: var(--border_radius_sm);
-		padding: var(--spacing_xs);
-		overflow: hidden;
-	}
-	.embed_item_inner {
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-	}
-
-	.reset_wrapper {
-		display: flex;
-		justify-content: space-between;
-		width: 100%;
-	}
-	.reset {
-		display: flex;
-		align-items: center;
-	}
-	/* TODO hacky */
-	.reset :global(button) {
-		margin-bottom: 0;
-	}
-	.loaded_message {
-		margin-left: var(--spacing_md);
 	}
 	/* TODO tricky layout issue, related to the leaky :last-child margin selectors */
 	details:not([open]) summary {

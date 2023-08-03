@@ -9,6 +9,7 @@
 	import {load_from_storage, set_in_storage} from '$lib/storage';
 	import {onscreen} from '$lib/onscreen';
 	import {parse_status_context_url, to_status_url} from '$lib/mastodon';
+	import TootInput from './TootInput.svelte';
 
 	const dispatch = createEventDispatcher<{reset: void}>();
 
@@ -99,7 +100,7 @@
 			let:load_time
 			bind:load_time
 		>
-			<div class="panel padded_md width_sm">
+			<div class="toot panel">
 				<div
 					class="controls"
 					use:onscreen={(intersecting) => {
@@ -147,8 +148,11 @@
 							title={autoload
 								? 'replies will load automatically when scrolled onscreen'
 								: 'replies are not loaded until you request them'}
-							><input type="checkbox" bind:checked={autoload} />autoload when scrolled onscreen</label
+							><input type="checkbox" bind:checked={autoload} />autoload</label
 						>
+						<form class="width_sm">
+							<TootInput bind:url />
+						</form>
 						<slot name="settings" />
 					</div>
 				{/if}
@@ -180,6 +184,12 @@
 {/if}
 
 <style>
+	.toot {
+		flex-shrink: 0;
+		padding: var(--spacing_md);
+		width: 100%;
+		max-width: var(--width_sm);
+	}
 	.statuses {
 		display: flex;
 		flex-wrap: wrap;
@@ -230,23 +240,5 @@
 		display: flex;
 		padding: var(--spacing_md);
 		margin-top: var(--spacing_md);
-	}
-	.mammoth {
-		font-size: var(--icon_size_md);
-		padding: var(--spacing_sm) var(--spacing_md) var(--spacing_sm) 0;
-	}
-	/* TODO hacky */
-	.embed_item {
-		width: 100%;
-		position: relative;
-		background-color: var(--bg);
-		border-radius: var(--border_radius_sm);
-		padding: var(--spacing_xs);
-		overflow: hidden;
-	}
-	.embed_item_inner {
-		width: 100%;
-		display: flex;
-		flex-direction: column;
 	}
 </style>
