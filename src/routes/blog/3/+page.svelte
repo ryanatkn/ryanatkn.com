@@ -9,7 +9,6 @@
 	import HashLink from '$lib/HashLink.svelte';
 	import BlogPostIndex from '$lib/BlogPostIndex.svelte';
 	import {prod_content_security_policy} from '$routes/security';
-	import {load_from_storage, set_in_storage} from '$lib/storage';
 	import {parse_status_context_url, to_status_url} from '$lib/mastodon';
 
 	// tips
