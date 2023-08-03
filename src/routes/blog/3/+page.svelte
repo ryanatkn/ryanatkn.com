@@ -118,9 +118,8 @@
 						day.
 					</p>
 					<p>
-						The website's final output files are HTML, JS, and CSS, but <a
-							href="https://github.com/ryanatkn/ryanatkn.com">the source code</a
-						>
+						The website's final output files are HTML, JS, and CSS (and really most of the bytes are
+						images), but <a href="https://github.com/ryanatkn/ryanatkn.com">the source code</a>
 						that generates these files is written in
 						<a href="https://typescriptlang.org/">TypeScript</a>
 						and <a href="https://svelte.dev/">Svelte</a> using
