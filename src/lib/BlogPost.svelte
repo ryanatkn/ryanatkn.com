@@ -13,9 +13,11 @@
 	<title>{post.title} - ryanatkn.com</title>
 </svelte:head>
 
-<header class="prose width_md">
-	<BlogPostHeader {post} />
-</header>
-<svelte:component this={component} />
-<hr class="width_md" />
-<BlogPostFooter {post} />
+<article>
+	<header class="prose width_md">
+		<BlogPostHeader {post} />
+	</header>
+	<svelte:component this={component} />
+	<hr class="width_md" />
+	<BlogPostFooter {post} />
+</article>
