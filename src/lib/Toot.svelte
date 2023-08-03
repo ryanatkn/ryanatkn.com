@@ -106,8 +106,8 @@
 				<div class="panel padded_md spaced">
 					<div
 						class="controls"
-						use:scrolled={() => {
-							if (autoload) load();
+						use:scrolled={(intersecting) => {
+							if (intersecting && autoload) load();
 						}}
 					>
 						<PendingButton pending={loading || false} disabled={!!context} on:click={() => load()}>
