@@ -44,7 +44,7 @@ export const onscreen: Action<Element, OnscreenParams> = (el, initial) => {
 		update: (params) => {
 			const prev = options;
 			update(params);
-			if (!changed(prev, options)) {
+			if (!equal(prev, options)) {
 				observe();
 			}
 		},
@@ -52,7 +52,7 @@ export const onscreen: Action<Element, OnscreenParams> = (el, initial) => {
 	};
 };
 
-const changed = (
+const equal = (
 	a: IntersectionObserverInit | undefined,
 	b: IntersectionObserverInit | undefined,
 ): boolean => {
