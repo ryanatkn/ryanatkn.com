@@ -1,4 +1,3 @@
-import {dequal} from 'dequal';
 import type {Action} from 'svelte/action';
 
 // TODO upstream, where?
@@ -31,7 +30,7 @@ export const onscreen: Action<Element, OnscreenParams> = (el, initial) => {
 		observer = null;
 	};
 	const observe = (): void => {
-		if (observer) return;
+		if (observer) cleanup();
 		observer = new IntersectionObserver((entries) => {
 			cb(entries[0].isIntersecting);
 		}, options);
@@ -45,13 +44,19 @@ export const onscreen: Action<Element, OnscreenParams> = (el, initial) => {
 		update: (params) => {
 			const prevOptions = options;
 			update(params);
-			if (!dequal(prevOptions, options)) {
-				cleanup();
+			if (!equal(prevOptions, options)) {
 				observe();
 			}
 		},
-		destroy: () => {
-			cleanup();
-		},
+		destroy: cleanup,
 	};
+};
+
+const equal = (
+	a: IntersectionObserverInit | undefined,
+	b: IntersectionObserverInit | undefined,
+): boolean => {
+	if (a === b) return true;
+	if (!a || !b) return false;
+	return a.root === b.root && a.rootMargin === b.rootMargin && a.threshold === b.threshold;
 };
