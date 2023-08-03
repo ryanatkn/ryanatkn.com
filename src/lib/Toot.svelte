@@ -7,7 +7,7 @@
 	import MastodonStatusItem from '$lib/MastodonStatusItem.svelte';
 	import TootLoader from '$lib/TootLoader.svelte';
 	import {load_from_storage, set_in_storage} from '$lib/storage';
-	import {scrolled} from '$lib/scrolled';
+	import {onscreen} from '$lib/onscreen';
 	import {parse_status_context_url, to_status_url} from '$lib/mastodon';
 
 	const dispatch = createEventDispatcher<{reset: void}>();
@@ -106,7 +106,7 @@
 				<div class="panel padded_md spaced">
 					<div
 						class="controls"
-						use:scrolled={(intersecting) => {
+						use:onscreen={(intersecting) => {
 							if (intersecting && autoload) load();
 						}}
 					>
@@ -151,9 +151,9 @@
 							<label
 								class="row"
 								title={autoload
-									? 'replies will load automatically when scrolled into view'
+									? 'replies will load automatically when scrolled onscreen'
 									: 'replies are not loaded until you request them'}
-								><input type="checkbox" bind:checked={autoload} />autoload when scrolled into view</label
+								><input type="checkbox" bind:checked={autoload} />autoload when scrolled onscreen</label
 							>
 							<slot name="settings" />
 						</div>
