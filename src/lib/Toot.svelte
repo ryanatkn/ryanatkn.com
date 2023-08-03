@@ -102,118 +102,81 @@
 			let:load_time
 			bind:load_time
 		>
-			{#if with_context}
-				<div class="panel padded_md spaced">
-					<div
-						class="controls"
-						use:onscreen={(intersecting) => {
-							if (intersecting && autoload) load();
-						}}
-					>
-						<PendingButton pending={loading || false} disabled={!!context} on:click={() => load()}>
-							<div class="icon_button_content load_replies_button_content_hack">
-								<div class="icon">🦣</div>
-								<div class="content">
-									{#if context && replies}
-										<div>loaded {replies.length + context.ancestors.length} toots from</div>
-										<code>{host}</code>
-									{:else}
-										<div>load toots from</div>
-										<code>{host}</code>
-									{/if}
-								</div>
+			<div class="panel padded_md spaced">
+				<div
+					class="controls"
+					use:onscreen={(intersecting) => {
+						if (intersecting && autoload) load();
+					}}
+				>
+					<PendingButton pending={loading || false} disabled={!!context} on:click={() => load()}>
+						<div class="icon_button_content load_replies_button_content_hack">
+							<div class="icon">🦣</div>
+							<div class="content">
+								{#if context && replies}
+									<div>loaded {replies.length + context.ancestors.length} toots from</div>
+									<code>{host}</code>
+								{:else}
+									<div>load toots from</div>
+									<code>{host}</code>
+								{/if}
 							</div>
-						</PendingButton>
-						<div class="box">
-							<button
-								on:click={toggle_settings}
-								class="icon_button_content deselectable"
-								class:selected={show_settings}
-							>
-								<div class="icon">⚙️</div>
-								<div class="content">
-									<div>
-										{#if show_settings}hide{:else}show{/if}
-									</div>
-									<div>settings</div>
-								</div>
-							</button>
 						</div>
-						<div class="reset">
-							<button on:click={reset} disabled={loading === null}>reset</button
-							>{#if load_time !== undefined}<div class="loaded_message" transition:slide>
-									loaded in {Math.round(load_time)}ms
-								</div>{/if}
-						</div>
+					</PendingButton>
+					<div class="reset">
+						<button on:click={reset} disabled={loading === null}>reset</button
+						>{#if load_time !== undefined}<div class="loaded_message" transition:slide>
+								loaded in {Math.round(load_time)}ms
+							</div>{/if}
 					</div>
-					{#if show_settings}
-						<div transition:slide class="settings controls panel">
-							<label
-								class="row"
-								title={autoload
-									? 'replies will load automatically when scrolled onscreen'
-									: 'replies are not loaded until you request them'}
-								><input type="checkbox" bind:checked={autoload} />autoload when scrolled onscreen</label
-							>
-							<slot name="settings" />
+					<button
+						on:click={toggle_settings}
+						class="icon_button_content deselectable"
+						class:selected={show_settings}
+					>
+						<div class="icon">⚙️</div>
+						<div class="content">
+							<div>
+								{#if show_settings}hide{:else}show{/if}
+							</div>
+							<div>settings</div>
 						</div>
-					{/if}
+					</button>
 				</div>
-				{#if context}
-					<ul class="statuses" transition:slide>
-						{#if ancestors}
-							<!-- TODO style differently or something -->
-							{#each context.ancestors as ancestor}
-								<li>
-									<MastodonStatusItem item={ancestor} />
-								</li>
-							{/each}
-						{/if}
-						{#if item}
-							<div class="main_post panel">
-								<div class="panel main_post_inner">
-									<MastodonStatusItem {item} />
-								</div>
-							</div>
-						{/if}
-						{#if item && replies}
-							<MastodonStatusTree {item} items={replies} />
-						{/if}
-					</ul>
+				{#if show_settings}
+					<div transition:slide class="settings controls panel">
+						<label
+							class="row"
+							title={autoload
+								? 'replies will load automatically when scrolled onscreen'
+								: 'replies are not loaded until you request them'}
+							><input type="checkbox" bind:checked={autoload} />autoload when scrolled onscreen</label
+						>
+						<slot name="settings" />
+					</div>
 				{/if}
-			{:else}
-				<div class="embed_item">
-					<div class="embed_item_inner">
-						{#if loading !== false}
-							<div transition:slide class="box padded_xl panel">
-								<PendingButton pending={!!loading} on:click={load}>
-									<span class="mammoth">🦣</span>
-									<div>
-										<div>load toot from</div>
-										<code>{host}</code>
-									</div>
-								</PendingButton>
-							</div>
-						{:else if item}
-							<div transition:slide class="width_full">
+			</div>
+			{#if context || item}
+				<ul class="statuses" transition:slide>
+					{#if ancestors && context}
+						<!-- TODO style differently or something -->
+						{#each context.ancestors as ancestor}
+							<li>
+								<MastodonStatusItem item={ancestor} />
+							</li>
+						{/each}
+					{/if}
+					{#if item}
+						<div class="main_post panel">
+							<div class="panel main_post_inner">
 								<MastodonStatusItem {item} />
 							</div>
-						{/if}
-						{#if !show_details}
-							<button
-								title="show item details"
-								class="plain icon_button"
-								style:position="absolute"
-								style:right="var(--spacing_sm)"
-								style:top="var(--spacing_sm)"
-								style:font-size="var(--size_lg)"
-								on:click={() => {
-									show_details = true;
-								}}>⚙️</button
-							>
-						{/if}
-					</div>
-				</div>
+						</div>
+					{/if}
+					{#if item && replies}
+						<MastodonStatusTree {item} items={replies} />
+					{/if}
+				</ul>
 			{/if}
 		</TootLoader>
 	{/key}
@@ -228,7 +191,8 @@
 	}
 	.controls {
 		display: flex;
-		flex-wrap: wrap;
+		flex-direction: column;
+		align-items: flex-start;
 		gap: var(--spacing_md);
 	}
 	.icon_button_content {
