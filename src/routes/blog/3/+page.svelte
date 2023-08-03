@@ -85,65 +85,68 @@
 		<br />
 		<BlogPostIndex {sections} />
 	</section>
-	<section class="prose">
-		<h2>
-			<HashLink slug="description">Description</HashLink>
-		</h2>
-		<p>
-			This website is a bundle of static files served from a free host, and it also has
-			reader-submitted comments through Mastodon. I made a Mastodon post and its replies are
-			dynamically loaded by your browser. They're displayed if I've clicked the favourite button ★
-			in my Mastodon client, otherwise your browser ignores the post. So here we have them,
-			allowlisted comments on a static blog with Mastodon.
-		</p>
-		<aside>
-			<details>
-				<summary>technical details</summary>
-				<p>
-					The site's files are being hosted for free by
-					<a href="https://pages.github.com/">GitHub Pages</a>
-					here at
-					<code>{$page.url.host}</code>. They're viewable on
-					<a href="https://github.com/ryanatkn/ryanatkn.com/tree/deploy"
-						>the <code>deploy</code> branch</a
-					>
-					of
-					<a href="https://github.com/ryanatkn/ryanatkn.com">the git repo</a> and downloadable as
-					<a href="https://github.com/ryanatkn/ryanatkn.com/archive/refs/heads/deploy.zip" download
-						>a zip file</a
-					>. The cost of serving these static files is very low, so "free" is a common cloud
-					offering for static sites in 2023. Thank you GitHub for being our freeloaded host of the
-					day.
-				</p>
-				<p>
-					The website's final output files are HTML, JS, and CSS, but <a
-						href="https://github.com/ryanatkn/ryanatkn.com">the source code</a
-					>
-					that generates these files is written in
-					<a href="https://typescriptlang.org/">TypeScript</a>
-					and <a href="https://svelte.dev/">Svelte</a> using
-					<a href="https://kit.svelte.dev/">SvelteKit</a> and
-					<a href="https://vitejs.dev/">Vite</a>. I recommend them with enthusiasm.
-				</p>
-				<p>
-					Although completely static, this site has the dynamic behavior of fetching data at runtime
-					in your browser from <a href="https://hachyderm.io/">my Mastodon host</a>, thanks to the
-					power of
-					<button
-						class="inline plain"
-						on:click={() => {
-							alert('js runs here'); // eslint-disable-line no-alert
-						}}>scripting</button
-					>
-					and <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS">CORS</a>. Static AND
-					dynamic??
-				</p>
-			</details>
-		</aside>
-		<p>
-			With some JS (via <a href="https://svelte.dev/">Svelte</a> in this case) we can embed a toot,
-			like <a href>this one about this blog post</a>:
-		</p>
+	<section>
+		<div class="prose">
+			<h2>
+				<HashLink slug="description">Description</HashLink>
+			</h2>
+			<p>
+				This website is a bundle of static files served from a free host, and it also has
+				reader-submitted comments through Mastodon. I made a Mastodon post and its replies are
+				dynamically loaded by your browser. They're displayed if I've clicked the favourite button ★
+				in my Mastodon client, otherwise your browser ignores the post. So here we have them,
+				allowlisted comments on a static blog with Mastodon.
+			</p>
+			<aside>
+				<details>
+					<summary>technical details</summary>
+					<p>
+						The site's files are being hosted for free by
+						<a href="https://pages.github.com/">GitHub Pages</a>
+						here at
+						<code>{$page.url.host}</code>. They're viewable on
+						<a href="https://github.com/ryanatkn/ryanatkn.com/tree/deploy"
+							>the <code>deploy</code> branch</a
+						>
+						of
+						<a href="https://github.com/ryanatkn/ryanatkn.com">the git repo</a> and downloadable as
+						<a
+							href="https://github.com/ryanatkn/ryanatkn.com/archive/refs/heads/deploy.zip"
+							download>a zip file</a
+						>. The cost of serving these static files is very low, so "free" is a common cloud
+						offering for static sites in 2023. Thank you GitHub for being our freeloaded host of the
+						day.
+					</p>
+					<p>
+						The website's final output files are HTML, JS, and CSS, but <a
+							href="https://github.com/ryanatkn/ryanatkn.com">the source code</a
+						>
+						that generates these files is written in
+						<a href="https://typescriptlang.org/">TypeScript</a>
+						and <a href="https://svelte.dev/">Svelte</a> using
+						<a href="https://kit.svelte.dev/">SvelteKit</a> and
+						<a href="https://vitejs.dev/">Vite</a>. I recommend them with enthusiasm.
+					</p>
+					<p>
+						Although completely static, this site has the dynamic behavior of fetching data at
+						runtime in your browser from <a href="https://hachyderm.io/">my Mastodon host</a>,
+						thanks to the power of
+						<button
+							class="inline plain"
+							on:click={() => {
+								alert('js runs here'); // eslint-disable-line no-alert
+							}}>scripting</button
+						>
+						and <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS">CORS</a>. Static
+						AND dynamic??
+					</p>
+				</details>
+			</aside>
+			<p>
+				With some JS (via <a href="https://svelte.dev/">Svelte</a> in this case) we can embed a
+				toot, like <a href>this one about this blog post</a>:
+			</p>
+		</div>
 		<section class="embedded_status">
 			<div class="embedded_status_inner">
 				<Toot
@@ -200,38 +203,40 @@
 				{/if}
 			</div>
 		</section>
-		<p>
-			Above is the <code>Toot</code>, and below under the final heading
-			<a href="#replies">"Replies"</a>
-			is <code>Toots</code>. If you click the "load replies" button below, your browser sends a
-			request to a <a href="https://joinmastodon.org/">Mastodon</a> instance at
-			<a href="https://hachyderm.io/">hachyderm.io</a>
-			that hosts
-			<a href="https://hachyderm.io/@ryanatkn">my account</a>. Mastodon is an
-			<a href="https://wikipedia.org/wiki/ActivityPub">ActivityPub</a>-compatible app in the
-			<a href="https://wikipedia.org/wiki/Fediverse">Fediverse</a>.
-		</p>
-		<p>
-			Your browser requests information about a <a href="https://hachyderm.io/@ryanatkn"
-				>a post I made</a
-			>
-			at hachyderm.io that references this blog post at ryanatkn.com. If the request is successful, some
-			JavaScript runs on your machine to display the "replies", replies to my post that I've "favourited".
-			My host hachyderm.io has its unauthenticated API enabled (in other words, "secure mode" has not
-			been enabled, meaning
-			<a href="https://docs.joinmastodon.org/admin/config/#authorized_fetch"
-				><code>AUTHORIZED_FETCH</code></a
-			>
-			is the default <code>false</code>), so we can request data without any logins or other
-			complexity.
-		</p>
-		<p>
-			Not every reply to my post appears in the replies section below. It displays only those that
-			I've explicitly favourited, aka liked or starred. This way, I have an allowlist managed by my
-			Mastodon account, the same place I microblogged about this blog post, a place out there on the
-			internet that magically operates free infrastructure for us, much like the free black box that
-			is GitHub pages. (free, but also, financially supporting admins is good luck)
-		</p>
+		<div class="prose">
+			<p>
+				Above is the <code>Toot</code>, and below under the final heading
+				<a href="#replies">"Replies"</a>
+				is <code>Toots</code>. If you click the "load replies" button below, your browser sends a
+				request to a <a href="https://joinmastodon.org/">Mastodon</a> instance at
+				<a href="https://hachyderm.io/">hachyderm.io</a>
+				that hosts
+				<a href="https://hachyderm.io/@ryanatkn">my account</a>. Mastodon is an
+				<a href="https://wikipedia.org/wiki/ActivityPub">ActivityPub</a>-compatible app in the
+				<a href="https://wikipedia.org/wiki/Fediverse">Fediverse</a>.
+			</p>
+			<p>
+				Your browser requests information about a <a href="https://hachyderm.io/@ryanatkn"
+					>a post I made</a
+				>
+				at hachyderm.io that references this blog post at ryanatkn.com. If the request is successful,
+				some JavaScript runs on your machine to display the "replies", replies to my post that I've "favourited".
+				My host hachyderm.io has its unauthenticated API enabled (in other words, "secure mode" has not
+				been enabled, meaning
+				<a href="https://docs.joinmastodon.org/admin/config/#authorized_fetch"
+					><code>AUTHORIZED_FETCH</code></a
+				>
+				is the default <code>false</code>), so we can request data without any logins or other
+				complexity.
+			</p>
+			<p>
+				Not every reply to my post appears in the replies section below. It displays only those that
+				I've explicitly favourited, aka liked or starred. This way, I have an allowlist managed by
+				my Mastodon account, the same place I microblogged about this blog post, a place out there
+				on the internet that magically operates free infrastructure for us, much like the free black
+				box that is GitHub pages. (free, but also, financially supporting admins is good luck)
+			</p>
+		</div>
 	</section>
 	<hr />
 	<section class="prose">

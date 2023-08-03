@@ -102,7 +102,7 @@
 			let:load_time
 			bind:load_time
 		>
-			<div class="panel padded_md spaced">
+			<div class="panel padded_md width_sm">
 				<div
 					class="controls"
 					use:onscreen={(intersecting) => {
