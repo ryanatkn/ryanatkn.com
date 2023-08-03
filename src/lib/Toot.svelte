@@ -9,14 +9,13 @@
 	import {load_from_storage, set_in_storage} from '$lib/storage';
 	import {onscreen} from '$lib/onscreen';
 	import {parse_status_context_url, to_status_url} from '$lib/mastodon';
-	import TootInput from './TootInput.svelte';
 
 	const dispatch = createEventDispatcher<{reset: void}>();
 
 	export let url: string | undefined = undefined;
 	export let host: string | undefined = undefined;
 	export let id: string | undefined = undefined;
-	// TODO BLOCK also author?
+	// TODO also author when available
 
 	/**
 	 * Whether to fetch and display replies aka descendants in the status context.
@@ -123,25 +122,19 @@
 							</div>
 						</div>
 					</PendingButton>
-					<div class="reset">
-						<button on:click={reset} disabled={loading === null}>reset</button
-						>{#if load_time !== undefined}<div class="loaded_message" transition:slide>
-								loaded in {Math.round(load_time)}ms
-							</div>{/if}
-					</div>
-					<button
-						on:click={toggle_settings}
-						class="icon_button_content deselectable"
-						class:selected={show_settings}
-					>
-						<div class="icon">⚙️</div>
-						<div class="content">
-							<div>
-								{#if show_settings}hide{:else}show{/if}
-							</div>
-							<div>settings</div>
+					<div class="row">
+						<button
+							on:click={toggle_settings}
+							class="icon_button_content deselectable"
+							class:selected={show_settings}>settings</button
+						>
+						<div class="reset">
+							<button on:click={reset} disabled={loading === null}>reset</button
+							>{#if load_time !== undefined}<div class="loaded_message" transition:slide>
+									loaded in {Math.round(load_time)}ms
+								</div>{/if}
 						</div>
-					</button>
+					</div>
 				</div>
 				{#if show_settings}
 					<div transition:slide class="settings controls panel">
@@ -153,7 +146,15 @@
 							><input type="checkbox" bind:checked={autoload} />autoload</label
 						>
 						<form class="width_sm">
-							<TootInput bind:url />
+							<fieldset>
+								<label title="where to load the toot">
+									<input
+										bind:value={url}
+										placeholder="> toot url"
+										on:focus={(e) => e.currentTarget.select()}
+									/>
+								</label>
+							</fieldset>
 						</form>
 						<slot name="settings" />
 					</div>
@@ -236,7 +237,7 @@
 		margin-bottom: 0;
 	}
 	.loaded_message {
-		margin-left: var(--spacing_md);
+		margin-left: var(--spacing_sm);
 	}
 	.settings {
 		display: flex;
