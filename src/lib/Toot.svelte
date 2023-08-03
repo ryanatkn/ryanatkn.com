@@ -82,9 +82,6 @@
 	// TODO BLOCK remove the if guard below -- what about invalid states?
 
 	// TODO BLOCK slot? bind the let: below and export all?
-
-	// TODO BLOCK this is a hack to branch the markup
-	$: with_context = replies || ancestors;
 </script>
 
 {#if id && host}
@@ -92,7 +89,7 @@
 		<TootLoader
 			{host}
 			{id}
-			{with_context}
+			with_context={replies || ancestors}
 			let:item
 			let:context
 			let:replies
