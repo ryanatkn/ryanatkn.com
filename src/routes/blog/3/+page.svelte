@@ -21,6 +21,7 @@
 	const sync = (url: string, which: 'embedded' | 'replies') => {
 		console.log(`sync`, url, which);
 		const parsed = parse_status_context_url(url);
+		// TODO handle parse failures
 		if (parsed) {
 			if (which === 'embedded') {
 				embedded_toot_host = parsed.host;
@@ -129,7 +130,7 @@
 				toot, like <a href>this one about this blog post</a>:
 			</p>
 		</div>
-		<section class="embedded_status">
+		<section class="embedded_status spaced">
 			<div class="embedded_status_inner">
 				<Toot
 					host={embedded_toot_host}
