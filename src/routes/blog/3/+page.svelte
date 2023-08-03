@@ -16,7 +16,6 @@
 	const DEFAULT_TOOT_ID = dev ? '110702983310017651' : 'TODO';
 	let embedded_toot_host = DEFAULT_TOOT_HOST;
 	let embedded_toot_id = DEFAULT_TOOT_ID;
-	let reset_embedded_toot: () => void;
 
 	// TODO idk about this pattern, weirdly circular
 	const sync = (url: string, which: 'embedded' | 'replies') => {
@@ -135,7 +134,6 @@
 				<Toot
 					host={embedded_toot_host}
 					id={embedded_toot_id}
-					bind:reset={reset_embedded_toot}
 					bind:loading
 					bind:load_time
 					on:reset={embedded_toot_reset}
