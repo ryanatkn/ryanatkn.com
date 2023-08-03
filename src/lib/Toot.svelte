@@ -80,6 +80,8 @@
 
 	$: parse(url, host, id);
 
+	$: with_context = replies || ancestors;
+
 	// TODO BLOCK remove the if guard below -- what about invalid states?
 
 	// TODO BLOCK slot? bind the let: below and export all?
@@ -90,7 +92,7 @@
 		<TootLoader
 			{host}
 			{id}
-			with_context={replies || ancestors}
+			{with_context}
 			let:item
 			let:context
 			let:replies
@@ -112,7 +114,9 @@
 							<div class="icon">🦣</div>
 							<div class="content">
 								{#if context && replies}
-									<div>loaded {replies.length + context.ancestors.length} toots from</div>
+									<div>
+										loaded {replies.length + context.ancestors.length} toot{#if with_context}s{/if} from
+									</div>
 									<code>{host}</code>
 								{:else}
 									<div>load toots from</div>
@@ -185,7 +189,7 @@
 
 <style>
 	.toot {
-		flex-shrink: 0;
+		flex: 1;
 		padding: var(--spacing_md);
 		width: 100%;
 		max-width: var(--width_sm);
