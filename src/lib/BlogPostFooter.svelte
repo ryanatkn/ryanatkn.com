@@ -5,7 +5,7 @@
 	post; // TODO
 </script>
 
-<div class="blog-post-footer">
+<footer class="blog-post-footer">
 	<div class="panel prose">
 		<p>
 			<span> find me on <a href="https://joinmastodon.org/">Mastodon</a> and ActivityPub:</span>
@@ -15,7 +15,7 @@
 			<a href="https://hachyderm.io/@ryanatkn">@ryanatkn@hachyderm.io</a> (webdev)
 		</p>
 	</div>
-</div>
+</footer>
 
 <style>
 	.blog-post-footer {
