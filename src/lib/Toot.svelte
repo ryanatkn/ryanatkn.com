@@ -2,12 +2,12 @@
 	import PendingButton from '@feltjs/felt-ui/PendingButton.svelte';
 	import {slide} from 'svelte/transition';
 	import {createEventDispatcher} from 'svelte';
+	import {intersect} from '@fuz.dev/intersect';
 
 	import MastodonStatusTree from '$lib/MastodonStatusTree.svelte';
 	import MastodonStatusItem from '$lib/MastodonStatusItem.svelte';
 	import TootLoader from '$lib/TootLoader.svelte';
 	import {load_from_storage, set_in_storage} from '$lib/storage';
-	import {onscreen} from '$lib/onscreen';
 	import {parse_status_context_url, to_status_url} from '$lib/mastodon';
 
 	const dispatch = createEventDispatcher<{reset: void}>();
@@ -102,7 +102,7 @@
 			<div class="toot panel">
 				<div
 					class="controls"
-					use:onscreen={(intersecting) => {
+					use:intersect={(intersecting) => {
 						if (intersecting && autoload) load();
 					}}
 				>
@@ -141,7 +141,7 @@
 						<label
 							class="row"
 							title={autoload
-								? 'replies will load automatically when scrolled onscreen'
+								? 'replies will load automatically when scrolled intersect'
 								: 'replies are not loaded until you request them'}
 							><input type="checkbox" bind:checked={autoload} />autoload</label
 						>
