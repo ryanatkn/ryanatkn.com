@@ -135,6 +135,7 @@
 				<Toot
 					host={embedded_toot_host}
 					id={embedded_toot_id}
+					storage_key="embedded"
 					bind:loading
 					bind:load_time
 					on:reset={embedded_toot_reset}
@@ -304,7 +305,13 @@
 		<div class="prose spaced">
 			<h2><HashLink slug="replies">Replies</HashLink></h2>
 		</div>
-		<Toot host={replies_toot_host} id={replies_toot_id} replies on:reset={replies_toot_reset}>
+		<Toot
+			host={replies_toot_host}
+			id={replies_toot_id}
+			replies
+			storage_key="replies"
+			on:reset={replies_toot_reset}
+		>
 			<svelte:fragment slot="settings">
 				<Code content={`<Toot\n\thost="${replies_toot_host}"\n\tid="${replies_toot_id}"\n/>`} />
 			</svelte:fragment>

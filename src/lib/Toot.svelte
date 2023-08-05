@@ -41,9 +41,13 @@
 		dispatch('reset');
 	};
 
-	const SHOW_SETTINGS_KEY = 'show_settings';
-	let show_settings = load_from_storage(SHOW_SETTINGS_KEY, () => false); // TODO store?
-	$: set_in_storage(SHOW_SETTINGS_KEY, show_settings); // TODO wastefully sets on init
+	export let storage_key: string | undefined = undefined;
+
+	// TODO refactor with storage helpers with serialize/parse as options, locallyStored?
+	let show_settings_key = storage_key && 'show_settings' + storage_key;
+	$: show_settings_key = storage_key && 'show_settings' + storage_key;
+	let show_settings = show_settings_key ? load_from_storage(show_settings_key, () => false) : false; // TODO store?
+	$: show_settings_key && set_in_storage(show_settings_key, show_settings); // TODO wastefully sets on init
 
 	const toggle_settings = () => {
 		show_settings = !show_settings;
