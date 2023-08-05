@@ -30,24 +30,31 @@ export const fetch_data = async (url: string): Promise<any | null> => {
 	}
 };
 
-// TODO BLOCK
+// TODO BLOCK these names need help
 // https://${host}/users/${author}/statuses/${id} // uri
 // https://${host}/@${author}/${id} // url
 // https://${host}/api/v1/statuses/${id} // status endpoint
 // https://${host}/api/v1/statuses/${id}/context // status context endpoint
 // https://${host}/api/v1/statuses/${id}/favourited_by // status favourited by endpoint
 
-// TODO BLOCK name
-export const to_status_url = (host: string, id: string): string =>
-	`https://${host}/api/v1/statuses/${id}`;
+export const to_status_url = (host: string, id: string): string => `https://${host}/statuses/${id}`;
 
-export const to_status_context_url = (host: string, id: string): string =>
-	`https://${host}/api/v1/statuses/${id}/context`;
-
-export const to_status_url_with_author = (host: string, author: string, id: string): string =>
+export const to_status_url_with_author = (host: string, id: string, author: string): string =>
 	`https://${host}/@${author}/${id}`;
 
-export const to_favourites_url = (host: string, id: string): string =>
+/**
+ * longhand for `to_status_url_with_author`, apperas
+ */
+export const to_status_url_with_users_author = (host: string, id: string, author: string): string =>
+	`https://${host}/users/${author}/statuses/${id}`;
+
+export const to_api_status_url = (host: string, id: string): string =>
+	`https://${host}/api/v1/statuses/${id}`;
+
+export const to_api_status_context_url = (host: string, id: string): string =>
+	`https://${host}/api/v1/statuses/${id}/context`;
+
+export const to_api_favourites_url = (host: string, id: string): string =>
 	`https://${host}/api/v1/statuses/${id}/favourited_by`;
 
 export const to_api_url = (
@@ -58,7 +65,7 @@ export const to_api_url = (
 	if (!url && !host && !id) {
 		throw new Error('either url or host+id must be provided');
 	}
-	return url || (host && id ? to_status_context_url(host, id) : null);
+	return url || (host && id ? to_api_status_context_url(host, id) : null);
 };
 
 // TODO BLOCK rename with the above
@@ -68,8 +75,8 @@ export const to_post_url = (api_url: string | null): string | null => {
 	const parsed = parse_status_url_with_author(api_url);
 	if (!parsed) return null;
 	return parsed.author
-		? to_status_url_with_author(parsed.host, parsed.author, parsed.id)
-		: to_status_url(parsed.host, parsed.id);
+		? to_status_url_with_author(parsed.host, parsed.id, parsed.author)
+		: to_api_status_url(parsed.host, parsed.id);
 };
 
 /**
@@ -117,12 +124,12 @@ export const fetch_status_context = async (
 	host: string,
 	id: string,
 ): Promise<MastodonContext | null> => {
-	const u = to_status_context_url(host, id);
+	const u = to_api_status_context_url(host, id);
 	return fetch_data(u);
 };
 
 export const fetch_status = async (host: string, id: string): Promise<MastodonStatus | null> => {
-	const u = to_status_url(host, id);
+	const u = to_api_status_url(host, id);
 	return fetch_data(u);
 };
 
@@ -130,7 +137,7 @@ export const fetch_favourites = async (
 	host: string,
 	status: MastodonStatus,
 ): Promise<MastodonFavourites[] | null> => {
-	const u = to_favourites_url(host, status.id);
+	const u = to_api_favourites_url(host, status.id);
 	return fetch_data(u);
 };
 

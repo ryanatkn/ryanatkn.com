@@ -9,7 +9,7 @@
 	import HashLink from '$lib/HashLink.svelte';
 	import BlogPostIndex from '$lib/BlogPostIndex.svelte';
 	import {prod_content_security_policy} from '$routes/security';
-	import {parse_status_context_url, to_status_url} from '$lib/mastodon';
+	import {parse_status_context_url, to_api_status_url} from '$lib/mastodon';
 
 	// tips
 	const DEFAULT_TOOT_HOST = dev ? 'mstdn.social' : 'hachyderm.io';
@@ -33,13 +33,13 @@
 		}
 		console.log(`parsed`, parsed);
 	};
-	let embedded_toot_url = to_status_url(embedded_toot_host, embedded_toot_id);
+	let embedded_toot_url = to_api_status_url(embedded_toot_host, embedded_toot_id);
 	$: console.log(`embedded_toot_url`, embedded_toot_url);
 	$: sync(embedded_toot_url, 'embedded');
 
 	let replies_toot_host = embedded_toot_host;
 	let replies_toot_id = embedded_toot_id;
-	let replies_toot_url = to_status_url(replies_toot_host, replies_toot_id);
+	let replies_toot_url = to_api_status_url(replies_toot_host, replies_toot_id);
 	$: sync(replies_toot_url, 'replies');
 
 	// TODO BLOCK add a button "show the technical stuff" or details?
@@ -209,9 +209,6 @@
 			<li>is readonly - you can't take actions directly on the page (favouriting, replying)</li>
 		</ul>
 		<p>
-			Here's <a href="https://github.com/ryanatkn/ryanatkn.com/pull/12/files">the GitHub PR</a>.
-		</p>
-		<p>
 			To avoid some possible security and privacy issues from injecting HTML from Mastodon's API
 			into the page like I'm doing, I added a fairly restrictive <a
 				href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP">content security policy</a
@@ -244,6 +241,10 @@
 			the API to get favourites for many statuses at once or otherwise query for statuses that a
 			particular user had favourited - I make an API call for every post with 1+ likes to see if the
 			author is among them.
+		</p>
+		<p>
+			Here's <a href="https://github.com/ryanatkn/ryanatkn.com/pull/12/files">the GitHub PR</a> with
+			the code and some more details.
 		</p>
 	</section>
 	<hr />

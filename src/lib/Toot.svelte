@@ -8,7 +8,7 @@
 	import MastodonStatusItem from '$lib/MastodonStatusItem.svelte';
 	import TootLoader from '$lib/TootLoader.svelte';
 	import {load_from_storage, set_in_storage} from '$lib/storage';
-	import {parse_status_context_url, to_status_url} from '$lib/mastodon';
+	import {parse_status_context_url, to_api_status_url} from '$lib/mastodon';
 
 	const dispatch = createEventDispatcher<{reset: void}>();
 
@@ -70,7 +70,7 @@
 				throw Error(); // TODO BLOCK ?
 			}
 		} else {
-			url = to_status_url(_host!, _id!);
+			url = to_api_status_url(_host!, _id!);
 		}
 		console.log(`_url, _host, _id`, _url, _host, _id);
 	};
@@ -106,7 +106,7 @@
 						cb: (intersecting) => {
 							if (intersecting && autoload) load();
 						},
-						once: true,
+						count: 1,
 					}}
 				>
 					<PendingButton pending={loading || false} disabled={!!context} on:click={() => load()}>
