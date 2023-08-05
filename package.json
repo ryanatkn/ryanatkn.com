@@ -31,7 +31,7 @@
     "@feltjs/eslint-config": "^0.3.0",
     "@feltjs/felt-ui": "^0.65.0",
     "@feltjs/gro": "^0.78.2",
-    "@fuz.dev/intersect": "^0.1.0",
+    "@fuz.dev/intersect": "^0.1.1",
     "@prettier/plugin-xml": "^2.2.0",
     "@sveltejs/adapter-static": "^2.0.3",
     "@sveltejs/kit": "^1.22.4",

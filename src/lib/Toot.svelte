@@ -102,8 +102,11 @@
 			<div class="toot panel">
 				<div
 					class="controls"
-					use:intersect={(intersecting) => {
-						if (intersecting && autoload) load();
+					use:intersect={{
+						cb: (intersecting) => {
+							if (intersecting && autoload) load();
+						},
+						once: true,
 					}}
 				>
 					<PendingButton pending={loading || false} disabled={!!context} on:click={() => load()}>
