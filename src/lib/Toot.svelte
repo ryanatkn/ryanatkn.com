@@ -134,47 +134,50 @@
 						</div>
 					{/if}
 				</div>
-				<div
-					class="controls"
-					use:intersect={{
-						cb: (intersecting) => {
-							if (intersecting && autoload) load();
-						},
-						count: 1,
-					}}
-				>
-					<PendingButton
-						attrs={{class: 'width_full'}}
-						pending={loading || false}
-						disabled={!!context}
-						on:click={() => load()}
+				<div class="toot_controls">
+					<div
+						class="controls"
+						use:intersect={{
+							cb: (intersecting) => {
+								if (intersecting && autoload) load();
+							},
+							count: 1,
+						}}
 					>
-						<div class="icon_button_content">
-							<div class="icon">🦣</div>
-							<div class="button_content">
-								<div>
-									{#if context && replies}
-										loaded {replies.length + context.ancestors.length} toot{#if with_context}s{/if} from
-									{:else}
-										load toots from
-									{/if}
-								</div>
-								<code class="ellipsis">{host}</code>
-							</div>
-						</div>
-					</PendingButton>
-					<div class="row">
-						<button
-							on:click={toggle_settings}
-							class="deselectable"
-							class:selected={show_settings}
-							style:margin-right="var(--spacing_sm)">settings</button
+						<PendingButton
+							attrs={{class: 'width_full'}}
+							pending={loading || false}
+							disabled={loading === false}
+							on:click={() => load()}
 						>
-						<div class="reset">
-							<button on:click={reset} disabled={loading == null}>reset</button
-							>{#if load_time !== undefined}<div class="loaded_message" transition:slide>
-									loaded in {Math.round(load_time)}ms
-								</div>{/if}
+							<div class="icon_button_content">
+								<div class="icon">🦣</div>
+								<div class="button_content">
+									<div>
+										{#if context && replies}
+											loaded {replies.length + context.ancestors.length} toot{#if with_context}s{/if}
+											from
+										{:else}
+											load toots from
+										{/if}
+									</div>
+									<code class="ellipsis">{host}</code>
+								</div>
+							</div>
+						</PendingButton>
+						<div class="row">
+							<button
+								on:click={toggle_settings}
+								class="deselectable"
+								class:selected={show_settings}
+								style:margin-right="var(--spacing_sm)">settings</button
+							>
+							<div class="reset">
+								<button on:click={reset} disabled={loading == null}>reset</button
+								>{#if load_time !== undefined}<div class="loaded_message" transition:slide>
+										loaded in {Math.round(load_time)}ms
+									</div>{/if}
+							</div>
 						</div>
 					</div>
 					{#if show_settings}
@@ -227,12 +230,16 @@
 		display: flex;
 		flex-direction: column;
 	}
+	.toot_controls {
+		display: flex;
+		flex-direction: column;
+		flex: 1;
+	}
 	.controls {
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
 		gap: var(--spacing_md);
-		flex: 1;
 	}
 	.icon_button_content {
 		width: 100%;
