@@ -109,44 +109,40 @@
 		>
 			<div class="toot" class:replies>
 				<div class="toot_content">
-					{#if context || item}
-						<div class="width_full" transition:slide>
-							<div class="statuses">
-								{#if ancestors && context}
-									<!-- TODO style differently or something -->
-									{#each context.ancestors as ancestor}
-										<li>
-											<MastodonStatusItem item={ancestor} />
-										</li>
-									{/each}
-								{/if}
-								{#if item}
-									<div class="main_post panel">
-										<div class="panel main_post_inner">
-											<MastodonStatusItem {item} />
+					{#if ancestors && context}
+						<!-- TODO style differently or something -->
+						{#each context.ancestors as ancestor}
+							<li>
+								<MastodonStatusItem item={ancestor} />
+							</li>
+						{/each}
+					{/if}
+					<div class="main_post panel">
+						<div class="panel bg_panel">
+							{#if item}
+								<MastodonStatusItem {item} />
+							{:else}
+								<PendingButton
+									attrs={{class: 'width_full'}}
+									pending={loading || false}
+									disabled={loading === false}
+									on:click={() => load()}
+								>
+									<div class="icon_button_content">
+										<div class="icon">🦣</div>
+										<div class="button_content">
+											<div>
+												load toot{#if replies || ancestors}s{/if} from
+											</div>
+											<code class="ellipsis">{host}</code>
 										</div>
 									</div>
-								{/if}
-								{#if item && replies}
-									<MastodonStatusTree {item} items={replies} />
-								{/if}
-							</div>
+								</PendingButton>
+							{/if}
 						</div>
-					{:else}
-						<PendingButton
-							attrs={{class: 'width_full'}}
-							pending={loading || false}
-							disabled={loading === false}
-							on:click={() => load()}
-						>
-							<div class="icon_button_content">
-								<div class="icon">🦣</div>
-								<div class="button_content">
-									<div>load toots from</div>
-									<code class="ellipsis">{host}</code>
-								</div>
-							</div>
-						</PendingButton>
+					</div>
+					{#if item && replies}
+						<MastodonStatusTree {item} items={replies} />
 					{/if}
 				</div>
 				<div class="toot_controls">
@@ -206,10 +202,10 @@
 <style>
 	.toot {
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 		justify-content: space-between;
 		flex: 1;
-		padding: var(--spacing_md);
+		margin: var(--spacing_xl3) 0;
 		gap: var(--spacing_md);
 		width: 100%;
 	}
@@ -218,11 +214,6 @@
 	}
 	.toot_content {
 		flex: 1;
-		max-width: var(--toot_width, 358px);
-	}
-	.statuses {
-		display: flex;
-		flex-direction: column;
 	}
 	.toot_controls {
 		display: flex;
@@ -254,7 +245,7 @@
 	.toot.replies .main_post {
 		margin-bottom: var(--spacing_md);
 	}
-	.main_post_inner {
+	.bg_panel {
 		background-color: var(--bg);
 		padding: var(--spacing_xs);
 	}

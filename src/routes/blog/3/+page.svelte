@@ -95,22 +95,24 @@
 			</aside>
 			<p>
 				With some JS (via <a href="https://svelte.dev/">Svelte</a> in this case) we can embed a
-				toot, like <a href>this one about this blog post</a>:
+				toot, like
+				<a href="https://hachyderm.io/@ryanatkn/110843291155970959"
+					>the one I made for this blog post</a
+				>:
 			</p>
 		</div>
-		<section class="embedded_status spaced">
-			<div class="embedded_status_inner">
-				<Toot
-					storage_key="embedded"
-					bind:url={embedded_toot_url}
-					bind:host={embedded_toot_host}
-					bind:id={embedded_toot_id}
-					bind:loading
-					bind:load_time
-				>
-					<p class="width_full">the Svelte code:</p>
-					<Code
-						content={`<Toot
+		<section class="embedded_status">
+			<Toot
+				storage_key="embedded"
+				bind:url={embedded_toot_url}
+				bind:host={embedded_toot_host}
+				bind:id={embedded_toot_id}
+				bind:loading
+				bind:load_time
+			>
+				<p class="width_full">the Svelte code:</p>
+				<Code
+					content={`<Toot
 	host=${'"' + embedded_toot_host + '"'}
 	id=${'"' + embedded_toot_id + '"'}
 	let:load
@@ -122,16 +124,15 @@
 		<Comment {item} />
 	{:else ...}
 </Toot>`}
-					/>
-				</Toot>
-			</div>
+				/>
+			</Toot>
 		</section>
 		<div class="prose">
 			<p>
-				Above is the <code>Toot</code>, and below under the final heading
-				<a href="#replies">"Replies"</a>
-				is <code>Toots</code>. If you click the "load replies" button below, your browser sends a
-				request to a <a href="https://joinmastodon.org/">Mastodon</a> instance at
+				When you click the "load replies" button below, your browser sends a request to a <a
+					href="https://joinmastodon.org/">Mastodon</a
+				>
+				instance at
 				<a href="https://hachyderm.io/">hachyderm.io</a>
 				that hosts
 				<a href="https://hachyderm.io/@ryanatkn">my account</a>. Mastodon is an
@@ -288,25 +289,6 @@
 </div>
 
 <style>
-	.embedded_status {
-		display: flex;
-		align-items: flex-start;
-		gap: var(--spacing_md);
-		flex-wrap: wrap;
-		padding: var(--spacing_md);
-		border-radius: var(--border_radius_sm);
-		background-color: var(--fg_1);
-	}
-	.embedded_status_inner {
-		display: flex;
-		width: 100%;
-		gap: var(--spacing_md);
-	}
-	@media (max-width: 700px) {
-		.embedded_status_inner {
-			flex-direction: column;
-		}
-	}
 	/* TODO tricky layout issue, related to the leaky :last-child margin selectors */
 	details:not([open]) summary {
 		margin-bottom: 0;
