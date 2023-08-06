@@ -34,6 +34,7 @@ export const fetch_data = async (
 	cache: Map<string, MastodonResponseData> | null = mastodon_cache,
 ): Promise<any | null> => {
 	const r = cache?.get(url);
+	console.log(`cache, url`, cache, url);
 	if (r) {
 		console.log('fetch_data CACHED');
 		return r.data;
@@ -44,21 +45,6 @@ export const fetch_data = async (
 		if (!res.ok) return null;
 		// console.log(`res`, res);
 		const h = Array.from(res.headers.entries());
-		// TODO use headers for pagination
-		// status:
-		// ['cache-control', 'private, no-store']
-		// ['content-type', 'application/json; charset=utf-8']
-		// ['x-ratelimit-limit', '300']
-		// ['x-ratelimit-remaining', '263']
-		// ['x-ratelimit-reset', '2023-08-06T17:05:00.609965Z']
-		// ['x-request-id', '7dd5f038-acef-47e6-893b-f8f0e30708f2']
-		// context:
-		// ['cache-control', 'private, no-store']
-		// ['content-type', 'application/json; charset=utf-8']
-		// ['x-ratelimit-limit', '300']
-		// ['x-ratelimit-remaining', '294']
-		// ['x-ratelimit-reset', '2023-08-06T17:10:00.599886Z']
-		// ['x-request-id', 'a3b218e7-57ff-4898-a81e-04fde85df3f3']
 		console.log(`received headers`, url, h);
 		const fetched = await res.json();
 		responses.push({url, data: fetched});
@@ -162,21 +148,21 @@ export const fetch_status_context = async (
 	host: string,
 	id: string,
 ): Promise<MastodonContext | null> => {
-	const u = to_api_status_context_url(host, id);
-	return fetch_data(u, null);
+	const url = to_api_status_context_url(host, id);
+	return fetch_data(url, null);
 };
 
 export const fetch_status = async (host: string, id: string): Promise<MastodonStatus | null> => {
-	const u = to_api_status_url(host, id);
-	return fetch_data(u, null);
+	const url = to_api_status_url(host, id);
+	return fetch_data(url, null);
 };
 
 export const fetch_favourites = async (
 	host: string,
 	status: MastodonStatus,
 ): Promise<MastodonFavourites[] | null> => {
-	const u = to_api_favourites_url(host, status.id);
-	return fetch_data(u, null);
+	const url = to_api_favourites_url(host, status.id);
+	return fetch_data(url, null);
 };
 
 /**
