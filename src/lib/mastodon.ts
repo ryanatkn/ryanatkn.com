@@ -8,19 +8,33 @@ const headers = {
 	'content-type': 'application/jsno',
 };
 
-// TODO this is used to get the `mastodon_mock_data.json` cached data, could be improved
-// const cache: Array<{url: string; data: any}> = [];
-// const flush_cache = () => {
-// 	console.log('flushing cache', JSON.stringify(cache));
-// 	cache.length = 0;
+// TODO this is used to get the `mastodon_mock_data.json` response data, could be improved
+// const responses: Array<{url: string; data: any}> = [];
+// const flush_responses = () => {
+// 	console.log('flushing responses', JSON.stringify(responses));
+// 	responses.length = 0;
 // };
-// window.flush_cache = flush_cache;
+// window.flush_responses = flush_responses;
 
-export const fetch_data = async (url: string): Promise<any | null> => {
-	for (const d of mastodon_mock_data) {
-		if (d.url === url) {
-			console.log('fetch_data CACHED');
-			return d.data;
+export interface ResponseData<T = any> {
+	url: string;
+	data: T;
+}
+
+export type MastodonResponseData = ResponseData<
+	MastodonContext | MastodonStatus | MastodonFavourites
+>;
+
+export const fetch_data = async (
+	url: string,
+	cache: MastodonResponseData[] | null = mastodon_mock_data,
+): Promise<any | null> => {
+	if (cache) {
+		for (const r of cache) {
+			if (r.url === url) {
+				console.log('fetch_data CACHED');
+				return r.data;
+			}
 		}
 	}
 	try {
@@ -32,7 +46,7 @@ export const fetch_data = async (url: string): Promise<any | null> => {
 		// TODO use headers for pagination
 		console.log(`received headers`, url, h);
 		const fetched = await res.json();
-		// cache.push({url, data: fetched});
+		// responses.push({url, data: fetched});
 		return fetched;
 	} catch (err) {
 		return null;
@@ -134,12 +148,12 @@ export const fetch_status_context = async (
 	id: string,
 ): Promise<MastodonContext | null> => {
 	const u = to_api_status_context_url(host, id);
-	return fetch_data(u);
+	return fetch_data(u, null);
 };
 
 export const fetch_status = async (host: string, id: string): Promise<MastodonStatus | null> => {
 	const u = to_api_status_url(host, id);
-	return fetch_data(u);
+	return fetch_data(u, null);
 };
 
 export const fetch_favourites = async (
@@ -147,7 +161,7 @@ export const fetch_favourites = async (
 	status: MastodonStatus,
 ): Promise<MastodonFavourites[] | null> => {
 	const u = to_api_favourites_url(host, status.id);
-	return fetch_data(u);
+	return fetch_data(u, null);
 };
 
 /**

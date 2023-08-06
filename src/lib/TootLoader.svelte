@@ -49,18 +49,21 @@
 	 */
 	export let load_time: number | undefined = undefined;
 
-	// TODO BLOCK throttle API with concurrency
-	const map_async = async <T>(
+	// TODO add concurrency, currently makes calls serially
+	const map_async = async <T, U>(
 		items: T[],
-		cb: (item: T, index: number) => Promise<any>,
-	): Promise<any[]> => {
-		return Promise.all(
-			items.map(async (item, index) => {
-				const r = await cb(item, index);
-				return r;
-			}),
-		);
-	};
+		cb: (item: T, index: number) => Promise<U>,
+	): Promise<U[]> =>
+		Promise.resolve().then(async () => {
+			const results: U[] = [];
+			for (let i = 0; i < items.length; i++) {
+				const item = items[i];
+				// eslint-disable-next-line no-await-in-loop
+				const r = await cb(item, i);
+				results.push(r);
+			}
+			return results;
+		});
 
 	// TODO refactor
 	const filter_valid_replies = async (
