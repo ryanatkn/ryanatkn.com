@@ -123,7 +123,6 @@
 								<MastodonStatusItem {item} />
 							{:else}
 								<PendingButton
-									attrs={{class: 'width_full'}}
 									pending={loading || false}
 									disabled={loading === false}
 									on:click={() => load()}
