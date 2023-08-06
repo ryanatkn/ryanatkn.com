@@ -25,10 +25,9 @@
 <style>
 	.mastodon_status_tree {
 		padding-left: var(--spacing_xl4);
-		margin: var(--spacing_md) 0;
+		margin-bottom: var(--spacing_md);
 	}
 	li {
 		flex-direction: column;
-		margin-bottom: var(--spacing_md);
 	}
 </style>

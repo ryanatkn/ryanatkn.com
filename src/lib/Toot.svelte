@@ -240,6 +240,7 @@
 	}
 	.main_post {
 		padding: var(--spacing_md);
+		margin-bottom: var(--spacing_md);
 	}
 	.main_post_inner {
 		background-color: var(--bg);

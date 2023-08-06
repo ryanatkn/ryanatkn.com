@@ -74,6 +74,7 @@
 		background-color: var(--panel_bg, var(--fg_1));
 		border-radius: var(--border_radius_sm);
 		padding: var(--spacing_md);
+		margin-bottom: var(--spacing_md);
 	}
 	.content :global(.invisible) {
 		display: none;
