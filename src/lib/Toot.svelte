@@ -87,6 +87,9 @@
 
 	$: with_context = replies || ancestors;
 
+	let show_load_time = false;
+	$: if (!show_load_time && show_settings) show_load_time = true;
+
 	// TODO BLOCK remove the if guard below -- what about invalid states?
 
 	// TODO BLOCK slot? bind the let: below and export all?
@@ -107,41 +110,47 @@
 			let:load_time
 			bind:load_time
 		>
-			<div class="toot" class:replies>
+			<div class="toot" class:replies transition:slide>
 				<div class="toot_content">
 					{#if ancestors && context}
-						<!-- TODO style differently or something -->
-						{#each context.ancestors as ancestor}
-							<li>
+						<div transition:slide>
+							<!-- TODO style differently or something -->
+							{#each context.ancestors as ancestor}
 								<MastodonStatusItem item={ancestor} />
-							</li>
-						{/each}
+							{/each}
+						</div>
 					{/if}
 					<div class="main_post panel">
 						<div class="panel bg_panel">
 							{#if item}
-								<MastodonStatusItem {item} />
+								<div transition:slide>
+									<MastodonStatusItem {item} />
+								</div>
 							{:else}
-								<PendingButton
-									pending={loading || false}
-									disabled={loading === false}
-									on:click={() => load()}
-								>
-									<div class="icon_button_content">
-										<div class="icon">🦣</div>
-										<div class="button_content">
-											<div>
-												load toot{#if replies || ancestors}s{/if} from
+								<div transition:slide>
+									<PendingButton
+										pending={loading || false}
+										disabled={loading === false}
+										on:click={() => load()}
+									>
+										<div class="icon_button_content">
+											<div class="icon">🦣</div>
+											<div class="button_content">
+												<div>
+													load toot{#if replies || ancestors}s{/if} from
+												</div>
+												<code class="ellipsis">{host}</code>
 											</div>
-											<code class="ellipsis">{host}</code>
 										</div>
-									</div>
-								</PendingButton>
+									</PendingButton>
+								</div>
 							{/if}
 						</div>
 					</div>
 					{#if item && replies}
-						<MastodonStatusTree {item} items={replies} />
+						<div transition:slide>
+							<MastodonStatusTree {item} items={replies} />
+						</div>
 					{/if}
 				</div>
 				<div class="toot_controls">
@@ -163,7 +172,10 @@
 							>
 							<div class="reset">
 								<button on:click={reset} disabled={loading == null}>reset</button
-								>{#if load_time !== undefined}<div class="loaded_message" transition:slide>
+								>{#if show_load_time && load_time !== undefined}<div
+										class="loaded_message"
+										transition:slide
+									>
 										loaded in {Math.round(load_time)}ms
 									</div>{/if}
 							</div>
