@@ -130,8 +130,11 @@
 						</div>
 					</PendingButton>
 					<div class="row">
-						<button on:click={toggle_settings} class="deselectable" class:selected={show_settings}
-							>settings</button
+						<button
+							on:click={toggle_settings}
+							class="deselectable"
+							class:selected={show_settings}
+							style:margin-right="var(--spacing_sm)">settings</button
 						>
 						<div class="reset">
 							<button on:click={reset} disabled={loading === null}>reset</button
