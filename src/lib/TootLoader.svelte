@@ -49,7 +49,7 @@
 	 */
 	export let load_time: number | undefined = undefined;
 
-	// TODO add concurrency, currently makes calls serially
+	// TODO add concurrency, currently makes calls serially, make configurable
 	const map_async = async <T, U>(
 		items: T[],
 		cb: (item: T, index: number) => Promise<U>,

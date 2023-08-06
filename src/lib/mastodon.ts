@@ -3,18 +3,22 @@ import type {Flavored} from '@feltjs/util/types.js';
 
 import mastodon_mock_data from '$lib/mastodon_mock_data.json';
 
+const mastodon_cache: Map<string, MastodonResponseData> = new Map(
+	mastodon_mock_data.map((d) => [d.url, d]),
+);
+
 const headers = {
 	accept: 'application/json',
 	'content-type': 'application/jsno',
 };
 
 // TODO this is used to get the `mastodon_mock_data.json` response data, could be improved
-// const responses: Array<{url: string; data: any}> = [];
-// const flush_responses = () => {
-// 	console.log('flushing responses', JSON.stringify(responses));
-// 	responses.length = 0;
-// };
-// window.flush_responses = flush_responses;
+const responses: Array<{url: string; data: any}> = [];
+const flush_responses = () => {
+	console.log('flushing responses', JSON.stringify(responses));
+	responses.length = 0;
+};
+window.flush_responses = flush_responses;
 
 export interface ResponseData<T = any> {
 	url: string;
@@ -27,15 +31,12 @@ export type MastodonResponseData = ResponseData<
 
 export const fetch_data = async (
 	url: string,
-	cache: MastodonResponseData[] | null = mastodon_mock_data,
+	cache: Map<string, MastodonResponseData> | null = mastodon_cache,
 ): Promise<any | null> => {
-	if (cache) {
-		for (const r of cache) {
-			if (r.url === url) {
-				console.log('fetch_data CACHED');
-				return r.data;
-			}
-		}
+	const r = cache?.get(url);
+	if (r) {
+		console.log('fetch_data CACHED');
+		return r.data;
 	}
 	try {
 		// console.log(`CALL fetch_post`, u);
@@ -44,9 +45,23 @@ export const fetch_data = async (
 		// console.log(`res`, res);
 		const h = Array.from(res.headers.entries());
 		// TODO use headers for pagination
+		// status:
+		// ['cache-control', 'private, no-store']
+		// ['content-type', 'application/json; charset=utf-8']
+		// ['x-ratelimit-limit', '300']
+		// ['x-ratelimit-remaining', '263']
+		// ['x-ratelimit-reset', '2023-08-06T17:05:00.609965Z']
+		// ['x-request-id', '7dd5f038-acef-47e6-893b-f8f0e30708f2']
+		// context:
+		// ['cache-control', 'private, no-store']
+		// ['content-type', 'application/json; charset=utf-8']
+		// ['x-ratelimit-limit', '300']
+		// ['x-ratelimit-remaining', '294']
+		// ['x-ratelimit-reset', '2023-08-06T17:10:00.599886Z']
+		// ['x-request-id', 'a3b218e7-57ff-4898-a81e-04fde85df3f3']
 		console.log(`received headers`, url, h);
 		const fetched = await res.json();
-		// responses.push({url, data: fetched});
+		responses.push({url, data: fetched});
 		return fetched;
 	} catch (err) {
 		return null;

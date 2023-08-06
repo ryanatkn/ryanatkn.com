@@ -117,19 +117,23 @@
 						count: 1,
 					}}
 				>
-					<PendingButton pending={loading || false} disabled={!!context} on:click={() => load()}>
+					<PendingButton
+						attrs={{class: 'width_full'}}
+						pending={loading || false}
+						disabled={!!context}
+						on:click={() => load()}
+					>
 						<div class="icon_button_content load_replies_button_content_hack">
 							<div class="icon">🦣</div>
 							<div class="content">
-								{#if context && replies}
-									<div>
+								<div>
+									{#if context && replies}
 										loaded {replies.length + context.ancestors.length} toot{#if with_context}s{/if} from
-									</div>
-									<code>{host}</code>
-								{:else}
-									<div>load toots from</div>
-									<code>{host}</code>
-								{/if}
+									{:else}
+										load toots from
+									{/if}
+								</div>
+								<code class="ellipsis">{host}</code>
 							</div>
 						</div>
 					</PendingButton>
@@ -141,7 +145,7 @@
 							style:margin-right="var(--spacing_sm)">settings</button
 						>
 						<div class="reset">
-							<button on:click={reset} disabled={loading === null}>reset</button
+							<button on:click={reset} disabled={loading == null}>reset</button
 							>{#if load_time !== undefined}<div class="loaded_message" transition:slide>
 									loaded in {Math.round(load_time)}ms
 								</div>{/if}
@@ -218,16 +222,21 @@
 		gap: var(--spacing_md);
 	}
 	.icon_button_content {
+		width: 100%;
 		display: flex;
 		align-items: center;
 		text-align: left;
 	}
-	.load_replies_button_content_hack {
-		/* TODO hack */
-		min-width: 240px;
+	/* TODO messy */
+	.icon_button_content .content {
+		overflow: hidden;
 	}
 	.content {
 		line-height: var(--line_height);
+	}
+	.load_replies_button_content_hack {
+		/* TODO hack */
+		min-width: 240px;
 	}
 	.main_post {
 		padding: var(--spacing_md);
