@@ -177,25 +177,27 @@
 				{/if}
 			</div>
 			{#if context || item}
-				<div class="statuses" transition:slide>
-					{#if ancestors && context}
-						<!-- TODO style differently or something -->
-						{#each context.ancestors as ancestor}
-							<li>
-								<MastodonStatusItem item={ancestor} />
-							</li>
-						{/each}
-					{/if}
-					{#if item}
-						<div class="main_post panel">
-							<div class="panel main_post_inner">
-								<MastodonStatusItem {item} />
+				<div transition:slide>
+					<div class="statuses">
+						{#if ancestors && context}
+							<!-- TODO style differently or something -->
+							{#each context.ancestors as ancestor}
+								<li>
+									<MastodonStatusItem item={ancestor} />
+								</li>
+							{/each}
+						{/if}
+						{#if item}
+							<div class="main_post panel">
+								<div class="panel main_post_inner">
+									<MastodonStatusItem {item} />
+								</div>
 							</div>
-						</div>
-					{/if}
-					{#if item && replies}
-						<MastodonStatusTree {item} items={replies} />
-					{/if}
+						{/if}
+						{#if item && replies}
+							<MastodonStatusTree {item} items={replies} />
+						{/if}
+					</div>
 				</div>
 			{/if}
 		</TootLoader>
@@ -212,7 +214,6 @@
 	}
 	.statuses {
 		display: flex;
-		flex-wrap: wrap;
 		flex-direction: column;
 	}
 	.controls {
