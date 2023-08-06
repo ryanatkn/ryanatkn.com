@@ -9,12 +9,12 @@ const headers = {
 };
 
 // TODO this is used to get the `mastodon_mock_data.json` cached data, could be improved
-// const cache: Array<{url: string; data: any}> = [];
-// const flush_cache = () => {
-// 	console.log('flushing cache', JSON.stringify(cache));
-// 	cache.length = 0;
-// };
-// window.flush_cache = flush_cache;
+const cache: Array<{url: string; data: any}> = [];
+const flush_cache = () => {
+	console.log('flushing cache', JSON.stringify(cache));
+	cache.length = 0;
+};
+window.flush_cache = flush_cache;
 
 export const fetch_data = async (url: string): Promise<any | null> => {
 	for (const d of mastodon_mock_data) {
@@ -32,7 +32,7 @@ export const fetch_data = async (url: string): Promise<any | null> => {
 		// TODO use headers for pagination
 		console.log(`received headers`, url, h);
 		const fetched = await res.json();
-		// cache.push({url, data: fetched});
+		cache.push({url, data: fetched});
 		return fetched;
 	} catch (err) {
 		return null;
