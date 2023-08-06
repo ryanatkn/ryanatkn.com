@@ -12,13 +12,14 @@ const headers = {
 	'content-type': 'application/jsno',
 };
 
-// TODO this is used to get the `mastodon_mock_data.json` response data, could be improved
-const responses: Array<{url: string; data: any}> = [];
-const flush_responses = () => {
-	console.log('flushing responses', JSON.stringify(responses));
-	responses.length = 0;
-};
-window.flush_responses = flush_responses;
+// this is used to get the `mastodon_mock_data.json` response data,
+// see where `responses` is used - could be improved
+// const responses: Array<{url: string; data: any}> = [];
+// const flush_responses = () => {
+// 	console.log('flushing responses', JSON.stringify(responses));
+// 	responses.length = 0;
+// };
+// window.flush_responses = flush_responses;
 
 export interface ResponseData<T = any> {
 	url: string;
@@ -47,7 +48,7 @@ export const fetch_data = async (
 		const h = Array.from(res.headers.entries());
 		console.log(`received headers`, url, h);
 		const fetched = await res.json();
-		responses.push({url, data: fetched});
+		// responses.push({url, data: fetched});
 		return fetched;
 	} catch (err) {
 		return null;
