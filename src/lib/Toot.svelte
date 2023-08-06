@@ -53,9 +53,10 @@
 		show_settings = !show_settings;
 	};
 
-	const AUTOLOAD_KEY = 'autoload';
-	let autoload = load_from_storage(AUTOLOAD_KEY, () => false); // TODO store?
-	$: set_in_storage(AUTOLOAD_KEY, autoload); // TODO wastefully sets on init
+	let autoload_key = storage_key && 'autoload' + storage_key;
+	$: autoload_key = storage_key && 'autoload' + storage_key;
+	let autoload = autoload_key ? load_from_storage(autoload_key, () => false) : false; // TODO store?
+	$: autoload_key && set_in_storage(autoload_key, autoload); // TODO wastefully sets on init
 
 	const parse = (_url: string | undefined, _host: string | undefined, _id: string | undefined) => {
 		if (!(_url || (_host && _id))) {
