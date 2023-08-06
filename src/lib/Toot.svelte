@@ -107,7 +107,33 @@
 			let:load_time
 			bind:load_time
 		>
-			<div class="toot panel" class:replies>
+			<div class="toot" class:replies>
+				<div class="toot_content">
+					{#if context || item}
+						<div class="width_full" transition:slide>
+							<div class="statuses">
+								{#if ancestors && context}
+									<!-- TODO style differently or something -->
+									{#each context.ancestors as ancestor}
+										<li>
+											<MastodonStatusItem item={ancestor} />
+										</li>
+									{/each}
+								{/if}
+								{#if item}
+									<div class="main_post panel">
+										<div class="panel main_post_inner">
+											<MastodonStatusItem {item} />
+										</div>
+									</div>
+								{/if}
+								{#if item && replies}
+									<MastodonStatusTree {item} items={replies} />
+								{/if}
+							</div>
+						</div>
+					{/if}
+				</div>
 				<div
 					class="controls"
 					use:intersect={{
@@ -125,7 +151,7 @@
 					>
 						<div class="icon_button_content load_replies_button_content_hack">
 							<div class="icon">🦣</div>
-							<div class="content">
+							<div class="button_content">
 								<div>
 									{#if context && replies}
 										loaded {replies.length + context.ancestors.length} toot{#if with_context}s{/if} from
@@ -151,68 +177,50 @@
 								</div>{/if}
 						</div>
 					</div>
+					{#if show_settings}
+						<div transition:slide class="settings controls panel">
+							<label
+								class="row"
+								title={autoload
+									? 'replies will load automatically when scrolled intersect'
+									: 'replies are not loaded until you request them'}
+								><input type="checkbox" bind:checked={autoload} />autoload</label
+							>
+							<form class="width_sm">
+								<fieldset>
+									<label title="where to load the toot">
+										<input
+											bind:value={url}
+											placeholder="> toot url"
+											on:focus={(e) => e.currentTarget.select()}
+										/>
+									</label>
+								</fieldset>
+							</form>
+							<slot name="settings" />
+						</div>
+					{/if}
 				</div>
-				{#if show_settings}
-					<div transition:slide class="settings controls panel">
-						<label
-							class="row"
-							title={autoload
-								? 'replies will load automatically when scrolled intersect'
-								: 'replies are not loaded until you request them'}
-							><input type="checkbox" bind:checked={autoload} />autoload</label
-						>
-						<form class="width_sm">
-							<fieldset>
-								<label title="where to load the toot">
-									<input
-										bind:value={url}
-										placeholder="> toot url"
-										on:focus={(e) => e.currentTarget.select()}
-									/>
-								</label>
-							</fieldset>
-						</form>
-						<slot name="settings" />
-					</div>
-				{/if}
 			</div>
-			{#if context || item}
-				<div class="width_full" transition:slide>
-					<div class="statuses" class:replies>
-						{#if ancestors && context}
-							<!-- TODO style differently or something -->
-							{#each context.ancestors as ancestor}
-								<li>
-									<MastodonStatusItem item={ancestor} />
-								</li>
-							{/each}
-						{/if}
-						{#if item}
-							<div class="main_post panel">
-								<div class="panel main_post_inner">
-									<MastodonStatusItem {item} />
-								</div>
-							</div>
-						{/if}
-						{#if item && replies}
-							<MastodonStatusTree {item} items={replies} />
-						{/if}
-					</div>
-				</div>
-			{/if}
 		</TootLoader>
 	{/key}
 {/if}
 
 <style>
 	.toot {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
 		flex: 1;
 		padding: var(--spacing_md);
 		width: 100%;
-		max-width: var(--width_sm);
 	}
 	.toot.replies {
 		margin-bottom: var(--spacing_md);
+	}
+	.toot_content {
+		flex: 1;
+		max-width: var(--toot_width, 358px);
 	}
 	.statuses {
 		display: flex;
@@ -231,10 +239,10 @@
 		text-align: left;
 	}
 	/* TODO messy */
-	.icon_button_content .content {
+	.icon_button_content .button_content {
 		overflow: hidden;
 	}
-	.content {
+	.button_content {
 		line-height: var(--line_height);
 	}
 	.load_replies_button_content_hack {
@@ -244,7 +252,7 @@
 	.main_post {
 		padding: var(--spacing_md);
 	}
-	.statuses.replies .main_post {
+	.toot.replies .main_post {
 		margin-bottom: var(--spacing_md);
 	}
 	.main_post_inner {
@@ -274,5 +282,6 @@
 		display: flex;
 		padding: var(--spacing_md);
 		margin-top: var(--spacing_md);
+		width: 100%;
 	}
 </style>
