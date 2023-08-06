@@ -150,12 +150,12 @@ export const fetch_status_context = async (
 	id: string,
 ): Promise<MastodonContext | null> => {
 	const url = to_api_status_context_url(host, id);
-	return fetch_data(url, null);
+	return fetch_data(url);
 };
 
 export const fetch_status = async (host: string, id: string): Promise<MastodonStatus | null> => {
 	const url = to_api_status_url(host, id);
-	return fetch_data(url, null);
+	return fetch_data(url);
 };
 
 export const fetch_favourites = async (
@@ -163,8 +163,10 @@ export const fetch_favourites = async (
 	status: MastodonStatus,
 ): Promise<MastodonFavourites[] | null> => {
 	const url = to_api_favourites_url(host, status.id);
-	return fetch_data(url, null);
+	return fetch_data(url);
 };
+
+// TODO these are very in-progress
 
 /**
  * https://docs.joinmastodon.org/entities/Context/
