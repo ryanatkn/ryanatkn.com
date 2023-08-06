@@ -35,9 +35,8 @@ export const fetch_data = async (
 	cache: Map<string, MastodonResponseData> | null = mastodon_cache,
 ): Promise<any | null> => {
 	const r = cache?.get(url);
-	console.log(`cache, url`, cache, url);
 	if (r) {
-		console.log('fetch_data CACHED');
+		console.log('fetch_data cached', r);
 		return r.data;
 	}
 	try {

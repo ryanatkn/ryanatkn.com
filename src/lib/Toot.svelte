@@ -107,7 +107,7 @@
 			let:load_time
 			bind:load_time
 		>
-			<div class="toot panel">
+			<div class="toot panel" class:replies>
 				<div
 					class="controls"
 					use:intersect={{
@@ -177,8 +177,8 @@
 				{/if}
 			</div>
 			{#if context || item}
-				<div transition:slide>
-					<div class="statuses">
+				<div class="width_full" transition:slide>
+					<div class="statuses" class:replies>
 						{#if ancestors && context}
 							<!-- TODO style differently or something -->
 							{#each context.ancestors as ancestor}
@@ -210,6 +210,8 @@
 		padding: var(--spacing_md);
 		width: 100%;
 		max-width: var(--width_sm);
+	}
+	.toot.replies {
 		margin-bottom: var(--spacing_md);
 	}
 	.statuses {
@@ -241,6 +243,8 @@
 	}
 	.main_post {
 		padding: var(--spacing_md);
+	}
+	.statuses.replies .main_post {
 		margin-bottom: var(--spacing_md);
 	}
 	.main_post_inner {
