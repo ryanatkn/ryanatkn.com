@@ -132,6 +132,21 @@
 								{/if}
 							</div>
 						</div>
+					{:else}
+						<PendingButton
+							attrs={{class: 'width_full'}}
+							pending={loading || false}
+							disabled={loading === false}
+							on:click={() => load()}
+						>
+							<div class="icon_button_content">
+								<div class="icon">🦣</div>
+								<div class="button_content">
+									<div>load toots from</div>
+									<code class="ellipsis">{host}</code>
+								</div>
+							</div>
+						</PendingButton>
 					{/if}
 				</div>
 				<div class="toot_controls">
@@ -144,27 +159,6 @@
 							count: 1,
 						}}
 					>
-						<PendingButton
-							attrs={{class: 'width_full'}}
-							pending={loading || false}
-							disabled={loading === false}
-							on:click={() => load()}
-						>
-							<div class="icon_button_content">
-								<div class="icon">🦣</div>
-								<div class="button_content">
-									<div>
-										{#if context && replies}
-											loaded {replies.length + context.ancestors.length} toot{#if with_context}s{/if}
-											from
-										{:else}
-											load toots from
-										{/if}
-									</div>
-									<code class="ellipsis">{host}</code>
-								</div>
-							</div>
-						</PendingButton>
 						<div class="row">
 							<button
 								on:click={toggle_settings}
