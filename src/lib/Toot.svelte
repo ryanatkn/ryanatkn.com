@@ -149,7 +149,7 @@
 						disabled={!!context}
 						on:click={() => load()}
 					>
-						<div class="icon_button_content load_replies_button_content_hack">
+						<div class="icon_button_content">
 							<div class="icon">🦣</div>
 							<div class="button_content">
 								<div>
@@ -213,6 +213,7 @@
 		justify-content: space-between;
 		flex: 1;
 		padding: var(--spacing_md);
+		gap: var(--spacing_md);
 		width: 100%;
 	}
 	.toot.replies {
@@ -231,6 +232,7 @@
 		flex-direction: column;
 		align-items: flex-start;
 		gap: var(--spacing_md);
+		flex: 1;
 	}
 	.icon_button_content {
 		width: 100%;
@@ -244,10 +246,6 @@
 	}
 	.button_content {
 		line-height: var(--line_height);
-	}
-	.load_replies_button_content_hack {
-		/* TODO hack */
-		min-width: 240px;
 	}
 	.main_post {
 		padding: var(--spacing_md);
