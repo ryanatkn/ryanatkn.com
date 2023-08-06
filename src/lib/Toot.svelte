@@ -38,6 +38,9 @@
 
 	export const reset = (): void => {
 		loaded_status_key++;
+		// these get bound but their values stick because they're optional, so reset them
+		loading = undefined;
+		load_time = undefined;
 		dispatch('reset');
 	};
 
@@ -170,7 +173,7 @@
 				{/if}
 			</div>
 			{#if context || item}
-				<ul class="statuses" transition:slide>
+				<div class="statuses" transition:slide>
 					{#if ancestors && context}
 						<!-- TODO style differently or something -->
 						{#each context.ancestors as ancestor}
@@ -189,7 +192,7 @@
 					{#if item && replies}
 						<MastodonStatusTree {item} items={replies} />
 					{/if}
-				</ul>
+				</div>
 			{/if}
 		</TootLoader>
 	{/key}
@@ -201,12 +204,12 @@
 		padding: var(--spacing_md);
 		width: 100%;
 		max-width: var(--width_sm);
+		margin-bottom: var(--spacing_md);
 	}
 	.statuses {
 		display: flex;
 		flex-wrap: wrap;
-		flex-direction: row;
-		align-items: flex-start;
+		flex-direction: column;
 	}
 	.controls {
 		display: flex;
