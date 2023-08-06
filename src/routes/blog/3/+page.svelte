@@ -1,6 +1,5 @@
 <script lang="ts">
 	import {page} from '$app/stores';
-	import {dev} from '$app/environment';
 	import 'prismjs'; // TODO why are these needed?
 	import 'prism-svelte'; // TODO why are these needed?
 	import Code from '@feltjs/felt-ui/Code.svelte';
@@ -9,40 +8,20 @@
 	import HashLink from '$lib/HashLink.svelte';
 	import BlogPostIndex from '$lib/BlogPostIndex.svelte';
 	import {prod_content_security_policy} from '$routes/security';
-	import {parse_status_context_url, to_api_status_url} from '$lib/mastodon';
+	import {to_api_status_url} from '$lib/mastodon';
 
-	// tips
-	const DEFAULT_TOOT_HOST = dev ? 'mstdn.social' : 'hachyderm.io';
-	const DEFAULT_TOOT_ID = dev ? '110702983310017651' : 'TODO';
+	// https://hachyderm.io/@ryanatkn/110843291155970959
+	const DEFAULT_TOOT_HOST = 'hachyderm.io';
+	const DEFAULT_TOOT_ID = '110843291155970959';
+
 	let embedded_toot_host = DEFAULT_TOOT_HOST;
 	let embedded_toot_id = DEFAULT_TOOT_ID;
-
-	// TODO idk about this pattern, weirdly circular
-	const sync = (url: string, which: 'embedded' | 'replies') => {
-		console.log(`sync`, url, which);
-		const parsed = parse_status_context_url(url);
-		// TODO handle parse failures
-		if (parsed) {
-			if (which === 'embedded') {
-				embedded_toot_host = parsed.host;
-				embedded_toot_id = parsed.id;
-			} else if (which === 'replies') {
-				replies_toot_host = parsed.host;
-				replies_toot_id = parsed.id;
-			}
-		}
-		console.log(`parsed`, parsed);
-	};
 	let embedded_toot_url = to_api_status_url(embedded_toot_host, embedded_toot_id);
-	$: console.log(`embedded_toot_url`, embedded_toot_url);
-	$: sync(embedded_toot_url, 'embedded');
 
 	let replies_toot_host = embedded_toot_host;
 	let replies_toot_id = embedded_toot_id;
 	let replies_toot_url = to_api_status_url(replies_toot_host, replies_toot_id);
-	$: sync(replies_toot_url, 'replies');
 
-	// TODO BLOCK add a button "show the technical stuff" or details?
 	// TODO BLOCK make the `reset` button work for the toot url, including whether it's enabled
 
 	const sections = [
@@ -57,17 +36,6 @@
 	let load_time: number | undefined;
 
 	// TODO BLOCK see `div class="reset"` below
-
-	const embedded_toot_reset = () => {
-		console.log('reset embedded');
-		embedded_toot_host = DEFAULT_TOOT_HOST;
-		embedded_toot_id = DEFAULT_TOOT_ID;
-	};
-	const replies_toot_reset = () => {
-		console.log('reset replies');
-		replies_toot_host = DEFAULT_TOOT_HOST;
-		replies_toot_id = DEFAULT_TOOT_ID;
-	};
 </script>
 
 <div class="width_md">
@@ -133,12 +101,12 @@
 		<section class="embedded_status spaced">
 			<div class="embedded_status_inner">
 				<Toot
-					host={embedded_toot_host}
-					id={embedded_toot_id}
 					storage_key="embedded"
+					bind:url={embedded_toot_url}
+					bind:host={embedded_toot_host}
+					bind:id={embedded_toot_id}
 					bind:loading
 					bind:load_time
-					on:reset={embedded_toot_reset}
 				>
 					<p class="width_full">the Svelte code:</p>
 					<Code
@@ -306,11 +274,11 @@
 			<h2><HashLink slug="replies">Replies</HashLink></h2>
 		</div>
 		<Toot
-			host={replies_toot_host}
-			id={replies_toot_id}
 			replies
 			storage_key="replies"
-			on:reset={replies_toot_reset}
+			bind:url={replies_toot_url}
+			bind:host={replies_toot_host}
+			bind:id={replies_toot_id}
 		>
 			<svelte:fragment slot="settings">
 				<Code content={`<Toot\n\thost="${replies_toot_host}"\n\tid="${replies_toot_id}"\n/>`} />

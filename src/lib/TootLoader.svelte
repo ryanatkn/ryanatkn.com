@@ -62,13 +62,14 @@
 		);
 	};
 
+	// TODO refactor
 	const filter_valid_replies = async (
 		status: MastodonStatus,
 		statuses: MastodonStatus[],
 	): Promise<MastodonStatus[]> => {
 		const host = new URL(status.url).host;
 		const acct = status.account.acct;
-		const allowed = new Set(statuses.filter((s) => s.account.acct === acct).map((s) => s.id));
+		const allowed = new Set(); // TODO could simplify if no longer used, was allowing author but changed to favourites - `statuses.filter((s) => s.account.acct === acct`
 		const skipped = new Set(statuses.filter((s) => !s.favourites_count).map((s) => s.id));
 		const unvalidated_replies = statuses.filter(({id}) => !allowed.has(id) && !skipped.has(id));
 		if (unvalidated_replies.length) {

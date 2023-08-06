@@ -130,10 +130,8 @@
 						</div>
 					</PendingButton>
 					<div class="row">
-						<button
-							on:click={toggle_settings}
-							class="icon_button_content deselectable"
-							class:selected={show_settings}>settings</button
+						<button on:click={toggle_settings} class="deselectable" class:selected={show_settings}
+							>settings</button
 						>
 						<div class="reset">
 							<button on:click={reset} disabled={loading === null}>reset</button

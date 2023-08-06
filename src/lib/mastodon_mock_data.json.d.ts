@@ -1,8 +1,5 @@
 declare module '$lib/mastodon_mock_data.json' {
-	interface MockData {
-		url: string;
-		data: any;
-	}
-	const data: MockData[];
-	export default data;
+	import type {MastodonContext, MastodonStatus, MastodonFavourites} from '$lib/mastodon';
+	const cached: Array<{url: string; data: MastodonContext | MastodonStatus | MastodonFavourites}>;
+	export default cached;
 }
