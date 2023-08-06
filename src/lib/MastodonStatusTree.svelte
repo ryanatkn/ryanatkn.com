@@ -3,7 +3,7 @@
 	import Message from '$lib/MastodonStatusItem.svelte';
 
 	export let item: MastodonStatus;
-	export let items: MastodonStatus[];
+	export let items: MastodonStatus[]; // TODO BLOCK make this a map
 
 	$: ({id} = item);
 	$: replies = items.filter((i) => i.in_reply_to_id === id);

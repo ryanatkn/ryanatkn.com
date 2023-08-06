@@ -246,6 +246,10 @@
 		background-color: var(--bg);
 		padding: var(--spacing_xs);
 	}
+	/* TODO hacky */
+	.main_post :global(.mastodon_status_item) {
+		margin-bottom: 0;
+	}
 	.icon {
 		font-size: var(--icon_size_md);
 		padding: var(--spacing_sm) var(--spacing_md) var(--spacing_sm) 0;
