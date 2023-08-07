@@ -165,9 +165,9 @@
 					"url": "https://hachyderm.io/@ryanatkn/110843380303015320",
 					"replies_count": 1,
 					"reblogs_count": 0,
-					"favourites_count": 1,
+					"favourites_count": 0,
 					"edited_at": "2023-08-06T15:30:43.513Z",
-					"content": "<p>test reply 1 please ignore (edited after favourite!)</p>",
+					"content": "<p>test reply 1 please ignore (not favourited but has child that is)</p>",
 					"reblog": null,
 					"application": {"name": "Web", "website": null},
 					"account": {
@@ -790,57 +790,6 @@
 				}
 			]
 		}
-	},
-	{
-		"url": "https://hachyderm.io/api/v1/statuses/110843380303015320/favourited_by",
-		"data": [
-			{
-				"id": "109320150287263508",
-				"username": "ryanatkn",
-				"acct": "ryanatkn",
-				"display_name": "Ryan Atkinson",
-				"locked": false,
-				"bot": false,
-				"discoverable": true,
-				"group": false,
-				"created_at": "2022-11-10T00:00:00.000Z",
-				"note": "<p>my webdev account, free and open source software, hobby programming, <a href=\"https://hachyderm.io/tags/frontend\" class=\"mention hashtag\" rel=\"tag\">#<span>frontend</span></a> <a href=\"https://hachyderm.io/tags/coding\" class=\"mention hashtag\" rel=\"tag\">#<span>coding</span></a> <a href=\"https://hachyderm.io/tags/js\" class=\"mention hashtag\" rel=\"tag\">#<span>js</span></a> <a href=\"https://hachyderm.io/tags/html\" class=\"mention hashtag\" rel=\"tag\">#<span>html</span></a> <a href=\"https://hachyderm.io/tags/css\" class=\"mention hashtag\" rel=\"tag\">#<span>css</span></a> <a href=\"https://hachyderm.io/tags/svelte\" class=\"mention hashtag\" rel=\"tag\">#<span>svelte</span></a> <a href=\"https://hachyderm.io/tags/SvelteKit\" class=\"mention hashtag\" rel=\"tag\">#<span>SvelteKit</span></a> <a href=\"https://hachyderm.io/tags/TypeScript\" class=\"mention hashtag\" rel=\"tag\">#<span>TypeScript</span></a> <a href=\"https://hachyderm.io/tags/NodeJS\" class=\"mention hashtag\" rel=\"tag\">#<span>NodeJS</span></a> <a href=\"https://hachyderm.io/tags/postgres\" class=\"mention hashtag\" rel=\"tag\">#<span>postgres</span></a> <a href=\"https://hachyderm.io/tags/FOSS\" class=\"mention hashtag\" rel=\"tag\">#<span>FOSS</span></a></p>",
-				"url": "https://hachyderm.io/@ryanatkn",
-				"avatar": "https://media.hachyderm.io/accounts/avatars/109/320/150/287/263/508/original/6be25cefa60ad3bb.png",
-				"avatar_static": "https://media.hachyderm.io/accounts/avatars/109/320/150/287/263/508/original/6be25cefa60ad3bb.png",
-				"header": "https://media.hachyderm.io/accounts/headers/109/320/150/287/263/508/original/3a4e81b5fe6938a8.jpg",
-				"header_static": "https://media.hachyderm.io/accounts/headers/109/320/150/287/263/508/original/3a4e81b5fe6938a8.jpg",
-				"followers_count": 10,
-				"following_count": 38,
-				"statuses_count": 37,
-				"last_status_at": "2023-08-06",
-				"noindex": false,
-				"emojis": [],
-				"roles": [],
-				"fields": [
-					{
-						"name": "home",
-						"value": "<a href=\"https://www.ryanatkn.com\" target=\"_blank\" rel=\"nofollow noopener noreferrer me\"><span class=\"invisible\">https://www.</span><span class=\"\">ryanatkn.com</span><span class=\"invisible\"></span></a>",
-						"verified_at": "2022-11-10T15:45:24.269+00:00"
-					},
-					{
-						"name": "code",
-						"value": "<a href=\"https://github.com/ryanatkn\" target=\"_blank\" rel=\"nofollow noopener noreferrer me\"><span class=\"invisible\">https://</span><span class=\"\">github.com/ryanatkn</span><span class=\"invisible\"></span></a>",
-						"verified_at": "2022-11-22T20:59:15.113+00:00"
-					},
-					{
-						"name": "professional account",
-						"value": "<a href=\"https://hci.social/@ryanatkn\" target=\"_blank\" rel=\"nofollow noopener noreferrer me\"><span class=\"invisible\">https://</span><span class=\"\">hci.social/@ryanatkn</span><span class=\"invisible\"></span></a>",
-						"verified_at": "2022-12-10T17:29:40.534+00:00"
-					},
-					{
-						"name": "video",
-						"value": "<a href=\"https://www.youtube.com/ryanatkn\" target=\"_blank\" rel=\"nofollow noopener noreferrer me\"><span class=\"invisible\">https://www.</span><span class=\"\">youtube.com/ryanatkn</span><span class=\"invisible\"></span></a>",
-						"verified_at": null
-					}
-				]
-			}
-		]
 	},
 	{
 		"url": "https://hachyderm.io/api/v1/statuses/110843740609224544/favourited_by",

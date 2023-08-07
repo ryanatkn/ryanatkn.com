@@ -1,6 +1,8 @@
 <script lang="ts">
 	export let url: string;
 	export let attrs: any = undefined;
+
+	// TODO BLOCK show parse error
 </script>
 
 <fieldset>

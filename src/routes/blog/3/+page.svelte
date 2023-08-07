@@ -50,12 +50,12 @@
 				This website is a bundle of static files served from a free host, and it also has
 				reader-submitted comments through Mastodon. I made a Mastodon post and its replies are
 				dynamically loaded by your browser. They're displayed if I've clicked the favourite button ★
-				in my Mastodon client, otherwise your browser ignores the post. So here we have them,
+				in my Mastodon client, otherwise your browser ignores the post. Assembled, we get
 				allowlisted comments on a static blog with Mastodon.
 			</p>
-			<aside>
-				<details>
-					<summary>technical details</summary>
+			<details>
+				<summary>technical details</summary>
+				<aside>
 					<p>
 						The site's files are being hosted for free by
 						<a href="https://pages.github.com/">GitHub Pages</a>
@@ -89,8 +89,8 @@
 						<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS">CORS</a>. Static AND
 						dynamic??
 					</p>
-				</details>
-			</aside>
+				</aside>
+			</details>
 			<p>
 				With some JS (via <a href="https://svelte.dev/">Svelte</a> in this case) we can embed a
 				toot, like
@@ -111,31 +111,36 @@
 			/>
 		</section>
 		<div class="prose">
-			<p>
-				When you click the "load toot" button, your browser sends a request to a <a
-					href="https://joinmastodon.org/">Mastodon</a
-				>
-				instance at
-				<a href="https://hachyderm.io/">hachyderm.io</a>
-				that hosts
-				<a href="https://hachyderm.io/@ryanatkn">my account</a>. Mastodon is an
-				<a href="https://wikipedia.org/wiki/ActivityPub">ActivityPub</a>-compatible app in the
-				<a href="https://wikipedia.org/wiki/Fediverse">Fediverse</a>.
-			</p>
-			<p>
-				Your browser requests information about a <a href="https://hachyderm.io/@ryanatkn"
-					>a post I made</a
-				>
-				at hachyderm.io that references this blog post at ryanatkn.com. If the request is successful,
-				some JavaScript runs on your machine to display the "replies", replies to my post that I've "favourited".
-				My host hachyderm.io has its unauthenticated API enabled (in other words, "secure mode" has not
-				been enabled, meaning
-				<a href="https://docs.joinmastodon.org/admin/config/#authorized_fetch"
-					><code>AUTHORIZED_FETCH</code></a
-				>
-				is the default <code>false</code>), so we can request data without any logins or other
-				complexity.
-			</p>
+			<details>
+				<summary>technical details</summary>
+				<aside>
+					<p>
+						When you click the "load toot" button, your browser sends a request to a <a
+							href="https://joinmastodon.org/">Mastodon</a
+						>
+						instance at
+						<a href="https://hachyderm.io/">hachyderm.io</a>
+						that hosts
+						<a href="https://hachyderm.io/@ryanatkn">my account</a>. Mastodon is an
+						<a href="https://wikipedia.org/wiki/ActivityPub">ActivityPub</a>-compatible app in the
+						<a href="https://wikipedia.org/wiki/Fediverse">Fediverse</a>.
+					</p>
+					<p>
+						Your browser requests information about a <a href="https://hachyderm.io/@ryanatkn"
+							>a post I made</a
+						>
+						at hachyderm.io that references this blog post at ryanatkn.com. If the request is successful,
+						some JavaScript runs on your machine to display the "replies", replies to my post that I've
+						"favourited". My host hachyderm.io has its unauthenticated API enabled (in other words, "secure
+						mode" has not been enabled, meaning
+						<a href="https://docs.joinmastodon.org/admin/config/#authorized_fetch"
+							><code>AUTHORIZED_FETCH</code></a
+						>
+						is the default <code>false</code>), so we can request data without any logins or other
+						complexity.
+					</p>
+				</aside>
+			</details>
 			<p>
 				Not every reply to my post appears in the replies section below. It displays only those that
 				I've explicitly favourited, aka liked or starred. This way, I have an allowlist managed by
@@ -151,15 +156,23 @@
 			<HashLink slug="limitations">Limitations</HashLink>
 		</h2>
 		<p>
-			I haven't spent much time with Mastodon's API, but I achieved the basic behavior I was looking
-			for, allowlisting replies that are fetched at runtime. Many things could be improved:
+			I achieved most of the basic behavior I was looking for, allowlisting replies that are fetched
+			at runtime. Many things could be improved:
 		</p>
 		<ul>
 			<li>supports only one kind of moderation, allowlisting via favourites by the author</li>
-			<li>does not process headers</li>
-			<li>only 60 posts are being fetched, uses no authentication (next page in headers?)</li>
+			<li>
+				you can edit a post after I favourite it as a loophole to bypass my explicit approval - I
+				was unable to fix this because the <code>created_at</code> of all the favourites is all the same
+				value sometime in 2022
+			</li>
 			<li>favourites are also limited (but pagination header?)</li>
 			<li>is readonly - you can't take actions directly on the page (favouriting, replying)</li>
+			<li>
+				only 60 posts are being fetched with no authentication, and I see no way in headers or the
+				response or API docs to fetch page 2
+			</li>
+			<li>does not process headers for e.g. rate limiting</li>
 		</ul>
 		<p>
 			To avoid some possible security and privacy issues from injecting HTML from Mastodon's API
