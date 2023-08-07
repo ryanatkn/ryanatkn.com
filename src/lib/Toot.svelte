@@ -83,9 +83,6 @@
 	$: parse(url, host, id);
 
 	$: with_context = replies || ancestors;
-
-	let show_load_time = false;
-	$: if (!show_load_time && show_settings) show_load_time = true;
 </script>
 
 {#if id && host}
@@ -165,10 +162,7 @@
 							>
 							<div class="reset">
 								<button on:click={reset} disabled={loading == null}>reset</button
-								>{#if show_load_time && load_time !== undefined}<div
-										class="loaded_message"
-										transition:slide
-									>
+								>{#if load_time !== undefined}<div class="loaded_message" transition:slide>
 										loaded in {Math.round(load_time)}ms
 									</div>{/if}
 							</div>
