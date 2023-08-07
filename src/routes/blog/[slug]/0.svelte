@@ -123,11 +123,18 @@
 		</li>
 	</ul>
 	<p>
-		We'll provide defaults and templates, and users can modify the software for their own needs.
-		We'll support simple and scalable static web publishing like blogs and RSS/Atom feeds, and also
-		provide tools to make realtime social experiences and games that inherit your social context,
-		enabling beginners to participate in the creative process. We want the act of creating tools and
-		sharing them to be a normal and expected part of the software-user experience.
+		Instead of being limited to filling digital boxes designed by tech companies, we could be
+		designing own boxes for our unique situations and sharing the patterns with each other. I want
+		the act of creating tools and sharing them to be a normal part of the software-using experience.
+		One of the ways I think about feltjs is that it's a layer that sits between SvelteKit and your
+		app, that's trying to do as much of the uninteresting parts as possible. You're the person with
+		ideas, the tools should be enabling and out of the way.
+	</p>
+	<p>
+		felt-server will support simple and scalable static web publishing like blogs and RSS/Atom
+		feeds, and also provide tools to make realtime social experiences and games that inherit your
+		social context, enabling beginners to participate in the creative process more easily. Doing a
+		hard thing is much easier when the task is reduced to its essentials.
 	</p>
 	<p>We have a handful of software repos:</p>
 	<ul>
@@ -164,12 +171,12 @@
 	<h2>Find us</h2>
 	<ul>
 		<li>
+			<a href="https://www.felt.dev/">felt.dev</a>
+		</li>
+		<li>
 			@feltjs on
 			<a href="https://github.com/feltjs">GitHub</a> and
 			<a href="https://www.npmjs.com/org/feltjs">npm</a>
-		</li>
-		<li>
-			<a href="https://www.felt.dev/">felt.dev</a>
 		</li>
 	</ul>
 	<hr />
@@ -178,21 +185,6 @@
 		I'm having difficulty summarizing the project, it's big and there are many unknowns. The ideas
 		below seem important to include but not that important, and you may not be the right audience.
 		Thanks for reading.
-	</p>
-	<hr />
-	<h2>Everyone can be a toolmaker</h2>
-	<p>
-		Instead of being limited to filling digital boxes designed by tech companies, anyone should be
-		able to design their own box and share that pattern with others. We see examples of what's
-		possible in all sorts of products over decades, especially in games, and there's fresh
-		opportunities to do this with web tech.
-	</p>
-	<p>
-		I want software for exploring the vast potential of collaborative experiences on the web, so you
-		could take a larger role in designing your media, if you want. A key here is to make a great
-		media sharing UX, so some fraction of people make and share useful and cool stuff, and everyone
-		benefits. Also, creating the tools of creation should be open and ecosystemified, so we can
-		experiment for our particular situations.
 	</p>
 	<hr />
 	<h2>Business and ownership</h2>
@@ -213,15 +205,19 @@
 		love, and make open source sustainable, all in one move.
 	</p>
 	<p>
-		Two problems: we won't get the best software if a hosting company has too much influence over
-		its development, and also, I now accept a fact about myself, that I want to spend my time
-		focused on software development, and I'll gladly pay money to people who enjoy operations in
-		exchange for a simpler life. The opportunity cost I see for myself doing any commercial
-		operations is too high.
+		It sounded like a plan, except I don't love operations, not enough to take on the
+		responsibilities for admin, moderation, security, uptime, abuse, legal/international/etc. My
+		todo list for software development is already infinite, and taking a second job of this
+		complexity does not seem possible. Even if coworkers do most of the labor, I won't be able to
+		sleep well at night if I'm one of the people responsible for your critical personal data not
+		catching fire at all times. Instead of running a hosting company, I'm going to spend my time
+		making software, and I'll gladly pay money to operators to host it.
 	</p>
 	<p>
-		Hamilton may continue pursuing felt.social as a cooperatively-owned host, he'll just need 4
-		cofounders instead of 3 to officially start the co-op in Colorado... take my money!!
+		While my plan for financial sustainbility pivots to adjust to reality, Hamilton may continue
+		developing <a href="https://www.felt.social/">felt.social</a> as a cooperatively-owned host. Now
+		he'll just need 4 cofounders instead of 3 to officially start the co-op in Colorado. Please take
+		my money!!
 	</p>
 	<hr />
 	<h2>Sharing spaces with others</h2>
@@ -265,7 +261,7 @@
 		people, and we chose JS, Node.js, and npm because of fit, familiarity, and productivity. The web
 		is everywhere and has a lot of unrealized potential. In combination, Node.js, Postgres, nginx,
 		and Linux are all productive and capable of delivering a good UX. TypeScript, Svelte, SvelteKit,
-		and Vite are fantastic for making UIs.
+		and Vite are excellent for making robust and snappy UIs.
 	</p>
 	<p>
 		Our server-side code is written for Node.js today, but we should be able to offer significant
@@ -337,8 +333,8 @@
 			href="https://www.eff.org/deeplinks/2019/10/adversarial-interoperability"
 			>cooperative interoperability</a
 		>, but we're a 2 person team with limited resources trying to deliver a specific UX. Today this
-		means we have a centralized Node server with a lot of homemade solutions. One of my
-		long/medium-long term goals is to support at least one federated/decentralized standard like
+		means we have a centralized Node server with a lot of homemade solutions. One of my medium-long
+		term goals is to support at least one federated/decentralized standard like
 		<a href="https://www.w3.org/TR/activitypub/">ActivityPub</a> or Matrix.
 	</p>
 	<p>
@@ -376,7 +372,7 @@
 	<aside>
 		I don't know which standards will or should win with identity, that's outside of my expertise,
 		but I have to make decisions for users, and I'm currently planning on supporting <a
-			href="https://en.wikipedia.org/wiki/OpenID#OpenID_Connect_(OIDC)">OpenID Connect</a
+			href="https://wikipedia.org/wiki/OpenID#OpenID_Connect_(OIDC)">OpenID Connect</a
 		>
 		(OIDC) to complement our current password-in-a-cookie authentication. I like how the
 		<a href="https://atproto.com/">AT Protocol</a> uses domains for identity - compared to ActivityPub
@@ -403,12 +399,12 @@
 	<h2>Find us</h2>
 	<ul>
 		<li>
+			<a href="https://www.felt.dev/">felt.dev</a>
+		</li>
+		<li>
 			@feltjs on
 			<a href="https://github.com/feltjs">GitHub</a> and
 			<a href="https://www.npmjs.com/org/feltjs">npm</a>
-		</li>
-		<li>
-			<a href="https://www.felt.dev/">felt.dev</a>
 		</li>
 	</ul>
 </div>
