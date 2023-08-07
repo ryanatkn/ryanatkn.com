@@ -1,8 +1,5 @@
 <script lang="ts">
 	import {page} from '$app/stores';
-	import 'prismjs'; // TODO why are these needed?
-	import 'prism-svelte'; // TODO why are these needed?
-	import Code from '@feltjs/felt-ui/Code.svelte';
 
 	import Toot from '$lib/Toot.svelte';
 	import HashLink from '$lib/HashLink.svelte';
@@ -111,23 +108,7 @@
 				bind:autoload
 				bind:loading
 				bind:load_time
-			>
-				<p class="width_full">the Svelte code:</p>
-				<Code
-					content={`<Toot
-	host=${'"' + embedded_toot_host + '"'}
-	id=${'"' + embedded_toot_id + '"'}
-	let:load
-	let:loading
-	let:item
-	...
->
-	{#if item}
-		<Comment {item} />
-	{:else ...}
-</Toot>`}
-				/>
-			</Toot>
+			/>
 		</section>
 		<div class="prose">
 			<p>
@@ -283,11 +264,7 @@
 			bind:host={replies_toot_host}
 			bind:id={replies_toot_id}
 			bind:autoload
-		>
-			<svelte:fragment slot="settings">
-				<Code content={`<Toot\n\thost="${replies_toot_host}"\n\tid="${replies_toot_id}"\n/>`} />
-			</svelte:fragment>
-		</Toot>
+		/>
 	</section>
 </div>
 

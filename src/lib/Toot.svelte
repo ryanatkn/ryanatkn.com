@@ -69,19 +69,15 @@
 		if (url === _url && host === _host && id === _id) {
 			return;
 		}
-		// TODO parse
 		if (_url) {
 			const parsed = parse_status_context_url(_url);
 			if (parsed) {
 				host = parsed?.host;
 				id = parsed?.id;
-			} else {
-				throw Error(); // TODO BLOCK ?
-			}
+			} // TODO else?
 		} else {
 			url = to_api_status_url(_host!, _id!);
 		}
-		console.log(`_url, _host, _id`, _url, _host, _id);
 	};
 
 	$: parse(url, host, id);
@@ -90,10 +86,6 @@
 
 	let show_load_time = false;
 	$: if (!show_load_time && show_settings) show_load_time = true;
-
-	// TODO BLOCK remove the if guard below -- what about invalid states?
-
-	// TODO BLOCK slot? bind the let: below and export all?
 </script>
 
 {#if id && host}
@@ -189,7 +181,7 @@
 								title={autoload
 									? 'replies will load automatically when scrolled intersect'
 									: 'replies are not loaded until you request them'}
-								><input type="checkbox" bind:checked={autoload} />autoload</label
+								><input type="checkbox" bind:checked={autoload} />autoload when scrolled onscreen</label
 							>
 							<form class="width_sm">
 								<fieldset>
