@@ -74,7 +74,7 @@
 					Hi I'm working on free software like <a href="https://www.felt.dev/">feltjs</a> and
 					<a href="https://github.com/ryanatkn">others</a>. My main skill is making frontend web
 					apps and I also do backend programming. I enjoy trying to make powerful tools that are
-					easy to use, and I have a geeky interest in user interfaces and social systems. More
+					easy to use, and I have extra interest in the design of UIs and social systems. More
 					<a href="{base}/about">about me</a>.
 				</p>
 			</div>
