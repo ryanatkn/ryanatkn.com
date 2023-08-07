@@ -1,11 +1,13 @@
 import {stripEnd} from '@feltjs/util/string.js';
 import type {Flavored} from '@feltjs/util/types.js';
+import {dev} from '$app/environment';
 
 import mastodon_mock_data from '$lib/mastodon_mock_data.json';
 
 const mastodon_cache: Map<string, MastodonResponseData> = new Map(
 	mastodon_mock_data.map((d) => [d.url, d]),
 );
+const CACHE_NETWORK_DELAY = 0; // set this to like 1000 to see how the animations behave
 
 const headers = {
 	accept: 'application/json',
@@ -32,12 +34,15 @@ export type MastodonResponseData = ResponseData<
 
 export const fetch_data = async (
 	url: string,
-	cache: Map<string, MastodonResponseData> | null = mastodon_cache,
+	cache: Map<string, MastodonResponseData> | null = dev ? mastodon_cache : null,
 ): Promise<any | null> => {
 	const r = cache?.get(url);
 	if (r) {
 		console.log('fetch_data cached', r);
-		return r.data;
+		return new Promise((resolve) => {
+			setTimeout(() => resolve(r.data), CACHE_NETWORK_DELAY);
+		});
+		// return r.data;
 	}
 	try {
 		// console.log(`CALL fetch_post`, u);
