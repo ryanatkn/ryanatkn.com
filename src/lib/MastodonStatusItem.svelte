@@ -76,6 +76,9 @@
 		padding: var(--spacing_md);
 		margin-bottom: var(--spacing_md);
 	}
+	.mastodon_status_item:last-child {
+		margin-bottom: 0;
+	}
 	.content :global(.invisible) {
 		display: none;
 	}

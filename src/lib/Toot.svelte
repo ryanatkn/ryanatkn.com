@@ -49,16 +49,17 @@
 	// TODO refactor with storage helpers with serialize/parse as options, locallyStored?
 	let show_settings_key = storage_key && 'show_settings' + storage_key;
 	$: show_settings_key = storage_key && 'show_settings' + storage_key;
-	let show_settings = show_settings_key ? load_from_storage(show_settings_key, () => false) : false; // TODO store?
+	export let show_settings = show_settings_key
+		? load_from_storage(show_settings_key, () => false)
+		: false; // TODO store?
 	$: show_settings_key && set_in_storage(show_settings_key, show_settings); // TODO wastefully sets on init
 
 	const toggle_settings = () => {
 		show_settings = !show_settings;
 	};
 
-	let autoload_key = storage_key && 'autoload' + storage_key;
-	$: autoload_key = storage_key && 'autoload' + storage_key;
-	let autoload = autoload_key ? load_from_storage(autoload_key, () => false) : false; // TODO store?
+	export let autoload_key: string | undefined = 'autoload'; // TODO customizable
+	export let autoload = autoload_key ? load_from_storage(autoload_key, () => false) : false; // TODO store?
 	$: autoload_key && set_in_storage(autoload_key, autoload); // TODO wastefully sets on init
 
 	const parse = (_url: string | undefined, _host: string | undefined, _id: string | undefined) => {
@@ -259,10 +260,6 @@
 	.bg_panel {
 		background-color: var(--bg);
 		padding: var(--spacing_xs);
-	}
-	/* TODO hacky */
-	.main_post :global(.mastodon_status_item) {
-		margin-bottom: 0;
 	}
 	.icon {
 		font-size: var(--icon_size_md);
