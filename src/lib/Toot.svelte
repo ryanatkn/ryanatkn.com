@@ -181,7 +181,8 @@
 								title={autoload
 									? 'replies will load automatically when scrolled intersect'
 									: 'replies are not loaded until you request them'}
-								><input type="checkbox" bind:checked={autoload} />autoload when scrolled onscreen</label
+								><input type="checkbox" bind:checked={autoload} />automatically load when scrolled
+								onscreen</label
 							>
 							<form class="width_sm">
 								<fieldset>

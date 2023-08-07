@@ -78,7 +78,10 @@
 		if (unvalidated_replies.length) {
 			await map_async(unvalidated_replies, async (s) => {
 				const favourites = await fetch_favourites(host, s);
-				if (favourites?.some((f) => f.acct === acct)) {
+				const favourite = favourites?.find((f) => f.acct === acct);
+				// TODO this logic is what I want, but `favourite.created_at` is showing a date in 2022
+				// if (favourite && (!s.edited_at || new Date(s.edited_at) < new Date(favourite.created_at))) {
+				if (favourite) {
 					allowed.add(s.id);
 				}
 			});

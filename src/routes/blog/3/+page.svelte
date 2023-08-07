@@ -112,7 +112,7 @@
 		</section>
 		<div class="prose">
 			<p>
-				When you click the "load replies" button below, your browser sends a request to a <a
+				When you click the "load toot" button, your browser sends a request to a <a
 					href="https://joinmastodon.org/">Mastodon</a
 				>
 				instance at

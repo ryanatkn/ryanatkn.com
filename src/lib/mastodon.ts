@@ -29,7 +29,7 @@ export interface ResponseData<T = any> {
 }
 
 export type MastodonResponseData = ResponseData<
-	MastodonContext | MastodonStatus | MastodonFavourites
+	MastodonContext | MastodonStatus | MastodonFavourite
 >;
 
 export const fetch_data = async (
@@ -165,7 +165,7 @@ export const fetch_status = async (host: string, id: string): Promise<MastodonSt
 export const fetch_favourites = async (
 	host: string,
 	status: MastodonStatus,
-): Promise<MastodonFavourites[] | null> => {
+): Promise<MastodonFavourite[] | null> => {
 	const url = to_api_favourites_url(host, status.id);
 	return fetch_data(url);
 };
@@ -248,7 +248,7 @@ export interface MastodonStatus {
 	poll: unknown; // | null;
 }
 
-export interface MastodonFavourites {
+export interface MastodonFavourite {
 	id: string;
 	username: string;
 	acct: string;
