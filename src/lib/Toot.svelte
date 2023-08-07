@@ -178,7 +178,7 @@
 								><input type="checkbox" bind:checked={autoload} />automatically load when scrolled
 								onscreen</label
 							>
-							<form class="width_sm">
+							<form class="width_full">
 								<fieldset>
 									<label title="where to load the toot">
 										<input
