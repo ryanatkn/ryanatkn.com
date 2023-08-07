@@ -32,6 +32,7 @@
 		{slug: 'replies', name: 'Replies'},
 	];
 
+	let autoload: boolean;
 	let loading: boolean | undefined;
 	let load_time: number | undefined;
 
@@ -107,6 +108,7 @@
 				bind:url={embedded_toot_url}
 				bind:host={embedded_toot_host}
 				bind:id={embedded_toot_id}
+				bind:autoload
 				bind:loading
 				bind:load_time
 			>
@@ -280,6 +282,7 @@
 			bind:url={replies_toot_url}
 			bind:host={replies_toot_host}
 			bind:id={replies_toot_id}
+			bind:autoload
 		>
 			<svelte:fragment slot="settings">
 				<Code content={`<Toot\n\thost="${replies_toot_host}"\n\tid="${replies_toot_id}"\n/>`} />

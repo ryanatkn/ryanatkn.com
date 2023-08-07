@@ -29,7 +29,7 @@
   },
   "devDependencies": {
     "@feltjs/eslint-config": "^0.3.0",
-    "@feltjs/felt-ui": "^0.65.0",
+    "@feltjs/felt-ui": "^0.65.3",
     "@feltjs/gro": "^0.78.2",
     "@fuz.dev/intersect": "^0.2.0",
     "@prettier/plugin-xml": "^2.2.0",

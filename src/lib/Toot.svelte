@@ -59,8 +59,8 @@
 	};
 
 	export let autoload_key: string | undefined = 'autoload'; // TODO customizable
-	export let autoload = autoload_key ? load_from_storage(autoload_key, () => false) : false; // TODO store?
-	$: autoload_key && set_in_storage(autoload_key, autoload); // TODO wastefully sets on init
+	export let autoload = autoload_key ? load_from_storage(autoload_key, () => false) : false; // TODO store? probably, see this comment vv
+	$: autoload_key && set_in_storage(autoload_key, autoload); // TODO wastefully sets on init and across multiple `Toot` instances if bound
 
 	const parse = (_url: string | undefined, _host: string | undefined, _id: string | undefined) => {
 		if (!(_url || (_host && _id))) {
