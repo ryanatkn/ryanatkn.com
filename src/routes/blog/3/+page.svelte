@@ -163,8 +163,8 @@
 			<li>supports only one kind of moderation, allowlisting via favourites by the author</li>
 			<li>
 				you can edit a post after I favourite it as a loophole to bypass my explicit approval - I
-				was unable to fix this because the <code>created_at</code> of all the favourites is all the same
-				value sometime in 2022
+				was unable to fix this because the <code>created_at</code> of all the favourites is for the author
+				object, and I see no way to get the necessary information for the favourite object
 			</li>
 			<li>favourites are also limited (but pagination header?)</li>
 			<li>is readonly - you can't take actions directly on the page (favouriting, replying)</li>
