@@ -197,9 +197,9 @@
 		legal/international/etc. My todo list for software development is already infinite, and taking a
 		second job of this complexity does not seem productive. Even if coworkers do most of the labor,
 		I don't think I'll be able to sleep well at night if I'm one of the people responsible for your
-		critical personal data not catching fire at all times. I already feel a similar pressure from
-		the software side. Instead of running a hosting company, I'm going to spend my time making
-		software, and I'll gladly pay money to operators to host it.
+		critical personal data not catching fire at all times. I already feel similar pressures from the
+		software side. Instead of running a hosting company, I'm going to spend my time making software,
+		and I'll gladly pay money to operators to host it.
 	</p>
 	<p>
 		While my plan for financial sustainbility pivots to adjust to reality, Hamilton may continue
