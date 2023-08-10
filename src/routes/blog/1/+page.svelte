@@ -193,12 +193,12 @@
 	</p>
 	<p>
 		It sounded like a plan, except I don't love operations, not enough to take on the
-		responsibilities for admin, moderation, security, uptime, abuse, legal/international/etc. My
-		todo list for software development is already infinite, and taking a second job of this
-		complexity does not seem possible. Even if coworkers do most of the labor, I won't be able to
-		sleep well at night if I'm one of the people responsible for your critical personal data not
-		catching fire at all times. Instead of running a hosting company, I'm going to spend my time
-		making software, and I'll gladly pay money to operators to host it.
+		responsibilities for admin, moderation, holding keys, security, uptime, abuse,
+		legal/international/etc. My todo list for software development is already infinite, and taking a
+		second job of this complexity does not seem productive. Even if coworkers do most of the labor,
+		I won't be able to sleep well at night if I'm one of the people responsible for your critical
+		personal data not catching fire at all times. Instead of running a hosting company, I'm going to
+		spend my time making software, and I'll gladly pay money to operators to host it.
 	</p>
 	<p>
 		While my plan for financial sustainbility pivots to adjust to reality, Hamilton may continue
