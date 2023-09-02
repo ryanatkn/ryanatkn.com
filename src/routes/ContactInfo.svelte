@@ -14,14 +14,7 @@
 				<a rel="me" href="https://lobste.rs/u/ryanatkn">Lobste.rs</a>
 			</li>
 			<li>
-				Mastodon webdev account: <a rel="me" href="https://hachyderm.io/@ryanatkn"
-					>@ryanatkn@hachyderm.io</a
-				>
-			</li>
-			<li>
-				Mastodon professional account: <a rel="me" href="https://hci.social/@ryanatkn"
-					>@ryanatkn@hci.social</a
-				>
+				Mastodon: <a rel="me" href="https://hci.social/@ryanatkn">@ryanatkn@hci.social</a>
 			</li>
 			<li>
 				I don't use any other public social media accounts<br />except an orange site for self

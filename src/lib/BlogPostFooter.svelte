@@ -13,9 +13,7 @@
 				<a href="https://wikipedia.org/wiki/ActivityPub">ActivityPub</a>:</span
 			>
 			<br />
-			<a href="https://hci.social/@ryanatkn">@ryanatkn@hci.social</a> (professional)
-			<br />
-			<a href="https://hachyderm.io/@ryanatkn">@ryanatkn@hachyderm.io</a> (coder)
+			<a href="https://hci.social/@ryanatkn">@ryanatkn@hci.social</a>
 		</p>
 	</div>
 </div>
