@@ -6,7 +6,7 @@
 <!-- svelte-ignore a11y-img-redundant-alt -->
 <img
 	src="{base}/me.png"
-	alt="picture of me smiling on a couch in a blue shirt while holding a calico cat that is out of frame"
+	alt="picture of me smiling on a couch in a blue shirt while holding my sister's calico cat Caramel who's out of frame"
 />
 
 <style>
