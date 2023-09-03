@@ -1,29 +1,35 @@
 <script lang="ts">
-	import Favicon from '$lib/Favicon.svelte';
 	import Breadcrumbs from '@feltjs/felt-ui/Breadcrumbs.svelte';
 	import {base} from '$app/paths';
 
 	import ContactInfo from '$routes/ContactInfo.svelte';
-
-	// ...
+	import Favicon from '$lib/Favicon.svelte';
+	import Me from '$routes/Me.svelte';
 </script>
 
 <div class="about prose">
 	<header class="box"><h1 class="panel">about me</h1></header>
 	<section class="width_md panel">
-		<p>
-			Hi, my name is Ryan Atkinson and I'm a web developer. I'm trying to make powerful and simple
-			tools to help people be creative and productive in social contexts. I'm driven by curiosity
-			and wanting to improve our lives with technology. My work is <a
-				href="https://github.com/ryanatkn">open source on GitHub</a
-			>
-			and this website's homepage lists <a href="{base}/">my ongoing projects</a>.
-		</p>
+		<div style:min-height="192px" style:margin-bottom="var(--spacing_md)">
+			<div style:float="right"><Me /></div>
+			<p>
+				Hi, my name is Ryan Atkinson and I'm a web developer. I'm trying to make powerful and simple
+				tools to help people be creative and productive in social contexts. I'm driven by curiosity
+				and wanting to improve our lives with technology. My work is
+				<a href="https://github.com/ryanatkn">open source on GitHub</a>
+				and this website's homepage lists <a href="{base}/">my ongoing projects</a>.
+			</p>
+			<p>
+				I work on the web because for all its flaws, it's a sandboxed platform with backwards
+				compatibility that runs everywhere, reaching more people with less friction than anything
+				else. I care a lot about performance and giving power to users throughout the stack.
+			</p>
+		</div>
 		<p>Some more info:</p>
 		<ul>
 			<li>
-				I was initially self-taught (thanks, internet) and I've been working as a JS-oriented web
-				dev since 2011
+				I was initially self-taught (ty internet) and I've been working as a JS-oriented web dev
+				since 2011
 			</li>
 			<li>
 				in 2019 I started <a href="https://github.com/ryanatkn">doing full-time open source</a>,

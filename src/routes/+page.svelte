@@ -4,6 +4,7 @@
 
 	import Favicon from '$lib/Favicon.svelte';
 	import ContactInfo from '$routes/ContactInfo.svelte';
+	import Me from '$routes/Me.svelte';
 
 	/* eslint-disable svelte/no-at-html-tags */
 
@@ -70,6 +71,7 @@
 					hello this is the homepage of Ryan Atkinson, he's a web developer making free and open
 					source software
 				</blockquote>
+				<div style:margin-bottom="var(--spacing_xs)"><Me /></div>
 				<p>
 					I'm working on open source software <a href="https://github.com/ryanatkn">projects</a>
 					like <a href="https://www.felt.dev/">feltjs</a>. My main skill is making frontend web apps
