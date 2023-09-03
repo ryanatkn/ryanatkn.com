@@ -20,9 +20,10 @@
 				and this website's homepage lists <a href="{base}/">my ongoing projects</a>.
 			</p>
 			<p>
-				I work on the web because for all its flaws, it's a sandboxed platform with backwards
-				compatibility that runs everywhere, reaching more people with less friction than anything
-				else. I care a lot about performance and giving power to users throughout the stack.
+				I work on the web because for all its flaws, it's a collectively-governed sandboxed platform
+				with backwards compatibility that runs everywhere, reaching more people with less friction
+				than anything else. I care a lot about performance and giving power to users throughout the
+				stack.
 			</p>
 		</div>
 		<p>Some more info:</p>
