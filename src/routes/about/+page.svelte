@@ -58,7 +58,7 @@
 				so much that you shouldn't trust my opinion on it
 			</li>
 			<li>
-				here's an ongoing attempt to credit <a href="{base}/influences">my influences</a>
+				here's an ongoing attempt to credit some of <a href="{base}/influences">my influences</a>
 			</li>
 		</ul>
 	</section>
