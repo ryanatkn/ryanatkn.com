@@ -14,8 +14,9 @@
 				<a rel="me" href="https://lobste.rs/u/ryanatkn">Lobste.rs</a>
 			</li>
 			<li>
-				Mastodon: <a rel="me" href="https://hci.social/@ryanatkn">@ryanatkn@hci.social</a>
+				@ryanatkn@hci.social on <a rel="me" href="https://hci.social/@ryanatkn">Mastodon</a>
 			</li>
+			<li>I don't use any other public social media accounts</li>
 		</ul>
 	</li>
 </ul>
