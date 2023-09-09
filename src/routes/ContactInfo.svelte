@@ -16,10 +16,6 @@
 			<li>
 				Mastodon: <a rel="me" href="https://hci.social/@ryanatkn">@ryanatkn@hci.social</a>
 			</li>
-			<li>
-				I don't use any other public social media accounts<br />except an orange site for self
-				promotion
-			</li>
 		</ul>
 	</li>
 </ul>
