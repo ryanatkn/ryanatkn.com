@@ -1,7 +1,9 @@
 import type {Task} from '@feltjs/gro';
 import {z} from 'zod';
 import {stripStart, stripEnd} from '@feltjs/util/string.js';
-import {formatFile} from '@feltjs/gro/dist/format/formatFile.js';
+import {format_file} from '@feltjs/gro/format/format_file.js';
+import {exists} from '@feltjs/gro/util/exists.js';
+import {writeFile} from 'node:fs/promises';
 
 // TODO probably source this from `gro.config.ts` or other config
 const DEFAULT_URL = 'https://www.ryanatkn.com/blog';
@@ -17,7 +19,7 @@ type Args = z.infer<typeof Args>;
 export const task: Task<Args> = {
 	summary: 'create a new blog post',
 	Args,
-	run: async ({args, fs, log, invokeTask}) => {
+	run: async ({args,  log, invoke_task}) => {
 		const {url, date} = args;
 
 		const {origin, pathname} = new URL(url);
@@ -30,7 +32,7 @@ export const task: Task<Args> = {
 		while (true) {
 			postPath = toPostPath(pathname, index);
 			// eslint-disable-next-line no-await-in-loop
-			if (await fs.exists(postPath)) {
+			if (await exists(postPath)) {
 				index++;
 			} else {
 				break;
@@ -57,11 +59,11 @@ export const task: Task<Args> = {
 				<a href="{base}/a/b/c">a local link</a>
 			</p>
 		`;
-		const formatted = await formatFile(fs, postPath, unformatted);
+		const formatted = await format_file( postPath, unformatted);
 
-		await fs.writeFile(postPath, formatted);
+		await writeFile(postPath, formatted);
 
-		await invokeTask('gen');
+		await invoke_task('gen');
 
 		log.info(`created empty blog post with index ${index} at ${postPath}`);
 	},

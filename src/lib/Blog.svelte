@@ -2,7 +2,7 @@
 	import {page} from '$app/stores';
 	import {goto} from '$app/navigation';
 	import {browser} from '$app/environment';
-	import Message from '@feltjs/felt-ui/Message.svelte';
+	import Alert from '@feltjs/felt-ui/Alert.svelte';
 
 	import BlogPost from '$lib/BlogPost.svelte';
 	import {Components} from '$lib/blog';
@@ -27,5 +27,5 @@
 {#if post && Component}
 	<BlogPost {post} {Component} />
 {:else}
-	<Message status="error">no post found, is the path correct?</Message>
+	<Alert status="error">no post found, is the path correct?</Alert>
 {/if}
