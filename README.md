@@ -53,4 +53,4 @@ gro deploy
 
 ## license [🐦](https://wikipedia.org/wiki/Free_and_open-source_software)
 
-public domain ⚘ [The Unlicense](license)
+[MIT](LICENSE)
