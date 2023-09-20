@@ -19,7 +19,7 @@ type Args = z.infer<typeof Args>;
 export const task: Task<Args> = {
 	summary: 'create a new blog post',
 	Args,
-	run: async ({args,  log, invoke_task}) => {
+	run: async ({args, log, invoke_task}) => {
 		const {url, date} = args;
 
 		const {origin, pathname} = new URL(url);
@@ -59,7 +59,7 @@ export const task: Task<Args> = {
 				<a href="{base}/a/b/c">a local link</a>
 			</p>
 		`;
-		const formatted = await format_file( postPath, unformatted);
+		const formatted = await format_file(postPath, unformatted);
 
 		await writeFile(postPath, formatted);
 
