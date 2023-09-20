@@ -54,7 +54,8 @@
   },
   "prettier": {
     "plugins": [
-      "prettier-plugin-svelte"
+      "prettier-plugin-svelte",
+      "@prettier/plugin-xml"
     ],
     "useTabs": true,
     "printWidth": 100,
