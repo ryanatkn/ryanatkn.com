@@ -1,11 +1,16 @@
 .DS_Store
 /node_modules
+/worktree
+
 /.svelte-kit
 /build
+/dist
 
 /.gro
-/dist
+
+*.pem
+/.env*
+
 *.ignore
 *.ignore.*
 ignore/
-*.pem

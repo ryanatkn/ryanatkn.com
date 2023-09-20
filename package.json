@@ -49,17 +49,15 @@
   },
   "eslintConfig": {
     "root": true,
-    "extends": "@feltjs",
-    "ignorePatterns": [
-      "svelte.config.js",
-      "vite.config.js"
-    ]
+    "extends": "@feltjs"
   },
   "prettier": {
+    "plugins": [
+      "prettier-plugin-svelte"
+    ],
     "useTabs": true,
     "printWidth": 100,
     "singleQuote": true,
-    "trailingComma": "all",
     "bracketSpacing": false,
     "overrides": [
       {
