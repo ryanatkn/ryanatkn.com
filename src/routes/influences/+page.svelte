@@ -219,11 +219,13 @@
 			<li>
 				{#if Array.isArray(influence)}
 					{#each influence as inf, i (inf)}
-						{#if inf.coworker}my coworker {/if}<a href={inf.url}>{inf.name}</a
+						{#if inf.coworker}my coworker
+						{/if}<a href={inf.url}>{inf.name}</a
 						>{#if i !== influence.length - 1}&nbsp;and&nbsp;{/if}
 					{/each}
 				{:else}
-					{#if influence.coworker}my coworker {/if}<a href={influence.url}>{influence.name}</a>
+					{#if influence.coworker}my coworker
+					{/if}<a href={influence.url}>{influence.name}</a>
 				{/if}
 			</li>
 		{/each}

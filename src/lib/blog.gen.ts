@@ -1,7 +1,8 @@
-import type {Gen} from '@feltjs/gro';
+import type {Gen} from '@feltjs/gro/gen/gen.js';
 import {stripStart, stripEnd} from '@feltjs/util/string.js';
+import {exists} from '@feltjs/gro/util/exists.js';
 
-import {feed} from '../routes/blog/feed';
+import {feed} from '$routes/blog/feed';
 import {create_atom_feed, type FeedData} from '$lib/feed';
 
 /* eslint-disable no-await-in-loop */
@@ -13,7 +14,7 @@ import {create_atom_feed, type FeedData} from '$lib/feed';
 
 // TODO refactor this to be reusable (see args below)
 
-export const gen: Gen = async ({fs}) => {
+export const gen: Gen = async () => {
 	const TODO_get_from_maybe_args = 'blog'; // TODO args? process.argv? something else? see `blog.task.ts`'s `url` arg
 	const path = stripStart(stripEnd(TODO_get_from_maybe_args, '/'), '/');
 
@@ -21,7 +22,7 @@ export const gen: Gen = async ({fs}) => {
 
 	let i = 1;
 	while (true) {
-		if (!(await fs.exists(`src/routes/${path}/${i}/post.ts`))) {
+		if (!(await exists(`src/routes/${path}/${i}/post.ts`))) {
 			break;
 		}
 		items.push(i);
@@ -37,7 +38,7 @@ export const gen: Gen = async ({fs}) => {
 			filename: './blog.ts',
 			content: `
 				import type {FeedItemData} from '$lib/feed';
-				${items.map((i) => `import {post as p${i}} from '../routes/${path}/${i}/post'`).join(';\n')};
+				${items.map((i) => `import {post as p${i}} from '$routes/${path}/${i}/post'`).join(';\n')};
 
 				export const posts: FeedItemData[] = [${items.map((i) => `p${i}`).join(', ')}];
 			`,
