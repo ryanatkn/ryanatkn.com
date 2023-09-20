@@ -17,6 +17,7 @@
 		{name: 'John Carmack', url: 'https://wikipedia.org/wiki/John_Carmack'},
 		{name: 'Gabe Newell', url: 'https://wikipedia.org/wiki/Gabe_Newell'},
 		{name: 'Alan Kay', url: 'https://wikipedia.org/wiki/Alan_Kay'},
+		{name: 'Bill Atkinson', url: 'https://wikipedia.org/wiki/Bill_Atkinson'},
 		{name: 'Bret Victor', url: 'https://wikipedia.org/wiki/Bret_Victor'},
 		{name: 'Douglas Engelbart', url: 'https://wikipedia.org/wiki/Douglas_Engelbart'},
 		{name: 'Ted Nelson', url: 'https://wikipedia.org/wiki/Ted_Nelson'},

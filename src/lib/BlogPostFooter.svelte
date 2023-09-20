@@ -10,9 +10,7 @@
 		<p>
 			<span> find me on <a href="https://joinmastodon.org/">Mastodon</a> and ActivityPub:</span>
 			<br />
-			<a href="https://hci.social/@ryanatkn">@ryanatkn@hci.social</a> (professional)
-			<br />
-			<a href="https://hachyderm.io/@ryanatkn">@ryanatkn@hachyderm.io</a> (webdev)
+			<a href="https://hci.social/@ryanatkn">@ryanatkn@hci.social</a>
 		</p>
 	</div>
 </footer>
