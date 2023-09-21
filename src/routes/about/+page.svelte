@@ -67,6 +67,17 @@
 			<ContactInfo />
 		</div>
 	</section>
+	<section class="box">
+		<div class="box panel">
+			<iframe
+				src="https://github.com/sponsors/ryanatkn/button"
+				title="Sponsor @ryanatkn on GitHub"
+				height="32"
+				width="114"
+				style="border: 0; border-radius: 6px;"
+			></iframe>
+		</div>
+	</section>
 </div>
 <Breadcrumbs>
 	<Favicon /></Breadcrumbs
