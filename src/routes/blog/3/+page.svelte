@@ -41,6 +41,7 @@
 		<br />
 		<BlogPostIndex {sections} />
 	</section>
+	<hr />
 	<section>
 		<div class="prose">
 			<h2>
