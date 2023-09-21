@@ -16,7 +16,7 @@
 			/></a
 		>
 		<br />
-		I've been making free and open source web community software with
+		I've been developing free and open source web community software with
 		<a href="https://12mod12.com/">Hamilton Reed</a> full-time
 		<a href="https://github.com/feltjs/felt-server/graphs/contributors">since April 2021</a>. (he's
 		@greatbacon on <a href="https://github.com/greatbacon">GitHub</a> and
