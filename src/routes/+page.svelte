@@ -41,7 +41,15 @@
 		{
 			name: '@feltjs',
 			title: '<a href="https://www.felt.dev/">@feltjs</a>',
-			description: `a free and open source web toolkit for hobbyists and human-scale communities`,
+			description: 'a programmable platform for hobbyists and human-scale communities',
+			links: `<a href="https://www.felt.dev/">felt.dev</a>, <a href="https://github.com/feltjs">GitHub</a>`,
+			icon: '/felt.png',
+			icon_alt: "green felt textured heart with the word 'felt' cut out",
+		},
+		{
+			name: 'gro',
+			title: '<a href="https://github.com/grogarden/gro">gro</a>',
+			description: 'task runner and toolkit extending SvelteKit',
 			links: `<a href="https://www.felt.dev/">felt.dev</a>, <a href="https://github.com/feltjs">GitHub</a>`,
 			icon: '/felt.png',
 			icon_alt: "green felt textured heart with the word 'felt' cut out",
@@ -73,10 +81,13 @@
 				</blockquote>
 				<div style:margin-bottom="var(--spacing_xs)"><Me /></div>
 				<p>
-					I'm working on open source software <a href="https://github.com/ryanatkn">projects</a>
-					like <a href="https://www.felt.dev/">feltjs</a>. My main skill is making frontend web apps
-					and I also do some backend programming. I enjoy trying to make powerful tools that are
-					easy to use, and I'm extra interested in UIs and social systems. More
+					I'm building free and open source <a href="https://github.com/ryanatkn"
+						>software projects</a
+					>
+					like <a href="https://www.felt.dev/">feltjs</a> and
+					<a href="https://github.com/grogarden/gro">gro</a>. My main skill is making frontend web
+					apps and I also do some backend programming. I enjoy trying to make powerful tools that
+					are easy to use, and I'm extra interested in UIs and social systems. More
 					<a href="{base}/about">about me</a>.
 				</p>
 			</div>
