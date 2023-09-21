@@ -23,7 +23,7 @@
 		<a href="https://hachyderm.io/@greatbacon">Mastodon</a>) We've been working quietly in public
 		and leaving a trail of informal documentation through
 		<a href="https://github.com/feltjs/felt-server/pulls">GitHub PRs</a>. We'll announce when we
-		reach alpha in Q3 2023.
+		reach alpha in Q4 2023.
 	</p>
 	<p>
 		Hamilton and I first met in December 2019 and started self-funded part-time work on what would
