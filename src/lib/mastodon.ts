@@ -1,5 +1,5 @@
-import {stripEnd} from '@feltjs/util/string.js';
-import type {Flavored} from '@feltjs/util/types.js';
+import {stripEnd} from '@grogarden/util/string.js';
+import type {Flavored} from '@grogarden/util/types.js';
 import {dev} from '$app/environment';
 
 import mastodon_mock_data from '$lib/mastodon_mock_data.json';

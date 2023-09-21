@@ -1,5 +1,5 @@
 import type {Gen} from '@feltjs/gro/gen/gen.js';
-import {stripStart, stripEnd} from '@feltjs/util/string.js';
+import {stripStart, stripEnd} from '@grogarden/util/string.js';
 import {exists} from '@feltjs/gro/util/exists.js';
 
 import {feed} from '$routes/blog/feed';

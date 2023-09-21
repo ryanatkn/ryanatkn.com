@@ -126,26 +126,26 @@
 	<p>We have a handful of software repos:</p>
 	<ul>
 		<li>
-			<a href="https://github.com/feltjs/felt-server">@feltjs/felt-server</a> – a programmable platform
-			for hobbyists and human-scale communities, the Node.js server that's selfhostable and available
-			as a library on npm
+			<a href="https://github.com/feltjs/felt">@feltjs/felt</a> – a programmable platform for hobbyists
+			and human-scale communities, the Node.js server that's selfhostable and available as a library
+			on npm
 		</li>
 		<li>
-			<a href="https://github.com/feltjs/felt-ui">@feltjs/felt-ui</a> – styles and UI components for
-			Svelte and SvelteKit 💚
-		</li>
-		<li>
-			<a href="https://github.com/feltjs/felt-template">@feltjs/felt-template</a> – a static web app
-			template with SvelteKit, TypeScript, and Felt for quickly creating new projects - in the future
-			it will support quickly creating a custom server project, too.
-		</li>
-		<li>
-			<a href="https://github.com/feltjs/util">@feltjs/util</a> – JS utilities to complement the modern
-			web platform 🦕🐋
+			<a href="https://github.com/fuz-dev/fuz">@fuz.dev/fuz</a> – design system for CSS, Svelte, and
+			SvelteKit
 		</li>
 		<li>
 			<a href="https://github.com/feltjs/gro">@feltjs/gro</a> – a toolkit that extends SvelteKit and
 			Vite with things we find useful for making web apps - it's used by all of our other projects
+		</li>
+		<li>
+			<a href="https://github.com/fuz-dev/template">@fuz.dev/template</a> – a static web app template
+			with SvelteKit, TypeScript, and Felt for quickly creating new projects - in the future it will
+			support quickly creating a custom server project, too.
+		</li>
+		<li>
+			<a href="https://github.com/grogarden/util">@grogarden/util</a> – JS utilities to complement the
+			modern web platform 🦕🐋
 		</li>
 	</ul>
 	<p>

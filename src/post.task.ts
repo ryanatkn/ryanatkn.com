@@ -1,6 +1,6 @@
 import type {Task} from '@feltjs/gro';
 import {z} from 'zod';
-import {stripStart, stripEnd} from '@feltjs/util/string.js';
+import {stripStart, stripEnd} from '@grogarden/util/string.js';
 import {format_file} from '@feltjs/gro/format/format_file.js';
 import {exists} from '@feltjs/gro/util/exists.js';
 import {writeFile} from 'node:fs/promises';

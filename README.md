@@ -40,15 +40,15 @@ gro deploy
 
 ## credits 🐢<sub>🐢</sub><sub><sub>🐢</sub></sub>
 
+[TypeScript](https://github.com/microsoft/TypeScript) ∙
 [Svelte](https://github.com/sveltejs/svelte) ∙
 [SvelteKit](https://github.com/sveltejs/kit) ∙
 [Vite](https://github.com/vitejs/vite) ∙
 [esbuild](https://github.com/evanw/esbuild) ∙
-[TypeScript](https://github.com/microsoft/TypeScript) ∙
+[Gro](https://github.com/feltjs/gro) ∙
+[Fuz](https://github.com/fuz-dev/fuz) ∙
 [ESLint](https://github.com/eslint/eslint) ∙
 [Prettier](https://github.com/prettier/prettier) ∙
-[felt-ui](https://github.com/feltjs/felt-ui) ∙
-[Gro](https://github.com/feltjs/gro)
 & [more](package.json)
 
 ## license [🐦](https://wikipedia.org/wiki/Free_and_open-source_software)

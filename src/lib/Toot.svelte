@@ -1,5 +1,5 @@
 <script lang="ts">
-	import PendingButton from '@feltjs/felt-ui/PendingButton.svelte';
+	import PendingButton from '@fuz.dev/fuz/PendingButton.svelte';
 	import {slide} from 'svelte/transition';
 	import {createEventDispatcher} from 'svelte';
 	import {intersect} from '@fuz.dev/intersect';
