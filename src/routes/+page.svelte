@@ -42,16 +42,25 @@
 			name: '@feltjs',
 			title: '<a href="https://www.felt.dev/">@feltjs</a>',
 			description: 'a programmable platform for hobbyists and human-scale communities',
-			links: `<a href="https://www.felt.dev/">felt.dev</a>, <a href="https://github.com/feltjs">GitHub</a>`,
+			links: `<a class="chip" href="https://www.felt.dev/">felt.dev</a> <a class="chip" href="https://github.com/feltjs">GitHub</a>`,
 			icon: '/felt.png',
 			icon_alt: "green felt textured heart with the word 'felt' cut out",
+		},
+		{
+			name: 'fuz',
+			title: '<a href="https://www.fuz.dev/">fuz</a>',
+			description:
+				'design system for CSS, <a href="https://svelte.dev/">Svelte</a>, and <a href="https://kit.svelte.dev/">SvelteKit</a>',
+			links: `<a class="chip" href="https://www.fuz.dev/">fuz.dev</a> <a class="chip" href="https://github.com/fuz-dev/fuz">GitHub</a> <a class="chip" href="https://www.npmjs.com/package/@fuz.dev/fuz">npm</a>`,
+			icon: '🧶',
+			icon_alt: 'a pixelated green oak acorn with a glint of sun',
 		},
 		{
 			name: 'gro',
 			title: '<a href="https://github.com/grogarden/gro">gro</a>',
 			description:
 				'task runner and toolkit extending <a href="https://kit.svelte.dev/">SvelteKit</a>',
-			links: `<a href="https://www.grogarden.org/">grogarden.org</a>, <a href="https://github.com/grogarden/gro">GitHub</a>`,
+			links: `<a class="chip" href="https://www.grogarden.org/">grogarden.org</a> <a class="chip" href="https://github.com/grogarden/gro">GitHub</a>`,
 			icon: '/gro.png',
 			icon_alt: 'a pixelated green oak acorn with a glint of sun',
 		},
@@ -60,7 +69,7 @@
 			title: '<a href="https://www.cosmicplayground.org">cosmicplayground.org</a>',
 			description:
 				'hobby project for fun and learning, <em>"tools and toys for expanding minds"</em>',
-			links: '<a href="https://github.com/ryanatkn/cosmicplayground">GitHub</a>',
+			links: '<a class="chip" href="https://github.com/ryanatkn/cosmicplayground">GitHub</a>',
 			icon: '/cosmic_kitty.jpg',
 			icon_alt: 'the smiling and colorful face of Cosmic Kitty made of rainbow lines in space',
 			icon_style: 'border-radius: 50%',
@@ -119,11 +128,15 @@
 							</div>
 							{#if project.icon}
 								<div class="icon">
-									<img
-										src="{base}{project.icon}"
-										alt={project.icon_alt ?? `icon for ${project.name}`}
-										style={project.icon_style}
-									/>
+									{#if project.icon[0] === '/'}
+										<img
+											src="{base}{project.icon}"
+											alt={project.icon_alt ?? `icon for ${project.name}`}
+											style={project.icon_style}
+										/>
+									{:else}
+										<div style:font-size="var(--size_xl5)">{project.icon}</div>
+									{/if}
 								</div>
 							{/if}
 						</div>
