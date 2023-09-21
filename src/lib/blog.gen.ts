@@ -1,4 +1,4 @@
-import type {Gen} from '@feltjs/gro/gen/gen.js';
+import type {Gen} from '@feltjs/gro';
 import {stripStart, stripEnd} from '@grogarden/util/string.js';
 import {exists} from '@feltjs/gro/util/exists.js';
 
