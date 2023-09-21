@@ -50,9 +50,9 @@
 			name: 'gro',
 			title: '<a href="https://github.com/grogarden/gro">gro</a>',
 			description: 'task runner and toolkit extending SvelteKit',
-			links: `<a href="https://www.felt.dev/">felt.dev</a>, <a href="https://github.com/feltjs">GitHub</a>`,
-			icon: '/felt.png',
-			icon_alt: "green felt textured heart with the word 'felt' cut out",
+			links: `<a href="https://www.grogarden.org/">grogarden.org</a>, <a href="https://github.com/grogarden/gro">GitHub</a>`,
+			icon: '/gro.png',
+			icon_alt: 'a pixelated green oak acorn with a glint of sun',
 		},
 		{
 			name: 'cosmicplayground',
