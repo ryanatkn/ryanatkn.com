@@ -26,10 +26,10 @@
 		reach alpha in Q4 2023.
 	</p>
 	<p>
-		Hamilton and I first met in December 2019 and started self-funded part-time work on what would
-		become <a href="https://github.com/feltjs">@feltjs</a>. One of the main ideas was to make tools
-		to help people be creative together - visit <a href="https://www.felt.dev/">felt.dev</a> to see where
-		we are.
+		Hamilton and I started self-funded part-time work in January 2020 on what would become <a
+			href="https://github.com/feltjs">@feltjs</a
+		>. One of the main ideas was to make tools to help people be creative together - visit
+		<a href="https://www.felt.dev/">felt.dev</a> to see where we are.
 	</p>
 	<p>
 		Our main project is <a href="https://github.com/feltjs/felt-server">felt-server</a>, an
