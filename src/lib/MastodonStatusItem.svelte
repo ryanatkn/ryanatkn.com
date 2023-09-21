@@ -82,7 +82,7 @@
 	.content :global(.invisible) {
 		display: none;
 	}
-	/* undo felt-ui's `.ellipsis` and implement Mastodon's */
+	/* undo fuz's `.ellipsis` and implement Mastodon's */
 	.content :global(.ellipsis) {
 		display: inline;
 		white-space: initial;
