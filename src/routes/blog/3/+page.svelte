@@ -20,6 +20,7 @@
 	let replies_toot_url = to_api_status_url(replies_toot_host, replies_toot_id);
 
 	// TODO BLOCK incorporate https://newpublic.substack.com/p/the-secret-power-of-digital-dungeon?r=bveu&utm_campaign=post&utm_medium=web
+	// probably mention the rooms/stool
 
 	// TODO BLOCK make the `reset` button work for the toot url, including whether it's enabled
 
