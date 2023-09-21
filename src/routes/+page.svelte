@@ -49,7 +49,8 @@
 		{
 			name: 'gro',
 			title: '<a href="https://github.com/grogarden/gro">gro</a>',
-			description: 'task runner and toolkit extending SvelteKit',
+			description:
+				'task runner and toolkit extending <a href="https://kit.svelte.dev/">SvelteKit</a>',
 			links: `<a href="https://www.grogarden.org/">grogarden.org</a>, <a href="https://github.com/grogarden/gro">GitHub</a>`,
 			icon: '/gro.png',
 			icon_alt: 'a pixelated green oak acorn with a glint of sun',
