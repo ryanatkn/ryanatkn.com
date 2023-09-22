@@ -144,8 +144,8 @@
 			as a library on npm
 		</li>
 		<li>
-			<a href="https://github.com/feltjs/felt-ui">@feltjs/felt-ui</a> – styles and UI components for
-			Svelte and SvelteKit 💚
+			<a href="https://github.com/fuz-dev/fuz">@fuz.dev/fuz</a> – styles and UI components for Svelte
+			and SvelteKit 💚
 		</li>
 		<li>
 			<a href="https://github.com/feltjs/felt-template">@feltjs/felt-template</a> – a static web app
