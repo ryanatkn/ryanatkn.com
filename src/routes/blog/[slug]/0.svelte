@@ -153,8 +153,8 @@
 			it will support quickly creating a custom server project, too.
 		</li>
 		<li>
-			<a href="https://github.com/feltjs/util">@feltjs/util</a> – JS utilities to complement the modern
-			web platform 🦕🐋
+			<a href="https://github.com/grogarden/util">@grogarden/util</a> – JS utilities to complement the
+			modern web platform 🦕🐋
 		</li>
 		<li>
 			<a href="https://github.com/feltjs/gro">@feltjs/gro</a> – a toolkit that extends SvelteKit and

@@ -1,6 +1,6 @@
 import type {Task} from '@feltjs/gro';
 import {z} from 'zod';
-import {stripStart, stripEnd} from '@feltjs/util/string.js';
+import {strip_start, strip_end} from '@grogarden/util/string.js';
 import {format_file} from '@feltjs/gro/format/format_file.js';
 import {exists} from '@feltjs/gro/util/exists.js';
 import {writeFile} from 'node:fs/promises';
@@ -24,7 +24,7 @@ export const task: Task<Args> = {
 
 		const {origin, pathname} = new URL(url);
 
-		const path = stripEnd(stripStart(pathname, '/'), '/');
+		const path = strip_end(strip_start(pathname, '/'), '/');
 
 		// Find the next module to create.
 		let postPath: string;

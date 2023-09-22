@@ -1,5 +1,5 @@
 import type {Gen} from '@feltjs/gro/gen/gen.js';
-import {stripStart, stripEnd} from '@feltjs/util/string.js';
+import {strip_start, strip_end} from '@grogarden/util/string.js';
 import {exists} from '@feltjs/gro/util/exists.js';
 
 import {feed} from '$routes/blog/feed';
@@ -11,7 +11,7 @@ import type {FeedData} from '$lib/feed';
 
 export const gen: Gen = async () => {
 	const TODO_get_from_maybe_args = 'blog'; // TODO args? process.argv? something else? see `blog.task.ts`'s `url` arg
-	const path = stripStart(stripEnd(TODO_get_from_maybe_args, '/'), '/') + '/[slug]';
+	const path = strip_start(strip_end(TODO_get_from_maybe_args, '/'), '/') + '/[slug]';
 
 	const items: number[] = [];
 
