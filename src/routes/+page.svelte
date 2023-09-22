@@ -39,8 +39,8 @@
 			description: 'my free and open source software',
 		},
 		{
-			name: '@feltjs',
-			title: '<a href="https://www.felt.dev/">@feltjs</a>',
+			name: 'felt',
+			title: '<a href="https://www.felt.dev/">Felt</a>',
 			description: 'a programmable platform for hobbyists and human-scale communities',
 			links: `<a class="chip" href="https://www.felt.dev/">felt.dev</a> <a class="chip" href="https://github.com/feltjs">GitHub</a>`,
 			icon: '/felt.png',
@@ -48,7 +48,7 @@
 		},
 		{
 			name: 'fuz',
-			title: '<a href="https://www.fuz.dev/">fuz</a>',
+			title: '<a href="https://www.fuz.dev/">Fuz</a>',
 			description:
 				'design system for CSS, <a href="https://svelte.dev/">Svelte</a>, and <a href="https://kit.svelte.dev/">SvelteKit</a>',
 			links: `<a class="chip" href="https://www.fuz.dev/">fuz.dev</a> <a class="chip" href="https://github.com/fuz-dev/fuz">GitHub</a> <a class="chip" href="https://www.npmjs.com/package/@fuz.dev/fuz">npm</a>`,
@@ -57,7 +57,7 @@
 		},
 		{
 			name: 'gro',
-			title: '<a href="https://github.com/grogarden/gro">gro</a>',
+			title: '<a href="https://github.com/grogarden/gro">Gro</a>',
 			description:
 				'task runner and toolkit extending <a href="https://kit.svelte.dev/">SvelteKit</a>',
 			links: `<a class="chip" href="https://www.grogarden.org/">grogarden.org</a> <a class="chip" href="https://github.com/grogarden/gro">GitHub</a>`,

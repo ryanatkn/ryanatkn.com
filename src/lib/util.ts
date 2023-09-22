@@ -1,13 +1,13 @@
 import {format} from 'date-fns';
-import {stripEnd, stripStart} from '@grogarden/util/string.js';
-import {randomInt} from '@grogarden/util/random.js';
+import {strip_end, strip_start} from '@grogarden/util/string.js';
+import {random_int} from '@grogarden/util/random.js';
 
 // TODO rename?
 export const formatDate = (date: string | number | Date): string =>
 	format(typeof date === 'string' ? new Date(date) : date, 'PP');
 
 export const toPathname = (url: string, root: string): string =>
-	stripStart(url, stripEnd(root, '/'));
+	strip_start(url, strip_end(root, '/'));
 
 // TODO probably upstream to `@grogarden/util/random.js`
 /**
@@ -16,9 +16,9 @@ export const toPathname = (url: string, root: string): string =>
  * @param random
  * @returns Mutated `array`.
  */
-export const shuffle: <T extends any[]>(array: T, random?: typeof randomInt) => T = (
+export const shuffle: <T extends any[]>(array: T, random?: typeof random_int) => T = (
 	array,
-	random = randomInt,
+	random = random_int,
 ) => {
 	const len = array.length;
 	const max = len - 1;

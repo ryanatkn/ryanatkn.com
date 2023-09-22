@@ -35,6 +35,7 @@
     "@feltjs/gro": "^0.83.0",
     "@fuz.dev/fuz": "^0.69.1",
     "@fuz.dev/intersect": "^0.2.3",
+    "@grogarden/util": "^0.13.1",
     "@prettier/plugin-xml": "^3.2.1",
     "@sveltejs/adapter-static": "^2.0.3",
     "@sveltejs/kit": "^1.25.0",

@@ -131,17 +131,17 @@
 			on npm
 		</li>
 		<li>
-			<a href="https://github.com/fuz-dev/fuz">@fuz.dev/fuz</a> – design system for CSS, Svelte, and
-			SvelteKit
+			<a href="https://www.felt.dev/">felt.dev</a> is the website with docs (<a
+				href="https://github.com/feltjs/website">source code</a
+			>)
 		</li>
 		<li>
-			<a href="https://github.com/feltjs/gro">@feltjs/gro</a> – a toolkit that extends SvelteKit and
-			Vite with things we find useful for making web apps - it's used by all of our other projects
+			<a href="https://github.com/feltjs/felt-ui">ui.felt.dev</a> – UI sketches in Svelte for Felt
 		</li>
 		<li>
-			<a href="https://github.com/fuz-dev/template">@fuz.dev/template</a> – a static web app template
-			with SvelteKit, TypeScript, and Felt for quickly creating new projects - in the future it will
-			support quickly creating a custom server project, too.
+			<a href="https://github.com/fuz.dev/template">@fuz.dev/template</a> – a static web app template
+			with SvelteKit, TypeScript, Felt, and Gro for quickly creating new projects - in the future it
+			will support quickly creating a custom server project, too.
 		</li>
 		<li>
 			<a href="https://github.com/grogarden/util">@grogarden/util</a> – JS utilities to complement the
