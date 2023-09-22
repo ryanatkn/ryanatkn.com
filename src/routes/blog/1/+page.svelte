@@ -18,12 +18,12 @@
 		<br />
 		I've been developing free and open source web community software with
 		<a href="https://12mod12.com/">Hamilton Reed</a> full-time
-		<a href="https://github.com/feltjs/felt-server/graphs/contributors">since April 2021</a>. (he's
+		<a href="https://github.com/feltjs/felt/graphs/contributors">since April 2021</a>. (he's
 		@greatbacon on <a href="https://github.com/greatbacon">GitHub</a> and
 		<a href="https://hachyderm.io/@greatbacon">Mastodon</a>) We've been working quietly in public
 		and leaving a trail of informal documentation through
-		<a href="https://github.com/feltjs/felt-server/pulls">GitHub PRs</a>. We'll announce when we
-		reach alpha in Q4 2023.
+		<a href="https://github.com/feltjs/felt/pulls">GitHub PRs</a>. We'll announce when we reach
+		alpha in Q4 2023.
 	</p>
 	<p>
 		Hamilton and I started self-funded part-time work in January 2020 on what would become <a
@@ -32,10 +32,10 @@
 		<a href="https://www.felt.dev/">felt.dev</a> to see where we are.
 	</p>
 	<p>
-		Our main project is <a href="https://github.com/feltjs/felt-server">felt-server</a>, an
-		extensible Node.js server and web frontend described as "a programmable platform for hobbyists
-		and human-scale communities". The main UI looks like Discord and Slack on the surface, and it
-		has aspects of a
+		Our main project is <a href="https://github.com/feltjs/felt">Felt</a>, an extensible Node.js
+		server and SvelteKit web frontend described as "a programmable platform for hobbyists and
+		human-scale communities". The main UI looks like Discord and Slack on the surface, and it has
+		aspects of a
 		<a href="https://wikipedia.org/wiki/Content_management_system">content management system</a>
 		and
 		<a href="https://wikipedia.org/wiki/Knowledge_management_software"
@@ -45,9 +45,9 @@
 		platform" is the best we have right now.
 	</p>
 	<p>
-		felt-server targets a specific UX. Instead of trying to replace any of today's large platforms,
-		we think of felt-server as filling a niche that venture-funded startups and other commercial
-		interests rationally ignore.
+		Felt targets a specific UX. Instead of trying to replace any of today's large platforms, we
+		think of Felt as filling a niche that venture-funded startups and other commercial interests
+		rationally ignore.
 	</p>
 	<ul>
 		<li>
@@ -61,8 +61,8 @@
 		</li>
 		<li>
 			multipurpose, extensible, and interoperable, so the same toolkit can be used for many kinds of
-			communities and websites and problems - felt-server can run some of your friendly bots in the
-			clouds with a nice web GUI
+			communities and websites and problems - Felt can run some of your friendly bots in the clouds
+			with a nice web GUI
 		</li>
 		<li>
 			is free and open source with a documented API, and it's designed for fullstack customization,
@@ -118,10 +118,10 @@
 		ideas, the tools should be enabling and out of the way.
 	</p>
 	<p>
-		felt-server will support simple and scalable static web publishing like blogs and RSS/Atom
-		feeds, and also provide tools to make realtime social experiences and games that inherit your
-		social context, enabling beginners to participate in the creative process more easily. Doing a
-		hard thing is much easier when the task is reduced to its essentials.
+		Felt will support simple and scalable static web publishing like blogs and RSS/Atom feeds, and
+		also provide tools to make realtime social experiences and games that inherit your social
+		context, enabling beginners to participate in the creative process more easily. Doing a hard
+		thing is much easier when the task is reduced to its essentials.
 	</p>
 	<p>We have a handful of software repos:</p>
 	<ul>
@@ -275,15 +275,15 @@
 		caching, and thanks to SvelteKit we should be able to deliver good experiences in many cases with
 		fast loadtimes and minimal or zero JS. (but we're
 		<a
-			href="https://github.com/feltjs/felt-server/blob/main/src/docs/known-issues.md#not-using-sveltekits-server-side-data-loading"
+			href="https://github.com/feltjs/felt/blob/main/src/docs/known-issues.md#not-using-sveltekits-server-side-data-loading"
 			>not there yet</a
 		>)
 	</p>
 	<h3>scaling (and not)</h3>
 	<p>
 		Our focus on "small communities" relates to a potentially deflating fact about our software - it
-		doesn't scale to large numbers of people or some kinds of heavy load. felt-server can't be the
-		best solution to all problems, so we make tradeoffs intentionally to serve a particular UX.
+		doesn't scale to large numbers of people or some kinds of heavy load. Felt can't be the best
+		solution to all problems, so we make tradeoffs intentionally to serve a particular UX.
 	</p>
 	<div>We're optimizing to:</div>
 	<ul>
@@ -300,7 +300,7 @@
 		communities are good too.
 	</p>
 	<aside>
-		Today, <a href="https://github.com/feltjs/felt-server"><code>@feltjs/felt-server</code></a>
+		Today, <a href="https://github.com/feltjs/felt"><code>@feltjs/felt</code></a>
 		supports only
 		<code
 			><a href="https://github.com/sveltejs/kit/tree/master/packages/adapter-node"
@@ -337,7 +337,7 @@
 		<a href="https://www.jsonrpc.org/specification">JSON-RPC 2.0</a>. We also publish a
 		<a href="https://json-schema.org/">JSON Schema</a>
 		with
-		<a href="https://github.com/feltjs/felt-server/blob/main/src/static/schemas/vocab.json"
+		<a href="https://github.com/feltjs/felt/blob/main/src/static/schemas/vocab.json"
 			>our vocabulary</a
 		>, including both data objects and actions. We could feasibly generate OpenAPI schemas from our
 		source of truth, giving us greatly expanded access to existing tooling, but we have no plans for
@@ -349,13 +349,13 @@
 		federated tech isn't optimal for today's goals. (if you link me xkcd 927 i swear)
 	</p>
 	<p>
-		Given felt-server's small-scale design and selfhostability, it may help to think of it as "<a
+		Given Felt's small-scale design and selfhostability, it may help to think of it as "<a
 			href="https://wikipedia.org/wiki/Polycentric">polycentric</a
 		>", where each community or "hub" is a silo of self-governed data, and any particular instance
 		hosts one or more hubs. In combination with clients that connect to multiple services, I think
 		"decentralized" is an appropriate description, but not in the way some people want, for example
-		where their identity isn't mediated by the hub. I don't think felt-server will reach its
-		potential until it can federate with the wider world, especially for user identity.
+		where their identity isn't mediated by the hub. I don't think Felt will reach its potential
+		until it can federate with the wider world, especially for user identity.
 	</p>
 	<aside>
 		I don't know which standards will or should win with identity, that's outside of my expertise,
