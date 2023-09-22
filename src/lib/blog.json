@@ -32,11 +32,11 @@
 		},
 		{
 			"id": "https://www.ryanatkn.com/blog/3",
-			"title": "I am more builder than steward",
-			"url": "https://www.ryanatkn.com/blog/i-am-more-builder-than-steward",
+			"title": "My role is builder not steward",
+			"url": "https://www.ryanatkn.com/blog/my-role-is-builder-not-steward",
 			"date_published": "2023-07-24T01:50:35.017Z",
 			"date_modified": "2023-07-24T01:50:35.017Z",
-			"summary": "I describe how I am and want to be more of a builder of networked spaces than a steward of them. Also, how I implemented allowlisted Mastodon comments on my static blog with TypeScript, Svelte, and SvelteKit.",
+			"summary": "I describe how I think I'm better suited for the builder roles when working on networked spaces, and how I like them, but I don't like steward roles and the responsibilities they carry, nor am I motivated to improve at them. Also, how I implemented allowlisted Mastodon comments on my static blog with TypeScript, Svelte, and SvelteKit.",
 			"tags": [
 				"web",
 				"personal",
