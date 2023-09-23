@@ -16,9 +16,7 @@ import {create_atom_feed, type FeedData} from '$lib/feed';
 
 export const gen: Gen = async () => {
 	const TODO_get_from_maybe_args = 'blog'; // TODO args? process.argv? something else? see `blog.task.ts`'s `url` arg
-	// TODO BLOCK
-	// const path = stripStart(stripEnd(TODO_get_from_maybe_args, '/'), '/');
-	const path = strip_start(strip_end(TODO_get_from_maybe_args, '/'), '/') + '/[slug]';
+	const path = strip_start(strip_end(TODO_get_from_maybe_args, '/'), '/');
 
 	const items: number[] = [];
 
