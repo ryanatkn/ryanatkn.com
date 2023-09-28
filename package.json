@@ -32,10 +32,10 @@
   ],
   "devDependencies": {
     "@feltjs/eslint-config": "^0.4.0",
-    "@feltjs/gro": "^0.83.0",
     "@fuz.dev/fuz": "^0.69.1",
-    "@fuz.dev/intersect": "^0.2.3",
-    "@grogarden/util": "^0.13.1",
+    "@fuz.dev/svelte_intersect": "^0.5.0",
+    "@grogarden/gro": "^0.90.0",
+    "@grogarden/util": "^0.14.0",
     "@prettier/plugin-xml": "^3.2.1",
     "@sveltejs/adapter-static": "^2.0.3",
     "@sveltejs/kit": "^1.25.0",

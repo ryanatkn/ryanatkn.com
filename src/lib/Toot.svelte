@@ -2,7 +2,7 @@
 	import PendingButton from '@fuz.dev/fuz/PendingButton.svelte';
 	import {slide} from 'svelte/transition';
 	import {createEventDispatcher} from 'svelte';
-	import {intersect} from '@fuz.dev/intersect';
+	import {intersect} from '@fuz.dev/svelte_intersect';
 
 	import MastodonStatusTree from '$lib/MastodonStatusTree.svelte';
 	import MastodonStatusItem from '$lib/MastodonStatusItem.svelte';
