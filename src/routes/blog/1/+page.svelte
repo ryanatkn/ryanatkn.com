@@ -162,8 +162,9 @@
 		</li>
 		<li>
 			@feltjs on
-			<a href="https://github.com/feltjs">GitHub</a> and
-			<a href="https://www.npmjs.com/org/feltjs">npm</a>
+			<a href="https://github.com/feltjs">GitHub</a>,
+			<a href="https://www.npmjs.com/org/feltjs">npm</a>, and
+			<a href="https://opencollective.com/feltjs">OpenCollective</a>
 		</li>
 	</ul>
 	<hr />
@@ -391,8 +392,9 @@
 		</li>
 		<li>
 			@feltjs on
-			<a href="https://github.com/feltjs">GitHub</a> and
-			<a href="https://www.npmjs.com/org/feltjs">npm</a>
+			<a href="https://github.com/feltjs">GitHub</a>,
+			<a href="https://www.npmjs.com/org/feltjs">npm</a>, and
+			<a href="https://opencollective.com/feltjs">OpenCollective</a>
 		</li>
 	</ul>
 </div>
