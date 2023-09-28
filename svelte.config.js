@@ -1,6 +1,6 @@
 //@ts-expect-error
 import {typescript} from 'svelte-preprocess-esbuild';
-import adapter from '@sveltejs/adapter-static';
+import static_adapter from '@sveltejs/adapter-static';
 
 /** @type {import('@sveltejs/kit').Config} */
 export default {
@@ -8,8 +8,8 @@ export default {
 	compilerOptions: {immutable: true},
 	vitePlugin: {inspector: true},
 	kit: {
-		adapter: adapter(),
+		adapter: static_adapter(),
 		files: {assets: 'src/static'},
-		alias: {$routes: 'src/routes'},
+		alias: {$routes: 'src/routes', $fixtures: 'src/fixtures'},
 	},
 };
