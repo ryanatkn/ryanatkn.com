@@ -7,7 +7,7 @@
 ## usage
 
 ```bash
-# node >= 20.5
+# node >= 20.7
 npm i
 # then
 npm run dev
