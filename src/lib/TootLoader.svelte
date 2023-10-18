@@ -10,7 +10,7 @@
 	} from '$lib/mastodon';
 
 	/**
-	 * The host part of the url, like `'hachyderm.io'`.
+	 * The host part of the url, like `'mastodon.ryanatkn.com'`.
 	 */
 	export let host: string;
 

@@ -37,8 +37,8 @@
 	import {to_api_status_url} from '$lib/mastodon';
 
 	// TODO BLOCK swap out
-	// https://hachyderm.io/@ryanatkn/110843291155970959
-	const DEFAULT_TOOT_HOST = 'hachyderm.io';
+	// https://mastodon.ryanatkn.com/@ryanatkn/110843291155970959
+	const DEFAULT_TOOT_HOST = 'mastodon.ryanatkn.com';
 	const DEFAULT_TOOT_ID = '110843291155970959';
 
 	let embedded_toot_host = DEFAULT_TOOT_HOST;
@@ -337,7 +337,7 @@
 			<p>
 				With some JS (via <a href="https://svelte.dev/">Svelte</a> in this case) we can embed a
 				toot, like
-				<a href="https://hachyderm.io/@ryanatkn/110843291155970959"
+				<a href="https://mastodon.ryanatkn.com/@ryanatkn/110843291155970959"
 					>the one I made for this blog post</a
 				>:
 			</p>
@@ -362,20 +362,20 @@
 							href="https://joinmastodon.org/">Mastodon</a
 						>
 						instance at
-						<a href="https://hci.social/">hachyderm.io</a>
+						<a href="https://hci.social/">mastodon.ryanatkn.com</a>
 						that hosts
-						<a href="https://hachyderm.io/@ryanatkn">my account</a>. Mastodon is an
+						<a href="https://mastodon.ryanatkn.com/@ryanatkn">my account</a>. Mastodon is an
 						<a href="https://wikipedia.org/wiki/ActivityPub">ActivityPub</a>-compatible app in the
 						<a href="https://wikipedia.org/wiki/Fediverse">Fediverse</a>.
 					</p>
 					<p>
-						Your browser requests information about a <a href="https://hachyderm.io/@ryanatkn"
-							>a post I made</a
+						Your browser requests information about a <a
+							href="https://mastodon.ryanatkn.com/@ryanatkn">a post I made</a
 						>
-						at hachyderm.io that references this blog post at ryanatkn.com. If the request is successful,
-						some JavaScript runs on your machine to display the "comments", replies to my post that I've
-						"favourited". My host hachyderm.io has its unauthenticated API enabled (in other words, "secure
-						mode" has not been enabled, meaning
+						at mastodon.ryanatkn.com that references this blog post at ryanatkn.com. If the request is
+						successful, some JavaScript runs on your machine to display the "comments", replies to my
+						post that I've "favourited". My host mastodon.ryanatkn.com has its unauthenticated API enabled
+						(in other words, "secure mode" has not been enabled, meaning
 						<a href="https://docs.joinmastodon.org/admin/config/#authorized_fetch"
 							><code>AUTHORIZED_FETCH</code></a
 						>
@@ -422,9 +422,9 @@
 			into the page like I'm doing, I added a fairly restrictive <a
 				href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP">content security policy</a
 			>. It disallows arbitrary third party requests, so it may break if my Mastodon host
-			hachyderm.io changes how it loads resources. If something goes wrong or changes, having icons
-			break is an acceptable failure until I can review the situation. For my visitors, it's a
-			potentially worse experience but it's safer. Here's the CSP that's applied in
+			mastodon.ryanatkn.com changes how it loads resources. If something goes wrong or changes,
+			having icons break is an acceptable failure until I can review the situation. For my visitors,
+			it's a potentially worse experience but it's safer. Here's the CSP that's applied in
 			<a href="https://github.com/ryanatkn/ryanatkn.com/blob/main/src/routes/%2Blayout.svelte"
 				>the main +layout.svelte</a
 			>:
