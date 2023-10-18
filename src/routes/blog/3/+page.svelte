@@ -56,7 +56,7 @@
 	// TODO BLOCK make the `reset` button work for the toot url, including whether it's enabled
 
 	const sections = [
-		{slug: 'description', name: 'Description'},
+		{slug: 'introduction', name: 'Introduction'},
 		{slug: 'limitations', name: 'Limitations'},
 		{slug: 'conclusion', name: 'Conclusion'},
 		{slug: 'references', name: 'References'},
@@ -93,7 +93,7 @@
 	<section>
 		<div class="prose">
 			<h2>
-				<HashLink slug="description">Description</HashLink>
+				<HashLink slug="introduction">Introduction</HashLink>
 			</h2>
 			<p>
 				This post started as a demo using <a href="https://joinmastodon.org/">Mastodon</a>
@@ -140,7 +140,7 @@
 				the static files to handle it all, so we can discuss without leaving Mastodon, and I can
 				curate without changing my blog.
 			</p>
-			<p>I didn't think of this flow, I got the ideas from these posts:</p>
+			<p>I took the main idea of client-side Mastodon comments from these blog posts:</p>
 			<ul>
 				<li>
 					<a href="https://cassidyjames.com/blog/fediverse-blog-comments-mastodon/">
@@ -155,7 +155,23 @@
 					- <a href="https://jan.wildeboer.net/">Jan Wildeboer</a>
 				</li>
 			</ul>
-			<p>But proactive moderation is not something those</p>
+			<p>
+				But those implementations have no moderation - anyone can reply on Mastodon, and the comment
+				appears on the blog. And even if they were to implement reactive moderation, I find that to
+				be an unreasonable burden in this context. I don't want The Internet to have publishing
+				capabilities on my blog. Not just that, I don't want even well-meaning people to have the
+				expectation that their words will appear here, even if it's good and relevant content. This
+				blog is a personal project to support my goal of producing good software, and I'll include
+				outside contributions if I feel like it at the time. I'll burn out or stop caring under any
+				other arrangement - I know I'm more sensitive than most here, more on this ahead.
+			</p>
+			<p>Our design now has its requirements:</p>
+			<ul>
+				<li>start with a static website, just a bundle of files hosted cheaply on the web</li>
+				<li>on Mastodon, make a post per blog post, and replies can appear as comments here</li>
+				<li>proactive moderation, so only allowlisted comments appear</li>
+			</ul>
+			<p>TODO</p>
 			<hr />
 			<h1>TODO OLD STUFF</h1>
 			<h1>TODO OLD STUFF</h1>
