@@ -27,7 +27,9 @@ export interface Feed {
 	atom: {
 		feed_url: string;
 	};
-	// TODO should these be on the root? yes if the goal is to match the data structure of JSON Feed as much as possible
+	// TODO should these be on the root?
+	// yes if the goal is to match the data structure of JSON Feed as much as possible,
+	// no if the goal is to put shared properties on the root and format-specific properties in a namespace
 	// jsonfeed: {
 	// 	version: string;
 	// 	feed_url: string;
