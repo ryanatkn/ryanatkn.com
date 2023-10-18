@@ -124,6 +124,7 @@
 		[{name: 'New_ Public', url: 'https://newpublic.org/'}],
 		[{name: 'Media Economies Design Lab (MEDLab)', url: 'https://www.colorado.edu/lab/medlab/'}],
 		[{name: 'Social Futures Lab', url: 'https://social.cs.washington.edu/'}],
+		[{name: 'Dominic Gannaway', url: 'https://github.com/trueadm'}],
 	];
 
 	shuffle(influences);
