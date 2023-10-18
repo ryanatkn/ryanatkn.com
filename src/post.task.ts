@@ -1,8 +1,8 @@
-import type {Task} from '@feltjs/gro';
+import type {Task} from '@grogarden/gro';
 import {z} from 'zod';
 import {strip_start, strip_end} from '@grogarden/util/string.js';
-import {format_file} from '@feltjs/gro/format/format_file.js';
-import {exists} from '@feltjs/gro/util/exists.js';
+import {format_file} from '@grogarden/gro/format_file.js';
+import {exists} from '@grogarden/gro/exists.js';
 import {writeFile} from 'node:fs/promises';
 
 // TODO probably source this from `gro.config.ts` or other config
@@ -59,7 +59,7 @@ export const task: Task<Args> = {
 				<a href="{base}/a/b/c">a local link</a>
 			</p>
 		`;
-		const formatted = await format_file(postPath, unformatted);
+		const formatted = await format_file(unformatted, {parser: 'svelte'});
 
 		await writeFile(postPath, formatted);
 

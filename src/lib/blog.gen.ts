@@ -1,6 +1,6 @@
-import type {Gen} from '@feltjs/gro/gen/gen.js';
+import type {Gen} from '@grogarden/gro/gen.js';
 import {strip_start, strip_end} from '@grogarden/util/string.js';
-import {exists} from '@feltjs/gro/util/exists.js';
+import {exists} from '@grogarden/gro/exists.js';
 
 import {feed} from '$routes/blog/feed';
 import {create_atom_feed, type FeedData} from '$lib/feed';

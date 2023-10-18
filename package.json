@@ -32,24 +32,23 @@
   ],
   "devDependencies": {
     "@feltjs/eslint-config": "^0.4.0",
-    "@fuz.dev/fuz": "^0.69.1",
-    "@fuz.dev/svelte_intersect": "^0.5.0",
-    "@grogarden/gro": "^0.91.0",
-    "@grogarden/util": "^0.15.0",
+    "@fuz.dev/fuz": "^0.73.0",
+    "@fuz.dev/svelte_intersect": "^0.5.1",
+    "@grogarden/gro": "^0.95.5",
+    "@grogarden/util": "^0.15.1",
     "@prettier/plugin-xml": "^3.2.1",
     "@sveltejs/adapter-static": "^2.0.3",
-    "@sveltejs/kit": "^1.25.1",
-    "@types/node": "^20.7.1",
-    "@typescript-eslint/eslint-plugin": "^6.7.3",
-    "@typescript-eslint/parser": "^6.7.3",
+    "@sveltejs/kit": "^1.25.2",
+    "@types/node": "^20.8.6",
+    "@typescript-eslint/eslint-plugin": "^6.8.0",
+    "@typescript-eslint/parser": "^6.8.0",
     "date-fns": "^2.30.0",
-    "eslint": "^8.50.0",
-    "eslint-plugin-svelte": "^2.33.2",
+    "eslint": "^8.51.0",
+    "eslint-plugin-svelte": "^2.34.0",
     "prettier": "^3.0.3",
     "prettier-plugin-svelte": "^3.0.3",
     "svelte": "^4.2.1",
     "svelte-check": "^3.5.2",
-    "svelte-preprocess-esbuild": "^3.0.1",
     "tslib": "^2.6.2",
     "typescript": "^5.2.2",
     "uvu": "^0.5.6"
@@ -75,5 +74,99 @@
         }
       }
     ]
+  },
+  "exports": {
+    "./blog_components.js": {
+      "default": "./dist/blog_components.js",
+      "types": "./dist/blog_components.d.ts"
+    },
+    "./blog_entries.json": {
+      "default": "./dist/blog_entries.json",
+      "types": "./dist/blog_entries.json.d.ts"
+    },
+    "./blog.gen.js": {
+      "default": "./dist/blog.gen.js",
+      "types": "./dist/blog.gen.d.ts"
+    },
+    "./blog.json": {
+      "default": "./dist/blog.json",
+      "types": "./dist/blog.json.d.ts"
+    },
+    "./Blog.svelte": {
+      "svelte": "./dist/Blog.svelte",
+      "types": "./dist/Blog.svelte.d.ts"
+    },
+    "./blog.js": {
+      "default": "./dist/blog.js",
+      "types": "./dist/blog.d.ts"
+    },
+    "./BlogPost.svelte": {
+      "svelte": "./dist/BlogPost.svelte",
+      "types": "./dist/BlogPost.svelte.d.ts"
+    },
+    "./BlogPostFooter.svelte": {
+      "svelte": "./dist/BlogPostFooter.svelte",
+      "types": "./dist/BlogPostFooter.svelte.d.ts"
+    },
+    "./BlogPostHeader.svelte": {
+      "svelte": "./dist/BlogPostHeader.svelte",
+      "types": "./dist/BlogPostHeader.svelte.d.ts"
+    },
+    "./BlogPostIndex.svelte": {
+      "svelte": "./dist/BlogPostIndex.svelte",
+      "types": "./dist/BlogPostIndex.svelte.d.ts"
+    },
+    "./Favicon.svelte": {
+      "svelte": "./dist/Favicon.svelte",
+      "types": "./dist/Favicon.svelte.d.ts"
+    },
+    "./feed.js": {
+      "default": "./dist/feed.js",
+      "types": "./dist/feed.d.ts"
+    },
+    "./FeedItemDate.svelte": {
+      "svelte": "./dist/FeedItemDate.svelte",
+      "types": "./dist/FeedItemDate.svelte.d.ts"
+    },
+    "./HashLink.svelte": {
+      "svelte": "./dist/HashLink.svelte",
+      "types": "./dist/HashLink.svelte.d.ts"
+    },
+    "./mastodon_mock_data.json": {
+      "default": "./dist/mastodon_mock_data.json",
+      "types": "./dist/mastodon_mock_data.json.d.ts"
+    },
+    "./mastodon.js": {
+      "default": "./dist/mastodon.js",
+      "types": "./dist/mastodon.d.ts"
+    },
+    "./MastodonStatusItem.svelte": {
+      "svelte": "./dist/MastodonStatusItem.svelte",
+      "types": "./dist/MastodonStatusItem.svelte.d.ts"
+    },
+    "./MastodonStatusTree.svelte": {
+      "svelte": "./dist/MastodonStatusTree.svelte",
+      "types": "./dist/MastodonStatusTree.svelte.d.ts"
+    },
+    "./storage.js": {
+      "default": "./dist/storage.js",
+      "types": "./dist/storage.d.ts"
+    },
+    "./Toot.svelte": {
+      "svelte": "./dist/Toot.svelte",
+      "types": "./dist/Toot.svelte.d.ts"
+    },
+    "./TootInput.svelte": {
+      "svelte": "./dist/TootInput.svelte",
+      "types": "./dist/TootInput.svelte.d.ts"
+    },
+    "./TootLoader.svelte": {
+      "svelte": "./dist/TootLoader.svelte",
+      "types": "./dist/TootLoader.svelte.d.ts"
+    },
+    "./util.js": {
+      "default": "./dist/util.js",
+      "types": "./dist/util.d.ts"
+    }
   }
 }
