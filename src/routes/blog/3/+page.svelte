@@ -213,26 +213,30 @@
 			</p>
 			<details>
 				<summary>technical details</summary>
-				<p>
-					<a href="https://docs.joinmastodon.org/methods/favourites/"
-						>The API to get this information</a
-					>
-					exists, but it requires authentication, so we can't meet our requirements. There are no privacy,
-					security, or technical reasons for this information to be hidden but the APIs weren't designed
-					for this usage. (for example it could be added to the
-					<a href="https://docs.joinmastodon.org/methods/statuses/#favourited_by">favourited_by</a>
-					endpoint, the <code>created_at</code> there is for the account)
-				</p>
-				<p>
-					The code uses the status <a href="https://docs.joinmastodon.org/methods/statuses/#context"
-						>context</a
-					>
-					endpoint to fetch information about the post I originally made. That data includes the replies,
-					<code>descendants</code>. For each of those replies that have favourites, it then fetches
-					<a href="https://docs.joinmastodon.org/methods/statuses/#favourited_by">favourited_by</a> to
-					see if one of those favourites was me. If not, the post is ignored like the others who have
-					no favourites.
-				</p>
+				<aside>
+					<p>
+						An <a href="https://docs.joinmastodon.org/methods/favourites/"
+							>endpoint to get a favourite's timestamp</a
+						>
+						exists, but it requires authentication, so we can't meet our requirements. The APIs just
+						weren't designed for this usage - there are no good privacy-related or technical reasons
+						for this information to be hidden. For example it could be added to the
+						<a href="https://docs.joinmastodon.org/methods/statuses/#favourited_by">favourited_by</a
+						>
+						endpoint (the <code>created_at</code> there is for the account).
+					</p>
+					<p>
+						The code uses the status <a
+							href="https://docs.joinmastodon.org/methods/statuses/#context">context</a
+						>
+						endpoint to fetch information about the post I originally made. That data includes the replies,
+						<code>descendants</code>. For each of those replies that have favourites, it then
+						fetches
+						<a href="https://docs.joinmastodon.org/methods/statuses/#favourited_by">favourited_by</a
+						> to see if one of those favourites was me. If not, the post is ignored like the others who
+						have no favourites.
+					</p>
+				</aside>
 			</details>
 			<p>
 				So, my moderation UX is leaky due to an API limitation. I can't get the <a
@@ -394,77 +398,13 @@
 	</section>
 	<hr />
 	<section class="prose">
-		<h2>
-			<HashLink slug="conclusion">Conclusion</HashLink>
-		</h2>
 		<p>
-			Recapping, this is a static site hosted by GitHub with embedded toots and replies
-			dynamically-loaded-on-demand from Mastodon on <a href="https://hci.social/">hachyderm.io</a>
-			with an allowlist managed by the author through Mastodon favourites. They charge no money for these
-			services, and you can fund them in different ways.
-		</p>
-		<p>
-			We have allowlist-based moderation through likes by the author, and a good effort at
-			efficiency given the constraints of the API. I may have missed it, but I didn't see a way in
-			the API to get favourites for many statuses at once or otherwise query for statuses that a
-			particular user had favourited - I make an API call for every post with 1+ likes to see if the
-			author is among them.
-		</p>
-		<p>
-			Here's <a href="https://github.com/ryanatkn/ryanatkn.com/pull/12/files">the GitHub PR</a> with
-			the code and some more details.
-		</p>
-	</section>
-	<hr />
-	<section class="prose">
-		<h2>
-			<HashLink slug="references">References</HashLink>
-		</h2>
-		<p>
-			I took the main idea of client-side comments from the following posts, and added
-			favourite-to-allowlist for basic moderation:
-		</p>
-		<ul>
-			<li>
-				<a href="https://cassidyjames.com/blog/fediverse-blog-comments-mastodon/">
-					"Toot toot! Mastodon-powered Blog Comments"
-				</a>
-				- <a href="https://cassidyjames.com/">Cassidy James</a>
-			</li>
-			<li>
-				<a href="https://jan.wildeboer.net/2023/02/Jekyll-Mastodon-Comments/">
-					"Client-side comments with Mastodon on a static Jekyll website"
-				</a>
-				- <a href="https://jan.wildeboer.net/">Jan Wildeboer</a>
-			</li>
-		</ul>
-		<p>
-			<a href="https://docs.joinmastodon.org/">Mastodon API</a> usage:
-		</p>
-		<ul>
-			<li>
-				<a href="https://docs.joinmastodon.org/methods/statuses/#get">GET /api/v1/statuses/:id</a> -
-				called once for an embedded status and replies:
-			</li>
-			<li>
-				<a href="https://docs.joinmastodon.org/methods/statuses/#context"
-					>GET /api/v1/statuses/:id/context</a
-				> - called once for the embedded status to get its descendants (replies) and ancestors
-			</li>
-			<li>
-				<a href="https://docs.joinmastodon.org/methods/statuses/#favourited_by"
-					>GET /api/v1/statuses/:id/favourited_by</a
-				> - called for each descendent not by the main author that has at least one favourite
-			</li>
-		</ul>
-		<p>
-			If you're technically-minded, you may be interested in <a
-				href="https://ryanatkn.github.io/corpus-activity-streams">these alternative docs</a
-			>
+			If you like <a href="https://wikipedia.org/wiki/ActivityPub">ActivityPub</a> you may be
+			interested in
+			<a href="https://ryanatkn.github.io/corpus-activity-streams">these alternative docs</a>
 			that I maintain for the
 			<a href="https://wikipedia.org/wiki/ActivityStreams">ActivityStreams</a>
-			vocabulary of Mastodon's protocol
-			<a href="https://wikipedia.org/wiki/ActivityPub">ActivityPub</a>.
+			vocabulary of Mastodon's protocol.
 		</p>
 	</section>
 	<hr />
