@@ -36,6 +36,7 @@
 	import BlogPostIndex from '$lib/BlogPostIndex.svelte';
 	import {prod_content_security_policy} from '$routes/security';
 	import {to_api_status_url} from '$lib/mastodon';
+	import {base} from '$app/paths';
 
 	// https://hachyderm.io/@ryanatkn/110843291155970959
 	const DEFAULT_TOOT_HOST = 'hachyderm.io';
@@ -76,6 +77,8 @@
 	- builders includes not just devs, but everyone involved in producing the software -- people writing documentation, people triaging issues, people in the community answering questions
 
 	*/
+
+	// TODO BLOCK put all post meta into context instead of hardcoding the link to post 2 (see the other posts too for their links)
 </script>
 
 <div class="width_md">
@@ -89,6 +92,56 @@
 			<h2>
 				<HashLink slug="description">Description</HashLink>
 			</h2>
+			<p>
+				This post started as a demo using <a href="https://joinmastodon.org/">Mastodon</a>
+				to add comments to my blog posts, but it morphed into a followup to my second blog post,
+				<a
+					href="https://www.ryanatkn.com/blog/modeling-virtual-social-spaces-in-this-house-we-post-cat-pics-on-saturday"
+					>Modeling virtual social spaces: in this house we post cat pics on Saturday</a
+				>, with a heaping dose of navel gazing.
+			</p>
+			<p>
+				This is a <a href="https://wikipedia.org/wiki/Static_web_page">static website</a>, meaning I
+				upload some plain files and GitHub does the rest. There's no server running any logic of
+				mine, and the infrastructure requirements are very simple and cheap. GitHub offers the
+				service for free in part because of its low cost. It's also the simplest possible flow for
+				me as the author.
+			</p>
+			<p>
+				There are downsides to static websites, of course. What if I wanted to let readers submit
+				comments? A server somewhere would have to receive, store, and then serve your comment to
+				other readers. Happily, Mastodon can do exactly that, using <a
+					href="https://hci.social/@ryanatkn">my existing account</a
+				>
+				and <a href="https://hci.social">a server</a>
+				that other people generously operate.
+			</p>
+			<p>
+				Great, so I can have a static blog and dynamic comments too? Technically yes, but there's
+				more to consider than tech. Should anyone be able to leave a comment and reach other
+				readers, automatically without my involvement? Certainly not, this isn't my first day on the
+				Internet. I feel both a responsibility and desire to curate out spam, abuse, and other bad
+				vibes. This is my personal space that I share publicly, and few of us appreciate it when
+				other people muck up our happy places, even moreso when that muck affects other friendly
+				visitors.
+			</p>
+			<p>
+				So, I resigned myself to the idea that if I want to enable comments, I need curation that's
+				proactive, not reactive. People submit comments, and I can approve them on my own time
+				according to my own whims.
+			</p>
+			<p>
+				Ok, so how to add comments? I could make a post on Mastodon, people could reply as normal, I
+				get notified, and I can choose to respond back, just like any other Mastodon post. I want
+				some of those replies to appear on my blog, and I want to do this all without changing my
+				blog, so Mastodon and the static files handle it all, and I can just use Mastodon like
+				normal to curate what appears here.
+			</p>
+			<p>To</p>
+			<hr />
+			<h1>TODO OLD STUFF</h1>
+			<h1>TODO OLD STUFF</h1>
+			<h1>TODO OLD STUFF</h1>
 			<p>
 				This website is a bundle of static files served from a free host, and it also has
 				reader-submitted comments through Mastodon. I made a Mastodon post and its replies are
