@@ -1,8 +1,8 @@
 <script lang="ts">
-	import type {FeedItemData} from '$lib/feed';
+	import type {FeedItem} from '$lib/feed.js';
 	import FeedItemDate from '$lib/FeedItemDate.svelte';
 
-	export let post: FeedItemData;
+	export let post: FeedItem;
 </script>
 
 <h1>{post.title}</h1>

@@ -1,9 +1,9 @@
 <script lang="ts" context="module">
-	import type {FeedItemData} from '$lib/feed';
+	import type {FeedItem} from '$lib/feed.js';
 
-	export const post: FeedItemData = {
+	export const post: FeedItem = {
 		id: 'https://www.ryanatkn.com/blog/3',
-		title: 'My role is builder not steward',
+		title: 'Modeling virtual social spaces: Stewards, Operators, and Builders',
 		url: 'https://www.ryanatkn.com/blog/my-role-is-builder-not-steward',
 		date_published: '2023-07-24T01:50:35.017Z',
 		date_modified: '2023-07-24T01:50:35.017Z',

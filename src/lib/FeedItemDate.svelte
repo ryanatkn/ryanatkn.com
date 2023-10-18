@@ -1,8 +1,8 @@
 <script lang="ts">
-	import type {FeedItemData} from '$lib/feed';
+	import type {FeedItem} from '$lib/feed.js';
 	import {formatDate} from '$lib/util';
 
-	export let item: FeedItemData;
+	export let item: FeedItem;
 </script>
 
 {formatDate(

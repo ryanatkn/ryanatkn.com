@@ -1,7 +1,7 @@
 <script lang="ts" context="module">
-	import type {FeedItemData} from '$lib/feed';
+	import type {FeedItem} from '$lib/feed.js';
 
-	export const post: FeedItemData = {
+	export const post: FeedItem = {
 		id: 'https://www.ryanatkn.com/blog/2',
 		title: 'Modeling virtual social spaces: in this house we post cat pics on Saturday',
 		url: 'https://www.ryanatkn.com/blog/modeling-virtual-social-spaces-in-this-house-we-post-cat-pics-on-saturday',

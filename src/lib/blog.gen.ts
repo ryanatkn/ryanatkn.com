@@ -3,7 +3,7 @@ import {strip_start, strip_end} from '@grogarden/util/string.js';
 import {exists} from '@grogarden/gro/exists.js';
 
 import {feed} from '$routes/blog/feed';
-import {create_atom_feed, type FeedData} from '$lib/feed';
+import {create_atom_feed, type Feed} from '$lib/feed.js';
 
 /* eslint-disable no-await-in-loop */
 
@@ -22,7 +22,7 @@ export const gen: Gen = async () => {
 
 	let i = 1;
 	while (true) {
-		if (!(await exists(`src/routes/${path}/${i}/post.ts`))) {
+		if (!(await exists(`src/routes/${path}/${i}/+page.svelte`))) {
 			break;
 		}
 		items.push(i);
@@ -31,48 +31,50 @@ export const gen: Gen = async () => {
 
 	return [
 		{
-			filename: '../static/blog/feed.xml',
+			filename: '../../static/blog/feed.xml',
 			content: create_atom_feed(feed),
 		},
 		{
 			filename: './blog.ts',
 			content: `
-				import type {FeedItemData} from '$lib/feed';
-				${items.map((i) => `import {post as p${i}} from '$routes/${path}/${i}/post'`).join(';\n')};
+				import type {FeedItem} from '$lib/feed.js';
+				${items
+					.map((i) => `import {post as post${i}} from '$routes/${path}/${i}/+page.svelte'`)
+					.join(';\n')};
 
-				export const posts: FeedItemData[] = [${items.map((i) => `p${i}`).join(', ')}];
+				export const posts: FeedItem[] = [${items.map((i) => `post${i}`).join(', ')}];
 			`,
 		},
 		{
 			filename: './blog_components.ts',
 			content: `// TODO this file shouldn't exist, change to SvelteKit load?
-				${items.map((i) => `import s${i} from '../routes/${path}/${i}/+page.svelte'`).join(';\n')};
+				${items.map((i) => `import page${i} from '$routes/${path}/${i}/+page.svelte'`).join(';\n')};
 
-				export const components = [${items.map((i) => `s${i}`).join(', ')}];
+				export const components = [${items.map((i) => `page${i}`).join(', ')}];
 			`,
 		},
 		{
 			filename: './blog.json',
-			// TODO `entries` isn't included in `FeedData` but we use it from the SvelteKit config
+			// TODO `entries` isn't included in `Feed` but we use it from the SvelteKit config
 			content: JSON.stringify(feed),
 		},
 		{
 			filename: './blog_entries.json',
-			// TODO `entries` isn't included in `FeedData` but we use it from the SvelteKit config
-			content: JSON.stringify({entries: toPrerenderEntries(feed)}),
+			// TODO `entries` isn't included in `Feed` but we use it from the SvelteKit config
+			content: JSON.stringify({entries: to_prerender_entries(feed)}),
 		},
 		{
 			filename: './blog.json.d.ts',
 			content: `declare module '$lib/blog.json' {
-        import type {FeedData} from '$lib/feed';
-        const data: FeedData;
+        import type {Feed} from '$lib/feed.js';
+        const data: Feed;
         export default data;
       }`,
 		},
 	];
 };
 
-const toPrerenderEntries = (blog: FeedData): string[] => {
+const to_prerender_entries = (blog: Feed): string[] => {
 	const entries = [];
 	for (let index = 0; index < blog.items.length; index++) {
 		const item = blog.items[index];

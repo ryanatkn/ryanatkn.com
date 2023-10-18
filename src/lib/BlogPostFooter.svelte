@@ -1,7 +1,7 @@
 <script lang="ts">
-	import type {FeedItemData} from '$lib/feed';
+	import type {FeedItem} from '$lib/feed.js';
 
-	export let post: FeedItemData;
+	export let post: FeedItem;
 	post; // TODO
 </script>
 

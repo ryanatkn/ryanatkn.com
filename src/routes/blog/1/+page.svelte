@@ -1,7 +1,7 @@
 <script lang="ts" context="module">
-	import type {FeedItemData} from '$lib/feed';
+	import type {FeedItem} from '$lib/feed.js';
 
-	export const post: FeedItemData = {
+	export const post: FeedItem = {
 		id: 'https://www.ryanatkn.com/blog/1',
 		title: 'Building free and open source web community software',
 		url: 'https://www.ryanatkn.com/blog/making-free-and-open-source-web-community-software',

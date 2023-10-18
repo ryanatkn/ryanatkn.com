@@ -3,9 +3,9 @@
 
 	import BlogPostHeader from '$lib/BlogPostHeader.svelte';
 	import BlogPostFooter from '$lib/BlogPostFooter.svelte';
-	import type {FeedItemData} from '$lib/feed';
+	import type {FeedItem} from '$lib/feed.js';
 
-	export let post: FeedItemData;
+	export let post: FeedItem;
 	export let component: typeof SvelteComponent<any>;
 </script>
 

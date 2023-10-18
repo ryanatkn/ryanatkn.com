@@ -6,9 +6,9 @@
 
 	import BlogPost from '$lib/BlogPost.svelte';
 	import {components} from '$lib/blog_components';
-	import type {FeedData} from '$lib/feed';
+	import type {Feed} from '$lib/feed.js';
 
-	export let feed: FeedData;
+	export let feed: Feed;
 
 	// TODO this way of doing things gets the desired UX
 	// with prerendering and eager loading on nav, so no spinners,

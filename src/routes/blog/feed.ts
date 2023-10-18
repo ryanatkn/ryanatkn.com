@@ -1,9 +1,9 @@
-import type {FeedData} from '$lib/feed';
-import {posts} from '$lib/blog';
+import type {Feed} from '$lib/feed.js';
+import {posts} from '$lib/blog.js';
 
 // TODO should this module be `blog` instead of `feed`?
 
-export const feed: FeedData = {
+export const feed: Feed = {
 	title: 'Ryan Atkinson',
 	id: 'https://www.ryanatkn.com/',
 	home_page_url: 'https://www.ryanatkn.com/',

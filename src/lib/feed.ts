@@ -4,7 +4,7 @@
  * and eventually this will be extracted to a standalone library.
  * https://www.jsonfeed.org/version/1.1/
  */
-export interface FeedData {
+export interface Feed {
 	id: string;
 	title: string;
 	home_page_url: string;
@@ -16,7 +16,7 @@ export interface FeedData {
 		url?: string;
 		email?: string;
 	};
-	items: FeedItemData[];
+	items: FeedItem[];
 	atom: {
 		feed_url: string;
 	};
@@ -28,7 +28,7 @@ export interface FeedData {
 	// };
 }
 
-export interface FeedItemData {
+export interface FeedItem {
 	id: string;
 	title: string;
 	url: string;
@@ -43,7 +43,7 @@ export interface FeedItemData {
 	tags?: string[];
 }
 
-export const create_atom_feed = (data: FeedData): string => {
+export const create_atom_feed = (data: Feed): string => {
 	const items = data.items
 		.slice()
 		.sort((a, b) => (new Date(a.date_published) > new Date(b.date_published) ? -1 : 1)); // TODO maybe add an option to customize this? maybe by `date_modified`?
