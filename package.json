@@ -77,29 +77,13 @@
     ]
   },
   "exports": {
-    "./blog_components.js": {
-      "default": "./dist/blog_components.js",
-      "types": "./dist/blog_components.d.ts"
-    },
-    "./blog_entries.json": {
-      "default": "./dist/blog_entries.json",
-      "types": "./dist/blog_entries.json.d.ts"
-    },
     "./blog.gen.js": {
       "default": "./dist/blog.gen.js",
       "types": "./dist/blog.gen.d.ts"
     },
-    "./blog.json": {
-      "default": "./dist/blog.json",
-      "types": "./dist/blog.json.d.ts"
-    },
     "./Blog.svelte": {
       "svelte": "./dist/Blog.svelte",
       "types": "./dist/Blog.svelte.d.ts"
-    },
-    "./blog.js": {
-      "default": "./dist/blog.js",
-      "types": "./dist/blog.d.ts"
     },
     "./BlogPost.svelte": {
       "svelte": "./dist/BlogPost.svelte",
