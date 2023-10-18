@@ -88,7 +88,7 @@
 	<p>
 		Fullstack customization is part of the point of feltjs, but today it's a vague idea with some
 		interesting glimmers scattered around. The point is to help us solve problems, which are unknown
-		and numerous, so we design the system holistcally with that in mind - the UX is the DX is the
+		and numerous, so we design the system holistically with that in mind - the UX is the DX is the
 		UX. It's confusing but so is the problem of solving so many problems.
 	</p>
 	<p>
@@ -269,8 +269,8 @@
 			>SvelteKit</a
 		>, so you may choose Deno, Bun, a cloud platform's serverless offerings, or whatever else is in
 		the Node.js legacy compat space. We're trying to minimize our exposure to Node-specific APIs to
-		keep portability high. Node.js a practical choice, not an idealized one. (and we try to move
-		forward - for example feltjs never used any CommonJS)
+		keep portability high. Node.js a practical choice, not an idealized one. (and we put effort into
+		moving forward - for example feltjs never used any CommonJS)
 	</p>
 	<h3>customizable and extensible</h3>
 	<p>
