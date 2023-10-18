@@ -36,8 +36,8 @@
 	import BlogPostIndex from '$lib/BlogPostIndex.svelte';
 	import {prod_content_security_policy} from '$routes/security';
 	import {to_api_status_url} from '$lib/mastodon';
-	import {base} from '$app/paths';
 
+	// TODO BLOCK swap out
 	// https://hachyderm.io/@ryanatkn/110843291155970959
 	const DEFAULT_TOOT_HOST = 'hachyderm.io';
 	const DEFAULT_TOOT_ID = '110843291155970959';
@@ -75,6 +75,8 @@
 	- stewards
 	- operators
 	- builders includes not just devs, but everyone involved in producing the software -- people writing documentation, people triaging issues, people in the community answering questions
+	- I don't want to steward a public space on the internet, 
+	- stewards curate
 
 	*/
 
@@ -131,13 +133,28 @@
 				according to my own whims.
 			</p>
 			<p>
-				Ok, so how to add comments? I could make a post on Mastodon linking to this blog post, and
-				then people could reply with their preferred Mastodon client and account, and I'd get
-				notified. I want some of those replies to appear on my blog, and I want Mastodon and the
-				static files to handle it all, so we can discuss without leaving Mastodon, and I can curate
-				without changing my blog.
+				Sounds like a plan, so how to implement? I could make a post on Mastodon linking to this
+				blog post, and then people could reply with their preferred Mastodon client and account, and
+				I'd get notified. I want some of those replies to appear on my blog, and I want Mastodon and
+				the static files to handle it all, so we can discuss without leaving Mastodon, and I can
+				curate without changing my blog.
 			</p>
-			<p>To</p>
+			<p>I didn't think of this flow, I got the ideas from these posts:</p>
+			<ul>
+				<li>
+					<a href="https://cassidyjames.com/blog/fediverse-blog-comments-mastodon/">
+						"Toot toot! Mastodon-powered Blog Comments"
+					</a>
+					- <a href="https://cassidyjames.com/">Cassidy James</a>
+				</li>
+				<li>
+					<a href="https://jan.wildeboer.net/2023/02/Jekyll-Mastodon-Comments/">
+						"Client-side comments with Mastodon on a static Jekyll website"
+					</a>
+					- <a href="https://jan.wildeboer.net/">Jan Wildeboer</a>
+				</li>
+			</ul>
+			<p>But proactive moderation is not something those</p>
 			<hr />
 			<h1>TODO OLD STUFF</h1>
 			<h1>TODO OLD STUFF</h1>
@@ -320,14 +337,14 @@
 		</p>
 		<ul>
 			<li>
-				<a href="https://cassidyjames.com/blog/fediverse-blog-replies-mastodon/">
-					"Toot toot! Mastodon-powered Blog Replies"
+				<a href="https://cassidyjames.com/blog/fediverse-blog-comments-mastodon/">
+					"Toot toot! Mastodon-powered Blog Comments"
 				</a>
 				- <a href="https://cassidyjames.com/">Cassidy James</a>
 			</li>
 			<li>
-				<a href="https://jan.wildeboer.net/2023/02/Jekyll-Mastodon-Replies/">
-					"Client-side replies with Mastodon on a static Jekyll website"
+				<a href="https://jan.wildeboer.net/2023/02/Jekyll-Mastodon-Comments/">
+					"Client-side comments with Mastodon on a static Jekyll website"
 				</a>
 				- <a href="https://jan.wildeboer.net/">Jan Wildeboer</a>
 			</li>
