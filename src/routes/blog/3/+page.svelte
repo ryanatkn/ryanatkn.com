@@ -3,9 +3,8 @@
 
 	export const post: FeedItem = {
 		id: 'https://www.ryanatkn.com/blog/3',
-		// TODO BLOCK maybe change to `Modeling virtual social spaces: the roles of Steward, Operator, and Builder`
-		title: 'Modeling virtual social spaces: Stewards, Operators, and Builders',
-		url: 'https://www.ryanatkn.com/blog/modeling-virtual-social-spaces-stewards-operators-and-builders',
+		title: 'Modeling virtual social spaces: the roles of steward, operator, and builder',
+		url: 'https://www.ryanatkn.com/blog/modeling-virtual-social-spaces-the-roles-of-steward-operator-and-builder',
 		date_published: '2023-07-24T01:50:35.017Z',
 		date_modified: '2023-07-24T01:50:35.017Z',
 		summary:
@@ -50,7 +49,7 @@
 	let replies_toot_id = embedded_toot_id;
 	let replies_toot_url = to_api_status_url(replies_toot_host, replies_toot_id);
 
-	// TODO BLOCK incorporate https://newpublic.substack.com/p/the-secret-power-of-digital-dungeon?r=bveu&utm_campaign=post&utm_medium=web
+	// TODO BLOCK incorporate https://newpublic.substack.com/p/the-secret-power-of-digital-dungeon
 	// probably mention the rooms/stool, bottlenecking
 
 	// TODO BLOCK make the `reset` button work for the toot url, including whether it's enabled
@@ -60,7 +59,7 @@
 		{slug: 'limitations', name: 'Limitations'},
 		{slug: 'conclusion', name: 'Conclusion'},
 		{slug: 'references', name: 'References'},
-		{slug: 'replies', name: 'Replies'},
+		{slug: 'comments', name: 'Comments'},
 	];
 
 	let autoload: boolean;
@@ -72,6 +71,7 @@
 	/*
 
 	- picture the flow starting from the user, to the steward who they interact with, to the operator stabilizing the ground under their feet to make the thing go, to the builder producing the thing at the origin, up the supply chain
+	- role - implicit?
 	- stewards
 	- operators
 	- builders includes not just devs, but everyone involved in producing the software -- people writing documentation, people triaging issues, people in the community answering questions
@@ -79,6 +79,7 @@
 	- stewards curate
 	- talk about plans for better library, existing support for CWs
 	- allow users to see all comments? I don't want to
+	- gave up finishing implementation for pagination, so eventually I may be unable to favourite posts to  have them appear here without more work, deflated that I couldn't implement moderation to the degree I wanted
 
 	*/
 
@@ -106,10 +107,10 @@
 			</p>
 			<p>
 				This is a <a href="https://wikipedia.org/wiki/Static_web_page">static website</a>, meaning I
-				upload some plain files and GitHub does the rest. There's no server running any logic of
-				mine, and the infrastructure requirements are very simple and cheap. GitHub offers the
-				service for free in part because of its low cost. It's also the simplest possible flow for
-				me as the author.
+				upload some plain files and <a href="https://pages.github.com/">my free web host</a> does the
+				rest. There's no server running any logic of mine, and the infrastructure requirements are very
+				simple and cheap. GitHub offers the service for free in part because of its low cost. It's also
+				the simplest possible flow for me as the author.
 			</p>
 			<p>
 				There are downsides to static websites, of course. What if I wanted to let readers submit
@@ -137,8 +138,8 @@
 			<p>
 				Sounds like a plan, so how to implement? I could make a post on Mastodon linking to this
 				blog post, and then people could reply with their preferred Mastodon client and account, and
-				I'd get notified. I want some of those replies to appear on my blog, and I want Mastodon and
-				the static files to handle it all, so we can discuss without leaving Mastodon, and I can
+				I'd get notified. I want some of those comments to appear on my blog, and I want Mastodon
+				and the static files to handle it all, so we can discuss without leaving Mastodon, and I can
 				curate without changing my blog.
 			</p>
 			<p>I took the main idea of client-side Mastodon comments from these blog posts:</p>
@@ -147,13 +148,13 @@
 					<a href="https://cassidyjames.com/blog/fediverse-blog-comments-mastodon/">
 						"Toot toot! Mastodon-powered Blog Comments"
 					</a>
-					- <a href="https://cassidyjames.com/">Cassidy James</a>
+					– <a href="https://cassidyjames.com/">Cassidy James</a>
 				</li>
 				<li>
 					<a href="https://jan.wildeboer.net/2023/02/Jekyll-Mastodon-Comments/">
 						"Client-side comments with Mastodon on a static Jekyll website"
 					</a>
-					- <a href="https://jan.wildeboer.net/">Jan Wildeboer</a>
+					– <a href="https://jan.wildeboer.net/">Jan Wildeboer</a>
 				</li>
 			</ul>
 			<p>
@@ -164,10 +165,10 @@
 			</p>
 			<p>
 				Not just that, I don't want even well-meaning people to have the expectation that their
-				words will appear here. Even if it's good and relevant content! This blog is a personal
-				project to support my goal of producing good software, and I'll include outside
-				contributions if I feel like it at the time, don't ask me why, idk. I'll burn out or stop
-				caring enough under any other arrangement.
+				words will appear here. Even if it's good and relevant content, that's what Mastodon is for!
+				This blog is a personal project to support my goal of producing good software, and I'll
+				include outside contributions if I feel like it at the time, don't ask me why, idk. I'll
+				burn out or stop caring enough under any other arrangement.
 			</p>
 			<aside>
 				I know I'm more sensitive than most here - more on this ahead. The road gets rocky.
@@ -179,14 +180,77 @@
 				<li>fetch comments dynamically on each visitor's machine, with no authentication needed</li>
 				<li>proactive moderation, so only comments I approve will appear</li>
 			</ul>
-			<p>TODO</p>
+			<p>
+				<a href="https://docs.joinmastodon.org/">Mastodon docs</a> in hand, I set out to implement.
+				Scroll down to the bottom of the page to see the results. Here's
+				<a href="https://github.com/ryanatkn/ryanatkn.com/pull/12">the work on GitHub</a>.
+			</p>
+			<p>
+				But there's a huge caveat - I failed to implement proactive moderation to the degree I
+				wanted. My implementation uses Mastodon likes (favourites) for moderation: if I like a post,
+				it appears here. If I don't like a post, your client simply ignores it.
+			</p>
+			<p>
+				The problem is, for proactive moderation that requires no vigilance, if a post was edited
+				after I favourited it, it should be ignored. I can always re-favourite the post and build
+				nice tools to streamline the process.
+			</p>
+			<p>
+				However I couldn't find a way in the Mastodon API to get the <code>created_at</code> of a
+				favourite without authentication (<a
+					href="https://docs.joinmastodon.org/methods/statuses/#favourited_by">1</a
+				>, <a href="https://docs.joinmastodon.org/methods/favourites/">2</a>, caveat, I may be
+				ignorant on API usage details from here on, please correct me by
+				<a href={embedded_toot_url}>replying on Mastodon</a>, and things may have changed by the
+				time you read this since I last checked in October 2023).
+			</p>
+			<p>
+				Without knowing when a favourite was created, I can't conditionally hide posts that were
+				edited after my favourite. Maybe the commenter is a troll or spammer, luring me to favourite
+				a post that then gets edited with an ad for a gambling website, or they get hacked by trolls
+				or spammers. I don't want to be vigilant against the content of my blog changing for my
+				visitors without my approval.
+			</p>
+			<details>
+				<summary>technical details</summary>
+				<p>
+					<a href="https://docs.joinmastodon.org/methods/favourites/"
+						>The API to get this information</a
+					>
+					exists, but it requires authentication, so we can't meet our requirements. There are no privacy,
+					security, or technical reasons for this information to be hidden but the APIs weren't designed
+					for this usage. (for example it could be added to the
+					<a href="https://docs.joinmastodon.org/methods/statuses/#favourited_by">favourited_by</a>
+					endpoint, the <code>created_at</code> there is for the account)
+				</p>
+				<p>
+					The code uses the status <a href="https://docs.joinmastodon.org/methods/statuses/#context"
+						>context</a
+					>
+					endpoint to fetch information about the post I originally made. That data includes the replies,
+					<code>descendants</code>. For each of those replies that have favourites, it then fetches
+					<a href="https://docs.joinmastodon.org/methods/statuses/#favourited_by">favourited_by</a> to
+					see if one of those favourites was me. If not, the post is ignored like the others who have
+					no favourites.
+				</p>
+			</details>
+			<p>
+				So, my moderation UX is leaky due to an API limitation. I can't get the <a
+					href="https://consentful.systems/">consentful</a
+				> experience I need.
+			</p>
+			<p>
+				What does this all have to do with virtual social spaces, stewards and operators and
+				builders?
+			</p>
+			<p>I don't want to play steward to random actors on the Internet.</p>
 			<hr />
 			<h1>TODO OLD STUFF</h1>
 			<h1>TODO OLD STUFF</h1>
 			<h1>TODO OLD STUFF</h1>
 			<p>
 				This website is a bundle of static files served from a free host, and it also has
-				reader-submitted comments through Mastodon. I made a Mastodon post and its replies are
+				reader-submitted comments through Mastodon. I made a Mastodon post and its comments are
 				dynamically loaded by your browser. They're displayed if I've clicked the favourite button ★
 				in my Mastodon client, otherwise your browser ignores the post. Assembled, we get
 				allowlisted comments on a static blog with Mastodon.
@@ -222,8 +286,8 @@
 					</p>
 					<p>
 						Although completely static, this site has the dynamic behavior of fetching data at
-						runtime in your browser from <a href="https://hachyderm.io/">my Mastodon host</a>,
-						thanks to the power of scripting and
+						runtime in your browser from <a href="https://hci.social/">my Mastodon host</a>, thanks
+						to the power of scripting and
 						<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS">CORS</a>. Static AND
 						dynamic??
 					</p>
@@ -257,7 +321,7 @@
 							href="https://joinmastodon.org/">Mastodon</a
 						>
 						instance at
-						<a href="https://hachyderm.io/">hachyderm.io</a>
+						<a href="https://hci.social/">hachyderm.io</a>
 						that hosts
 						<a href="https://hachyderm.io/@ryanatkn">my account</a>. Mastodon is an
 						<a href="https://wikipedia.org/wiki/ActivityPub">ActivityPub</a>-compatible app in the
@@ -268,7 +332,7 @@
 							>a post I made</a
 						>
 						at hachyderm.io that references this blog post at ryanatkn.com. If the request is successful,
-						some JavaScript runs on your machine to display the "replies", replies to my post that I've
+						some JavaScript runs on your machine to display the "comments", replies to my post that I've
 						"favourited". My host hachyderm.io has its unauthenticated API enabled (in other words, "secure
 						mode" has not been enabled, meaning
 						<a href="https://docs.joinmastodon.org/admin/config/#authorized_fetch"
@@ -280,11 +344,11 @@
 				</aside>
 			</details>
 			<p>
-				Not every reply to my post appears in the replies section below. It displays only those that
-				I've explicitly favourited, aka liked or starred. This way, I have an allowlist managed by
-				my Mastodon account, the same place I microblogged about this blog post, a place out there
-				on the internet that magically operates free infrastructure for us, much like the free black
-				box that is GitHub pages. (free, but also, financially supporting admins is good luck)
+				Not every reply to my post appears in the comments section below. It displays only those
+				that I've explicitly favourited, aka liked or starred. This way, I have an allowlist managed
+				by my Mastodon account, the same place I microblogged about this blog post, a place out
+				there on the internet that magically operates free infrastructure for us, much like the free
+				black box that is GitHub pages. (free, but also, financially supporting admins is good luck)
 			</p>
 		</div>
 	</section>
@@ -294,8 +358,8 @@
 			<HashLink slug="limitations">Limitations</HashLink>
 		</h2>
 		<p>
-			I achieved most of the basic behavior I was looking for, allowlisting replies that are fetched
-			at runtime. Many things could be improved:
+			I achieved most of the basic behavior I was looking for, allowlisting comments that are
+			fetched at runtime. Many things could be improved:
 		</p>
 		<ul>
 			<li>supports only one kind of moderation, allowlisting via favourites by the author</li>
@@ -335,7 +399,7 @@
 		</h2>
 		<p>
 			Recapping, this is a static site hosted by GitHub with embedded toots and replies
-			dynamically-loaded-on-demand from Mastodon on <a href="https://hachyderm.io/">hachyderm.io</a>
+			dynamically-loaded-on-demand from Mastodon on <a href="https://hci.social/">hachyderm.io</a>
 			with an allowlist managed by the author through Mastodon favourites. They charge no money for these
 			services, and you can fund them in different ways.
 		</p>
@@ -357,7 +421,7 @@
 			<HashLink slug="references">References</HashLink>
 		</h2>
 		<p>
-			I took the main idea of client-side replies from the following posts, and added
+			I took the main idea of client-side comments from the following posts, and added
 			favourite-to-allowlist for basic moderation:
 		</p>
 		<ul>
@@ -406,7 +470,7 @@
 	<hr />
 	<section>
 		<div class="prose spaced">
-			<h2><HashLink slug="replies">Replies</HashLink></h2>
+			<h2><HashLink slug="comments">Comments</HashLink></h2>
 		</div>
 		<Toot
 			replies

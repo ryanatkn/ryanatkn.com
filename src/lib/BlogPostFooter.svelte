@@ -8,7 +8,10 @@
 <footer class="blog-post-footer">
 	<div class="panel prose">
 		<p>
-			<span> find me on <a href="https://joinmastodon.org/">Mastodon</a> and ActivityPub:</span>
+			<span>
+				find me on <a href="https://joinmastodon.org/">Mastodon</a> and
+				<a href="https://wikipedia.org/wiki/ActivityPub">ActivityPub</a>:</span
+			>
 			<br />
 			<a href="https://hci.social/@ryanatkn">@ryanatkn@hci.social</a>
 		</p>
