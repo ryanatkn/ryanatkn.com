@@ -158,10 +158,6 @@
 			with SvelteKit, TypeScript, Felt, and Gro for quickly creating new projects - in the future it
 			will support quickly creating a custom server project, too.
 		</li>
-		<li>
-			<a href="https://github.com/grogarden/util">@grogarden/util</a> – JS utilities to complement the
-			modern web platform 🦕🐋
-		</li>
 	</ul>
 	<p>
 		With feltjs, I hope we can make the role of toolmaker more accessible to more people on the web,
