@@ -9,7 +9,7 @@
 		date_published: '2023-07-24T01:50:35.017Z',
 		date_modified: '2023-07-24T01:50:35.017Z',
 		summary:
-			"I describe how I think I'm better suited for the builder roles when working on social spaces, and how I like them, but I don't like steward roles and the responsibilities they carry, nor am I motivated to improve at them. Also, how I implemented allowlisted Mastodon comments on my static blog with TypeScript, Svelte, and SvelteKit.",
+			"I describe how I like the builder role when working on social spaces, but less so the steward and operator roles and the responsibilities they carry. Also, how I implemented allowlisted Mastodon comments on my static blog with TypeScript, Svelte, and SvelteKit, but an API limitation compromised my desire to steward the comments.",
 		tags: [
 			'web',
 			'personal',
