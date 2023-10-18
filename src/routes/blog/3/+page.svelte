@@ -3,6 +3,7 @@
 
 	export const post: FeedItem = {
 		id: 'https://www.ryanatkn.com/blog/3',
+		// TODO BLOCK maybe change to `Modeling virtual social spaces: the roles of Steward, Operator, and Builder` 
 		title: 'Modeling virtual social spaces: Stewards, Operators, and Builders',
 		url: 'https://www.ryanatkn.com/blog/modeling-virtual-social-spaces-stewards-operators-and-builders',
 		date_published: '2023-07-24T01:50:35.017Z',
