@@ -1,3 +1,10 @@
+// TODO publish `feed.json` not just the Atom `feed.xml`
+
+// TODO also publish rss probably
+
+// TODO finish mapping with Atom and RSS
+// https://www.jsonfeed.org/mappingrssandatom/
+
 /**
  * This is designed to extend JSON Feed 1.1 with namespaced data for other specs like Atom.
  * It's still a work in progress, and I'll add features as I need them,
