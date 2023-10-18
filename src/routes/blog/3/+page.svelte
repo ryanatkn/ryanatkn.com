@@ -78,6 +78,7 @@
 	- I don't want to steward a public space on the internet, 
 	- stewards curate
 	- talk about plans for better library, existing support for CWs
+	- allow users to see all comments? I don't want to
 
 	*/
 
@@ -157,19 +158,26 @@
 			</ul>
 			<p>
 				But those implementations have no moderation - anyone can reply on Mastodon, and the comment
-				appears on the blog. And even if they were to implement reactive moderation, I find that to
-				be an unreasonable burden in this context. I don't want The Internet to have publishing
-				capabilities on my blog. Not just that, I don't want even well-meaning people to have the
-				expectation that their words will appear here, even if it's good and relevant content. This
-				blog is a personal project to support my goal of producing good software, and I'll include
-				outside contributions if I feel like it at the time. I'll burn out or stop caring under any
-				other arrangement - I know I'm more sensitive than most here, more on this ahead.
+				appears on the blog. Even if they had a mechanism for blocking individual posts, I find that
+				to be an unreasonable burden in this context. I don't want The Internet to have publishing
+				capabilities on my blog. I won't turn this into a space that requires me to be vigilant.
 			</p>
+			<p>
+				Not just that, I don't want even well-meaning people to have the expectation that their
+				words will appear here. Even if it's good and relevant content! This blog is a personal
+				project to support my goal of producing good software, and I'll include outside
+				contributions if I feel like it at the time, don't ask me why, idk. I'll burn out or stop
+				caring enough under any other arrangement.
+			</p>
+			<aside>
+				I know I'm more sensitive than most here - more on this ahead. The road gets rocky.
+			</aside>
 			<p>Our design now has its requirements:</p>
 			<ul>
 				<li>start with a static website, just a bundle of files hosted cheaply on the web</li>
 				<li>on Mastodon, make a post per blog post, and replies can appear as comments here</li>
-				<li>proactive moderation, so only allowlisted comments appear</li>
+				<li>fetch comments dynamically on each visitor's machine, with no authentication needed</li>
+				<li>proactive moderation, so only comments I approve will appear</li>
 			</ul>
 			<p>TODO</p>
 			<hr />
