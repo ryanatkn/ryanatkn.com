@@ -9,10 +9,10 @@ body {
 
 /* TODO upstream a similar style tweak to Felt */
 .prose h1 {
-	margin-top: var(--spacing_xl3) !important;
+	margin-top: var(--spacing_3) !important;
 }
 .prose h2 {
-	margin-top: var(--spacing_xl3);
+	margin-top: var(--spacing_3);
 }
 
 table {

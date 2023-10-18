@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Breadcrumbs from '@fuz.dev/fuz/Breadcrumbs.svelte';
+	import Breadcrumb from '@fuz.dev/fuz_library/Breadcrumb.svelte';
 	import {base} from '$app/paths';
 
 	import ContactInfo from '$routes/ContactInfo.svelte';
@@ -79,8 +79,8 @@
 		</div>
 	</section>
 </div>
-<Breadcrumbs>
-	<Favicon /></Breadcrumbs
+<Breadcrumb>
+	<Favicon /></Breadcrumb
 >
 
 <style>

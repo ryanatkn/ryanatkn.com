@@ -1,17 +1,17 @@
 <script lang="ts">
-	import Breadcrumbs from '@fuz.dev/fuz/Breadcrumbs.svelte';
+	import Breadcrumb from '@fuz.dev/fuz_library/Breadcrumb.svelte';
 
 	import Favicon from '$lib/Favicon.svelte';
 </script>
 
 <div class="breadcrumbs">
-	<Breadcrumbs><Favicon /></Breadcrumbs>
+	<Breadcrumb><Favicon /></Breadcrumb>
 </div>
 <div class="wrapper">
 	<slot />
 </div>
 <div class="breadcrumbs">
-	<Breadcrumbs><Favicon /></Breadcrumbs>
+	<Breadcrumb><Favicon /></Breadcrumb>
 </div>
 
 <style>
@@ -20,10 +20,10 @@
 		flex-direction: column;
 		align-items: center;
 		flex: 1;
-		padding: var(--spacing_xl2);
+		padding: var(--spacing_2);
 	}
 	.breadcrumbs {
-		margin-top: var(--spacing_xl3);
+		margin-top: var(--spacing_3);
 		display: flex;
 		flex-direction: column;
 		align-items: center;

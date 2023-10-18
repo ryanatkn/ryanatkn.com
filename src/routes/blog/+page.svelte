@@ -29,11 +29,11 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		padding: var(--spacing_xl3) 0;
+		padding: var(--spacing_3) 0;
 	}
 	ol {
 		background-color: var(--fg_1);
-		padding: var(--spacing_sm) var(--spacing_sm) var(--spacing_sm) var(--spacing_xl4);
+		padding: var(--spacing_sm) var(--spacing_sm) var(--spacing_sm) var(--spacing_4);
 	}
 	.card {
 		font-size: var(--size_lg);

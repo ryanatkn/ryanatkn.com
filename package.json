@@ -33,6 +33,7 @@
   "devDependencies": {
     "@feltjs/eslint-config": "^0.4.0",
     "@fuz.dev/fuz": "^0.73.0",
+    "@fuz.dev/fuz_library": "^0.11.0",
     "@fuz.dev/svelte_intersect": "^0.5.1",
     "@grogarden/gro": "^0.95.5",
     "@grogarden/util": "^0.15.1",

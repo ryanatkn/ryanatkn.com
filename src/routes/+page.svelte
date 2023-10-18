@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Breadcrumbs from '@fuz.dev/fuz/Breadcrumbs.svelte';
+	import Breadcrumb from '@fuz.dev/fuz_library/Breadcrumb.svelte';
 	import {base} from '$app/paths';
 
 	import Favicon from '$lib/Favicon.svelte';
@@ -135,7 +135,7 @@
 											style={project.icon_style}
 										/>
 									{:else}
-										<div style:font-size="var(--size_xl5)">{project.icon}</div>
+										<div style:font-size="var(--size_5)">{project.icon}</div>
 									{/if}
 								</div>
 							{/if}
@@ -146,17 +146,17 @@
 		</div>
 	</section>
 </div>
-<Breadcrumbs
+<Breadcrumb
 	><div class="linkpath">
 		<Favicon />
 		<div class="url">ryanatkn.com</div>
-	</div></Breadcrumbs
+	</div></Breadcrumb
 >
 
 <style>
 	.width_md {
 		flex: 1;
-		margin-bottom: var(--spacing_xl3);
+		margin-bottom: var(--spacing_3);
 	}
 	.linkpath {
 		display: flex;

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <id>https://www.ryanatkn.com/</id>
+  <title>Ryan Atkinson</title>
+  <subtitle>blog of a web developer making open source community software</subtitle>
+  <link href="https://www.ryanatkn.com/" />
+  <link href="https://www.ryanatkn.com/blog/feed.xml" rel="self" type="application/atom+xml" />
+	<updated>2023-07-24T01:50:35.017Z</updated>
+  <icon>https://www.ryanatkn.com/favicon.png</icon>
+  <author>
+    <name>Ryan Atkinson</name>
+    <email>mail@ryanatkn.com</email>
+    <uri>https://www.ryanatkn.com/</uri>
+  </author>
+  
+  <entry>
+    <id>https://www.ryanatkn.com/blog/3</id>
+    <title>My role is builder not steward</title>
+    <link rel="alternate" href="https://www.ryanatkn.com/blog/my-role-is-builder-not-steward" />
+    <published>2023-07-24T01:50:35.017Z</published>
+    <updated>2023-07-24T01:50:35.017Z</updated>
+    <summary
+		>I describe how I think I'm better suited for the builder roles when working on networked spaces, and how I like them, but I don't like steward roles and the responsibilities they carry, nor am I motivated to improve at them. Also, how I implemented allowlisted Mastodon comments on my static blog with TypeScript, Svelte, and SvelteKit.</summary>
+    <category term="web" /><category term="personal" /><category term="builders" /><category
+			term="stewards"
+		/><category term="networked spaces" /><category term="blog comments" /><category
+			term="Mastodon"
+		/><category term="ActivityPub" /><category term="ActivityStreams" /><category
+			term="Fediverse"
+		/><category term="design" /><category term="technology" /><category term="software" />
+  </entry>
+
+  <entry>
+    <id>https://www.ryanatkn.com/blog/2</id>
+    <title>Modeling virtual social spaces: in this house we post cat pics on Saturday</title>
+    <link
+			rel="alternate"
+			href="https://www.ryanatkn.com/blog/modeling-virtual-social-spaces-in-this-house-we-post-cat-pics-on-saturday"
+		/>
+    <published>2023-01-22T21:44:17.224Z</published>
+    <updated>2023-01-28T17:20:51.259Z</updated>
+    <summary
+		>Proposing a model for one of the central aspects of online communities: the virtual social space.</summary>
+    <category term="web" /><category term="community" /><category term="social media" /><category
+			term="design"
+		/><category term="technology" /><category term="software" />
+  </entry>
+
+  <entry>
+    <id>https://www.ryanatkn.com/blog/1</id>
+    <title>Building free and open source web community software</title>
+    <link
+			rel="alternate"
+			href="https://www.ryanatkn.com/blog/making-free-and-open-source-web-community-software"
+		/>
+    <published>2022-05-13T01:42:23.000Z</published>
+    <updated>2023-07-23T17:12:50.674Z</updated>
+    <summary
+		>I discuss my work on open source community software called feltjs, giving a brief overview of the design and technology choices, and announcing our newsletter and podcast.</summary>
+    <category term="web" /><category term="technology" /><category term="social" /><category
+			term="software"
+		/><category term="open source" /><category term="community" /><category term="FOSS" />
+  </entry>
+
+</feed>

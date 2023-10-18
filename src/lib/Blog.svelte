@@ -2,7 +2,7 @@
 	import {page} from '$app/stores';
 	import {goto} from '$app/navigation';
 	import {browser, dev} from '$app/environment';
-	import Alert from '@fuz.dev/fuz/Alert.svelte';
+	import Alert from '@fuz.dev/fuz_library/Alert.svelte';
 
 	import BlogPost from '$lib/BlogPost.svelte';
 	import {components} from '$lib/blog_components';

@@ -1,4 +1,4 @@
-import {stripEnd} from '@grogarden/util/string.js';
+import {strip_end} from '@grogarden/util/string.js';
 import type {Flavored} from '@grogarden/util/types.js';
 import {dev} from '$app/environment';
 
@@ -116,7 +116,7 @@ export const to_post_url = (api_url: string | null): string | null => {
 export const parse_status_context_url = (url: string): MastodonStatusParams | null => {
 	try {
 		const u = new URL(url);
-		const parts = stripEnd(u.pathname, '/context').split('/');
+		const parts = strip_end(u.pathname, '/context').split('/');
 		// TODO BLOCK also author if available
 		return {
 			host: u.host,
@@ -135,7 +135,7 @@ export const parse_status_context_url = (url: string): MastodonStatusParams | nu
 export const parse_status_url_with_author = (url: string): MastodonStatusParams | null => {
 	try {
 		const u = new URL(url);
-		const parts = stripEnd(u.pathname, '/context').split('/');
+		const parts = strip_end(u.pathname, '/context').split('/');
 		const author = parts[0][0] === '@' ? parts[0].substring(1) : null; // eslint-disable-line @typescript-eslint/prefer-string-starts-ends-with
 		if (!author) return null;
 		const id = parts.length > 1 ? parts[parts.length - 1] : null;

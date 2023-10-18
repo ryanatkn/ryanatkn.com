@@ -17,7 +17,7 @@
 		width: 100%;
 		height: 360px;
 		overflow: hidden;
-		margin-top: var(--spacing_xl5);
+		margin-top: var(--spacing_5);
 	}
 	a {
 		width: 100%;

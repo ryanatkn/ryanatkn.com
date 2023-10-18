@@ -1,5 +1,5 @@
 <script lang="ts">
-	import PendingButton from '@fuz.dev/fuz/PendingButton.svelte';
+	import PendingButton from '@fuz.dev/fuz_library/PendingButton.svelte';
 	import {slide} from 'svelte/transition';
 	import {createEventDispatcher} from 'svelte';
 	import {intersect} from '@fuz.dev/svelte_intersect';
@@ -204,7 +204,7 @@
 		flex-direction: column;
 		justify-content: space-between;
 		flex: 1;
-		margin: var(--spacing_xl3) 0;
+		margin: var(--spacing_3) 0;
 		gap: var(--spacing_md);
 		width: 100%;
 	}
