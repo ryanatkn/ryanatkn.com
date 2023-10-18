@@ -17,14 +17,17 @@
   <entry>
     <id>https://www.ryanatkn.com/blog/3</id>
     <title>Modeling virtual social spaces: Stewards, Operators, and Builders</title>
-    <link rel="alternate" href="https://www.ryanatkn.com/blog/my-role-is-builder-not-steward" />
+    <link
+			rel="alternate"
+			href="https://www.ryanatkn.com/blog/modeling-virtual-social-spaces-stewards-operators-and-builders"
+		/>
     <published>2023-07-24T01:50:35.017Z</published>
     <updated>2023-07-24T01:50:35.017Z</updated>
     <summary
-		>I describe how I think I'm better suited for the builder roles when working on networked spaces, and how I like them, but I don't like steward roles and the responsibilities they carry, nor am I motivated to improve at them. Also, how I implemented allowlisted Mastodon comments on my static blog with TypeScript, Svelte, and SvelteKit.</summary>
+		>I describe how I think I'm better suited for the builder roles when working on social spaces, and how I like them, but I don't like steward roles and the responsibilities they carry, nor am I motivated to improve at them. Also, how I implemented allowlisted Mastodon comments on my static blog with TypeScript, Svelte, and SvelteKit.</summary>
     <category term="web" /><category term="personal" /><category term="builders" /><category
 			term="stewards"
-		/><category term="networked spaces" /><category term="blog comments" /><category
+		/><category term="social spaces" /><category term="blog comments" /><category
 			term="Mastodon"
 		/><category term="ActivityPub" /><category term="ActivityStreams" /><category
 			term="Fediverse"

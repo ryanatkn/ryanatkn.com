@@ -4,17 +4,17 @@
 	export const post: FeedItem = {
 		id: 'https://www.ryanatkn.com/blog/3',
 		title: 'Modeling virtual social spaces: Stewards, Operators, and Builders',
-		url: 'https://www.ryanatkn.com/blog/my-role-is-builder-not-steward',
+		url: 'https://www.ryanatkn.com/blog/modeling-virtual-social-spaces-stewards-operators-and-builders',
 		date_published: '2023-07-24T01:50:35.017Z',
 		date_modified: '2023-07-24T01:50:35.017Z',
 		summary:
-			"I describe how I think I'm better suited for the builder roles when working on networked spaces, and how I like them, but I don't like steward roles and the responsibilities they carry, nor am I motivated to improve at them. Also, how I implemented allowlisted Mastodon comments on my static blog with TypeScript, Svelte, and SvelteKit.",
+			"I describe how I think I'm better suited for the builder roles when working on social spaces, and how I like them, but I don't like steward roles and the responsibilities they carry, nor am I motivated to improve at them. Also, how I implemented allowlisted Mastodon comments on my static blog with TypeScript, Svelte, and SvelteKit.",
 		tags: [
 			'web',
 			'personal',
 			'builders',
 			'stewards',
-			'networked spaces',
+			'social spaces',
 			'blog comments',
 			'Mastodon',
 			'ActivityPub',
@@ -66,6 +66,15 @@
 	let load_time: number | undefined;
 
 	// TODO BLOCK see `div class="reset"` below
+
+	/*
+
+	- picture the flow starting from the user, to the steward who they interact with, to the operator stabilizing the ground under their feet to make the thing go, to the builder producing the thing at the origin, up the supply chain
+	- stewards
+	- operators
+	- builders includes not just devs, but everyone involved in producing the software -- people writing documentation, people triaging issues, people in the community answering questions
+
+	*/
 </script>
 
 <div class="width_md">
