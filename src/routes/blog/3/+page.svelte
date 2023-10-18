@@ -131,11 +131,11 @@
 				according to my own whims.
 			</p>
 			<p>
-				Ok, so how to add comments? I could make a post on Mastodon, people could reply as normal, I
-				get notified, and I can choose to respond back, just like any other Mastodon post. I want
-				some of those replies to appear on my blog, and I want to do this all without changing my
-				blog, so Mastodon and the static files handle it all, and I can just use Mastodon like
-				normal to curate what appears here.
+				Ok, so how to add comments? I could make a post on Mastodon linking to this blog post, and
+				then people could reply with their preferred Mastodon client and account, and I'd get
+				notified. I want some of those replies to appear on my blog, and I want Mastodon and the
+				static files to handle it all, so we can discuss without leaving Mastodon, and I can curate
+				without changing my blog.
 			</p>
 			<p>To</p>
 			<hr />
