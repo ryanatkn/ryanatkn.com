@@ -189,7 +189,6 @@
 	}
 	.content {
 		display: flex;
-		align-items: flex-end;
 	}
 	.title {
 		font-size: var(--size_lg);
