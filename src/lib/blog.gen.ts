@@ -35,7 +35,7 @@ export const gen: Gen = async () => {
 			content: create_atom_feed(feed),
 		},
 		{
-			filename: './blog.ts',
+			filename: '../routes/blog/blog.ts',
 			content: `
 				import type {FeedItem} from '$lib/feed.js';
 				${items
@@ -46,7 +46,7 @@ export const gen: Gen = async () => {
 			`,
 		},
 		{
-			filename: './blog_components.ts',
+			filename: '../routes/blog/blog_components.ts',
 			content: `// TODO this file shouldn't exist, change to SvelteKit load?
 				${items.map((i) => `import page${i} from '$routes/${path}/${i}/+page.svelte'`).join(';\n')};
 
@@ -54,22 +54,29 @@ export const gen: Gen = async () => {
 			`,
 		},
 		{
-			filename: './blog.json',
+			filename: '../routes/blog/blog.json',
 			// TODO `entries` isn't included in `Feed` but we use it from the SvelteKit config
 			content: JSON.stringify(feed),
 		},
 		{
-			filename: './blog_entries.json',
-			// TODO `entries` isn't included in `Feed` but we use it from the SvelteKit config
-			content: JSON.stringify({entries: to_prerender_entries(feed)}),
-		},
-		{
-			filename: './blog.json.d.ts',
-			content: `declare module '$lib/blog.json' {
+			filename: '../routes/blog/blog.json.d.ts',
+			content: `declare module '$routes/blog/blog.json' {
         import type {Feed} from '$lib/feed.js';
         const data: Feed;
         export default data;
       }`,
+		},
+		{
+			filename: '../routes/blog/blog_entries.json',
+			// TODO `entries` isn't included in `Feed` but we use it from the SvelteKit config
+			content: JSON.stringify({entries: to_prerender_entries(feed)}),
+		},
+		{
+			filename: '../routes/blog/blog_entries.json.d.ts',
+			content: `declare module '$routes/blog/blog_entries.json' {
+				const data: {entries: string[]};
+				export default data;
+			}`,
 		},
 	];
 };

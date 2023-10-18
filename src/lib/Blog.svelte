@@ -5,7 +5,8 @@
 	import Alert from '@fuz.dev/fuz_library/Alert.svelte';
 
 	import BlogPost from '$lib/BlogPost.svelte';
-	import {components} from '$lib/blog_components';
+	// TODO BLOCK get from context
+	import {components} from '$routes/blog/blog_components.js';
 	import type {Feed} from '$lib/feed.js';
 
 	export let feed: Feed;

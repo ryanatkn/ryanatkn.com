@@ -1,5 +1,5 @@
 import type {Feed} from '$lib/feed.js';
-import {posts} from '$lib/blog.js';
+import {posts} from '$routes/blog/blog.js';
 
 // TODO should this module be `blog` instead of `feed`?
 

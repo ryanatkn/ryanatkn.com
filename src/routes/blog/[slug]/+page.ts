@@ -1,5 +1,5 @@
 import type {EntryGenerator} from './$types';
-import blog_entries from '$lib/blog_entries.json';
+import blog_entries from '$routes/blog/blog_entries.json';
 
 export const entries: EntryGenerator = async () => {
 	return blog_entries.entries.map((e) => {
