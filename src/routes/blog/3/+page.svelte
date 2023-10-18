@@ -77,6 +77,7 @@
 	- builders includes not just devs, but everyone involved in producing the software -- people writing documentation, people triaging issues, people in the community answering questions
 	- I don't want to steward a public space on the internet, 
 	- stewards curate
+	- talk about plans for better library, existing support for CWs
 
 	*/
 
