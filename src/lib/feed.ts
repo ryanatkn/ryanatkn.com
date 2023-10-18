@@ -27,7 +27,7 @@ export interface Feed {
 	atom: {
 		feed_url: string;
 	};
-	// TODO
+	// TODO should these be on the root? yes if the goal is to match the data structure of JSON Feed as much as possible
 	// jsonfeed: {
 	// 	version: string;
 	// 	feed_url: string;
