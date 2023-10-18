@@ -11,7 +11,7 @@
 	interface ProjectInfo {
 		name: string;
 		title: string;
-		description: string;
+		description?: string;
 		links?: string;
 		icon?: string;
 		icon_alt?: string;
@@ -25,13 +25,14 @@
 		{
 			name: 'blog',
 			title: `<a href="${base}/blog">blog</a>`,
-			description: '<a href="https://www.ryanatkn.com/blog/feed.xml">feed.xml</a>',
+			links:
+				'<a href="https://www.ryanatkn.com/blog/feed.xml" class="chip">feed.xml</a> <a href="https://github.com/ryanatkn/ryanatkn.com" class="chip">GitHub</a>',
 		},
 		{
 			name: 'devlog',
 			title: '<a href="https://log.ryanatkn.com/">log</a>',
 			description: 'devlog',
-			links: '<a href="https://log.ryanatkn.com/">log.ryanatkn.com</a>',
+			links: '<a href="https://github.com/ryanatkn/log" class="chip">GitHub</a>',
 		},
 		{
 			name: 'github',
@@ -119,9 +120,11 @@
 						<p class="title">{@html project.title}</p>
 						<div class="content">
 							<div>
-								<p>
-									{@html project.description}
-								</p>
+								{#if project.description}
+									<p>
+										{@html project.description}
+									</p>
+								{/if}
 								{#if project.links}
 									<p>{@html project.links}</p>
 								{/if}
