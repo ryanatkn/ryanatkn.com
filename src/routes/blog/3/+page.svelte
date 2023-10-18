@@ -3,13 +3,13 @@
 
 	export const post: FeedItem = {
 		id: 'https://www.ryanatkn.com/blog/3',
-		// TODO BLOCK maybe change to `Modeling virtual social spaces: the roles of Steward, Operator, and Builder` 
+		// TODO BLOCK maybe change to `Modeling virtual social spaces: the roles of Steward, Operator, and Builder`
 		title: 'Modeling virtual social spaces: Stewards, Operators, and Builders',
 		url: 'https://www.ryanatkn.com/blog/modeling-virtual-social-spaces-stewards-operators-and-builders',
 		date_published: '2023-07-24T01:50:35.017Z',
 		date_modified: '2023-07-24T01:50:35.017Z',
 		summary:
-			"I describe how I like the builder role when working on social spaces, but less so the steward and operator roles and the responsibilities they carry. Also, how I implemented allowlisted Mastodon comments on my static blog with TypeScript, Svelte, and SvelteKit, but an API limitation compromised my desire to steward the comments.",
+			'I describe how I like the builder role when working on social spaces, but less so the steward and operator roles and the responsibilities they carry. Also, how I implemented allowlisted Mastodon comments on my static blog with TypeScript, Svelte, and SvelteKit, but an API limitation compromised my desire to steward the comments.',
 		tags: [
 			'web',
 			'personal',
