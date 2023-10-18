@@ -248,6 +248,43 @@
 				builders?
 			</p>
 			<p>I don't want to play steward to random actors on the Internet.</p>
+			<p>
+				I use the word "steward" primarily thinking about <a href="https://newpublic.org/"
+					>New_ Public</a
+				>'s use of the word.
+			</p>
+			<p>
+				If I have a responsibility over a space, I am its steward. I am responsible for its health.
+				We steward our homes. Fewer of us steward other people's homes, and fewer still steward
+				public spaces.
+			</p>
+			<p>
+				Our social software mediates shared spaces where we interact with each other. Stewardship
+				over those spaces is an everpresent concern.
+			</p>
+			<p>
+				The bigger and more open a space, the more challenging the role of steward becomes. Mastodon
+				is a global federated social network with low barriers to entry. This means anyone can show
+				up at any time and reply to my public posts. That's wonderful! And also, I don't want those
+				replies to be distributed in spaces I steward.
+			</p>
+			<p>
+				I don't steward the replies of my posts on Mastodon. Nobody should attempt to do that on a
+				public microblogging platform. I'll block people, but I'm not going to spend any more effort
+				than that to address bad actors.
+			</p>
+			<p>
+				I do consider this blog to be a place I steward. So given my proclivities that you've likely
+				inferred by now, I want to minimize the stewarding work. I'm willing to favourite posts that
+				I want to appear here, with all of the social complexities that brings, but the fact that
+				edited posts require vigilance changes the equation.
+			</p>
+			<p>
+				When I ran into the API limitation, my motivation to continue the implementation ran dry. I
+				plan to pick it back up and publish reusable code, eventually, but for now, be aware <a
+					href="https://github.com/ryanatkn/ryanatkn.com/pull/12">the code for this work</a
+				> is a big unfinished mess.
+			</p>
 			<hr />
 			<h1>TODO OLD STUFF</h1>
 			<h1>TODO OLD STUFF</h1>
