@@ -49,7 +49,6 @@
 	let replies_toot_id = embedded_toot_id;
 	let replies_toot_url = to_api_status_url(replies_toot_host, replies_toot_id);
 
-	// TODO BLOCK incorporate https://newpublic.substack.com/p/the-secret-power-of-digital-dungeon
 	// probably mention the rooms/stool, bottlenecking
 
 	// TODO BLOCK make the `reset` button work for the toot url, including whether it's enabled
@@ -77,7 +76,7 @@
 
 <div class="width_md">
 	<section style:padding-top="var(--spacing_2)">
-		<div class="prose">
+		<div class="prose spaced">
 			<p>
 				This post began as a demo using <a href="https://joinmastodon.org/">Mastodon</a>
 				to add comments to my blog posts, but it morphed into a followup to my second blog post,
@@ -205,7 +204,7 @@
 				<a href="https://github.com/ryanatkn/ryanatkn.com/pull/12">the work on GitHub</a>.
 			</p>
 		</div>
-		<details>
+		<details class="spaced">
 			<summary>click to see an example of an embedded toot with technical details</summary>
 			<aside>
 				<div class="prose">
@@ -336,11 +335,12 @@
 				builders?
 			</p>
 			<p>I don't want to play steward to random actors on the Internet.</p>
-			<p>
-				I use the word "steward" primarily thinking about <a href="https://newpublic.org/"
+			<aside>
+				I use the word "steward" mainly thinking about <a href="https://newpublic.org/"
 					>New_ Public</a
-				>'s use of the word.
-			</p>
+				>'s use of the word like in
+				<a href="https://newpublic.substack.com/p/introducing-our-community-stewards">this post</a>.
+			</aside>
 			<p>
 				If I have a responsibility over a space, I am its steward. I am responsible for its health.
 				We steward our homes. Fewer of us steward other people's homes, and fewer still steward
@@ -370,10 +370,10 @@
 			<p>Let's step back and consider some of the roles in a social space:</p>
 			<ul>
 				<li>
-					<strong>Stewards</strong> take responsibility for the intended qualities of a space. They interact
-					with people and set the rules and norms. They're the mods, the admins, the organizers, the
-					beloved and reviled gods above the forum. They deal with the complexities of managing the space
-					with its people and technology.
+					<strong>Stewards</strong> take responsibility for the intended qualities of the space. They
+					interact with people and set the rules and norms. They're the mods, the admins, the organizers,
+					the beloved and reviled gods above the forum. They deal with the complexities of managing the
+					space with its people and technology.
 				</li>
 				<li>
 					<strong>Operators</strong> make the space possible by running software on machines somewhere
