@@ -1,6 +1,5 @@
 import {strip_end} from '@grogarden/util/string.js';
 import type {Flavored} from '@grogarden/util/types.js';
-import {dev} from '$app/environment';
 
 import mastodon_mock_data from '$lib/mastodon_mock_data.json';
 
@@ -34,7 +33,7 @@ export type MastodonResponseData = ResponseData<
 
 export const fetch_data = async (
 	url: string,
-	cache: Map<string, MastodonResponseData> | null = dev ? mastodon_cache : null,
+	cache: Map<string, MastodonResponseData> | null = import.meta.env.DEV ? mastodon_cache : null,
 ): Promise<any | null> => {
 	const r = cache?.get(url);
 	if (r) {

@@ -1,7 +1,6 @@
 <script lang="ts">
-	import {page} from '$app/stores';
 	import {goto} from '$app/navigation';
-	import {browser, dev} from '$app/environment';
+	import {browser} from '$app/environment';
 	import Alert from '@fuz.dev/fuz_library/Alert.svelte';
 
 	import BlogPost from '$lib/BlogPost.svelte';
@@ -9,6 +8,7 @@
 	import type {Feed} from '$lib/feed.js';
 
 	export let feed: Feed;
+	export let slug: string;
 
 	// TODO @multiple rethink this, we don't want to load all components at each route
 	const components = get_blog_components();
@@ -19,7 +19,6 @@
 	// Importing lazily has the terrible spinner and I need to learn SvelteKit better
 	// to avoid scrolling issues that happen when you have spiners.
 
-	$: ({slug} = $page.params);
 	$: post_id = /^\d+$/u.test(slug)
 		? Number(slug)
 		: feed.items.findIndex((f) => f.url.endsWith(slug)) + 1;
@@ -28,7 +27,7 @@
 	$: component = index === null ? null : components[index];
 
 	// redirect from index to slug
-	$: if (browser && !dev && typeof post_id === 'number' && post) {
+	$: if (browser && !import.meta.env.DEV && typeof post_id === 'number' && post) {
 		void goto(new URL(post.url).pathname, {replaceState: true});
 	}
 </script>
