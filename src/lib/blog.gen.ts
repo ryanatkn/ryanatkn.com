@@ -31,11 +31,11 @@ export const gen: Gen = async () => {
 
 	return [
 		{
-			filename: '../../static/blog/feed.xml',
+			filename: join(dir, 'static/blog/feed.xml'),
 			content: create_atom_feed(feed),
 		},
 		{
-			filename: '../routes/blog/posts.ts',
+			filename: join(blog_dir, 'posts.ts'),
 			content: `
 				import type {FeedItem} from '$lib/feed.js';
 				${items
@@ -46,7 +46,7 @@ export const gen: Gen = async () => {
 			`,
 		},
 		{
-			filename: '../routes/blog/blog_components.ts',
+			filename: join(blog_dir, 'blog_components.ts'),
 			content: `// TODO @multiple rethink this, we don't want to load all components at each route
 				${items.map((i) => `import page${i} from '$routes/${blog_dirname}/${i}/+page.svelte'`).join(';\n')};
 
@@ -54,12 +54,12 @@ export const gen: Gen = async () => {
 			`,
 		},
 		{
-			filename: '../routes/blog/blog.json',
+			filename: join(blog_dir, 'blog.json'),
 			// TODO `entries` isn't included in `Feed` but we use it from the SvelteKit config
 			content: JSON.stringify(feed),
 		},
 		{
-			filename: '../routes/blog/blog.json.d.ts',
+			filename: join(blog_dir, 'blog.json.d.ts'),
 			content: `declare module '$routes/blog/blog.json' {
         import type {Feed} from '$lib/feed.js';
         const data: Feed;
@@ -67,12 +67,12 @@ export const gen: Gen = async () => {
       }`,
 		},
 		{
-			filename: '../routes/blog/blog_entries.json',
+			filename: join(blog_dir, 'blog_entries.json'),
 			// TODO `entries` isn't included in `Feed` but we use it from the SvelteKit config
 			content: JSON.stringify({entries: to_prerender_entries(feed)}),
 		},
 		{
-			filename: '../routes/blog/blog_entries.json.d.ts',
+			filename: join(blog_dir, 'blog_entries.json.d.ts'),
 			content: `declare module '$routes/blog/blog_entries.json' {
 				const data: {entries: string[]};
 				export default data;
