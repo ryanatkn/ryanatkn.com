@@ -37,7 +37,7 @@ export const fetch_data = async (
 ): Promise<any | null> => {
 	const r = cache?.get(url);
 	if (r) {
-		console.log('fetch_data cached', r);
+		// console.log('fetch_data cached', r);
 		return new Promise((resolve) => {
 			setTimeout(() => resolve(r.data), CACHE_NETWORK_DELAY);
 		});
@@ -48,8 +48,8 @@ export const fetch_data = async (
 		const res = await fetch(url, {headers});
 		if (!res.ok) return null;
 		// console.log(`res`, res);
-		const h = Array.from(res.headers.entries());
-		console.log(`received headers`, url, h);
+		// const h = Array.from(res.headers.entries());
+		// console.log(`received headers`, url, h);
 		const fetched = await res.json();
 		// responses.push({url, data: fetched});
 		return fetched;
