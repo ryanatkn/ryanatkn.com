@@ -1,5 +1,5 @@
 <script lang="ts">
-	import {shuffle} from '$lib/util';
+	import {shuffle} from '@grogarden/util/random.js';
 
 	// i may regret this
 	const title = 'some of my professional influences';
