@@ -5,7 +5,7 @@ import {join} from 'node:path';
 
 import {create_atom_feed, type Feed} from '$lib/feed.js';
 
-// TODO refactor this to be reusable (see args below)
+// TODO extract to @fuz.dev/fuz_blog
 
 export const gen: Gen = async () => {
 	// TODO parameterize
@@ -50,19 +50,6 @@ export const gen: Gen = async () => {
 
 				export const blog_components = [${items.map((i) => `page${i}`).join(', ')}];
 			`,
-		},
-		{
-			filename: join(blog_dir, 'blog.json'),
-			// TODO `entries` isn't included in `Feed` but we use it from the SvelteKit config
-			content: JSON.stringify(feed),
-		},
-		{
-			filename: join(blog_dir, 'blog.json.d.ts'),
-			content: `declare module '$routes/blog/blog.json' {
-        import type {Feed} from '$lib/feed.js';
-        const data: Feed;
-        export default data;
-      }`,
 		},
 		{
 			filename: join(blog_dir, 'blog_entries.json'),
