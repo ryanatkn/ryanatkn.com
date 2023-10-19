@@ -2,7 +2,6 @@ import type {Gen} from '@grogarden/gro/gen.js';
 import {strip_start, strip_end} from '@grogarden/util/string.js';
 import {exists} from '@grogarden/gro/exists.js';
 
-import {feed} from '$routes/blog/feed';
 import {create_atom_feed, type Feed} from '$lib/feed.js';
 
 /* eslint-disable no-await-in-loop */
@@ -17,6 +16,8 @@ import {create_atom_feed, type Feed} from '$lib/feed.js';
 export const gen: Gen = async () => {
 	const TODO_get_from_maybe_args = 'blog'; // TODO args? process.argv? something else? see `blog.task.ts`'s `url` arg
 	const path = strip_start(strip_end(TODO_get_from_maybe_args, '/'), '/');
+
+	const {feed} = await import('../routes/blog/feed.js');
 
 	const items: number[] = [];
 
@@ -35,7 +36,7 @@ export const gen: Gen = async () => {
 			content: create_atom_feed(feed),
 		},
 		{
-			filename: '../routes/blog/blog.ts',
+			filename: '../routes/blog/posts.ts',
 			content: `
 				import type {FeedItem} from '$lib/feed.js';
 				${items
@@ -47,7 +48,7 @@ export const gen: Gen = async () => {
 		},
 		{
 			filename: '../routes/blog/blog_components.ts',
-			content: `// TODO this file shouldn't exist, change to SvelteKit load?
+			content: `// TODO this file shouldn't exist, change to SvelteKit load? problem is we're loading all posts at each route
 				${items.map((i) => `import page${i} from '$routes/${path}/${i}/+page.svelte'`).join(';\n')};
 
 				export const components = [${items.map((i) => `page${i}`).join(', ')}];

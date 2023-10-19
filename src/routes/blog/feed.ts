@@ -1,13 +1,13 @@
 import type {Feed} from '$lib/feed.js';
-import {posts} from '$routes/blog/blog.js';
+import {posts} from '$routes/blog/posts.js';
 
-// TODO should this module be `blog` instead of `feed`?
+// TODO should this module be `blog` instead of `feed`? `items` instead of `posts`?
 
 export const feed: Feed = {
 	title: 'Ryan Atkinson',
 	id: 'https://www.ryanatkn.com/',
 	home_page_url: 'https://www.ryanatkn.com/',
-	description: 'blog of a web developer making open source community software',
+	description: 'blog of a web developer building free and open source community software',
 	icon: 'https://www.ryanatkn.com/favicon.png',
 	favicon: 'https://www.ryanatkn.com/favicon.png',
 	author: {
