@@ -48,10 +48,10 @@ export const gen: Gen = async () => {
 		},
 		{
 			filename: '../routes/blog/blog_components.ts',
-			content: `// TODO this file shouldn't exist, change to SvelteKit load? problem is we're loading all posts at each route
+			content: `// TODO @multiple rethink this, we don't want to load all components at each route
 				${items.map((i) => `import page${i} from '$routes/${path}/${i}/+page.svelte'`).join(';\n')};
 
-				export const components = [${items.map((i) => `page${i}`).join(', ')}];
+				export const blog_components = [${items.map((i) => `page${i}`).join(', ')}];
 			`,
 		},
 		{

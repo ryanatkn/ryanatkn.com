@@ -85,6 +85,10 @@
       "svelte": "./dist/Blog.svelte",
       "types": "./dist/Blog.svelte.d.ts"
     },
+    "./blog.js": {
+      "default": "./dist/blog.js",
+      "types": "./dist/blog.d.ts"
+    },
     "./BlogPost.svelte": {
       "svelte": "./dist/BlogPost.svelte",
       "types": "./dist/BlogPost.svelte.d.ts"

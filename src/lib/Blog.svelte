@@ -5,11 +5,13 @@
 	import Alert from '@fuz.dev/fuz_library/Alert.svelte';
 
 	import BlogPost from '$lib/BlogPost.svelte';
-	// TODO BLOCK get from context
-	import {components} from '$routes/blog/blog_components.js';
+	import {get_blog_components} from '$lib/blog.js';
 	import type {Feed} from '$lib/feed.js';
 
 	export let feed: Feed;
+
+	// TODO @multiple rethink this, we don't want to load all components at each route
+	const components = get_blog_components();
 
 	// TODO this way of doing things gets the desired UX
 	// with prerendering and eager loading on nav, so no spinners,

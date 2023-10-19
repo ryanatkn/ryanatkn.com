@@ -2,6 +2,11 @@
 	import Breadcrumb from '@fuz.dev/fuz_library/Breadcrumb.svelte';
 
 	import Favicon from '$lib/Favicon.svelte';
+	import {set_blog_components} from '$lib/blog';
+	import {blog_components} from '$routes/blog/blog_components.js';
+
+	// TODO @multiple rethink this, we don't want to load all components at each route
+	set_blog_components(blog_components);
 </script>
 
 <div class="breadcrumbs">
