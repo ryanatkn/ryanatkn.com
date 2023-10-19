@@ -109,7 +109,7 @@
 				the simplest possible flow for me as the author.
 			</p>
 			<details>
-				<summary>technical details</summary>
+				<summary>click for technical details</summary>
 				<aside>
 					<p>
 						The site's files are being hosted for free by
@@ -219,6 +219,75 @@
 				Scroll down to the bottom of the page to see the results. Here's
 				<a href="https://github.com/ryanatkn/ryanatkn.com/pull/12">the work on GitHub</a>.
 			</p>
+		</div>
+		<details>
+			<summary>click to see an example of an embedded toot with technical details</summary>
+			<aside>
+				<div class="prose">
+					<p>
+						When I ran into the API limitation, my motivation to continue the implementation ran
+						dry. I plan to pick it back up and publish reusable code, eventually, but for now, be
+						aware <a href="https://github.com/ryanatkn/ryanatkn.com/pull/12"
+							>the code for this work</a
+						> is a big unfinished mess.
+					</p>
+					<p>
+						With some JS, via <a href="https://svelte.dev/">Svelte</a> in this case, we can embed a
+						toot, like
+						<a href="https://mastodon.ryanatkn.com/@ryanatkn/110843291155970959"
+							>the one I made for this blog post</a
+						>:
+					</p>
+				</div>
+				<section class="embedded_status">
+					<Toot
+						storage_key="embedded"
+						bind:url={embedded_toot_url}
+						bind:host={embedded_toot_host}
+						bind:id={embedded_toot_id}
+						bind:autoload={autoload_example}
+						bind:loading
+						bind:load_time
+					/>
+				</section>
+				<div class="prose">
+					<p>
+						When you click the "load toot" button, your browser sends a request to a <a
+							href="https://joinmastodon.org/">Mastodon</a
+						>
+						instance at
+						<a href="https://hci.social/">mastodon.ryanatkn.com</a>
+						that hosts
+						<a href="https://mastodon.ryanatkn.com/@ryanatkn">my account</a>. Mastodon is an
+						<a href="https://wikipedia.org/wiki/ActivityPub">ActivityPub</a>-compatible app in the
+						<a href="https://wikipedia.org/wiki/Fediverse">Fediverse</a>.
+					</p>
+					<p>
+						Your browser requests information about a <a
+							href="https://mastodon.ryanatkn.com/@ryanatkn">a post I made</a
+						>
+						at mastodon.ryanatkn.com that references this blog post at ryanatkn.com. If the request is
+						successful, some JavaScript runs on your machine to display the "comments", replies to my
+						post that I've "favourited". My host mastodon.ryanatkn.com has its unauthenticated API enabled
+						(in other words, "secure mode" has not been enabled, meaning
+						<a href="https://docs.joinmastodon.org/admin/config/#authorized_fetch"
+							><code>AUTHORIZED_FETCH</code></a
+						>
+						is the default <code>false</code>), so we can request data without any logins or other
+						complexity.
+					</p>
+					<p>
+						If you like <a href="https://wikipedia.org/wiki/ActivityPub">ActivityPub</a> you may be
+						interested in
+						<a href="https://ryanatkn.github.io/corpus-activity-streams">these alternative docs</a>
+						that I maintain for the protocol's
+						<a href="https://wikipedia.org/wiki/ActivityStreams">ActivityStreams</a>
+						vocabulary.
+					</p>
+				</div>
+			</aside>
+		</details>
+		<div class="prose">
 			<p>
 				But there's a huge caveat - I failed to implement proactive moderation to the degree I
 				wanted. My implementation uses Mastodon likes (favourites) for moderation: if I like a post,
@@ -246,7 +315,7 @@
 				visitors without my approval.
 			</p>
 			<details>
-				<summary>technical details</summary>
+				<summary>click for technical details</summary>
 				<aside>
 					<p>
 						An <a href="https://docs.joinmastodon.org/methods/favourites/"
@@ -338,74 +407,6 @@
 				aspects of being a steward and operator.
 			</p>
 			<p>Thanks for visiting my space, I hope your time here was interesting and pleasant.</p>
-		</div>
-		<hr />
-		<div>
-			<p>
-				When I ran into the API limitation, my motivation to continue the implementation ran dry. I
-				plan to pick it back up and publish reusable code, eventually, but for now, be aware <a
-					href="https://github.com/ryanatkn/ryanatkn.com/pull/12">the code for this work</a
-				> is a big unfinished mess.
-			</p>
-			<hr />
-			<p>
-				With some JS, via <a href="https://svelte.dev/">Svelte</a> in this case, we can embed a
-				toot, like
-				<a href="https://mastodon.ryanatkn.com/@ryanatkn/110843291155970959"
-					>the one I made for this blog post</a
-				>:
-			</p>
-		</div>
-		<section class="embedded_status">
-			<Toot
-				storage_key="embedded"
-				bind:url={embedded_toot_url}
-				bind:host={embedded_toot_host}
-				bind:id={embedded_toot_id}
-				bind:autoload={autoload_example}
-				bind:loading
-				bind:load_time
-			/>
-		</section>
-		<div class="prose">
-			<details>
-				<summary>technical details</summary>
-				<aside>
-					<p>
-						When you click the "load toot" button, your browser sends a request to a <a
-							href="https://joinmastodon.org/">Mastodon</a
-						>
-						instance at
-						<a href="https://hci.social/">mastodon.ryanatkn.com</a>
-						that hosts
-						<a href="https://mastodon.ryanatkn.com/@ryanatkn">my account</a>. Mastodon is an
-						<a href="https://wikipedia.org/wiki/ActivityPub">ActivityPub</a>-compatible app in the
-						<a href="https://wikipedia.org/wiki/Fediverse">Fediverse</a>.
-					</p>
-					<p>
-						Your browser requests information about a <a
-							href="https://mastodon.ryanatkn.com/@ryanatkn">a post I made</a
-						>
-						at mastodon.ryanatkn.com that references this blog post at ryanatkn.com. If the request is
-						successful, some JavaScript runs on your machine to display the "comments", replies to my
-						post that I've "favourited". My host mastodon.ryanatkn.com has its unauthenticated API enabled
-						(in other words, "secure mode" has not been enabled, meaning
-						<a href="https://docs.joinmastodon.org/admin/config/#authorized_fetch"
-							><code>AUTHORIZED_FETCH</code></a
-						>
-						is the default <code>false</code>), so we can request data without any logins or other
-						complexity.
-					</p>
-					<p>
-						If you like <a href="https://wikipedia.org/wiki/ActivityPub">ActivityPub</a> you may be
-						interested in
-						<a href="https://ryanatkn.github.io/corpus-activity-streams">these alternative docs</a>
-						that I maintain for the protocol's
-						<a href="https://wikipedia.org/wiki/ActivityStreams">ActivityStreams</a>
-						vocabulary.
-					</p>
-				</aside>
-			</details>
 		</div>
 	</section>
 	<hr />
