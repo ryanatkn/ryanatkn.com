@@ -382,7 +382,7 @@
 				I want to appear here, with all of the social complexities that brings, but the fact that
 				edited posts require vigilance changes the equation.
 			</p>
-			<p>Let's step back and consider a model of the roles in a social space:</p>
+			<p>Let's step back and consider some of the roles in a social space:</p>
 			<ul>
 				<li>
 					<strong>Stewards</strong> interact with other people and take responsibility for the intended
@@ -392,21 +392,58 @@
 				<li>
 					<strong>Operators</strong> make the space possible by running software on machines somewhere
 					in the universe. They're the devops, the infrastructure providers, the webmasters, the people
-					who keep the lights on. They deal with
+					who keep the lights on. They deal with the complexities of running software on servers on atom-based
+					servers.
 				</li>
 				<li>
-					<strong>Builder</strong> is the role
+					<strong>Builders</strong> make the software that operators run. They're the developers, technical
+					writers, question answerers, and other community contributors that produce software. They deal
+					with the complexities of designing, implementing, documenting, and supporting software.
 				</li>
 			</ul>
 			<p>
-				An implied role in this model is the "user", but I don't like that word to describe people
-				in social spaces.
+				An implied role in this model is the "user" or "player" or some better word that refers to
+				the people in a space.
 			</p>
 			<p>
-				In social spaces, I gravitate towards the role of builder, and I actively dislike most
-				aspects of being a steward and operator.
+				In social spaces, I gravitate towards the role of builder. I like thinking about and making
+				software. This isn't a mild preference - I actively dislike most aspects of being a steward
+				and operator. Building dominates my skills and interests.
 			</p>
-			<p>Thanks for visiting my space, I hope your time here was interesting and pleasant.</p>
+			<p>
+				But software is nothing without operators that run it, and spaces rot without stewards to
+				protect them. Builders provide just one part of the puzzle, and for me it's the easiest of
+				the roles.
+			</p>
+			<p>
+				When I started <a href="https://www.felt.dev/">Felt</a> with Hamilton and wrote the initial
+				version of
+				<a href="https://www.ryanatkn.com/blog/making-free-and-open-source-web-community-software"
+					>my first blog post</a
+				>, I was sure I had to become an operator one day, because that's where the money is, so
+				it's the obvious path to sustainably produce free community software. And also, somebody
+				somewhere has to run the software, and I can do computer.
+			</p>
+			<p>
+				But after a lot of brow furrowing and hard emotion (mostly fear - I mean, international
+				legal compliance? holding the reins of infrastructure that people depend on? having custody
+				over those keys? no ty, just code please), I've come to terms with myself. I'm a builder,
+				and that's enough. It's a big diverse world full of people who excel at the operator and
+				steward roles, and I'll gladly pay them money or otherwise transact for their services.
+			</p>
+			<p>
+				Of course, things aren't quite so simple. I'll help steward the public dev community for
+				Felt, but we're keeping it on topic to reduce the stewardship burden. Hamilton will
+				graciously be that community's operator, so I don't even need to hold keys. He'll also share
+				the steward role with me and we'll look for people with that affinity to help us. And I'll
+				continue working on my open source projects, which will become more stewardy over time. I'll
+				also operate some unimportant instances of Felt where the stakes are trivial. But builder
+				first, builder for my career, that's my lane.
+			</p>
+			<p>
+				Thanks for visiting my space. I invite you to comment on Mastodon if you're okay with it
+				appearing here but don't expect it to.
+			</p>
 		</div>
 	</section>
 	<hr />
