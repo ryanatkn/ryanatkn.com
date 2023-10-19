@@ -32,8 +32,8 @@
 
 	import Toot from '$lib/Toot.svelte';
 	import HashLink from '$lib/HashLink.svelte';
-	import BlogPostIndex from '$lib/BlogPostIndex.svelte';
-	import {prod_content_security_policy} from '$routes/security';
+	// import BlogPostIndex from '$lib/BlogPostIndex.svelte';
+	// import {prod_content_security_policy} from '$routes/security';
 	import {to_api_status_url} from '$lib/mastodon';
 
 	// TODO BLOCK swap out
@@ -368,12 +368,21 @@
 						is the default <code>false</code>), so we can request data without any logins or other
 						complexity.
 					</p>
+					<p>
+						If you like <a href="https://wikipedia.org/wiki/ActivityPub">ActivityPub</a> you may be
+						interested in
+						<a href="https://ryanatkn.github.io/corpus-activity-streams">these alternative docs</a>
+						that I maintain for the protocol's
+						<a href="https://wikipedia.org/wiki/ActivityStreams">ActivityStreams</a>
+						vocabulary.
+					</p>
 				</aside>
 			</details>
 		</div>
 	</section>
 	<hr />
-	<section class="prose">
+	<!-- TODO maybe expose -->
+	<!-- <section class="prose">
 		<h2>
 			<HashLink slug="limitations">Limitations</HashLink>
 		</h2>
@@ -411,19 +420,7 @@
 		<blockquote style:font-family="var(--font_family_mono)">
 			{prod_content_security_policy}
 		</blockquote>
-	</section>
-	<hr />
-	<section class="prose">
-		<p>
-			If you like <a href="https://wikipedia.org/wiki/ActivityPub">ActivityPub</a> you may be
-			interested in
-			<a href="https://ryanatkn.github.io/corpus-activity-streams">these alternative docs</a>
-			that I maintain for the
-			<a href="https://wikipedia.org/wiki/ActivityStreams">ActivityStreams</a>
-			vocabulary of Mastodon's protocol.
-		</p>
-	</section>
-	<hr />
+	</section> -->
 	<section>
 		<div class="prose spaced">
 			<h2><HashLink slug="comments">Comments</HashLink></h2>
