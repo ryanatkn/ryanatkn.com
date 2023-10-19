@@ -166,13 +166,13 @@
 					<a href="https://cassidyjames.com/blog/fediverse-blog-comments-mastodon/">
 						"Toot toot! Mastodon-powered Blog Comments"
 					</a>
-					– <a href="https://cassidyjames.com/">Cassidy James</a>
+					by <a href="https://cassidyjames.com/">Cassidy James</a>
 				</li>
 				<li>
 					<a href="https://jan.wildeboer.net/2023/02/Jekyll-Mastodon-Comments/">
 						"Client-side comments with Mastodon on a static Jekyll website"
 					</a>
-					– <a href="https://jan.wildeboer.net/">Jan Wildeboer</a>
+					by <a href="https://jan.wildeboer.net/">Jan Wildeboer</a>
 				</li>
 			</ul>
 			<p>
@@ -427,8 +427,8 @@
 				first, builder for my career, that's my lane.
 			</p>
 			<p>
-				Thanks for visiting my space. I invite you to comment on Mastodon if you're okay with it
-				appearing here but don't expect it to.
+				Thanks for visiting my space and considering these ideas. I invite you to comment on
+				Mastodon if you're okay with it appearing here but don't expect it to :)
 			</p>
 		</div>
 	</section>
