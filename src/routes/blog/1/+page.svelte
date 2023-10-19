@@ -141,22 +141,29 @@
 	<p>We have a handful of software repos:</p>
 	<ul>
 		<li>
-			<a href="https://github.com/feltjs/felt">@feltjs/felt</a> – a programmable platform for hobbyists
-			and human-scale communities, the Node.js server that's selfhostable and available as a library
-			on npm
-		</li>
-		<li>
 			<a href="https://www.felt.dev/">felt.dev</a> is the website with docs (<a
-				href="https://github.com/feltjs/website">source code</a
+				href="https://github.com/feltjs/website">source</a
 			>)
 		</li>
 		<li>
-			<a href="https://github.com/feltjs/felt-ui">ui.felt.dev</a> – UI sketches in Svelte for Felt
+			<a href="https://github.com/feltjs/felt">@feltjs/felt</a> – a programmable platform for hobbyists
+			and human-scale communities 💚 the Node.js server that's selfhostable and available as a library
+			on npm
 		</li>
 		<li>
-			<a href="https://github.com/fuz.dev/template">@fuz.dev/template</a> – a static web app template
-			with SvelteKit, TypeScript, Felt, and Gro for quickly creating new projects - in the future it
-			will support quickly creating a custom server project, too.
+			<a href="https://ui.felt.dev/">ui.felt.dev</a> – UI sketches in Svelte for Felt (<a
+				href="https://github.com/feltjs/felt-ui">source</a
+			>)
+		</li>
+		<li>
+			<a href="https://mural.felt.dev/">mural.felt.dev</a> – a proof-of-concept Svelte component for
+			collaborative drawing using Felt (<a href="https://github.com/feltjs/felt-mural">source</a>)
+		</li>
+		<li>
+			<a href="https://habitat.felt.dev/">habitat.felt.dev</a> – a proof-of-concept Svelte component
+			for collaborative simulated habitats using Felt (<a
+				href="https://github.com/feltjs/felt-habitat">source</a
+			>)
 		</li>
 	</ul>
 	<p>
