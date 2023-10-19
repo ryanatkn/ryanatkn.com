@@ -1,20 +1,18 @@
 import type {Gen} from '@grogarden/gro/gen.js';
 import {exists} from '@grogarden/gro/exists.js';
-import { cwd } from 'node:process';
-import { join } from 'node:path';
+import {cwd} from 'node:process';
+import {join} from 'node:path';
 
 import {create_atom_feed, type Feed} from '$lib/feed.js';
-
 
 // TODO refactor this to be reusable (see args below)
 
 export const gen: Gen = async () => {
-
 	// TODO parameterize
 	const dir = cwd();
 	const blog_dirname = 'blog';
-	const blog_dir = join(dir, 'src/routes', blog_dirname)
-	
+	const blog_dir = join(dir, 'src/routes', blog_dirname); // TODO routes should be read from SvelteKit config
+
 	const {feed} = await import(join(blog_dir, 'feed.js'));
 
 	const items: number[] = [];
