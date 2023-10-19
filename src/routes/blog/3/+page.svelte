@@ -54,15 +54,19 @@
 
 	// TODO BLOCK make the `reset` button work for the toot url, including whether it's enabled
 
-	const sections = [
-		{slug: 'introduction', name: 'Introduction'},
-		{slug: 'limitations', name: 'Limitations'},
-		{slug: 'conclusion', name: 'Conclusion'},
-		{slug: 'references', name: 'References'},
-		{slug: 'comments', name: 'Comments'},
-	];
+	// TODO probably use in the future
+	// const sections = [
+	// 	{slug: 'introduction', name: 'Introduction'},
+	// 	{slug: 'limitations', name: 'Limitations'},
+	// 	{slug: 'conclusion', name: 'Conclusion'},
+	// 	{slug: 'references', name: 'References'},
+	// 	{slug: 'comments', name: 'Comments'},
+	// ];
+	// <BlogPostIndex {sections} />
 
-	let autoload: boolean;
+	let autoload_comments = true;
+	let autoload_example = false;
+
 	let loading: boolean | undefined;
 	let load_time: number | undefined;
 
@@ -87,18 +91,10 @@
 </script>
 
 <div class="width_md">
-	<section class="prose">
-		<br />
-		<BlogPostIndex {sections} />
-	</section>
-	<hr />
-	<section>
+	<section style:padding-top="var(--spacing_2)">
 		<div class="prose">
-			<h2>
-				<HashLink slug="introduction">Introduction</HashLink>
-			</h2>
 			<p>
-				This post started as a demo using <a href="https://joinmastodon.org/">Mastodon</a>
+				This post began as a demo using <a href="https://joinmastodon.org/">Mastodon</a>
 				to add comments to my blog posts, but it morphed into a followup to my second blog post,
 				<a
 					href="https://www.ryanatkn.com/blog/modeling-virtual-social-spaces-in-this-house-we-post-cat-pics-on-saturday"
@@ -112,6 +108,44 @@
 				simple and cheap. GitHub offers the service for free in part because of its low cost. It's also
 				the simplest possible flow for me as the author.
 			</p>
+			<details>
+				<summary>technical details</summary>
+				<aside>
+					<p>
+						The site's files are being hosted for free by
+						<a href="https://pages.github.com/">GitHub Pages</a>
+						here at
+						<code>{$page.url.host}</code>. They're viewable on
+						<a href="https://github.com/ryanatkn/ryanatkn.com/tree/deploy"
+							>the <code>deploy</code> branch</a
+						>
+						of
+						<a href="https://github.com/ryanatkn/ryanatkn.com">the git repo</a> and downloadable as
+						<a
+							href="https://github.com/ryanatkn/ryanatkn.com/archive/refs/heads/deploy.zip"
+							download>a zip file</a
+						>. The cost of serving these static files is very low, so "free" is a common cloud
+						offering for static sites in 2023. Thank you GitHub for being our freeloaded host of the
+						day.
+					</p>
+					<p>
+						The website's final output files are HTML, JS, and CSS (and mostly images in terms of
+						bytes), but <a href="https://github.com/ryanatkn/ryanatkn.com">the source code</a>
+						that generates these files is written in
+						<a href="https://typescriptlang.org/">TypeScript</a>
+						and <a href="https://svelte.dev/">Svelte</a> using
+						<a href="https://kit.svelte.dev/">SvelteKit</a> and
+						<a href="https://vitejs.dev/">Vite</a>. I recommend them with enthusiasm.
+					</p>
+					<p>
+						Although completely static, this site has the dynamic behavior of fetching data at
+						runtime in your browser from <a href="https://hci.social/">my Mastodon host</a>, thanks
+						to the power of scripting and
+						<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS">CORS</a>. Static AND
+						dynamic??
+					</p>
+				</aside>
+			</details>
 			<p>
 				There are downsides to static websites, of course. What if I wanted to let readers submit
 				comments? A server somewhere would have to receive, store, and then serve your comment to
@@ -286,56 +320,8 @@
 				> is a big unfinished mess.
 			</p>
 			<hr />
-			<h1>TODO OLD STUFF</h1>
-			<h1>TODO OLD STUFF</h1>
-			<h1>TODO OLD STUFF</h1>
 			<p>
-				This website is a bundle of static files served from a free host, and it also has
-				reader-submitted comments through Mastodon. I made a Mastodon post and its comments are
-				dynamically loaded by your browser. They're displayed if I've clicked the favourite button ★
-				in my Mastodon client, otherwise your browser ignores the post. Assembled, we get
-				allowlisted comments on a static blog with Mastodon.
-			</p>
-			<details>
-				<summary>technical details</summary>
-				<aside>
-					<p>
-						The site's files are being hosted for free by
-						<a href="https://pages.github.com/">GitHub Pages</a>
-						here at
-						<code>{$page.url.host}</code>. They're viewable on
-						<a href="https://github.com/ryanatkn/ryanatkn.com/tree/deploy"
-							>the <code>deploy</code> branch</a
-						>
-						of
-						<a href="https://github.com/ryanatkn/ryanatkn.com">the git repo</a> and downloadable as
-						<a
-							href="https://github.com/ryanatkn/ryanatkn.com/archive/refs/heads/deploy.zip"
-							download>a zip file</a
-						>. The cost of serving these static files is very low, so "free" is a common cloud
-						offering for static sites in 2023. Thank you GitHub for being our freeloaded host of the
-						day.
-					</p>
-					<p>
-						The website's final output files are HTML, JS, and CSS (and mostly images in terms of
-						bytes), but <a href="https://github.com/ryanatkn/ryanatkn.com">the source code</a>
-						that generates these files is written in
-						<a href="https://typescriptlang.org/">TypeScript</a>
-						and <a href="https://svelte.dev/">Svelte</a> using
-						<a href="https://kit.svelte.dev/">SvelteKit</a> and
-						<a href="https://vitejs.dev/">Vite</a>. I recommend them with enthusiasm.
-					</p>
-					<p>
-						Although completely static, this site has the dynamic behavior of fetching data at
-						runtime in your browser from <a href="https://hci.social/">my Mastodon host</a>, thanks
-						to the power of scripting and
-						<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS">CORS</a>. Static AND
-						dynamic??
-					</p>
-				</aside>
-			</details>
-			<p>
-				With some JS (via <a href="https://svelte.dev/">Svelte</a> in this case) we can embed a
+				With some JS, via <a href="https://svelte.dev/">Svelte</a> in this case, we can embed a
 				toot, like
 				<a href="https://mastodon.ryanatkn.com/@ryanatkn/110843291155970959"
 					>the one I made for this blog post</a
@@ -348,7 +334,7 @@
 				bind:url={embedded_toot_url}
 				bind:host={embedded_toot_host}
 				bind:id={embedded_toot_id}
-				bind:autoload
+				bind:autoload={autoload_example}
 				bind:loading
 				bind:load_time
 			/>
@@ -384,13 +370,6 @@
 					</p>
 				</aside>
 			</details>
-			<p>
-				Not every reply to my post appears in the comments section below. It displays only those
-				that I've explicitly favourited, aka liked or starred. This way, I have an allowlist managed
-				by my Mastodon account, the same place I microblogged about this blog post, a place out
-				there on the internet that magically operates free infrastructure for us, much like the free
-				black box that is GitHub pages. (free, but also, financially supporting admins is good luck)
-			</p>
 		</div>
 	</section>
 	<hr />
@@ -455,7 +434,7 @@
 			bind:url={replies_toot_url}
 			bind:host={replies_toot_host}
 			bind:id={replies_toot_id}
-			bind:autoload
+			bind:autoload={autoload_comments}
 		/>
 	</section>
 </div>
