@@ -1,6 +1,7 @@
 import type {Gen} from '@grogarden/gro/gen.js';
-import {strip_start, strip_end} from '@grogarden/util/string.js';
 import {exists} from '@grogarden/gro/exists.js';
+import { cwd } from 'node:process';
+import { join } from 'node:path';
 
 import {create_atom_feed, type Feed} from '$lib/feed.js';
 
@@ -14,16 +15,19 @@ import {create_atom_feed, type Feed} from '$lib/feed.js';
 // TODO refactor this to be reusable (see args below)
 
 export const gen: Gen = async () => {
-	const TODO_get_from_maybe_args = 'blog'; // TODO args? process.argv? something else? see `blog.task.ts`'s `url` arg
-	const path = strip_start(strip_end(TODO_get_from_maybe_args, '/'), '/');
 
-	const {feed} = await import('../routes/blog/feed.js');
+	// TODO parameterize
+	const dir = cwd();
+	const blog_dirname = 'blog';
+	const blog_dir = join(dir, 'src/routes', blog_dirname)
+	
+	const {feed} = await import(join(blog_dir, 'feed.js'));
 
 	const items: number[] = [];
 
 	let i = 1;
 	while (true) {
-		if (!(await exists(`src/routes/${path}/${i}/+page.svelte`))) {
+		if (!(await exists(join(blog_dir, `${i}/+page.svelte`)))) {
 			break;
 		}
 		items.push(i);
@@ -40,7 +44,7 @@ export const gen: Gen = async () => {
 			content: `
 				import type {FeedItem} from '$lib/feed.js';
 				${items
-					.map((i) => `import {post as post${i}} from '$routes/${path}/${i}/+page.svelte'`)
+					.map((i) => `import {post as post${i}} from '$routes/${blog_dirname}/${i}/+page.svelte'`)
 					.join(';\n')};
 
 				export const posts: FeedItem[] = [${items.map((i) => `post${i}`).join(', ')}];
@@ -49,7 +53,7 @@ export const gen: Gen = async () => {
 		{
 			filename: '../routes/blog/blog_components.ts',
 			content: `// TODO @multiple rethink this, we don't want to load all components at each route
-				${items.map((i) => `import page${i} from '$routes/${path}/${i}/+page.svelte'`).join(';\n')};
+				${items.map((i) => `import page${i} from '$routes/${blog_dirname}/${i}/+page.svelte'`).join(';\n')};
 
 				export const blog_components = [${items.map((i) => `page${i}`).join(', ')}];
 			`,
