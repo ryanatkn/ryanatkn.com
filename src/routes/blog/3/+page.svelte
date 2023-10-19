@@ -64,10 +64,9 @@
 	// <BlogPostIndex {sections} />
 
 	let autoload_comments = true;
-	let autoload_example = false;
-
-	let loading: boolean | undefined;
-	let load_time: number | undefined;
+	let embedded_toot_autoload = false;
+	let embedded_toot_loading: boolean | undefined;
+	let embedded_toot_load_time: number | undefined;
 
 	// TODO BLOCK see `div class="reset"` below
 
@@ -226,12 +225,13 @@
 				<section class="embedded_status">
 					<Toot
 						storage_key="embedded"
+						initial_show_settings={true}
 						bind:url={embedded_toot_url}
 						bind:host={embedded_toot_host}
 						bind:id={embedded_toot_id}
-						bind:autoload={autoload_example}
-						bind:loading
-						bind:load_time
+						bind:autoload={embedded_toot_autoload}
+						bind:loading={embedded_toot_loading}
+						bind:load_time={embedded_toot_load_time}
 					/>
 				</section>
 				<div class="prose">

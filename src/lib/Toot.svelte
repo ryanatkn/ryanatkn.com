@@ -46,12 +46,14 @@
 
 	export let storage_key: string | undefined = undefined;
 
+	export let initial_show_settings = false;
+
 	// TODO refactor with storage helpers with serialize/parse as options, locallyStored?
 	let show_settings_key = storage_key && 'show_settings' + storage_key;
 	$: show_settings_key = storage_key && 'show_settings' + storage_key;
 	export let show_settings = show_settings_key
-		? load_from_storage(show_settings_key, () => false)
-		: false; // TODO store?
+		? load_from_storage(show_settings_key, () => initial_show_settings)
+		: initial_show_settings; // TODO store?
 	$: show_settings_key && set_in_storage(show_settings_key, show_settings); // TODO wastefully sets on init
 
 	const toggle_settings = () => {
