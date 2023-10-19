@@ -5,12 +5,6 @@ import { join } from 'node:path';
 
 import {create_atom_feed, type Feed} from '$lib/feed.js';
 
-/* eslint-disable no-await-in-loop */
-
-// TODO fix this, the worst part is I'm eagerly loading all components, see `./blog_components.ts` --
-// loading async is a bad UX, but I'm not sure of the best way
-// to integrate with SvelteKit's routing and a good blog publishing flow -
-// I like having the directories be integers, but maybe that's a lost cause
 
 // TODO refactor this to be reusable (see args below)
 
@@ -27,6 +21,7 @@ export const gen: Gen = async () => {
 
 	let i = 1;
 	while (true) {
+		// eslint-disable-next-line no-await-in-loop
 		if (!(await exists(join(blog_dir, `${i}/+page.svelte`)))) {
 			break;
 		}
