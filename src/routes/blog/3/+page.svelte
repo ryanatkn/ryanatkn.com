@@ -72,21 +72,6 @@
 
 	// TODO BLOCK see `div class="reset"` below
 
-	/*
-
-	- picture the flow starting from the user, to the steward who they interact with, to the operator stabilizing the ground under their feet to make the thing go, to the builder producing the thing at the origin, up the supply chain
-	- role - implicit?
-	- stewards
-	- operators
-	- builders includes not just devs, but everyone involved in producing the software -- people writing documentation, people triaging issues, people in the community answering questions
-	- I don't want to steward a public space on the internet, 
-	- stewards curate
-	- talk about plans for better library, existing support for CWs
-	- allow users to see all comments? I don't want to
-	- gave up finishing implementation for pagination, so eventually I may be unable to favourite posts to  have them appear here without more work, deflated that I couldn't implement moderation to the degree I wanted
-
-	*/
-
 	// TODO BLOCK put all post meta into context instead of hardcoding the link to post 2 (see the other posts too for their links)
 </script>
 
@@ -385,9 +370,10 @@
 			<p>Let's step back and consider some of the roles in a social space:</p>
 			<ul>
 				<li>
-					<strong>Stewards</strong> interact with other people and take responsibility for the intended
-					qualities of a space. They're the mods, the admins, the guides, the beloved and reviled gods
-					above the forum. They deal with the complexities of managing the space and its people.
+					<strong>Stewards</strong> take responsibility for the intended qualities of a space. They interact
+					with people and set the rules and norms. They're the mods, the admins, the organizers, the
+					beloved and reviled gods above the forum. They deal with the complexities of managing the space
+					with its people and technology.
 				</li>
 				<li>
 					<strong>Operators</strong> make the space possible by running software on machines somewhere
