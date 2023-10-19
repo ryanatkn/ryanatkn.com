@@ -7,7 +7,7 @@
 
 	import Header from '$routes/Header.svelte';
 	import Footer from '$routes/Footer.svelte';
-	import {content_security_poilicy} from '$routes/security';
+	import {content_security_poilicy} from '$routes/security.js';
 </script>
 
 <svelte:head>

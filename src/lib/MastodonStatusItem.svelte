@@ -2,7 +2,7 @@
 	import {format, formatDistance} from 'date-fns';
 	import {slide} from 'svelte/transition';
 
-	import type {MastodonStatus} from '$lib/mastodon';
+	import type {MastodonStatus} from '$lib/mastodon.js';
 
 	export let item: MastodonStatus;
 

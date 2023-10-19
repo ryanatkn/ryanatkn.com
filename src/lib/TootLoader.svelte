@@ -7,7 +7,7 @@
 		fetch_status,
 		type MastodonStatus,
 		fetch_favourites,
-	} from '$lib/mastodon';
+	} from '$lib/mastodon.js';
 
 	/**
 	 * The host part of the url, like `'mastodon.ryanatkn.com'`.

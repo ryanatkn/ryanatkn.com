@@ -7,8 +7,8 @@
 	import MastodonStatusTree from '$lib/MastodonStatusTree.svelte';
 	import MastodonStatusItem from '$lib/MastodonStatusItem.svelte';
 	import TootLoader from '$lib/TootLoader.svelte';
-	import {load_from_storage, set_in_storage} from '$lib/storage';
-	import {parse_status_context_url, to_api_status_url} from '$lib/mastodon';
+	import {load_from_storage, set_in_storage} from '$lib/storage.js';
+	import {parse_status_context_url, to_api_status_url} from '$lib/mastodon.js';
 
 	const dispatch = createEventDispatcher<{reset: void}>();
 

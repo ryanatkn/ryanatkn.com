@@ -1,4 +1,4 @@
-import type {EntryGenerator} from './$types';
+import type {EntryGenerator} from './$types.js';
 import blog_entries from '$routes/blog/blog_entries.json';
 
 export const entries: EntryGenerator = async () => {

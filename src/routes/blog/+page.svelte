@@ -1,9 +1,9 @@
 <script lang="ts">
 	import {base} from '$app/paths';
 
-	import {feed} from '$routes/blog/feed';
+	import {feed} from '$routes/blog/feed.js';
 	import FeedItemDate from '$lib/FeedItemDate.svelte';
-	import {toPathname} from '$lib/util';
+	import {to_pathname} from '$lib/util.js';
 
 	const items = feed.items.slice().reverse();
 </script>
@@ -16,7 +16,7 @@
 	<ol class="panel" reversed>
 		{#each items as item}
 			<li class="card">
-				<a href={toPathname(item.url, feed.home_page_url)}>{item.title}</a>
+				<a href={to_pathname(item.url, feed.home_page_url)}>{item.title}</a>
 				<div class="date"><FeedItemDate {item} /></div>
 			</li>
 		{/each}

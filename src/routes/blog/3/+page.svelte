@@ -33,8 +33,8 @@
 	import Toot from '$lib/Toot.svelte';
 	import HashLink from '$lib/HashLink.svelte';
 	// import BlogPostIndex from '$lib/BlogPostIndex.svelte';
-	// import {prod_content_security_policy} from '$routes/security';
-	import {to_api_status_url} from '$lib/mastodon';
+	// import {prod_content_security_policy} from '$routes/security.js';
+	import {to_api_status_url} from '$lib/mastodon.js';
 
 	// TODO BLOCK swap out
 	// https://mastodon.ryanatkn.com/@ryanatkn/110843291155970959

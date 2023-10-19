@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type {MastodonStatus} from '$lib/mastodon';
+	import type {MastodonStatus} from '$lib/mastodon.js';
 	import Message from '$lib/MastodonStatusItem.svelte';
 
 	export let item: MastodonStatus;
