@@ -313,6 +313,34 @@
 				I want to appear here, with all of the social complexities that brings, but the fact that
 				edited posts require vigilance changes the equation.
 			</p>
+			<p>Let's step back and consider a model of the roles in a social space:</p>
+			<ul>
+				<li>
+					<strong>Stewards</strong> interact with other people and take responsibility for the intended
+					qualities of a space. They're the mods, the admins, the guides, the beloved and reviled gods
+					above the forum. They deal with the complexities of managing the space and its people.
+				</li>
+				<li>
+					<strong>Operators</strong> make the space possible by running software on machines somewhere
+					in the universe. They're the devops, the infrastructure providers, the webmasters, the people
+					who keep the lights on. They deal with
+				</li>
+				<li>
+					<strong>Builder</strong> is the role
+				</li>
+			</ul>
+			<p>
+				An implied role in this model is the "user", but I don't like that word to describe people
+				in social spaces.
+			</p>
+			<p>
+				In social spaces, I gravitate towards the role of builder, and I actively dislike most
+				aspects of being a steward and operator.
+			</p>
+			<p>Thanks for visiting my space, I hope your time here was interesting and pleasant.</p>
+		</div>
+		<hr />
+		<div>
 			<p>
 				When I ran into the API limitation, my motivation to continue the implementation ran dry. I
 				plan to pick it back up and publish reusable code, eventually, but for now, be aware <a
@@ -381,6 +409,19 @@
 		</div>
 	</section>
 	<hr />
+	<section>
+		<div class="prose spaced">
+			<h2><HashLink slug="comments">Comments</HashLink></h2>
+		</div>
+		<Toot
+			replies
+			storage_key="replies"
+			bind:url={replies_toot_url}
+			bind:host={replies_toot_host}
+			bind:id={replies_toot_id}
+			bind:autoload={autoload_comments}
+		/>
+	</section>
 	<!-- TODO maybe expose -->
 	<!-- <section class="prose">
 		<h2>
@@ -421,19 +462,6 @@
 			{prod_content_security_policy}
 		</blockquote>
 	</section> -->
-	<section>
-		<div class="prose spaced">
-			<h2><HashLink slug="comments">Comments</HashLink></h2>
-		</div>
-		<Toot
-			replies
-			storage_key="replies"
-			bind:url={replies_toot_url}
-			bind:host={replies_toot_host}
-			bind:id={replies_toot_id}
-			bind:autoload={autoload_comments}
-		/>
-	</section>
 </div>
 
 <style>
