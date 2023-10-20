@@ -36,6 +36,7 @@
 	// import {prod_content_security_policy} from '$routes/security.js';
 	import {to_api_status_url} from '$lib/mastodon.js';
 
+	// TODO move this data to the `Feed`
 	// TODO BLOCK swap out
 	// https://mastodon.ryanatkn.com/@ryanatkn/110843291155970959
 	const DEFAULT_TOOT_HOST = 'mastodon.ryanatkn.com';

@@ -50,6 +50,11 @@ export interface FeedItem {
 	// image?: string;
 	// external_url?: string;
 	tags?: string[];
+
+	// TODO is this the right place for this? just a url?
+	mastodon?: {
+		comments?: string;
+	}
 }
 
 export const create_atom_feed = (data: Feed): string => {

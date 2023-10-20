@@ -118,6 +118,7 @@ export const parse_status_context_url = (url: string): MastodonStatusParams | nu
 		const parts = strip_end(u.pathname, '/context').split('/');
 		// TODO BLOCK also author if available
 		return {
+			url,
 			host: u.host,
 			id: parts[parts.length - 1],
 		};
@@ -135,11 +136,11 @@ export const parse_status_url_with_author = (url: string): MastodonStatusParams 
 	try {
 		const u = new URL(url);
 		const parts = strip_end(u.pathname, '/context').split('/');
-		const author = parts[0][0] === '@' ? parts[0].substring(1) : null; // eslint-disable-line @typescript-eslint/prefer-string-starts-ends-with
+		const author = parts[0][0] === '@' ? parts[0].substring(1) : null; 
 		if (!author) return null;
 		const id = parts.length > 1 ? parts[parts.length - 1] : null;
 		if (!id) return null;
-		return {host: u.host, author, id};
+		return {url, host: u.host, author, id};
 	} catch (err) {
 		return null;
 	}
@@ -276,6 +277,7 @@ export interface MastodonFavourite {
 }
 
 export interface MastodonStatusParams {
+	url: string;
 	host: string;
 	id: string;
 	author?: string;
