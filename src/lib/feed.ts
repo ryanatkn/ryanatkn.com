@@ -54,7 +54,7 @@ export interface FeedItem {
 	// TODO is this the right place for this? just a url?
 	mastodon?: {
 		comments?: string;
-	}
+	};
 }
 
 export const create_atom_feed = (data: Feed): string => {
