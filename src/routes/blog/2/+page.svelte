@@ -15,9 +15,10 @@
 
 <script lang="ts">
 	import {base} from '$app/paths';
+	import BlogPost from '$lib/BlogPost.svelte';
 </script>
 
-<div class="prose width_md">
+<BlogPost {post} classes="prose">
 	<h2>Introduction</h2>
 	<p>
 		While working on the community software project I described in <a
@@ -226,4 +227,4 @@
 			access? And the other powers?
 		</li>
 	</ul>
-</div>
+</BlogPost>

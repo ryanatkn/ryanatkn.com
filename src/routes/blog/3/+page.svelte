@@ -32,6 +32,7 @@
 
 	import Toot from '$lib/Toot.svelte';
 	import HashLink from '$lib/HashLink.svelte';
+	import BlogPost from '$lib/BlogPost.svelte';
 	// import BlogPostIndex from '$lib/BlogPostIndex.svelte';
 	// import {prod_content_security_policy} from '$routes/security.js';
 	import {to_api_status_url} from '$lib/mastodon.js';
@@ -72,9 +73,11 @@
 	// TODO BLOCK see `div class="reset"` below
 
 	// TODO BLOCK put all post meta into context instead of hardcoding the link to post 2 (see the other posts too for their links)
+
+	// TODO BLOCK flatten the markup
 </script>
 
-<div class="width_md">
+<BlogPost {post}>
 	<section style:padding-top="var(--spacing_2)">
 		<div class="prose spaced">
 			<p>
@@ -487,7 +490,7 @@
 			{prod_content_security_policy}
 		</blockquote>
 	</section> -->
-</div>
+</BlogPost>
 
 <style>
 	/* TODO tricky layout issue, related to the leaky :last-child margin selectors */

@@ -15,9 +15,10 @@
 
 <script lang="ts">
 	import {base} from '$app/paths';
+	import BlogPost from '$lib/BlogPost.svelte';
 </script>
 
-<div class="prose width_md">
+<BlogPost {post} classes="prose">
 	<p>
 		<a href="https://www.felt.dev/">
 			<img
@@ -415,4 +416,4 @@
 			<a href="https://opencollective.com/feltjs">OpenCollective</a>
 		</li>
 	</ul>
-</div>
+</BlogPost>
