@@ -1,9 +1,10 @@
 <script lang="ts">
-	import {page} from '$app/stores';
-	import Blog from '$lib/Blog.svelte';
-	import {feed} from '$routes/blog/feed.js';
-
-	// TODO @multiple rethink this, we don't want to load all components at each route
+	//
 </script>
 
-<Blog {feed} slug={$page.params.slug} />
+<section class="prose">
+	<p>
+		nothing's here, sorry if this is an
+		<a href="https://www.w3.org/Provider/Style/URI">uncool URI</a>
+	</p>
+</section>

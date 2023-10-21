@@ -55,6 +55,8 @@ export interface FeedItem {
 	mastodon?: {
 		comments?: string;
 	};
+
+	// TODO BLOCK slug and num? name instead of `index`?
 }
 
 export const create_atom_feed = (data: Feed): string => {
