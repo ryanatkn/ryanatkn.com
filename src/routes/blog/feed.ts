@@ -1,6 +1,9 @@
 import type {Feed} from '$lib/feed.js';
 import {posts} from '$routes/blog/posts.js';
 
+// TODO BLOCK see the ** in check.yml
+// TODO BLOCK redirect from the numbers
+
 // TODO BLOCK see the gen file, this has a circular dependency with `posts`,
 // maybe have the user define the feed metadata, and then also generate this module?
 // where does that metadata belong? `src/blog/metadata.ts` and `src/blog/feed.ts`?
