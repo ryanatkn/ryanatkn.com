@@ -1,5 +1,5 @@
 import {SvelteComponent, getContext, setContext} from 'svelte';
-import {strip_end} from '@grogarden/util/string.js';
+import type {Flavored} from '@grogarden/util/types.js';
 
 import type {Feed} from '$lib/feed.js';
 
@@ -28,6 +28,8 @@ export interface BlogPostModule {
 	default: typeof SvelteComponent<any>;
 }
 
+export type BlogId = Flavored<number, 'BlogId'>;
+
 export interface BlogPostItem extends BlogPostData {
 	/**
 	 * Blog path with post blog_id.
@@ -42,30 +44,10 @@ export interface BlogPostItem extends BlogPostData {
 	/**
 	 * Incrementing 1-based integer.
 	 */
-	blog_id: number;
+	blog_id: BlogId;
 
 	tags: string[]; // required
 }
-
-export const resolve_blog_post_item = (
-	blog_id: number,
-	blog_url: string,
-	post: BlogPostData,
-): BlogPostItem => {
-	const final_blog_url = strip_end(blog_url, '/');
-	return {
-		id: final_blog_url + '/' + blog_id,
-		url: final_blog_url + '/' + post.slug,
-		blog_id,
-		title: post.title,
-		slug: post.slug,
-		date_published: post.date_published,
-		date_modified: post.date_modified,
-		summary: post.summary,
-		tags: post.tags ?? [],
-		comments: post.comments,
-	};
-};
 
 const KEY = Symbol('blog_feed');
 

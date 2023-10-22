@@ -1,10 +1,10 @@
 import type {Gen} from '@grogarden/gro/gen.js';
-import {exists} from '@grogarden/gro/exists.js';
 import {cwd} from 'node:process';
 import {join, relative} from 'node:path';
 
 import {create_atom_feed} from '$lib/feed.js';
-import {resolve_blog_post_item, type BlogPostModule} from '$lib/blog.js';
+import type{ BlogPostModule} from '$lib/blog.js';
+import {collect_blog_ids, resolve_blog_post_item} from '$lib/blog_helpers.js';
 
 // TODO extract to @fuz.dev/fuz_blog
 
@@ -18,10 +18,10 @@ export const gen: Gen = async ({origin_id}) => {
 
 	const {feed} = await import(join(blog_dir, 'feed.js')); // TODO BLOCK using this is a problem because it relies on `posts`
 
-	const found = await find_blog_items(blog_dir);
+	const blog_ids = await collect_blog_ids(blog_dir);
 
 	const modules: BlogPostModule[] = await Promise.all(
-		found.map(async (item) => import(`$routes/${blog_dirname}/${item}/+page.svelte`)),
+		blog_ids.map(async (item) => import(`$routes/${blog_dirname}/${item}/+page.svelte`)),
 	);
 
 	// TODO BLOCK zod schema validation including parsing the status context url (with zod?)
@@ -90,19 +90,3 @@ export const gen: Gen = async ({origin_id}) => {
 // 	}
 // 	return entries;
 // };
-
-const find_blog_items = async (blog_dir: string): Promise<number[]> => {
-	const items: number[] = [];
-
-	let i = 1;
-	while (true) {
-		// eslint-disable-next-line no-await-in-loop
-		if (!(await exists(join(blog_dir, `${i}/+page.svelte`)))) {
-			break;
-		}
-		items.push(i);
-		i++;
-	}
-
-	return items;
-};

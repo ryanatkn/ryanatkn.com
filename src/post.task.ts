@@ -4,6 +4,7 @@ import {strip_start, strip_end} from '@grogarden/util/string.js';
 import {format_file} from '@grogarden/gro/format_file.js';
 import {exists} from '@grogarden/gro/exists.js';
 import {writeFile} from 'node:fs/promises';
+import { collect_blog_ids } from '$lib/blog_helpers';
 
 // TODO probably source this from `gro.config.ts` or other config
 const DEFAULT_URL = 'https://www.ryanatkn.com/blog';
@@ -28,6 +29,7 @@ export const task: Task<Args> = {
 
 		// TODO BLOCK add helper that gen also uses to blog.ts
 		// Find the next module to create.
+		const blog_ids = collect_blog_ids()
 		let post_path: string;
 		let index = 0;
 		while (true) {
