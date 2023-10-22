@@ -1,18 +1,15 @@
 import type {Task} from '@grogarden/gro';
 import {z} from 'zod';
-import {strip_start, strip_end} from '@grogarden/util/string.js';
 import {format_file} from '@grogarden/gro/format_file.js';
-import {exists} from '@grogarden/gro/exists.js';
 import {writeFile} from 'node:fs/promises';
-import { collect_blog_ids } from '$lib/blog_helpers';
+import {cwd} from 'node:process';
+import {join} from 'node:path';
 
-// TODO probably source this from `gro.config.ts` or other config
-const DEFAULT_URL = 'https://www.ryanatkn.com/blog';
+import {collect_blog_post_ids, to_next_blog_post_id} from '$lib/blog_helpers.js';
 
 const Args = z
 	.object({
-		url: z.string({description: 'url to the blog post directory'}).default(DEFAULT_URL),
-		date: z.string({description: "the post's date_published"}).default(new Date().toISOString()),
+		date: z.string({description: "the post's date_published"}).optional(),
 	})
 	.strict();
 type Args = z.infer<typeof Args>;
@@ -21,26 +18,19 @@ export const task: Task<Args> = {
 	summary: 'create a new blog post',
 	Args,
 	run: async ({args, log, invoke_task}) => {
-		const {url, date} = args;
+		const {date = new Date().toISOString()} = args;
 
-		const {pathname} = new URL(url);
+		// TODO @multiple parameterize and refactor
+		const dir = cwd();
+		const blog_dirname = 'blog';
+		const routes_path = 'src/routes'; // TODO read from SvelteKit config;
+		const blog_dir = join(dir, routes_path, blog_dirname);
 
-		const path = strip_end(strip_start(pathname, '/'), '/');
+		const blog_post_ids = await collect_blog_post_ids(blog_dir);
 
-		// TODO BLOCK add helper that gen also uses to blog.ts
-		// Find the next module to create.
-		const blog_ids = collect_blog_ids()
-		let post_path: string;
-		let index = 0;
-		while (true) {
-			post_path = to_post_path(path, index);
-			// eslint-disable-next-line no-await-in-loop
-			if (await exists(post_path)) {
-				index++;
-			} else {
-				break;
-			}
-		}
+		const next_blog_post_id = to_next_blog_post_id(blog_post_ids);
+
+		const next_blog_post_path = join(blog_dir, next_blog_post_id + '/+page.svelte');
 
 		const unformatted = `
 			<script lang="ts" context="module">
@@ -66,13 +56,10 @@ export const task: Task<Args> = {
 		`;
 		const formatted = await format_file(unformatted, {parser: 'svelte'});
 
-		await writeFile(post_path, formatted);
+		await writeFile(next_blog_post_path, formatted);
 
 		await invoke_task('gen');
 
-		log.info(`created empty blog post with index ${index} at ${post_path}`);
+		log.info(`created empty blog post with index ${next_blog_post_id} at ${next_blog_post_path}`);
 	},
 };
-
-const to_post_path = (pathname: string, index: number): string =>
-	'src/routes' + pathname + '/[slug]/' + index + '.svelte';

@@ -5,7 +5,7 @@ import {posts} from '$routes/blog/posts.js';
 
 export const feed: BlogFeed = {
 	title: 'Ryan Atkinson',
-	id: 'https://www.ryanatkn.com/',
+	id: 'https://www.ryanatkn.com/', // TODO BLOCK `/blog` pathname?
 	home_page_url: 'https://www.ryanatkn.com/',
 	description: 'blog of a web developer building free and open source community software',
 	icon: 'https://www.ryanatkn.com/favicon.png',

@@ -28,23 +28,23 @@ export interface BlogPostModule {
 	default: typeof SvelteComponent<any>;
 }
 
-export type BlogId = Flavored<number, 'BlogId'>;
+export type BlogPostId = Flavored<number, 'BlogPostId'>;
 
 export interface BlogPostItem extends BlogPostData {
 	/**
-	 * Blog path with post blog_id.
+	 * Blog post path with `blog_post_id`.
 	 */
 	id: string;
 
 	/**
-	 * Blog path with post slug.
+	 * Blog post path with `slug`.
 	 */
 	url: string;
 
 	/**
 	 * Incrementing 1-based integer.
 	 */
-	blog_id: BlogId;
+	blog_post_id: BlogPostId;
 
 	tags: string[]; // required
 }
