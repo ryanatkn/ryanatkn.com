@@ -1,10 +1,9 @@
 <script lang="ts" context="module">
-	import type {FeedItem} from '$lib/feed.js';
+	import type {BlogPostData} from '$lib/blog.js';
 
-	export const post: FeedItem = {
-		id: 'https://www.ryanatkn.com/blog/3',
+	export const post = {
 		title: 'Modeling virtual social spaces: the roles of steward, operator, and builder',
-		url: 'https://www.ryanatkn.com/blog/modeling-virtual-social-spaces-the-roles-of-steward-operator-and-builder',
+		slug: 'modeling-virtual-social-spaces-the-roles-of-steward-operator-and-builder',
 		date_published: '2023-07-24T01:50:35.017Z',
 		date_modified: '2023-07-24T01:50:35.017Z',
 		summary:
@@ -24,7 +23,12 @@
 			'technology',
 			'software',
 		],
-	};
+		comments: {
+			type: 'mastodon',
+			// TODO replace with final url
+			url: 'https://mastodon.ryanatkn.com/@ryanatkn/110843291155970959',
+		},
+	} satisfies BlogPostData;
 </script>
 
 <script lang="ts">
@@ -35,16 +39,15 @@
 	import BlogPost from '$lib/BlogPost.svelte';
 	// import BlogPostIndex from '$lib/BlogPostIndex.svelte';
 	// import {prod_content_security_policy} from '$routes/security.js';
-	import {to_api_status_url} from '$lib/mastodon.js';
+	import {parse_status_url, to_api_status_url} from '$lib/mastodon.js';
 
 	// TODO move this data to the `Feed`
 	// TODO BLOCK swap out
 	// https://mastodon.ryanatkn.com/@ryanatkn/110843291155970959
-	const DEFAULT_TOOT_HOST = 'mastodon.ryanatkn.com';
-	const DEFAULT_TOOT_ID = '110843291155970959';
 
-	let embedded_toot_host = DEFAULT_TOOT_HOST;
-	let embedded_toot_id = DEFAULT_TOOT_ID;
+	const parsed = parse_status_url(post.comments.url)!;
+	let embedded_toot_host = parsed.host;
+	let embedded_toot_id = parsed.id;
 	let embedded_toot_url = to_api_status_url(embedded_toot_host, embedded_toot_id);
 
 	let replies_toot_host = embedded_toot_host;

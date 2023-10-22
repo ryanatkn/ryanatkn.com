@@ -100,7 +100,7 @@ export const to_api_url = (
 
 export const to_post_url = (api_url: string | null): string | null => {
 	if (!api_url) return null;
-	const parsed = parse_status_url_with_author(api_url);
+	const parsed = parse_status_url(api_url);
 	if (!parsed) return null;
 	return parsed.author
 		? to_status_url_with_author(parsed.host, parsed.id, parsed.author)
@@ -132,7 +132,7 @@ export const parse_status_context_url = (url: string): MastodonStatusParams | nu
  * @param url
  * @returns the parsed host and id params, if any
  */
-export const parse_status_url_with_author = (url: string): MastodonStatusParams | null => {
+export const parse_status_url = (url: string): MastodonStatusParams | null => {
 	try {
 		const u = new URL(url);
 		const parts = strip_end(u.pathname, '/context').split('/');

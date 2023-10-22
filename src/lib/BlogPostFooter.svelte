@@ -1,8 +1,8 @@
 <script lang="ts">
-	import type {FeedItem} from '$lib/feed.js';
+	import type {BlogPostItem} from '$lib/blog.js';
 
-	export let post: FeedItem;
-	post; // TODO
+	export let item: BlogPostItem;
+	item; // TODO
 </script>
 
 <footer class="blog-post-footer">

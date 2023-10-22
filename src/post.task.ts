@@ -41,22 +41,24 @@ export const task: Task<Args> = {
 
 		const unformatted = `
 			<script lang="ts" context="module">
-				import type {FeedItem} from '$lib/feed.js';
-				export const post: FeedItem = {
-					id: '${origin}/${path}/${index}',
+				import type {BlogPostData} from '$lib/blog.js';
+
+				export const post = {
 					title: 'Some title todo',
-					url: '${origin}/${path}/some-title-todo',
+					slug: 'some-title-todo',
 					date_published: '${date}',
 					date_modified: '${date}',
 					summary: 'todo',
 					tags: ['todo'],
-				};
+				} satisfies  BlogPostData;
 			</script>
+
 			<script lang="ts">
 				import {base} from '$app/paths';
 			</script>
+
 			<p>
-				<a href="{base}/a/b/c">a local link</a>
+				<a href="{base}/a/b/c">todo a local link example</a>
 			</p>
 		`;
 		const formatted = await format_file(unformatted, {parser: 'svelte'});

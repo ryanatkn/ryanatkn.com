@@ -1,11 +1,11 @@
 <script lang="ts">
-	import type {FeedItem} from '$lib/feed.js';
 	import FeedItemDate from '$lib/FeedItemDate.svelte';
+	import type {BlogPostItem} from '$lib/blog.js';
 
-	export let post: FeedItem;
+	export let item: BlogPostItem;
 </script>
 
-<h1>{post.title}</h1>
+<h1>{item.title}</h1>
 <p>
-	<FeedItemDate item={post} />
+	<FeedItemDate {item} />
 </p>
