@@ -41,10 +41,7 @@
 	// import {prod_content_security_policy} from '$routes/security.js';
 	import {parse_status_url, to_api_status_url} from '$lib/mastodon.js';
 
-	// TODO move this data to the `Feed`
-	// TODO BLOCK swap out
-	// https://mastodon.ryanatkn.com/@ryanatkn/110843291155970959
-
+	// TODO BLOCK source of truth here
 	const parsed = parse_status_url(post.comments.url)!;
 	let embedded_toot_host = parsed.host;
 	let embedded_toot_id = parsed.id;
