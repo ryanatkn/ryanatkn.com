@@ -12,7 +12,7 @@ import {
 // TODO extract to @fuz.dev/fuz_blog
 
 export const gen: Gen = async ({origin_id}) => {
-	// TODO @multiple parameterize and refactor
+	// TODO BLOCK @multiple parameterize and refactor
 	const dir = cwd();
 	const blog_dirname = 'blog';
 	const routes_path = 'src/routes'; // TODO read from SvelteKit config;

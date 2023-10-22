@@ -58,4 +58,4 @@ export const to_next_blog_post_id = (blog_post_ids: BlogPostId[]): BlogPostId =>
 };
 
 export const to_blog_post_path = (blog_dir: string, blog_post_id: BlogPostId): string =>
-	join(blog_dir, blog_post_id + '+page.svelte');
+	join(blog_dir, blog_post_id + '/+page.svelte');

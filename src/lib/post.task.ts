@@ -1,9 +1,9 @@
 import type {Task} from '@grogarden/gro';
 import {z} from 'zod';
 import {format_file} from '@grogarden/gro/format_file.js';
-import {writeFile} from 'node:fs/promises';
+import {mkdir, writeFile} from 'node:fs/promises';
 import {cwd} from 'node:process';
-import {join} from 'node:path';
+import {dirname, join} from 'node:path';
 
 import {collect_blog_post_ids, to_next_blog_post_id} from '$lib/blog_helpers.js';
 
@@ -20,7 +20,7 @@ export const task: Task<Args> = {
 	run: async ({args, log, invoke_task}) => {
 		const {date = new Date().toISOString()} = args;
 
-		// TODO @multiple parameterize and refactor
+		// TODO BLOCK @multiple parameterize and refactor
 		const dir = cwd();
 		const blog_dirname = 'blog';
 		const routes_path = 'src/routes'; // TODO read from SvelteKit config;
@@ -56,7 +56,8 @@ export const task: Task<Args> = {
 		`;
 		const formatted = await format_file(unformatted, {parser: 'svelte'});
 
-		await writeFile(next_blog_post_path, formatted);
+		await mkdir(dirname(next_blog_post_path), {recursive: true});
+		await writeFile(next_blog_post_path, formatted, 'utf8');
 
 		await invoke_task('gen');
 
