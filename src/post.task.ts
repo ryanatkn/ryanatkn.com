@@ -22,17 +22,18 @@ export const task: Task<Args> = {
 	run: async ({args, log, invoke_task}) => {
 		const {url, date} = args;
 
-		const {origin, pathname} = new URL(url);
+		const {pathname} = new URL(url);
 
 		const path = strip_end(strip_start(pathname, '/'), '/');
 
+		// TODO BLOCK add helper that gen also uses to blog.ts
 		// Find the next module to create.
-		let postPath: string;
+		let post_path: string;
 		let index = 0;
 		while (true) {
-			postPath = toPostPath(pathname, index);
+			post_path = to_post_path(path, index);
 			// eslint-disable-next-line no-await-in-loop
-			if (await exists(postPath)) {
+			if (await exists(post_path)) {
 				index++;
 			} else {
 				break;
@@ -63,13 +64,13 @@ export const task: Task<Args> = {
 		`;
 		const formatted = await format_file(unformatted, {parser: 'svelte'});
 
-		await writeFile(postPath, formatted);
+		await writeFile(post_path, formatted);
 
 		await invoke_task('gen');
 
-		log.info(`created empty blog post with index ${index} at ${postPath}`);
+		log.info(`created empty blog post with index ${index} at ${post_path}`);
 	},
 };
 
-const toPostPath = (pathname: string, index: number): string =>
+const to_post_path = (pathname: string, index: number): string =>
 	'src/routes' + pathname + '/[slug]/' + index + '.svelte';

@@ -1,7 +1,7 @@
 import type {BlogFeed} from '$lib/blog.js';
 import {posts} from '$routes/blog/posts.js';
 
-// TODO BLOCK redirect from the numbers
+// TODO BLOCK redirect from the numbers or render UI to navigate to it
 
 // TODO BLOCK see the gen file, this has a circular dependency with `posts`,
 // maybe have the user define the feed metadata, and then also generate this module?

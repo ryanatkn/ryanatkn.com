@@ -1,5 +1,4 @@
 import {strip_end} from '@grogarden/util/string.js';
-import type {Flavored} from '@grogarden/util/types.js';
 
 import mastodon_mock_data from '$lib/mastodon_mock_data.json';
 
@@ -85,62 +84,30 @@ export const to_api_status_context_url = (host: string, id: string): string =>
 export const to_api_favourites_url = (host: string, id: string): string =>
 	`https://${host}/api/v1/statuses/${id}/favourited_by`;
 
-export const to_api_url = (
-	url: string | undefined,
-	host: string | undefined,
-	id: string | undefined,
-): string | null => {
-	if (!url && !host && !id) {
-		throw new Error('either url or host+id must be provided');
-	}
-	return url || (host && id ? to_api_status_context_url(host, id) : null);
-};
-
-// TODO BLOCK rename with the above
-
-export const to_post_url = (api_url: string | null): string | null => {
-	if (!api_url) return null;
-	const parsed = parse_status_url(api_url);
-	if (!parsed) return null;
-	return parsed.author
-		? to_status_url_with_author(parsed.host, parsed.id, parsed.author)
-		: to_api_status_url(parsed.host, parsed.id);
-};
+export interface MastodonStatusUrl {
+	href: string;
+	host: string;
+	status_id: string;
+	author?: string;
+}
 
 /**
  * Parses a url to a post or API endpoint for a post, aka Mastodon status context.
  * @param url
  * @returns the parsed host and id params, if any
  */
-export const parse_status_context_url = (url: string): MastodonStatusParams | null => {
+export const parse_status_url = (url: string): MastodonStatusUrl | null => {
 	try {
 		const u = new URL(url);
-		const parts = strip_end(u.pathname, '/context').split('/');
-		// TODO BLOCK also author if available
-		return {
-			url,
-			host: u.host,
-			id: parts[parts.length - 1],
-		};
-	} catch (err) {
-		return null;
-	}
-};
-
-/**
- * Parses a url to a post or API endpoint for a post, aka Mastodon status context.
- * @param url
- * @returns the parsed host and id params, if any
- */
-export const parse_status_url = (url: string): MastodonStatusParams | null => {
-	try {
-		const u = new URL(url);
-		const parts = strip_end(u.pathname, '/context').split('/');
+		console.log(`u`, u);
+		const parts = strip_end(u.pathname, '/context').split('/').filter(Boolean);
+		console.log(`parts`, parts);
 		const author = parts[0][0] === '@' ? parts[0].substring(1) : null;
+		console.log(`author`, author);
 		if (!author) return null;
 		const id = parts.length > 1 ? parts[parts.length - 1] : null;
 		if (!id) return null;
-		return {url, host: u.host, author, id};
+		return {href: url, host: u.host, author, status_id: id};
 	} catch (err) {
 		return null;
 	}
@@ -275,12 +242,3 @@ export interface MastodonFavourite {
 		verified_at: string; // Datetime
 	}>;
 }
-
-export interface MastodonStatusParams {
-	url: string;
-	host: string;
-	id: string;
-	author?: string;
-}
-
-export type Url = Flavored<string, 'Url'>;

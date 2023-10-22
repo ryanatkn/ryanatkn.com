@@ -199,7 +199,7 @@
 			</p>
 		</div>
 		<details class="spaced">
-			<summary>click to see an example of an embedded toot with technical details</summary>
+			<summary>click for an example of an embedded toot with technical details</summary>
 			<aside>
 				<div class="prose">
 					<p>

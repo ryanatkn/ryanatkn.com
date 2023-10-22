@@ -8,13 +8,11 @@
 	import MastodonStatusItem from '$lib/MastodonStatusItem.svelte';
 	import TootLoader from '$lib/TootLoader.svelte';
 	import {load_from_storage, set_in_storage} from '$lib/storage.js';
-	import {parse_status_context_url, to_api_status_url} from '$lib/mastodon.js';
+	import {parse_status_url} from '$lib/mastodon.js';
 
 	const dispatch = createEventDispatcher<{reset: void}>();
 
-	export let url: string | undefined = undefined;
-	export let host: string | undefined = undefined;
-	export let id: string | undefined = undefined;
+	export let url: string;
 	// TODO also author when available
 
 	/**
@@ -64,25 +62,11 @@
 	export let autoload = autoload_key ? load_from_storage(autoload_key, () => false) : false; // TODO store? probably, see this comment vv
 	$: autoload_key && set_in_storage(autoload_key, autoload); // TODO wastefully sets on init and across multiple `Toot` instances if bound
 
-	const parse = (_url: string | undefined, _host: string | undefined, _id: string | undefined) => {
-		if (!(_url || (_host && _id))) {
-			console.error('either `url` or `host` and `id` are required by Toot.svelte');
-		}
-		if (url === _url && host === _host && id === _id) {
-			return;
-		}
-		if (_url) {
-			const parsed = parse_status_context_url(_url);
-			if (parsed) {
-				host = parsed?.host;
-				id = parsed?.id;
-			} // TODO else?
-		} else {
-			url = to_api_status_url(_host!, _id!);
-		}
-	};
+	$: parsed = parse_status_url(url);
+	$: id = parsed?.status_id;
+	$: host = parsed?.host;
 
-	$: parse(url, host, id);
+	// TODO BLOCK not saving autoload state
 
 	$: with_context = replies || ancestors;
 </script>
@@ -172,15 +156,7 @@
 					</div>
 					{#if show_settings}
 						<div transition:slide class="settings controls panel">
-							<label
-								class="row"
-								title={autoload
-									? 'replies will load automatically when scrolled intersect'
-									: 'replies are not loaded until you request them'}
-								><input type="checkbox" bind:checked={autoload} />automatically load when scrolled
-								onscreen</label
-							>
-							<form class="width_full">
+							<form class="width_full prose">
 								<fieldset>
 									<label title="where to load the toot">
 										<input
@@ -189,6 +165,16 @@
 											on:focus={(e) => e.currentTarget.select()}
 										/>
 									</label>
+								</fieldset>
+								<fieldset>
+									<label
+										class="row"
+										title={autoload
+											? 'replies will load automatically when scrolled intersect'
+											: 'replies are not loaded until you request them'}
+										><input type="checkbox" bind:checked={autoload} />automatically load when
+										scrolled onscreen</label
+									>
 								</fieldset>
 							</form>
 							<slot name="settings" />
