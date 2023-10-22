@@ -13,12 +13,12 @@
 	/**
 	 * The host part of the url, like `'mastodon.ryanatkn.com'`.
 	 */
-	export let host: string;
+	export let host: string | null;
 
 	/**
 	 * The status id to fetch, like `'110702983310017651'`.
 	 */
-	export let id: string;
+	export let id: string | null;
 
 	/**
 	 * Should we also fetch the status's context, getting its ancestors and descendants?
@@ -97,7 +97,7 @@
 	};
 
 	const load = async (): Promise<void> => {
-		if (!browser) return;
+		if (!browser || !host || !id) return;
 		const start_time = performance.now();
 		loading = true;
 		// TODO error handling

@@ -30,7 +30,14 @@
 	 */
 	export let cache: MastodonCache | null = null;
 
+	/**
+	 * @readonly
+	 */
 	export let loading: boolean | undefined = undefined;
+
+	/**
+	 * @readonly
+	 */
 	export let load_time: number | undefined = undefined;
 
 	let loaded_status_key = 1;
@@ -76,113 +83,111 @@
 	$: with_context = replies || ancestors;
 </script>
 
-{#if id && host}
-	{#key loaded_status_key}
-		<TootLoader
-			{host}
-			{id}
-			{with_context}
-			{cache}
-			let:item
-			let:context
-			let:replies
-			let:load
-			let:loading
-			bind:loading
-			let:load_time
-			bind:load_time
-		>
-			<div class="toot" class:replies transition:slide>
-				<div class="toot_content">
-					{#if ancestors && context}
-						<div transition:slide>
-							<!-- TODO style differently or something -->
-							{#each context.ancestors as ancestor}
-								<MastodonStatusItem item={ancestor} />
-							{/each}
-						</div>
-					{/if}
-					<div class="main_post panel">
-						<div class="panel bg_panel">
-							{#if item}
-								<div transition:slide>
-									<MastodonStatusItem {item} />
-								</div>
-							{:else}
-								<div transition:slide>
-									<PendingButton
-										pending={loading || false}
-										disabled={loading === false}
-										on:click={() => load()}
-									>
-										<div class="icon_button_content">
-											<div class="icon">🦣</div>
-											<div class="button_content">
-												<div>
-													load toot{#if replies || ancestors}s{/if} from
-												</div>
-												<code class="ellipsis">{host}</code>
-											</div>
-										</div>
-									</PendingButton>
-								</div>
-							{/if}
-						</div>
+{#key loaded_status_key}
+	<TootLoader
+		{host}
+		{id}
+		{with_context}
+		{cache}
+		let:item
+		let:context
+		let:replies
+		let:load
+		let:loading
+		bind:loading
+		let:load_time
+		bind:load_time
+	>
+		<div class="toot" class:replies transition:slide>
+			<div class="toot_content">
+				{#if ancestors && context}
+					<div transition:slide>
+						<!-- TODO style differently or something -->
+						{#each context.ancestors as ancestor}
+							<MastodonStatusItem item={ancestor} />
+						{/each}
 					</div>
-					{#if item && replies}
-						<div transition:slide>
-							<MastodonStatusTree {item} items={replies} />
-						</div>
-					{/if}
-				</div>
-				<div class="toot_controls">
-					<div
-						class="controls"
-						use:intersect={{
-							cb: (intersecting) => {
-								if (intersecting && autoload) load();
-							},
-							count: 1,
-						}}
-					>
-						<div class="row">
-							<button
-								on:click={toggle_settings}
-								class="deselectable"
-								class:selected={show_settings}
-								style:margin-right="var(--spacing_sm)">settings</button
-							>
-							<div class="reset">
-								<button on:click={reset} disabled={loading == null}>reset</button
-								>{#if load_time !== undefined}<div class="loaded_message" transition:slide>
-										loaded in {Math.round(load_time)}ms
-									</div>{/if}
+				{/if}
+				<div class="main_post panel">
+					<div class="panel bg_panel">
+						{#if item}
+							<div transition:slide>
+								<MastodonStatusItem {item} />
 							</div>
+						{:else}
+							<div transition:slide>
+								<PendingButton
+									pending={loading || false}
+									disabled={loading === false}
+									on:click={() => load()}
+								>
+									<div class="icon_button_content">
+										<div class="icon">🦣</div>
+										<div class="button_content">
+											<div>
+												load toot{#if replies || ancestors}s{/if} from
+											</div>
+											<code class="ellipsis">{host}</code>
+										</div>
+									</div>
+								</PendingButton>
+							</div>
+						{/if}
+					</div>
+				</div>
+				{#if item && replies}
+					<div transition:slide>
+						<MastodonStatusTree {item} items={replies} />
+					</div>
+				{/if}
+			</div>
+			<div class="toot_controls">
+				<div
+					class="controls"
+					use:intersect={{
+						cb: (intersecting) => {
+							if (intersecting && autoload) load();
+						},
+						count: 1,
+					}}
+				>
+					<div class="row">
+						<button
+							on:click={toggle_settings}
+							class="deselectable"
+							class:selected={show_settings}
+							style:margin-right="var(--spacing_sm)">settings</button
+						>
+						<div class="reset">
+							<button on:click={reset} disabled={loading == null}>reset</button
+							>{#if load_time !== undefined}<div class="loaded_message" transition:slide>
+									loaded in {Math.round(load_time)}ms
+								</div>{/if}
 						</div>
 					</div>
-					{#if show_settings}
-						<div transition:slide class="settings controls panel">
-							<form class="width_full prose">
-								<TootInput {url} />
-								<fieldset>
-									<label
-										class="row"
-										title={autoload
-											? 'replies will load automatically when scrolled intersect'
-											: 'replies are not loaded until you request them'}
-										><input type="checkbox" bind:checked={autoload} />automatically load when
-										scrolled onscreen</label
-									>
-								</fieldset>
-							</form>
-							<slot name="settings" />
-						</div>
-					{/if}
 				</div>
+				{#if show_settings}
+					<div transition:slide class="settings controls panel">
+						<form class="width_full prose">
+							<TootInput {url} />
+							<fieldset>
+								<label
+									class="row"
+									title={autoload
+										? 'replies will load automatically when scrolled intersect'
+										: 'replies are not loaded until you request them'}
+									><input type="checkbox" bind:checked={autoload} />automatically load when scrolled
+									onscreen</label
+								>
+							</fieldset>
+						</form>
+						<slot name="settings" />
+					</div>
+				{/if}
 			</div>
-		</TootLoader>
-	{/key}
-{/if}
+		</div>
+	</TootLoader>
+{/key}
 
 <style>
 	.toot {
