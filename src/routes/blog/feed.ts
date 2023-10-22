@@ -1,7 +1,6 @@
-import type {Feed} from '$lib/feed.js';
+import type {BlogFeed} from '$lib/blog.js';
 import {posts} from '$routes/blog/posts.js';
 
-// TODO BLOCK see the ** in check.yml
 // TODO BLOCK redirect from the numbers
 
 // TODO BLOCK see the gen file, this has a circular dependency with `posts`,
@@ -10,7 +9,7 @@ import {posts} from '$routes/blog/posts.js';
 
 // TODO should this module be `blog` instead of `feed`? `items` instead of `posts`?
 
-export const feed: Feed = {
+export const feed: BlogFeed = {
 	title: 'Ryan Atkinson',
 	id: 'https://www.ryanatkn.com/',
 	home_page_url: 'https://www.ryanatkn.com/',

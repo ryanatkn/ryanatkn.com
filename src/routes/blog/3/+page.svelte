@@ -39,19 +39,10 @@
 	import BlogPost from '$lib/BlogPost.svelte';
 	// import BlogPostIndex from '$lib/BlogPostIndex.svelte';
 	// import {prod_content_security_policy} from '$routes/security.js';
-	import {parse_status_url, to_api_status_url} from '$lib/mastodon.js';
 
-	// TODO BLOCK source of truth here
-	const parsed = parse_status_url(post.comments.url)!;
-	let embedded_toot_host = parsed.host;
-	let embedded_toot_id = parsed.id;
-	let embedded_toot_url = to_api_status_url(embedded_toot_host, embedded_toot_id);
+	let embedded_toot_url = post.comments.url;
 
-	let replies_toot_host = embedded_toot_host;
-	let replies_toot_id = embedded_toot_id;
-	let replies_toot_url = to_api_status_url(replies_toot_host, replies_toot_id);
-
-	// probably mention the rooms/stool, bottlenecking
+	let replies_toot_url = post.comments.url;
 
 	// TODO BLOCK make the `reset` button work for the toot url, including whether it's enabled
 
@@ -231,8 +222,6 @@
 						storage_key="embedded"
 						initial_show_settings={true}
 						bind:url={embedded_toot_url}
-						bind:host={embedded_toot_host}
-						bind:id={embedded_toot_id}
 						bind:autoload={embedded_toot_autoload}
 						bind:loading={embedded_toot_loading}
 						bind:load_time={embedded_toot_load_time}
@@ -445,8 +434,6 @@
 			replies
 			storage_key="replies"
 			bind:url={replies_toot_url}
-			bind:host={replies_toot_host}
-			bind:id={replies_toot_id}
 			bind:autoload={autoload_comments}
 		/>
 	</section>
