@@ -1,7 +1,13 @@
 import {SvelteComponent, getContext, setContext} from 'svelte';
-import type {Flavored} from '@grogarden/util/types.js';
+import type {Flavored, OmitStrict} from '@grogarden/util/types.js';
 
 import type {Feed} from '$lib/feed.js';
+
+// TODO BLOCK inconsistent naming with `BlogPostData` and `BlogPostItem`,
+// consider `BlogItem` or `BlogFeedItem`?
+// maybe `Metadata` instead of `Data` in both cases?
+// also think about `BlogFeedItem` instead of `BlogPostItem`
+export type BlogFeedData = OmitStrict<Feed, 'items'>;
 
 export interface BlogFeed extends Feed {
 	items: BlogPostItem[];
@@ -21,6 +27,10 @@ export interface BlogPostData {
 		url: string;
 		type: 'mastodon';
 	};
+}
+
+export interface BlogModule {
+	blog: BlogFeedData;
 }
 
 export interface BlogPostModule {

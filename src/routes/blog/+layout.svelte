@@ -6,6 +6,8 @@
 	import {feed} from '$routes/blog/feed.js';
 
 	set_blog_feed(feed);
+
+	// TODO BLOCK redirect from the numbers or render UI to navigate to it, maybe in `BlogPost`
 </script>
 
 <div class="breadcrumbs">
