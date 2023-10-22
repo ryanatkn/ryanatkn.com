@@ -9,11 +9,11 @@
 	import TootLoader from '$lib/TootLoader.svelte';
 	import {load_from_storage, set_in_storage} from '$lib/storage.js';
 	import {parse_status_url, type MastodonCache} from '$lib/mastodon.js';
+	import TootInput from '$lib/TootInput.svelte';
 
 	const dispatch = createEventDispatcher<{reset: void}>();
 
 	export let url: string;
-	// TODO also author when available
 
 	/**
 	 * Whether to fetch and display replies aka descendants in the status context.
@@ -68,8 +68,8 @@
 	$: autoload_key && set_in_storage(autoload_key, autoload); // TODO wastefully sets on init and across multiple `Toot` instances if bound
 
 	$: parsed = parse_status_url(url);
-	$: id = parsed?.status_id;
-	$: host = parsed?.host;
+	$: id = parsed?.status_id ?? null;
+	$: host = parsed?.host ?? null;
 
 	// TODO BLOCK not saving autoload state
 
@@ -163,15 +163,7 @@
 					{#if show_settings}
 						<div transition:slide class="settings controls panel">
 							<form class="width_full prose">
-								<fieldset>
-									<label title="where to load the toot">
-										<input
-											bind:value={url}
-											placeholder="> toot url"
-											on:focus={(e) => e.currentTarget.select()}
-										/>
-									</label>
-								</fieldset>
+								<TootInput {url} />
 								<fieldset>
 									<label
 										class="row"

@@ -1,13 +1,18 @@
 <script lang="ts">
+	import Alert from '@fuz.dev/fuz_library/Alert.svelte';
+	import {parse_status_url} from './mastodon';
+
 	export let url: string;
 	export let attrs: any = undefined;
 
-	// TODO BLOCK show parse error
+	$: parsed = parse_status_url(url);
 </script>
 
 <fieldset>
 	<label title="where to load the toot">
-		<div class="title">toot url</div>
-		<input bind:value={url} placeholder=">" on:focus={(e) => e.currentTarget.select()} {...attrs} />
+		<input bind:value={url} placeholder="> toot url" on:focus={(e) => e.currentTarget.select()} {...attrs} />
 	</label>
+	{#if url && !parsed}
+		<Alert status="error">invalid Mastodon status url</Alert>
+	{/if}
 </fieldset>
