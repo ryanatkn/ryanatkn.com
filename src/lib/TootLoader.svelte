@@ -7,6 +7,7 @@
 		fetch_status,
 		type MastodonStatus,
 		fetch_favourites,
+		type MastodonCache,
 	} from '$lib/mastodon.js';
 
 	/**
@@ -23,6 +24,11 @@
 	 * Should we also fetch the status's context, getting its ancestors and descendants?
 	 */
 	export let with_context = false;
+
+	/**
+	 * Optional API result cache.
+	 */
+	export let cache: MastodonCache | null = null;
 
 	/**
 	 * @readonly
@@ -78,7 +84,7 @@
 		const unvalidated_replies = statuses.filter(({id}) => !allowed.has(id) && !skipped.has(id));
 		if (unvalidated_replies.length) {
 			await map_async(unvalidated_replies, async (s) => {
-				const favourites = await fetch_favourites(host, s);
+				const favourites = await fetch_favourites(host, s, cache);
 				const favourite = favourites?.find((f) => f.acct === acct);
 				// TODO this logic is what I want, but `favourite.created_at` is showing a date in 2022
 				// if (favourite && (!s.edited_at || new Date(s.edited_at) < new Date(favourite.created_at))) {
@@ -96,8 +102,8 @@
 		loading = true;
 		// TODO error handling
 		[item, context] = await Promise.all([
-			fetch_status(host, id),
-			with_context ? fetch_status_context(host, id) : null,
+			fetch_status(host, id, cache),
+			with_context ? fetch_status_context(host, id, cache) : null,
 		]);
 		if (item && context) {
 			replies = await filter_valid_replies(item, context.descendants);

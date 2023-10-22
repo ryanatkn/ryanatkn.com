@@ -1,4 +1,4 @@
-declare module '$lib/mastodon_mock_data.json' {
+declare module '$routes/blog/mastodon_fake_data.json' {
 	import type {MastodonResponseData} from '$lib/mastodon.js';
 	const cached: MastodonResponseData[];
 	export default cached;

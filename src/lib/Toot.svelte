@@ -8,7 +8,7 @@
 	import MastodonStatusItem from '$lib/MastodonStatusItem.svelte';
 	import TootLoader from '$lib/TootLoader.svelte';
 	import {load_from_storage, set_in_storage} from '$lib/storage.js';
-	import {parse_status_url} from '$lib/mastodon.js';
+	import {parse_status_url, type MastodonCache} from '$lib/mastodon.js';
 
 	const dispatch = createEventDispatcher<{reset: void}>();
 
@@ -25,10 +25,15 @@
 	 */
 	export let ancestors = false;
 
-	let loaded_status_key = 1;
+	/**
+	 * Optional API result cache.
+	 */
+	export let cache: MastodonCache | null = null;
 
 	export let loading: boolean | undefined = undefined;
 	export let load_time: number | undefined = undefined;
+
+	let loaded_status_key = 1;
 
 	// TODO BLOCK show a link to the original post, with the count of posts hidden (and a message if it maxed out, with a link to the blog post for discussion?)
 
@@ -77,6 +82,7 @@
 			{host}
 			{id}
 			{with_context}
+			{cache}
 			let:item
 			let:context
 			let:replies

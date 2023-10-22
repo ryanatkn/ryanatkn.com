@@ -1,10 +1,18 @@
 import {strip_end} from '@grogarden/util/string.js';
+import {wait} from '@grogarden/util/async.js';
 
-import mastodon_mock_data from '$lib/mastodon_mock_data.json';
+// TODO go through a single fetch helper and trace each call to the API,
+// so we can see the history in a tab displayed to any users who want to dig
 
-const mastodon_cache: Map<string, MastodonResponseData> = new Map(
-	mastodon_mock_data.map((d) => [d.url, d]),
-);
+// TODO these names need help
+// https://${host}/users/${author}/statuses/${id} // uri
+// https://${host}/@${author}/${id} // url
+// https://${host}/api/v1/statuses/${id} // status endpoint
+// https://${host}/api/v1/statuses/${id}/context // status context endpoint
+// https://${host}/api/v1/statuses/${id}/favourited_by // status favourited by endpoint
+
+export type MastodonCache = Map<string, MastodonResponseData>;
+
 const CACHE_NETWORK_DELAY = 0; // set this to like 1000 to see how the animations behave
 
 const headers = {
@@ -12,7 +20,7 @@ const headers = {
 	'content-type': 'application/jsno',
 };
 
-// this is used to get the `mastodon_mock_data.json` response data,
+// this is used to get the `mastodon_fake_data.json` response data,
 // see where `responses` is used - could be improved
 // const responses: Array<{url: string; data: any}> = [];
 // const flush_responses = () => {
@@ -30,17 +38,12 @@ export type MastodonResponseData = ResponseData<
 	MastodonContext | MastodonStatus | MastodonFavourite
 >;
 
-export const fetch_data = async (
-	url: string,
-	cache: Map<string, MastodonResponseData> | null = import.meta.env.DEV ? mastodon_cache : null,
-): Promise<any | null> => {
+export const fetch_data = async (url: string, cache?: MastodonCache | null): Promise<any> => {
 	const r = cache?.get(url);
 	if (r) {
 		// console.log('fetch_data cached', r);
-		return new Promise((resolve) => {
-			setTimeout(() => resolve(r.data), CACHE_NETWORK_DELAY);
-		});
-		// return r.data;
+		await wait(CACHE_NETWORK_DELAY);
+		return Promise.resolve(r.data);
 	}
 	try {
 		// console.log(`CALL fetch_post`, u);
@@ -56,13 +59,6 @@ export const fetch_data = async (
 		return null;
 	}
 };
-
-// TODO BLOCK these names need help
-// https://${host}/users/${author}/statuses/${id} // uri
-// https://${host}/@${author}/${id} // url
-// https://${host}/api/v1/statuses/${id} // status endpoint
-// https://${host}/api/v1/statuses/${id}/context // status context endpoint
-// https://${host}/api/v1/statuses/${id}/favourited_by // status favourited by endpoint
 
 export const to_status_url = (host: string, id: string): string => `https://${host}/statuses/${id}`;
 
@@ -84,6 +80,7 @@ export const to_api_status_context_url = (host: string, id: string): string =>
 export const to_api_favourites_url = (host: string, id: string): string =>
 	`https://${host}/api/v1/statuses/${id}/favourited_by`;
 
+// TODO BLOCK should this have a `Parsed` prefix and then have a zod schema for the URL with a refinement type that uses `parse_status_url`?
 export interface MastodonStatusUrl {
 	href: string;
 	host: string;
@@ -99,11 +96,8 @@ export interface MastodonStatusUrl {
 export const parse_status_url = (url: string): MastodonStatusUrl | null => {
 	try {
 		const u = new URL(url);
-		console.log(`u`, u);
 		const parts = strip_end(u.pathname, '/context').split('/').filter(Boolean);
-		console.log(`parts`, parts);
 		const author = parts[0][0] === '@' ? parts[0].substring(1) : null;
-		console.log(`author`, author);
 		if (!author) return null;
 		const id = parts.length > 1 ? parts[parts.length - 1] : null;
 		if (!id) return null;
@@ -113,43 +107,45 @@ export const parse_status_url = (url: string): MastodonStatusUrl | null => {
 	}
 };
 
-// TODO BLOCK go through a single fetch helper and trace each call to the API,
-// so we can see the history in a tab displayed to any users who want to dig
-
 export const fetch_status_context = async (
 	host: string,
 	id: string,
+	cache?: MastodonCache | null,
 ): Promise<MastodonContext | null> => {
 	const url = to_api_status_context_url(host, id);
-	return fetch_data(url);
+	return fetch_data(url, cache);
 };
 
-export const fetch_status = async (host: string, id: string): Promise<MastodonStatus | null> => {
+export const fetch_status = async (
+	host: string,
+	id: string,
+
+	cache?: MastodonCache | null,
+): Promise<MastodonStatus | null> => {
 	const url = to_api_status_url(host, id);
-	return fetch_data(url);
+	return fetch_data(url, cache);
 };
 
 export const fetch_favourites = async (
 	host: string,
 	status: MastodonStatus,
+	cache?: MastodonCache | null,
 ): Promise<MastodonFavourite[] | null> => {
 	const url = to_api_favourites_url(host, status.id);
-	return fetch_data(url);
+	return fetch_data(url, cache);
 };
 
 // TODO these are very in-progress
 
 /**
- * https://docs.joinmastodon.org/entities/Context/
- *
- * https://:host/api/v1/statuses/:id/context
+ * Result from `https://:host/api/v1/statuses/:id/context`.
+ * @see https://docs.joinmastodon.org/entities/Context/
  */
 export interface MastodonContext {
 	ancestors: MastodonStatus[];
 	descendants: MastodonStatus[];
 }
 
-// TODO BLOCK link and check name
 export interface MastodonStatus {
 	id: string;
 	created_at: string;

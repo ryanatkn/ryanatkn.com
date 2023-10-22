@@ -3,12 +3,6 @@ import {posts} from '$routes/blog/posts.js';
 
 // TODO BLOCK redirect from the numbers or render UI to navigate to it
 
-// TODO BLOCK see the gen file, this has a circular dependency with `posts`,
-// maybe have the user define the feed metadata, and then also generate this module?
-// where does that metadata belong? `src/blog/metadata.ts` and `src/blog/feed.ts`?
-
-// TODO should this module be `blog` instead of `feed`? `items` instead of `posts`?
-
 export const feed: BlogFeed = {
 	title: 'Ryan Atkinson',
 	id: 'https://www.ryanatkn.com/',

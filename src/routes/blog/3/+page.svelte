@@ -37,6 +37,7 @@
 	import Toot from '$lib/Toot.svelte';
 	import HashLink from '$lib/HashLink.svelte';
 	import BlogPost from '$lib/BlogPost.svelte';
+	import {mastodon_cache} from '$routes/blog/mastodon_cache.js';
 	// import BlogPostIndex from '$lib/BlogPostIndex.svelte';
 	// import {prod_content_security_policy} from '$routes/security.js';
 
@@ -66,6 +67,9 @@
 	// TODO BLOCK put all post meta into context instead of hardcoding the link to post 2 (see the other posts too for their links)
 
 	// TODO BLOCK flatten the markup
+
+	// TODO BLOCK avoid loading in production, lazy import?
+	const cache = import.meta.env.DEV ? mastodon_cache : null;
 </script>
 
 <BlogPost {post}>
@@ -221,6 +225,7 @@
 					<Toot
 						storage_key="embedded"
 						initial_show_settings={true}
+						{cache}
 						bind:url={embedded_toot_url}
 						bind:autoload={embedded_toot_autoload}
 						bind:loading={embedded_toot_loading}
@@ -240,13 +245,13 @@
 						<a href="https://wikipedia.org/wiki/Fediverse">Fediverse</a>.
 					</p>
 					<p>
-						Your browser requests information about a <a
-							href="https://mastodon.ryanatkn.com/@ryanatkn">a post I made</a
+						Your browser requests information about <a
+							href="https://mastodon.ryanatkn.com/@ryanatkn">the post I made</a
 						>
-						at mastodon.ryanatkn.com that references this blog post at ryanatkn.com. If the request is
-						successful, some JavaScript runs on your machine to display the "comments", replies to my
-						post that I've "favourited". My host mastodon.ryanatkn.com has its unauthenticated API enabled
-						(in other words, "secure mode" has not been enabled, meaning
+						for this blog post. If the request is successful, some JavaScript runs on your machine to
+						display the "comments", replies to my post that I've "favourited". My host mastodon.ryanatkn.com
+						has its unauthenticated API enabled (in other words, "secure mode" has not been enabled,
+						meaning
 						<a href="https://docs.joinmastodon.org/admin/config/#authorized_fetch"
 							><code>AUTHORIZED_FETCH</code></a
 						>
@@ -433,6 +438,7 @@
 		<Toot
 			replies
 			storage_key="replies"
+			{cache}
 			bind:url={replies_toot_url}
 			bind:autoload={autoload_comments}
 		/>
