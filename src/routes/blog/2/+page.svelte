@@ -9,12 +9,19 @@
 		summary:
 			'Proposing a model for one of the central aspects of online communities: the virtual social space.',
 		tags: ['web', 'community', 'social media', 'design', 'technology', 'software'],
+		comments: {
+			url: 'https://hci.social/@ryanatkn/109768104377997044',
+			type: 'mastodon',
+		},
 	} satisfies BlogPostData;
 </script>
 
 <script lang="ts">
 	import {base} from '$app/paths';
 	import BlogPost from '$lib/BlogPost.svelte';
+	import Toot from '$lib/Toot.svelte';
+
+	const cache = null; // TODO BLOCK add fetched data to cache
 </script>
 
 <BlogPost {post} classes="prose">
@@ -227,3 +234,12 @@
 		</li>
 	</ul>
 </BlogPost>
+<section class="width_md">
+	<Toot
+		replies
+		storage_key="2_comments"
+		{cache}
+		initial_url={post.comments.url}
+		initial_autoload={true}
+	/>
+</section>
