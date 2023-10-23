@@ -9,9 +9,9 @@ export default {
 	kit: {
 		adapter: adapter(),
 		alias: {$routes: 'src/routes', $fixtures: 'src/fixtures'},
-		// TODO improve the CSP - https://github.com/ryanatkn/ryanatkn.com/pull/12
 		csp: {
 			directives: {
+				// TODO improve the CSP - https://github.com/ryanatkn/ryanatkn.com/pull/12
 				// 'default-src': ['self'],
 				// 'script-src': ['self'],
 				'connect-src': ['self', 'https://hci.social/'],
