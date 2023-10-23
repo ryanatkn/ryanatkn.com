@@ -36,36 +36,6 @@ export const feed: BlogFeed = {
 				'Proposing a model for one of the central aspects of online communities: the virtual social space.',
 			tags: ['web', 'community', 'social media', 'design', 'technology', 'software'],
 		},
-		{
-			id: 'https://www.ryanatkn.com/blog/3',
-			url: 'https://www.ryanatkn.com/blog/modeling-virtual-social-spaces-the-roles-of-steward-operator-and-builder',
-			blog_post_id: 3,
-			title: 'Modeling virtual social spaces: the roles of steward, operator, and builder',
-			slug: 'modeling-virtual-social-spaces-the-roles-of-steward-operator-and-builder',
-			date_published: '2023-07-24T01:50:35.017Z',
-			date_modified: '2023-07-24T01:50:35.017Z',
-			summary:
-				'I describe how I like the builder role when working on social spaces, but less so the steward and operator roles and the responsibilities they carry. Also, how I implemented allowlisted Mastodon comments on my static blog with TypeScript, Svelte, and SvelteKit, but an API limitation compromised my desire to steward the comments.',
-			tags: [
-				'web',
-				'personal',
-				'builders',
-				'stewards',
-				'social spaces',
-				'blog comments',
-				'Mastodon',
-				'ActivityPub',
-				'ActivityStreams',
-				'Fediverse',
-				'design',
-				'technology',
-				'software',
-			],
-			comments: {
-				type: 'mastodon',
-				url: 'https://mastodon.ryanatkn.com/@ryanatkn/110843291155970959',
-			},
-		},
 	],
 };
 
