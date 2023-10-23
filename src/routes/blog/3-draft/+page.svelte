@@ -36,7 +36,8 @@
 
 	import Toot from '$lib/Toot.svelte';
 	import HashLink from '$lib/HashLink.svelte';
-	import BlogPost from '$lib/BlogPost.svelte';
+	// TODO finish draft (and think of a better way to do them)
+	// import BlogPost from '$lib/BlogPost.svelte';
 	import {mastodon_cache} from '$routes/blog/mastodon_cache.js';
 	import {get_blog_feed} from '$lib/blog.js';
 
@@ -49,7 +50,9 @@
 	const cache = import.meta.env.DEV ? mastodon_cache : null;
 </script>
 
-<BlogPost {post}>
+<!-- TODO finish draft (and think of a better way to do them) -->
+<!-- <BlogPost {post}> -->
+<div class="width_md">
 	<section style:padding-top="var(--spacing_2)" class="prose spaced">
 		<p>
 			This post began as a demo using <a href="https://joinmastodon.org/">Mastodon</a>
@@ -420,6 +423,7 @@
 			initial_autoload={true}
 		/>
 	</section>
+
 	<!-- TODO maybe expose -->
 	<!-- <section class="prose">
 		<h2>
@@ -448,7 +452,8 @@
 			{prod_content_security_policy}
 		</blockquote>
 	</section> -->
-</BlogPost>
+	<!-- </BlogPost> -->
+</div>
 
 <style>
 	/* TODO tricky layout issue, related to the leaky :last-child margin selectors */
