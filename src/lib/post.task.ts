@@ -20,7 +20,7 @@ export const task: Task<Args> = {
 	run: async ({args, log, invoke_task}) => {
 		const {date = new Date().toISOString()} = args;
 
-		// TODO BLOCK @multiple parameterize and refactor
+		// TODO @multiple parameterize and refactor
 		const dir = cwd();
 		const blog_dirname = 'blog';
 		const routes_path = 'src/routes'; // TODO read from SvelteKit config;

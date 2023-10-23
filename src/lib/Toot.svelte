@@ -77,7 +77,7 @@
 	$: id = parsed?.status_id ?? null;
 	$: host = parsed?.host ?? null;
 
-	// TODO BLOCK not saving autoload state
+	// TODO save autoload state
 
 	$: with_context = replies || ancestors;
 

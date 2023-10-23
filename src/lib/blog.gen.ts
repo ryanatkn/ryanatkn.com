@@ -13,12 +13,12 @@ import type {BlogFeed, BlogModule} from '$lib/blog.js';
 // TODO extract to @fuz.dev/fuz_blog
 
 export const gen: Gen = async ({origin_id}) => {
-	// TODO BLOCK @multiple parameterize and refactor
+	// TODO @multiple parameterize and refactor
 	const dir = cwd();
 	const blog_dirname = 'blog';
 	const routes_path = 'src/routes'; // TODO read from SvelteKit config;
 	const blog_dir = join(dir, routes_path, blog_dirname);
-	const {blog} = (await import(join(blog_dir, 'blog.js'))) as BlogModule; // TODO BLOCK zod parse
+	const {blog} = (await import(join(blog_dir, 'blog.js'))) as BlogModule; // TODO zod parse
 
 	const generated_by = relative(dir, origin_id);
 
@@ -26,7 +26,7 @@ export const gen: Gen = async ({origin_id}) => {
 
 	const modules = await load_blog_post_modules(blog_post_ids, blog_dirname);
 
-	// TODO BLOCK zod schema validation including parsing the status context url (with zod?)
+	// TODO zod schema validation including parsing the status context url (with zod?)
 	// for (const mod of modules) {
 	// 	validate_blog_post(mod.post)
 	// }
