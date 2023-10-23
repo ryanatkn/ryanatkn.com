@@ -43,18 +43,19 @@ export type MastodonResponseData = ResponseData<
 export const fetch_data = async (url: string, cache?: MastodonCache | null): Promise<any> => {
 	const r = cache?.get(url);
 	if (r) {
-		// console.log('fetch_data cached', r);
+		console.log('fetch_data cached', r);
 		await wait(CACHE_NETWORK_DELAY);
 		return Promise.resolve(r.data);
 	}
 	try {
-		// console.log(`CALL fetch_post`, u);
+		console.log(`CALL fetch_post`, url, headers);
 		const res = await fetch(url, {headers});
 		if (!res.ok) return null;
-		// console.log(`res`, res);
-		// const h = Array.from(res.headers.entries());
-		// console.log(`received headers`, url, h);
+		console.log(`res`, res);
+		const h = Array.from(res.headers.entries());
+		console.log(`received headers`, url, h);
 		const fetched = await res.json();
+		console.log(`fetched`, fetched);
 		// responses.push({url, data: fetched});
 		return fetched;
 	} catch (err) {
