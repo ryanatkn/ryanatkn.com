@@ -1,20 +1,23 @@
 <script lang="ts" context="module">
-	import {base} from '$app/paths';
-	import type {FeedItemData} from '$lib/feed';
+	import type {BlogPostData} from '$lib/blog.js';
 
-	export const post: FeedItemData = {
-		id: 'https://www.ryanatkn.com/blog/1',
+	export const post = {
 		title: 'Modeling virtual social spaces: in this house we post cat pics on Saturday',
-		url: 'https://www.ryanatkn.com/blog/modeling-virtual-social-spaces-in-this-house-we-post-cat-pics-on-saturday',
+		slug: 'modeling-virtual-social-spaces-in-this-house-we-post-cat-pics-on-saturday',
 		date_published: '2023-01-22T21:44:17.224Z',
 		date_modified: '2023-01-28T17:20:51.259Z',
 		summary:
 			'Proposing a model for one of the central aspects of online communities: the virtual social space.',
 		tags: ['web', 'community', 'social media', 'design', 'technology', 'software'],
-	};
+	} satisfies BlogPostData;
 </script>
 
-<div class="prose">
+<script lang="ts">
+	import {base} from '$app/paths';
+	import BlogPost from '$lib/BlogPost.svelte';
+</script>
+
+<BlogPost {post} classes="prose">
 	<h2>Introduction</h2>
 	<p>
 		While working on the community software project I described in <a
@@ -223,4 +226,4 @@
 			access? And the other powers?
 		</li>
 	</ul>
-</div>
+</BlogPost>

@@ -1,21 +1,23 @@
 <script lang="ts" context="module">
-	import {base} from '$app/paths';
+	import type {BlogPostData} from '$lib/blog.js';
 
-	import type {FeedItemData} from '$lib/feed';
-
-	export const post: FeedItemData = {
-		id: 'https://www.ryanatkn.com/blog/0',
-		title: 'Making free and open source web community software',
-		url: 'https://www.ryanatkn.com/blog/making-free-and-open-source-web-community-software',
+	export const post = {
+		title: 'Building free and open source web community software',
+		slug: 'making-free-and-open-source-web-community-software',
 		date_published: '2022-05-13T01:42:23.000Z',
 		date_modified: '2023-07-23T17:12:50.674Z',
 		summary:
 			'I discuss my work on open source community software called feltjs, giving a brief overview of the design and technology choices, and announcing our newsletter and podcast.',
 		tags: ['web', 'technology', 'social', 'software', 'open source', 'community', 'FOSS'],
-	};
+	} satisfies BlogPostData;
 </script>
 
-<div class="prose">
+<script lang="ts">
+	import {base} from '$app/paths';
+	import BlogPost from '$lib/BlogPost.svelte';
+</script>
+
+<BlogPost {post} classes="prose">
 	<p>
 		<a href="https://www.felt.dev/">
 			<img
@@ -29,26 +31,26 @@
 			/></a
 		>
 		<br />
-		I've been making free and open source web community software with
+		I've been developing free and open source web community software with
 		<a href="https://12mod12.com/">Hamilton Reed</a> full-time
-		<a href="https://github.com/feltjs/felt-server/graphs/contributors">since April 2021</a>. (he's
+		<a href="https://github.com/feltjs/felt/graphs/contributors">since April 2021</a>. (he's
 		@greatbacon on <a href="https://github.com/greatbacon">GitHub</a> and
 		<a href="https://hachyderm.io/@greatbacon">Mastodon</a>) We've been working quietly in public
 		and leaving a trail of informal documentation through
-		<a href="https://github.com/feltjs/felt-server/pulls">GitHub PRs</a>. We'll announce when we
-		reach alpha in Q3 2023.
+		<a href="https://github.com/feltjs/felt/pulls">GitHub PRs</a>. We'll announce when we reach
+		alpha in Q4 2023.
 	</p>
 	<p>
-		Hamilton and I first met in December 2019 and started self-funded part-time work on what would
-		become <a href="https://github.com/feltjs">@feltjs</a>. One of the main ideas was to make tools
-		to help people be creative together - visit <a href="https://www.felt.dev/">felt.dev</a> to see where
-		we are.
+		Hamilton and I started self-funded part-time work in January 2020 on what would become <a
+			href="https://github.com/feltjs">@feltjs</a
+		>. One of the main ideas was to make tools to help people be creative together - visit
+		<a href="https://www.felt.dev/">felt.dev</a> to see where we are.
 	</p>
 	<p>
-		Our main project is <a href="https://github.com/feltjs/felt-server">felt-server</a>, an
-		extensible Node.js server and web frontend described as "a programmable platform for hobbyists
-		and human-scale communities". The main UI looks like Discord and Slack on the surface, and it
-		has aspects of a
+		Our main project is <a href="https://github.com/feltjs/felt">Felt</a>, an extensible Node.js
+		server and SvelteKit web frontend described as "a programmable platform for hobbyists and
+		human-scale communities". The main UI looks like Discord and Slack on the surface, and it has
+		aspects of a
 		<a href="https://wikipedia.org/wiki/Content_management_system">content management system</a>
 		and
 		<a href="https://wikipedia.org/wiki/Knowledge_management_software"
@@ -58,9 +60,9 @@
 		platform" is the best we have right now.
 	</p>
 	<p>
-		felt-server targets a specific UX. Instead of trying to replace any of today's large platforms,
-		we think of felt-server as filling a niche that venture-funded startups and other commercial
-		interests rationally ignore.
+		Felt targets a specific UX. Instead of trying to replace any of today's large platforms, we
+		think of Felt as filling a niche that venture-funded startups and other commercial interests
+		rationally ignore.
 	</p>
 	<ul>
 		<li>
@@ -74,8 +76,8 @@
 		</li>
 		<li>
 			multipurpose, extensible, and interoperable, so the same toolkit can be used for many kinds of
-			communities and websites and problems - felt-server can run some of your friendly bots in the
-			clouds with a nice web GUI
+			communities and websites and problems - Felt can run some of your friendly bots in the clouds
+			with a nice web GUI
 		</li>
 		<li>
 			is free and open source with a documented API, and it's designed for fullstack customization,
@@ -86,7 +88,7 @@
 	<p>
 		Fullstack customization is part of the point of feltjs, but today it's a vague idea with some
 		interesting glimmers scattered around. The point is to help us solve problems, which are unknown
-		and numerous, so we design the system holistcally with that in mind - the UX is the DX is the
+		and numerous, so we design the system holistically with that in mind - the UX is the DX is the
 		UX. It's confusing but so is the problem of solving so many problems.
 	</p>
 	<p>
@@ -131,34 +133,37 @@
 		ideas, the tools should be enabling and out of the way.
 	</p>
 	<p>
-		felt-server will support simple and scalable static web publishing like blogs and RSS/Atom
-		feeds, and also provide tools to make realtime social experiences and games that inherit your
-		social context, enabling beginners to participate in the creative process more easily. Doing a
-		hard thing is much easier when the task is reduced to its essentials.
+		Felt will support simple and scalable static web publishing like blogs and RSS/Atom feeds, and
+		also provide tools to make realtime social experiences and games that inherit your social
+		context, enabling beginners to participate in the creative process more easily. Doing a hard
+		thing is much easier when the task is reduced to its essentials.
 	</p>
 	<p>We have a handful of software repos:</p>
 	<ul>
 		<li>
-			<a href="https://github.com/feltjs/felt-server">@feltjs/felt-server</a> – a programmable platform
-			for hobbyists and human-scale communities, the Node.js server that's selfhostable and available
-			as a library on npm
+			<a href="https://www.felt.dev/">felt.dev</a> is the website with docs (<a
+				href="https://github.com/feltjs/website">source</a
+			>)
 		</li>
 		<li>
-			<a href="https://github.com/fuz-dev/fuz">@fuz.dev/fuz</a> – styles and UI components for Svelte
-			and SvelteKit 💚
+			<a href="https://github.com/feltjs/felt">@feltjs/felt</a> – a programmable platform for hobbyists
+			and human-scale communities 💚 the Node.js server that's selfhostable and available as a library
+			on npm
 		</li>
 		<li>
-			<a href="https://github.com/feltjs/felt-template">@feltjs/felt-template</a> – a static web app
-			template with SvelteKit, TypeScript, and Felt for quickly creating new projects - in the future
-			it will support quickly creating a custom server project, too.
+			<a href="https://ui.felt.dev/">ui.felt.dev</a> – UI sketches in Svelte for Felt (<a
+				href="https://github.com/feltjs/felt-ui">source</a
+			>)
 		</li>
 		<li>
-			<a href="https://github.com/grogarden/util">@grogarden/util</a> – JS utilities to complement the
-			modern web platform 🦕🐋
+			<a href="https://mural.felt.dev/">mural.felt.dev</a> – a proof-of-concept Svelte component for
+			collaborative drawing using Felt (<a href="https://github.com/feltjs/felt-mural">source</a>)
 		</li>
 		<li>
-			<a href="https://github.com/feltjs/gro">@feltjs/gro</a> – a toolkit that extends SvelteKit and
-			Vite with things we find useful for making web apps - it's used by all of our other projects
+			<a href="https://habitat.felt.dev/">habitat.felt.dev</a> – a proof-of-concept Svelte component
+			for collaborative simulated habitats using Felt (<a
+				href="https://github.com/feltjs/felt-habitat">source</a
+			>)
 		</li>
 	</ul>
 	<p>
@@ -175,8 +180,9 @@
 		</li>
 		<li>
 			@feltjs on
-			<a href="https://github.com/feltjs">GitHub</a> and
-			<a href="https://www.npmjs.com/org/feltjs">npm</a>
+			<a href="https://github.com/feltjs">GitHub</a>,
+			<a href="https://www.npmjs.com/org/feltjs">npm</a>, and
+			<a href="https://opencollective.com/feltjs">OpenCollective</a>
 		</li>
 	</ul>
 	<hr />
@@ -201,23 +207,24 @@
 		Originally I thought I was going to operate a hosting company, <a
 			href="https://www.felt.social/">felt.social</a
 		>, so we could earn money and make software sustainably. The logic is air-tight - we're making
-		selfhostable software, but not everyone wants to self-host, so we offer it for a fee, do what we
-		love, and make open source sustainable, all in one move.
+		selfhostable software, but not everyone has the desire and skill to operate server software, so
+		we could offer service for a fee, do what we love, and make open source sustainable. Hosting is
+		where the money is, and somebody needs to do it.
 	</p>
 	<p>
-		It sounded like a plan, except I don't love operations, not enough to take on the
-		responsibilities for admin, moderation, holding keys, security, uptime, abuse,
-		legal/international/etc. Also, the length of my todo list for software development is infinite,
-		and taking a second job of this complexity does not seem productive. I feel significant
-		pressures from the software side, so even if coworkers do most of the labor, I don't think I'll
-		be able to sleep well at night if I'm one of the people responsible for your critical personal
-		data not catching fire at all times. I'm going to spend my time making software instead of
-		running a hosting company, and I'll gladly pay money to operators for hosting.
+		It sounded like plan, except my goal is to make the best software I can, and operations
+		undermine that goal for me. My nervous system flees into the tall grass when I think about
+		moderation, spam, holding keys, security, uptime, legal compliance, safety, and the rest. It's
+		less about the labor and more the responsibility - I won't sleep well at night if I'm one of the
+		people responsible for your critical personal data not catching fire at all times, and that's
+		just one of many hazards. I know taking a second job of this complexity will compromise both my
+		productivity and mental health. So instead, I'll focus on making software and enthusiastically
+		pay money to operators for their service.
 	</p>
 	<p>
-		While my plan for financial sustainbility pivots to adjust to reality, Hamilton may continue
-		developing <a href="https://www.felt.social/">felt.social</a> as a cooperatively-owned host. Now
-		he'll just need 4 cofounders instead of 3 to officially start the co-op in Colorado. Please take
+		While my personal plan for financial sustainbility adjusts to this reality, Hamilton may
+		continue developing <a href="https://www.felt.social/">felt.social</a> as a cooperatively-owned host.
+		Now he'll just need 4 cofounders instead of 3 to officially start the co-op in Colorado. Please take
 		my money!!
 	</p>
 	<hr />
@@ -270,8 +277,8 @@
 			>SvelteKit</a
 		>, so you may choose Deno, Bun, a cloud platform's serverless offerings, or whatever else is in
 		the Node.js legacy compat space. We're trying to minimize our exposure to Node-specific APIs to
-		keep portability high. Node.js a practical choice, not an idealized one. (and we try to move
-		forward - for example feltjs never used any CommonJS)
+		keep portability high. Node.js a practical choice, not an idealized one. (and we put effort into
+		moving forward - for example feltjs never used any CommonJS)
 	</p>
 	<h3>customizable and extensible</h3>
 	<p>
@@ -288,15 +295,15 @@
 		caching, and thanks to SvelteKit we should be able to deliver good experiences in many cases with
 		fast loadtimes and minimal or zero JS. (but we're
 		<a
-			href="https://github.com/feltjs/felt-server/blob/main/src/docs/known-issues.md#not-using-sveltekits-server-side-data-loading"
+			href="https://github.com/feltjs/felt/blob/main/src/docs/known-issues.md#not-using-sveltekits-server-side-data-loading"
 			>not there yet</a
 		>)
 	</p>
 	<h3>scaling (and not)</h3>
 	<p>
 		Our focus on "small communities" relates to a potentially deflating fact about our software - it
-		doesn't scale to large numbers of people or some kinds of heavy load. felt-server can't be the
-		best solution to all problems, so we make tradeoffs intentionally to serve a particular UX.
+		doesn't scale to large numbers of people or some kinds of heavy load. Felt can't be the best
+		solution to all problems, so we make tradeoffs intentionally to serve a particular UX.
 	</p>
 	<div>We're optimizing to:</div>
 	<ul>
@@ -313,7 +320,7 @@
 		communities are good too.
 	</p>
 	<aside>
-		Today, <a href="https://github.com/feltjs/felt-server"><code>@feltjs/felt-server</code></a>
+		Today, <a href="https://github.com/feltjs/felt"><code>@feltjs/felt</code></a>
 		supports only
 		<code
 			><a href="https://github.com/sveltejs/kit/tree/master/packages/adapter-node"
@@ -350,7 +357,7 @@
 		<a href="https://www.jsonrpc.org/specification">JSON-RPC 2.0</a>. We also publish a
 		<a href="https://json-schema.org/">JSON Schema</a>
 		with
-		<a href="https://github.com/feltjs/felt-server/blob/main/src/static/schemas/vocab.json"
+		<a href="https://github.com/feltjs/felt/blob/main/src/static/schemas/vocab.json"
 			>our vocabulary</a
 		>, including both data objects and actions. We could feasibly generate OpenAPI schemas from our
 		source of truth, giving us greatly expanded access to existing tooling, but we have no plans for
@@ -362,13 +369,13 @@
 		federated tech isn't optimal for today's goals. (if you link me xkcd 927 i swear)
 	</p>
 	<p>
-		Given felt-server's small-scale design and selfhostability, it may help to think of it as "<a
+		Given Felt's small-scale design and selfhostability, it may help to think of it as "<a
 			href="https://wikipedia.org/wiki/Polycentric">polycentric</a
 		>", where each community or "hub" is a silo of self-governed data, and any particular instance
 		hosts one or more hubs. In combination with clients that connect to multiple services, I think
 		"decentralized" is an appropriate description, but not in the way some people want, for example
-		where their identity isn't mediated by the hub. I don't think felt-server will reach its
-		potential until it can federate with the wider world, especially for user identity.
+		where their identity isn't mediated by the hub. I don't think Felt will reach its potential
+		until it can federate with the wider world, especially for user identity.
 	</p>
 	<aside>
 		I don't know which standards will or should win with identity, that's outside of my expertise,
@@ -404,8 +411,9 @@
 		</li>
 		<li>
 			@feltjs on
-			<a href="https://github.com/feltjs">GitHub</a> and
-			<a href="https://www.npmjs.com/org/feltjs">npm</a>
+			<a href="https://github.com/feltjs">GitHub</a>,
+			<a href="https://www.npmjs.com/org/feltjs">npm</a>, and
+			<a href="https://opencollective.com/feltjs">OpenCollective</a>
 		</li>
 	</ul>
-</div>
+</BlogPost>

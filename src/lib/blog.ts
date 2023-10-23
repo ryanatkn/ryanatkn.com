@@ -1,9 +1,66 @@
-import type {FeedItemData} from '$lib/feed';
-import * as p0 from '$routes/blog/[slug]/0.svelte';
-import * as p1 from '$routes/blog/[slug]/1.svelte';
+import {SvelteComponent, getContext, setContext} from 'svelte';
+import type {Flavored, OmitStrict} from '@grogarden/util/types.js';
 
-// TODO maybe export these zipped together into objects? currently have to match by index
+import type {Feed} from '$lib/feed.js';
 
-export const posts: FeedItemData[] = [p0.post, p1.post];
+// TODO inconsistent naming with `BlogPostData` and `BlogPostItem`,
+// consider `BlogItem` or `BlogFeedItem`?
+// maybe `Metadata` instead of `Data` in both cases?
+// also think about `BlogFeedItem` instead of `BlogPostItem`
+export type BlogFeedData = OmitStrict<Feed, 'items'>;
 
-export const Components = [p0.default, p1.default];
+export interface BlogFeed extends Feed {
+	items: BlogPostItem[];
+}
+
+/**
+ * The author-defined data for each post.
+ */
+export interface BlogPostData {
+	title: string;
+	slug: string;
+	date_published: string; // TODO maybe calculated instead of manually defined?
+	date_modified: string; // TODO maybe calculated instead of manually defined?
+	summary: string;
+	tags?: string[];
+	comments?: {
+		url: string;
+		type: 'mastodon';
+	};
+}
+
+export interface BlogModule {
+	blog: BlogFeedData;
+}
+
+export interface BlogPostModule {
+	post: BlogPostData;
+	default: typeof SvelteComponent<any>;
+}
+
+export type BlogPostId = Flavored<number, 'BlogPostId'>;
+
+export interface BlogPostItem extends BlogPostData {
+	/**
+	 * Blog post path with `blog_post_id`.
+	 */
+	id: string;
+
+	/**
+	 * Blog post path with `slug`.
+	 */
+	url: string;
+
+	/**
+	 * Incrementing 1-based integer.
+	 */
+	blog_post_id: BlogPostId;
+
+	tags: string[]; // required
+}
+
+const KEY = Symbol('blog_feed');
+
+export const get_blog_feed = (): BlogFeed => getContext(KEY);
+
+export const set_blog_feed = (feed: BlogFeed): BlogFeed => setContext(KEY, feed);

@@ -1,10 +1,17 @@
+// TODO publish `feed.json` not just the Atom `feed.xml`
+
+// TODO also publish rss probably
+
+// TODO finish mapping with Atom and RSS
+// https://www.jsonfeed.org/mappingrssandatom/
+
 /**
  * This is designed to extend JSON Feed 1.1 with namespaced data for other specs like Atom.
  * It's still a work in progress, and I'll add features as I need them,
  * and eventually this will be extracted to a standalone library.
  * https://www.jsonfeed.org/version/1.1/
  */
-export interface FeedData {
+export interface Feed {
 	id: string;
 	title: string;
 	home_page_url: string;
@@ -16,11 +23,13 @@ export interface FeedData {
 		url?: string;
 		email?: string;
 	};
-	items: FeedItemData[];
+	items: FeedItem[];
 	atom: {
 		feed_url: string;
 	};
-	// TODO
+	// TODO should these be on the root?
+	// yes if the goal is to match the data structure of JSON Feed as much as possible,
+	// no if the goal is to put shared properties on the root and format-specific properties in a namespace
 	// jsonfeed: {
 	// 	version: string;
 	// 	feed_url: string;
@@ -28,7 +37,7 @@ export interface FeedData {
 	// };
 }
 
-export interface FeedItemData {
+export interface FeedItem {
 	id: string;
 	title: string;
 	url: string;
@@ -43,8 +52,12 @@ export interface FeedItemData {
 	tags?: string[];
 }
 
-export const toAtomXml = (data: FeedData): string => {
-	const updated: string = data.items
+export const create_atom_feed = (data: Feed): string => {
+	const items = data.items
+		.slice()
+		.sort((a, b) => (new Date(a.date_published) > new Date(b.date_published) ? -1 : 1)); // TODO maybe add an option to customize this? maybe by `date_modified`?
+
+	const updated: string = items
 		.reduce((latest, item) => {
 			const modified = new Date(item.date_modified || item.date_published);
 			return modified > latest ? modified : latest;
@@ -67,7 +80,7 @@ export const toAtomXml = (data: FeedData): string => {
     ${data.author.email ? `<email>${data.author.email}</email>` : ''}
     ${data.author.url ? `<uri>${data.author.url}</uri>` : ''}
   </author>
-  ${data.items
+  ${items
 		.map(
 			(item) =>
 				`

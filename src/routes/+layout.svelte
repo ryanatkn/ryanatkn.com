@@ -4,25 +4,19 @@
 	import '$routes/style.css';
 
 	import Themed from '@fuz.dev/fuz/Themed.svelte';
-	import {dev} from '$app/environment';
 
 	import Header from '$routes/Header.svelte';
 	import Footer from '$routes/Footer.svelte';
+	import {feed} from '$routes/blog/feed.js';
+	import {set_blog_feed} from '$lib/blog.js';
 
-	const content_security_poilicy = dev
-		? "default-src 'unsafe-inline' 'self';"
-		: "default-src 'unsafe-inline' 'self'; img-src https://*;";
+	set_blog_feed(feed);
 </script>
 
 <svelte:head>
 	<title>ryanatkn.com</title>
-	<link
-		rel="alternate"
-		type="application/atom+xml"
-		title="Atom"
-		href="https://www.ryanatkn.com/feed.xml"
-	/>
-	<meta http-equiv="content-security-policy" content={content_security_poilicy} />
+	<!-- TODO add JSONFeed -->
+	<link rel="alternate" type="application/atom+xml" title="Atom" href={feed.atom.feed_url} />
 </svelte:head>
 
 <Themed>

@@ -1,5 +1,5 @@
 <h2>contact me</h2>
-<ul class="content">
+<ul class="card">
 	<li>
 		<a href="mailto:mail@ryanatkn.com">mail@ryanatkn.com</a>
 	</li>
@@ -22,15 +22,7 @@
 </ul>
 
 <style>
-	.content {
-		background-color: var(--bg);
-		border-radius: var(--border_radius_sm);
-		padding: var(--spacing_sm) var(--spacing_sm) var(--spacing_sm) var(--spacing_xl4);
-		border-width: var(--border_width);
-		border-style: var(--border_style);
-		border-color: var(--border_1);
-	}
-	.content:hover {
-		border-color: var(--border_2);
+	.card {
+		max-width: initial;
 	}
 </style>

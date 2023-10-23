@@ -1,21 +1,35 @@
 <script lang="ts">
-	import type {SvelteComponent} from 'svelte';
-
 	import BlogPostHeader from '$lib/BlogPostHeader.svelte';
 	import BlogPostFooter from '$lib/BlogPostFooter.svelte';
-	import type {FeedItemData} from '$lib/feed';
+	import {get_blog_feed, type BlogPostData} from '$lib/blog.js';
 
-	export let post: FeedItemData;
-	export let Component: typeof SvelteComponent<any>;
+	export let post: BlogPostData;
+	export let classes: string | undefined = undefined;
+
+	const feed = get_blog_feed();
+
+	const item = feed.items.find((i) => i.slug === post.slug);
 </script>
 
 <svelte:head>
-	<title>{post.title}</title>
+	<title>{post.title} - ryanatkn.com/blog</title>
 </svelte:head>
 
-<header class="prose">
-	<BlogPostHeader {post} />
-</header>
-<svelte:component this={Component} />
-<hr />
-<BlogPostFooter {post} />
+{#if item}
+	<article class={classes}>
+		<header class="prose">
+			<BlogPostHeader {item} />
+		</header>
+		<slot />
+		<hr />
+		<BlogPostFooter {item} />
+	</article>
+{:else}
+	<div>cannot find post <code>{post.slug}</code></div>
+{/if}
+
+<style>
+	article {
+		width: var(--width_md);
+	}
+</style>

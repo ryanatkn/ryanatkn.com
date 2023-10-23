@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Breadcrumbs from '@fuz.dev/fuz/Breadcrumbs.svelte';
+	import Breadcrumb from '@fuz.dev/fuz_library/Breadcrumb.svelte';
 	import {base} from '$app/paths';
 
 	import Favicon from '$lib/Favicon.svelte';
@@ -11,7 +11,7 @@
 	interface ProjectInfo {
 		name: string;
 		title: string;
-		description: string;
+		description?: string;
 		links?: string;
 		icon?: string;
 		icon_alt?: string;
@@ -25,13 +25,14 @@
 		{
 			name: 'blog',
 			title: `<a href="${base}/blog">blog</a>`,
-			description: '<a href="https://www.ryanatkn.com/feed.xml">feed.xml</a>',
+			links:
+				'<a href="https://www.ryanatkn.com/blog/feed.xml" class="chip">feed.xml</a> <a href="https://github.com/ryanatkn/ryanatkn.com" class="chip">GitHub</a>',
 		},
 		{
 			name: 'devlog',
 			title: '<a href="https://log.ryanatkn.com/">log</a>',
 			description: 'devlog',
-			links: '<a href="https://log.ryanatkn.com/">log.ryanatkn.com</a>',
+			links: '<a href="https://github.com/ryanatkn/log" class="chip">GitHub</a>',
 		},
 		{
 			name: 'github',
@@ -91,8 +92,8 @@
 				</blockquote>
 				<div style:margin-bottom="var(--spacing_xs)"><Me /></div>
 				<p>
-					I'm building free and open source software <a href="https://github.com/ryanatkn"
-						>projects</a
+					I'm building free and open source <a href="https://github.com/ryanatkn"
+						>software projects</a
 					>
 					like <a href="https://www.felt.dev/">Felt</a>, <a href="https://www.fuz.dev/">Fuz</a>, and
 					<a href="https://github.com/grogarden/gro">Gro</a>. My main skill is making frontend web
@@ -114,25 +115,31 @@
 		</div>
 		<div class="cards">
 			{#each projects as project}
-				<div class="card prose padded_md">
+				<div class="card prose">
 					<div>
 						<p class="title">{@html project.title}</p>
 						<div class="content">
 							<div>
-								<p>
-									{@html project.description}
-								</p>
+								{#if project.description}
+									<p>
+										{@html project.description}
+									</p>
+								{/if}
 								{#if project.links}
 									<p>{@html project.links}</p>
 								{/if}
 							</div>
 							{#if project.icon}
 								<div class="icon">
-									<img
-										src="{base}{project.icon}"
-										alt={project.icon_alt ?? `icon for ${project.name}`}
-										style={project.icon_style}
-									/>
+									{#if project.icon[0] === '/'}
+										<img
+											src="{base}{project.icon}"
+											alt={project.icon_alt ?? `icon for ${project.name}`}
+											style={project.icon_style}
+										/>
+									{:else}
+										<div style:font-size="var(--size_5)">{project.icon}</div>
+									{/if}
 								</div>
 							{/if}
 						</div>
@@ -142,17 +149,17 @@
 		</div>
 	</section>
 </div>
-<Breadcrumbs
+<Breadcrumb
 	><div class="linkpath">
 		<Favicon />
 		<div class="url">ryanatkn.com</div>
-	</div></Breadcrumbs
+	</div></Breadcrumb
 >
 
 <style>
 	.width_md {
 		flex: 1;
-		margin-bottom: var(--spacing_xl3);
+		margin-bottom: var(--spacing_3);
 	}
 	.linkpath {
 		display: flex;
@@ -172,28 +179,6 @@
 	.panel :global(h2) {
 		margin-top: 0;
 	}
-	.cards {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		align-items: flex-start;
-		justify-content: center;
-		gap: var(--spacing_md);
-	}
-	.card {
-		display: flex;
-		max-width: var(--width_sm);
-		background-color: var(--bg);
-		border-width: var(--border_width);
-		border-style: var(--border_style);
-		border-color: var(--border_1);
-		border-radius: var(--border_radius);
-		margin-bottom: var(--spacing_lg);
-		padding: var(--spacing_md);
-	}
-	.card:hover {
-		border-color: var(--border_2);
-	}
 	.icon {
 		padding-left: var(--spacing_sm);
 		flex-shrink: 0;
@@ -204,7 +189,6 @@
 	}
 	.content {
 		display: flex;
-		align-items: flex-end;
 	}
 	.title {
 		font-size: var(--size_lg);

@@ -1,11 +1,11 @@
 <script lang="ts">
-	import type {FeedItemData} from '$lib/feed';
+	import type {BlogPostItem} from '$lib/blog.js';
 
-	export let post: FeedItemData;
-	post; // TODO
+	export let item: BlogPostItem;
+	item; // TODO
 </script>
 
-<div class="blog-post-footer">
+<footer class="blog-post-footer">
 	<div class="panel prose">
 		<p>
 			<span>
@@ -16,7 +16,7 @@
 			<a href="https://hci.social/@ryanatkn">@ryanatkn@hci.social</a>
 		</p>
 	</div>
-</div>
+</footer>
 
 <style>
 	.blog-post-footer {
