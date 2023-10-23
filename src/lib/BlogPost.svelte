@@ -30,6 +30,6 @@
 
 <style>
 	article {
-		width: var(--width_md);
+		max-width: var(--width_md);
 	}
 </style>
