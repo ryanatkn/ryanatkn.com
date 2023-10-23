@@ -48,6 +48,7 @@
 	let embedded_toot_load_time: number | undefined;
 
 	// TODO BLOCK flatten the markup
+	// TODO BLOCK goal to make best software in blog1
 
 	// TODO avoid loading in production, lazy import?
 	const cache = import.meta.env.DEV ? mastodon_cache : null;
@@ -333,14 +334,10 @@
 				replies to be distributed in spaces I steward.
 			</p>
 			<p>
-				I don't steward the replies of my posts on Mastodon. Nobody should attempt to do that on a
-				public microblogging platform. I'll block people, but I'm not going to spend any more effort
-				than that to address bad actors.
-			</p>
-			<p>
-				I do consider this blog to be a place I steward. So given my proclivities that you've likely
+				On Mastodon, I don't attempt to steward the replies to my posts - I'll ignore and block
+				instead. I do however steward this blog. So given my proclivities that you've likely
 				inferred by now, I want to minimize the stewarding work. I'm willing to favourite posts that
-				I want to appear here, with all of the social complexities that brings, but the fact that
+				I want to appear here, with all of the social complexities that carries, but the fact that
 				edited posts require vigilance changes the equation.
 			</p>
 			<p>Let's step back and consider some of the roles in a social space:</p>

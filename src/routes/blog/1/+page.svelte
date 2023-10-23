@@ -207,21 +207,25 @@
 		Originally I thought I was going to operate a hosting company, <a
 			href="https://www.felt.social/">felt.social</a
 		>, so we could earn money and make software sustainably. The logic is air-tight - we're making
-		selfhostable software, but not everyone wants to self-host, so we offer it for a fee, do what we
-		love, and make open source sustainable, all in one move.
+		selfhostable software, but not everyone has the desire and skill to operate server software, so
+		we could offer service for a fee, do what we love, and make open source sustainable. Hosting is
+		where the money is, and somebody needs to do it.
 	</p>
 	<p>
-		It sounded like a plan, except I don't love operations, not enough to take on the
-		responsibilities for admin, moderation, holding keys, security, uptime, spam, abuse,
-		international legal compliance, etc. Also, the length of my todo list for software development
-		is infinite, and taking a second job of this complexity does not seem productive. I feel
-		significant pressures from the software side, so even if coworkers do most of the labor, I don't
-		think I'll be able to sleep well at night if I'm one of the people responsible for your critical
-		personal data not catching fire at all times. I'm going to spend my time making software instead
-		of running a hosting company, and I'll gladly pay money to operators for hosting.
+		It sounded like plan, except I have love for making software, not operating it. My nervous
+		system flees into the tall grass when I think about admin, holding keys, security, spam, uptime,
+		international legal compliance, safety, and the rest. It's not about the labor, it's the
+		responsibility - I won't sleep well at night if I'm one of the people responsible for your
+		critical personal data not catching fire at all times, and that's just one of many hazards.
 	</p>
 	<p>
-		While my plan for financial sustainbility pivots to adjust to reality, Hamilton may continue
+		My todo list for software development is already infinitely long, and I know taking a second job
+		of this complexity will compromise both my productivity and mental health. Instead of running a
+		hosting company, I'll spend my time making software, and I'll gladly pay money to operators for
+		their service.
+	</p>
+	<p>
+		While my personal plan for financial sustainbility adjusts to reality, Hamilton may continue
 		developing <a href="https://www.felt.social/">felt.social</a> as a cooperatively-owned host. Now
 		he'll just need 4 cofounders instead of 3 to officially start the co-op in Colorado. Please take
 		my money!!
