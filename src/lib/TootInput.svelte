@@ -11,9 +11,15 @@
 </script>
 
 <fieldset>
-	<div class="row">
-		<!-- TODO figure out how to remove the style:margin-bottom="0" -->
-		<label title="where to load the toot" class="flex_1" style:margin-bottom="0">
+	<div class="row spaced">
+		<a
+			class="icon_button box spaced_hz"
+			style:font-size="var(--size_1)"
+			href={url}
+			target="_blank"
+			rel="noreferrer"><div>🔗</div></a
+		>
+		<label title="where to load the toot" class="flex_1">
 			<input
 				bind:value={url}
 				placeholder="> toot url"
@@ -21,7 +27,6 @@
 				{...attrs}
 			/>
 		</label>
-		<button>link </button>
 	</div>
 	{#if url && !parsed}
 		<div transition:slide>
