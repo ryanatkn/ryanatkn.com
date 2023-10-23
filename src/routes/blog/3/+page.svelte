@@ -43,7 +43,7 @@
 
 	let embedded_toot_url = post.comments.url;
 
-	let replies_toot_url = post.comments.url;
+	let comments_toot_url = post.comments.url;
 
 	// TODO BLOCK make the `reset` button work for the toot url, including whether it's enabled
 
@@ -427,9 +427,9 @@
 		</div>
 		<Toot
 			replies
-			storage_key="replies"
+			storage_key="comments"
 			{cache}
-			bind:url={replies_toot_url}
+			bind:url={comments_toot_url}
 			bind:autoload={autoload_comments}
 		/>
 	</section>

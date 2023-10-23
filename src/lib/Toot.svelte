@@ -42,12 +42,6 @@
 
 	let loaded_status_key = 1;
 
-	// TODO BLOCK show a link to the original post, with the count of posts hidden (and a message if it maxed out, with a link to the blog post for discussion?)
-
-	// TODO BLOCK chronological, nested, updated, reverse chrono
-
-	// TODO BLOCK reset enabled when link changes
-
 	export const reset = (): void => {
 		loaded_status_key++;
 		// these get bound but their values stick because they're optional, so reset them
@@ -83,6 +77,8 @@
 	// TODO BLOCK not saving autoload state
 
 	$: with_context = replies || ancestors;
+
+	$: enable_reset = loading !== undefined;
 </script>
 
 {#key loaded_status_key}
@@ -161,7 +157,7 @@
 							style:margin-right="var(--spacing_sm)">settings</button
 						>
 						<div class="reset">
-							<button on:click={reset} disabled={loading == null}>reset</button
+							<button on:click={reset} disabled={!enable_reset}>reset</button
 							>{#if load_time !== undefined}<div class="loaded_message" transition:slide>
 									loaded in {Math.round(load_time)}ms
 								</div>{/if}
