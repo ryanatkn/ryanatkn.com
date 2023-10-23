@@ -80,7 +80,7 @@ export const to_api_status_context_url = (host: string, id: string): string =>
 export const to_api_favourites_url = (host: string, id: string): string =>
 	`https://${host}/api/v1/statuses/${id}/favourited_by`;
 
-// TODO BLOCK should this have a `Parsed` prefix and then have a zod schema for the URL with a refinement type that uses `parse_status_url`?
+// TODO should this have a `Parsed` prefix and then have a zod schema for the URL with a refinement type that uses `parse_status_url`?
 export interface MastodonStatusUrl {
 	href: string;
 	host: string;

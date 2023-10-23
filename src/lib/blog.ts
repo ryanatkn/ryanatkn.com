@@ -3,7 +3,7 @@ import type {Flavored, OmitStrict} from '@grogarden/util/types.js';
 
 import type {Feed} from '$lib/feed.js';
 
-// TODO BLOCK inconsistent naming with `BlogPostData` and `BlogPostItem`,
+// TODO inconsistent naming with `BlogPostData` and `BlogPostItem`,
 // consider `BlogItem` or `BlogFeedItem`?
 // maybe `Metadata` instead of `Data` in both cases?
 // also think about `BlogFeedItem` instead of `BlogPostItem`

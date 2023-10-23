@@ -71,7 +71,7 @@
 			return results;
 		});
 
-	// TODO BLOCK somehow figure out which toots should be included but aren't, and put them at the top level with some indicator the parent isn't there, or insert a fake parent?
+	// TODO somehow figure out which toots should be included but aren't, and put them at the top level with some indicator the parent isn't there, or insert a fake parent?
 	// TODO refactor
 	const filter_valid_replies = async (
 		status: MastodonStatus,
