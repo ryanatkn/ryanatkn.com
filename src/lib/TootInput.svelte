@@ -11,14 +11,18 @@
 </script>
 
 <fieldset>
-	<label title="where to load the toot">
-		<input
-			bind:value={url}
-			placeholder="> toot url"
-			on:focus={(e) => e.currentTarget.select()}
-			{...attrs}
-		/>
-	</label>
+	<div class="row">
+		<!-- TODO figure out how to remove the style:margin-bottom="0" -->
+		<label title="where to load the toot" class="flex_1" style:margin-bottom="0">
+			<input
+				bind:value={url}
+				placeholder="> toot url"
+				on:focus={(e) => e.currentTarget.select()}
+				{...attrs}
+			/>
+		</label>
+		<button>link </button>
+	</div>
 	{#if url && !parsed}
 		<div transition:slide>
 			<Alert status="error">invalid Mastodon status url</Alert>
