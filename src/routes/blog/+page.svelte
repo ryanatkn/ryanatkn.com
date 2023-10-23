@@ -23,7 +23,7 @@
 			</li>
 		{/each}
 	</ol>
-	<blockquote><a href="{base}/blog/feed.xml" download>Atom feed</a></blockquote>
+	<a class="feed_link chip" href="{base}/blog/feed.xml" download>Atom feed</a>
 </div>
 
 <style>
@@ -43,5 +43,8 @@
 	.date {
 		font-size: var(--size_md);
 		margin-top: var(--spacing_xs);
+	}
+	.feed_link {
+		margin-top: var(--spacing_1);
 	}
 </style>
