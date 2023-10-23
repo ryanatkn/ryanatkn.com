@@ -15,7 +15,7 @@ export default {
 				// 'default-src': ['self'],
 				// 'script-src': ['self'],
 				'connect-src': ['self', 'https://hci.social/'],
-				'style-src': ['unsafe-inline'], // support Svelte transitions - https://kit.svelte.dev/docs/configuration#csp
+				'style-src': ['self', 'unsafe-inline'], // support Svelte transitions - https://kit.svelte.dev/docs/configuration#csp
 				'img-src': [
 					'self',
 					'https://hci.social/',
