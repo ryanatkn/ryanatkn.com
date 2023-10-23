@@ -23,6 +23,7 @@
 			<img
 				style:float="right"
 				style:width="144px"
+				style:height="133.5px"
 				style:margin-left="20px"
 				style:margin-top="20px"
 				src="{base}/felt.png"
