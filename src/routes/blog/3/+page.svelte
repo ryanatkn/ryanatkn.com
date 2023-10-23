@@ -47,8 +47,6 @@
 	let embedded_toot_loading: boolean | undefined;
 	let embedded_toot_load_time: number | undefined;
 
-	// TODO BLOCK goal to make best software in blog1
-
 	// TODO avoid loading in production, lazy import?
 	const cache = import.meta.env.DEV ? mastodon_cache : null;
 </script>
@@ -392,7 +390,7 @@
 		<p>
 			I'll continue working on my open source projects, and my role there will become more stewardy
 			over time whether I like it or not. I'll also operate some unimportant instances of Felt where
-			the stakes are trivial. But builder first, that's my lane.
+			the stakes are trivial. But I'll remain a builder first and stay in that lane.
 		</p>
 		<p>
 			Thanks for visiting my space and considering these ideas. I invite you to comment on Mastodon
