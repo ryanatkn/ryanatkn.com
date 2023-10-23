@@ -13,7 +13,9 @@
 
 	const dispatch = createEventDispatcher<{reset: void}>();
 
-	export let url: string;
+	export let initial_url: string;
+
+	export let url = initial_url;
 
 	/**
 	 * Whether to fetch and display replies aka descendants in the status context.
@@ -44,6 +46,7 @@
 
 	export const reset = (): void => {
 		loaded_status_key++;
+		url = initial_url;
 		// these get bound but their values stick because they're optional, so reset them
 		loading = undefined;
 		load_time = undefined;
@@ -78,7 +81,9 @@
 
 	$: with_context = replies || ancestors;
 
-	$: enable_reset = loading !== undefined;
+	$: enable_load = loading !== false && !!host;
+
+	$: enable_reset = loading !== undefined || url !== initial_url;
 </script>
 
 {#key loaded_status_key}
@@ -116,7 +121,7 @@
 							<div transition:slide>
 								<PendingButton
 									pending={loading || false}
-									disabled={loading === false}
+									disabled={!enable_load}
 									on:click={() => load()}
 								>
 									<div class="icon_button_content">
@@ -125,7 +130,9 @@
 											<div>
 												load toot{#if replies || ancestors}s{/if} from
 											</div>
-											<code class="ellipsis">{host}</code>
+											<code class="ellipsis"
+												>{#if host}{host}{:else}invalid url{/if}</code
+											>
 										</div>
 									</div>
 								</PendingButton>
@@ -167,7 +174,7 @@
 				{#if show_settings}
 					<div transition:slide class="settings controls panel">
 						<form class="width_full prose">
-							<TootInput {url} />
+							<TootInput bind:url />
 							<fieldset class="row">
 								<label
 									class="row"

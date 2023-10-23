@@ -7,7 +7,7 @@
 
 	set_blog_feed(feed);
 
-	// TODO BLOCK redirect from the numbers or render UI to navigate to it, maybe in `BlogPost`
+	// TODO redirect from the numbers or render UI to navigate to it, maybe in `BlogPost`
 </script>
 
 <div class="breadcrumbs">

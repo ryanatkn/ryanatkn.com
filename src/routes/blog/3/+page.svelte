@@ -38,27 +38,17 @@
 	import HashLink from '$lib/HashLink.svelte';
 	import BlogPost from '$lib/BlogPost.svelte';
 	import {mastodon_cache} from '$routes/blog/mastodon_cache.js';
-	// import BlogPostIndex from '$lib/BlogPostIndex.svelte';
-	// import {prod_content_security_policy} from '$routes/security.js';
-
-	let embedded_toot_url = post.comments.url;
-
-	let comments_toot_url = post.comments.url;
-
-	// TODO BLOCK make the `reset` button work for the toot url, including whether it's enabled
 
 	let autoload_comments = true;
 	let embedded_toot_autoload = false;
 	let embedded_toot_loading: boolean | undefined;
 	let embedded_toot_load_time: number | undefined;
 
-	// TODO BLOCK see `div class="reset"` below
-
 	// TODO BLOCK put all post meta into context instead of hardcoding the link to post 2 (see the other posts too for their links)
 
 	// TODO BLOCK flatten the markup
 
-	// TODO BLOCK avoid loading in production, lazy import?
+	// TODO avoid loading in production, lazy import?
 	const cache = import.meta.env.DEV ? mastodon_cache : null;
 </script>
 
@@ -197,10 +187,9 @@
 			<aside>
 				<div class="prose">
 					<p>
-						When I ran into the API limitation, my motivation to continue the implementation ran
-						dry. I plan to pick it back up and publish reusable code, eventually, but for now, be
-						aware <a href="https://github.com/ryanatkn/ryanatkn.com/pull/12"
-							>the code for this work</a
+						When I ran into the API limitation, my motivation dried up. I plan to pick it back up
+						and publish reusable code, eventually, but for now, be aware <a
+							href="https://github.com/ryanatkn/ryanatkn.com/pull/12">the code for this work</a
 						> is a big unfinished mess.
 					</p>
 					<p>
@@ -216,7 +205,7 @@
 						storage_key="embedded"
 						initial_show_settings={true}
 						{cache}
-						bind:url={embedded_toot_url}
+						initial_url={post.comments.url}
 						bind:autoload={embedded_toot_autoload}
 						bind:loading={embedded_toot_loading}
 						bind:load_time={embedded_toot_load_time}
@@ -276,7 +265,7 @@
 					href="https://docs.joinmastodon.org/methods/statuses/#favourited_by">1</a
 				>, <a href="https://docs.joinmastodon.org/methods/favourites/">2</a>, caveat, I may be
 				ignorant on API usage details from here on, please correct me by
-				<a href={embedded_toot_url}>replying on Mastodon</a>, and things may have changed by the
+				<a href={post.comments.url}>replying on Mastodon</a>, and things may have changed by the
 				time you read this since I last checked in October 2023).
 			</p>
 			<p>
@@ -401,9 +390,10 @@
 			<p>
 				But after a lot of brow furrowing and hard emotion (mostly fear - I mean, international
 				legal compliance? holding the reins of infrastructure that people depend on? having custody
-				over those keys? no ty, just code please), I've come to terms with myself. I'm a builder,
-				and that's enough. It's a big diverse world full of people who excel at the operator and
-				steward roles, and I'll gladly pay them money or otherwise transact for their services.
+				over those keys? no ty, the code already overflows my head), I've come to terms with myself.
+				I'm a builder, and that's enough. It's a big diverse world full of people who excel at the
+				operator and steward roles, and I'll gladly pay them money or otherwise transact for their
+				services.
 			</p>
 			<p>
 				Of course, things aren't quite so simple. I'll help steward the public dev community for
@@ -429,7 +419,7 @@
 			replies
 			storage_key="comments"
 			{cache}
-			bind:url={comments_toot_url}
+			initial_url={post.comments.url}
 			bind:autoload={autoload_comments}
 		/>
 	</section>
