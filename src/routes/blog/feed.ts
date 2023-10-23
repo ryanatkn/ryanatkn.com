@@ -35,6 +35,7 @@ export const feed: BlogFeed = {
 			summary:
 				'Proposing a model for one of the central aspects of online communities: the virtual social space.',
 			tags: ['web', 'community', 'social media', 'design', 'technology', 'software'],
+			comments: {url: 'https://hci.social/@ryanatkn/109768104377997044', type: 'mastodon'},
 		},
 	],
 };

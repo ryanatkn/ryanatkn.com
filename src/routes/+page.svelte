@@ -26,13 +26,13 @@
 			name: 'blog',
 			title: `<a href="${base}/blog">blog</a>`,
 			links:
-				'<a href="https://www.ryanatkn.com/blog/feed.xml" class="chip">feed.xml</a> <a href="https://github.com/ryanatkn/ryanatkn.com" class="chip">GitHub</a>',
+				'<a href="https://www.ryanatkn.com/blog/feed.xml" class="chip">feed.xml</a> <a href="https://github.com/ryanatkn/ryanatkn.com" class="chip">source</a>',
 		},
 		{
 			name: 'devlog',
 			title: '<a href="https://log.ryanatkn.com/">log</a>',
 			description: 'devlog',
-			links: '<a href="https://github.com/ryanatkn/log" class="chip">GitHub</a>',
+			links: '<a href="https://github.com/ryanatkn/log" class="chip">source</a>',
 		},
 		{
 			name: 'github',
@@ -43,7 +43,7 @@
 			name: 'felt',
 			title: '<a href="https://www.felt.dev/">Felt</a>',
 			description: 'a programmable platform for hobbyists and human-scale communities',
-			links: `<a class="chip" href="https://www.felt.dev/">felt.dev</a> <a class="chip" href="https://github.com/feltjs">GitHub</a>`,
+			links: `<a class="chip" href="https://www.felt.dev/">felt.dev</a> <a class="chip" href="https://github.com/feltjs">source</a>`,
 			icon: '/felt.png',
 			icon_alt: "green felt textured heart with the word 'felt' cut out",
 		},
@@ -52,7 +52,7 @@
 			title: '<a href="https://www.fuz.dev/">Fuz</a>',
 			description:
 				'design system for CSS, <a href="https://svelte.dev/">Svelte</a>, and <a href="https://kit.svelte.dev/">SvelteKit</a>',
-			links: `<a class="chip" href="https://www.fuz.dev/">fuz.dev</a> <a class="chip" href="https://github.com/fuz-dev/fuz">GitHub</a> <a class="chip" href="https://www.npmjs.com/package/@fuz.dev/fuz">npm</a>`,
+			links: `<a class="chip" href="https://www.fuz.dev/">fuz.dev</a> <a class="chip" href="https://github.com/fuz-dev/fuz">source</a> <a class="chip" href="https://www.npmjs.com/package/@fuz.dev/fuz">npm</a>`,
 			icon: '',
 			icon_alt: 'a ball of yarn',
 		},
@@ -61,7 +61,7 @@
 			title: '<a href="https://github.com/grogarden/gro">Gro</a>',
 			description:
 				'task runner and toolkit extending <a href="https://kit.svelte.dev/">SvelteKit</a>',
-			links: `<a class="chip" href="https://www.grogarden.org/">grogarden.org</a> <a class="chip" href="https://github.com/grogarden/gro">GitHub</a>`,
+			links: `<a class="chip" href="https://www.grogarden.org/">grogarden.org</a> <a class="chip" href="https://github.com/grogarden/gro">source</a>`,
 			icon: '/gro.png',
 			icon_alt: 'a pixelated green oak acorn with a glint of sun',
 		},
@@ -70,7 +70,7 @@
 			title: '<a href="https://www.cosmicplayground.org">cosmicplayground.org</a>',
 			description:
 				'hobby project for fun and learning, <em>"tools and toys for expanding minds"</em>',
-			links: '<a class="chip" href="https://github.com/ryanatkn/cosmicplayground">GitHub</a>',
+			links: '<a class="chip" href="https://github.com/ryanatkn/cosmicplayground">source</a>',
 			icon: '/cosmic_kitty.jpg',
 			icon_alt: 'the smiling and colorful face of Cosmic Kitty made of rainbow lines in space',
 			icon_style: 'border-radius: 50%',
