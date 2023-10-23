@@ -16,6 +16,14 @@
 	<Breadcrumb><Favicon /></Breadcrumb>
 </div>
 
+<!-- TODO 404, needs to work with prerendering -->
+<!-- <section class="prose">
+	<p>
+		nothing's here, sorry if this is an
+		<a href="https://www.w3.org/Provider/Style/URI">uncool URI</a>
+	</p>
+</section> -->
+
 <style>
 	.wrapper {
 		display: flex;
