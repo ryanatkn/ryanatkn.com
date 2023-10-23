@@ -47,7 +47,6 @@
 	let embedded_toot_loading: boolean | undefined;
 	let embedded_toot_load_time: number | undefined;
 
-	// TODO BLOCK flatten the markup
 	// TODO BLOCK goal to make best software in blog1
 
 	// TODO avoid loading in production, lazy import?
@@ -55,134 +54,131 @@
 </script>
 
 <BlogPost {post}>
-	<section style:padding-top="var(--spacing_2)">
-		<div class="prose spaced">
-			<p>
-				This post began as a demo using <a href="https://joinmastodon.org/">Mastodon</a>
-				to add comments to my blog posts, but it morphed into a followup to my second blog post,
-				<a href={feed.items[1].url}>"{feed.items[1].title}"</a>, with a heaping dose of navel
-				gazing.
-			</p>
-			<p>
-				This is a <a href="https://wikipedia.org/wiki/Static_web_page">static website</a>, meaning I
-				upload some plain files and <a href="https://pages.github.com/">my free web host</a> does the
-				rest. There's no server running any logic of mine, and the infrastructure requirements are very
-				simple and cheap. GitHub offers the service for free in part because of its low cost. It's also
-				the simplest possible flow for me as the author.
-			</p>
-			<details>
-				<summary>click for technical details</summary>
-				<aside>
-					<p>
-						The site's files are being hosted for free by
-						<a href="https://pages.github.com/">GitHub Pages</a>
-						here at
-						<code>{$page.url.host}</code>. They're viewable on
-						<a href="https://github.com/ryanatkn/ryanatkn.com/tree/deploy"
-							>the <code>deploy</code> branch</a
-						>
-						of
-						<a href="https://github.com/ryanatkn/ryanatkn.com">the git repo</a> and downloadable as
-						<a
-							href="https://github.com/ryanatkn/ryanatkn.com/archive/refs/heads/deploy.zip"
-							download>a zip file</a
-						>. The cost of serving these static files is very low, so "free" is a common cloud
-						offering for static sites in 2023. Thank you GitHub for being our freeloaded host of the
-						day.
-					</p>
-					<p>
-						The website's final output files are HTML, JS, and CSS (and mostly images in terms of
-						bytes), but <a href="https://github.com/ryanatkn/ryanatkn.com">the source code</a>
-						that generates these files is written in
-						<a href="https://typescriptlang.org/">TypeScript</a>
-						and <a href="https://svelte.dev/">Svelte</a> using
-						<a href="https://kit.svelte.dev/">SvelteKit</a> and
-						<a href="https://vitejs.dev/">Vite</a>. I recommend them with enthusiasm.
-					</p>
-					<p>
-						Although completely static, this site has the dynamic behavior of fetching data at
-						runtime in your browser from <a href="https://hci.social/">my Mastodon host</a>, thanks
-						to the power of scripting and
-						<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS">CORS</a>. Static AND
-						dynamic??
-					</p>
-				</aside>
-			</details>
-			<p>
-				There are downsides to static websites, of course. What if I wanted to let readers submit
-				comments? A server somewhere would have to receive, store, and then serve your comment to
-				other readers. Happily, Mastodon can do exactly that, using <a
-					href="https://hci.social/@ryanatkn">my existing account</a
-				>
-				and <a href="https://hci.social">a server</a>
-				that other people generously operate.
-			</p>
-			<p>
-				Great, so I can have a static blog and dynamic comments too? Technically yes, but there's
-				more to consider than tech. Should anyone be able to leave a comment and reach other
-				readers, automatically without my involvement? Certainly not, this isn't my first day on the
-				Internet. I feel both a responsibility and desire to curate out spam, abuse, and other bad
-				vibes. This is my personal space that I share publicly, and few of us appreciate it when
-				other people muck up our happy places, even moreso when that muck affects other friendly
-				visitors.
-			</p>
-			<p>
-				So, I resigned myself to the idea that if I want to enable comments, I need curation that's
-				proactive, not reactive. People submit comments, and I can approve them on my own time
-				according to my own whims.
-			</p>
-			<p>
-				Sounds like a plan, so how to implement? I could make a post on Mastodon linking to this
-				blog post, and then people could reply with their preferred Mastodon client and account, and
-				I'd get notified. I want some of those comments to appear on my blog, and I want Mastodon
-				and the static files to handle it all, so we can discuss without leaving Mastodon, and I can
-				curate without changing my blog.
-			</p>
-			<p>I took the main idea of client-side Mastodon comments from these blog posts:</p>
-			<ul>
-				<li>
-					<a href="https://cassidyjames.com/blog/fediverse-blog-comments-mastodon/">
-						"Toot toot! Mastodon-powered Blog Comments"
-					</a>
-					by <a href="https://cassidyjames.com/">Cassidy James</a>
-				</li>
-				<li>
-					<a href="https://jan.wildeboer.net/2023/02/Jekyll-Mastodon-Comments/">
-						"Client-side comments with Mastodon on a static Jekyll website"
-					</a>
-					by <a href="https://jan.wildeboer.net/">Jan Wildeboer</a>
-				</li>
-			</ul>
-			<p>
-				But those implementations have no moderation - anyone can reply on Mastodon, and the comment
-				appears on the blog. Even if they had a mechanism for blocking individual posts, I find that
-				to be an unreasonable burden in this context. I don't want The Internet to have publishing
-				capabilities on my blog. I won't turn this into a space that requires me to be vigilant.
-			</p>
-			<p>
-				Not just that, I don't want even well-meaning people to have the expectation that their
-				words will appear here. Even if it's good and relevant content, that's what Mastodon is for!
-				This blog is a personal project to support my goal of producing good software, and I'll
-				include outside contributions if I feel like it at the time, don't ask me why, idk. I'll
-				burn out or stop caring enough under any other arrangement.
-			</p>
+	<section style:padding-top="var(--spacing_2)" class="prose spaced">
+		<p>
+			This post began as a demo using <a href="https://joinmastodon.org/">Mastodon</a>
+			to add comments to my blog posts, but it morphed into a followup to my second blog post,
+			<a href={feed.items[1].url}>"{feed.items[1].title}"</a>, with a heaping dose of navel gazing.
+		</p>
+		<p>
+			This is a <a href="https://wikipedia.org/wiki/Static_web_page">static website</a>, meaning I
+			upload some plain files and <a href="https://pages.github.com/">my free web host</a> does the rest.
+			There's no server running any logic of mine, and the infrastructure requirements are very simple
+			and cheap. GitHub offers the service for free in part because of its low cost. It's also the simplest
+			possible flow for me as the author.
+		</p>
+		<details>
+			<summary>click for technical details</summary>
 			<aside>
-				I know I'm more sensitive than most here - more on this ahead. The road gets rocky.
+				<p>
+					The site's files are being hosted for free by
+					<a href="https://pages.github.com/">GitHub Pages</a>
+					here at
+					<code>{$page.url.host}</code>. They're viewable on
+					<a href="https://github.com/ryanatkn/ryanatkn.com/tree/deploy"
+						>the <code>deploy</code> branch</a
+					>
+					of
+					<a href="https://github.com/ryanatkn/ryanatkn.com">the git repo</a> and downloadable as
+					<a href="https://github.com/ryanatkn/ryanatkn.com/archive/refs/heads/deploy.zip" download
+						>a zip file</a
+					>. The cost of serving these static files is very low, so "free" is a common cloud
+					offering for static sites in 2023. Thank you GitHub for being our freeloaded host of the
+					day.
+				</p>
+				<p>
+					The website's final output files are HTML, JS, and CSS (and mostly images in terms of
+					bytes), but <a href="https://github.com/ryanatkn/ryanatkn.com">the source code</a>
+					that generates these files is written in
+					<a href="https://typescriptlang.org/">TypeScript</a>
+					and <a href="https://svelte.dev/">Svelte</a> using
+					<a href="https://kit.svelte.dev/">SvelteKit</a> and
+					<a href="https://vitejs.dev/">Vite</a>. I recommend them with enthusiasm.
+				</p>
+				<p>
+					Although completely static, this site has the dynamic behavior of fetching data at runtime
+					in your browser from <a href="https://hci.social/">my Mastodon host</a>, thanks to the
+					power of scripting and
+					<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS">CORS</a>. Static AND
+					dynamic??
+				</p>
 			</aside>
-			<p>Our design now has its requirements:</p>
-			<ul>
-				<li>start with a static website, just a bundle of files hosted cheaply on the web</li>
-				<li>on Mastodon, make a post per blog post, and replies can appear as comments here</li>
-				<li>fetch comments dynamically on each visitor's machine, with no authentication needed</li>
-				<li>proactive moderation, so only comments I approve will appear</li>
-			</ul>
-			<p>
-				<a href="https://docs.joinmastodon.org/">Mastodon docs</a> in hand, I set out to implement.
-				Scroll down to the bottom of the page to see the results. Here's
-				<a href="https://github.com/ryanatkn/ryanatkn.com/pull/12">the work on GitHub</a>.
-			</p>
-		</div>
-		<details class="spaced">
+		</details>
+		<p>
+			There are downsides to static websites, of course. What if I wanted to let readers submit
+			comments? A server somewhere would have to receive, store, and then serve your comment to
+			other readers. Happily, Mastodon can do exactly that, using <a
+				href="https://hci.social/@ryanatkn">my existing account</a
+			>
+			and <a href="https://hci.social">a server</a>
+			that other people generously operate.
+		</p>
+		<p>
+			Great, so I can have a static blog and dynamic comments too? Technically yes, but there's more
+			to consider than tech. Should anyone be able to leave a comment and reach other readers,
+			automatically without my involvement? Certainly not, this isn't my first day on the Internet.
+			I feel both a responsibility and desire to curate out spam, abuse, and other bad vibes. This
+			is my personal space that I share publicly, and few of us appreciate it when other people muck
+			up our happy places, even moreso when that muck affects other friendly visitors.
+		</p>
+		<p>
+			So, I resigned myself to the idea that if I want to enable comments, I need curation that's
+			proactive, not reactive. People submit comments, and I can approve them on my own time
+			according to my own whims.
+		</p>
+		<p>
+			Sounds like a plan, so how to implement? I could make a post on Mastodon linking to this blog
+			post, and then people could reply with their preferred Mastodon client and account, and I'd
+			get notified. I want some of those comments to appear on my blog, and I want Mastodon and the
+			static files to handle it all, so we can discuss without leaving Mastodon, and I can curate
+			without changing my blog.
+		</p>
+		<p>I took the main idea of client-side Mastodon comments from these blog posts:</p>
+		<ul>
+			<li>
+				<a href="https://cassidyjames.com/blog/fediverse-blog-comments-mastodon/">
+					"Toot toot! Mastodon-powered Blog Comments"
+				</a>
+				by <a href="https://cassidyjames.com/">Cassidy James</a>
+			</li>
+			<li>
+				<a href="https://jan.wildeboer.net/2023/02/Jekyll-Mastodon-Comments/">
+					"Client-side comments with Mastodon on a static Jekyll website"
+				</a>
+				by <a href="https://jan.wildeboer.net/">Jan Wildeboer</a>
+			</li>
+		</ul>
+		<p>
+			But those implementations have no moderation - anyone can reply on Mastodon, and the comment
+			appears on the blog. Even if they had a mechanism for blocking individual posts, I find that
+			to be an unreasonable burden in this context. I don't want The Internet to have publishing
+			capabilities on my blog. I won't turn this into a space that requires me to be vigilant.
+		</p>
+		<p>
+			Not just that, I don't want even well-meaning people to have the expectation that their words
+			will appear here. Even if it's good and relevant content, that's what Mastodon is for! This
+			blog is a personal project to support my goal of producing good software, and I'll include
+			outside contributions if I feel like it at the time, don't ask me why, idk. I'll burn out or
+			stop caring enough under any other arrangement.
+		</p>
+		<aside>
+			I know I'm more sensitive than most here - more on this ahead. The road gets rocky.
+		</aside>
+		<p>Our design now has its requirements:</p>
+		<ul>
+			<li>start with a static website, just a bundle of files hosted cheaply on the web</li>
+			<li>on Mastodon, make a post per blog post, and replies can appear as comments here</li>
+			<li>fetch comments dynamically on each visitor's machine, with no authentication needed</li>
+			<li>proactive moderation, so only comments I approve will appear</li>
+		</ul>
+		<p>
+			<a href="https://docs.joinmastodon.org/">Mastodon docs</a> in hand, I set out to implement.
+			Scroll down to the bottom of the page to see the results. Here's
+			<a href="https://github.com/ryanatkn/ryanatkn.com/pull/12">the work on GitHub</a>.
+		</p>
+	</section>
+	<section class="spaced">
+		<details>
 			<summary>click for an example of an embedded toot with technical details</summary>
 			<aside>
 				<div class="prose">
@@ -200,17 +196,15 @@
 						>:
 					</p>
 				</div>
-				<section class="embedded_status">
-					<Toot
-						storage_key="embedded"
-						initial_show_settings={true}
-						{cache}
-						initial_url={post.comments.url}
-						bind:autoload={embedded_toot_autoload}
-						bind:loading={embedded_toot_loading}
-						bind:load_time={embedded_toot_load_time}
-					/>
-				</section>
+				<Toot
+					storage_key="embedded"
+					initial_show_settings={true}
+					{cache}
+					initial_url={post.comments.url}
+					bind:autoload={embedded_toot_autoload}
+					bind:loading={embedded_toot_loading}
+					bind:load_time={embedded_toot_load_time}
+				/>
 				<div class="prose">
 					<p>
 						When you click the "load toot" button, your browser sends a request to a <a
@@ -248,162 +242,162 @@
 				</div>
 			</aside>
 		</details>
-		<div class="prose">
-			<p>
-				But there's a huge caveat - I failed to implement proactive moderation to the degree I
-				wanted. My implementation uses Mastodon likes (favourites) for moderation: if I like a post,
-				it appears here. If I don't like a post, your client simply ignores it.
-			</p>
-			<p>
-				The problem is, for proactive moderation that requires no vigilance, if a post was edited
-				after I favourited it, it should be ignored. I can always re-favourite the post and build
-				nice tools to streamline the process.
-			</p>
-			<p>
-				However I couldn't find a way in the Mastodon API to get the <code>created_at</code> of a
-				favourite without authentication (<a
-					href="https://docs.joinmastodon.org/methods/statuses/#favourited_by">1</a
-				>, <a href="https://docs.joinmastodon.org/methods/favourites/">2</a>, caveat, I may be
-				ignorant on API usage details from here on, please correct me by
-				<a href={post.comments.url}>replying on Mastodon</a>, and things may have changed by the
-				time you read this since I last checked in October 2023).
-			</p>
-			<p>
-				Without knowing when a favourite was created, I can't conditionally hide posts that were
-				edited after my favourite. Maybe the commenter is a troll or spammer, luring me to favourite
-				a post that then gets edited with an ad for a gambling website, or they get hacked by trolls
-				or spammers. I don't want to be vigilant against the content of my blog changing for my
-				visitors without my approval.
-			</p>
-			<details>
-				<summary>click for technical details</summary>
-				<aside>
-					<p>
-						An <a href="https://docs.joinmastodon.org/methods/favourites/"
-							>endpoint to get a favourite's timestamp</a
-						>
-						exists, but it requires authentication, so we can't meet our requirements. The APIs just
-						weren't designed for this usage - there are no good privacy-related or technical reasons
-						for this information to be hidden. For example it could be added to the
-						<a href="https://docs.joinmastodon.org/methods/statuses/#favourited_by">favourited_by</a
-						>
-						endpoint (the <code>created_at</code> there is for the account).
-					</p>
-					<p>
-						The code uses the status <a
-							href="https://docs.joinmastodon.org/methods/statuses/#context">context</a
-						>
-						endpoint to fetch information about the post I originally made. That data includes the replies,
-						<code>descendants</code>. For each of those replies that have favourites, it then
-						fetches
-						<a href="https://docs.joinmastodon.org/methods/statuses/#favourited_by">favourited_by</a
-						> to see if one of those favourites was me. If not, the post is ignored like the others who
-						have no favourites.
-					</p>
-				</aside>
-			</details>
-			<p>
-				So, my moderation UX is leaky due to an API limitation. I can't get the <a
-					href="https://consentful.systems/">consentful</a
-				> experience I need.
-			</p>
-			<p>
-				What does this all have to do with virtual social spaces, stewards and operators and
-				builders?
-			</p>
-			<p>I don't want to play steward to random actors on the Internet.</p>
+	</section>
+	<section class="prose">
+		<p>
+			But there's a huge caveat - I failed to implement proactive moderation to the degree I wanted.
+			My implementation uses Mastodon likes (favourites) for moderation: if I like a post, it
+			appears here. If I don't like a post, your client simply ignores it.
+		</p>
+		<p>
+			The problem is, for proactive moderation that requires no vigilance, if a post was edited
+			after I favourited it, it should be ignored. I can always re-favourite the post and build nice
+			tools to streamline the process.
+		</p>
+		<p>
+			However I couldn't find a way in the Mastodon API to get the <code>created_at</code> of a
+			favourite without authentication (<a
+				href="https://docs.joinmastodon.org/methods/statuses/#favourited_by">1</a
+			>, <a href="https://docs.joinmastodon.org/methods/favourites/">2</a>, caveat, I may be
+			ignorant on API usage details from here on, please correct me by
+			<a href={post.comments.url}>replying on Mastodon</a>, and things may have changed by the time
+			you read this since I last checked in October 2023).
+		</p>
+		<p>
+			Without knowing when a favourite was created, I can't conditionally hide posts that were
+			edited after my favourite. Maybe the commenter is a troll or spammer, luring me to favourite a
+			post that then gets edited with an ad for a gambling website, or they get hacked by trolls or
+			spammers. I don't want to be vigilant against the content of my blog changing for my visitors
+			without my approval.
+		</p>
+		<details>
+			<summary>click for technical details</summary>
 			<aside>
-				I use the word "steward" mainly thinking about <a href="https://newpublic.org/"
-					>New_ Public</a
-				>'s use of the word like in
-				<a href="https://newpublic.substack.com/p/introducing-our-community-stewards">this post</a>.
+				<p>
+					An <a href="https://docs.joinmastodon.org/methods/favourites/"
+						>endpoint to get a favourite's timestamp</a
+					>
+					exists, but it requires authentication, so we can't meet our requirements. The APIs just weren't
+					designed for this usage - there are no good privacy-related or technical reasons for this information
+					to be hidden. For example it could be added to the
+					<a href="https://docs.joinmastodon.org/methods/statuses/#favourited_by">favourited_by</a>
+					endpoint (the <code>created_at</code> there is for the account).
+				</p>
+				<p>
+					The code uses the status <a href="https://docs.joinmastodon.org/methods/statuses/#context"
+						>context</a
+					>
+					endpoint to fetch information about the post I originally made. That data includes the replies,
+					<code>descendants</code>. For each of those replies that have favourites, it then fetches
+					<a href="https://docs.joinmastodon.org/methods/statuses/#favourited_by">favourited_by</a> to
+					see if one of those favourites was me. If not, the post is ignored like the others who have
+					no favourites.
+				</p>
 			</aside>
-			<p>
-				If I have a responsibility over a space, I am its steward. I am responsible for its health.
-				We steward our homes. Fewer of us steward other people's homes, and fewer still steward
-				public spaces.
-			</p>
-			<p>
-				Our social software mediates shared spaces where we interact with each other. Stewardship
-				over those spaces is an everpresent concern.
-			</p>
-			<p>
-				The bigger and more open a space, the more challenging the role of steward becomes. Mastodon
-				is a global federated social network with low barriers to entry. This means anyone can show
-				up at any time and reply to my public posts. That's wonderful! And also, I don't want those
-				replies to be distributed in spaces I steward.
-			</p>
-			<p>
-				On Mastodon, I don't attempt to steward the replies to my posts - I'll ignore and block
-				instead. I do however steward this blog. So given my proclivities that you've likely
-				inferred by now, I want to minimize the stewarding work. I'm willing to favourite posts that
-				I want to appear here, with all of the social complexities that carries, but the fact that
-				edited posts require vigilance changes the equation.
-			</p>
-			<p>Let's step back and consider some of the roles in a social space:</p>
-			<ul>
-				<li>
-					<strong>Stewards</strong> take responsibility for the intended qualities of the space. They
-					interact with people and set the rules and norms. They're the mods, the admins, the organizers,
-					the beloved and reviled gods above the forum. They deal with the complexities of managing the
-					space with its people and technology.
-				</li>
-				<li>
-					<strong>Operators</strong> make the space possible by running software on machines somewhere
-					in the universe. They're the devops, the infrastructure providers, the webmasters, the people
-					who keep the lights on. They deal with the complexities of running software on servers on atom-based
-					servers.
-				</li>
-				<li>
-					<strong>Builders</strong> make the software that operators run. They're the developers, technical
-					writers, question answerers, and other community contributors that produce software. They deal
-					with the complexities of designing, implementing, documenting, and supporting software.
-				</li>
-			</ul>
-			<p>
-				An implied role in this model is the "user" or "player" or some better word that refers to
-				the people in a space.
-			</p>
-			<p>
-				In social spaces, I gravitate towards the role of builder. I like thinking about and making
-				software. This isn't a mild preference - I actively dislike most aspects of being a steward
-				and operator. Building dominates my skills and interests.
-			</p>
-			<p>
-				But software is nothing without operators that run it, and spaces rot without stewards to
-				protect them. Builders provide just one part of the puzzle, and for me it's the easiest of
-				the roles.
-			</p>
-			<p>
-				When I started <a href="https://www.felt.dev/">Felt</a> with Hamilton and wrote the initial
-				version of
-				<a href={feed.items[0].url}>my first blog post</a>, I was sure I had to become an operator
-				one day, because that's where the money is, so it's the obvious path to sustainably produce
-				free community software. And also, somebody somewhere has to run the software, and I can do
-				computer.
-			</p>
-			<p>
-				But after a lot of brow furrowing and hard emotion (mostly fear - I mean, international
-				legal compliance? holding the reins of infrastructure that people depend on? having custody
-				over those keys? no ty, the code already overflows my head), I've come to terms with myself.
-				I'm a builder, and that's enough. It's a big diverse world full of people who excel at the
-				operator and steward roles, and I'll gladly pay them money or otherwise transact for their
-				services.
-			</p>
-			<p>
-				Of course, things aren't quite so simple. I'll help steward the public dev community for
-				Felt, but we're keeping it on topic to reduce the stewardship burden. Hamilton will
-				graciously be that community's operator, so I don't even need to hold keys. He'll also share
-				the steward role with me and we'll look for people with that affinity to help us. And I'll
-				continue working on my open source projects, which will become more stewardy over time. I'll
-				also operate some unimportant instances of Felt where the stakes are trivial. But builder
-				first, builder for my career, that's my lane.
-			</p>
-			<p>
-				Thanks for visiting my space and considering these ideas. I invite you to comment on
-				Mastodon if you're okay with it appearing here but don't expect it to :)
-			</p>
-		</div>
+		</details>
+		<p>
+			So, my moderation UX is leaky due to an API limitation. I can't get the <a
+				href="https://consentful.systems/">consentful</a
+			> experience I need.
+		</p>
+		<p>
+			What does this all have to do with virtual social spaces, stewards and operators and builders?
+		</p>
+		<p>I don't want to play steward to random actors on the Internet.</p>
+		<aside>
+			I use the word "steward" mainly thinking about <a href="https://newpublic.org/">New_ Public</a
+			>'s use of the word like in
+			<a href="https://newpublic.substack.com/p/introducing-our-community-stewards">this post</a>.
+		</aside>
+		<p>
+			If I have a responsibility over a space, I am its steward. I am responsible for its health. We
+			steward our homes. Fewer of us steward other people's homes, and fewer still steward public
+			spaces.
+		</p>
+		<p>
+			Our social software mediates shared spaces where we interact with each other. Stewardship over
+			those spaces is an everpresent concern.
+		</p>
+		<p>
+			The bigger and more open a space, the more challenging the role of steward becomes. Mastodon
+			is a global federated social network with low barriers to entry. This means anyone can show up
+			at any time and reply to my public posts. That's wonderful! And also, I don't want those
+			replies to be distributed in spaces I steward.
+		</p>
+		<p>
+			On Mastodon, I don't attempt to steward the replies to my posts - I'll ignore and block
+			instead. I do however steward this blog. So given my proclivities that you've likely inferred
+			by now, I want to minimize the stewarding work. I'm willing to favourite posts that I want to
+			appear here, with all of the social complexities that carries, but the fact that edited posts
+			require vigilance changes the equation.
+		</p>
+		<p>Let's step back and consider some of the roles in a social space:</p>
+		<ul>
+			<li>
+				<strong>Stewards</strong> take responsibility for the intended qualities of the space. They interact
+				with people and set the rules and norms. They're the mods, the admins, the organizers, the beloved
+				and reviled gods above the forum. They deal with the complexities of managing the space with
+				its people and technology.
+			</li>
+			<li>
+				<strong>Operators</strong> make the space possible by running software on machines somewhere
+				in the universe. They're the devops, the infrastructure providers, the webmasters, the people
+				who keep the lights on. They deal with the complexities of running software on servers on atom-based
+				servers.
+			</li>
+			<li>
+				<strong>Builders</strong> make the software that operators run. They're the developers, technical
+				writers, question answerers, and other community contributors that produce software. They deal
+				with the complexities of designing, implementing, documenting, and supporting software.
+			</li>
+		</ul>
+		<p>
+			An implied role in this model is the "user" or "player" or some better word that refers to the
+			people in a space.
+		</p>
+		<p>
+			In social spaces, I gravitate towards the role of builder. I like thinking about and making
+			software. This isn't a mild preference - I actively dislike most aspects of being a steward
+			and operator. Building dominates my skills and interests.
+		</p>
+		<p>
+			But software is nothing without operators that run it, and spaces rot without stewards to
+			protect them. Builders provide just one part of the puzzle, and for me it's the easiest of the
+			roles.
+		</p>
+		<p>
+			When I started <a href="https://www.felt.dev/">Felt</a> with Hamilton and wrote the initial
+			version of
+			<a href={feed.items[0].url}>my first blog post</a>, I was sure I had to become an operator one
+			day, because that's where the money is, so it's the obvious path to sustainably produce free
+			community software. And also, somebody somewhere has to run the software, and I can do
+			computer.
+		</p>
+		<p>
+			But after a lot of brow furrowing and hard emotion (mostly fear - I mean, holding the reins of
+			infrastructure that people depend on? having custody over those keys? international legal
+			compliance? and safety? oof, the code already overflows my head), I've come to terms with
+			myself. I'm a builder, and that's enough. It's a big diverse world full of people who like and
+			excel at the operator and steward roles, and I'll gladly pay them money or otherwise transact
+			for their services.
+		</p>
+		<p>
+			Of course, things aren't quite so simple. I'll help steward the public dev community for Felt,
+			but we're doing things intentionally to reduce the stewardship burden - those spaces will
+			remain on topic, we'll moderate behind a collectively-controlled actor so we're not exposed as
+			individuals, and we'll have a low tolerance for bad behavior. Hamilton will graciously be that
+			community's operator, so I don't even need to hold keys. He'll also share the steward role
+			with me and we'll look for people with that affinity to help us.
+		</p>
+		<p>
+			I'll continue working on my open source projects, and my role there will become more stewardy
+			over time whether I like it or not. I'll also operate some unimportant instances of Felt where
+			the stakes are trivial. But builder first, that's my lane.
+		</p>
+		<p>
+			Thanks for visiting my space and considering these ideas. I invite you to comment on Mastodon
+			if you're okay with it appearing here but don't expect it to :)
+		</p>
 	</section>
 	<hr />
 	<section>

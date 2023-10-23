@@ -212,22 +212,19 @@
 		where the money is, and somebody needs to do it.
 	</p>
 	<p>
-		It sounded like plan, except I have love for making software, not operating it. My nervous
-		system flees into the tall grass when I think about admin, holding keys, security, spam, uptime,
-		international legal compliance, safety, and the rest. It's not about the labor, it's the
-		responsibility - I won't sleep well at night if I'm one of the people responsible for your
-		critical personal data not catching fire at all times, and that's just one of many hazards.
+		It sounded like plan, except my goal is to make the best software I can, and operations
+		undermine that goal for me. My nervous system flees into the tall grass when I think about
+		moderation, spam, holding keys, security, uptime, legal compliance, safety, and the rest. It's
+		less about the labor and more the responsibility - I won't sleep well at night if I'm one of the
+		people responsible for your critical personal data not catching fire at all times, and that's
+		just one of many hazards. I know taking a second job of this complexity will compromise both my
+		productivity and mental health. So instead, I'll focus on making software and enthusiastically
+		pay money to operators for their service.
 	</p>
 	<p>
-		My todo list for software development is already infinitely long, and I know taking a second job
-		of this complexity will compromise both my productivity and mental health. Instead of running a
-		hosting company, I'll spend my time making software, and I'll gladly pay money to operators for
-		their service.
-	</p>
-	<p>
-		While my personal plan for financial sustainbility adjusts to reality, Hamilton may continue
-		developing <a href="https://www.felt.social/">felt.social</a> as a cooperatively-owned host. Now
-		he'll just need 4 cofounders instead of 3 to officially start the co-op in Colorado. Please take
+		While my personal plan for financial sustainbility adjusts to this reality, Hamilton may
+		continue developing <a href="https://www.felt.social/">felt.social</a> as a cooperatively-owned host.
+		Now he'll just need 4 cofounders instead of 3 to officially start the co-op in Colorado. Please take
 		my money!!
 	</p>
 	<hr />
