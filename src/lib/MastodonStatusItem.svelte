@@ -6,7 +6,7 @@
 
 	export let item: MastodonStatus;
 
-	// see the CSP in `$routes/security.ts`
+	// see the CSP in `svelte.config.js`
 	/* eslint-disable svelte/no-at-html-tags */
 
 	$: ({created_at, edited_at, content, account, url, sensitive, spoiler_text} = item);
@@ -35,6 +35,7 @@
 	<header>
 		<button
 			class="avatar plain icon_button"
+			title={account_note ? `${show_note ? 'hide' : 'show'} ${account_acct}'s profile` : undefined}
 			on:click={account_note ? toggle_note : undefined}
 			disabled={!account_note}
 			><img class="icon" src={account_avatar} alt="avatar for {account_acct}" /></button

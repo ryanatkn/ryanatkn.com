@@ -7,18 +7,12 @@
 
 	import Header from '$routes/Header.svelte';
 	import Footer from '$routes/Footer.svelte';
-	import {content_security_poilicy} from '$routes/security.js';
+	import {feed} from '$routes/blog/feed.js';
 </script>
 
 <svelte:head>
 	<title>ryanatkn.com</title>
-	<link
-		rel="alternate"
-		type="application/atom+xml"
-		title="Atom"
-		href="https://www.ryanatkn.com/blog/feed.xml"
-	/>
-	<meta http-equiv="content-security-policy" content={content_security_poilicy} />
+	<link rel="alternate" type="application/atom+xml" title="Atom" href={feed.atom.feed_url} />
 </svelte:head>
 
 <Themed>

@@ -47,16 +47,6 @@
 
 	// TODO BLOCK make the `reset` button work for the toot url, including whether it's enabled
 
-	// TODO probably use in the future
-	// const sections = [
-	// 	{slug: 'introduction', name: 'Introduction'},
-	// 	{slug: 'limitations', name: 'Limitations'},
-	// 	{slug: 'conclusion', name: 'Conclusion'},
-	// 	{slug: 'references', name: 'References'},
-	// 	{slug: 'comments', name: 'Comments'},
-	// ];
-	// <BlogPostIndex {sections} />
-
 	let autoload_comments = true;
 	let embedded_toot_autoload = false;
 	let embedded_toot_loading: boolean | undefined;
@@ -467,18 +457,6 @@
 			</li>
 			<li>does not process headers for e.g. rate limiting</li>
 		</ul>
-		<p>
-			To avoid some possible security and privacy issues from injecting HTML from Mastodon's API
-			into the page like I'm doing, I added a fairly restrictive <a
-				href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP">content security policy</a
-			>. It disallows arbitrary third party requests, so it may break if my Mastodon host
-			mastodon.ryanatkn.com changes how it loads resources. If something goes wrong or changes,
-			having icons break is an acceptable failure until I can review the situation. For my visitors,
-			it's a potentially worse experience but it's safer. Here's the CSP that's applied in
-			<a href="https://github.com/ryanatkn/ryanatkn.com/blob/main/src/routes/%2Blayout.svelte"
-				>the main +layout.svelte</a
-			>:
-		</p>
 		<blockquote style:font-family="var(--font_family_mono)">
 			{prod_content_security_policy}
 		</blockquote>

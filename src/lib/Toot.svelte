@@ -46,6 +46,8 @@
 
 	// TODO BLOCK chronological, nested, updated, reverse chrono
 
+	// TODO BLOCK reset enabled when link changes
+
 	export const reset = (): void => {
 		loaded_status_key++;
 		// these get bound but their values stick because they're optional, so reset them
@@ -170,7 +172,7 @@
 					<div transition:slide class="settings controls panel">
 						<form class="width_full prose">
 							<TootInput {url} />
-							<fieldset>
+							<fieldset class="row">
 								<label
 									class="row"
 									title={autoload

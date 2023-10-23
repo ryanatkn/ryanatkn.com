@@ -15,8 +15,6 @@
 <script lang="ts">
 	import {base} from '$app/paths';
 	import BlogPost from '$lib/BlogPost.svelte';
-
-	// TODO BLOCK maybe add BlogPostIndex ?
 </script>
 
 <BlogPost {post} classes="prose">
