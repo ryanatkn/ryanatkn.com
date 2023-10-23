@@ -38,13 +38,14 @@
 	import HashLink from '$lib/HashLink.svelte';
 	import BlogPost from '$lib/BlogPost.svelte';
 	import {mastodon_cache} from '$routes/blog/mastodon_cache.js';
+	import {get_blog_feed} from '$lib/blog.js';
+
+	const feed = get_blog_feed();
 
 	let autoload_comments = true;
 	let embedded_toot_autoload = false;
 	let embedded_toot_loading: boolean | undefined;
 	let embedded_toot_load_time: number | undefined;
-
-	// TODO BLOCK put all post meta into context instead of hardcoding the link to post 2 (see the other posts too for their links)
 
 	// TODO BLOCK flatten the markup
 
@@ -58,10 +59,8 @@
 			<p>
 				This post began as a demo using <a href="https://joinmastodon.org/">Mastodon</a>
 				to add comments to my blog posts, but it morphed into a followup to my second blog post,
-				<a
-					href="https://www.ryanatkn.com/blog/modeling-virtual-social-spaces-in-this-house-we-post-cat-pics-on-saturday"
-					>Modeling virtual social spaces: in this house we post cat pics on Saturday</a
-				>, with a heaping dose of navel gazing.
+				<a href={feed.items[1].url}>"{feed.items[1].title}"</a>, with a heaping dose of navel
+				gazing.
 			</p>
 			<p>
 				This is a <a href="https://wikipedia.org/wiki/Static_web_page">static website</a>, meaning I
@@ -381,11 +380,10 @@
 			<p>
 				When I started <a href="https://www.felt.dev/">Felt</a> with Hamilton and wrote the initial
 				version of
-				<a href="https://www.ryanatkn.com/blog/making-free-and-open-source-web-community-software"
-					>my first blog post</a
-				>, I was sure I had to become an operator one day, because that's where the money is, so
-				it's the obvious path to sustainably produce free community software. And also, somebody
-				somewhere has to run the software, and I can do computer.
+				<a href={feed.items[0].url}>my first blog post</a>, I was sure I had to become an operator
+				one day, because that's where the money is, so it's the obvious path to sustainably produce
+				free community software. And also, somebody somewhere has to run the software, and I can do
+				computer.
 			</p>
 			<p>
 				But after a lot of brow furrowing and hard emotion (mostly fear - I mean, international

@@ -2,10 +2,6 @@
 	import Breadcrumb from '@fuz.dev/fuz_library/Breadcrumb.svelte';
 
 	import Favicon from '$lib/Favicon.svelte';
-	import {set_blog_feed} from '$lib/blog.js';
-	import {feed} from '$routes/blog/feed.js';
-
-	set_blog_feed(feed);
 
 	// TODO redirect from the numbers or render UI to navigate to it, maybe in `BlogPost`
 </script>

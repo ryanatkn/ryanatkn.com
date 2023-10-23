@@ -1,9 +1,11 @@
 <script lang="ts">
 	import {base} from '$app/paths';
 
-	import {feed} from '$routes/blog/feed.js';
 	import FeedItemDate from '$lib/FeedItemDate.svelte';
+	import {get_blog_feed} from '$lib/blog.js';
 	import {to_pathname} from '$lib/util.js';
+
+	const feed = get_blog_feed();
 
 	const items = feed.items.slice().reverse();
 </script>
