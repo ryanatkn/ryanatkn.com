@@ -49,6 +49,7 @@
 					href="https://www.cosmicplayground.org/">cosmicplayground.org</a
 				>, <a href="https://www.dealt.dev/">dealt.dev</a>,
 				<a href="https://ryanatkn.github.io/svelte-snake-sports/">Svelte Snake Sports</a>,
+				<a href="https://habitat.felt.dev/">felt_habitat</a>,
 				<a href="https://earbetter.ryanatkn.com/">Earbetter</a>, and
 				<a href="https://github.com/ryanatkn">other</a> abandonings
 			</li>
