@@ -60,18 +60,26 @@
 	// TODO refactor with storage helpers with serialize/parse as options, locallyStored?
 	let show_settings_key = storage_key && 'show_settings' + storage_key;
 	$: show_settings_key = storage_key && 'show_settings' + storage_key;
+
 	export let show_settings = show_settings_key
 		? load_from_storage(show_settings_key, () => initial_show_settings)
 		: initial_show_settings; // TODO store?
-	$: show_settings_key && set_in_storage(show_settings_key, show_settings); // TODO wastefully sets on init
+
+	$: show_settings_key && set_in_storage(show_settings_key, show_settings); // TODO @multiple wastefully sets on init
 
 	const toggle_settings = () => {
 		show_settings = !show_settings;
 	};
 
 	export let autoload_key: string | undefined = 'autoload'; // TODO customizable
-	export let autoload = autoload_key ? load_from_storage(autoload_key, () => false) : false; // TODO store? probably, see this comment vv
-	$: autoload_key && set_in_storage(autoload_key, autoload); // TODO wastefully sets on init and across multiple `Toot` instances if bound
+
+	export let initial_autoload = false;
+
+	export let autoload = autoload_key
+		? load_from_storage(autoload_key, () => initial_autoload)
+		: initial_autoload; // TODO store?
+
+	$: autoload_key && set_in_storage(autoload_key, autoload); // TODO @multiple wastefully sets on init and across multiple `Toot` instances if bound
 
 	$: parsed = parse_status_url(url);
 	$: id = parsed?.status_id ?? null;

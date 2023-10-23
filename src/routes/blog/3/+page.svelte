@@ -42,8 +42,6 @@
 
 	const feed = get_blog_feed();
 
-	let autoload_comments = true;
-	let embedded_toot_autoload = false;
 	let embedded_toot_loading: boolean | undefined;
 	let embedded_toot_load_time: number | undefined;
 
@@ -162,22 +160,28 @@
 		<aside>
 			I know I'm more sensitive than most here - more on this ahead. The road gets rocky.
 		</aside>
-		<p>Our design now has its requirements:</p>
-		<ul>
-			<li>start with a static website, just a bundle of files hosted cheaply on the web</li>
-			<li>on Mastodon, make a post per blog post, and replies can appear as comments here</li>
-			<li>fetch comments dynamically on each visitor's machine, with no authentication needed</li>
-			<li>proactive moderation, so only comments I approve will appear</li>
-		</ul>
-		<p>
-			<a href="https://docs.joinmastodon.org/">Mastodon docs</a> in hand, I set out to implement.
-			Scroll down to the bottom of the page to see the results. Here's
-			<a href="https://github.com/ryanatkn/ryanatkn.com/pull/12">the work on GitHub</a>.
-		</p>
 	</section>
-	<section class="spaced">
+	<section>
+		<div class="prose spaced">
+			<h2>Implementing Mastodon comments</h2>
+			<p>Our design now has its requirements:</p>
+			<ul>
+				<li>start with a static website, just a bundle of files hosted cheaply on the web</li>
+				<li>on Mastodon, make a post per blog post, and replies can appear as comments here</li>
+				<li>fetch comments dynamically on each visitor's machine, with no authentication needed</li>
+				<li>proactive moderation, so only comments I approve will appear</li>
+			</ul>
+			<p>
+				<a href="https://docs.joinmastodon.org/">Mastodon docs</a> in hand, I set out to implement.
+				Here's
+				<a href="https://github.com/ryanatkn/ryanatkn.com/pull/12">the first messy pass on GitHub</a
+				>. Scroll down to the bottom of the page to see the comments or expand this demo:
+			</p>
+		</div>
 		<details>
-			<summary>click for an example of an embedded toot with technical details</summary>
+			<summary style:margin-bottom="var(--spacing_xs)"
+				>click for an example of an embedded toot with technical details</summary
+			>
 			<aside>
 				<div class="prose">
 					<p>
@@ -196,10 +200,9 @@
 				</div>
 				<Toot
 					storage_key="embedded"
-					initial_show_settings={true}
 					{cache}
+					initial_show_settings={true}
 					initial_url={post.comments.url}
-					bind:autoload={embedded_toot_autoload}
 					bind:loading={embedded_toot_loading}
 					bind:load_time={embedded_toot_load_time}
 				/>
@@ -240,64 +243,69 @@
 				</div>
 			</aside>
 		</details>
+		<div class="prose">
+			<p>
+				But there's a huge caveat - I failed to implement proactive moderation to the degree I
+				wanted. My implementation uses Mastodon likes (favourites) for moderation: if I like a post,
+				it appears here. If I don't like a post, your client simply ignores it.
+			</p>
+			<p>
+				The problem is, for proactive moderation that requires no vigilance, if a post was edited
+				after I favourited it, it should be ignored. I can always re-favourite the post and build
+				nice tools to streamline the process.
+			</p>
+			<p>
+				However I couldn't find a way in the Mastodon API to get the <code>created_at</code> of a
+				favourite without authentication (<a
+					href="https://docs.joinmastodon.org/methods/statuses/#favourited_by">1</a
+				>, <a href="https://docs.joinmastodon.org/methods/favourites/">2</a>, caveat, I may be
+				ignorant on API usage details from here on, please correct me by
+				<a href={post.comments.url}>replying on Mastodon</a>, and things may have changed by the
+				time you read this since I last checked in October 2023).
+			</p>
+			<p>
+				Without knowing when a favourite was created, I can't conditionally hide posts that were
+				edited after my favourite. Maybe the commenter is a troll or spammer, luring me to favourite
+				a post that then gets edited with an ad for a gambling website, or they get hacked by trolls
+				or spammers. I don't want to be vigilant against the content of my blog changing for my
+				visitors without my approval.
+			</p>
+			<details>
+				<summary>click for technical details</summary>
+				<aside>
+					<p>
+						An <a href="https://docs.joinmastodon.org/methods/favourites/"
+							>endpoint to get a favourite's timestamp</a
+						>
+						exists, but it requires authentication, so we can't meet our requirements. The APIs just
+						weren't designed for this usage - there are no good privacy-related or technical reasons
+						for this information to be hidden. For example it could be added to the
+						<a href="https://docs.joinmastodon.org/methods/statuses/#favourited_by">favourited_by</a
+						>
+						endpoint (the <code>created_at</code> there is for the account).
+					</p>
+					<p>
+						The code uses the status <a
+							href="https://docs.joinmastodon.org/methods/statuses/#context">context</a
+						>
+						endpoint to fetch information about the post I originally made. That data includes the replies,
+						<code>descendants</code>. For each of those replies that have favourites, it then
+						fetches
+						<a href="https://docs.joinmastodon.org/methods/statuses/#favourited_by">favourited_by</a
+						> to see if one of those favourites was me. If not, the post is ignored like the others who
+						have no favourites.
+					</p>
+				</aside>
+			</details>
+			<p>
+				So, my moderation UX is leaky due to an API limitation. I can't get the <a
+					href="https://consentful.systems/">consentful</a
+				> experience I need.
+			</p>
+		</div>
 	</section>
 	<section class="prose">
-		<p>
-			But there's a huge caveat - I failed to implement proactive moderation to the degree I wanted.
-			My implementation uses Mastodon likes (favourites) for moderation: if I like a post, it
-			appears here. If I don't like a post, your client simply ignores it.
-		</p>
-		<p>
-			The problem is, for proactive moderation that requires no vigilance, if a post was edited
-			after I favourited it, it should be ignored. I can always re-favourite the post and build nice
-			tools to streamline the process.
-		</p>
-		<p>
-			However I couldn't find a way in the Mastodon API to get the <code>created_at</code> of a
-			favourite without authentication (<a
-				href="https://docs.joinmastodon.org/methods/statuses/#favourited_by">1</a
-			>, <a href="https://docs.joinmastodon.org/methods/favourites/">2</a>, caveat, I may be
-			ignorant on API usage details from here on, please correct me by
-			<a href={post.comments.url}>replying on Mastodon</a>, and things may have changed by the time
-			you read this since I last checked in October 2023).
-		</p>
-		<p>
-			Without knowing when a favourite was created, I can't conditionally hide posts that were
-			edited after my favourite. Maybe the commenter is a troll or spammer, luring me to favourite a
-			post that then gets edited with an ad for a gambling website, or they get hacked by trolls or
-			spammers. I don't want to be vigilant against the content of my blog changing for my visitors
-			without my approval.
-		</p>
-		<details>
-			<summary>click for technical details</summary>
-			<aside>
-				<p>
-					An <a href="https://docs.joinmastodon.org/methods/favourites/"
-						>endpoint to get a favourite's timestamp</a
-					>
-					exists, but it requires authentication, so we can't meet our requirements. The APIs just weren't
-					designed for this usage - there are no good privacy-related or technical reasons for this information
-					to be hidden. For example it could be added to the
-					<a href="https://docs.joinmastodon.org/methods/statuses/#favourited_by">favourited_by</a>
-					endpoint (the <code>created_at</code> there is for the account).
-				</p>
-				<p>
-					The code uses the status <a href="https://docs.joinmastodon.org/methods/statuses/#context"
-						>context</a
-					>
-					endpoint to fetch information about the post I originally made. That data includes the replies,
-					<code>descendants</code>. For each of those replies that have favourites, it then fetches
-					<a href="https://docs.joinmastodon.org/methods/statuses/#favourited_by">favourited_by</a> to
-					see if one of those favourites was me. If not, the post is ignored like the others who have
-					no favourites.
-				</p>
-			</aside>
-		</details>
-		<p>
-			So, my moderation UX is leaky due to an API limitation. I can't get the <a
-				href="https://consentful.systems/">consentful</a
-			> experience I need.
-		</p>
+		<h2>Roles in a social space</h2>
 		<p>
 			What does this all have to do with virtual social spaces, stewards and operators and builders?
 		</p>
@@ -353,15 +361,17 @@
 			An implied role in this model is the "user" or "player" or some better word that refers to the
 			people in a space.
 		</p>
+	</section>
+	<section class="prose">
+		<h2>Performing roles sustainably</h2>
 		<p>
 			In social spaces, I gravitate towards the role of builder. I like thinking about and making
-			software. This isn't a mild preference - I actively dislike most aspects of being a steward
-			and operator. Building dominates my skills and interests.
+			software. This is more than a mild preference, it's a way better fit for my skills, interests,
+			and temperament.
 		</p>
 		<p>
-			But software is nothing without operators that run it, and spaces rot without stewards to
-			protect them. Builders provide just one part of the puzzle, and for me it's the easiest of the
-			roles.
+			But software does nothing without operators to run it, and spaces rot without stewards to
+			protect them. Builders provide just one part of the puzzle.
 		</p>
 		<p>
 			When I started <a href="https://www.felt.dev/">Felt</a> with Hamilton and wrote the initial
@@ -407,7 +417,7 @@
 			storage_key="comments"
 			{cache}
 			initial_url={post.comments.url}
-			bind:autoload={autoload_comments}
+			initial_autoload={true}
 		/>
 	</section>
 	<!-- TODO maybe expose -->
