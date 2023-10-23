@@ -1,6 +1,8 @@
 import {strip_end} from '@grogarden/util/string.js';
 import {wait} from '@grogarden/util/async.js';
 
+// TODO extract to fuz_mastodon or fuz_fediverse or fuz_fedi
+
 // TODO go through a single fetch helper and trace each call to the API,
 // so we can see the history in a tab displayed to any users who want to dig
 
