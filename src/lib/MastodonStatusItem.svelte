@@ -1,6 +1,7 @@
 <script lang="ts">
 	import {format, formatDistance} from 'date-fns';
 	import {slide} from 'svelte/transition';
+	import {strip_start} from '@grogarden/util/string.js';
 
 	import type {MastodonStatus} from '$lib/mastodon.js';
 
@@ -42,7 +43,7 @@
 		>
 		<div class="names">
 			<div class="name">
-				<a href={account_url} title={account_url}>
+				<a href={account_url} title={strip_start(account_url, 'https://')}>
 					{account_display_name}
 				</a>
 			</div>
