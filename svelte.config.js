@@ -11,13 +11,14 @@ export default {
 		alias: {$routes: 'src/routes', $fixtures: 'src/fixtures'},
 		csp: {
 			directives: {
-				// TODO improve the CSP - https://github.com/ryanatkn/ryanatkn.com/pull/12
+				// TODO improve the CSP, is unsafe - https://github.com/ryanatkn/ryanatkn.com/pull/12
 				// 'default-src': ['self'],
 				// 'script-src': ['self'],
 				'connect-src': ['self', 'https://hci.social/'],
 				'style-src': ['self', 'unsafe-inline'], // support Svelte transitions - https://kit.svelte.dev/docs/configuration#csp
 				'img-src': [
 					'self',
+					'unsafe-inline',
 					'https://hci.social/',
 					'https://storage.googleapis.com/hci-social-storage/',
 				],

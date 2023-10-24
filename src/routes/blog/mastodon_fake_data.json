@@ -1011,8 +1011,8 @@
 			"replies_count": 0,
 			"reblogs_count": 2,
 			"favourites_count": 4,
-			"edited_at": "2023-01-28T18:54:09.682Z",
-			"content": "<p>published my second blog post: &quot;Modeling virtual social spaces: in this house we post cat pics on Saturday&quot; - <a href=\"https://www.ryanatkn.com/blog/modeling-virtual-social-spaces-in-this-house-we-post-cat-pics-on-saturday\" target=\"_blank\" rel=\"nofollow noopener noreferrer\" translate=\"no\"><span class=\"invisible\">https://www.</span><span class=\"ellipsis\">ryanatkn.com/blog/modeling-vir</span><span class=\"invisible\">tual-social-spaces-in-this-house-we-post-cat-pics-on-saturday</span></a></p><p>One of its main influences is &quot;Modular Politics: Toward a Governance Layer for Online Communities&quot; by <span class=\"h-card\" translate=\"no\"><a href=\"https://social.coop/@ntnsndr\" class=\"u-url mention\">@<span>ntnsndr</span></a></span> and colleagues - <a href=\"https://arxiv.org/abs/2005.13701\" target=\"_blank\" rel=\"nofollow noopener noreferrer\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">arxiv.org/abs/2005.13701</span><span class=\"invisible\"></span></a></p><p>A thing I like about the post is the explicit focus on power. Seems kinda important as I&#39;m building software for social spaces</p><p>happy caturday :D</p>",
+			"edited_at": "2023-10-24T19:53:23.391Z",
+			"content": "<p>published my second blog post: &quot;Modeling virtual social spaces: in this house we post cat pics on Saturday&quot; - <a href=\"https://www.ryanatkn.com/blog/modeling-virtual-social-spaces-in-this-house-we-post-cat-pics-on-saturday\" target=\"_blank\" rel=\"nofollow noopener noreferrer\" translate=\"no\"><span class=\"invisible\">https://www.</span><span class=\"ellipsis\">ryanatkn.com/blog/modeling-vir</span><span class=\"invisible\">tual-social-spaces-in-this-house-we-post-cat-pics-on-saturday</span></a></p><p>One of its main influences is &quot;Modular Politics: Toward a Governance Layer for Online Communities&quot; by <span class=\"h-card\" translate=\"no\"><a href=\"https://social.coop/@ntnsndr\" class=\"u-url mention\">@<span>ntnsndr</span></a></span> and colleagues - <a href=\"https://arxiv.org/abs/2005.13701\" target=\"_blank\" rel=\"nofollow noopener noreferrer\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">arxiv.org/abs/2005.13701</span><span class=\"invisible\"></span></a></p><p>A thing I like about the post is the explicit focus on power. Seems important as I&#39;m building software for social spaces</p><p>happy caturday</p>",
 			"reblog": null,
 			"application": {
 				"name": "Web",
@@ -1078,7 +1078,7 @@
 			"emojis": [],
 			"card": {
 				"url": "https://www.ryanatkn.com/blog/modeling-virtual-social-spaces-in-this-house-we-post-cat-pics-on-saturday",
-				"title": "Modeling virtual social spaces: in this house we post cat pics on Saturday",
+				"title": "Modeling virtual social spaces: in this house we post cat pics on Saturday - ryanatkn.com/blog",
 				"description": "",
 				"language": "en",
 				"type": "link",

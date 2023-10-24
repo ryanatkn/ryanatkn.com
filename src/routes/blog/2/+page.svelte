@@ -160,10 +160,9 @@
 			<li>a data service that sends post data to anyone who asks for it (an API)</li>
 		</ul>
 		<p>
-			1 By intentionally designing how distribution works in the space, we unlock another dimension
-			of creativity that reaches the wider world beyond our little web forum. Technically every
-			reader already has the data, but explicit distribution powers enable an ecosystem more
-			readily.
+			By intentionally designing how distribution works in the space, we unlock another dimension of
+			creativity that reaches the wider world beyond our little web forum. Technically every reader
+			already has the data, but explicit distribution powers enable an ecosystem more readily.
 		</p>
 		<h2>Conclusion</h2>
 		<p>We started with the idea of control over a virtual social space, and then:</p>
@@ -239,19 +238,19 @@
 
 	<section class="prose">
 		<h2>P.S.</h2>
-		<p>In a followup, I'll try to do something useful with the model. Some questions on my mind:</p>
+		<p>Some questions from this:</p>
 		<ul>
 			<li>
 				We've defined some hard-to-enforce rules of interaction, like personally knowing the cat.
-				How might we go about incentivizing or enforcing authentic participation?
+				How could authentic participation be incentivized/enforced?
 			</li>
 			<li>
 				What mechanisms can we use to collectively exert control over each of the other powers in
 				the model? What could it look like to have public control over the space?
 			</li>
 			<li>
-				How does gating fit into this model? What are the various ways we can gate public and
-				private access? And the other powers?
+				How does gating fit into this model? What are the ways we can gate public and private
+				access? And the other powers?
 			</li>
 		</ul>
 	</section>
