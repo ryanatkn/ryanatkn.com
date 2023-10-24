@@ -1,6 +1,6 @@
 # [ryanatkn.com](https://www.ryanatkn.com) 🌤🌳🐿
 
-[<img src="src/static/favicon.png" align="right" width="100">](https://www.ryanatkn.com)
+[<img src="static/favicon.png" align="right" width="100">](https://www.ryanatkn.com)
 
 > [@ryanatkn](https://github.com/ryanatkn)'s homepage and blog
 

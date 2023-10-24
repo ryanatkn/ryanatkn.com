@@ -358,9 +358,8 @@
 		<a href="https://www.jsonrpc.org/specification">JSON-RPC 2.0</a>. We also publish a
 		<a href="https://json-schema.org/">JSON Schema</a>
 		with
-		<a href="https://github.com/feltjs/felt/blob/main/src/static/schemas/vocab.json"
-			>our vocabulary</a
-		>, including both data objects and actions. We could feasibly generate OpenAPI schemas from our
+		<a href="https://github.com/feltjs/felt/blob/main/static/schemas/vocab.json">our vocabulary</a>,
+		including both data objects and actions. We could feasibly generate OpenAPI schemas from our
 		source of truth, giving us greatly expanded access to existing tooling, but we have no plans for
 		that yet.
 	</p>
