@@ -18,8 +18,9 @@
 
 <script lang="ts">
 	import {base} from '$app/paths';
+	import Toot from '@fuz.dev/fuz_mastodon/Toot.svelte';
+
 	import BlogPost from '$lib/BlogPost.svelte';
-	import Toot from '$lib/Toot.svelte';
 	import {mastodon_cache} from '$routes/blog/mastodon_cache.js';
 
 	// TODO @multiple avoid loading in production, lazy import?

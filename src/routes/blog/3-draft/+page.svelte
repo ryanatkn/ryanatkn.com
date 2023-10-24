@@ -33,8 +33,8 @@
 
 <script lang="ts">
 	import {page} from '$app/stores';
+	import Toot from '@fuz.dev/fuz_mastodon/Toot.svelte';
 
-	import Toot from '$lib/Toot.svelte';
 	import HashLink from '$lib/HashLink.svelte';
 	// TODO finish draft (and think of a better way to do them)
 	// import BlogPost from '$lib/BlogPost.svelte';
