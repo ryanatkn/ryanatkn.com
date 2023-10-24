@@ -58,6 +58,14 @@
 			icon_alt: 'a pixelated green oak acorn with a glint of sun',
 		},
 		{
+			name: 'orc',
+			title: '<a href="https://github.com/ryanatkn/orc">Orc</a>',
+			description: 'a tool for orchestrating many repos',
+			links: `<a class="chip" href="https://orc.ryanatkn.com/">orc.ryanatkn.com</a> <a class="chip" href="https://github.com/ryanatkn/orc">source</a>`,
+			icon: '', // 🪄
+			icon_alt: 'a pixelated green oak acorn with a glint of sun',
+		},
+		{
 			name: 'cosmicplayground',
 			title: '<a href="https://www.cosmicplayground.org">cosmicplayground.org</a>',
 			description:
