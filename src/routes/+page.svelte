@@ -5,18 +5,8 @@
 	import Favicon from '$lib/Favicon.svelte';
 	import ContactInfo from '$routes/ContactInfo.svelte';
 	import Me from '$routes/Me.svelte';
-
-	/* eslint-disable svelte/no-at-html-tags */
-
-	interface ProjectInfo {
-		name: string;
-		title: string;
-		description?: string;
-		links?: string;
-		icon?: string;
-		icon_alt?: string;
-		icon_style?: string;
-	}
+	import type {ProjectInfo} from '$routes/project.js';
+	import ProjectCard from '$routes/ProjectCard.svelte';
 
 	// TODO I moved the project info to this data format to quicky slap together a responsive layout
 	// without changing the original tables, but it'd be much better
@@ -114,37 +104,8 @@
 			<h2>ongoing projects</h2>
 		</div>
 		<div class="cards">
-			{#each projects as project}
-				<div class="card prose">
-					<div>
-						<p class="title">{@html project.title}</p>
-						<div class="content">
-							<div>
-								{#if project.description}
-									<p>
-										{@html project.description}
-									</p>
-								{/if}
-								{#if project.links}
-									<p>{@html project.links}</p>
-								{/if}
-							</div>
-							{#if project.icon}
-								<div class="icon">
-									{#if project.icon[0] === '/'}
-										<img
-											src="{base}{project.icon}"
-											alt={project.icon_alt ?? `icon for ${project.name}`}
-											style={project.icon_style}
-										/>
-									{:else}
-										<div style:font-size="var(--size_5)">{project.icon}</div>
-									{/if}
-								</div>
-							{/if}
-						</div>
-					</div>
-				</div>
+			{#each projects as project (project)}
+				<ProjectCard {project}></ProjectCard>
 			{/each}
 		</div>
 	</section>
@@ -178,20 +139,5 @@
 	}
 	.panel :global(h2) {
 		margin-top: 0;
-	}
-	.icon {
-		padding-left: var(--spacing_sm);
-		flex-shrink: 0;
-	}
-	.icon img {
-		width: var(--icon_size_lg);
-		max-width: var(--icon_size_lg);
-	}
-	.content {
-		display: flex;
-	}
-	.title {
-		font-size: var(--size_lg);
-		word-break: break-all;
 	}
 </style>
