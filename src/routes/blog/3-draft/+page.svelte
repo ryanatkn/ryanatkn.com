@@ -46,7 +46,7 @@
 	let embedded_toot_loading: boolean | undefined;
 	let embedded_toot_load_time: number | undefined;
 
-	// TODO avoid loading in production, lazy import?
+	// TODO @multiple avoid loading in production, lazy import?
 	const cache = import.meta.env.DEV ? mastodon_cache : null;
 </script>
 

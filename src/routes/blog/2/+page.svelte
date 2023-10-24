@@ -20,8 +20,10 @@
 	import {base} from '$app/paths';
 	import BlogPost from '$lib/BlogPost.svelte';
 	import Toot from '$lib/Toot.svelte';
+	import {mastodon_cache} from '$routes/blog/mastodon_cache.js';
 
-	const cache = null; // TODO BLOCK add fetched data to cache
+	// TODO @multiple avoid loading in production, lazy import?
+	const cache = import.meta.env.DEV ? mastodon_cache : null;
 </script>
 
 <BlogPost {post}>
