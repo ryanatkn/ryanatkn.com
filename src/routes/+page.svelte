@@ -92,7 +92,7 @@
 				</blockquote>
 				<div style:margin-bottom="var(--spacing_xs)"><Me /></div>
 				<p>
-					I'm building free and open source <a href="https://github.com/ryanatkn"
+					Hi I'm building free and open source <a href="https://github.com/ryanatkn"
 						>software projects</a
 					>
 					like <a href="https://www.felt.dev/">Felt</a>, <a href="https://www.fuz.dev/">Fuz</a>, and
