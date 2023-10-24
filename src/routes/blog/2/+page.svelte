@@ -179,7 +179,7 @@
 		</ul>
 		<p>
 			This model seems useful for exploring the rich territory available to us when designing our
-			virtual social spaces. In a followup post we'll try to use it!
+			virtual social spaces.
 		</p>
 		<p>
 			So when dog folks come along with their predictable request, we can say, ah yes, they want us
