@@ -8,8 +8,6 @@
 	import type {ProjectInfo} from '$routes/project.js';
 	import ProjectCard from '$routes/ProjectCard.svelte';
 
-	// TODO BLOCK add `Orc` right after `Gro`
-
 	// TODO I moved the project info to this data format to quicky slap together a responsive layout
 	// without changing the original tables, but it'd be much better
 	// to write this in normal Svelte markup and use CSS to make a responsive layout

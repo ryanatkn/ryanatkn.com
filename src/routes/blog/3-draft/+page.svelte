@@ -46,7 +46,7 @@
 	let embedded_toot_loading: boolean | undefined;
 	let embedded_toot_load_time: number | undefined;
 
-	// TODO BLOCK probably lead with the model, get there asap
+	// TODO probably lead with the model, get there asap
 
 	// TODO @multiple avoid loading in production, lazy import?
 	const cache = import.meta.env.DEV ? mastodon_cache : null;
