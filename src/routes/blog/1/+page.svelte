@@ -87,7 +87,7 @@
 		</li>
 	</ul>
 	<p>
-		Fullstack customization is part of the point of feltjs, but today it's a vague idea with some
+		Fullstack customization is part of the point of Felt, but today it's a vague idea with some
 		interesting glimmers scattered around. The point is to help us solve problems, which are unknown
 		and numerous, so we design the system holistically with that in mind - the UX is the DX is the
 		UX. It's confusing but so is the problem of solving so many problems.
@@ -103,7 +103,7 @@
 		<li>
 			a comfortable environment that looks like existing social apps, but when you go digging you
 			find it's deeply customizable and flexible, and now it makes sense that people say all these
-			seemingly different web experiences were "made with feltjs" and maybe you could use it to make
+			seemingly different web experiences were "made with Felt" and maybe you could use it to make
 			that thing?
 		</li>
 		<li>
@@ -129,7 +129,7 @@
 		Instead of being limited to filling digital boxes designed by tech companies, we could be
 		designing own boxes for our unique situations and sharing the patterns with each other. I want
 		the act of creating tools and sharing them to be a normal part of the software-using experience.
-		One of the ways I think about feltjs is that it's a layer that sits between SvelteKit and your
+		One of the ways I think about Felt is that it's a layer that sits between SvelteKit and your
 		app, that's trying to do as much of the uninteresting parts as possible. You're the person with
 		ideas, the tools should be enabling and out of the way.
 	</p>
@@ -168,9 +168,9 @@
 		</li>
 	</ul>
 	<p>
-		With feltjs, I hope we can make the role of toolmaker more accessible to more people on the web,
+		With Felt, I hope we can make the role of toolmaker more accessible to more people on the web,
 		to help us bring ideas to life while supporting beneficial relationships with technology. I like
-		feltjs' combination of solid technical foundations, lightweight implementation, and DIY
+		Felt's combination of solid technical foundations, lightweight implementation, and DIY
 		hackability. It's been fun and there's cooler stuff ahead.
 	</p>
 	<hr />
@@ -279,7 +279,7 @@
 		>, so you may choose Deno, Bun, a cloud platform's serverless offerings, or whatever else is in
 		the Node.js legacy compat space. We're trying to minimize our exposure to Node-specific APIs to
 		keep portability high. Node.js a practical choice, not an idealized one. (and we put effort into
-		moving forward - for example feltjs never used any CommonJS)
+		moving forward - for example Felt never used any CommonJS)
 	</p>
 	<h3>customizable and extensible</h3>
 	<p>
@@ -390,8 +390,8 @@
 	</aside>
 	<p>
 		I personally think decentralized technologies are the future and I want to move with the times.
-		In any case, we need user interfaces that are decoupled from the underlying protocols, and
-		feltjs wants to be as repurposable as it can be.
+		In any case, we need user interfaces that are decoupled from the underlying protocols, and Felt
+		wants to be as repurposable as it can be.
 	</p>
 	<aside>
 		"decentralized" means a lot of things, and while I think it's a broadly inevitable future, I
