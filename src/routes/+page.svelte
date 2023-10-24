@@ -118,6 +118,10 @@
 				<ProjectCard {project}></ProjectCard>
 			{/each}
 		</div>
+		<!-- TODO .margin_1 in util classes library (where?) -->
+		<div class="box" style:margin="var(--spacing_1)">
+			<a class="chip" href="https://github.com/ryanatkn">all projects</a>
+		</div>
 	</section>
 </div>
 <Breadcrumb
