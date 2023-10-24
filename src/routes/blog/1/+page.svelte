@@ -72,8 +72,8 @@
 			remain a relatively simple project that's easy and cheap to self-host
 		</li>
 		<li>
-			designed for small groups - scaling to thousands of people is less important for feltjs than
-			the depth of interaction and richness of capabilities
+			designed for small groups - scaling to thousands of people is less important for Felt than the
+			depth of interaction and richness of capabilities
 		</li>
 		<li>
 			multipurpose, extensible, and interoperable, so the same toolkit can be used for many kinds of
@@ -196,7 +196,7 @@
 	<hr />
 	<h2>Business and ownership</h2>
 	<p>
-		We haven't done the legal work to make it official, but the feltjs trademarks and domains, like <a
+		We haven't done the legal work to make it official, but the Felt trademarks and domains, like <a
 			href="/felt.png">the green heart logo</a
 		>
 		and
