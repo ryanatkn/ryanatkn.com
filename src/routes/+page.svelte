@@ -5,18 +5,8 @@
 	import Favicon from '$lib/Favicon.svelte';
 	import ContactInfo from '$routes/ContactInfo.svelte';
 	import Me from '$routes/Me.svelte';
-
-	/* eslint-disable svelte/no-at-html-tags */
-
-	interface ProjectInfo {
-		name: string;
-		title: string;
-		description?: string;
-		links?: string;
-		icon?: string;
-		icon_alt?: string;
-		icon_style?: string;
-	}
+	import type {ProjectInfo} from '$routes/project.js';
+	import ProjectCard from '$routes/ProjectCard.svelte';
 
 	// TODO I moved the project info to this data format to quicky slap together a responsive layout
 	// without changing the original tables, but it'd be much better
@@ -26,13 +16,13 @@
 			name: 'blog',
 			title: `<a href="${base}/blog">blog</a>`,
 			links:
-				'<a href="https://www.ryanatkn.com/blog/feed.xml" class="chip">feed.xml</a> <a href="https://github.com/ryanatkn/ryanatkn.com" class="chip">GitHub</a>',
+				'<a href="https://www.ryanatkn.com/blog/feed.xml" class="chip">feed.xml</a> <a href="https://github.com/ryanatkn/ryanatkn.com" class="chip">source</a>',
 		},
 		{
 			name: 'devlog',
 			title: '<a href="https://log.ryanatkn.com/">log</a>',
 			description: 'devlog',
-			links: '<a href="https://github.com/ryanatkn/log" class="chip">GitHub</a>',
+			links: '<a href="https://github.com/ryanatkn/log" class="chip">source</a>',
 		},
 		{
 			name: 'github',
@@ -43,7 +33,7 @@
 			name: 'felt',
 			title: '<a href="https://www.felt.dev/">Felt</a>',
 			description: 'a programmable platform for hobbyists and human-scale communities',
-			links: `<a class="chip" href="https://www.felt.dev/">felt.dev</a> <a class="chip" href="https://github.com/feltjs">GitHub</a>`,
+			links: `<a class="chip" href="https://www.felt.dev/">felt.dev</a> <a class="chip" href="https://github.com/feltjs">source</a>`,
 			icon: '/felt.png',
 			icon_alt: "green felt textured heart with the word 'felt' cut out",
 		},
@@ -52,7 +42,7 @@
 			title: '<a href="https://www.fuz.dev/">Fuz</a>',
 			description:
 				'design system for CSS, <a href="https://svelte.dev/">Svelte</a>, and <a href="https://kit.svelte.dev/">SvelteKit</a>',
-			links: `<a class="chip" href="https://www.fuz.dev/">fuz.dev</a> <a class="chip" href="https://github.com/fuz-dev/fuz">GitHub</a> <a class="chip" href="https://www.npmjs.com/package/@fuz.dev/fuz">npm</a>`,
+			links: `<a class="chip" href="https://www.fuz.dev/">fuz.dev</a> <a class="chip" href="https://github.com/fuz-dev/fuz">source</a> <a class="chip" href="https://www.npmjs.com/package/@fuz.dev/fuz">npm</a>`,
 			icon: '',
 			icon_alt: 'a ball of yarn',
 		},
@@ -61,7 +51,7 @@
 			title: '<a href="https://github.com/grogarden/gro">Gro</a>',
 			description:
 				'task runner and toolkit extending <a href="https://kit.svelte.dev/">SvelteKit</a>',
-			links: `<a class="chip" href="https://www.grogarden.org/">grogarden.org</a> <a class="chip" href="https://github.com/grogarden/gro">GitHub</a>`,
+			links: `<a class="chip" href="https://www.grogarden.org/">grogarden.org</a> <a class="chip" href="https://github.com/grogarden/gro">source</a>`,
 			icon: '/gro.png',
 			icon_alt: 'a pixelated green oak acorn with a glint of sun',
 		},
@@ -70,7 +60,7 @@
 			title: '<a href="https://www.cosmicplayground.org">cosmicplayground.org</a>',
 			description:
 				'hobby project for fun and learning, <em>"tools and toys for expanding minds"</em>',
-			links: '<a class="chip" href="https://github.com/ryanatkn/cosmicplayground">GitHub</a>',
+			links: '<a class="chip" href="https://github.com/ryanatkn/cosmicplayground">source</a>',
 			icon: '/cosmic_kitty.jpg',
 			icon_alt: 'the smiling and colorful face of Cosmic Kitty made of rainbow lines in space',
 			icon_style: 'border-radius: 50%',
@@ -97,8 +87,8 @@
 					>
 					like <a href="https://www.felt.dev/">Felt</a>, <a href="https://www.fuz.dev/">Fuz</a>, and
 					<a href="https://github.com/grogarden/gro">Gro</a>. My main skill is making frontend web
-					apps and I also do some backend programming. I enjoy trying to make powerful tools that
-					are easy to use, and I'm extra interested in UIs and social systems. More
+					apps and I also do some backend and devtools programming. I enjoy trying to make powerful
+					tools that are easy to use, and I'm extra interested in UIs and social systems. More
 					<a href="{base}/about">about me</a>.
 				</p>
 			</div>
@@ -114,37 +104,8 @@
 			<h2>ongoing projects</h2>
 		</div>
 		<div class="cards">
-			{#each projects as project}
-				<div class="card prose">
-					<div>
-						<p class="title">{@html project.title}</p>
-						<div class="content">
-							<div>
-								{#if project.description}
-									<p>
-										{@html project.description}
-									</p>
-								{/if}
-								{#if project.links}
-									<p>{@html project.links}</p>
-								{/if}
-							</div>
-							{#if project.icon}
-								<div class="icon">
-									{#if project.icon[0] === '/'}
-										<img
-											src="{base}{project.icon}"
-											alt={project.icon_alt ?? `icon for ${project.name}`}
-											style={project.icon_style}
-										/>
-									{:else}
-										<div style:font-size="var(--size_5)">{project.icon}</div>
-									{/if}
-								</div>
-							{/if}
-						</div>
-					</div>
-				</div>
+			{#each projects as project (project)}
+				<ProjectCard {project}></ProjectCard>
 			{/each}
 		</div>
 	</section>
@@ -178,20 +139,5 @@
 	}
 	.panel :global(h2) {
 		margin-top: 0;
-	}
-	.icon {
-		padding-left: var(--spacing_sm);
-		flex-shrink: 0;
-	}
-	.icon img {
-		width: var(--icon_size_lg);
-		max-width: var(--icon_size_lg);
-	}
-	.content {
-		display: flex;
-	}
-	.title {
-		font-size: var(--size_lg);
-		word-break: break-all;
 	}
 </style>

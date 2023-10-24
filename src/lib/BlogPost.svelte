@@ -16,7 +16,7 @@
 </svelte:head>
 
 {#if item}
-	<article class={classes}>
+	<article class:width_md={true} class={classes}>
 		<header class="prose">
 			<BlogPostHeader {item} />
 		</header>
@@ -27,9 +27,3 @@
 {:else}
 	<div>cannot find post <code>{post.slug}</code></div>
 {/if}
-
-<style>
-	article {
-		max-width: var(--width_md);
-	}
-</style>

@@ -1,5 +1,8 @@
 import {strip_end} from '@grogarden/util/string.js';
 import {wait} from '@grogarden/util/async.js';
+import {Logger} from '@grogarden/util/log.js';
+
+// TODO extract to fuz_mastodon or fuz_fediverse or fuz_fedi or fuz_activitypub
 
 // TODO go through a single fetch helper and trace each call to the API,
 // so we can see the history in a tab displayed to any users who want to dig
@@ -29,6 +32,8 @@ const headers = {
 // };
 // window.flush_responses = flush_responses;
 
+const log = new Logger(['[mastodon]']);
+
 export interface ResponseData<T = any> {
 	url: string;
 	data: T;
@@ -41,18 +46,19 @@ export type MastodonResponseData = ResponseData<
 export const fetch_data = async (url: string, cache?: MastodonCache | null): Promise<any> => {
 	const r = cache?.get(url);
 	if (r) {
-		// console.log('fetch_data cached', r);
+		log.info('[fetch_data] cached', r);
 		await wait(CACHE_NETWORK_DELAY);
 		return Promise.resolve(r.data);
 	}
 	try {
-		// console.log(`CALL fetch_post`, u);
+		log.info('[fetch_data] url with headers', url, headers);
 		const res = await fetch(url, {headers});
 		if (!res.ok) return null;
-		// console.log(`res`, res);
-		// const h = Array.from(res.headers.entries());
-		// console.log(`received headers`, url, h);
+		log.info('[fetch_data] res', url, res);
+		const h = Array.from(res.headers.entries());
+		log.info('[fetch_data] fetched headers', url, h);
 		const fetched = await res.json();
+		log.info('[fetch_data] fetched json', fetched);
 		// responses.push({url, data: fetched});
 		return fetched;
 	} catch (err) {

@@ -181,7 +181,7 @@
 				</div>
 				{#if show_settings}
 					<div transition:slide class="settings controls panel">
-						<form class="width_full prose">
+						<form class="width_full">
 							<TootInput bind:url />
 							<fieldset class="row">
 								<label

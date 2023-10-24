@@ -11,14 +11,23 @@
 </script>
 
 <fieldset>
-	<label title="where to load the toot">
-		<input
-			bind:value={url}
-			placeholder="> toot url"
-			on:focus={(e) => e.currentTarget.select()}
-			{...attrs}
-		/>
-	</label>
+	<div class="row spaced">
+		<a
+			class="icon_button box spaced_hz"
+			style:font-size="var(--size_1)"
+			href={url}
+			target="_blank"
+			rel="noreferrer"><div>🔗</div></a
+		>
+		<label title="where to load the toot" class="flex_1">
+			<input
+				bind:value={url}
+				placeholder="> toot url"
+				on:focus={(e) => e.currentTarget.select()}
+				{...attrs}
+			/>
+		</label>
+	</div>
 	{#if url && !parsed}
 		<div transition:slide>
 			<Alert status="error">invalid Mastodon status url</Alert>

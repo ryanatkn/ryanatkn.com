@@ -46,7 +46,7 @@
 	let embedded_toot_loading: boolean | undefined;
 	let embedded_toot_load_time: number | undefined;
 
-	// TODO avoid loading in production, lazy import?
+	// TODO @multiple avoid loading in production, lazy import?
 	const cache = import.meta.env.DEV ? mastodon_cache : null;
 </script>
 
@@ -202,7 +202,7 @@
 					</p>
 				</div>
 				<Toot
-					storage_key="embedded"
+					storage_key="3_embedded"
 					{cache}
 					initial_show_settings={true}
 					initial_url={post.comments.url}
@@ -396,9 +396,10 @@
 			Of course, things aren't quite so simple. I'll help steward the public dev community for Felt,
 			but we're doing things intentionally to reduce the stewardship burden - those spaces will
 			remain on topic, we'll moderate behind a collectively-controlled actor so we're not exposed as
-			individuals, and we'll have a low tolerance for bad behavior. Hamilton will graciously be that
-			community's operator, so I don't even need to hold keys. He'll also share the steward role
-			with me and we'll look for people with that affinity to help us.
+			individuals (e.g. "stewarded by Felt Co-op" at <a href="https://www.felt.dev/">felt.dev</a>),
+			and we'll have a low tolerance for bad behavior. Hamilton will graciously be that community's
+			operator, so I don't even need to hold keys. He'll also share the steward role with me and
+			we'll look for people with that affinity to help us.
 		</p>
 		<p>
 			I'll continue working on my open source projects, and my role there will become more stewardy
@@ -417,7 +418,7 @@
 		</div>
 		<Toot
 			replies
-			storage_key="comments"
+			storage_key="3_comments"
 			{cache}
 			initial_url={post.comments.url}
 			initial_autoload={true}

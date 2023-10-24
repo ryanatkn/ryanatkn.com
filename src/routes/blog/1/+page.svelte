@@ -23,6 +23,7 @@
 			<img
 				style:float="right"
 				style:width="144px"
+				style:height="133.5px"
 				style:margin-left="20px"
 				style:margin-top="20px"
 				src="{base}/felt.png"
@@ -385,7 +386,8 @@
 		(OIDC) to complement our current password-in-a-cookie authentication. I like how the
 		<a href="https://atproto.com/">AT Protocol</a> uses domains for identity - compared to ActivityPub
 		identities, they offer better portability and stability. Together with subdomains, I like the combination
-		of user-friendliness, flexibility, aesthetics, and DNS-derived authority.
+		of user-friendliness, flexibility, aesthetics, and DNS-derived authority. But maybe ActivityPub identities
+		can sufficiently support this UX?
 	</aside>
 	<p>
 		I personally think decentralized technologies are the future and I want to move with the times.
