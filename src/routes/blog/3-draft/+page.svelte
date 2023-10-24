@@ -387,10 +387,10 @@
 		<p>
 			But after a lot of brow furrowing and hard emotion (mostly fear - I mean, holding the reins of
 			infrastructure that people depend on? having custody over those keys? international legal
-			compliance? and safety? oof, the code already overflows my head), I've come to terms with
-			myself. I'm a builder, and that's enough. It's a big diverse world full of people who like and
-			excel at the operator and steward roles, and I'll gladly pay them money or otherwise transact
-			for their services.
+			compliance? and safety? oof, the code already overflows my head I can't fit this stuff), I've
+			come to terms with myself. I'm a builder, and that's enough. It's a big diverse world full of
+			people who like and excel at the operator and steward roles, and I'll gladly pay them money or
+			otherwise transact for their services.
 		</p>
 		<p>
 			Of course, things aren't quite so simple. I'll help steward the public dev community for Felt,
