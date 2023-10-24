@@ -7,6 +7,7 @@ import {dirname, join} from 'node:path';
 
 import {collect_blog_post_ids, to_next_blog_post_id} from '$lib/blog_helpers.js';
 
+// TODO consider `_` args like `new` and `0` to bump the `updated` date
 const Args = z
 	.object({
 		date: z.string({description: "the post's date_published"}).optional(),
