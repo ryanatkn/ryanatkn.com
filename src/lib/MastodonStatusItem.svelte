@@ -47,7 +47,7 @@
 					{account_display_name}
 				</a>
 			</div>
-			<small title="{account_followers_count} followers, following {account_following_count}"
+			<small title="following {account_following_count}, {account_followers_count} followers"
 				>{account_acct}</small
 			>
 			<small
