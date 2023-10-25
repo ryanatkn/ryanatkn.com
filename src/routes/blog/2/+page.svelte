@@ -33,12 +33,9 @@
 		<p>
 			While working on the community software project I described in <a
 				href="{base}/blog/making-free-and-open-source-web-community-software">my first blog post</a
-			>, I've wanted clarity on some concepts that sit above the code. This post proposes a model
-			for one of the central aspects of online communities: the
-			<strong>virtual social space</strong>.
+			>, I keep thinking about virtual social spaces but I don't know what they are, really. This
+			post outlines a simple model:
 		</p>
-		<!-- TODO semantics? stackoverflow said h3 or aria-label on the ul, both seem wrong to me -->
-		<p>To be precise about our terms:</p>
 		<ul>
 			<li><strong>virtual</strong>: existing not physically but through software</li>
 			<li><strong>social</strong>: including multiple people</li>
@@ -55,13 +52,13 @@
 	<section class="prose">
 		<h2>The example</h2>
 		<p>
-			In the software I work on, a community is composed of any number of virtual social spaces.
-			Simple! Except neither humans nor networked computers are simple, and the situation gets
-			complicated when they're combined. To help us along, we'll analyze virtual social spaces
-			through the lens of a concrete hypothetical usecase. Let's say I have a public web forum
-			containing a specific space that has some very strict rules: participants are allowed to post
-			only on Saturday, and posts must contain pictures of cats they know personally. We'll use this
-			example to think concretely about the model.
+			In the software I work on, a hub is a grouping of any number of virtual social spaces. Simple!
+			Except neither humans nor networked computers are simple, and the situation gets complicated
+			when they're combined. To help us along, we'll analyze virtual social spaces through the lens
+			of a concrete hypothetical usecase. Let's say I have a public web forum containing a specific
+			space that has some very strict rules: participants are allowed to post only on Saturday, and
+			posts must contain pictures of cats they know personally. We'll use this example to think
+			concretely about the model.
 		</p>
 		<h2>The model</h2>
 		<p>
