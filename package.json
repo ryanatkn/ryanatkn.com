@@ -34,6 +34,7 @@
     "@feltjs/eslint-config": "^0.4.1",
     "@fuz.dev/fuz": "^0.73.0",
     "@fuz.dev/fuz_library": "^0.11.1",
+    "@fuz.dev/fuz_mastodon": "^0.1.0",
     "@grogarden/gro": "^0.96.0",
     "@grogarden/util": "^0.15.2",
     "@prettier/plugin-xml": "^3.2.1",
