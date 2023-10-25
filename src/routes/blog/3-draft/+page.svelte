@@ -56,11 +56,6 @@
 <!-- <BlogPost {post}> -->
 <div class="width_md">
 	<section style:padding-top="var(--spacing_2)" class="prose spaced">
-		<p>I probably don't want to do open source with you.</p>
-		<p>
-			That's a provactive statement, but I mean it, and I refrained from putting it in the title or
-			summary.
-		</p>
 		<p>
 			This post began as a demo using <a href="https://joinmastodon.org/">Mastodon</a>
 			to add comments to my blog posts, but it morphed into a followup to my second blog post,
