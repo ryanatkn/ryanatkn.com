@@ -33,9 +33,9 @@
   "devDependencies": {
     "@feltjs/eslint-config": "^0.4.1",
     "@fuz.dev/fuz": "^0.75.1",
-    "@fuz.dev/fuz_library": "^0.12.2",
+    "@fuz.dev/fuz_library": "^0.12.3",
     "@fuz.dev/fuz_mastodon": "^0.1.2",
-    "@grogarden/gro": "^0.96.0",
+    "@grogarden/gro": "^0.96.1",
     "@grogarden/util": "^0.15.2",
     "@prettier/plugin-xml": "^3.2.1",
     "@sveltejs/adapter-static": "^2.0.3",
@@ -78,5 +78,61 @@
         }
       }
     ]
+  },
+  "exports": {
+    "./blog_helpers.js": {
+      "default": "./dist/blog_helpers.js",
+      "types": "./dist/blog_helpers.d.ts"
+    },
+    "./blog.gen.js": {
+      "default": "./dist/blog.gen.js",
+      "types": "./dist/blog.gen.d.ts"
+    },
+    "./blog.js": {
+      "default": "./dist/blog.js",
+      "types": "./dist/blog.d.ts"
+    },
+    "./BlogPost.svelte": {
+      "svelte": "./dist/BlogPost.svelte",
+      "default": "./dist/BlogPost.svelte",
+      "types": "./dist/BlogPost.svelte.d.ts"
+    },
+    "./BlogPostFooter.svelte": {
+      "svelte": "./dist/BlogPostFooter.svelte",
+      "default": "./dist/BlogPostFooter.svelte",
+      "types": "./dist/BlogPostFooter.svelte.d.ts"
+    },
+    "./BlogPostHeader.svelte": {
+      "svelte": "./dist/BlogPostHeader.svelte",
+      "default": "./dist/BlogPostHeader.svelte",
+      "types": "./dist/BlogPostHeader.svelte.d.ts"
+    },
+    "./Favicon.svelte": {
+      "svelte": "./dist/Favicon.svelte",
+      "default": "./dist/Favicon.svelte",
+      "types": "./dist/Favicon.svelte.d.ts"
+    },
+    "./feed.js": {
+      "default": "./dist/feed.js",
+      "types": "./dist/feed.d.ts"
+    },
+    "./FeedItemDate.svelte": {
+      "svelte": "./dist/FeedItemDate.svelte",
+      "default": "./dist/FeedItemDate.svelte",
+      "types": "./dist/FeedItemDate.svelte.d.ts"
+    },
+    "./HashLink.svelte": {
+      "svelte": "./dist/HashLink.svelte",
+      "default": "./dist/HashLink.svelte",
+      "types": "./dist/HashLink.svelte.d.ts"
+    },
+    "./post.task.js": {
+      "default": "./dist/post.task.js",
+      "types": "./dist/post.task.d.ts"
+    },
+    "./util.js": {
+      "default": "./dist/util.js",
+      "types": "./dist/util.d.ts"
+    }
   }
 }

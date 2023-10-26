@@ -31,9 +31,9 @@
 	<section class="prose">
 		<h2>Introduction</h2>
 		<p>
-			While working on the community software project I described in <a
+			While working on the community software project described in <a
 				href="{base}/blog/making-free-and-open-source-web-community-software">my first blog post</a
-			>, I keep thinking about virtual social spaces but I don't know what they are, really. This
+			>, I keep thinking about virtual social spaces and how I don't know what they really are. This
 			post outlines a simple model:
 		</p>
 		<ul>
@@ -42,10 +42,10 @@
 			<li><strong>space</strong>: a context containing and governing our interactions</li>
 		</ul>
 		<p>
-			Simply, a virtual social space is a software-mediated context of multiplayer interaction.
-			We're all familiar with them - they include our messaging apps, social media feeds, forums,
-			and so on. By modeling the virtual social space, we can more easily imagine reshaping them for
-			our individual and collective benefit.
+			So a virtual social space is a software-mediated context of multiplayer interaction. We're all
+			familiar with them - they include our messaging apps, social media feeds, forums, and so on.
+			By modeling the virtual social space, we can more easily imagine reshaping them for our
+			individual and collective benefit.
 		</p>
 	</section>
 

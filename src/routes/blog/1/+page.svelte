@@ -264,7 +264,7 @@
 		We tried to be thoughtful about our tech stack to be friendly to beginners without compromising
 		on the delivered UX.
 	</p>
-	<h3>on the shoulders of giants on the backs of turtles</h3>
+	<h3>On the shoulders of giants on the backs of turtles</h3>
 	<p>
 		We chose the web because we think it's the best way to deliver the UX we want to the most
 		people, and we chose JS, Node.js, and npm because of fit, familiarity, and productivity. The web
@@ -281,7 +281,7 @@
 		keep portability high. Node.js a practical choice, not an idealized one. (and we put effort into
 		moving forward - for example Felt never used any CommonJS)
 	</p>
-	<h3>customizable and extensible</h3>
+	<h3>Customizable and extensible</h3>
 	<p>
 		Both the server and clients are open source and our APIs are open, so clients can be modified
 		with low friction or created from scratch. (our client will be decoupled from the server during
@@ -300,7 +300,7 @@
 			>not there yet</a
 		>)
 	</p>
-	<h3>scaling (and not)</h3>
+	<h3>Not scaling</h3>
 	<p>
 		Our focus on "small communities" relates to a potentially deflating fact about our software - it
 		doesn't scale to large numbers of people or some kinds of heavy load. Felt can't be the best
