@@ -1,0 +1,75 @@
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	min-height: 100%;
+}
+
+/* TODO upstream a similar style tweak */
+.prose h1 {
+	margin-top: var(--spacing_3) !important;
+}
+.prose h2 {
+	margin-top: var(--spacing_3);
+}
+
+table {
+	border-width: var(--border_width);
+	border-style: var(--border_style);
+	border-color: var(--border_1);
+	border-radius: var(--border_radius);
+	border-spacing: 0;
+	background-color: var(--bg);
+}
+td {
+	padding: var(--spacing_sm);
+}
+tr:hover {
+	background-color: var(--fg_2);
+}
+
+/* offset to avoid visual artifacts on init,
+probably fixable with a better image, I tried briefly but didn't get a great result */
+@keyframes rotating {
+	from {
+		transform: rotate3d(0, 0, 1, 42deg);
+	}
+	to {
+		transform: rotate3d(0, 0, 1, 402deg);
+	}
+}
+
+.prose div + ul {
+	margin-top: var(--spacing_xs2);
+}
+
+.cards {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: center;
+	gap: var(--spacing_md);
+}
+
+.card {
+	display: flex;
+	max-width: var(--width_sm);
+	background-color: var(--bg);
+	border-width: var(--border_width);
+	border-style: solid;
+	border-color: transparent;
+	border-radius: var(--border_radius_xs);
+	margin-bottom: var(--spacing_lg);
+	padding: var(--spacing_md);
+}
+
+.prose button.inline.plain {
+	padding: var(--spacing_xs2);
+	margin: 0;
+	/* TODO can't go larger without affecting line spacing, maybe fix with negative margin? */
+	height: var(--size_lg);
+	min-height: var(--size_lg);
+}
