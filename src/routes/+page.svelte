@@ -78,10 +78,11 @@
 				<p>
 					Hi I'm building free and open source software projects like <a href="https://www.fuz.dev/"
 						>Fuz</a
-					>, and
-					<a href="https://github.com/grogarden/gro">Gro</a>. My main skill is making frontend web
-					apps and I also do some backend and devtools programming. I enjoy trying to make powerful
-					tools that are easy to use, and I'm extra interested in UIs and social systems. More
+					>
+					and <a href="https://github.com/grogarden/gro">Gro</a>. My main skill is making frontend
+					web apps and I also do some backend and devtools programming. I enjoy trying to make
+					powerful tools that are easy to use, and I'm extra interested in UIs and social systems.
+					More
 					<a href="{base}/about">about me</a>.
 				</p>
 			</div>
