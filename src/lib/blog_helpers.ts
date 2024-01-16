@@ -1,5 +1,5 @@
-import {exists} from '@grogarden/gro/fs.js';
-import {strip_end} from '@grogarden/util/string.js';
+import {exists} from '@ryanatkn/gro/fs.js';
+import {strip_end} from '@ryanatkn/belt/string.js';
 import {join} from 'node:path';
 
 import type {Blog_Post_Id, Blog_Post_Data, Blog_Post_Item, Blog_Post_Module} from '$lib/blog.js';

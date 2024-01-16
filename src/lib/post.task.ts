@@ -1,6 +1,6 @@
-import type {Task} from '@grogarden/gro';
+import type {Task} from '@ryanatkn/gro';
 import {z} from 'zod';
-import {format_file} from '@grogarden/gro/format_file.js';
+import {format_file} from '@ryanatkn/gro/format_file.js';
 import {mkdir, writeFile} from 'node:fs/promises';
 import {cwd} from 'node:process';
 import {dirname, join} from 'node:path';

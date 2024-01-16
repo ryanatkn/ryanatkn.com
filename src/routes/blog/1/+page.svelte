@@ -18,7 +18,7 @@
 
 <script lang="ts">
 	import Toot from '@fuz.dev/fuz_mastodon/Toot.svelte';
-	import type {Fetch_Value_Cache} from '@grogarden/util/fetch.js';
+	import type {Fetch_Value_Cache} from '@ryanatkn/belt/fetch.js';
 	import {onMount} from 'svelte';
 
 	import Blog_Post from '$lib/Blog_Post.svelte';

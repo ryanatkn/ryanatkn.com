@@ -1,5 +1,5 @@
-import type {Url} from '@grogarden/gro/paths.js';
-import type {Fetch_Value_Cache_Item} from '@grogarden/util/fetch.js';
+import type {Url} from '@ryanatkn/gro/paths.js';
+import type {Fetch_Value_Cache_Item} from '@ryanatkn/belt/fetch.js';
 
 export const mastodon_fake_cache_data: Array<[Url, Fetch_Value_Cache_Item]> = [
 	[
@@ -36,7 +36,7 @@ export const mastodon_fake_cache_data: Array<[Url, Fetch_Value_Cache_Item]> = [
 					discoverable: true,
 					group: false,
 					created_at: '2022-11-13T00:00:00.000Z',
-					note: '<p>open source web dev, working on fuz.dev, grogarden.org, and spiderspace.org, <a href="https://hci.social/tags/ActivityStreams" class="mention hashtag" rel="tag">#<span>ActivityStreams</span></a> <a href="https://hci.social/tags/ActivityPub" class="mention hashtag" rel="tag">#<span>ActivityPub</span></a> <a href="https://hci.social/tags/JS" class="mention hashtag" rel="tag">#<span>JS</span></a> <a href="https://hci.social/tags/CSS" class="mention hashtag" rel="tag">#<span>CSS</span></a> <a href="https://hci.social/tags/HTML" class="mention hashtag" rel="tag">#<span>HTML</span></a> <a href="https://hci.social/tags/svelte" class="mention hashtag" rel="tag">#<span>svelte</span></a> <a href="https://hci.social/tags/SvelteKit" class="mention hashtag" rel="tag">#<span>SvelteKit</span></a></p>',
+					note: '<p>open source web dev</p>',
 					url: 'https://hci.social/@ryanatkn',
 					uri: 'https://hci.social/users/ryanatkn',
 					avatar:

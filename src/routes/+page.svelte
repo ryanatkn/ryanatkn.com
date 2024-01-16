@@ -34,10 +34,10 @@
 		},
 		{
 			name: 'gro',
-			title: '<a href="https://github.com/grogarden/gro">Gro</a>',
+			title: '<a href="https://github.com/ryanatkn/gro">Gro</a>',
 			description:
 				'task runner and toolkit extending <a href="https://kit.svelte.dev/">SvelteKit</a>',
-			links: `<a class="chip" href="https://www.grogarden.org/">grogarden.org</a> <a class="chip" href="https://github.com/grogarden/gro">source</a>`,
+			links: `<a class="chip" href="https://gro.ryanatkn.com/">gro.ryanatkn.com</a> <a class="chip" href="https://github.com/ryanatkn/gro">source</a>`,
 			icon: '/gro.png',
 			icon_alt: 'a pixelated green oak acorn with a glint of sun',
 		},
@@ -79,7 +79,7 @@
 					Hi I'm building free and open source software projects like <a href="https://www.fuz.dev/"
 						>Fuz</a
 					>
-					and <a href="https://github.com/grogarden/gro">Gro</a>. My main skill is making frontend
+					and <a href="https://github.com/ryanatkn/gro">Gro</a>. My main skill is making frontend
 					web apps and I also do some backend and devtools programming. I enjoy trying to make
 					powerful tools that are easy to use, and I'm extra interested in UIs and social systems.
 					More

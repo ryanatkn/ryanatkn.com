@@ -33,13 +33,13 @@
     "dist"
   ],
   "devDependencies": {
-    "@feltjs/eslint-config": "^0.4.1",
     "@fuz.dev/fuz": "^0.81.0",
     "@fuz.dev/fuz_library": "^0.23.0",
     "@fuz.dev/fuz_mastodon": "^0.5.0",
-    "@grogarden/gro": "^0.109.1",
-    "@grogarden/util": "^0.19.2",
     "@prettier/plugin-xml": "^3.2.2",
+    "@ryanatkn/belt": "^0.20.1",
+    "@ryanatkn/eslint-config": "^0.1.0",
+    "@ryanatkn/gro": "^0.112.0",
     "@sveltejs/adapter-static": "^3.0.1",
     "@sveltejs/kit": "^2.3.2",
     "@sveltejs/vite-plugin-svelte": "^3.0.1",
@@ -59,7 +59,7 @@
   },
   "eslintConfig": {
     "root": true,
-    "extends": "@feltjs",
+    "extends": "@ryanatkn",
     "rules": {
       "no-console": 1
     }

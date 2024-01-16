@@ -1,5 +1,5 @@
 import {format} from 'date-fns';
-import {strip_end, strip_start} from '@grogarden/util/string.js';
+import {strip_end, strip_start} from '@ryanatkn/belt/string.js';
 
 // TODO rename?
 export const format_date = (date: string | number | Date): string =>

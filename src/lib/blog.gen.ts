@@ -1,4 +1,4 @@
-import type {Gen} from '@grogarden/gro/gen.js';
+import type {Gen} from '@ryanatkn/gro/gen.js';
 import {cwd} from 'node:process';
 import {join, relative} from 'node:path';
 
