@@ -41,14 +41,14 @@
 			icon: '/gro.png',
 			icon_alt: 'a pixelated green oak acorn with a glint of sun',
 		},
-		{
-			name: 'spiderspace',
-			title: '<a href="https://www.spiderspace.org/">Spiderspace</a>',
-			description: 'hobbyist web stack',
-			links: `<a class="chip" href="https://www.spiderspace.org/">spiderspace.org</a> <a class="chip" href="https://github.com/spiderspace/spiderspace">source</a>`,
-			icon: '/spider.png',
-			icon_alt: 'a pixelated yellow spider',
-		},
+		// {
+		// 	name: 'spiderspace',
+		// 	title: '<a href="https://www.spiderspace.org/">Spiderspace</a>',
+		// 	description: 'hobbyist web stack',
+		// 	links: `<a class="chip" href="https://www.spiderspace.org/">spiderspace.org</a> <a class="chip" href="https://github.com/spiderspace/spiderspace">source</a>`,
+		// 	icon: '/spider.png',
+		// 	icon_alt: 'a pixelated yellow spider',
+		// },
 		{
 			name: 'cosmicplayground',
 			title: '<a href="https://www.cosmicplayground.org">cosmicplayground.org</a>',
@@ -78,11 +78,10 @@
 				<p>
 					Hi I'm building free and open source software projects like <a href="https://www.fuz.dev/"
 						>Fuz</a
-					>
-					and <a href="https://github.com/ryanatkn/gro">Gro</a>. My main skill is making frontend
-					web apps and I also do some backend and devtools programming. I enjoy trying to make
-					powerful tools that are easy to use, and I'm extra interested in UIs and social systems.
-					More
+					>, <a href="https://github.com/ryanatkn/gro">Gro</a>, and an unannounced social app
+					framework. My main skill is making frontend web apps and I also do some backend and
+					devtools programming. I enjoy trying to make powerful tools that are easy to use, and I'm
+					extra interested in UIs and social systems. More
 					<a href="{base}/about">about me</a>.
 				</p>
 			</div>

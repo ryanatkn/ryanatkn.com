@@ -17,7 +17,9 @@
 				powerful and simple tools to help people be creative and productive in social contexts. I'm
 				driven by curiosity and wanting to improve our lives with technology. My work is
 				<a href="https://github.com/ryanatkn">open source on GitHub</a>
-				and this website's homepage lists <a href="{base}/">my ongoing projects</a>.
+				and this website's homepage lists <a href="{base}/">my ongoing projects</a>. I'm also
+				working on a social app framework that I'll announce and open source when it's further
+				along.
 			</p>
 			<p>
 				I work on the web because for all its flaws, it's a collectively-governed sandboxed platform
