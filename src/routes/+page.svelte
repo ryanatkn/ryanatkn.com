@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Breadcrumb from '@fuz.dev/fuz_library/Breadcrumb.svelte';
+	import Breadcrumb from '@ryanatkn/fuz/Breadcrumb.svelte';
 	import {base} from '$app/paths';
 
 	import Favicon from '$lib/Favicon.svelte';
@@ -28,7 +28,7 @@
 			title: '<a href="https://www.fuz.dev/">Fuz</a>',
 			description:
 				'design system for CSS, <a href="https://svelte.dev/">Svelte</a>, and <a href="https://kit.svelte.dev/">SvelteKit</a>',
-			links: `<a class="chip" href="https://www.fuz.dev/">fuz.dev</a> <a class="chip" href="https://github.com/fuz-dev/fuz">source</a> <a class="chip" href="https://www.npmjs.com/package/@fuz.dev/fuz">npm</a>`,
+			links: `<a class="chip" href="https://www.fuz.dev/">fuz.dev</a> <a class="chip" href="https://github.com/fuz-dev/fuz">source</a> <a class="chip" href="https://www.npmjs.com/package/@ryanatkn/fuz">npm</a>`,
 			icon: '🧶',
 			icon_alt: 'a ball of yarn',
 		},

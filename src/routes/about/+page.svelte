@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Breadcrumb from '@fuz.dev/fuz_library/Breadcrumb.svelte';
+	import Breadcrumb from '@ryanatkn/fuz/Breadcrumb.svelte';
 	import {base} from '$app/paths';
 
 	import Contact_Info from '$routes/Contact_Info.svelte';

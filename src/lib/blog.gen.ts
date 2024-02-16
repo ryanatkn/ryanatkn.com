@@ -10,7 +10,7 @@ import {
 } from '$lib/blog_helpers.js';
 import type {Blog_Feed, Blog_Module} from '$lib/blog.js';
 
-// TODO extract to @fuz.dev/fuz_blog
+// TODO extract to @ryanatkn/fuz_blog
 
 export const gen: Gen = async ({origin_id}) => {
 	// TODO @multiple parameterize and refactor

@@ -17,7 +17,7 @@
 </script>
 
 <script lang="ts">
-	import Toot from '@fuz.dev/fuz_mastodon/Toot.svelte';
+	import Toot from '@ryanatkn/fuz_mastodon/Toot.svelte';
 	import type {Fetch_Value_Cache} from '@ryanatkn/belt/fetch.js';
 	import {onMount} from 'svelte';
 
