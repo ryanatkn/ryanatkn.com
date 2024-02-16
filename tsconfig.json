@@ -21,6 +21,7 @@
 		"checkJs": true
 	},
 	"include": [
+		"./fuz.config.ts",
 		"./gro.config.ts",
 		"./svelte.config.js",
 		"./.svelte-kit/ambient.d.ts",

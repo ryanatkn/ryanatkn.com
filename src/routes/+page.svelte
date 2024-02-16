@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Breadcrumb from '@ryanatkn/fuz/Breadcrumb.svelte';
+	import Page_Menu from '@ryanatkn/fuz/Page_Menu.svelte';
 	import {base} from '$app/paths';
 
 	import Favicon from '$lib/Favicon.svelte';
@@ -92,7 +93,8 @@
 			</div>
 		</section>
 	</div>
-	<section class="panel">
+	<!-- TODO margin is a hack, replace with a class or generic style -->
+	<section class="panel" style:margin-bottom="var(--spacing_4)">
 		<div class="prose box">
 			<h2>ongoing projects</h2>
 		</div>
@@ -106,6 +108,12 @@
 			<a class="chip" href="https://github.com/ryanatkn">all projects</a>
 		</div>
 	</section>
+	<div class="box">
+		<section class="panel padded_lg">
+			<h2 class="spaced">packages</h2>
+			<Page_Menu />
+		</section>
+	</div>
 </div>
 <Breadcrumb
 	><div class="linkpath">
