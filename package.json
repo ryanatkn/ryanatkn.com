@@ -39,7 +39,7 @@
     "@ryanatkn/fuz": "^0.83.2",
     "@ryanatkn/fuz_gitops": "^0.20.0",
     "@ryanatkn/fuz_mastodon": "^0.7.0",
-    "@ryanatkn/gro": "^0.112.1",
+    "@ryanatkn/gro": "^0.112.2",
     "@sveltejs/adapter-static": "^3.0.1",
     "@sveltejs/kit": "^2.5.0",
     "@sveltejs/vite-plugin-svelte": "^3.0.2",
