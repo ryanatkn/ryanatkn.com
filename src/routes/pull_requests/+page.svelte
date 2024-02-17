@@ -1,6 +1,6 @@
 <script lang="ts">
-	import Pull_Requests_Page from '@ryanatkn/fuz/Pull_Requests_Page.svelte';
-	import {get_deployments} from '@ryanatkn/fuz/deployments.js';
+	import Pull_Requests_Page from '@ryanatkn/fuz_gitops/Pull_Requests_Page.svelte';
+	import {get_deployments} from '@ryanatkn/fuz_gitops/deployments.js';
 
 	const {deployment, deployments, unfetched_deployments} = get_deployments();
 </script>

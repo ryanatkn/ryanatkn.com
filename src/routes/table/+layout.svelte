@@ -1,5 +1,5 @@
 <script lang="ts">
-	import {parse_deployments, set_deployments} from '@ryanatkn/fuz/deployments.js';
+	import {parse_deployments, set_deployments} from '@ryanatkn/fuz_gitops/deployments.js';
 
 	import deployments from '$lib/deployments.json';
 
