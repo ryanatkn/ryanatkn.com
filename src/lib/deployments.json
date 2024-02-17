@@ -1103,14 +1103,7 @@
 		"changelog_url": null,
 		"published": false,
 		"check_runs": {"status": "completed", "conclusion": "success"},
-		"pull_requests": [
-			{
-				"number": 19,
-				"title": "upgrade deps and add deployments",
-				"user": {"login": "ryanatkn"},
-				"draft": false
-			}
-		]
+		"pull_requests": []
 	},
 	{
 		"url": "https://gro.ryanatkn.com/",
