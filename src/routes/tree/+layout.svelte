@@ -1,6 +1,7 @@
 <script lang="ts">
 	import {parse_deployments, set_deployments} from '@ryanatkn/fuz/deployments.js';
-	import deployments from '@ryanatkn/fuz/deployments.json';
+
+	import deployments from '$lib/deployments.json';
 
 	// this is duplicated in each deployments page to code split the deployments data
 

@@ -1,15 +1,10 @@
 import type {EntryGenerator} from './$types';
-import {parse_package_meta} from '@ryanatkn/fuz/package_meta.js';
-import maybe_deployments from '@ryanatkn/fuz/deployments.json';
+import {parse_deployments} from '@ryanatkn/fuz/deployments.js';
 
-const deployments = maybe_deployments
-	.map(({url, package_json, src_json}) =>
-		package_json && src_json ? parse_package_meta(url, package_json, src_json) : null!,
-	)
-	.filter(Boolean);
+import deployments from '$lib/deployments.json';
+
+const parsed = parse_deployments(deployments, 'https://www.ryanatkn.com/');
 
 export const entries: EntryGenerator = async () => {
-	return deployments.map((pkg) => {
-		return {slug: pkg.repo_name};
-	});
+	return parsed.deployments.map((d) => ({slug: d.repo_name}));
 };
