@@ -3,7 +3,7 @@
 		"url": "https://www.fuz.dev/",
 		"package_json": {
 			"name": "@ryanatkn/fuz",
-			"version": "0.83.1",
+			"version": "0.83.2",
 			"description": "Svelte UI library and CSS design system",
 			"icon": "🧶",
 			"public": true,
@@ -352,7 +352,7 @@
 		},
 		"src_json": {
 			"name": "@ryanatkn/fuz",
-			"version": "0.83.1",
+			"version": "0.83.2",
 			"modules": {
 				"./Alert.svelte": {"path": "Alert.svelte", "declarations": []},
 				"./alert.js": {
@@ -964,7 +964,7 @@
 				"@prettier/plugin-xml": "^3.3.1",
 				"@ryanatkn/belt": "^0.20.3",
 				"@ryanatkn/eslint-config": "^0.1.0",
-				"@ryanatkn/fuz": "^0.83.1",
+				"@ryanatkn/fuz": "^0.83.2",
 				"@ryanatkn/fuz_mastodon": "^0.7.0",
 				"@ryanatkn/gro": "^0.112.1",
 				"@sveltejs/adapter-static": "^3.0.1",
@@ -1103,7 +1103,14 @@
 		"changelog_url": null,
 		"published": false,
 		"check_runs": {"status": "completed", "conclusion": "success"},
-		"pull_requests": []
+		"pull_requests": [
+			{
+				"number": 19,
+				"title": "upgrade deps and add deployments",
+				"user": {"login": "ryanatkn"},
+				"draft": false
+			}
+		]
 	},
 	{
 		"url": "https://gro.ryanatkn.com/",
