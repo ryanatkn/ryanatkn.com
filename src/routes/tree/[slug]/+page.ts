@@ -1,5 +1,5 @@
 import type {EntryGenerator} from './$types';
-import {parse_deployments} from '@ryanatkn/fuz/deployments.js';
+import {parse_deployments} from '@ryanatkn/fuz_gitops/deployments.js';
 
 import deployments from '$lib/deployments.json';
 
