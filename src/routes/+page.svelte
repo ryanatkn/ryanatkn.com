@@ -1,9 +1,9 @@
 <script lang="ts">
 	import Breadcrumb from '@ryanatkn/fuz/Breadcrumb.svelte';
-	import Page_Menu from '@ryanatkn/fuz/Page_Menu.svelte';
 	import {base} from '$app/paths';
 
 	import Favicon from '$lib/Favicon.svelte';
+	import Gitops_Menu from '$routes/Gitops_Menu.svelte';
 	import Contact_Info from '$routes/Contact_Info.svelte';
 	import Me from '$routes/Me.svelte';
 	import type {Project_Info} from '$routes/project.js';
@@ -111,7 +111,7 @@
 	<div class="box">
 		<section class="panel padded_lg">
 			<h2 class="spaced">packages</h2>
-			<Page_Menu />
+			<Gitops_Menu />
 		</section>
 	</div>
 </div>
