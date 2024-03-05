@@ -1,48 +1,24 @@
-# felt-template
+[<img src="static/favicon.png" align="right" width="100">](https://www.ryanatkn.com)
 
-> a web app template with [SvelteKit](https://github.com/sveltejs/kit),
-> [Felt](https://github.com/feltcoop/felt), and [Gro](https://github.com/feltcoop/gro)
+# [ryanatkn.com](https://www.ryanatkn.com) 🌤🌳🐿
 
-deployed:
-[feltcoop.github.io/felt-template](https://feltcoop.github.io/felt-template)
+> [@ryanatkn](https://github.com/ryanatkn)'s homepage and blog
+> 💤 building free and open source tools and toys
 
 ## usage
 
-If you're logged into GitHub, click "Use this template" above or clone with
-[`degit`](https://github.com/Rich-Harris/degit):
-
 ```bash
-npx degit feltcoop/felt-template cooltoy
-cd cooltoy
+# node >= 20.10
 npm i
 # then
 npm run dev
 # or
-gro dev # npm i -g @feltcoop/gro
+gro dev # npm i -g @ryanatkn/gro
 ```
 
-> learn more about [Gro](https://github.com/feltcoop/gro)
-
-The template includes
-[`@sveltejs/adapter-static`](https://github.com/sveltejs/kit/tree/master/packages/adapter-static)
-so it can deploy with no further configuration.
-To learn how to swap it out for another deployment target, see
-[the SvelteKit adapter docs](https://kit.svelte.dev/docs#adapters).
-
-To make it your own, change `felt-template` to your project name in the following files:
-
-- [`package.json`](package.json)
-- [`svelte.config.js`](svelte.config.js)
-- [`src/routes/__layout.svelte`](src/routes/__layout.svelte)
-- [`src/routes/index.svelte`](src/routes/index.svelte)
-
-Then run `npm i` to update `package-lock.json`.
-
-Optionally add a [license file](https://choosealicense.com/)
-and [`package.json` value](https://spdx.org/licenses/), like `"license": "MIT"`.
-
-See [SvelteKit](https://github.com/sveltejs/kit)
-and [Vite](https://github.com/vitejs/vite) for more.
+See [SvelteKit](https://github.com/sveltejs/kit),
+[Vite](https://github.com/vitejs/vite),
+and [Gro](https://github.com/ryanatkn/gro) for more.
 
 ## build
 
@@ -54,7 +30,7 @@ gro build
 
 ## deploy
 
-[Deploy](https://github.com/feltcoop/gro/blob/main/src/docs/deploy.md)
+[Deploy](https://github.com/ryanatkn/gro/blob/main/src/docs/deploy.md)
 (build, commit, and push) to the `deploy` branch, e.g. for GitHub Pages:
 
 ```bash
@@ -65,16 +41,17 @@ gro deploy
 
 ## credits 🐢<sub>🐢</sub><sub><sub>🐢</sub></sub>
 
+[TypeScript](https://github.com/microsoft/TypeScript) ∙
 [Svelte](https://github.com/sveltejs/svelte) ∙
 [SvelteKit](https://github.com/sveltejs/kit) ∙
 [Vite](https://github.com/vitejs/vite) ∙
-[Rollup](https://github.com/rollup/rollup) ∙
 [esbuild](https://github.com/evanw/esbuild) ∙
-[TypeScript](https://github.com/microsoft/TypeScript) ∙
+[Gro](https://github.com/ryanatkn/gro) ∙
+[Fuz](https://github.com/fuz-dev/fuz) ∙
+[ESLint](https://github.com/eslint/eslint) ∙
 [Prettier](https://github.com/prettier/prettier) ∙
-[Felt](https://github.com/feltcoop/felt) ∙
-[Gro](https://github.com/feltcoop/gro) ∙
-[@lukeed\/\*](https://github.com/lukeed)
 & [more](package.json)
 
-## [🐦](https://wikipedia.org/wiki/Free_and_open-source_software)
+## license [🐦](https://wikipedia.org/wiki/Free_and_open-source_software)
+
+[MIT](LICENSE)
