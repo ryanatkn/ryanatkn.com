@@ -112,7 +112,7 @@
 				<Project_Card {project}></Project_Card>
 			{/each}
 		</div>
-		<div class="box">
+		<div class="box py_xl">
 			<div class="panel p_lg">
 				<!-- TODO fuz .size_lg -->
 				<div class="mb_lg text_align_center" style:font-size="var(--size_lg)">all repos</div>

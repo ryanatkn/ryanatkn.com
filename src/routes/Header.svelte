@@ -13,12 +13,7 @@
 </script>
 
 <header>
-	<a
-		title={at_root_path ? 'this is root' : 'go to root'}
-		class="bg"
-		{href}
-		class:selected={at_root_path}
-	>
+	<a title={at_root_path ? 'Go to blog' : 'Go to root'} {href} class:selected={at_root_path}>
 		<Rotating_Header_Logo {src} {alt} />
 	</a>
 </header>
@@ -34,7 +29,7 @@
 		width: 100%;
 		height: var(--header_height);
 	}
-	.bg {
+	a {
 		position: absolute;
 		left: 0;
 		top: 0;
