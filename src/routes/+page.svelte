@@ -24,15 +24,15 @@
 			title: '<a href="https://github.com/ryanatkn">github.com/ryanatkn</a>',
 			description: 'my free and open source software',
 		},
-		{
-			name: 'webdevladder',
-			title: '<a href="https://www.webdevladder.net/">webdevladder</a>',
-			description:
-				'educational screencasts for advanced realworld webdev with <a href="https://svelte.dev/">Svelte</a> and <a href="https://typescriptlang.org/">TypeScript</a>',
-			links: `<a class="chip" href="https://www.webdevladder.net/">webdevladder.net</a> <a class="chip" href="https://github.com/webdevladder">source</a> <a class="chip" href="https://www.youtube.com/@webdevladder">YouTube</a>`,
-			icon: '🪜',
-			icon_alt: 'a ladder',
-		},
+		// {
+		// 	name: 'webdevladder',
+		// 	title: '<a href="https://www.webdevladder.net/">webdevladder</a>',
+		// 	description:
+		// 		'educational screencasts for advanced realworld webdev with <a href="https://svelte.dev/">Svelte</a> and <a href="https://typescriptlang.org/">TypeScript</a>',
+		// 	links: `<a class="chip" href="https://www.webdevladder.net/">webdevladder.net</a> <a class="chip" href="https://github.com/webdevladder">source</a> <a class="chip" href="https://www.youtube.com/@webdevladder">YouTube</a>`,
+		// 	icon: '🪜',
+		// 	icon_alt: 'a ladder',
+		// },
 		{
 			name: 'fuz',
 			title: '<a href="https://www.fuz.dev/">Fuz</a>',
