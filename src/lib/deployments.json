@@ -736,23 +736,23 @@
 			},
 			"files": ["dist"],
 			"devDependencies": {
-				"@ryanatkn/belt": "^0.20.5",
+				"@ryanatkn/belt": "^0.20.8",
 				"@ryanatkn/eslint-config": "^0.1.0",
 				"@ryanatkn/fuz": "^0.91.3",
 				"@ryanatkn/gro": "^0.112.4",
 				"@sveltejs/adapter-static": "^3.0.1",
-				"@sveltejs/kit": "^2.5.2",
+				"@sveltejs/kit": "^2.5.4",
 				"@sveltejs/vite-plugin-svelte": "^3.0.2",
-				"@typescript-eslint/eslint-plugin": "^7.1.0",
-				"@typescript-eslint/parser": "^7.1.0",
+				"@typescript-eslint/eslint-plugin": "^7.3.1",
+				"@typescript-eslint/parser": "^7.3.1",
 				"eslint": "^8.57.0",
 				"eslint-plugin-svelte": "^2.35.1",
 				"prettier": "^3.2.5",
 				"prettier-plugin-svelte": "^3.2.2",
 				"svelte": "^4.2.12",
-				"svelte-check": "^3.6.6",
+				"svelte-check": "^3.6.8",
 				"tslib": "^2.6.2",
-				"typescript": "^5.3.3",
+				"typescript": "^5.4.2",
 				"uvu": "^0.5.6"
 			},
 			"eslintConfig": {"root": true, "extends": "@ryanatkn"},
@@ -1291,27 +1291,27 @@
 			"files": ["dist"],
 			"devDependencies": {
 				"@prettier/plugin-xml": "^3.3.1",
-				"@ryanatkn/belt": "^0.20.5",
+				"@ryanatkn/belt": "^0.20.8",
 				"@ryanatkn/eslint-config": "^0.1.0",
 				"@ryanatkn/fuz": "^0.91.3",
 				"@ryanatkn/fuz_gitops": "^0.23.0",
-				"@ryanatkn/fuz_mastodon": "^0.9.0",
+				"@ryanatkn/fuz_mastodon": "^0.10.0",
 				"@ryanatkn/gro": "^0.112.4",
 				"@sveltejs/adapter-static": "^3.0.1",
-				"@sveltejs/kit": "^2.5.2",
+				"@sveltejs/kit": "^2.5.4",
 				"@sveltejs/vite-plugin-svelte": "^3.0.2",
-				"@types/node": "^20.11.24",
-				"@typescript-eslint/eslint-plugin": "^7.1.0",
-				"@typescript-eslint/parser": "^7.1.0",
-				"date-fns": "^3.3.1",
+				"@types/node": "^20.11.30",
+				"@typescript-eslint/eslint-plugin": "^7.3.1",
+				"@typescript-eslint/parser": "^7.3.1",
+				"date-fns": "^3.6.0",
 				"eslint": "^8.57.0",
 				"eslint-plugin-svelte": "^2.35.1",
 				"prettier": "^3.2.5",
 				"prettier-plugin-svelte": "^3.2.2",
 				"svelte": "^4.2.12",
-				"svelte-check": "^3.6.6",
+				"svelte-check": "^3.6.8",
 				"tslib": "^2.6.2",
-				"typescript": "^5.3.3",
+				"typescript": "^5.4.2",
 				"uvu": "^0.5.6"
 			},
 			"eslintConfig": {"root": true, "extends": "@ryanatkn", "rules": {"no-console": 1}},
@@ -1439,7 +1439,7 @@
 		"url": "https://gro.ryanatkn.com/",
 		"package_json": {
 			"name": "@ryanatkn/gro",
-			"version": "0.112.4",
+			"version": "0.112.5",
 			"description": "task runner and toolkit extending SvelteKit",
 			"icon": "🌰",
 			"public": true,
@@ -1473,16 +1473,16 @@
 			],
 			"files": ["dist"],
 			"dependencies": {
-				"@ryanatkn/belt": "^0.20.5",
+				"@ryanatkn/belt": "^0.20.8",
 				"chokidar": "^3.6.0",
 				"dotenv": "^16.4.5",
-				"es-module-lexer": "^1.4.1",
+				"es-module-lexer": "^1.4.2",
 				"kleur": "^4.1.5",
 				"mri": "^1.2.0",
 				"prettier": "^3.2.5",
-				"prettier-plugin-svelte": "^3.2.1",
+				"prettier-plugin-svelte": "^3.2.2",
 				"tiny-glob": "^0.2.9",
-				"ts-morph": "^21.0.1",
+				"ts-morph": "^22.0.0",
 				"tslib": "^2.6.2",
 				"zod": "^3.22.4"
 			},
@@ -1491,21 +1491,21 @@
 				"@changesets/changelog-git": "^0.2.0",
 				"@changesets/types": "^6.0.0",
 				"@ryanatkn/eslint-config": "^0.1.0",
-				"@ryanatkn/fuz": "^0.91.0",
+				"@ryanatkn/fuz": "^0.91.3",
 				"@sveltejs/adapter-static": "^3.0.1",
-				"@sveltejs/kit": "^2.5.2",
-				"@sveltejs/package": "^2.2.7",
+				"@sveltejs/kit": "^2.5.4",
+				"@sveltejs/package": "^2.3.0",
 				"@sveltejs/vite-plugin-svelte": "^3.0.2",
 				"@types/fs-extra": "^11.0.4",
-				"@types/node": "^20.11.21",
-				"@typescript-eslint/eslint-plugin": "^7.1.0",
-				"@typescript-eslint/parser": "^7.1.0",
+				"@types/node": "^20.11.30",
+				"@typescript-eslint/eslint-plugin": "^7.3.1",
+				"@typescript-eslint/parser": "^7.3.1",
 				"esbuild": "^0.19.0",
 				"eslint": "^8.57.0",
 				"eslint-plugin-svelte": "^2.35.1",
 				"svelte": "^4.2.12",
-				"svelte-check": "^3.6.5",
-				"typescript": "^5.3.3",
+				"svelte-check": "^3.6.8",
+				"typescript": "^5.4.2",
 				"uvu": "^0.5.6"
 			},
 			"eslintConfig": {"root": true, "extends": "@ryanatkn", "rules": {"no-console": 1}},
@@ -1714,7 +1714,7 @@
 		},
 		"src_json": {
 			"name": "@ryanatkn/gro",
-			"version": "0.112.4",
+			"version": "0.112.5",
 			"modules": {
 				".": {
 					"path": "index.ts",
@@ -2406,7 +2406,7 @@
 		"url": "https://belt.ryanatkn.com/",
 		"package_json": {
 			"name": "@ryanatkn/belt",
-			"version": "0.20.8",
+			"version": "0.20.9",
 			"description": "utility belt for JS",
 			"icon": "🦕",
 			"public": true,
@@ -2496,7 +2496,7 @@
 		},
 		"src_json": {
 			"name": "@ryanatkn/belt",
-			"version": "0.20.8",
+			"version": "0.20.9",
 			"modules": {
 				"./array.js": {
 					"path": "array.ts",
@@ -2848,22 +2848,22 @@
 				"@pixi/sprite": "^7.4.0",
 				"@pixi/sprite-tiling": "^7.4.0",
 				"@pixi/text": "^7.4.0",
-				"@ryanatkn/belt": "^0.20.6",
+				"@ryanatkn/belt": "^0.20.9",
 				"@ryanatkn/collisions": "^4.0.2",
 				"@ryanatkn/eslint-config": "^0.1.0",
 				"@ryanatkn/fuz": "^0.91.3",
 				"@ryanatkn/gro": "^0.112.4",
 				"@sveltejs/adapter-static": "^3.0.1",
-				"@sveltejs/kit": "^2.5.2",
+				"@sveltejs/kit": "^2.5.4",
 				"@sveltejs/vite-plugin-svelte": "^3.0.2",
-				"@typescript-eslint/eslint-plugin": "^7.1.1",
-				"@typescript-eslint/parser": "^7.1.1",
+				"@typescript-eslint/eslint-plugin": "^7.3.1",
+				"@typescript-eslint/parser": "^7.3.1",
 				"dequal": "^2.0.3",
 				"eslint": "^8.57.0",
 				"prettier": "^3.2.5",
 				"prettier-plugin-svelte": "^3.2.2",
 				"svelte": "^4.2.12",
-				"svelte-check": "^3.6.6",
+				"svelte-check": "^3.6.8",
 				"tslib": "^2.6.2",
 				"typescript": "^5.4.2",
 				"uvu": "^0.5.6",
@@ -2890,569 +2890,6 @@
 		"published": false,
 		"check_runs": {"status": "completed", "conclusion": "success"},
 		"pull_requests": []
-	},
-	{
-		"url": "https://www.dealt.dev/",
-		"package_json": {
-			"name": "@ryanatkn/dealt",
-			"version": "0.36.0",
-			"description": "giving meaning a chance",
-			"icon": "🔮",
-			"public": true,
-			"license": "Unlicense",
-			"homepage": "https://www.dealt.dev/",
-			"author": {
-				"name": "Ryan Atkinson",
-				"email": "mail@ryanatkn.com",
-				"url": "https://www.ryanatkn.com/"
-			},
-			"repository": {"type": "git", "url": "git+https://github.com/ryanatkn/dealt.git"},
-			"bugs": {"url": "https://github.com/ryanatkn/dealt/issues", "email": "mail@ryanatkn.com"},
-			"type": "module",
-			"engines": {"node": ">=20.10"},
-			"keywords": ["run", "node", "code", "web"],
-			"scripts": {
-				"dev": "gro dev",
-				"build": "gro build",
-				"test": "gro test",
-				"deploy": "gro deploy"
-			},
-			"files": ["dist"],
-			"peerDependencies": {
-				"@pixi/app": "^7",
-				"@pixi/core": "^7",
-				"@pixi/display": "^7",
-				"@pixi/graphics": "^7",
-				"@pixi/text": "^7",
-				"@ryanatkn/belt": "*",
-				"@ryanatkn/collisions": "*",
-				"@ryanatkn/fuz": "*",
-				"@sveltejs/kit": "*",
-				"svelte": "*"
-			},
-			"devDependencies": {
-				"@changesets/changelog-git": "^0.2.0",
-				"@pixi/app": "^7.4.0",
-				"@pixi/core": "^7.4.0",
-				"@pixi/display": "^7.4.0",
-				"@pixi/graphics": "^7.4.0",
-				"@pixi/text": "^7.4.0",
-				"@ryanatkn/belt": "^0.20.5",
-				"@ryanatkn/collisions": "^4.0.2",
-				"@ryanatkn/eslint-config": "^0.1.0",
-				"@ryanatkn/fuz": "^0.91.3",
-				"@ryanatkn/gro": "^0.112.4",
-				"@sveltejs/adapter-static": "^3.0.1",
-				"@sveltejs/kit": "^2.5.2",
-				"@sveltejs/package": "^2.2.7",
-				"@sveltejs/vite-plugin-svelte": "^3.0.2",
-				"@typescript-eslint/eslint-plugin": "^7.1.0",
-				"@typescript-eslint/parser": "^7.1.0",
-				"eslint": "^8.57.0",
-				"eslint-plugin-svelte": "^2.35.1",
-				"prettier": "^3.2.5",
-				"prettier-plugin-svelte": "^3.2.2",
-				"svelte": "^4.2.12",
-				"svelte-check": "^3.6.6",
-				"tslib": "^2.6.2",
-				"typescript": "^5.3.3",
-				"uvu": "^0.5.6"
-			},
-			"eslintConfig": {"root": true, "extends": "@ryanatkn"},
-			"prettier": {
-				"plugins": ["prettier-plugin-svelte"],
-				"useTabs": true,
-				"printWidth": 100,
-				"singleQuote": true,
-				"bracketSpacing": false,
-				"overrides": [{"files": "package.json", "options": {"useTabs": false}}]
-			},
-			"exports": {
-				"./App_Dialog_Menu.svelte": {
-					"svelte": "./dist/App_Dialog_Menu.svelte",
-					"default": "./dist/App_Dialog_Menu.svelte",
-					"types": "./dist/App_Dialog_Menu.svelte.d.ts"
-				},
-				"./App_Dialog.svelte": {
-					"svelte": "./dist/App_Dialog.svelte",
-					"default": "./dist/App_Dialog.svelte",
-					"types": "./dist/App_Dialog.svelte.d.ts"
-				},
-				"./app_dialog.js": {"default": "./dist/app_dialog.js", "types": "./dist/app_dialog.d.ts"},
-				"./App_Dialogs.svelte": {
-					"svelte": "./dist/App_Dialogs.svelte",
-					"default": "./dist/App_Dialogs.svelte",
-					"types": "./dist/App_Dialogs.svelte.d.ts"
-				},
-				"./camera.js": {"default": "./dist/camera.js", "types": "./dist/camera.d.ts"},
-				"./Clock.svelte": {
-					"svelte": "./dist/Clock.svelte",
-					"default": "./dist/Clock.svelte",
-					"types": "./dist/Clock.svelte.d.ts"
-				},
-				"./clock.js": {"default": "./dist/clock.js", "types": "./dist/clock.d.ts"},
-				"./collisions.js": {"default": "./dist/collisions.js", "types": "./dist/collisions.d.ts"},
-				"./controller.js": {"default": "./dist/controller.js", "types": "./dist/controller.d.ts"},
-				"./core.js": {"default": "./dist/core.js", "types": "./dist/core.d.ts"},
-				"./corpora/animals.json": {
-					"default": "./dist/corpora/animals.json",
-					"types": "./dist/corpora/animals.json.d.ts"
-				},
-				"./corpora/artifacts.json": {
-					"default": "./dist/corpora/artifacts.json",
-					"types": "./dist/corpora/artifacts.json.d.ts"
-				},
-				"./corpora/characters.json": {
-					"default": "./dist/corpora/characters.json",
-					"types": "./dist/corpora/characters.json.d.ts"
-				},
-				"./corpora/colors.json": {
-					"default": "./dist/corpora/colors.json",
-					"types": "./dist/corpora/colors.json.d.ts"
-				},
-				"./corpora/descriptions.json": {
-					"default": "./dist/corpora/descriptions.json",
-					"types": "./dist/corpora/descriptions.json.d.ts"
-				},
-				"./corpora/emoji.json": {
-					"default": "./dist/corpora/emoji.json",
-					"types": "./dist/corpora/emoji.json.d.ts"
-				},
-				"./corpora/emotions.json": {
-					"default": "./dist/corpora/emotions.json",
-					"types": "./dist/corpora/emotions.json.d.ts"
-				},
-				"./corpora/events.json": {
-					"default": "./dist/corpora/events.json",
-					"types": "./dist/corpora/events.json.d.ts"
-				},
-				"./corpora/fabrics.json": {
-					"default": "./dist/corpora/fabrics.json",
-					"types": "./dist/corpora/fabrics.json.d.ts"
-				},
-				"./corpora/features.json": {
-					"default": "./dist/corpora/features.json",
-					"types": "./dist/corpora/features.json.d.ts"
-				},
-				"./corpora/flowers.json": {
-					"default": "./dist/corpora/flowers.json",
-					"types": "./dist/corpora/flowers.json.d.ts"
-				},
-				"./corpora/fruits.json": {
-					"default": "./dist/corpora/fruits.json",
-					"types": "./dist/corpora/fruits.json.d.ts"
-				},
-				"./corpora/governments.json": {
-					"default": "./dist/corpora/governments.json",
-					"types": "./dist/corpora/governments.json.d.ts"
-				},
-				"./corpora/hazards.json": {
-					"default": "./dist/corpora/hazards.json",
-					"types": "./dist/corpora/hazards.json.d.ts"
-				},
-				"./corpora/herbs.json": {
-					"default": "./dist/corpora/herbs.json",
-					"types": "./dist/corpora/herbs.json.d.ts"
-				},
-				"./corpora/industries.json": {
-					"default": "./dist/corpora/industries.json",
-					"types": "./dist/corpora/industries.json.d.ts"
-				},
-				"./corpora/instruments.json": {
-					"default": "./dist/corpora/instruments.json",
-					"types": "./dist/corpora/instruments.json.d.ts"
-				},
-				"./corpora/moods.json": {
-					"default": "./dist/corpora/moods.json",
-					"types": "./dist/corpora/moods.json.d.ts"
-				},
-				"./corpora/natures.json": {
-					"default": "./dist/corpora/natures.json",
-					"types": "./dist/corpora/natures.json.d.ts"
-				},
-				"./corpora/oceans.json": {
-					"default": "./dist/corpora/oceans.json",
-					"types": "./dist/corpora/oceans.json.d.ts"
-				},
-				"./corpora/passages.json": {
-					"default": "./dist/corpora/passages.json",
-					"types": "./dist/corpora/passages.json.d.ts"
-				},
-				"./corpora/rooms.json": {
-					"default": "./dist/corpora/rooms.json",
-					"types": "./dist/corpora/rooms.json.d.ts"
-				},
-				"./corpora/seas.json": {
-					"default": "./dist/corpora/seas.json",
-					"types": "./dist/corpora/seas.json.d.ts"
-				},
-				"./corpora/settings.json": {
-					"default": "./dist/corpora/settings.json",
-					"types": "./dist/corpora/settings.json.d.ts"
-				},
-				"./corpora/spices.json": {
-					"default": "./dist/corpora/spices.json",
-					"types": "./dist/corpora/spices.json.d.ts"
-				},
-				"./corpora/subjects.json": {
-					"default": "./dist/corpora/subjects.json",
-					"types": "./dist/corpora/subjects.json.d.ts"
-				},
-				"./corpora/vegetables.json": {
-					"default": "./dist/corpora/vegetables.json",
-					"types": "./dist/corpora/vegetables.json.d.ts"
-				},
-				"./corpora/winds.json": {
-					"default": "./dist/corpora/winds.json",
-					"types": "./dist/corpora/winds.json.d.ts"
-				},
-				"./dom.js": {"default": "./dist/dom.js", "types": "./dist/dom.d.ts"},
-				"./emoji.js": {"default": "./dist/emoji.js", "types": "./dist/emoji.d.ts"},
-				"./Gamepad_Input.svelte": {
-					"svelte": "./dist/Gamepad_Input.svelte",
-					"default": "./dist/Gamepad_Input.svelte",
-					"types": "./dist/Gamepad_Input.svelte.d.ts"
-				},
-				"./item_body.js": {"default": "./dist/item_body.js", "types": "./dist/item_body.d.ts"},
-				"./item_helpers.js": {
-					"default": "./dist/item_helpers.js",
-					"types": "./dist/item_helpers.d.ts"
-				},
-				"./item.js": {"default": "./dist/item.js", "types": "./dist/item.d.ts"},
-				"./layout.js": {"default": "./dist/layout.js", "types": "./dist/layout.d.ts"},
-				"./Pixi_Scene.svelte": {
-					"svelte": "./dist/Pixi_Scene.svelte",
-					"default": "./dist/Pixi_Scene.svelte",
-					"types": "./dist/Pixi_Scene.svelte.d.ts"
-				},
-				"./Pixi_View.svelte": {
-					"svelte": "./dist/Pixi_View.svelte",
-					"default": "./dist/Pixi_View.svelte",
-					"types": "./dist/Pixi_View.svelte.d.ts"
-				},
-				"./pixi.js": {"default": "./dist/pixi.js", "types": "./dist/pixi.d.ts"},
-				"./Portal.svelte": {
-					"svelte": "./dist/Portal.svelte",
-					"default": "./dist/Portal.svelte",
-					"types": "./dist/Portal.svelte.d.ts"
-				},
-				"./random.js": {"default": "./dist/random.js", "types": "./dist/random.d.ts"},
-				"./Randomize_Seed_Button.svelte": {
-					"svelte": "./dist/Randomize_Seed_Button.svelte",
-					"default": "./dist/Randomize_Seed_Button.svelte",
-					"types": "./dist/Randomize_Seed_Button.svelte.d.ts"
-				},
-				"./render_stats.js": {
-					"default": "./dist/render_stats.js",
-					"types": "./dist/render_stats.d.ts"
-				},
-				"./shadow.js": {"default": "./dist/shadow.js", "types": "./dist/shadow.d.ts"},
-				"./simulation.js": {"default": "./dist/simulation.js", "types": "./dist/simulation.d.ts"},
-				"./stage.js": {"default": "./dist/stage.js", "types": "./dist/stage.d.ts"},
-				"./storage.js": {"default": "./dist/storage.js", "types": "./dist/storage.d.ts"},
-				"./store.js": {"default": "./dist/store.js", "types": "./dist/store.d.ts"},
-				"./style.css": {"default": "./dist/style.css"},
-				"./Surface_With_Controller.svelte": {
-					"svelte": "./dist/Surface_With_Controller.svelte",
-					"default": "./dist/Surface_With_Controller.svelte",
-					"types": "./dist/Surface_With_Controller.svelte.d.ts"
-				},
-				"./Surface.svelte": {
-					"svelte": "./dist/Surface.svelte",
-					"default": "./dist/Surface.svelte",
-					"types": "./dist/Surface.svelte.d.ts"
-				},
-				"./Tabs.svelte": {
-					"svelte": "./dist/Tabs.svelte",
-					"default": "./dist/Tabs.svelte",
-					"types": "./dist/Tabs.svelte.d.ts"
-				},
-				"./tarot.json": {"default": "./dist/tarot.json", "types": "./dist/tarot.json.d.ts"},
-				"./tarot.js": {"default": "./dist/tarot.js", "types": "./dist/tarot.d.ts"},
-				"./viewport.js": {"default": "./dist/viewport.js", "types": "./dist/viewport.d.ts"},
-				"./Waiting_Animation.svelte": {
-					"svelte": "./dist/Waiting_Animation.svelte",
-					"default": "./dist/Waiting_Animation.svelte",
-					"types": "./dist/Waiting_Animation.svelte.d.ts"
-				},
-				"./Waiting_Screen.svelte": {
-					"svelte": "./dist/Waiting_Screen.svelte",
-					"default": "./dist/Waiting_Screen.svelte",
-					"types": "./dist/Waiting_Screen.svelte.d.ts"
-				},
-				"./World.svelte": {
-					"svelte": "./dist/World.svelte",
-					"default": "./dist/World.svelte",
-					"types": "./dist/World.svelte.d.ts"
-				}
-			}
-		},
-		"src_json": {
-			"name": "@ryanatkn/dealt",
-			"version": "0.36.0",
-			"modules": {
-				"./App_Dialog_Menu.svelte": {"path": "App_Dialog_Menu.svelte", "declarations": []},
-				"./App_Dialog.svelte": {"path": "App_Dialog.svelte", "declarations": []},
-				"./app_dialog.js": {
-					"path": "app_dialog.ts",
-					"declarations": [
-						{"name": "show_app_dialog", "kind": "variable"},
-						{"name": "app_dialog_el", "kind": "variable"}
-					]
-				},
-				"./App_Dialogs.svelte": {"path": "App_Dialogs.svelte", "declarations": []},
-				"./camera.js": {
-					"path": "camera.ts",
-					"declarations": [
-						{"name": "Camera_State", "kind": "type"},
-						{"name": "Camera_Store", "kind": "type"},
-						{"name": "create_camera", "kind": "function"},
-						{"name": "to_world_x", "kind": "function"},
-						{"name": "to_world_y", "kind": "function"},
-						{"name": "to_layout_x", "kind": "function"},
-						{"name": "to_layout_y", "kind": "function"}
-					]
-				},
-				"./Clock.svelte": {"path": "Clock.svelte", "declarations": []},
-				"./clock.js": {
-					"path": "clock.ts",
-					"declarations": [
-						{"name": "Clock_State", "kind": "type"},
-						{"name": "Clock_Store", "kind": "type"},
-						{"name": "create_clock", "kind": "function"},
-						{"name": "get_clock", "kind": "function"},
-						{"name": "set_clock", "kind": "function"}
-					]
-				},
-				"./collisions.js": {"path": "collisions.ts", "declarations": []},
-				"./controller.js": {
-					"path": "controller.ts",
-					"declarations": [
-						{"name": "Controller", "kind": "class"},
-						{"name": "update_item_direction", "kind": "function"}
-					]
-				},
-				"./core.js": {"path": "core.ts", "declarations": [{"name": "Core", "kind": "class"}]},
-				"./corpora/animals.json": {"path": "corpora/animals.json", "declarations": []},
-				"./corpora/artifacts.json": {"path": "corpora/artifacts.json", "declarations": []},
-				"./corpora/characters.json": {"path": "corpora/characters.json", "declarations": []},
-				"./corpora/colors.json": {"path": "corpora/colors.json", "declarations": []},
-				"./corpora/descriptions.json": {"path": "corpora/descriptions.json", "declarations": []},
-				"./corpora/emoji.json": {"path": "corpora/emoji.json", "declarations": []},
-				"./corpora/emotions.json": {"path": "corpora/emotions.json", "declarations": []},
-				"./corpora/events.json": {"path": "corpora/events.json", "declarations": []},
-				"./corpora/fabrics.json": {"path": "corpora/fabrics.json", "declarations": []},
-				"./corpora/features.json": {"path": "corpora/features.json", "declarations": []},
-				"./corpora/flowers.json": {"path": "corpora/flowers.json", "declarations": []},
-				"./corpora/fruits.json": {"path": "corpora/fruits.json", "declarations": []},
-				"./corpora/governments.json": {"path": "corpora/governments.json", "declarations": []},
-				"./corpora/hazards.json": {"path": "corpora/hazards.json", "declarations": []},
-				"./corpora/herbs.json": {"path": "corpora/herbs.json", "declarations": []},
-				"./corpora/industries.json": {"path": "corpora/industries.json", "declarations": []},
-				"./corpora/instruments.json": {"path": "corpora/instruments.json", "declarations": []},
-				"./corpora/moods.json": {"path": "corpora/moods.json", "declarations": []},
-				"./corpora/natures.json": {"path": "corpora/natures.json", "declarations": []},
-				"./corpora/oceans.json": {"path": "corpora/oceans.json", "declarations": []},
-				"./corpora/passages.json": {"path": "corpora/passages.json", "declarations": []},
-				"./corpora/rooms.json": {"path": "corpora/rooms.json", "declarations": []},
-				"./corpora/seas.json": {"path": "corpora/seas.json", "declarations": []},
-				"./corpora/settings.json": {"path": "corpora/settings.json", "declarations": []},
-				"./corpora/spices.json": {"path": "corpora/spices.json", "declarations": []},
-				"./corpora/subjects.json": {"path": "corpora/subjects.json", "declarations": []},
-				"./corpora/vegetables.json": {"path": "corpora/vegetables.json", "declarations": []},
-				"./corpora/winds.json": {"path": "corpora/winds.json", "declarations": []},
-				"./dom.js": {
-					"path": "dom.ts",
-					"declarations": [{"name": "enable_global_hotkeys", "kind": "function"}]
-				},
-				"./emoji.js": {"path": "emoji.ts", "declarations": [{"name": "Emoji", "kind": "type"}]},
-				"./Gamepad_Input.svelte": {"path": "Gamepad_Input.svelte", "declarations": []},
-				"./item_body.js": {
-					"path": "item_body.ts",
-					"declarations": [
-						{"name": "I_Item_Body", "kind": "type"},
-						{"name": "Circle_Body", "kind": "type"},
-						{"name": "Point_Body", "kind": "type"},
-						{"name": "Polygon_Body", "kind": "type"},
-						{"name": "Item_Body", "kind": "type"}
-					]
-				},
-				"./item_helpers.js": {
-					"path": "item_helpers.ts",
-					"declarations": [
-						{"name": "cr", "kind": "variable"},
-						{"name": "collide", "kind": "function"},
-						{"name": "frag", "kind": "function"}
-					]
-				},
-				"./item.js": {
-					"path": "item.ts",
-					"declarations": [
-						{"name": "COLOR_DEFAULT", "kind": "variable"},
-						{"name": "COLOR_DEFAULT_STR", "kind": "variable"},
-						{"name": "COLOR_DEFAULT_HEX", "kind": "variable"},
-						{"name": "COLOR_ROOTED", "kind": "variable"},
-						{"name": "COLOR_COLLIDING", "kind": "variable"},
-						{"name": "COLOR_PLAYER", "kind": "variable"},
-						{"name": "COLOR_EXIT", "kind": "variable"},
-						{"name": "COLOR_GHOST", "kind": "variable"},
-						{"name": "COLOR_DANGER", "kind": "variable"},
-						{"name": "STRENGTH_MAX", "kind": "variable"},
-						{"name": "STRENGTH_DEFAULT", "kind": "variable"},
-						{"name": "SPEED_FASTER", "kind": "variable"},
-						{"name": "SPEED_FAST", "kind": "variable"},
-						{"name": "SPEED_MEDIUM", "kind": "variable"},
-						{"name": "SPEED_SLOW", "kind": "variable"},
-						{"name": "SPEED_DEFAULT", "kind": "variable"},
-						{"name": "SPEED_VERY_SLOW", "kind": "variable"},
-						{"name": "PIXI_DESTROY_ITEM_OPTIONS", "kind": "variable"},
-						{"name": "Item_Data", "kind": "type"},
-						{"name": "Partial_Item_Data", "kind": "type"},
-						{"name": "Base_Item_Data", "kind": "type"},
-						{"name": "Circle_Item_Data", "kind": "type"},
-						{"name": "Polygon_Item_Data", "kind": "type"},
-						{"name": "DEFAULT_ITEM_DATA", "kind": "variable"},
-						{"name": "DEFAULT_CIRCLE_ITEM_DATA", "kind": "variable"},
-						{"name": "DEFAULT_POLYGON_ITEM_DATA", "kind": "variable"},
-						{"name": "ALL_DEFAULT_ITEM_DATA", "kind": "variable"},
-						{"name": "ITEM_PROPERTIES", "kind": "variable"},
-						{"name": "Item_Id", "kind": "type"},
-						{"name": "create_item_id", "kind": "function"},
-						{"name": "Item", "kind": "class"}
-					]
-				},
-				"./layout.js": {
-					"path": "layout.ts",
-					"declarations": [
-						{"name": "Layout_State", "kind": "type"},
-						{"name": "Layout_Store", "kind": "type"},
-						{"name": "get_layout", "kind": "function"},
-						{"name": "set_layout", "kind": "function"}
-					]
-				},
-				"./Pixi_Scene.svelte": {"path": "Pixi_Scene.svelte", "declarations": []},
-				"./Pixi_View.svelte": {"path": "Pixi_View.svelte", "declarations": []},
-				"./pixi.js": {
-					"path": "pixi.ts",
-					"declarations": [
-						{"name": "PixiApp", "kind": "class"},
-						{"name": "get_pixi", "kind": "function"},
-						{"name": "set_pixi", "kind": "function"}
-					]
-				},
-				"./Portal.svelte": {"path": "Portal.svelte", "declarations": []},
-				"./random.js": {
-					"path": "random.ts",
-					"declarations": [
-						{"name": "seed", "kind": "variable"},
-						{"name": "random_float", "kind": "function"},
-						{"name": "random_seeded", "kind": "variable"},
-						{"name": "random_items", "kind": "function"},
-						{"name": "shuffle", "kind": "function"}
-					]
-				},
-				"./Randomize_Seed_Button.svelte": {
-					"path": "Randomize_Seed_Button.svelte",
-					"declarations": []
-				},
-				"./render_stats.js": {
-					"path": "render_stats.ts",
-					"declarations": [
-						{"name": "update_render_stats", "kind": "function"},
-						{"name": "reset_render_stats", "kind": "function"},
-						{"name": "get_render_stats", "kind": "function"}
-					]
-				},
-				"./shadow.js": {
-					"path": "shadow.ts",
-					"declarations": [
-						{"name": "to_random_shadow", "kind": "function"},
-						{"name": "set_shadow", "kind": "function"},
-						{"name": "get_shadow", "kind": "function"},
-						{"name": "set_shadow2", "kind": "function"},
-						{"name": "get_shadow2", "kind": "function"}
-					]
-				},
-				"./simulation.js": {
-					"path": "simulation.ts",
-					"declarations": [{"name": "Simulation", "kind": "class"}]
-				},
-				"./stage.js": {
-					"path": "stage.ts",
-					"declarations": [
-						{"name": "PLAYER_RADIUS", "kind": "variable"},
-						{"name": "Stage_Data", "kind": "type"},
-						{"name": "DEFAULT_STAGE_DATA", "kind": "variable"},
-						{"name": "Stage_Meta", "kind": "type"},
-						{"name": "Stage_Name", "kind": "type"},
-						{"name": "Stage_Options", "kind": "type"},
-						{"name": "Stage_Setup_Options", "kind": "type"},
-						{"name": "Stage_State", "kind": "type"},
-						{"name": "Stage_Stats", "kind": "type"},
-						{"name": "Stage_Outcome", "kind": "type"},
-						{"name": "Exit_Stage", "kind": "type"},
-						{"name": "Create_Initial_Data_Options", "kind": "type"},
-						{"name": "Stage", "kind": "class"}
-					]
-				},
-				"./storage.js": {
-					"path": "storage.ts",
-					"declarations": [
-						{"name": "load_from_storage", "kind": "function"},
-						{"name": "set_in_storage", "kind": "function"}
-					]
-				},
-				"./store.js": {
-					"path": "store.ts",
-					"declarations": [{"name": "is_writable_store", "kind": "function"}]
-				},
-				"./style.css": {"path": "style.css", "declarations": []},
-				"./Surface_With_Controller.svelte": {
-					"path": "Surface_With_Controller.svelte",
-					"declarations": []
-				},
-				"./Surface.svelte": {"path": "Surface.svelte", "declarations": []},
-				"./Tabs.svelte": {"path": "Tabs.svelte", "declarations": []},
-				"./tarot.json": {"path": "tarot.json", "declarations": []},
-				"./tarot.js": {
-					"path": "tarot.ts",
-					"declarations": [
-						{"name": "Tarot_Suit", "kind": "type"},
-						{"name": "Tarot_Card", "kind": "type"},
-						{"name": "TAROT_COUNT", "kind": "variable"},
-						{"name": "card_indices", "kind": "variable"},
-						{"name": "random_card_index", "kind": "function"},
-						{"name": "TAROT_CARD_MIN_WIDTH", "kind": "variable"},
-						{"name": "TAROT_CARD_MIN_HEIGHT", "kind": "variable"},
-						{"name": "search_cards", "kind": "function"}
-					]
-				},
-				"./viewport.js": {
-					"path": "viewport.ts",
-					"declarations": [
-						{"name": "Viewport_State", "kind": "type"},
-						{"name": "Viewport_Store", "kind": "type"},
-						{"name": "get_viewport", "kind": "function"},
-						{"name": "set_viewport", "kind": "function"}
-					]
-				},
-				"./Waiting_Animation.svelte": {"path": "Waiting_Animation.svelte", "declarations": []},
-				"./Waiting_Screen.svelte": {"path": "Waiting_Screen.svelte", "declarations": []},
-				"./World.svelte": {"path": "World.svelte", "declarations": []}
-			}
-		},
-		"name": "@ryanatkn/dealt",
-		"repo_name": "dealt",
-		"repo_url": "https://github.com/ryanatkn/dealt",
-		"owner_name": "ryanatkn",
-		"homepage_url": "https://www.dealt.dev/",
-		"npm_url": "https://www.npmjs.com/package/@ryanatkn/dealt",
-		"changelog_url": "https://github.com/ryanatkn/dealt/blob/main/CHANGELOG.md",
-		"published": true,
-		"check_runs": {"status": "completed", "conclusion": "success"},
-		"pull_requests": [
-			{"number": 69, "title": "add camera scale", "user": {"login": "ryanatkn"}, "draft": true}
-		]
 	},
 	{
 		"url": "https://earbetter.ryanatkn.com/",

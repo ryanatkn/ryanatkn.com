@@ -11,7 +11,6 @@ const config: Fuz_Config = {
 		'https://gro.ryanatkn.com/',
 		'https://belt.ryanatkn.com/',
 		'https://www.cosmicplayground.org/',
-		'https://www.dealt.dev/',
 		'https://earbetter.ryanatkn.com/',
 		'https://ryanatkn.github.io/corpus-activity-streams/',
 		'https://svelte-intersect.ryanatkn.com/',
