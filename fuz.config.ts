@@ -14,7 +14,6 @@ const config: Fuz_Config = {
 		'https://earbetter.ryanatkn.com/',
 		'https://ryanatkn.github.io/corpus-activity-streams/',
 		'https://svelte-intersect.ryanatkn.com/',
-		'https://collisions.ryanatkn.com/',
 	],
 };
 
