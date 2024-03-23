@@ -3575,7 +3575,7 @@
 		"pull_requests": []
 	},
 	{
-		"url": "https://svelte-intersect.ryanatkn.com/",
+		"url": "https://ryanatkn.github.io/svelte-intersect/",
 		"package_json": {
 			"name": "svelte-intersect",
 			"description": "a Svelte action for IntersectionObserver",
@@ -3583,7 +3583,7 @@
 			"public": true,
 			"license": "MIT",
 			"type": "module",
-			"homepage": "https://svelte-intersect.ryanatkn.com/",
+			"homepage": "https://ryanatkn.github.io/svelte-intersect/",
 			"repository": "https://github.com/ryanatkn/svelte-intersect",
 			"engines": {"node": ">=20.10"},
 			"scripts": {
@@ -3653,7 +3653,7 @@
 		"repo_name": "svelte-intersect",
 		"repo_url": "https://github.com/ryanatkn/svelte-intersect",
 		"owner_name": "ryanatkn",
-		"homepage_url": "https://svelte-intersect.ryanatkn.com/",
+		"homepage_url": "https://ryanatkn.github.io/svelte-intersect/",
 		"npm_url": "https://www.npmjs.com/package/svelte-intersect",
 		"changelog_url": "https://github.com/ryanatkn/svelte-intersect/blob/main/CHANGELOG.md",
 		"published": true,
