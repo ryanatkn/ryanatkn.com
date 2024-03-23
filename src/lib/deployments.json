@@ -3,7 +3,7 @@
 		"url": "https://www.fuz.dev/",
 		"package_json": {
 			"name": "@ryanatkn/fuz",
-			"version": "0.91.3",
+			"version": "0.91.5",
 			"description": "Svelte UI library and CSS design system",
 			"icon": "🧶",
 			"public": true,
@@ -285,7 +285,7 @@
 		},
 		"src_json": {
 			"name": "@ryanatkn/fuz",
-			"version": "0.91.3",
+			"version": "0.91.5",
 			"modules": {
 				"./Alert.svelte": {"path": "Alert.svelte", "declarations": []},
 				"./alert.js": {
@@ -738,7 +738,7 @@
 			"devDependencies": {
 				"@ryanatkn/belt": "^0.20.8",
 				"@ryanatkn/eslint-config": "^0.1.0",
-				"@ryanatkn/fuz": "^0.91.3",
+				"@ryanatkn/fuz": "^0.91.4",
 				"@ryanatkn/gro": "^0.112.4",
 				"@sveltejs/adapter-static": "^3.0.1",
 				"@sveltejs/kit": "^2.5.4",
@@ -774,7 +774,7 @@
 		"npm_url": null,
 		"changelog_url": null,
 		"published": false,
-		"check_runs": {"status": "completed", "conclusion": "success"},
+		"check_runs": {"status": "completed", "conclusion": "failure"},
 		"pull_requests": []
 	},
 	{
@@ -3597,17 +3597,17 @@
 			"peerDependencies": {"svelte": "*"},
 			"devDependencies": {
 				"@changesets/changelog-git": "^0.2.0",
-				"@ryanatkn/belt": "^0.20.6",
+				"@ryanatkn/belt": "^0.20.9",
 				"@ryanatkn/eslint-config": "^0.1.0",
-				"@ryanatkn/fuz": "^0.91.3",
+				"@ryanatkn/fuz": "^0.91.5",
 				"@ryanatkn/fuz_code": "^0.11.0",
-				"@ryanatkn/gro": "^0.112.4",
+				"@ryanatkn/gro": "^0.112.5",
 				"@sveltejs/adapter-static": "^3.0.1",
-				"@sveltejs/kit": "^2.5.2",
-				"@sveltejs/package": "^2.2.7",
+				"@sveltejs/kit": "^2.5.4",
+				"@sveltejs/package": "^2.3.0",
 				"@sveltejs/vite-plugin-svelte": "^3.0.2",
-				"@typescript-eslint/eslint-plugin": "^7.1.1",
-				"@typescript-eslint/parser": "^7.1.1",
+				"@typescript-eslint/eslint-plugin": "^7.3.1",
+				"@typescript-eslint/parser": "^7.3.1",
 				"eslint": "^8.57.0",
 				"eslint-plugin-svelte": "^2.35.1",
 				"prettier": "^3.2.5",
@@ -3615,9 +3615,9 @@
 				"prism-svelte": "^0.5.0",
 				"prismjs": "^1.29.0",
 				"svelte": "^4.2.12",
-				"svelte-check": "^3.6.6",
+				"svelte-check": "^3.6.8",
 				"tslib": "^2.6.2",
-				"typescript": "^5.3.3",
+				"typescript": "^5.4.3",
 				"uvu": "^0.5.6"
 			},
 			"eslintConfig": {"root": true, "extends": "@ryanatkn"},

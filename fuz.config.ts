@@ -13,7 +13,7 @@ const config: Fuz_Config = {
 		'https://www.cosmicplayground.org/',
 		'https://earbetter.ryanatkn.com/',
 		'https://ryanatkn.github.io/corpus-activity-streams/',
-		'https://ryanatkn.github.io/svelte-intersect',
+		'https://ryanatkn.github.io/svelte-intersect/',
 	],
 };
 
