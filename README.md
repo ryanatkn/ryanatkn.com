@@ -3,7 +3,7 @@
 # [ryanatkn.com](https://www.ryanatkn.com) 🌤🌳🐿
 
 > [@ryanatkn](https://github.com/ryanatkn)'s homepage and blog
-> 💤 building free and open source tools and toys
+> 🪶 building free and open source tools and toys
 
 ## usage
 
