@@ -1,5 +1,133 @@
 [
 	{
+		"url": "https://www.spiderspace.org/",
+		"package_json": {
+			"name": "spiderspace",
+			"version": "0.0.1",
+			"description": "community spaces for Spiderspace",
+			"icon": "🕸️",
+			"public": true,
+			"homepage": "https://www.spiderspace.org/",
+			"repository": "https://github.com/spiderspace/spiderspace",
+			"type": "module",
+			"engines": {"node": ">=20.10"},
+			"scripts": {
+				"start": "gro dev",
+				"dev": "gro dev",
+				"build": "gro build",
+				"test": "gro test",
+				"deploy": "gro deploy"
+			},
+			"files": ["dist"],
+			"devDependencies": {
+				"@ryanatkn/belt": "^0.20.9",
+				"@ryanatkn/eslint-config": "^0.1.0",
+				"@ryanatkn/fuz": "^0.91.5",
+				"@ryanatkn/gro": "^0.112.5",
+				"@sveltejs/adapter-static": "^3.0.1",
+				"@sveltejs/kit": "^2.5.4",
+				"@sveltejs/vite-plugin-svelte": "^3.0.2",
+				"@typescript-eslint/eslint-plugin": "^7.3.1",
+				"@typescript-eslint/parser": "^7.3.1",
+				"eslint": "^8.57.0",
+				"eslint-plugin-svelte": "^2.35.1",
+				"prettier": "^3.2.5",
+				"prettier-plugin-svelte": "^3.2.2",
+				"svelte": "^4.2.12",
+				"svelte-check": "^3.6.8",
+				"tslib": "^2.6.2",
+				"typescript": "^5.4.3",
+				"uvu": "^0.5.6"
+			},
+			"eslintConfig": {"root": true, "extends": "@ryanatkn"},
+			"prettier": {
+				"plugins": ["prettier-plugin-svelte"],
+				"useTabs": true,
+				"printWidth": 100,
+				"singleQuote": true,
+				"bracketSpacing": false,
+				"overrides": [{"files": "package.json", "options": {"useTabs": false}}]
+			}
+		},
+		"src_json": {"name": "spiderspace", "version": "0.0.1"},
+		"name": "spiderspace",
+		"repo_name": "spiderspace",
+		"repo_url": "https://github.com/spiderspace/spiderspace",
+		"owner_name": "spiderspace",
+		"homepage_url": "https://www.spiderspace.org/",
+		"npm_url": null,
+		"changelog_url": null,
+		"published": false,
+		"check_runs": {"status": "completed", "conclusion": "success"},
+		"pull_requests": [
+			{"number": 1, "title": "upgrade to svelte5", "user": {"login": "ryanatkn"}, "draft": false}
+		]
+	},
+	{
+		"url": "https://zzz.ryanatkn.com/",
+		"package_json": {
+			"name": "@ryanatkn/zzz",
+			"version": "0.0.1",
+			"description": "social web app framework",
+			"icon": "💤",
+			"public": true,
+			"license": "MIT",
+			"homepage": "https://zzz.ryanatkn.com/",
+			"repository": "https://github.com/ryanatkn/zzz",
+			"type": "module",
+			"engines": {"node": ">=20.10"},
+			"scripts": {
+				"start": "gro dev",
+				"dev": "gro dev",
+				"build": "gro build",
+				"test": "gro test",
+				"deploy": "gro deploy"
+			},
+			"files": ["dist"],
+			"devDependencies": {
+				"@ryanatkn/eslint-config": "^0.1.0",
+				"@ryanatkn/fuz": "^0.91.5",
+				"@ryanatkn/gro": "^0.112.5",
+				"@sveltejs/adapter-static": "^3.0.1",
+				"@sveltejs/kit": "^2.5.4",
+				"@sveltejs/vite-plugin-svelte": "^3.0.2",
+				"@typescript-eslint/eslint-plugin": "^7.3.1",
+				"@typescript-eslint/parser": "^7.3.1",
+				"eslint": "^8.57.0",
+				"eslint-plugin-svelte": "^2.35.1",
+				"prettier": "^3.2.5",
+				"prettier-plugin-svelte": "^3.2.2",
+				"svelte": "^4.2.12",
+				"svelte-check": "^3.6.8",
+				"tslib": "^2.6.2",
+				"typescript": "^5.4.3",
+				"uvu": "^0.5.6"
+			},
+			"eslintConfig": {"root": true, "extends": "@ryanatkn"},
+			"prettier": {
+				"plugins": ["prettier-plugin-svelte"],
+				"useTabs": true,
+				"printWidth": 100,
+				"singleQuote": true,
+				"bracketSpacing": false,
+				"overrides": [{"files": "package.json", "options": {"useTabs": false}}]
+			}
+		},
+		"src_json": {"name": "@ryanatkn/zzz", "version": "0.0.1"},
+		"name": "@ryanatkn/zzz",
+		"repo_name": "zzz",
+		"repo_url": "https://github.com/ryanatkn/zzz",
+		"owner_name": "ryanatkn",
+		"homepage_url": "https://zzz.ryanatkn.com/",
+		"npm_url": null,
+		"changelog_url": null,
+		"published": false,
+		"check_runs": {"status": "completed", "conclusion": "success"},
+		"pull_requests": [
+			{"number": 1, "title": "upgrade to svelte5", "user": {"login": "ryanatkn"}, "draft": false}
+		]
+	},
+	{
 		"url": "https://www.fuz.dev/",
 		"package_json": {
 			"name": "@ryanatkn/fuz",
@@ -716,726 +844,6 @@
 		]
 	},
 	{
-		"url": "https://template.fuz.dev/",
-		"package_json": {
-			"name": "@ryanatkn/fuz_template",
-			"version": "0.0.1",
-			"description": "a static web app and Node library template with TypeScript, Svelte, SvelteKit, Vite, esbuild, Fuz, and Gro",
-			"icon": "❄",
-			"public": true,
-			"homepage": "https://template.fuz.dev/",
-			"repository": "https://github.com/ryanatkn/fuz_template",
-			"type": "module",
-			"engines": {"node": ">=20.10"},
-			"scripts": {
-				"start": "gro dev",
-				"dev": "gro dev",
-				"build": "gro build",
-				"test": "gro test",
-				"deploy": "gro deploy"
-			},
-			"files": ["dist"],
-			"devDependencies": {
-				"@ryanatkn/belt": "^0.20.8",
-				"@ryanatkn/eslint-config": "^0.1.0",
-				"@ryanatkn/fuz": "^0.91.4",
-				"@ryanatkn/gro": "^0.112.4",
-				"@sveltejs/adapter-static": "^3.0.1",
-				"@sveltejs/kit": "^2.5.4",
-				"@sveltejs/vite-plugin-svelte": "^3.0.2",
-				"@typescript-eslint/eslint-plugin": "^7.3.1",
-				"@typescript-eslint/parser": "^7.3.1",
-				"eslint": "^8.57.0",
-				"eslint-plugin-svelte": "^2.35.1",
-				"prettier": "^3.2.5",
-				"prettier-plugin-svelte": "^3.2.2",
-				"svelte": "^4.2.12",
-				"svelte-check": "^3.6.8",
-				"tslib": "^2.6.2",
-				"typescript": "^5.4.2",
-				"uvu": "^0.5.6"
-			},
-			"eslintConfig": {"root": true, "extends": "@ryanatkn"},
-			"prettier": {
-				"plugins": ["prettier-plugin-svelte"],
-				"useTabs": true,
-				"printWidth": 100,
-				"singleQuote": true,
-				"bracketSpacing": false,
-				"overrides": [{"files": "package.json", "options": {"useTabs": false}}]
-			}
-		},
-		"src_json": {"name": "@ryanatkn/fuz_template", "version": "0.0.1"},
-		"name": "@ryanatkn/fuz_template",
-		"repo_name": "fuz_template",
-		"repo_url": "https://github.com/ryanatkn/fuz_template",
-		"owner_name": "ryanatkn",
-		"homepage_url": "https://template.fuz.dev/",
-		"npm_url": null,
-		"changelog_url": null,
-		"published": false,
-		"check_runs": {"status": "completed", "conclusion": "failure"},
-		"pull_requests": []
-	},
-	{
-		"url": "https://code.fuz.dev/",
-		"package_json": {
-			"name": "@ryanatkn/fuz_code",
-			"description": "syntax highlighting using prismjs for Svelte, SvelteKit, TypeScript, and Fuz",
-			"version": "0.11.0",
-			"public": true,
-			"license": "MIT",
-			"type": "module",
-			"homepage": "https://code.fuz.dev/",
-			"repository": "https://github.com/ryanatkn/fuz_code",
-			"author": {
-				"name": "Ryan Atkinson",
-				"email": "mail@ryanatkn.com",
-				"url": "https://www.ryanatkn.com/"
-			},
-			"engines": {"node": ">=20.10"},
-			"scripts": {
-				"start": "gro dev",
-				"dev": "gro dev",
-				"build": "gro build",
-				"test": "gro test",
-				"deploy": "gro deploy"
-			},
-			"files": ["dist"],
-			"peerDependencies": {
-				"@ryanatkn/fuz": "*",
-				"prism-svelte": "*",
-				"prismjs": "*",
-				"svelte": "*"
-			},
-			"devDependencies": {
-				"@changesets/changelog-git": "^0.2.0",
-				"@ryanatkn/belt": "^0.20.5",
-				"@ryanatkn/eslint-config": "^0.1.0",
-				"@ryanatkn/fuz": "^0.91.3",
-				"@ryanatkn/gro": "^0.112.4",
-				"@sveltejs/adapter-static": "^3.0.1",
-				"@sveltejs/kit": "^2.5.2",
-				"@sveltejs/package": "^2.2.7",
-				"@sveltejs/vite-plugin-svelte": "^3.0.2",
-				"@types/prismjs": "^1.26.3",
-				"@typescript-eslint/eslint-plugin": "^7.1.0",
-				"@typescript-eslint/parser": "^7.1.0",
-				"eslint": "^8.57.0",
-				"eslint-plugin-svelte": "^2.35.1",
-				"prettier": "^3.2.5",
-				"prettier-plugin-svelte": "^3.2.2",
-				"prism-svelte": "^0.5.0",
-				"prismjs": "^1.29.0",
-				"svelte": "^4.2.12",
-				"svelte-check": "^3.6.6",
-				"tslib": "^2.6.2",
-				"typescript": "^5.3.3",
-				"uvu": "^0.5.6"
-			},
-			"eslintConfig": {"root": true, "extends": "@ryanatkn"},
-			"prettier": {
-				"plugins": ["prettier-plugin-svelte"],
-				"useTabs": true,
-				"printWidth": 100,
-				"singleQuote": true,
-				"bracketSpacing": false,
-				"overrides": [{"files": "package.json", "options": {"useTabs": false}}]
-			},
-			"exports": {
-				"./Code.svelte": {
-					"svelte": "./dist/Code.svelte",
-					"default": "./dist/Code.svelte",
-					"types": "./dist/Code.svelte.d.ts"
-				},
-				"./prism.css": {"default": "./dist/prism.css"},
-				"./remove_prism_css_vite_plugin.js": {
-					"default": "./dist/remove_prism_css_vite_plugin.js",
-					"types": "./dist/remove_prism_css_vite_plugin.d.ts"
-				}
-			}
-		},
-		"src_json": {
-			"name": "@ryanatkn/fuz_code",
-			"version": "0.11.0",
-			"modules": {
-				"./Code.svelte": {"path": "Code.svelte", "declarations": []},
-				"./prism.css": {"path": "prism.css", "declarations": []},
-				"./remove_prism_css_vite_plugin.js": {
-					"path": "remove_prism_css_vite_plugin.ts",
-					"declarations": [{"name": "remove_prism_css", "kind": "function"}]
-				}
-			}
-		},
-		"name": "@ryanatkn/fuz_code",
-		"repo_name": "fuz_code",
-		"repo_url": "https://github.com/ryanatkn/fuz_code",
-		"owner_name": "ryanatkn",
-		"homepage_url": "https://code.fuz.dev/",
-		"npm_url": "https://www.npmjs.com/package/@ryanatkn/fuz_code",
-		"changelog_url": "https://github.com/ryanatkn/fuz_code/blob/main/CHANGELOG.md",
-		"published": true,
-		"check_runs": {"status": "completed", "conclusion": "success"},
-		"pull_requests": []
-	},
-	{
-		"url": "https://mastodon.fuz.dev/",
-		"package_json": {
-			"name": "@ryanatkn/fuz_mastodon",
-			"description": "Mastodon components and helpers for Svelte, SvelteKit, and Fuz",
-			"version": "0.10.0",
-			"public": true,
-			"icon": "🦣",
-			"license": "MIT",
-			"homepage": "https://mastodon.fuz.dev/",
-			"repository": "https://github.com/ryanatkn/fuz_mastodon",
-			"author": {
-				"name": "Ryan Atkinson",
-				"email": "mail@ryanatkn.com",
-				"url": "https://www.ryanatkn.com/"
-			},
-			"type": "module",
-			"engines": {"node": ">=20.10"},
-			"scripts": {
-				"start": "gro dev",
-				"dev": "gro dev",
-				"build": "gro build",
-				"test": "gro test",
-				"deploy": "gro deploy"
-			},
-			"files": ["dist"],
-			"peerDependencies": {
-				"@ryanatkn/belt": "*",
-				"@ryanatkn/fuz": "*",
-				"@sveltejs/kit": "*",
-				"svelte": "*",
-				"svelte-intersect": "*"
-			},
-			"devDependencies": {
-				"@changesets/changelog-git": "^0.2.0",
-				"@ryanatkn/belt": "^0.20.6",
-				"@ryanatkn/eslint-config": "^0.1.0",
-				"@ryanatkn/fuz": "^0.91.3",
-				"@ryanatkn/fuz_code": "^0.11.0",
-				"@ryanatkn/gro": "^0.112.4",
-				"@sveltejs/adapter-static": "^3.0.1",
-				"@sveltejs/kit": "^2.5.3",
-				"@sveltejs/package": "^2.3.0",
-				"@sveltejs/vite-plugin-svelte": "^3.0.2",
-				"@typescript-eslint/eslint-plugin": "^7.1.1",
-				"@typescript-eslint/parser": "^7.1.1",
-				"date-fns": "^3.3.1",
-				"eslint": "^8.57.0",
-				"eslint-plugin-svelte": "^2.35.1",
-				"prettier": "^3.2.5",
-				"prettier-plugin-svelte": "^3.2.2",
-				"prism-svelte": "^0.5.0",
-				"prismjs": "^1.29.0",
-				"svelte": "^4.2.12",
-				"svelte-check": "^3.6.6",
-				"svelte-intersect": "^0.12.1",
-				"tslib": "^2.6.2",
-				"typescript": "^5.4.2",
-				"uvu": "^0.5.6"
-			},
-			"eslintConfig": {"root": true, "extends": "@ryanatkn", "rules": {"no-console": 1}},
-			"prettier": {
-				"plugins": ["prettier-plugin-svelte"],
-				"useTabs": true,
-				"printWidth": 100,
-				"singleQuote": true,
-				"bracketSpacing": false,
-				"overrides": [{"files": "package.json", "options": {"useTabs": false}}]
-			},
-			"exports": {
-				"./Mastodon_Status_Item.svelte": {
-					"svelte": "./dist/Mastodon_Status_Item.svelte",
-					"default": "./dist/Mastodon_Status_Item.svelte",
-					"types": "./dist/Mastodon_Status_Item.svelte.d.ts"
-				},
-				"./Mastodon_Status_Tree.svelte": {
-					"svelte": "./dist/Mastodon_Status_Tree.svelte",
-					"default": "./dist/Mastodon_Status_Tree.svelte",
-					"types": "./dist/Mastodon_Status_Tree.svelte.d.ts"
-				},
-				"./mastodon.js": {"default": "./dist/mastodon.js", "types": "./dist/mastodon.d.ts"},
-				"./storage.js": {"default": "./dist/storage.js", "types": "./dist/storage.d.ts"},
-				"./Toot_Input.svelte": {
-					"svelte": "./dist/Toot_Input.svelte",
-					"default": "./dist/Toot_Input.svelte",
-					"types": "./dist/Toot_Input.svelte.d.ts"
-				},
-				"./Toot_Loader.svelte": {
-					"svelte": "./dist/Toot_Loader.svelte",
-					"default": "./dist/Toot_Loader.svelte",
-					"types": "./dist/Toot_Loader.svelte.d.ts"
-				},
-				"./Toot.svelte": {
-					"svelte": "./dist/Toot.svelte",
-					"default": "./dist/Toot.svelte",
-					"types": "./dist/Toot.svelte.d.ts"
-				}
-			}
-		},
-		"src_json": {
-			"name": "@ryanatkn/fuz_mastodon",
-			"version": "0.10.0",
-			"modules": {
-				"./Mastodon_Status_Item.svelte": {
-					"path": "Mastodon_Status_Item.svelte",
-					"declarations": []
-				},
-				"./Mastodon_Status_Tree.svelte": {
-					"path": "Mastodon_Status_Tree.svelte",
-					"declarations": []
-				},
-				"./mastodon.js": {
-					"path": "mastodon.ts",
-					"declarations": [
-						{"name": "to_mastodon_status_url", "kind": "function"},
-						{"name": "to_mastodon_status_url_with_author", "kind": "function"},
-						{"name": "to_mastodon_status_url_with_users_author", "kind": "function"},
-						{"name": "to_mastodon_api_status_url", "kind": "function"},
-						{"name": "to_mastodon_api_status_context_url", "kind": "function"},
-						{"name": "to_mastodon_api_favourites_url", "kind": "function"},
-						{"name": "Mastodon_Status_Url", "kind": "type"},
-						{"name": "parse_mastodon_status_url", "kind": "function"},
-						{"name": "fetch_mastodon_status_context", "kind": "function"},
-						{"name": "fetch_mastodon_status", "kind": "function"},
-						{"name": "fetch_mastodon_favourites", "kind": "function"},
-						{"name": "Mastodon_Status_Context", "kind": "type"},
-						{"name": "Mastodon_Status", "kind": "type"},
-						{"name": "Mastodon_Favourite", "kind": "type"}
-					]
-				},
-				"./storage.js": {
-					"path": "storage.ts",
-					"declarations": [
-						{"name": "load_from_storage", "kind": "function"},
-						{"name": "set_in_storage", "kind": "function"}
-					]
-				},
-				"./Toot_Input.svelte": {"path": "Toot_Input.svelte", "declarations": []},
-				"./Toot_Loader.svelte": {"path": "Toot_Loader.svelte", "declarations": []},
-				"./Toot.svelte": {"path": "Toot.svelte", "declarations": []}
-			}
-		},
-		"name": "@ryanatkn/fuz_mastodon",
-		"repo_name": "fuz_mastodon",
-		"repo_url": "https://github.com/ryanatkn/fuz_mastodon",
-		"owner_name": "ryanatkn",
-		"homepage_url": "https://mastodon.fuz.dev/",
-		"npm_url": "https://www.npmjs.com/package/@ryanatkn/fuz_mastodon",
-		"changelog_url": "https://github.com/ryanatkn/fuz_mastodon/blob/main/CHANGELOG.md",
-		"published": true,
-		"check_runs": {"status": "completed", "conclusion": "success"},
-		"pull_requests": []
-	},
-	{
-		"url": "https://gitops.fuz.dev/",
-		"package_json": {
-			"name": "@ryanatkn/fuz_gitops",
-			"version": "0.23.0",
-			"description": "a tool for managing many repos",
-			"icon": "🪄",
-			"public": true,
-			"license": "MIT",
-			"homepage": "https://gitops.fuz.dev/",
-			"repository": "https://github.com/ryanatkn/fuz_gitops",
-			"type": "module",
-			"engines": {"node": ">=20.10"},
-			"scripts": {
-				"start": "gro dev",
-				"dev": "gro dev",
-				"build": "gro build",
-				"test": "gro test",
-				"deploy": "gro deploy"
-			},
-			"files": ["dist"],
-			"peerDependencies": {"@sveltejs/kit": "*", "svelte": "*"},
-			"devDependencies": {
-				"@changesets/changelog-git": "^0.2.0",
-				"@ryanatkn/belt": "^0.20.5",
-				"@ryanatkn/eslint-config": "^0.1.0",
-				"@ryanatkn/fuz": "^0.91.3",
-				"@ryanatkn/gro": "^0.112.4",
-				"@sveltejs/adapter-static": "^3.0.1",
-				"@sveltejs/kit": "^2.5.2",
-				"@sveltejs/package": "^2.2.7",
-				"@sveltejs/vite-plugin-svelte": "^3.0.2",
-				"@types/node": "^20.11.24",
-				"@typescript-eslint/eslint-plugin": "^7.1.0",
-				"@typescript-eslint/parser": "^7.1.0",
-				"eslint": "^8.57.0",
-				"eslint-plugin-svelte": "^2.35.1",
-				"prettier": "^3.2.5",
-				"prettier-plugin-svelte": "^3.2.2",
-				"svelte": "^4.2.12",
-				"svelte-check": "^3.6.6",
-				"tslib": "^2.6.2",
-				"typescript": "^5.3.3",
-				"uvu": "^0.5.6"
-			},
-			"eslintConfig": {"root": true, "extends": "@ryanatkn", "rules": {"no-console": 1}},
-			"prettier": {
-				"plugins": ["prettier-plugin-svelte"],
-				"useTabs": true,
-				"printWidth": 100,
-				"singleQuote": true,
-				"bracketSpacing": false,
-				"overrides": [{"files": "package.json", "options": {"useTabs": false}}]
-			},
-			"exports": {
-				"./Deployments_Table.svelte": {
-					"svelte": "./dist/Deployments_Table.svelte",
-					"default": "./dist/Deployments_Table.svelte",
-					"types": "./dist/Deployments_Table.svelte.d.ts"
-				},
-				"./Deployments_Tree_Nav.svelte": {
-					"svelte": "./dist/Deployments_Tree_Nav.svelte",
-					"default": "./dist/Deployments_Tree_Nav.svelte",
-					"types": "./dist/Deployments_Tree_Nav.svelte.d.ts"
-				},
-				"./Deployments_Tree.svelte": {
-					"svelte": "./dist/Deployments_Tree.svelte",
-					"default": "./dist/Deployments_Tree.svelte",
-					"types": "./dist/Deployments_Tree.svelte.d.ts"
-				},
-				"./deployments.json": {
-					"default": "./dist/deployments.json",
-					"types": "./dist/deployments.json.d.ts"
-				},
-				"./deployments.js": {
-					"default": "./dist/deployments.js",
-					"types": "./dist/deployments.d.ts"
-				},
-				"./fetch_deployments.js": {
-					"default": "./dist/fetch_deployments.js",
-					"types": "./dist/fetch_deployments.d.ts"
-				},
-				"./fs_fetch_value_cache.js": {
-					"default": "./dist/fs_fetch_value_cache.js",
-					"types": "./dist/fs_fetch_value_cache.d.ts"
-				},
-				"./github_helpers.js": {
-					"default": "./dist/github_helpers.js",
-					"types": "./dist/github_helpers.d.ts"
-				},
-				"./github.js": {"default": "./dist/github.js", "types": "./dist/github.d.ts"},
-				"./gitops.task.js": {
-					"default": "./dist/gitops.task.js",
-					"types": "./dist/gitops.task.d.ts"
-				},
-				"./Modules_Detail.svelte": {
-					"svelte": "./dist/Modules_Detail.svelte",
-					"default": "./dist/Modules_Detail.svelte",
-					"types": "./dist/Modules_Detail.svelte.d.ts"
-				},
-				"./Modules_Menu.svelte": {
-					"svelte": "./dist/Modules_Menu.svelte",
-					"default": "./dist/Modules_Menu.svelte",
-					"types": "./dist/Modules_Menu.svelte.d.ts"
-				},
-				"./Modules_Page.svelte": {
-					"svelte": "./dist/Modules_Page.svelte",
-					"default": "./dist/Modules_Page.svelte",
-					"types": "./dist/Modules_Page.svelte.d.ts"
-				},
-				"./Pull_Requests_Detail.svelte": {
-					"svelte": "./dist/Pull_Requests_Detail.svelte",
-					"default": "./dist/Pull_Requests_Detail.svelte",
-					"types": "./dist/Pull_Requests_Detail.svelte.d.ts"
-				},
-				"./Pull_Requests_Page.svelte": {
-					"svelte": "./dist/Pull_Requests_Page.svelte",
-					"default": "./dist/Pull_Requests_Page.svelte",
-					"types": "./dist/Pull_Requests_Page.svelte.d.ts"
-				},
-				"./run_gitops.task.js": {
-					"default": "./dist/run_gitops.task.js",
-					"types": "./dist/run_gitops.task.d.ts"
-				},
-				"./Table_Page.svelte": {
-					"svelte": "./dist/Table_Page.svelte",
-					"default": "./dist/Table_Page.svelte",
-					"types": "./dist/Table_Page.svelte.d.ts"
-				},
-				"./Tree_Item_Page.svelte": {
-					"svelte": "./dist/Tree_Item_Page.svelte",
-					"default": "./dist/Tree_Item_Page.svelte",
-					"types": "./dist/Tree_Item_Page.svelte.d.ts"
-				},
-				"./Tree_Page.svelte": {
-					"svelte": "./dist/Tree_Page.svelte",
-					"default": "./dist/Tree_Page.svelte",
-					"types": "./dist/Tree_Page.svelte.d.ts"
-				}
-			}
-		},
-		"src_json": {
-			"name": "@ryanatkn/fuz_gitops",
-			"version": "0.23.0",
-			"modules": {
-				"./Deployments_Table.svelte": {"path": "Deployments_Table.svelte", "declarations": []},
-				"./Deployments_Tree_Nav.svelte": {
-					"path": "Deployments_Tree_Nav.svelte",
-					"declarations": []
-				},
-				"./Deployments_Tree.svelte": {"path": "Deployments_Tree.svelte", "declarations": []},
-				"./deployments.json": {"path": "deployments.json", "declarations": []},
-				"./deployments.js": {
-					"path": "deployments.ts",
-					"declarations": [
-						{"name": "Deployments", "kind": "type"},
-						{"name": "set_deployments", "kind": "function"},
-						{"name": "get_deployments", "kind": "function"},
-						{"name": "parse_deployments", "kind": "function"}
-					]
-				},
-				"./fetch_deployments.js": {
-					"path": "fetch_deployments.ts",
-					"declarations": [
-						{"name": "Deployment", "kind": "type"},
-						{"name": "Fetched_Deployment", "kind": "type"},
-						{"name": "Unfetched_Deployment", "kind": "type"},
-						{"name": "fetch_deployments", "kind": "function"},
-						{"name": "fetch_package_json", "kind": "function"},
-						{"name": "fetch_src_json", "kind": "function"}
-					]
-				},
-				"./fs_fetch_value_cache.js": {
-					"path": "fs_fetch_value_cache.ts",
-					"declarations": [
-						{"name": "Fetch_Cache", "kind": "type"},
-						{"name": "create_fs_fetch_value_cache", "kind": "function"}
-					]
-				},
-				"./github_helpers.js": {
-					"path": "github_helpers.ts",
-					"declarations": [
-						{"name": "Filter_Pull_Request", "kind": "type"},
-						{"name": "Pull_Request_Meta", "kind": "type"},
-						{"name": "to_pull_requests", "kind": "function"},
-						{"name": "to_pull_url", "kind": "function"}
-					]
-				},
-				"./github.js": {
-					"path": "github.ts",
-					"declarations": [
-						{"name": "Github_Pull_Request", "kind": "variable"},
-						{"name": "Github_Pull_Requests", "kind": "variable"},
-						{"name": "fetch_github_pull_requests", "kind": "function"},
-						{"name": "Github_Check_Runs_Item", "kind": "variable"},
-						{"name": "Github_Check_Runs", "kind": "variable"},
-						{"name": "fetch_github_check_runs", "kind": "function"}
-					]
-				},
-				"./gitops.task.js": {
-					"path": "gitops.task.ts",
-					"declarations": [
-						{"name": "Args", "kind": "variable"},
-						{"name": "task", "kind": "variable"}
-					]
-				},
-				"./Modules_Detail.svelte": {"path": "Modules_Detail.svelte", "declarations": []},
-				"./Modules_Menu.svelte": {"path": "Modules_Menu.svelte", "declarations": []},
-				"./Modules_Page.svelte": {"path": "Modules_Page.svelte", "declarations": []},
-				"./Pull_Requests_Detail.svelte": {
-					"path": "Pull_Requests_Detail.svelte",
-					"declarations": []
-				},
-				"./Pull_Requests_Page.svelte": {"path": "Pull_Requests_Page.svelte", "declarations": []},
-				"./run_gitops.task.js": {"path": "run_gitops.task.ts", "declarations": []},
-				"./Table_Page.svelte": {"path": "Table_Page.svelte", "declarations": []},
-				"./Tree_Item_Page.svelte": {"path": "Tree_Item_Page.svelte", "declarations": []},
-				"./Tree_Page.svelte": {"path": "Tree_Page.svelte", "declarations": []}
-			}
-		},
-		"name": "@ryanatkn/fuz_gitops",
-		"repo_name": "fuz_gitops",
-		"repo_url": "https://github.com/ryanatkn/fuz_gitops",
-		"owner_name": "ryanatkn",
-		"homepage_url": "https://gitops.fuz.dev/",
-		"npm_url": "https://www.npmjs.com/package/@ryanatkn/fuz_gitops",
-		"changelog_url": "https://github.com/ryanatkn/fuz_gitops/blob/main/CHANGELOG.md",
-		"published": true,
-		"check_runs": {"status": "completed", "conclusion": "success"},
-		"pull_requests": []
-	},
-	{
-		"url": "https://www.ryanatkn.com/",
-		"package_json": {
-			"name": "ryanatkn.com",
-			"version": "0.0.1",
-			"description": "@ryanatkn's homepage and blog",
-			"icon": "💤",
-			"public": true,
-			"license": "MIT",
-			"homepage": "https://www.ryanatkn.com/",
-			"author": {
-				"name": "Ryan Atkinson",
-				"email": "mail@ryanatkn.com",
-				"url": "https://www.ryanatkn.com/"
-			},
-			"repository": {"type": "git", "url": "git+https://github.com/ryanatkn/ryanatkn.com.git"},
-			"bugs": {"url": "https://github.com/ryanatkn/ryanatkn.com/issues"},
-			"type": "module",
-			"engines": {"node": ">=20.10"},
-			"scripts": {
-				"start": "gro dev",
-				"dev": "gro dev",
-				"build": "gro build",
-				"test": "gro test",
-				"deploy": "gro deploy"
-			},
-			"files": ["dist"],
-			"devDependencies": {
-				"@prettier/plugin-xml": "^3.3.1",
-				"@ryanatkn/belt": "^0.20.8",
-				"@ryanatkn/eslint-config": "^0.1.0",
-				"@ryanatkn/fuz": "^0.91.3",
-				"@ryanatkn/fuz_gitops": "^0.23.0",
-				"@ryanatkn/fuz_mastodon": "^0.10.0",
-				"@ryanatkn/gro": "^0.112.4",
-				"@sveltejs/adapter-static": "^3.0.1",
-				"@sveltejs/kit": "^2.5.4",
-				"@sveltejs/vite-plugin-svelte": "^3.0.2",
-				"@types/node": "^20.11.30",
-				"@typescript-eslint/eslint-plugin": "^7.3.1",
-				"@typescript-eslint/parser": "^7.3.1",
-				"date-fns": "^3.6.0",
-				"eslint": "^8.57.0",
-				"eslint-plugin-svelte": "^2.35.1",
-				"prettier": "^3.2.5",
-				"prettier-plugin-svelte": "^3.2.2",
-				"svelte": "^4.2.12",
-				"svelte-check": "^3.6.8",
-				"tslib": "^2.6.2",
-				"typescript": "^5.4.2",
-				"uvu": "^0.5.6"
-			},
-			"eslintConfig": {"root": true, "extends": "@ryanatkn", "rules": {"no-console": 1}},
-			"prettier": {
-				"plugins": ["prettier-plugin-svelte", "@prettier/plugin-xml"],
-				"useTabs": true,
-				"printWidth": 100,
-				"singleQuote": true,
-				"bracketSpacing": false,
-				"overrides": [{"files": "package.json", "options": {"useTabs": false}}]
-			},
-			"exports": {
-				"./blog_helpers.js": {
-					"default": "./dist/blog_helpers.js",
-					"types": "./dist/blog_helpers.d.ts"
-				},
-				"./blog.gen.js": {"default": "./dist/blog.gen.js", "types": "./dist/blog.gen.d.ts"},
-				"./blog.js": {"default": "./dist/blog.js", "types": "./dist/blog.d.ts"},
-				"./Blog_Post.svelte": {
-					"svelte": "./dist/Blog_Post.svelte",
-					"default": "./dist/Blog_Post.svelte",
-					"types": "./dist/Blog_Post.svelte.d.ts"
-				},
-				"./Blog_Post_Footer.svelte": {
-					"svelte": "./dist/Blog_Post_Footer.svelte",
-					"default": "./dist/Blog_Post_Footer.svelte",
-					"types": "./dist/Blog_Post_Footer.svelte.d.ts"
-				},
-				"./Blog_Post_Header.svelte": {
-					"svelte": "./dist/Blog_Post_Header.svelte",
-					"default": "./dist/Blog_Post_Header.svelte",
-					"types": "./dist/Blog_Post_Header.svelte.d.ts"
-				},
-				"./Favicon.svelte": {
-					"svelte": "./dist/Favicon.svelte",
-					"default": "./dist/Favicon.svelte",
-					"types": "./dist/Favicon.svelte.d.ts"
-				},
-				"./feed.js": {"default": "./dist/feed.js", "types": "./dist/feed.d.ts"},
-				"./Feed_Item_Date.svelte": {
-					"svelte": "./dist/Feed_Item_Date.svelte",
-					"default": "./dist/Feed_Item_Date.svelte",
-					"types": "./dist/Feed_Item_Date.svelte.d.ts"
-				},
-				"./Hash_Link.svelte": {
-					"svelte": "./dist/Hash_Link.svelte",
-					"default": "./dist/Hash_Link.svelte",
-					"types": "./dist/Hash_Link.svelte.d.ts"
-				},
-				"./post.task.js": {"default": "./dist/post.task.js", "types": "./dist/post.task.d.ts"},
-				"./util.js": {"default": "./dist/util.js", "types": "./dist/util.d.ts"}
-			}
-		},
-		"src_json": {
-			"name": "ryanatkn.com",
-			"version": "0.0.1",
-			"modules": {
-				"./blog_helpers.js": {
-					"path": "blog_helpers.ts",
-					"declarations": [
-						{"name": "resolve_blog_post_item", "kind": "function"},
-						{"name": "collect_blog_post_ids", "kind": "function"},
-						{"name": "load_blog_post_modules", "kind": "function"},
-						{"name": "to_next_blog_post_id", "kind": "function"},
-						{"name": "to_blog_post_path", "kind": "function"}
-					]
-				},
-				"./blog.gen.js": {
-					"path": "blog.gen.ts",
-					"declarations": [{"name": "gen", "kind": "variable"}]
-				},
-				"./blog.js": {
-					"path": "blog.ts",
-					"declarations": [
-						{"name": "Blog_Feed_Data", "kind": "type"},
-						{"name": "Blog_Feed", "kind": "type"},
-						{"name": "Blog_Post_Data", "kind": "type"},
-						{"name": "Blog_Module", "kind": "type"},
-						{"name": "Blog_Post_Module", "kind": "type"},
-						{"name": "Blog_Post_Id", "kind": "type"},
-						{"name": "Blog_Post_Item", "kind": "type"},
-						{"name": "get_blog_feed", "kind": "function"},
-						{"name": "set_blog_feed", "kind": "function"}
-					]
-				},
-				"./Blog_Post.svelte": {"path": "Blog_Post.svelte", "declarations": []},
-				"./Blog_Post_Footer.svelte": {"path": "Blog_Post_Footer.svelte", "declarations": []},
-				"./Blog_Post_Header.svelte": {"path": "Blog_Post_Header.svelte", "declarations": []},
-				"./Favicon.svelte": {"path": "Favicon.svelte", "declarations": []},
-				"./feed.js": {
-					"path": "feed.ts",
-					"declarations": [
-						{"name": "Feed", "kind": "type"},
-						{"name": "Feed_Item", "kind": "type"},
-						{"name": "create_atom_feed", "kind": "function"}
-					]
-				},
-				"./Feed_Item_Date.svelte": {"path": "Feed_Item_Date.svelte", "declarations": []},
-				"./Hash_Link.svelte": {"path": "Hash_Link.svelte", "declarations": []},
-				"./post.task.js": {
-					"path": "post.task.ts",
-					"declarations": [{"name": "task", "kind": "variable"}]
-				},
-				"./util.js": {
-					"path": "util.ts",
-					"declarations": [
-						{"name": "format_date", "kind": "function"},
-						{"name": "to_pathname", "kind": "function"}
-					]
-				}
-			}
-		},
-		"name": "ryanatkn.com",
-		"repo_name": "ryanatkn.com",
-		"repo_url": "https://github.com/ryanatkn/ryanatkn.com",
-		"owner_name": "ryanatkn",
-		"homepage_url": "https://www.ryanatkn.com/",
-		"npm_url": null,
-		"changelog_url": null,
-		"published": false,
-		"check_runs": {"status": "completed", "conclusion": "success"},
-		"pull_requests": []
-	},
-	{
 		"url": "https://gro.ryanatkn.com/",
 		"package_json": {
 			"name": "@ryanatkn/gro",
@@ -1473,7 +881,7 @@
 			],
 			"files": ["dist"],
 			"dependencies": {
-				"@ryanatkn/belt": "^0.20.8",
+				"@ryanatkn/belt": "^0.20.9",
 				"chokidar": "^3.6.0",
 				"dotenv": "^16.4.5",
 				"es-module-lexer": "^1.4.2",
@@ -1491,7 +899,7 @@
 				"@changesets/changelog-git": "^0.2.0",
 				"@changesets/types": "^6.0.0",
 				"@ryanatkn/eslint-config": "^0.1.0",
-				"@ryanatkn/fuz": "^0.91.3",
+				"@ryanatkn/fuz": "^0.91.5",
 				"@sveltejs/adapter-static": "^3.0.1",
 				"@sveltejs/kit": "^2.5.4",
 				"@sveltejs/package": "^2.3.0",
@@ -1505,7 +913,7 @@
 				"eslint-plugin-svelte": "^2.35.1",
 				"svelte": "^4.2.12",
 				"svelte-check": "^3.6.8",
-				"typescript": "^5.4.2",
+				"typescript": "^5.4.3",
 				"uvu": "^0.5.6"
 			},
 			"eslintConfig": {"root": true, "extends": "@ryanatkn", "rules": {"no-console": 1}},
@@ -2394,12 +1802,77 @@
 		"published": true,
 		"check_runs": {"status": "completed", "conclusion": "success"},
 		"pull_requests": [
+			{"number": 454, "title": "upgrade to svelte5", "user": {"login": "ryanatkn"}, "draft": false},
 			{
 				"number": 452,
 				"title": "enable running tasks from outside `src/lib`",
 				"user": {"login": "ryanatkn"},
 				"draft": false
 			}
+		]
+	},
+	{
+		"url": "https://template.fuz.dev/",
+		"package_json": {
+			"name": "@ryanatkn/fuz_template",
+			"version": "0.0.1",
+			"description": "a static web app and Node library template with TypeScript, Svelte, SvelteKit, Vite, esbuild, Fuz, and Gro",
+			"icon": "❄",
+			"public": true,
+			"homepage": "https://template.fuz.dev/",
+			"repository": "https://github.com/ryanatkn/fuz_template",
+			"type": "module",
+			"engines": {"node": ">=20.10"},
+			"scripts": {
+				"start": "gro dev",
+				"dev": "gro dev",
+				"build": "gro build",
+				"test": "gro test",
+				"deploy": "gro deploy"
+			},
+			"files": ["dist"],
+			"devDependencies": {
+				"@ryanatkn/belt": "^0.20.9",
+				"@ryanatkn/eslint-config": "^0.1.0",
+				"@ryanatkn/fuz": "^0.91.5",
+				"@ryanatkn/gro": "^0.112.5",
+				"@sveltejs/adapter-static": "^3.0.1",
+				"@sveltejs/kit": "^2.5.4",
+				"@sveltejs/vite-plugin-svelte": "^3.0.2",
+				"@typescript-eslint/eslint-plugin": "^7.3.1",
+				"@typescript-eslint/parser": "^7.3.1",
+				"eslint": "^8.57.0",
+				"eslint-plugin-svelte": "^2.35.1",
+				"prettier": "^3.2.5",
+				"prettier-plugin-svelte": "^3.2.2",
+				"svelte": "^4.2.12",
+				"svelte-check": "^3.6.8",
+				"tslib": "^2.6.2",
+				"typescript": "^5.4.3",
+				"uvu": "^0.5.6"
+			},
+			"eslintConfig": {"root": true, "extends": "@ryanatkn"},
+			"prettier": {
+				"plugins": ["prettier-plugin-svelte"],
+				"useTabs": true,
+				"printWidth": 100,
+				"singleQuote": true,
+				"bracketSpacing": false,
+				"overrides": [{"files": "package.json", "options": {"useTabs": false}}]
+			}
+		},
+		"src_json": {"name": "@ryanatkn/fuz_template", "version": "0.0.1"},
+		"name": "@ryanatkn/fuz_template",
+		"repo_name": "fuz_template",
+		"repo_url": "https://github.com/ryanatkn/fuz_template",
+		"owner_name": "ryanatkn",
+		"homepage_url": "https://template.fuz.dev/",
+		"npm_url": null,
+		"changelog_url": null,
+		"published": false,
+		"check_runs": {"status": "completed", "conclusion": "success"},
+		"pull_requests": [
+			{"number": 18, "title": "upgrade to svelte5", "user": {"login": "ryanatkn"}, "draft": false}
 		]
 	},
 	{
@@ -2807,6 +2280,497 @@
 		"homepage_url": "https://belt.ryanatkn.com/",
 		"npm_url": "https://www.npmjs.com/package/@ryanatkn/belt",
 		"changelog_url": "https://github.com/ryanatkn/belt/blob/main/CHANGELOG.md",
+		"published": true,
+		"check_runs": {"status": "completed", "conclusion": "success"},
+		"pull_requests": [
+			{"number": 28, "title": "upgrade to svelte5", "user": {"login": "ryanatkn"}, "draft": false}
+		]
+	},
+	{
+		"url": "https://mastodon.fuz.dev/",
+		"package_json": {
+			"name": "@ryanatkn/fuz_mastodon",
+			"description": "Mastodon components and helpers for Svelte, SvelteKit, and Fuz",
+			"version": "0.10.0",
+			"public": true,
+			"icon": "🦣",
+			"license": "MIT",
+			"homepage": "https://mastodon.fuz.dev/",
+			"repository": "https://github.com/ryanatkn/fuz_mastodon",
+			"author": {
+				"name": "Ryan Atkinson",
+				"email": "mail@ryanatkn.com",
+				"url": "https://www.ryanatkn.com/"
+			},
+			"type": "module",
+			"engines": {"node": ">=20.10"},
+			"scripts": {
+				"start": "gro dev",
+				"dev": "gro dev",
+				"build": "gro build",
+				"test": "gro test",
+				"deploy": "gro deploy"
+			},
+			"files": ["dist"],
+			"peerDependencies": {
+				"@ryanatkn/belt": "*",
+				"@ryanatkn/fuz": "*",
+				"@sveltejs/kit": "*",
+				"svelte": "*",
+				"svelte-intersect": "*"
+			},
+			"devDependencies": {
+				"@changesets/changelog-git": "^0.2.0",
+				"@ryanatkn/belt": "^0.20.6",
+				"@ryanatkn/eslint-config": "^0.1.0",
+				"@ryanatkn/fuz": "^0.91.3",
+				"@ryanatkn/fuz_code": "^0.11.0",
+				"@ryanatkn/gro": "^0.112.4",
+				"@sveltejs/adapter-static": "^3.0.1",
+				"@sveltejs/kit": "^2.5.3",
+				"@sveltejs/package": "^2.3.0",
+				"@sveltejs/vite-plugin-svelte": "^3.0.2",
+				"@typescript-eslint/eslint-plugin": "^7.1.1",
+				"@typescript-eslint/parser": "^7.1.1",
+				"date-fns": "^3.3.1",
+				"eslint": "^8.57.0",
+				"eslint-plugin-svelte": "^2.35.1",
+				"prettier": "^3.2.5",
+				"prettier-plugin-svelte": "^3.2.2",
+				"prism-svelte": "^0.5.0",
+				"prismjs": "^1.29.0",
+				"svelte": "^4.2.12",
+				"svelte-check": "^3.6.6",
+				"svelte-intersect": "^0.12.1",
+				"tslib": "^2.6.2",
+				"typescript": "^5.4.2",
+				"uvu": "^0.5.6"
+			},
+			"eslintConfig": {"root": true, "extends": "@ryanatkn", "rules": {"no-console": 1}},
+			"prettier": {
+				"plugins": ["prettier-plugin-svelte"],
+				"useTabs": true,
+				"printWidth": 100,
+				"singleQuote": true,
+				"bracketSpacing": false,
+				"overrides": [{"files": "package.json", "options": {"useTabs": false}}]
+			},
+			"exports": {
+				"./Mastodon_Status_Item.svelte": {
+					"svelte": "./dist/Mastodon_Status_Item.svelte",
+					"default": "./dist/Mastodon_Status_Item.svelte",
+					"types": "./dist/Mastodon_Status_Item.svelte.d.ts"
+				},
+				"./Mastodon_Status_Tree.svelte": {
+					"svelte": "./dist/Mastodon_Status_Tree.svelte",
+					"default": "./dist/Mastodon_Status_Tree.svelte",
+					"types": "./dist/Mastodon_Status_Tree.svelte.d.ts"
+				},
+				"./mastodon.js": {"default": "./dist/mastodon.js", "types": "./dist/mastodon.d.ts"},
+				"./storage.js": {"default": "./dist/storage.js", "types": "./dist/storage.d.ts"},
+				"./Toot_Input.svelte": {
+					"svelte": "./dist/Toot_Input.svelte",
+					"default": "./dist/Toot_Input.svelte",
+					"types": "./dist/Toot_Input.svelte.d.ts"
+				},
+				"./Toot_Loader.svelte": {
+					"svelte": "./dist/Toot_Loader.svelte",
+					"default": "./dist/Toot_Loader.svelte",
+					"types": "./dist/Toot_Loader.svelte.d.ts"
+				},
+				"./Toot.svelte": {
+					"svelte": "./dist/Toot.svelte",
+					"default": "./dist/Toot.svelte",
+					"types": "./dist/Toot.svelte.d.ts"
+				}
+			}
+		},
+		"src_json": {
+			"name": "@ryanatkn/fuz_mastodon",
+			"version": "0.10.0",
+			"modules": {
+				"./Mastodon_Status_Item.svelte": {
+					"path": "Mastodon_Status_Item.svelte",
+					"declarations": []
+				},
+				"./Mastodon_Status_Tree.svelte": {
+					"path": "Mastodon_Status_Tree.svelte",
+					"declarations": []
+				},
+				"./mastodon.js": {
+					"path": "mastodon.ts",
+					"declarations": [
+						{"name": "to_mastodon_status_url", "kind": "function"},
+						{"name": "to_mastodon_status_url_with_author", "kind": "function"},
+						{"name": "to_mastodon_status_url_with_users_author", "kind": "function"},
+						{"name": "to_mastodon_api_status_url", "kind": "function"},
+						{"name": "to_mastodon_api_status_context_url", "kind": "function"},
+						{"name": "to_mastodon_api_favourites_url", "kind": "function"},
+						{"name": "Mastodon_Status_Url", "kind": "type"},
+						{"name": "parse_mastodon_status_url", "kind": "function"},
+						{"name": "fetch_mastodon_status_context", "kind": "function"},
+						{"name": "fetch_mastodon_status", "kind": "function"},
+						{"name": "fetch_mastodon_favourites", "kind": "function"},
+						{"name": "Mastodon_Status_Context", "kind": "type"},
+						{"name": "Mastodon_Status", "kind": "type"},
+						{"name": "Mastodon_Favourite", "kind": "type"}
+					]
+				},
+				"./storage.js": {
+					"path": "storage.ts",
+					"declarations": [
+						{"name": "load_from_storage", "kind": "function"},
+						{"name": "set_in_storage", "kind": "function"}
+					]
+				},
+				"./Toot_Input.svelte": {"path": "Toot_Input.svelte", "declarations": []},
+				"./Toot_Loader.svelte": {"path": "Toot_Loader.svelte", "declarations": []},
+				"./Toot.svelte": {"path": "Toot.svelte", "declarations": []}
+			}
+		},
+		"name": "@ryanatkn/fuz_mastodon",
+		"repo_name": "fuz_mastodon",
+		"repo_url": "https://github.com/ryanatkn/fuz_mastodon",
+		"owner_name": "ryanatkn",
+		"homepage_url": "https://mastodon.fuz.dev/",
+		"npm_url": "https://www.npmjs.com/package/@ryanatkn/fuz_mastodon",
+		"changelog_url": "https://github.com/ryanatkn/fuz_mastodon/blob/main/CHANGELOG.md",
+		"published": true,
+		"check_runs": {"status": "completed", "conclusion": "success"},
+		"pull_requests": [
+			{"number": 3, "title": "upgrade to svelte5", "user": {"login": "ryanatkn"}, "draft": false}
+		]
+	},
+	{
+		"url": "https://code.fuz.dev/",
+		"package_json": {
+			"name": "@ryanatkn/fuz_code",
+			"description": "syntax highlighting using prismjs for Svelte, SvelteKit, TypeScript, and Fuz",
+			"version": "0.11.0",
+			"public": true,
+			"license": "MIT",
+			"type": "module",
+			"homepage": "https://code.fuz.dev/",
+			"repository": "https://github.com/ryanatkn/fuz_code",
+			"author": {
+				"name": "Ryan Atkinson",
+				"email": "mail@ryanatkn.com",
+				"url": "https://www.ryanatkn.com/"
+			},
+			"engines": {"node": ">=20.10"},
+			"scripts": {
+				"start": "gro dev",
+				"dev": "gro dev",
+				"build": "gro build",
+				"test": "gro test",
+				"deploy": "gro deploy"
+			},
+			"files": ["dist"],
+			"peerDependencies": {
+				"@ryanatkn/fuz": "*",
+				"prism-svelte": "*",
+				"prismjs": "*",
+				"svelte": "*"
+			},
+			"devDependencies": {
+				"@changesets/changelog-git": "^0.2.0",
+				"@ryanatkn/belt": "^0.20.5",
+				"@ryanatkn/eslint-config": "^0.1.0",
+				"@ryanatkn/fuz": "^0.91.3",
+				"@ryanatkn/gro": "^0.112.4",
+				"@sveltejs/adapter-static": "^3.0.1",
+				"@sveltejs/kit": "^2.5.2",
+				"@sveltejs/package": "^2.2.7",
+				"@sveltejs/vite-plugin-svelte": "^3.0.2",
+				"@types/prismjs": "^1.26.3",
+				"@typescript-eslint/eslint-plugin": "^7.1.0",
+				"@typescript-eslint/parser": "^7.1.0",
+				"eslint": "^8.57.0",
+				"eslint-plugin-svelte": "^2.35.1",
+				"prettier": "^3.2.5",
+				"prettier-plugin-svelte": "^3.2.2",
+				"prism-svelte": "^0.5.0",
+				"prismjs": "^1.29.0",
+				"svelte": "^4.2.12",
+				"svelte-check": "^3.6.6",
+				"tslib": "^2.6.2",
+				"typescript": "^5.3.3",
+				"uvu": "^0.5.6"
+			},
+			"eslintConfig": {"root": true, "extends": "@ryanatkn"},
+			"prettier": {
+				"plugins": ["prettier-plugin-svelte"],
+				"useTabs": true,
+				"printWidth": 100,
+				"singleQuote": true,
+				"bracketSpacing": false,
+				"overrides": [{"files": "package.json", "options": {"useTabs": false}}]
+			},
+			"exports": {
+				"./Code.svelte": {
+					"svelte": "./dist/Code.svelte",
+					"default": "./dist/Code.svelte",
+					"types": "./dist/Code.svelte.d.ts"
+				},
+				"./prism.css": {"default": "./dist/prism.css"},
+				"./remove_prism_css_vite_plugin.js": {
+					"default": "./dist/remove_prism_css_vite_plugin.js",
+					"types": "./dist/remove_prism_css_vite_plugin.d.ts"
+				}
+			}
+		},
+		"src_json": {
+			"name": "@ryanatkn/fuz_code",
+			"version": "0.11.0",
+			"modules": {
+				"./Code.svelte": {"path": "Code.svelte", "declarations": []},
+				"./prism.css": {"path": "prism.css", "declarations": []},
+				"./remove_prism_css_vite_plugin.js": {
+					"path": "remove_prism_css_vite_plugin.ts",
+					"declarations": [{"name": "remove_prism_css", "kind": "function"}]
+				}
+			}
+		},
+		"name": "@ryanatkn/fuz_code",
+		"repo_name": "fuz_code",
+		"repo_url": "https://github.com/ryanatkn/fuz_code",
+		"owner_name": "ryanatkn",
+		"homepage_url": "https://code.fuz.dev/",
+		"npm_url": "https://www.npmjs.com/package/@ryanatkn/fuz_code",
+		"changelog_url": "https://github.com/ryanatkn/fuz_code/blob/main/CHANGELOG.md",
+		"published": true,
+		"check_runs": {"status": "completed", "conclusion": "success"},
+		"pull_requests": [
+			{"number": 4, "title": "upgrade to svelte5", "user": {"login": "ryanatkn"}, "draft": false}
+		]
+	},
+	{
+		"url": "https://gitops.fuz.dev/",
+		"package_json": {
+			"name": "@ryanatkn/fuz_gitops",
+			"version": "0.23.1",
+			"description": "a tool for managing many repos",
+			"icon": "🪄",
+			"public": true,
+			"license": "MIT",
+			"homepage": "https://gitops.fuz.dev/",
+			"repository": "https://github.com/ryanatkn/fuz_gitops",
+			"type": "module",
+			"engines": {"node": ">=20.10"},
+			"scripts": {
+				"start": "gro dev",
+				"dev": "gro dev",
+				"build": "gro build",
+				"test": "gro test",
+				"deploy": "gro deploy"
+			},
+			"files": ["dist"],
+			"peerDependencies": {"@sveltejs/kit": "*", "svelte": "*"},
+			"devDependencies": {
+				"@changesets/changelog-git": "^0.2.0",
+				"@ryanatkn/belt": "^0.20.5",
+				"@ryanatkn/eslint-config": "^0.1.0",
+				"@ryanatkn/fuz": "^0.91.3",
+				"@ryanatkn/gro": "^0.112.4",
+				"@sveltejs/adapter-static": "^3.0.1",
+				"@sveltejs/kit": "^2.5.2",
+				"@sveltejs/package": "^2.2.7",
+				"@sveltejs/vite-plugin-svelte": "^3.0.2",
+				"@types/node": "^20.11.24",
+				"@typescript-eslint/eslint-plugin": "^7.1.0",
+				"@typescript-eslint/parser": "^7.1.0",
+				"eslint": "^8.57.0",
+				"eslint-plugin-svelte": "^2.35.1",
+				"prettier": "^3.2.5",
+				"prettier-plugin-svelte": "^3.2.2",
+				"svelte": "^4.2.12",
+				"svelte-check": "^3.6.6",
+				"tslib": "^2.6.2",
+				"typescript": "^5.3.3",
+				"uvu": "^0.5.6"
+			},
+			"eslintConfig": {"root": true, "extends": "@ryanatkn", "rules": {"no-console": 1}},
+			"prettier": {
+				"plugins": ["prettier-plugin-svelte"],
+				"useTabs": true,
+				"printWidth": 100,
+				"singleQuote": true,
+				"bracketSpacing": false,
+				"overrides": [{"files": "package.json", "options": {"useTabs": false}}]
+			},
+			"exports": {
+				"./Deployments_Table.svelte": {
+					"svelte": "./dist/Deployments_Table.svelte",
+					"default": "./dist/Deployments_Table.svelte",
+					"types": "./dist/Deployments_Table.svelte.d.ts"
+				},
+				"./Deployments_Tree_Nav.svelte": {
+					"svelte": "./dist/Deployments_Tree_Nav.svelte",
+					"default": "./dist/Deployments_Tree_Nav.svelte",
+					"types": "./dist/Deployments_Tree_Nav.svelte.d.ts"
+				},
+				"./Deployments_Tree.svelte": {
+					"svelte": "./dist/Deployments_Tree.svelte",
+					"default": "./dist/Deployments_Tree.svelte",
+					"types": "./dist/Deployments_Tree.svelte.d.ts"
+				},
+				"./deployments.json": {
+					"default": "./dist/deployments.json",
+					"types": "./dist/deployments.json.d.ts"
+				},
+				"./deployments.js": {
+					"default": "./dist/deployments.js",
+					"types": "./dist/deployments.d.ts"
+				},
+				"./fetch_deployments.js": {
+					"default": "./dist/fetch_deployments.js",
+					"types": "./dist/fetch_deployments.d.ts"
+				},
+				"./fs_fetch_value_cache.js": {
+					"default": "./dist/fs_fetch_value_cache.js",
+					"types": "./dist/fs_fetch_value_cache.d.ts"
+				},
+				"./github_helpers.js": {
+					"default": "./dist/github_helpers.js",
+					"types": "./dist/github_helpers.d.ts"
+				},
+				"./github.js": {"default": "./dist/github.js", "types": "./dist/github.d.ts"},
+				"./gitops.task.js": {
+					"default": "./dist/gitops.task.js",
+					"types": "./dist/gitops.task.d.ts"
+				},
+				"./Modules_Detail.svelte": {
+					"svelte": "./dist/Modules_Detail.svelte",
+					"default": "./dist/Modules_Detail.svelte",
+					"types": "./dist/Modules_Detail.svelte.d.ts"
+				},
+				"./Modules_Menu.svelte": {
+					"svelte": "./dist/Modules_Menu.svelte",
+					"default": "./dist/Modules_Menu.svelte",
+					"types": "./dist/Modules_Menu.svelte.d.ts"
+				},
+				"./Modules_Page.svelte": {
+					"svelte": "./dist/Modules_Page.svelte",
+					"default": "./dist/Modules_Page.svelte",
+					"types": "./dist/Modules_Page.svelte.d.ts"
+				},
+				"./Pull_Requests_Detail.svelte": {
+					"svelte": "./dist/Pull_Requests_Detail.svelte",
+					"default": "./dist/Pull_Requests_Detail.svelte",
+					"types": "./dist/Pull_Requests_Detail.svelte.d.ts"
+				},
+				"./Pull_Requests_Page.svelte": {
+					"svelte": "./dist/Pull_Requests_Page.svelte",
+					"default": "./dist/Pull_Requests_Page.svelte",
+					"types": "./dist/Pull_Requests_Page.svelte.d.ts"
+				},
+				"./run_gitops.task.js": {
+					"default": "./dist/run_gitops.task.js",
+					"types": "./dist/run_gitops.task.d.ts"
+				},
+				"./Table_Page.svelte": {
+					"svelte": "./dist/Table_Page.svelte",
+					"default": "./dist/Table_Page.svelte",
+					"types": "./dist/Table_Page.svelte.d.ts"
+				},
+				"./Tree_Item_Page.svelte": {
+					"svelte": "./dist/Tree_Item_Page.svelte",
+					"default": "./dist/Tree_Item_Page.svelte",
+					"types": "./dist/Tree_Item_Page.svelte.d.ts"
+				},
+				"./Tree_Page.svelte": {
+					"svelte": "./dist/Tree_Page.svelte",
+					"default": "./dist/Tree_Page.svelte",
+					"types": "./dist/Tree_Page.svelte.d.ts"
+				}
+			}
+		},
+		"src_json": {
+			"name": "@ryanatkn/fuz_gitops",
+			"version": "0.23.1",
+			"modules": {
+				"./Deployments_Table.svelte": {"path": "Deployments_Table.svelte", "declarations": []},
+				"./Deployments_Tree_Nav.svelte": {
+					"path": "Deployments_Tree_Nav.svelte",
+					"declarations": []
+				},
+				"./Deployments_Tree.svelte": {"path": "Deployments_Tree.svelte", "declarations": []},
+				"./deployments.json": {"path": "deployments.json", "declarations": []},
+				"./deployments.js": {
+					"path": "deployments.ts",
+					"declarations": [
+						{"name": "Deployments", "kind": "type"},
+						{"name": "set_deployments", "kind": "function"},
+						{"name": "get_deployments", "kind": "function"},
+						{"name": "parse_deployments", "kind": "function"}
+					]
+				},
+				"./fetch_deployments.js": {
+					"path": "fetch_deployments.ts",
+					"declarations": [
+						{"name": "Deployment", "kind": "type"},
+						{"name": "Fetched_Deployment", "kind": "type"},
+						{"name": "Unfetched_Deployment", "kind": "type"},
+						{"name": "fetch_deployments", "kind": "function"},
+						{"name": "fetch_package_json", "kind": "function"},
+						{"name": "fetch_src_json", "kind": "function"}
+					]
+				},
+				"./fs_fetch_value_cache.js": {
+					"path": "fs_fetch_value_cache.ts",
+					"declarations": [
+						{"name": "Fetch_Cache", "kind": "type"},
+						{"name": "create_fs_fetch_value_cache", "kind": "function"}
+					]
+				},
+				"./github_helpers.js": {
+					"path": "github_helpers.ts",
+					"declarations": [
+						{"name": "Filter_Pull_Request", "kind": "type"},
+						{"name": "Pull_Request_Meta", "kind": "type"},
+						{"name": "to_pull_requests", "kind": "function"},
+						{"name": "to_pull_url", "kind": "function"}
+					]
+				},
+				"./github.js": {
+					"path": "github.ts",
+					"declarations": [
+						{"name": "Github_Pull_Request", "kind": "variable"},
+						{"name": "Github_Pull_Requests", "kind": "variable"},
+						{"name": "fetch_github_pull_requests", "kind": "function"},
+						{"name": "Github_Check_Runs_Item", "kind": "variable"},
+						{"name": "Github_Check_Runs", "kind": "variable"},
+						{"name": "fetch_github_check_runs", "kind": "function"}
+					]
+				},
+				"./gitops.task.js": {
+					"path": "gitops.task.ts",
+					"declarations": [
+						{"name": "Args", "kind": "variable"},
+						{"name": "task", "kind": "variable"}
+					]
+				},
+				"./Modules_Detail.svelte": {"path": "Modules_Detail.svelte", "declarations": []},
+				"./Modules_Menu.svelte": {"path": "Modules_Menu.svelte", "declarations": []},
+				"./Modules_Page.svelte": {"path": "Modules_Page.svelte", "declarations": []},
+				"./Pull_Requests_Detail.svelte": {
+					"path": "Pull_Requests_Detail.svelte",
+					"declarations": []
+				},
+				"./Pull_Requests_Page.svelte": {"path": "Pull_Requests_Page.svelte", "declarations": []},
+				"./run_gitops.task.js": {"path": "run_gitops.task.ts", "declarations": []},
+				"./Table_Page.svelte": {"path": "Table_Page.svelte", "declarations": []},
+				"./Tree_Item_Page.svelte": {"path": "Tree_Item_Page.svelte", "declarations": []},
+				"./Tree_Page.svelte": {"path": "Tree_Page.svelte", "declarations": []}
+			}
+		},
+		"name": "@ryanatkn/fuz_gitops",
+		"repo_name": "fuz_gitops",
+		"repo_url": "https://github.com/ryanatkn/fuz_gitops",
+		"owner_name": "ryanatkn",
+		"homepage_url": "https://gitops.fuz.dev/",
+		"npm_url": "https://www.npmjs.com/package/@ryanatkn/fuz_gitops",
+		"changelog_url": "https://github.com/ryanatkn/fuz_gitops/blob/main/CHANGELOG.md",
 		"published": true,
 		"check_runs": {"status": "completed", "conclusion": "success"},
 		"pull_requests": []
@@ -3659,5 +3623,180 @@
 		"published": true,
 		"check_runs": {"status": "completed", "conclusion": "success"},
 		"pull_requests": []
+	},
+	{
+		"url": "https://www.ryanatkn.com/",
+		"package_json": {
+			"name": "ryanatkn.com",
+			"version": "0.0.1",
+			"description": "@ryanatkn's homepage and blog",
+			"icon": "💤",
+			"public": true,
+			"license": "MIT",
+			"homepage": "https://www.ryanatkn.com/",
+			"author": {
+				"name": "Ryan Atkinson",
+				"email": "mail@ryanatkn.com",
+				"url": "https://www.ryanatkn.com/"
+			},
+			"repository": {"type": "git", "url": "git+https://github.com/ryanatkn/ryanatkn.com.git"},
+			"bugs": {"url": "https://github.com/ryanatkn/ryanatkn.com/issues"},
+			"type": "module",
+			"engines": {"node": ">=20.10"},
+			"scripts": {
+				"start": "gro dev",
+				"dev": "gro dev",
+				"build": "gro build",
+				"test": "gro test",
+				"deploy": "gro deploy"
+			},
+			"files": ["dist"],
+			"devDependencies": {
+				"@prettier/plugin-xml": "^3.3.1",
+				"@ryanatkn/belt": "^0.20.9",
+				"@ryanatkn/eslint-config": "^0.1.0",
+				"@ryanatkn/fuz": "^0.91.5",
+				"@ryanatkn/fuz_gitops": "^0.23.1",
+				"@ryanatkn/fuz_mastodon": "^0.10.0",
+				"@ryanatkn/gro": "^0.112.5",
+				"@sveltejs/adapter-static": "^3.0.1",
+				"@sveltejs/kit": "^2.5.4",
+				"@sveltejs/vite-plugin-svelte": "^3.0.2",
+				"@types/node": "^20.11.30",
+				"@typescript-eslint/eslint-plugin": "^7.3.1",
+				"@typescript-eslint/parser": "^7.3.1",
+				"date-fns": "^3.6.0",
+				"eslint": "^8.57.0",
+				"eslint-plugin-svelte": "^2.35.1",
+				"prettier": "^3.2.5",
+				"prettier-plugin-svelte": "^3.2.2",
+				"svelte": "^4.2.12",
+				"svelte-check": "^3.6.8",
+				"tslib": "^2.6.2",
+				"typescript": "^5.4.3",
+				"uvu": "^0.5.6"
+			},
+			"eslintConfig": {"root": true, "extends": "@ryanatkn", "rules": {"no-console": 1}},
+			"prettier": {
+				"plugins": ["prettier-plugin-svelte", "@prettier/plugin-xml"],
+				"useTabs": true,
+				"printWidth": 100,
+				"singleQuote": true,
+				"bracketSpacing": false,
+				"overrides": [{"files": "package.json", "options": {"useTabs": false}}]
+			},
+			"exports": {
+				"./blog_helpers.js": {
+					"default": "./dist/blog_helpers.js",
+					"types": "./dist/blog_helpers.d.ts"
+				},
+				"./blog.gen.js": {"default": "./dist/blog.gen.js", "types": "./dist/blog.gen.d.ts"},
+				"./blog.js": {"default": "./dist/blog.js", "types": "./dist/blog.d.ts"},
+				"./Blog_Post.svelte": {
+					"svelte": "./dist/Blog_Post.svelte",
+					"default": "./dist/Blog_Post.svelte",
+					"types": "./dist/Blog_Post.svelte.d.ts"
+				},
+				"./Blog_Post_Footer.svelte": {
+					"svelte": "./dist/Blog_Post_Footer.svelte",
+					"default": "./dist/Blog_Post_Footer.svelte",
+					"types": "./dist/Blog_Post_Footer.svelte.d.ts"
+				},
+				"./Blog_Post_Header.svelte": {
+					"svelte": "./dist/Blog_Post_Header.svelte",
+					"default": "./dist/Blog_Post_Header.svelte",
+					"types": "./dist/Blog_Post_Header.svelte.d.ts"
+				},
+				"./Favicon.svelte": {
+					"svelte": "./dist/Favicon.svelte",
+					"default": "./dist/Favicon.svelte",
+					"types": "./dist/Favicon.svelte.d.ts"
+				},
+				"./feed.js": {"default": "./dist/feed.js", "types": "./dist/feed.d.ts"},
+				"./Feed_Item_Date.svelte": {
+					"svelte": "./dist/Feed_Item_Date.svelte",
+					"default": "./dist/Feed_Item_Date.svelte",
+					"types": "./dist/Feed_Item_Date.svelte.d.ts"
+				},
+				"./Hash_Link.svelte": {
+					"svelte": "./dist/Hash_Link.svelte",
+					"default": "./dist/Hash_Link.svelte",
+					"types": "./dist/Hash_Link.svelte.d.ts"
+				},
+				"./post.task.js": {"default": "./dist/post.task.js", "types": "./dist/post.task.d.ts"},
+				"./util.js": {"default": "./dist/util.js", "types": "./dist/util.d.ts"}
+			}
+		},
+		"src_json": {
+			"name": "ryanatkn.com",
+			"version": "0.0.1",
+			"modules": {
+				"./blog_helpers.js": {
+					"path": "blog_helpers.ts",
+					"declarations": [
+						{"name": "resolve_blog_post_item", "kind": "function"},
+						{"name": "collect_blog_post_ids", "kind": "function"},
+						{"name": "load_blog_post_modules", "kind": "function"},
+						{"name": "to_next_blog_post_id", "kind": "function"},
+						{"name": "to_blog_post_path", "kind": "function"}
+					]
+				},
+				"./blog.gen.js": {
+					"path": "blog.gen.ts",
+					"declarations": [{"name": "gen", "kind": "variable"}]
+				},
+				"./blog.js": {
+					"path": "blog.ts",
+					"declarations": [
+						{"name": "Blog_Feed_Data", "kind": "type"},
+						{"name": "Blog_Feed", "kind": "type"},
+						{"name": "Blog_Post_Data", "kind": "type"},
+						{"name": "Blog_Module", "kind": "type"},
+						{"name": "Blog_Post_Module", "kind": "type"},
+						{"name": "Blog_Post_Id", "kind": "type"},
+						{"name": "Blog_Post_Item", "kind": "type"},
+						{"name": "get_blog_feed", "kind": "function"},
+						{"name": "set_blog_feed", "kind": "function"}
+					]
+				},
+				"./Blog_Post.svelte": {"path": "Blog_Post.svelte", "declarations": []},
+				"./Blog_Post_Footer.svelte": {"path": "Blog_Post_Footer.svelte", "declarations": []},
+				"./Blog_Post_Header.svelte": {"path": "Blog_Post_Header.svelte", "declarations": []},
+				"./Favicon.svelte": {"path": "Favicon.svelte", "declarations": []},
+				"./feed.js": {
+					"path": "feed.ts",
+					"declarations": [
+						{"name": "Feed", "kind": "type"},
+						{"name": "Feed_Item", "kind": "type"},
+						{"name": "create_atom_feed", "kind": "function"}
+					]
+				},
+				"./Feed_Item_Date.svelte": {"path": "Feed_Item_Date.svelte", "declarations": []},
+				"./Hash_Link.svelte": {"path": "Hash_Link.svelte", "declarations": []},
+				"./post.task.js": {
+					"path": "post.task.ts",
+					"declarations": [{"name": "task", "kind": "variable"}]
+				},
+				"./util.js": {
+					"path": "util.ts",
+					"declarations": [
+						{"name": "format_date", "kind": "function"},
+						{"name": "to_pathname", "kind": "function"}
+					]
+				}
+			}
+		},
+		"name": "ryanatkn.com",
+		"repo_name": "ryanatkn.com",
+		"repo_url": "https://github.com/ryanatkn/ryanatkn.com",
+		"owner_name": "ryanatkn",
+		"homepage_url": "https://www.ryanatkn.com/",
+		"npm_url": null,
+		"changelog_url": null,
+		"published": false,
+		"check_runs": {"status": "completed", "conclusion": "success"},
+		"pull_requests": [
+			{"number": 21, "title": "upgrade to svelte5", "user": {"login": "ryanatkn"}, "draft": false}
+		]
 	}
 ]
