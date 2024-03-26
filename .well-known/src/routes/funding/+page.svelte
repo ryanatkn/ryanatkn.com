@@ -120,20 +120,21 @@
 				This funding strategy, with direct audience support and supporter-only community spaces, is
 				the simplest and most aligned I can think of. By solely relying on small donations, I can
 				avoid the influence of higher dollar donors. My goal is to minimize the overhead of my
-				funding strategy so I can stay productive on the things that matter. I'm not building an
-				organization with employees, so my needs are much lower than companies' needs.
+				funding strategy so I can stay productive on the things that matter more. I'm not building
+				an organization with employees, so my needs are much lower than a company's.
 			</aside>
 			<p>
 				<a href="https://discord.gg/YU5tyeK72X">Join the Discord</a> to get a feel for the vibes - it's
-				public-professional and I want to have fun with it. I want to minimize time spent moderating
+				public-professional and I want to have fun with it. I also want to minimize time spent moderating
 				the community spaces, and so for example the Discord doesn't have offtopic channels, although
 				it does have some spaces for general web tech discussion. (maybe this will contract or expand,
 				idk)
 			</p>
 			<p>
 				My goal with the community spaces is to make an environment where anyone who shows up can
-				learn and have fun around this cluster of technologies. Thanks again for reading and I hope
-				you have a good experience.
+				learn and have fun around this cluster of technologies. Meanwhile I'll be working on the
+				software that I care most about. Thanks again for reading and I hope you have a good
+				experience.
 			</p>
 			<aside>
 				<Community_Links />
