@@ -2,7 +2,7 @@
   "name": "ryanatkn.com",
   "version": "0.0.1",
   "description": "@ryanatkn's homepage and blog",
-  "icon": "💤",
+  "icon": "🪶",
   "public": true,
   "license": "MIT",
   "homepage": "https://www.ryanatkn.com/",
@@ -15,9 +15,8 @@
     "type": "git",
     "url": "git+https://github.com/ryanatkn/ryanatkn.com.git"
   },
-  "bugs": {
-    "url": "https://github.com/ryanatkn/ryanatkn.com/issues"
-  },
+  "bugs": "https://github.com/ryanatkn/ryanatkn.com/issues",
+  "funding": "https://www.ryanatkn.com/funding",
   "type": "module",
   "engines": {
     "node": ">=20.10"
@@ -34,18 +33,18 @@
   ],
   "devDependencies": {
     "@prettier/plugin-xml": "^3.3.1",
-    "@ryanatkn/belt": "^0.20.9",
+    "@ryanatkn/belt": "^0.20.10",
     "@ryanatkn/eslint-config": "^0.1.0",
     "@ryanatkn/fuz": "^0.91.5",
-    "@ryanatkn/fuz_gitops": "^0.23.1",
+    "@ryanatkn/fuz_gitops": "^0.24.0",
     "@ryanatkn/fuz_mastodon": "^0.10.0",
     "@ryanatkn/gro": "^0.112.5",
     "@sveltejs/adapter-static": "^3.0.1",
     "@sveltejs/kit": "^2.5.4",
     "@sveltejs/vite-plugin-svelte": "^3.0.2",
     "@types/node": "^20.11.30",
-    "@typescript-eslint/eslint-plugin": "^7.3.1",
-    "@typescript-eslint/parser": "^7.3.1",
+    "@typescript-eslint/eslint-plugin": "^7.4.0",
+    "@typescript-eslint/parser": "^7.4.0",
     "date-fns": "^3.6.0",
     "eslint": "^8.57.0",
     "eslint-plugin-svelte": "^2.35.1",
