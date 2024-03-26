@@ -33,7 +33,8 @@
 	</section>
 	<section class="box row wrap gap_md">
 		<div class="display_contents" style:--link_color="var(--color_b_5)">
-			<Card href="https://github.com/sponsors/ryanatkn">
+			<!-- TODO hacky with max-width -->
+			<Card href="https://github.com/sponsors/ryanatkn" attrs={{style: 'max-width: 100%'}}>
 				<svelte:fragment slot="icon"><Github_Logo /></svelte:fragment>
 				GitHub Sponsors
 			</Card>
@@ -56,10 +57,10 @@
 			<p>
 				In 2011 I began my first job as a professional web developer focusing on JS, and 13 years
 				later I'm still enjoying it. I program both as a profession and hobby, and I love the web
-				for its wide reach, high capability, backwards compatibility, and circumventable
-				gatekeepers. In 2019 I started publishing almost all of my code as I wrote it, and set out
-				to produce high quality and reusable software with TypeScript and Svelte, working full-time
-				in public and continuing today.
+				for its wide reach, high capability, backwards compatibility, and gatekeeper optionality. In
+				2019 I started publishing almost all of my code as I wrote it, and set out to produce high
+				quality and reusable software with TypeScript and Svelte, working full-time in public and
+				continuing today.
 			</p>
 			<p>
 				Today most of my time goes to my projects that face end-users, and some of their
@@ -73,6 +74,10 @@
 				<li><a href="https://www.fuz.dev/">Fuz</a> - Svelte UI library and CSS design system</li>
 				<li>
 					<a href="https://gro.ryanatkn.com/">Gro</a> - task runner and toolkit extending SvelteKit
+				</li>
+				<li>
+					more on <a href="https://github.com/ryanatkn">my GitHub profile</a> and
+					<a href="https://www.ryanatkn.com/tree">fuz_gitops tree</a>
 				</li>
 			</ul>
 			<p>
