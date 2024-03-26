@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Breadcrumb from '@ryanatkn/fuz/Breadcrumb.svelte';
 	import {base} from '$app/paths';
+	import Card from '@ryanatkn/fuz/Card.svelte';
 
 	import Favicon from '$lib/Favicon.svelte';
 	import Gitops_Menu from '$routes/Gitops_Menu.svelte';
@@ -119,6 +120,12 @@
 				<Gitops_Menu />
 			</div>
 		</div>
+	</section>
+	<section class="box">
+		<Card href="{base}/funding"
+			><div slot="icon">🐚</div>
+			funding</Card
+		>
 	</section>
 </div>
 <Breadcrumb

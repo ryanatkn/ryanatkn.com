@@ -15,11 +15,14 @@
 			<p>
 				Hi, my name is Ryan Atkinson and I'm an independent web developer. I'm trying to make
 				powerful and simple tools to help people be creative and productive in social contexts. I'm
-				driven by curiosity and wanting to improve our lives with technology. My work is
+				driven by curiosity and wanting to improve our lives with technology.
+			</p>
+			<p>
+				My work is
 				<a href="https://github.com/ryanatkn">open source on GitHub</a>
-				and this website's homepage lists <a href="{base}/">my ongoing projects</a>. I'm also
-				working on a social app framework that I'll announce and open source when it's further
-				along.
+				and this website's homepage lists <a href="{base}/">my ongoing projects</a>. I'm currently
+				trying to get funding directly from my users, viewers, and readers. More
+				<a href="{base}/funding">about funding me</a>.
 			</p>
 			<p>
 				I work on the web because for all its flaws, it's a collectively-governed sandboxed platform
@@ -45,9 +48,9 @@
 			<li>
 				my interest in making games continues as a hobby in <a
 					href="https://www.cosmicplayground.org/">cosmicplayground.org</a
-				>, <a href="https://www.dealt.dev/">dealt.dev</a>,
-				<a href="https://sss.ryanatkn.com/">Svelte Snake Sports</a>,
-				<a href="https://earbetter.ryanatkn.com/">Earbetter</a>, and
+				>, <a href="https://earbetter.ryanatkn.com/">Earbetter</a>,
+				<a href="https://www.dealt.dev/">dealt.dev</a>,
+				<a href="https://sss.ryanatkn.com/">Svelte Snake Sports</a>, and
 				<a href="https://github.com/ryanatkn">other</a> abandonings
 			</li>
 			<li>
