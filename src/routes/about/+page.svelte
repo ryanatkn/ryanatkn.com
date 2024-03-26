@@ -8,7 +8,7 @@
 	import Me from '$routes/Me.svelte';
 </script>
 
-<div class="about prose">
+<div class="about">
 	<header class="box">
 		<h1 class="panel row">
 			<div class="flip_x" style:transform="scaleX(-1)">🪶</div>

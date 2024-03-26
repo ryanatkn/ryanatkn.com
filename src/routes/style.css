@@ -7,14 +7,6 @@ body {
 	min-height: 100%;
 }
 
-/* TODO upstream a similar style tweak */
-.prose h1 {
-	margin-top: var(--space_xl3) !important;
-}
-.prose h2 {
-	margin-top: var(--space_xl3);
-}
-
 table {
 	border-width: var(--border_width);
 	border-style: var(--border_style);
@@ -41,10 +33,6 @@ probably fixable with a better image, I tried briefly but didn't get a great res
 	}
 }
 
-.prose div + ul {
-	margin-top: var(--space_xs2);
-}
-
 .cards {
 	display: flex;
 	flex-direction: row;
@@ -66,7 +54,7 @@ probably fixable with a better image, I tried briefly but didn't get a great res
 	padding: var(--space_md);
 }
 
-.prose button.inline.plain {
+button.inline.plain {
 	padding: var(--space_xs2);
 	margin: 0;
 	/* TODO can't go larger without affecting line spacing, maybe fix with negative margin? */

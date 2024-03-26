@@ -11,7 +11,7 @@
 	export let project: Project_Info;
 </script>
 
-<div class="card prose">
+<div class="card">
 	<div>
 		<p class="title">{@html project.title}</p>
 		<div class="content">

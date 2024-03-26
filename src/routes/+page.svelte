@@ -78,7 +78,7 @@
 </svelte:head>
 
 <div class="width_md p_md">
-	<div class="prose">
+	<div>
 		<section class="box">
 			<div class="panel box width_sm">
 				<blockquote>
@@ -105,7 +105,7 @@
 	</div>
 	<!-- TODO margin is a hack, replace with a class or generic style -->
 	<section class="panel" style:margin-bottom="var(--space_xl4)">
-		<div class="prose box">
+		<div class="box">
 			<h2>ongoing projects</h2>
 		</div>
 		<div class="cards">

@@ -6,7 +6,7 @@
 </script>
 
 <footer class="blog-post-footer">
-	<div class="panel prose">
+	<div class="panel">
 		<p>
 			<span>
 				find me on <a href="https://joinmastodon.org/">Mastodon</a> and
