@@ -26,6 +26,7 @@
 <Themed>
 	<main>
 		<Header />
+		<!-- TODO maybe add a flex_1 block here? -->
 		<slot />
 		<Footer />
 	</main>
