@@ -25,13 +25,17 @@
 	</section>
 	<section class="box w_100">
 		<div class="funding_progress">
-			<!-- TODO `Scaled`? -->
-			<Supporter_Display count={SUPPORTER_COUNT} />
+			<!-- TODO maybe remove the wrapper -->
+			<div class="bg">
+				<Supporter_Display count={SUPPORTER_COUNT} />
+			</div>
 			<!-- TODO better display -->
 			<div class="mt_xl2">
 				<p class="funding_text">{SUPPORTER_COUNT} of 8000 supporters</p>
 				<div class="box">
-					<blockquote class="size_md">something will appear above when it's >1</blockquote>
+					<blockquote class="size_md shadow_inset_active mt_md">
+						something will appear above when it's >1
+					</blockquote>
 				</div>
 			</div>
 		</div>
@@ -162,7 +166,7 @@
 	}
 
 	.funding_progress {
-		background: linear-gradient(20deg, var(--fg_2), transparent);
+		background: linear-gradient(20deg, var(--fg_2), transparent 70%);
 		width: 100%;
 		padding: var(--space_xl5);
 		box-shadow: var(--shadow_inset_active);
