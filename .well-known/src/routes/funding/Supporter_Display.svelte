@@ -46,7 +46,4 @@
 	};
 </script>
 
-<!-- TODO maybe remove the wrapper -->
-<div class="supporter_display">
-	<canvas class="pixelated w_100 shadow" {width} {height} bind:this={canvas_el} />
-</div>
+<canvas class="pixelated w_100 shadow" {width} {height} bind:this={canvas_el} />
