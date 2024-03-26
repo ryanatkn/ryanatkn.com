@@ -128,9 +128,9 @@
 			<aside>
 				This funding strategy, with direct audience support and supporter-only community spaces, is
 				the simplest and most aligned I can think of. By solely relying on small donations, I can
-				avoid the influence of higher dollar donors. My goal is to minimize the overhead of my
-				funding strategy so I can stay productive on the things that matter more. I'm not building
-				an organization with employees, so my needs are much lower than a company's.
+				avoid the influence of higher dollar donors. I want to minimize the overhead of my funding
+				strategy so I can stay productive on the things that matter more. I'm not building an
+				organization with employees, so my needs are much lower than a company's.
 			</aside>
 			<p>
 				<a href="https://discord.gg/YU5tyeK72X">Join the Discord</a> to get a feel for the vibes - it's
