@@ -6,6 +6,7 @@
 
 	import Community_Links from '$routes/funding/Community_Links.svelte';
 	import Patreon_Logo from '$routes/funding/Patreon_Logo.svelte';
+	import Supporter_Display from '$routes/funding/Supporter_Display.svelte';
 	import Favicon from '$lib/Favicon.svelte';
 
 	const SUPPORTER_COUNT = 0;
@@ -23,13 +24,17 @@
 		</header>
 	</section>
 	<section class="box w_100">
-		<label class="funding_progress shadow panel mb_xl">
-			<progress class="w_100 h_xl5" value={SUPPORTER_COUNT} max="8000"></progress>
+		<div class="funding_progress">
+			<!-- TODO `Scaled`? -->
+			<Supporter_Display count={SUPPORTER_COUNT} />
 			<!-- TODO better display -->
-			<div>
-				{SUPPORTER_COUNT} of 8000 supporters
+			<div class="mt_xl2">
+				<p class="funding_text">{SUPPORTER_COUNT} of 8000 supporters</p>
+				<div class="box">
+					<blockquote class="size_md">something will appear above when it's >1</blockquote>
+				</div>
 			</div>
-		</label>
+		</div>
 	</section>
 	<section class="box row wrap gap_md">
 		<div class="display_contents" style:--link_color="var(--color_b_5)">
@@ -159,11 +164,25 @@
 	.funding_progress {
 		background: linear-gradient(20deg, var(--fg_2), transparent);
 		width: 100%;
-		padding: var(--space_lg);
+		padding: var(--space_xl5);
+		box-shadow: var(--shadow_inset_active);
+		border-radius: var(--radius_md);
+		margin-bottom: var(--space_lg);
 		max-width: 600px;
-		font-size: var(--size_xl2);
-		font-weight: 200;
-		text-align: center;
 		cursor: initial; /* undo label style, maybe change to .cursor_initial after Fuz update */
+		text-align: center;
+	}
+	.funding_text {
+		font-size: var(--size_xl2);
+		font-weight: 400;
+		color: var(--text_2);
+		text-shadow: var(--bg) 1px 1px 1px;
+	}
+	.funding_progress:hover .funding_text {
+		color: var(--text_1);
+		transform: scale(1.01);
+	}
+	.funding_progress:active .funding_text {
+		transform: scale(0.98);
 	}
 </style>
