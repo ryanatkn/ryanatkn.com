@@ -37,7 +37,7 @@
     "@ryanatkn/belt": "^0.20.9",
     "@ryanatkn/eslint-config": "^0.1.0",
     "@ryanatkn/fuz": "^0.91.5",
-    "@ryanatkn/fuz_gitops": "^0.23.0",
+    "@ryanatkn/fuz_gitops": "^0.23.1",
     "@ryanatkn/fuz_mastodon": "^0.10.0",
     "@ryanatkn/gro": "^0.112.5",
     "@sveltejs/adapter-static": "^3.0.1",
