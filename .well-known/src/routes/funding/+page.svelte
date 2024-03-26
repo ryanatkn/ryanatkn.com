@@ -34,7 +34,7 @@
 				<p class="funding_text">{SUPPORTER_COUNT} of 8000 supporters</p>
 				<div class="box">
 					<blockquote class="size_md shadow_inset_active mt_md">
-						something will appear above when it's >1
+						something will appear above when it's >=1
 					</blockquote>
 				</div>
 			</div>
