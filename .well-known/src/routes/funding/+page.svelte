@@ -30,7 +30,6 @@
 				{SUPPORTER_COUNT} of 8000 supporters
 			</div>
 		</label>
-		{#if SUPPORTER_COUNT === 0}<aside class="mt_xl2">first?</aside>{/if}
 	</section>
 	<section class="box row wrap gap_md">
 		<div class="display_contents" style:--link_color="var(--color_b_5)">

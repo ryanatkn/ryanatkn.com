@@ -35,11 +35,19 @@
 		// 	icon_alt: 'a ladder',
 		// },
 		{
+			name: 'zzz',
+			title: '<a href="https://zzz.ryanatkn.com/">Zzz</a>',
+			description: 'social web app framework',
+			links: `<a class="chip" href="https://zzz.ryanatkn.com/">zzz.ryanatkn.com</a> <a class="chip" href="https://github.com/ryanatkn/zzz">source</a> <a class="chip" href="https://www.npmjs.com/package/@ryanatkn/zzz">npm</a>`,
+			icon: '💤',
+			icon_alt: 'the zzz emoji',
+		},
+		{
 			name: 'fuz',
 			title: '<a href="https://www.fuz.dev/">Fuz</a>',
 			description:
 				'design system for CSS, <a href="https://svelte.dev/">Svelte</a>, and <a href="https://kit.svelte.dev/">SvelteKit</a>',
-			links: `<a class="chip" href="https://www.fuz.dev/">fuz.dev</a> <a class="chip" href="https://github.com/fuz-dev/fuz">source</a> <a class="chip" href="https://www.npmjs.com/package/@ryanatkn/fuz">npm</a>`,
+			links: `<a class="chip" href="https://www.fuz.dev/">fuz.dev</a> <a class="chip" href="https://github.com/ryanatkn/fuz">source</a> <a class="chip" href="https://www.npmjs.com/package/@ryanatkn/fuz">npm</a>`,
 			icon: '🧶',
 			icon_alt: 'a ball of yarn',
 		},

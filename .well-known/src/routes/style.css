@@ -7,14 +7,6 @@ body {
 	min-height: 100%;
 }
 
-/* TODO upstream a similar style tweak */
-.prose h1 {
-	margin-top: var(--space_xl3) !important;
-}
-.prose h2 {
-	margin-top: var(--space_xl3);
-}
-
 table {
 	border-width: var(--border_width);
 	border-style: var(--border_style);
