@@ -33,7 +33,8 @@
 	</section>
 	<section class="box row wrap gap_md">
 		<div class="display_contents" style:--link_color="var(--color_b_5)">
-			<Card href="https://github.com/sponsors/ryanatkn">
+			<!-- TODO hacky with max-width -->
+			<Card href="https://github.com/sponsors/ryanatkn" attrs={{style: 'max-width: 100%'}}>
 				<svelte:fragment slot="icon"><Github_Logo /></svelte:fragment>
 				GitHub Sponsors
 			</Card>
