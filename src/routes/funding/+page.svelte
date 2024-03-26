@@ -77,7 +77,7 @@
 				</li>
 				<li>
 					more on <a href="https://github.com/ryanatkn">my GitHub profile</a> and
-					<a href="https://www.ryanatkn.com/tree">gitops tree</a>
+					<a href="https://www.ryanatkn.com/tree">fuz_gitops tree</a>
 				</li>
 			</ul>
 			<p>
