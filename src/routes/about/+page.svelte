@@ -8,7 +8,7 @@
 	import Me from '$routes/Me.svelte';
 </script>
 
-<div class="about prose">
+<div class="about">
 	<header class="box">
 		<h1 class="panel row">
 			<div class="flip_x" style:transform="scaleX(-1)">🪶</div>
@@ -57,7 +57,7 @@
 					href="https://www.cosmicplayground.org/">cosmicplayground.org</a
 				>, <a href="https://earbetter.ryanatkn.com/">Earbetter</a>,
 				<a href="https://www.dealt.dev/">dealt.dev</a>,
-				<a href="https://sss.ryanatkn.com/">Svelte Snake Sports</a>, and other
+				<a href="https://ryanatkn.github.io/svelte-snake-sports/">Svelte Snake Sports</a>, and other
 				<a href="https://github.com/ryanatkn#archives">abandonings</a>.
 			</li>
 			<li>

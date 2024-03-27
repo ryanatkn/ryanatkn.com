@@ -33,10 +33,6 @@ probably fixable with a better image, I tried briefly but didn't get a great res
 	}
 }
 
-.prose div + ul {
-	margin-top: var(--space_xs2);
-}
-
 .cards {
 	display: flex;
 	flex-direction: row;
@@ -58,7 +54,7 @@ probably fixable with a better image, I tried briefly but didn't get a great res
 	padding: var(--space_md);
 }
 
-.prose button.inline.plain {
+button.inline.plain {
 	padding: var(--space_xs2);
 	margin: 0;
 	/* TODO can't go larger without affecting line spacing, maybe fix with negative margin? */

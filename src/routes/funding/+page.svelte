@@ -12,9 +12,9 @@
 	const SUPPORTER_COUNT = 0;
 </script>
 
-<div class="prose width_md flex_1">
+<div class="width_md flex_1">
 	<section class="box">
-		<header class="prose box mb_xl4">
+		<header class="box mb_xl4">
 			<h1 class="row gap_md">
 				<div>🐚</div>
 				funding

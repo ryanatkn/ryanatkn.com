@@ -14,7 +14,7 @@
 	<title>ryanatkn.com/blog</title>
 </svelte:head>
 
-<div class="blog prose">
+<div class="blog">
 	<ol class="panel" reversed>
 		{#each items as item}
 			<li class="card">

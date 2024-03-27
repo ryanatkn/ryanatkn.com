@@ -17,7 +17,7 @@
 
 {#if item}
 	<article class:width_md={true} class={classes}>
-		<header class="prose">
+		<header>
 			<Blog_Post_Header {item} />
 		</header>
 		<slot />
