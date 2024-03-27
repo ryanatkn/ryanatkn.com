@@ -56,7 +56,7 @@
 			title: '<a href="https://github.com/ryanatkn/gro">Gro</a>',
 			description:
 				'task runner and toolkit extending <a href="https://kit.svelte.dev/">SvelteKit</a>',
-			links: `<a class="chip" href="https://github.com/ryanatkn/gro">source</a>`,
+			links: `<a class="chip" href="https://github.com/ryanatkn/gro">source</a> <a class="chip" href="https://www.npmjs.com/package/@ryanatkn/gro">npm</a>`,
 			icon: '/gro.png',
 			icon_alt: 'a pixelated green oak acorn with a glint of sun',
 		},
