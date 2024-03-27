@@ -38,7 +38,7 @@
 			name: 'zzz',
 			title: '<a href="https://zzz.ryanatkn.com/">Zzz</a>',
 			description: 'social web app framework',
-			links: `<a class="chip" href="https://github.com/ryanatkn/zzz">source</a> <a class="chip" href="https://www.npmjs.com/package/@ryanatkn/zzz">npm</a>`,
+			links: `<a class="chip" href="https://github.com/ryanatkn/zzz">source</a>`, // TODO publish zzz - <a class="chip" href="https://www.npmjs.com/package/@ryanatkn/zzz">npm</a>
 			icon: '💤',
 			icon_alt: 'the zzz emoji',
 		},
