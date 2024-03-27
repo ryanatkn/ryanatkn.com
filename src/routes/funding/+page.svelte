@@ -33,7 +33,7 @@
 			<div class="mt_xl2">
 				<p class="funding_text">{SUPPORTER_COUNT} of 8000 supporters</p>
 				<div class="box">
-					<blockquote class="size_md shadow_inset_active mt_md">
+					<blockquote class="size_md shadow_inset_active mt_md px_xl">
 						something will appear above when it's >=1
 					</blockquote>
 				</div>
@@ -57,19 +57,19 @@
 		<div class="panel bg p_md">
 			<div class="float_right icon_size_lg">🪶</div>
 			<p>
-				Hello thank you for reading, see also my <a href="{base}/about">about</a> page. I'm an independent
-				software developer and this is an attempt to fund my self-directed open source work without any
-				investors, sponsors, or other business relationships, except the simple and aligned relationship
-				I have with the people who derive value from my software, videos, and blog posts. My goal is
-				to work for the open web on the projects I find meaningful.
+				Hello thank you for reading. I'm an independent software developer and this is an attempt to
+				fund my self-directed open source work without any investors, sponsors, or other business
+				relationships, except the simple and aligned relationship I have with the people who derive
+				value from my software, videos, and blog posts. My goal is to work for the open web on the
+				projects I find meaningful.
 			</p>
 			<p>
-				In 2011 I began my first job as a professional web developer focusing on JS, and 13 years
+				In 2011 I began my first job as a professional web developer focusing on JS, and many years
 				later I'm still enjoying it. I program both as a profession and hobby, and I love the web
 				for its wide reach, high capability, backwards compatibility, and gatekeeper optionality. In
 				2019 I started publishing almost all of my code as I wrote it, and set out to produce high
 				quality and reusable software with TypeScript and Svelte, working full-time in public and
-				continuing today.
+				continuing today. More <a href="{base}/about">about</a> me.
 			</p>
 			<p>
 				Today most of my time goes to my projects that face end-users, and some of their
@@ -130,11 +130,21 @@
 				to funding, or maybe I'll rethink sooner.
 			</p>
 			<aside>
-				This funding strategy, with direct audience support and supporter-only community spaces, is
-				the simplest and most aligned I can think of. By solely relying on small donations, I can
-				avoid the influence of higher dollar donors. I want to minimize the overhead of my funding
-				strategy so I can stay productive on the things that matter more. I'm not building an
-				organization with employees, so my needs are much lower than a company's.
+				<p>
+					This funding strategy, with direct audience support and supporter-only community spaces,
+					is the simplest and most aligned I can think of. By solely relying on small donations, I
+					can avoid any influence that big donors might have on my incentives. Of course I will be
+					influenced by my audience, but my opinions and actions aren't shaped by money. Any
+					community member can influence me whether they support me financially or not - it's the
+					ideas and vibes that matter - and getting a normal job is a solid backup plan so I can be
+					true to myself.
+				</p>
+				<p>
+					I want to minimize the overhead of my funding strategy so I can stay productive on the
+					things that matter more. I want to be an independent open source developer, not build an
+					organization with employees, so my needs are much lower than a company's. Your support
+					helps me directly, and I'll be transparent about how things go.
+				</p>
 			</aside>
 			<p>
 				<a href="https://discord.gg/YU5tyeK72X">Join the Discord</a> to get a feel for the vibes - it's
