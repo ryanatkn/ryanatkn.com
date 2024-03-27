@@ -38,7 +38,7 @@
 			name: 'zzz',
 			title: '<a href="https://zzz.ryanatkn.com/">Zzz</a>',
 			description: 'social web app framework',
-			links: `<a class="chip" href="https://zzz.ryanatkn.com/">zzz.ryanatkn.com</a> <a class="chip" href="https://github.com/ryanatkn/zzz">source</a> <a class="chip" href="https://www.npmjs.com/package/@ryanatkn/zzz">npm</a>`,
+			links: `<a class="chip" href="https://github.com/ryanatkn/zzz">source</a> <a class="chip" href="https://www.npmjs.com/package/@ryanatkn/zzz">npm</a>`,
 			icon: '💤',
 			icon_alt: 'the zzz emoji',
 		},
@@ -47,7 +47,7 @@
 			title: '<a href="https://www.fuz.dev/">Fuz</a>',
 			description:
 				'design system for CSS, <a href="https://svelte.dev/">Svelte</a>, and <a href="https://kit.svelte.dev/">SvelteKit</a>',
-			links: `<a class="chip" href="https://www.fuz.dev/">fuz.dev</a> <a class="chip" href="https://github.com/ryanatkn/fuz">source</a> <a class="chip" href="https://www.npmjs.com/package/@ryanatkn/fuz">npm</a>`,
+			links: `<a class="chip" href="https://github.com/ryanatkn/fuz">source</a> <a class="chip" href="https://www.npmjs.com/package/@ryanatkn/fuz">npm</a>`,
 			icon: '🧶',
 			icon_alt: 'a ball of yarn',
 		},
@@ -56,7 +56,7 @@
 			title: '<a href="https://github.com/ryanatkn/gro">Gro</a>',
 			description:
 				'task runner and toolkit extending <a href="https://kit.svelte.dev/">SvelteKit</a>',
-			links: `<a class="chip" href="https://gro.ryanatkn.com/">gro.ryanatkn.com</a> <a class="chip" href="https://github.com/ryanatkn/gro">source</a>`,
+			links: `<a class="chip" href="https://github.com/ryanatkn/gro">source</a>`,
 			icon: '/gro.png',
 			icon_alt: 'a pixelated green oak acorn with a glint of sun',
 		},
@@ -95,12 +95,10 @@
 				</blockquote>
 				<div style:margin-bottom="var(--space_xs)"><Me /></div>
 				<p>
-					Hi I'm building free and open source software projects like <a href="https://www.fuz.dev/"
-						>Fuz</a
-					>, <a href="https://github.com/ryanatkn/gro">Gro</a>, and an unannounced social app
-					framework. My main skill is making frontend web apps and I also do some backend and
-					devtools programming. I enjoy trying to make powerful tools that are easy to use, and I
-					have extra interest in UIs, API design, and social systems. More
+					Hi I'm building free and open source software and communicating about it. My main skill is
+					making frontend web apps and I also do some backend and devtools programming. I enjoy
+					trying to make powerful tools that are easy to use, and I have extra interest in UIs, API
+					design, and social systems. More
 					<a href="{base}/about">about me</a>.
 				</p>
 			</div>
