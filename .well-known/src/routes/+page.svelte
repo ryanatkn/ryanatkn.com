@@ -95,12 +95,10 @@
 				</blockquote>
 				<div style:margin-bottom="var(--space_xs)"><Me /></div>
 				<p>
-					Hi I'm building free and open source software projects like <a href="https://www.fuz.dev/"
-						>Fuz</a
-					>, <a href="https://github.com/ryanatkn/gro">Gro</a>, and an unannounced social app
-					framework. My main skill is making frontend web apps and I also do some backend and
-					devtools programming. I enjoy trying to make powerful tools that are easy to use, and I
-					have extra interest in UIs, API design, and social systems. More
+					Hi I'm building free and open source software and communicating about it. My main skill is
+					making frontend web apps and I also do some backend and devtools programming. I enjoy
+					trying to make powerful tools that are easy to use, and I have extra interest in UIs, API
+					design, and social systems. More
 					<a href="{base}/about">about me</a>.
 				</p>
 			</div>
