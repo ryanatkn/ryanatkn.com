@@ -39,7 +39,7 @@
 			<p>
 				Hi thank you for reading. I'm an independent software developer and this is an attempt to
 				fund my self-directed work on free and open source software. My goal is to work for the open
-				web on the projects I find meaningful, while building commmunity with the people who derive
+				web on the projects I find meaningful, while building community with the people who derive
 				value from my software, videos, and blog posts.
 			</p>
 			<p>
