@@ -84,14 +84,17 @@
 			<p>
 				To help me produce software, videos, and blog posts, you can support me on
 				<!-- TODO CSS classes after upgrading Fuz for `vertical-align-middle` -->
-				<a href="https://github.com/sponsors/ryanatkn" style:--link_color="var(--color_b_5)"
+				<a
+					class="nowrap"
+					href="https://github.com/sponsors/ryanatkn"
+					style:--link_color="var(--color_b_5)"
 					><Github_Logo
 						size="var(--size_md)"
 						attrs={{class: 'inline_block', style: 'vertical-align: middle'}}
 					/> GitHub Sponsors</a
 				>
 				or
-				<a href="https://www.patreon.com/ryanatkn"
+				<a class="nowrap" href="https://www.patreon.com/ryanatkn"
 					><Patreon_Logo
 						size="var(--size_md)"
 						attrs={{class: 'inline_block', style: 'vertical-align: middle'}}
