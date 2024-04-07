@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Breadcrumb from '@ryanatkn/fuz/Breadcrumb.svelte';
 	import {base} from '$app/paths';
+	import Card from '@ryanatkn/fuz/Card.svelte';
 
 	import Contact_Info from '$routes/Contact_Info.svelte';
 	import Favicon from '$lib/Favicon.svelte';
@@ -8,18 +9,27 @@
 </script>
 
 <div class="about prose">
-	<header class="box"><h1 class="panel">about me</h1></header>
+	<header class="box">
+		<h1 class="panel row">
+			<div class="flip_x" style:transform="scaleX(-1)">🪶</div>
+			about me
+			<!-- TODO svelte5 remove the style:transform bc the CSS class will be ready -->
+			<div>🪶</div>
+		</h1>
+	</header>
 	<section class="width_md panel">
 		<div style:min-height="192px" style:margin-bottom="var(--space_md)">
 			<div class="float_right ml_sm"><Me /></div>
 			<p>
 				Hi, my name is Ryan Atkinson and I'm an independent web developer. I'm trying to make
 				powerful and simple tools to help people be creative and productive in social contexts. I'm
-				driven by curiosity and wanting to improve our lives with technology. My work is
+				driven by curiosity and wanting to improve our lives with technology.
+			</p>
+			<p>
+				My work is
 				<a href="https://github.com/ryanatkn">open source on GitHub</a>
-				and this website's homepage lists <a href="{base}/">my ongoing projects</a>. I'm also
-				working on a social app framework that I'll announce and open source when it's further
-				along.
+				and this website's homepage lists <a href="{base}/">my ongoing projects</a>. I'm currently
+				trying to get <a href="{base}/funding">funding</a> directly from my users, viewers, and readers.
 			</p>
 			<p>
 				I work on the web because for all its flaws, it's a collectively-governed sandboxed platform
@@ -36,7 +46,7 @@
 			</li>
 			<li>
 				in 2019 I started <a href="https://github.com/ryanatkn">doing full-time open source</a>,
-				releasing everything I write for free with permissive licenses
+				releasing almost everything I write for free with permissive licenses
 			</li>
 			<li>
 				I learned to code wanting to be a game programmer, but I fell in love with the web at my
@@ -45,10 +55,10 @@
 			<li>
 				my interest in making games continues as a hobby in <a
 					href="https://www.cosmicplayground.org/">cosmicplayground.org</a
-				>, <a href="https://www.dealt.dev/">dealt.dev</a>,
-				<a href="https://sss.ryanatkn.com/">Svelte Snake Sports</a>,
-				<a href="https://earbetter.ryanatkn.com/">Earbetter</a>, and
-				<a href="https://github.com/ryanatkn">other</a> abandonings
+				>, <a href="https://earbetter.ryanatkn.com/">Earbetter</a>,
+				<a href="https://www.dealt.dev/">dealt.dev</a>,
+				<a href="https://sss.ryanatkn.com/">Svelte Snake Sports</a>, and other
+				<a href="https://github.com/ryanatkn#archives">abandonings</a>.
 			</li>
 			<li>
 				I like <a href="https://svelte.dev/">Svelte</a> and
@@ -57,6 +67,7 @@
 			</li>
 		</ul>
 	</section>
+
 	<section class="box">
 		<div class="panel box">
 			<Contact_Info />
@@ -74,10 +85,16 @@
 			></iframe>
 		</div>
 	</section> -->
+
+	<section class="box">
+		<Card href="{base}/funding"
+			><div slot="icon">🐚</div>
+			funding</Card
+		>
+	</section>
 </div>
-<Breadcrumb>
-	<Favicon /></Breadcrumb
->
+
+<Breadcrumb><Favicon /></Breadcrumb>
 
 <style>
 	.about {

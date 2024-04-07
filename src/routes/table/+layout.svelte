@@ -8,4 +8,6 @@
 	set_deployments(parse_deployments(deployments, 'https://www.ryanatkn.com/'));
 </script>
 
-<slot />
+<div class="w_100 flex_1">
+	<slot />
+</div>

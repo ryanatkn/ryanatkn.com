@@ -3,7 +3,7 @@
 # [ryanatkn.com](https://www.ryanatkn.com) 🌤🌳🐿
 
 > [@ryanatkn](https://github.com/ryanatkn)'s homepage and blog
-> 💤 building free and open source tools and toys
+> 🪶 building free and open source tools and toys
 
 ## usage
 
@@ -47,7 +47,7 @@ gro deploy
 [Vite](https://github.com/vitejs/vite) ∙
 [esbuild](https://github.com/evanw/esbuild) ∙
 [Gro](https://github.com/ryanatkn/gro) ∙
-[Fuz](https://github.com/fuz-dev/fuz) ∙
+[Fuz](https://github.com/ryanatkn/fuz) ∙
 [ESLint](https://github.com/eslint/eslint) ∙
 [Prettier](https://github.com/prettier/prettier) ∙
 & [more](package.json)

@@ -5,9 +5,9 @@
 </script>
 
 <menu>
+	<a class="chip" href="{base}/tree">tree</a>
 	<a class="chip" href="{base}/table">table</a>
 	<a class="chip" href="{base}/modules">modules</a>
-	<a class="chip" href="{base}/tree">tree</a>
 </menu>
 
 <style>
