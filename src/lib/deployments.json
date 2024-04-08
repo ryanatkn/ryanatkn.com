@@ -863,7 +863,7 @@
 		"url": "https://gro.ryanatkn.com/",
 		"package_json": {
 			"name": "@ryanatkn/gro",
-			"version": "0.113.0",
+			"version": "0.115.0",
 			"description": "task runner and toolkit extending SvelteKit",
 			"icon": "🌰",
 			"public": true,
@@ -944,6 +944,7 @@
 			},
 			"exports": {
 				".": {"default": "./dist/index.js", "types": "./dist/index.d.ts"},
+				"./package.json": "./package.json",
 				"./args.js": {"default": "./dist/args.js", "types": "./dist/args.d.ts"},
 				"./build.task.js": {"default": "./dist/build.task.js", "types": "./dist/build.task.d.ts"},
 				"./changelog.js": {"default": "./dist/changelog.js", "types": "./dist/changelog.d.ts"},
@@ -1139,7 +1140,7 @@
 		},
 		"src_json": {
 			"name": "@ryanatkn/gro",
-			"version": "0.113.0",
+			"version": "0.115.0",
 			"modules": {
 				".": {
 					"path": "index.ts",
@@ -1155,6 +1156,7 @@
 						{"name": "Task_Error", "kind": "class"}
 					]
 				},
+				"./package.json": {"path": "package.json", "declarations": []},
 				"./args.js": {
 					"path": "args.ts",
 					"declarations": [
@@ -1433,6 +1435,7 @@
 						{"name": "has_sveltekit_app", "kind": "function"},
 						{"name": "Options", "kind": "type"},
 						{"name": "Host_Target", "kind": "type"},
+						{"name": "Copy_File_Filter", "kind": "type"},
 						{"name": "gro_plugin_sveltekit_app", "kind": "function"}
 					]
 				},
@@ -2884,6 +2887,12 @@
 		"published": false,
 		"check_runs": {"status": "completed", "conclusion": "success"},
 		"pull_requests": [
+			{
+				"number": 89,
+				"title": "Bump vite from 5.1.3 to 5.2.8",
+				"user": {"login": "dependabot[bot]"},
+				"draft": false
+			},
 			{"number": 88, "title": "upgrade to svelte5", "user": {"login": "ryanatkn"}, "draft": false}
 		]
 	},
@@ -3634,7 +3643,7 @@
 				"@ryanatkn/fuz": "^0.92.0",
 				"@ryanatkn/fuz_gitops": "^0.24.0",
 				"@ryanatkn/fuz_mastodon": "^0.10.0",
-				"@ryanatkn/gro": "^0.113.0",
+				"@ryanatkn/gro": "^0.115.0",
 				"@sveltejs/adapter-static": "^3.0.1",
 				"@sveltejs/kit": "^2.5.4",
 				"@sveltejs/vite-plugin-svelte": "^3.0.2",
