@@ -53,7 +53,7 @@
 			Patreon
 		</Card>
 	</section>
-	<section class="panel p_md shadow w_100">
+	<section class="panel p_md shadow_md w_100">
 		<div class="panel bg p_md">
 			<div class="float_right icon_size_lg">🪶</div>
 			<p>

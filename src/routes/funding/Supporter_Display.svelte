@@ -46,4 +46,4 @@
 	};
 </script>
 
-<canvas class="pixelated w_100 shadow" {width} {height} bind:this={canvas_el} />
+<canvas class="pixelated w_100 shadow_md" {width} {height} bind:this={canvas_el} />
