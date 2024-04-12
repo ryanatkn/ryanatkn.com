@@ -87,7 +87,7 @@
 
 <section class="width_md p_md">
 	<section class="box">
-		<div class="panel box width_sm">
+		<div class="panel box width_sm shadow_inset_inverse_md">
 			<!-- TODO specificity so we can just add `.bg` instead of `style:background-color="var(--bg)"` -->
 			<blockquote class="shadow_md" style:background-color="var(--bg)">
 				hello this is the homepage of Ryan Atkinson, he's an independent web developer making free
@@ -119,7 +119,7 @@
 			{/each}
 		</div>
 		<div class="box py_xl">
-			<div class="panel p_lg bg">
+			<div class="panel p_lg bg shadow_inset_inverse_md">
 				<!-- TODO fuz .size_lg -->
 				<div class="mb_lg text_align_center" style:font-size="var(--size_lg)">all repos</div>
 				<Gitops_Menu />
@@ -159,5 +159,14 @@
 	}
 	.panel :global(h2) {
 		margin-top: 0;
+	}
+
+	.cards {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		justify-content: center;
+		gap: var(--space_md);
 	}
 </style>

@@ -11,7 +11,7 @@
 	export let project: Project_Info;
 </script>
 
-<div class="card">
+<div class="project_card">
 	<div>
 		<p class="title">{@html project.title}</p>
 		<div class="content">
@@ -44,6 +44,18 @@
 </div>
 
 <style>
+	.project_card {
+		display: flex;
+		max-width: var(--width_sm);
+		background-color: var(--bg);
+		box-shadow: var(--shadow_md);
+		border-width: var(--border_width);
+		border-style: solid;
+		border-color: transparent;
+		border-radius: var(--radius_xs);
+		margin-bottom: var(--space_lg);
+		padding: var(--space_md);
+	}
 	.icon {
 		padding-left: var(--space_sm);
 		flex-shrink: 0;
