@@ -1,7 +1,12 @@
 <script lang="ts">
 	import type {Blog_Post_Item} from '$lib/blog.js';
 
-	export let item: Blog_Post_Item;
+	interface Props {
+		item: Blog_Post_Item;
+	}
+
+	const {item}: Props = $props();
+
 	item; // TODO
 </script>
 
