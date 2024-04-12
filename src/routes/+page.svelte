@@ -131,8 +131,10 @@
 </div>
 <Breadcrumb
 	><div class="linkpath">
-		<Favicon />
-		<div class="url">ryanatkn.com</div>
+		<span class="row"
+			><Favicon />
+			<div class="pl_md">ryanatkn.com</div></span
+		>
 	</div></Breadcrumb
 >
 
@@ -145,9 +147,6 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-	}
-	.url {
-		margin-top: var(--space_sm);
 	}
 
 	.panel {
