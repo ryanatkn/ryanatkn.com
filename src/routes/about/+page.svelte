@@ -87,10 +87,7 @@
 	</section> -->
 
 	<section class="box">
-		<Card href="{base}/funding"
-			><div slot="icon">🐚</div>
-			funding</Card
-		>
+		<Card href="{base}/funding" icon="🐚">funding</Card>
 	</section>
 </div>
 
