@@ -85,10 +85,11 @@
 	<title>ryanatkn.com</title>
 </svelte:head>
 
-<div class="width_md p_md">
+<section class="width_md p_md">
 	<section class="box">
 		<div class="panel box width_sm">
-			<blockquote>
+			<!-- TODO specificity so we can just add `.bg` instead of `style:background-color="var(--bg)"` -->
+			<blockquote class="shadow_md" style:background-color="var(--bg)">
 				hello this is the homepage of Ryan Atkinson, he's an independent web developer making free
 				and open source software
 			</blockquote>
@@ -103,12 +104,12 @@
 		</div>
 	</section>
 	<section class="box">
-		<div class="panel box">
+		<div class="panel box shadow_inset_inverse_md">
 			<Contact_Info />
 		</div>
 	</section>
 	<!-- TODO margin is a hack, replace with a class or generic style -->
-	<section class="panel" style:margin-bottom="var(--space_xl4)">
+	<section class="panel shadow_inset_inverse_md">
 		<div class="box">
 			<h2>ongoing projects</h2>
 		</div>
@@ -128,20 +129,21 @@
 	<section class="box">
 		<Card href="{base}/funding" icon="🐚">funding</Card>
 	</section>
-</div>
-<Breadcrumb
-	><div class="linkpath">
-		<span class="row"
-			><Favicon />
-			<div class="pl_md">ryanatkn.com</div></span
-		>
-	</div></Breadcrumb
->
+</section>
+<section class="box">
+	<Breadcrumb
+		><div class="linkpath">
+			<span class="row"
+				><Favicon />
+				<div class="pl_md">ryanatkn.com</div></span
+			>
+		</div></Breadcrumb
+	>
+</section>
 
 <style>
 	.width_md {
 		flex: 1;
-		margin-bottom: var(--space_xl3);
 	}
 	.linkpath {
 		display: flex;

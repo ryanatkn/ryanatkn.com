@@ -121,7 +121,7 @@
 			</aside>
 		</div>
 	</section>
-	<section>
+	<section class="box">
 		<Breadcrumb><Favicon /></Breadcrumb>
 	</section>
 </div>

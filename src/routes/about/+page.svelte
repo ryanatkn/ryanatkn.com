@@ -67,31 +67,18 @@
 			</li>
 		</ul>
 	</section>
-
 	<section class="box">
 		<div class="panel box">
 			<Contact_Info />
 		</div>
 	</section>
-	<!-- TODO sponsors -->
-	<!-- <section class="box">
-		<div class="box panel">
-			<iframe
-				src="https://github.com/sponsors/ryanatkn/button"
-				title="Sponsor @ryanatkn on GitHub"
-				height="32"
-				width="114"
-				style="border: 0; border-radius: 6px;"
-			></iframe>
-		</div>
-	</section> -->
-
 	<section class="box">
 		<Card href="{base}/funding" icon="🐚">funding</Card>
 	</section>
+	<section class="box">
+		<Breadcrumb><Favicon /></Breadcrumb>
+	</section>
 </div>
-
-<Breadcrumb><Favicon /></Breadcrumb>
 
 <style>
 	.about {
