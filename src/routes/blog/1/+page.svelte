@@ -21,7 +21,7 @@
 	import type {Fetch_Value_Cache} from '@ryanatkn/belt/fetch.js';
 	import {onMount} from 'svelte';
 
-	import Blog_Post from '$routes/Blog_Post.svelte';
+	import Blog_Post from '$routes/blog/Blog_Post.svelte';
 
 	let cache: Fetch_Value_Cache | undefined | null;
 

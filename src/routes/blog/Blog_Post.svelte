@@ -1,6 +1,6 @@
 <script lang="ts">
-	import Blog_Post_Header from '$routes/Blog_Post_Header.svelte';
-	import Blog_Post_Footer from '$routes/Blog_Post_Footer.svelte';
+	import Blog_Post_Header from '$routes/blog/Blog_Post_Header.svelte';
+	import Blog_Post_Footer from '$routes/blog/Blog_Post_Footer.svelte';
 	import {get_blog_feed, type Blog_Post_Data} from '$lib/blog.js';
 
 	export let post: Blog_Post_Data;
