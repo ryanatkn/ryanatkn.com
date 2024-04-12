@@ -5,9 +5,10 @@
 	const {deployment, deployments, unfetched_deployments} = get_deployments();
 </script>
 
+<!-- TODO remove the `: any` after fixing the fuz_gitops published types -->
 <Pull_Requests_Page
 	{deployment}
 	{deployments}
 	{unfetched_deployments}
-	filter_pull_request={(pull) => pull.user.login === 'ryanatkn'}
+	filter_pull_request={(pull: any) => pull.user.login === 'ryanatkn'}
 />
