@@ -1,4 +1,4 @@
-import {SvelteComponent, getContext, setContext} from 'svelte';
+import {type SvelteComponent, getContext, setContext} from 'svelte';
 import type {Flavored, Omit_Strict} from '@ryanatkn/belt/types.js';
 
 import type {Feed} from '$lib/feed.js';
