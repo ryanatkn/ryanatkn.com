@@ -86,29 +86,27 @@
 </svelte:head>
 
 <div class="width_md p_md">
-	<div>
-		<section class="box">
-			<div class="panel box width_sm">
-				<blockquote>
-					hello this is the homepage of Ryan Atkinson, he's an independent web developer making free
-					and open source software
-				</blockquote>
-				<div style:margin-bottom="var(--space_xs)"><Me /></div>
-				<p>
-					Hi I'm building free and open source software and communicating about it. My main skill is
-					making frontend web apps and I also do some backend and devtools programming. I enjoy
-					trying to make powerful tools that are easy to use, and I have extra interest in UIs, API
-					design, and social systems. More
-					<a href="{base}/about">about me</a>.
-				</p>
-			</div>
-		</section>
-		<section class="box">
-			<div class="panel box">
-				<Contact_Info />
-			</div>
-		</section>
-	</div>
+	<section class="box">
+		<div class="panel box width_sm">
+			<blockquote>
+				hello this is the homepage of Ryan Atkinson, he's an independent web developer making free
+				and open source software
+			</blockquote>
+			<div style:margin-bottom="var(--space_xs)"><Me /></div>
+			<p>
+				Hi I'm building free and open source software and communicating about it. My main skill is
+				making frontend web apps and I also do some backend and devtools programming. I enjoy trying
+				to make powerful tools that are easy to use, and I have extra interest in UIs, API design,
+				and social systems. More
+				<a href="{base}/about">about me</a>.
+			</p>
+		</div>
+	</section>
+	<section class="box">
+		<div class="panel box">
+			<Contact_Info />
+		</div>
+	</section>
 	<!-- TODO margin is a hack, replace with a class or generic style -->
 	<section class="panel" style:margin-bottom="var(--space_xl4)">
 		<div class="box">
@@ -120,7 +118,7 @@
 			{/each}
 		</div>
 		<div class="box py_xl">
-			<div class="panel p_lg">
+			<div class="panel p_lg bg">
 				<!-- TODO fuz .size_lg -->
 				<div class="mb_lg text_align_center" style:font-size="var(--size_lg)">all repos</div>
 				<Gitops_Menu />
@@ -128,10 +126,7 @@
 		</div>
 	</section>
 	<section class="box">
-		<Card href="{base}/funding"
-			><div slot="icon">🐚</div>
-			funding</Card
-		>
+		<Card href="{base}/funding" icon="🐚">funding</Card>
 	</section>
 </div>
 <Breadcrumb

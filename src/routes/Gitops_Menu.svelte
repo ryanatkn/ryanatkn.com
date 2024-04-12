@@ -4,7 +4,7 @@
 	// TODO rethink this, is just for deployments (which also needs to be renamed because it's more like repos)
 </script>
 
-<menu>
+<menu class="unstyled">
 	<a class="chip" href="{base}/tree">tree</a>
 	<a class="chip" href="{base}/table">table</a>
 	<a class="chip" href="{base}/modules">modules</a>

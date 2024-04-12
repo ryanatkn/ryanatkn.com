@@ -7,4 +7,5 @@ export interface Project_Info {
 	icon?: string;
 	icon_alt?: string;
 	icon_style?: string;
+	icon_classes?: string;
 }

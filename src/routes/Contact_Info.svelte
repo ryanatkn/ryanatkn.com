@@ -1,5 +1,5 @@
 <h2>contact me</h2>
-<ul class="card">
+<ul class="contact_info">
 	<li>
 		<a href="mailto:mail@ryanatkn.com">mail@ryanatkn.com</a>
 	</li>
@@ -37,7 +37,7 @@
 </ul>
 
 <style>
-	.card {
+	.contact_info {
 		display: block;
 		max-width: initial;
 	}

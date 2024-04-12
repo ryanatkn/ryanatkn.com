@@ -31,7 +31,7 @@
 						<img
 							src="{base}{project.icon}"
 							alt={project.icon_alt ?? `icon for ${project.name}`}
-							class="pixelated"
+							class={project.icon_classes}
 							style={project.icon_style}
 						/>
 					{:else}
