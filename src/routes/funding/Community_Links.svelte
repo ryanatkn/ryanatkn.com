@@ -35,9 +35,3 @@
 		and <a rel="me" href="https://www.patreon.com/ryanatkn">Patreon</a>
 	</li>
 </ul>
-
-<style>
-	li > a {
-		word-break: break-all;
-	}
-</style>

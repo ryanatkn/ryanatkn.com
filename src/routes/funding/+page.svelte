@@ -116,7 +116,7 @@
 				software and ideas that fill me with passion. Thanks again for reading and I hope you have a
 				good experience.
 			</p>
-			<aside>
+			<aside class="overflow_auto">
 				<Community_Links />
 			</aside>
 		</div>
