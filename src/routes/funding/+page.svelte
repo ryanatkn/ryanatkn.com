@@ -9,10 +9,10 @@
 	import Favicon from '$lib/Favicon.svelte';
 </script>
 
-<div class="prose width_md flex_1">
+<div class="width_md flex_1">
 	<section class="box">
-		<header class="box mb_xl4">
-			<h1 class="row gap_md text_align_center">
+		<header class="box">
+			<h1 class="row gap_md text_align_center mt_xl5 mb_0">
 				<div>🐚</div>
 				funding
 				<!-- TODO svelte5 remove the style:transform bc the CSS class will be ready -->
