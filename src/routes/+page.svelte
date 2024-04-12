@@ -48,7 +48,7 @@
 			description:
 				'design system for CSS, <a href="https://svelte.dev/">Svelte</a>, and <a href="https://kit.svelte.dev/">SvelteKit</a>',
 			links: `<a class="chip" href="https://github.com/ryanatkn/fuz">source</a> <a class="chip" href="https://www.npmjs.com/package/@ryanatkn/fuz">npm</a>`,
-			icon: '🧶',
+			icon: '/fuz.png',
 			icon_alt: 'a ball of yarn',
 		},
 		{
@@ -65,7 +65,7 @@
 		// 	title: '<a href="https://www.spiderspace.org/">Spiderspace</a>',
 		// 	description: 'hobbyist web stack',
 		// 	links: `<a class="chip" href="https://www.spiderspace.org/">spiderspace.org</a> <a class="chip" href="https://github.com/spiderspace/spiderspace">source</a>`,
-		// 	icon: '/spider.png',
+		// 	icon: '/spiderspace.png',
 		// 	icon_alt: 'a pixelated yellow spider',
 		// },
 		{
