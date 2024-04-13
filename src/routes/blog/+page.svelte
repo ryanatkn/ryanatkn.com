@@ -14,10 +14,10 @@
 	<title>ryanatkn.com/blog</title>
 </svelte:head>
 
-<div class="blog prose">
+<div class="blog">
 	<ol class="panel" reversed>
 		{#each items as item}
-			<li class="card">
+			<li class="blog_card">
 				<a href={to_pathname(item.url, feed.home_page_url)}>{item.title}</a>
 				<div class="date"><Feed_Item_Date {item} /></div>
 			</li>
@@ -36,9 +36,19 @@
 	ol {
 		background-color: var(--fg_1);
 		padding: var(--space_sm) var(--space_sm) var(--space_sm) var(--space_xl4);
+		box-shadow: var(--shadow_inset_inverse_md);
 	}
-	.card {
+	.blog_card {
 		font-size: var(--size_lg);
+		max-width: var(--width_sm);
+		background-color: var(--bg);
+		border-width: var(--border_width);
+		border-style: solid;
+		border-color: transparent;
+		border-radius: var(--radius_xs);
+		margin-bottom: var(--space_lg);
+		padding: var(--space_md);
+		box-shadow: var(--shadow_md);
 	}
 	.date {
 		font-size: var(--size_md);

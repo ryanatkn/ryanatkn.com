@@ -1,12 +1,17 @@
 <script lang="ts">
 	import type {Blog_Post_Item} from '$lib/blog.js';
 
-	export let item: Blog_Post_Item;
+	interface Props {
+		item: Blog_Post_Item;
+	}
+
+	const {item}: Props = $props();
+
 	item; // TODO
 </script>
 
 <footer class="blog-post-footer">
-	<div class="panel prose">
+	<div class="panel">
 		<p>
 			<span>
 				find me on <a href="https://joinmastodon.org/">Mastodon</a> and

@@ -9,10 +9,10 @@
 	import Favicon from '$lib/Favicon.svelte';
 </script>
 
-<div class="prose width_md flex_1">
+<div class="width_md flex_1">
 	<section class="box">
-		<header class="prose box mb_xl4">
-			<h1 class="row gap_md text_align_center">
+		<header class="box">
+			<h1 class="row gap_md text_align_center mt_xl5 mb_0">
 				<div>🐚</div>
 				funding
 				<!-- TODO svelte5 remove the style:transform bc the CSS class will be ready -->
@@ -24,16 +24,16 @@
 		<div class="display_contents" style:--link_color="var(--color_b_5)">
 			<!-- TODO hacky with max-width -->
 			<Card href="https://github.com/sponsors/ryanatkn" attrs={{style: 'max-width: 100%'}}>
-				<svelte:fragment slot="icon"><Github_Logo /></svelte:fragment>
+				{#snippet icon()}<Github_Logo />{/snippet}
 				GitHub Sponsors
 			</Card>
 		</div>
 		<Card href="https://www.patreon.com/ryanatkn" align="right">
-			<svelte:fragment slot="icon"><Patreon_Logo /></svelte:fragment>
+			{#snippet icon()}<Patreon_Logo />{/snippet}
 			Patreon
 		</Card>
 	</section>
-	<section class="panel p_md shadow w_100">
+	<section class="panel p_md shadow_md w_100">
 		<div class="panel bg p_md">
 			<div class="float_right icon_size_lg">🪶</div>
 			<p>
@@ -48,7 +48,7 @@
 				for its wide reach, high capability, backwards compatibility, and gatekeeper optionality. In
 				2019 I started publishing almost all of my code as I wrote it, and set out to produce high
 				quality and reusable software with TypeScript and Svelte, working full-time in public and
-				continuing today. More <a href="{base}/about">about</a> me.
+				continuing today. More <a href="{base}/about">about me</a>.
 			</p>
 			<p>
 				Today most of my time goes to my projects that face end-users, and some of their
@@ -116,12 +116,12 @@
 				software and ideas that fill me with passion. Thanks again for reading and I hope you have a
 				good experience.
 			</p>
-			<aside>
+			<aside class="overflow_auto">
 				<Community_Links />
 			</aside>
 		</div>
 	</section>
-	<section>
+	<section class="box">
 		<Breadcrumb><Favicon /></Breadcrumb>
 	</section>
 </div>

@@ -8,10 +8,14 @@
 	// TODO audit
 	/* eslint-disable svelte/no-at-html-tags */
 
-	export let project: Project_Info;
+	interface Props {
+		project: Project_Info;
+	}
+
+	const {project}: Props = $props();
 </script>
 
-<div class="card prose">
+<div class="project_card">
 	<div>
 		<p class="title">{@html project.title}</p>
 		<div class="content">
@@ -31,7 +35,7 @@
 						<img
 							src="{base}{project.icon}"
 							alt={project.icon_alt ?? `icon for ${project.name}`}
-							class="pixelated"
+							class={project.icon_classes}
 							style={project.icon_style}
 						/>
 					{:else}
@@ -44,6 +48,18 @@
 </div>
 
 <style>
+	.project_card {
+		display: flex;
+		max-width: var(--width_sm);
+		background-color: var(--bg);
+		box-shadow: var(--shadow_md);
+		border-width: var(--border_width);
+		border-style: solid;
+		border-color: transparent;
+		border-radius: var(--radius_xs);
+		margin-bottom: var(--space_lg);
+		padding: var(--space_md);
+	}
 	.icon {
 		padding-left: var(--space_sm);
 		flex-shrink: 0;

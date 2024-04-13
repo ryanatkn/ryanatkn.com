@@ -1,9 +1,16 @@
 <script lang="ts">
-	export let slug: string;
+	import type {Snippet} from 'svelte';
+
+	interface Props {
+		slug: string;
+		children: Snippet;
+	}
+
+	const {slug, children}: Props = $props();
 </script>
 
 <div class="hash_link" id={slug}>
-	<slot />
+	{@render children()}
 	<a class="icon_button" href="#{slug}">🔗</a>
 </div>
 

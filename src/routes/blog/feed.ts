@@ -3,7 +3,7 @@
 import type {Blog_Feed} from '$lib/blog.js';
 
 export const feed: Blog_Feed = {
-	title: 'Ryan Atkinson',
+	title: "Ryan Atkinson's blog",
 	id: 'https://www.ryanatkn.com/',
 	home_page_url: 'https://www.ryanatkn.com/',
 	description: 'blog of a web developer building free and open source tools and toys',

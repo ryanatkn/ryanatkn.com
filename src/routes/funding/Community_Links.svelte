@@ -28,16 +28,11 @@
 		<a rel="me" href="https://hci.social/@ryanatkn">@ryanatkn@hci.social</a>
 	</li>
 	<li>
-		<a rel="me" href="https://twitter.com/webdevladder">twitter.com/webdevladder</a>
+		<a href="https://www.reddit.com/user/webdevladder/">/u/webdevladder</a> on Reddit and
+		<a rel="me" href="https://twitter.com/webdevladder">@webdevladder</a> on Twitter
 	</li>
 	<li>
 		support me on <a rel="me" href="https://github.com/sponsors/ryanatkn">GitHub Sponsors</a>
 		and <a rel="me" href="https://www.patreon.com/ryanatkn">Patreon</a>
 	</li>
 </ul>
-
-<style>
-	li > a {
-		word-break: break-all;
-	}
-</style>

@@ -1,7 +1,14 @@
 <script lang="ts">
 	import Breadcrumb from '@ryanatkn/fuz/Breadcrumb.svelte';
+	import type {Snippet} from 'svelte';
 
 	import Favicon from '$lib/Favicon.svelte';
+
+	interface Props {
+		children: Snippet;
+	}
+
+	const {children}: Props = $props();
 
 	// TODO redirect from the numbers or render UI to navigate to it, maybe in `Blog_Post`
 </script>
@@ -10,14 +17,14 @@
 	<Breadcrumb><Favicon /></Breadcrumb>
 </div>
 <div class="wrapper">
-	<slot />
+	{@render children()}
 </div>
 <div class="breadcrumbs">
 	<Breadcrumb><Favicon /></Breadcrumb>
 </div>
 
 <!-- TODO 404, needs to work with prerendering -->
-<!-- <section class="prose">
+<!-- <section>
 	<p>
 		nothing's here, sorry if this is an
 		<a href="https://www.w3.org/Provider/Style/URI">uncool URI</a>

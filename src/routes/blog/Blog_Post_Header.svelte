@@ -2,10 +2,14 @@
 	import Feed_Item_Date from '$lib/Feed_Item_Date.svelte';
 	import type {Blog_Post_Item} from '$lib/blog.js';
 
-	export let item: Blog_Post_Item;
+	interface Props {
+		item: Blog_Post_Item;
+	}
+
+	const {item}: Props = $props();
 </script>
 
-<h1>{item.title}</h1>
+<h1 class="mt_xl5">{item.title}</h1>
 <p>
 	<Feed_Item_Date {item} />
 </p>

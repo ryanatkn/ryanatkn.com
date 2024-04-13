@@ -33,35 +33,17 @@ probably fixable with a better image, I tried briefly but didn't get a great res
 	}
 }
 
-.prose div + ul {
-	margin-top: var(--space_xs2);
-}
-
-.cards {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	align-items: flex-start;
-	justify-content: center;
-	gap: var(--space_md);
-}
-
-.card {
-	display: flex;
-	max-width: var(--width_sm);
-	background-color: var(--bg);
-	border-width: var(--border_width);
-	border-style: solid;
-	border-color: transparent;
-	border-radius: var(--radius_xs);
-	margin-bottom: var(--space_lg);
-	padding: var(--space_md);
-}
-
-.prose button.inline.plain {
+button.inline.plain {
 	padding: var(--space_xs2);
 	margin: 0;
 	/* TODO can't go larger without affecting line spacing, maybe fix with negative margin? */
 	height: var(--size_lg);
 	min-height: var(--size_lg);
+}
+
+.card {
+	box-shadow: var(--shadow_inset_md);
+}
+.card:active {
+	box-shadow: var(--shadow_inset_inverse_md);
 }

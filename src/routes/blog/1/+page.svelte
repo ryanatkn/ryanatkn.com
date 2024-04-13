@@ -21,7 +21,7 @@
 	import type {Fetch_Value_Cache} from '@ryanatkn/belt/fetch.js';
 	import {onMount} from 'svelte';
 
-	import Blog_Post from '$lib/Blog_Post.svelte';
+	import Blog_Post from '$routes/blog/Blog_Post.svelte';
 
 	let cache: Fetch_Value_Cache | undefined | null;
 
@@ -35,7 +35,7 @@
 </script>
 
 <Blog_Post {post}>
-	<section class="prose">
+	<section>
 		<h2>Introduction</h2>
 		<p>
 			As I work on social software, I've been thinking about virtual social spaces and how I don't
@@ -54,7 +54,7 @@
 		</p>
 	</section>
 
-	<section class="prose">
+	<section>
 		<h2>The example</h2>
 		<p>
 			In the software I work on, a hub is a grouping of any number of virtual social spaces. Simple!
@@ -193,7 +193,7 @@
 
 	<hr />
 
-	<section class="prose">
+	<section>
 		<h2>Acknowledgements</h2>
 		<p>
 			Special thanks to <a
@@ -237,7 +237,7 @@
 
 	<hr />
 
-	<section class="prose">
+	<section>
 		<h2>P.S.</h2>
 		<p>Some questions from this:</p>
 		<ul>
