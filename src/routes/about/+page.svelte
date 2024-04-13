@@ -10,14 +10,14 @@
 
 <div class="about">
 	<header class="box">
-		<h1 class="panel row">
+		<h1 class="row gap_md mt_xl5">
 			<div class="flip_x" style:transform="scaleX(-1)">🪶</div>
 			about me
 			<!-- TODO svelte5 remove the style:transform bc the CSS class will be ready -->
-			<div>🪶</div>
+			<span>🪶</span>
 		</h1>
 	</header>
-	<section class="width_md panel">
+	<section class="width_md panel shadow_inset_inverse_md">
 		<div style:min-height="192px" style:margin-bottom="var(--space_md)">
 			<div class="float_right ml_sm"><Me /></div>
 			<p>
@@ -68,7 +68,7 @@
 		</ul>
 	</section>
 	<section class="box">
-		<div class="panel box">
+		<div class="panel box shadow_inset_inverse_md">
 			<Contact_Info />
 		</div>
 	</section>

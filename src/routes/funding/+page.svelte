@@ -48,7 +48,7 @@
 				for its wide reach, high capability, backwards compatibility, and gatekeeper optionality. In
 				2019 I started publishing almost all of my code as I wrote it, and set out to produce high
 				quality and reusable software with TypeScript and Svelte, working full-time in public and
-				continuing today. More <a href="{base}/about">about</a> me.
+				continuing today. More <a href="{base}/about">about me</a>.
 			</p>
 			<p>
 				Today most of my time goes to my projects that face end-users, and some of their
