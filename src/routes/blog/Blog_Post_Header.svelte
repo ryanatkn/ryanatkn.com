@@ -9,7 +9,7 @@
 	const {item}: Props = $props();
 </script>
 
-<h1>{item.title}</h1>
+<h1 class="mt_xl5">{item.title}</h1>
 <p>
 	<Feed_Item_Date {item} />
 </p>
