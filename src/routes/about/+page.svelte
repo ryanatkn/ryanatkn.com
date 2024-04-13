@@ -10,7 +10,7 @@
 
 <div class="about">
 	<header class="box">
-		<h1 class="row gap_md mt_xl5">
+		<h1 class="row gap_md mt_xl5 mb_xl7">
 			<div class="flip_x" style:transform="scaleX(-1)">🪶</div>
 			about me
 			<!-- TODO svelte5 remove the style:transform bc the CSS class will be ready -->
