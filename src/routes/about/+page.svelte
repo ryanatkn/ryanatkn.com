@@ -38,22 +38,22 @@
 				stack.
 			</p>
 		</div>
-		<p>Some more info:</p>
+		<p>More:</p>
 		<ul>
 			<li>
 				I was initially self-taught (ty internet) and I've been working as a JS-oriented web dev
 				since 2011
 			</li>
 			<li>
-				in 2019 I started <a href="https://github.com/ryanatkn">doing full-time open source</a>,
-				releasing almost everything I write for free with permissive licenses
+				In 2019 I started <a href="https://github.com/ryanatkn">doing full-time open source</a>,
+				releasing almost everything I write for free with permissive licenses.
 			</li>
 			<li>
 				I learned to code wanting to be a game programmer, but I fell in love with the web at my
 				first job
 			</li>
 			<li>
-				my interest in making games continues as a hobby in <a
+				My interest in making games continues as a hobby in <a
 					href="https://www.cosmicplayground.org/">cosmicplayground.org</a
 				>, <a href="https://earbetter.ryanatkn.com/">Earbetter</a>,
 				<a href="https://www.dealt.dev/">dealt.dev</a>,
