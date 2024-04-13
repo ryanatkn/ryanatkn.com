@@ -4,11 +4,18 @@
 	import '$routes/style.css';
 
 	import Themed from '@ryanatkn/fuz/Themed.svelte';
+	import type {Snippet} from 'svelte';
 
 	import Header from '$routes/Header.svelte';
 	import Footer from '$routes/Footer.svelte';
 	import {feed} from '$routes/blog/feed.js';
 	import {set_blog_feed} from '$lib/blog.js';
+
+	interface Props {
+		children: Snippet;
+	}
+
+	const {children}: Props = $props();
 
 	set_blog_feed(feed);
 </script>
@@ -23,7 +30,7 @@
 	<main>
 		<Header />
 		<!-- TODO maybe add a flex_1 block here? -->
-		<slot />
+		{@render children()}
 		<Footer />
 	</main>
 </Themed>

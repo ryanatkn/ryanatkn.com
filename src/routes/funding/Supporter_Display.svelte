@@ -1,14 +1,22 @@
 <script lang="ts">
 	import {random_item} from '@ryanatkn/belt/random.js';
 
-	export let count: number;
+	// TODO currently unused
+
+	interface Props {
+		count: number;
+	}
+
+	const {count}: Props = $props();
 
 	const width = 200;
 	const height = 40;
 	if (width * height !== 8000) throw Error('width * height must equal 8000');
 
 	let canvas_el: HTMLCanvasElement | undefined;
-	$: if (canvas_el) draw(canvas_el, count, width, height);
+	$effect(() => {
+		if (canvas_el) draw(canvas_el, count, width, height);
+	});
 
 	let computed_styles;
 

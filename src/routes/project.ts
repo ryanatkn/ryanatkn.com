@@ -9,3 +9,7 @@ export interface Project_Info {
 	icon_style?: string;
 	icon_classes?: string;
 }
+
+// TODO where do this belong?
+export const LOGO_SRC = 'favicon.png';
+export const LOGO_ALT = 'my avatar image, a naturally textured flat green torus';

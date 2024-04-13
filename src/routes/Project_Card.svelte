@@ -8,7 +8,11 @@
 	// TODO audit
 	/* eslint-disable svelte/no-at-html-tags */
 
-	export let project: Project_Info;
+	interface Props {
+		project: Project_Info;
+	}
+
+	const {project}: Props = $props();
 </script>
 
 <div class="project_card">

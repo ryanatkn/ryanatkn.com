@@ -3,13 +3,18 @@
 	import {page} from '$app/stores';
 
 	import Rotating_Header_Logo from '$routes/Rotating_Header_Logo.svelte';
+	import {LOGO_ALT, LOGO_SRC} from '$routes/project.js';
 
-	export let src = '/favicon.png';
-	export let alt = 'my avatar image, a naturally textured flat green donut';
+	interface Props {
+		src?: string;
+		alt?: string;
+	}
 
-	$: ({pathname} = $page.url);
-	$: at_root_path = pathname === base + '/';
-	$: href = at_root_path ? `${base}/blog` : `${base}/`;
+	const {src = LOGO_SRC, alt = LOGO_ALT}: Props = $props();
+
+	const pathname = $derived($page.url.pathname);
+	const at_root_path = $derived(pathname === base + '/');
+	const href = $derived(at_root_path ? `${base}/blog` : `${base}/`);
 </script>
 
 <header>

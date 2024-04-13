@@ -2,7 +2,11 @@
 	import type {Feed_Item} from '$lib/feed.js';
 	import {format_date} from '$lib/util.js';
 
-	export let item: Feed_Item;
+	interface Props {
+		item: Feed_Item;
+	}
+
+	const {item}: Props = $props();
 </script>
 
 {format_date(

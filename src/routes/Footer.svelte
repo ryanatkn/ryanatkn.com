@@ -1,8 +1,13 @@
 <script lang="ts">
 	import Rotating_Footer_Logo from '$routes/Rotating_Footer_Logo.svelte';
+	import {LOGO_ALT, LOGO_SRC} from '$routes/project.js';
 
-	export let src = '/favicon.png';
-	export let alt = 'my avatar image';
+	interface Props {
+		src?: string;
+		alt?: string;
+	}
+
+	const {src = LOGO_SRC, alt = LOGO_ALT}: Props = $props();
 </script>
 
 <footer>

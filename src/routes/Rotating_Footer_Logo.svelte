@@ -1,13 +1,21 @@
 <script lang="ts">
-	export let src = '/favicon.png';
-	export let alt = 'my avatar image, a naturally textured flat green donut';
+	import {base} from '$app/paths';
+
+	import {LOGO_ALT, LOGO_SRC} from '$routes/project.js';
+
+	interface Props {
+		src?: string;
+		alt?: string;
+	}
+
+	const {src = LOGO_SRC, alt = LOGO_ALT}: Props = $props();
 
 	// these extra images hide the asymmetries of pixelated circles
 </script>
 
-<img class="img_2 pixelated" {src} alt="" />
-<img class="img_3 pixelated" {src} alt="" />
-<img class="pixelated" {src} {alt} />
+<img class="img_2 pixelated" src="{base}/{src}" alt="" />
+<img class="img_3 pixelated" src="{base}/{src}" alt="" />
+<img class="pixelated" src="{base}/{src}" {alt} />
 
 <style>
 	img {

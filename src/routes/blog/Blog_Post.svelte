@@ -1,10 +1,18 @@
 <script lang="ts">
+	import type {SvelteHTMLElements} from 'svelte/elements';
+
 	import Blog_Post_Header from '$routes/blog/Blog_Post_Header.svelte';
 	import Blog_Post_Footer from '$routes/blog/Blog_Post_Footer.svelte';
 	import {get_blog_feed, type Blog_Post_Data} from '$lib/blog.js';
+	import type {Snippet} from 'svelte';
 
-	export let post: Blog_Post_Data;
-	export let classes: string | undefined = undefined;
+	interface Props {
+		post: Blog_Post_Data;
+		attrs?: SvelteHTMLElements['article'] | undefined;
+		children: Snippet;
+	}
+
+	const {post, attrs, children}: Props = $props();
 
 	const feed = get_blog_feed();
 
@@ -16,11 +24,11 @@
 </svelte:head>
 
 {#if item}
-	<article class:width_md={true} class={classes}>
+	<article class:width_md={true} {...attrs}>
 		<header>
 			<Blog_Post_Header {item} />
 		</header>
-		<slot />
+		{@render children()}
 		<hr />
 		<Blog_Post_Footer {item} />
 	</article>
