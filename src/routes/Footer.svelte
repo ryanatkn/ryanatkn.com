@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Rotating_Footer_Logo from '$routes/Rotating_Footer_Logo.svelte';
+	import Primary_Link from '$routes/Primary_Link.svelte';
 	import {LOGO_ALT, LOGO_SRC} from '$routes/project.js';
 
 	interface Props {
@@ -11,9 +12,7 @@
 </script>
 
 <footer>
-	<a title="View source" href="https://github.com/ryanatkn/ryanatkn.com"
-		><Rotating_Footer_Logo {src} {alt} /></a
-	>
+	<Primary_Link><Rotating_Footer_Logo {src} {alt} /></Primary_Link>
 </footer>
 
 <style>
@@ -25,16 +24,5 @@
 		height: 360px;
 		overflow: hidden;
 		margin-top: var(--space_xl5);
-	}
-	a {
-		width: 100%;
-		display: flex;
-		justify-content: center;
-	}
-	a:hover {
-		transform: scale3d(1.01, 1.01, 1.01);
-	}
-	a:active {
-		transform: scale3d(0.99, 0.99, 0.99);
 	}
 </style>

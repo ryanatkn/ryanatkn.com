@@ -58,12 +58,11 @@
 		<h2>The example</h2>
 		<p>
 			In the software I work on, a hub is a grouping of any number of virtual social spaces. Simple!
-			Except neither humans nor networked computers are simple, and it becomes a situation when
-			they're combined. To help us along, we'll analyze virtual social spaces with a hypothetical
-			usecase. Let's say I have a public web forum containing a specific space that has some very
-			strict rules: participants are allowed to post only on Saturday, and posts must contain
-			pictures of cats they know personally. We'll use this example to think concretely about the
-			model.
+			Except neither humans nor networks are simple, and it becomes a situation when they're
+			combined. To help us along, we'll analyze virtual social spaces with a hypothetical usecase.
+			Let's say I have a public web forum containing a specific space that has some very strict
+			rules: participants are allowed to post only on Saturday, and posts must contain pictures of
+			cats they know personally. We'll use this example to think concretely about the model.
 		</p>
 		<h2>The model</h2>
 		<p>

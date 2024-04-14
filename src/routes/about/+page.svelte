@@ -12,7 +12,7 @@
 	<header class="box">
 		<h1 class="row gap_md mt_xl5 mb_xl7">
 			<div class="flip_x" style:transform="scaleX(-1)">🪶</div>
-			about me
+			about
 			<!-- TODO svelte5 remove the style:transform bc the CSS class will be ready -->
 			<span>🪶</span>
 		</h1>
@@ -41,12 +41,12 @@
 		<p>More:</p>
 		<ul>
 			<li>
-				I was initially self-taught (ty internet) and I've been working as a JS-oriented web dev
-				since 2011
-			</li>
-			<li>
 				In 2019 I started <a href="https://github.com/ryanatkn">doing full-time open source</a>,
 				releasing almost everything I write for free with permissive licenses.
+			</li>
+			<li>
+				I was initially self-taught (ty internet) and I've been working as a JS-oriented web dev
+				since 2011
 			</li>
 			<li>
 				I learned to code wanting to be a game programmer, but I fell in love with the web at my

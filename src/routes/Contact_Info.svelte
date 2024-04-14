@@ -1,7 +1,7 @@
 <h2>contact me</h2>
 <ul class="contact_info">
 	<li>
-		<a href="mailto:mail@ryanatkn.com">mail@ryanatkn.com</a>
+		my <a href="https://discord.gg/YU5tyeK72X">Discord community</a> and user @ryanatkn
 	</li>
 	<li>
 		@ryanatkn on
@@ -24,6 +24,9 @@
 		@webdevladder@mastodon.social on <a rel="me" href="https://mastodon.social/@webdevladder"
 			>Mastodon</a
 		>
+	</li>
+	<li>
+		<a href="mailto:mail@ryanatkn.com">mail@ryanatkn.com</a>
 	</li>
 	<!-- <li>
 		support me on <a rel="me" href="https://github.com/sponsors/ryanatkn">GitHub Sponsors</a>
