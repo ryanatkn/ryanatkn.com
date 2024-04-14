@@ -1,6 +1,6 @@
 <script lang="ts">
-	import '@ryanatkn/moss/style.css';
-	import '@ryanatkn/moss/theme.css';
+	import '@ryanatkn/fuz/style.css'; // TODO BLOCK
+	import '@ryanatkn/fuz/theme.css'; // TODO BLOCK
 	import '$routes/style.css';
 
 	import Themed from '@ryanatkn/fuz/Themed.svelte';
