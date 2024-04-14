@@ -118,7 +118,7 @@
 	<!-- TODO margin is a hack, replace with a class or generic style -->
 	<section class="panel shadow_inset_inverse_md">
 		<div class="box">
-			<h2>ongoing projects</h2>
+			<h2 class="mb_xl2">ongoing projects</h2>
 		</div>
 		<div class="cards">
 			{#each projects as project (project)}

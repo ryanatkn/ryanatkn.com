@@ -1,5 +1,5 @@
-<h2>contact me</h2>
-<ul class="contact_info">
+<h2 class="mb_xl2">contact me</h2>
+<ul class="contact_info panel bg shadow_md py_md pr_md">
 	<li>
 		my <a href="https://discord.gg/YU5tyeK72X">Discord community</a> and user @ryanatkn
 	</li>
@@ -28,11 +28,6 @@
 	<li>
 		<a href="mailto:mail@ryanatkn.com">mail@ryanatkn.com</a>
 	</li>
-	<!-- <li>
-		support me on <a rel="me" href="https://github.com/sponsors/ryanatkn">GitHub Sponsors</a>
-		and
-		<a rel="me" href="https://patreon.com/ryanatkn">Patreon</a>
-	</li> -->
 </ul>
 
 <style>
