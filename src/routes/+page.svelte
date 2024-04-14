@@ -37,16 +37,23 @@
 		{
 			name: 'zzz',
 			title: '<a href="https://zzz.ryanatkn.com/">Zzz</a>',
-			description: 'social web app framework',
+			description: 'social web app framework 💤 tools for the tired',
 			links: `<a class="chip" href="https://github.com/ryanatkn/zzz">source</a>`, // TODO publish zzz - <a class="chip" href="https://www.npmjs.com/package/@ryanatkn/zzz">npm</a>
 			icon: '💤',
-			icon_alt: 'the zzz emoji',
+			icon_alt: "the Zzz logo, the sleepy zzz's emoji",
+		},
+		{
+			name: 'moss',
+			title: '<a href="https://moss.ryanatkn.com/">Moss</a>',
+			description: 'CSS framework 🌿 magical organic stylesheets',
+			links: `<a class="chip" href="https://github.com/ryanatkn/moss">source</a>`, // TODO publish moss - <a class="chip" href="https://www.npmjs.com/package/@ryanatkn/moss">npm</a>
+			icon: '🌿',
+			icon_alt: 'the Moss logo, a green herb',
 		},
 		{
 			name: 'fuz',
 			title: '<a href="https://www.fuz.dev/">Fuz</a>',
-			description:
-				'design system for CSS, <a href="https://svelte.dev/">Svelte</a>, and <a href="https://kit.svelte.dev/">SvelteKit</a>',
+			description: '<a href="https://svelte.dev/">Svelte</a> UI library 🧶 friendly user zystem',
 			links: `<a class="chip" href="https://github.com/ryanatkn/fuz">source</a> <a class="chip" href="https://www.npmjs.com/package/@ryanatkn/fuz">npm</a>`,
 			icon: '/fuz.png',
 			icon_alt: 'the Fuz logo, a little brown spider',
@@ -55,7 +62,7 @@
 			name: 'gro',
 			title: '<a href="https://github.com/ryanatkn/gro">Gro</a>',
 			description:
-				'task runner and toolkit extending <a href="https://kit.svelte.dev/">SvelteKit</a>',
+				'task runner and toolkit extending <a href="https://kit.svelte.dev/">SvelteKit</a> 🌰',
 			links: `<a class="chip" href="https://github.com/ryanatkn/gro">source</a> <a class="chip" href="https://www.npmjs.com/package/@ryanatkn/gro">npm</a>`,
 			icon: '/gro.png',
 			icon_alt: 'the Gro logo, a pixelated green oak acorn with a glint of sun',
@@ -71,8 +78,7 @@
 		{
 			name: 'cosmicplayground',
 			title: '<a href="https://www.cosmicplayground.org">cosmicplayground.org</a>',
-			description:
-				'hobby project for fun and learning, <em>"tools and toys for expanding minds"</em>',
+			description: 'hobby project for fun and learning 🌌 tools and toys for expanding minds',
 			links: '<a class="chip" href="https://github.com/ryanatkn/cosmicplayground">source</a>',
 			icon: '/cosmic_kitty.jpg',
 			icon_alt: 'the smiling and colorful face of Cosmic Kitty made of rainbow lines in space',

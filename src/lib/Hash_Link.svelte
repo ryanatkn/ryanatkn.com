@@ -23,7 +23,7 @@
 	a {
 		--icon_size: var(--icon_size_sm);
 		position: absolute;
-		left: calc(var(--icon_size) * -1 - var(--space_xl));
+		left: calc(var(--icon_size, var(--icon_size_md)) * -1 - var(--space_xl));
 		opacity: 0;
 		font-size: var(--size_lg);
 		display: flex;
