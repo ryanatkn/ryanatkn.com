@@ -57,7 +57,10 @@
 			<ul>
 				<li>
 					<a href="https://zzz.ryanatkn.com/">Zzz</a> - social web app framework (faces end-users, drives
-					the other projects)
+					the other projects, not yet published)
+				</li>
+				<li>
+					<a href="https://moss.ryanatkn.com/">Moss</a> - CSS framework and design system
 				</li>
 				<li><a href="https://www.fuz.dev/">Fuz</a> - Svelte UI library and CSS design system</li>
 				<li>
