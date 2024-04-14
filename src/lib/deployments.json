@@ -147,7 +147,7 @@
 		"url": "https://www.fuz.dev/",
 		"package_json": {
 			"name": "@ryanatkn/fuz",
-			"version": "0.97.0",
+			"version": "0.97.1",
 			"description": "Svelte UI library and CSS design system",
 			"icon": "🧶",
 			"public": true,
@@ -485,7 +485,7 @@
 		},
 		"src_json": {
 			"name": "@ryanatkn/fuz",
-			"version": "0.97.0",
+			"version": "0.97.1",
 			"modules": {
 				"./package.json": {"path": "package.json", "declarations": []},
 				"./Alert.svelte": {"path": "Alert.svelte", "declarations": []},
@@ -918,7 +918,7 @@
 		"npm_url": "https://www.npmjs.com/package/@ryanatkn/fuz",
 		"changelog_url": "https://github.com/ryanatkn/fuz/blob/main/CHANGELOG.md",
 		"published": true,
-		"check_runs": {"status": "completed", "conclusion": "success"},
+		"check_runs": {"status": "in_progress", "conclusion": null},
 		"pull_requests": [
 			{
 				"number": 20,
@@ -2890,7 +2890,9 @@
 		"changelog_url": "https://github.com/ryanatkn/fuz_gitops/blob/main/CHANGELOG.md",
 		"published": true,
 		"check_runs": {"status": "completed", "conclusion": "failure"},
-		"pull_requests": []
+		"pull_requests": [
+			{"number": 22, "title": "add moss", "user": {"login": "ryanatkn"}, "draft": false}
+		]
 	},
 	{
 		"url": "https://www.cosmicplayground.org/",
@@ -3718,7 +3720,7 @@
 				"@prettier/plugin-xml": "^3.4.1",
 				"@ryanatkn/belt": "^0.20.10",
 				"@ryanatkn/eslint-config": "^0.1.2",
-				"@ryanatkn/fuz": "^0.97.0",
+				"@ryanatkn/fuz": "^0.97.1",
 				"@ryanatkn/fuz_gitops": "^0.25.0",
 				"@ryanatkn/fuz_mastodon": "^0.11.1",
 				"@ryanatkn/gro": "^0.115.1",
@@ -3730,10 +3732,10 @@
 				"@typescript-eslint/parser": "^7.6.0",
 				"date-fns": "^3.6.0",
 				"eslint": "^8.57.0",
-				"eslint-plugin-svelte": "^2.37.0",
+				"eslint-plugin-svelte": "^2.36.0-next.13",
 				"prettier": "^3.2.5",
 				"prettier-plugin-svelte": "^3.2.3",
-				"svelte": "^5.0.0-next.102",
+				"svelte": "^5.0.0-next.103",
 				"svelte-check": "^3.6.9",
 				"tslib": "^2.6.2",
 				"typescript": "^5.4.5",
@@ -3857,7 +3859,7 @@
 		"npm_url": null,
 		"changelog_url": null,
 		"published": false,
-		"check_runs": {"status": "completed", "conclusion": "success"},
+		"check_runs": {"status": "in_progress", "conclusion": null},
 		"pull_requests": [
 			{"number": 22, "title": "add moss", "user": {"login": "ryanatkn"}, "draft": false}
 		]
