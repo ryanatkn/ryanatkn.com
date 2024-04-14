@@ -10,6 +10,8 @@
 	import type {Project_Info} from '$routes/project.js';
 	import Project_Card from '$routes/Project_Card.svelte';
 
+	// TODO source this data from the deployments data (maybe a subset for code splitting?)
+
 	// TODO I moved the project info to this data format to quicky slap together a responsive layout
 	// without changing the original tables, but it'd be much better
 	// to write this in normal Svelte markup and use CSS to make a responsive layout
@@ -62,7 +64,7 @@
 			name: 'gro',
 			title: '<a href="https://github.com/ryanatkn/gro">Gro</a>',
 			description:
-				'task runner and toolkit extending <a href="https://kit.svelte.dev/">SvelteKit</a> 🌰',
+				'task runner and toolkit extending <a href="https://kit.svelte.dev/">SvelteKit</a> 🌰 generate, run, optimize',
 			links: `<a class="chip" href="https://github.com/ryanatkn/gro">source</a> <a class="chip" href="https://www.npmjs.com/package/@ryanatkn/gro">npm</a>`,
 			icon: '/gro.png',
 			icon_alt: 'the Gro logo, a pixelated green oak acorn with a glint of sun',
@@ -103,9 +105,8 @@
 			<p>
 				Hi I'm building free and open source software and communicating about it. My main skill is
 				making frontend web apps and I also do some backend and devtools programming. I enjoy trying
-				to make powerful tools that are easy to use, and I have extra interest in UIs, API design,
-				and social systems. More
-				<a href="{base}/about">about me</a>.
+				to make powerful tools that are easy to use, and I'm extra interested in UIs, API design,
+				and social systems. More <a href="{base}/about">about me</a>.
 			</p>
 		</div>
 	</section>
@@ -132,8 +133,9 @@
 			</div>
 		</div>
 	</section>
-	<section class="box">
+	<section class="box gap_xl2">
 		<Card href="{base}/funding" icon="🐚">funding</Card>
+		<Card href="{base}/about" icon="🪶" align="right">about</Card>
 	</section>
 </section>
 <section class="box">

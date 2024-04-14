@@ -81,8 +81,7 @@
 			</p>
 			<p>
 				I've been lucky to be able to live off savings for the last 5 years, but I need a funding
-				plan to sustain these projects. I have at least a couple years left before reality catches
-				up.
+				plan to sustain these projects. My runway currently extends to 2026.
 			</p>
 			<p>
 				To help me produce software, videos, and blog posts, you can support me on
