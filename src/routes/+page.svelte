@@ -1,10 +1,10 @@
 <script lang="ts">
 	import Breadcrumb from '@ryanatkn/fuz/Breadcrumb.svelte';
 	import {base} from '$app/paths';
-	import Card from '@ryanatkn/fuz/Card.svelte';
 
 	import Favicon from '$lib/Favicon.svelte';
 	import Gitops_Menu from '$routes/Gitops_Menu.svelte';
+	import Page_Links from '$routes/Page_Links.svelte';
 	import Contact_Info from '$routes/Contact_Info.svelte';
 	import Me from '$routes/Me.svelte';
 	import type {Project_Info} from '$routes/project.js';
@@ -41,7 +41,7 @@
 			title: '<a href="https://zzz.ryanatkn.com/">Zzz</a>',
 			description: 'social web app framework 💤 tools for the tired',
 			links: `<a class="chip" href="https://github.com/ryanatkn/zzz">source</a>`, // TODO publish zzz - <a class="chip" href="https://www.npmjs.com/package/@ryanatkn/zzz">npm</a>
-			icon: '💤',
+			icon: 'Zzz_Logo',
 			icon_alt: "the Zzz logo, the sleepy zzz's emoji",
 		},
 		{
@@ -49,7 +49,7 @@
 			title: '<a href="https://moss.ryanatkn.com/">Moss</a>',
 			description: 'CSS framework 🌿 magical organic stylesheets',
 			links: `<a class="chip" href="https://github.com/ryanatkn/moss">source</a>`, // TODO publish moss - <a class="chip" href="https://www.npmjs.com/package/@ryanatkn/moss">npm</a>
-			icon: '🌿',
+			icon: 'Moss_Logo',
 			icon_alt: 'the Moss logo, a green herb',
 		},
 		{
@@ -57,7 +57,7 @@
 			title: '<a href="https://www.fuz.dev/">Fuz</a>',
 			description: '<a href="https://svelte.dev/">Svelte</a> UI library 🧶 friendly user zystem',
 			links: `<a class="chip" href="https://github.com/ryanatkn/fuz">source</a> <a class="chip" href="https://www.npmjs.com/package/@ryanatkn/fuz">npm</a>`,
-			icon: '/fuz.png',
+			icon: 'Fuz_Logo',
 			icon_alt: 'the Fuz logo, a little brown spider',
 		},
 		{
@@ -134,8 +134,7 @@
 		</div>
 	</section>
 	<section class="box gap_xl2">
-		<Card href="{base}/funding" icon="🐚">funding</Card>
-		<Card href="{base}/about" icon="🪶" align="right">about</Card>
+		<Page_Links />
 	</section>
 </section>
 <section class="box">

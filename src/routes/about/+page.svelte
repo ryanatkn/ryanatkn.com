@@ -1,8 +1,8 @@
 <script lang="ts">
 	import Breadcrumb from '@ryanatkn/fuz/Breadcrumb.svelte';
 	import {base} from '$app/paths';
-	import Card from '@ryanatkn/fuz/Card.svelte';
 
+	import Page_Links from '$routes/Page_Links.svelte';
 	import Contact_Info from '$routes/Contact_Info.svelte';
 	import Favicon from '$lib/Favicon.svelte';
 	import Me from '$routes/Me.svelte';
@@ -72,8 +72,8 @@
 			<Contact_Info />
 		</div>
 	</section>
-	<section class="box">
-		<Card href="{base}/funding" icon="🐚">funding</Card>
+	<section class="box gap_xl2">
+		<Page_Links />
 	</section>
 	<section class="box">
 		<Breadcrumb><Favicon /></Breadcrumb>
