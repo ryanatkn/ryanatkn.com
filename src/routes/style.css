@@ -40,10 +40,3 @@ button.inline.plain {
 	height: var(--size_lg);
 	min-height: var(--size_lg);
 }
-
-.card {
-	box-shadow: var(--shadow_inset_md);
-}
-.card:active {
-	box-shadow: var(--shadow_inset_inverse_md);
-}
