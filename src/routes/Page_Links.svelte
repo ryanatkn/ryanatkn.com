@@ -1,7 +1,15 @@
 <script lang="ts">
 	import {base} from '$app/paths';
+	import {page} from '$app/stores';
 	import Card from '@ryanatkn/fuz/Card.svelte';
+
+	const pathname = $derived($page.url.pathname);
 </script>
 
-<Card href="{base}/funding" icon="🐚">funding</Card>
-<Card href="{base}/about" icon="🪶" align="right">about</Card>
+<!-- TODO `endsWith` isn't correct -->
+{#if !pathname.endsWith('/about')}
+	<Card href="{base}/about" icon="🪶" align="right">about</Card>
+{/if}
+{#if !pathname.endsWith('/funding')}
+	<Card href="{base}/funding" icon="🐚">funding</Card>
+{/if}

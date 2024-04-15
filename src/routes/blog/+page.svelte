@@ -46,7 +46,8 @@
 		border-style: solid;
 		border-color: transparent;
 		border-radius: var(--radius_xs);
-		margin-bottom: var(--space_lg);
+		margin-bottom: var(--space_xl);
+		margin-top: var(--space_sm);
 		padding: var(--space_md);
 		box-shadow: var(--shadow_md);
 	}

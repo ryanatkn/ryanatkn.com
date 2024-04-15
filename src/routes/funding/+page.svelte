@@ -5,6 +5,7 @@
 	import Breadcrumb from '@ryanatkn/fuz/Breadcrumb.svelte';
 
 	import Community_Links from '$routes/funding/Community_Links.svelte';
+	import Page_Links from '$routes/Page_Links.svelte';
 	import Patreon_Logo from '$routes/funding/Patreon_Logo.svelte';
 	import Favicon from '$lib/Favicon.svelte';
 </script>
@@ -122,6 +123,9 @@
 				<Community_Links />
 			</aside>
 		</div>
+	</section>
+	<section class="box gap_xl2">
+		<Page_Links />
 	</section>
 	<section class="box">
 		<Breadcrumb><Favicon /></Breadcrumb>
