@@ -102,7 +102,11 @@
 				and open source software
 			</blockquote>
 			<div style:margin-bottom="var(--space_xs)"><Me /></div>
-			<p>
+			<p
+				class="panel bg relative shadow_md"
+				style:left="var(--space_xl)"
+				style:top="var(--space_xl2)"
+			>
 				Hi I'm building free and open source software and communicating about it. My main skill is
 				making frontend web apps and I also do some backend and devtools programming. I enjoy trying
 				to make powerful tools that are easy to use, and I'm extra interested in UIs, API design,

@@ -1,5 +1,5 @@
 <h2 class="mb_xl2">contact me</h2>
-<ul class="contact_info panel bg shadow_md py_md pr_md">
+<ul class="contact_info panel bg shadow_md py_md pr_md relative" style:left="var(--space_xs)">
 	<li>
 		my <a href="https://discord.gg/YU5tyeK72X">Discord community</a> and user @ryanatkn
 	</li>
