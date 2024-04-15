@@ -114,9 +114,9 @@
 			</p>
 			<p>
 				My goal with the community spaces is to make an environment where anyone who shows up can
-				learn and have fun around this cluster of technologies. Meanwhile I'll be working on the
-				software and ideas that fill me with passion. Thanks again for reading and I hope you have a
-				good experience.
+				learn and have fun around this cluster of websites and technologies. Meanwhile I'll be
+				working on the software and ideas that fill me with passion. Thanks again for reading and I
+				hope you have a good experience.
 			</p>
 			<aside class="overflow_auto">
 				<Community_Links />
