@@ -30,16 +30,17 @@
 		// {
 		// 	name: 'webdevladder',
 		// 	title: '<a href="https://www.webdevladder.net/">webdevladder</a>',
-		// 	description:
-		// 		'educational screencasts for advanced realworld webdev with <a href="https://svelte.dev/">Svelte</a> and <a href="https://typescriptlang.org/">TypeScript</a>',
+		// 	description: 		'educational screencasts for advanced realworld webdev with <a href="https://svelte.dev/">Svelte</a> and <a href="https://typescriptlang.org/">TypeScript</a>',
 		// 	links: `<a class="chip" href="https://www.webdevladder.net/">webdevladder.net</a> <a class="chip" href="https://github.com/webdevladder">source</a> <a class="chip" href="https://www.youtube.com/@webdevladder">YouTube</a>`,
-		// 	icon: '🪜',
+		// 	emoji: '🪜',
 		// 	icon_alt: 'a ladder',
 		// },
 		{
 			name: 'zzz',
 			title: '<a href="https://zzz.ryanatkn.com/">Zzz</a>',
-			description: 'social web app framework 💤 tools for the tired',
+			description: 'social web app framework',
+			motto: 'toolz for the tired',
+			emoji: '💤',
 			links: `<a class="chip" href="https://github.com/ryanatkn/zzz">source</a>`, // TODO publish zzz - <a class="chip" href="https://www.npmjs.com/package/@ryanatkn/zzz">npm</a>
 			icon: 'Zzz_Logo',
 			icon_alt: "the Zzz logo, the sleepy zzz's emoji",
@@ -47,7 +48,9 @@
 		{
 			name: 'moss',
 			title: '<a href="https://moss.ryanatkn.com/">Moss</a>',
-			description: 'CSS framework 🌿 magical organic stylesheets',
+			description: 'CSS framework',
+			motto: 'magical organic stylesheets',
+			emoji: '🌿',
 			links: `<a class="chip" href="https://github.com/ryanatkn/moss">source</a>`, // TODO publish moss - <a class="chip" href="https://www.npmjs.com/package/@ryanatkn/moss">npm</a>
 			icon: 'Moss_Logo',
 			icon_alt: 'the Moss logo, a green herb',
@@ -55,7 +58,9 @@
 		{
 			name: 'fuz',
 			title: '<a href="https://www.fuz.dev/">Fuz</a>',
-			description: '<a href="https://svelte.dev/">Svelte</a> UI library 🧶 friendly user zystem',
+			description: '<a href="https://svelte.dev/">Svelte</a> UI library',
+			motto: 'friendly user zystem',
+			emoji: '🧶',
 			links: `<a class="chip" href="https://github.com/ryanatkn/fuz">source</a> <a class="chip" href="https://www.npmjs.com/package/@ryanatkn/fuz">npm</a>`,
 			icon: 'Fuz_Logo',
 			icon_alt: 'the Fuz logo, a little brown spider',
@@ -64,7 +69,9 @@
 			name: 'gro',
 			title: '<a href="https://github.com/ryanatkn/gro">Gro</a>',
 			description:
-				'task runner and toolkit extending <a href="https://kit.svelte.dev/">SvelteKit</a> 🌰 generate, run, optimize',
+				'task runner and toolkit extending <a href="https://kit.svelte.dev/">SvelteKit</a>',
+			motto: 'generate, run, optimize',
+			emoji: '🌰',
 			links: `<a class="chip" href="https://github.com/ryanatkn/gro">source</a> <a class="chip" href="https://www.npmjs.com/package/@ryanatkn/gro">npm</a>`,
 			icon: '/gro.png',
 			icon_alt: 'the Gro logo, a pixelated green oak acorn with a glint of sun',
@@ -80,7 +87,9 @@
 		{
 			name: 'cosmicplayground',
 			title: '<a href="https://www.cosmicplayground.org">cosmicplayground.org</a>',
-			description: 'hobby project for fun and learning 🌌 tools and toys for expanding minds',
+			description: 'hobby project for fun and learning',
+			motto: 'tools and toys for expanding minds',
+			emoji: '🌌',
 			links: '<a class="chip" href="https://github.com/ryanatkn/cosmicplayground">source</a>',
 			icon: '/cosmic_kitty.jpg',
 			icon_alt: 'the smiling and colorful face of Cosmic Kitty made of rainbow lines in space',

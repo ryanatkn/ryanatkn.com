@@ -3,6 +3,8 @@ export interface Project_Info {
 	name: string;
 	title: string;
 	description?: string;
+	motto?: string;
+	emoji?: string;
 	links?: string;
 	icon?: string;
 	icon_alt?: string;

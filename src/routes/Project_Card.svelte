@@ -19,9 +19,17 @@
 </script>
 
 <div class="project_card">
-	<header class="title">{@html project.title}</header>
+	<header class="title">
+		{@html project.title}
+	</header>
 	<div class="row">
 		<div>
+			{#if project.motto}
+				<p>
+					{@html project.motto}
+					{#if project.emoji}{project.emoji}{/if}
+				</p>
+			{/if}
 			{#if project.description}
 				<p>
 					{@html project.description}
