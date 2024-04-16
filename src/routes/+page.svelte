@@ -45,6 +45,7 @@
 			motto: 'climbing together',
 			links: `<a class="chip" href="https://www.youtube.com/@webdevladder">YouTube</a> <a class="chip" href="https://github.com/webdevladder/webdevladder.net">source</a>`,
 			emoji: '🪜',
+			icon: '/webdevladder.png',
 			icon_alt: 'a ladder',
 		},
 		{
@@ -103,7 +104,7 @@
 			motto: 'tools and toys for expanding minds',
 			emoji: '🌌',
 			links: '<a class="chip" href="https://github.com/ryanatkn/cosmicplayground">source</a>',
-			icon: '/cosmic_kitty.jpg',
+			icon: '/cosmicplayground.png',
 			icon_alt: 'the smiling and colorful face of Cosmic Kitty made of rainbow lines in space',
 			icon_style: 'border-radius: 50%',
 		},
@@ -119,8 +120,8 @@
 		<div class="panel box width_sm shadow_inset_inverse_md">
 			<!-- TODO specificity so we can just add `.bg` instead of `style:background-color="var(--bg)"` -->
 			<blockquote class="shadow_md" style:background-color="var(--bg)">
-				hello this is the homepage of Ryan Atkinson, he's an independent web developer making free
-				and open source software
+				this is the homepage of Ryan Atkinson, he's an independent web developer making free and
+				open source software
 			</blockquote>
 			<div style:margin-bottom="var(--space_xs)"><Me /></div>
 			<p
