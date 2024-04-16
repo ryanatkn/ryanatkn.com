@@ -3,6 +3,7 @@
 	import Zzz_Logo from '@ryanatkn/fuz/Zzz_Logo.svelte';
 	import Moss_Logo from '@ryanatkn/fuz/Moss_Logo.svelte';
 	import Fuz_Logo from '@ryanatkn/fuz/Fuz_Logo.svelte';
+	import Spiderspace_Logo from '@ryanatkn/fuz/Spiderspace_Logo.svelte';
 
 	import type {Project_Info} from '$routes/project.js';
 
@@ -22,7 +23,7 @@
 	<header class="title">
 		{@html project.title}
 	</header>
-	<div class="row">
+	<div class="flex">
 		<div>
 			{#if project.motto}
 				<p>
@@ -47,6 +48,8 @@
 					<Moss_Logo />
 				{:else if project.icon === 'Fuz_Logo'}
 					<Fuz_Logo />
+				{:else if project.icon === 'Spiderspace_Logo'}
+					<Spiderspace_Logo />
 				{:else if project.icon[0] === '/'}
 					<img
 						src="{base}{project.icon}"
@@ -82,6 +85,6 @@
 	}
 	.title {
 		font-size: var(--size_lg);
-		word-break: break-all;
+		margin-bottom: var(--space_sm);
 	}
 </style>

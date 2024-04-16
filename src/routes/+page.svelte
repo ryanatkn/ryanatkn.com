@@ -27,14 +27,26 @@
 			title: '<a href="https://github.com/ryanatkn">github.com/ryanatkn</a>',
 			description: 'my free and open source software',
 		},
-		// {
-		// 	name: 'webdevladder',
-		// 	title: '<a href="https://www.webdevladder.net/">webdevladder</a>',
-		// 	description: 		'educational screencasts for advanced realworld webdev with <a href="https://svelte.dev/">Svelte</a> and <a href="https://typescriptlang.org/">TypeScript</a>',
-		// 	links: `<a class="chip" href="https://www.webdevladder.net/">webdevladder.net</a> <a class="chip" href="https://github.com/webdevladder">source</a> <a class="chip" href="https://www.youtube.com/@webdevladder">YouTube</a>`,
-		// 	emoji: '🪜',
-		// 	icon_alt: 'a ladder',
-		// },
+		{
+			name: 'spiderspace',
+			title: '<a href="https://www.spiderspace.org/">spiderspace.org</a>',
+			description: 'community website with a YouTube channel about building it',
+			motto: 'weaving web community',
+			links: `<a class="chip" href="https://www.youtube.com/@spiderspace_8000">YouTube</a> <a class="chip" href="https://github.com/spiderspace/spiderspace.org">source</a>`,
+			emoji: '🕸️',
+			icon: 'Spiderspace_Logo',
+			icon_alt: 'a spiderweb',
+		},
+		{
+			name: 'webdevladder',
+			title: '<a href="https://www.webdevladder.net/">webdevladder.net</a>',
+			description:
+				'educational screencasts with <a href="https://svelte.dev/">Svelte</a> and <a href="https://typescriptlang.org/">TypeScript</a>',
+			motto: 'climbing together',
+			links: `<a class="chip" href="https://www.youtube.com/@webdevladder">YouTube</a> <a class="chip" href="https://github.com/webdevladder/webdevladder.net">source</a>`,
+			emoji: '🪜',
+			icon_alt: 'a ladder',
+		},
 		{
 			name: 'zzz',
 			title: '<a href="https://zzz.ryanatkn.com/">Zzz</a>',
@@ -113,8 +125,8 @@
 			<div style:margin-bottom="var(--space_xs)"><Me /></div>
 			<p
 				class="panel bg relative shadow_md"
-				style:left="var(--space_xl)"
-				style:top="var(--space_xl2)"
+				style:left="var(--space_sm)"
+				style:top="var(--space_xl)"
 			>
 				Hi I'm building free and open source software and communicating about it. My main skill is
 				making frontend web apps and I also do some backend and devtools programming. I enjoy trying
