@@ -22,6 +22,7 @@ export default {
 					'unsafe-inline',
 					'https://*.ryanatkn.com/',
 					'https://*.spiderspace.org/',
+					'https://*.webdevladder.net/',
 					'https://*.fuz.dev/',
 					'https://*.cosmicplayground.org/',
 					'https://*.dealt.dev/',
