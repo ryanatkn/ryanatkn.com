@@ -3,7 +3,9 @@ import type {Fuz_Config} from '@ryanatkn/fuz/config.js';
 const config: Fuz_Config = {
 	deployments: [
 		'https://www.spiderspace.org/',
+		'https://www.webdevladder.net/',
 		'https://zzz.ryanatkn.com/',
+		'https://moss.ryanatkn.com/',
 		'https://www.fuz.dev/',
 		'https://gro.ryanatkn.com/',
 		'https://template.fuz.dev/',
