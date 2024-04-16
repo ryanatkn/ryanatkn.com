@@ -117,15 +117,15 @@
 
 <section class="width_md p_md">
 	<section class="box">
-		<div class="panel box width_sm shadow_inset_inverse_md">
+		<div class="panel box width_sm shadow_inset_xs">
 			<!-- TODO specificity so we can just add `.bg` instead of `style:background-color="var(--bg)"` -->
-			<blockquote class="shadow_md" style:background-color="var(--bg)">
+			<blockquote class="shadow_sm" style:background-color="var(--bg)">
 				this is the homepage of Ryan Atkinson, he's an independent web developer making free and
 				open source software
 			</blockquote>
 			<div style:margin-bottom="var(--space_xs)"><Me /></div>
 			<p
-				class="panel bg relative shadow_md"
+				class="panel bg relative shadow_sm"
 				style:left="var(--space_sm)"
 				style:top="var(--space_xl)"
 			>
@@ -137,12 +137,12 @@
 		</div>
 	</section>
 	<section class="box">
-		<div class="panel box shadow_inset_inverse_md">
+		<div class="panel box shadow_inset_xs">
 			<Contact_Info />
 		</div>
 	</section>
 	<!-- TODO margin is a hack, replace with a class or generic style -->
-	<section class="panel shadow_inset_inverse_md">
+	<section class="panel shadow_inset_xs">
 		<div class="box">
 			<h2 class="mb_xl2">ongoing projects</h2>
 		</div>
@@ -152,7 +152,7 @@
 			{/each}
 		</div>
 		<div class="box py_xl">
-			<div class="panel p_lg bg shadow_inset_inverse_md">
+			<div class="panel p_lg bg shadow_inset_xs">
 				<!-- TODO fuz .size_lg -->
 				<div class="mb_lg text_align_center" style:font-size="var(--size_lg)">all repos</div>
 				<Gitops_Menu />
