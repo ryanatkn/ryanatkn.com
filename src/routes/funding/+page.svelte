@@ -34,8 +34,8 @@
 			Patreon
 		</Card>
 	</section>
-	<section class="panel p_md shadow_md w_100">
-		<div class="panel bg p_md">
+	<section class="panel p_sm shadow_md w_100">
+		<div class="panel bg p_xl shadow_xs">
 			<div class="float_right icon_size_lg">🪶</div>
 			<p>
 				Hi thank you for reading. I'm an independent software developer and this is an attempt to

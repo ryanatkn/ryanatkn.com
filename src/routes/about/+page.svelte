@@ -17,7 +17,7 @@
 			<span>🪶</span>
 		</h1>
 	</header>
-	<section class="width_md panel shadow_inset_md">
+	<section class="width_md panel shadow_inset_xs">
 		<div style:min-height="192px" style:margin-bottom="var(--space_md)">
 			<div class="float_right ml_sm"><Me /></div>
 			<p>
@@ -68,7 +68,7 @@
 		</ul>
 	</section>
 	<section class="box">
-		<div class="panel box shadow_inset_md">
+		<div class="panel box shadow_inset_xs">
 			<Contact_Info />
 		</div>
 	</section>
