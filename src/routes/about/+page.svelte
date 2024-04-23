@@ -56,7 +56,6 @@
 				My interest in making games continues as a hobby in <a
 					href="https://www.cosmicplayground.org/">cosmicplayground.org</a
 				>, <a href="https://earbetter.ryanatkn.com/">Earbetter</a>,
-				<a href="https://www.dealt.dev/">dealt.dev</a>,
 				<a href="https://ryanatkn.github.io/svelte-snake-sports/">Svelte Snake Sports</a>, and other
 				<a href="https://github.com/ryanatkn#archives">abandonings</a>.
 			</li>

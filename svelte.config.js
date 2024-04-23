@@ -25,7 +25,6 @@ export default {
 					'https://*.webdevladder.net/',
 					'https://*.fuz.dev/',
 					'https://*.cosmicplayground.org/',
-					'https://*.dealt.dev/',
 					'https://ryanatkn.github.io/',
 					'https://hci.social/',
 					'https://storage.googleapis.com/hci-social-storage/',
