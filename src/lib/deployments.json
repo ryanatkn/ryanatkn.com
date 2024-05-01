@@ -31,9 +31,9 @@
 			"devDependencies": {
 				"@ryanatkn/belt": "^0.20.10",
 				"@ryanatkn/eslint-config": "^0.1.2",
-				"@ryanatkn/fuz": "^0.99.0",
+				"@ryanatkn/fuz": "^0.101.0",
 				"@ryanatkn/gro": "^0.115.2",
-				"@ryanatkn/moss": "^0.2.0",
+				"@ryanatkn/moss": "^0.3.0",
 				"@sveltejs/adapter-static": "^3.0.1",
 				"@sveltejs/kit": "^2.5.6",
 				"@sveltejs/vite-plugin-svelte": "^3.1.0",
@@ -43,7 +43,7 @@
 				"eslint-plugin-svelte": "^2.36.0-next.13",
 				"prettier": "^3.2.5",
 				"prettier-plugin-svelte": "^3.2.3",
-				"svelte": "^5.0.0-next.105",
+				"svelte": "^5.0.0-next.120",
 				"svelte-check": "^3.6.9",
 				"tslib": "^2.6.2",
 				"typescript": "^5.4.5",
@@ -103,9 +103,9 @@
 			"devDependencies": {
 				"@ryanatkn/belt": "^0.20.10",
 				"@ryanatkn/eslint-config": "^0.1.2",
-				"@ryanatkn/fuz": "^0.99.0",
+				"@ryanatkn/fuz": "^0.101.0",
 				"@ryanatkn/gro": "^0.115.2",
-				"@ryanatkn/moss": "^0.2.0",
+				"@ryanatkn/moss": "^0.3.0",
 				"@sveltejs/adapter-static": "^3.0.1",
 				"@sveltejs/kit": "^2.5.6",
 				"@sveltejs/vite-plugin-svelte": "^3.1.0",
@@ -115,7 +115,7 @@
 				"eslint-plugin-svelte": "^2.36.0-next.13",
 				"prettier": "^3.2.5",
 				"prettier-plugin-svelte": "^3.2.3",
-				"svelte": "^5.0.0-next.105",
+				"svelte": "^5.0.0-next.120",
 				"svelte-check": "^3.6.9",
 				"tslib": "^2.6.2",
 				"typescript": "^5.4.5",
@@ -174,9 +174,9 @@
 			"files": ["dist"],
 			"devDependencies": {
 				"@ryanatkn/eslint-config": "^0.1.2",
-				"@ryanatkn/fuz": "^0.99.3",
+				"@ryanatkn/fuz": "^0.101.0",
 				"@ryanatkn/gro": "^0.115.2",
-				"@ryanatkn/moss": "^0.2.0",
+				"@ryanatkn/moss": "^0.3.0",
 				"@sveltejs/adapter-static": "^3.0.1",
 				"@sveltejs/kit": "^2.5.7",
 				"@sveltejs/vite-plugin-svelte": "^3.1.0",
@@ -186,7 +186,7 @@
 				"eslint-plugin-svelte": "^2.36.0-next.13",
 				"prettier": "^3.2.5",
 				"prettier-plugin-svelte": "^3.2.3",
-				"svelte": "^5.0.0-next.115",
+				"svelte": "^5.0.0-next.120",
 				"svelte-check": "^3.7.0",
 				"tslib": "^2.6.2",
 				"typescript": "^5.4.5",
@@ -218,7 +218,7 @@
 		"url": "https://moss.ryanatkn.com/",
 		"package_json": {
 			"name": "@ryanatkn/moss",
-			"version": "0.2.0",
+			"version": "0.3.0",
 			"description": "CSS framework",
 			"motto": "magical organic stylesheets",
 			"icon": "🌿",
@@ -247,24 +247,24 @@
 				"@changesets/changelog-git": "^0.2.0",
 				"@ryanatkn/belt": "^0.20.10",
 				"@ryanatkn/eslint-config": "^0.1.2",
-				"@ryanatkn/fuz": "^0.99.4",
+				"@ryanatkn/fuz": "^0.101.0",
 				"@ryanatkn/fuz_code": "^0.11.0",
 				"@ryanatkn/gro": "^0.115.2",
 				"@sveltejs/adapter-static": "^3.0.1",
 				"@sveltejs/kit": "^2.5.7",
 				"@sveltejs/package": "^2.3.1",
 				"@sveltejs/vite-plugin-svelte": "^3.1.0",
-				"@types/node": "^20.12.7",
-				"@typescript-eslint/eslint-plugin": "^7.7.0",
-				"@typescript-eslint/parser": "^7.7.0",
+				"@types/node": "^20.12.8",
+				"@typescript-eslint/eslint-plugin": "^7.8.0",
+				"@typescript-eslint/parser": "^7.8.0",
 				"eslint": "^8.57.0",
 				"eslint-plugin-svelte": "^2.36.0-next.13",
 				"prettier": "^3.2.5",
 				"prettier-plugin-svelte": "^3.2.3",
 				"prism-svelte": "^0.5.0",
 				"prismjs": "^1.29.0",
-				"svelte": "^5.0.0-next.115",
-				"svelte-check": "^3.6.9",
+				"svelte": "^5.0.0-next.120",
+				"svelte-check": "^3.7.0",
 				"tslib": "^2.6.2",
 				"typescript": "^5.4.5",
 				"uvu": "^0.5.6"
@@ -305,7 +305,7 @@
 		},
 		"src_json": {
 			"name": "@ryanatkn/moss",
-			"version": "0.2.0",
+			"version": "0.3.0",
 			"modules": {
 				"./package.json": {"path": "package.json", "declarations": []},
 				"./style_animations.css": {"path": "style_animations.css", "declarations": []},
@@ -331,15 +331,7 @@
 						{"name": "Style_Variable", "kind": "type"},
 						{"name": "Render_Theme_Style_Options", "kind": "type"},
 						{"name": "render_theme_style", "kind": "function"},
-						{"name": "render_theme_variable", "kind": "function"},
-						{"name": "sync_color_scheme", "kind": "function"},
-						{"name": "COLOR_SCHEME_STORAGE_KEY", "kind": "variable"},
-						{"name": "save_color_scheme", "kind": "function"},
-						{"name": "load_color_scheme", "kind": "function"},
-						{"name": "THEME_STORAGE_KEY", "kind": "variable"},
-						{"name": "save_theme", "kind": "function"},
-						{"name": "load_theme", "kind": "function"},
-						{"name": "create_theme_setup_script", "kind": "function"}
+						{"name": "render_theme_variable", "kind": "function"}
 					]
 				},
 				"./themes.js": {
@@ -458,6 +450,7 @@
 						{"name": "tint_saturation", "kind": "variable"},
 						{"name": "bg", "kind": "variable"},
 						{"name": "fg", "kind": "variable"},
+						{"name": "bg_0", "kind": "variable"},
 						{"name": "bg_1", "kind": "variable"},
 						{"name": "bg_2", "kind": "variable"},
 						{"name": "bg_3", "kind": "variable"},
@@ -468,6 +461,7 @@
 						{"name": "bg_8", "kind": "variable"},
 						{"name": "bg_9", "kind": "variable"},
 						{"name": "bg_10", "kind": "variable"},
+						{"name": "fg_0", "kind": "variable"},
 						{"name": "fg_1", "kind": "variable"},
 						{"name": "fg_2", "kind": "variable"},
 						{"name": "fg_3", "kind": "variable"},
@@ -478,13 +472,13 @@
 						{"name": "fg_8", "kind": "variable"},
 						{"name": "fg_9", "kind": "variable"},
 						{"name": "fg_10", "kind": "variable"},
-						{"name": "fill_color_a", "kind": "variable"},
-						{"name": "fill_color_b", "kind": "variable"},
-						{"name": "fill_color_c", "kind": "variable"},
-						{"name": "fill_color_d", "kind": "variable"},
-						{"name": "fill_color_e", "kind": "variable"},
-						{"name": "fill_color_f", "kind": "variable"},
-						{"name": "fill_color_g", "kind": "variable"},
+						{"name": "fill_a", "kind": "variable"},
+						{"name": "fill_b", "kind": "variable"},
+						{"name": "fill_c", "kind": "variable"},
+						{"name": "fill_d", "kind": "variable"},
+						{"name": "fill_e", "kind": "variable"},
+						{"name": "fill_f", "kind": "variable"},
+						{"name": "fill_g", "kind": "variable"},
 						{"name": "text_color", "kind": "variable"},
 						{"name": "text_1", "kind": "variable"},
 						{"name": "text_2", "kind": "variable"},
@@ -577,11 +571,12 @@
 						{"name": "radius_xs", "kind": "variable"},
 						{"name": "radius_xs2", "kind": "variable"},
 						{"name": "radius_xs3", "kind": "variable"},
-						{"name": "button_bg", "kind": "variable"},
-						{"name": "button_bg_hover", "kind": "variable"},
-						{"name": "button_bg_selected", "kind": "variable"},
-						{"name": "button_bg_disabled", "kind": "variable"},
-						{"name": "input_bg", "kind": "variable"},
+						{"name": "button_fill", "kind": "variable"},
+						{"name": "button_fill_hover", "kind": "variable"},
+						{"name": "button_fill_active", "kind": "variable"},
+						{"name": "button_fill_selected", "kind": "variable"},
+						{"name": "button_fill_disabled", "kind": "variable"},
+						{"name": "input_fill", "kind": "variable"},
 						{"name": "input_padding_y", "kind": "variable"},
 						{"name": "input_padding_x", "kind": "variable"},
 						{"name": "input_width_min", "kind": "variable"},
@@ -755,16 +750,14 @@
 		"npm_url": "https://www.npmjs.com/package/@ryanatkn/moss",
 		"changelog_url": "https://github.com/ryanatkn/moss/blob/main/CHANGELOG.md",
 		"published": true,
-		"check_runs": {"status": "completed", "conclusion": "failure"},
-		"pull_requests": [
-			{"number": 8, "title": "refactor", "user": {"login": "ryanatkn"}, "draft": false}
-		]
+		"check_runs": {"status": "completed", "conclusion": "success"},
+		"pull_requests": []
 	},
 	{
 		"url": "https://www.fuz.dev/",
 		"package_json": {
 			"name": "@ryanatkn/fuz",
-			"version": "0.99.4",
+			"version": "0.101.0",
 			"description": "Svelte UI library",
 			"motto": "friendly user zystem",
 			"icon": "🧶",
@@ -792,31 +785,31 @@
 			"peerDependencies": {
 				"@ryanatkn/belt": "*",
 				"@ryanatkn/moss": "*",
-				"@sveltejs/kit": "*",
-				"svelte": "*"
+				"@sveltejs/kit": "^2",
+				"svelte": "^5.0.0-next.0"
 			},
 			"devDependencies": {
 				"@changesets/changelog-git": "^0.2.0",
 				"@ryanatkn/belt": "^0.20.10",
 				"@ryanatkn/eslint-config": "^0.1.2",
-				"@ryanatkn/fuz_code": "^0.11.0",
-				"@ryanatkn/gro": "^0.115.2",
-				"@ryanatkn/moss": "^0.2.0",
+				"@ryanatkn/fuz_code": "^0.12.0",
+				"@ryanatkn/gro": "^0.115.3",
+				"@ryanatkn/moss": "^0.3.0",
 				"@sveltejs/adapter-static": "^3.0.1",
 				"@sveltejs/kit": "^2.5.7",
 				"@sveltejs/package": "^2.3.1",
 				"@sveltejs/vite-plugin-svelte": "^3.1.0",
-				"@types/node": "^20.12.7",
+				"@types/node": "^20.12.8",
 				"@types/prismjs": "^1.26.3",
-				"@typescript-eslint/eslint-plugin": "^7.7.1",
-				"@typescript-eslint/parser": "^7.7.1",
+				"@typescript-eslint/eslint-plugin": "^7.8.0",
+				"@typescript-eslint/parser": "^7.8.0",
 				"eslint": "^8.57.0",
 				"eslint-plugin-svelte": "^2.36.0-next.13",
 				"prettier": "^3.2.5",
 				"prettier-plugin-svelte": "^3.2.3",
 				"prism-svelte": "^0.5.0",
 				"prismjs": "^1.29.0",
-				"svelte": "^5.0.0-next.115",
+				"svelte": "^5.0.0-next.120",
 				"svelte-check": "^3.7.0",
 				"tslib": "^2.6.2",
 				"typescript": "^5.4.5",
@@ -860,6 +853,10 @@
 					"default": "./dist/Contextmenu_Entry.svelte",
 					"types": "./dist/Contextmenu_Entry.svelte.d.ts"
 				},
+				"./contextmenu_helpers.svelte.js": {
+					"default": "./dist/contextmenu_helpers.svelte.js",
+					"types": "./dist/contextmenu_helpers.svelte.d.ts"
+				},
 				"./Contextmenu_Link_Entry.svelte": {
 					"svelte": "./dist/Contextmenu_Link_Entry.svelte",
 					"default": "./dist/Contextmenu_Link_Entry.svelte",
@@ -884,10 +881,6 @@
 					"svelte": "./dist/Contextmenu.svelte",
 					"default": "./dist/Contextmenu.svelte",
 					"types": "./dist/Contextmenu.svelte.d.ts"
-				},
-				"./contextmenu.svelte.js": {
-					"default": "./dist/contextmenu.svelte.js",
-					"types": "./dist/contextmenu.svelte.d.ts"
 				},
 				"./Copy_To_Clipboard.svelte": {
 					"svelte": "./dist/Copy_To_Clipboard.svelte",
@@ -949,6 +942,10 @@
 					"default": "./dist/Library_Footer.svelte",
 					"types": "./dist/Library_Footer.svelte.d.ts"
 				},
+				"./library_helpers.svelte.js": {
+					"default": "./dist/library_helpers.svelte.js",
+					"types": "./dist/library_helpers.svelte.d.ts"
+				},
 				"./Library_Menu.svelte": {
 					"svelte": "./dist/Library_Menu.svelte",
 					"default": "./dist/Library_Menu.svelte",
@@ -978,10 +975,6 @@
 					"svelte": "./dist/Library.svelte",
 					"default": "./dist/Library.svelte",
 					"types": "./dist/Library.svelte.d.ts"
-				},
-				"./library.svelte.js": {
-					"default": "./dist/library.svelte.js",
-					"types": "./dist/library.svelte.d.ts"
 				},
 				"./Mdn_Link.svelte": {
 					"svelte": "./dist/Mdn_Link.svelte",
@@ -1048,6 +1041,7 @@
 					"default": "./dist/Theme_Input.svelte",
 					"types": "./dist/Theme_Input.svelte.d.ts"
 				},
+				"./theme.js": {"default": "./dist/theme.js", "types": "./dist/theme.d.ts"},
 				"./Themed_Scope.svelte": {
 					"svelte": "./dist/Themed_Scope.svelte",
 					"default": "./dist/Themed_Scope.svelte",
@@ -1084,12 +1078,11 @@
 					"default": "./dist/Zzz_Logo.svelte",
 					"types": "./dist/Zzz_Logo.svelte.d.ts"
 				}
-			},
-			"dependencies": {"@ryanatkn/fuz": "^0.99.4"}
+			}
 		},
 		"src_json": {
 			"name": "@ryanatkn/fuz",
-			"version": "0.99.4",
+			"version": "0.101.0",
 			"modules": {
 				"./package.json": {"path": "package.json", "declarations": []},
 				"./Alert.svelte": {"path": "Alert.svelte", "declarations": []},
@@ -1112,19 +1105,8 @@
 					]
 				},
 				"./Contextmenu_Entry.svelte": {"path": "Contextmenu_Entry.svelte", "declarations": []},
-				"./Contextmenu_Link_Entry.svelte": {
-					"path": "Contextmenu_Link_Entry.svelte",
-					"declarations": []
-				},
-				"./Contextmenu_Root.svelte": {"path": "Contextmenu_Root.svelte", "declarations": []},
-				"./Contextmenu_Submenu.svelte": {"path": "Contextmenu_Submenu.svelte", "declarations": []},
-				"./Contextmenu_Text_Entry.svelte": {
-					"path": "Contextmenu_Text_Entry.svelte",
-					"declarations": []
-				},
-				"./Contextmenu.svelte": {"path": "Contextmenu.svelte", "declarations": []},
-				"./contextmenu.svelte.js": {
-					"path": "contextmenu.svelte.ts",
+				"./contextmenu_helpers.svelte.js": {
+					"path": "contextmenu_helpers.svelte.ts",
 					"declarations": [
 						{"name": "Contextmenu_Params", "kind": "type"},
 						{"name": "Item_State", "kind": "type"},
@@ -1144,6 +1126,17 @@
 						{"name": "get_contextmenu_dimensions", "kind": "function"}
 					]
 				},
+				"./Contextmenu_Link_Entry.svelte": {
+					"path": "Contextmenu_Link_Entry.svelte",
+					"declarations": []
+				},
+				"./Contextmenu_Root.svelte": {"path": "Contextmenu_Root.svelte", "declarations": []},
+				"./Contextmenu_Submenu.svelte": {"path": "Contextmenu_Submenu.svelte", "declarations": []},
+				"./Contextmenu_Text_Entry.svelte": {
+					"path": "Contextmenu_Text_Entry.svelte",
+					"declarations": []
+				},
+				"./Contextmenu.svelte": {"path": "Contextmenu.svelte", "declarations": []},
 				"./Copy_To_Clipboard.svelte": {"path": "Copy_To_Clipboard.svelte", "declarations": []},
 				"./Details.svelte": {"path": "Details.svelte", "declarations": []},
 				"./Dialog.svelte": {"path": "Dialog.svelte", "declarations": []},
@@ -1168,6 +1161,18 @@
 				"./Hue_Input.svelte": {"path": "Hue_Input.svelte", "declarations": []},
 				"./Library_Content.svelte": {"path": "Library_Content.svelte", "declarations": []},
 				"./Library_Footer.svelte": {"path": "Library_Footer.svelte", "declarations": []},
+				"./library_helpers.svelte.js": {
+					"path": "library_helpers.svelte.ts",
+					"declarations": [
+						{"name": "DEFAULT_LIBRARY_PATH", "kind": "variable"},
+						{"name": "to_library_path_info", "kind": "function"},
+						{"name": "set_library_links", "kind": "function"},
+						{"name": "get_library_links", "kind": "function"},
+						{"name": "Library_Link_Tag", "kind": "type"},
+						{"name": "Library_Link_Data", "kind": "type"},
+						{"name": "Library_Links", "kind": "class"}
+					]
+				},
 				"./Library_Menu.svelte": {"path": "Library_Menu.svelte", "declarations": []},
 				"./Library_Page_Links.svelte": {"path": "Library_Page_Links.svelte", "declarations": []},
 				"./Library_Primary_Nav.svelte": {"path": "Library_Primary_Nav.svelte", "declarations": []},
@@ -1180,18 +1185,6 @@
 					"declarations": []
 				},
 				"./Library.svelte": {"path": "Library.svelte", "declarations": []},
-				"./library.svelte.js": {
-					"path": "library.svelte.ts",
-					"declarations": [
-						{"name": "DEFAULT_LIBRARY_PATH", "kind": "variable"},
-						{"name": "to_library_path_info", "kind": "function"},
-						{"name": "set_library_links", "kind": "function"},
-						{"name": "get_library_links", "kind": "function"},
-						{"name": "Library_Link_Tag", "kind": "type"},
-						{"name": "Library_Link_Data", "kind": "type"},
-						{"name": "Library_Links", "kind": "class"}
-					]
-				},
 				"./Mdn_Link.svelte": {"path": "Mdn_Link.svelte", "declarations": []},
 				"./Mdn_Logo.svelte": {"path": "Mdn_Logo.svelte", "declarations": []},
 				"./Moss_Logo.svelte": {"path": "Moss_Logo.svelte", "declarations": []},
@@ -1205,6 +1198,19 @@
 				"./Spiderspace_Logo.svelte": {"path": "Spiderspace_Logo.svelte", "declarations": []},
 				"./Teleport.svelte": {"path": "Teleport.svelte", "declarations": []},
 				"./Theme_Input.svelte": {"path": "Theme_Input.svelte", "declarations": []},
+				"./theme.js": {
+					"path": "theme.ts",
+					"declarations": [
+						{"name": "sync_color_scheme", "kind": "function"},
+						{"name": "COLOR_SCHEME_STORAGE_KEY", "kind": "variable"},
+						{"name": "save_color_scheme", "kind": "function"},
+						{"name": "load_color_scheme", "kind": "function"},
+						{"name": "THEME_STORAGE_KEY", "kind": "variable"},
+						{"name": "save_theme", "kind": "function"},
+						{"name": "load_theme", "kind": "function"},
+						{"name": "create_theme_setup_script", "kind": "function"}
+					]
+				},
 				"./Themed_Scope.svelte": {"path": "Themed_Scope.svelte", "declarations": []},
 				"./Themed.svelte": {"path": "Themed.svelte", "declarations": []},
 				"./Tome_Detail.svelte": {"path": "Tome_Detail.svelte", "declarations": []},
@@ -2230,9 +2236,9 @@
 			"devDependencies": {
 				"@ryanatkn/belt": "^0.20.10",
 				"@ryanatkn/eslint-config": "^0.1.2",
-				"@ryanatkn/fuz": "^0.99.0",
+				"@ryanatkn/fuz": "^0.101.0",
 				"@ryanatkn/gro": "^0.115.2",
-				"@ryanatkn/moss": "^0.2.0",
+				"@ryanatkn/moss": "^0.3.0",
 				"@sveltejs/adapter-static": "^3.0.1",
 				"@sveltejs/kit": "^2.5.6",
 				"@sveltejs/vite-plugin-svelte": "^3.1.0",
@@ -2242,7 +2248,7 @@
 				"eslint-plugin-svelte": "^2.36.0-next.13",
 				"prettier": "^3.2.5",
 				"prettier-plugin-svelte": "^3.2.3",
-				"svelte": "^5.0.0-next.105",
+				"svelte": "^5.0.0-next.120",
 				"svelte-check": "^3.6.9",
 				"tslib": "^2.6.2",
 				"typescript": "^5.4.5",
@@ -2267,7 +2273,7 @@
 		"npm_url": null,
 		"changelog_url": null,
 		"published": false,
-		"check_runs": {"status": "completed", "conclusion": "success"},
+		"check_runs": {"status": "completed", "conclusion": "failure"},
 		"pull_requests": []
 	},
 	{
@@ -3204,7 +3210,9 @@
 		"changelog_url": "https://github.com/ryanatkn/fuz_gitops/blob/main/CHANGELOG.md",
 		"published": true,
 		"check_runs": {"status": "completed", "conclusion": "success"},
-		"pull_requests": []
+		"pull_requests": [
+			{"number": 23, "title": "upgrade deps", "user": {"login": "ryanatkn"}, "draft": false}
+		]
 	},
 	{
 		"url": "https://www.cosmicplayground.org/",
