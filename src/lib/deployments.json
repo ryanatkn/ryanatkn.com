@@ -885,9 +885,9 @@
 					"default": "./dist/Contextmenu.svelte",
 					"types": "./dist/Contextmenu.svelte.d.ts"
 				},
-				"./contextmenu.svelte.js": {
-					"default": "./dist/contextmenu.svelte.js",
-					"types": "./dist/contextmenu.svelte.d.ts"
+				"./contextmenu_helpers.svelte.js": {
+					"default": "./dist/contextmenu_helpers.svelte.js",
+					"types": "./dist/contextmenu_helpers.svelte.d.ts"
 				},
 				"./Copy_To_Clipboard.svelte": {
 					"svelte": "./dist/Copy_To_Clipboard.svelte",
@@ -979,9 +979,9 @@
 					"default": "./dist/Library.svelte",
 					"types": "./dist/Library.svelte.d.ts"
 				},
-				"./library.svelte.js": {
-					"default": "./dist/library.svelte.js",
-					"types": "./dist/library.svelte.d.ts"
+				"./library_helpers.svelte.js": {
+					"default": "./dist/library_helpers.svelte.js",
+					"types": "./dist/library_helpers.svelte.d.ts"
 				},
 				"./Mdn_Link.svelte": {
 					"svelte": "./dist/Mdn_Link.svelte",
@@ -1123,7 +1123,7 @@
 					"declarations": []
 				},
 				"./Contextmenu.svelte": {"path": "Contextmenu.svelte", "declarations": []},
-				"./contextmenu.svelte.js": {
+				"./contextmenu_helpers.svelte.js": {
 					"path": "contextmenu.svelte.ts",
 					"declarations": [
 						{"name": "Contextmenu_Params", "kind": "type"},
@@ -1180,7 +1180,7 @@
 					"declarations": []
 				},
 				"./Library.svelte": {"path": "Library.svelte", "declarations": []},
-				"./library.svelte.js": {
+				"./library_helpers.svelte.js": {
 					"path": "library.svelte.ts",
 					"declarations": [
 						{"name": "DEFAULT_LIBRARY_PATH", "kind": "variable"},
