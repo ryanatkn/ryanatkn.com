@@ -52,7 +52,7 @@
 			name: 'zzz',
 			title: '<a href="https://zzz.ryanatkn.com/">Zzz</a>',
 			description: 'social web app framework',
-			motto: 'toolz for the tired',
+			motto: 'social toolz for the tired',
 			emoji: '💤',
 			links: `<a class="chip" href="https://github.com/ryanatkn/zzz">source</a>`, // TODO publish zzz - <a class="chip" href="https://www.npmjs.com/package/@ryanatkn/zzz">npm</a>
 			icon: 'Zzz_Logo',
@@ -119,13 +119,13 @@
 	<section class="box">
 		<div class="panel box width_sm shadow_inset_xs">
 			<!-- TODO specificity so we can just add `.bg` instead of `style:background-color="var(--bg)"` -->
-			<blockquote class="shadow_sm" style:background-color="var(--bg)">
+			<blockquote class="shadow_xs" style:background-color="var(--bg)">
 				this is the homepage of Ryan Atkinson, he's an independent web developer making free and
 				open source software
 			</blockquote>
 			<div style:margin-bottom="var(--space_xs)"><Me /></div>
 			<p
-				class="panel bg relative shadow_sm"
+				class="panel bg relative shadow_xs"
 				style:left="var(--space_sm)"
 				style:top="var(--space_xl)"
 			>
