@@ -5,6 +5,7 @@
 		size?: string;
 		fill?: string;
 		label?: string;
+		inline?: boolean;
 		attrs?: SvelteHTMLElements['svg'] | undefined;
 	}
 
@@ -12,8 +13,11 @@
 		size = 'var(--space_xl7, 64px)',
 		fill = 'var(--text_color, #000)',
 		label = 'GitHub icon',
+		inline = false,
 		attrs,
 	}: Props = $props();
+
+	// TODO maybe create a `Svg` or similar component that makes all of this cleaner, even defaulting the viewBox
 </script>
 
 <svg
@@ -22,6 +26,7 @@
 	viewBox="0 0 1080 1080"
 	style:width={size}
 	style:height={size}
+	class:inline
 	{...attrs}
 >
 	<path
@@ -32,3 +37,10 @@
 		483.3,1033.05,324.45z"
 	/>
 </svg>
+
+<style>
+	.inline {
+		display: inline-block;
+		vertical-align: middle;
+	}
+</style>
