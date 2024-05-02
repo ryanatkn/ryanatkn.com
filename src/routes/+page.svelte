@@ -119,16 +119,16 @@
 	<section class="box">
 		<div class="panel box width_sm shadow_inset_xs">
 			<!-- TODO specificity so we can just add `.bg` instead of `style:background-color="var(--bg)"` -->
-			<blockquote class="shadow_xs" style:background-color="var(--bg)">
-				this is the homepage of Ryan Atkinson, he's an independent web developer making free and
+			<blockquote class="bg shadow_xs">
+				welcome to the homepage of Ryan Atkinson, he's an independent web developer making free and
 				open source software
 			</blockquote>
-			<div style:margin-bottom="var(--space_xs)"><Me /></div>
+			<div class="radius_50 shadow_md mb_md"><Me /></div>
 			<p class="panel bg relative shadow_xs">
 				Hi I'm building free and open source software and communicating about it. My main skill is
 				making frontend web apps and I also do some backend and devtools programming. I enjoy trying
 				to make powerful tools that are easy to use, and I'm extra interested in UIs, API design,
-				and social systems. More <a href="{base}/about">about me</a>.
+				and social systems.
 			</p>
 		</div>
 	</section>
@@ -136,6 +136,9 @@
 		<div class="panel box shadow_inset_xs">
 			<Contact_Info />
 		</div>
+	</section>
+	<section class="box row wrap gap_xl2">
+		<Page_Links />
 	</section>
 	<!-- TODO margin is a hack, replace with a class or generic style -->
 	<section class="panel shadow_inset_xs">
@@ -154,9 +157,6 @@
 				<Gitops_Menu />
 			</div>
 		</div>
-	</section>
-	<section class="box gap_xl2">
-		<Page_Links />
 	</section>
 </section>
 <section class="box">
