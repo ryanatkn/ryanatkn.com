@@ -91,6 +91,7 @@
 					class="nowrap"
 					href="https://github.com/sponsors/ryanatkn"
 					style:--link_color="var(--color_b_5)"
+					style:--text_color="var(--color_b_5)"
 					><Github_Logo
 						size="var(--size_md)"
 						attrs={{class: 'inline_block', style: 'vertical-align: middle'}}
