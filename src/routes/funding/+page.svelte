@@ -63,7 +63,7 @@
 				<li>
 					<a href="https://moss.ryanatkn.com/">Moss</a> - CSS framework and design system
 				</li>
-				<li><a href="https://www.fuz.dev/">Fuz</a> - Svelte UI library and CSS design system</li>
+				<li><a href="https://www.fuz.dev/">Fuz</a> - Svelte UI library</li>
 				<li>
 					<a href="https://gro.ryanatkn.com/">Gro</a> - task runner and toolkit extending SvelteKit
 				</li>
@@ -82,7 +82,7 @@
 			</p>
 			<p>
 				I've been lucky to be able to live off savings for the last 5 years, but I need a funding
-				plan to sustain these projects. My runway currently extends to 2026.
+				plan to sustain these projects. My runway currently extends through 2026.
 			</p>
 			<p>
 				To help me produce software, videos, and blog posts, you can support me on
@@ -113,9 +113,9 @@
 			</p>
 			<p>
 				My goal with the community spaces is to make an environment where anyone who shows up can
-				learn and have fun around this cluster of websites and technologies. Meanwhile I'll be
-				working on the software and ideas that fill me with passion. Thanks again for reading and I
-				hope you have a good experience.
+				learn, have fun, and collaborate around this cluster of websites and technologies. Meanwhile
+				I'll continue working on the software and ideas that fill me with passion. Thanks again for
+				reading and I hope you have a good experience.
 			</p>
 			<aside class="overflow_auto">
 				<Community_Links />
