@@ -120,8 +120,11 @@
 		<div class="panel box width_sm shadow_inset_xs">
 			<!-- TODO specificity so we can just add `.bg` instead of `style:background-color="var(--bg)"` -->
 			<blockquote class="bg shadow_xs">
-				welcome to the homepage of Ryan Atkinson, he's an independent web developer making free and
-				open source software for the social web
+				welcome to the homepage<br />
+				of Ryan Atkinson, he's<br />
+				an independent web developer<br />
+				making free and open source<br />
+				software for the social web
 			</blockquote>
 			<div class="radius_50 shadow_md mb_md"><Me /></div>
 			<p class="panel bg relative shadow_xs">
