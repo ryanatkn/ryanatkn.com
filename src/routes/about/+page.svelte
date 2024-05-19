@@ -19,7 +19,7 @@
 	</header>
 	<section class="width_md panel shadow_inset_xs">
 		<div style:min-height="192px" style:margin-bottom="var(--space_md)">
-			<div class="float_right ml_sm"><Me /></div>
+			<div class="float_right ml_sm radius_50 shadow_md"><Me /></div>
 			<p>
 				Hi, my name is Ryan Atkinson and I'm an independent web developer. I'm trying to make
 				powerful and simple tools to help people be creative and productive in social contexts. I'm
