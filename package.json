@@ -1,10 +1,26 @@
 {
-  "name": "felt-template",
-  "description": "a web app template with SvelteKit, Gro, and Felt",
+  "name": "ryanatkn.com",
   "version": "0.0.1",
+  "description": "@ryanatkn's homepage and blog",
+  "motto": "all ways a wip",
+  "icon": "🪶",
+  "public": true,
+  "license": "MIT",
+  "homepage": "https://www.ryanatkn.com/",
+  "author": {
+    "name": "Ryan Atkinson",
+    "email": "mail@ryanatkn.com",
+    "url": "https://www.ryanatkn.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryanatkn/ryanatkn.com.git"
+  },
+  "bugs": "https://github.com/ryanatkn/ryanatkn.com/issues",
+  "funding": "https://www.ryanatkn.com/funding",
   "type": "module",
   "engines": {
-    "node": ">= 16.6"
+    "node": ">=20.10"
   },
   "scripts": {
     "start": "gro dev",
@@ -13,23 +29,51 @@
     "test": "gro test",
     "deploy": "gro deploy"
   },
+  "files": [
+    "dist"
+  ],
   "devDependencies": {
-    "@feltcoop/felt": "^0.15.2",
-    "@feltcoop/gro": "^0.47.3",
-    "@sveltejs/adapter-static": "^1.0.0-next.22",
-    "@sveltejs/kit": "^1.0.0-next.203",
-    "prettier": "^2.5.1",
-    "prettier-plugin-svelte": "^2.5.1",
-    "svelte": "^3.44.3",
-    "svelte-preprocess-esbuild": "^2.0.0",
-    "tslib": "^2.3.1",
-    "typescript": "^4.5.4"
+    "@prettier/plugin-xml": "^3.4.1",
+    "@ryanatkn/belt": "^0.20.10",
+    "@ryanatkn/eslint-config": "^0.1.3",
+    "@ryanatkn/fuz": "^0.103.0",
+    "@ryanatkn/fuz_gitops": "^0.27.0",
+    "@ryanatkn/fuz_mastodon": "^0.11.1",
+    "@ryanatkn/gro": "^0.119.1",
+    "@ryanatkn/moss": "^0.4.0",
+    "@sveltejs/adapter-static": "^3.0.2",
+    "@sveltejs/kit": "^2.5.17",
+    "@sveltejs/vite-plugin-svelte": "^3.1.1",
+    "@types/node": "^20.14.7",
+    "@typescript-eslint/eslint-plugin": "^7.13.1",
+    "@typescript-eslint/parser": "^7.13.1",
+    "date-fns": "^3.6.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-svelte": "^2.40.0",
+    "prettier": "^3.3.2",
+    "prettier-plugin-svelte": "^3.2.5",
+    "svelte": "^5.0.0-next.163",
+    "svelte-check": "^3.8.1",
+    "tslib": "^2.6.3",
+    "typescript": "^5.5.2",
+    "uvu": "^0.5.6",
+    "zod": "^3.23.8"
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": "@ryanatkn",
+    "rules": {
+      "no-console": 1
+    }
   },
   "prettier": {
+    "plugins": [
+      "prettier-plugin-svelte",
+      "@prettier/plugin-xml"
+    ],
     "useTabs": true,
     "printWidth": 100,
     "singleQuote": true,
-    "trailingComma": "all",
     "bracketSpacing": false,
     "overrides": [
       {
@@ -39,5 +83,61 @@
         }
       }
     ]
+  },
+  "exports": {
+    "./blog_helpers.js": {
+      "default": "./dist/blog_helpers.js",
+      "types": "./dist/blog_helpers.d.ts"
+    },
+    "./blog.gen.js": {
+      "default": "./dist/blog.gen.js",
+      "types": "./dist/blog.gen.d.ts"
+    },
+    "./blog.js": {
+      "default": "./dist/blog.js",
+      "types": "./dist/blog.d.ts"
+    },
+    "./Blog_Post.svelte": {
+      "svelte": "./dist/Blog_Post.svelte",
+      "default": "./dist/Blog_Post.svelte",
+      "types": "./dist/Blog_Post.svelte.d.ts"
+    },
+    "./Blog_Post_Footer.svelte": {
+      "svelte": "./dist/Blog_Post_Footer.svelte",
+      "default": "./dist/Blog_Post_Footer.svelte",
+      "types": "./dist/Blog_Post_Footer.svelte.d.ts"
+    },
+    "./Blog_Post_Header.svelte": {
+      "svelte": "./dist/Blog_Post_Header.svelte",
+      "default": "./dist/Blog_Post_Header.svelte",
+      "types": "./dist/Blog_Post_Header.svelte.d.ts"
+    },
+    "./Favicon.svelte": {
+      "svelte": "./dist/Favicon.svelte",
+      "default": "./dist/Favicon.svelte",
+      "types": "./dist/Favicon.svelte.d.ts"
+    },
+    "./feed.js": {
+      "default": "./dist/feed.js",
+      "types": "./dist/feed.d.ts"
+    },
+    "./Feed_Item_Date.svelte": {
+      "svelte": "./dist/Feed_Item_Date.svelte",
+      "default": "./dist/Feed_Item_Date.svelte",
+      "types": "./dist/Feed_Item_Date.svelte.d.ts"
+    },
+    "./Hash_Link.svelte": {
+      "svelte": "./dist/Hash_Link.svelte",
+      "default": "./dist/Hash_Link.svelte",
+      "types": "./dist/Hash_Link.svelte.d.ts"
+    },
+    "./post.task.js": {
+      "default": "./dist/post.task.js",
+      "types": "./dist/post.task.d.ts"
+    },
+    "./util.js": {
+      "default": "./dist/util.js",
+      "types": "./dist/util.d.ts"
+    }
   }
 }

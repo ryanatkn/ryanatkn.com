@@ -1,0 +1,42 @@
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	min-height: 100%;
+}
+
+table {
+	border-width: var(--border_width);
+	border-style: var(--border_style);
+	border-color: var(--border_color_1);
+	border-radius: var(--border_radius);
+	border-spacing: 0;
+	background-color: var(--bg);
+}
+td {
+	padding: var(--space_sm);
+}
+tr:hover {
+	background-color: var(--fg_2);
+}
+
+/* offset to avoid visual artifacts on init,
+probably fixable with a better image, I tried briefly but didn't get a great result */
+@keyframes rotating {
+	from {
+		transform: rotate3d(0, 0, 1, 42deg);
+	}
+	to {
+		transform: rotate3d(0, 0, 1, 402deg);
+	}
+}
+
+button.inline.plain {
+	padding: var(--space_xs2);
+	margin: 0;
+	/* TODO can't go larger without affecting line spacing, maybe fix with negative margin? */
+	height: var(--size_lg);
+	min-height: var(--size_lg);
+}
