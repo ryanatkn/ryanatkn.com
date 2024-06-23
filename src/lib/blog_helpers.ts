@@ -1,6 +1,6 @@
-import {exists} from '@ryanatkn/gro/fs.js';
 import {strip_end} from '@ryanatkn/belt/string.js';
 import {join} from 'node:path';
+import {existsSync} from 'node:fs';
 
 import type {Blog_Post_Id, Blog_Post_Data, Blog_Post_Item, Blog_Post_Module} from '$lib/blog.js';
 
@@ -33,8 +33,7 @@ export const collect_blog_post_ids = async (blog_dir: string): Promise<Blog_Post
 
 	let blog_post_id: Blog_Post_Id = 1;
 	while (true) {
-		// eslint-disable-next-line no-await-in-loop
-		if (!(await exists(to_blog_post_path(blog_dir, blog_post_id)))) {
+		if (!existsSync(to_blog_post_path(blog_dir, blog_post_id))) {
 			break;
 		}
 		blog_post_ids.push(blog_post_id);
