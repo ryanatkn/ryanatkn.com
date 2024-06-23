@@ -1323,7 +1323,7 @@
 		"url": "https://gro.ryanatkn.com/",
 		"package_json": {
 			"name": "@ryanatkn/gro",
-			"version": "0.119.1",
+			"version": "0.120.0",
 			"description": "task runner and toolkit extending SvelteKit",
 			"motto": "generate, run, optimize",
 			"icon": "🌰",
@@ -1340,7 +1340,7 @@
 			"bugs": "https://github.com/ryanatkn/gro/issues",
 			"funding": "https://www.ryanatkn.com/funding",
 			"type": "module",
-			"engines": {"node": ">=20.10"},
+			"engines": {"node": ">=22.3"},
 			"scripts": {
 				"build": "rm -rf .gro dist && svelte-kit sync && svelte-package && chmod +x ./dist/gro.js && npm link -f",
 				"start": "gro dev",
@@ -1366,9 +1366,8 @@
 				"kleur": "^4.1.5",
 				"mri": "^1.2.0",
 				"prettier": "^3.3.2",
-				"prettier-plugin-svelte": "^3.2.4",
-				"tiny-glob": "^0.2.9",
-				"ts-morph": "^22.0.0",
+				"prettier-plugin-svelte": "^3.2.5",
+				"ts-morph": "^23.0.0",
 				"tslib": "^2.6.3",
 				"zod": "^3.23.8"
 			},
@@ -1376,23 +1375,23 @@
 			"devDependencies": {
 				"@changesets/changelog-git": "^0.2.0",
 				"@changesets/types": "^6.0.0",
-				"@ryanatkn/eslint-config": "^0.1.2",
-				"@ryanatkn/fuz": "^0.102.1",
+				"@ryanatkn/eslint-config": "^0.1.3",
+				"@ryanatkn/fuz": "^0.103.0",
 				"@ryanatkn/moss": "^0.4.0",
 				"@sveltejs/adapter-static": "^3.0.2",
-				"@sveltejs/kit": "^2.5.16",
+				"@sveltejs/kit": "^2.5.17",
 				"@sveltejs/package": "^2.3.2",
 				"@sveltejs/vite-plugin-svelte": "^3.1.1",
 				"@types/fs-extra": "^11.0.4",
-				"@types/node": "^20.14.2",
-				"@typescript-eslint/eslint-plugin": "^7.13.0",
-				"@typescript-eslint/parser": "^7.13.0",
+				"@types/node": "^20.14.8",
+				"@typescript-eslint/eslint-plugin": "^7.13.1",
+				"@typescript-eslint/parser": "^7.13.1",
 				"esbuild": "^0.20.2",
 				"eslint": "^8.57.0",
-				"eslint-plugin-svelte": "^2.39.4",
-				"svelte": "^5.0.0-next.155",
-				"svelte-check": "^3.8.0",
-				"typescript": "^5.4.5",
+				"eslint-plugin-svelte": "^2.40.0",
+				"svelte": "^5.0.0-next.164",
+				"svelte-check": "^3.8.1",
+				"typescript": "^5.5.2",
 				"uvu": "^0.5.6"
 			},
 			"eslintConfig": {"root": true, "extends": "@ryanatkn", "rules": {"no-console": 1}},
@@ -1470,7 +1469,6 @@
 					"types": "./dist/format.task.d.ts"
 				},
 				"./fs.js": {"default": "./dist/fs.js", "types": "./dist/fs.d.ts"},
-				"./gen_module.js": {"default": "./dist/gen_module.js", "types": "./dist/gen_module.d.ts"},
 				"./gen.task.js": {"default": "./dist/gen.task.js", "types": "./dist/gen.task.d.ts"},
 				"./gen.js": {"default": "./dist/gen.js", "types": "./dist/gen.d.ts"},
 				"./git.js": {"default": "./dist/git.js", "types": "./dist/git.d.ts"},
@@ -1552,6 +1550,10 @@
 					"default": "./dist/resolve_specifier.js",
 					"types": "./dist/resolve_specifier.d.ts"
 				},
+				"./resolve.task.js": {
+					"default": "./dist/resolve.task.js",
+					"types": "./dist/resolve.task.d.ts"
+				},
 				"./run_gen.js": {"default": "./dist/run_gen.js", "types": "./dist/run_gen.d.ts"},
 				"./run_task.js": {"default": "./dist/run_task.js", "types": "./dist/run_task.d.ts"},
 				"./run.task.js": {"default": "./dist/run.task.js", "types": "./dist/run.task.d.ts"},
@@ -1606,10 +1608,6 @@
 					"default": "./dist/task_logging.js",
 					"types": "./dist/task_logging.d.ts"
 				},
-				"./task_module.js": {
-					"default": "./dist/task_module.js",
-					"types": "./dist/task_module.d.ts"
-				},
 				"./task.js": {"default": "./dist/task.js", "types": "./dist/task.d.ts"},
 				"./test.task.js": {"default": "./dist/test.task.js", "types": "./dist/test.task.d.ts"},
 				"./throttle.js": {"default": "./dist/throttle.js", "types": "./dist/throttle.d.ts"},
@@ -1626,7 +1624,7 @@
 		},
 		"src_json": {
 			"name": "@ryanatkn/gro",
-			"version": "0.119.1",
+			"version": "0.120.0",
 			"modules": {
 				".": {
 					"path": "index.ts",
@@ -1715,6 +1713,7 @@
 						{"name": "Gro_Config", "kind": "type"},
 						{"name": "Create_Gro_Config", "kind": "type"},
 						{"name": "create_empty_config", "kind": "function"},
+						{"name": "DEFAULT_SEARCH_EXCLUDER", "kind": "variable"},
 						{"name": "DEFAULT_EXPORTS_EXCLUDER", "kind": "variable"},
 						{"name": "Gro_Config_Module", "kind": "type"},
 						{"name": "load_config", "kind": "function"},
@@ -1809,29 +1808,6 @@
 					]
 				},
 				"./fs.js": {"path": "fs.ts", "declarations": [{"name": "clean_fs", "kind": "function"}]},
-				"./gen_module.js": {
-					"path": "gen_module.ts",
-					"declarations": [
-						{"name": "GEN_FILE_PATTERN_TEXT", "kind": "variable"},
-						{"name": "GEN_FILE_PATTERN", "kind": "variable"},
-						{"name": "is_gen_path", "kind": "function"},
-						{"name": "GEN_SCHEMA_FILE_PATTERN_TEXT", "kind": "variable"},
-						{"name": "GEN_SCHEMA_FILE_PATTERN", "kind": "variable"},
-						{"name": "GEN_SCHEMA_PATH_SUFFIX", "kind": "variable"},
-						{"name": "GEN_SCHEMA_IDENTIFIER_SUFFIX", "kind": "variable"},
-						{"name": "Gen_Module_Type", "kind": "type"},
-						{"name": "Gen_Module", "kind": "type"},
-						{"name": "Basic_Gen_Module", "kind": "type"},
-						{"name": "Schema_Gen_Module", "kind": "type"},
-						{"name": "to_gen_module_type", "kind": "function"},
-						{"name": "gen_module_meta", "kind": "variable"},
-						{"name": "validate_gen_module", "kind": "variable"},
-						{"name": "Gen_Module_Meta", "kind": "type"},
-						{"name": "Basic_Gen_Module_Meta", "kind": "type"},
-						{"name": "load_gen_module", "kind": "function"},
-						{"name": "find_gen_modules", "kind": "function"}
-					]
-				},
 				"./gen.task.js": {
 					"path": "gen.task.ts",
 					"declarations": [
@@ -1842,6 +1818,9 @@
 				"./gen.js": {
 					"path": "gen.ts",
 					"declarations": [
+						{"name": "GEN_FILE_PATTERN_TEXT", "kind": "variable"},
+						{"name": "GEN_FILE_PATTERN", "kind": "variable"},
+						{"name": "is_gen_path", "kind": "function"},
 						{"name": "Gen_Result", "kind": "type"},
 						{"name": "Gen_File", "kind": "type"},
 						{"name": "Gen", "kind": "type"},
@@ -1850,15 +1829,26 @@
 						{"name": "Raw_Gen_File", "kind": "type"},
 						{"name": "Gen_Config", "kind": "variable"},
 						{"name": "Gen_Results", "kind": "type"},
-						{"name": "Gen_Module_Result", "kind": "type"},
-						{"name": "Gen_Module_Result_Success", "kind": "type"},
-						{"name": "Gen_Module_Result_Failure", "kind": "type"},
+						{"name": "Genfile_Module_Result", "kind": "type"},
+						{"name": "Genfile_Module_Result_Success", "kind": "type"},
+						{"name": "Genfile_Module_Result_Failure", "kind": "type"},
 						{"name": "to_gen_result", "kind": "function"},
 						{"name": "to_output_file_name", "kind": "function"},
 						{"name": "Analyzed_Gen_Result", "kind": "type"},
 						{"name": "analyze_gen_results", "kind": "function"},
 						{"name": "analyze_gen_result", "kind": "function"},
-						{"name": "write_gen_results", "kind": "function"}
+						{"name": "write_gen_results", "kind": "function"},
+						{"name": "Found_Genfiles", "kind": "type"},
+						{"name": "Find_Genfiles_Result", "kind": "type"},
+						{"name": "Find_Genfiles_Failure", "kind": "type"},
+						{"name": "find_genfiles", "kind": "function"},
+						{"name": "Genfile_Module", "kind": "type"},
+						{"name": "Genfile_Module_Meta", "kind": "type"},
+						{"name": "Loaded_Genfiles", "kind": "type"},
+						{"name": "Load_Genfiles_Result", "kind": "type"},
+						{"name": "Load_Genfiles_Failure", "kind": "type"},
+						{"name": "load_genfiles", "kind": "function"},
+						{"name": "validate_gen_module", "kind": "function"}
 					]
 				},
 				"./git.js": {
@@ -1943,10 +1933,14 @@
 						{"name": "Raw_Input_Path", "kind": "variable"},
 						{"name": "to_input_path", "kind": "function"},
 						{"name": "to_input_paths", "kind": "function"},
-						{"name": "get_possible_source_ids", "kind": "function"},
-						{"name": "load_source_path_data_by_input_path", "kind": "function"},
-						{"name": "load_source_ids_by_input_path", "kind": "function"},
-						{"name": "to_gro_input_path", "kind": "function"}
+						{"name": "Possible_Path", "kind": "type"},
+						{"name": "get_possible_paths", "kind": "function"},
+						{"name": "Resolved_Input_Path", "kind": "type"},
+						{"name": "Resolved_Input_File", "kind": "type"},
+						{"name": "Resolved_Input_Paths", "kind": "type"},
+						{"name": "resolve_input_paths", "kind": "function"},
+						{"name": "Resolved_Input_Files", "kind": "type"},
+						{"name": "resolve_input_files", "kind": "function"}
 					]
 				},
 				"./invoke_task.js": {
@@ -1976,10 +1970,8 @@
 						{"name": "Load_Module_Result", "kind": "type"},
 						{"name": "Load_Module_Failure", "kind": "type"},
 						{"name": "load_module", "kind": "function"},
-						{"name": "Find_Modules_Result", "kind": "type"},
-						{"name": "Find_Modules_Failure", "kind": "type"},
+						{"name": "Load_Modules_Failure", "kind": "type"},
 						{"name": "Load_Modules_Result", "kind": "type"},
-						{"name": "find_modules", "kind": "function"},
 						{"name": "load_modules", "kind": "function"}
 					]
 				},
@@ -2059,10 +2051,14 @@
 						{"name": "Raw_Input_Path", "kind": "variable"},
 						{"name": "to_input_path", "kind": "function"},
 						{"name": "to_input_paths", "kind": "function"},
-						{"name": "get_possible_source_ids", "kind": "function"},
-						{"name": "load_source_path_data_by_input_path", "kind": "function"},
-						{"name": "load_source_ids_by_input_path", "kind": "function"},
-						{"name": "to_gro_input_path", "kind": "function"}
+						{"name": "Possible_Path", "kind": "type"},
+						{"name": "get_possible_paths", "kind": "function"},
+						{"name": "Resolved_Input_Path", "kind": "type"},
+						{"name": "Resolved_Input_File", "kind": "type"},
+						{"name": "Resolved_Input_Paths", "kind": "type"},
+						{"name": "resolve_input_paths", "kind": "function"},
+						{"name": "Resolved_Input_Files", "kind": "type"},
+						{"name": "resolve_input_files", "kind": "function"}
 					]
 				},
 				"./paths.js": {
@@ -2073,16 +2069,13 @@
 						{"name": "LIB_DIR", "kind": "variable"},
 						{"name": "ROUTES_DIRNAME", "kind": "variable"},
 						{"name": "Paths", "kind": "type"},
-						{"name": "Source_Id", "kind": "variable"},
 						{"name": "create_paths", "kind": "function"},
-						{"name": "paths_from_id", "kind": "function"},
+						{"name": "infer_paths", "kind": "function"},
 						{"name": "is_gro_id", "kind": "function"},
 						{"name": "to_root_path", "kind": "function"},
-						{"name": "source_id_to_base_path", "kind": "function"},
-						{"name": "base_path_to_source_id", "kind": "function"},
-						{"name": "import_id_to_lib_path", "kind": "function"},
+						{"name": "path_id_to_base_path", "kind": "function"},
+						{"name": "base_path_to_path_id", "kind": "function"},
 						{"name": "print_path", "kind": "function"},
-						{"name": "print_path_or_gro_path", "kind": "function"},
 						{"name": "replace_extension", "kind": "function"},
 						{"name": "paths", "kind": "variable"},
 						{"name": "GRO_PACKAGE_DIR", "kind": "variable"},
@@ -2138,12 +2131,18 @@
 						{"name": "resolve_specifier", "kind": "function"}
 					]
 				},
+				"./resolve.task.js": {
+					"path": "resolve.task.ts",
+					"declarations": [
+						{"name": "Args", "kind": "variable"},
+						{"name": "task", "kind": "variable"}
+					]
+				},
 				"./run_gen.js": {
 					"path": "run_gen.ts",
 					"declarations": [
 						{"name": "GEN_NO_PROD_MESSAGE", "kind": "variable"},
-						{"name": "run_gen", "kind": "function"},
-						{"name": "to_gen_import_path", "kind": "function"}
+						{"name": "run_gen", "kind": "function"}
 					]
 				},
 				"./run_task.js": {
@@ -2283,12 +2282,10 @@
 					"path": "task_logging.ts",
 					"declarations": [
 						{"name": "log_tasks", "kind": "function"},
-						{"name": "log_gro_package_tasks", "kind": "function"},
 						{"name": "log_error_reasons", "kind": "function"},
 						{"name": "log_task_help", "kind": "function"}
 					]
 				},
-				"./task_module.js": {"path": "task_module.ts", "declarations": []},
 				"./task.js": {
 					"path": "task.ts",
 					"declarations": [
@@ -3084,7 +3081,7 @@
 		"url": "https://gitops.fuz.dev/",
 		"package_json": {
 			"name": "@ryanatkn/fuz_gitops",
-			"version": "0.27.0",
+			"version": "0.28.0",
 			"description": "a tool for managing many repos",
 			"icon": "🪄",
 			"public": true,
@@ -3099,7 +3096,7 @@
 			"bugs": "https://github.com/ryanatkn/fuz_gitops/issues",
 			"funding": "https://www.ryanatkn.com/funding",
 			"type": "module",
-			"engines": {"node": ">=20.10"},
+			"engines": {"node": ">=22.3"},
 			"scripts": {
 				"start": "gro dev",
 				"dev": "gro dev",
@@ -3119,25 +3116,25 @@
 			"devDependencies": {
 				"@changesets/changelog-git": "^0.2.0",
 				"@ryanatkn/belt": "^0.20.10",
-				"@ryanatkn/eslint-config": "^0.1.2",
+				"@ryanatkn/eslint-config": "^0.1.3",
 				"@ryanatkn/fuz": "^0.103.0",
-				"@ryanatkn/gro": "^0.119.1",
+				"@ryanatkn/gro": "^0.120.0",
 				"@ryanatkn/moss": "^0.4.0",
 				"@sveltejs/adapter-static": "^3.0.2",
-				"@sveltejs/kit": "^2.5.16",
+				"@sveltejs/kit": "^2.5.17",
 				"@sveltejs/package": "^2.3.2",
 				"@sveltejs/vite-plugin-svelte": "^3.1.1",
-				"@types/node": "^20.14.3",
+				"@types/node": "^20.14.8",
 				"@typescript-eslint/eslint-plugin": "^7.13.1",
 				"@typescript-eslint/parser": "^7.13.1",
 				"eslint": "^8.57.0",
 				"eslint-plugin-svelte": "^2.40.0",
 				"prettier": "^3.3.2",
-				"prettier-plugin-svelte": "^3.2.4",
-				"svelte": "^5.0.0-next.158",
+				"prettier-plugin-svelte": "^3.2.5",
+				"svelte": "^5.0.0-next.164",
 				"svelte-check": "^3.8.1",
 				"tslib": "^2.6.3",
-				"typescript": "^5.4.5",
+				"typescript": "^5.5.2",
 				"uvu": "^0.5.6"
 			},
 			"eslintConfig": {"root": true, "extends": "@ryanatkn", "rules": {"no-console": 1}},
@@ -3249,7 +3246,7 @@
 		},
 		"src_json": {
 			"name": "@ryanatkn/fuz_gitops",
-			"version": "0.27.0",
+			"version": "0.28.0",
 			"modules": {
 				"./package.json": {"path": "package.json", "declarations": []},
 				"./Deployments_Table.svelte": {"path": "Deployments_Table.svelte", "declarations": []},
@@ -3419,12 +3416,6 @@
 		"published": false,
 		"check_runs": {"status": "completed", "conclusion": "success"},
 		"pull_requests": [
-			{
-				"number": 90,
-				"title": "Bump braces from 3.0.2 to 3.0.3",
-				"user": {"login": "dependabot[bot]"},
-				"draft": false
-			},
 			{"number": 88, "title": "upgrade to svelte5", "user": {"login": "ryanatkn"}, "draft": false}
 		]
 	},
@@ -4160,7 +4151,7 @@
 			"bugs": "https://github.com/ryanatkn/ryanatkn.com/issues",
 			"funding": "https://www.ryanatkn.com/funding",
 			"type": "module",
-			"engines": {"node": ">=20.10"},
+			"engines": {"node": ">=22.3"},
 			"scripts": {
 				"start": "gro dev",
 				"dev": "gro dev",
@@ -4172,27 +4163,27 @@
 			"devDependencies": {
 				"@prettier/plugin-xml": "^3.4.1",
 				"@ryanatkn/belt": "^0.20.10",
-				"@ryanatkn/eslint-config": "^0.1.2",
+				"@ryanatkn/eslint-config": "^0.1.3",
 				"@ryanatkn/fuz": "^0.103.0",
-				"@ryanatkn/fuz_gitops": "^0.27.0",
+				"@ryanatkn/fuz_gitops": "^0.28.0",
 				"@ryanatkn/fuz_mastodon": "^0.11.1",
-				"@ryanatkn/gro": "^0.119.1",
+				"@ryanatkn/gro": "^0.120.0",
 				"@ryanatkn/moss": "^0.4.0",
 				"@sveltejs/adapter-static": "^3.0.2",
-				"@sveltejs/kit": "^2.5.16",
+				"@sveltejs/kit": "^2.5.17",
 				"@sveltejs/vite-plugin-svelte": "^3.1.1",
-				"@types/node": "^20.14.3",
+				"@types/node": "^20.14.8",
 				"@typescript-eslint/eslint-plugin": "^7.13.1",
 				"@typescript-eslint/parser": "^7.13.1",
 				"date-fns": "^3.6.0",
 				"eslint": "^8.57.0",
 				"eslint-plugin-svelte": "^2.40.0",
 				"prettier": "^3.3.2",
-				"prettier-plugin-svelte": "^3.2.4",
-				"svelte": "^5.0.0-next.158",
+				"prettier-plugin-svelte": "^3.2.5",
+				"svelte": "^5.0.0-next.164",
 				"svelte-check": "^3.8.1",
 				"tslib": "^2.6.3",
-				"typescript": "^5.4.5",
+				"typescript": "^5.5.2",
 				"uvu": "^0.5.6",
 				"zod": "^3.23.8"
 			},
