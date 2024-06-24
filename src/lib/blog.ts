@@ -1,4 +1,4 @@
-import {type SvelteComponent, getContext, setContext} from 'svelte';
+import {type Component, getContext, setContext} from 'svelte';
 import type {Flavored, Omit_Strict} from '@ryanatkn/belt/types.js';
 
 import type {Feed} from '$lib/feed.js';
@@ -35,7 +35,7 @@ export interface Blog_Module {
 
 export interface Blog_Post_Module {
 	post: Blog_Post_Data;
-	default: typeof SvelteComponent<any>;
+	default: Component<any>; // TODO types
 }
 
 export type Blog_Post_Id = Flavored<number, 'Blog_Post_Id'>;

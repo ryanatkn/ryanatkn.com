@@ -7,7 +7,7 @@
 
 	const {deployment, deployments} = get_deployments();
 
-	$: slug = $page.params.slug;
+	const {slug} = $derived($page.params);
 </script>
 
 <svelte:head>
