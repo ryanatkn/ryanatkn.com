@@ -8,7 +8,7 @@
 </script>
 
 <svelte:head>
-	<title>tree {deployment.package_json.icon} {deployment.name}</title>
+	<title>tree {deployment.package_json.glyph} {deployment.name}</title>
 </svelte:head>
 
 <Tree_Page {deployment} {deployments} />

@@ -11,7 +11,7 @@
 </script>
 
 <svelte:head>
-	<title>{slug} - tree {deployment.package_json.icon} {deployment.package_json.name}</title>
+	<title>{slug} - tree {deployment.package_json.glyph} {deployment.package_json.name}</title>
 </svelte:head>
 
 <Tree_Item_Page {deployment} {deployments} {slug} />
