@@ -29,9 +29,6 @@
     "test": "gro test",
     "deploy": "gro deploy"
   },
-  "files": [
-    "dist"
-  ],
   "devDependencies": {
     "@prettier/plugin-xml": "^3.4.1",
     "@ryanatkn/belt": "^0.23.0",
@@ -83,5 +80,11 @@
         }
       }
     ]
-  }
+  },
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "files": [
+    "dist"
+  ]
 }
