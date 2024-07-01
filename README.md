@@ -1,4 +1,4 @@
-[<img src="static/favicon.png" align="right" width="100">](https://www.ryanatkn.com)
+[<img src="static/favicon.png" align="right" width="100">](https://www.ryanatkn.com/)
 
 # [ryanatkn.com](https://www.ryanatkn.com) 🌤🌳🐿
 
