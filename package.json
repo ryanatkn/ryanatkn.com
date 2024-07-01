@@ -4,6 +4,7 @@
   "description": "@ryanatkn's homepage and blog",
   "motto": "all ways a wip",
   "glyph": "🪶",
+  "logo": "logo.svg",
   "public": true,
   "license": "MIT",
   "homepage": "https://www.ryanatkn.com/",
@@ -18,16 +19,16 @@
   },
   "bugs": "https://github.com/ryanatkn/ryanatkn.com/issues",
   "funding": "https://www.ryanatkn.com/funding",
-  "type": "module",
-  "engines": {
-    "node": ">=20.12"
-  },
   "scripts": {
     "start": "gro dev",
     "dev": "gro dev",
     "build": "gro build",
     "test": "gro test",
     "deploy": "gro deploy"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=20.12"
   },
   "devDependencies": {
     "@prettier/plugin-xml": "^3.4.1",
