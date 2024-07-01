@@ -45,8 +45,8 @@
 			motto: 'climbing together',
 			links: `<a class="chip" href="https://www.youtube.com/@webdevladder">YouTube</a> <a class="chip" href="https://github.com/webdevladder/webdevladder.net">source</a>`,
 			emoji: '🪜',
-			icon: '/webdevladder.png',
-			icon_alt: 'a ladder',
+			icon: 'Webdevladder_Logo',
+			icon_alt: 'a spider web between the rungs of a ladder',
 		},
 		{
 			name: 'zzz',
@@ -56,7 +56,7 @@
 			emoji: '💤',
 			links: `<a class="chip" href="https://github.com/ryanatkn/zzz">source</a>`, // TODO publish zzz - <a class="chip" href="https://www.npmjs.com/package/@ryanatkn/zzz">npm</a>
 			icon: 'Zzz_Logo',
-			icon_alt: "the Zzz logo, the sleepy zzz's emoji",
+			icon_alt: "the Zzz logo, three sleepy z's",
 		},
 		{
 			name: 'moss',
@@ -66,7 +66,7 @@
 			emoji: '🌿',
 			links: `<a class="chip" href="https://github.com/ryanatkn/moss">source</a>`, // TODO publish moss - <a class="chip" href="https://www.npmjs.com/package/@ryanatkn/moss">npm</a>
 			icon: 'Moss_Logo',
-			icon_alt: 'the Moss logo, a green herb',
+			icon_alt: 'the Moss logo, a fuzzy tuft of green moss',
 		},
 		{
 			name: 'fuz',
@@ -95,7 +95,7 @@
 		// 	description: 'hobbyist web stack',
 		// 	links: `<a class="chip" href="https://www.spiderspace.org/">spiderspace.org</a> <a class="chip" href="https://github.com/spiderspace/spiderspace">source</a>`,
 		// 	icon: '/spiderspace.png',
-		// 	icon_alt: 'a pixelated yellow spider',
+		// 	icon_alt: 'a little yellow spider',
 		// },
 		{
 			name: 'cosmicplayground',
