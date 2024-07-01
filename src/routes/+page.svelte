@@ -35,7 +35,7 @@
 			links: `<a class="chip" href="https://www.youtube.com/@spiderspace_8000">YouTube</a> <a class="chip" href="https://github.com/spiderspace/spiderspace.org">source</a>`,
 			emoji: '🕸️',
 			icon: 'Spiderspace_Logo',
-			icon_alt: 'the Spiderspace logo, a little yellow spider',
+			icon_alt: 'the Spiderspace logo, a friendly yellow spider facing you',
 		},
 		{
 			name: 'webdevladder',
@@ -76,7 +76,7 @@
 			emoji: '🧶',
 			links: `<a class="chip" href="https://github.com/ryanatkn/fuz">source</a> <a class="chip" href="https://www.npmjs.com/package/@ryanatkn/fuz">npm</a>`,
 			icon: 'Fuz_Logo',
-			icon_alt: 'the Fuz logo, a little brown spider',
+			icon_alt: 'the Fuz logo, a friendly brown spider facing you',
 		},
 		{
 			name: 'gro',
@@ -89,14 +89,6 @@
 			icon: '/gro.png',
 			icon_alt: 'the Gro logo, a pixelated green oak acorn with a glint of sun',
 		},
-		// {
-		// 	name: 'spiderspace',
-		// 	title: '<a href="https://www.spiderspace.org/">Spiderspace</a>',
-		// 	description: 'hobbyist web stack',
-		// 	links: `<a class="chip" href="https://www.spiderspace.org/">spiderspace.org</a> <a class="chip" href="https://github.com/spiderspace/spiderspace">source</a>`,
-		// 	icon: '/spiderspace.png',
-		// 	icon_alt: 'a little yellow spider',
-		// },
 		{
 			name: 'cosmicplayground',
 			title: '<a href="https://www.cosmicplayground.org">cosmicplayground.org</a>',
