@@ -35,7 +35,7 @@
 			links: `<a class="chip" href="https://www.youtube.com/@spiderspace_8000">YouTube</a> <a class="chip" href="https://github.com/spiderspace/spiderspace.org">source</a>`,
 			emoji: '🕸️',
 			icon: 'Spiderspace_Logo',
-			icon_alt: 'a spiderweb',
+			icon_alt: 'the Spiderspace logo, a little yellow spider',
 		},
 		{
 			name: 'webdevladder',
@@ -46,7 +46,7 @@
 			links: `<a class="chip" href="https://www.youtube.com/@webdevladder">YouTube</a> <a class="chip" href="https://github.com/webdevladder/webdevladder.net">source</a>`,
 			emoji: '🪜',
 			icon: 'Webdevladder_Logo',
-			icon_alt: 'a spider web between the rungs of a ladder',
+			icon_alt: 'the webdevladder logo, a spider web between the rungs of a ladder',
 		},
 		{
 			name: 'zzz',
