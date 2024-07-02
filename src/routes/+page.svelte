@@ -51,7 +51,7 @@
 		{
 			name: 'zzz',
 			title: '<a href="https://zzz.ryanatkn.com/">Zzz</a>',
-			description: 'social web app framework',
+			description: '(not yet published) social web app framework',
 			motto: 'social toolz for the tired',
 			emoji: '💤',
 			links: `<a class="chip" href="https://github.com/ryanatkn/zzz">source</a>`, // TODO publish zzz - <a class="chip" href="https://www.npmjs.com/package/@ryanatkn/zzz">npm</a>
