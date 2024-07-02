@@ -2,8 +2,8 @@
 	import {base} from '$app/paths';
 	import Zzz_Logo from '@ryanatkn/fuz/Zzz_Logo.svelte';
 	import Moss_Logo from '@ryanatkn/fuz/Moss_Logo.svelte';
+	import Webdevladder_Logo from '@ryanatkn/fuz/Webdevladder_Logo.svelte';
 	import Fuz_Logo from '@ryanatkn/fuz/Fuz_Logo.svelte';
-	import Spiderspace_Logo from '@ryanatkn/fuz/Spiderspace_Logo.svelte';
 
 	import type {Project_Info} from '$routes/project.js';
 
@@ -48,8 +48,8 @@
 					<Moss_Logo />
 				{:else if project.icon === 'Fuz_Logo'}
 					<Fuz_Logo />
-				{:else if project.icon === 'Spiderspace_Logo'}
-					<Spiderspace_Logo />
+				{:else if project.icon === 'Webdevladder_Logo'}
+					<Webdevladder_Logo />
 				{:else if project.icon[0] === '/'}
 					<img
 						src="{base}{project.icon}"
