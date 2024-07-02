@@ -1,6 +1,6 @@
-[<img src="static/favicon.png" align="right" width="100">](https://www.ryanatkn.com/)
-
 # [ryanatkn.com](https://www.ryanatkn.com) 🌤🌳🐿
+
+[<img src="static/favicon.png" alt="a textured green nature circle with a void center" align="right" width="192" height="192>](https://www.ryanatkn.com/)
 
 > [@ryanatkn](https://github.com/ryanatkn)'s homepage and blog
 > 🪶 building free and open source tools and toys
