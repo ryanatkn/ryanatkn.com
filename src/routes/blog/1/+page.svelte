@@ -20,13 +20,14 @@
 	import Toot from '@ryanatkn/fuz_mastodon/Toot.svelte';
 	import type {Fetch_Value_Cache} from '@ryanatkn/belt/fetch.js';
 	import {onMount} from 'svelte';
+	import {DEV} from 'esm-env';
 
 	import Blog_Post from '$routes/blog/Blog_Post.svelte';
 
 	let cache: Fetch_Value_Cache | undefined | null;
 
 	onMount(async () => {
-		if (import.meta.env.DEV) {
+		if (DEV) {
 			cache = new Map((await import('../mastodon_fake_cache_data.js')).mastodon_fake_cache_data);
 		} else {
 			cache = null;
