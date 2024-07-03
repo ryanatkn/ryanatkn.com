@@ -46,8 +46,6 @@
     "@sveltejs/kit": "^2.5.17",
     "@sveltejs/vite-plugin-svelte": "^3.1.1",
     "@types/node": "^20.14.8",
-    "@typescript-eslint/eslint-plugin": "^8.0.0-alpha.40",
-    "@typescript-eslint/parser": "^8.0.0-alpha.40",
     "date-fns": "^3.6.0",
     "eslint": "^9.6.0",
     "eslint-plugin-svelte": "^2.41.0",
