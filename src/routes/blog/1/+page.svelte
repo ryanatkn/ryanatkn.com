@@ -24,7 +24,7 @@
 
 	import Blog_Post from '$routes/blog/Blog_Post.svelte';
 
-	let cache: Fetch_Value_Cache | undefined | null;
+	let cache: Fetch_Value_Cache | undefined | null = $state();
 
 	onMount(async () => {
 		if (DEV) {

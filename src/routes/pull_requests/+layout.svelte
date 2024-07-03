@@ -12,7 +12,8 @@
 
 	// this is duplicated in each deployments page to code split the deployments data
 
-	set_deployments(parse_deployments(deployments, 'https://www.ryanatkn.com/'));
+	// TODO fix JSON types
+	set_deployments(parse_deployments(deployments as any, 'https://www.ryanatkn.com/'));
 </script>
 
 <div class="w_100 flex_1">
