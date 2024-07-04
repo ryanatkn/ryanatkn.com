@@ -6,6 +6,6 @@ import deployments from '$lib/deployments.json';
 // TODO fix JSON types
 const parsed = parse_deployments(deployments as any, 'https://www.ryanatkn.com/');
 
-export const entries: EntryGenerator = async () => {
+export const entries: EntryGenerator = () => {
 	return parsed.deployments.map((d) => ({slug: d.repo_name}));
 };

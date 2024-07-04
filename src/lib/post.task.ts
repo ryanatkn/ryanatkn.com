@@ -27,7 +27,7 @@ export const task: Task<Args> = {
 		const routes_path = 'src/routes'; // TODO read from SvelteKit config;
 		const blog_dir = join(dir, routes_path, blog_dirname);
 
-		const blog_post_ids = await collect_blog_post_ids(blog_dir);
+		const blog_post_ids = collect_blog_post_ids(blog_dir);
 
 		const next_blog_post_id = to_next_blog_post_id(blog_post_ids);
 
