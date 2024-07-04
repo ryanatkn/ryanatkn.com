@@ -2,7 +2,7 @@
 	import {parse_deployments, set_deployments} from '@ryanatkn/fuz_gitops/deployments.js';
 	import type {Snippet} from 'svelte';
 
-	import {deployments} from '$lib/repos.ts';
+	import {deployments} from '$routes/repos.ts';
 
 	interface Props {
 		children: Snippet;
