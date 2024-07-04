@@ -1,3 +1,5 @@
-import config from '@ryanatkn/eslint-config';
+import {configs, ts_config} from '@ryanatkn/eslint-config';
 
-export default config;
+ts_config.rules['no-console'] = 1;
+
+export default configs;
