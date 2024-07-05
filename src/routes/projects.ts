@@ -26,7 +26,7 @@ export const projects: Project_Info[] = [
 		repo: 'webdevladder.net',
 		title: '<a href="https://www.webdevladder.net/">webdevladder.net</a>',
 		subtitle:
-			'<a class="chip" href="https://www.youtube.com/@webdevladder">YouTube</a> <a class="chip" href="https://www.youtube.com/@webdevladder_vods">vods</a> <a class="chip" href="https://github.com/ryanatkn/webdevladder.net">source</a>',
+			'<a class="chip" href="https://www.youtube.com/@webdevladder">channel</a> <a class="chip" href="https://www.youtube.com/@webdevladder_vods">vods</a> <a class="chip" href="https://github.com/ryanatkn/webdevladder.net">source</a>',
 	},
 	{
 		description: '(not yet published) social web app framework',
