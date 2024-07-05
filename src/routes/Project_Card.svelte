@@ -1,9 +1,10 @@
 <script lang="ts">
-	import {base} from '$app/paths';
 	import Zzz_Logo from '@ryanatkn/fuz/Zzz_Logo.svelte';
 	import Moss_Logo from '@ryanatkn/fuz/Moss_Logo.svelte';
 	import Webdevladder_Logo from '@ryanatkn/fuz/Webdevladder_Logo.svelte';
 	import Fuz_Logo from '@ryanatkn/fuz/Fuz_Logo.svelte';
+	import Gro_Logo from '@ryanatkn/fuz/Gro_Logo.svelte';
+	import {ensure_end, strip_start} from '@ryanatkn/belt/string.js';
 
 	import type {Project_Info} from '$routes/project.js';
 
@@ -42,23 +43,23 @@
 		</div>
 		{#if project.logo}
 			<div class="icon" style:width="var(--icon_size_xl)" style:height="var(--icon_size_xl)">
-				{#if project.logo === 'Zzz_Logo'}
+				{#if project.name === 'zzz'}
 					<Zzz_Logo />
-				{:else if project.logo === 'Moss_Logo'}
+				{:else if project.name === 'moss'}
 					<Moss_Logo />
-				{:else if project.logo === 'Fuz_Logo'}
+				{:else if project.name === 'fuz'}
 					<Fuz_Logo />
-				{:else if project.logo === 'Webdevladder_Logo'}
+				{:else if project.name === 'gro'}
+					<Gro_Logo />
+				{:else if project.name === 'webdevladder'}
 					<Webdevladder_Logo />
-				{:else if project.logo[0] === '/'}
+				{:else if project.homepage}
 					<img
-						src="{base}{project.logo}"
+						src="{ensure_end(project.homepage, '/')}{strip_start(project.logo, '/')}"
 						alt={project.logo_alt ?? `icon for ${project.name}`}
 						class={project.logo_classes}
 						style={project.logo_style}
 					/>
-				{:else}
-					<div style:font-size="var(--size_xl5)">{project.logo}</div>
 				{/if}
 			</div>
 		{/if}

@@ -21,6 +21,7 @@ export const projects: Project_Info[] = [
 		title: '<a href="https://zzz.ryanatkn.com/">Zzz</a>',
 		links: '<a class="chip" href="https://github.com/ryanatkn/zzz">source</a>',
 		description: 'social web app framework',
+		homepage: 'https://zzz.ryanatkn.com/',
 		motto: 'social toolz for the tired',
 		logo: 'logo.svg',
 		logo_alt: "three sleepy z's",
@@ -32,6 +33,7 @@ export const projects: Project_Info[] = [
 		title: '<a href="https://moss.ryanatkn.com/">Moss</a>',
 		links: '<a class="chip" href="https://github.com/ryanatkn/moss">source</a>',
 		description: 'CSS framework',
+		homepage: 'https://moss.ryanatkn.com/',
 		motto: 'magical organic stylesheets',
 		logo: 'logo.svg',
 		logo_alt: 'a fuzzy tuft of green moss',
@@ -44,6 +46,7 @@ export const projects: Project_Info[] = [
 		links:
 			'<a class="chip" href="https://github.com/ryanatkn/fuz">source</a> <a class="chip" href="https://www.npmjs.com/package/@ryanatkn/fuz">npm</a>',
 		description: 'Svelte UI library',
+		homepage: 'https://www.fuz.dev/',
 		motto: 'friendly user zystem',
 		logo: 'logo.svg',
 		logo_alt: 'a friendly brown spider facing you',
@@ -56,6 +59,7 @@ export const projects: Project_Info[] = [
 		links:
 			'<a class="chip" href="https://github.com/ryanatkn/gro">source</a> <a class="chip" href="https://www.npmjs.com/package/@ryanatkn/gro">npm</a>',
 		description: 'task runner and toolkit extending SvelteKit',
+		homepage: 'https://gro.ryanatkn.com/',
 		motto: 'generate, run, optimize',
 		logo: 'logo.svg',
 		logo_alt: 'a pixelated green oak acorn with a glint of sun',
@@ -66,7 +70,8 @@ export const projects: Project_Info[] = [
 		repo: '@ryanatkn/cosmicplayground',
 		title: '<a href="https://www.cosmicplayground.org">cosmicplayground.org</a>',
 		links: '<a class="chip" href="https://github.com/ryanatkn/cosmicplayground">source</a>',
-		icon_style: 'border-radius: 50%',
+		logo_style: 'border-radius: 50%',
 		description: 'tools and toys for expanding minds',
+		homepage: 'https://www.cosmicplayground.org/',
 	},
 ];

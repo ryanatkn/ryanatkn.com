@@ -10,7 +10,7 @@ interface Project_Metadata {
 	repo?: string;
 	title: string;
 	links?: string;
-	icon_style?: string;
+	logo_style?: string;
 }
 
 // TODO description, motto, icon, icon_alt, glyph
@@ -66,7 +66,7 @@ const projects_metadata: Project_Metadata[] = [
 		repo: '@ryanatkn/cosmicplayground',
 		title: '<a href="https://www.cosmicplayground.org">cosmicplayground.org</a>',
 		links: '<a class="chip" href="https://github.com/ryanatkn/cosmicplayground">source</a>',
-		icon_style: 'border-radius: 50%',
+		logo_style: 'border-radius: 50%',
 	},
 ];
 
@@ -76,9 +76,9 @@ const projects: Project_Info[] = projects_metadata.map((project_metadata) => {
 		return d.name === project_metadata.repo;
 	});
 	if (!deployment) return project_metadata;
-	const {description, motto, logo, logo_alt, glyph} = (deployment as Fetched_Deployment)
+	const {description, homepage, motto, logo, logo_alt, glyph} = (deployment as Fetched_Deployment)
 		.package_json; // TODO fix type to avoid casting
-	return {...project_metadata, description, motto, logo, logo_alt, glyph};
+	return {...project_metadata, description, homepage, motto, logo, logo_alt, glyph};
 });
 
 export const gen: Gen = () => {

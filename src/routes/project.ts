@@ -2,6 +2,7 @@
 export interface Project_Info {
 	name: string;
 	repo?: string;
+	homepage?: string;
 	title: string;
 	description?: string;
 	motto?: string;
