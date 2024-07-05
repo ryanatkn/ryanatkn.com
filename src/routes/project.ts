@@ -1,15 +1,17 @@
 // TODO probably extend package.json with these properties and delete this module
 export interface Project_Info {
 	name: string;
+	repo?: string;
+	homepage?: string;
 	title: string;
 	description?: string;
 	motto?: string;
-	emoji?: string;
-	links?: string;
-	icon?: string;
-	icon_alt?: string;
-	icon_style?: string;
-	icon_classes?: string;
+	glyph?: string;
+	subtitle?: string;
+	logo?: string;
+	logo_alt?: string;
+	logo_style?: string;
+	logo_classes?: string;
 }
 
 // TODO where do this belong?
