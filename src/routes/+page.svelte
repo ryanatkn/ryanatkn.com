@@ -43,7 +43,7 @@
 			description:
 				'<a href="https://www.youtube.com/@webdevladder">a YouTube channel</a> and blog for realworld webdev with <a href="https://typescriptlang.org/">TypeScript</a> and <a href="https://svelte.dev/">Svelte</a>',
 			motto: 'climbing together',
-			links: `<a class="chip" href="https://www.youtube.com/@webdevladder">YouTube</a> <a class="chip" href="https://github.com/webdevladder/webdevladder.net">source</a>`,
+			links: `<a class="chip" href="https://www.youtube.com/@webdevladder">YouTube</a> <a class="chip" href="https://github.com/ryanatkn/webdevladder.net">source</a>`,
 			emoji: '🪜',
 			icon: 'Webdevladder_Logo',
 			icon_alt: 'the webdevladder logo, a spider web between two rungs of a ladder',
