@@ -1,106 +1,13 @@
 <script lang="ts">
 	import Breadcrumb from '@ryanatkn/fuz/Breadcrumb.svelte';
-	import {base} from '$app/paths';
 
 	import Favicon from '$lib/Favicon.svelte';
 	import Gitops_Menu from '$routes/Gitops_Menu.svelte';
 	import Page_Links from '$routes/Page_Links.svelte';
 	import Contact_Info from '$routes/Contact_Info.svelte';
 	import Me from '$routes/Me.svelte';
-	import type {Project_Info} from '$routes/project.js';
 	import Project_Card from '$routes/Project_Card.svelte';
-
-	// TODO source this data from the deployments data (maybe a subset for code splitting?)
-
-	// TODO I moved the project info to this data format to quicky slap together a responsive layout
-	// without changing the original tables, but it'd be much better
-	// to write this in normal Svelte markup and use CSS to make a responsive layout
-	const projects: Project_Info[] = [
-		{
-			name: 'blog',
-			title: `<a href="${base}/blog">blog</a>`,
-			links:
-				'<a href="https://www.ryanatkn.com/blog/feed.xml" class="chip">feed.xml</a> <a href="https://github.com/ryanatkn/ryanatkn.com" class="chip">source</a>',
-		},
-		{
-			name: 'github',
-			title: '<a href="https://github.com/ryanatkn">github.com/ryanatkn</a>',
-			description: 'my free and open source software',
-		},
-		// {
-		// 	name: 'spiderspace',
-		// 	title: '<a href="https://www.spiderspace.org/">spiderspace.org</a>',
-		// 	description: 'community website with a YouTube channel about building it',
-		// 	motto: 'weaving web community',
-		// 	links: `<a class="chip" href="https://www.youtube.com/@spiderspace_8000">YouTube</a> <a class="chip" href="https://github.com/spiderspace/spiderspace.org">source</a>`,
-		// 	emoji: '🕸️',
-		// 	icon: 'Spiderspace_Logo',
-		// 	icon_alt: 'the Spiderspace logo, a friendly yellow spider facing you',
-		// },
-		{
-			name: 'webdevladder',
-			title: '<a href="https://www.webdevladder.net/">webdevladder.net</a>',
-			description:
-				'<a href="https://www.youtube.com/@webdevladder">a YouTube channel</a> and blog for realworld webdev with <a href="https://typescriptlang.org/">TypeScript</a> and <a href="https://svelte.dev/">Svelte</a>',
-			motto: 'climbing together',
-			links: `<a class="chip" href="https://www.youtube.com/@webdevladder">YouTube</a> <a class="chip" href="https://github.com/ryanatkn/webdevladder.net">source</a>`,
-			emoji: '🪜',
-			icon: 'Webdevladder_Logo',
-			icon_alt: 'the webdevladder logo, a spider web between two rungs of a ladder',
-		},
-		{
-			name: 'zzz',
-			title: '<a href="https://zzz.ryanatkn.com/">Zzz</a>',
-			description: '(not yet published) social web app framework',
-			motto: 'social toolz for the tired',
-			emoji: '💤',
-			links: `<a class="chip" href="https://github.com/ryanatkn/zzz">source</a>`, // TODO publish zzz - <a class="chip" href="https://www.npmjs.com/package/@ryanatkn/zzz">npm</a>
-			icon: 'Zzz_Logo',
-			icon_alt: "the Zzz logo, three sleepy z's",
-		},
-		{
-			name: 'moss',
-			title: '<a href="https://moss.ryanatkn.com/">Moss</a>',
-			description: 'CSS framework',
-			motto: 'magical organic stylesheets',
-			emoji: '🌿',
-			links: `<a class="chip" href="https://github.com/ryanatkn/moss">source</a>`, // TODO publish moss - <a class="chip" href="https://www.npmjs.com/package/@ryanatkn/moss">npm</a>
-			icon: 'Moss_Logo',
-			icon_alt: 'the Moss logo, a fuzzy tuft of green moss',
-		},
-		{
-			name: 'fuz',
-			title: '<a href="https://www.fuz.dev/">Fuz</a>',
-			description: '<a href="https://svelte.dev/">Svelte</a> UI library',
-			motto: 'friendly user zystem',
-			emoji: '🧶',
-			links: `<a class="chip" href="https://github.com/ryanatkn/fuz">source</a> <a class="chip" href="https://www.npmjs.com/package/@ryanatkn/fuz">npm</a>`,
-			icon: 'Fuz_Logo',
-			icon_alt: 'the Fuz logo, a friendly brown spider facing you',
-		},
-		{
-			name: 'gro',
-			title: '<a href="https://github.com/ryanatkn/gro">Gro</a>',
-			description:
-				'task runner and toolkit extending <a href="https://kit.svelte.dev/">SvelteKit</a>',
-			motto: 'generate, run, optimize',
-			emoji: '🌰',
-			links: `<a class="chip" href="https://github.com/ryanatkn/gro">source</a> <a class="chip" href="https://www.npmjs.com/package/@ryanatkn/gro">npm</a>`,
-			icon: '/gro.png',
-			icon_alt: 'the Gro logo, a pixelated green oak acorn with a glint of sun',
-		},
-		{
-			name: 'cosmicplayground',
-			title: '<a href="https://www.cosmicplayground.org">cosmicplayground.org</a>',
-			description: 'hobby project for fun and learning',
-			motto: 'tools and toys for expanding minds',
-			emoji: '🌌',
-			links: '<a class="chip" href="https://github.com/ryanatkn/cosmicplayground">source</a>',
-			icon: '/cosmicplayground.png',
-			icon_alt: 'the smiling and colorful face of Cosmic Kitty made of rainbow lines in space',
-			icon_style: 'border-radius: 50%',
-		},
-	];
+	import {projects} from '$routes/projects.js';
 </script>
 
 <svelte:head>
