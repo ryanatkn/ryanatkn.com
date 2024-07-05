@@ -1,10 +1,11 @@
 // TODO probably extend package.json with these properties and delete this module
 export interface Project_Info {
 	name: string;
+	repo?: string;
 	title: string;
 	description?: string;
 	motto?: string;
-	emoji?: string;
+	glyph?: string;
 	links?: string;
 	logo?: string;
 	logo_alt?: string;

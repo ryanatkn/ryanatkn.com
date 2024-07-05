@@ -28,7 +28,7 @@
 			{#if project.motto}
 				<p>
 					{@html project.motto}
-					{#if project.emoji}{project.emoji}{/if}
+					{#if project.glyph}{project.glyph}{/if}
 				</p>
 			{/if}
 			{#if project.description}
