@@ -15,7 +15,6 @@
 	<li>
 		@webdevladder on
 		<a rel="me" href="https://www.youtube.com/@webdevladder">YouTube</a>,
-		<a rel="me" href="https://github.com/webdevladder">GitHub</a>,
 		<a rel="me" href="https://www.reddit.com/user/webdevladder/">Reddit</a>,
 		<a rel="me" href="https://twitter.com/webdevladder/">Twitter</a>, and
 		<a rel="me" href="https://news.ycombinator.com/user?id=webdevladder">HN</a>
