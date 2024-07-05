@@ -6,10 +6,10 @@ export interface Project_Info {
 	motto?: string;
 	emoji?: string;
 	links?: string;
-	icon?: string;
-	icon_alt?: string;
-	icon_style?: string;
-	icon_classes?: string;
+	logo?: string;
+	logo_alt?: string;
+	logo_style?: string;
+	logo_classes?: string;
 }
 
 // TODO where do this belong?

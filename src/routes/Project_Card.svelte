@@ -40,25 +40,25 @@
 				<p class="flex wrap gap_xs">{@html project.links}</p>
 			{/if}
 		</div>
-		{#if project.icon}
+		{#if project.logo}
 			<div class="icon" style:width="var(--icon_size_xl)" style:height="var(--icon_size_xl)">
-				{#if project.icon === 'Zzz_Logo'}
+				{#if project.logo === 'Zzz_Logo'}
 					<Zzz_Logo />
-				{:else if project.icon === 'Moss_Logo'}
+				{:else if project.logo === 'Moss_Logo'}
 					<Moss_Logo />
-				{:else if project.icon === 'Fuz_Logo'}
+				{:else if project.logo === 'Fuz_Logo'}
 					<Fuz_Logo />
-				{:else if project.icon === 'Webdevladder_Logo'}
+				{:else if project.logo === 'Webdevladder_Logo'}
 					<Webdevladder_Logo />
-				{:else if project.icon[0] === '/'}
+				{:else if project.logo[0] === '/'}
 					<img
-						src="{base}{project.icon}"
-						alt={project.icon_alt ?? `icon for ${project.name}`}
-						class={project.icon_classes}
-						style={project.icon_style}
+						src="{base}{project.logo}"
+						alt={project.logo_alt ?? `icon for ${project.name}`}
+						class={project.logo_classes}
+						style={project.logo_style}
 					/>
 				{:else}
-					<div style:font-size="var(--size_xl5)">{project.icon}</div>
+					<div style:font-size="var(--size_xl5)">{project.logo}</div>
 				{/if}
 			</div>
 		{/if}
@@ -78,7 +78,7 @@
 		margin-bottom: var(--space_lg);
 		padding: var(--space_md);
 	}
-	.icon {
+	.logo {
 		width: var(--icon_size_xl);
 		height: var(--icon_size_xl);
 		padding-left: var(--space_sm);
