@@ -6,6 +6,8 @@ import {relative} from 'node:path';
 import type {Project_Info} from '$routes/project.js';
 import {deployments} from '$routes/repos.js';
 
+// Generating `projects.ts` to avoid loading the whole `repos.ts` on the homepage.
+
 interface Project_Metadata {
 	name: string;
 	repo?: string;
