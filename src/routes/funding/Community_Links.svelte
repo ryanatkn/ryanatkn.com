@@ -3,8 +3,8 @@
 		<a rel="me" href="https://discord.gg/YU5tyeK72X">Discord</a>
 	</li>
 	<li>
-		<a rel="me" href="https://www.spiderspace.org/" class="selected">spiderspace.org</a> -
-		nontechnical design videos where we'll make a social website together with
+		<a rel="me" href="https://www.spiderspace.org/">spiderspace.org</a> - nontechnical design videos
+		where we'll make a social website together with
 		<a href="https://zzz.ryanatkn.com/">Zzz</a> when it's ready
 	</li>
 	<li>
@@ -12,7 +12,8 @@
 		and Svelte
 	</li>
 	<li>
-		<a rel="me" href="https://www.ryanatkn.com/">ryanatkn.com</a> - my homepage, you are here
+		<a rel="me" href="https://www.ryanatkn.com/" class="selected">ryanatkn.com</a> - my homepage, you
+		are here
 	</li>
 	<li>
 		YouTube channels
