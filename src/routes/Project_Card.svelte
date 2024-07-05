@@ -37,12 +37,16 @@
 					{@html project.description}
 				</p>
 			{/if}
-			{#if project.links}
-				<p class="flex wrap gap_xs">{@html project.links}</p>
+			{#if project.subtitle}
+				<p class="flex wrap gap_xs">{@html project.subtitle}</p>
 			{/if}
 		</div>
 		{#if project.logo}
-			<div class="icon" style:width="var(--icon_size_xl)" style:height="var(--icon_size_xl)">
+			<div
+				class="icon ml_sm"
+				style:min-width="var(--icon_size_xl)"
+				style:min-height="var(--icon_size_xl)"
+			>
 				{#if project.name === 'zzz'}
 					<Zzz_Logo />
 				{:else if project.name === 'moss'}
@@ -51,7 +55,7 @@
 					<Fuz_Logo />
 				{:else if project.name === 'gro'}
 					<Gro_Logo />
-				{:else if project.name === 'webdevladder'}
+				{:else if project.name === 'webdevladder.net'}
 					<Webdevladder_Logo />
 				{:else if project.homepage}
 					<img

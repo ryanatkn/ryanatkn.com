@@ -7,7 +7,7 @@ export interface Project_Info {
 	description?: string;
 	motto?: string;
 	glyph?: string;
-	links?: string;
+	subtitle?: string;
 	logo?: string;
 	logo_alt?: string;
 	logo_style?: string;

@@ -23,7 +23,7 @@ interface Project_Metadata {
 	name: string;
 	repo?: string;
 	title: string;
-	links?: string;
+	subtitle?: string;
 	logo_style?: string;
 }
 
@@ -32,54 +32,55 @@ const projects_metadata: Project_Metadata[] = [
 	{
 		name: 'blog',
 		title: `<a href="${base}/blog">blog</a>`,
-		links:
+		subtitle:
 			'<a href="https://www.ryanatkn.com/blog/feed.xml" class="chip">feed.xml</a> <a href="https://github.com/ryanatkn/ryanatkn.com" class="chip">source</a>',
 	},
 	{
 		name: 'github',
 		title: '<a href="https://github.com/ryanatkn">github.com/ryanatkn</a>',
+		subtitle: 'my free and open source software',
 	},
 	// {
 	// 	name: 'spiderspace',
 	//  repo: '@ryanatkn/spiderspace.org',
 	// 	title: '<a href="https://www.spiderspace.org/">spiderspace.org</a>',
-	// 	links: `<a class="chip" href="https://www.youtube.com/@spiderspace_8000">YouTube</a> <a class="chip" href="https://github.com/spiderspace/spiderspace.org">source</a>`,
+	// 	subtitle: `<a class="chip" href="https://www.youtube.com/@spiderspace_8000">YouTube</a> <a class="chip" href="https://github.com/spiderspace/spiderspace.org">source</a>`,
 	// },
 	{
-		name: 'webdevladder',
-		repo: '@ryanatkn/webdevladder.net',
+		name: 'webdevladder.net',
+		repo: 'webdevladder.net',
 		title: '<a href="https://www.webdevladder.net/">webdevladder.net</a>',
-		links: `<a class="chip" href="https://www.youtube.com/@webdevladder">YouTube</a> <a class="chip" href="https://github.com/ryanatkn/webdevladder.net">source</a>`,
+		subtitle: `<a class="chip" href="https://www.youtube.com/@webdevladder">YouTube</a> <a class="chip" href="https://github.com/ryanatkn/webdevladder.net">source</a>`,
 	},
 	{
 		name: 'zzz',
 		repo: '@ryanatkn/zzz',
 		title: '<a href="https://zzz.ryanatkn.com/">Zzz</a>',
-		links: `<a class="chip" href="https://github.com/ryanatkn/zzz">source</a>`, // TODO publish zzz - <a class="chip" href="https://www.npmjs.com/package/@ryanatkn/zzz">npm</a>
+		subtitle: `<a class="chip" href="https://github.com/ryanatkn/zzz">source</a>`, // TODO publish zzz - <a class="chip" href="https://www.npmjs.com/package/@ryanatkn/zzz">npm</a>
 	},
 	{
 		name: 'moss',
 		repo: '@ryanatkn/moss',
 		title: '<a href="https://moss.ryanatkn.com/">Moss</a>',
-		links: `<a class="chip" href="https://github.com/ryanatkn/moss">source</a>`, // TODO publish moss - <a class="chip" href="https://www.npmjs.com/package/@ryanatkn/moss">npm</a>
+		subtitle: `<a class="chip" href="https://github.com/ryanatkn/moss">source</a>`, // TODO publish moss - <a class="chip" href="https://www.npmjs.com/package/@ryanatkn/moss">npm</a>
 	},
 	{
 		name: 'fuz',
 		repo: '@ryanatkn/fuz',
 		title: '<a href="https://www.fuz.dev/">Fuz</a>',
-		links: `<a class="chip" href="https://github.com/ryanatkn/fuz">source</a> <a class="chip" href="https://www.npmjs.com/package/@ryanatkn/fuz">npm</a>`,
+		subtitle: `<a class="chip" href="https://github.com/ryanatkn/fuz">source</a> <a class="chip" href="https://www.npmjs.com/package/@ryanatkn/fuz">npm</a>`,
 	},
 	{
 		name: 'gro',
 		repo: '@ryanatkn/gro',
 		title: '<a href="https://github.com/ryanatkn/gro">Gro</a>',
-		links: `<a class="chip" href="https://github.com/ryanatkn/gro">source</a> <a class="chip" href="https://www.npmjs.com/package/@ryanatkn/gro">npm</a>`,
+		subtitle: `<a class="chip" href="https://github.com/ryanatkn/gro">source</a> <a class="chip" href="https://www.npmjs.com/package/@ryanatkn/gro">npm</a>`,
 	},
 	{
 		name: 'cosmicplayground',
 		repo: '@ryanatkn/cosmicplayground',
 		title: '<a href="https://www.cosmicplayground.org">cosmicplayground.org</a>',
-		links: '<a class="chip" href="https://github.com/ryanatkn/cosmicplayground">source</a>',
+		subtitle: '<a class="chip" href="https://github.com/ryanatkn/cosmicplayground">source</a>',
 		logo_style: 'border-radius: 50%',
 	},
 ];
