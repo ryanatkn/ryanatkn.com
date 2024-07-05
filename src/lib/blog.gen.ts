@@ -22,7 +22,7 @@ export const gen: Gen = async ({origin_id}) => {
 
 	const generated_by = relative(dir, origin_id);
 
-	const blog_post_ids = await collect_blog_post_ids(blog_dir);
+	const blog_post_ids = collect_blog_post_ids(blog_dir);
 
 	const modules = await load_blog_post_modules(blog_post_ids, blog_dirname);
 
@@ -55,7 +55,7 @@ export const gen: Gen = async ({origin_id}) => {
 			`,
 		},
 		...(await Promise.all(
-			modules.map(async (item, i) => {
+			modules.map((item, i) => {
 				const post = item.post;
 				const slug = post.slug;
 				const blog_post_id = i + 1;
