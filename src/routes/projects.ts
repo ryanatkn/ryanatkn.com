@@ -83,6 +83,7 @@ export const projects: Project_Info[] = [
 		title: '<a href="https://www.cosmicplayground.org">cosmicplayground.org</a>',
 		subtitle: '<a class="chip" href="https://github.com/ryanatkn/cosmicplayground">source</a>',
 		logo_style: 'border-radius: 50%',
+		logo: 'favicon.png',
 		description: 'tools and toys for expanding minds',
 		homepage: 'https://www.cosmicplayground.org/',
 	},

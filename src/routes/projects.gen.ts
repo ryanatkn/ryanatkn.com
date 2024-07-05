@@ -24,6 +24,7 @@ interface Project_Metadata {
 	repo?: string;
 	title: string;
 	subtitle?: string;
+	logo?: string; // TODO @multiple this is a hack because cosmicplayground hasn't been deployed with the logo field
 	logo_style?: string;
 }
 
@@ -78,10 +79,11 @@ const projects_metadata: Project_Metadata[] = [
 	},
 	{
 		name: 'cosmicplayground',
-		repo: '@ryanatkn/cosmicplayground',
+		repo: '@ryanatkn/cosmicplayground', // TODO change to `cosmicplayground.org`
 		title: '<a href="https://www.cosmicplayground.org">cosmicplayground.org</a>',
 		subtitle: '<a class="chip" href="https://github.com/ryanatkn/cosmicplayground">source</a>',
 		logo_style: 'border-radius: 50%',
+		logo: 'favicon.png', // TODO @multiple this is a hack because cosmicplayground hasn't been deployed with the logo field
 	},
 ];
 
@@ -91,7 +93,13 @@ const projects: Project_Info[] = projects_metadata.map((project_metadata) => {
 		return d.name === project_metadata.repo;
 	});
 	if (!deployment) return project_metadata;
-	const {description, homepage, motto, logo, logo_alt, glyph} = (deployment as Fetched_Deployment)
-		.package_json; // TODO fix type to avoid casting
+	const {
+		description,
+		homepage,
+		motto,
+		logo = project_metadata.logo, // TODO @multiple this is a hack because cosmicplayground hasn't been deployed with the logo field
+		logo_alt,
+		glyph,
+	} = (deployment as Fetched_Deployment).package_json; // TODO fix type to avoid casting
 	return {...project_metadata, description, homepage, motto, logo, logo_alt, glyph};
 });

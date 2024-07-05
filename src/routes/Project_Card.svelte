@@ -23,14 +23,12 @@
 <div class="project_card">
 	<header class="title">
 		{@html project.title}
+		{#if project.glyph}{project.glyph}{/if}
 	</header>
 	<div class="flex">
 		<div>
 			{#if project.motto}
-				<p>
-					{@html project.motto}
-					{#if project.glyph}{project.glyph}{/if}
-				</p>
+				<p>{@html project.motto}</p>
 			{/if}
 			{#if project.description}
 				<p>
@@ -43,7 +41,7 @@
 		</div>
 		{#if project.logo}
 			<div
-				class="icon ml_sm"
+				class="icon ml_xs"
 				style:min-width="var(--icon_size_xl)"
 				style:min-height="var(--icon_size_xl)"
 			>
