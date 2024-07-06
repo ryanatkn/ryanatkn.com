@@ -3,8 +3,8 @@
 	import Github_Logo from '@ryanatkn/fuz/Github_Logo.svelte';
 	import Card from '@ryanatkn/fuz/Card.svelte';
 	import Breadcrumb from '@ryanatkn/fuz/Breadcrumb.svelte';
+	import Community_Links from '@ryanatkn/fuz/Community_Links.svelte';
 
-	import Community_Links from '$routes/funding/Community_Links.svelte';
 	import Page_Links from '$routes/Page_Links.svelte';
 	import Patreon_Logo from '$routes/funding/Patreon_Logo.svelte';
 	import Favicon from '$lib/Favicon.svelte';
@@ -118,7 +118,7 @@
 				reading and I hope you have a good experience.
 			</p>
 			<aside class="overflow_auto">
-				<Community_Links />
+				<Community_Links selected="ryanatkn.com" />
 			</aside>
 		</div>
 	</section>
