@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Breadcrumb from '@ryanatkn/fuz/Breadcrumb.svelte';
 
-	import Favicon from '$lib/Favicon.svelte';
+	import Favicon from '$routes/Favicon.svelte';
 	import Gitops_Menu from '$routes/Gitops_Menu.svelte';
 	import Page_Links from '$routes/Page_Links.svelte';
 	import Contact_Info from '$routes/Contact_Info.svelte';

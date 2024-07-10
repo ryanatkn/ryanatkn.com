@@ -2,7 +2,7 @@
 	import Breadcrumb from '@ryanatkn/fuz/Breadcrumb.svelte';
 	import type {Snippet} from 'svelte';
 
-	import Favicon from '$lib/Favicon.svelte';
+	import Favicon from '$routes/Favicon.svelte';
 
 	interface Props {
 		children: Snippet;
