@@ -7,7 +7,7 @@
 
 	import Page_Links from '$routes/Page_Links.svelte';
 	import Patreon_Logo from '$routes/funding/Patreon_Logo.svelte';
-	import Favicon from '$lib/Favicon.svelte';
+	import Favicon from '$routes/Favicon.svelte';
 </script>
 
 <div class="width_md flex_1">

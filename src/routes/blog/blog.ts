@@ -1,6 +1,6 @@
-import type {Blog_Feed_Data} from '$lib/blog.js';
+import type {Blog_Feed_Data} from '@ryanatkn/fuz_blog/blog.js';
 
-// TODO extract to fuz.config.ts
+// TODO extract to fuz.config.ts?
 export const blog: Blog_Feed_Data = {
 	title: "Ryan Atkinson's blog",
 	id: 'https://www.ryanatkn.com/',

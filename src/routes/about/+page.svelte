@@ -4,7 +4,7 @@
 
 	import Page_Links from '$routes/Page_Links.svelte';
 	import Contact_Info from '$routes/Contact_Info.svelte';
-	import Favicon from '$lib/Favicon.svelte';
+	import Favicon from '$routes/Favicon.svelte';
 	import Me from '$routes/Me.svelte';
 </script>
 
