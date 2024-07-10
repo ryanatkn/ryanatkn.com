@@ -1,5 +1,5 @@
 <script lang="ts" context="module">
-	import type {Blog_Post_Data} from '$lib/blog.js';
+	import type {Blog_Post_Data} from '@ryanatkn/fuz_blog/blog.js';
 
 	export const post = {
 		title: 'Modeling virtual social spaces: in this house we post cat pics on Saturday',
@@ -21,8 +21,7 @@
 	import type {Fetch_Value_Cache} from '@ryanatkn/belt/fetch.js';
 	import {onMount} from 'svelte';
 	import {DEV} from 'esm-env';
-
-	import Blog_Post from '$routes/blog/Blog_Post.svelte';
+	import Blog_Post from '@ryanatkn/fuz_blog/Blog_Post.svelte';
 
 	let cache: Fetch_Value_Cache | undefined | null = $state();
 

@@ -1,10 +1,10 @@
 <script lang="ts">
 	import {base} from '$app/paths';
+	import Feed_Item_Date from '@ryanatkn/fuz_blog/Feed_Item_Date.svelte';
+	import {get_blog_feed} from '@ryanatkn/fuz_blog/blog.js';
+	import {to_pathname} from '@ryanatkn/fuz_blog/util.js';
 
-	import Feed_Item_Date from '$lib/Feed_Item_Date.svelte';
 	import Page_Links from '$routes/Page_Links.svelte';
-	import {get_blog_feed} from '$lib/blog.js';
-	import {to_pathname} from '$lib/util.js';
 
 	const feed = get_blog_feed();
 
