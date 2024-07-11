@@ -221,7 +221,7 @@
 		{#if cache !== undefined}
 			<Toot
 				replies
-				storage_key="2_comments"
+				storage_key="1_comments"
 				{cache}
 				initial_url={post.comments.url}
 				initial_autoload={true}
