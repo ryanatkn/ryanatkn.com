@@ -22,15 +22,15 @@
 		</header>
 	</section>
 	<section class="box row wrap gap_md">
-		<div class="display_contents" style:--link_color="var(--color_b_5)">
+		<div class="display_contents" style:--link_color="hsl(var(--color_b_5))">
 			<!-- TODO hacky with max-width -->
 			<Card href="https://github.com/sponsors/ryanatkn" attrs={{style: 'max-width: 100%'}}>
-				{#snippet icon()}<Github_Logo fill="var(--color_b_5)" />{/snippet}
+				{#snippet icon()}<Github_Logo fill="hsl(var(--color_b_5))" />{/snippet}
 				GitHub Sponsors
 			</Card>
 		</div>
 		<Card href="https://www.patreon.com/ryanatkn" align="right">
-			{#snippet icon()}<Patreon_Logo fill="var(--color_a_5)" />{/snippet}
+			{#snippet icon()}<Patreon_Logo fill="hsl(var(--color_a_5))" />{/snippet}
 			Patreon
 		</Card>
 	</section>
@@ -90,16 +90,16 @@
 				<a
 					class="nowrap"
 					href="https://github.com/sponsors/ryanatkn"
-					style:--link_color="var(--color_b_5)"
+					style:--link_color="hsl(var(--color_b_5))"
 					><Github_Logo
 						size="var(--size_md)"
-						fill="var(--color_b_5)"
+						fill="hsl(var(--color_b_5))"
 						attrs={{class: 'inline_block', style: 'vertical-align: middle'}}
 					/> GitHub Sponsors</a
 				>
 				or
 				<a class="nowrap" href="https://www.patreon.com/ryanatkn"
-					><Patreon_Logo size="var(--size_md)" fill="var(--color_a_5)" inline /> Patreon</a
+					><Patreon_Logo size="var(--size_md)" fill="hsl(var(--color_a_5))" inline /> Patreon</a
 				>. Supporting me at any level gives you access to supporter-only community spaces on Discord
 				and the social websites I build on camera. Supporting me through GitHub instead of Patreon
 				also gives you access to discussions on a supporters-only GitHub repo.
