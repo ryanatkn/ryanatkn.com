@@ -17,21 +17,20 @@
 </script>
 
 <script lang="ts">
-	import Toot from '@ryanatkn/fuz_mastodon/Toot.svelte';
-	import type {Fetch_Value_Cache} from '@ryanatkn/belt/fetch.js';
-	import {onMount} from 'svelte';
-	import {DEV} from 'esm-env';
 	import Blog_Post from '@ryanatkn/fuz_blog/Blog_Post.svelte';
 
-	let cache: Fetch_Value_Cache | undefined | null = $state();
-
-	onMount(async () => {
-		if (DEV) {
-			cache = new Map((await import('../mastodon_fake_cache_data.js')).mastodon_fake_cache_data);
-		} else {
-			cache = null;
-		}
-	});
+	// TODO cache for Mastodon
+	// import {onMount} from 'svelte';
+	// import {DEV} from 'esm-env';
+	// import type {Fetch_Value_Cache} from '@ryanatkn/belt/fetch.js';
+	// let cache: Fetch_Value_Cache | undefined | null = $state();
+	// onMount(async () => {
+	// 	if (DEV) {
+	// 		cache = new Map((await import('../mastodon_fake_cache_data.js')).mastodon_fake_cache_data);
+	// 	} else {
+	// 		cache = null;
+	// 	}
+	// });
 </script>
 
 <Blog_Post {post}>
@@ -212,21 +211,6 @@
 			and Imagining Social Platforms" (<a href="https://consentful.systems">consentful.systems</a>)
 			by Jane Im (<a href="https://imjane.net/">imjane.net</a>) and colleagues.
 		</p>
-	</section>
-
-	<hr />
-
-	<section class="width_md">
-		<h2>Comments</h2>
-		{#if cache !== undefined}
-			<Toot
-				replies
-				storage_key="1_comments"
-				{cache}
-				initial_url={post.comments.url}
-				initial_autoload={true}
-			/>
-		{/if}
 	</section>
 
 	<hr />
