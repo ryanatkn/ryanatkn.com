@@ -25,7 +25,7 @@ interface Project_Metadata {
 	 * Allows HTML.
 	 */
 	description?: string;
-	motto?: string; // TODO @multiple this is a hack because cosmicplayground hasn't been deployed
+	motto?: string; // TODO @many this is a hack because cosmicplayground hasn't been deployed
 	repo?: string;
 	/**
 	 * Allows HTML.
@@ -35,7 +35,7 @@ interface Project_Metadata {
 	 * Allows HTML.
 	 */
 	subtitle?: string;
-	logo?: string; // TODO @multiple this is a hack because cosmicplayground hasn't been deployed
+	logo?: string; // TODO @many this is a hack because cosmicplayground hasn't been deployed
 	logo_style?: string;
 }
 
@@ -98,12 +98,12 @@ const projects_metadata: Project_Metadata[] = [
 	{
 		name: 'cosmicplayground',
 		repo: '@ryanatkn/cosmicplayground', // TODO change to `cosmicplayground.org`
-		title: '<a href="https://www.cosmicplayground.org">cosmicplayground.org</a> 🌌', // TODO @multiple this is a hack because cosmicplayground hasn't been deployed (remove glyph)
+		title: '<a href="https://www.cosmicplayground.org">cosmicplayground.org</a> 🌌', // TODO @many this is a hack because cosmicplayground hasn't been deployed (remove glyph)
 		subtitle: '<a class="chip" href="https://github.com/ryanatkn/cosmicplayground">source</a>',
-		description: 'hobby project for fun and learning', // TODO @multiple this is a hack because cosmicplayground hasn't been deployed
-		motto: 'tools and toys for expanding minds', // TODO @multiple this is a hack because cosmicplayground hasn't been deployed
+		description: 'hobby project for fun and learning', // TODO @many this is a hack because cosmicplayground hasn't been deployed
+		motto: 'tools and toys for expanding minds', // TODO @many this is a hack because cosmicplayground hasn't been deployed
 		logo_style: 'border-radius: 50%',
-		logo: 'favicon.png', // TODO @multiple this is a hack because cosmicplayground hasn't been deployed
+		logo: 'favicon.png', // TODO @many this is a hack because cosmicplayground hasn't been deployed
 	},
 ];
 
@@ -117,7 +117,7 @@ const projects: Project_Info[] = projects_metadata.map((project_metadata) => {
 		description,
 		homepage,
 		motto,
-		logo = project_metadata.logo, // TODO @multiple this is a hack because cosmicplayground hasn't been deployed
+		logo = project_metadata.logo, // TODO @many this is a hack because cosmicplayground hasn't been deployed
 		logo_alt,
 		glyph,
 	} = (deployment as Fetched_Deployment).package_json; // TODO fix type to avoid casting
