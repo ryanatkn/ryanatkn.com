@@ -1,1 +1,0 @@
-import{m as f,E as i,n as o,v as p}from"./runtime.CrfembLI.js";import{h as c,e as h}from"./disclose-version.BMJG1iWE.js";function v(t,n,...s){var e=t,r,a;f(()=>{r!==(r=n())&&(a&&(p(a),a=null),r&&(a=o(()=>r(e,...s))))},i),c&&(e=h)}export{v as s};
