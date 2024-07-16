@@ -11,6 +11,7 @@ const config: Create_Fuz_Config = () => {
 			'https://gro.ryanatkn.com/',
 			'https://template.fuz.dev/',
 			'https://belt.ryanatkn.com/',
+			'https://blog.fuz.dev/',
 			'https://mastodon.fuz.dev/',
 			'https://code.fuz.dev/',
 			'https://gitops.fuz.dev/',

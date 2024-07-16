@@ -6711,6 +6711,315 @@ export const repos: Repo[] = JSON.parse(
 		"pull_requests": []\
 	},\
 	{\
+		"url": "https://blog.fuz.dev/",\
+		"package_json": {\
+			"name": "@ryanatkn/fuz_blog",\
+			"version": "0.5.0",\
+			"public": true,\
+			"description": "blog software from scratch with SvelteKit",\
+			"glyph": "🖊️",\
+			"logo": "logo.svg",\
+			"logo_alt": "a friendly yellow spider facing you",\
+			"scripts": {\
+				"start": "gro dev",\
+				"dev": "gro dev",\
+				"build": "gro build",\
+				"check": "gro check",\
+				"test": "gro test",\
+				"preview": "vite preview",\
+				"deploy": "gro deploy"\
+			},\
+			"homepage": "https://blog.fuz.dev/",\
+			"repository": "https://github.com/ryanatkn/fuz_blog",\
+			"type": "module",\
+			"engines": {\
+				"node": ">=20.12"\
+			},\
+			"devDependencies": {\
+				"@changesets/changelog-git": "^0.2.0",\
+				"@ryanatkn/belt": "^0.24.9",\
+				"@ryanatkn/eslint-config": "^0.4.2",\
+				"@ryanatkn/fuz": "^0.112.0",\
+				"@ryanatkn/fuz_code": "^0.16.0",\
+				"@ryanatkn/fuz_mastodon": "^0.19.0",\
+				"@ryanatkn/gro": "^0.132.0",\
+				"@ryanatkn/moss": "^0.8.0",\
+				"@sveltejs/adapter-static": "^3.0.2",\
+				"@sveltejs/kit": "^2.5.18",\
+				"@sveltejs/package": "^2.3.2",\
+				"@sveltejs/vite-plugin-svelte": "^3.1.1",\
+				"@types/node": "^20.14.10",\
+				"date-fns": "^3.6.0",\
+				"eslint": "^9.7.0",\
+				"eslint-plugin-svelte": "^2.42.0",\
+				"prettier": "^3.3.3",\
+				"prettier-plugin-svelte": "^3.2.5",\
+				"svelte": "^5.0.0-next.186",\
+				"svelte-check": "^3.8.4",\
+				"tslib": "^2.6.3",\
+				"typescript": "^5.5.3",\
+				"typescript-eslint": "^8.0.0-alpha.44",\
+				"uvu": "^0.5.6"\
+			},\
+			"peerDependencies": {\
+				"@ryanatkn/belt": "^0.24.9",\
+				"@ryanatkn/fuz": "^0.112.0",\
+				"@ryanatkn/fuz_mastodon": "^0.19.0",\
+				"@ryanatkn/gro": "^0.132.0",\
+				"@ryanatkn/moss": "^0.8.0",\
+				"@sveltejs/kit": "^2",\
+				"date-fns": "^3",\
+				"svelte": "^5.0.0-next.0"\
+			},\
+			"sideEffects": [\
+				"**/*.css"\
+			],\
+			"files": [\
+				"dist"\
+			],\
+			"exports": {\
+				"./package.json": "./package.json",\
+				"./blog_helpers.js": {\
+					"types": "./dist/blog_helpers.d.ts",\
+					"default": "./dist/blog_helpers.js"\
+				},\
+				"./Blog_Post_Header.svelte": {\
+					"types": "./dist/Blog_Post_Header.svelte.d.ts",\
+					"svelte": "./dist/Blog_Post_Header.svelte",\
+					"default": "./dist/Blog_Post_Header.svelte"\
+				},\
+				"./Blog_Post.svelte": {\
+					"types": "./dist/Blog_Post.svelte.d.ts",\
+					"svelte": "./dist/Blog_Post.svelte",\
+					"default": "./dist/Blog_Post.svelte"\
+				},\
+				"./blog.gen.js": {\
+					"types": "./dist/blog.gen.d.ts",\
+					"default": "./dist/blog.gen.js"\
+				},\
+				"./blog.js": {\
+					"types": "./dist/blog.d.ts",\
+					"default": "./dist/blog.js"\
+				},\
+				"./Feed_Item_Date.svelte": {\
+					"types": "./dist/Feed_Item_Date.svelte.d.ts",\
+					"svelte": "./dist/Feed_Item_Date.svelte",\
+					"default": "./dist/Feed_Item_Date.svelte"\
+				},\
+				"./feed.js": {\
+					"types": "./dist/feed.d.ts",\
+					"default": "./dist/feed.js"\
+				},\
+				"./Hash_Link.svelte": {\
+					"types": "./dist/Hash_Link.svelte.d.ts",\
+					"svelte": "./dist/Hash_Link.svelte",\
+					"default": "./dist/Hash_Link.svelte"\
+				},\
+				"./post.task.js": {\
+					"types": "./dist/post.task.d.ts",\
+					"default": "./dist/post.task.js"\
+				},\
+				"./update_post.task.js": {\
+					"types": "./dist/update_post.task.d.ts",\
+					"default": "./dist/update_post.task.js"\
+				},\
+				"./util.js": {\
+					"types": "./dist/util.d.ts",\
+					"default": "./dist/util.js"\
+				}\
+			},\
+			"prettier": {\
+				"plugins": [\
+					"prettier-plugin-svelte"\
+				],\
+				"useTabs": true,\
+				"printWidth": 100,\
+				"singleQuote": true,\
+				"bracketSpacing": false,\
+				"overrides": [\
+					{\
+						"files": "package.json",\
+						"options": {\
+							"useTabs": false\
+						}\
+					}\
+				]\
+			}\
+		},\
+		"src_json": {\
+			"name": "@ryanatkn/fuz_blog",\
+			"version": "0.5.0",\
+			"modules": {\
+				"./package.json": {\
+					"path": "package.json",\
+					"declarations": []\
+				},\
+				"./blog_helpers.js": {\
+					"path": "blog_helpers.ts",\
+					"declarations": [\
+						{\
+							"name": "resolve_blog_post_item",\
+							"kind": "function"\
+						},\
+						{\
+							"name": "collect_blog_post_ids",\
+							"kind": "function"\
+						},\
+						{\
+							"name": "load_blog_post_modules",\
+							"kind": "function"\
+						},\
+						{\
+							"name": "to_next_blog_post_id",\
+							"kind": "function"\
+						},\
+						{\
+							"name": "to_blog_post_path",\
+							"kind": "function"\
+						}\
+					]\
+				},\
+				"./Blog_Post_Header.svelte": {\
+					"path": "Blog_Post_Header.svelte",\
+					"declarations": []\
+				},\
+				"./Blog_Post.svelte": {\
+					"path": "Blog_Post.svelte",\
+					"declarations": []\
+				},\
+				"./blog.gen.js": {\
+					"path": "blog.gen.ts",\
+					"declarations": [\
+						{\
+							"name": "gen",\
+							"kind": "variable"\
+						}\
+					]\
+				},\
+				"./blog.js": {\
+					"path": "blog.ts",\
+					"declarations": [\
+						{\
+							"name": "Blog_Feed_Data",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Blog_Feed",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Blog_Post_Data",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Blog_Comments",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Mastodon_Blog_Comments",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Blog_Module",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Blog_Post_Module",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Blog_Post_Id",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Blog_Post_Item",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "get_blog_feed",\
+							"kind": "function"\
+						},\
+						{\
+							"name": "set_blog_feed",\
+							"kind": "function"\
+						}\
+					]\
+				},\
+				"./Feed_Item_Date.svelte": {\
+					"path": "Feed_Item_Date.svelte",\
+					"declarations": []\
+				},\
+				"./feed.js": {\
+					"path": "feed.ts",\
+					"declarations": [\
+						{\
+							"name": "Feed",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Feed_Item",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "create_atom_feed",\
+							"kind": "function"\
+						}\
+					]\
+				},\
+				"./Hash_Link.svelte": {\
+					"path": "Hash_Link.svelte",\
+					"declarations": []\
+				},\
+				"./post.task.js": {\
+					"path": "post.task.ts",\
+					"declarations": [\
+						{\
+							"name": "task",\
+							"kind": "variable"\
+						}\
+					]\
+				},\
+				"./update_post.task.js": {\
+					"path": "update_post.task.ts",\
+					"declarations": [\
+						{\
+							"name": "task",\
+							"kind": "variable"\
+						}\
+					]\
+				},\
+				"./util.js": {\
+					"path": "util.ts",\
+					"declarations": [\
+						{\
+							"name": "format_date",\
+							"kind": "function"\
+						},\
+						{\
+							"name": "to_pathname",\
+							"kind": "function"\
+						}\
+					]\
+				}\
+			}\
+		},\
+		"name": "@ryanatkn/fuz_blog",\
+		"repo_name": "fuz_blog",\
+		"repo_url": "https://github.com/ryanatkn/fuz_blog",\
+		"owner_name": "ryanatkn",\
+		"homepage_url": "https://blog.fuz.dev/",\
+		"logo_url": "https://blog.fuz.dev/logo.svg",\
+		"logo_alt": "a friendly yellow spider facing you",\
+		"npm_url": "https://www.npmjs.com/package/@ryanatkn/fuz_blog",\
+		"changelog_url": "https://github.com/ryanatkn/fuz_blog/blob/main/CHANGELOG.md",\
+		"published": true,\
+		"check_runs": {\
+			"status": "completed",\
+			"conclusion": "success"\
+		},\
+		"pull_requests": []\
+	},\
+	{\
 		"url": "https://mastodon.fuz.dev/",\
 		"package_json": {\
 			"name": "@ryanatkn/fuz_mastodon",\
@@ -7959,7 +8268,7 @@ export const repos: Repo[] = JSON.parse(
 				"@ryanatkn/belt": "^0.24.9",\
 				"@ryanatkn/eslint-config": "^0.4.2",\
 				"@ryanatkn/fuz": "^0.112.0",\
-				"@ryanatkn/fuz_blog": "^0.4.1",\
+				"@ryanatkn/fuz_blog": "^0.5.0",\
 				"@ryanatkn/fuz_gitops": "^0.32.0",\
 				"@ryanatkn/fuz_mastodon": "^0.19.0",\
 				"@ryanatkn/gro": "^0.132.0",\
