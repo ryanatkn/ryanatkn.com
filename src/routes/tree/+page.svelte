@@ -1,14 +1,14 @@
 <script lang="ts">
 	import Tree_Page from '@ryanatkn/fuz_gitops/Tree_Page.svelte';
-	import {get_deployments} from '@ryanatkn/fuz_gitops/deployments.js';
+	import {get_repos} from '@ryanatkn/fuz_gitops/repo.js';
 
 	// TODO ideally there would be one `Packages_Tree` mounted by the layout
 
-	const {deployment, deployments} = get_deployments();
+	const {repo, repos} = get_repos();
 </script>
 
 <svelte:head>
-	<title>tree {deployment.package_json.glyph} {deployment.name}</title>
+	<title>tree {repo.package_json.glyph} {repo.name}</title>
 </svelte:head>
 
-<Tree_Page {deployment} {deployments} />
+<Tree_Page {repo} {repos} />

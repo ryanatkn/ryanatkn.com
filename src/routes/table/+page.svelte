@@ -1,8 +1,8 @@
 <script lang="ts">
 	import Table_Page from '@ryanatkn/fuz_gitops/Table_Page.svelte';
-	import {get_deployments} from '@ryanatkn/fuz_gitops/deployments.js';
+	import {get_repos} from '@ryanatkn/fuz_gitops/repo.js';
 
-	const {deployment, deployments} = get_deployments();
+	const {repo, repos} = get_repos();
 </script>
 
-<Table_Page {deployment} {deployments} />
+<Table_Page {repo} {repos} />
