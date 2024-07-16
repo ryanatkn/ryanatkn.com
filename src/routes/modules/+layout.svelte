@@ -12,7 +12,6 @@
 
 	// this is duplicated in each deployments page to code split the deployments data
 
-	// TODO fix JSON types
 	set_deployments(parse_deployments(deployments, 'https://www.ryanatkn.com/'));
 </script>
 

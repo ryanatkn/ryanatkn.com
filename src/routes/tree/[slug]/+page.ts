@@ -3,7 +3,6 @@ import {parse_deployments} from '@ryanatkn/fuz_gitops/deployments.js';
 
 import {deployments} from '$routes/repos.js';
 
-// TODO fix JSON types
 const parsed = parse_deployments(deployments, 'https://www.ryanatkn.com/');
 
 export const entries: EntryGenerator = () => {
