@@ -57,7 +57,7 @@ const projects_metadata: Project_Metadata[] = [
 	//  repo: '@ryanatkn/spiderspace.org',
 	// 	title: '<a href="https://www.spiderspace.org/">spiderspace.org</a>',
 	// 	description: 'community website with a YouTube channel about building it',
-	// 	subtitle: `<a class="chip" href="https://www.youtube.com/@spiderspace_8000">YouTube</a> <a class="chip" href="https://github.com/spiderspace/spiderspace.org">source</a>`,
+	// 	subtitle: `<a class="chip" href="https://www.youtube.com/@spiderspace_8000">YouTube</a> <a class="chip" href="https://github.com/ryanatkn/spiderspace.org">source</a>`,
 	// },
 	{
 		name: 'webdevladder.net',

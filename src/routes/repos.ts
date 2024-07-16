@@ -30,8 +30,8 @@ export const repos: Repo[] = JSON.parse(
 				"email": "mail@ryanatkn.com",\
 				"url": "https://www.ryanatkn.com/"\
 			},\
-			"repository": "https://github.com/spiderspace/spiderspace",\
-			"bugs": "https://github.com/spiderspace/spiderspace/issues",\
+			"repository": "https://github.com/ryanatkn/spiderspace.org",\
+			"bugs": "https://github.com/ryanatkn/spiderspace.org/issues",\
 			"funding": "https://www.ryanatkn.com/funding",\
 			"type": "module",\
 			"engines": {\
@@ -87,8 +87,8 @@ export const repos: Repo[] = JSON.parse(
 		},\
 		"name": "spiderspace.org",\
 		"repo_name": "spiderspace.org",\
-		"repo_url": "https://github.com/spiderspace/spiderspace",\
-		"owner_name": "spiderspace",\
+		"repo_url": "https://github.com/ryanatkn/spiderspace.org",\
+		"owner_name": "ryanatkn",\
 		"homepage_url": "https://www.spiderspace.org/",\
 		"logo_url": "https://www.spiderspace.org/logo.svg",\
 		"logo_alt": "a galaxy full of twinkling star spiders",\
@@ -8334,16 +8334,7 @@ export const repos: Repo[] = JSON.parse(
 			"status": "completed",\
 			"conclusion": "success"\
 		},\
-		"pull_requests": [\
-			{\
-				"number": 29,\
-				"title": "upgrade fuz_gitops",\
-				"user": {\
-					"login": "ryanatkn"\
-				},\
-				"draft": false\
-			}\
-		]\
+		"pull_requests": []\
 	}\
 ]',
 );
