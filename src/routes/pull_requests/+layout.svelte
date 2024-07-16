@@ -1,8 +1,8 @@
 <script lang="ts">
-	import {parse_deployments, set_deployments} from '@ryanatkn/fuz_gitops/deployments.js';
+	import {parse_repos, set_repos} from '@ryanatkn/fuz_gitops/repo.js';
 	import type {Snippet} from 'svelte';
 
-	import {deployments} from '$routes/repos.js';
+	import {repos} from '$routes/repos.js';
 
 	interface Props {
 		children: Snippet;
@@ -10,9 +10,9 @@
 
 	const {children}: Props = $props();
 
-	// this is duplicated in each deployments page to code split the deployments data
+	// this is duplicated in each repos page to code split the repos data
 
-	set_deployments(parse_deployments(deployments, 'https://www.ryanatkn.com/'));
+	set_repos(parse_repos(repos, 'https://www.ryanatkn.com/'));
 </script>
 
 <div class="w_100 flex_1">

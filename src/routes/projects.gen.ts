@@ -1,10 +1,10 @@
 import type {Gen} from '@ryanatkn/gro';
 import {base} from '$app/paths';
-import type {Fetched_Deployment} from '@ryanatkn/fuz_gitops/fetch_deployments.js';
+import type {Fetched_Repo} from '@ryanatkn/fuz_gitops/repo.js';
 import {relative} from 'node:path';
 
 import type {Project_Info} from '$routes/project.js';
-import {deployments} from '$routes/repos.js';
+import {repos} from '$routes/repos.js';
 
 /**
  * Generating `projects.ts` to avoid loading the whole `repos.ts` on the homepage.
@@ -108,11 +108,11 @@ const projects_metadata: Project_Metadata[] = [
 ];
 
 const projects: Project_Info[] = projects_metadata.map((project_metadata) => {
-	const deployment = deployments.find((d) => {
+	const repo = repos.find((d) => {
 		if (!('name' in d)) return false;
 		return d.name === project_metadata.repo;
 	});
-	if (!deployment) return project_metadata;
+	if (!repo) return project_metadata;
 	const {
 		description,
 		homepage,
@@ -120,6 +120,6 @@ const projects: Project_Info[] = projects_metadata.map((project_metadata) => {
 		logo = project_metadata.logo, // TODO @many this is a hack because cosmicplayground hasn't been deployed
 		logo_alt,
 		glyph,
-	} = (deployment as Fetched_Deployment).package_json; // TODO fix type to avoid casting
+	} = (repo as Fetched_Repo).package_json; // TODO fix type to avoid casting
 	return {description, homepage, motto, logo, logo_alt, glyph, ...project_metadata};
 });
