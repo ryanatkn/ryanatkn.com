@@ -40,7 +40,7 @@
     "@ryanatkn/fuz": "^0.112.0",
     "@ryanatkn/fuz_blog": "^0.4.1",
     "@ryanatkn/fuz_gitops": "^0.32.0",
-    "@ryanatkn/fuz_mastodon": "^0.18.0",
+    "@ryanatkn/fuz_mastodon": "^0.19.0",
     "@ryanatkn/gro": "^0.132.0",
     "@ryanatkn/moss": "^0.8.0",
     "@sveltejs/adapter-static": "^3.0.2",
