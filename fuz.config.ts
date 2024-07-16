@@ -1,4 +1,4 @@
-import type {Fuz_Config} from '@ryanatkn/fuz/config.js';
+import type {Fuz_Config} from '@ryanatkn/fuz/fuz_config.js';
 
 const config: Fuz_Config = {
 	deployments: [
