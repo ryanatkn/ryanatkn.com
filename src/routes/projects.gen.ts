@@ -1,6 +1,6 @@
 import type {Gen} from '@ryanatkn/gro';
 import {base} from '$app/paths';
-import type {Fetched_Repo} from '@ryanatkn/fuz_gitops/repo.js';
+import type {Repo} from '@ryanatkn/fuz_gitops/repo.js';
 import {relative} from 'node:path';
 
 import type {Project_Info} from '$routes/project.js';
@@ -120,6 +120,6 @@ const projects: Project_Info[] = projects_metadata.map((project_metadata) => {
 		logo = project_metadata.logo, // TODO @many this is a hack because cosmicplayground hasn't been deployed
 		logo_alt,
 		glyph,
-	} = (repo as Fetched_Repo).package_json; // TODO fix type to avoid casting
+	} = repo.package_json; // TODO fix type to avoid casting
 	return {description, homepage, motto, logo, logo_alt, glyph, ...project_metadata};
 });
