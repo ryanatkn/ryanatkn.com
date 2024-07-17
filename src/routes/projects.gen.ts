@@ -1,6 +1,5 @@
 import type {Gen} from '@ryanatkn/gro';
 import {base} from '$app/paths';
-import type {Repo} from '@ryanatkn/fuz_gitops/repo.js';
 import {relative} from 'node:path';
 
 import type {Project_Info} from '$routes/project.js';

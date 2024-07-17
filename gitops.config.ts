@@ -1,6 +1,6 @@
-import type {Create_Fuz_Config} from '@ryanatkn/fuz/fuz_config.js';
+import type {Create_Gitops_Config} from '@ryanatkn/fuz_gitops/gitops_config.js';
 
-const config: Create_Fuz_Config = () => {
+const config: Create_Gitops_Config = () => {
 	return {
 		repos: [
 			'https://github.com/ryanatkn/spiderspace.org',
