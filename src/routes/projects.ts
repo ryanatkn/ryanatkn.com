@@ -84,6 +84,8 @@ export const projects: Project_Info[] = [
 		homepage: 'https://www.cosmicplayground.org/',
 		motto: 'tools and toys for expanding minds',
 		logo: 'favicon.png',
+		logo_alt: 'the JWST alignment starburst against starry space',
+		glyph: '🌌',
 		name: 'cosmicplayground',
 		repo: '@ryanatkn/cosmicplayground',
 		title: '<a href="https://www.cosmicplayground.org">cosmicplayground.org</a> 🌌',
