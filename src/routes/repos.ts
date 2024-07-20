@@ -2654,11 +2654,11 @@ export const repos: Repo[] = JSON.parse(
 							"kind": "type"\
 						},\
 						{\
-							"name": "Contextmenu_Store_Options",\
+							"name": "Contextmenu_State_Options",\
 							"kind": "type"\
 						},\
 						{\
-							"name": "Contextmenu_Store",\
+							"name": "Contextmenu_State",\
 							"kind": "class"\
 						},\
 						{\

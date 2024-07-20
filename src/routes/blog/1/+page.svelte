@@ -26,7 +26,7 @@
 	// let cache: Fetch_Value_Cache | undefined | null = $state();
 	// onMount(async () => {
 	// 	if (DEV) {
-	// 		cache = new Map((await import('../mastodon_fake_cache_data.js')).mastodon_fake_cache_data);
+	// 		cache = new Map((await import('../mastodon_dev_cache_data.js')).mastodon_dev_cache_data);
 	// 	} else {
 	// 		cache = null;
 	// 	}
