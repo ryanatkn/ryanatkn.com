@@ -86,7 +86,7 @@
 			</p>
 			<p>
 				To help me produce software, videos, and blog posts, you can support me on
-				<!-- TODO CSS classes after upgrading Fuz for `vertical-align-middle` -->
+				<!-- TODO after upgrading Fuz use `inline` instead of the classes -->
 				<a
 					class="nowrap"
 					href="https://github.com/sponsors/ryanatkn"
@@ -94,7 +94,7 @@
 					><Github_Logo
 						size="var(--size_md)"
 						fill="hsl(var(--color_b_5))"
-						attrs={{class: 'inline_block', style: 'vertical-align: middle'}}
+						classes="inline_block vertical_align_middle"
 					/> GitHub Sponsors</a
 				>
 				or

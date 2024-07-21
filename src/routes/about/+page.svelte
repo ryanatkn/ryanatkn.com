@@ -42,27 +42,27 @@
 		<ul>
 			<li>
 				In 2019 I started <a href="https://github.com/ryanatkn">doing full-time open source</a>,
-				releasing almost everything I write for free with permissive licenses.
+				publishing almost all my code for free with permissive licenses.
 			</li>
 			<li>
 				I was initially self-taught (ty internet) and I've been working as a JS-oriented web dev
-				since 2011
+				since 2011.
 			</li>
 			<li>
 				I learned to code wanting to be a game programmer, but I fell in love with the web at my
-				first job
+				first job.
 			</li>
 			<li>
 				My interest in making games continues as a hobby in <a
 					href="https://www.cosmicplayground.org/">cosmicplayground.org</a
 				>, <a href="https://earbetter.ryanatkn.com/">Earbetter</a>,
 				<a href="https://ryanatkn.github.io/svelte-snake-sports/">Svelte Snake Sports</a>, and other
-				<a href="https://github.com/ryanatkn#archives">abandonings</a>.
+				<a href="https://github.com/ryanatkn#archives">abandonings</a> and future projects.
 			</li>
 			<li>
 				I like <a href="https://svelte.dev/">Svelte</a> and
 				<a href="https://kit.svelte.dev/">SvelteKit</a>
-				so much that you shouldn't trust my opinion on it
+				so much that you shouldn't trust my opinion on it.
 			</li>
 		</ul>
 	</section>
