@@ -39,7 +39,7 @@
 			<Contact_Info />
 		</div>
 	</section>
-	<section class="box row wrap gap_xl2">
+	<section class="box row flex_wrap gap_xl2">
 		<Page_Links />
 	</section>
 	<!-- TODO margin is a hack, replace with a class or generic style -->

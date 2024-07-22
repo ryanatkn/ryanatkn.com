@@ -12,7 +12,7 @@
 	const {
 		size = 'var(--space_xl7, 64px)',
 		fill = 'var(--text_color, #000)',
-		label = 'GitHub icon',
+		label = 'Patreon icon',
 		inline = false,
 		attrs,
 	}: Props = $props();
