@@ -21,16 +21,16 @@
 			</h1>
 		</header>
 	</section>
-	<section class="box row wrap gap_md">
-		<div class="display_contents" style:--link_color="hsl(var(--color_b_5))">
+	<section class="box row flex_wrap gap_md">
+		<div class="display_contents" style:--link_color="var(--color_b_5)">
 			<!-- TODO hacky with max-width -->
 			<Card href="https://github.com/sponsors/ryanatkn" attrs={{style: 'max-width: 100%'}}>
-				{#snippet icon()}<Github_Logo fill="hsl(var(--color_b_5))" />{/snippet}
+				{#snippet icon()}<Github_Logo fill="var(--color_b_5)" />{/snippet}
 				GitHub Sponsors
 			</Card>
 		</div>
 		<Card href="https://www.patreon.com/ryanatkn" align="right">
-			{#snippet icon()}<Patreon_Logo fill="hsl(var(--color_a_5))" />{/snippet}
+			{#snippet icon()}<Patreon_Logo fill="var(--color_a_5)" />{/snippet}
 			Patreon
 		</Card>
 	</section>
@@ -88,18 +88,14 @@
 				To help me produce software, videos, and blog posts, you can support me on
 				<!-- TODO after upgrading Fuz use `inline` instead of the classes -->
 				<a
-					class="nowrap"
+					class="white_space_nowrap"
 					href="https://github.com/sponsors/ryanatkn"
-					style:--link_color="hsl(var(--color_b_5))"
-					><Github_Logo
-						size="var(--size_md)"
-						fill="hsl(var(--color_b_5))"
-						classes="inline_block vertical_align_middle"
-					/> GitHub Sponsors</a
+					style:--link_color="var(--color_b_5)"
+					><Github_Logo size="var(--size_md)" fill="var(--color_b_5)" inline /> GitHub Sponsors</a
 				>
 				or
-				<a class="nowrap" href="https://www.patreon.com/ryanatkn"
-					><Patreon_Logo size="var(--size_md)" fill="hsl(var(--color_a_5))" inline /> Patreon</a
+				<a class="white_space_nowrap" href="https://www.patreon.com/ryanatkn"
+					><Patreon_Logo size="var(--size_md)" fill="var(--color_a_5)" inline /> Patreon</a
 				>. Supporting me at any level gives you access to supporter-only community spaces on Discord
 				and the social websites I build on camera. Supporting me through GitHub instead of Patreon
 				also gives you access to discussions on a supporters-only GitHub repo.

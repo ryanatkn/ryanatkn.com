@@ -37,22 +37,22 @@ export const repos: Repo[] = JSON.parse(
 				"node": ">=20.12"\
 			},\
 			"devDependencies": {\
-				"@ryanatkn/belt": "^0.24.10",\
+				"@ryanatkn/belt": "^0.24.11",\
 				"@ryanatkn/eslint-config": "^0.4.2",\
-				"@ryanatkn/fuz": "^0.115.1",\
-				"@ryanatkn/gro": "^0.133.2",\
-				"@ryanatkn/moss": "^0.8.0",\
+				"@ryanatkn/fuz": "^0.118.2",\
+				"@ryanatkn/gro": "^0.133.4",\
+				"@ryanatkn/moss": "^0.11.1",\
 				"@sveltejs/adapter-static": "^3.0.2",\
 				"@sveltejs/kit": "^2.5.18",\
 				"@sveltejs/vite-plugin-svelte": "^3.1.1",\
 				"eslint": "^9.7.0",\
-				"eslint-plugin-svelte": "^2.42.0",\
+				"eslint-plugin-svelte": "^2.43.0",\
 				"prettier": "^3.3.3",\
-				"prettier-plugin-svelte": "^3.2.5",\
-				"svelte": "^5.0.0-next.184",\
+				"prettier-plugin-svelte": "^3.2.6",\
+				"svelte": "^5.0.0-next.195",\
 				"svelte-check": "^3.8.4",\
 				"tslib": "^2.6.3",\
-				"typescript": "^5.5.3",\
+				"typescript": "^5.5.4",\
 				"typescript-eslint": "^8.0.0-alpha.44",\
 				"uvu": "^0.5.6"\
 			},\
@@ -134,14 +134,14 @@ export const repos: Repo[] = JSON.parse(
 				"node": ">=20.12"\
 			},\
 			"devDependencies": {\
-				"@ryanatkn/belt": "^0.24.10",\
+				"@ryanatkn/belt": "^0.24.11",\
 				"@ryanatkn/eslint-config": "^0.4.2",\
-				"@ryanatkn/fuz": "^0.117.0",\
+				"@ryanatkn/fuz": "^0.118.2",\
 				"@ryanatkn/fuz_blog": "^0.7.0",\
-				"@ryanatkn/fuz_code": "^0.16.0",\
+				"@ryanatkn/fuz_code": "^0.17.0",\
 				"@ryanatkn/fuz_mastodon": "^0.23.0",\
-				"@ryanatkn/gro": "^0.133.3",\
-				"@ryanatkn/moss": "^0.10.1",\
+				"@ryanatkn/gro": "^0.133.4",\
+				"@ryanatkn/moss": "^0.11.1",\
 				"@sveltejs/adapter-static": "^3.0.2",\
 				"@sveltejs/kit": "^2.5.18",\
 				"@sveltejs/vite-plugin-svelte": "^3.1.1",\
@@ -149,10 +149,10 @@ export const repos: Repo[] = JSON.parse(
 				"eslint-plugin-svelte": "^2.43.0",\
 				"prettier": "^3.3.3",\
 				"prettier-plugin-svelte": "^3.2.6",\
-				"svelte": "^5.0.0-next.192",\
+				"svelte": "^5.0.0-next.195",\
 				"svelte-check": "^3.8.4",\
 				"tslib": "^2.6.3",\
-				"typescript": "^5.5.3",\
+				"typescript": "^5.5.4",\
 				"typescript-eslint": "^8.0.0-alpha.44",\
 				"uvu": "^0.5.6"\
 			},\
@@ -234,22 +234,22 @@ export const repos: Repo[] = JSON.parse(
 				"node": ">=20.12"\
 			},\
 			"devDependencies": {\
-				"@ryanatkn/belt": "^0.24.10",\
+				"@ryanatkn/belt": "^0.24.11",\
 				"@ryanatkn/eslint-config": "^0.4.2",\
-				"@ryanatkn/fuz": "^0.115.1",\
-				"@ryanatkn/gro": "^0.133.2",\
-				"@ryanatkn/moss": "^0.8.0",\
+				"@ryanatkn/fuz": "^0.118.2",\
+				"@ryanatkn/gro": "^0.133.4",\
+				"@ryanatkn/moss": "^0.11.1",\
 				"@sveltejs/adapter-static": "^3.0.2",\
 				"@sveltejs/kit": "^2.5.18",\
 				"@sveltejs/vite-plugin-svelte": "^3.1.1",\
 				"eslint": "^9.7.0",\
-				"eslint-plugin-svelte": "^2.42.0",\
+				"eslint-plugin-svelte": "^2.43.0",\
 				"prettier": "^3.3.3",\
-				"prettier-plugin-svelte": "^3.2.5",\
-				"svelte": "^5.0.0-next.184",\
+				"prettier-plugin-svelte": "^3.2.6",\
+				"svelte": "^5.0.0-next.195",\
 				"svelte-check": "^3.8.4",\
 				"tslib": "^2.6.3",\
-				"typescript": "^5.5.3",\
+				"typescript": "^5.5.4",\
 				"typescript-eslint": "^8.0.0-alpha.44",\
 				"uvu": "^0.5.6"\
 			},\
@@ -300,7 +300,7 @@ export const repos: Repo[] = JSON.parse(
 	{\
 		"package_json": {\
 			"name": "@ryanatkn/moss",\
-			"version": "0.10.1",\
+			"version": "0.11.1",\
 			"description": "CSS framework",\
 			"motto": "magical organic stylesheets",\
 			"glyph": "🌿",\
@@ -332,26 +332,26 @@ export const repos: Repo[] = JSON.parse(
 			},\
 			"devDependencies": {\
 				"@changesets/changelog-git": "^0.2.0",\
-				"@ryanatkn/belt": "^0.24.10",\
+				"@ryanatkn/belt": "^0.24.11",\
 				"@ryanatkn/eslint-config": "^0.4.2",\
-				"@ryanatkn/fuz": "^0.117.0",\
-				"@ryanatkn/fuz_code": "^0.16.0",\
-				"@ryanatkn/gro": "^0.133.2",\
+				"@ryanatkn/fuz": "^0.118.2",\
+				"@ryanatkn/fuz_code": "^0.17.0",\
+				"@ryanatkn/gro": "^0.133.4",\
 				"@sveltejs/adapter-static": "^3.0.2",\
 				"@sveltejs/kit": "^2.5.18",\
 				"@sveltejs/package": "^2.3.2",\
 				"@sveltejs/vite-plugin-svelte": "^3.1.1",\
 				"@types/node": "^20.14.11",\
 				"eslint": "^9.7.0",\
-				"eslint-plugin-svelte": "^2.42.0",\
+				"eslint-plugin-svelte": "^2.43.0",\
 				"prettier": "^3.3.3",\
 				"prettier-plugin-svelte": "^3.2.6",\
 				"prism-svelte": "^0.5.0",\
 				"prismjs": "^1.29.0",\
-				"svelte": "5.0.0-next.189",\
+				"svelte": "^5.0.0-next.195",\
 				"svelte-check": "^3.8.4",\
 				"tslib": "^2.6.3",\
-				"typescript": "^5.5.3",\
+				"typescript": "^5.5.4",\
 				"typescript-eslint": "^8.0.0-alpha.44",\
 				"uvu": "^0.5.6"\
 			},\
@@ -421,6 +421,10 @@ export const repos: Repo[] = JSON.parse(
 					"types": "./dist/variable_data.d.ts",\
 					"default": "./dist/variable_data.js"\
 				},\
+				"./variable.js": {\
+					"types": "./dist/variable.d.ts",\
+					"default": "./dist/variable.js"\
+				},\
 				"./variables.js": {\
 					"types": "./dist/variables.d.ts",\
 					"default": "./dist/variables.js"\
@@ -429,7 +433,7 @@ export const repos: Repo[] = JSON.parse(
 		},\
 		"src_json": {\
 			"name": "@ryanatkn/moss",\
-			"version": "0.10.1",\
+			"version": "0.11.1",\
 			"modules": {\
 				"./package.json": {\
 					"path": "package.json",\
@@ -490,10 +494,6 @@ export const repos: Repo[] = JSON.parse(
 						},\
 						{\
 							"name": "Theme",\
-							"kind": "type"\
-						},\
-						{\
-							"name": "Style_Variable",\
 							"kind": "type"\
 						},\
 						{\
@@ -561,6 +561,27 @@ export const repos: Repo[] = JSON.parse(
 						{\
 							"name": "color_variants",\
 							"kind": "variable"\
+						}\
+					]\
+				},\
+				"./variable.js": {\
+					"path": "variable.ts",\
+					"declarations": [\
+						{\
+							"name": "Style_Variable_Name",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Style_Variable",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "STYLE_VARIABLE_NAME_MATCHER",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "is_style_variable_name",\
+							"kind": "function"\
 						}\
 					]\
 				},\
@@ -928,6 +949,14 @@ export const repos: Repo[] = JSON.parse(
 							"kind": "variable"\
 						},\
 						{\
+							"name": "tint_hue",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "tint_saturation",\
+							"kind": "variable"\
+						},\
+						{\
 							"name": "darken_1",\
 							"kind": "variable"\
 						},\
@@ -997,14 +1026,6 @@ export const repos: Repo[] = JSON.parse(
 						},\
 						{\
 							"name": "lighten_9",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "tint_hue",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "tint_saturation",\
 							"kind": "variable"\
 						},\
 						{\
@@ -1104,6 +1125,10 @@ export const repos: Repo[] = JSON.parse(
 							"kind": "variable"\
 						},\
 						{\
+							"name": "fill",\
+							"kind": "variable"\
+						},\
+						{\
 							"name": "fill_a",\
 							"kind": "variable"\
 						},\
@@ -1156,7 +1181,15 @@ export const repos: Repo[] = JSON.parse(
 							"kind": "variable"\
 						},\
 						{\
-							"name": "text_disabled",\
+							"name": "text_4",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "text_5",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "text_color_disabled",\
 							"kind": "variable"\
 						},\
 						{\
@@ -1512,26 +1545,6 @@ export const repos: Repo[] = JSON.parse(
 							"kind": "variable"\
 						},\
 						{\
-							"name": "button_fill",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "button_fill_hover",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "button_fill_active",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "button_fill_selected",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "button_fill_disabled",\
-							"kind": "variable"\
-						},\
-						{\
 							"name": "button_shadow",\
 							"kind": "variable"\
 						},\
@@ -1572,15 +1585,19 @@ export const repos: Repo[] = JSON.parse(
 							"kind": "variable"\
 						},\
 						{\
-							"name": "Create_Shadow_Options",\
-							"kind": "type"\
+							"name": "shadow_color",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "highlight_color",\
+							"kind": "variable"\
 						},\
 						{\
 							"name": "glow_color",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_color",\
+							"name": "shroud_color",\
 							"kind": "variable"\
 						},\
 						{\
@@ -1620,63 +1637,63 @@ export const repos: Repo[] = JSON.parse(
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_values_xs",\
+							"name": "shadow_xs",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_values_inset_xs",\
+							"name": "shadow_inset_xs",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_values_outset_xs",\
+							"name": "shadow_outset_xs",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_values_sm",\
+							"name": "shadow_sm",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_values_inset_sm",\
+							"name": "shadow_inset_sm",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_values_outset_sm",\
+							"name": "shadow_outset_sm",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_values_md",\
+							"name": "shadow_md",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_values_inset_md",\
+							"name": "shadow_inset_md",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_values_outset_md",\
+							"name": "shadow_outset_md",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_values_lg",\
+							"name": "shadow_lg",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_values_inset_lg",\
+							"name": "shadow_inset_lg",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_values_outset_lg",\
+							"name": "shadow_outset_lg",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_values_xl",\
+							"name": "shadow_xl",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_values_inset_xl",\
+							"name": "shadow_inset_xl",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_values_outset_xl",\
+							"name": "shadow_outset_xl",\
 							"kind": "variable"\
 						},\
 						{\
@@ -1700,663 +1717,283 @@ export const repos: Repo[] = JSON.parse(
 							"kind": "variable"\
 						},\
 						{\
-							"name": "glow_xs",\
+							"name": "highlight_alpha_xs",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "glow_sm",\
+							"name": "highlight_alpha_sm",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "glow_md",\
+							"name": "highlight_alpha_md",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "glow_lg",\
+							"name": "highlight_alpha_lg",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "glow_xl",\
+							"name": "highlight_alpha_xl",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "glow_inset_xs",\
+							"name": "shadow_color_xs",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "glow_inset_sm",\
+							"name": "shadow_color_sm",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "glow_inset_md",\
+							"name": "shadow_color_md",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "glow_inset_lg",\
+							"name": "shadow_color_lg",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "glow_inset_xl",\
+							"name": "shadow_color_xl",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "glow_outset_xs",\
+							"name": "highlight_color_xs",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "glow_outset_sm",\
+							"name": "highlight_color_sm",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "glow_outset_md",\
+							"name": "highlight_color_md",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "glow_outset_lg",\
+							"name": "highlight_color_lg",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "glow_outset_xl",\
+							"name": "highlight_color_xl",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_xs",\
+							"name": "glow_color_xs",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_sm",\
+							"name": "glow_color_sm",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_md",\
+							"name": "glow_color_md",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_lg",\
+							"name": "glow_color_lg",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_xl",\
+							"name": "glow_color_xl",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_inset_xs",\
+							"name": "shroud_color_xs",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_inset_sm",\
+							"name": "shroud_color_sm",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_inset_md",\
+							"name": "shroud_color_md",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_inset_lg",\
+							"name": "shroud_color_lg",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_inset_xl",\
+							"name": "shroud_color_xl",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_outset_xs",\
+							"name": "shadow_color_a_xs",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_outset_sm",\
+							"name": "shadow_color_a_sm",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_outset_md",\
+							"name": "shadow_color_a_md",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_outset_lg",\
+							"name": "shadow_color_a_lg",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_outset_xl",\
+							"name": "shadow_color_a_xl",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_a_xs",\
+							"name": "shadow_color_b_xs",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_a_sm",\
+							"name": "shadow_color_b_sm",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_a_md",\
+							"name": "shadow_color_b_md",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_a_lg",\
+							"name": "shadow_color_b_lg",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_a_xl",\
+							"name": "shadow_color_b_xl",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_a_inset_xs",\
+							"name": "shadow_color_c_xs",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_a_inset_sm",\
+							"name": "shadow_color_c_sm",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_a_inset_md",\
+							"name": "shadow_color_c_md",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_a_inset_lg",\
+							"name": "shadow_color_c_lg",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_a_inset_xl",\
+							"name": "shadow_color_c_xl",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_a_outset_xs",\
+							"name": "shadow_color_d_xs",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_a_outset_sm",\
+							"name": "shadow_color_d_sm",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_a_outset_md",\
+							"name": "shadow_color_d_md",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_a_outset_lg",\
+							"name": "shadow_color_d_lg",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_a_outset_xl",\
+							"name": "shadow_color_d_xl",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_b_xs",\
+							"name": "shadow_color_e_xs",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_b_sm",\
+							"name": "shadow_color_e_sm",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_b_md",\
+							"name": "shadow_color_e_md",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_b_lg",\
+							"name": "shadow_color_e_lg",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_b_xl",\
+							"name": "shadow_color_e_xl",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_b_inset_xs",\
+							"name": "shadow_color_f_xs",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_b_inset_sm",\
+							"name": "shadow_color_f_sm",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_b_inset_md",\
+							"name": "shadow_color_f_md",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_b_inset_lg",\
+							"name": "shadow_color_f_lg",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_b_inset_xl",\
+							"name": "shadow_color_f_xl",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_b_outset_xs",\
+							"name": "shadow_color_g_xs",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_b_outset_sm",\
+							"name": "shadow_color_g_sm",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_b_outset_md",\
+							"name": "shadow_color_g_md",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_b_outset_lg",\
+							"name": "shadow_color_g_lg",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_b_outset_xl",\
+							"name": "shadow_color_g_xl",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_c_xs",\
+							"name": "shadow_color_h_xs",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_c_sm",\
+							"name": "shadow_color_h_sm",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_c_md",\
+							"name": "shadow_color_h_md",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_c_lg",\
+							"name": "shadow_color_h_lg",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_c_xl",\
+							"name": "shadow_color_h_xl",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_c_inset_xs",\
+							"name": "shadow_color_i_xs",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_c_inset_sm",\
+							"name": "shadow_color_i_sm",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_c_inset_md",\
+							"name": "shadow_color_i_md",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_c_inset_lg",\
+							"name": "shadow_color_i_lg",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_c_inset_xl",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_c_outset_xs",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_c_outset_sm",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_c_outset_md",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_c_outset_lg",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_c_outset_xl",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_d_xs",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_d_sm",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_d_md",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_d_lg",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_d_xl",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_d_inset_xs",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_d_inset_sm",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_d_inset_md",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_d_inset_lg",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_d_inset_xl",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_d_outset_xs",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_d_outset_sm",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_d_outset_md",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_d_outset_lg",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_d_outset_xl",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_e_xs",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_e_sm",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_e_md",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_e_lg",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_e_xl",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_e_inset_xs",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_e_inset_sm",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_e_inset_md",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_e_inset_lg",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_e_inset_xl",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_e_outset_xs",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_e_outset_sm",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_e_outset_md",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_e_outset_lg",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_e_outset_xl",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_f_xs",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_f_sm",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_f_md",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_f_lg",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_f_xl",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_f_inset_xs",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_f_inset_sm",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_f_inset_md",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_f_inset_lg",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_f_inset_xl",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_f_outset_xs",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_f_outset_sm",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_f_outset_md",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_f_outset_lg",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_f_outset_xl",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_g_xs",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_g_sm",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_g_md",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_g_lg",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_g_xl",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_g_inset_xs",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_g_inset_sm",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_g_inset_md",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_g_inset_lg",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_g_inset_xl",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_g_outset_xs",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_g_outset_sm",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_g_outset_md",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_g_outset_lg",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_g_outset_xl",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_h_xs",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_h_sm",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_h_md",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_h_lg",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_h_xl",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_h_inset_xs",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_h_inset_sm",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_h_inset_md",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_h_inset_lg",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_h_inset_xl",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_h_outset_xs",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_h_outset_sm",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_h_outset_md",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_h_outset_lg",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_h_outset_xl",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_i_xs",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_i_sm",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_i_md",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_i_lg",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_i_xl",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_i_inset_xs",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_i_inset_sm",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_i_inset_md",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_i_inset_lg",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_i_inset_xl",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_i_outset_xs",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_i_outset_sm",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_i_outset_md",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_i_outset_lg",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_i_outset_xl",\
+							"name": "shadow_color_i_xl",\
 							"kind": "variable"\
 						},\
 						{\
@@ -2466,7 +2103,7 @@ export const repos: Repo[] = JSON.parse(
 	{\
 		"package_json": {\
 			"name": "@ryanatkn/fuz",\
-			"version": "0.117.0",\
+			"version": "0.118.2",\
 			"description": "Svelte UI library",\
 			"motto": "friendly user zystem",\
 			"glyph": "🧶",\
@@ -2513,11 +2150,11 @@ export const repos: Repo[] = JSON.parse(
 			},\
 			"devDependencies": {\
 				"@changesets/changelog-git": "^0.2.0",\
-				"@ryanatkn/belt": "^0.24.10",\
+				"@ryanatkn/belt": "^0.24.11",\
 				"@ryanatkn/eslint-config": "^0.4.2",\
-				"@ryanatkn/fuz_code": "^0.16.0",\
-				"@ryanatkn/gro": "^0.133.2",\
-				"@ryanatkn/moss": "^0.9.0",\
+				"@ryanatkn/fuz_code": "^0.17.0",\
+				"@ryanatkn/gro": "^0.133.4",\
+				"@ryanatkn/moss": "^0.11.1",\
 				"@sveltejs/adapter-static": "^3.0.2",\
 				"@sveltejs/kit": "^2.5.18",\
 				"@sveltejs/package": "^2.3.2",\
@@ -2531,10 +2168,10 @@ export const repos: Repo[] = JSON.parse(
 				"prettier-plugin-svelte": "^3.2.6",\
 				"prism-svelte": "^0.5.0",\
 				"prismjs": "^1.29.0",\
-				"svelte": "^5.0.0-next.192",\
+				"svelte": "^5.0.0-next.195",\
 				"svelte-check": "^3.8.4",\
 				"tslib": "^2.6.3",\
-				"typescript": "^5.5.3",\
+				"typescript": "^5.5.4",\
 				"typescript-eslint": "^8.0.0-alpha.44",\
 				"uvu": "^0.5.6"\
 			},\
@@ -2871,7 +2508,7 @@ export const repos: Repo[] = JSON.parse(
 		},\
 		"src_json": {\
 			"name": "@ryanatkn/fuz",\
-			"version": "0.117.0",\
+			"version": "0.118.2",\
 			"modules": {\
 				"./package.json": {\
 					"path": "package.json",\
@@ -3367,7 +3004,7 @@ export const repos: Repo[] = JSON.parse(
 	{\
 		"package_json": {\
 			"name": "@ryanatkn/gro",\
-			"version": "0.133.3",\
+			"version": "0.133.4",\
 			"description": "task runner and toolkit extending SvelteKit",\
 			"motto": "generate, run, optimize",\
 			"glyph": "🌰",\
@@ -3416,14 +3053,14 @@ export const repos: Repo[] = JSON.parse(
 				"typescript"\
 			],\
 			"dependencies": {\
-				"@ryanatkn/belt": "^0.24.10",\
+				"@ryanatkn/belt": "^0.24.11",\
 				"chokidar": "^3.6.0",\
 				"dotenv": "^16.4.5",\
 				"es-module-lexer": "^1.5.4",\
 				"esm-env": "^1.0.0",\
 				"mri": "^1.2.0",\
 				"prettier": "^3.3.3",\
-				"prettier-plugin-svelte": "^3.2.5",\
+				"prettier-plugin-svelte": "^3.2.6",\
 				"ts-morph": "^23.0.0",\
 				"tslib": "^2.6.3",\
 				"zod": "^3.23.8"\
@@ -3436,20 +3073,20 @@ export const repos: Repo[] = JSON.parse(
 				"@changesets/changelog-git": "^0.2.0",\
 				"@changesets/types": "^6.0.0",\
 				"@ryanatkn/eslint-config": "^0.4.2",\
-				"@ryanatkn/fuz": "^0.115.1",\
-				"@ryanatkn/moss": "^0.8.0",\
+				"@ryanatkn/fuz": "^0.118.2",\
+				"@ryanatkn/moss": "^0.11.1",\
 				"@sveltejs/adapter-static": "^3.0.2",\
 				"@sveltejs/kit": "^2.5.18",\
 				"@sveltejs/package": "^2.3.2",\
 				"@sveltejs/vite-plugin-svelte": "^3.1.1",\
 				"@types/fs-extra": "^11.0.4",\
-				"@types/node": "^20.14.10",\
+				"@types/node": "^20.14.11",\
 				"esbuild": "^0.21.5",\
 				"eslint": "^9.7.0",\
-				"eslint-plugin-svelte": "^2.42.0",\
-				"svelte": "^5.0.0-next.184",\
+				"eslint-plugin-svelte": "^2.43.0",\
+				"svelte": "^5.0.0-next.195",\
 				"svelte-check": "^3.8.4",\
-				"typescript": "^5.5.3",\
+				"typescript": "^5.5.4",\
 				"typescript-eslint": "^8.0.0-alpha.44",\
 				"uvu": "^0.5.6"\
 			},\
@@ -3817,7 +3454,7 @@ export const repos: Repo[] = JSON.parse(
 		},\
 		"src_json": {\
 			"name": "@ryanatkn/gro",\
-			"version": "0.133.3",\
+			"version": "0.133.4",\
 			"modules": {\
 				".": {\
 					"path": "index.ts",\
@@ -5751,7 +5388,16 @@ export const repos: Repo[] = JSON.parse(
 			"status": "completed",\
 			"conclusion": "success"\
 		},\
-		"pull_requests": []\
+		"pull_requests": [\
+			{\
+				"number": 492,\
+				"title": "feat: watch gen in `gro dev`",\
+				"user": {\
+					"login": "ryanatkn"\
+				},\
+				"draft": false\
+			}\
+		]\
 	},\
 	{\
 		"package_json": {\
@@ -5778,22 +5424,22 @@ export const repos: Repo[] = JSON.parse(
 				"node": ">=20.12"\
 			},\
 			"devDependencies": {\
-				"@ryanatkn/belt": "^0.24.10",\
+				"@ryanatkn/belt": "^0.24.11",\
 				"@ryanatkn/eslint-config": "^0.4.2",\
-				"@ryanatkn/fuz": "^0.115.1",\
-				"@ryanatkn/gro": "^0.133.2",\
-				"@ryanatkn/moss": "^0.8.0",\
+				"@ryanatkn/fuz": "^0.118.2",\
+				"@ryanatkn/gro": "^0.133.4",\
+				"@ryanatkn/moss": "^0.11.1",\
 				"@sveltejs/adapter-static": "^3.0.2",\
 				"@sveltejs/kit": "^2.5.18",\
 				"@sveltejs/vite-plugin-svelte": "^3.1.1",\
 				"eslint": "^9.7.0",\
-				"eslint-plugin-svelte": "^2.42.0",\
+				"eslint-plugin-svelte": "^2.43.0",\
 				"prettier": "^3.3.3",\
-				"prettier-plugin-svelte": "^3.2.5",\
-				"svelte": "^5.0.0-next.184",\
+				"prettier-plugin-svelte": "^3.2.6",\
+				"svelte": "^5.0.0-next.195",\
 				"svelte-check": "^3.8.4",\
 				"tslib": "^2.6.3",\
-				"typescript": "^5.5.3",\
+				"typescript": "^5.5.4",\
 				"typescript-eslint": "^8.0.0-alpha.44",\
 				"uvu": "^0.5.6"\
 			},\
@@ -5844,7 +5490,7 @@ export const repos: Repo[] = JSON.parse(
 	{\
 		"package_json": {\
 			"name": "@ryanatkn/belt",\
-			"version": "0.24.10",\
+			"version": "0.24.11",\
 			"description": "utility belt for JS",\
 			"glyph": "🦕",\
 			"logo": "logo.svg",\
@@ -5886,23 +5532,23 @@ export const repos: Repo[] = JSON.parse(
 			"devDependencies": {\
 				"@changesets/changelog-git": "^0.2.0",\
 				"@ryanatkn/eslint-config": "^0.4.2",\
-				"@ryanatkn/fuz": "^0.115.1",\
-				"@ryanatkn/gro": "^0.133.1",\
-				"@ryanatkn/moss": "^0.8.0",\
+				"@ryanatkn/fuz": "^0.118.2",\
+				"@ryanatkn/gro": "^0.133.4",\
+				"@ryanatkn/moss": "^0.11.1",\
 				"@sveltejs/adapter-static": "^3.0.2",\
 				"@sveltejs/kit": "^2.5.18",\
 				"@sveltejs/package": "^2.3.2",\
 				"@sveltejs/vite-plugin-svelte": "^3.1.1",\
-				"@types/node": "^20.14.10",\
+				"@types/node": "^20.14.11",\
 				"eslint": "^9.7.0",\
-				"eslint-plugin-svelte": "^2.42.0",\
+				"eslint-plugin-svelte": "^2.43.0",\
 				"prettier": "^3.3.3",\
-				"prettier-plugin-svelte": "^3.2.5",\
-				"svelte": "^5.0.0-next.184",\
+				"prettier-plugin-svelte": "^3.2.6",\
+				"svelte": "^5.0.0-next.195",\
 				"svelte-check": "^3.8.4",\
 				"tinybench": "^2.8.0",\
 				"tslib": "^2.6.3",\
-				"typescript": "^5.5.3",\
+				"typescript": "^5.5.4",\
 				"typescript-eslint": "^8.0.0-alpha.44",\
 				"uvu": "^0.5.6"\
 			},\
@@ -6050,7 +5696,7 @@ export const repos: Repo[] = JSON.parse(
 		},\
 		"src_json": {\
 			"name": "@ryanatkn/belt",\
-			"version": "0.24.10",\
+			"version": "0.24.11",\
 			"modules": {\
 				"./package.json": {\
 					"path": "package.json",\
@@ -7082,13 +6728,13 @@ export const repos: Repo[] = JSON.parse(
 			},\
 			"devDependencies": {\
 				"@changesets/changelog-git": "^0.2.0",\
-				"@ryanatkn/belt": "^0.24.10",\
+				"@ryanatkn/belt": "^0.24.11",\
 				"@ryanatkn/eslint-config": "^0.4.2",\
-				"@ryanatkn/fuz": "^0.117.0",\
-				"@ryanatkn/fuz_code": "^0.16.0",\
+				"@ryanatkn/fuz": "^0.118.2",\
+				"@ryanatkn/fuz_code": "^0.17.0",\
 				"@ryanatkn/fuz_mastodon": "^0.23.0",\
-				"@ryanatkn/gro": "^0.133.3",\
-				"@ryanatkn/moss": "^0.10.1",\
+				"@ryanatkn/gro": "^0.133.4",\
+				"@ryanatkn/moss": "^0.11.1",\
 				"@sveltejs/adapter-static": "^3.0.2",\
 				"@sveltejs/kit": "^2.5.18",\
 				"@sveltejs/package": "^2.3.2",\
@@ -7099,10 +6745,10 @@ export const repos: Repo[] = JSON.parse(
 				"eslint-plugin-svelte": "^2.43.0",\
 				"prettier": "^3.3.3",\
 				"prettier-plugin-svelte": "^3.2.6",\
-				"svelte": "^5.0.0-next.192",\
+				"svelte": "^5.0.0-next.195",\
 				"svelte-check": "^3.8.4",\
 				"tslib": "^2.6.3",\
-				"typescript": "^5.5.3",\
+				"typescript": "^5.5.4",\
 				"typescript-eslint": "^8.0.0-alpha.44",\
 				"uvu": "^0.5.6"\
 			},\
@@ -7398,12 +7044,12 @@ export const repos: Repo[] = JSON.parse(
 			},\
 			"devDependencies": {\
 				"@changesets/changelog-git": "^0.2.0",\
-				"@ryanatkn/belt": "^0.24.10",\
+				"@ryanatkn/belt": "^0.24.11",\
 				"@ryanatkn/eslint-config": "^0.4.2",\
-				"@ryanatkn/fuz": "^0.117.0",\
-				"@ryanatkn/fuz_code": "^0.16.0",\
-				"@ryanatkn/gro": "^0.133.3",\
-				"@ryanatkn/moss": "^0.10.1",\
+				"@ryanatkn/fuz": "^0.118.2",\
+				"@ryanatkn/fuz_code": "^0.17.0",\
+				"@ryanatkn/gro": "^0.133.4",\
+				"@ryanatkn/moss": "^0.11.1",\
 				"@sveltejs/adapter-static": "^3.0.2",\
 				"@sveltejs/kit": "^2.5.18",\
 				"@sveltejs/package": "^2.3.2",\
@@ -7416,11 +7062,11 @@ export const repos: Repo[] = JSON.parse(
 				"prettier-plugin-svelte": "^3.2.6",\
 				"prism-svelte": "^0.5.0",\
 				"prismjs": "^1.29.0",\
-				"svelte": "^5.0.0-next.192",\
+				"svelte": "^5.0.0-next.195",\
 				"svelte-check": "^3.8.4",\
 				"svelte-intersect": "^0.14.2",\
 				"tslib": "^2.6.3",\
-				"typescript": "^5.5.3",\
+				"typescript": "^5.5.4",\
 				"typescript-eslint": "^8.0.0-alpha.44",\
 				"uvu": "^0.5.6"\
 			},\
@@ -7655,7 +7301,7 @@ export const repos: Repo[] = JSON.parse(
 	{\
 		"package_json": {\
 			"name": "@ryanatkn/fuz_code",\
-			"version": "0.16.0",\
+			"version": "0.17.0",\
 			"description": "syntax highlighting using prismjs for Svelte, SvelteKit, TypeScript, and Fuz",\
 			"glyph": "🎨",\
 			"logo": "logo.svg",\
@@ -7692,26 +7338,26 @@ export const repos: Repo[] = JSON.parse(
 			},\
 			"devDependencies": {\
 				"@changesets/changelog-git": "^0.2.0",\
-				"@ryanatkn/belt": "^0.24.9",\
+				"@ryanatkn/belt": "^0.24.11",\
 				"@ryanatkn/eslint-config": "^0.4.2",\
-				"@ryanatkn/fuz": "^0.115.0",\
-				"@ryanatkn/gro": "^0.133.0",\
-				"@ryanatkn/moss": "^0.8.0",\
+				"@ryanatkn/fuz": "^0.118.2",\
+				"@ryanatkn/gro": "^0.133.4",\
+				"@ryanatkn/moss": "^0.11.1",\
 				"@sveltejs/adapter-static": "^3.0.2",\
 				"@sveltejs/kit": "^2.5.18",\
 				"@sveltejs/package": "^2.3.2",\
 				"@sveltejs/vite-plugin-svelte": "^3.1.1",\
 				"@types/prismjs": "^1.26.4",\
 				"eslint": "^9.7.0",\
-				"eslint-plugin-svelte": "^2.42.0",\
+				"eslint-plugin-svelte": "^2.43.0",\
 				"prettier": "^3.3.3",\
 				"prettier-plugin-svelte": "^3.2.6",\
 				"prism-svelte": "^0.5.0",\
 				"prismjs": "^1.29.0",\
-				"svelte": "^5.0.0-next.189",\
+				"svelte": "^5.0.0-next.195",\
 				"svelte-check": "^3.8.4",\
 				"tslib": "^2.6.3",\
-				"typescript": "^5.5.3",\
+				"typescript": "^5.5.4",\
 				"typescript-eslint": "^8.0.0-alpha.44",\
 				"uvu": "^0.5.6"\
 			},\
@@ -7759,7 +7405,7 @@ export const repos: Repo[] = JSON.parse(
 		},\
 		"src_json": {\
 			"name": "@ryanatkn/fuz_code",\
-			"version": "0.16.0",\
+			"version": "0.17.0",\
 			"modules": {\
 				"./package.json": {\
 					"path": "package.json",\
@@ -7803,7 +7449,7 @@ export const repos: Repo[] = JSON.parse(
 	{\
 		"package_json": {\
 			"name": "@ryanatkn/fuz_gitops",\
-			"version": "0.34.0",\
+			"version": "0.35.0",\
 			"description": "a tool for managing many repos",\
 			"glyph": "🪄",\
 			"logo": "logo.svg",\
@@ -7843,11 +7489,11 @@ export const repos: Repo[] = JSON.parse(
 			},\
 			"devDependencies": {\
 				"@changesets/changelog-git": "^0.2.0",\
-				"@ryanatkn/belt": "^0.24.10",\
+				"@ryanatkn/belt": "^0.24.11",\
 				"@ryanatkn/eslint-config": "^0.4.2",\
-				"@ryanatkn/fuz": "^0.117.0",\
-				"@ryanatkn/gro": "^0.133.3",\
-				"@ryanatkn/moss": "^0.10.1",\
+				"@ryanatkn/fuz": "^0.118.2",\
+				"@ryanatkn/gro": "^0.133.4",\
+				"@ryanatkn/moss": "^0.11.1",\
 				"@sveltejs/adapter-static": "^3.0.2",\
 				"@sveltejs/kit": "^2.5.18",\
 				"@sveltejs/package": "^2.3.2",\
@@ -7857,10 +7503,10 @@ export const repos: Repo[] = JSON.parse(
 				"eslint-plugin-svelte": "^2.43.0",\
 				"prettier": "^3.3.3",\
 				"prettier-plugin-svelte": "^3.2.6",\
-				"svelte": "^5.0.0-next.192",\
+				"svelte": "^5.0.0-next.195",\
 				"svelte-check": "^3.8.4",\
 				"tslib": "^2.6.3",\
-				"typescript": "^5.5.3",\
+				"typescript": "^5.5.4",\
 				"typescript-eslint": "^8.0.0-alpha.44",\
 				"uvu": "^0.5.6"\
 			},\
@@ -7993,7 +7639,7 @@ export const repos: Repo[] = JSON.parse(
 		},\
 		"src_json": {\
 			"name": "@ryanatkn/fuz_gitops",\
-			"version": "0.34.0",\
+			"version": "0.35.0",\
 			"modules": {\
 				"./package.json": {\
 					"path": "package.json",\
@@ -8309,24 +7955,24 @@ export const repos: Repo[] = JSON.parse(
 				"@pixi/sprite": "^7.4.2",\
 				"@pixi/sprite-tiling": "^7.4.2",\
 				"@pixi/text": "^7.4.2",\
-				"@ryanatkn/belt": "^0.24.10",\
+				"@ryanatkn/belt": "^0.24.11",\
 				"@ryanatkn/eslint-config": "^0.4.2",\
-				"@ryanatkn/fuz": "^0.115.1",\
-				"@ryanatkn/gro": "^0.133.2",\
-				"@ryanatkn/moss": "^0.8.0",\
+				"@ryanatkn/fuz": "^0.118.2",\
+				"@ryanatkn/gro": "^0.133.4",\
+				"@ryanatkn/moss": "^0.11.1",\
 				"@sveltejs/adapter-static": "^3.0.2",\
 				"@sveltejs/kit": "^2.5.18",\
 				"@sveltejs/vite-plugin-svelte": "^3.1.1",\
 				"dequal": "^2.0.3",\
 				"eslint": "^9.7.0",\
-				"eslint-plugin-svelte": "^2.42.0",\
+				"eslint-plugin-svelte": "^2.43.0",\
 				"esm-env": "^1.0.0",\
 				"prettier": "^3.3.3",\
-				"prettier-plugin-svelte": "^3.2.5",\
-				"svelte": "^5.0.0-next.184",\
+				"prettier-plugin-svelte": "^3.2.6",\
+				"svelte": "^5.0.0-next.195",\
 				"svelte-check": "^3.8.4",\
 				"tslib": "^2.6.3",\
-				"typescript": "^5.5.3",\
+				"typescript": "^5.5.4",\
 				"typescript-eslint": "^8.0.0-alpha.44",\
 				"uvu": "^0.5.6",\
 				"zod": "^3.23.8"\
@@ -8428,23 +8074,23 @@ export const repos: Repo[] = JSON.parse(
 				"node": ">=20.12"\
 			},\
 			"devDependencies": {\
-				"@ryanatkn/belt": "^0.24.9",\
+				"@ryanatkn/belt": "^0.24.11",\
 				"@ryanatkn/eslint-config": "^0.4.2",\
-				"@ryanatkn/fuz": "^0.115.0",\
-				"@ryanatkn/gro": "^0.133.0",\
-				"@ryanatkn/moss": "^0.8.0",\
+				"@ryanatkn/fuz": "^0.118.2",\
+				"@ryanatkn/gro": "^0.133.4",\
+				"@ryanatkn/moss": "^0.11.1",\
 				"@sveltejs/adapter-static": "^3.0.2",\
 				"@sveltejs/kit": "^2.5.18",\
 				"@sveltejs/vite-plugin-svelte": "^3.1.1",\
 				"dequal": "^2.0.3",\
 				"eslint": "^9.7.0",\
-				"eslint-plugin-svelte": "^2.42.0",\
+				"eslint-plugin-svelte": "^2.43.0",\
 				"esm-env": "^1.0.0",\
 				"prettier": "^3.3.3",\
-				"svelte": "^5.0.0-next.188",\
+				"svelte": "^5.0.0-next.195",\
 				"svelte-check": "^3.8.4",\
 				"tslib": "^2.6.3",\
-				"typescript": "^5.5.3",\
+				"typescript": "^5.5.4",\
 				"typescript-eslint": "^8.0.0-alpha.44",\
 				"uvu": "^0.5.6",\
 				"zod": "^3.23.8"\
@@ -8539,26 +8185,26 @@ export const repos: Repo[] = JSON.parse(
 			},\
 			"devDependencies": {\
 				"@changesets/changelog-git": "^0.2.0",\
-				"@ryanatkn/belt": "^0.24.10",\
+				"@ryanatkn/belt": "^0.24.11",\
 				"@ryanatkn/eslint-config": "^0.4.2",\
-				"@ryanatkn/fuz": "^0.115.1",\
-				"@ryanatkn/fuz_code": "^0.16.0",\
-				"@ryanatkn/gro": "^0.133.2",\
-				"@ryanatkn/moss": "^0.8.0",\
+				"@ryanatkn/fuz": "^0.118.2",\
+				"@ryanatkn/fuz_code": "^0.17.0",\
+				"@ryanatkn/gro": "^0.133.4",\
+				"@ryanatkn/moss": "^0.11.1",\
 				"@sveltejs/adapter-static": "^3.0.2",\
 				"@sveltejs/kit": "^2.5.18",\
 				"@sveltejs/package": "^2.3.2",\
 				"@sveltejs/vite-plugin-svelte": "^3.1.1",\
 				"eslint": "^9.7.0",\
-				"eslint-plugin-svelte": "^2.42.0",\
+				"eslint-plugin-svelte": "^2.43.0",\
 				"prettier": "^3.3.3",\
-				"prettier-plugin-svelte": "^3.2.5",\
+				"prettier-plugin-svelte": "^3.2.6",\
 				"prism-svelte": "^0.5.0",\
 				"prismjs": "^1.29.0",\
-				"svelte": "^5.0.0-next.184",\
+				"svelte": "^5.0.0-next.195",\
 				"svelte-check": "^3.8.4",\
 				"tslib": "^2.6.3",\
-				"typescript": "^5.5.3",\
+				"typescript": "^5.5.4",\
 				"typescript-eslint": "^8.0.0-alpha.44",\
 				"uvu": "^0.5.6"\
 			},\
@@ -8693,14 +8339,14 @@ export const repos: Repo[] = JSON.parse(
 			},\
 			"devDependencies": {\
 				"@prettier/plugin-xml": "^3.4.1",\
-				"@ryanatkn/belt": "^0.24.10",\
+				"@ryanatkn/belt": "^0.24.11",\
 				"@ryanatkn/eslint-config": "^0.4.2",\
-				"@ryanatkn/fuz": "^0.117.0",\
+				"@ryanatkn/fuz": "^0.118.2",\
 				"@ryanatkn/fuz_blog": "^0.7.0",\
-				"@ryanatkn/fuz_gitops": "^0.34.0",\
+				"@ryanatkn/fuz_gitops": "^0.35.0",\
 				"@ryanatkn/fuz_mastodon": "^0.23.0",\
-				"@ryanatkn/gro": "^0.133.3",\
-				"@ryanatkn/moss": "^0.10.1",\
+				"@ryanatkn/gro": "^0.133.4",\
+				"@ryanatkn/moss": "^0.11.1",\
 				"@sveltejs/adapter-static": "^3.0.2",\
 				"@sveltejs/kit": "^2.5.18",\
 				"@sveltejs/vite-plugin-svelte": "^3.1.1",\
@@ -8711,10 +8357,10 @@ export const repos: Repo[] = JSON.parse(
 				"esm-env": "^1.0.0",\
 				"prettier": "^3.3.3",\
 				"prettier-plugin-svelte": "^3.2.6",\
-				"svelte": "^5.0.0-next.192",\
+				"svelte": "^5.0.0-next.195",\
 				"svelte-check": "^3.8.4",\
 				"tslib": "^2.6.3",\
-				"typescript": "^5.5.3",\
+				"typescript": "^5.5.4",\
 				"typescript-eslint": "^8.0.0-alpha.44",\
 				"uvu": "^0.5.6",\
 				"zod": "^3.23.8"\
@@ -8759,10 +8405,19 @@ export const repos: Repo[] = JSON.parse(
 		"changelog_url": null,\
 		"published": false,\
 		"check_runs": {\
-			"status": "in_progress",\
-			"conclusion": null\
+			"status": "completed",\
+			"conclusion": "success"\
 		},\
-		"pull_requests": []\
+		"pull_requests": [\
+			{\
+				"number": 31,\
+				"title": "upgrade deps",\
+				"user": {\
+					"login": "ryanatkn"\
+				},\
+				"draft": false\
+			}\
+		]\
 	}\
 ]',
 );

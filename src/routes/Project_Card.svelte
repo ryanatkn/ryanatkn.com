@@ -36,7 +36,7 @@
 				</p>
 			{/if}
 			{#if project.subtitle}
-				<p class="flex wrap gap_xs">{@html project.subtitle}</p>
+				<p class="flex flex_wrap gap_xs">{@html project.subtitle}</p>
 			{/if}
 		</div>
 		{#if project.logo}
@@ -73,7 +73,7 @@
 		max-width: var(--width_sm);
 		background-color: var(--bg);
 		/* TODO review this pattern, maybe use elsewhere */
-		box-shadow: var(--card_shadow, var(--shadow_sm));
+		box-shadow: var(--card_shadow, var(--shadow_sm) var(--shadow_color_sm));
 		border-width: var(--border_width);
 		border-style: solid;
 		border-color: transparent;
