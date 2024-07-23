@@ -97,7 +97,7 @@ const projects_metadata: Project_Metadata[] = [
 	{
 		name: 'cosmicplayground',
 		repo: '@ryanatkn/cosmicplayground', // TODO change to `cosmicplayground.org`
-		title: '<a href="https://www.cosmicplayground.org">cosmicplayground.org</a> 🌌', // TODO @many this is a hack because cosmicplayground hasn't been deployed (remove glyph)
+		title: '<a href="https://www.cosmicplayground.org">cosmicplayground.org</a>', // TODO @many this is a hack because cosmicplayground hasn't been deployed (remove glyph)
 		subtitle: '<a class="chip" href="https://github.com/ryanatkn/cosmicplayground">source</a>',
 		description: 'hobby project for fun and learning', // TODO @many this is a hack because cosmicplayground hasn't been deployed
 		motto: 'tools and toys for expanding minds', // TODO @many this is a hack because cosmicplayground hasn't been deployed

@@ -16,31 +16,33 @@
 
 <section class="width_md p_md">
 	<section class="box">
-		<div class="panel box width_sm shadow_inset_xs">
+		<div class="panel shadow_inset_xs">
 			<!-- TODO specificity so we can just add `.bg` instead of `style:background-color="var(--bg)"` -->
-			<blockquote class="bg shadow_xs">
-				welcome to the homepage<br />
-				of Ryan Atkinson, he's<br />
-				an independent web developer<br />
-				making free and open source<br />
-				software for the social web
-			</blockquote>
-			<div class="radius_50 shadow_md mb_md"><Me /></div>
-			<p class="panel bg relative shadow_xs">
-				Hi I'm building free and open source software and communicating about it. My main skill is
+			<header>
+				<div class="radius_50 shadow_md"><Me /></div>
+				<blockquote class="bg shadow_xs ml_md mt_md">
+					welcome to the homepage<br />
+					of Ryan Atkinson, he's<br />
+					an independent web developer<br />
+					making free and open source<br />
+					software for the social web
+				</blockquote>
+			</header>
+			<p class="panel bg relative shadow_xs mt_md" style:max-width="450px">
+				Hi, I'm building free and open source software and communicating about it. My main skill is
 				making frontend web apps and I also do some backend and devtools programming. I enjoy trying
 				to make powerful tools that are easy to use, and I'm extra interested in UIs, API design,
 				and social systems.
 			</p>
 		</div>
 	</section>
+	<section class="box row flex_wrap gap_xl2">
+		<Page_Links />
+	</section>
 	<section class="box">
 		<div class="panel box shadow_inset_xs">
 			<Contact_Info />
 		</div>
-	</section>
-	<section class="box row flex_wrap gap_xl2">
-		<Page_Links />
 	</section>
 	<!-- TODO margin is a hack, replace with a class or generic style -->
 	<section class="panel shadow_inset_xs">
@@ -99,5 +101,24 @@
 		align-items: flex-start;
 		justify-content: center;
 		gap: var(--space_md);
+	}
+
+	header {
+		display: flex;
+		align-items: center;
+	}
+
+	header blockquote {
+		flex: 1;
+	}
+
+	@media (max-width: 530px) {
+		header {
+			flex-direction: column-reverse;
+		}
+
+		header blockquote {
+			margin: 0 0 var(--space_md) 0;
+		}
 	}
 </style>

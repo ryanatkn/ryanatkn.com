@@ -88,7 +88,7 @@ export const projects: Project_Info[] = [
 		glyph: '🌌',
 		name: 'cosmicplayground',
 		repo: '@ryanatkn/cosmicplayground',
-		title: '<a href="https://www.cosmicplayground.org">cosmicplayground.org</a> 🌌',
+		title: '<a href="https://www.cosmicplayground.org">cosmicplayground.org</a>',
 		subtitle: '<a class="chip" href="https://github.com/ryanatkn/cosmicplayground">source</a>',
 		logo_style: 'border-radius: 50%',
 	},

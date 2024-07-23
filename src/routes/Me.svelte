@@ -9,7 +9,9 @@
 
 <style>
 	img {
-		width: 192px;
-		height: 192px;
+		width: var(--icon_size_xl2);
+		height: var(--icon_size_xl2);
+		min-width: var(--icon_size_xl2);
+		min-height: var(--icon_size_xl2);
 	}
 </style>
