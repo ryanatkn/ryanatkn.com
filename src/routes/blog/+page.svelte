@@ -40,7 +40,7 @@
 	ol {
 		background-color: var(--fg_1);
 		padding: var(--space_sm) var(--space_sm) var(--space_sm) var(--space_xl4);
-		box-shadow: var(--shadow_inset_xs) var(--shadow_color_xs);
+		box-shadow: var(--shadow_inset_xs) var(--shadow_color_1);
 	}
 	.blog_card {
 		font-size: var(--size_lg);
@@ -54,7 +54,7 @@
 		margin-top: var(--space_sm);
 		padding: var(--space_md);
 		/* TODO review this pattern, maybe use elsewhere */
-		box-shadow: var(--card_shadow, var(--shadow_sm) var(--shadow_color_xs));
+		box-shadow: var(--card_shadow, var(--shadow_sm) var(--shadow_color_1));
 	}
 	.date {
 		font-size: var(--size_md);
