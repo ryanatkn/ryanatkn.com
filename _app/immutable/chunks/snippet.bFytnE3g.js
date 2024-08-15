@@ -1,1 +1,0 @@
-import{m as f,J as i,n as o,v as p}from"./runtime.B6DvPdRv.js";import{h as c,b as h}from"./disclose-version.BpYAcdaC.js";function v(e,n,...s){var t=e,r,a;f(()=>{r!==(r=n())&&(a&&(p(a),a=null),r&&(a=o(()=>r(t,...s))))},i),c&&(t=h)}export{v as s};
