@@ -1,4 +1,4 @@
-<script lang="ts" context="module">
+<script lang="ts" module>
 	import type {Blog_Post_Data} from '@ryanatkn/fuz_blog/blog.js';
 
 	export const post = {
