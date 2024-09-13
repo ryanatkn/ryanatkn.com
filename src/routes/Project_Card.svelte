@@ -73,7 +73,11 @@
 		max-width: var(--width_sm);
 		background-color: var(--bg);
 		/* TODO review this pattern, maybe use elsewhere */
-		box-shadow: var(--card_shadow, var(--shadow_sm) var(--shadow_color_2));
+		box-shadow: var(
+			--card_shadow,
+			var(--shadow_bottom_sm)
+				color-mix(in hsl, var(--shadow_color) var(--shadow_alpha_2), transparent)
+		);
 		border-width: var(--border_width);
 		border-style: solid;
 		border-color: transparent;
