@@ -38,22 +38,22 @@ export const repos: Repo[] = JSON.parse(
 			},\
 			"devDependencies": {\
 				"@ryanatkn/belt": "^0.24.12",\
-				"@ryanatkn/eslint-config": "^0.5.1",\
-				"@ryanatkn/fuz": "^0.120.4",\
-				"@ryanatkn/gro": "^0.133.7",\
-				"@ryanatkn/moss": "^0.13.3",\
+				"@ryanatkn/eslint-config": "^0.5.3",\
+				"@ryanatkn/fuz": "^0.121.0",\
+				"@ryanatkn/gro": "^0.133.8",\
+				"@ryanatkn/moss": "^0.15.0",\
 				"@sveltejs/adapter-static": "^3.0.4",\
-				"@sveltejs/kit": "^2.5.22",\
-				"@sveltejs/vite-plugin-svelte": "^3.1.1",\
-				"eslint": "^9.9.0",\
+				"@sveltejs/kit": "^2.5.26",\
+				"@sveltejs/vite-plugin-svelte": "^3.1.2",\
+				"eslint": "^9.10.0",\
 				"eslint-plugin-svelte": "^2.43.0",\
 				"prettier": "^3.3.3",\
 				"prettier-plugin-svelte": "^3.2.6",\
-				"svelte": "^5.0.0-next.221",\
-				"svelte-check": "^3.8.5",\
-				"tslib": "^2.6.3",\
-				"typescript": "^5.5.4",\
-				"typescript-eslint": "^8.1.0",\
+				"svelte": "^5.0.0-next.245",\
+				"svelte-check": "^4.0.2",\
+				"tslib": "^2.7.0",\
+				"typescript": "^5.6.2",\
+				"typescript-eslint": "^8.5.0",\
 				"uvu": "^0.5.6"\
 			},\
 			"prettier": {\
@@ -135,25 +135,25 @@ export const repos: Repo[] = JSON.parse(
 			},\
 			"devDependencies": {\
 				"@ryanatkn/belt": "^0.24.12",\
-				"@ryanatkn/eslint-config": "^0.5.1",\
-				"@ryanatkn/fuz": "^0.120.4",\
+				"@ryanatkn/eslint-config": "^0.5.3",\
+				"@ryanatkn/fuz": "^0.121.0",\
 				"@ryanatkn/fuz_blog": "^0.7.0",\
 				"@ryanatkn/fuz_code": "^0.18.0",\
-				"@ryanatkn/fuz_mastodon": "^0.24.0",\
-				"@ryanatkn/gro": "^0.133.7",\
-				"@ryanatkn/moss": "^0.13.3",\
+				"@ryanatkn/fuz_mastodon": "^0.24.1",\
+				"@ryanatkn/gro": "^0.133.8",\
+				"@ryanatkn/moss": "^0.15.0",\
 				"@sveltejs/adapter-static": "^3.0.4",\
-				"@sveltejs/kit": "^2.5.22",\
-				"@sveltejs/vite-plugin-svelte": "^3.1.1",\
-				"eslint": "^9.9.0",\
+				"@sveltejs/kit": "^2.5.26",\
+				"@sveltejs/vite-plugin-svelte": "^3.1.2",\
+				"eslint": "^9.10.0",\
 				"eslint-plugin-svelte": "^2.43.0",\
 				"prettier": "^3.3.3",\
 				"prettier-plugin-svelte": "^3.2.6",\
-				"svelte": "^5.0.0-next.221",\
-				"svelte-check": "^3.8.5",\
-				"tslib": "^2.6.3",\
-				"typescript": "^5.5.4",\
-				"typescript-eslint": "^8.1.0",\
+				"svelte": "^5.0.0-next.245",\
+				"svelte-check": "^4.0.2",\
+				"tslib": "^2.7.0",\
+				"typescript": "^5.6.2",\
+				"typescript-eslint": "^8.5.0",\
 				"uvu": "^0.5.6"\
 			},\
 			"prettier": {\
@@ -235,22 +235,22 @@ export const repos: Repo[] = JSON.parse(
 			},\
 			"devDependencies": {\
 				"@ryanatkn/belt": "^0.24.12",\
-				"@ryanatkn/eslint-config": "^0.5.1",\
-				"@ryanatkn/fuz": "^0.120.4",\
-				"@ryanatkn/gro": "^0.133.7",\
-				"@ryanatkn/moss": "^0.13.3",\
+				"@ryanatkn/eslint-config": "^0.5.3",\
+				"@ryanatkn/fuz": "^0.121.0",\
+				"@ryanatkn/gro": "^0.133.8",\
+				"@ryanatkn/moss": "^0.15.0",\
 				"@sveltejs/adapter-static": "^3.0.4",\
-				"@sveltejs/kit": "^2.5.22",\
-				"@sveltejs/vite-plugin-svelte": "^3.1.1",\
-				"eslint": "^9.9.0",\
+				"@sveltejs/kit": "^2.5.26",\
+				"@sveltejs/vite-plugin-svelte": "^3.1.2",\
+				"eslint": "^9.10.0",\
 				"eslint-plugin-svelte": "^2.43.0",\
 				"prettier": "^3.3.3",\
 				"prettier-plugin-svelte": "^3.2.6",\
-				"svelte": "^5.0.0-next.221",\
-				"svelte-check": "^3.8.5",\
-				"tslib": "^2.6.3",\
-				"typescript": "^5.5.4",\
-				"typescript-eslint": "^8.1.0",\
+				"svelte": "^5.0.0-next.245",\
+				"svelte-check": "^4.0.2",\
+				"tslib": "^2.7.0",\
+				"typescript": "^5.6.2",\
+				"typescript-eslint": "^8.5.0",\
 				"uvu": "^0.5.6"\
 			},\
 			"prettier": {\
@@ -300,7 +300,7 @@ export const repos: Repo[] = JSON.parse(
 	{\
 		"package_json": {\
 			"name": "@ryanatkn/moss",\
-			"version": "0.13.3",\
+			"version": "0.15.0",\
 			"description": "CSS framework",\
 			"motto": "magical organic stylesheets",\
 			"glyph": "🌿",\
@@ -333,26 +333,26 @@ export const repos: Repo[] = JSON.parse(
 			"devDependencies": {\
 				"@changesets/changelog-git": "^0.2.0",\
 				"@ryanatkn/belt": "^0.24.12",\
-				"@ryanatkn/eslint-config": "^0.5.1",\
-				"@ryanatkn/fuz": "^0.120.4",\
+				"@ryanatkn/eslint-config": "^0.5.3",\
+				"@ryanatkn/fuz": "^0.121.0",\
 				"@ryanatkn/fuz_code": "^0.18.0",\
-				"@ryanatkn/gro": "^0.133.7",\
+				"@ryanatkn/gro": "^0.133.8",\
 				"@sveltejs/adapter-static": "^3.0.4",\
-				"@sveltejs/kit": "^2.5.22",\
+				"@sveltejs/kit": "^2.5.26",\
 				"@sveltejs/package": "^2.3.4",\
-				"@sveltejs/vite-plugin-svelte": "^3.1.1",\
-				"@types/node": "^22.3.0",\
-				"eslint": "^9.9.0",\
+				"@sveltejs/vite-plugin-svelte": "^3.1.2",\
+				"@types/node": "^22.5.4",\
+				"eslint": "^9.10.0",\
 				"eslint-plugin-svelte": "^2.43.0",\
 				"prettier": "^3.3.3",\
 				"prettier-plugin-svelte": "^3.2.6",\
 				"prism-svelte": "^0.5.0",\
 				"prismjs": "^1.29.0",\
-				"svelte": "^5.0.0-next.221",\
-				"svelte-check": "^3.8.5",\
-				"tslib": "^2.6.3",\
-				"typescript": "^5.5.4",\
-				"typescript-eslint": "^8.1.0",\
+				"svelte": "^5.0.0-next.245",\
+				"svelte-check": "^4.0.2",\
+				"tslib": "^2.7.0",\
+				"typescript": "^5.6.2",\
+				"typescript-eslint": "^8.5.0",\
 				"uvu": "^0.5.6"\
 			},\
 			"prettier": {\
@@ -433,7 +433,7 @@ export const repos: Repo[] = JSON.parse(
 		},\
 		"src_json": {\
 			"name": "@ryanatkn/moss",\
-			"version": "0.13.3",\
+			"version": "0.15.0",\
 			"modules": {\
 				"./package.json": {\
 					"path": "package.json",\
@@ -527,6 +527,10 @@ export const repos: Repo[] = JSON.parse(
 					"path": "variable_data.ts",\
 					"declarations": [\
 						{\
+							"name": "Size_Variant",\
+							"kind": "type"\
+						},\
+						{\
 							"name": "size_variants",\
 							"kind": "variable"\
 						},\
@@ -535,16 +539,32 @@ export const repos: Repo[] = JSON.parse(
 							"kind": "variable"\
 						},\
 						{\
+							"name": "Text_Variant",\
+							"kind": "type"\
+						},\
+						{\
 							"name": "text_variants",\
 							"kind": "variable"\
+						},\
+						{\
+							"name": "Space_Variant",\
+							"kind": "type"\
 						},\
 						{\
 							"name": "space_variants",\
 							"kind": "variable"\
 						},\
 						{\
+							"name": "Radius_Variant",\
+							"kind": "type"\
+						},\
+						{\
 							"name": "radius_variants",\
 							"kind": "variable"\
+						},\
+						{\
+							"name": "Line_Height_Variant",\
+							"kind": "type"\
 						},\
 						{\
 							"name": "line_height_variants",\
@@ -555,16 +575,32 @@ export const repos: Repo[] = JSON.parse(
 							"kind": "variable"\
 						},\
 						{\
+							"name": "shadow_variant_prefixes",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Shadow_Size_Variant",\
+							"kind": "type"\
+						},\
+						{\
 							"name": "shadow_size_variants",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_weight_variants",\
+							"name": "Shadow_Alpha_Variant",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "shadow_alpha_variants",\
 							"kind": "variable"\
 						},\
 						{\
 							"name": "icon_sizes",\
 							"kind": "variable"\
+						},\
+						{\
+							"name": "Color_Variant",\
+							"kind": "type"\
 						},\
 						{\
 							"name": "color_variants",\
@@ -585,6 +621,10 @@ export const repos: Repo[] = JSON.parse(
 						},\
 						{\
 							"name": "STYLE_VARIABLE_NAME_MATCHER",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "STYLE_VARIABLE_PROPERTY_MATCHER",\
 							"kind": "variable"\
 						},\
 						{\
@@ -1617,59 +1657,15 @@ export const repos: Repo[] = JSON.parse(
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_color",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "highlight_color",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "glow_color",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shroud_color",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_a_color",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_b_color",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_c_color",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_d_color",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_e_color",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_f_color",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_g_color",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_h_color",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_i_color",\
-							"kind": "variable"\
-						},\
-						{\
 							"name": "shadow_xs",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "shadow_top_xs",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "shadow_bottom_xs",\
 							"kind": "variable"\
 						},\
 						{\
@@ -1677,7 +1673,11 @@ export const repos: Repo[] = JSON.parse(
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_outset_xs",\
+							"name": "shadow_inset_top_xs",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "shadow_inset_bottom_xs",\
 							"kind": "variable"\
 						},\
 						{\
@@ -1685,11 +1685,23 @@ export const repos: Repo[] = JSON.parse(
 							"kind": "variable"\
 						},\
 						{\
+							"name": "shadow_top_sm",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "shadow_bottom_sm",\
+							"kind": "variable"\
+						},\
+						{\
 							"name": "shadow_inset_sm",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_outset_sm",\
+							"name": "shadow_inset_top_sm",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "shadow_inset_bottom_sm",\
 							"kind": "variable"\
 						},\
 						{\
@@ -1697,11 +1709,23 @@ export const repos: Repo[] = JSON.parse(
 							"kind": "variable"\
 						},\
 						{\
+							"name": "shadow_top_md",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "shadow_bottom_md",\
+							"kind": "variable"\
+						},\
+						{\
 							"name": "shadow_inset_md",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_outset_md",\
+							"name": "shadow_inset_top_md",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "shadow_inset_bottom_md",\
 							"kind": "variable"\
 						},\
 						{\
@@ -1709,11 +1733,23 @@ export const repos: Repo[] = JSON.parse(
 							"kind": "variable"\
 						},\
 						{\
+							"name": "shadow_top_lg",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "shadow_bottom_lg",\
+							"kind": "variable"\
+						},\
+						{\
 							"name": "shadow_inset_lg",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_outset_lg",\
+							"name": "shadow_inset_top_lg",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "shadow_inset_bottom_lg",\
 							"kind": "variable"\
 						},\
 						{\
@@ -1721,11 +1757,75 @@ export const repos: Repo[] = JSON.parse(
 							"kind": "variable"\
 						},\
 						{\
+							"name": "shadow_top_xl",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "shadow_bottom_xl",\
+							"kind": "variable"\
+						},\
+						{\
 							"name": "shadow_inset_xl",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "shadow_outset_xl",\
+							"name": "shadow_inset_top_xl",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "shadow_inset_bottom_xl",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "shadow_color",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "shadow_color_highlight",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "shadow_color_glow",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "shadow_color_shroud",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "shadow_color_a",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "shadow_color_b",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "shadow_color_c",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "shadow_color_d",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "shadow_color_e",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "shadow_color_f",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "shadow_color_g",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "shadow_color_h",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "shadow_color_i",\
 							"kind": "variable"\
 						},\
 						{\
@@ -1746,286 +1846,6 @@ export const repos: Repo[] = JSON.parse(
 						},\
 						{\
 							"name": "shadow_alpha_5",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "highlight_alpha_1",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "highlight_alpha_2",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "highlight_alpha_3",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "highlight_alpha_4",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "highlight_alpha_5",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_color_1",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_color_2",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_color_3",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_color_4",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_color_5",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "highlight_color_1",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "highlight_color_2",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "highlight_color_3",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "highlight_color_4",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "highlight_color_5",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "glow_color_1",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "glow_color_2",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "glow_color_3",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "glow_color_4",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "glow_color_5",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shroud_color_1",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shroud_color_2",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shroud_color_3",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shroud_color_4",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shroud_color_5",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_color_a_1",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_color_a_2",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_color_a_3",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_color_a_4",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_color_a_5",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_color_b_1",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_color_b_2",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_color_b_3",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_color_b_4",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_color_b_5",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_color_c_1",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_color_c_2",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_color_c_3",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_color_c_4",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_color_c_5",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_color_d_1",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_color_d_2",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_color_d_3",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_color_d_4",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_color_d_5",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_color_e_1",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_color_e_2",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_color_e_3",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_color_e_4",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_color_e_5",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_color_f_1",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_color_f_2",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_color_f_3",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_color_f_4",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_color_f_5",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_color_g_1",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_color_g_2",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_color_g_3",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_color_g_4",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_color_g_5",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_color_h_1",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_color_h_2",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_color_h_3",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_color_h_4",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_color_h_5",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_color_i_1",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_color_i_2",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_color_i_3",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_color_i_4",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "shadow_color_i_5",\
 							"kind": "variable"\
 						},\
 						{\
@@ -2135,7 +1955,7 @@ export const repos: Repo[] = JSON.parse(
 	{\
 		"package_json": {\
 			"name": "@ryanatkn/fuz",\
-			"version": "0.120.4",\
+			"version": "0.121.0",\
 			"description": "Svelte UI library",\
 			"motto": "friendly user zystem",\
 			"glyph": "🧶",\
@@ -2183,28 +2003,28 @@ export const repos: Repo[] = JSON.parse(
 			"devDependencies": {\
 				"@changesets/changelog-git": "^0.2.0",\
 				"@ryanatkn/belt": "^0.24.12",\
-				"@ryanatkn/eslint-config": "^0.5.1",\
+				"@ryanatkn/eslint-config": "^0.5.3",\
 				"@ryanatkn/fuz_code": "^0.18.0",\
-				"@ryanatkn/gro": "^0.133.7",\
-				"@ryanatkn/moss": "^0.13.3",\
+				"@ryanatkn/gro": "^0.133.8",\
+				"@ryanatkn/moss": "^0.15.0",\
 				"@sveltejs/adapter-static": "^3.0.4",\
-				"@sveltejs/kit": "^2.5.22",\
+				"@sveltejs/kit": "^2.5.26",\
 				"@sveltejs/package": "^2.3.4",\
-				"@sveltejs/vite-plugin-svelte": "^3.1.1",\
-				"@types/node": "^22.3.0",\
+				"@sveltejs/vite-plugin-svelte": "^3.1.2",\
+				"@types/node": "^22.5.4",\
 				"@types/prismjs": "^1.26.4",\
-				"eslint": "^9.9.0",\
+				"eslint": "^9.10.0",\
 				"eslint-plugin-svelte": "^2.43.0",\
 				"esm-env": "^1.0.0",\
 				"prettier": "^3.3.3",\
 				"prettier-plugin-svelte": "^3.2.6",\
 				"prism-svelte": "^0.5.0",\
 				"prismjs": "^1.29.0",\
-				"svelte": "^5.0.0-next.221",\
-				"svelte-check": "^3.8.5",\
-				"tslib": "^2.6.3",\
-				"typescript": "^5.5.4",\
-				"typescript-eslint": "^8.1.0",\
+				"svelte": "^5.0.0-next.245",\
+				"svelte-check": "^4.0.2",\
+				"tslib": "^2.7.0",\
+				"typescript": "^5.6.2",\
+				"typescript-eslint": "^8.5.0",\
 				"uvu": "^0.5.6"\
 			},\
 			"prettier": {\
@@ -2540,7 +2360,7 @@ export const repos: Repo[] = JSON.parse(
 		},\
 		"src_json": {\
 			"name": "@ryanatkn/fuz",\
-			"version": "0.120.4",\
+			"version": "0.121.0",\
 			"modules": {\
 				"./package.json": {\
 					"path": "package.json",\
@@ -3031,12 +2851,29 @@ export const repos: Repo[] = JSON.parse(
 			"status": "completed",\
 			"conclusion": "success"\
 		},\
-		"pull_requests": []\
+		"pull_requests": [\
+			{\
+				"number": 50,\
+				"title": "optimize icons",\
+				"user": {\
+					"login": "ryanatkn"\
+				},\
+				"draft": false\
+			},\
+			{\
+				"number": 49,\
+				"title": "improve `Teleport` and `Dialog` mounting patterns",\
+				"user": {\
+					"login": "ryanatkn"\
+				},\
+				"draft": false\
+			}\
+		]\
 	},\
 	{\
 		"package_json": {\
 			"name": "@ryanatkn/gro",\
-			"version": "0.133.7",\
+			"version": "0.133.8",\
 			"description": "task runner and toolkit extending SvelteKit",\
 			"motto": "generate, run, optimize",\
 			"glyph": "🌰",\
@@ -3108,7 +2945,7 @@ export const repos: Repo[] = JSON.parse(
 				"@ryanatkn/fuz": "^0.120.4",\
 				"@ryanatkn/moss": "^0.13.3",\
 				"@sveltejs/adapter-static": "^3.0.4",\
-				"@sveltejs/kit": "^2.5.22",\
+				"@sveltejs/kit": "^2.5.26",\
 				"@sveltejs/package": "^2.3.4",\
 				"@sveltejs/vite-plugin-svelte": "^3.1.1",\
 				"@types/fs-extra": "^11.0.4",\
@@ -3116,8 +2953,8 @@ export const repos: Repo[] = JSON.parse(
 				"esbuild": "^0.21.5",\
 				"eslint": "^9.9.0",\
 				"eslint-plugin-svelte": "^2.43.0",\
-				"svelte": "^5.0.0-next.221",\
-				"svelte-check": "^3.8.5",\
+				"svelte": "^5.0.0-next.244",\
+				"svelte-check": "^4.0.1",\
 				"typescript": "^5.5.4",\
 				"typescript-eslint": "^8.1.0",\
 				"uvu": "^0.5.6"\
@@ -3486,7 +3323,7 @@ export const repos: Repo[] = JSON.parse(
 		},\
 		"src_json": {\
 			"name": "@ryanatkn/gro",\
-			"version": "0.133.7",\
+			"version": "0.133.8",\
 			"modules": {\
 				".": {\
 					"path": "index.ts",\
@@ -5044,6 +4881,10 @@ export const repos: Repo[] = JSON.parse(
 							"kind": "function"\
 						},\
 						{\
+							"name": "sveltekit_sync_if_available",\
+							"kind": "function"\
+						},\
+						{\
 							"name": "sveltekit_sync_if_obviously_needed",\
 							"kind": "function"\
 						},\
@@ -5449,22 +5290,22 @@ export const repos: Repo[] = JSON.parse(
 			},\
 			"devDependencies": {\
 				"@ryanatkn/belt": "^0.24.12",\
-				"@ryanatkn/eslint-config": "^0.5.1",\
-				"@ryanatkn/fuz": "^0.120.4",\
-				"@ryanatkn/gro": "^0.133.7",\
-				"@ryanatkn/moss": "^0.13.3",\
+				"@ryanatkn/eslint-config": "^0.5.3",\
+				"@ryanatkn/fuz": "^0.120.11",\
+				"@ryanatkn/gro": "^0.133.8",\
+				"@ryanatkn/moss": "^0.14.1",\
 				"@sveltejs/adapter-static": "^3.0.4",\
-				"@sveltejs/kit": "^2.5.22",\
-				"@sveltejs/vite-plugin-svelte": "^3.1.1",\
-				"eslint": "^9.9.0",\
+				"@sveltejs/kit": "^2.5.26",\
+				"@sveltejs/vite-plugin-svelte": "^3.1.2",\
+				"eslint": "^9.10.0",\
 				"eslint-plugin-svelte": "^2.43.0",\
 				"prettier": "^3.3.3",\
 				"prettier-plugin-svelte": "^3.2.6",\
-				"svelte": "^5.0.0-next.221",\
-				"svelte-check": "^3.8.5",\
-				"tslib": "^2.6.3",\
-				"typescript": "^5.5.4",\
-				"typescript-eslint": "^8.1.0",\
+				"svelte": "^5.0.0-next.244",\
+				"svelte-check": "^4.0.1",\
+				"tslib": "^2.7.0",\
+				"typescript": "^5.6.2",\
+				"typescript-eslint": "^8.5.0",\
 				"uvu": "^0.5.6"\
 			},\
 			"prettier": {\
@@ -6757,27 +6598,27 @@ export const repos: Repo[] = JSON.parse(
 			"devDependencies": {\
 				"@changesets/changelog-git": "^0.2.0",\
 				"@ryanatkn/belt": "^0.24.12",\
-				"@ryanatkn/eslint-config": "^0.5.1",\
-				"@ryanatkn/fuz": "^0.120.4",\
+				"@ryanatkn/eslint-config": "^0.5.3",\
+				"@ryanatkn/fuz": "^0.121.0",\
 				"@ryanatkn/fuz_code": "^0.18.0",\
-				"@ryanatkn/fuz_mastodon": "^0.24.0",\
-				"@ryanatkn/gro": "^0.133.7",\
-				"@ryanatkn/moss": "^0.13.3",\
+				"@ryanatkn/fuz_mastodon": "^0.24.1",\
+				"@ryanatkn/gro": "^0.133.8",\
+				"@ryanatkn/moss": "^0.15.0",\
 				"@sveltejs/adapter-static": "^3.0.4",\
-				"@sveltejs/kit": "^2.5.22",\
+				"@sveltejs/kit": "^2.5.26",\
 				"@sveltejs/package": "^2.3.4",\
-				"@sveltejs/vite-plugin-svelte": "^3.1.1",\
-				"@types/node": "^22.3.0",\
+				"@sveltejs/vite-plugin-svelte": "^3.1.2",\
+				"@types/node": "^22.5.4",\
 				"date-fns": "^3.6.0",\
-				"eslint": "^9.9.0",\
+				"eslint": "^9.10.0",\
 				"eslint-plugin-svelte": "^2.43.0",\
 				"prettier": "^3.3.3",\
 				"prettier-plugin-svelte": "^3.2.6",\
-				"svelte": "^5.0.0-next.221",\
-				"svelte-check": "^3.8.5",\
-				"tslib": "^2.6.3",\
-				"typescript": "^5.5.4",\
-				"typescript-eslint": "^8.1.0",\
+				"svelte": "^5.0.0-next.245",\
+				"svelte-check": "^4.0.2",\
+				"tslib": "^2.7.0",\
+				"typescript": "^5.6.2",\
+				"typescript-eslint": "^8.5.0",\
 				"uvu": "^0.5.6"\
 			},\
 			"prettier": {\
@@ -7031,7 +6872,7 @@ export const repos: Repo[] = JSON.parse(
 	{\
 		"package_json": {\
 			"name": "@ryanatkn/fuz_mastodon",\
-			"version": "0.24.0",\
+			"version": "0.24.1",\
 			"description": "Mastodon components and helpers for Svelte, SvelteKit, and Fuz",\
 			"glyph": "🦣",\
 			"logo": "logo.svg",\
@@ -7167,7 +7008,7 @@ export const repos: Repo[] = JSON.parse(
 		},\
 		"src_json": {\
 			"name": "@ryanatkn/fuz_mastodon",\
-			"version": "0.24.0",\
+			"version": "0.24.1",\
 			"modules": {\
 				"./package.json": {\
 					"path": "package.json",\
@@ -7519,23 +7360,23 @@ export const repos: Repo[] = JSON.parse(
 				"@changesets/changelog-git": "^0.2.0",\
 				"@ryanatkn/belt": "^0.24.12",\
 				"@ryanatkn/eslint-config": "^0.5.1",\
-				"@ryanatkn/fuz": "^0.120.4",\
+				"@ryanatkn/fuz": "^0.120.10",\
 				"@ryanatkn/gro": "^0.133.7",\
-				"@ryanatkn/moss": "^0.13.3",\
+				"@ryanatkn/moss": "^0.14.1",\
 				"@sveltejs/adapter-static": "^3.0.4",\
-				"@sveltejs/kit": "^2.5.22",\
+				"@sveltejs/kit": "^2.5.26",\
 				"@sveltejs/package": "^2.3.4",\
-				"@sveltejs/vite-plugin-svelte": "^3.1.1",\
-				"@types/node": "^22.3.0",\
-				"eslint": "^9.9.0",\
+				"@sveltejs/vite-plugin-svelte": "^3.1.2",\
+				"@types/node": "^22.5.3",\
+				"eslint": "^9.9.1",\
 				"eslint-plugin-svelte": "^2.43.0",\
 				"prettier": "^3.3.3",\
 				"prettier-plugin-svelte": "^3.2.6",\
-				"svelte": "^5.0.0-next.221",\
-				"svelte-check": "^3.8.5",\
-				"tslib": "^2.6.3",\
+				"svelte": "^5.0.0-next.243",\
+				"svelte-check": "^4.0.1",\
+				"tslib": "^2.7.0",\
 				"typescript": "^5.5.4",\
-				"typescript-eslint": "^8.1.0",\
+				"typescript-eslint": "^8.4.0",\
 				"uvu": "^0.5.6"\
 			},\
 			"prettier": {\
@@ -8058,6 +7899,14 @@ export const repos: Repo[] = JSON.parse(
 		},\
 		"pull_requests": [\
 			{\
+				"number": 91,\
+				"title": "Bump svelte from 4.2.13 to 4.2.19",\
+				"user": {\
+					"login": "dependabot[bot]"\
+				},\
+				"draft": false\
+			},\
+			{\
 				"number": 88,\
 				"title": "upgrade to svelte5",\
 				"user": {\
@@ -8113,22 +7962,22 @@ export const repos: Repo[] = JSON.parse(
 			"devDependencies": {\
 				"@ryanatkn/belt": "^0.24.12",\
 				"@ryanatkn/eslint-config": "^0.5.1",\
-				"@ryanatkn/fuz": "^0.120.4",\
+				"@ryanatkn/fuz": "^0.120.10",\
 				"@ryanatkn/gro": "^0.133.7",\
-				"@ryanatkn/moss": "^0.13.3",\
+				"@ryanatkn/moss": "^0.14.0",\
 				"@sveltejs/adapter-static": "^3.0.4",\
-				"@sveltejs/kit": "^2.5.22",\
-				"@sveltejs/vite-plugin-svelte": "^3.1.1",\
+				"@sveltejs/kit": "^2.5.24",\
+				"@sveltejs/vite-plugin-svelte": "^3.1.2",\
 				"dequal": "^2.0.3",\
-				"eslint": "^9.9.0",\
+				"eslint": "^9.9.1",\
 				"eslint-plugin-svelte": "^2.43.0",\
 				"esm-env": "^1.0.0",\
 				"prettier": "^3.3.3",\
-				"svelte": "^5.0.0-next.221",\
-				"svelte-check": "^3.8.5",\
-				"tslib": "^2.6.3",\
+				"svelte": "^5.0.0-next.236",\
+				"svelte-check": "^3.8.6",\
+				"tslib": "^2.7.0",\
 				"typescript": "^5.5.4",\
-				"typescript-eslint": "^8.1.0",\
+				"typescript-eslint": "^8.2.0",\
 				"uvu": "^0.5.6",\
 				"zod": "^3.23.8"\
 			},\
@@ -8377,28 +8226,28 @@ export const repos: Repo[] = JSON.parse(
 			"devDependencies": {\
 				"@prettier/plugin-xml": "^3.4.1",\
 				"@ryanatkn/belt": "^0.24.12",\
-				"@ryanatkn/eslint-config": "^0.5.1",\
-				"@ryanatkn/fuz": "^0.120.4",\
+				"@ryanatkn/eslint-config": "^0.5.3",\
+				"@ryanatkn/fuz": "^0.121.0",\
 				"@ryanatkn/fuz_blog": "^0.7.0",\
 				"@ryanatkn/fuz_gitops": "^0.36.0",\
-				"@ryanatkn/fuz_mastodon": "^0.24.0",\
-				"@ryanatkn/gro": "^0.133.7",\
-				"@ryanatkn/moss": "^0.13.3",\
+				"@ryanatkn/fuz_mastodon": "^0.24.1",\
+				"@ryanatkn/gro": "^0.133.8",\
+				"@ryanatkn/moss": "^0.15.0",\
 				"@sveltejs/adapter-static": "^3.0.4",\
-				"@sveltejs/kit": "^2.5.22",\
-				"@sveltejs/vite-plugin-svelte": "^3.1.1",\
-				"@types/node": "^22.3.0",\
+				"@sveltejs/kit": "^2.5.26",\
+				"@sveltejs/vite-plugin-svelte": "^3.1.2",\
+				"@types/node": "^22.5.4",\
 				"date-fns": "^3.6.0",\
-				"eslint": "^9.9.0",\
+				"eslint": "^9.10.0",\
 				"eslint-plugin-svelte": "^2.43.0",\
 				"esm-env": "^1.0.0",\
 				"prettier": "^3.3.3",\
 				"prettier-plugin-svelte": "^3.2.6",\
-				"svelte": "^5.0.0-next.221",\
-				"svelte-check": "^3.8.5",\
-				"tslib": "^2.6.3",\
-				"typescript": "^5.5.4",\
-				"typescript-eslint": "^8.1.0",\
+				"svelte": "^5.0.0-next.245",\
+				"svelte-check": "^4.0.2",\
+				"tslib": "^2.7.0",\
+				"typescript": "^5.6.2",\
+				"typescript-eslint": "^8.5.0",\
 				"uvu": "^0.5.6",\
 				"zod": "^3.23.8"\
 			},\
@@ -8442,8 +8291,8 @@ export const repos: Repo[] = JSON.parse(
 		"changelog_url": null,\
 		"published": false,\
 		"check_runs": {\
-			"status": "completed",\
-			"conclusion": "success"\
+			"status": "in_progress",\
+			"conclusion": null\
 		},\
 		"pull_requests": []\
 	}\
