@@ -17,7 +17,6 @@ const config: Create_Gitops_Config = () => {
 			'https://github.com/ryanatkn/fuz_gitops',
 			'https://github.com/ryanatkn/cosmicplayground',
 			'https://github.com/ryanatkn/earbetter',
-			'https://github.com/ryanatkn/svelte-intersect',
 			'https://github.com/ryanatkn/ryanatkn.com',
 		],
 	};
