@@ -1,9 +1,6 @@
 <script lang="ts">
-	import Zzz_Logo from '@ryanatkn/fuz/Zzz_Logo.svelte';
-	import Moss_Logo from '@ryanatkn/fuz/Moss_Logo.svelte';
-	import Webdevladder_Logo from '@ryanatkn/fuz/Webdevladder_Logo.svelte';
-	import Fuz_Logo from '@ryanatkn/fuz/Fuz_Logo.svelte';
-	import Gro_Logo from '@ryanatkn/fuz/Gro_Logo.svelte';
+	import Svg, {type Svg_Data} from '@ryanatkn/fuz/Svg.svelte';
+	import {moss_logo, zzz_logo, fuz_logo, gro_logo, webdevladder_logo} from '@ryanatkn/fuz/logos.js';
 	import {ensure_end, strip_start} from '@ryanatkn/belt/string.js';
 
 	import type {Project_Info} from '$routes/project.js';
@@ -18,6 +15,16 @@
 	}
 
 	const {project}: Props = $props();
+
+	const logos: Record<string, Svg_Data | undefined> = {
+		zzz: zzz_logo,
+		moss: moss_logo,
+		fuz: fuz_logo,
+		gro: gro_logo,
+		'webdevladder.net': webdevladder_logo,
+	};
+
+	const logo_data = $derived(logos[project.name]);
 </script>
 
 <div class="project_card">
@@ -45,16 +52,8 @@
 				style:min-width="var(--icon_size_xl)"
 				style:min-height="var(--icon_size_xl)"
 			>
-				{#if project.name === 'zzz'}
-					<Zzz_Logo />
-				{:else if project.name === 'moss'}
-					<Moss_Logo />
-				{:else if project.name === 'fuz'}
-					<Fuz_Logo />
-				{:else if project.name === 'gro'}
-					<Gro_Logo />
-				{:else if project.name === 'webdevladder.net'}
-					<Webdevladder_Logo />
+				{#if logo_data}
+					<Svg data={logo_data} />
 				{:else if project.homepage}
 					<img
 						src="{ensure_end(project.homepage, '/')}{strip_start(project.logo, '/')}"

@@ -1,12 +1,13 @@
 <script lang="ts">
 	import {base} from '$app/paths';
-	import Github_Logo from '@ryanatkn/fuz/Github_Logo.svelte';
+	import Svg from '@ryanatkn/fuz/Svg.svelte';
+	import {github_logo} from '@ryanatkn/fuz/logos.js';
 	import Card from '@ryanatkn/fuz/Card.svelte';
 	import Breadcrumb from '@ryanatkn/fuz/Breadcrumb.svelte';
 	import Community_Links from '@ryanatkn/fuz/Community_Links.svelte';
 
 	import Page_Links from '$routes/Page_Links.svelte';
-	import Patreon_Logo from '$routes/funding/Patreon_Logo.svelte';
+	import Patreon_Logo from '$routes/funding/Patreon_Logo.svelte'; // TODO move to fuz
 	import Favicon from '$routes/Favicon.svelte';
 </script>
 
@@ -25,7 +26,7 @@
 		<div class="display_contents" style:--link_color="var(--color_b_5)">
 			<!-- TODO hacky with max-width -->
 			<Card href="https://github.com/sponsors/ryanatkn" attrs={{style: 'max-width: 100%'}}>
-				{#snippet icon()}<Github_Logo fill="var(--color_b_5)" />{/snippet}
+				{#snippet icon()}<Svg data={github_logo} fill="var(--color_b_5)" />{/snippet}
 				GitHub Sponsors
 			</Card>
 		</div>
@@ -91,7 +92,7 @@
 					class="white_space_nowrap"
 					href="https://github.com/sponsors/ryanatkn"
 					style:--link_color="var(--color_b_5)"
-					><Github_Logo size="var(--size_md)" fill="var(--color_b_5)" inline /> GitHub Sponsors</a
+					><Svg data={github_logo} size="var(--size_md)" fill="var(--color_b_5)" inline /> GitHub Sponsors</a
 				>
 				or
 				<a class="white_space_nowrap" href="https://www.patreon.com/ryanatkn"
