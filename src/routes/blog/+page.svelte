@@ -1,12 +1,12 @@
 <script lang="ts">
 	import {base} from '$app/paths';
 	import Feed_Item_Date from '@ryanatkn/fuz_blog/Feed_Item_Date.svelte';
-	import {get_blog_feed} from '@ryanatkn/fuz_blog/blog.js';
+	import {blog_feed_context} from '@ryanatkn/fuz_blog/blog.js';
 	import {to_pathname} from '@ryanatkn/fuz_blog/util.js';
 
 	import Page_Links from '$routes/Page_Links.svelte';
 
-	const feed = get_blog_feed();
+	const feed = blog_feed_context.get();
 
 	const items = feed.items.slice().reverse();
 </script>

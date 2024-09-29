@@ -5,7 +5,7 @@
 
 	import Themed from '@ryanatkn/fuz/Themed.svelte';
 	import type {Snippet} from 'svelte';
-	import {set_blog_feed} from '@ryanatkn/fuz_blog/blog.js';
+	import {blog_feed_context} from '@ryanatkn/fuz_blog/blog.js';
 
 	import Header from '$routes/Header.svelte';
 	import Footer from '$routes/Footer.svelte';
@@ -17,7 +17,7 @@
 
 	const {children}: Props = $props();
 
-	set_blog_feed(feed);
+	blog_feed_context.set(feed);
 </script>
 
 <svelte:head>

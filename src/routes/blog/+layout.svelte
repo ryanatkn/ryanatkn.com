@@ -4,7 +4,7 @@
 	import {DEV} from 'esm-env';
 	import {
 		Mastodon_Cache,
-		set_mastodon_cache,
+		mastodon_cache_context,
 	} from '@ryanatkn/fuz_mastodon/mastodon_cache.svelte.js';
 
 	import Favicon from '$routes/Favicon.svelte';
@@ -16,7 +16,7 @@
 	const {children}: Props = $props();
 
 	if (DEV) {
-		set_mastodon_cache(
+		mastodon_cache_context.set(
 			new Mastodon_Cache(
 				async () => (await import('./mastodon_dev_cache_data.js')).mastodon_dev_cache_data,
 			),

@@ -1,11 +1,11 @@
 <script lang="ts">
 	import {page} from '$app/stores';
 	import Tree_Item_Page from '@ryanatkn/fuz_gitops/Tree_Item_Page.svelte';
-	import {get_repos} from '@ryanatkn/fuz_gitops/repo.js';
+	import {repos_context} from '@ryanatkn/fuz_gitops/repo.js';
 
 	// TODO ideally there would be one `Packages_Tree` mounted by the layout
 
-	const {repo, repos} = get_repos();
+	const {repo, repos} = repos_context.get();
 
 	const {slug} = $derived($page.params);
 </script>
