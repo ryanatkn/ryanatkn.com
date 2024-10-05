@@ -80,6 +80,19 @@ export const projects: Project_Info[] = [
 			'<a class="chip" href="https://github.com/ryanatkn/gro">source</a> <a class="chip" href="https://www.npmjs.com/package/@ryanatkn/gro">npm</a>',
 	},
 	{
+		description: 'utility belt for JS',
+		homepage: 'https://belt.ryanatkn.com/',
+		motto: 'ancient not extinct',
+		logo: 'logo.svg',
+		logo_alt: 'a green sauropod wearing a brown utility belt',
+		glyph: '🦕',
+		name: 'belt',
+		repo: '@ryanatkn/belt',
+		title: '<a href="https://github.com/ryanatkn/belt">Belt</a>',
+		subtitle:
+			'<a class="chip" href="https://github.com/ryanatkn/belt">source</a> <a class="chip" href="https://www.npmjs.com/package/@ryanatkn/belt">npm</a>',
+	},
+	{
 		description: 'hobby project for fun and learning',
 		homepage: 'https://www.cosmicplayground.org/',
 		motto: 'tools and toys for expanding minds',
