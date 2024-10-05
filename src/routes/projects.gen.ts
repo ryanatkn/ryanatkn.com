@@ -94,15 +94,10 @@ const projects_metadata: Project_Metadata[] = [
 		subtitle: `<a class="chip" href="https://github.com/ryanatkn/gro">source</a> <a class="chip" href="https://www.npmjs.com/package/@ryanatkn/gro">npm</a>`,
 	},
 	{
-		description: 'utility belt for JS',
-		homepage: 'https://belt.ryanatkn.com/',
-		motto: 'ancient not extinct',
-		logo: 'logo.svg',
-		logo_alt: 'a green sauropod wearing a brown utility belt',
-		glyph: '🦕',
 		name: 'belt',
 		repo: '@ryanatkn/belt',
 		title: '<a href="https://github.com/ryanatkn/belt">Belt</a>',
+		description: 'utility belt for JS',
 		subtitle:
 			'<a class="chip" href="https://github.com/ryanatkn/belt">source</a> <a class="chip" href="https://www.npmjs.com/package/@ryanatkn/belt">npm</a>',
 	},
