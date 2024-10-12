@@ -20,8 +20,8 @@
 		<a rel="me" href="https://news.ycombinator.com/user?id=webdevladder">HN</a>
 	</li>
 	<li>
-		<span style:word-break="break-word">@webdevladder@mastodon.social</span> on
-		<a rel="me" href="https://mastodon.social/@webdevladder">Mastodon</a>
+		<span style:word-break="break-word">@webdevladder@fosstodon.org</span> on
+		<a rel="me" href="https://fosstodon.org/@webdevladder">Mastodon</a>
 	</li>
 	<li>
 		<a href="mailto:mail@ryanatkn.com">mail@ryanatkn.com</a>
