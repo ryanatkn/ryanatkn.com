@@ -37,7 +37,7 @@
     "@prettier/plugin-xml": "^3.4.1",
     "@ryanatkn/belt": "^0.25.3",
     "@ryanatkn/eslint-config": "^0.5.5",
-    "@ryanatkn/fuz": "^0.129.4",
+    "@ryanatkn/fuz": "^0.129.5",
     "@ryanatkn/fuz_blog": "^0.10.0",
     "@ryanatkn/fuz_gitops": "^0.38.0",
     "@ryanatkn/fuz_mastodon": "^0.27.1",
