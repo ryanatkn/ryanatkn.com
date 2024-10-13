@@ -29,9 +29,9 @@ export const projects: Project_Info[] = [
 			'<a class="chip" href="https://www.youtube.com/@webdevladder">channel</a> <a class="chip" href="https://www.youtube.com/@webdevladder_vods">vods</a> <a class="chip" href="https://github.com/ryanatkn/webdevladder.net">source</a>',
 	},
 	{
-		description: '(not yet published) social web app framework',
+		description: '(not yet published) bot control hq',
 		homepage: 'https://www.zzzbot.dev/',
-		motto: 'social toolz for the tired',
+		motto: 'copy this software',
 		logo: 'logo.svg',
 		logo_alt: "three sleepy z's",
 		glyph: '💤',
