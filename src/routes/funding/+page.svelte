@@ -97,22 +97,14 @@
 				or
 				<a class="white_space_nowrap" href="https://www.patreon.com/ryanatkn"
 					><Patreon_Logo size="var(--size_md)" fill="var(--color_a_5)" inline /> Patreon</a
-				>. Supporting me at any level gives you access to supporter-only community spaces on Discord
-				and the social websites I build on camera. Supporting me through GitHub instead of Patreon
-				also gives you access to discussions on a supporters-only GitHub repo.
+				>. Supporting me at any level will gives you access to supporters-only social websites I
+				build on camera (none yet!). Supporting me through GitHub instead of Patreon also gives you
+				access to discussions on a supporters-only GitHub repo.
 			</p>
 			<p>
-				<a href="https://discord.gg/YU5tyeK72X">Join the Discord</a> to get a feel for the vibes - it's
-				public-professional and I want to have fun with it. I also want to minimize time spent moderating
-				the community spaces, and so for example the Discord doesn't have offtopic channels, although
-				it does have some spaces for general web tech discussion. (maybe this will contract or expand,
-				idk)
-			</p>
-			<p>
-				My goal with the community spaces is to make an environment where anyone who shows up can
-				learn, have fun, and collaborate around this cluster of websites and technologies. Meanwhile
-				I'll continue working on the software and ideas that fill me with passion. Thanks again for
-				reading and I hope you have a good experience.
+				My goal is to continue having fun building great software, and I hope to collaborate more
+				with people around this cluster of websites and technologies. It really fills me with
+				passion. Thanks again for reading and I hope you have a good experience.
 			</p>
 			<aside class="overflow_auto">
 				<Community_Links selected="ryanatkn.com" />
