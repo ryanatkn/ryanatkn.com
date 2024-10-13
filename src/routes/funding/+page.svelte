@@ -58,8 +58,8 @@
 			</p>
 			<ul>
 				<li>
-					<a href="https://zzz.ryanatkn.com/">Zzz</a> - social web app framework (not yet published -
-					I'll use it to create several social websites)
+					<a href="https://www.zzzbot.dev/">Zzz</a> - social web app framework (not yet published - I'll
+					use it to create several social websites)
 				</li>
 				<li>
 					<a href="https://moss.ryanatkn.com/">Moss</a> - CSS framework and design system

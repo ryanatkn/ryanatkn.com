@@ -68,7 +68,7 @@ const projects_metadata: Project_Metadata[] = [
 	{
 		name: 'zzz',
 		repo: '@ryanatkn/zzz',
-		title: '<a href="https://zzz.ryanatkn.com/">Zzz</a>',
+		title: '<a href="https://www.zzzbot.dev/">Zzz</a>',
 		description: '(not yet published) social web app framework',
 		subtitle: `<a class="chip" href="https://github.com/ryanatkn/zzz">source</a>`, // TODO publish zzz - <a class="chip" href="https://www.npmjs.com/package/@ryanatkn/zzz">npm</a>
 	},

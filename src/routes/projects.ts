@@ -30,14 +30,14 @@ export const projects: Project_Info[] = [
 	},
 	{
 		description: '(not yet published) social web app framework',
-		homepage: 'https://zzz.ryanatkn.com/',
+		homepage: 'https://www.zzzbot.dev/',
 		motto: 'social toolz for the tired',
 		logo: 'logo.svg',
 		logo_alt: "three sleepy z's",
 		glyph: '💤',
 		name: 'zzz',
 		repo: '@ryanatkn/zzz',
-		title: '<a href="https://zzz.ryanatkn.com/">Zzz</a>',
+		title: '<a href="https://www.zzzbot.dev/">Zzz</a>',
 		subtitle: '<a class="chip" href="https://github.com/ryanatkn/zzz">source</a>',
 	},
 	{
