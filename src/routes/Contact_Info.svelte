@@ -6,7 +6,6 @@
 		<a rel="me" href="https://www.youtube.com/@ryanatkn">YouTube</a>, and
 		<a rel="me" href="https://www.npmjs.com/~ryanatkn">npm</a>
 	</li>
-	<li>my Discord user @ryanatkn</li>
 	<li>
 		@ryanatkn@hci.social on <a rel="me" href="https://hci.social/@ryanatkn">Mastodon</a>
 	</li>
