@@ -74,11 +74,9 @@
 			</ul>
 			<p>
 				I'm communicating about my projects and process on YouTube with
-				<a href="https://youtube.com/@spiderspace_8000">Spiderspace</a>
-				and <a href="https://youtube.com/@webdevladder">webdevladder</a>, and blogging at
-				<a href="https://www.spiderspace.org/">spiderspace.org</a>
-				and <a href="https://www.webdevladder.net/">webdevladder.net</a>. The production value is
-				low so I get more time to program.
+				<a href="https://youtube.com/@webdevladder">webdevladder</a> and blogging at
+				<a href="https://www.webdevladder.net/">webdevladder.net</a>. The production value is low so
+				I get more time to program.
 			</p>
 			<p>
 				I've been lucky to be able to live off savings for the last 5 years, but I need a funding
