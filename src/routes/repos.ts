@@ -7430,7 +7430,7 @@ export const repos: Repo[] = JSON.parse(
 	{\
 		"package_json": {\
 			"name": "@ryanatkn/fuz_gitops",\
-			"version": "0.41.0",\
+			"version": "0.41.1",\
 			"description": "a tool for managing many repos",\
 			"glyph": "🪄",\
 			"logo": "logo.svg",\
@@ -7632,7 +7632,7 @@ export const repos: Repo[] = JSON.parse(
 		},\
 		"src_json": {\
 			"name": "@ryanatkn/fuz_gitops",\
-			"version": "0.41.0",\
+			"version": "0.41.1",\
 			"modules": {\
 				"./package.json": {\
 					"path": "package.json",\
@@ -8218,7 +8218,7 @@ export const repos: Repo[] = JSON.parse(
 				"@ryanatkn/eslint-config": "^0.5.5",\
 				"@ryanatkn/fuz": "^0.130.1",\
 				"@ryanatkn/fuz_blog": "^0.11.0",\
-				"@ryanatkn/fuz_gitops": "^0.41.0",\
+				"@ryanatkn/fuz_gitops": "^0.41.1",\
 				"@ryanatkn/fuz_mastodon": "^0.28.0",\
 				"@ryanatkn/gro": "^0.143.2",\
 				"@ryanatkn/moss": "^0.18.2",\
