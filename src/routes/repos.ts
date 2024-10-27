@@ -205,7 +205,7 @@ export const repos: Repo[] = JSON.parse(
 			"name": "@ryanatkn/zzz",\
 			"version": "0.0.1",\
 			"description": "bot control hq",\
-			"motto": "copy this software",\
+			"motto": "electric buzz",\
 			"glyph": "💤",\
 			"logo": "logo.svg",\
 			"logo_alt": "three sleepy z\'s",\
@@ -2078,16 +2078,7 @@ export const repos: Repo[] = JSON.parse(
 			"status": "completed",\
 			"conclusion": "success"\
 		},\
-		"pull_requests": [\
-			{\
-				"number": 44,\
-				"title": "fix dep optimizing",\
-				"user": {\
-					"login": "ryanatkn"\
-				},\
-				"draft": false\
-			}\
-		]\
+		"pull_requests": []\
 	},\
 	{\
 		"package_json": {\

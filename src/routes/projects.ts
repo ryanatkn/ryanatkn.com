@@ -31,7 +31,7 @@ export const projects: Project_Info[] = [
 	{
 		description: 'bot control hq',
 		homepage: 'https://www.zzzbot.dev/',
-		motto: 'copy this software',
+		motto: 'electric buzz',
 		logo: 'logo.svg',
 		logo_alt: "three sleepy z's",
 		glyph: '💤',
