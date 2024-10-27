@@ -21,7 +21,7 @@ export default {
 				'style-src': ['self', 'unsafe-inline'], // support Svelte transitions - https://kit.svelte.dev/docs/configuration#csp
 				'img-src': [
 					'self',
-					'unsafe-inline',
+					'unsafe-inline', // TODO ideally this wouldn't be needed, added for Svelte
 					'https://*.ryanatkn.com/',
 					'https://*.spiderspace.org/',
 					'https://*.webdevladder.net/',
