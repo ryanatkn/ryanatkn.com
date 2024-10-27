@@ -26,6 +26,7 @@ export default {
 					'https://*.spiderspace.org/',
 					'https://*.webdevladder.net/',
 					'https://*.fuz.dev/',
+					'https://*.zzzbot.dev/',
 					'https://*.cosmicplayground.org/',
 					'https://ryanatkn.github.io/',
 					'https://hci.social/',
