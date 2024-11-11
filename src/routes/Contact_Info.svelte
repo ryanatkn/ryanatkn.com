@@ -21,7 +21,7 @@
 		<a rel="me" href="https://fosstodon.org/@webdevladder">Mastodon</a>
 	</li>
 	<li>
-		<a href="mailto:mail@ryanatkn.com">mail@ryanatkn.com</a>
+		<a href="mailto:mail@ryanatkn.com">mail@ryanatkn.com</a> (not looking for work)
 	</li>
 </ul>
 
