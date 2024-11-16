@@ -29,18 +29,6 @@ export const projects: Project_Info[] = [
 			'<a class="chip" href="https://www.youtube.com/@webdevladder">channel</a> <a class="chip" href="https://www.youtube.com/@webdevladder_vods">vods</a> <a class="chip" href="https://github.com/ryanatkn/webdevladder.net">source</a>',
 	},
 	{
-		description: 'bot control hq',
-		homepage: 'https://www.zzzbot.dev/',
-		motto: 'electric buzz',
-		logo: 'logo.svg',
-		logo_alt: "three sleepy z's",
-		glyph: '💤',
-		name: 'zzz',
-		repo: '@ryanatkn/zzz',
-		title: '<a href="https://www.zzzbot.dev/">Zzz</a>',
-		subtitle: '<a class="chip" href="https://github.com/ryanatkn/zzz">source</a>',
-	},
-	{
 		description: 'CSS framework',
 		homepage: 'https://moss.ryanatkn.com/',
 		motto: 'magical organic stylesheets',

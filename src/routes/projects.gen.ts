@@ -65,13 +65,13 @@ const projects_metadata: Project_Metadata[] = [
 			'a YouTube channel and blog for realworld webdev with <a href="https://typescriptlang.org/">TypeScript</a> and <a href="https://svelte.dev/">Svelte</a>',
 		subtitle: `<a class="chip" href="https://www.youtube.com/@webdevladder">channel</a> <a class="chip" href="https://www.youtube.com/@webdevladder_vods">vods</a> <a class="chip" href="https://github.com/ryanatkn/webdevladder.net">source</a>`,
 	},
-	{
-		name: 'zzz',
-		repo: '@ryanatkn/zzz',
-		title: '<a href="https://www.zzzbot.dev/">Zzz</a>',
-		description: 'bot control hq',
-		subtitle: `<a class="chip" href="https://github.com/ryanatkn/zzz">source</a>`, // TODO publish zzz - <a class="chip" href="https://www.npmjs.com/package/@ryanatkn/zzz">npm</a>
-	},
+	// {
+	// 	name: 'zzz',
+	// 	repo: '@ryanatkn/zzz',
+	// 	title: '<a href="https://www.zzzbot.dev/">Zzz</a>',
+	// 	description: 'bot control hq',
+	// 	subtitle: `<a class="chip" href="https://github.com/ryanatkn/zzz">source</a>`, // TODO publish zzz - <a class="chip" href="https://www.npmjs.com/package/@ryanatkn/zzz">npm</a>
+	// },
 	{
 		name: 'moss',
 		repo: '@ryanatkn/moss',
