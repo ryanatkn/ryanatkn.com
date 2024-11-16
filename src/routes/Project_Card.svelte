@@ -34,9 +34,9 @@
 	</header>
 	<div class="flex">
 		<div>
-			{#if project.motto}
+			<!-- {#if project.motto}
 				<p>{@html project.motto}</p>
-			{/if}
+			{/if} -->
 			{#if project.description}
 				<p>
 					{@html project.description}
