@@ -18,7 +18,7 @@ export const projects: Project_Info[] = [
 		description:
 			'a YouTube channel and blog for realworld webdev with <a href="https://typescriptlang.org/">TypeScript</a> and <a href="https://svelte.dev/">Svelte</a>',
 		homepage: 'https://www.webdevladder.net/',
-		motto: 'climbing together',
+		motto: 'up ↗',
 		logo: 'logo.svg',
 		logo_alt: 'a spider web between two rungs of a ladder',
 		glyph: '🪜',
