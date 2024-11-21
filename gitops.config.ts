@@ -9,6 +9,7 @@ const config: Create_Gitops_Config = () => {
 			'https://github.com/ryanatkn/moss',
 			'https://github.com/ryanatkn/fuz',
 			'https://github.com/ryanatkn/gro',
+			'https://github.com/ryanatkn/grogarden.org',
 			'https://github.com/ryanatkn/fuz_template',
 			'https://github.com/ryanatkn/belt',
 			'https://github.com/ryanatkn/ztack.net',
