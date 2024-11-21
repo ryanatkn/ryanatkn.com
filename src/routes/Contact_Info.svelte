@@ -7,7 +7,8 @@
 		<a rel="me" href="https://www.npmjs.com/~ryanatkn">npm</a>
 	</li>
 	<li>
-		@ryanatkn@hci.social on <a rel="me" href="https://hci.social/@ryanatkn">Mastodon</a>
+		Mastodon as <a rel="me" href="https://fosstodon.org/@ryanatkn">@ryanatkn@fosstodon.org</a> and
+		<a rel="me" href="https://hci.social/@ryanatkn">@ryanatkn@hci.social</a> (professional)
 	</li>
 	<li>
 		@webdevladder on
@@ -17,7 +18,7 @@
 		<a rel="me" href="https://news.ycombinator.com/user?id=webdevladder">HN</a>
 	</li>
 	<li>
-		<span style:word-break="break-word">@webdevladder@fosstodon.org</span> on
+		also <span style:word-break="break-word">@webdevladder@fosstodon.org</span> on
 		<a rel="me" href="https://fosstodon.org/@webdevladder">Mastodon</a>
 	</li>
 	<li>
