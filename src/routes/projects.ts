@@ -2,7 +2,7 @@
 
 import type {Project_Info} from '$routes/project.js';
 
-export const projects: Project_Info[] = [
+export const projects: Array<Project_Info> = [
 	{
 		name: 'blog',
 		title: '<a href="/blog">blog</a>',

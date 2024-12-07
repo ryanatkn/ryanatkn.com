@@ -13,7 +13,7 @@ export const gen: Gen = ({origin_path}) => {
 
     import type {Project_Info} from '$routes/project.js';
     
-    export const projects: Project_Info[] = ${JSON.stringify(projects)};
+    export const projects: Array<Project_Info> = ${JSON.stringify(projects)};
   `;
 };
 
