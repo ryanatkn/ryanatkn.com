@@ -38,7 +38,7 @@ interface Project_Metadata {
 }
 
 // TODO description, motto, icon, icon_alt, glyph
-const projects_metadata: Project_Metadata[] = [
+const projects_metadata: Array<Project_Metadata> = [
 	{
 		name: 'blog',
 		title: `<a href="${base}/blog">blog</a>`,
@@ -113,7 +113,7 @@ const projects_metadata: Project_Metadata[] = [
 	},
 ];
 
-const projects: Project_Info[] = projects_metadata.map((project_metadata) => {
+const projects: Array<Project_Info> = projects_metadata.map((project_metadata) => {
 	const repo = repos.find((d) => {
 		if (!('name' in d)) return false;
 		return d.name === project_metadata.repo;
