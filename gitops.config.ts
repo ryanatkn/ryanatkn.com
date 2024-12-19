@@ -21,6 +21,7 @@ const config: Create_Gitops_Config = () => {
 			'https://github.com/ryanatkn/spiderspace.org',
 			'https://github.com/ryanatkn/earbetter',
 			'https://github.com/ryanatkn/cosmicplayground',
+			'https://github.com/ryanatkn/dealt',
 			'https://github.com/ryanatkn/ryanatkn.com',
 		],
 	};
