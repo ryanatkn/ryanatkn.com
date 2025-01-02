@@ -23,6 +23,7 @@ export default {
 					'https://*.ryanatkn.com/',
 					'https://*.spiderspace.org/',
 					'https://*.webdevladder.net/',
+					'https://*.dealt.net/',
 					'https://*.fuz.dev/',
 					'https://*.ztack.net/',
 					'https://*.grogarden.org/',
