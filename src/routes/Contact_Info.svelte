@@ -1,6 +1,12 @@
 <h2 class="mb_xl2">contact me</h2>
 <ul class="contact_info panel bg shadow_xs py_md pr_md relative">
 	<li>
+		I'm looking for work! Here's my <a
+			href="https://docs.google.com/document/d/1Fti-__uwjazBllAqR73wrQ1lG6QO0ECBpz4n7XENP0Y/edit?usp=sharing"
+			>resume</a
+		>
+	</li>
+	<li>
 		@ryanatkn on
 		<a rel="me" href="https://github.com/ryanatkn">GitHub</a>,
 		<a rel="me" href="https://www.youtube.com/@ryanatkn">YouTube</a>, and
@@ -22,7 +28,7 @@
 		<a rel="me" href="https://fosstodon.org/@webdevladder">Mastodon</a>
 	</li>
 	<li>
-		<a href="mailto:mail@ryanatkn.com">mail@ryanatkn.com</a> (not looking for work)
+		<a href="mailto:mail@ryanatkn.com">mail@ryanatkn.com</a>
 	</li>
 </ul>
 

@@ -28,8 +28,8 @@
 			<p>
 				My work is
 				<a href="https://github.com/ryanatkn">open source on GitHub</a>
-				and this website's homepage lists <a href="{base}/">my ongoing projects</a>. I'm currently
-				trying to get <a href="{base}/funding">funding</a> directly from my users, viewers, and readers.
+				and this website's homepage lists <a href="{base}/">my ongoing projects</a>. <!--I'm currently
+				trying to get <a href="{base}/funding">funding</a> directly from my users, viewers, and readers.-->
 			</p>
 			<p>
 				I work on the web because for all its flaws, it's a collectively-governed sandboxed platform
