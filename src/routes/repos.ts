@@ -5,109 +5,9 @@ export const repos: Array<Repo> = JSON.parse(
 	'[\
 	{\
 		"package_json": {\
-			"name": "webdevladder.net",\
-			"version": "0.0.1",\
-			"description": "a YouTube channel and blog for realworld webdev with TypeScript and Svelte",\
-			"motto": "up ↗",\
-			"glyph": "🪜",\
-			"logo": "logo.svg",\
-			"logo_alt": "a spider web between two rungs of a ladder",\
-			"license": "MIT",\
-			"public": true,\
-			"homepage": "https://www.webdevladder.net/",\
-			"repository": "https://github.com/ryanatkn/webdevladder.net",\
-			"author": {\
-				"name": "Ryan Atkinson",\
-				"email": "mail@ryanatkn.com",\
-				"url": "https://www.ryanatkn.com/"\
-			},\
-			"bugs": "https://github.com/ryanatkn/webdevladder.net/issues",\
-			"funding": "https://www.ryanatkn.com/funding",\
-			"scripts": {\
-				"start": "gro dev",\
-				"dev": "gro dev",\
-				"build": "gro build",\
-				"check": "gro check",\
-				"test": "gro test",\
-				"preview": "vite preview",\
-				"deploy": "gro deploy"\
-			},\
-			"type": "module",\
-			"engines": {\
-				"node": ">=20.17"\
-			},\
-			"devDependencies": {\
-				"@ryanatkn/belt": "^0.29.0",\
-				"@ryanatkn/eslint-config": "^0.6.0",\
-				"@ryanatkn/fuz": "^0.131.3",\
-				"@ryanatkn/fuz_blog": "^0.11.0",\
-				"@ryanatkn/fuz_code": "^0.21.0",\
-				"@ryanatkn/fuz_mastodon": "^0.28.0",\
-				"@ryanatkn/gro": "^0.148.0",\
-				"@ryanatkn/moss": "^0.20.2",\
-				"@sveltejs/adapter-static": "^3.0.6",\
-				"@sveltejs/kit": "^2.11.0",\
-				"@sveltejs/vite-plugin-svelte": "^4.0.1",\
-				"eslint": "^9.16.0",\
-				"eslint-plugin-svelte": "^2.46.1",\
-				"prettier": "^3.4.2",\
-				"prettier-plugin-svelte": "^3.3.2",\
-				"svelte": "^5.11.2",\
-				"svelte-check": "^4.1.1",\
-				"tslib": "^2.8.1",\
-				"typescript": "^5.7.2",\
-				"typescript-eslint": "^8.18.0",\
-				"uvu": "^0.5.6"\
-			},\
-			"prettier": {\
-				"plugins": [\
-					"prettier-plugin-svelte"\
-				],\
-				"useTabs": true,\
-				"printWidth": 100,\
-				"singleQuote": true,\
-				"bracketSpacing": false,\
-				"overrides": [\
-					{\
-						"files": "package.json",\
-						"options": {\
-							"useTabs": false\
-						}\
-					}\
-				]\
-			},\
-			"sideEffects": [\
-				"**/*.css"\
-			],\
-			"files": [\
-				"dist"\
-			]\
-		},\
-		"src_json": {\
-			"name": "webdevladder.net",\
-			"version": "0.0.1"\
-		},\
-		"name": "webdevladder.net",\
-		"repo_name": "webdevladder.net",\
-		"repo_url": "https://github.com/ryanatkn/webdevladder.net",\
-		"owner_name": "ryanatkn",\
-		"homepage_url": "https://www.webdevladder.net/",\
-		"logo_url": "https://www.webdevladder.net/logo.svg",\
-		"logo_alt": "a spider web between two rungs of a ladder",\
-		"npm_url": null,\
-		"changelog_url": null,\
-		"published": false,\
-		"check_runs": {\
-			"status": "completed",\
-			"conclusion": "success"\
-		},\
-		"pull_requests": []\
-	},\
-	{\
-		"package_json": {\
 			"name": "@ryanatkn/moss",\
-			"version": "0.21.0",\
-			"description": "CSS framework",\
+			"version": "0.21.1",\
+			"description": "CSS framework and design system",\
 			"motto": "magical organic stylesheets",\
 			"glyph": "🌿",\
 			"logo": "logo.svg",\
@@ -140,25 +40,25 @@ export const repos: Array<Repo> = JSON.parse(
 				"@changesets/changelog-git": "^0.2.0",\
 				"@ryanatkn/belt": "^0.29.0",\
 				"@ryanatkn/eslint-config": "^0.6.0",\
-				"@ryanatkn/fuz": "^0.131.1",\
+				"@ryanatkn/fuz": "^0.131.5",\
 				"@ryanatkn/fuz_code": "^0.21.0",\
 				"@ryanatkn/gro": "^0.148.0",\
-				"@sveltejs/adapter-static": "^3.0.6",\
-				"@sveltejs/kit": "^2.9.0",\
+				"@sveltejs/adapter-static": "^3.0.8",\
+				"@sveltejs/kit": "^2.15.1",\
 				"@sveltejs/package": "^2.3.7",\
 				"@sveltejs/vite-plugin-svelte": "^4.0.0",\
-				"@types/node": "^22.10.1",\
-				"eslint": "^9.16.0",\
+				"@types/node": "^22.10.3",\
+				"eslint": "^9.17.0",\
 				"eslint-plugin-svelte": "^2.46.1",\
 				"prettier": "^3.4.2",\
 				"prettier-plugin-svelte": "^3.3.2",\
 				"prism-svelte": "^0.5.0",\
 				"prismjs": "^1.29.0",\
-				"svelte": "^5.8.1",\
+				"svelte": "^5.16.0",\
 				"svelte-check": "^4.1.1",\
 				"tslib": "^2.8.1",\
 				"typescript": "^5.7.2",\
-				"typescript-eslint": "^8.17.0",\
+				"typescript-eslint": "^8.19.0",\
 				"uvu": "^0.5.6"\
 			},\
 			"prettier": {\
@@ -231,7 +131,7 @@ export const repos: Array<Repo> = JSON.parse(
 		},\
 		"src_json": {\
 			"name": "@ryanatkn/moss",\
-			"version": "0.21.0",\
+			"version": "0.21.1",\
 			"modules": {\
 				"./package.json": {\
 					"path": "package.json",\
@@ -1775,7 +1675,7 @@ export const repos: Array<Repo> = JSON.parse(
 	{\
 		"package_json": {\
 			"name": "@ryanatkn/fuz",\
-			"version": "0.131.4",\
+			"version": "0.131.5",\
 			"description": "Svelte UI library",\
 			"motto": "friendly user zystem",\
 			"glyph": "🧶",\
@@ -1826,25 +1726,25 @@ export const repos: Array<Repo> = JSON.parse(
 				"@ryanatkn/eslint-config": "^0.6.0",\
 				"@ryanatkn/fuz_code": "^0.21.0",\
 				"@ryanatkn/gro": "^0.148.0",\
-				"@ryanatkn/moss": "^0.20.2",\
-				"@sveltejs/adapter-static": "^3.0.6",\
-				"@sveltejs/kit": "^2.10.1",\
+				"@ryanatkn/moss": "^0.21.1",\
+				"@sveltejs/adapter-static": "^3.0.8",\
+				"@sveltejs/kit": "^2.15.1",\
 				"@sveltejs/package": "^2.3.7",\
 				"@sveltejs/vite-plugin-svelte": "^4.0.1",\
-				"@types/node": "^22.10.2",\
+				"@types/node": "^22.10.3",\
 				"@types/prismjs": "^1.26.5",\
-				"eslint": "^9.16.0",\
+				"eslint": "^9.17.0",\
 				"eslint-plugin-svelte": "^2.46.1",\
 				"esm-env": "^1.2.1",\
 				"prettier": "^3.4.2",\
 				"prettier-plugin-svelte": "^3.3.2",\
 				"prism-svelte": "^0.5.0",\
 				"prismjs": "^1.29.0",\
-				"svelte": "^5.11.2",\
+				"svelte": "^5.16.0",\
 				"svelte-check": "^4.1.1",\
 				"tslib": "^2.8.1",\
 				"typescript": "^5.7.2",\
-				"typescript-eslint": "^8.18.0",\
+				"typescript-eslint": "^8.19.0",\
 				"uvu": "^0.5.6"\
 			},\
 			"prettier": {\
@@ -2143,7 +2043,7 @@ export const repos: Array<Repo> = JSON.parse(
 		},\
 		"src_json": {\
 			"name": "@ryanatkn/fuz",\
-			"version": "0.131.4",\
+			"version": "0.131.5",\
 			"modules": {\
 				"./package.json": {\
 					"path": "package.json",\
@@ -2751,20 +2651,20 @@ export const repos: Array<Repo> = JSON.parse(
 				"@changesets/changelog-git": "^0.2.0",\
 				"@changesets/types": "^6.0.0",\
 				"@ryanatkn/eslint-config": "^0.6.0",\
-				"@ryanatkn/fuz": "^0.131.1",\
-				"@ryanatkn/moss": "^0.20.2",\
-				"@sveltejs/adapter-static": "^3.0.6",\
-				"@sveltejs/kit": "^2.9.0",\
+				"@ryanatkn/fuz": "^0.131.5",\
+				"@ryanatkn/moss": "^0.21.1",\
+				"@sveltejs/adapter-static": "^3.0.8",\
+				"@sveltejs/kit": "^2.15.1",\
 				"@sveltejs/package": "^2.3.7",\
 				"@sveltejs/vite-plugin-svelte": "^4.0.1",\
-				"@types/node": "^22.9.1",\
+				"@types/node": "^22.10.3",\
 				"esbuild": "^0.21.5",\
-				"eslint": "^9.16.0",\
+				"eslint": "^9.17.0",\
 				"eslint-plugin-svelte": "^2.46.1",\
-				"svelte": "^5.8.1",\
+				"svelte": "^5.16.0",\
 				"svelte-check": "^4.1.1",\
 				"typescript": "^5.7.2",\
-				"typescript-eslint": "^8.17.0",\
+				"typescript-eslint": "^8.19.0",\
 				"uvu": "^0.5.6"\
 			},\
 			"prettier": {\
@@ -5152,7 +5052,7 @@ export const repos: Array<Repo> = JSON.parse(
 		"published": true,\
 		"check_runs": {\
 			"status": "completed",\
-			"conclusion": "success"\
+			"conclusion": "failure"\
 		},\
 		"pull_requests": []\
 	},\
@@ -5183,21 +5083,21 @@ export const repos: Array<Repo> = JSON.parse(
 			"devDependencies": {\
 				"@ryanatkn/belt": "^0.29.0",\
 				"@ryanatkn/eslint-config": "^0.6.0",\
-				"@ryanatkn/fuz": "^0.131.1",\
+				"@ryanatkn/fuz": "^0.131.5",\
 				"@ryanatkn/gro": "^0.148.0",\
-				"@ryanatkn/moss": "^0.20.2",\
-				"@sveltejs/adapter-static": "^3.0.6",\
-				"@sveltejs/kit": "^2.9.0",\
+				"@ryanatkn/moss": "^0.21.1",\
+				"@sveltejs/adapter-static": "^3.0.8",\
+				"@sveltejs/kit": "^2.15.1",\
 				"@sveltejs/vite-plugin-svelte": "^4.0.1",\
-				"eslint": "^9.16.0",\
+				"eslint": "^9.17.0",\
 				"eslint-plugin-svelte": "^2.46.1",\
 				"prettier": "^3.4.2",\
 				"prettier-plugin-svelte": "^3.3.2",\
-				"svelte": "^5.8.1",\
+				"svelte": "^5.16.0",\
 				"svelte-check": "^4.1.1",\
 				"tslib": "^2.8.1",\
 				"typescript": "^5.7.2",\
-				"typescript-eslint": "^8.17.0",\
+				"typescript-eslint": "^8.19.0",\
 				"uvu": "^0.5.6"\
 			},\
 			"prettier": {\
@@ -5271,21 +5171,21 @@ export const repos: Array<Repo> = JSON.parse(
 			"devDependencies": {\
 				"@ryanatkn/belt": "^0.29.0",\
 				"@ryanatkn/eslint-config": "^0.6.0",\
-				"@ryanatkn/fuz": "^0.131.4",\
+				"@ryanatkn/fuz": "^0.131.5",\
 				"@ryanatkn/gro": "^0.148.0",\
-				"@ryanatkn/moss": "^0.21.0",\
-				"@sveltejs/adapter-static": "^3.0.6",\
-				"@sveltejs/kit": "^2.12.1",\
+				"@ryanatkn/moss": "^0.21.1",\
+				"@sveltejs/adapter-static": "^3.0.8",\
+				"@sveltejs/kit": "^2.15.1",\
 				"@sveltejs/vite-plugin-svelte": "^4.0.1",\
 				"eslint": "^9.17.0",\
 				"eslint-plugin-svelte": "^2.46.1",\
 				"prettier": "^3.4.2",\
 				"prettier-plugin-svelte": "^3.3.2",\
-				"svelte": "^5.14.4",\
+				"svelte": "^5.16.0",\
 				"svelte-check": "^4.1.1",\
 				"tslib": "^2.8.1",\
 				"typescript": "^5.7.2",\
-				"typescript-eslint": "^8.18.1",\
+				"typescript-eslint": "^8.19.0",\
 				"uvu": "^0.5.6"\
 			},\
 			"prettier": {\
@@ -5389,25 +5289,25 @@ export const repos: Array<Repo> = JSON.parse(
 			},\
 			"devDependencies": {\
 				"@changesets/changelog-git": "^0.2.0",\
-				"@ryanatkn/eslint-config": "^0.5.6",\
-				"@ryanatkn/fuz": "^0.130.3",\
-				"@ryanatkn/gro": "^0.146.2",\
-				"@ryanatkn/moss": "^0.20.2",\
-				"@sveltejs/adapter-static": "^3.0.6",\
-				"@sveltejs/kit": "^2.8.0",\
+				"@ryanatkn/eslint-config": "^0.6.0",\
+				"@ryanatkn/fuz": "^0.131.5",\
+				"@ryanatkn/gro": "^0.148.0",\
+				"@ryanatkn/moss": "^0.21.1",\
+				"@sveltejs/adapter-static": "^3.0.8",\
+				"@sveltejs/kit": "^2.15.1",\
 				"@sveltejs/package": "^2.3.7",\
 				"@sveltejs/vite-plugin-svelte": "^4.0.0",\
-				"@types/node": "^22.9.0",\
-				"eslint": "^9.14.0",\
-				"eslint-plugin-svelte": "^2.46.0",\
-				"prettier": "^3.3.3",\
-				"prettier-plugin-svelte": "^3.2.7",\
-				"svelte": "^5.1.12",\
-				"svelte-check": "^4.0.6",\
-				"tinybench": "^3.0.3",\
+				"@types/node": "^22.10.3",\
+				"eslint": "^9.17.0",\
+				"eslint-plugin-svelte": "^2.46.1",\
+				"prettier": "^3.4.2",\
+				"prettier-plugin-svelte": "^3.3.2",\
+				"svelte": "^5.16.0",\
+				"svelte-check": "^4.1.1",\
+				"tinybench": "^3.1.0",\
 				"tslib": "^2.8.1",\
-				"typescript": "^5.6.3",\
-				"typescript-eslint": "^8.13.0",\
+				"typescript": "^5.7.2",\
+				"typescript-eslint": "^8.19.0",\
 				"uvu": "^0.5.6"\
 			},\
 			"prettier": {\
@@ -6475,473 +6375,6 @@ export const repos: Array<Repo> = JSON.parse(
 	},\
 	{\
 		"package_json": {\
-			"name": "ztack.net",\
-			"version": "0.0.1",\
-			"description": "electric web stack",\
-			"glyph": "🌩",\
-			"logo": "logo.svg",\
-			"logo_alt": "a friendly pixelated spider facing you",\
-			"public": true,\
-			"homepage": "https://www.ztack.net/",\
-			"repository": "https://github.com/ryanatkn/ztack.net",\
-			"scripts": {\
-				"start": "gro dev",\
-				"dev": "gro dev",\
-				"build": "gro build",\
-				"check": "gro check",\
-				"test": "gro test",\
-				"preview": "vite preview",\
-				"deploy": "gro deploy"\
-			},\
-			"type": "module",\
-			"engines": {\
-				"node": ">=20.17"\
-			},\
-			"devDependencies": {\
-				"@ryanatkn/belt": "^0.28.0",\
-				"@ryanatkn/eslint-config": "^0.5.7",\
-				"@ryanatkn/fuz": "^0.130.5",\
-				"@ryanatkn/gro": "^0.147.1",\
-				"@ryanatkn/moss": "^0.20.2",\
-				"@sveltejs/adapter-static": "^3.0.6",\
-				"@sveltejs/kit": "^2.8.1",\
-				"@sveltejs/vite-plugin-svelte": "^4.0.1",\
-				"eslint": "^9.15.0",\
-				"eslint-plugin-svelte": "^2.46.0",\
-				"prettier": "^3.3.3",\
-				"prettier-plugin-svelte": "^3.3.1",\
-				"svelte": "^5.2.7",\
-				"svelte-check": "^4.0.9",\
-				"tslib": "^2.8.1",\
-				"typescript": "^5.6.3",\
-				"typescript-eslint": "^8.15.0",\
-				"uvu": "^0.5.6"\
-			},\
-			"prettier": {\
-				"plugins": [\
-					"prettier-plugin-svelte"\
-				],\
-				"useTabs": true,\
-				"printWidth": 100,\
-				"singleQuote": true,\
-				"bracketSpacing": false,\
-				"overrides": [\
-					{\
-						"files": "package.json",\
-						"options": {\
-							"useTabs": false\
-						}\
-					}\
-				]\
-			},\
-			"sideEffects": [\
-				"**/*.css"\
-			],\
-			"files": [\
-				"dist"\
-			]\
-		},\
-		"src_json": {\
-			"name": "ztack.net",\
-			"version": "0.0.1"\
-		},\
-		"name": "ztack.net",\
-		"repo_name": "ztack.net",\
-		"repo_url": "https://github.com/ryanatkn/ztack.net",\
-		"owner_name": "ryanatkn",\
-		"homepage_url": "https://www.ztack.net/",\
-		"logo_url": "https://www.ztack.net/logo.svg",\
-		"logo_alt": "a friendly pixelated spider facing you",\
-		"npm_url": null,\
-		"changelog_url": null,\
-		"published": false,\
-		"check_runs": {\
-			"status": "completed",\
-			"conclusion": "success"\
-		},\
-		"pull_requests": []\
-	},\
-	{\
-		"package_json": {\
-			"name": "@ryanatkn/zts",\
-			"version": "0.0.1",\
-			"description": "typescript schema library for codegen",\
-			"glyph": "🧱",\
-			"logo": "logo.svg",\
-			"logo_alt": "a friendly pixelated spider facing you",\
-			"public": true,\
-			"homepage": "https://zts.ztack.net/",\
-			"repository": "https://github.com/ryanatkn/zts",\
-			"scripts": {\
-				"start": "gro dev",\
-				"dev": "gro dev",\
-				"build": "gro build",\
-				"check": "gro check",\
-				"test": "gro test",\
-				"preview": "vite preview",\
-				"deploy": "gro deploy"\
-			},\
-			"type": "module",\
-			"engines": {\
-				"node": ">=20.17"\
-			},\
-			"devDependencies": {\
-				"@ryanatkn/belt": "^0.28.0",\
-				"@ryanatkn/eslint-config": "^0.5.7",\
-				"@ryanatkn/fuz": "^0.130.5",\
-				"@ryanatkn/gro": "^0.147.1",\
-				"@ryanatkn/moss": "^0.20.2",\
-				"@sveltejs/adapter-static": "^3.0.6",\
-				"@sveltejs/kit": "^2.8.1",\
-				"@sveltejs/vite-plugin-svelte": "^4.0.1",\
-				"eslint": "^9.15.0",\
-				"eslint-plugin-svelte": "^2.46.0",\
-				"prettier": "^3.3.3",\
-				"prettier-plugin-svelte": "^3.2.8",\
-				"svelte": "^5.2.4",\
-				"svelte-check": "^4.0.9",\
-				"tslib": "^2.8.1",\
-				"typescript": "^5.6.3",\
-				"typescript-eslint": "^8.15.0",\
-				"uvu": "^0.5.6"\
-			},\
-			"prettier": {\
-				"plugins": [\
-					"prettier-plugin-svelte"\
-				],\
-				"useTabs": true,\
-				"printWidth": 100,\
-				"singleQuote": true,\
-				"bracketSpacing": false,\
-				"overrides": [\
-					{\
-						"files": "package.json",\
-						"options": {\
-							"useTabs": false\
-						}\
-					}\
-				]\
-			},\
-			"sideEffects": [\
-				"**/*.css"\
-			],\
-			"files": [\
-				"dist"\
-			]\
-		},\
-		"src_json": {\
-			"name": "@ryanatkn/zts",\
-			"version": "0.0.1"\
-		},\
-		"name": "@ryanatkn/zts",\
-		"repo_name": "zts",\
-		"repo_url": "https://github.com/ryanatkn/zts",\
-		"owner_name": "ryanatkn",\
-		"homepage_url": "https://zts.ztack.net/",\
-		"logo_url": "https://zts.ztack.net/logo.svg",\
-		"logo_alt": "a friendly pixelated spider facing you",\
-		"npm_url": null,\
-		"changelog_url": null,\
-		"published": false,\
-		"check_runs": {\
-			"status": "completed",\
-			"conclusion": "success"\
-		},\
-		"pull_requests": []\
-	},\
-	{\
-		"package_json": {\
-			"name": "@ryanatkn/zzz",\
-			"version": "0.0.1",\
-			"description": "bot control hq",\
-			"motto": "electric buzz",\
-			"glyph": "💤",\
-			"logo": "logo.svg",\
-			"logo_alt": "three sleepy z\'s",\
-			"public": true,\
-			"license": "MIT",\
-			"homepage": "https://zzz.ztack.net/",\
-			"repository": "https://github.com/ryanatkn/zzz",\
-			"author": {\
-				"name": "Ryan Atkinson",\
-				"email": "mail@ryanatkn.com",\
-				"url": "https://www.ryanatkn.com/"\
-			},\
-			"bugs": "https://github.com/ryanatkn/zzz/issues",\
-			"funding": "https://www.ryanatkn.com/funding",\
-			"scripts": {\
-				"start": "gro dev",\
-				"dev": "gro dev",\
-				"build": "gro build",\
-				"check": "gro check",\
-				"test": "gro test",\
-				"preview": "vite preview",\
-				"deploy": "gro deploy"\
-			},\
-			"type": "module",\
-			"engines": {\
-				"node": ">=20.17"\
-			},\
-			"peerDependencies": {\
-				"@sveltejs/kit": "^2",\
-				"svelte": "^5"\
-			},\
-			"devDependencies": {\
-				"@changesets/changelog-git": "^0.2.0",\
-				"@ryanatkn/belt": "^0.28.0",\
-				"@ryanatkn/eslint-config": "^0.5.7",\
-				"@ryanatkn/fuz": "^0.130.5",\
-				"@ryanatkn/gro": "^0.147.1",\
-				"@ryanatkn/moss": "^0.20.2",\
-				"@sveltejs/adapter-static": "^3.0.6",\
-				"@sveltejs/kit": "^2.8.1",\
-				"@sveltejs/package": "^2.3.7",\
-				"@sveltejs/vite-plugin-svelte": "^4.0.1",\
-				"eslint": "^9.15.0",\
-				"eslint-plugin-svelte": "^2.46.0",\
-				"prettier": "^3.3.3",\
-				"prettier-plugin-svelte": "^3.2.8",\
-				"svelte": "^5.2.7",\
-				"svelte-check": "^4.0.9",\
-				"tslib": "^2.8.1",\
-				"typescript": "^5.6.3",\
-				"typescript-eslint": "^8.15.0",\
-				"uvu": "^0.5.6"\
-			},\
-			"prettier": {\
-				"plugins": [\
-					"prettier-plugin-svelte"\
-				],\
-				"useTabs": true,\
-				"printWidth": 100,\
-				"singleQuote": true,\
-				"bracketSpacing": false,\
-				"overrides": [\
-					{\
-						"files": "package.json",\
-						"options": {\
-							"useTabs": false\
-						}\
-					}\
-				]\
-			},\
-			"sideEffects": [\
-				"**/*.css"\
-			],\
-			"files": [\
-				"dist"\
-			],\
-			"exports": {\
-				"./package.json": "./package.json",\
-				"./Hud_Root.svelte": {\
-					"types": "./dist/Hud_Root.svelte.d.ts",\
-					"svelte": "./dist/Hud_Root.svelte",\
-					"default": "./dist/Hud_Root.svelte"\
-				},\
-				"./hud.svelte.js": {\
-					"types": "./dist/hud.svelte.d.ts",\
-					"default": "./dist/hud.svelte.js"\
-				},\
-				"./zzz_data.svelte.js": {\
-					"types": "./dist/zzz_data.svelte.d.ts",\
-					"default": "./dist/zzz_data.svelte.js"\
-				},\
-				"./Zzz_Main.svelte": {\
-					"types": "./dist/Zzz_Main.svelte.d.ts",\
-					"svelte": "./dist/Zzz_Main.svelte",\
-					"default": "./dist/Zzz_Main.svelte"\
-				},\
-				"./Zzz_Root.svelte": {\
-					"types": "./dist/Zzz_Root.svelte.d.ts",\
-					"svelte": "./dist/Zzz_Root.svelte",\
-					"default": "./dist/Zzz_Root.svelte"\
-				},\
-				"./zzz.svelte.js": {\
-					"types": "./dist/zzz.svelte.d.ts",\
-					"default": "./dist/zzz.svelte.js"\
-				}\
-			}\
-		},\
-		"src_json": {\
-			"name": "@ryanatkn/zzz",\
-			"version": "0.0.1",\
-			"modules": {\
-				"./package.json": {\
-					"path": "package.json",\
-					"declarations": []\
-				},\
-				"./Hud_Root.svelte": {\
-					"path": "Hud_Root.svelte",\
-					"declarations": []\
-				},\
-				"./hud.svelte.js": {\
-					"path": "hud.svelte.ts",\
-					"declarations": [\
-						{\
-							"name": "hud_context",\
-							"kind": "variable"\
-						}\
-					]\
-				},\
-				"./zzz_data.svelte.js": {\
-					"path": "zzz_data.svelte.ts",\
-					"declarations": [\
-						{\
-							"name": "Zzz_Data_Json",\
-							"kind": "type"\
-						},\
-						{\
-							"name": "Zzz_Data",\
-							"kind": "class"\
-						}\
-					]\
-				},\
-				"./Zzz_Main.svelte": {\
-					"path": "Zzz_Main.svelte",\
-					"declarations": []\
-				},\
-				"./Zzz_Root.svelte": {\
-					"path": "Zzz_Root.svelte",\
-					"declarations": []\
-				},\
-				"./zzz.svelte.js": {\
-					"path": "zzz.svelte.ts",\
-					"declarations": [\
-						{\
-							"name": "zzz_context",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "Zzz_Options",\
-							"kind": "type"\
-						},\
-						{\
-							"name": "Zzz_Json",\
-							"kind": "type"\
-						},\
-						{\
-							"name": "Zzz",\
-							"kind": "class"\
-						}\
-					]\
-				}\
-			}\
-		},\
-		"name": "@ryanatkn/zzz",\
-		"repo_name": "zzz",\
-		"repo_url": "https://github.com/ryanatkn/zzz",\
-		"owner_name": "ryanatkn",\
-		"homepage_url": "https://zzz.ztack.net/",\
-		"logo_url": "https://zzz.ztack.net/logo.svg",\
-		"logo_alt": "three sleepy z\'s",\
-		"npm_url": null,\
-		"changelog_url": null,\
-		"published": false,\
-		"check_runs": {\
-			"status": "completed",\
-			"conclusion": "success"\
-		},\
-		"pull_requests": [\
-			{\
-				"number": 6,\
-				"title": "add server",\
-				"user": {\
-					"login": "ryanatkn"\
-				},\
-				"draft": false\
-			}\
-		]\
-	},\
-	{\
-		"package_json": {\
-			"name": "zzzbot.dev",\
-			"version": "0.0.1",\
-			"description": "botslopfest",\
-			"glyph": "🎭",\
-			"logo": "logo.svg",\
-			"logo_alt": "a friendly pixelated spider facing you",\
-			"public": true,\
-			"homepage": "https://www.zzzbot.dev/",\
-			"repository": "https://github.com/ryanatkn/zzzbot.dev",\
-			"scripts": {\
-				"start": "gro dev",\
-				"dev": "gro dev",\
-				"build": "gro build",\
-				"check": "gro check",\
-				"test": "gro test",\
-				"preview": "vite preview",\
-				"deploy": "gro deploy"\
-			},\
-			"type": "module",\
-			"engines": {\
-				"node": ">=20.17"\
-			},\
-			"devDependencies": {\
-				"@ryanatkn/belt": "^0.29.0",\
-				"@ryanatkn/eslint-config": "^0.6.0",\
-				"@ryanatkn/fuz": "^0.131.1",\
-				"@ryanatkn/gro": "^0.147.1",\
-				"@ryanatkn/moss": "^0.20.2",\
-				"@sveltejs/adapter-static": "^3.0.6",\
-				"@sveltejs/kit": "^2.9.0",\
-				"@sveltejs/vite-plugin-svelte": "^4.0.1",\
-				"eslint": "^9.15.0",\
-				"eslint-plugin-svelte": "^2.46.0",\
-				"prettier": "^3.4.2",\
-				"prettier-plugin-svelte": "^3.2.8",\
-				"svelte": "^5.8.0",\
-				"svelte-check": "^4.1.1",\
-				"tslib": "^2.8.1",\
-				"typescript": "^5.6.3",\
-				"typescript-eslint": "^8.15.0",\
-				"uvu": "^0.5.6"\
-			},\
-			"prettier": {\
-				"plugins": [\
-					"prettier-plugin-svelte"\
-				],\
-				"useTabs": true,\
-				"printWidth": 100,\
-				"singleQuote": true,\
-				"bracketSpacing": false,\
-				"overrides": [\
-					{\
-						"files": "package.json",\
-						"options": {\
-							"useTabs": false\
-						}\
-					}\
-				]\
-			},\
-			"sideEffects": [\
-				"**/*.css"\
-			],\
-			"files": [\
-				"dist"\
-			]\
-		},\
-		"src_json": {\
-			"name": "zzzbot.dev",\
-			"version": "0.0.1"\
-		},\
-		"name": "zzzbot.dev",\
-		"repo_name": "zzzbot.dev",\
-		"repo_url": "https://github.com/ryanatkn/zzzbot.dev",\
-		"owner_name": "ryanatkn",\
-		"homepage_url": "https://www.zzzbot.dev/",\
-		"logo_url": "https://www.zzzbot.dev/logo.svg",\
-		"logo_alt": "a friendly pixelated spider facing you",\
-		"npm_url": null,\
-		"changelog_url": null,\
-		"published": false,\
-		"check_runs": {\
-			"status": "completed",\
-			"conclusion": "success"\
-		},\
-		"pull_requests": []\
-	},\
-	{\
-		"package_json": {\
 			"name": "@ryanatkn/fuz_blog",\
 			"version": "0.11.0",\
 			"description": "blog software from scratch with SvelteKit",\
@@ -6976,28 +6409,28 @@ export const repos: Array<Repo> = JSON.parse(
 			},\
 			"devDependencies": {\
 				"@changesets/changelog-git": "^0.2.0",\
-				"@ryanatkn/belt": "^0.25.3",\
-				"@ryanatkn/eslint-config": "^0.5.5",\
-				"@ryanatkn/fuz": "^0.130.2",\
-				"@ryanatkn/fuz_code": "^0.20.0",\
+				"@ryanatkn/belt": "^0.29.0",\
+				"@ryanatkn/eslint-config": "^0.6.0",\
+				"@ryanatkn/fuz": "^0.131.5",\
+				"@ryanatkn/fuz_code": "^0.21.0",\
 				"@ryanatkn/fuz_mastodon": "^0.28.0",\
-				"@ryanatkn/gro": "^0.143.3",\
-				"@ryanatkn/moss": "^0.18.2",\
-				"@sveltejs/adapter-static": "^3.0.6",\
-				"@sveltejs/kit": "^2.7.3",\
+				"@ryanatkn/gro": "^0.148.0",\
+				"@ryanatkn/moss": "^0.21.1",\
+				"@sveltejs/adapter-static": "^3.0.8",\
+				"@sveltejs/kit": "^2.15.1",\
 				"@sveltejs/package": "^2.3.7",\
 				"@sveltejs/vite-plugin-svelte": "^4.0.0",\
-				"@types/node": "^22.8.2",\
+				"@types/node": "^22.10.3",\
 				"date-fns": "^4.1.0",\
-				"eslint": "^9.13.0",\
-				"eslint-plugin-svelte": "^2.46.0",\
-				"prettier": "^3.3.3",\
-				"prettier-plugin-svelte": "^3.2.7",\
-				"svelte": "^5.1.4",\
-				"svelte-check": "^4.0.5",\
-				"tslib": "^2.8.0",\
-				"typescript": "^5.6.3",\
-				"typescript-eslint": "^8.12.1",\
+				"eslint": "^9.17.0",\
+				"eslint-plugin-svelte": "^2.46.1",\
+				"prettier": "^3.4.2",\
+				"prettier-plugin-svelte": "^3.3.2",\
+				"svelte": "^5.16.0",\
+				"svelte-check": "^4.1.1",\
+				"tslib": "^2.8.1",\
+				"typescript": "^5.7.2",\
+				"typescript-eslint": "^8.19.0",\
 				"uvu": "^0.5.6"\
 			},\
 			"prettier": {\
@@ -7287,29 +6720,29 @@ export const repos: Array<Repo> = JSON.parse(
 			},\
 			"devDependencies": {\
 				"@changesets/changelog-git": "^0.2.0",\
-				"@ryanatkn/belt": "^0.25.3",\
-				"@ryanatkn/eslint-config": "^0.5.5",\
-				"@ryanatkn/fuz": "^0.130.2",\
-				"@ryanatkn/fuz_code": "^0.20.0",\
-				"@ryanatkn/gro": "^0.143.3",\
-				"@ryanatkn/moss": "^0.18.2",\
-				"@sveltejs/adapter-static": "^3.0.6",\
-				"@sveltejs/kit": "^2.7.3",\
+				"@ryanatkn/belt": "^0.29.0",\
+				"@ryanatkn/eslint-config": "^0.6.0",\
+				"@ryanatkn/fuz": "^0.131.5",\
+				"@ryanatkn/fuz_code": "^0.21.0",\
+				"@ryanatkn/gro": "^0.148.0",\
+				"@ryanatkn/moss": "^0.21.1",\
+				"@sveltejs/adapter-static": "^3.0.8",\
+				"@sveltejs/kit": "^2.15.1",\
 				"@sveltejs/package": "^2.3.7",\
 				"@sveltejs/vite-plugin-svelte": "^4.0.0",\
 				"date-fns": "^4.1.0",\
-				"eslint": "^9.13.0",\
-				"eslint-plugin-svelte": "^2.46.0",\
-				"esm-env": "^1.0.0",\
-				"prettier": "^3.3.3",\
-				"prettier-plugin-svelte": "^3.2.7",\
+				"eslint": "^9.17.0",\
+				"eslint-plugin-svelte": "^2.46.1",\
+				"esm-env": "^1.2.1",\
+				"prettier": "^3.4.2",\
+				"prettier-plugin-svelte": "^3.3.2",\
 				"prism-svelte": "^0.5.0",\
 				"prismjs": "^1.29.0",\
-				"svelte": "^5.1.4",\
-				"svelte-check": "^4.0.5",\
-				"tslib": "^2.8.0",\
-				"typescript": "^5.6.3",\
-				"typescript-eslint": "^8.12.1",\
+				"svelte": "^5.16.0",\
+				"svelte-check": "^4.1.1",\
+				"tslib": "^2.8.1",\
+				"typescript": "^5.7.2",\
+				"typescript-eslint": "^8.19.0",\
 				"uvu": "^0.5.6"\
 			},\
 			"prettier": {\
@@ -7539,8 +6972,8 @@ export const repos: Array<Repo> = JSON.parse(
 	{\
 		"package_json": {\
 			"name": "@ryanatkn/fuz_code",\
-			"version": "0.20.0",\
-			"description": "syntax highlighting using prismjs for Svelte, SvelteKit, TypeScript, and Fuz",\
+			"version": "0.21.0",\
+			"description": "syntax styling utilities and components for TypeScript, Svelte, SvelteKit",\
 			"glyph": "🎨",\
 			"logo": "logo.svg",\
 			"logo_alt": "a friendly pink spider facing you",\
@@ -7570,33 +7003,37 @@ export const repos: Array<Repo> = JSON.parse(
 			},\
 			"peerDependencies": {\
 				"@ryanatkn/moss": "*",\
-				"prism-svelte": "^0.5",\
-				"prismjs": "^1",\
 				"svelte": "^5"\
+			},\
+			"peerDependenciesMeta": {\
+				"@ryanatkn/moss": {\
+					"optional": true\
+				},\
+				"svelte": {\
+					"optional": true\
+				}\
 			},\
 			"devDependencies": {\
 				"@changesets/changelog-git": "^0.2.0",\
-				"@ryanatkn/belt": "^0.25.3",\
-				"@ryanatkn/eslint-config": "^0.5.5",\
-				"@ryanatkn/fuz": "^0.130.2",\
-				"@ryanatkn/gro": "^0.143.3",\
-				"@ryanatkn/moss": "^0.18.2",\
-				"@sveltejs/adapter-static": "^3.0.6",\
-				"@sveltejs/kit": "^2.7.3",\
+				"@ryanatkn/belt": "^0.29.0",\
+				"@ryanatkn/eslint-config": "^0.6.0",\
+				"@ryanatkn/fuz": "^0.131.5",\
+				"@ryanatkn/gro": "^0.148.0",\
+				"@ryanatkn/moss": "^0.21.1",\
+				"@sveltejs/adapter-static": "^3.0.8",\
+				"@sveltejs/kit": "^2.15.1",\
 				"@sveltejs/package": "^2.3.7",\
 				"@sveltejs/vite-plugin-svelte": "^4.0.0",\
-				"@types/prismjs": "^1.26.5",\
-				"eslint": "^9.13.0",\
-				"eslint-plugin-svelte": "^2.46.0",\
-				"prettier": "^3.3.3",\
-				"prettier-plugin-svelte": "^3.2.7",\
-				"prism-svelte": "^0.5.0",\
-				"prismjs": "^1.29.0",\
-				"svelte": "^5.1.4",\
-				"svelte-check": "^4.0.5",\
-				"tslib": "^2.8.0",\
-				"typescript": "^5.6.3",\
-				"typescript-eslint": "^8.12.1",\
+				"@types/node": "^22.10.3",\
+				"eslint": "^9.17.0",\
+				"eslint-plugin-svelte": "^2.46.1",\
+				"prettier": "^3.4.2",\
+				"prettier-plugin-svelte": "^3.3.2",\
+				"svelte": "^5.16.0",\
+				"svelte-check": "^4.1.1",\
+				"tslib": "^2.8.1",\
+				"typescript": "^5.7.2",\
+				"typescript-eslint": "^8.19.0",\
 				"uvu": "^0.5.6"\
 			},\
 			"prettier": {\
@@ -7626,45 +7063,282 @@ export const repos: Array<Repo> = JSON.parse(
 				"!dist/**/*.test.*"\
 			],\
 			"exports": {\
+				".": {\
+					"types": "./dist/index.d.ts",\
+					"default": "./dist/index.js"\
+				},\
 				"./package.json": "./package.json",\
+				"./code_sample_inputs.js": {\
+					"types": "./dist/code_sample_inputs.d.ts",\
+					"default": "./dist/code_sample_inputs.js"\
+				},\
+				"./code_sample_outputs.js": {\
+					"types": "./dist/code_sample_outputs.d.ts",\
+					"default": "./dist/code_sample_outputs.js"\
+				},\
 				"./Code.svelte": {\
 					"types": "./dist/Code.svelte.d.ts",\
 					"svelte": "./dist/Code.svelte",\
 					"default": "./dist/Code.svelte"\
 				},\
-				"./prism.css": {\
-					"default": "./dist/prism.css"\
+				"./grammar_clike.js": {\
+					"types": "./dist/grammar_clike.d.ts",\
+					"default": "./dist/grammar_clike.js"\
 				},\
-				"./remove_prism_css_vite_plugin.js": {\
-					"types": "./dist/remove_prism_css_vite_plugin.d.ts",\
-					"default": "./dist/remove_prism_css_vite_plugin.js"\
+				"./grammar_css.js": {\
+					"types": "./dist/grammar_css.d.ts",\
+					"default": "./dist/grammar_css.js"\
+				},\
+				"./grammar_js.js": {\
+					"types": "./dist/grammar_js.d.ts",\
+					"default": "./dist/grammar_js.js"\
+				},\
+				"./grammar_json.js": {\
+					"types": "./dist/grammar_json.d.ts",\
+					"default": "./dist/grammar_json.js"\
+				},\
+				"./grammar_markup.js": {\
+					"types": "./dist/grammar_markup.d.ts",\
+					"default": "./dist/grammar_markup.js"\
+				},\
+				"./grammar_svelte.js": {\
+					"types": "./dist/grammar_svelte.d.ts",\
+					"default": "./dist/grammar_svelte.js"\
+				},\
+				"./grammar_ts.js": {\
+					"types": "./dist/grammar_ts.d.ts",\
+					"default": "./dist/grammar_ts.js"\
+				},\
+				"./syntax_styler.js": {\
+					"types": "./dist/syntax_styler.d.ts",\
+					"default": "./dist/syntax_styler.js"\
+				},\
+				"./theme_standalone.css": {\
+					"default": "./dist/theme_standalone.css"\
+				},\
+				"./theme.css": {\
+					"default": "./dist/theme.css"\
 				}\
 			}\
 		},\
 		"src_json": {\
 			"name": "@ryanatkn/fuz_code",\
-			"version": "0.20.0",\
+			"version": "0.21.0",\
 			"modules": {\
+				".": {\
+					"path": "index.ts",\
+					"declarations": [\
+						{\
+							"name": "syntax_styler",\
+							"kind": "variable"\
+						}\
+					]\
+				},\
 				"./package.json": {\
 					"path": "package.json",\
 					"declarations": []\
+				},\
+				"./code_sample_inputs.js": {\
+					"path": "code_sample_inputs.ts",\
+					"declarations": [\
+						{\
+							"name": "sample_json_code",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "sample_html_code",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "sample_css_code",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "sample_ts_code",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "sample_svelte_code",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "samples",\
+							"kind": "variable"\
+						}\
+					]\
+				},\
+				"./code_sample_outputs.js": {\
+					"path": "code_sample_outputs.ts",\
+					"declarations": [\
+						{\
+							"name": "styled_json_code",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "styled_html_code",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "styled_css_code",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "styled_ts_code",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "styled_svelte_code",\
+							"kind": "variable"\
+						}\
+					]\
 				},\
 				"./Code.svelte": {\
 					"path": "Code.svelte",\
 					"declarations": []\
 				},\
-				"./prism.css": {\
-					"path": "prism.css",\
-					"declarations": []\
-				},\
-				"./remove_prism_css_vite_plugin.js": {\
-					"path": "remove_prism_css_vite_plugin.ts",\
+				"./grammar_clike.js": {\
+					"path": "grammar_clike.ts",\
 					"declarations": [\
 						{\
-							"name": "remove_prism_css",\
+							"name": "add_grammar_clike",\
+							"kind": "variable"\
+						}\
+					]\
+				},\
+				"./grammar_css.js": {\
+					"path": "grammar_css.ts",\
+					"declarations": [\
+						{\
+							"name": "add_grammar_css",\
+							"kind": "variable"\
+						}\
+					]\
+				},\
+				"./grammar_js.js": {\
+					"path": "grammar_js.ts",\
+					"declarations": [\
+						{\
+							"name": "add_grammar_js",\
+							"kind": "variable"\
+						}\
+					]\
+				},\
+				"./grammar_json.js": {\
+					"path": "grammar_json.ts",\
+					"declarations": [\
+						{\
+							"name": "add_grammar_json",\
+							"kind": "variable"\
+						}\
+					]\
+				},\
+				"./grammar_markup.js": {\
+					"path": "grammar_markup.ts",\
+					"declarations": [\
+						{\
+							"name": "add_grammar_markup",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "grammar_markup_add_inlined",\
+							"kind": "function"\
+						},\
+						{\
+							"name": "grammar_markup_add_attribute",\
 							"kind": "function"\
 						}\
 					]\
+				},\
+				"./grammar_svelte.js": {\
+					"path": "grammar_svelte.ts",\
+					"declarations": [\
+						{\
+							"name": "add_grammar_svelte",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "grammar_svelte_add_inlined",\
+							"kind": "function"\
+						}\
+					]\
+				},\
+				"./grammar_ts.js": {\
+					"path": "grammar_ts.ts",\
+					"declarations": [\
+						{\
+							"name": "add_grammar_ts",\
+							"kind": "variable"\
+						}\
+					]\
+				},\
+				"./syntax_styler.js": {\
+					"path": "syntax_styler.ts",\
+					"declarations": [\
+						{\
+							"name": "Add_Grammar",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Syntax_Styler",\
+							"kind": "class"\
+						},\
+						{\
+							"name": "Grammar_Value",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Grammar",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Grammar_Token",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "tokenize_syntax",\
+							"kind": "function"\
+						},\
+						{\
+							"name": "Syntax_Token",\
+							"kind": "class"\
+						},\
+						{\
+							"name": "Syntax_Token_Stream",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Hook_Before_Tokenize_Callback",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Hook_After_Tokenize_Callback",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Hook_Wrap_Callback",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Hook_Before_Tokenize_Callback_Context",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Hook_After_Tokenize_Callback_Context",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Hook_Wrap_Callback_Context",\
+							"kind": "type"\
+						}\
+					]\
+				},\
+				"./theme_standalone.css": {\
+					"path": "theme_standalone.css",\
+					"declarations": []\
+				},\
+				"./theme.css": {\
+					"path": "theme.css",\
+					"declarations": []\
 				}\
 			}\
 		},\
@@ -7723,29 +7397,29 @@ export const repos: Array<Repo> = JSON.parse(
 				"@ryanatkn/moss": "*",\
 				"@sveltejs/kit": "^2",\
 				"svelte": "^5",\
-				"zod": "^3.23.8"\
+				"zod": "^3.24.1"\
 			},\
 			"devDependencies": {\
 				"@changesets/changelog-git": "^0.2.0",\
 				"@ryanatkn/belt": "^0.29.0",\
 				"@ryanatkn/eslint-config": "^0.6.0",\
-				"@ryanatkn/fuz": "^0.131.1",\
+				"@ryanatkn/fuz": "^0.131.5",\
 				"@ryanatkn/gro": "^0.148.0",\
-				"@ryanatkn/moss": "^0.20.2",\
-				"@sveltejs/adapter-static": "^3.0.6",\
-				"@sveltejs/kit": "^2.9.0",\
+				"@ryanatkn/moss": "^0.21.1",\
+				"@sveltejs/adapter-static": "^3.0.8",\
+				"@sveltejs/kit": "^2.15.1",\
 				"@sveltejs/package": "^2.3.7",\
 				"@sveltejs/vite-plugin-svelte": "^4.0.0",\
-				"@types/node": "^22.10.1",\
-				"eslint": "^9.16.0",\
+				"@types/node": "^22.10.3",\
+				"eslint": "^9.17.0",\
 				"eslint-plugin-svelte": "^2.46.1",\
 				"prettier": "^3.4.2",\
 				"prettier-plugin-svelte": "^3.3.2",\
-				"svelte": "^5.8.1",\
+				"svelte": "^5.16.0",\
 				"svelte-check": "^4.1.1",\
 				"tslib": "^2.8.1",\
 				"typescript": "^5.7.2",\
-				"typescript-eslint": "^8.17.0",\
+				"typescript-eslint": "^8.19.0",\
 				"uvu": "^0.5.6"\
 			},\
 			"prettier": {\
@@ -8202,103 +7876,6 @@ export const repos: Array<Repo> = JSON.parse(
 	},\
 	{\
 		"package_json": {\
-			"name": "spiderspace.org",\
-			"version": "0.0.1",\
-			"description": "community website with a YouTube channel about building it",\
-			"motto": "weaving web community",\
-			"glyph": "🕸️",\
-			"logo": "logo.svg",\
-			"logo_alt": "a galaxy full of twinkling star spiders",\
-			"license": "MIT",\
-			"public": true,\
-			"homepage": "https://www.spiderspace.org/",\
-			"repository": "https://github.com/ryanatkn/spiderspace.org",\
-			"author": {\
-				"name": "Ryan Atkinson",\
-				"email": "mail@ryanatkn.com",\
-				"url": "https://www.ryanatkn.com/"\
-			},\
-			"bugs": "https://github.com/ryanatkn/spiderspace.org/issues",\
-			"funding": "https://www.ryanatkn.com/funding",\
-			"scripts": {\
-				"start": "gro dev",\
-				"dev": "gro dev",\
-				"build": "gro build",\
-				"check": "gro check",\
-				"test": "gro test",\
-				"preview": "vite preview",\
-				"deploy": "gro deploy"\
-			},\
-			"type": "module",\
-			"engines": {\
-				"node": ">=20.17"\
-			},\
-			"devDependencies": {\
-				"@ryanatkn/belt": "^0.29.0",\
-				"@ryanatkn/eslint-config": "^0.6.0",\
-				"@ryanatkn/fuz": "^0.131.3",\
-				"@ryanatkn/gro": "^0.148.0",\
-				"@ryanatkn/moss": "^0.20.2",\
-				"@sveltejs/adapter-static": "^3.0.6",\
-				"@sveltejs/kit": "^2.11.0",\
-				"@sveltejs/vite-plugin-svelte": "^4.0.0",\
-				"eslint": "^9.16.0",\
-				"eslint-plugin-svelte": "^2.46.1",\
-				"prettier": "^3.4.2",\
-				"prettier-plugin-svelte": "^3.3.2",\
-				"svelte": "^5.11.2",\
-				"svelte-check": "^4.1.1",\
-				"tslib": "^2.8.1",\
-				"typescript": "^5.7.2",\
-				"typescript-eslint": "^8.18.0",\
-				"uvu": "^0.5.6"\
-			},\
-			"prettier": {\
-				"plugins": [\
-					"prettier-plugin-svelte"\
-				],\
-				"useTabs": true,\
-				"printWidth": 100,\
-				"singleQuote": true,\
-				"bracketSpacing": false,\
-				"overrides": [\
-					{\
-						"files": "package.json",\
-						"options": {\
-							"useTabs": false\
-						}\
-					}\
-				]\
-			},\
-			"sideEffects": [\
-				"**/*.css"\
-			],\
-			"files": [\
-				"dist"\
-			]\
-		},\
-		"src_json": {\
-			"name": "spiderspace.org",\
-			"version": "0.0.1"\
-		},\
-		"name": "spiderspace.org",\
-		"repo_name": "spiderspace.org",\
-		"repo_url": "https://github.com/ryanatkn/spiderspace.org",\
-		"owner_name": "ryanatkn",\
-		"homepage_url": "https://www.spiderspace.org/",\
-		"logo_url": "https://www.spiderspace.org/logo.svg",\
-		"logo_alt": "a galaxy full of twinkling star spiders",\
-		"npm_url": null,\
-		"changelog_url": null,\
-		"published": false,\
-		"check_runs": {\
-			"status": "completed",\
-			"conclusion": "success"\
-		},\
-		"pull_requests": []\
-	},\
-	{\
-		"package_json": {\
 			"name": "@ryanatkn/earbetter",\
 			"version": "0.0.1",\
 			"description": "ear trainer and tools for playing and programming music and audio",\
@@ -8343,22 +7920,22 @@ export const repos: Array<Repo> = JSON.parse(
 			"devDependencies": {\
 				"@ryanatkn/belt": "^0.29.0",\
 				"@ryanatkn/eslint-config": "^0.6.0",\
-				"@ryanatkn/fuz": "^0.131.2",\
+				"@ryanatkn/fuz": "^0.131.5",\
 				"@ryanatkn/gro": "^0.148.0",\
-				"@ryanatkn/moss": "^0.20.2",\
-				"@sveltejs/adapter-static": "^3.0.6",\
-				"@sveltejs/kit": "^2.10.1",\
+				"@ryanatkn/moss": "^0.21.1",\
+				"@sveltejs/adapter-static": "^3.0.8",\
+				"@sveltejs/kit": "^2.15.1",\
 				"@sveltejs/vite-plugin-svelte": "^4.0.0",\
 				"dequal": "^2.0.3",\
-				"eslint": "^9.16.0",\
+				"eslint": "^9.17.0",\
 				"eslint-plugin-svelte": "^2.46.1",\
 				"esm-env": "^1.2.1",\
 				"prettier": "^3.4.2",\
-				"svelte": "^5.11.2",\
+				"svelte": "^5.16.0",\
 				"svelte-check": "^4.1.1",\
 				"tslib": "^2.8.1",\
 				"typescript": "^5.7.2",\
-				"typescript-eslint": "^8.18.0",\
+				"typescript-eslint": "^8.19.0",\
 				"uvu": "^0.5.6",\
 				"zod": "^3.24.1"\
 			},\
@@ -8537,6 +8114,7 @@ export const repos: Array<Repo> = JSON.parse(
 			"logo": "logo.svg",\
 			"logo_alt": "a friendly pixelated spider facing you",\
 			"public": true,\
+			"license": "MIT",\
 			"homepage": "https://www.dealt.dev/",\
 			"repository": "https://github.com/ryanatkn/dealt",\
 			"scripts": {\
@@ -8557,25 +8135,25 @@ export const repos: Array<Repo> = JSON.parse(
 			"devDependencies": {\
 				"@ryanatkn/belt": "^0.29.0",\
 				"@ryanatkn/eslint-config": "^0.6.0",\
-				"@ryanatkn/fuz": "^0.131.4",\
+				"@ryanatkn/fuz": "^0.131.5",\
 				"@ryanatkn/gro": "^0.148.0",\
-				"@ryanatkn/moss": "^0.21.0",\
-				"@sveltejs/adapter-static": "^3.0.6",\
-				"@sveltejs/kit": "^2.12.1",\
+				"@ryanatkn/moss": "^0.21.1",\
+				"@sveltejs/adapter-static": "^3.0.8",\
+				"@sveltejs/kit": "^2.15.1",\
 				"@sveltejs/vite-plugin-svelte": "^4.0.1",\
-				"@types/node": "^22.10.2",\
+				"@types/node": "^22.10.3",\
 				"eslint": "^9.17.0",\
 				"eslint-plugin-svelte": "^2.46.1",\
 				"esm-env": "^1.2.1",\
 				"pixi.js": "^8.6.6",\
 				"prettier": "^3.4.2",\
 				"prettier-plugin-svelte": "^3.3.2",\
-				"svelte": "^5.14.4",\
+				"svelte": "^5.16.0",\
 				"svelte-check": "^4.1.1",\
-				"tinybench": "^3.0.7",\
+				"tinybench": "^3.1.0",\
 				"tslib": "^2.8.1",\
 				"typescript": "^5.7.2",\
-				"typescript-eslint": "^8.18.1",\
+				"typescript-eslint": "^8.19.0",\
 				"uvu": "^0.5.6"\
 			},\
 			"prettier": {\
@@ -8613,6 +8191,115 @@ export const repos: Array<Repo> = JSON.parse(
 		"homepage_url": "https://www.dealt.dev/",\
 		"logo_url": "https://www.dealt.dev/logo.svg",\
 		"logo_alt": "a friendly pixelated spider facing you",\
+		"npm_url": null,\
+		"changelog_url": null,\
+		"published": false,\
+		"check_runs": {\
+			"status": "completed",\
+			"conclusion": "success"\
+		},\
+		"pull_requests": [\
+			{\
+				"number": 3,\
+				"title": "refactor top-level objects",\
+				"user": {\
+					"login": "ryanatkn"\
+				},\
+				"draft": false\
+			}\
+		]\
+	},\
+	{\
+		"package_json": {\
+			"name": "webdevladder.net",\
+			"version": "0.0.1",\
+			"description": "a YouTube channel and blog for realworld webdev with TypeScript and Svelte",\
+			"motto": "up ↗",\
+			"glyph": "🪜",\
+			"logo": "logo.svg",\
+			"logo_alt": "a spider web between two rungs of a ladder",\
+			"license": "MIT",\
+			"public": true,\
+			"homepage": "https://www.webdevladder.net/",\
+			"repository": "https://github.com/ryanatkn/webdevladder.net",\
+			"author": {\
+				"name": "Ryan Atkinson",\
+				"email": "mail@ryanatkn.com",\
+				"url": "https://www.ryanatkn.com/"\
+			},\
+			"bugs": "https://github.com/ryanatkn/webdevladder.net/issues",\
+			"funding": "https://www.ryanatkn.com/funding",\
+			"scripts": {\
+				"start": "gro dev",\
+				"dev": "gro dev",\
+				"build": "gro build",\
+				"check": "gro check",\
+				"test": "gro test",\
+				"preview": "vite preview",\
+				"deploy": "gro deploy"\
+			},\
+			"type": "module",\
+			"engines": {\
+				"node": ">=20.17"\
+			},\
+			"devDependencies": {\
+				"@ryanatkn/belt": "^0.29.0",\
+				"@ryanatkn/eslint-config": "^0.6.0",\
+				"@ryanatkn/fuz": "^0.131.5",\
+				"@ryanatkn/fuz_blog": "^0.11.0",\
+				"@ryanatkn/fuz_code": "^0.21.0",\
+				"@ryanatkn/fuz_mastodon": "^0.28.0",\
+				"@ryanatkn/gro": "^0.148.0",\
+				"@ryanatkn/moss": "^0.21.1",\
+				"@sveltejs/adapter-static": "^3.0.8",\
+				"@sveltejs/kit": "^2.15.1",\
+				"@sveltejs/vite-plugin-svelte": "^4.0.1",\
+				"eslint": "^9.17.0",\
+				"eslint-plugin-svelte": "^2.46.1",\
+				"prettier": "^3.4.2",\
+				"prettier-plugin-svelte": "^3.3.2",\
+				"svelte": "^5.16.0",\
+				"svelte-check": "^4.1.1",\
+				"tslib": "^2.8.1",\
+				"typescript": "^5.7.2",\
+				"typescript-eslint": "^8.19.0",\
+				"uvu": "^0.5.6"\
+			},\
+			"prettier": {\
+				"plugins": [\
+					"prettier-plugin-svelte"\
+				],\
+				"useTabs": true,\
+				"printWidth": 100,\
+				"singleQuote": true,\
+				"bracketSpacing": false,\
+				"overrides": [\
+					{\
+						"files": "package.json",\
+						"options": {\
+							"useTabs": false\
+						}\
+					}\
+				]\
+			},\
+			"sideEffects": [\
+				"**/*.css"\
+			],\
+			"files": [\
+				"dist"\
+			]\
+		},\
+		"src_json": {\
+			"name": "webdevladder.net",\
+			"version": "0.0.1"\
+		},\
+		"name": "webdevladder.net",\
+		"repo_name": "webdevladder.net",\
+		"repo_url": "https://github.com/ryanatkn/webdevladder.net",\
+		"owner_name": "ryanatkn",\
+		"homepage_url": "https://www.webdevladder.net/",\
+		"logo_url": "https://www.webdevladder.net/logo.svg",\
+		"logo_alt": "a spider web between two rungs of a ladder",\
 		"npm_url": null,\
 		"changelog_url": null,\
 		"published": false,\
@@ -8662,27 +8349,27 @@ export const repos: Array<Repo> = JSON.parse(
 				"@prettier/plugin-xml": "^3.4.1",\
 				"@ryanatkn/belt": "^0.29.0",\
 				"@ryanatkn/eslint-config": "^0.6.0",\
-				"@ryanatkn/fuz": "^0.131.4",\
+				"@ryanatkn/fuz": "^0.131.5",\
 				"@ryanatkn/fuz_blog": "^0.11.0",\
 				"@ryanatkn/fuz_gitops": "^0.44.0",\
 				"@ryanatkn/fuz_mastodon": "^0.28.0",\
 				"@ryanatkn/gro": "^0.148.0",\
-				"@ryanatkn/moss": "^0.21.0",\
-				"@sveltejs/adapter-static": "^3.0.6",\
-				"@sveltejs/kit": "^2.12.1",\
+				"@ryanatkn/moss": "^0.21.1",\
+				"@sveltejs/adapter-static": "^3.0.8",\
+				"@sveltejs/kit": "^2.15.1",\
 				"@sveltejs/vite-plugin-svelte": "^4.0.1",\
-				"@types/node": "^22.10.2",\
+				"@types/node": "^22.10.3",\
 				"date-fns": "^4.1.0",\
 				"eslint": "^9.17.0",\
 				"eslint-plugin-svelte": "^2.46.1",\
 				"esm-env": "^1.2.1",\
 				"prettier": "^3.4.2",\
 				"prettier-plugin-svelte": "^3.3.2",\
-				"svelte": "^5.14.4",\
+				"svelte": "^5.16.0",\
 				"svelte-check": "^4.1.1",\
 				"tslib": "^2.8.1",\
 				"typescript": "^5.7.2",\
-				"typescript-eslint": "^8.18.1",\
+				"typescript-eslint": "^8.19.0",\
 				"uvu": "^0.5.6",\
 				"zod": "^3.24.1"\
 			},\

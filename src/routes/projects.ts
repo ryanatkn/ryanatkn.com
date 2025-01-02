@@ -29,7 +29,7 @@ export const projects: Array<Project_Info> = [
 			'<a class="chip" href="https://www.youtube.com/@webdevladder">channel</a> <a class="chip" href="https://www.youtube.com/@webdevladder_vods">vods</a> <a class="chip" href="https://github.com/ryanatkn/webdevladder.net">source</a>',
 	},
 	{
-		description: 'CSS framework',
+		description: 'CSS framework and design system',
 		homepage: 'https://moss.ryanatkn.com/',
 		motto: 'magical organic stylesheets',
 		logo: 'logo.svg',
