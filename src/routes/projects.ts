@@ -38,7 +38,8 @@ export const projects: Array<Project_Info> = [
 		name: 'moss',
 		repo: '@ryanatkn/moss',
 		title: '<a href="https://moss.ryanatkn.com/">Moss</a>',
-		subtitle: '<a class="chip" href="https://github.com/ryanatkn/moss">source</a>',
+		subtitle:
+			'<a class="chip" href="https://github.com/ryanatkn/moss">source</a> <a class="chip" href="https://www.npmjs.com/package/@ryanatkn/moss">npm</a>',
 	},
 	{
 		description: '<a href="https://svelte.dev/">Svelte</a> UI library',

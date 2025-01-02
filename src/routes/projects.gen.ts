@@ -76,7 +76,7 @@ const projects_metadata: Array<Project_Metadata> = [
 		name: 'moss',
 		repo: '@ryanatkn/moss',
 		title: '<a href="https://moss.ryanatkn.com/">Moss</a>',
-		subtitle: `<a class="chip" href="https://github.com/ryanatkn/moss">source</a>`, // TODO publish moss - <a class="chip" href="https://www.npmjs.com/package/@ryanatkn/moss">npm</a>
+		subtitle: `<a class="chip" href="https://github.com/ryanatkn/moss">source</a> <a class="chip" href="https://www.npmjs.com/package/@ryanatkn/moss">npm</a>`,
 	},
 	{
 		name: 'fuz',
