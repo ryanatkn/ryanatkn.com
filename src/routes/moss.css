@@ -70,6 +70,7 @@ a.chip {
 	min-width: var(--input_height);
 	min-height: var(--input_height);
 	flex-shrink: 0;
+	line-height: 1;
 	font-weight: 900;
 	padding: 0;
 }
@@ -234,7 +235,7 @@ a.chip {
 		color-mix(in hsl, var(--shadow_color) var(--shadow_alpha, var(--shadow_alpha_3)), transparent);
 }
 .shadow_xs {
-	--shadow_alpha: var(--shadow_alpha_1) box-shadow: var(--shadow_xs)
+	box-shadow: var(--shadow_xs)
 		color-mix(in hsl, var(--shadow_color) var(--shadow_alpha, var(--shadow_alpha_1)), transparent);
 }
 .text_align_center {
@@ -247,7 +248,6 @@ a.chip {
 	white-space: nowrap;
 }
 
-/* TODO rename these? use to be columns, maybe should be? */
 .width_md {
 	width: 100%;
 	max-width: var(--width_md);
