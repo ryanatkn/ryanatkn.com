@@ -35,11 +35,6 @@
 			Patreon
 		</Card>
 	</section>
-	<aside>
-		⚠️ This is outdated, I'm now looking for a job instead of funding after dropping my project Zzz,
-		which was formerly Felt. Decided I want to work with people instead of alone for an indefinite
-		period.
-	</aside>
 	<section class="panel p_sm shadow_md w_100">
 		<div class="panel bg p_xl shadow_xs">
 			<div class="float_right icon_size_lg">🪶</div>
