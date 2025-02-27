@@ -26,7 +26,11 @@
 		<div class="display_contents" style:--link_color="var(--color_b_5)">
 			<!-- TODO hacky with max-width -->
 			<Card href="https://github.com/sponsors/ryanatkn" attrs={{style: 'max-width: 100%'}}>
-				{#snippet icon()}<Svg data={github_logo} fill="var(--color_b_5)" />{/snippet}
+				{#snippet icon()}<Svg
+						data={github_logo}
+						fill="var(--color_b_5)"
+						size="var(--space_xl7, 64px)"
+					/>{/snippet}
 				GitHub Sponsors
 			</Card>
 		</div>
