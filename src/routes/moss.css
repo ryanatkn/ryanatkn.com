@@ -77,6 +77,7 @@ a.chip {
 
 .icon_size_lg {
 	font-size: var(--icon_size_lg);
+	--size: var(--icon_size_lg);
 }
 .inline {
 	display: inline;
@@ -196,9 +197,13 @@ a.chip {
 
 /* TODO maybe this belongs with the reset, like `selected`? or does `selected` belong here? */
 .plain:not(:hover) {
-	border-color: transparent;
+	--border_color: transparent;
 	box-shadow: none;
 	--button_fill: transparent;
+}
+.plain:hover,
+.plain:active {
+	--border_color: transparent;
 }
 
 .pr_md {

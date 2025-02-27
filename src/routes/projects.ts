@@ -29,6 +29,13 @@ export const projects: Array<Project_Info> = [
 			'<a class="chip" href="https://www.youtube.com/@webdevladder">channel</a> <a class="chip" href="https://www.youtube.com/@webdevladder_vods">vods</a> <a class="chip" href="https://github.com/ryanatkn/webdevladder.net">source</a>',
 	},
 	{
+		name: 'zzz',
+		repo: '@ryanatkn/zzz',
+		title: '<a href="https://www.zzzbot.dev/">Zzz</a>',
+		description: 'bot and web toolkit',
+		subtitle: '<a class="chip" href="https://github.com/ryanatkn/zzz">source</a>',
+	},
+	{
 		description: 'CSS framework and design system',
 		homepage: 'https://moss.ryanatkn.com/',
 		motto: 'magical organic stylesheets',

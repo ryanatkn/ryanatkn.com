@@ -58,7 +58,7 @@
 			</p>
 			<ul>
 				<li>
-					<a href="https://www.zzzbot.dev/">Zzz</a> - bot control hq
+					<a href="https://www.zzzbot.dev/">Zzz</a> - bot and web toolkit
 				</li>
 				<li>
 					<a href="https://moss.ryanatkn.com/">Moss</a> - CSS framework and design system
