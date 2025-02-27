@@ -46,7 +46,7 @@
 				AI – here's my <a
 					href="https://docs.google.com/document/d/1Fti-__uwjazBllAqR73wrQ1lG6QO0ECBpz4n7XENP0Y/edit?usp=sharing"
 					>resume</a
-				>
+				>.
 			</p>
 			<p>
 				In 2011 I began my first job as a professional web developer focusing on JS, and many years

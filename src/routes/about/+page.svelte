@@ -28,8 +28,14 @@
 			<p>
 				My work is
 				<a href="https://github.com/ryanatkn">open source on GitHub</a>
-				and this website's homepage lists <a href="{base}/">my ongoing projects</a>. <!--I'm currently
-				trying to get <a href="{base}/funding">funding</a> directly from my users, viewers, and readers.-->
+				and this website's homepage lists <a href="{base}/">my ongoing projects</a>. I'm in the
+				early stages of trying to get <a href="{base}/funding">funding</a> directly from my users,
+				viewers, and readers. I'm also looking for work making software that integrates AI – here's
+				my
+				<a
+					href="https://docs.google.com/document/d/1Fti-__uwjazBllAqR73wrQ1lG6QO0ECBpz4n7XENP0Y/edit?usp=sharing"
+					>resume</a
+				>.
 			</p>
 			<p>
 				I work on the web because for all its flaws, it's a collectively-governed sandboxed platform
