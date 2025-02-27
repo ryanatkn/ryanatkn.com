@@ -24,6 +24,7 @@ interface Project_Metadata {
 	 */
 	description?: string;
 	motto?: string; // TODO @many this is a hack because cosmicplayground hasn't been deployed
+	glyph?: string; // TODO @many hack for zzz, fix after adding to gitops
 	repo?: string;
 	/**
 	 * Allows HTML.
@@ -34,6 +35,7 @@ interface Project_Metadata {
 	 */
 	subtitle?: string;
 	logo?: string; // TODO @many this is a hack because cosmicplayground hasn't been deployed
+	logo_alt?: string; // TODO @many hack for zzz, fix after adding to gitops
 	logo_style?: string;
 }
 
@@ -58,19 +60,25 @@ const projects_metadata: Array<Project_Metadata> = [
 	// 	subtitle: `<a class="chip" href="https://www.youtube.com/@spiderspace_8000">YouTube</a> <a class="chip" href="https://github.com/ryanatkn/spiderspace.org">source</a>`,
 	// },
 	{
+		// TODO @many hack for zzz, fix after adding to gitops
+		name: 'zzz',
+		repo: '@ryanatkn/zzz',
+		title: '<a href="https://www.zzzbot.dev/">Zzz</a>',
+		description: 'bot and web toolkit',
+		subtitle: `<a class="chip" href="https://github.com/ryanatkn/zzz">source</a>`, // TODO publish zzz - <a class="chip" href="https://www.npmjs.com/package/@ryanatkn/zzz">npm</a>
+		// TODO @many hack for zzz, fix after adding to gitops
+		motto: 'bot control web',
+		glyph: '💤',
+		logo: 'logo.svg',
+		logo_alt: "three sleepy z's",
+	},
+	{
 		name: 'webdevladder.net',
 		repo: 'webdevladder.net',
 		title: '<a href="https://www.webdevladder.net/">webdevladder.net</a>',
 		description:
 			'a YouTube channel and blog for realworld webdev with <a href="https://typescriptlang.org/">TypeScript</a> and <a href="https://svelte.dev/">Svelte</a>',
 		subtitle: `<a class="chip" href="https://www.youtube.com/@webdevladder">channel</a> <a class="chip" href="https://www.youtube.com/@webdevladder_vods">vods</a> <a class="chip" href="https://github.com/ryanatkn/webdevladder.net">source</a>`,
-	},
-	{
-		name: 'zzz',
-		repo: '@ryanatkn/zzz',
-		title: '<a href="https://www.zzzbot.dev/">Zzz</a>',
-		description: 'bot and web toolkit',
-		subtitle: `<a class="chip" href="https://github.com/ryanatkn/zzz">source</a>`, // TODO publish zzz - <a class="chip" href="https://www.npmjs.com/package/@ryanatkn/zzz">npm</a>
 	},
 	{
 		name: 'moss',

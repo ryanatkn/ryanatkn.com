@@ -1,7 +1,7 @@
 <h2 class="mb_xl2">contact me</h2>
 <ul class="contact_info panel bg shadow_xs py_md pr_md relative">
 	<li>
-		I'm looking for work! Here's my <a
+		I'm looking for work making software that integrates AI – here's my <a
 			href="https://docs.google.com/document/d/1Fti-__uwjazBllAqR73wrQ1lG6QO0ECBpz4n7XENP0Y/edit?usp=sharing"
 			>resume</a
 		>

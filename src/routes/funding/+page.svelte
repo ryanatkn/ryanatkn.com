@@ -42,7 +42,11 @@
 				Hi thank you for reading. I'm an independent software developer and this is an attempt to
 				fund my self-directed work on free and open source software. My goal is to work for the open
 				web on the projects I find meaningful, while building community with people who value my
-				software, videos, and blog posts.
+				software, videos, and blog posts. I'm also looking for work making software that integrates
+				AI – here's my <a
+					href="https://docs.google.com/document/d/1Fti-__uwjazBllAqR73wrQ1lG6QO0ECBpz4n7XENP0Y/edit?usp=sharing"
+					>resume</a
+				>
 			</p>
 			<p>
 				In 2011 I began my first job as a professional web developer focusing on JS, and many years
@@ -58,14 +62,14 @@
 			</p>
 			<ul>
 				<li>
-					<a href="https://www.zzzbot.dev/">Zzz</a> - bot and web toolkit
+					<a href="https://www.zzzbot.dev/">Zzz</a> – bot and web toolkit
 				</li>
 				<li>
-					<a href="https://moss.ryanatkn.com/">Moss</a> - CSS framework and design system
+					<a href="https://moss.ryanatkn.com/">Moss</a> – CSS framework and design system
 				</li>
-				<li><a href="https://www.fuz.dev/">Fuz</a> - Svelte UI library</li>
+				<li><a href="https://www.fuz.dev/">Fuz</a> – Svelte UI library</li>
 				<li>
-					<a href="https://gro.ryanatkn.com/">Gro</a> - task runner and toolkit extending SvelteKit
+					<a href="https://gro.ryanatkn.com/">Gro</a> – task runner and toolkit extending SvelteKit
 				</li>
 				<li>
 					more on <a href="https://github.com/ryanatkn">my GitHub profile</a> and

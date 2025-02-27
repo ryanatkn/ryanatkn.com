@@ -15,6 +15,17 @@ export const projects: Array<Project_Info> = [
 		description: 'my free and open source software',
 	},
 	{
+		name: 'zzz',
+		repo: '@ryanatkn/zzz',
+		title: '<a href="https://www.zzzbot.dev/">Zzz</a>',
+		description: 'bot and web toolkit',
+		subtitle: '<a class="chip" href="https://github.com/ryanatkn/zzz">source</a>',
+		motto: 'bot control web',
+		glyph: '💤',
+		logo: 'logo.svg',
+		logo_alt: "three sleepy z's",
+	},
+	{
 		description:
 			'a YouTube channel and blog for realworld webdev with <a href="https://typescriptlang.org/">TypeScript</a> and <a href="https://svelte.dev/">Svelte</a>',
 		homepage: 'https://www.webdevladder.net/',
@@ -27,13 +38,6 @@ export const projects: Array<Project_Info> = [
 		title: '<a href="https://www.webdevladder.net/">webdevladder.net</a>',
 		subtitle:
 			'<a class="chip" href="https://www.youtube.com/@webdevladder">channel</a> <a class="chip" href="https://www.youtube.com/@webdevladder_vods">vods</a> <a class="chip" href="https://github.com/ryanatkn/webdevladder.net">source</a>',
-	},
-	{
-		name: 'zzz',
-		repo: '@ryanatkn/zzz',
-		title: '<a href="https://www.zzzbot.dev/">Zzz</a>',
-		description: 'bot and web toolkit',
-		subtitle: '<a class="chip" href="https://github.com/ryanatkn/zzz">source</a>',
 	},
 	{
 		description: 'CSS framework and design system',

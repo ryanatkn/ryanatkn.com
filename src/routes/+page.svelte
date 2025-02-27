@@ -101,6 +101,9 @@
 		align-items: flex-start;
 		justify-content: center;
 		gap: var(--space_md);
+		/* TODO these two decls are a hack to get 2 items max on a line to make it not gross */
+		max-width: 730px;
+		margin: 0 auto;
 	}
 
 	header {
