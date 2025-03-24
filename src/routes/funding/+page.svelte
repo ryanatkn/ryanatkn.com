@@ -46,11 +46,7 @@
 				Hi thank you for reading. I'm an independent software developer and this is an attempt to
 				fund my self-directed work on free and open source software. My goal is to work for the open
 				web on the projects I find meaningful, while building community with people who value my
-				software, videos, and blog posts. I'm also looking for work making software that integrates
-				AI – here's my <a
-					href="https://docs.google.com/document/d/1Fti-__uwjazBllAqR73wrQ1lG6QO0ECBpz4n7XENP0Y/edit?usp=sharing"
-					>resume</a
-				>.
+				software.
 			</p>
 			<p>
 				In 2011 I began my first job as a professional web developer focusing on JS, and many years
@@ -84,7 +80,9 @@
 				I'm communicating about my projects and process on YouTube with
 				<a href="https://youtube.com/@webdevladder">webdevladder</a> and blogging at
 				<a href="https://www.webdevladder.net/">webdevladder.net</a>. The production value is low so
-				I get more time to program.
+				I get more time to program - I did some livecoding on
+				<a href="https://youtube.com/@webdevladder_vods">webdevladder_vods</a>
+				in 2024 and it was <em>draining</em>.
 			</p>
 			<p>
 				I've been lucky to be able to live off savings for the last 5 years, but I need a funding
@@ -103,13 +101,13 @@
 				<a class="white_space_nowrap" href="https://www.patreon.com/ryanatkn"
 					><Patreon_Logo size="var(--size_md)" fill="var(--color_a_5)" inline /> Patreon</a
 				>. Supporting me at any level will gives you access to supporters-only social websites I
-				build on camera (none yet!). Supporting me through GitHub instead of Patreon also gives you
-				access to discussions on a supporters-only GitHub repo.
+				build on camera (none yet, maybe late 2025). Supporting me through GitHub instead of Patreon
+				also gives you access to discussions on a supporters-only GitHub repo.
 			</p>
 			<p>
 				My goal is to continue having fun building great software, and I hope to collaborate more
-				with people around this cluster of websites and technologies. It really fills me with
-				passion. Thanks again for reading and I hope you have a good experience.
+				with people around this cluster of ideas and technologies. It really fills me with passion.
+				Thanks again for reading, I hope you have a good experience.
 			</p>
 			<aside class="overflow_auto">
 				<Community_Links selected="ryanatkn.com" />
