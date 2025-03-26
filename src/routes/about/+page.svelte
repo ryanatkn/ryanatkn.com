@@ -30,8 +30,9 @@
 				<a href="https://github.com/ryanatkn">open source on GitHub</a>
 				and this website's homepage lists <a href="{base}/">my ongoing projects</a>. I'm in the
 				early stages of trying to get <a href="{base}/funding">funding</a> directly from my users,
-				viewers, and readers. I'm also looking for work making software that integrates AI – here's
-				my
+				viewers, and readers. I'm also looking for work making software that integrates AI like
+				<a href="https://github.com/ryanatkn/zzz">Zzz</a>
+				– here's my
 				<a
 					href="https://docs.google.com/document/d/1Fti-__uwjazBllAqR73wrQ1lG6QO0ECBpz4n7XENP0Y/edit?usp=sharing"
 					>resume</a
