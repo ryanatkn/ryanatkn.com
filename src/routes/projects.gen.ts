@@ -64,7 +64,7 @@ const projects_metadata: Array<Project_Metadata> = [
 		name: 'zzz',
 		repo: '@ryanatkn/zzz',
 		title: '<a href="https://www.zzzbot.dev/">Zzz</a>',
-		description: 'bot and web toolkit',
+		description: 'webtool',
 		subtitle: `<a class="chip" href="https://github.com/ryanatkn/zzz">source</a>`, // TODO publish zzz - <a class="chip" href="https://www.npmjs.com/package/@ryanatkn/zzz">npm</a>
 		// TODO @many hack for zzz, fix after adding to gitops
 		motto: 'bot control web',

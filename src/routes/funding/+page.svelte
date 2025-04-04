@@ -62,7 +62,7 @@
 			</p>
 			<ul>
 				<li>
-					<a href="https://www.zzzbot.dev/">Zzz</a> – bot and web toolkit
+					<a href="https://www.zzzbot.dev/">Zzz</a> – webtool
 				</li>
 				<li>
 					<a href="https://moss.ryanatkn.com/">Moss</a> – CSS framework and design system
@@ -107,8 +107,8 @@
 			</p>
 			<p>
 				My goal is to continue having fun building great software, and I hope to collaborate more
-				with people around this cluster of ideas and technologies. It really fills me with passion.
-				Thanks again for reading, I hope you have a good experience.
+				with people around this cluster of ideas and technologies. Lots of passion if you can
+				imagine. Thanks again for reading, I hope you have a good experience.
 			</p>
 			<aside class="overflow_auto">
 				<Community_Links selected="ryanatkn.com" />
