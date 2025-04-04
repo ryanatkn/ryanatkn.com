@@ -83,7 +83,7 @@
 				I get more time to program - I did some livecoding on
 				<a href="https://youtube.com/@webdevladder_vods">webdevladder_vods</a>
 				in 2024 and it was <em>draining</em>, but I'm bringing it back without the vampiric webcam
-				and less seriousness.
+				and with less seriousness.
 			</p>
 			<p>
 				I've been lucky to be able to live off savings for the last 5 years, but I need a funding
