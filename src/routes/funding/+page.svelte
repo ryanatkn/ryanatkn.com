@@ -82,7 +82,8 @@
 				<a href="https://www.webdevladder.net/">webdevladder.net</a>. The production value is low so
 				I get more time to program - I did some livecoding on
 				<a href="https://youtube.com/@webdevladder_vods">webdevladder_vods</a>
-				in 2024 and it was <em>draining</em>.
+				in 2024 and it was <em>draining</em>, but I'm bringing it back without the vampiric webcam
+				and less seriousness.
 			</p>
 			<p>
 				I've been lucky to be able to live off savings for the last 5 years, but I need a funding
@@ -100,9 +101,9 @@
 				or
 				<a class="white_space_nowrap" href="https://www.patreon.com/ryanatkn"
 					><Patreon_Logo size="var(--size_md)" fill="var(--color_a_5)" inline /> Patreon</a
-				>. Supporting me at any level will gives you access to supporters-only social websites I
-				build on camera (none yet, maybe late 2025). Supporting me through GitHub instead of Patreon
-				also gives you access to discussions on a supporters-only GitHub repo.
+				>. Supporting me at any level grants you access to supporters-only social websites I build
+				on camera (none yet, maybe late 2025). Supporting me through GitHub instead of Patreon also
+				gives you access to discussions on a supporters-only GitHub repo.
 			</p>
 			<p>
 				My goal is to continue having fun building great software, and I hope to collaborate more
