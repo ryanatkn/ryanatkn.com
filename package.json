@@ -39,7 +39,7 @@
     "@ryanatkn/eslint-config": "^0.8.0",
     "@ryanatkn/fuz": "^0.136.1",
     "@ryanatkn/fuz_blog": "^0.12.0",
-    "@ryanatkn/fuz_gitops": "^0.44.0",
+    "@ryanatkn/fuz_gitops": "^0.45.0",
     "@ryanatkn/fuz_mastodon": "^0.29.0",
     "@ryanatkn/gro": "^0.150.1",
     "@ryanatkn/moss": "^0.24.3",
