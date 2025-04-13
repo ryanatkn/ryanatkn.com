@@ -17,7 +17,7 @@
 
 <section class="blog">
 	<ol class="panel" reversed>
-		{#each items as item}
+		{#each items as item (item)}
 			<li class="blog_card">
 				<a href={to_pathname(item.url, feed.home_page_url)}>{item.title}</a>
 				<div class="date"><Feed_Item_Date {item} /></div>
