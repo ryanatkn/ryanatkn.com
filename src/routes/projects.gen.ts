@@ -63,7 +63,7 @@ const projects_metadata: Array<Project_Metadata> = [
 		// TODO @many hack for zzz, fix after adding to gitops
 		name: 'zzz',
 		repo: '@ryanatkn/zzz',
-		title: '<a href="https://www.zzzbot.dev/">Zzz</a>',
+		title: '<a href="https://www.zzz.software/">Zzz</a>',
 		description: 'webtool',
 		subtitle: `<a class="chip" href="https://github.com/ryanatkn/zzz">source</a>`, // TODO publish zzz - <a class="chip" href="https://www.npmjs.com/package/@ryanatkn/zzz">npm</a>
 		// TODO @many hack for zzz, fix after adding to gitops

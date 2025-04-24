@@ -17,7 +17,7 @@ export const projects: Array<Project_Info> = [
 	{
 		name: 'zzz',
 		repo: '@ryanatkn/zzz',
-		title: '<a href="https://www.zzzbot.dev/">Zzz</a>',
+		title: '<a href="https://www.zzz.software/">Zzz</a>',
 		description: 'webtool',
 		subtitle: '<a class="chip" href="https://github.com/ryanatkn/zzz">source</a>',
 		motto: 'bot control web',

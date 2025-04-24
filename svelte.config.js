@@ -27,6 +27,7 @@ export default {
 					'https://*.fuz.dev/',
 					'https://*.ztack.net/',
 					'https://*.grogarden.org/',
+					'https://*.zzz.software/',
 					'https://*.zzzbot.dev/',
 					'https://*.cosmicplayground.org/',
 					'https://ryanatkn.github.io/',
