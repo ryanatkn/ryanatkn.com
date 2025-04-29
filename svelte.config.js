@@ -1,5 +1,7 @@
 import {vitePreprocess} from '@sveltejs/vite-plugin-svelte';
 import adapter from '@sveltejs/adapter-static';
+import {create_csp_directives} from '@ryanatkn/fuz/csp.js';
+import {csp_trusted_sources_of_ryanatkn} from '@ryanatkn/fuz/csp_of_ryanatkn.js';
 
 /** @type {import('@sveltejs/kit').Config} */
 export default {
@@ -11,30 +13,17 @@ export default {
 		paths: {relative: false}, // use root-absolute paths: https://kit.svelte.dev/docs/configuration#paths
 		alias: {$routes: 'src/routes'},
 		csp: {
-			directives: {
-				// TODO improve the CSP, is unsafe - https://github.com/ryanatkn/ryanatkn.com/pull/12
-				// 'default-src': ['self'],
-				// 'script-src': ['self'],
-				'connect-src': ['self', 'https://hci.social/'],
-				'style-src': ['self', 'unsafe-inline'], // support Svelte transitions - https://kit.svelte.dev/docs/configuration#csp
-				'img-src': [
-					'self',
-					'unsafe-inline', // TODO ideally this wouldn't be needed, added for Svelte
-					'https://*.ryanatkn.com/',
-					'https://*.spiderspace.org/',
-					'https://*.webdevladder.net/',
-					'https://*.dealt.dev/',
-					'https://*.fuz.dev/',
-					'https://*.ztack.net/',
-					'https://*.grogarden.org/',
-					'https://*.zzz.software/',
-					'https://*.zzzbot.dev/',
-					'https://*.cosmicplayground.org/',
-					'https://ryanatkn.github.io/',
-					'https://hci.social/',
-					'https://storage.googleapis.com/hci-social-storage/',
-				],
-			},
+			directives: create_csp_directives({
+				trusted_sources: csp_trusted_sources_of_ryanatkn.concat([
+					// These enable Mastodon comments for my account at https://hci.social/@ryanatkn
+					{source: 'https://hci.social/', trust: 'low', directives: ['connect-src']},
+					{source: 'https://storage.googleapis.com/hci-social-storage/', trust: 'low'},
+				]),
+				// directives: {
+				// TODO remove this, maybe related - https://github.com/sveltejs/kit/issues/11747
+				// 	'script-src-attr': ['unsafe-inline'],
+				// },
+			}),
 		},
 	},
 };
