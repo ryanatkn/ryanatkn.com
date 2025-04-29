@@ -62,7 +62,7 @@
 			</p>
 			<ul>
 				<li>
-					<a href="https://www.zzz.software/">Zzz</a> – webtool
+					<a href="https://www.zzz.software/">Zzz</a> – web environment
 				</li>
 				<li>
 					<a href="https://moss.ryanatkn.com/">Moss</a> – CSS framework and design system
