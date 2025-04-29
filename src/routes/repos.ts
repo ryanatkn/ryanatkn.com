@@ -1914,44 +1914,44 @@ export const repos: Array<Repo> = JSON.parse(
 					"types": "./dist/intersect.d.ts",\
 					"default": "./dist/intersect.js"\
 				},\
-				"./Library_Content.svelte": {\
-					"types": "./dist/Library_Content.svelte.d.ts",\
-					"svelte": "./dist/Library_Content.svelte",\
-					"default": "./dist/Library_Content.svelte"\
+				"./Docs_Content.svelte": {\
+					"types": "./dist/Docs_Content.svelte.d.ts",\
+					"svelte": "./dist/Docs_Content.svelte",\
+					"default": "./dist/Docs_Content.svelte"\
 				},\
-				"./Library_Footer.svelte": {\
-					"types": "./dist/Library_Footer.svelte.d.ts",\
-					"svelte": "./dist/Library_Footer.svelte",\
-					"default": "./dist/Library_Footer.svelte"\
+				"./Docs_Footer.svelte": {\
+					"types": "./dist/Docs_Footer.svelte.d.ts",\
+					"svelte": "./dist/Docs_Footer.svelte",\
+					"default": "./dist/Docs_Footer.svelte"\
 				},\
-				"./library_helpers.svelte.js": {\
-					"types": "./dist/library_helpers.svelte.d.ts",\
-					"default": "./dist/library_helpers.svelte.js"\
+				"./docs_helpers.svelte.js": {\
+					"types": "./dist/docs_helpers.svelte.d.ts",\
+					"default": "./dist/docs_helpers.svelte.js"\
 				},\
-				"./Library_Menu.svelte": {\
-					"types": "./dist/Library_Menu.svelte.d.ts",\
-					"svelte": "./dist/Library_Menu.svelte",\
-					"default": "./dist/Library_Menu.svelte"\
+				"./Docs_Menu.svelte": {\
+					"types": "./dist/Docs_Menu.svelte.d.ts",\
+					"svelte": "./dist/Docs_Menu.svelte",\
+					"default": "./dist/Docs_Menu.svelte"\
 				},\
-				"./Library_Page_Links.svelte": {\
-					"types": "./dist/Library_Page_Links.svelte.d.ts",\
-					"svelte": "./dist/Library_Page_Links.svelte",\
-					"default": "./dist/Library_Page_Links.svelte"\
+				"./Docs_Page_Links.svelte": {\
+					"types": "./dist/Docs_Page_Links.svelte.d.ts",\
+					"svelte": "./dist/Docs_Page_Links.svelte",\
+					"default": "./dist/Docs_Page_Links.svelte"\
 				},\
-				"./Library_Primary_Nav.svelte": {\
-					"types": "./dist/Library_Primary_Nav.svelte.d.ts",\
-					"svelte": "./dist/Library_Primary_Nav.svelte",\
-					"default": "./dist/Library_Primary_Nav.svelte"\
+				"./Docs_Primary_Nav.svelte": {\
+					"types": "./dist/Docs_Primary_Nav.svelte.d.ts",\
+					"svelte": "./dist/Docs_Primary_Nav.svelte",\
+					"default": "./dist/Docs_Primary_Nav.svelte"\
 				},\
-				"./Library_Secondary_Nav.svelte": {\
-					"types": "./dist/Library_Secondary_Nav.svelte.d.ts",\
-					"svelte": "./dist/Library_Secondary_Nav.svelte",\
-					"default": "./dist/Library_Secondary_Nav.svelte"\
+				"./Docs_Secondary_Nav.svelte": {\
+					"types": "./dist/Docs_Secondary_Nav.svelte.d.ts",\
+					"svelte": "./dist/Docs_Secondary_Nav.svelte",\
+					"default": "./dist/Docs_Secondary_Nav.svelte"\
 				},\
-				"./Library_Tertiary_Nav.svelte": {\
-					"types": "./dist/Library_Tertiary_Nav.svelte.d.ts",\
-					"svelte": "./dist/Library_Tertiary_Nav.svelte",\
-					"default": "./dist/Library_Tertiary_Nav.svelte"\
+				"./Docs_Tertiary_Nav.svelte": {\
+					"types": "./dist/Docs_Tertiary_Nav.svelte.d.ts",\
+					"svelte": "./dist/Docs_Tertiary_Nav.svelte",\
+					"default": "./dist/Docs_Tertiary_Nav.svelte"\
 				},\
 				"./Library.svelte": {\
 					"types": "./dist/Library.svelte.d.ts",\
@@ -2296,15 +2296,15 @@ export const repos: Array<Repo> = JSON.parse(
 						}\
 					]\
 				},\
-				"./Library_Content.svelte": {\
-					"path": "Library_Content.svelte",\
+				"./Docs_Content.svelte": {\
+					"path": "Docs_Content.svelte",\
 					"declarations": []\
 				},\
-				"./Library_Footer.svelte": {\
-					"path": "Library_Footer.svelte",\
+				"./Docs_Footer.svelte": {\
+					"path": "Docs_Footer.svelte",\
 					"declarations": []\
 				},\
-				"./library_helpers.svelte.js": {\
+				"./docs_helpers.svelte.js": {\
 					"path": "library_helpers.svelte.ts",\
 					"declarations": [\
 						{\
@@ -2320,37 +2320,37 @@ export const repos: Array<Repo> = JSON.parse(
 							"kind": "variable"\
 						},\
 						{\
-							"name": "Library_Link_Tag",\
+							"name": "Docs_Link_Tag",\
 							"kind": "type"\
 						},\
 						{\
-							"name": "Library_Link",\
+							"name": "Docs_Link",\
 							"kind": "type"\
 						},\
 						{\
-							"name": "Library_Links",\
+							"name": "Docs_Links",\
 							"kind": "class"\
 						}\
 					]\
 				},\
-				"./Library_Menu.svelte": {\
-					"path": "Library_Menu.svelte",\
+				"./Docs_Menu.svelte": {\
+					"path": "Docs_Menu.svelte",\
 					"declarations": []\
 				},\
-				"./Library_Page_Links.svelte": {\
-					"path": "Library_Page_Links.svelte",\
+				"./Docs_Page_Links.svelte": {\
+					"path": "Docs_Page_Links.svelte",\
 					"declarations": []\
 				},\
-				"./Library_Primary_Nav.svelte": {\
-					"path": "Library_Primary_Nav.svelte",\
+				"./Docs_Primary_Nav.svelte": {\
+					"path": "Docs_Primary_Nav.svelte",\
 					"declarations": []\
 				},\
-				"./Library_Secondary_Nav.svelte": {\
-					"path": "Library_Secondary_Nav.svelte",\
+				"./Docs_Secondary_Nav.svelte": {\
+					"path": "Docs_Secondary_Nav.svelte",\
 					"declarations": []\
 				},\
-				"./Library_Tertiary_Nav.svelte": {\
-					"path": "Library_Tertiary_Nav.svelte",\
+				"./Docs_Tertiary_Nav.svelte": {\
+					"path": "Docs_Tertiary_Nav.svelte",\
 					"declarations": []\
 				},\
 				"./Library.svelte": {\
@@ -4056,7 +4056,7 @@ export const repos: Array<Repo> = JSON.parse(
 					"path": "gro_plugin_sveltekit_library.ts",\
 					"declarations": [\
 						{\
-							"name": "Gro_Plugin_Sveltekit_Library_Options",\
+							"name": "Gro_Plugin_Sveltekit_Docs_Options",\
 							"kind": "type"\
 						},\
 						{\
