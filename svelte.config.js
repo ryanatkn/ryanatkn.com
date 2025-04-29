@@ -19,10 +19,6 @@ export default {
 					{source: 'https://hci.social/', trust: 'low', directives: ['connect-src']},
 					{source: 'https://storage.googleapis.com/hci-social-storage/', trust: 'low'},
 				]),
-				// directives: {
-				// TODO remove this, maybe related - https://github.com/sveltejs/kit/issues/11747
-				// 	'script-src-attr': ['unsafe-inline'],
-				// },
 			}),
 		},
 	},
