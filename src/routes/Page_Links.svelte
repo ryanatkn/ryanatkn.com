@@ -1,9 +1,9 @@
 <script lang="ts">
 	import {base} from '$app/paths';
-	import {page} from '$app/stores';
+	import {page} from '$app/state';
 	import Card from '@ryanatkn/fuz/Card.svelte';
 
-	const pathname = $derived($page.url.pathname);
+	const pathname = $derived(page.url.pathname);
 </script>
 
 <!-- TODO `endsWith` isn't correct -->

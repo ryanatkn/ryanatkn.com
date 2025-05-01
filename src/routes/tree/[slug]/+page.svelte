@@ -1,5 +1,5 @@
 <script lang="ts">
-	import {page} from '$app/stores';
+	import {page} from '$app/state';
 	import Tree_Item_Page from '@ryanatkn/fuz_gitops/Tree_Item_Page.svelte';
 	import {repos_context} from '@ryanatkn/fuz_gitops/repo.js';
 
@@ -7,7 +7,7 @@
 
 	const {repo, repos} = repos_context.get();
 
-	const {slug} = $derived($page.params);
+	const {slug} = $derived(page.params);
 </script>
 
 <svelte:head>
