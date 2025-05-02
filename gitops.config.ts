@@ -3,7 +3,10 @@ import type {Create_Gitops_Config} from '@ryanatkn/fuz_gitops/gitops_config.js';
 const config: Create_Gitops_Config = () => {
 	return {
 		repos: [
-			'https://github.com/ryanatkn/zzz',
+			{
+				repo_url: 'https://github.com/ryanatkn/zzz',
+				branch: 'add-server',
+			},
 			'https://github.com/ryanatkn/moss',
 			'https://github.com/ryanatkn/fuz',
 			'https://github.com/ryanatkn/gro',
