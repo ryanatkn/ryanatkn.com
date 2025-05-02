@@ -1529,11 +1529,11 @@ export const repos: Array<Repo> = JSON.parse(
 							"kind": "variable"\
 						},\
 						{\
-							"name": "outline_width_2",\
+							"name": "outline_width_focus",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "outline_width_3",\
+							"name": "outline_width_active",\
 							"kind": "variable"\
 						},\
 						{\
@@ -3431,9 +3431,9 @@ export const repos: Array<Repo> = JSON.parse(
 					"types": "./dist/svelte_helpers.d.ts",\
 					"default": "./dist/svelte_helpers.js"\
 				},\
-				"./sveltekit_config.js": {\
-					"types": "./dist/sveltekit_config.d.ts",\
-					"default": "./dist/sveltekit_config.js"\
+				"./svelte_config.js": {\
+					"types": "./dist/svelte_config.d.ts",\
+					"default": "./dist/svelte_config.js"\
 				},\
 				"./sveltekit_helpers.js": {\
 					"types": "./dist/sveltekit_helpers.d.ts",\
@@ -5082,11 +5082,11 @@ export const repos: Array<Repo> = JSON.parse(
 						}\
 					]\
 				},\
-				"./sveltekit_config.js": {\
-					"path": "sveltekit_config.ts",\
+				"./svelte_config.js": {\
+					"path": "svelte_config.ts",\
 					"declarations": [\
 						{\
-							"name": "load_sveltekit_config",\
+							"name": "load_svelte_config",\
 							"kind": "function"\
 						},\
 						{\
@@ -5094,7 +5094,7 @@ export const repos: Array<Repo> = JSON.parse(
 							"kind": "type"\
 						},\
 						{\
-							"name": "init_sveltekit_config",\
+							"name": "parse_svelte_config",\
 							"kind": "function"\
 						},\
 						{\
@@ -5102,7 +5102,7 @@ export const repos: Array<Repo> = JSON.parse(
 							"kind": "function"\
 						},\
 						{\
-							"name": "default_sveltekit_config",\
+							"name": "default_svelte_config",\
 							"kind": "variable"\
 						}\
 					]\

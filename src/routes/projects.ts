@@ -15,15 +15,16 @@ export const projects: Array<Project_Info> = [
 		description: 'my free and open source software',
 	},
 	{
+		description: 'web environment',
+		homepage: 'https://www.zzz.software/',
+		motto: 'bot control web',
+		logo: 'logo.svg',
+		logo_alt: "three sleepy z's",
+		glyph: '💤',
 		name: 'zzz',
 		repo: '@ryanatkn/zzz',
 		title: '<a href="https://www.zzz.software/">Zzz</a>',
-		description: 'web environment',
 		subtitle: '<a class="chip" href="https://github.com/ryanatkn/zzz">source</a>',
-		motto: 'bot control web',
-		glyph: '💤',
-		logo: 'logo.svg',
-		logo_alt: "three sleepy z's",
 	},
 	{
 		description:

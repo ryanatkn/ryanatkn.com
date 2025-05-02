@@ -45,7 +45,7 @@
 	}
 	.blog_card {
 		font-size: var(--size_lg);
-		max-width: var(--width_sm);
+		max-width: var(--distance_sm);
 		background-color: var(--bg);
 		border-width: var(--border_width);
 		border-style: solid;
