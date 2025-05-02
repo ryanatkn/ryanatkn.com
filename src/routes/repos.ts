@@ -30,37 +30,53 @@ export const repos: Array<Repo> = JSON.parse(
 				"check": "gro check",\
 				"test": "gro test",\
 				"preview": "vite preview",\
-				"deploy": "gro deploy"\
+				"deploy": "gro deploy",\
+				"serve": "gro build && npm run preview & node dist_server/server/server.js"\
 			},\
 			"type": "module",\
 			"engines": {\
-				"node": ">=20.17"\
+				"node": ">=22.11"\
 			},\
 			"peerDependencies": {\
 				"@sveltejs/kit": "^2",\
 				"svelte": "^5"\
 			},\
 			"devDependencies": {\
-				"@changesets/changelog-git": "^0.2.0",\
-				"@ryanatkn/belt": "^0.29.0",\
-				"@ryanatkn/eslint-config": "^0.6.0",\
-				"@ryanatkn/fuz": "^0.131.5",\
-				"@ryanatkn/gro": "^0.148.0",\
-				"@ryanatkn/moss": "^0.21.1",\
+				"@changesets/changelog-git": "^0.2.1",\
+				"@ryanatkn/eslint-config": "^0.8.0",\
+				"@ryanatkn/fuz": "^0.140.0",\
+				"@ryanatkn/gro": "^0.153.1",\
+				"@ryanatkn/moss": "^0.27.0",\
 				"@sveltejs/adapter-static": "^3.0.8",\
-				"@sveltejs/kit": "^2.15.1",\
-				"@sveltejs/package": "^2.3.7",\
-				"@sveltejs/vite-plugin-svelte": "^4.0.1",\
-				"eslint": "^9.17.0",\
-				"eslint-plugin-svelte": "^2.46.1",\
-				"prettier": "^3.4.2",\
-				"prettier-plugin-svelte": "^3.3.2",\
-				"svelte": "^5.16.0",\
-				"svelte-check": "^4.1.1",\
+				"@sveltejs/kit": "^2.20.8",\
+				"@sveltejs/package": "^2.3.11",\
+				"@sveltejs/vite-plugin-svelte": "^5.0.3",\
+				"eslint": "^9.25.1",\
+				"eslint-plugin-svelte": "^3.5.1",\
+				"jsdom": "^26.1.0",\
+				"ollama": "^0.5.15",\
+				"prettier": "^3.5.3",\
+				"prettier-plugin-svelte": "^3.3.3",\
+				"svelte": "^5.28.2",\
+				"svelte-check": "^4.1.6",\
 				"tslib": "^2.8.1",\
-				"typescript": "^5.7.2",\
-				"typescript-eslint": "^8.19.0",\
-				"uvu": "^0.5.6"\
+				"typescript": "^5.8.3",\
+				"typescript-eslint": "^8.31.1",\
+				"vitest": "^3.1.2",\
+				"zod": "^3.24.3"\
+			},\
+			"dependencies": {\
+				"@anthropic-ai/sdk": "^0.40.1",\
+				"@google/generative-ai": "^0.24.1",\
+				"@hono/node-server": "^1.14.1",\
+				"@hono/node-ws": "^1.1.4",\
+				"@ryanatkn/belt": "^0.30.2",\
+				"date-fns": "^4.1.0",\
+				"devalue": "^5.1.1",\
+				"esm-env": "^1.2.2",\
+				"gpt-tokenizer": "^2.9.0",\
+				"hono": "^4.7.8",\
+				"openai": "^4.96.2"\
 			},\
 			"prettier": {\
 				"plugins": [\
@@ -87,23 +103,814 @@ export const repos: Array<Repo> = JSON.parse(
 			],\
 			"exports": {\
 				"./package.json": "./package.json",\
-				"./Hud_Root.svelte": {\
-					"types": "./dist/Hud_Root.svelte.d.ts",\
-					"svelte": "./dist/Hud_Root.svelte",\
-					"default": "./dist/Hud_Root.svelte"\
+				"./Action_Detail.svelte": {\
+					"types": "./dist/Action_Detail.svelte.d.ts",\
+					"svelte": "./dist/Action_Detail.svelte",\
+					"default": "./dist/Action_Detail.svelte"\
 				},\
-				"./hud.svelte.js": {\
-					"types": "./dist/hud.svelte.d.ts",\
-					"default": "./dist/hud.svelte.js"\
+				"./Action_List.svelte": {\
+					"types": "./dist/Action_List.svelte.d.ts",\
+					"svelte": "./dist/Action_List.svelte",\
+					"default": "./dist/Action_List.svelte"\
 				},\
-				"./zzz_data.svelte.js": {\
-					"types": "./dist/zzz_data.svelte.d.ts",\
-					"default": "./dist/zzz_data.svelte.js"\
+				"./action_types.js": {\
+					"types": "./dist/action_types.d.ts",\
+					"default": "./dist/action_types.js"\
 				},\
-				"./Zzz_Main.svelte": {\
-					"types": "./dist/Zzz_Main.svelte.d.ts",\
-					"svelte": "./dist/Zzz_Main.svelte",\
-					"default": "./dist/Zzz_Main.svelte"\
+				"./action.svelte.js": {\
+					"types": "./dist/action.svelte.d.ts",\
+					"default": "./dist/action.svelte.js"\
+				},\
+				"./actions.svelte.js": {\
+					"types": "./dist/actions.svelte.d.ts",\
+					"default": "./dist/actions.svelte.js"\
+				},\
+				"./app.svelte.js": {\
+					"types": "./dist/app.svelte.d.ts",\
+					"default": "./dist/app.svelte.js"\
+				},\
+				"./Bit_Editor_For_Diskfile.svelte": {\
+					"types": "./dist/Bit_Editor_For_Diskfile.svelte.d.ts",\
+					"svelte": "./dist/Bit_Editor_For_Diskfile.svelte",\
+					"default": "./dist/Bit_Editor_For_Diskfile.svelte"\
+				},\
+				"./Bit_Editor_For_Sequence.svelte": {\
+					"types": "./dist/Bit_Editor_For_Sequence.svelte.d.ts",\
+					"svelte": "./dist/Bit_Editor_For_Sequence.svelte",\
+					"default": "./dist/Bit_Editor_For_Sequence.svelte"\
+				},\
+				"./Bit_Editor_For_Text.svelte": {\
+					"types": "./dist/Bit_Editor_For_Text.svelte.d.ts",\
+					"svelte": "./dist/Bit_Editor_For_Text.svelte",\
+					"default": "./dist/Bit_Editor_For_Text.svelte"\
+				},\
+				"./bit_helpers.js": {\
+					"types": "./dist/bit_helpers.d.ts",\
+					"default": "./dist/bit_helpers.js"\
+				},\
+				"./Bit_List.svelte": {\
+					"types": "./dist/Bit_List.svelte.d.ts",\
+					"svelte": "./dist/Bit_List.svelte",\
+					"default": "./dist/Bit_List.svelte"\
+				},\
+				"./Bit_Listitem.svelte": {\
+					"types": "./dist/Bit_Listitem.svelte.d.ts",\
+					"svelte": "./dist/Bit_Listitem.svelte",\
+					"default": "./dist/Bit_Listitem.svelte"\
+				},\
+				"./Bit_Picker_Dialog.svelte": {\
+					"types": "./dist/Bit_Picker_Dialog.svelte.d.ts",\
+					"svelte": "./dist/Bit_Picker_Dialog.svelte",\
+					"default": "./dist/Bit_Picker_Dialog.svelte"\
+				},\
+				"./Bit_Picker.svelte": {\
+					"types": "./dist/Bit_Picker.svelte.d.ts",\
+					"svelte": "./dist/Bit_Picker.svelte",\
+					"default": "./dist/Bit_Picker.svelte"\
+				},\
+				"./Bit_Remove_Button.svelte": {\
+					"types": "./dist/Bit_Remove_Button.svelte.d.ts",\
+					"svelte": "./dist/Bit_Remove_Button.svelte",\
+					"default": "./dist/Bit_Remove_Button.svelte"\
+				},\
+				"./Bit_Stats.svelte": {\
+					"types": "./dist/Bit_Stats.svelte.d.ts",\
+					"svelte": "./dist/Bit_Stats.svelte",\
+					"default": "./dist/Bit_Stats.svelte"\
+				},\
+				"./Bit_Summary.svelte": {\
+					"types": "./dist/Bit_Summary.svelte.d.ts",\
+					"svelte": "./dist/Bit_Summary.svelte",\
+					"default": "./dist/Bit_Summary.svelte"\
+				},\
+				"./Bit_Toggle_Button.svelte": {\
+					"types": "./dist/Bit_Toggle_Button.svelte.d.ts",\
+					"svelte": "./dist/Bit_Toggle_Button.svelte",\
+					"default": "./dist/Bit_Toggle_Button.svelte"\
+				},\
+				"./Bit_View.svelte": {\
+					"types": "./dist/Bit_View.svelte.d.ts",\
+					"svelte": "./dist/Bit_View.svelte",\
+					"default": "./dist/Bit_View.svelte"\
+				},\
+				"./bit.svelte.js": {\
+					"types": "./dist/bit.svelte.d.ts",\
+					"default": "./dist/bit.svelte.js"\
+				},\
+				"./bits.svelte.js": {\
+					"types": "./dist/bits.svelte.d.ts",\
+					"default": "./dist/bits.svelte.js"\
+				},\
+				"./Capabilities_View.svelte": {\
+					"types": "./dist/Capabilities_View.svelte.d.ts",\
+					"svelte": "./dist/Capabilities_View.svelte",\
+					"default": "./dist/Capabilities_View.svelte"\
+				},\
+				"./capabilities.svelte.js": {\
+					"types": "./dist/capabilities.svelte.d.ts",\
+					"default": "./dist/capabilities.svelte.js"\
+				},\
+				"./Capability_Filesystem.svelte": {\
+					"types": "./dist/Capability_Filesystem.svelte.d.ts",\
+					"svelte": "./dist/Capability_Filesystem.svelte",\
+					"default": "./dist/Capability_Filesystem.svelte"\
+				},\
+				"./Capability_Ollama.svelte": {\
+					"types": "./dist/Capability_Ollama.svelte.d.ts",\
+					"svelte": "./dist/Capability_Ollama.svelte",\
+					"default": "./dist/Capability_Ollama.svelte"\
+				},\
+				"./Capability_Server.svelte": {\
+					"types": "./dist/Capability_Server.svelte.d.ts",\
+					"svelte": "./dist/Capability_Server.svelte",\
+					"default": "./dist/Capability_Server.svelte"\
+				},\
+				"./Capability_System.svelte": {\
+					"types": "./dist/Capability_System.svelte.d.ts",\
+					"svelte": "./dist/Capability_System.svelte",\
+					"default": "./dist/Capability_System.svelte"\
+				},\
+				"./Capability_Websocket.svelte": {\
+					"types": "./dist/Capability_Websocket.svelte.d.ts",\
+					"svelte": "./dist/Capability_Websocket.svelte",\
+					"default": "./dist/Capability_Websocket.svelte"\
+				},\
+				"./cell_classes.js": {\
+					"types": "./dist/cell_classes.d.ts",\
+					"default": "./dist/cell_classes.js"\
+				},\
+				"./cell_helpers.js": {\
+					"types": "./dist/cell_helpers.d.ts",\
+					"default": "./dist/cell_helpers.js"\
+				},\
+				"./cell_registry.svelte.js": {\
+					"types": "./dist/cell_registry.svelte.d.ts",\
+					"default": "./dist/cell_registry.svelte.js"\
+				},\
+				"./cell_types.js": {\
+					"types": "./dist/cell_types.d.ts",\
+					"default": "./dist/cell_types.js"\
+				},\
+				"./cell.svelte.js": {\
+					"types": "./dist/cell.svelte.d.ts",\
+					"default": "./dist/cell.svelte.js"\
+				},\
+				"./Chat_Initializer.svelte": {\
+					"types": "./dist/Chat_Initializer.svelte.d.ts",\
+					"svelte": "./dist/Chat_Initializer.svelte",\
+					"default": "./dist/Chat_Initializer.svelte"\
+				},\
+				"./Chat_List.svelte": {\
+					"types": "./dist/Chat_List.svelte.d.ts",\
+					"svelte": "./dist/Chat_List.svelte",\
+					"default": "./dist/Chat_List.svelte"\
+				},\
+				"./Chat_Listitem.svelte": {\
+					"types": "./dist/Chat_Listitem.svelte.d.ts",\
+					"svelte": "./dist/Chat_Listitem.svelte",\
+					"default": "./dist/Chat_Listitem.svelte"\
+				},\
+				"./Chat_Tape_Add_By_Model.svelte": {\
+					"types": "./dist/Chat_Tape_Add_By_Model.svelte.d.ts",\
+					"svelte": "./dist/Chat_Tape_Add_By_Model.svelte",\
+					"default": "./dist/Chat_Tape_Add_By_Model.svelte"\
+				},\
+				"./Chat_Tape.svelte": {\
+					"types": "./dist/Chat_Tape.svelte.d.ts",\
+					"svelte": "./dist/Chat_Tape.svelte",\
+					"default": "./dist/Chat_Tape.svelte"\
+				},\
+				"./chat_template.js": {\
+					"types": "./dist/chat_template.d.ts",\
+					"default": "./dist/chat_template.js"\
+				},\
+				"./Chat_View_Multi.svelte": {\
+					"types": "./dist/Chat_View_Multi.svelte.d.ts",\
+					"svelte": "./dist/Chat_View_Multi.svelte",\
+					"default": "./dist/Chat_View_Multi.svelte"\
+				},\
+				"./Chat_View_Simple.svelte": {\
+					"types": "./dist/Chat_View_Simple.svelte.d.ts",\
+					"svelte": "./dist/Chat_View_Simple.svelte",\
+					"default": "./dist/Chat_View_Simple.svelte"\
+				},\
+				"./Chat_View.svelte": {\
+					"types": "./dist/Chat_View.svelte.d.ts",\
+					"svelte": "./dist/Chat_View.svelte",\
+					"default": "./dist/Chat_View.svelte"\
+				},\
+				"./chat.svelte.js": {\
+					"types": "./dist/chat.svelte.d.ts",\
+					"default": "./dist/chat.svelte.js"\
+				},\
+				"./chats.svelte.js": {\
+					"types": "./dist/chats.svelte.d.ts",\
+					"default": "./dist/chats.svelte.js"\
+				},\
+				"./Clear_Restore_Button.svelte": {\
+					"types": "./dist/Clear_Restore_Button.svelte.d.ts",\
+					"svelte": "./dist/Clear_Restore_Button.svelte",\
+					"default": "./dist/Clear_Restore_Button.svelte"\
+				},\
+				"./config_defaults.js": {\
+					"types": "./dist/config_defaults.d.ts",\
+					"default": "./dist/config_defaults.js"\
+				},\
+				"./config_helpers.js": {\
+					"types": "./dist/config_helpers.d.ts",\
+					"default": "./dist/config_helpers.js"\
+				},\
+				"./config.js": {\
+					"types": "./dist/config.d.ts",\
+					"default": "./dist/config.js"\
+				},\
+				"./Confirm_Button.svelte": {\
+					"types": "./dist/Confirm_Button.svelte.d.ts",\
+					"svelte": "./dist/Confirm_Button.svelte",\
+					"default": "./dist/Confirm_Button.svelte"\
+				},\
+				"./constants.js": {\
+					"types": "./dist/constants.d.ts",\
+					"default": "./dist/constants.js"\
+				},\
+				"./Content_Editor.svelte": {\
+					"types": "./dist/Content_Editor.svelte.d.ts",\
+					"svelte": "./dist/Content_Editor.svelte",\
+					"default": "./dist/Content_Editor.svelte"\
+				},\
+				"./Content_Preview.svelte": {\
+					"types": "./dist/Content_Preview.svelte.d.ts",\
+					"svelte": "./dist/Content_Preview.svelte",\
+					"default": "./dist/Content_Preview.svelte"\
+				},\
+				"./Content_Stats.svelte": {\
+					"types": "./dist/Content_Stats.svelte.d.ts",\
+					"svelte": "./dist/Content_Stats.svelte",\
+					"default": "./dist/Content_Stats.svelte"\
+				},\
+				"./Contextmenu_Bit.svelte": {\
+					"types": "./dist/Contextmenu_Bit.svelte.d.ts",\
+					"svelte": "./dist/Contextmenu_Bit.svelte",\
+					"default": "./dist/Contextmenu_Bit.svelte"\
+				},\
+				"./Contextmenu_Chat.svelte": {\
+					"types": "./dist/Contextmenu_Chat.svelte.d.ts",\
+					"svelte": "./dist/Contextmenu_Chat.svelte",\
+					"default": "./dist/Contextmenu_Chat.svelte"\
+				},\
+				"./Contextmenu_Chats.svelte": {\
+					"types": "./dist/Contextmenu_Chats.svelte.d.ts",\
+					"svelte": "./dist/Contextmenu_Chats.svelte",\
+					"default": "./dist/Contextmenu_Chats.svelte"\
+				},\
+				"./Contextmenu_Diskfile.svelte": {\
+					"types": "./dist/Contextmenu_Diskfile.svelte.d.ts",\
+					"svelte": "./dist/Contextmenu_Diskfile.svelte",\
+					"default": "./dist/Contextmenu_Diskfile.svelte"\
+				},\
+				"./Contextmenu_Entry_Copy_To_Clipboard.svelte": {\
+					"types": "./dist/Contextmenu_Entry_Copy_To_Clipboard.svelte.d.ts",\
+					"svelte": "./dist/Contextmenu_Entry_Copy_To_Clipboard.svelte",\
+					"default": "./dist/Contextmenu_Entry_Copy_To_Clipboard.svelte"\
+				},\
+				"./Contextmenu_Entry_Toggle.svelte": {\
+					"types": "./dist/Contextmenu_Entry_Toggle.svelte.d.ts",\
+					"svelte": "./dist/Contextmenu_Entry_Toggle.svelte",\
+					"default": "./dist/Contextmenu_Entry_Toggle.svelte"\
+				},\
+				"./Contextmenu_Prompt.svelte": {\
+					"types": "./dist/Contextmenu_Prompt.svelte.d.ts",\
+					"svelte": "./dist/Contextmenu_Prompt.svelte",\
+					"default": "./dist/Contextmenu_Prompt.svelte"\
+				},\
+				"./Contextmenu_Strip.svelte": {\
+					"types": "./dist/Contextmenu_Strip.svelte.d.ts",\
+					"svelte": "./dist/Contextmenu_Strip.svelte",\
+					"default": "./dist/Contextmenu_Strip.svelte"\
+				},\
+				"./Contextmenu_Tape.svelte": {\
+					"types": "./dist/Contextmenu_Tape.svelte.d.ts",\
+					"svelte": "./dist/Contextmenu_Tape.svelte",\
+					"default": "./dist/Contextmenu_Tape.svelte"\
+				},\
+				"./Dashboard_Capabilities.svelte": {\
+					"types": "./dist/Dashboard_Capabilities.svelte.d.ts",\
+					"svelte": "./dist/Dashboard_Capabilities.svelte",\
+					"default": "./dist/Dashboard_Capabilities.svelte"\
+				},\
+				"./Dashboard_Chats.svelte": {\
+					"types": "./dist/Dashboard_Chats.svelte.d.ts",\
+					"svelte": "./dist/Dashboard_Chats.svelte",\
+					"default": "./dist/Dashboard_Chats.svelte"\
+				},\
+				"./Dashboard_Diskfiles.svelte": {\
+					"types": "./dist/Dashboard_Diskfiles.svelte.d.ts",\
+					"svelte": "./dist/Dashboard_Diskfiles.svelte",\
+					"default": "./dist/Dashboard_Diskfiles.svelte"\
+				},\
+				"./Dashboard_Home.svelte": {\
+					"types": "./dist/Dashboard_Home.svelte.d.ts",\
+					"svelte": "./dist/Dashboard_Home.svelte",\
+					"default": "./dist/Dashboard_Home.svelte"\
+				},\
+				"./Dashboard_Log.svelte": {\
+					"types": "./dist/Dashboard_Log.svelte.d.ts",\
+					"svelte": "./dist/Dashboard_Log.svelte",\
+					"default": "./dist/Dashboard_Log.svelte"\
+				},\
+				"./Dashboard_Models.svelte": {\
+					"types": "./dist/Dashboard_Models.svelte.d.ts",\
+					"svelte": "./dist/Dashboard_Models.svelte",\
+					"default": "./dist/Dashboard_Models.svelte"\
+				},\
+				"./Dashboard_Prompts.svelte": {\
+					"types": "./dist/Dashboard_Prompts.svelte.d.ts",\
+					"svelte": "./dist/Dashboard_Prompts.svelte",\
+					"default": "./dist/Dashboard_Prompts.svelte"\
+				},\
+				"./Dashboard_Providers.svelte": {\
+					"types": "./dist/Dashboard_Providers.svelte.d.ts",\
+					"svelte": "./dist/Dashboard_Providers.svelte",\
+					"default": "./dist/Dashboard_Providers.svelte"\
+				},\
+				"./Dashboard_Settings.svelte": {\
+					"types": "./dist/Dashboard_Settings.svelte.d.ts",\
+					"svelte": "./dist/Dashboard_Settings.svelte",\
+					"default": "./dist/Dashboard_Settings.svelte"\
+				},\
+				"./Dashboard.svelte": {\
+					"types": "./dist/Dashboard.svelte.d.ts",\
+					"svelte": "./dist/Dashboard.svelte",\
+					"default": "./dist/Dashboard.svelte"\
+				},\
+				"./Diskfile_Actions.svelte": {\
+					"types": "./dist/Diskfile_Actions.svelte.d.ts",\
+					"svelte": "./dist/Diskfile_Actions.svelte",\
+					"default": "./dist/Diskfile_Actions.svelte"\
+				},\
+				"./Diskfile_Bit_View.svelte": {\
+					"types": "./dist/Diskfile_Bit_View.svelte.d.ts",\
+					"svelte": "./dist/Diskfile_Bit_View.svelte",\
+					"default": "./dist/Diskfile_Bit_View.svelte"\
+				},\
+				"./Diskfile_Editor_Nav.svelte": {\
+					"types": "./dist/Diskfile_Editor_Nav.svelte.d.ts",\
+					"svelte": "./dist/Diskfile_Editor_Nav.svelte",\
+					"default": "./dist/Diskfile_Editor_Nav.svelte"\
+				},\
+				"./diskfile_editor_state.svelte.js": {\
+					"types": "./dist/diskfile_editor_state.svelte.d.ts",\
+					"default": "./dist/diskfile_editor_state.svelte.js"\
+				},\
+				"./Diskfile_Editor_View.svelte": {\
+					"types": "./dist/Diskfile_Editor_View.svelte.d.ts",\
+					"svelte": "./dist/Diskfile_Editor_View.svelte",\
+					"default": "./dist/Diskfile_Editor_View.svelte"\
+				},\
+				"./Diskfile_Explorer.svelte": {\
+					"types": "./dist/Diskfile_Explorer.svelte.d.ts",\
+					"svelte": "./dist/Diskfile_Explorer.svelte",\
+					"default": "./dist/Diskfile_Explorer.svelte"\
+				},\
+				"./diskfile_helpers.js": {\
+					"types": "./dist/diskfile_helpers.d.ts",\
+					"default": "./dist/diskfile_helpers.js"\
+				},\
+				"./Diskfile_History_View.svelte": {\
+					"types": "./dist/Diskfile_History_View.svelte.d.ts",\
+					"svelte": "./dist/Diskfile_History_View.svelte",\
+					"default": "./dist/Diskfile_History_View.svelte"\
+				},\
+				"./diskfile_history.svelte.js": {\
+					"types": "./dist/diskfile_history.svelte.d.ts",\
+					"default": "./dist/diskfile_history.svelte.js"\
+				},\
+				"./Diskfile_Info.svelte": {\
+					"types": "./dist/Diskfile_Info.svelte.d.ts",\
+					"svelte": "./dist/Diskfile_Info.svelte",\
+					"default": "./dist/Diskfile_Info.svelte"\
+				},\
+				"./Diskfile_Listitem.svelte": {\
+					"types": "./dist/Diskfile_Listitem.svelte.d.ts",\
+					"svelte": "./dist/Diskfile_Listitem.svelte",\
+					"default": "./dist/Diskfile_Listitem.svelte"\
+				},\
+				"./Diskfile_Metrics.svelte": {\
+					"types": "./dist/Diskfile_Metrics.svelte.d.ts",\
+					"svelte": "./dist/Diskfile_Metrics.svelte",\
+					"default": "./dist/Diskfile_Metrics.svelte"\
+				},\
+				"./Diskfile_Picker_Dialog.svelte": {\
+					"types": "./dist/Diskfile_Picker_Dialog.svelte.d.ts",\
+					"svelte": "./dist/Diskfile_Picker_Dialog.svelte",\
+					"default": "./dist/Diskfile_Picker_Dialog.svelte"\
+				},\
+				"./Diskfile_Picker.svelte": {\
+					"types": "./dist/Diskfile_Picker.svelte.d.ts",\
+					"svelte": "./dist/Diskfile_Picker.svelte",\
+					"default": "./dist/Diskfile_Picker.svelte"\
+				},\
+				"./Diskfile_Tab_Listitem.svelte": {\
+					"types": "./dist/Diskfile_Tab_Listitem.svelte.d.ts",\
+					"svelte": "./dist/Diskfile_Tab_Listitem.svelte",\
+					"default": "./dist/Diskfile_Tab_Listitem.svelte"\
+				},\
+				"./diskfile_tab.svelte.js": {\
+					"types": "./dist/diskfile_tab.svelte.d.ts",\
+					"default": "./dist/diskfile_tab.svelte.js"\
+				},\
+				"./diskfile_tabs.svelte.js": {\
+					"types": "./dist/diskfile_tabs.svelte.d.ts",\
+					"default": "./dist/diskfile_tabs.svelte.js"\
+				},\
+				"./diskfile_types.js": {\
+					"types": "./dist/diskfile_types.d.ts",\
+					"default": "./dist/diskfile_types.js"\
+				},\
+				"./diskfile.svelte.js": {\
+					"types": "./dist/diskfile.svelte.d.ts",\
+					"default": "./dist/diskfile.svelte.js"\
+				},\
+				"./diskfiles_editor.svelte.js": {\
+					"types": "./dist/diskfiles_editor.svelte.d.ts",\
+					"default": "./dist/diskfiles_editor.svelte.js"\
+				},\
+				"./diskfiles.svelte.js": {\
+					"types": "./dist/diskfiles.svelte.d.ts",\
+					"default": "./dist/diskfiles.svelte.js"\
+				},\
+				"./Error_Message.svelte": {\
+					"types": "./dist/Error_Message.svelte.d.ts",\
+					"svelte": "./dist/Error_Message.svelte",\
+					"default": "./dist/Error_Message.svelte"\
+				},\
+				"./External_Link_Icon.svelte": {\
+					"types": "./dist/External_Link_Icon.svelte.d.ts",\
+					"svelte": "./dist/External_Link_Icon.svelte",\
+					"default": "./dist/External_Link_Icon.svelte"\
+				},\
+				"./External_Link.svelte": {\
+					"types": "./dist/External_Link.svelte.d.ts",\
+					"svelte": "./dist/External_Link.svelte",\
+					"default": "./dist/External_Link.svelte"\
+				},\
+				"./Glyph.svelte": {\
+					"types": "./dist/Glyph.svelte.d.ts",\
+					"svelte": "./dist/Glyph.svelte",\
+					"default": "./dist/Glyph.svelte"\
+				},\
+				"./glyphs.js": {\
+					"types": "./dist/glyphs.d.ts",\
+					"default": "./dist/glyphs.js"\
+				},\
+				"./helpers.js": {\
+					"types": "./dist/helpers.d.ts",\
+					"default": "./dist/helpers.js"\
+				},\
+				"./indexed_collection_helpers.js": {\
+					"types": "./dist/indexed_collection_helpers.d.ts",\
+					"default": "./dist/indexed_collection_helpers.js"\
+				},\
+				"./indexed_collection.svelte.js": {\
+					"types": "./dist/indexed_collection.svelte.d.ts",\
+					"default": "./dist/indexed_collection.svelte.js"\
+				},\
+				"./list_helpers.js": {\
+					"types": "./dist/list_helpers.d.ts",\
+					"default": "./dist/list_helpers.js"\
+				},\
+				"./Main_Dialog.svelte": {\
+					"types": "./dist/Main_Dialog.svelte.d.ts",\
+					"svelte": "./dist/Main_Dialog.svelte",\
+					"default": "./dist/Main_Dialog.svelte"\
+				},\
+				"./Model_Detail.svelte": {\
+					"types": "./dist/Model_Detail.svelte.d.ts",\
+					"svelte": "./dist/Model_Detail.svelte",\
+					"default": "./dist/Model_Detail.svelte"\
+				},\
+				"./Model_Link.svelte": {\
+					"types": "./dist/Model_Link.svelte.d.ts",\
+					"svelte": "./dist/Model_Link.svelte",\
+					"default": "./dist/Model_Link.svelte"\
+				},\
+				"./Model_Listitem.svelte": {\
+					"types": "./dist/Model_Listitem.svelte.d.ts",\
+					"svelte": "./dist/Model_Listitem.svelte",\
+					"default": "./dist/Model_Listitem.svelte"\
+				},\
+				"./Model_Picker_Dialog.svelte": {\
+					"types": "./dist/Model_Picker_Dialog.svelte.d.ts",\
+					"svelte": "./dist/Model_Picker_Dialog.svelte",\
+					"default": "./dist/Model_Picker_Dialog.svelte"\
+				},\
+				"./Model_Picker.svelte": {\
+					"types": "./dist/Model_Picker.svelte.d.ts",\
+					"svelte": "./dist/Model_Picker.svelte",\
+					"default": "./dist/Model_Picker.svelte"\
+				},\
+				"./Model_Select.svelte": {\
+					"types": "./dist/Model_Select.svelte.d.ts",\
+					"svelte": "./dist/Model_Select.svelte",\
+					"default": "./dist/Model_Select.svelte"\
+				},\
+				"./Model_Summary.svelte": {\
+					"types": "./dist/Model_Summary.svelte.d.ts",\
+					"svelte": "./dist/Model_Summary.svelte",\
+					"default": "./dist/Model_Summary.svelte"\
+				},\
+				"./model.svelte.js": {\
+					"types": "./dist/model.svelte.d.ts",\
+					"default": "./dist/model.svelte.js"\
+				},\
+				"./models.svelte.js": {\
+					"types": "./dist/models.svelte.d.ts",\
+					"default": "./dist/models.svelte.js"\
+				},\
+				"./nav_helpers.js": {\
+					"types": "./dist/nav_helpers.d.ts",\
+					"default": "./dist/nav_helpers.js"\
+				},\
+				"./Nav_Link.svelte": {\
+					"types": "./dist/Nav_Link.svelte.d.ts",\
+					"svelte": "./dist/Nav_Link.svelte",\
+					"default": "./dist/Nav_Link.svelte"\
+				},\
+				"./nav.js": {\
+					"types": "./dist/nav.d.ts",\
+					"default": "./dist/nav.js"\
+				},\
+				"./ollama.js": {\
+					"types": "./dist/ollama.d.ts",\
+					"default": "./dist/ollama.js"\
+				},\
+				"./Picker_Dialog.svelte": {\
+					"types": "./dist/Picker_Dialog.svelte.d.ts",\
+					"svelte": "./dist/Picker_Dialog.svelte",\
+					"default": "./dist/Picker_Dialog.svelte"\
+				},\
+				"./Picker.svelte": {\
+					"types": "./dist/Picker.svelte.d.ts",\
+					"svelte": "./dist/Picker.svelte",\
+					"default": "./dist/Picker.svelte"\
+				},\
+				"./Ping_Form.svelte": {\
+					"types": "./dist/Ping_Form.svelte.d.ts",\
+					"svelte": "./dist/Ping_Form.svelte",\
+					"default": "./dist/Ping_Form.svelte"\
+				},\
+				"./Popover_Button.svelte": {\
+					"types": "./dist/Popover_Button.svelte.d.ts",\
+					"svelte": "./dist/Popover_Button.svelte",\
+					"default": "./dist/Popover_Button.svelte"\
+				},\
+				"./popover.svelte.js": {\
+					"types": "./dist/popover.svelte.d.ts",\
+					"default": "./dist/popover.svelte.js"\
+				},\
+				"./position_helpers.js": {\
+					"types": "./dist/position_helpers.d.ts",\
+					"default": "./dist/position_helpers.js"\
+				},\
+				"./prompt_helpers.js": {\
+					"types": "./dist/prompt_helpers.d.ts",\
+					"default": "./dist/prompt_helpers.js"\
+				},\
+				"./Prompt_List.svelte": {\
+					"types": "./dist/Prompt_List.svelte.d.ts",\
+					"svelte": "./dist/Prompt_List.svelte",\
+					"default": "./dist/Prompt_List.svelte"\
+				},\
+				"./Prompt_Listitem.svelte": {\
+					"types": "./dist/Prompt_Listitem.svelte.d.ts",\
+					"svelte": "./dist/Prompt_Listitem.svelte",\
+					"default": "./dist/Prompt_Listitem.svelte"\
+				},\
+				"./Prompt_Picker_Dialog.svelte": {\
+					"types": "./dist/Prompt_Picker_Dialog.svelte.d.ts",\
+					"svelte": "./dist/Prompt_Picker_Dialog.svelte",\
+					"default": "./dist/Prompt_Picker_Dialog.svelte"\
+				},\
+				"./Prompt_Picker.svelte": {\
+					"types": "./dist/Prompt_Picker.svelte.d.ts",\
+					"svelte": "./dist/Prompt_Picker.svelte",\
+					"default": "./dist/Prompt_Picker.svelte"\
+				},\
+				"./Prompt_Stats.svelte": {\
+					"types": "./dist/Prompt_Stats.svelte.d.ts",\
+					"svelte": "./dist/Prompt_Stats.svelte",\
+					"default": "./dist/Prompt_Stats.svelte"\
+				},\
+				"./Prompt_Summary.svelte": {\
+					"types": "./dist/Prompt_Summary.svelte.d.ts",\
+					"svelte": "./dist/Prompt_Summary.svelte",\
+					"default": "./dist/Prompt_Summary.svelte"\
+				},\
+				"./prompt.svelte.js": {\
+					"types": "./dist/prompt.svelte.d.ts",\
+					"default": "./dist/prompt.svelte.js"\
+				},\
+				"./prompts.svelte.js": {\
+					"types": "./dist/prompts.svelte.d.ts",\
+					"default": "./dist/prompts.svelte.js"\
+				},\
+				"./Provider_Detail.svelte": {\
+					"types": "./dist/Provider_Detail.svelte.d.ts",\
+					"svelte": "./dist/Provider_Detail.svelte",\
+					"default": "./dist/Provider_Detail.svelte"\
+				},\
+				"./Provider_Link.svelte": {\
+					"types": "./dist/Provider_Link.svelte.d.ts",\
+					"svelte": "./dist/Provider_Link.svelte",\
+					"default": "./dist/Provider_Link.svelte"\
+				},\
+				"./Provider_Logo.svelte": {\
+					"types": "./dist/Provider_Logo.svelte.d.ts",\
+					"svelte": "./dist/Provider_Logo.svelte",\
+					"default": "./dist/Provider_Logo.svelte"\
+				},\
+				"./Provider_Summary.svelte": {\
+					"types": "./dist/Provider_Summary.svelte.d.ts",\
+					"svelte": "./dist/Provider_Summary.svelte",\
+					"default": "./dist/Provider_Summary.svelte"\
+				},\
+				"./provider_types.js": {\
+					"types": "./dist/provider_types.d.ts",\
+					"default": "./dist/provider_types.js"\
+				},\
+				"./provider.svelte.js": {\
+					"types": "./dist/provider.svelte.d.ts",\
+					"default": "./dist/provider.svelte.js"\
+				},\
+				"./providers.svelte.js": {\
+					"types": "./dist/providers.svelte.d.ts",\
+					"default": "./dist/providers.svelte.js"\
+				},\
+				"./reorderable_helpers.js": {\
+					"types": "./dist/reorderable_helpers.d.ts",\
+					"default": "./dist/reorderable_helpers.js"\
+				},\
+				"./reorderable.svelte.js": {\
+					"types": "./dist/reorderable.svelte.d.ts",\
+					"default": "./dist/reorderable.svelte.js"\
+				},\
+				"./response_helpers.js": {\
+					"types": "./dist/response_helpers.d.ts",\
+					"default": "./dist/response_helpers.js"\
+				},\
+				"./scrollable.svelte.js": {\
+					"types": "./dist/scrollable.svelte.d.ts",\
+					"default": "./dist/scrollable.svelte.js"\
+				},\
+				"./server/.env.example": {\
+					"default": "./dist/server/.env.example"\
+				},\
+				"./server/.env.production.example": {\
+					"default": "./dist/server/.env.production.example"\
+				},\
+				"./server/ai_provider_utils.js": {\
+					"types": "./dist/server/ai_provider_utils.d.ts",\
+					"default": "./dist/server/ai_provider_utils.js"\
+				},\
+				"./server/handler_defaults.js": {\
+					"types": "./dist/server/handler_defaults.d.ts",\
+					"default": "./dist/server/handler_defaults.js"\
+				},\
+				"./server/safe_fs.js": {\
+					"types": "./dist/server/safe_fs.d.ts",\
+					"default": "./dist/server/safe_fs.js"\
+				},\
+				"./server/server.js": {\
+					"types": "./dist/server/server.d.ts",\
+					"default": "./dist/server/server.js"\
+				},\
+				"./server/zzz_server.js": {\
+					"types": "./dist/server/zzz_server.d.ts",\
+					"default": "./dist/server/zzz_server.js"\
+				},\
+				"./Settings.svelte": {\
+					"types": "./dist/Settings.svelte.d.ts",\
+					"svelte": "./dist/Settings.svelte",\
+					"default": "./dist/Settings.svelte"\
+				},\
+				"./socket_helpers.js": {\
+					"types": "./dist/socket_helpers.d.ts",\
+					"default": "./dist/socket_helpers.js"\
+				},\
+				"./Socket_Message_Queue.svelte": {\
+					"types": "./dist/Socket_Message_Queue.svelte.d.ts",\
+					"svelte": "./dist/Socket_Message_Queue.svelte",\
+					"default": "./dist/Socket_Message_Queue.svelte"\
+				},\
+				"./socket.svelte.js": {\
+					"types": "./dist/socket.svelte.d.ts",\
+					"default": "./dist/socket.svelte.js"\
+				},\
+				"./Sortable_List.svelte": {\
+					"types": "./dist/Sortable_List.svelte.d.ts",\
+					"svelte": "./dist/Sortable_List.svelte",\
+					"default": "./dist/Sortable_List.svelte"\
+				},\
+				"./sortable.svelte.js": {\
+					"types": "./dist/sortable.svelte.d.ts",\
+					"default": "./dist/sortable.svelte.js"\
+				},\
+				"./Strip_List.svelte": {\
+					"types": "./dist/Strip_List.svelte.d.ts",\
+					"svelte": "./dist/Strip_List.svelte",\
+					"default": "./dist/Strip_List.svelte"\
+				},\
+				"./Strip_Listitem.svelte": {\
+					"types": "./dist/Strip_Listitem.svelte.d.ts",\
+					"svelte": "./dist/Strip_Listitem.svelte",\
+					"default": "./dist/Strip_Listitem.svelte"\
+				},\
+				"./Strip_View.svelte": {\
+					"types": "./dist/Strip_View.svelte.d.ts",\
+					"svelte": "./dist/Strip_View.svelte",\
+					"default": "./dist/Strip_View.svelte"\
+				},\
+				"./strip.svelte.js": {\
+					"types": "./dist/strip.svelte.d.ts",\
+					"default": "./dist/strip.svelte.js"\
+				},\
+				"./tape_helpers.js": {\
+					"types": "./dist/tape_helpers.d.ts",\
+					"default": "./dist/tape_helpers.js"\
+				},\
+				"./Tape_List.svelte": {\
+					"types": "./dist/Tape_List.svelte.d.ts",\
+					"svelte": "./dist/Tape_List.svelte",\
+					"default": "./dist/Tape_List.svelte"\
+				},\
+				"./Tape_Listitem.svelte": {\
+					"types": "./dist/Tape_Listitem.svelte.d.ts",\
+					"svelte": "./dist/Tape_Listitem.svelte",\
+					"default": "./dist/Tape_Listitem.svelte"\
+				},\
+				"./Tape_Toggle_Button.svelte": {\
+					"types": "./dist/Tape_Toggle_Button.svelte.d.ts",\
+					"svelte": "./dist/Tape_Toggle_Button.svelte",\
+					"default": "./dist/Tape_Toggle_Button.svelte"\
+				},\
+				"./tape_types.js": {\
+					"types": "./dist/tape_types.d.ts",\
+					"default": "./dist/tape_types.js"\
+				},\
+				"./tape.svelte.js": {\
+					"types": "./dist/tape.svelte.d.ts",\
+					"default": "./dist/tape.svelte.js"\
+				},\
+				"./tapes.svelte.js": {\
+					"types": "./dist/tapes.svelte.d.ts",\
+					"default": "./dist/tapes.svelte.js"\
+				},\
+				"./test_helpers.js": {\
+					"types": "./dist/test_helpers.d.ts",\
+					"default": "./dist/test_helpers.js"\
+				},\
+				"./test.task.js": {\
+					"types": "./dist/test.task.d.ts",\
+					"default": "./dist/test.task.js"\
+				},\
+				"./time_helpers.js": {\
+					"types": "./dist/time_helpers.d.ts",\
+					"default": "./dist/time_helpers.js"\
+				},\
+				"./time.svelte.js": {\
+					"types": "./dist/time.svelte.d.ts",\
+					"default": "./dist/time.svelte.js"\
+				},\
+				"./Toggle_Button.svelte": {\
+					"types": "./dist/Toggle_Button.svelte.d.ts",\
+					"svelte": "./dist/Toggle_Button.svelte",\
+					"default": "./dist/Toggle_Button.svelte"\
+				},\
+				"./ui.svelte.js": {\
+					"types": "./dist/ui.svelte.d.ts",\
+					"default": "./dist/ui.svelte.js"\
+				},\
+				"./url_params.svelte.js": {\
+					"types": "./dist/url_params.svelte.d.ts",\
+					"default": "./dist/url_params.svelte.js"\
+				},\
+				"./Xml_Attribute_Editor.svelte": {\
+					"types": "./dist/Xml_Attribute_Editor.svelte.d.ts",\
+					"svelte": "./dist/Xml_Attribute_Editor.svelte",\
+					"default": "./dist/Xml_Attribute_Editor.svelte"\
+				},\
+				"./Xml_Tag_Controls.svelte": {\
+					"types": "./dist/Xml_Tag_Controls.svelte.d.ts",\
+					"svelte": "./dist/Xml_Tag_Controls.svelte",\
+					"default": "./dist/Xml_Tag_Controls.svelte"\
+				},\
+				"./xml.js": {\
+					"types": "./dist/xml.d.ts",\
+					"default": "./dist/xml.js"\
+				},\
+				"./zod_helpers.js": {\
+					"types": "./dist/zod_helpers.d.ts",\
+					"default": "./dist/zod_helpers.js"\
 				},\
 				"./Zzz_Root.svelte": {\
 					"types": "./dist/Zzz_Root.svelte.d.ts",\
@@ -124,35 +931,2512 @@ export const repos: Array<Repo> = JSON.parse(
 					"path": "package.json",\
 					"declarations": []\
 				},\
-				"./Hud_Root.svelte": {\
-					"path": "Hud_Root.svelte",\
+				"./Action_Detail.svelte": {\
+					"path": "Action_Detail.svelte",\
 					"declarations": []\
 				},\
-				"./hud.svelte.js": {\
-					"path": "hud.svelte.ts",\
+				"./Action_List.svelte": {\
+					"path": "Action_List.svelte",\
+					"declarations": []\
+				},\
+				"./action_types.js": {\
+					"path": "action_types.ts",\
 					"declarations": [\
 						{\
-							"name": "hud_context",\
+							"name": "Action_Direction",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Action_Type",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Tape_Message",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Provider_Data_Ollama",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Provider_Data_Claude",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Provider_Data_Chatgpt",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Provider_Data_Gemini",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Provider_Data",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Provider_Data_Schema",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Completion_Request",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Completion_Response",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Action_Base",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Action_Ping",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Action_Pong",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Action_Load_Session",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Action_Loaded_Session",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Diskfile_Change",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Action_Filer_Change",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Action_Update_Diskfile",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Action_Delete_Diskfile",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Action_Create_Directory",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Action_Send_Prompt",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Action_Completion_Response",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Action_Client",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Action_Server",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Action",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Action_Json",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Action_Json_Input",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "create_action_json",\
+							"kind": "function"\
+						}\
+					]\
+				},\
+				"./action.svelte.js": {\
+					"path": "action.svelte.ts",\
+					"declarations": [\
+						{\
+							"name": "ACTION_DATE_FORMAT",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "ACTION_TIME_FORMAT",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Action_Options",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Action",\
+							"kind": "class"\
+						},\
+						{\
+							"name": "Action_Schema",\
 							"kind": "variable"\
 						}\
 					]\
 				},\
-				"./zzz_data.svelte.js": {\
-					"path": "zzz_data.svelte.ts",\
+				"./actions.svelte.js": {\
+					"path": "actions.svelte.ts",\
 					"declarations": [\
 						{\
-							"name": "Zzz_Data_Json",\
+							"name": "HISTORY_LIMIT_DEFAULT",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "PONG_DISPLAY_LIMIT",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Actions_Json",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Actions_Json_Input",\
 							"kind": "type"\
 						},\
 						{\
-							"name": "Zzz_Data",\
+							"name": "Actions_Options",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Actions",\
 							"kind": "class"\
 						}\
 					]\
 				},\
-				"./Zzz_Main.svelte": {\
-					"path": "Zzz_Main.svelte",\
+				"./app.svelte.js": {\
+					"path": "app.svelte.ts",\
+					"declarations": [\
+						{\
+							"name": "app_context",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "App",\
+							"kind": "class"\
+						}\
+					]\
+				},\
+				"./Bit_Editor_For_Diskfile.svelte": {\
+					"path": "Bit_Editor_For_Diskfile.svelte",\
 					"declarations": []\
+				},\
+				"./Bit_Editor_For_Sequence.svelte": {\
+					"path": "Bit_Editor_For_Sequence.svelte",\
+					"declarations": []\
+				},\
+				"./Bit_Editor_For_Text.svelte": {\
+					"path": "Bit_Editor_For_Text.svelte",\
+					"declarations": []\
+				},\
+				"./bit_helpers.js": {\
+					"path": "bit_helpers.ts",\
+					"declarations": [\
+						{\
+							"name": "BIT_GLYPHS",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "get_bit_type_glyph",\
+							"kind": "function"\
+						}\
+					]\
+				},\
+				"./Bit_List.svelte": {\
+					"path": "Bit_List.svelte",\
+					"declarations": []\
+				},\
+				"./Bit_Listitem.svelte": {\
+					"path": "Bit_Listitem.svelte",\
+					"declarations": []\
+				},\
+				"./Bit_Picker_Dialog.svelte": {\
+					"path": "Bit_Picker_Dialog.svelte",\
+					"declarations": []\
+				},\
+				"./Bit_Picker.svelte": {\
+					"path": "Bit_Picker.svelte",\
+					"declarations": []\
+				},\
+				"./Bit_Remove_Button.svelte": {\
+					"path": "Bit_Remove_Button.svelte",\
+					"declarations": []\
+				},\
+				"./Bit_Stats.svelte": {\
+					"path": "Bit_Stats.svelte",\
+					"declarations": []\
+				},\
+				"./Bit_Summary.svelte": {\
+					"path": "Bit_Summary.svelte",\
+					"declarations": []\
+				},\
+				"./Bit_Toggle_Button.svelte": {\
+					"path": "Bit_Toggle_Button.svelte",\
+					"declarations": []\
+				},\
+				"./Bit_View.svelte": {\
+					"path": "Bit_View.svelte",\
+					"declarations": []\
+				},\
+				"./bit.svelte.js": {\
+					"path": "bit.svelte.ts",\
+					"declarations": [\
+						{\
+							"name": "Bit_Json_Base",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Text_Bit_Json",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Text_Bit_Json_Input",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Diskfile_Bit_Json",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Diskfile_Bit_Json_Input",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Sequence_Bit_Json",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Sequence_Bit_Json_Input",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Bit_Json",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Bit_Json_Input",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Bit_Type",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Bit_Json_Type",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Bit_Options",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Text_Bit_Options",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Diskfile_Bit_Options",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Sequence_Bit_Options",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Bit_Type_Options",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Bit",\
+							"kind": "class"\
+						},\
+						{\
+							"name": "Bit_Schema",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Text_Bit",\
+							"kind": "class"\
+						},\
+						{\
+							"name": "Text_Bit_Schema",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Diskfile_Bit",\
+							"kind": "class"\
+						},\
+						{\
+							"name": "Diskfile_Bit_Schema",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Sequence_Bit",\
+							"kind": "class"\
+						},\
+						{\
+							"name": "Sequence_Bit_Schema",\
+							"kind": "variable"\
+						}\
+					]\
+				},\
+				"./bits.svelte.js": {\
+					"path": "bits.svelte.ts",\
+					"declarations": [\
+						{\
+							"name": "Bits_Json",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Bits_Json_Input",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Bits_Options",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Bits",\
+							"kind": "class"\
+						}\
+					]\
+				},\
+				"./Capabilities_View.svelte": {\
+					"path": "Capabilities_View.svelte",\
+					"declarations": []\
+				},\
+				"./capabilities.svelte.js": {\
+					"path": "capabilities.svelte.ts",\
+					"declarations": [\
+						{\
+							"name": "PING_HISTORY_MAX",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Ping_Data",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Capabilities_Json",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Capabilities_Json_Input",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Capability",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Ollama_Capability_Data",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Server_Capability_Data",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Websocket_Capability_Data",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Filesystem_Capability_Data",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Capabilities",\
+							"kind": "class"\
+						}\
+					]\
+				},\
+				"./Capability_Filesystem.svelte": {\
+					"path": "Capability_Filesystem.svelte",\
+					"declarations": []\
+				},\
+				"./Capability_Ollama.svelte": {\
+					"path": "Capability_Ollama.svelte",\
+					"declarations": []\
+				},\
+				"./Capability_Server.svelte": {\
+					"path": "Capability_Server.svelte",\
+					"declarations": []\
+				},\
+				"./Capability_System.svelte": {\
+					"path": "Capability_System.svelte",\
+					"declarations": []\
+				},\
+				"./Capability_Websocket.svelte": {\
+					"path": "Capability_Websocket.svelte",\
+					"declarations": []\
+				},\
+				"./cell_classes.js": {\
+					"path": "cell_classes.ts",\
+					"declarations": [\
+						{\
+							"name": "cell_classes",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Cell_Classes",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Cell_Class_Names",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Cell_Registry_Map",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "is_cell_type",\
+							"kind": "function"\
+						},\
+						{\
+							"name": "get_cell_class_names",\
+							"kind": "function"\
+						}\
+					]\
+				},\
+				"./cell_helpers.js": {\
+					"path": "cell_helpers.ts",\
+					"declarations": [\
+						{\
+							"name": "HANDLED",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "FILE_SHORT_DATE_FORMAT",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "FILE_DATE_FORMAT",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "FILE_TIME_FORMAT",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "ZOD_CELL_CLASS_NAME",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "ZOD_ELEMENT_CLASS_NAME",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Schema_Class_Info",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "cell_class",\
+							"kind": "function"\
+						},\
+						{\
+							"name": "cell_array",\
+							"kind": "function"\
+						},\
+						{\
+							"name": "Value_Parser",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Cell_Value_Decoder",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "get_schema_class_info",\
+							"kind": "function"\
+						}\
+					]\
+				},\
+				"./cell_registry.svelte.js": {\
+					"path": "cell_registry.svelte.ts",\
+					"declarations": [\
+						{\
+							"name": "Class_Not_Registered_Error",\
+							"kind": "class"\
+						},\
+						{\
+							"name": "Cell_Registry",\
+							"kind": "class"\
+						}\
+					]\
+				},\
+				"./cell_types.js": {\
+					"path": "cell_types.ts",\
+					"declarations": [\
+						{\
+							"name": "Schema_Keys",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Schema_Value",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Cell_Json",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Cell_Json_Input",\
+							"kind": "type"\
+						}\
+					]\
+				},\
+				"./cell.svelte.js": {\
+					"path": "cell.svelte.ts",\
+					"declarations": [\
+						{\
+							"name": "Cell_Options",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "get_global_cell_count",\
+							"kind": "function"\
+						},\
+						{\
+							"name": "Cell",\
+							"kind": "class"\
+						}\
+					]\
+				},\
+				"./Chat_Initializer.svelte": {\
+					"path": "Chat_Initializer.svelte",\
+					"declarations": []\
+				},\
+				"./Chat_List.svelte": {\
+					"path": "Chat_List.svelte",\
+					"declarations": []\
+				},\
+				"./Chat_Listitem.svelte": {\
+					"path": "Chat_Listitem.svelte",\
+					"declarations": []\
+				},\
+				"./Chat_Tape_Add_By_Model.svelte": {\
+					"path": "Chat_Tape_Add_By_Model.svelte",\
+					"declarations": []\
+				},\
+				"./Chat_Tape.svelte": {\
+					"path": "Chat_Tape.svelte",\
+					"declarations": []\
+				},\
+				"./chat_template.js": {\
+					"path": "chat_template.ts",\
+					"declarations": [\
+						{\
+							"name": "Chat_Template",\
+							"kind": "type"\
+						}\
+					]\
+				},\
+				"./Chat_View_Multi.svelte": {\
+					"path": "Chat_View_Multi.svelte",\
+					"declarations": []\
+				},\
+				"./Chat_View_Simple.svelte": {\
+					"path": "Chat_View_Simple.svelte",\
+					"declarations": []\
+				},\
+				"./Chat_View.svelte": {\
+					"path": "Chat_View.svelte",\
+					"declarations": []\
+				},\
+				"./chat.svelte.js": {\
+					"path": "chat.svelte.ts",\
+					"declarations": [\
+						{\
+							"name": "Chat_View_Mode",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Chat_Json",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Chat_Json_Input",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Chat_Options",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Chat",\
+							"kind": "class"\
+						},\
+						{\
+							"name": "Chat_Schema",\
+							"kind": "variable"\
+						}\
+					]\
+				},\
+				"./chats.svelte.js": {\
+					"path": "chats.svelte.ts",\
+					"declarations": [\
+						{\
+							"name": "Chats_Json",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Chats_Json_Input",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Chats_Options",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Chats",\
+							"kind": "class"\
+						},\
+						{\
+							"name": "Chats_Schema",\
+							"kind": "variable"\
+						}\
+					]\
+				},\
+				"./Clear_Restore_Button.svelte": {\
+					"path": "Clear_Restore_Button.svelte",\
+					"declarations": []\
+				},\
+				"./config_defaults.js": {\
+					"path": "config_defaults.ts",\
+					"declarations": [\
+						{\
+							"name": "SYSTEM_MESSAGE_DEFAULT",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "OUTPUT_TOKEN_MAX_DEFAULT",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "TEMPERATURE_DEFAULT",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "SEED_DEFAULT",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "TOP_K_DEFAULT",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "TOP_P_DEFAULT",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "FREQUENCY_PENALTY_DEFAULT",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "PRESENCE_PENALTY_DEFAULT",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "STOP_SEQUENCES_DEFAULT",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "BOTS_DEFAULT",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "providers_default",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "models_default",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "chat_template_defaults",\
+							"kind": "variable"\
+						}\
+					]\
+				},\
+				"./config_helpers.js": {\
+					"path": "config_helpers.ts",\
+					"declarations": [\
+						{\
+							"name": "Zzz_Config_Creator",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Zzz_Config",\
+							"kind": "type"\
+						}\
+					]\
+				},\
+				"./config.js": {\
+					"path": "config.ts",\
+					"declarations": [\
+						{\
+							"name": "default",\
+							"kind": "variable"\
+						}\
+					]\
+				},\
+				"./Confirm_Button.svelte": {\
+					"path": "Confirm_Button.svelte",\
+					"declarations": []\
+				},\
+				"./constants.js": {\
+					"path": "constants.ts",\
+					"declarations": [\
+						{\
+							"name": "SERVER_PROXIED_PORT",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "SERVER_URL",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "ZZZ_DIRNAME",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "REQUEST_TIMEOUT",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "CONTENT_PREVIEW_LENGTH",\
+							"kind": "variable"\
+						}\
+					]\
+				},\
+				"./Content_Editor.svelte": {\
+					"path": "Content_Editor.svelte",\
+					"declarations": []\
+				},\
+				"./Content_Preview.svelte": {\
+					"path": "Content_Preview.svelte",\
+					"declarations": []\
+				},\
+				"./Content_Stats.svelte": {\
+					"path": "Content_Stats.svelte",\
+					"declarations": []\
+				},\
+				"./Contextmenu_Bit.svelte": {\
+					"path": "Contextmenu_Bit.svelte",\
+					"declarations": []\
+				},\
+				"./Contextmenu_Chat.svelte": {\
+					"path": "Contextmenu_Chat.svelte",\
+					"declarations": []\
+				},\
+				"./Contextmenu_Chats.svelte": {\
+					"path": "Contextmenu_Chats.svelte",\
+					"declarations": []\
+				},\
+				"./Contextmenu_Diskfile.svelte": {\
+					"path": "Contextmenu_Diskfile.svelte",\
+					"declarations": []\
+				},\
+				"./Contextmenu_Entry_Copy_To_Clipboard.svelte": {\
+					"path": "Contextmenu_Entry_Copy_To_Clipboard.svelte",\
+					"declarations": []\
+				},\
+				"./Contextmenu_Entry_Toggle.svelte": {\
+					"path": "Contextmenu_Entry_Toggle.svelte",\
+					"declarations": []\
+				},\
+				"./Contextmenu_Prompt.svelte": {\
+					"path": "Contextmenu_Prompt.svelte",\
+					"declarations": []\
+				},\
+				"./Contextmenu_Strip.svelte": {\
+					"path": "Contextmenu_Strip.svelte",\
+					"declarations": []\
+				},\
+				"./Contextmenu_Tape.svelte": {\
+					"path": "Contextmenu_Tape.svelte",\
+					"declarations": []\
+				},\
+				"./Dashboard_Capabilities.svelte": {\
+					"path": "Dashboard_Capabilities.svelte",\
+					"declarations": []\
+				},\
+				"./Dashboard_Chats.svelte": {\
+					"path": "Dashboard_Chats.svelte",\
+					"declarations": []\
+				},\
+				"./Dashboard_Diskfiles.svelte": {\
+					"path": "Dashboard_Diskfiles.svelte",\
+					"declarations": []\
+				},\
+				"./Dashboard_Home.svelte": {\
+					"path": "Dashboard_Home.svelte",\
+					"declarations": []\
+				},\
+				"./Dashboard_Log.svelte": {\
+					"path": "Dashboard_Log.svelte",\
+					"declarations": []\
+				},\
+				"./Dashboard_Models.svelte": {\
+					"path": "Dashboard_Models.svelte",\
+					"declarations": []\
+				},\
+				"./Dashboard_Prompts.svelte": {\
+					"path": "Dashboard_Prompts.svelte",\
+					"declarations": []\
+				},\
+				"./Dashboard_Providers.svelte": {\
+					"path": "Dashboard_Providers.svelte",\
+					"declarations": []\
+				},\
+				"./Dashboard_Settings.svelte": {\
+					"path": "Dashboard_Settings.svelte",\
+					"declarations": []\
+				},\
+				"./Dashboard.svelte": {\
+					"path": "Dashboard.svelte",\
+					"declarations": []\
+				},\
+				"./Diskfile_Actions.svelte": {\
+					"path": "Diskfile_Actions.svelte",\
+					"declarations": []\
+				},\
+				"./Diskfile_Bit_View.svelte": {\
+					"path": "Diskfile_Bit_View.svelte",\
+					"declarations": []\
+				},\
+				"./Diskfile_Editor_Nav.svelte": {\
+					"path": "Diskfile_Editor_Nav.svelte",\
+					"declarations": []\
+				},\
+				"./diskfile_editor_state.svelte.js": {\
+					"path": "diskfile_editor_state.svelte.ts",\
+					"declarations": [\
+						{\
+							"name": "Diskfile_Editor_State",\
+							"kind": "class"\
+						}\
+					]\
+				},\
+				"./Diskfile_Editor_View.svelte": {\
+					"path": "Diskfile_Editor_View.svelte",\
+					"declarations": []\
+				},\
+				"./Diskfile_Explorer.svelte": {\
+					"path": "Diskfile_Explorer.svelte",\
+					"declarations": []\
+				},\
+				"./diskfile_helpers.js": {\
+					"path": "diskfile_helpers.ts",\
+					"declarations": [\
+						{\
+							"name": "is_path_absolute",\
+							"kind": "function"\
+						},\
+						{\
+							"name": "map_watcher_change_to_diskfile_change",\
+							"kind": "function"\
+						},\
+						{\
+							"name": "source_file_to_diskfile_json",\
+							"kind": "function"\
+						},\
+						{\
+							"name": "SUPPORTED_CODE_FILETYPE_MATCHER",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "has_dependencies",\
+							"kind": "function"\
+						}\
+					]\
+				},\
+				"./Diskfile_History_View.svelte": {\
+					"path": "Diskfile_History_View.svelte",\
+					"declarations": []\
+				},\
+				"./diskfile_history.svelte.js": {\
+					"path": "diskfile_history.svelte.ts",\
+					"declarations": [\
+						{\
+							"name": "History_Entry",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Diskfile_History_Json",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Diskfile_History_Json_Input",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Diskfile_History_Options",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Diskfile_History",\
+							"kind": "class"\
+						}\
+					]\
+				},\
+				"./Diskfile_Info.svelte": {\
+					"path": "Diskfile_Info.svelte",\
+					"declarations": []\
+				},\
+				"./Diskfile_Listitem.svelte": {\
+					"path": "Diskfile_Listitem.svelte",\
+					"declarations": []\
+				},\
+				"./Diskfile_Metrics.svelte": {\
+					"path": "Diskfile_Metrics.svelte",\
+					"declarations": []\
+				},\
+				"./Diskfile_Picker_Dialog.svelte": {\
+					"path": "Diskfile_Picker_Dialog.svelte",\
+					"declarations": []\
+				},\
+				"./Diskfile_Picker.svelte": {\
+					"path": "Diskfile_Picker.svelte",\
+					"declarations": []\
+				},\
+				"./Diskfile_Tab_Listitem.svelte": {\
+					"path": "Diskfile_Tab_Listitem.svelte",\
+					"declarations": []\
+				},\
+				"./diskfile_tab.svelte.js": {\
+					"path": "diskfile_tab.svelte.ts",\
+					"declarations": [\
+						{\
+							"name": "Diskfile_Tab_Json",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Diskfile_Tab_Json_Input",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Diskfile_Tab_Options",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Diskfile_Tab",\
+							"kind": "class"\
+						},\
+						{\
+							"name": "Diskfile_Tab_Schema",\
+							"kind": "variable"\
+						}\
+					]\
+				},\
+				"./diskfile_tabs.svelte.js": {\
+					"path": "diskfile_tabs.svelte.ts",\
+					"declarations": [\
+						{\
+							"name": "Diskfile_Tabs_Json",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Diskfile_Tabs_Json_Input",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Diskfile_Tabs_Options",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Diskfile_Tabs",\
+							"kind": "class"\
+						},\
+						{\
+							"name": "Diskfile_Tabs_Schema",\
+							"kind": "variable"\
+						}\
+					]\
+				},\
+				"./diskfile_types.js": {\
+					"path": "diskfile_types.ts",\
+					"declarations": [\
+						{\
+							"name": "Diskfile_Change_Type",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Diskfile_Path",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Zzz_Dir",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Source_File",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Diskfile_Json",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Diskfile_Json_Input",\
+							"kind": "type"\
+						}\
+					]\
+				},\
+				"./diskfile.svelte.js": {\
+					"path": "diskfile.svelte.ts",\
+					"declarations": [\
+						{\
+							"name": "Diskfile_Options",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Diskfile",\
+							"kind": "class"\
+						},\
+						{\
+							"name": "Diskfile_Schema",\
+							"kind": "variable"\
+						}\
+					]\
+				},\
+				"./diskfiles_editor.svelte.js": {\
+					"path": "diskfiles_editor.svelte.ts",\
+					"declarations": [\
+						{\
+							"name": "Diskfiles_Editor_Json",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Diskfiles_Editor_Json_Input",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Diskfiles_Editor_Options",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Diskfiles_Editor",\
+							"kind": "class"\
+						},\
+						{\
+							"name": "Diskfiles_Editor_Schema",\
+							"kind": "variable"\
+						}\
+					]\
+				},\
+				"./diskfiles.svelte.js": {\
+					"path": "diskfiles.svelte.ts",\
+					"declarations": [\
+						{\
+							"name": "Diskfiles_Json",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Diskfiles_Json_Input",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Diskfiles_Options",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Diskfiles",\
+							"kind": "class"\
+						}\
+					]\
+				},\
+				"./Error_Message.svelte": {\
+					"path": "Error_Message.svelte",\
+					"declarations": []\
+				},\
+				"./External_Link_Icon.svelte": {\
+					"path": "External_Link_Icon.svelte",\
+					"declarations": []\
+				},\
+				"./External_Link.svelte": {\
+					"path": "External_Link.svelte",\
+					"declarations": []\
+				},\
+				"./Glyph.svelte": {\
+					"path": "Glyph.svelte",\
+					"declarations": []\
+				},\
+				"./glyphs.js": {\
+					"path": "glyphs.ts",\
+					"declarations": [\
+						{\
+							"name": "GLYPH_UNKNOWN",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "GLYPH_IMPORTANT",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "GLYPH_INFO",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "GLYPH_ADD",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "GLYPH_REMOVE",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "GLYPH_DELETE",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "GLYPH_CLEAR",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "GLYPH_RESTORE",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "GLYPH_CANCEL",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "GLYPH_DRAG",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "GLYPH_COPY",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "GLYPH_PASTE",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "GLYPH_RESET",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "GLYPH_REFRESH",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "GLYPH_CONNECT",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "GLYPH_DISCONNECT",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "GLYPH_RETRY",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "GLYPH_PLACEHOLDER",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "GLYPH_CHECKMARK",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "GLYPH_EDIT",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "GLYPH_SORT",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "GLYPH_SERVER",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "GLYPH_CHAT",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "GLYPH_TAPE",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "GLYPH_STRIP",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "GLYPH_FILE",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "GLYPH_LIST",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "GLYPH_DIRECTORY",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "GLYPH_CREATE_FILE",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "GLYPH_CREATE_FOLDER",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "GLYPH_PROMPT",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "GLYPH_BIT",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "GLYPH_PROVIDER",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "GLYPH_MODEL",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "GLYPH_ACTION",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "GLYPH_VIEW",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "GLYPH_PREVIEW",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "GLYPH_LOG",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "GLYPH_TAB",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "GLYPH_PROJECT",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "GLYPH_CAPABILITY",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "GLYPH_SETTINGS",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "GLYPH_DOMAIN",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "GLYPH_PAGE",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "GLYPH_ECHO",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "GLYPH_HEARTBEAT",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "GLYPH_RESPONSE",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "GLYPH_SESSION",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "GLYPH_DIRECTION_CLIENT",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "GLYPH_DIRECTION_SERVER",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "GLYPH_DIRECTION_BOTH",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "GLYPH_EXTERNAL_LINK",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "GLYPH_ARROW_RIGHT",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "GLYPH_ARROW_LEFT",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "get_icon_for_action_type",\
+							"kind": "function"\
+						},\
+						{\
+							"name": "get_direction_icon",\
+							"kind": "function"\
+						}\
+					]\
+				},\
+				"./helpers.js": {\
+					"path": "helpers.ts",\
+					"declarations": [\
+						{\
+							"name": "create_client_id",\
+							"kind": "function"\
+						},\
+						{\
+							"name": "get_unique_name",\
+							"kind": "function"\
+						},\
+						{\
+							"name": "defined",\
+							"kind": "function"\
+						},\
+						{\
+							"name": "to_preview",\
+							"kind": "function"\
+						}\
+					]\
+				},\
+				"./indexed_collection_helpers.js": {\
+					"path": "indexed_collection_helpers.ts",\
+					"declarations": [\
+						{\
+							"name": "Svelte_Map_Schema",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Indexed_Item",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Index_Options",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Single_Index_Options",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "create_single_index",\
+							"kind": "function"\
+						},\
+						{\
+							"name": "Multi_Index_Options",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "create_multi_index",\
+							"kind": "function"\
+						},\
+						{\
+							"name": "Derived_Index_Options",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "create_derived_index",\
+							"kind": "function"\
+						},\
+						{\
+							"name": "Dynamic_Index_Options",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "create_dynamic_index",\
+							"kind": "function"\
+						}\
+					]\
+				},\
+				"./indexed_collection.svelte.js": {\
+					"path": "indexed_collection.svelte.ts",\
+					"declarations": [\
+						{\
+							"name": "Index_Type",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Index_Definition",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Indexed_Collection_Options",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Indexed_Collection",\
+							"kind": "class"\
+						}\
+					]\
+				},\
+				"./list_helpers.js": {\
+					"path": "list_helpers.ts",\
+					"declarations": [\
+						{\
+							"name": "reorder_list",\
+							"kind": "function"\
+						},\
+						{\
+							"name": "to_reordered_list",\
+							"kind": "function"\
+						}\
+					]\
+				},\
+				"./Main_Dialog.svelte": {\
+					"path": "Main_Dialog.svelte",\
+					"declarations": []\
+				},\
+				"./Model_Detail.svelte": {\
+					"path": "Model_Detail.svelte",\
+					"declarations": []\
+				},\
+				"./Model_Link.svelte": {\
+					"path": "Model_Link.svelte",\
+					"declarations": []\
+				},\
+				"./Model_Listitem.svelte": {\
+					"path": "Model_Listitem.svelte",\
+					"declarations": []\
+				},\
+				"./Model_Picker_Dialog.svelte": {\
+					"path": "Model_Picker_Dialog.svelte",\
+					"declarations": []\
+				},\
+				"./Model_Picker.svelte": {\
+					"path": "Model_Picker.svelte",\
+					"declarations": []\
+				},\
+				"./Model_Select.svelte": {\
+					"path": "Model_Select.svelte",\
+					"declarations": []\
+				},\
+				"./Model_Summary.svelte": {\
+					"path": "Model_Summary.svelte",\
+					"declarations": []\
+				},\
+				"./model.svelte.js": {\
+					"path": "model.svelte.ts",\
+					"declarations": [\
+						{\
+							"name": "Model_Name",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Model_Json",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Model_Json_Input",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Model_Options",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Model",\
+							"kind": "class"\
+						},\
+						{\
+							"name": "Model_Schema",\
+							"kind": "variable"\
+						}\
+					]\
+				},\
+				"./models.svelte.js": {\
+					"path": "models.svelte.ts",\
+					"declarations": [\
+						{\
+							"name": "Models_Json",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Models_Json_Input",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Models_Options",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Models",\
+							"kind": "class"\
+						}\
+					]\
+				},\
+				"./nav_helpers.js": {\
+					"path": "nav_helpers.ts",\
+					"declarations": [\
+						{\
+							"name": "to_chats_url",\
+							"kind": "function"\
+						},\
+						{\
+							"name": "to_prompts_url",\
+							"kind": "function"\
+						}\
+					]\
+				},\
+				"./Nav_Link.svelte": {\
+					"path": "Nav_Link.svelte",\
+					"declarations": []\
+				},\
+				"./nav.js": {\
+					"path": "nav.ts",\
+					"declarations": [\
+						{\
+							"name": "Nav_Link_Item",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Nav_Item",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "to_nav_link_href",\
+							"kind": "function"\
+						},\
+						{\
+							"name": "main_nav_items_default",\
+							"kind": "variable"\
+						}\
+					]\
+				},\
+				"./ollama.js": {\
+					"path": "ollama.ts",\
+					"declarations": [\
+						{\
+							"name": "OLLAMA_URL",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Ollama_Model_Info",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Ollama_Models_Response",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "ollama_list",\
+							"kind": "function"\
+						},\
+						{\
+							"name": "ollama_list_with_metadata",\
+							"kind": "function"\
+						}\
+					]\
+				},\
+				"./Picker_Dialog.svelte": {\
+					"path": "Picker_Dialog.svelte",\
+					"declarations": []\
+				},\
+				"./Picker.svelte": {\
+					"path": "Picker.svelte",\
+					"declarations": []\
+				},\
+				"./Ping_Form.svelte": {\
+					"path": "Ping_Form.svelte",\
+					"declarations": []\
+				},\
+				"./Popover_Button.svelte": {\
+					"path": "Popover_Button.svelte",\
+					"declarations": []\
+				},\
+				"./popover.svelte.js": {\
+					"path": "popover.svelte.ts",\
+					"declarations": [\
+						{\
+							"name": "Popover_Parameters",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Popover_Trigger_Parameters",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Transition_Function",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Popover_Content_Parameters",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Popover",\
+							"kind": "class"\
+						}\
+					]\
+				},\
+				"./position_helpers.js": {\
+					"path": "position_helpers.ts",\
+					"declarations": [\
+						{\
+							"name": "Cardinal_Position",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Position",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Alignment",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "generate_position_styles",\
+							"kind": "function"\
+						}\
+					]\
+				},\
+				"./prompt_helpers.js": {\
+					"path": "prompt_helpers.ts",\
+					"declarations": [\
+						{\
+							"name": "format_prompt_content",\
+							"kind": "function"\
+						}\
+					]\
+				},\
+				"./Prompt_List.svelte": {\
+					"path": "Prompt_List.svelte",\
+					"declarations": []\
+				},\
+				"./Prompt_Listitem.svelte": {\
+					"path": "Prompt_Listitem.svelte",\
+					"declarations": []\
+				},\
+				"./Prompt_Picker_Dialog.svelte": {\
+					"path": "Prompt_Picker_Dialog.svelte",\
+					"declarations": []\
+				},\
+				"./Prompt_Picker.svelte": {\
+					"path": "Prompt_Picker.svelte",\
+					"declarations": []\
+				},\
+				"./Prompt_Stats.svelte": {\
+					"path": "Prompt_Stats.svelte",\
+					"declarations": []\
+				},\
+				"./Prompt_Summary.svelte": {\
+					"path": "Prompt_Summary.svelte",\
+					"declarations": []\
+				},\
+				"./prompt.svelte.js": {\
+					"path": "prompt.svelte.ts",\
+					"declarations": [\
+						{\
+							"name": "Prompt_Message",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Prompt_Action_Content",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Prompt_Json",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Prompt_Json_Input",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Prompt_Options",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Prompt",\
+							"kind": "class"\
+						},\
+						{\
+							"name": "Prompt_Schema",\
+							"kind": "variable"\
+						}\
+					]\
+				},\
+				"./prompts.svelte.js": {\
+					"path": "prompts.svelte.ts",\
+					"declarations": [\
+						{\
+							"name": "Prompts_Json",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Prompts_Json_Input",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Prompts_Options",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Prompts",\
+							"kind": "class"\
+						},\
+						{\
+							"name": "Prompts_Schema",\
+							"kind": "variable"\
+						}\
+					]\
+				},\
+				"./Provider_Detail.svelte": {\
+					"path": "Provider_Detail.svelte",\
+					"declarations": []\
+				},\
+				"./Provider_Link.svelte": {\
+					"path": "Provider_Link.svelte",\
+					"declarations": []\
+				},\
+				"./Provider_Logo.svelte": {\
+					"path": "Provider_Logo.svelte",\
+					"declarations": []\
+				},\
+				"./Provider_Summary.svelte": {\
+					"path": "Provider_Summary.svelte",\
+					"declarations": []\
+				},\
+				"./provider_types.js": {\
+					"path": "provider_types.ts",\
+					"declarations": [\
+						{\
+							"name": "Provider_Name",\
+							"kind": "variable"\
+						}\
+					]\
+				},\
+				"./provider.svelte.js": {\
+					"path": "provider.svelte.ts",\
+					"declarations": [\
+						{\
+							"name": "Provider_Json",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Provider_Json_Input",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Provider_Options",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Provider",\
+							"kind": "class"\
+						}\
+					]\
+				},\
+				"./providers.svelte.js": {\
+					"path": "providers.svelte.ts",\
+					"declarations": [\
+						{\
+							"name": "Providers_Json",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Providers_Json_Input",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Providers_Options",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Providers",\
+							"kind": "class"\
+						}\
+					]\
+				},\
+				"./reorderable_helpers.js": {\
+					"path": "reorderable_helpers.ts",\
+					"declarations": [\
+						{\
+							"name": "detect_reorderable_direction",\
+							"kind": "function"\
+						},\
+						{\
+							"name": "get_reorderable_drop_position",\
+							"kind": "function"\
+						},\
+						{\
+							"name": "calculate_reorderable_target_index",\
+							"kind": "function"\
+						},\
+						{\
+							"name": "is_reorder_allowed",\
+							"kind": "function"\
+						},\
+						{\
+							"name": "validate_reorderable_target_index",\
+							"kind": "function"\
+						},\
+						{\
+							"name": "set_reorderable_drag_data_transfer",\
+							"kind": "function"\
+						}\
+					]\
+				},\
+				"./reorderable.svelte.js": {\
+					"path": "reorderable.svelte.ts",\
+					"declarations": [\
+						{\
+							"name": "Reorderable_Id",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Reorderable_Item_Id",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Reorderable_Direction",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Reorderable_Drop_Position",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Reorderable_Valid_Drop_Position",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Reorderable_Style_Config",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "LIST_CLASS_DEFAULT",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "ITEM_CLASS_DEFAULT",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "DRAGGING_CLASS_DEFAULT",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "DRAG_OVER_CLASS_DEFAULT",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "DRAG_OVER_TOP_CLASS_DEFAULT",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "DRAG_OVER_BOTTOM_CLASS_DEFAULT",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "DRAG_OVER_LEFT_CLASS_DEFAULT",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "DRAG_OVER_RIGHT_CLASS_DEFAULT",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "INVALID_DROP_CLASS_DEFAULT",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Reorderable_List_Params",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Reorderable_Item_Params",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Reorderable_Options",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Reorderable",\
+							"kind": "class"\
+						}\
+					]\
+				},\
+				"./response_helpers.js": {\
+					"path": "response_helpers.ts",\
+					"declarations": [\
+						{\
+							"name": "to_completion_response_text",\
+							"kind": "function"\
+						},\
+						{\
+							"name": "process_provider_data",\
+							"kind": "function"\
+						},\
+						{\
+							"name": "create_completion_response",\
+							"kind": "function"\
+						},\
+						{\
+							"name": "create_completion_response_message",\
+							"kind": "function"\
+						}\
+					]\
+				},\
+				"./scrollable.svelte.js": {\
+					"path": "scrollable.svelte.ts",\
+					"declarations": [\
+						{\
+							"name": "Scrollable_Parameters",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Scrollable",\
+							"kind": "class"\
+						}\
+					]\
+				},\
+				"./server/.env.example": {\
+					"path": "server/.env.example",\
+					"declarations": []\
+				},\
+				"./server/.env.production.example": {\
+					"path": "server/.env.production.example",\
+					"declarations": []\
+				},\
+				"./server/ai_provider_utils.js": {\
+					"path": "server/ai_provider_utils.ts",\
+					"declarations": [\
+						{\
+							"name": "format_ollama_messages",\
+							"kind": "function"\
+						},\
+						{\
+							"name": "format_claude_messages",\
+							"kind": "function"\
+						},\
+						{\
+							"name": "format_openai_messages",\
+							"kind": "function"\
+						},\
+						{\
+							"name": "format_gemini_messages",\
+							"kind": "function"\
+						}\
+					]\
+				},\
+				"./server/handler_defaults.js": {\
+					"path": "server/handler_defaults.ts",\
+					"declarations": [\
+						{\
+							"name": "handle_message",\
+							"kind": "function"\
+						},\
+						{\
+							"name": "handle_filer_change",\
+							"kind": "function"\
+						}\
+					]\
+				},\
+				"./server/safe_fs.js": {\
+					"path": "server/safe_fs.ts",\
+					"declarations": [\
+						{\
+							"name": "Safe_Fs_Path",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Safe_Fs",\
+							"kind": "class"\
+						},\
+						{\
+							"name": "Path_Not_Allowed_Error",\
+							"kind": "class"\
+						},\
+						{\
+							"name": "Symlink_Not_Allowed_Error",\
+							"kind": "class"\
+						}\
+					]\
+				},\
+				"./server/server.js": {\
+					"path": "server/server.ts",\
+					"declarations": []\
+				},\
+				"./server/zzz_server.js": {\
+					"path": "server/zzz_server.ts",\
+					"declarations": [\
+						{\
+							"name": "Action_Handler",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Filer_Change_Handler",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Filer_Instance",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Zzz_Server_Options",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Zzz_Server",\
+							"kind": "class"\
+						}\
+					]\
+				},\
+				"./Settings.svelte": {\
+					"path": "Settings.svelte",\
+					"declarations": []\
+				},\
+				"./socket_helpers.js": {\
+					"path": "socket_helpers.ts",\
+					"declarations": [\
+						{\
+							"name": "DEFAULT_HEARTBEAT_INTERVAL",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "DEFAULT_RECONNECT_DELAY",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "DEFAULT_RECONNECT_DELAY_MAX",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "DEFAULT_AUTO_RECONNECT",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "DEFAULT_RETRY_COUNT",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "DEFAULT_CLOSE_CODE",\
+							"kind": "variable"\
+						}\
+					]\
+				},\
+				"./Socket_Message_Queue.svelte": {\
+					"path": "Socket_Message_Queue.svelte",\
+					"declarations": []\
+				},\
+				"./socket.svelte.js": {\
+					"path": "socket.svelte.ts",\
+					"declarations": [\
+						{\
+							"name": "Socket_Json",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Socket_Json_Input",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Socket_Options",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Socket_Action_Handler",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Socket_Error_Handler",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Queued_Message",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Failed_Message",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Socket",\
+							"kind": "class"\
+						}\
+					]\
+				},\
+				"./Sortable_List.svelte": {\
+					"path": "Sortable_List.svelte",\
+					"declarations": []\
+				},\
+				"./sortable.svelte.js": {\
+					"path": "sortable.svelte.ts",\
+					"declarations": [\
+						{\
+							"name": "Sorter",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Sortable",\
+							"kind": "class"\
+						},\
+						{\
+							"name": "sort_by_text",\
+							"kind": "function"\
+						},\
+						{\
+							"name": "sort_by_numeric",\
+							"kind": "function"\
+						}\
+					]\
+				},\
+				"./Strip_List.svelte": {\
+					"path": "Strip_List.svelte",\
+					"declarations": []\
+				},\
+				"./Strip_Listitem.svelte": {\
+					"path": "Strip_Listitem.svelte",\
+					"declarations": []\
+				},\
+				"./Strip_View.svelte": {\
+					"path": "Strip_View.svelte",\
+					"declarations": []\
+				},\
+				"./strip.svelte.js": {\
+					"path": "strip.svelte.ts",\
+					"declarations": [\
+						{\
+							"name": "Strip_Role",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Strip_Json",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Strip_Json_Input",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Strip_Schema",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Strip_Options",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Strip",\
+							"kind": "class"\
+						},\
+						{\
+							"name": "create_strip_from_bit",\
+							"kind": "function"\
+						},\
+						{\
+							"name": "create_strip_from_text",\
+							"kind": "function"\
+						}\
+					]\
+				},\
+				"./tape_helpers.js": {\
+					"path": "tape_helpers.ts",\
+					"declarations": [\
+						{\
+							"name": "render_tape_to_string",\
+							"kind": "function"\
+						},\
+						{\
+							"name": "render_tape_messages",\
+							"kind": "function"\
+						}\
+					]\
+				},\
+				"./Tape_List.svelte": {\
+					"path": "Tape_List.svelte",\
+					"declarations": []\
+				},\
+				"./Tape_Listitem.svelte": {\
+					"path": "Tape_Listitem.svelte",\
+					"declarations": []\
+				},\
+				"./Tape_Toggle_Button.svelte": {\
+					"path": "Tape_Toggle_Button.svelte",\
+					"declarations": []\
+				},\
+				"./tape_types.js": {\
+					"path": "tape_types.ts",\
+					"declarations": [\
+						{\
+							"name": "Tape_Json",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Tape_Json_Input",\
+							"kind": "type"\
+						}\
+					]\
+				},\
+				"./tape.svelte.js": {\
+					"path": "tape.svelte.ts",\
+					"declarations": [\
+						{\
+							"name": "Tape_Options",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Tape",\
+							"kind": "class"\
+						}\
+					]\
+				},\
+				"./tapes.svelte.js": {\
+					"path": "tapes.svelte.ts",\
+					"declarations": [\
+						{\
+							"name": "Tapes_Json",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Tapes_Json_Input",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Tapes_Options",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Tapes",\
+							"kind": "class"\
+						}\
+					]\
+				},\
+				"./test_helpers.js": {\
+					"path": "test_helpers.ts",\
+					"declarations": [\
+						{\
+							"name": "expect_ok",\
+							"kind": "function"\
+						},\
+						{\
+							"name": "expect_defined",\
+							"kind": "function"\
+						},\
+						{\
+							"name": "expect_nonnullish",\
+							"kind": "function"\
+						},\
+						{\
+							"name": "monkeypatch_zzz_for_tests",\
+							"kind": "function"\
+						}\
+					]\
+				},\
+				"./test.task.js": {\
+					"path": "test.task.ts",\
+					"declarations": [\
+						{\
+							"name": "Args",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "task",\
+							"kind": "variable"\
+						}\
+					]\
+				},\
+				"./time_helpers.js": {\
+					"path": "time_helpers.ts",\
+					"declarations": [\
+						{\
+							"name": "format_timestamp",\
+							"kind": "function"\
+						},\
+						{\
+							"name": "format_ms_to_readable",\
+							"kind": "function"\
+						}\
+					]\
+				},\
+				"./time.svelte.js": {\
+					"path": "time.svelte.ts",\
+					"declarations": [\
+						{\
+							"name": "Time_Json",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Time_Json_Input",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Time_Options",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Time",\
+							"kind": "class"\
+						}\
+					]\
+				},\
+				"./Toggle_Button.svelte": {\
+					"path": "Toggle_Button.svelte",\
+					"declarations": []\
+				},\
+				"./ui.svelte.js": {\
+					"path": "ui.svelte.ts",\
+					"declarations": [\
+						{\
+							"name": "Ui_Json",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Ui_Json_Input",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Ui_Options",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Ui",\
+							"kind": "class"\
+						}\
+					]\
+				},\
+				"./url_params.svelte.js": {\
+					"path": "url_params.svelte.ts",\
+					"declarations": [\
+						{\
+							"name": "Url_Params_Json",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Url_Params_Json_Input",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Url_Params_Options",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "Url_Params",\
+							"kind": "class"\
+						}\
+					]\
+				},\
+				"./Xml_Attribute_Editor.svelte": {\
+					"path": "Xml_Attribute_Editor.svelte",\
+					"declarations": []\
+				},\
+				"./Xml_Tag_Controls.svelte": {\
+					"path": "Xml_Tag_Controls.svelte",\
+					"declarations": []\
+				},\
+				"./xml.js": {\
+					"path": "xml.ts",\
+					"declarations": [\
+						{\
+							"name": "Xml_Attribute_Key_Base",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Xml_Attribute_Key",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Xml_Attribute_Value_Base",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Xml_Attribute_Value",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Xml_Attribute_Base",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Xml_Attribute",\
+							"kind": "variable"\
+						}\
+					]\
+				},\
+				"./zod_helpers.js": {\
+					"path": "zod_helpers.ts",\
+					"declarations": [\
+						{\
+							"name": "Any",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Svelte_Map_Schema",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "get_datetime_now",\
+							"kind": "function"\
+						},\
+						{\
+							"name": "Datetime",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Datetime_Now",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "create_uuid",\
+							"kind": "function"\
+						},\
+						{\
+							"name": "Uuid",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Uuid_With_Default",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "zod_get_schema_keys",\
+							"kind": "function"\
+						},\
+						{\
+							"name": "get_field_schema",\
+							"kind": "function"\
+						},\
+						{\
+							"name": "maybe_get_field_schema",\
+							"kind": "function"\
+						},\
+						{\
+							"name": "unwrap_schema",\
+							"kind": "function"\
+						},\
+						{\
+							"name": "is_array_schema",\
+							"kind": "function"\
+						},\
+						{\
+							"name": "get_inner_array_schema",\
+							"kind": "function"\
+						}\
+					]\
 				},\
 				"./Zzz_Root.svelte": {\
 					"path": "Zzz_Root.svelte",\
@@ -166,11 +3450,19 @@ export const repos: Array<Repo> = JSON.parse(
 							"kind": "variable"\
 						},\
 						{\
+							"name": "Zzz_Json",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Zzz_Json_Input",\
+							"kind": "type"\
+						},\
+						{\
 							"name": "Zzz_Options",\
 							"kind": "type"\
 						},\
 						{\
-							"name": "Zzz_Json",\
+							"name": "Action_With_History",\
 							"kind": "type"\
 						},\
 						{\
@@ -193,7 +3485,7 @@ export const repos: Array<Repo> = JSON.parse(
 		"published": false,\
 		"check_runs": {\
 			"status": "completed",\
-			"conclusion": "success"\
+			"conclusion": "failure"\
 		},\
 		"pull_requests": [\
 			{\
@@ -209,7 +3501,7 @@ export const repos: Array<Repo> = JSON.parse(
 	{\
 		"package_json": {\
 			"name": "@ryanatkn/moss",\
-			"version": "0.26.0",\
+			"version": "0.27.0",\
 			"description": "CSS framework and design system",\
 			"motto": "magical organic stylesheets",\
 			"glyph": "🌿",\
@@ -243,9 +3535,9 @@ export const repos: Array<Repo> = JSON.parse(
 				"@changesets/changelog-git": "^0.2.1",\
 				"@ryanatkn/belt": "^0.30.2",\
 				"@ryanatkn/eslint-config": "^0.8.0",\
-				"@ryanatkn/fuz": "^0.139.2",\
+				"@ryanatkn/fuz": "^0.140.0",\
 				"@ryanatkn/fuz_code": "^0.22.0",\
-				"@ryanatkn/gro": "^0.152.0",\
+				"@ryanatkn/gro": "^0.153.1",\
 				"@sveltejs/adapter-static": "^3.0.8",\
 				"@sveltejs/kit": "^2.20.8",\
 				"@sveltejs/package": "^2.3.11",\
@@ -339,7 +3631,7 @@ export const repos: Array<Repo> = JSON.parse(
 		},\
 		"src_json": {\
 			"name": "@ryanatkn/moss",\
-			"version": "0.26.0",\
+			"version": "0.27.0",\
 			"modules": {\
 				"./package.json": {\
 					"path": "package.json",\
@@ -495,11 +3787,11 @@ export const repos: Array<Repo> = JSON.parse(
 							"kind": "variable"\
 						},\
 						{\
-							"name": "Width_Variant",\
+							"name": "Distance_Variant",\
 							"kind": "type"\
 						},\
 						{\
-							"name": "width_variants",\
+							"name": "distance_variants",\
 							"kind": "variable"\
 						},\
 						{\
@@ -552,6 +3844,22 @@ export const repos: Array<Repo> = JSON.parse(
 						},\
 						{\
 							"name": "color_variants",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Border_Distance_Variant",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "border_distance_variants",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "Outline_Distance_Variant",\
+							"kind": "type"\
+						},\
+						{\
+							"name": "outline_distance_variants",\
 							"kind": "variable"\
 						}\
 					]\
@@ -1409,23 +4717,23 @@ export const repos: Array<Repo> = JSON.parse(
 							"kind": "variable"\
 						},\
 						{\
-							"name": "width_xl",\
+							"name": "distance_xs",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "width_lg",\
+							"name": "distance_sm",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "width_md",\
+							"name": "distance_md",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "width_sm",\
+							"name": "distance_lg",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "width_xs",\
+							"name": "distance_xl",\
 							"kind": "variable"\
 						},\
 						{\
@@ -1521,11 +4829,19 @@ export const repos: Array<Repo> = JSON.parse(
 							"kind": "variable"\
 						},\
 						{\
-							"name": "outline_width",\
+							"name": "border_width_7",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "outline_width_1",\
+							"name": "border_width_8",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "border_width_9",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "outline_width",\
 							"kind": "variable"\
 						},\
 						{\
@@ -1906,21 +5222,12 @@ export const repos: Array<Repo> = JSON.parse(
 			"status": "completed",\
 			"conclusion": "success"\
 		},\
-		"pull_requests": [\
-			{\
-				"number": 49,\
-				"title": "add some utility classes",\
-				"user": {\
-					"login": "ryanatkn"\
-				},\
-				"draft": false\
-			}\
-		]\
+		"pull_requests": []\
 	},\
 	{\
 		"package_json": {\
 			"name": "@ryanatkn/fuz",\
-			"version": "0.139.2",\
+			"version": "0.140.1",\
 			"description": "Svelte UI library",\
 			"motto": "friendly user zystem",\
 			"glyph": "🧶",\
@@ -1970,8 +5277,8 @@ export const repos: Array<Repo> = JSON.parse(
 				"@ryanatkn/belt": "^0.30.2",\
 				"@ryanatkn/eslint-config": "^0.8.0",\
 				"@ryanatkn/fuz_code": "^0.22.0",\
-				"@ryanatkn/gro": "^0.152.0",\
-				"@ryanatkn/moss": "^0.26.0",\
+				"@ryanatkn/gro": "^0.153.1",\
+				"@ryanatkn/moss": "^0.27.0",\
 				"@sveltejs/adapter-static": "^3.0.8",\
 				"@sveltejs/kit": "^2.20.8",\
 				"@sveltejs/package": "^2.3.11",\
@@ -2323,7 +5630,7 @@ export const repos: Array<Repo> = JSON.parse(
 		},\
 		"src_json": {\
 			"name": "@ryanatkn/fuz",\
-			"version": "0.139.2",\
+			"version": "0.140.1",\
 			"modules": {\
 				"./package.json": {\
 					"path": "package.json",\
@@ -3043,7 +6350,7 @@ export const repos: Array<Repo> = JSON.parse(
 	{\
 		"package_json": {\
 			"name": "@ryanatkn/gro",\
-			"version": "0.152.0",\
+			"version": "0.153.2",\
 			"description": "task runner and toolkit extending SvelteKit",\
 			"motto": "generate, run, optimize",\
 			"glyph": "🌰",\
@@ -3112,8 +6419,8 @@ export const repos: Array<Repo> = JSON.parse(
 				"@changesets/changelog-git": "^0.2.1",\
 				"@changesets/types": "^6.1.0",\
 				"@ryanatkn/eslint-config": "^0.8.0",\
-				"@ryanatkn/fuz": "^0.139.1",\
-				"@ryanatkn/moss": "^0.26.0",\
+				"@ryanatkn/fuz": "^0.140.0",\
+				"@ryanatkn/moss": "^0.27.0",\
 				"@sveltejs/adapter-static": "^3.0.8",\
 				"@sveltejs/kit": "^2.20.8",\
 				"@sveltejs/package": "^2.3.11",\
@@ -3129,7 +6436,7 @@ export const repos: Array<Repo> = JSON.parse(
 				"uvu": "^0.5.6"\
 			},\
 			"optionalDependencies": {\
-				"@ryanatkn/moss": "^0.26.0"\
+				"@ryanatkn/moss": "^0.27.0"\
 			},\
 			"prettier": {\
 				"plugins": [\
@@ -3427,13 +6734,13 @@ export const repos: Array<Repo> = JSON.parse(
 					"types": "./dist/src_json.d.ts",\
 					"default": "./dist/src_json.js"\
 				},\
-				"./svelte_helpers.js": {\
-					"types": "./dist/svelte_helpers.d.ts",\
-					"default": "./dist/svelte_helpers.js"\
-				},\
 				"./svelte_config.js": {\
 					"types": "./dist/svelte_config.d.ts",\
 					"default": "./dist/svelte_config.js"\
+				},\
+				"./svelte_helpers.js": {\
+					"types": "./dist/svelte_helpers.d.ts",\
+					"default": "./dist/svelte_helpers.js"\
 				},\
 				"./sveltekit_helpers.js": {\
 					"types": "./dist/sveltekit_helpers.d.ts",\
@@ -3499,7 +6806,7 @@ export const repos: Array<Repo> = JSON.parse(
 		},\
 		"src_json": {\
 			"name": "@ryanatkn/gro",\
-			"version": "0.152.0",\
+			"version": "0.153.2",\
 			"modules": {\
 				".": {\
 					"path": "index.ts",\
@@ -3793,7 +7100,7 @@ export const repos: Array<Repo> = JSON.parse(
 							"kind": "variable"\
 						},\
 						{\
-							"name": "SVELTEKIT_CONFIG_FILENAME",\
+							"name": "SVELTE_CONFIG_FILENAME",\
 							"kind": "variable"\
 						},\
 						{\
@@ -4707,10 +8014,6 @@ export const repos: Array<Repo> = JSON.parse(
 							"kind": "function"\
 						},\
 						{\
-							"name": "is_dep",\
-							"kind": "function"\
-						},\
-						{\
 							"name": "has_dep",\
 							"kind": "function"\
 						},\
@@ -5029,6 +8332,10 @@ export const repos: Array<Repo> = JSON.parse(
 						{\
 							"name": "search_fs",\
 							"kind": "function"\
+						},\
+						{\
+							"name": "find_first_existing_file",\
+							"kind": "function"\
 						}\
 					]\
 				},\
@@ -5069,19 +8376,6 @@ export const repos: Array<Repo> = JSON.parse(
 						}\
 					]\
 				},\
-				"./svelte_helpers.js": {\
-					"path": "svelte_helpers.ts",\
-					"declarations": [\
-						{\
-							"name": "SVELTE_MATCHER",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "SVELTE_RUNES_MATCHER",\
-							"kind": "variable"\
-						}\
-					]\
-				},\
 				"./svelte_config.js": {\
 					"path": "svelte_config.ts",\
 					"declarations": [\
@@ -5090,7 +8384,7 @@ export const repos: Array<Repo> = JSON.parse(
 							"kind": "function"\
 						},\
 						{\
-							"name": "Parsed_Sveltekit_Config",\
+							"name": "Parsed_Svelte_Config",\
 							"kind": "type"\
 						},\
 						{\
@@ -5103,6 +8397,19 @@ export const repos: Array<Repo> = JSON.parse(
 						},\
 						{\
 							"name": "default_svelte_config",\
+							"kind": "variable"\
+						}\
+					]\
+				},\
+				"./svelte_helpers.js": {\
+					"path": "svelte_helpers.ts",\
+					"declarations": [\
+						{\
+							"name": "SVELTE_MATCHER",\
+							"kind": "variable"\
+						},\
+						{\
+							"name": "SVELTE_RUNES_MATCHER",\
 							"kind": "variable"\
 						}\
 					]\
@@ -5525,7 +8832,7 @@ export const repos: Array<Repo> = JSON.parse(
 				"user": {\
 					"login": "ryanatkn"\
 				},\
-				"draft": false\
+				"draft": true\
 			},\
 			{\
 				"number": 530,\
@@ -5564,9 +8871,9 @@ export const repos: Array<Repo> = JSON.parse(
 			"devDependencies": {\
 				"@ryanatkn/belt": "^0.30.2",\
 				"@ryanatkn/eslint-config": "^0.8.0",\
-				"@ryanatkn/fuz": "^0.139.2",\
-				"@ryanatkn/gro": "^0.152.0",\
-				"@ryanatkn/moss": "^0.26.0",\
+				"@ryanatkn/fuz": "^0.140.0",\
+				"@ryanatkn/gro": "^0.153.1",\
+				"@ryanatkn/moss": "^0.27.0",\
 				"@sveltejs/adapter-static": "^3.0.8",\
 				"@sveltejs/kit": "^2.20.8",\
 				"@sveltejs/vite-plugin-svelte": "^5.0.3",\
@@ -5683,9 +8990,9 @@ export const repos: Array<Repo> = JSON.parse(
 			"devDependencies": {\
 				"@changesets/changelog-git": "^0.2.1",\
 				"@ryanatkn/eslint-config": "^0.8.0",\
-				"@ryanatkn/fuz": "^0.139.2",\
-				"@ryanatkn/gro": "^0.152.0",\
-				"@ryanatkn/moss": "^0.26.0",\
+				"@ryanatkn/fuz": "^0.140.0",\
+				"@ryanatkn/gro": "^0.153.1",\
+				"@ryanatkn/moss": "^0.27.0",\
 				"@sveltejs/adapter-static": "^3.0.8",\
 				"@sveltejs/kit": "^2.20.8",\
 				"@sveltejs/package": "^2.3.11",\
@@ -6808,11 +10115,11 @@ export const repos: Array<Repo> = JSON.parse(
 				"@changesets/changelog-git": "^0.2.1",\
 				"@ryanatkn/belt": "^0.30.2",\
 				"@ryanatkn/eslint-config": "^0.8.0",\
-				"@ryanatkn/fuz": "^0.139.2",\
+				"@ryanatkn/fuz": "^0.140.0",\
 				"@ryanatkn/fuz_code": "^0.22.0",\
 				"@ryanatkn/fuz_mastodon": "^0.29.0",\
-				"@ryanatkn/gro": "^0.152.0",\
-				"@ryanatkn/moss": "^0.26.0",\
+				"@ryanatkn/gro": "^0.153.1",\
+				"@ryanatkn/moss": "^0.27.0",\
 				"@sveltejs/adapter-static": "^3.0.8",\
 				"@sveltejs/kit": "^2.20.8",\
 				"@sveltejs/package": "^2.3.11",\
@@ -7119,10 +10426,10 @@ export const repos: Array<Repo> = JSON.parse(
 				"@changesets/changelog-git": "^0.2.1",\
 				"@ryanatkn/belt": "^0.30.2",\
 				"@ryanatkn/eslint-config": "^0.8.0",\
-				"@ryanatkn/fuz": "^0.139.2",\
+				"@ryanatkn/fuz": "^0.140.0",\
 				"@ryanatkn/fuz_code": "^0.22.0",\
-				"@ryanatkn/gro": "^0.152.0",\
-				"@ryanatkn/moss": "^0.26.0",\
+				"@ryanatkn/gro": "^0.153.1",\
+				"@ryanatkn/moss": "^0.27.0",\
 				"@sveltejs/adapter-static": "^3.0.8",\
 				"@sveltejs/kit": "^2.20.8",\
 				"@sveltejs/package": "^2.3.11",\
@@ -7414,9 +10721,9 @@ export const repos: Array<Repo> = JSON.parse(
 				"@changesets/changelog-git": "^0.2.1",\
 				"@ryanatkn/belt": "^0.30.2",\
 				"@ryanatkn/eslint-config": "^0.8.0",\
-				"@ryanatkn/fuz": "^0.139.2",\
-				"@ryanatkn/gro": "^0.152.0",\
-				"@ryanatkn/moss": "^0.26.0",\
+				"@ryanatkn/fuz": "^0.140.0",\
+				"@ryanatkn/gro": "^0.153.1",\
+				"@ryanatkn/moss": "^0.27.0",\
 				"@sveltejs/adapter-static": "^3.0.8",\
 				"@sveltejs/kit": "^2.20.8",\
 				"@sveltejs/package": "^2.3.11",\
@@ -7758,7 +11065,7 @@ export const repos: Array<Repo> = JSON.parse(
 	{\
 		"package_json": {\
 			"name": "@ryanatkn/fuz_gitops",\
-			"version": "0.45.1",\
+			"version": "0.45.2",\
 			"description": "a tool for managing many repos",\
 			"glyph": "🪄",\
 			"logo": "logo.svg",\
@@ -7800,9 +11107,9 @@ export const repos: Array<Repo> = JSON.parse(
 				"@changesets/changelog-git": "^0.2.1",\
 				"@ryanatkn/belt": "^0.30.2",\
 				"@ryanatkn/eslint-config": "^0.8.0",\
-				"@ryanatkn/fuz": "^0.139.2",\
-				"@ryanatkn/gro": "^0.152.0",\
-				"@ryanatkn/moss": "^0.26.0",\
+				"@ryanatkn/fuz": "^0.140.0",\
+				"@ryanatkn/gro": "^0.153.2",\
+				"@ryanatkn/moss": "^0.27.0",\
 				"@sveltejs/adapter-static": "^3.0.8",\
 				"@sveltejs/kit": "^2.20.8",\
 				"@sveltejs/package": "^2.3.11",\
@@ -7960,7 +11267,7 @@ export const repos: Array<Repo> = JSON.parse(
 		},\
 		"src_json": {\
 			"name": "@ryanatkn/fuz_gitops",\
-			"version": "0.45.1",\
+			"version": "0.45.2",\
 			"modules": {\
 				"./package.json": {\
 					"path": "package.json",\
@@ -8326,9 +11633,9 @@ export const repos: Array<Repo> = JSON.parse(
 			"devDependencies": {\
 				"@ryanatkn/belt": "^0.30.2",\
 				"@ryanatkn/eslint-config": "^0.8.0",\
-				"@ryanatkn/fuz": "^0.139.2",\
-				"@ryanatkn/gro": "^0.152.0",\
-				"@ryanatkn/moss": "^0.26.0",\
+				"@ryanatkn/fuz": "^0.140.0",\
+				"@ryanatkn/gro": "^0.153.1",\
+				"@ryanatkn/moss": "^0.27.0",\
 				"@sveltejs/adapter-static": "^3.0.8",\
 				"@sveltejs/kit": "^2.20.8",\
 				"@sveltejs/vite-plugin-svelte": "^5.0.3",\
@@ -8558,9 +11865,9 @@ export const repos: Array<Repo> = JSON.parse(
 			"devDependencies": {\
 				"@ryanatkn/belt": "^0.30.2",\
 				"@ryanatkn/eslint-config": "^0.8.0",\
-				"@ryanatkn/fuz": "^0.139.2",\
-				"@ryanatkn/gro": "^0.152.0",\
-				"@ryanatkn/moss": "^0.26.0",\
+				"@ryanatkn/fuz": "^0.140.0",\
+				"@ryanatkn/gro": "^0.153.1",\
+				"@ryanatkn/moss": "^0.27.0",\
 				"@sveltejs/adapter-static": "^3.0.8",\
 				"@sveltejs/kit": "^2.20.8",\
 				"@sveltejs/vite-plugin-svelte": "^5.0.3",\
@@ -8668,12 +11975,12 @@ export const repos: Array<Repo> = JSON.parse(
 			"devDependencies": {\
 				"@ryanatkn/belt": "^0.30.2",\
 				"@ryanatkn/eslint-config": "^0.8.0",\
-				"@ryanatkn/fuz": "^0.139.2",\
+				"@ryanatkn/fuz": "^0.140.0",\
 				"@ryanatkn/fuz_blog": "^0.12.0",\
 				"@ryanatkn/fuz_code": "^0.22.0",\
 				"@ryanatkn/fuz_mastodon": "^0.29.0",\
-				"@ryanatkn/gro": "^0.152.0",\
-				"@ryanatkn/moss": "^0.26.0",\
+				"@ryanatkn/gro": "^0.153.1",\
+				"@ryanatkn/moss": "^0.27.0",\
 				"@sveltejs/adapter-static": "^3.0.8",\
 				"@sveltejs/kit": "^2.20.8",\
 				"@sveltejs/vite-plugin-svelte": "^5.0.3",\
@@ -8772,12 +12079,12 @@ export const repos: Array<Repo> = JSON.parse(
 				"@prettier/plugin-xml": "^3.4.1",\
 				"@ryanatkn/belt": "^0.30.2",\
 				"@ryanatkn/eslint-config": "^0.8.0",\
-				"@ryanatkn/fuz": "^0.139.2",\
+				"@ryanatkn/fuz": "^0.140.1",\
 				"@ryanatkn/fuz_blog": "^0.12.0",\
-				"@ryanatkn/fuz_gitops": "^0.45.1",\
+				"@ryanatkn/fuz_gitops": "^0.45.2",\
 				"@ryanatkn/fuz_mastodon": "^0.29.0",\
-				"@ryanatkn/gro": "^0.152.0",\
-				"@ryanatkn/moss": "^0.26.0",\
+				"@ryanatkn/gro": "^0.153.2",\
+				"@ryanatkn/moss": "^0.27.0",\
 				"@sveltejs/adapter-static": "^3.0.8",\
 				"@sveltejs/kit": "^2.20.8",\
 				"@sveltejs/vite-plugin-svelte": "^5.0.3",\
