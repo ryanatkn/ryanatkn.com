@@ -37,6 +37,6 @@ button.inline.plain {
 	padding: var(--space_xs2);
 	margin: 0;
 	/* TODO can't go larger without affecting line spacing, maybe fix with negative margin? */
-	height: var(--size_lg);
-	min-height: var(--size_lg);
+	height: var(--font_size_lg);
+	min-height: var(--font_size_lg);
 }

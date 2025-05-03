@@ -44,13 +44,13 @@
 			color-mix(in hsl, var(--shadow_color) var(--shadow_alpha_1), transparent);
 	}
 	.blog_card {
-		font-size: var(--size_lg);
+		font-size: var(--font_size_lg);
 		max-width: var(--distance_sm);
 		background-color: var(--bg);
 		border-width: var(--border_width);
 		border-style: solid;
 		border-color: transparent;
-		border-radius: var(--radius_xs);
+		border-radius: var(--border_radius_xs);
 		margin-bottom: var(--space_xl);
 		margin-top: var(--space_sm);
 		padding: var(--space_md);
@@ -62,7 +62,7 @@
 		);
 	}
 	.date {
-		font-size: var(--size_md);
+		font-size: var(--font_size_md);
 		margin-top: var(--space_xs);
 	}
 	.feed_link {
