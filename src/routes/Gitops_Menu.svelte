@@ -17,6 +17,6 @@
 		gap: var(--space_lg);
 		flex-direction: column;
 		align-items: center;
-		font-size: var(--size_lg);
+		font-size: var(--font_size_lg);
 	}
 </style>

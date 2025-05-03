@@ -3763,11 +3763,11 @@ export const repos: Array<Repo> = JSON.parse(
 							"kind": "type"\
 						},\
 						{\
-							"name": "size_variants",\
+							"name": "font_size_variants",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "size_names",\
+							"name": "font_size_names",\
 							"kind": "variable"\
 						},\
 						{\
@@ -3795,11 +3795,11 @@ export const repos: Array<Repo> = JSON.parse(
 							"kind": "variable"\
 						},\
 						{\
-							"name": "Radius_Variant",\
+							"name": "Border_Radius_Variant",\
 							"kind": "type"\
 						},\
 						{\
-							"name": "radius_variants",\
+							"name": "border_radius_variants",\
 							"kind": "variable"\
 						},\
 						{\
@@ -3823,7 +3823,7 @@ export const repos: Array<Repo> = JSON.parse(
 							"kind": "type"\
 						},\
 						{\
-							"name": "shadow_size_variants",\
+							"name": "shadow_font_size_variants",\
 							"kind": "variable"\
 						},\
 						{\
@@ -4541,67 +4541,67 @@ export const repos: Array<Repo> = JSON.parse(
 							"kind": "variable"\
 						},\
 						{\
-							"name": "font_sans",\
+							"name": "font_family_sans",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "font_serif",\
+							"name": "font_family_serif",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "font_mono",\
+							"name": "font_family_mono",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "size_xs",\
+							"name": "font_size_xs",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "size_sm",\
+							"name": "font_size_sm",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "size_md",\
+							"name": "font_size_md",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "size_lg",\
+							"name": "font_size_lg",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "size_xl",\
+							"name": "font_size_xl",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "size_xl2",\
+							"name": "font_size_xl2",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "size_xl3",\
+							"name": "font_size_xl3",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "size_xl4",\
+							"name": "font_size_xl4",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "size_xl5",\
+							"name": "font_size_xl5",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "size_xl6",\
+							"name": "font_size_xl6",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "size_xl7",\
+							"name": "font_size_xl7",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "size_xl8",\
+							"name": "font_size_xl8",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "size_xl9",\
+							"name": "font_size_xl9",\
 							"kind": "variable"\
 						},\
 						{\
@@ -4861,31 +4861,31 @@ export const repos: Array<Repo> = JSON.parse(
 							"kind": "variable"\
 						},\
 						{\
-							"name": "radius_xl",\
+							"name": "border_radius_xl",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "radius_lg",\
+							"name": "border_radius_lg",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "radius_md",\
+							"name": "border_radius_md",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "radius_sm",\
+							"name": "border_radius_sm",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "radius_xs",\
+							"name": "border_radius_xs",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "radius_xs2",\
+							"name": "border_radius_xs2",\
 							"kind": "variable"\
 						},\
 						{\
-							"name": "radius_xs3",\
+							"name": "border_radius_xs3",\
 							"kind": "variable"\
 						},\
 						{\

@@ -32,7 +32,7 @@
 		{@html project.title}
 		{#if project.glyph}{project.glyph}{/if}
 	</header>
-	<div class="flex">
+	<div class="display_flex">
 		<div>
 			<!-- {#if project.motto}
 				<p>{@html project.motto}</p>
@@ -43,7 +43,7 @@
 				</p>
 			{/if}
 			{#if project.subtitle}
-				<p class="flex flex_wrap gap_xs">{@html project.subtitle}</p>
+				<p class="display_flex flex_wrap gap_xs">{@html project.subtitle}</p>
 			{/if}
 		</div>
 		{#if project.logo}
@@ -80,7 +80,7 @@
 		border-width: var(--border_width);
 		border-style: solid;
 		border-color: transparent;
-		border-radius: var(--radius_xs);
+		border-radius: var(--border_radius_xs);
 		margin-bottom: var(--space_lg);
 		padding: var(--space_md);
 	}
@@ -91,7 +91,7 @@
 		flex-shrink: 0;
 	}
 	.title {
-		font-size: var(--size_lg);
+		font-size: var(--font_size_lg);
 		margin-bottom: var(--space_sm);
 	}
 </style>

@@ -96,11 +96,12 @@
 					class="white_space_nowrap"
 					href="https://github.com/sponsors/ryanatkn"
 					style:--link_color="var(--color_b_5)"
-					><Svg data={github_logo} size="var(--size_md)" fill="var(--color_b_5)" inline /> GitHub Sponsors</a
+					><Svg data={github_logo} size="var(--font_size_md)" fill="var(--color_b_5)" inline /> GitHub
+					Sponsors</a
 				>
 				or
 				<a class="white_space_nowrap" href="https://www.patreon.com/ryanatkn"
-					><Patreon_Logo size="var(--size_md)" fill="var(--color_a_5)" inline /> Patreon</a
+					><Patreon_Logo size="var(--font_size_md)" fill="var(--color_a_5)" inline /> Patreon</a
 				>. Supporting me at any level grants you access to supporters-only social websites I build
 				on camera (none yet, maybe late 2025). Supporting me through GitHub instead of Patreon also
 				gives you access to discussions on a supporters-only GitHub repo.

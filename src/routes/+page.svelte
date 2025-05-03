@@ -19,7 +19,7 @@
 		<div class="panel shadow_inset_xs">
 			<!-- TODO specificity so we can just add `.bg` instead of `style:background-color="var(--bg)"` -->
 			<header>
-				<div class="radius_50 shadow_md"><Me /></div>
+				<div class="border_radius_50 shadow_md"><Me /></div>
 				<blockquote class="bg shadow_xs ml_md mt_md">
 					welcome to the homepage<br />
 					of Ryan Atkinson, he's<br />
@@ -56,8 +56,8 @@
 		</div>
 		<div class="box py_xl">
 			<div class="panel p_lg bg shadow_inset_xs">
-				<!-- TODO fuz .size_lg -->
-				<div class="mb_lg text_align_center" style:font-size="var(--size_lg)">all repos</div>
+				<!-- TODO fuz .font_size_lg -->
+				<div class="mb_lg text_align_center" style:font-size="var(--font_size_lg)">all repos</div>
 				<Gitops_Menu />
 			</div>
 		</div>
