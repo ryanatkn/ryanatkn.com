@@ -147,17 +147,21 @@ a.chip {
 .display_contents {
 	display: contents;
 }
-.inline {
-	display: inline;
-}
-.inline_flex {
-	display: inline-flex;
-}
-.block {
+/** Same as `display: block flow`. */
+.display_block {
 	display: block;
 }
-.flex {
+/** Same as `display: inline flow-root`. */
+.display_inline_block {
+	display: inline-block;
+}
+/** Same as `display: block flex`. */
+.display_flex {
 	display: flex;
+}
+/** Same as `display: inline flex`. */
+.display_inline_flex {
+	display: inline-flex;
 }
 .flex_1 {
 	flex: 1;
