@@ -44,9 +44,9 @@ export const repos: Array<Repo> = JSON.parse(
 			"devDependencies": {\
 				"@changesets/changelog-git": "^0.2.1",\
 				"@ryanatkn/eslint-config": "^0.8.0",\
-				"@ryanatkn/fuz": "^0.143.0",\
-				"@ryanatkn/gro": "^0.158.0",\
-				"@ryanatkn/moss": "^0.29.0",\
+				"@ryanatkn/fuz": "^0.144.0",\
+				"@ryanatkn/gro": "^0.159.0",\
+				"@ryanatkn/moss": "^0.31.0",\
 				"@sveltejs/adapter-static": "^3.0.8",\
 				"@sveltejs/kit": "^2.20.8",\
 				"@sveltejs/package": "^2.3.11",\
@@ -2622,6 +2622,10 @@ export const repos: Array<Repo> = JSON.parse(
 							"kind": "variable"\
 						},\
 						{\
+							"name": "GLYPH_IDEA",\
+							"kind": "variable"\
+						},\
+						{\
 							"name": "GLYPH_ECHO",\
 							"kind": "variable"\
 						},\
@@ -4087,7 +4091,7 @@ export const repos: Array<Repo> = JSON.parse(
 	{\
 		"package_json": {\
 			"name": "@ryanatkn/moss",\
-			"version": "0.29.0",\
+			"version": "0.31.0",\
 			"description": "CSS framework and design system",\
 			"motto": "magical organic stylesheets",\
 			"glyph": "🌿",\
@@ -4121,9 +4125,9 @@ export const repos: Array<Repo> = JSON.parse(
 				"@changesets/changelog-git": "^0.2.1",\
 				"@ryanatkn/belt": "^0.30.2",\
 				"@ryanatkn/eslint-config": "^0.8.0",\
-				"@ryanatkn/fuz": "^0.143.0",\
+				"@ryanatkn/fuz": "^0.144.0",\
 				"@ryanatkn/fuz_code": "^0.23.0",\
-				"@ryanatkn/gro": "^0.158.0",\
+				"@ryanatkn/gro": "^0.159.0",\
 				"@sveltejs/adapter-static": "^3.0.8",\
 				"@sveltejs/kit": "^2.20.8",\
 				"@sveltejs/package": "^2.3.11",\
@@ -4217,7 +4221,7 @@ export const repos: Array<Repo> = JSON.parse(
 		},\
 		"src_json": {\
 			"name": "@ryanatkn/moss",\
-			"version": "0.29.0",\
+			"version": "0.31.0",\
 			"modules": {\
 				"./package.json": {\
 					"path": "package.json",\
@@ -5786,30 +5790,6 @@ export const repos: Array<Repo> = JSON.parse(
 							"kind": "variable"\
 						},\
 						{\
-							"name": "fade_1",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "fade_2",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "fade_3",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "fade_4",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "fade_5",\
-							"kind": "variable"\
-						},\
-						{\
-							"name": "fade_6",\
-							"kind": "variable"\
-						},\
-						{\
 							"name": "disabled_opacity",\
 							"kind": "variable"\
 						},\
@@ -5840,7 +5820,7 @@ export const repos: Array<Repo> = JSON.parse(
 	{\
 		"package_json": {\
 			"name": "@ryanatkn/fuz",\
-			"version": "0.143.0",\
+			"version": "0.144.0",\
 			"description": "Svelte UI library",\
 			"motto": "friendly user zystem",\
 			"glyph": "🧶",\
@@ -5890,8 +5870,8 @@ export const repos: Array<Repo> = JSON.parse(
 				"@ryanatkn/belt": "^0.30.2",\
 				"@ryanatkn/eslint-config": "^0.8.0",\
 				"@ryanatkn/fuz_code": "^0.23.0",\
-				"@ryanatkn/gro": "^0.158.0",\
-				"@ryanatkn/moss": "^0.29.0",\
+				"@ryanatkn/gro": "^0.159.0",\
+				"@ryanatkn/moss": "^0.31.0",\
 				"@sveltejs/adapter-static": "^3.0.8",\
 				"@sveltejs/kit": "^2.20.8",\
 				"@sveltejs/package": "^2.3.11",\
@@ -6252,7 +6232,7 @@ export const repos: Array<Repo> = JSON.parse(
 		},\
 		"src_json": {\
 			"name": "@ryanatkn/fuz",\
-			"version": "0.143.0",\
+			"version": "0.144.0",\
 			"modules": {\
 				"./package.json": {\
 					"path": "package.json",\
@@ -7242,7 +7222,7 @@ export const repos: Array<Repo> = JSON.parse(
 	{\
 		"package_json": {\
 			"name": "@ryanatkn/gro",\
-			"version": "0.158.0",\
+			"version": "0.159.0",\
 			"description": "task runner and toolkit extending SvelteKit",\
 			"motto": "generate, run, optimize",\
 			"glyph": "🌰",\
@@ -7312,8 +7292,8 @@ export const repos: Array<Repo> = JSON.parse(
 				"@changesets/changelog-git": "^0.2.1",\
 				"@changesets/types": "^6.1.0",\
 				"@ryanatkn/eslint-config": "^0.8.0",\
-				"@ryanatkn/fuz": "^0.143.0",\
-				"@ryanatkn/moss": "^0.29.0",\
+				"@ryanatkn/fuz": "^0.144.0",\
+				"@ryanatkn/moss": "^0.31.0",\
 				"@sveltejs/adapter-static": "^3.0.8",\
 				"@sveltejs/kit": "^2.20.8",\
 				"@sveltejs/package": "^2.3.11",\
@@ -7329,7 +7309,7 @@ export const repos: Array<Repo> = JSON.parse(
 				"uvu": "^0.5.6"\
 			},\
 			"optionalDependencies": {\
-				"@ryanatkn/moss": ">=0.27.0 <0.30.0"\
+				"@ryanatkn/moss": ">=0.27.0"\
 			},\
 			"prettier": {\
 				"plugins": [\
@@ -7707,7 +7687,7 @@ export const repos: Array<Repo> = JSON.parse(
 		},\
 		"src_json": {\
 			"name": "@ryanatkn/gro",\
-			"version": "0.158.0",\
+			"version": "0.159.0",\
 			"modules": {\
 				".": {\
 					"path": "index.ts",\
@@ -11742,23 +11722,23 @@ export const repos: Array<Repo> = JSON.parse(
 				"@changesets/changelog-git": "^0.2.1",\
 				"@ryanatkn/belt": "^0.30.2",\
 				"@ryanatkn/eslint-config": "^0.8.0",\
-				"@ryanatkn/fuz": "^0.143.0",\
-				"@ryanatkn/gro": "^0.158.0",\
-				"@ryanatkn/moss": "^0.29.0",\
+				"@ryanatkn/fuz": "^0.144.0",\
+				"@ryanatkn/gro": "^0.159.0",\
+				"@ryanatkn/moss": "^0.31.0",\
 				"@sveltejs/adapter-static": "^3.0.8",\
 				"@sveltejs/kit": "^2.20.8",\
 				"@sveltejs/package": "^2.3.11",\
 				"@sveltejs/vite-plugin-svelte": "^5.0.3",\
-				"@types/node": "^22.15.3",\
+				"@types/node": "^22.15.16",\
 				"eslint": "^9.25.1",\
 				"eslint-plugin-svelte": "^3.5.1",\
 				"prettier": "^3.5.3",\
 				"prettier-plugin-svelte": "^3.3.3",\
 				"svelte": "^5.28.2",\
-				"svelte-check": "^4.1.6",\
+				"svelte-check": "^4.1.7",\
 				"tslib": "^2.8.1",\
 				"typescript": "^5.8.3",\
-				"typescript-eslint": "^8.31.1",\
+				"typescript-eslint": "^8.32.0",\
 				"uvu": "^0.5.6"\
 			},\
 			"prettier": {\
@@ -12106,7 +12086,7 @@ export const repos: Array<Repo> = JSON.parse(
 	{\
 		"package_json": {\
 			"name": "@ryanatkn/fuz_gitops",\
-			"version": "0.47.0",\
+			"version": "0.48.0",\
 			"description": "a tool for managing many repos",\
 			"glyph": "🪄",\
 			"logo": "logo.svg",\
@@ -12148,9 +12128,9 @@ export const repos: Array<Repo> = JSON.parse(
 				"@changesets/changelog-git": "^0.2.1",\
 				"@ryanatkn/belt": "^0.30.2",\
 				"@ryanatkn/eslint-config": "^0.8.0",\
-				"@ryanatkn/fuz": "^0.143.0",\
-				"@ryanatkn/gro": "^0.158.0",\
-				"@ryanatkn/moss": "^0.29.0",\
+				"@ryanatkn/fuz": "^0.144.0",\
+				"@ryanatkn/gro": "^0.159.0",\
+				"@ryanatkn/moss": "^0.31.0",\
 				"@sveltejs/adapter-static": "^3.0.8",\
 				"@sveltejs/kit": "^2.20.8",\
 				"@sveltejs/package": "^2.3.11",\
@@ -12308,7 +12288,7 @@ export const repos: Array<Repo> = JSON.parse(
 		},\
 		"src_json": {\
 			"name": "@ryanatkn/fuz_gitops",\
-			"version": "0.47.0",\
+			"version": "0.48.0",\
 			"modules": {\
 				"./package.json": {\
 					"path": "package.json",\
@@ -12744,9 +12724,9 @@ export const repos: Array<Repo> = JSON.parse(
 			"devDependencies": {\
 				"@ryanatkn/belt": "^0.30.2",\
 				"@ryanatkn/eslint-config": "^0.8.0",\
-				"@ryanatkn/fuz": "^0.143.0",\
-				"@ryanatkn/gro": "^0.158.0",\
-				"@ryanatkn/moss": "^0.29.0",\
+				"@ryanatkn/fuz": "^0.144.0",\
+				"@ryanatkn/gro": "^0.159.0",\
+				"@ryanatkn/moss": "^0.31.0",\
 				"@sveltejs/adapter-static": "^3.0.8",\
 				"@sveltejs/kit": "^2.20.8",\
 				"@sveltejs/vite-plugin-svelte": "^5.0.3",\
@@ -12868,9 +12848,9 @@ export const repos: Array<Repo> = JSON.parse(
 				"@pixi/text": "^7.4.3",\
 				"@ryanatkn/belt": "^0.30.2",\
 				"@ryanatkn/eslint-config": "^0.8.0",\
-				"@ryanatkn/fuz": "^0.143.0",\
-				"@ryanatkn/gro": "^0.158.0",\
-				"@ryanatkn/moss": "^0.29.0",\
+				"@ryanatkn/fuz": "^0.144.0",\
+				"@ryanatkn/gro": "^0.159.0",\
+				"@ryanatkn/moss": "^0.31.0",\
 				"@sveltejs/adapter-static": "^3.0.8",\
 				"@sveltejs/kit": "^2.20.8",\
 				"@sveltejs/vite-plugin-svelte": "^5.0.3",\
@@ -12968,9 +12948,9 @@ export const repos: Array<Repo> = JSON.parse(
 			"devDependencies": {\
 				"@ryanatkn/belt": "^0.30.2",\
 				"@ryanatkn/eslint-config": "^0.8.0",\
-				"@ryanatkn/fuz": "^0.143.0",\
-				"@ryanatkn/gro": "^0.158.0",\
-				"@ryanatkn/moss": "^0.29.0",\
+				"@ryanatkn/fuz": "^0.144.0",\
+				"@ryanatkn/gro": "^0.159.0",\
+				"@ryanatkn/moss": "^0.31.0",\
 				"@sveltejs/adapter-static": "^3.0.8",\
 				"@sveltejs/kit": "^2.20.8",\
 				"@sveltejs/vite-plugin-svelte": "^5.0.3",\
@@ -13078,12 +13058,12 @@ export const repos: Array<Repo> = JSON.parse(
 			"devDependencies": {\
 				"@ryanatkn/belt": "^0.30.2",\
 				"@ryanatkn/eslint-config": "^0.8.0",\
-				"@ryanatkn/fuz": "^0.143.0",\
+				"@ryanatkn/fuz": "^0.144.0",\
 				"@ryanatkn/fuz_blog": "^0.13.0",\
 				"@ryanatkn/fuz_code": "^0.23.0",\
 				"@ryanatkn/fuz_mastodon": "^0.30.0",\
-				"@ryanatkn/gro": "^0.158.0",\
-				"@ryanatkn/moss": "^0.29.0",\
+				"@ryanatkn/gro": "^0.159.0",\
+				"@ryanatkn/moss": "^0.31.0",\
 				"@sveltejs/adapter-static": "^3.0.8",\
 				"@sveltejs/kit": "^2.20.8",\
 				"@sveltejs/vite-plugin-svelte": "^5.0.3",\
@@ -13182,12 +13162,12 @@ export const repos: Array<Repo> = JSON.parse(
 				"@prettier/plugin-xml": "^3.4.1",\
 				"@ryanatkn/belt": "^0.30.2",\
 				"@ryanatkn/eslint-config": "^0.8.0",\
-				"@ryanatkn/fuz": "^0.143.0",\
+				"@ryanatkn/fuz": "^0.144.0",\
 				"@ryanatkn/fuz_blog": "^0.13.0",\
-				"@ryanatkn/fuz_gitops": "^0.47.0",\
+				"@ryanatkn/fuz_gitops": "^0.48.0",\
 				"@ryanatkn/fuz_mastodon": "^0.30.0",\
-				"@ryanatkn/gro": "^0.158.0",\
-				"@ryanatkn/moss": "^0.29.0",\
+				"@ryanatkn/gro": "^0.159.0",\
+				"@ryanatkn/moss": "^0.31.0",\
 				"@sveltejs/adapter-static": "^3.0.8",\
 				"@sveltejs/kit": "^2.20.8",\
 				"@sveltejs/vite-plugin-svelte": "^5.0.3",\
@@ -13246,8 +13226,8 @@ export const repos: Array<Repo> = JSON.parse(
 		"changelog_url": null,\
 		"published": false,\
 		"check_runs": {\
-			"status": "in_progress",\
-			"conclusion": null\
+			"status": "completed",\
+			"conclusion": "success"\
 		},\
 		"pull_requests": []\
 	}\
