@@ -1,5 +1,5 @@
 <h2 class="mb_xl2">contact me</h2>
-<ul class="contact_info panel bg shadow_xs py_md pr_md relative">
+<ul class="contact_info panel bg shadow_xs py_md pr_md position_relative">
 	<li>
 		I'm looking for low-hour consulting work – here's my
 		<a

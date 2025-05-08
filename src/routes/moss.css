@@ -138,11 +138,8 @@ a.chip {
 	font-weight: 700;
 }
 
-.relative {
+.position_relative {
 	position: relative;
-}
-.overflow_auto {
-	overflow: auto;
 }
 .display_contents {
 	display: contents;
@@ -163,6 +160,12 @@ a.chip {
 .display_inline_flex {
 	display: inline-flex;
 }
+.float_right {
+	float: right;
+}
+.overflow_auto {
+	overflow: auto;
+}
 .flex_1 {
 	flex: 1;
 }
@@ -171,9 +174,6 @@ a.chip {
 }
 .align_items_center {
 	align-items: center;
-}
-.float_right {
-	float: right;
 }
 .flip_x {
 	transform: scaleX(-1);

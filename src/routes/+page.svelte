@@ -28,7 +28,7 @@
 					software for the social web
 				</blockquote>
 			</header>
-			<p class="panel bg relative shadow_xs mt_md" style:max-width="450px">
+			<p class="panel bg position_relative shadow_xs mt_md" style:max-width="450px">
 				Hi, I'm building free and open source software and communicating about it. My main skill is
 				making frontend web apps and I also do some backend and devtools programming. I enjoy trying
 				to make powerful tools that are easy to use, and I'm extra interested in UIs, API design,
