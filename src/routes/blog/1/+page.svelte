@@ -185,7 +185,7 @@
 		<p>
 			So when dog folks come along with their predictable request, we can say, ah yes, they want us
 			to exercise our control over the space to change the rules of interaction, so every dog can
-			have its day too.
+			have their day too.
 		</p>
 	</section>
 
