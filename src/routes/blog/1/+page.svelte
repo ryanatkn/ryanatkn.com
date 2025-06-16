@@ -211,6 +211,12 @@
 			and Imagining Social Platforms" (<a href="https://consentful.systems">consentful.systems</a>)
 			by Jane Im (<a href="https://imjane.net/">imjane.net</a>) and colleagues.
 		</p>
+		<p>
+			I used ChatGPT (<a href="https://chatgpt.com/">chatgpt.com</a>) not for writing any text but
+			to brainstorm the model when I was midway through. It didn't give me the final answers but it
+			accelerated the final output, and we can't run the counterfactual of what I would have ended
+			on without it.
+		</p>
 	</section>
 
 	<hr />
