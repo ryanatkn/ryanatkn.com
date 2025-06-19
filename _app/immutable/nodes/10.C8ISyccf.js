@@ -51,7 +51,7 @@ import{t as V,a as T,d as ke,e as Ee}from"../chunks/CNs3ZFP_.js";import{j as et,
 			and Imagining Social Platforms" (<a href="https://consentful.systems">consentful.systems</a>)
 			by Jane Im (<a href="https://imjane.net/">imjane.net</a>) and colleagues.</p> <p>I used ChatGPT (<a href="https://chatgpt.com/">chatgpt.com</a>) not for writing any text but
 			to brainstorm the model when I was midway through. It didn't give me the final answers but it
-			accelerated the process, and maybe influenced the result.</p></section> <hr> <section><h2>P.S.</h2> <p>Some questions from this:</p> <ul><li>We've defined some hard-to-enforce rules of interaction, like personally knowing the cat.
+			accelerated the process, and probably influenced the result.</p></section> <hr> <section><h2>P.S.</h2> <p>Some questions from this:</p> <ul><li>We've defined some hard-to-enforce rules of interaction, like personally knowing the cat.
 				How could authentic participation be incentivized/enforced?</li> <li>What mechanisms can we use to collectively exert control over each of the other powers in
 				the model? What could it look like to have public control over the space?</li> <li>How does gating fit into this model? What are the ways we can gate public and private
 				access? And the other powers?</li></ul></section>`,1);function oi(a){Fr(a,{post:Wr,children:(e,t)=>{var n=Hr();It(10),T(e,n)},$$slots:{default:!0}})}export{oi as component};
