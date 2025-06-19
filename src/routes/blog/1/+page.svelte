@@ -214,7 +214,7 @@
 		<p>
 			I used ChatGPT (<a href="https://chatgpt.com/">chatgpt.com</a>) not for writing any text but
 			to brainstorm the model when I was midway through. It didn't give me the final answers but it
-			accelerated the process, and maybe influenced the result.
+			accelerated the process, and probably influenced the result.
 		</p>
 	</section>
 
