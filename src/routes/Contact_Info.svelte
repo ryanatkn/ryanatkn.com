@@ -10,23 +10,33 @@
 	<li>
 		@ryanatkn on
 		<a rel="me" href="https://github.com/ryanatkn">GitHub</a>,
-		<a rel="me" href="https://www.youtube.com/@ryanatkn">YouTube</a>, and
-		<a rel="me" href="https://www.npmjs.com/~ryanatkn">npm</a>
+		<a rel="me" href="https://www.npmjs.com/~ryanatkn">npm</a>, and
+		<a rel="me" href="https://www.youtube.com/@ryanatkn">YouTube</a> (very slow moving)
+	</li>
+	<li>
+		Bluesky as <a rel="me" href="https://bsky.app/profile/ryanatkn.com">@ryanatkn.com</a>
 	</li>
 	<li>
 		Mastodon as <a rel="me" href="https://fosstodon.org/@ryanatkn">@ryanatkn@fosstodon.org</a> and
 		<a rel="me" href="https://hci.social/@ryanatkn">@ryanatkn@hci.social</a> (professional)
 	</li>
 	<li>
-		@webdevladder on
-		<a rel="me" href="https://www.youtube.com/@webdevladder">YouTube</a>,
-		<a rel="me" href="https://www.reddit.com/user/webdevladder/">Reddit</a>,
-		<a rel="me" href="https://x.com/webdevladder/">Twitter</a>, and
-		<a rel="me" href="https://news.ycombinator.com/user?id=webdevladder">HN</a>
-	</li>
-	<li>
-		also <span style:word-break="break-word">@webdevladder@fosstodon.org</span> on
-		<a rel="me" href="https://fosstodon.org/@webdevladder">Mastodon</a>
+		<a rel="me" href="https://www.webdevladder.net/">webdevladder.net</a> is my professional blog
+		and public alias
+		<ul>
+			<li>
+				@webdevladder on
+				<a rel="me" href="https://www.youtube.com/@webdevladder">YouTube</a>,
+				<a rel="me" href="https://www.reddit.com/user/webdevladder/">Reddit</a>,
+				<a rel="me" href="https://x.com/webdevladder/">Twitter</a>, and
+				<a rel="me" href="https://news.ycombinator.com/user?id=webdevladder">HN</a>
+			</li>
+			<li>
+				<span class="overflow_wrap_anywhere">@webdevladder@fosstodon.org</span>
+				on
+				<a rel="me" href="https://fosstodon.org/@webdevladder">Mastodon</a>
+			</li>
+		</ul>
 	</li>
 	<li>
 		<a href="mailto:mail@ryanatkn.com">mail@ryanatkn.com</a>

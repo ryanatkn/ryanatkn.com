@@ -166,6 +166,9 @@ a.chip {
 .overflow_auto {
 	overflow: auto;
 }
+.overflow_wrap_anywhere {
+	overflow-wrap: anywhere;
+}
 .flex_1 {
 	flex: 1;
 }
