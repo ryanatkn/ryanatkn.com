@@ -40,25 +40,35 @@
 				public and continuing today. More <a href="{base}/about">about me</a>.
 			</p>
 			<p>
-				My goal is to make the best software possible, and I believe sustaining this requires
-				aligning ownership and incentives. To me this means it must be unburdened by investors and
-				profit-seeking, and ultimately be community-owned and controlled like through a nonprofit.
-				Since 2019 I've put my money where my mouth is, spending my savings to build an open source
-				web software stack (it was self-directed time and I'll admit to having fun, but I think the
-				results speak to productivity too). The foundations feel right, and I can dream about the
-				stack succeeding to where I'm irrelevant.
+				I'm working on several projects, but the main one is <a href="https://www.zzz.software/"
+					>Zzz</a
+				>, a fullstack web toolkit focused on user power and experimentation. It can be used (still
+				a work in progress) to build websites and apps, both for regular desktop app users and for
+				devs with existing workflows. It values interoperability and idealizes an integrated system
+				leveraging universal JS.
+			</p>
+			<p>
+				I want to make software with the best UX possible, and I think that's infinitely easier to
+				do when unburdened by investors and profit-seeking, as widespread
+				<a href="https://en.wikipedia.org/wiki/Enshittification">enshittification</a> suggests. I'm self-funded,
+				so the situation is uncomplicated -- trust me or not. If a user community forms around some projects
+				in my stack, I think success could look like them being owned by a community-representing org
+				like a nonprofit, but in the meantime they'll sit on my GitHub, fate tied to mine and MIT licensed.
+				I'm not going to sell control over Zzz and its dependencies or take any investment for them.
+				The dream is we get to make software that we design for our benefit and trust to serve us, down
+				to the structural incentives in its production. I can always continue part-time on Zzz as long
+				as the motivation sustains, so far so good.
 			</p>
 			<p>
 				I like my independence and I think it serves the software well, but my current situation is
 				not ideal. Having many smaller sponsors would free me from the influence of large sponsors,
 				but I miss working on a team, having organizational support, and receiving a paycheck. Maybe
-				collaborating with volunteers doing open source will satisfy, I don't know. I'm following
-				multiple paths including grant funding, and I'm open to joining an organization that wants
+				volunteers will want to collaborate and that will work for me, I don't know. I'm following
+				multiple paths including seeking grant funding, and I'm open to joining a company that wants
 				to see <a href="https://www.zzz.software/">Zzz</a>
-				succeed as a noncommercial and independent software project. Right now I'm not looking for full-time
-				work unless it's related to Zzz (for example I can build tools and websites with it (<small
-					><em>with ai!! tell ur boss</em></small
-				>)). Here's
+				succeed as a noncommercial independent software project. Right now I'm not looking for full-time
+				work unless it's related to Zzz (for example I can build tools and websites with it
+				<small>(<em>with ai!! tell ur boss</em>)</small>). Here's
 				<a
 					href="https://docs.google.com/document/d/1Fti-__uwjazBllAqR73wrQ1lG6QO0ECBpz4n7XENP0Y/edit?usp=sharing"
 					>my resume</a
@@ -131,8 +141,9 @@
 				<a class="white_space_nowrap" href="https://www.patreon.com/ryanatkn"
 					><Patreon_Logo size="var(--font_size_md)" fill="var(--color_a_5)" inline /> Patreon</a
 				>. Supporting me at any level grants you access to supporters-only social websites I build
-				on camera (none yet, maybe late 2025). Supporting me through GitHub instead of Patreon
-				grants access to a repo with supporters-only discussions.
+				on camera (none yet, maybe late 2025 or 2026, I don't want to be a moderator so expect
+				constrained affordances or maybe I will chase a butterfly elsewhere). Supporting me through
+				GitHub instead of Patreon grants access to a repo with supporters-only discussions.
 			</p>
 			<p>
 				I hope to continue having fun building useful software, and to collaborate more with people

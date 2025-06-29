@@ -18,10 +18,6 @@
 		Bluesky as <a rel="me" href="https://bsky.app/profile/ryanatkn.com">@ryanatkn.com</a>
 	</li>
 	<li>
-		Mastodon as <a rel="me" href="https://fosstodon.org/@ryanatkn">@ryanatkn@fosstodon.org</a> and
-		<a rel="me" href="https://hci.social/@ryanatkn">@ryanatkn@hci.social</a>
-	</li>
-	<li>
 		<a rel="me" href="https://www.webdevladder.net/">webdevladder.net</a> is my professional blog
 		and public alias
 		<ul>
@@ -42,6 +38,11 @@
 				<a rel="me" href="https://fosstodon.org/@webdevladder">Mastodon</a>
 			</li>
 		</ul>
+	</li>
+	<li>
+		Mastodon as <a rel="me" href="https://fosstodon.org/@ryanatkn">@ryanatkn@fosstodon.org</a>
+		and
+		<a rel="me" href="https://hci.social/@ryanatkn">@ryanatkn@hci.social</a>
 	</li>
 	<li>
 		<a href="mailto:mail@ryanatkn.com">mail@ryanatkn.com</a>

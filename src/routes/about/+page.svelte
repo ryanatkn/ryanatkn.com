@@ -29,7 +29,7 @@
 				My software is
 				<a href="https://github.com/ryanatkn">open source on GitHub</a>
 				and this website's homepage lists my <a href="{base}/">ongoing projects</a>. I'm seeking
-				<a href="{base}/funding">funding</a> and job opportunities to work on
+				<a href="{base}/funding">funding</a> and job opportunities related to
 				<a href="https://www.zzz.software/">Zzz</a> and its dependencies -- here's
 				<a
 					href="https://docs.google.com/document/d/1Fti-__uwjazBllAqR73wrQ1lG6QO0ECBpz4n7XENP0Y/edit?usp=sharing"
@@ -46,15 +46,16 @@
 		<p>More:</p>
 		<ul>
 			<li>
-				in 2019 I started <a href="https://github.com/ryanatkn">doing full-time open source</a>,
-				publishing my code for free with permissive licenses
+				in 2019 I started doing full-time open source, publishing <a
+					href="https://github.com/ryanatkn">my code</a
+				> for free with permissive licenses
 			</li>
 			<li>
-				I was initially self-taught (ty internet) and I've been working as a JS-oriented web dev
+				I was initially self-taught (ty internet ppl) and I've been working as a JS-oriented web dev
 				since 2011
 			</li>
 			<li>
-				I learned to code wanting to be a game programmer, but at my first job, the web captured my
+				I learned to code wanting to be a game programmer, but at my first job the web captured my
 				attention
 			</li>
 			<li>
