@@ -4,7 +4,6 @@
 	import {github_logo} from '@ryanatkn/fuz/logos.js';
 	import Card from '@ryanatkn/fuz/Card.svelte';
 	import Breadcrumb from '@ryanatkn/fuz/Breadcrumb.svelte';
-	import Community_Links from '@ryanatkn/fuz/Community_Links.svelte';
 
 	import Page_Links from '$routes/Page_Links.svelte';
 	import Patreon_Logo from '$routes/funding/Patreon_Logo.svelte'; // TODO move to fuz
@@ -44,9 +43,16 @@
 			<div class="float_right icon_size_lg">🪶</div>
 			<p>
 				Hi thank you for reading. I'm an independent software developer and this is an attempt to
-				fund my self-directed work on free and open source software. My goal is to work for the open
-				web on the projects I find meaningful, while building community with people who value my
-				software.
+				fund my work on free and open source software. If you like my software and want to see more
+				of it, a donation of any amount is helpful in two ways -- 1) because of the money, and 2)
+				because it's a signal that boosts the case for me to get other sources of funding, like
+				potentially a job or a grant. I'm open to joining an aligned organization that wants to
+				sponsor part-time work on my open source project <a href="https://www.zzz.software/">Zzz</a>
+				and its dependencies. Here's
+				<a
+					href="https://docs.google.com/document/d/1Fti-__uwjazBllAqR73wrQ1lG6QO0ECBpz4n7XENP0Y/edit?usp=sharing"
+					>my resume</a
+				>.
 			</p>
 			<p>
 				In 2011 I began my first job as a professional web developer focusing on JS, and many years
@@ -62,14 +68,14 @@
 			</p>
 			<ul>
 				<li>
-					<a href="https://www.zzz.software/">Zzz</a> – web environment
+					<a href="https://www.zzz.software/">Zzz</a> - fullstack web toolkit
 				</li>
 				<li>
-					<a href="https://moss.ryanatkn.com/">Moss</a> – CSS framework and design system
+					<a href="https://moss.ryanatkn.com/">Moss</a> - CSS framework and design system
 				</li>
-				<li><a href="https://www.fuz.dev/">Fuz</a> – Svelte UI library</li>
+				<li><a href="https://www.fuz.dev/">Fuz</a> - Svelte UI library</li>
 				<li>
-					<a href="https://gro.ryanatkn.com/">Gro</a> – task runner and toolkit extending SvelteKit
+					<a href="https://gro.ryanatkn.com/">Gro</a> - task runner and toolkit extending SvelteKit
 				</li>
 				<li>
 					more on <a href="https://github.com/ryanatkn">my GitHub profile</a> and
@@ -78,15 +84,15 @@
 			</ul>
 			<p>
 				I'm communicating about my projects and process on YouTube with
-				<a href="https://youtube.com/@webdevladder">webdevladder</a> and blogging at
-				<a href="https://www.webdevladder.net/">webdevladder.net</a>. The production value is low so
-				I get more time to program - I did some livecoding on
-				<a href="https://youtube.com/@webdevladder_vods">webdevladder_vods</a>
-				in 2024 and it was <em>draining</em>, but I'm bringing it back without the vampiric webcam
-				and with less seriousness.
+				<a href="https://youtube.com/@webdevladder">@webdevladder</a> and blogging at
+				<a href="https://www.webdevladder.net/">webdevladder.net</a>. I wrote more about what I'm
+				doing in the blog post
+				<a href="https://www.webdevladder.net/blog/introducing-webdevladder"
+					>"Introducing Webdevladder"</a
+				>.
 			</p>
 			<p>
-				I've been lucky to be able to live off savings for the last 5 years, but I need a funding
+				I've been lucky to be able to live off savings for the last 6 years, but I need a funding
 				plan to sustain these projects. My runway currently extends through 2026.
 			</p>
 			<p>
@@ -107,13 +113,9 @@
 				gives you access to discussions on a supporters-only GitHub repo.
 			</p>
 			<p>
-				My goal is to continue having fun building great software, and I hope to collaborate more
-				with people around this cluster of ideas and technologies. Lots of passion if you can
-				imagine. Thanks again for reading, I hope you have a good experience.
+				I hope to continue having fun building useful software, and to collaborate more with people
+				around these ideas and technologies.
 			</p>
-			<aside class="overflow_auto">
-				<Community_Links selected="ryanatkn.com" />
-			</aside>
 		</div>
 	</section>
 	<section class="box gap_xl2">

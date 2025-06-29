@@ -163,9 +163,6 @@ a.chip {
 .float_right {
 	float: right;
 }
-.overflow_auto {
-	overflow: auto;
-}
 .overflow_wrap_anywhere {
 	overflow-wrap: anywhere;
 }

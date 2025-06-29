@@ -1,7 +1,9 @@
 <h2 class="mb_xl2">contact me</h2>
 <ul class="contact_info panel bg shadow_xs py_md pr_md position_relative">
 	<li>
-		I'm looking for low-hour consulting work – here's my
+		I'm looking for low-hour consulting work and jobs<br />sponsoring part-time work on
+		<a href="https://www.zzz.software/">Zzz</a>
+		-- here's my
 		<a
 			href="https://docs.google.com/document/d/1Fti-__uwjazBllAqR73wrQ1lG6QO0ECBpz4n7XENP0Y/edit?usp=sharing"
 			>resume</a
@@ -18,7 +20,7 @@
 	</li>
 	<li>
 		Mastodon as <a rel="me" href="https://fosstodon.org/@ryanatkn">@ryanatkn@fosstodon.org</a> and
-		<a rel="me" href="https://hci.social/@ryanatkn">@ryanatkn@hci.social</a> (professional)
+		<a rel="me" href="https://hci.social/@ryanatkn">@ryanatkn@hci.social</a>
 	</li>
 	<li>
 		<a rel="me" href="https://www.webdevladder.net/">webdevladder.net</a> is my professional blog
