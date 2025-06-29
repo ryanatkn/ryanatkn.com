@@ -24,15 +24,15 @@
 					welcome to the homepage<br />
 					of Ryan Atkinson, he's<br />
 					an independent web developer<br />
-					making free and open source<br />
-					software for the social web
+					making and talking about<br />
+					free and open source software<br />
 				</blockquote>
 			</header>
-			<p class="panel bg position_relative shadow_xs mt_md" style:max-width="450px">
-				Hi, I'm building free and open source software and communicating about it. My main skill is
-				making frontend web apps and I also do some backend and devtools programming. I enjoy trying
-				to make powerful tools that are easy to use, and I'm extra interested in UIs, API design,
-				and social systems.
+			<p class="panel bg position_relative shadow_xs mt_md" style:max-width="440px">
+				Hi, I'm building free software and communicating about it. My main skill is making frontend
+				web apps and I also do some backend and devtools programming. I enjoy trying to make
+				powerful tools that are easy to use, and I like designing and implementing UIs, social
+				spaces, and integrated systems.
 			</p>
 		</div>
 	</section>

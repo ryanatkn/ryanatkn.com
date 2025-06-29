@@ -15,9 +15,9 @@ export const projects: Array<Project_Info> = [
 		description: 'my free and open source software',
 	},
 	{
-		description: 'web environment',
+		description: 'fullstack toolkit for adaptive web environments',
 		homepage: 'https://www.zzz.software/',
-		motto: 'bot control web',
+		motto: 'nice web things',
 		logo: 'logo.svg',
 		logo_alt: "three sleepy z's",
 		glyph: '💤',

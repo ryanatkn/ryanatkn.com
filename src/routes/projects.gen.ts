@@ -64,10 +64,10 @@ const projects_metadata: Array<Project_Metadata> = [
 		name: 'zzz',
 		repo: '@ryanatkn/zzz',
 		title: '<a href="https://www.zzz.software/">Zzz</a>',
-		description: 'web environment',
+		description: 'fullstack toolkit for adaptive web environments',
 		subtitle: `<a class="chip" href="https://github.com/ryanatkn/zzz">source</a>`, // TODO publish zzz - <a class="chip" href="https://www.npmjs.com/package/@ryanatkn/zzz">npm</a>
 		// TODO @many hack for zzz, fix after adding to gitops
-		motto: 'bot control web',
+		motto: 'nice web things',
 		glyph: '💤',
 		logo: 'logo.svg',
 		logo_alt: "three sleepy z's",

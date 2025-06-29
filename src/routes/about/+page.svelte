@@ -21,28 +21,26 @@
 		<div style:min-height="192px" style:margin-bottom="var(--space_md)">
 			<div class="float_right ml_sm border_radius_50 shadow_md"><Me /></div>
 			<p>
-				Hi, my name is Ryan Atkinson and I'm an independent web developer. I'm trying to make
-				powerful and simple tools to help people be creative and productive in social contexts. I'm
-				driven by curiosity and wanting to improve our lives with technology.
+				Hi I'm Ryan Atkinson and I'm an independent web developer trying to make tools that extend
+				our intent and creativity. I'm driven by curiosity and wanting to improve our lives with
+				technology.
 			</p>
 			<p>
-				My work is
+				My software is
 				<a href="https://github.com/ryanatkn">open source on GitHub</a>
-				and this website's homepage lists <a href="{base}/">my ongoing projects</a>. I'm in the
-				early stages of trying to get <a href="{base}/funding">funding</a> directly from my users,
-				viewers, and readers. I'm also looking for low-hour consulting work, and I'm open to jobs
-				where at least some hours could be sponsored on <a href="https://www.zzz.software/">Zzz</a>
-				-- here's my
+				and this website's homepage lists my <a href="{base}/">ongoing projects</a>. I'm seeking
+				<a href="{base}/funding">funding</a> and job opportunities to work on
+				<a href="https://www.zzz.software/">Zzz</a> and its dependencies -- here's
 				<a
 					href="https://docs.google.com/document/d/1Fti-__uwjazBllAqR73wrQ1lG6QO0ECBpz4n7XENP0Y/edit?usp=sharing"
-					>resume</a
+					>my resume</a
 				>.
 			</p>
 			<p>
-				I work on the web because for all its flaws, it's a collectively-governed sandboxed platform
+				I work on the web because for all its flaws, it's our best collectively-governed platform
 				with backwards compatibility that runs everywhere, reaching more people with less friction
 				than anything else. I care a lot about software quality, maintainability, performance, and
-				giving power to users throughout the stack.
+				providing power to users throughout the stack.
 			</p>
 		</div>
 		<p>More:</p>
@@ -56,8 +54,8 @@
 				since 2011
 			</li>
 			<li>
-				I learned to code wanting to be a game programmer, but I fell in love with the web at my
-				first job
+				I learned to code wanting to be a game programmer, but at my first job, the web captured my
+				attention
 			</li>
 			<li>
 				my interest in making games continues as a hobby in <a href="https://www.dealt.dev/"
