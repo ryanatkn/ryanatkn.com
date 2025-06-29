@@ -140,10 +140,9 @@
 				or
 				<a class="white_space_nowrap" href="https://www.patreon.com/ryanatkn"
 					><Patreon_Logo size="var(--font_size_md)" fill="var(--color_a_5)" inline /> Patreon</a
-				>. Supporting me at any level grants you access to supporters-only social websites I build
-				on camera (none yet, maybe late 2025 or 2026, I don't want to be a moderator so expect
-				constrained affordances or maybe I will chase a butterfly elsewhere). Supporting me through
-				GitHub instead of Patreon grants access to a repo with supporters-only discussions.
+				>. Supporting me at any level will grant you access to supporters-only social websites I
+				build on camera (none yet, maybe late 2025 or 2026, I don't want to spend time moderating so
+				expect constrained affordances or maybe I will chase a butterfly elsewhere).
 			</p>
 			<p>
 				I hope to continue having fun building useful software, and to collaborate more with people
