@@ -48,24 +48,23 @@
 				leveraging universal JS.
 			</p>
 			<p>
-				I want to make software with the best UX possible, and I think that's infinitely easier to
-				do when unburdened by investors and profit-seeking, as widespread
-				<a href="https://en.wikipedia.org/wiki/Enshittification">enshittification</a> suggests. I'm self-funded,
-				so the situation is uncomplicated -- trust me or not. If a user community forms around some projects
-				in my stack, I think success could look like them being owned by a community-representing org
-				like a nonprofit, but in the meantime they'll sit on my GitHub, fate tied to mine and MIT licensed.
-				I'm not going to sell control over Zzz and its dependencies or take any investment for them.
-				The dream is we get to make software that we design for our benefit and trust to serve us, down
-				to the structural incentives in its production. I can always continue part-time on Zzz as long
-				as the motivation sustains, so far so good.
+				I want to make software with the best UX possible, and as widespread
+				<a href="https://en.wikipedia.org/wiki/Enshittification">enshittification</a> suggests, I think
+				that's infinitely easier to do when unburdened by investors and profit-seeking. I'm self-funded,
+				so the situation is uncomplicated -- trust me or not. I'm not going to sell control over Zzz
+				and its dependencies or take investment for them. The goal is software designed for our benefit
+				that we can trust to serve us. If a user community forms around some projects in my stack, I
+				think the best outcome is them being owned by a community-representing org like a nonprofit.
 			</p>
 			<p>
-				I like my independence and I think it serves the software well, but my current situation is
-				not ideal. Having many smaller sponsors would free me from the influence of large sponsors,
-				but I miss working on a team, having organizational support, and receiving a paycheck. Maybe
-				volunteers will want to collaborate and that will work for me, I don't know. I'm following
-				multiple paths including seeking grant funding, and I'm open to joining a company that wants
-				to see <a href="https://www.zzz.software/">Zzz</a>
+				I like my independence and I think it serves my software well, but my current situation is
+				not ideal. I miss working on a team, having organizational support, and receiving a
+				paycheck. However having many smaller sponsors would free me from the influence of large
+				sponsors. Maybe some volunteers will want to collaborate on open source; maybe I'll gain dev
+				users first, or maybe more end-users will try to use it. I'm following multiple funding
+				paths including seeking grant funding, and I'm open to joining a company that wants to see <a
+					href="https://www.zzz.software/">Zzz</a
+				>
 				succeed as a noncommercial independent software project. Right now I'm not looking for full-time
 				work unless it's related to Zzz (for example I can build tools and websites with it
 				<small>(<em>with ai!! tell ur boss</em>)</small>). Here's
@@ -95,10 +94,7 @@
 	</section>
 	<section class="panel p_sm shadow_md w_100">
 		<div class="panel bg p_xl shadow_xs">
-			<p>
-				Today my attention is on these projects, and I plan to make end-user-facing websites and
-				apps with them:
-			</p>
+			<p>Today my attention is on these projects -- I plan to make websites and apps with them:</p>
 			<ul>
 				<li>
 					<a href="https://www.zzz.software/">Zzz</a> - fullstack toolkit for adaptive web environments
@@ -110,25 +106,20 @@
 				<li>
 					<a href="https://gro.ryanatkn.com/">Gro</a> - task runner and toolkit extending SvelteKit
 				</li>
-				<li>
-					more on my <a href="https://github.com/ryanatkn">GitHub profile</a> and
-					<a href="https://www.ryanatkn.com/tree">here</a> on my website
-				</li>
 			</ul>
 			<p>
-				I'm communicating about my projects and process with <a href="https://www.webdevladder.net/"
-					>webdevladder.net</a
-				>. I shared more plans in the blog post
+				More on my <a href="https://github.com/ryanatkn">GitHub profile</a> and
+				<a href="https://www.ryanatkn.com/tree">website</a>. I'm also communicating about my
+				projects and process with <a href="https://www.webdevladder.net/">webdevladder.net</a>, and
+				I shared more plans in the blog post
 				<a href="https://www.webdevladder.net/blog/introducing-webdevladder"
 					>"Introducing Webdevladder"</a
 				>.
 			</p>
 			<p>
-				I've been lucky to be able to live off savings for the last 6 years, but I need a funding
-				plan to sustain these projects. My runway currently extends through 2026.
-			</p>
-			<p>
-				To help me produce software, videos, and blog posts, you can support me on
+				I've been lucky to be able to live off savings for the last 6 years, but it's time to start
+				figuring out funding. To help me produce software, videos, and blog posts, you can support
+				me on
 				<!-- TODO after upgrading Fuz use `inline` instead of the classes -->
 				<a
 					class="white_space_nowrap"
@@ -140,13 +131,12 @@
 				or
 				<a class="white_space_nowrap" href="https://www.patreon.com/ryanatkn"
 					><Patreon_Logo size="var(--font_size_md)" fill="var(--color_a_5)" inline /> Patreon</a
-				>. Supporting me at any level will grant you access to supporters-only social websites I
-				build on camera (none yet, maybe late 2025 or 2026, I don't want to spend time moderating so
-				expect constrained affordances or maybe I will chase a butterfly elsewhere).
+				>. Supporting me at even $1/mo helps a lot, and will grant you access to supporters-only
+				social websites I build on camera (maybe late 2025 or 2026).
 			</p>
 			<p>
-				I hope to continue having fun building useful software, and to collaborate more with people
-				around these ideas and technologies.
+				I hope to continue having fun building useful software, and to find collaborators around
+				these ideas and technologies. See the repos for the details and discussions.
 			</p>
 		</div>
 	</section>
