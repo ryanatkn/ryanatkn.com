@@ -50,13 +50,13 @@
 			</p>
 			<p>
 				I like my independence and I think it serves my software well, but my current situation is
-				not ideal. I miss working on a team, having organizational support, and receiving a
-				paycheck. However, having many smaller sponsors would free me from the influence of large
-				sponsors, and maybe some volunteers will want to collaborate. I don't know, so I'm following
-				multiple funding paths including seeking grant funding, and I'm open to joining a company
-				that wants Zzz to succeed as an independent and noncommercial software project. Right now
-				I'm not looking for full-time work unless it's related to Zzz (for example I can build tools
-				and websites with it
+				not ideal. I miss teamwork, organizational support, and receiving a paycheck. However,
+				having many smaller sponsors would free me from the influence of large sponsors, and maybe
+				some volunteers will want to collaborate. I don't know, so I'm following multiple funding
+				paths including seeking grant funding, and I'm open to joining a company that wants Zzz to
+				succeed as an independent and noncommercial software project. Right now I'm not looking for
+				full-time work unless it's related to Zzz (for example I can build tools and websites with
+				it
 				<small>(<em>with ai!! tell ur boss</em>)</small>). Here's
 				<a
 					href="https://docs.google.com/document/d/1Fti-__uwjazBllAqR73wrQ1lG6QO0ECBpz4n7XENP0Y/edit?usp=sharing"
