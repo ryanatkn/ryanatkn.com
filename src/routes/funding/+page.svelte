@@ -115,9 +115,7 @@
 				>.
 			</p>
 			<p>
-				I've been lucky to be able to live off savings for the last 6 years, but it's time to start
-				figuring out funding. To help me produce software, videos, and blog posts, you can support
-				me on
+				To help me produce software, videos, and blog posts, you can support me on
 				<!-- TODO after upgrading Fuz use `inline` instead of the classes -->
 				<a
 					class="white_space_nowrap"
@@ -134,7 +132,8 @@
 			</p>
 			<p>
 				I hope to continue having fun building useful software, and to find collaborators around
-				these ideas and technologies. See the repos for the details and discussions.
+				these ideas and technologies as I work in public. See the repos for the details and
+				discussions.
 			</p>
 		</div>
 	</section>
