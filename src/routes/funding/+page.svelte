@@ -59,12 +59,10 @@
 			<p>
 				I like my independence and I think it serves my software well, but my current situation is
 				not ideal. I miss working on a team, having organizational support, and receiving a
-				paycheck. However having many smaller sponsors would free me from the influence of large
-				sponsors. Maybe some volunteers will want to collaborate on open source; maybe I'll gain dev
-				users first, or maybe more end-users will try to use it. I'm following multiple funding
-				paths including seeking grant funding, and I'm open to joining a company that wants to see <a
-					href="https://www.zzz.software/">Zzz</a
-				>
+				paycheck. However, having many smaller sponsors would free me from the influence of large
+				sponsors, and maybe some volunteers will want to collaborate. I don't know, so I'm following
+				multiple funding paths including seeking grant funding, and I'm open to joining a company
+				that wants to see <a href="https://www.zzz.software/">Zzz</a>
 				succeed as a noncommercial independent software project. Right now I'm not looking for full-time
 				work unless it's related to Zzz (for example I can build tools and websites with it
 				<small>(<em>with ai!! tell ur boss</em>)</small>). Here's
@@ -131,8 +129,8 @@
 				or
 				<a class="white_space_nowrap" href="https://www.patreon.com/ryanatkn"
 					><Patreon_Logo size="var(--font_size_md)" fill="var(--color_a_5)" inline /> Patreon</a
-				>. Supporting me at even $1/mo helps a lot, and will grant you access to supporters-only
-				social websites I build on camera (maybe late 2025 or 2026).
+				>. Supporting me at even $1/mo helps a lot for the signal it sends, and will grant you
+				access to supporters-only social websites I build on camera (maybe late 2025 or 2026).
 			</p>
 			<p>
 				I hope to continue having fun building useful software, and to find collaborators around
