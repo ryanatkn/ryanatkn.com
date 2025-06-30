@@ -32,14 +32,6 @@
 				and maybe grants or a job that sponsors some of my open source work.
 			</p>
 			<p>
-				In 2011 I began my first job as a professional web developer focusing on JS, and many years
-				later I'm still enjoying it. I program both as a profession and hobby, and I love the web
-				for its global accessibility, high capability, backwards compatibility, and gatekeeper
-				optionality. In 2019 I started publishing most of my code as I wrote it, and set out to
-				produce high quality and reusable software with TypeScript and Svelte, working full-time in
-				public and continuing today. More <a href="{base}/about">about me</a>.
-			</p>
-			<p>
 				I'm working on several projects, but the main one is <a href="https://www.zzz.software/"
 					>Zzz</a
 				>, a fullstack web toolkit focused on user power and experimentation. It can be used (still
@@ -118,7 +110,15 @@
 				>.
 			</p>
 			<p>
-				To help me produce software, videos, and blog posts, you can support me on
+				In 2011 I began my first job as a professional web developer focusing on JS, and many years
+				later I'm still enjoying it. I program both as a profession and hobby, and I love the web
+				for its global accessibility, high capability, backwards compatibility, and gatekeeper
+				optionality. In 2019 I started publishing most of my code as I wrote it, and set out to
+				produce high quality and reusable software with TypeScript and Svelte, working full-time in
+				public and continuing today. More <a href="{base}/about">about me</a>.
+			</p>
+			<p>
+				Supporting me at even $1/mo on
 				<!-- TODO after upgrading Fuz use `inline` instead of the classes -->
 				<a
 					class="white_space_nowrap"
@@ -130,8 +130,8 @@
 				or
 				<a class="white_space_nowrap" href="https://www.patreon.com/ryanatkn"
 					><Patreon_Logo size="var(--font_size_md)" fill="var(--color_a_5)" inline /> Patreon</a
-				>. Supporting me at even $1/mo helps a lot for the signal it sends, and will grant you
-				access to supporters-only social websites I build on camera (maybe late 2025 or 2026).
+				> helps a lot for the signal it sends, and will grant you access to supporters-only social websites
+				I build on camera (maybe late 2025 or 2026).
 			</p>
 			<p>
 				I hope to continue having fun building useful software, and to find collaborators around
