@@ -62,9 +62,9 @@
 				paycheck. However, having many smaller sponsors would free me from the influence of large
 				sponsors, and maybe some volunteers will want to collaborate. I don't know, so I'm following
 				multiple funding paths including seeking grant funding, and I'm open to joining a company
-				that wants to see <a href="https://www.zzz.software/">Zzz</a>
-				succeed as a noncommercial independent software project. Right now I'm not looking for full-time
-				work unless it's related to Zzz (for example I can build tools and websites with it
+				that wants Zzz to succeed as an independent and noncommercial software project. Right now
+				I'm not looking for full-time work unless it's related to Zzz (for example I can build tools
+				and websites with it
 				<small>(<em>with ai!! tell ur boss</em>)</small>). Here's
 				<a
 					href="https://docs.google.com/document/d/1Fti-__uwjazBllAqR73wrQ1lG6QO0ECBpz4n7XENP0Y/edit?usp=sharing"
@@ -92,7 +92,10 @@
 	</section>
 	<section class="panel p_sm shadow_md w_100">
 		<div class="panel bg p_xl shadow_xs">
-			<p>Today my attention is on these projects -- I plan to make websites and apps with them:</p>
+			<p>
+				Today my attention is on these projects, parts of a stack I plan to use to make other
+				websites and apps:
+			</p>
 			<ul>
 				<li>
 					<a href="https://www.zzz.software/">Zzz</a> - fullstack toolkit for adaptive web environments
