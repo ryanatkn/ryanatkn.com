@@ -29,7 +29,7 @@
 				fund my work on free and open source software. If you enjoy my output and want more of it, a
 				donation of any amount is helpful in two ways, 1) because money buys me time, and 2) because
 				it's a strong signal that boosts my case for getting more funding, from both users like you
-				and maybe grants or a job that sponsors some of my open source work.
+				and maybe grants or a job that uses or sponsors my open source work.
 			</p>
 			<p>
 				I'm working on several projects, but the main one is <a href="https://www.zzz.software/"
