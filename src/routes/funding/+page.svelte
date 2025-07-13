@@ -35,9 +35,10 @@
 				I'm working on several projects, but the main one is <a href="https://www.zzz.software/"
 					>Zzz</a
 				>, a fullstack web toolkit focused on user power and experimentation. It can be used (still
-				a work in progress) to build websites and apps, both for regular desktop app users and for
-				devs with existing workflows. It values interoperability and idealizes an integrated system
-				leveraging universal JS.
+				a work in progress) to browse and create for the web with an open-ended nice-to-use tool,
+				and to build websites and apps, both for regular desktop app users and for devs with
+				existing workflows. It values interoperability and idealizes an integrated system leveraging
+				universal JS.
 			</p>
 			<p>
 				I want to make software with the best UX possible, and as widespread
