@@ -1,4 +1,4 @@
-// TODO use `Package_Meta` and delete this module
+// TODO use `Pkg` and delete this module
 export interface Project_Info {
 	name: string;
 	repo?: string;
