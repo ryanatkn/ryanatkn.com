@@ -19,12 +19,10 @@ const config: Create_Gitops_Config = () => {
 			'https://github.com/ryanatkn/fuz_code',
 			'https://github.com/ryanatkn/fuz_gitops',
 			// 'https://github.com/ryanatkn/spiderspace.org',
-			'https://github.com/ryanatkn/earbetter',
 			{
 				repo_url: 'https://github.com/ryanatkn/cosmicplayground',
 				branch: 'svelte5',
 			},
-			'https://github.com/ryanatkn/dealt',
 			'https://github.com/ryanatkn/webdevladder.net',
 			'https://github.com/ryanatkn/ryanatkn.com',
 		],
