@@ -94,14 +94,13 @@ export const projects: Array<Project_Info> = [
 			'<a class="chip" href="https://github.com/ryanatkn/belt">source</a> <a class="chip" href="https://www.npmjs.com/package/@ryanatkn/belt">npm</a>',
 	},
 	{
-		description: 'hobby project for fun and learning',
-		homepage: 'https://www.cosmicplayground.org/',
-		motto: 'tools and toys for expanding minds',
-		logo: 'favicon.png',
 		name: 'cosmicplayground',
 		repo: '@ryanatkn/cosmicplayground',
 		title: '<a href="https://www.cosmicplayground.org">cosmicplayground.org</a>',
 		subtitle: '<a class="chip" href="https://github.com/ryanatkn/cosmicplayground">source</a>',
+		description: 'hobby project for fun and learning',
+		motto: 'tools and toys for expanding minds',
 		logo_style: 'border-radius: 50%',
+		logo: 'favicon.png',
 	},
 ];
