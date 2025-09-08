@@ -1,5 +1,5 @@
 <script lang="ts">
-	import {base} from '$app/paths';
+	import {asset} from '$app/paths';
 
 	import {LOGO_ALT, LOGO_SRC} from '$routes/project.js';
 
@@ -10,12 +10,14 @@
 
 	const {src = LOGO_SRC, alt = LOGO_ALT}: Props = $props();
 
+	const path = $derived(asset(`/${src}`));
+
 	// these extra images hide the asymmetries of pixelated circles
 </script>
 
-<img class="img_2 pixelated" src="{base}/{src}" alt="" />
-<img class="img_3 pixelated" src="{base}/{src}" alt="" />
-<img class="pixelated" src="{base}/{src}" {alt} />
+<img class="img_2 pixelated" src={path} alt="" />
+<img class="img_3 pixelated" src={path} alt="" />
+<img class="pixelated" src={path} {alt} />
 
 <style>
 	img {
