@@ -1,5 +1,5 @@
 <script lang="ts">
-	import {base} from '$app/paths';
+	import {resolve} from '$app/paths';
 	import Svg from '@ryanatkn/fuz/Svg.svelte';
 	import {github_logo} from '@ryanatkn/fuz/logos.js';
 	import Card from '@ryanatkn/fuz/Card.svelte';
@@ -116,7 +116,7 @@
 				for its global accessibility, high capability, backwards compatibility, and gatekeeper
 				optionality. In 2019 I started publishing most of my code as I wrote it, and set out to
 				produce high quality and reusable software with TypeScript and Svelte, working full-time in
-				public and continuing today. More <a href="{base}/about">about me</a>.
+				public and continuing today. More <a href={resolve('/about')}>about me</a>.
 			</p>
 			<p>
 				Supporting me at even $1/mo on

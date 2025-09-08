@@ -1,9 +1,9 @@
 <script lang="ts">
-	import {base} from '$app/paths';
+	import {asset} from '$app/paths';
 </script>
 
 <img
-	src="{base}/me.png"
+	src={asset('/me.png')}
 	alt="me smiling on a couch while holding my sister's calico cat Caramel who's out of frame"
 />
 

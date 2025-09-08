@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Breadcrumb from '@ryanatkn/fuz/Breadcrumb.svelte';
-	import {base} from '$app/paths';
+	import {resolve} from '$app/paths';
 
 	import Page_Links from '$routes/Page_Links.svelte';
 	import Contact_Info from '$routes/Contact_Info.svelte';
@@ -28,8 +28,9 @@
 			<p>
 				My software is
 				<a href="https://github.com/ryanatkn">open source on GitHub</a>
-				and this website's homepage lists my <a href="{base}/">ongoing projects</a>. I'm seeking
-				<a href="{base}/funding">funding</a> and job opportunities related to
+				and this website's homepage lists my <a href={resolve('/')}>ongoing projects</a>. I'm
+				seeking
+				<a href={resolve('/funding')}>funding</a> and job opportunities related to
 				<a href="https://www.zzz.software/">Zzz</a> and its dependencies -- here's
 				<a
 					href="https://docs.google.com/document/d/1Fti-__uwjazBllAqR73wrQ1lG6QO0ECBpz4n7XENP0Y/edit?usp=sharing"

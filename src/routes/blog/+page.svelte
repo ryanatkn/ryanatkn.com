@@ -1,5 +1,5 @@
 <script lang="ts">
-	import {base} from '$app/paths';
+	import {asset, resolve} from '$app/paths';
 	import Feed_Item_Date from '@ryanatkn/fuz_blog/Feed_Item_Date.svelte';
 	import {blog_feed_context} from '@ryanatkn/fuz_blog/blog.js';
 	import {to_pathname} from '@ryanatkn/fuz_blog/util.js';
@@ -19,12 +19,13 @@
 	<ol class="panel" reversed>
 		{#each items as item (item)}
 			<li class="blog_card">
-				<a href={to_pathname(item.url, feed.home_page_url)}>{item.title}</a>
+				<a href={resolve(to_pathname(item.url, feed.home_page_url) as any)}>{item.title}</a>
 				<div class="date"><Feed_Item_Date {item} /></div>
 			</li>
 		{/each}
 	</ol>
-	<a class="feed_link chip" href="{base}/blog/feed.xml" download>Atom feed</a>
+	<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
+	<a class="feed_link chip" href={asset('/blog/feed.xml')} download>Atom feed</a>
 </section>
 <section class="box gap_xl2 mb_xl7">
 	<Page_Links />

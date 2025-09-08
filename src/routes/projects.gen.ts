@@ -1,5 +1,5 @@
 import type {Gen} from '@ryanatkn/gro';
-import {base} from '$app/paths';
+import {resolve} from '$app/paths';
 
 import type {Project_Info} from '$routes/project.js';
 import {repos} from '$routes/repos.js';
@@ -43,7 +43,7 @@ interface Project_Metadata {
 const projects_metadata: Array<Project_Metadata> = [
 	{
 		name: 'blog',
-		title: `<a href="${base}/blog">blog</a>`,
+		title: `<a href="${resolve('/blog')}">blog</a>`,
 		subtitle:
 			'<a href="https://www.ryanatkn.com/blog/feed.xml" class="chip">feed.xml</a> <a href="https://github.com/ryanatkn/ryanatkn.com" class="chip">source</a>',
 	},

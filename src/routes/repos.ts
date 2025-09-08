@@ -7535,9 +7535,9 @@ export const repos: Array<Repo> = JSON.parse(
 					"types": "./dist/package_json.d.ts",\
 					"default": "./dist/package_json.js"\
 				},\
-				"./package_meta.js": {\
-					"types": "./dist/package_meta.d.ts",\
-					"default": "./dist/package_meta.js"\
+				"./pkg.js": {\
+					"types": "./dist/pkg.d.ts",\
+					"default": "./dist/pkg.js"\
 				},\
 				"./package.gen.js": {\
 					"types": "./dist/package.gen.d.ts",\
@@ -8919,15 +8919,15 @@ export const repos: Array<Repo> = JSON.parse(
 						}\
 					]\
 				},\
-				"./package_meta.js": {\
-					"path": "package_meta.ts",\
+				"./pkg.js": {\
+					"path": "pkg.ts",\
 					"declarations": [\
 						{\
-							"name": "Package_Meta",\
+							"name": "Pkg",\
 							"kind": "type"\
 						},\
 						{\
-							"name": "parse_package_meta",\
+							"name": "parse_pkg",\
 							"kind": "function"\
 						},\
 						{\

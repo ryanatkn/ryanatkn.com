@@ -1,7 +1,6 @@
 <script lang="ts">
-	import {base} from '$app/paths';
+	import {resolve} from '$app/paths';
 	import {page} from '$app/state';
-	import {strip_start} from '@ryanatkn/belt/string.js';
 	import type {Snippet} from 'svelte';
 	import type {SvelteHTMLElements} from 'svelte/elements';
 
@@ -18,10 +17,9 @@
 
 	// TODO the `strip_start` usage is a hack to get SSR working the same as CSR,
 	// `base` is `'.'` in SSR but `''` in CSR?
-	const b = strip_start(base, '.');
 	const pathname = $derived(page.url.pathname);
-	const at_root_path = $derived(pathname === b + '/');
-	const href = $derived(at_root_path ? `${b}/blog` : pop_path(pathname));
+	const at_root_path = $derived(pathname === resolve('/'));
+	const href = $derived(at_root_path ? resolve('/blog') : pop_path(pathname));
 </script>
 
 <a
