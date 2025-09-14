@@ -1,14 +1,6 @@
 <h2 class="mb_xl2">contact me</h2>
 <ul class="contact_info panel bg shadow_xs py_md pr_md position_relative">
 	<li>
-		I'm looking for low-hour consulting work and jobs related to
-		<a href="https://www.zzz.software/">Zzz</a>, see
-		<a
-			href="https://docs.google.com/document/d/1Fti-__uwjazBllAqR73wrQ1lG6QO0ECBpz4n7XENP0Y/edit?usp=sharing"
-			>my resume</a
-		>
-	</li>
-	<li>
 		@ryanatkn on
 		<a rel="me" href="https://github.com/ryanatkn">GitHub</a>,
 		<a rel="me" href="https://www.npmjs.com/~ryanatkn">npm</a>, and (not really active)
