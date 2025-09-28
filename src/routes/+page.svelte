@@ -14,7 +14,7 @@
 	<title>ryanatkn.com</title>
 </svelte:head>
 
-<section class="width_md p_md">
+<section class="width_upto_md flex_1 p_md">
 	<section class="box">
 		<div class="panel shadow_inset_xs">
 			<!-- TODO specificity so we can just add `.bg` instead of `style:background-color="var(--bg)"` -->
@@ -36,7 +36,7 @@
 			</p>
 		</div>
 	</section>
-	<section class="box row flex_wrap gap_xl2">
+	<section class="box row flex_wrap_wrap gap_xl2">
 		<Page_Links />
 	</section>
 	<section class="box">
@@ -75,9 +75,6 @@
 </section>
 
 <style>
-	.width_md {
-		flex: 1;
-	}
 	.linkpath {
 		display: flex;
 		flex-direction: column;

@@ -17,7 +17,7 @@
 			<span>🪶</span>
 		</h1>
 	</header>
-	<section class="width_md panel shadow_inset_xs">
+	<section class="width_upto_md panel shadow_inset_xs">
 		<div style:min-height="192px" style:margin-bottom="var(--space_md)">
 			<div class="float_right ml_sm border_radius_50 shadow_md"><Me /></div>
 			<p>

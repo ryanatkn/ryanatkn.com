@@ -10,7 +10,7 @@
 	import Favicon from '$routes/Favicon.svelte';
 </script>
 
-<div class="width_md flex_1">
+<div class="width_upto_md flex_1">
 	<section class="box">
 		<header class="box">
 			<h1 class="row gap_md text_align_center mt_xl5 mb_0">
@@ -21,7 +21,7 @@
 			</h1>
 		</header>
 	</section>
-	<section class="panel p_sm shadow_md w_100">
+	<section class="panel p_sm shadow_md width_100">
 		<div class="panel bg p_xl shadow_xs">
 			<div class="float_right icon_size_lg">🪶</div>
 			<p>
@@ -55,7 +55,7 @@
 			</p>
 		</div>
 	</section>
-	<section class="box row flex_wrap gap_md">
+	<section class="box row flex_wrap_wrap gap_md">
 		<div class="display_contents" style:--link_color="var(--color_b_5)">
 			<!-- TODO hacky with max-width -->
 			<Card href="https://github.com/sponsors/ryanatkn" attrs={{style: 'max-width: 100%'}}>
@@ -72,7 +72,7 @@
 			Patreon
 		</Card>
 	</section>
-	<section class="panel p_sm shadow_md w_100">
+	<section class="panel p_sm shadow_md width_100">
 		<div class="panel bg p_xl shadow_xs">
 			<p>
 				Today my attention is on these projects, parts of a stack I plan to use to make other

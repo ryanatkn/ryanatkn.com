@@ -15,6 +15,6 @@
 	repos_context.set(parse_repos(repos, 'https://www.ryanatkn.com/'));
 </script>
 
-<div class="w_100 flex_1">
+<div class="width_100 flex_1">
 	{@render children()}
 </div>

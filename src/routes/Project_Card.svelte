@@ -43,7 +43,7 @@
 				</p>
 			{/if}
 			{#if project.subtitle}
-				<p class="display_flex flex_wrap gap_xs">{@html project.subtitle}</p>
+				<p class="display_flex flex_wrap_wrap gap_xs">{@html project.subtitle}</p>
 			{/if}
 		</div>
 		{#if project.logo}
