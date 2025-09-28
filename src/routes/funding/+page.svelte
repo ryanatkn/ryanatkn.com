@@ -108,7 +108,7 @@
 				public and continuing today. More <a href={resolve('/about')}>about me</a>.
 			</p>
 			<p>
-				Supporting me at even $1/mo on
+				Donating $1 a month on
 				<!-- TODO after upgrading Fuz use `inline` instead of the classes -->
 				<a
 					class="white_space_nowrap"
@@ -117,16 +117,16 @@
 					><Svg data={github_logo} size="var(--font_size_md)" fill="var(--color_b_5)" inline /> GitHub
 					Sponsors</a
 				>
-				or
+				and
 				<a class="white_space_nowrap" href="https://www.patreon.com/ryanatkn"
 					><Patreon_Logo size="var(--font_size_md)" fill="var(--color_a_5)" inline /> Patreon</a
-				> helps a lot for the signal it sends, and will grant you access to supporters-only social websites
-				I build on camera (maybe late 2025 or 2026).
+				> helps me a lot for the signal it sends. No rewards yet but idk.
 			</p>
 			<p>
 				I hope to continue having fun building useful software, and to find collaborators around
-				these ideas and technologies as I work in public. See the repos for the details and
-				discussions.
+				these ideas and technologies as I work in public. See the <a href={resolve('/tree')}
+					>repos</a
+				> for more.
 			</p>
 		</div>
 	</section>
