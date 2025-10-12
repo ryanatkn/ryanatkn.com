@@ -37,8 +37,8 @@
 				>, a fullstack web toolkit focused on user power and experimentation. It can be used (still
 				a work in progress) to browse and create for the web with an open-ended nice-to-use tool,
 				and to build websites and apps, both for regular desktop app users and for devs with
-				existing workflows. It values interoperability and idealizes an integrated system leveraging
-				universal JS.
+				existing workflows. It values security and interoperability, and idealizes an integrated
+				system leveraging universal JS.
 			</p>
 			<p>
 				I want to make software with the best UX possible, and as widespread
