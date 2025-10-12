@@ -30,7 +30,7 @@
 				<a href="https://github.com/ryanatkn">open source on GitHub</a>
 				and this website's homepage lists my <a href={resolve('/')}>ongoing projects</a>. I'm
 				seeking
-				<a href={resolve('/funding')}>funding</a> to either remain independent or continue my work at
+				<a href={resolve('/funding')}>funding</a> to either remain independent or continue my work with
 				an aligned organization.
 			</p>
 			<p>
