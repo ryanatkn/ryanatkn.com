@@ -10,7 +10,7 @@
 
 	import Header from '$routes/Header.svelte';
 	import Footer from '$routes/Footer.svelte';
-	import {feed} from '$routes/blog/feed.js';
+	import {feed} from '$routes/blog/feed.ts';
 
 	interface Props {
 		children: Snippet;

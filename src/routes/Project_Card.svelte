@@ -3,7 +3,7 @@
 	import {moss_logo, zzz_logo, fuz_logo, gro_logo, webdevladder_logo} from '@ryanatkn/fuz/logos.js';
 	import {ensure_end, strip_start} from '@ryanatkn/belt/string.js';
 
-	import type {Project_Info} from '$routes/project.js';
+	import type {Project_Info} from '$routes/project.ts';
 
 	// TODO probably upstream to fuz_library after changing it to `PackageMeta` or w/e
 

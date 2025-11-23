@@ -1,7 +1,7 @@
 <script lang="ts">
 	import {asset} from '$app/paths';
 
-	import {LOGO_ALT, LOGO_SRC} from '$routes/project.js';
+	import {LOGO_ALT, LOGO_SRC} from '$routes/project.ts';
 
 	interface Props {
 		src?: string;
