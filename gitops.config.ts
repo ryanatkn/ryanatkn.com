@@ -12,7 +12,7 @@ const config: CreateGitopsConfig = () => {
 			'https://github.com/ryanatkn/fuz_blog',
 			'https://github.com/ryanatkn/fuz_mastodon',
 			'https://github.com/ryanatkn/fuz_code',
-			'https://github.com/ryanatkn/fuz_gitops',
+			// 'https://github.com/ryanatkn/fuz_gitops',
 			'https://github.com/ryanatkn/webdevladder.net',
 			// 'https://github.com/ryanatkn/ztack.net',
 			// 'https://github.com/ryanatkn/spiderspace.org',
