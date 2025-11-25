@@ -6537,7 +6537,7 @@ export const repos: Array<Repo> = JSON.parse(
 							"kind": "class"\
 						},\
 						{\
-							"name": "contextmenu_action",\
+							"name": "contextmenu_attachment",\
 							"kind": "function"\
 						},\
 						{\
