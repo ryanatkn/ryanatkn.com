@@ -17,7 +17,7 @@ const config: CreateGitopsConfig = () => {
 			// 'https://github.com/ryanatkn/ztack.net',
 			// 'https://github.com/ryanatkn/spiderspace.org',
 			// 'https://github.com/ryanatkn/grogarden.org',
-			'https://github.com/ryanatkn/ryanatkn.com',
+			// 'https://github.com/ryanatkn/ryanatkn.com',
 		],
 	};
 };
