@@ -1,8 +1,8 @@
 <script lang="ts">
-	import Tree_Item_Page from '@ryanatkn/fuz_gitops/Tree_Item_Page.svelte';
-	import {repos_context} from '@ryanatkn/fuz_gitops/repo.js';
+	import TreeItemPage from '@ryanatkn/fuz_gitops/TreeItemPage.svelte';
+	import {repos_context} from '@ryanatkn/fuz_gitops/repo.svelte.js';
 
-	// TODO ideally there would be one `Packages_Tree` mounted by the layout
+	// TODO ideally there would be one `PackagesTree` mounted by the layout
 
 	const {params} = $props();
 
@@ -15,4 +15,4 @@
 	<title>{slug} - tree {repo.package_json.glyph} {repo.package_json.name}</title>
 </svelte:head>
 
-<Tree_Item_Page {repo} {repos} {slug} />
+<TreeItemPage {repo} {repos} {slug} />

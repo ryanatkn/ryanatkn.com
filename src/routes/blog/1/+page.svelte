@@ -1,5 +1,5 @@
 <script lang="ts" module>
-	import type {Blog_Post_Data} from '@ryanatkn/fuz_blog/blog.js';
+	import type {BlogPostData} from '@ryanatkn/fuz_blog/blog.js';
 
 	export const post = {
 		title: 'Modeling virtual social spaces: in this house we post cat pics on Saturday',
@@ -13,17 +13,17 @@
 			url: 'https://hci.social/@ryanatkn/109768104377997044',
 			type: 'mastodon',
 		},
-	} satisfies Blog_Post_Data;
+	} satisfies BlogPostData;
 </script>
 
 <script lang="ts">
-	import Blog_Post from '@ryanatkn/fuz_blog/Blog_Post.svelte';
+	import BlogPost from '@ryanatkn/fuz_blog/BlogPost.svelte';
 
 	// TODO cache for Mastodon
 	// import {onMount} from 'svelte';
 	// import {DEV} from 'esm-env';
-	// import type {Fetch_Value_Cache} from '@ryanatkn/belt/fetch.js';
-	// let cache: Fetch_Value_Cache | undefined | null = $state();
+	// import type {FetchValueCache} from '@ryanatkn/belt/fetch.js';
+	// let cache: FetchValueCache | undefined | null = $state();
 	// onMount(async () => {
 	// 	if (DEV) {
 	// 		cache = new Map((await import('../mastodon_dev_cache_data.js')).mastodon_dev_cache_data);
@@ -33,7 +33,7 @@
 	// });
 </script>
 
-<Blog_Post {post}>
+<BlogPost {post}>
 	<section>
 		<h2>Introduction</h2>
 		<p>
@@ -238,4 +238,4 @@
 			</li>
 		</ul>
 	</section>
-</Blog_Post>
+</BlogPost>

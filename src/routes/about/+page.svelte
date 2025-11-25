@@ -2,8 +2,8 @@
 	import Breadcrumb from '@ryanatkn/fuz/Breadcrumb.svelte';
 	import {resolve} from '$app/paths';
 
-	import Page_Links from '$routes/Page_Links.svelte';
-	import Contact_Info from '$routes/Contact_Info.svelte';
+	import PageLinks from '$routes/PageLinks.svelte';
+	import ContactInfo from '$routes/ContactInfo.svelte';
 	import Favicon from '$routes/Favicon.svelte';
 	import Me from '$routes/Me.svelte';
 </script>
@@ -71,11 +71,11 @@
 	</section>
 	<section class="box">
 		<div class="panel box shadow_inset_xs">
-			<Contact_Info />
+			<ContactInfo />
 		</div>
 	</section>
 	<section class="box gap_xl2">
-		<Page_Links />
+		<PageLinks />
 	</section>
 	<section class="box">
 		<Breadcrumb><Favicon /></Breadcrumb>

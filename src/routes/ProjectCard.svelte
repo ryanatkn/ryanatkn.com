@@ -1,9 +1,9 @@
 <script lang="ts">
-	import Svg, {type Svg_Data} from '@ryanatkn/fuz/Svg.svelte';
+	import Svg, {type SvgData} from '@ryanatkn/fuz/Svg.svelte';
 	import {moss_logo, zzz_logo, fuz_logo, gro_logo, webdevladder_logo} from '@ryanatkn/fuz/logos.js';
 	import {ensure_end, strip_start} from '@ryanatkn/belt/string.js';
 
-	import type {Project_Info} from '$routes/project.ts';
+	import type {ProjectInfo} from '$routes/project.ts';
 
 	// TODO probably upstream to fuz_library after changing it to `PackageMeta` or w/e
 
@@ -11,12 +11,12 @@
 	/* eslint-disable svelte/no-at-html-tags */
 
 	interface Props {
-		project: Project_Info;
+		project: ProjectInfo;
 	}
 
 	const {project}: Props = $props();
 
-	const logos: Record<string, Svg_Data | undefined> = {
+	const logos: Record<string, SvgData | undefined> = {
 		zzz: zzz_logo,
 		moss: moss_logo,
 		fuz: fuz_logo,

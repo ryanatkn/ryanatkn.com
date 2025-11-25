@@ -1,6 +1,6 @@
-import type {Create_Gitops_Config} from '@ryanatkn/fuz_gitops/gitops_config.js';
+import type {CreateGitopsConfig} from '@ryanatkn/fuz_gitops/gitops_config.js';
 
-const config: Create_Gitops_Config = () => {
+const config: CreateGitopsConfig = () => {
 	return {
 		repos: [
 			// 'https://github.com/ryanatkn/zzz',

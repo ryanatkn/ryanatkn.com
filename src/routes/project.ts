@@ -1,5 +1,5 @@
 // TODO use `Pkg` and delete this module
-export interface Project_Info {
+export interface ProjectInfo {
 	name: string;
 	repo?: string;
 	homepage?: string;
