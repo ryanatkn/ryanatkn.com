@@ -2,7 +2,7 @@ import type {Gen} from '@ryanatkn/gro';
 import {resolve} from '$app/paths';
 
 import type {ProjectInfo} from '$routes/project.ts';
-import {repos} from '$routes/repos.ts';
+import {repos_json} from '$routes/repos.ts';
 
 /**
  * Generating `projects.ts` to avoid loading the whole `repos.ts` on the homepage.
@@ -122,7 +122,7 @@ const projects_metadata: Array<ProjectMetadata> = [
 ];
 
 const projects: Array<ProjectInfo> = projects_metadata.map((project_metadata) => {
-	const repo = repos.find((d) => {
+	const repo = repos_json.find((d) => {
 		if (!('name' in d)) return false;
 		return d.name === project_metadata.repo;
 	});
@@ -134,6 +134,6 @@ const projects: Array<ProjectInfo> = projects_metadata.map((project_metadata) =>
 		logo = project_metadata.logo, // TODO @many this is a hack because cosmicplayground hasn't been deployed
 		logo_alt,
 		glyph,
-	} = repo.pkg.package_json;
+	} = repo.package_json;
 	return {description, homepage, motto, logo, logo_alt, glyph, ...project_metadata};
 });
