@@ -6,5 +6,5 @@ import {repos} from '$routes/repos.ts';
 const parsed = repos_parse(repos, 'https://www.ryanatkn.com/');
 
 export const entries: EntryGenerator = () => {
-	return parsed.repos.map((d) => ({slug: d.repo_name}));
+	return parsed.repos.map((d) => ({slug: d.pkg.repo_name}));
 };
