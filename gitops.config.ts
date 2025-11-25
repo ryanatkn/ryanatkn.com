@@ -3,7 +3,7 @@ import type {CreateGitopsConfig} from '@ryanatkn/fuz_gitops/gitops_config.js';
 const config: CreateGitopsConfig = () => {
 	return {
 		repos: [
-			// 'https://github.com/ryanatkn/zzz',
+			'https://github.com/ryanatkn/zzz',
 			'https://github.com/ryanatkn/moss',
 			'https://github.com/ryanatkn/fuz',
 			'https://github.com/ryanatkn/gro',

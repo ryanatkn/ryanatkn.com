@@ -5,6 +5,133 @@ export const repos_json: Array<RepoJson> = JSON.parse(
 	'[\
 	{\
 		"package_json": {\
+			"name": "@ryanatkn/zzz",\
+			"version": "0.0.1",\
+			"description": "fullstack web toolkit for power users and devs",\
+			"motto": "nice web things for the tired",\
+			"glyph": "💤",\
+			"logo": "logo.svg",\
+			"logo_alt": "three sleepy z\'s",\
+			"public": true,\
+			"license": "MIT",\
+			"homepage": "https://www.zzz.software/",\
+			"repository": "https://github.com/ryanatkn/zzz",\
+			"author": {\
+				"name": "Ryan Atkinson",\
+				"email": "mail@ryanatkn.com",\
+				"url": "https://www.ryanatkn.com/"\
+			},\
+			"bugs": "https://github.com/ryanatkn/zzz/issues",\
+			"funding": "https://www.ryanatkn.com/funding",\
+			"scripts": {\
+				"start": "gro dev",\
+				"dev": "gro dev",\
+				"build": "gro build",\
+				"check": "gro check",\
+				"typecheck": "gro typecheck",\
+				"test": "gro test",\
+				"preview": "vite preview",\
+				"deploy": "gro deploy",\
+				"serve": "gro build && npm run preview & node dist_server/server/server.js"\
+			},\
+			"type": "module",\
+			"engines": {\
+				"node": ">=22.15"\
+			},\
+			"peerDependencies": {\
+				"@sveltejs/kit": "^2",\
+				"svelte": "^5"\
+			},\
+			"devDependencies": {\
+				"@changesets/changelog-git": "^0.2.1",\
+				"@ryanatkn/eslint-config": "^0.9.0",\
+				"@ryanatkn/fuz": "^0.163.0",\
+				"@ryanatkn/gro": "^0.177.1",\
+				"@ryanatkn/moss": "^0.39.0",\
+				"@sveltejs/adapter-node": "^5.4.0",\
+				"@sveltejs/adapter-static": "^3.0.10",\
+				"@sveltejs/kit": "^2.49.0",\
+				"@sveltejs/package": "^2.5.6",\
+				"@sveltejs/vite-plugin-svelte": "^6.2.1",\
+				"@types/node": "^24.10.1",\
+				"eslint": "^9.39.1",\
+				"eslint-plugin-svelte": "^3.13.0",\
+				"jsdom": "^27.2.0",\
+				"ollama": "^0.6.3",\
+				"prettier": "^3.6.2",\
+				"prettier-plugin-svelte": "^3.4.0",\
+				"svelte": "^5.44.0",\
+				"svelte-check": "^4.3.4",\
+				"tslib": "^2.8.1",\
+				"typescript": "^5.9.3",\
+				"typescript-eslint": "^8.48.0",\
+				"vitest": "^4.0.13",\
+				"zod": "^4.1.13"\
+			},\
+			"dependencies": {\
+				"@anthropic-ai/sdk": "^0.71.0",\
+				"@google/generative-ai": "^0.24.1",\
+				"@hono/node-server": "^1.19.6",\
+				"@hono/node-ws": "^1.2.0",\
+				"@ryanatkn/belt": "^0.39.0",\
+				"date-fns": "^4.1.0",\
+				"esm-env": "^1.2.2",\
+				"hono": "^4.10.6",\
+				"openai": "^6.9.1"\
+			},\
+			"prettier": {\
+				"plugins": [\
+					"prettier-plugin-svelte"\
+				],\
+				"useTabs": true,\
+				"printWidth": 100,\
+				"singleQuote": true,\
+				"bracketSpacing": false,\
+				"overrides": [\
+					{\
+						"files": "package.json",\
+						"options": {\
+							"useTabs": false\
+						}\
+					}\
+				]\
+			},\
+			"sideEffects": [\
+				"**/*.css"\
+			],\
+			"files": [\
+				"dist"\
+			],\
+			"exports": {\
+				"./package.json": "./package.json",\
+				"./*.js": {\
+					"types": "./dist/*.d.ts",\
+					"default": "./dist/*.js"\
+				},\
+				"./*.ts": {\
+					"types": "./dist/*.d.ts",\
+					"default": "./dist/*.js"\
+				},\
+				"./*.svelte": {\
+					"types": "./dist/*.svelte.d.ts",\
+					"svelte": "./dist/*.svelte",\
+					"default": "./dist/*.svelte"\
+				}\
+			}\
+		},\
+		"src_json": {\
+			"name": "@ryanatkn/zzz",\
+			"version": "0.0.1",\
+			"modules": []\
+		},\
+		"check_runs": {\
+			"status": "in_progress",\
+			"conclusion": null\
+		},\
+		"pull_requests": []\
+	},\
+	{\
+		"package_json": {\
 			"name": "@ryanatkn/moss",\
 			"version": "0.39.0",\
 			"description": "CSS framework and design system",\
@@ -115,7 +242,7 @@ export const repos_json: Array<RepoJson> = JSON.parse(
 	{\
 		"package_json": {\
 			"name": "@ryanatkn/fuz",\
-			"version": "0.162.1",\
+			"version": "0.163.0",\
 			"description": "Svelte UI library",\
 			"motto": "friendly user zystem",\
 			"glyph": "🧶",\
@@ -242,7 +369,7 @@ export const repos_json: Array<RepoJson> = JSON.parse(
 		},\
 		"src_json": {\
 			"name": "@ryanatkn/fuz",\
-			"version": "0.162.1",\
+			"version": "0.163.0",\
 			"modules": []\
 		},\
 		"check_runs": {\
