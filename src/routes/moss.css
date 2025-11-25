@@ -28,6 +28,11 @@
 	text-overflow: ellipsis;
 }
 
+.width_upto_sm {
+	width: 100%;
+	max-width: var(--distance_sm);
+}
+
 .width_upto_md {
 	width: 100%;
 	max-width: var(--distance_md);
@@ -37,6 +42,89 @@
 .panel {
 	border-radius: var(--border_radius_xs);
 	background-color: var(--panel_bg, var(--fg_1));
+}
+
+/* TODO other button variants? */
+/* TODO this is slightly strange that it doesn't use --icon_size */
+/* These are used as modifiers to buttons, and so they use `:where` so they cascade. */
+.icon_button {
+	width: var(--input_height);
+	height: var(--input_height);
+	min-width: var(--input_height);
+	min-height: var(--input_height);
+	flex-shrink: 0;
+	line-height: 1;
+	font-weight: 900;
+	padding: 0;
+}
+
+/* TODO maybe this belongs with the reset, like `selected`? or does `selected` belong here? */
+.plain:not(:hover) {
+	--border_color: transparent;
+	box-shadow: none;
+	--button_fill: transparent;
+}
+.plain:hover,
+.plain:active {
+	--border_color: transparent;
+}
+
+.menu_item {
+	--border_radius: 0;
+	--border_color: var(--border_color_3);
+	position: relative;
+	z-index: 2;
+	cursor: pointer;
+	width: 100%;
+	min-height: var(--min_height, var(--icon_size_sm));
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: var(--menu_item_padding, var(--space_xs3) var(--space_xs));
+}
+.menu_item.selected {
+	/* TODO different patterns for border and bg? */
+	--border_color: var(--color_a_5);
+	background-color: var(--fg_1);
+	z-index: 1;
+	cursor: default;
+}
+.menu_item.selected.deselectable:not(:disabled) {
+	cursor: pointer;
+}
+.menu_item:hover {
+	--border_color: var(--border_color_3);
+	background-color: var(--fg_0);
+}
+.menu_item:active,
+.menu_item.selected:hover {
+	--border_color: var(--border_color_3);
+	background-color: var(--fg_2);
+}
+.menu_item.plain {
+	border: none;
+}
+.menu_item .content {
+	display: flex;
+	align-items: center;
+	flex: 1;
+	/* allows the flex children to shrink */
+	min-width: 0;
+}
+.menu_item .icon {
+	width: var(--icon_size, var(--icon_size_md));
+	margin-right: var(--space_sm);
+	flex-shrink: 0;
+	text-align: center;
+	font-weight: 900;
+}
+.menu_item .title {
+	margin-right: var(--space_lg);
+	flex-shrink: 1;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	line-height: var(--line_height_lg); /* prevents the bottom of g's and others from being cut off */
 }
 
 .chip {
@@ -56,11 +144,17 @@ a.chip {
 .display_contents {
 	display: contents;
 }
+.display_block {
+	display: block;
+}
 .display_inline_block {
 	display: inline-block;
 }
 .display_flex {
 	display: flex;
+}
+.display_inline_flex {
+	display: inline-flex;
 }
 .float_right {
 	float: right;
@@ -74,8 +168,18 @@ a.chip {
 .flex_wrap_wrap {
 	flex-wrap: wrap;
 }
+.align_items_center {
+	align-items: center;
+}
 .flip_x {
 	transform: scaleX(-1);
+}
+.font_family_mono {
+	font-family: var(--font_family_mono);
+}
+.font_size_xl {
+	font-size: var(--font_size_xl);
+	--font_size: var(--font_size_xl);
 }
 .icon_size_lg {
 	font-size: var(--icon_size_lg);
@@ -105,6 +209,9 @@ a.chip {
 .width_100 {
 	width: 100%;
 }
+.height_100 {
+	height: 100%;
+}
 .p_sm {
 	padding: var(--space_sm);
 }
@@ -120,8 +227,15 @@ a.chip {
 .pr_md {
 	padding-right: var(--space_md);
 }
+.pb_md {
+	padding-bottom: var(--space_md);
+}
 .pl_md {
 	padding-left: var(--space_md);
+}
+.px_xl {
+	padding-left: var(--space_xl);
+	padding-right: var(--space_xl);
 }
 .py_md {
 	padding-top: var(--space_md);
@@ -137,6 +251,12 @@ a.chip {
 .mt_xl5 {
 	margin-top: var(--space_xl5);
 }
+.mr_xs {
+	margin-right: var(--space_xs);
+}
+.mr_lg {
+	margin-right: var(--space_lg);
+}
 .mb_0 {
 	margin-bottom: 0;
 }
@@ -145,6 +265,9 @@ a.chip {
 }
 .mb_xl2 {
 	margin-bottom: var(--space_xl2);
+}
+.mb_xl5 {
+	margin-bottom: var(--space_xl5);
 }
 .mb_xl7 {
 	margin-bottom: var(--space_xl7);
