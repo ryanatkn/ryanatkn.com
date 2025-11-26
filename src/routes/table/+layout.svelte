@@ -12,7 +12,12 @@
 
 	// this is duplicated in each repos page to code split the repos data
 
-	repos_context.set(repos_parse(repos_json.map((r) => new Repo(r)), 'https://www.ryanatkn.com/'));
+	repos_context.set(
+		repos_parse(
+			repos_json.map((r) => new Repo(r)),
+			'https://www.ryanatkn.com/',
+		),
+	);
 </script>
 
 <div class="width_100 flex_1">
