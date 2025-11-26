@@ -40,9 +40,9 @@ export const library_json: LibraryJson = {
 		},
 		devDependencies: {
 			'@prettier/plugin-xml': '^3.4.2',
-			'@ryanatkn/belt': '^0.40.0',
+			'@ryanatkn/belt': '^0.40.1',
 			'@ryanatkn/eslint-config': '^0.9.0',
-			'@ryanatkn/fuz': '^0.165.0',
+			'@ryanatkn/fuz': '^0.167.0',
 			'@ryanatkn/fuz_blog': '^0.18.0',
 			'@ryanatkn/fuz_gitops': '^0.55.0',
 			'@ryanatkn/fuz_mastodon': '^0.36.0',
