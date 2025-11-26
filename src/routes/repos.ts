@@ -51610,8 +51610,8 @@ export const repos_json: Array<RepoJson> = [
 			published: false,
 		},
 		check_runs: {
-			status: 'in_progress',
-			conclusion: null,
+			status: 'completed',
+			conclusion: 'success',
 		},
 		pull_requests: [],
 	},
