@@ -16,7 +16,7 @@ const config: CreateGitopsConfig = () => {
 			'https://github.com/ryanatkn/webdevladder.net',
 			{
 				repo_url: 'https://github.com/ryanatkn/ryanatkn.com',
-				branch: 'upgrade-deps',
+				branch: 'main',
 			},
 		],
 	};
