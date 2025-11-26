@@ -22,9 +22,10 @@
 	const href = $derived(at_root_path ? resolve('/blog') : pop_path(pathname));
 </script>
 
+<!-- eslint-disable svelte/no-navigation-without-resolve -->
 <a
-	title={at_root_path ? 'Go to blog' : 'Go back home'}
 	{href}
+	title={at_root_path ? 'Go to blog' : 'Go back home'}
 	class:selected={at_root_path}
 	{...attrs}
 >
