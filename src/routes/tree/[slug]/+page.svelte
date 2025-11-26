@@ -12,7 +12,7 @@
 </script>
 
 <svelte:head>
-	<title>{slug} - tree {repo.pkg.package_json.glyph} {repo.pkg.package_json.name}</title>
+	<title>{slug} - tree {repo.library.package_json.glyph} {repo.library.package_json.name}</title>
 </svelte:head>
 
 <TreeItemPage {repo} {repos} {slug} />

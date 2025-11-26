@@ -134,6 +134,6 @@ const projects: Array<ProjectInfo> = projects_metadata.map((project_metadata) =>
 		logo = project_metadata.logo, // TODO @many this is a hack because cosmicplayground hasn't been deployed
 		logo_alt,
 		glyph,
-	} = repo.package_json;
+	} = repo.library_json.package_json;
 	return {description, homepage, motto, logo, logo_alt, glyph, ...project_metadata};
 });

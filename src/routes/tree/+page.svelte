@@ -8,7 +8,7 @@
 </script>
 
 <svelte:head>
-	<title>tree {repo.pkg.package_json.glyph} {repo.pkg.repo_name}</title>
+	<title>tree {repo.library.package_json.glyph} {repo.library.repo_name}</title>
 </svelte:head>
 
 <TreePage {repo} {repos} />
