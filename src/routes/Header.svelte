@@ -1,17 +1,21 @@
 <script lang="ts">
+	import type {SvelteHTMLElements} from 'svelte/elements';
+
 	import RotatingHeaderLogo from '$routes/RotatingHeaderLogo.svelte';
 	import PrimaryLink from '$routes/PrimaryLink.svelte';
 	import {LOGO_ALT, LOGO_SRC} from '$routes/project.ts';
 
-	interface Props {
+	const {
+		src = LOGO_SRC,
+		alt = LOGO_ALT,
+		...rest
+	}: SvelteHTMLElements['header'] & {
 		src?: string;
 		alt?: string;
-	}
-
-	const {src = LOGO_SRC, alt = LOGO_ALT}: Props = $props();
+	} = $props();
 </script>
 
-<header>
+<header {...rest}>
 	<PrimaryLink>
 		<RotatingHeaderLogo {src} {alt} />
 	</PrimaryLink>

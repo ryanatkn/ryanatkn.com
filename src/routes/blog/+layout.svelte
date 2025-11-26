@@ -9,11 +9,11 @@
 
 	import Favicon from '$routes/Favicon.svelte';
 
-	interface Props {
+	const {
+		children,
+	}: {
 		children: Snippet;
-	}
-
-	const {children}: Props = $props();
+	} = $props();
 
 	if (DEV) {
 		mastodon_cache_context.set(

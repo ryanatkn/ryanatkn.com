@@ -3,12 +3,13 @@
 
 	import {LOGO_ALT, LOGO_SRC} from '$routes/project.ts';
 
-	interface Props {
+	const {
+		src = LOGO_SRC,
+		alt = LOGO_ALT,
+	}: {
 		src?: string;
 		alt?: string;
-	}
-
-	const {src = LOGO_SRC, alt = LOGO_ALT}: Props = $props();
+	} = $props();
 
 	const path = $derived(asset(`/${src}`));
 

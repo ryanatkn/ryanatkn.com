@@ -1,28 +1,25 @@
 <script lang="ts">
 	import type {SvelteHTMLElements} from 'svelte/elements';
 
-	interface Props {
-		size?: string;
-		fill?: string;
-		label?: string;
-		inline?: boolean;
-		attrs?: SvelteHTMLElements['svg'] | undefined;
-	}
-
 	const {
 		size = 'var(--space_xl7, 64px)',
 		fill = 'var(--text_color, #000)',
 		label = 'Patreon icon',
 		inline = false,
-		attrs,
-	}: Props = $props();
+		...rest
+	}: SvelteHTMLElements['svg'] & {
+		size?: string;
+		fill?: string;
+		label?: string;
+		inline?: boolean;
+	} = $props();
 
 	// TODO maybe create a `Svg` or similar component that makes all of this cleaner, even defaulting the viewBox
 </script>
 
 <svg
 	viewBox="0 0 1080 1080"
-	{...attrs}
+	{...rest}
 	aria-label={label}
 	style:width={size}
 	style:height={size}

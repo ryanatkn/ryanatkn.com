@@ -10,11 +10,11 @@
 	// TODO audit
 	/* eslint-disable svelte/no-at-html-tags */
 
-	interface Props {
+	const {
+		project,
+	}: {
 		project: ProjectInfo;
-	}
-
-	const {project}: Props = $props();
+	} = $props();
 
 	const logos: Record<string, SvgData | undefined> = {
 		zzz: zzz_logo,

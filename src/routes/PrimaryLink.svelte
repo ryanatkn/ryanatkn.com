@@ -4,12 +4,12 @@
 	import type {Snippet} from 'svelte';
 	import type {SvelteHTMLElements} from 'svelte/elements';
 
-	interface Props {
-		attrs?: SvelteHTMLElements['a'];
-		children: Snippet;
-	}
-
-	const {attrs, children}: Props = $props();
+	const {
+		children,
+		...rest
+	}: SvelteHTMLElements['a'] & {
+		children: Snippet; // required
+	} = $props();
 
 	// TODO upstream to belt?
 	const pop_path = (pathname: string): string =>
@@ -27,7 +27,7 @@
 	{href}
 	title={at_root_path ? 'Go to blog' : 'Go back home'}
 	class:selected={at_root_path}
-	{...attrs}
+	{...rest}
 >
 	{@render children()}
 </a>

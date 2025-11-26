@@ -2,12 +2,12 @@
 	import {asset} from '$app/paths';
 	import type {SvelteHTMLElements} from 'svelte/elements';
 
-	interface Props {
+	const {
+		src = 'favicon.png',
+		...rest
+	}: SvelteHTMLElements['img'] & {
 		src?: string;
-		attrs?: SvelteHTMLElements['img'];
-	}
-
-	const {src = 'favicon.png', attrs}: Props = $props();
+	} = $props();
 </script>
 
 <img
@@ -15,5 +15,5 @@
 	style:height="var(--icon_size_sm)"
 	style:width="var(--icon_size_sm)"
 	src={asset(`/${src}`)}
-	{...attrs}
+	{...rest}
 />

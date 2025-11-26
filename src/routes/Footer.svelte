@@ -1,17 +1,21 @@
 <script lang="ts">
+	import type {SvelteHTMLElements} from 'svelte/elements';
+
 	import RotatingFooterLogo from '$routes/RotatingFooterLogo.svelte';
 	import PrimaryLink from '$routes/PrimaryLink.svelte';
 	import {LOGO_ALT, LOGO_SRC} from '$routes/project.ts';
 
-	interface Props {
+	const {
+		src = LOGO_SRC,
+		alt = LOGO_ALT,
+		...rest
+	}: SvelteHTMLElements['footer'] & {
 		src?: string;
 		alt?: string;
-	}
-
-	const {src = LOGO_SRC, alt = LOGO_ALT}: Props = $props();
+	} = $props();
 </script>
 
-<footer>
+<footer {...rest}>
 	<PrimaryLink><RotatingFooterLogo {src} {alt} /></PrimaryLink>
 </footer>
 
