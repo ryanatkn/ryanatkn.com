@@ -3,7 +3,7 @@
 	import type {Snippet} from 'svelte';
 	import {DEV} from 'esm-env';
 	import {
-		Mastodon_Cache,
+		MastodonCache,
 		mastodon_cache_context,
 	} from '@ryanatkn/fuz_mastodon/mastodon_cache.svelte.js';
 
@@ -17,7 +17,7 @@
 
 	if (DEV) {
 		mastodon_cache_context.set(
-			new Mastodon_Cache(
+			new MastodonCache(
 				async () => (await import('./mastodon_dev_cache_data.js')).mastodon_dev_cache_data,
 			),
 		);
@@ -29,7 +29,7 @@
 		// Then paste the string into the `mastodon_dev_cache_data.js` file as the exported `mastodon_dev_cache_data` value.
 	}
 
-	// TODO redirect from the numbers or render UI to navigate to it, maybe in `Blog_Post`
+	// TODO redirect from the numbers or render UI to navigate to it, maybe in `BlogPost`
 </script>
 
 <div class="breadcrumbs">

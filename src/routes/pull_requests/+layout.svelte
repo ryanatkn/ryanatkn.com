@@ -1,8 +1,8 @@
 <script lang="ts">
-	import {parse_repos, repos_context} from '@ryanatkn/fuz_gitops/repo.js';
+	import {Repo, repos_parse, repos_context} from '@ryanatkn/fuz_gitops/repo.svelte.js';
 	import type {Snippet} from 'svelte';
 
-	import {repos} from '$routes/repos.ts';
+	import {repos_json} from '$routes/repos.ts';
 
 	interface Props {
 		children: Snippet;
@@ -12,7 +12,12 @@
 
 	// this is duplicated in each repos page to code split the repos data
 
-	repos_context.set(parse_repos(repos, 'https://www.ryanatkn.com/'));
+	repos_context.set(
+		repos_parse(
+			repos_json.map((r) => new Repo(r)),
+			'https://www.ryanatkn.com/',
+		),
+	);
 </script>
 
 <div class="width_100 flex_1">

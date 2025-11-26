@@ -1,10 +1,13 @@
 import type {EntryGenerator} from './$types.js';
-import {parse_repos} from '@ryanatkn/fuz_gitops/repo.js';
+import {Repo, repos_parse} from '@ryanatkn/fuz_gitops/repo.svelte.js';
 
-import {repos} from '$routes/repos.ts';
+import {repos_json} from '$routes/repos.ts';
 
-const parsed = parse_repos(repos, 'https://www.ryanatkn.com/');
+const parsed = repos_parse(
+	repos_json.map((r) => new Repo(r)),
+	'https://www.ryanatkn.com/',
+);
 
 export const entries: EntryGenerator = () => {
-	return parsed.repos.map((d) => ({slug: d.repo_name}));
+	return parsed.repos.map((d) => ({slug: d.library.repo_name}));
 };

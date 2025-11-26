@@ -2,11 +2,11 @@
 	import Breadcrumb from '@ryanatkn/fuz/Breadcrumb.svelte';
 
 	import Favicon from '$routes/Favicon.svelte';
-	import Gitops_Menu from '$routes/Gitops_Menu.svelte';
-	import Page_Links from '$routes/Page_Links.svelte';
-	import Contact_Info from '$routes/Contact_Info.svelte';
+	import GitopsMenu from '$routes/GitopsMenu.svelte';
+	import PageLinks from '$routes/PageLinks.svelte';
+	import ContactInfo from '$routes/ContactInfo.svelte';
 	import Me from '$routes/Me.svelte';
-	import Project_Card from '$routes/Project_Card.svelte';
+	import ProjectCard from '$routes/ProjectCard.svelte';
 	import {projects} from '$routes/projects.ts';
 </script>
 
@@ -37,11 +37,11 @@
 		</div>
 	</section>
 	<section class="box row flex_wrap_wrap gap_xl2">
-		<Page_Links />
+		<PageLinks />
 	</section>
 	<section class="box">
 		<div class="panel box shadow_inset_xs">
-			<Contact_Info />
+			<ContactInfo />
 		</div>
 	</section>
 	<!-- TODO margin is a hack, replace with a class or generic style -->
@@ -51,14 +51,14 @@
 		</div>
 		<div class="cards">
 			{#each projects as project (project)}
-				<Project_Card {project}></Project_Card>
+				<ProjectCard {project}></ProjectCard>
 			{/each}
 		</div>
 		<div class="box py_xl">
 			<div class="panel p_lg bg shadow_inset_xs">
 				<!-- TODO fuz .font_size_lg -->
 				<div class="mb_lg text_align_center" style:font-size="var(--font_size_lg)">all repos</div>
-				<Gitops_Menu />
+				<GitopsMenu />
 			</div>
 		</div>
 	</section>

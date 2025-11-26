@@ -5,8 +5,8 @@
 	import Card from '@ryanatkn/fuz/Card.svelte';
 	import Breadcrumb from '@ryanatkn/fuz/Breadcrumb.svelte';
 
-	import Page_Links from '$routes/Page_Links.svelte';
-	import Patreon_Logo from '$routes/funding/Patreon_Logo.svelte'; // TODO move to fuz
+	import PageLinks from '$routes/PageLinks.svelte';
+	import PatreonLogo from '$routes/funding/PatreonLogo.svelte'; // TODO move to fuz
 	import Favicon from '$routes/Favicon.svelte';
 </script>
 
@@ -69,7 +69,7 @@
 			</Card>
 		</div>
 		<Card href="https://www.patreon.com/ryanatkn" align="right">
-			{#snippet icon()}<Patreon_Logo fill="var(--color_a_5)" />{/snippet}
+			{#snippet icon()}<PatreonLogo fill="var(--color_a_5)" />{/snippet}
 			Patreon
 		</Card>
 	</section>
@@ -120,7 +120,7 @@
 				>
 				and
 				<a class="white_space_nowrap" href="https://www.patreon.com/ryanatkn"
-					><Patreon_Logo size="var(--font_size_md)" fill="var(--color_a_5)" inline /> Patreon</a
+					><PatreonLogo size="var(--font_size_md)" fill="var(--color_a_5)" inline /> Patreon</a
 				> helps me a lot for the signal it sends. No rewards yet but idk.
 			</p>
 			<p>
@@ -132,7 +132,7 @@
 		</div>
 	</section>
 	<section class="box gap_xl2">
-		<Page_Links />
+		<PageLinks />
 	</section>
 	<section class="box">
 		<Breadcrumb><Favicon /></Breadcrumb>

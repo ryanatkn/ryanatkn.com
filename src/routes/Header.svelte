@@ -1,6 +1,6 @@
 <script lang="ts">
-	import Rotating_Header_Logo from '$routes/Rotating_Header_Logo.svelte';
-	import Primary_Link from '$routes/Primary_Link.svelte';
+	import RotatingHeaderLogo from '$routes/RotatingHeaderLogo.svelte';
+	import PrimaryLink from '$routes/PrimaryLink.svelte';
 	import {LOGO_ALT, LOGO_SRC} from '$routes/project.ts';
 
 	interface Props {
@@ -12,9 +12,9 @@
 </script>
 
 <header>
-	<Primary_Link>
-		<Rotating_Header_Logo {src} {alt} />
-	</Primary_Link>
+	<PrimaryLink>
+		<RotatingHeaderLogo {src} {alt} />
+	</PrimaryLink>
 </header>
 
 <style>

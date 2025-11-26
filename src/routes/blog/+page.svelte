@@ -1,10 +1,10 @@
 <script lang="ts">
 	import {asset, resolve} from '$app/paths';
-	import Feed_Item_Date from '@ryanatkn/fuz_blog/Feed_Item_Date.svelte';
+	import FeedItemDate from '@ryanatkn/fuz_blog/FeedItemDate.svelte';
 	import {blog_feed_context} from '@ryanatkn/fuz_blog/blog.js';
 	import {to_pathname} from '@ryanatkn/fuz_blog/util.js';
 
-	import Page_Links from '$routes/Page_Links.svelte';
+	import PageLinks from '$routes/PageLinks.svelte';
 
 	const feed = blog_feed_context.get();
 
@@ -20,7 +20,7 @@
 		{#each items as item (item)}
 			<li class="blog_card">
 				<a href={resolve(to_pathname(item.url, feed.home_page_url) as any)}>{item.title}</a>
-				<div class="date"><Feed_Item_Date {item} /></div>
+				<div class="date"><FeedItemDate {item} /></div>
 			</li>
 		{/each}
 	</ol>
@@ -28,7 +28,7 @@
 	<a class="feed_link chip" href={asset('/blog/feed.xml')} download>Atom feed</a>
 </section>
 <section class="box gap_xl2 mb_xl7">
-	<Page_Links />
+	<PageLinks />
 </section>
 
 <style>
