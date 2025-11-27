@@ -25592,7 +25592,7 @@ export const repos_json: Array<RepoJson> = [
 		library_json: {
 			package_json: {
 				name: '@ryanatkn/fuz',
-				version: '0.167.0',
+				version: '0.168.0',
 				description: 'Svelte UI library',
 				motto: 'friendly user zystem',
 				glyph: '🧶',
@@ -25626,9 +25626,9 @@ export const repos_json: Array<RepoJson> = [
 					node: '>=22.15',
 				},
 				peerDependencies: {
-					'@ryanatkn/belt': '>=0.40.1',
+					'@ryanatkn/belt': '>=0.41.1',
 					'@ryanatkn/fuz_code': '>=0.36.0',
-					'@ryanatkn/gro': '>=0.179.0',
+					'@ryanatkn/gro': '>=0.180.0',
 					'@ryanatkn/moss': '>=0.39.0',
 					'@sveltejs/kit': '^2.47.3',
 					'esm-env': '^1',
@@ -25649,14 +25649,14 @@ export const repos_json: Array<RepoJson> = [
 				},
 				devDependencies: {
 					'@changesets/changelog-git': '^0.2.1',
-					'@ryanatkn/belt': '^0.40.1',
+					'@ryanatkn/belt': '^0.41.1',
 					'@ryanatkn/eslint-config': '^0.9.0',
 					'@ryanatkn/fuz_code': '^0.36.0',
-					'@ryanatkn/gro': '^0.179.0',
+					'@ryanatkn/gro': '^0.180.0',
 					'@ryanatkn/moss': '^0.39.0',
 					'@sveltejs/adapter-static': '^3.0.10',
 					'@sveltejs/kit': '^2.49.0',
-					'@sveltejs/package': '^2.5.6',
+					'@sveltejs/package': '^2.5.7',
 					'@sveltejs/vite-plugin-svelte': '^6.2.1',
 					'@types/node': '^24.10.1',
 					eslint: '^9.39.1',
@@ -25665,7 +25665,7 @@ export const repos_json: Array<RepoJson> = [
 					jsdom: '^27.2.0',
 					prettier: '^3.6.2',
 					'prettier-plugin-svelte': '^3.4.0',
-					svelte: '^5.44.1',
+					svelte: '^5.45.2',
 					'svelte-check': '^4.3.4',
 					svelte2tsx: '^0.7.45',
 					tslib: '^2.8.1',
@@ -25710,7 +25710,7 @@ export const repos_json: Array<RepoJson> = [
 			},
 			source_json: {
 				name: '@ryanatkn/fuz',
-				version: '0.167.0',
+				version: '0.168.0',
 				modules: [
 					{
 						path: 'Alert.svelte',
@@ -27751,7 +27751,13 @@ export const repos_json: Array<RepoJson> = [
 								source_line: 1,
 							},
 						],
-						dependencies: ['Details.svelte', 'Mdz.svelte', 'ModuleLink.svelte', 'TypeLink.svelte'],
+						dependencies: [
+							'Details.svelte',
+							'Mdz.svelte',
+							'ModuleLink.svelte',
+							'TypeLink.svelte',
+							'_code/Code.svelte.ts',
+						],
 						dependents: ['ApiDeclarationList.svelte'],
 					},
 					{
@@ -29153,14 +29159,33 @@ export const repos_json: Array<RepoJson> = [
 						path: 'library_gen.ts',
 						declarations: [
 							{
+								name: 'LibraryGenOptions',
+								kind: 'type',
+								source_line: 36,
+								type_signature: 'LibraryGenOptions',
+								properties: [
+									{
+										name: 'filename',
+										kind: 'variable',
+										type_signature: 'string',
+									},
+								],
+							},
+							{
 								name: 'library_gen',
 								kind: 'function',
 								doc_comment:
 									"Creates a Gen object for generating library metadata with full TypeScript analysis.\n\nUsage in a `.gen.ts` file:\n```ts\nimport {library_gen} from '@ryanatkn/fuz/library_gen.js';\nexport const gen = library_gen();\n```",
-								source_line: 45,
-								type_signature: '(): Gen',
+								source_line: 49,
+								type_signature: '(options?: LibraryGenOptions | undefined): Gen',
 								return_type: 'Gen',
-								parameters: [],
+								parameters: [
+									{
+										name: 'options',
+										type: 'LibraryGenOptions | undefined',
+										optional: true,
+									},
+								],
 							},
 						],
 						module_comment:
@@ -30234,7 +30259,12 @@ export const repos_json: Array<RepoJson> = [
 								source_line: 1,
 							},
 						],
-						dependencies: ['DocsLink.svelte', 'MdzNodeView.svelte', 'mdz_components.ts'],
+						dependencies: [
+							'DocsLink.svelte',
+							'MdzNodeView.svelte',
+							'_code/Code.svelte.ts',
+							'mdz_components.ts',
+						],
 						dependents: ['Mdz.svelte', 'MdzNodeView.svelte'],
 					},
 					{
@@ -31910,7 +31940,7 @@ export const repos_json: Array<RepoJson> = [
 								source_line: 1,
 							},
 						],
-						dependencies: ['DeclarationLink.svelte', 'library.svelte.ts'],
+						dependencies: ['DeclarationLink.svelte', '_code/Code.svelte.ts', 'library.svelte.ts'],
 						dependents: ['DeclarationDetail.svelte'],
 					},
 				],
@@ -31945,7 +31975,7 @@ export const repos_json: Array<RepoJson> = [
 		library_json: {
 			package_json: {
 				name: '@ryanatkn/gro',
-				version: '0.179.0',
+				version: '0.180.0',
 				description: 'task runner and toolkit extending SvelteKit',
 				motto: 'generate, run, optimize',
 				glyph: '🌰',
@@ -32007,7 +32037,7 @@ export const repos_json: Array<RepoJson> = [
 					zod: '^4.1.13',
 				},
 				peerDependencies: {
-					'@ryanatkn/belt': '>=0.40.0',
+					'@ryanatkn/belt': '>=0.41.1',
 					'@sveltejs/kit': '^2',
 					esbuild: '^0.27.0',
 					svelte: '^5',
@@ -32028,20 +32058,20 @@ export const repos_json: Array<RepoJson> = [
 				devDependencies: {
 					'@changesets/changelog-git': '^0.2.1',
 					'@changesets/types': '^6.1.0',
-					'@ryanatkn/belt': '^0.40.0',
+					'@ryanatkn/belt': '^0.41.1',
 					'@ryanatkn/eslint-config': '^0.9.0',
-					'@ryanatkn/fuz': '^0.165.0',
+					'@ryanatkn/fuz': '^0.168.0',
 					'@ryanatkn/fuz_code': '^0.36.0',
 					'@ryanatkn/moss': '^0.39.0',
 					'@sveltejs/adapter-static': '^3.0.10',
 					'@sveltejs/kit': '^2.49.0',
-					'@sveltejs/package': '^2.5.6',
+					'@sveltejs/package': '^2.5.7',
 					'@sveltejs/vite-plugin-svelte': '^6.2.1',
 					'@types/node': '^24.10.1',
 					esbuild: '^0.27.0',
 					eslint: '^9.39.1',
 					'eslint-plugin-svelte': '^3.13.0',
-					svelte: '^5.44.1',
+					svelte: '^5.45.2',
 					'svelte-check': '^4.3.4',
 					typescript: '^5.9.3',
 					'typescript-eslint': '^8.48.0',
@@ -32082,7 +32112,7 @@ export const repos_json: Array<RepoJson> = [
 			},
 			source_json: {
 				name: '@ryanatkn/gro',
-				version: '0.179.0',
+				version: '0.180.0',
 				modules: [
 					{
 						path: 'args.ts',
@@ -32149,12 +32179,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'unparsed_args',
 										type: 'TInput',
-										optional: false,
 									},
 									{
 										name: 'schema',
 										type: 'ZodType<TOutput, TInput, $ZodTypeInternals<TOutput, TInput>>',
-										optional: false,
 									},
 								],
 							},
@@ -32169,7 +32197,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'args',
 										type: 'Args',
-										optional: false,
 									},
 								],
 							},
@@ -32185,7 +32212,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'argv',
 										type: 'string[]',
-										optional: false,
 										default_value: 'process.argv',
 									},
 								],
@@ -32202,7 +32228,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'argv',
 										type: 'string[]',
-										optional: false,
 										default_value: 'process.argv',
 									},
 								],
@@ -32220,7 +32245,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'command',
 										type: 'string',
-										optional: false,
 									},
 									{
 										name: 'raw_rest_args',
@@ -32230,7 +32254,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'cache',
 										type: 'Record<string, Args | undefined>',
-										optional: false,
 										default_value: 'to_forwarded_args_by_command(raw_rest_args)',
 									},
 								],
@@ -32245,7 +32268,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'raw_rest_args',
 										type: 'string[]',
-										optional: false,
 										default_value: 'to_raw_rest_args()',
 									},
 								],
@@ -32271,7 +32293,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'raw_rest_args',
 										type: 'string[]',
-										optional: false,
 										default_value: 'to_raw_rest_args()',
 									},
 								],
@@ -32286,7 +32307,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'serialized_args',
 										type: 'string[]',
-										optional: false,
 									},
 								],
 							},
@@ -32312,13 +32332,13 @@ export const repos_json: Array<RepoJson> = [
 							{
 								name: 'BUILD_CACHE_METADATA_FILENAME',
 								kind: 'variable',
-								source_line: 21,
+								source_line: 15,
 								type_signature: '"build.json"',
 							},
 							{
 								name: 'BUILD_CACHE_VERSION',
 								kind: 'variable',
-								source_line: 22,
+								source_line: 16,
 								type_signature: '"1"',
 							},
 							{
@@ -32326,7 +32346,7 @@ export const repos_json: Array<RepoJson> = [
 								kind: 'type',
 								doc_comment:
 									'Metadata about a single build output file.\nIncludes cryptographic hash for validation plus filesystem stats for debugging and optimization.',
-								source_line: 28,
+								source_line: 22,
 								type_signature:
 									'ZodObject<{ path: ZodString; hash: ZodString; size: ZodNumber; mtime: ZodNumber; ctime: ZodNumber; mode: ZodNumber; }, $strict>',
 							},
@@ -32335,7 +32355,7 @@ export const repos_json: Array<RepoJson> = [
 								kind: 'type',
 								doc_comment:
 									'Metadata stored in .gro/ directory to track build cache validity.\nSchema validates structure at load time to catch corrupted cache files.',
-								source_line: 46,
+								source_line: 40,
 								type_signature:
 									'ZodObject<{ version: ZodString; git_commit: ZodNullable<ZodString>; build_cache_config_hash: ZodString; timestamp: ZodString; outputs: ZodArray<...>; }, $strict>',
 							},
@@ -32344,7 +32364,7 @@ export const repos_json: Array<RepoJson> = [
 								kind: 'function',
 								doc_comment:
 									'Computes the cache key components for a build.\nThis determines whether a cached build can be reused.',
-								source_line: 67,
+								source_line: 61,
 								type_signature:
 									'(config: GroConfig, log: Logger, git_commit?: string | null | undefined): Promise<{ git_commit: string | null; build_cache_config_hash: string; }>',
 								return_type:
@@ -32353,14 +32373,12 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'config',
 										type: 'GroConfig',
-										optional: false,
 										description:
 											'Gro config (build_cache_config_hash is already computed during config load)',
 									},
 									{
 										name: 'log',
 										type: 'Logger',
-										optional: false,
 										description: 'Logger',
 									},
 									{
@@ -32377,11 +32395,11 @@ export const repos_json: Array<RepoJson> = [
 								kind: 'function',
 								doc_comment:
 									'Loads build cache metadata from .gro/ directory.\nInvalid or corrupted cache files are automatically deleted.',
-								source_line: 92,
+								source_line: 86,
 								type_signature:
-									'(): { version: string; git_commit: string | null; build_cache_config_hash: string; timestamp: string; outputs: { path: string; hash: string; size: number; mtime: number; ctime: number; mode: number; }[]; } | null',
+									'(): Promise<{ version: string; git_commit: string | null; build_cache_config_hash: string; timestamp: string; outputs: { path: string; hash: string; size: number; mtime: number; ctime: number; mode: number; }[]; } | null>',
 								return_type:
-									'{ version: string; git_commit: string | null; build_cache_config_hash: string; timestamp: string; outputs: { path: string; hash: string; size: number; mtime: number; ctime: number; mode: number; }[]; } | null',
+									'Promise<{ version: string; git_commit: string | null; build_cache_config_hash: string; timestamp: string; outputs: { path: string; hash: string; size: number; mtime: number; ctime: number; mode: number; }[]; } | null>',
 								parameters: [],
 							},
 							{
@@ -32389,15 +32407,14 @@ export const repos_json: Array<RepoJson> = [
 								kind: 'function',
 								doc_comment:
 									"Saves build cache metadata to .gro/ directory.\nErrors are logged but don't fail the build (cache is optional).",
-								source_line: 134,
+								source_line: 128,
 								type_signature:
-									'(metadata: { version: string; git_commit: string | null; build_cache_config_hash: string; timestamp: string; outputs: { path: string; hash: string; size: number; mtime: number; ctime: number; mode: number; }[]; }, log?: Logger | undefined): void',
-								return_type: 'void',
+									'(metadata: { version: string; git_commit: string | null; build_cache_config_hash: string; timestamp: string; outputs: { path: string; hash: string; size: number; mtime: number; ctime: number; mode: number; }[]; }, log?: Logger | undefined): Promise<...>',
+								return_type: 'Promise<void>',
 								parameters: [
 									{
 										name: 'metadata',
 										type: '{ version: string; git_commit: string | null; build_cache_config_hash: string; timestamp: string; outputs: { path: string; hash: string; size: number; mtime: number; ctime: number; mode: number; }[]; }',
-										optional: false,
 									},
 									{
 										name: 'log',
@@ -32411,7 +32428,7 @@ export const repos_json: Array<RepoJson> = [
 								kind: 'function',
 								doc_comment:
 									'Validates that a cached build is still valid by checking stats and hashing outputs.\nUses size as a fast negative check before expensive hashing.\nThis is comprehensive validation to catch manual tampering or corruption.',
-								source_line: 155,
+								source_line: 152,
 								type_signature:
 									'(metadata: { version: string; git_commit: string | null; build_cache_config_hash: string; timestamp: string; outputs: { path: string; hash: string; size: number; mtime: number; ctime: number; mode: number; }[]; }): Promise<...>',
 								return_type: 'Promise<boolean>',
@@ -32419,7 +32436,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'metadata',
 										type: '{ version: string; git_commit: string | null; build_cache_config_hash: string; timestamp: string; outputs: { path: string; hash: string; size: number; mtime: number; ctime: number; mode: number; }[]; }',
-										optional: false,
 									},
 								],
 							},
@@ -32428,7 +32444,7 @@ export const repos_json: Array<RepoJson> = [
 								kind: 'function',
 								doc_comment:
 									'Main function to check if the build cache is valid.\nReturns true if the cached build can be used, false if a fresh build is needed.',
-								source_line: 195,
+								source_line: 197,
 								type_signature:
 									'(config: GroConfig, log: Logger, git_commit?: string | null | undefined): Promise<boolean>',
 								return_type: 'Promise<boolean>',
@@ -32436,13 +32452,11 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'config',
 										type: 'GroConfig',
-										optional: false,
 										description: 'Gro config',
 									},
 									{
 										name: 'log',
 										type: 'Logger',
-										optional: false,
 										description: 'Logger',
 									},
 									{
@@ -32458,7 +32472,7 @@ export const repos_json: Array<RepoJson> = [
 								kind: 'function',
 								doc_comment:
 									'Collects information about all files in build output directories.\nReturns an array of entries with path, hash, size, mtime, ctime, and mode.\n\nFiles are hashed in parallel for performance. For very large builds (10k+ files),\nthis may take several seconds but ensures complete cache validation.',
-								source_line: 241,
+								source_line: 243,
 								type_signature:
 									'(build_dirs: string[]): Promise<{ path: string; hash: string; size: number; mtime: number; ctime: number; mode: number; }[]>',
 								return_type:
@@ -32467,7 +32481,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'build_dirs',
 										type: 'string[]',
-										optional: false,
 										description:
 											"Array of output directories to scan (e.g., ['build', 'dist', 'dist_server'])",
 									},
@@ -32478,9 +32491,9 @@ export const repos_json: Array<RepoJson> = [
 								kind: 'function',
 								doc_comment:
 									'Discovers all build output directories in the current working directory.\nReturns an array of directory names that exist: build/, dist/, dist_*',
-								source_line: 308,
-								type_signature: '(): string[]',
-								return_type: 'string[]',
+								source_line: 317,
+								type_signature: '(): Promise<string[]>',
+								return_type: 'Promise<string[]>',
 								parameters: [],
 							},
 							{
@@ -32488,7 +32501,7 @@ export const repos_json: Array<RepoJson> = [
 								kind: 'function',
 								doc_comment:
 									'Creates build cache metadata after a successful build.\nAutomatically discovers all build output directories (build/, dist/, dist_*).',
-								source_line: 346,
+								source_line: 362,
 								type_signature:
 									'(config: GroConfig, log: Logger, git_commit?: string | null | undefined, build_dirs?: string[] | undefined): Promise<{ version: string; git_commit: string | null; build_cache_config_hash: string; timestamp: string; outputs: { ...; }[]; }>',
 								return_type:
@@ -32497,13 +32510,11 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'config',
 										type: 'GroConfig',
-										optional: false,
 										description: 'Gro config',
 									},
 									{
 										name: 'log',
 										type: 'Logger',
-										optional: false,
 										description: 'Logger',
 									},
 									{
@@ -32533,7 +32544,7 @@ export const repos_json: Array<RepoJson> = [
 								kind: 'variable',
 								doc_comment:
 									'Length of git commit hash when displayed in logs (standard git convention).',
-								source_line: 37,
+								source_line: 40,
 								type_signature: '7',
 							},
 						],
@@ -32556,17 +32567,14 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'owner',
 										type: 'string',
-										optional: false,
 									},
 									{
 										name: 'repo',
 										type: 'string',
-										optional: false,
 									},
 									{
 										name: 'path',
 										type: 'string',
-										optional: false,
 										default_value: "'CHANGELOG.md'",
 									},
 									{
@@ -32582,7 +32590,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'cache',
 										type: 'Map<string, { key: string; url: string; params: any; value: any; etag: string | null; last_modified: string | null; }>',
-										optional: false,
 										default_value: 'new Map()',
 									},
 								],
@@ -32664,12 +32671,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'child_process',
 										type: 'ChildProcess',
-										optional: false,
 									},
 									{
 										name: 'transform',
 										type: '(data: string) => string',
-										optional: false,
 									},
 								],
 							},
@@ -32686,18 +32691,15 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'child_process',
 										type: 'ChildProcess',
-										optional: false,
 									},
 									{
 										name: 'replacement',
 										type: 'string',
-										optional: false,
 										default_value: "'.'",
 									},
 									{
 										name: 'cwd',
 										type: 'string',
-										optional: false,
 										default_value: 'process.cwd()',
 									},
 								],
@@ -32719,12 +32721,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: '__0',
 										type: '{ build?: boolean | undefined; build_dev?: boolean | undefined; build_dist?: boolean | undefined; sveltekit?: boolean | undefined; nodemodules?: boolean | undefined; }',
-										optional: false,
 									},
 									{
 										name: 'rm_options',
 										type: 'RmOptions',
-										optional: false,
 										default_value: '{force: true, recursive: true}',
 									},
 								],
@@ -32744,7 +32744,7 @@ export const repos_json: Array<RepoJson> = [
 							{
 								name: 'Cli',
 								kind: 'type',
-								source_line: 19,
+								source_line: 20,
 								type_signature: 'Cli',
 							},
 							{
@@ -32752,21 +32752,19 @@ export const repos_json: Array<RepoJson> = [
 								kind: 'function',
 								doc_comment:
 									'Searches the filesystem for the CLI `name`, first local to the cwd and then globally.',
-								source_line: 27,
+								source_line: 28,
 								type_signature:
-									'(name: string, cwd?: string | URL, options?: SpawnOptions | undefined): Cli | null',
-								return_type: 'Cli | null',
+									'(name: string, cwd?: string | URL, options?: SpawnOptions | undefined): Promise<Cli | null>',
+								return_type: 'Promise<Cli | null>',
 								return_description: '`null` if not found locally or globally',
 								parameters: [
 									{
 										name: 'name',
 										type: 'string',
-										optional: false,
 									},
 									{
 										name: 'cwd',
 										type: 'string | URL',
-										optional: false,
 										default_value: 'process.cwd()',
 									},
 									{
@@ -32781,7 +32779,7 @@ export const repos_json: Array<RepoJson> = [
 								kind: 'function',
 								doc_comment:
 									"Spawns a CLI if available using Belt's `spawn`.\nIf a string is provided for `name_or_cli`, it checks first local to the cwd and then globally.",
-								source_line: 48,
+								source_line: 49,
 								type_signature:
 									'(name_or_cli: string | Cli, args?: string[], log?: Logger | undefined, options?: SpawnOptions | undefined): Promise<SpawnResult | undefined>',
 								return_type: 'Promise<SpawnResult | undefined>',
@@ -32790,12 +32788,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'name_or_cli',
 										type: 'string | Cli',
-										optional: false,
 									},
 									{
 										name: 'args',
 										type: 'string[]',
-										optional: false,
 										default_value: '[]',
 									},
 									{
@@ -32815,21 +32811,19 @@ export const repos_json: Array<RepoJson> = [
 								kind: 'function',
 								doc_comment:
 									"Spawns a CLI if available using Belt's `spawn_process`.\nIf a string is provided for `name_or_cli`, it checks first local to the cwd and then globally.",
-								source_line: 64,
+								source_line: 65,
 								type_signature:
-									'(name_or_cli: string | Cli, args?: string[], log?: Logger | undefined, options?: SpawnOptions | undefined): SpawnedProcess | undefined',
-								return_type: 'SpawnedProcess | undefined',
+									'(name_or_cli: string | Cli, args?: string[], log?: Logger | undefined, options?: SpawnOptions | undefined): Promise<SpawnedProcess | undefined>',
+								return_type: 'Promise<SpawnedProcess | undefined>',
 								return_description: '`undefined` if no CLI is found, or the spawn result',
 								parameters: [
 									{
 										name: 'name_or_cli',
 										type: 'string | Cli',
-										optional: false,
 									},
 									{
 										name: 'args',
 										type: 'string[]',
-										optional: false,
 										default_value: '[]',
 									},
 									{
@@ -32847,26 +32841,23 @@ export const repos_json: Array<RepoJson> = [
 							{
 								name: 'resolve_cli',
 								kind: 'function',
-								source_line: 75,
+								source_line: 76,
 								type_signature:
-									'(name_or_cli: string | Cli, args: string[] | undefined, cwd: string | URL | undefined, log?: Logger | undefined, options?: SpawnOptions | undefined): Cli | undefined',
-								return_type: 'Cli | undefined',
+									'(name_or_cli: string | Cli, args: string[] | undefined, cwd: string | URL | undefined, log?: Logger | undefined, options?: SpawnOptions | undefined): Promise<...>',
+								return_type: 'Promise<Cli | undefined>',
 								parameters: [
 									{
 										name: 'name_or_cli',
 										type: 'string | Cli',
-										optional: false,
 									},
 									{
 										name: 'args',
 										type: 'string[]',
-										optional: false,
 										default_value: '[]',
 									},
 									{
 										name: 'cwd',
 										type: 'string | URL | undefined',
-										optional: false,
 									},
 									{
 										name: 'log',
@@ -32883,14 +32874,13 @@ export const repos_json: Array<RepoJson> = [
 							{
 								name: 'to_cli_name',
 								kind: 'function',
-								source_line: 96,
+								source_line: 97,
 								type_signature: '(cli: string | Cli): string',
 								return_type: 'string',
 								parameters: [
 									{
 										name: 'cli',
 										type: 'string | Cli',
-										optional: false,
 									},
 								],
 							},
@@ -33282,22 +33272,18 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'dev',
 										type: 'boolean',
-										optional: false,
 									},
 									{
 										name: 'visibility',
 										type: '"public" | "private"',
-										optional: false,
 									},
 									{
 										name: 'public_prefix',
 										type: 'string',
-										optional: false,
 									},
 									{
 										name: 'private_prefix',
 										type: 'string',
-										optional: false,
 									},
 									{
 										name: 'env_dir',
@@ -33307,13 +33293,11 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'env_files',
 										type: 'string[]',
-										optional: false,
 										default_value: "['.env', '.env.' + (dev ? 'development' : 'production')]",
 									},
 									{
 										name: 'ambient_env',
 										type: 'ProcessEnv',
-										optional: false,
 										default_value: 'process.env',
 									},
 								],
@@ -33330,12 +33314,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'key',
 										type: 'string',
-										optional: false,
 									},
 									{
 										name: 'paths',
 										type: 'string[]',
-										optional: false,
 										default_value: "['.env', '../.env']",
 									},
 								],
@@ -33351,22 +33333,18 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'envs',
 										type: 'Record<string, string | undefined>[]',
-										optional: false,
 									},
 									{
 										name: 'visibility',
 										type: '"public" | "private"',
-										optional: false,
 									},
 									{
 										name: 'public_prefix',
 										type: 'string',
-										optional: false,
 									},
 									{
 										name: 'private_prefix',
 										type: 'string',
-										optional: false,
 									},
 								],
 							},
@@ -33381,17 +33359,14 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'key',
 										type: 'string',
-										optional: false,
 									},
 									{
 										name: 'public_prefix',
 										type: 'string',
-										optional: false,
 									},
 									{
 										name: 'private_prefix',
 										type: 'string',
-										optional: false,
 									},
 								],
 							},
@@ -33406,17 +33381,14 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'key',
 										type: 'string',
-										optional: false,
 									},
 									{
 										name: 'public_prefix',
 										type: 'string',
-										optional: false,
 									},
 									{
 										name: 'private_prefix',
 										type: 'string',
-										optional: false,
 									},
 								],
 							},
@@ -33436,12 +33408,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'log',
 										type: 'Logger',
-										optional: false,
 									},
 									{
 										name: 'build_result',
 										type: 'BuildResult<BuildOptions>',
-										optional: false,
 									},
 								],
 							},
@@ -33458,25 +33428,21 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'dev',
 										type: 'boolean',
-										optional: false,
 									},
 									{
 										name: 'base_url',
 										type: '"" | `/${string}` | undefined',
-										optional: false,
 										description:
 											"- best-effort shim from SvelteKit's `base` to Vite's `import.meta\\.env.BASE_URL`",
 									},
 									{
 										name: 'ssr',
 										type: 'boolean',
-										optional: false,
 										default_value: 'true',
 									},
 									{
 										name: 'mode',
 										type: 'string',
-										optional: false,
 										default_value: "dev ? 'development' : 'production'",
 									},
 								],
@@ -33591,7 +33557,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: '__0',
 										type: 'EsbuildPluginExternalWorkerOptions',
-										optional: false,
 									},
 								],
 							},
@@ -33668,7 +33633,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'options',
 										type: 'EsbuildPluginSvelteOptions',
-										optional: false,
 									},
 								],
 							},
@@ -33724,7 +33688,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: '__0',
 										type: 'EsbuildPluginSveltekitShimAliasOptions',
-										optional: false,
 									},
 								],
 							},
@@ -33768,7 +33731,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: '__0',
 										type: 'EsbuildPluginSveltekitShimAppOptions',
-										optional: false,
 									},
 								],
 							},
@@ -33828,7 +33790,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: '__0',
 										type: 'EsbuildPluginSveltekitShimEnvOptions',
-										optional: false,
 									},
 								],
 							},
@@ -33898,7 +33859,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'options',
 												type: 'FilerOptions',
-												optional: false,
 												default_value: 'EMPTY_OBJECT',
 											},
 										],
@@ -33921,7 +33881,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'predicate',
 												type: '(disknode: Disknode) => boolean',
-												optional: false,
 											},
 										],
 									},
@@ -33943,7 +33902,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'listener',
 												type: 'OnFilerChange',
-												optional: false,
 											},
 										],
 									},
@@ -33959,7 +33917,7 @@ export const repos_json: Array<RepoJson> = [
 							{
 								name: 'filter_dependents',
 								kind: 'function',
-								source_line: 367,
+								source_line: 421,
 								type_signature:
 									'(disknode: Disknode, get_by_id: (id: PathId) => Disknode | undefined, filter?: FileFilter | undefined, results?: Set<PathId>, searched?: Set<...>, log?: Logger | undefined): Set<...>',
 								return_type: 'Set<PathId>',
@@ -33967,12 +33925,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'disknode',
 										type: 'Disknode',
-										optional: false,
 									},
 									{
 										name: 'get_by_id',
 										type: '(id: PathId) => Disknode | undefined',
-										optional: false,
 									},
 									{
 										name: 'filter',
@@ -33982,13 +33938,11 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'results',
 										type: 'Set<PathId>',
-										optional: false,
 										default_value: 'new Set()',
 									},
 									{
 										name: 'searched',
 										type: 'Set<PathId>',
-										optional: false,
 										default_value: 'new Set()',
 									},
 									{
@@ -34026,41 +33980,34 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'log',
 										type: 'Logger',
-										optional: false,
 									},
 									{
 										name: 'dir',
 										type: 'string',
-										optional: false,
 									},
 									{
 										name: 'check',
 										type: 'boolean',
-										optional: false,
 										default_value: 'false',
 									},
 									{
 										name: 'extensions',
 										type: 'string',
-										optional: false,
 										default_value: 'EXTENSIONS_DEFAULT',
 									},
 									{
 										name: 'root_paths',
 										type: 'string',
-										optional: false,
 										default_value: 'ROOT_PATHS_DEFAULT',
 									},
 									{
 										name: 'prettier_cli',
 										type: 'string | Cli',
-										optional: false,
 										default_value: 'PRETTIER_CLI_DEFAULT',
 									},
 									{
 										name: 'pm_cli',
 										type: 'string',
-										optional: false,
 										default_value: 'PM_CLI_DEFAULT',
 									},
 								],
@@ -34084,17 +34031,14 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'content',
 										type: 'string',
-										optional: false,
 									},
 									{
 										name: 'options',
 										type: 'Options',
-										optional: false,
 									},
 									{
 										name: 'base_options',
 										type: 'Options | null | undefined',
-										optional: false,
 										description: "- defaults to the the cwd's package.json `prettier` value",
 										default_value: 'cached_base_options',
 									},
@@ -34124,37 +34068,30 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'gen_file_id',
 										type: 'PathId',
-										optional: false,
 									},
 									{
 										name: 'changed_file_id',
 										type: 'PathId',
-										optional: false,
 									},
 									{
 										name: 'config',
 										type: 'GroConfig',
-										optional: false,
 									},
 									{
 										name: 'filer',
 										type: 'Filer',
-										optional: false,
 									},
 									{
 										name: 'log',
 										type: 'Logger',
-										optional: false,
 									},
 									{
 										name: 'timings',
 										type: 'Timings',
-										optional: false,
 									},
 									{
 										name: 'invoke_task',
 										type: 'InvokeTask',
-										optional: false,
 									},
 								],
 							},
@@ -34201,7 +34138,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'path',
 										type: 'string',
-										optional: false,
 									},
 								],
 							},
@@ -34514,12 +34450,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'origin_id',
 										type: 'PathId',
-										optional: false,
 									},
 									{
 										name: 'raw_result',
 										type: 'RawGenResult',
-										optional: false,
 									},
 								],
 							},
@@ -34533,7 +34467,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'filename',
 										type: 'string',
-										optional: false,
 									},
 								],
 							},
@@ -34553,7 +34486,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'gen_results',
 										type: 'GenResults',
-										optional: false,
 									},
 								],
 							},
@@ -34567,14 +34499,13 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'file',
 										type: 'GenFile',
-										optional: false,
 									},
 								],
 							},
 							{
 								name: 'write_gen_results',
 								kind: 'function',
-								source_line: 238,
+								source_line: 243,
 								type_signature:
 									'(gen_results: GenResults, analyzed_gen_results: AnalyzedGenResult[], log: Logger): Promise<void>',
 								return_type: 'Promise<void>',
@@ -34582,24 +34513,21 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'gen_results',
 										type: 'GenResults',
-										optional: false,
 									},
 									{
 										name: 'analyzed_gen_results',
 										type: 'AnalyzedGenResult[]',
-										optional: false,
 									},
 									{
 										name: 'log',
 										type: 'Logger',
-										optional: false,
 									},
 								],
 							},
 							{
 								name: 'FoundGenfiles',
 								kind: 'type',
-								source_line: 266,
+								source_line: 270,
 								type_signature: 'FoundGenfiles',
 								properties: [
 									{
@@ -34622,13 +34550,13 @@ export const repos_json: Array<RepoJson> = [
 							{
 								name: 'FindGenfilesResult',
 								kind: 'type',
-								source_line: 272,
+								source_line: 276,
 								type_signature: 'FindGenfilesResult',
 							},
 							{
 								name: 'FindGenfilesFailure',
 								kind: 'type',
-								source_line: 273,
+								source_line: 277,
 								type_signature: 'FindGenfilesFailure',
 							},
 							{
@@ -34636,25 +34564,22 @@ export const repos_json: Array<RepoJson> = [
 								kind: 'function',
 								doc_comment:
 									'Finds modules from input paths. (see `src/lib/input_path.ts` for more)',
-								source_line: 292,
+								source_line: 296,
 								type_signature:
-									'(input_paths: InputPath[], root_dirs: PathId[], config: GroConfig, timings?: Timings | undefined): FindGenfilesResult',
-								return_type: 'FindGenfilesResult',
+									'(input_paths: InputPath[], root_dirs: PathId[], config: GroConfig, timings?: Timings | undefined): Promise<FindGenfilesResult>',
+								return_type: 'Promise<FindGenfilesResult>',
 								parameters: [
 									{
 										name: 'input_paths',
 										type: 'InputPath[]',
-										optional: false,
 									},
 									{
 										name: 'root_dirs',
 										type: 'PathId[]',
-										optional: false,
 									},
 									{
 										name: 'config',
 										type: 'GroConfig',
-										optional: false,
 									},
 									{
 										name: 'timings',
@@ -34666,7 +34591,7 @@ export const repos_json: Array<RepoJson> = [
 							{
 								name: 'GenfileModule',
 								kind: 'type',
-								source_line: 358,
+								source_line: 364,
 								type_signature: 'GenfileModule',
 								properties: [
 									{
@@ -34679,13 +34604,13 @@ export const repos_json: Array<RepoJson> = [
 							{
 								name: 'GenfileModuleMeta',
 								kind: 'type',
-								source_line: 362,
+								source_line: 368,
 								type_signature: 'GenfileModuleMeta',
 							},
 							{
 								name: 'LoadedGenfiles',
 								kind: 'type',
-								source_line: 364,
+								source_line: 370,
 								type_signature: 'LoadedGenfiles',
 								properties: [
 									{
@@ -34703,19 +34628,19 @@ export const repos_json: Array<RepoJson> = [
 							{
 								name: 'LoadGenfilesResult',
 								kind: 'type',
-								source_line: 369,
+								source_line: 375,
 								type_signature: 'LoadGenfilesResult',
 							},
 							{
 								name: 'LoadGenfilesFailure',
 								kind: 'type',
-								source_line: 370,
+								source_line: 376,
 								type_signature: 'LoadGenfilesFailure',
 							},
 							{
 								name: 'load_genfiles',
 								kind: 'function',
-								source_line: 372,
+								source_line: 378,
 								type_signature:
 									'(found_genfiles: FoundGenfiles, timings?: Timings | undefined): Promise<LoadGenfilesResult>',
 								return_type: 'Promise<LoadGenfilesResult>',
@@ -34723,7 +34648,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'found_genfiles',
 										type: 'FoundGenfiles',
-										optional: false,
 									},
 									{
 										name: 'timings',
@@ -34735,33 +34659,31 @@ export const repos_json: Array<RepoJson> = [
 							{
 								name: 'validate_gen_module',
 								kind: 'function',
-								source_line: 391,
+								source_line: 397,
 								type_signature: '(mod: Record<string, any>): mod is GenfileModule',
 								return_type: 'boolean',
 								parameters: [
 									{
 										name: 'mod',
 										type: 'Record<string, any>',
-										optional: false,
 									},
 								],
 							},
 							{
 								name: 'normalize_gen_config',
 								kind: 'function',
-								source_line: 399,
+								source_line: 405,
 								type_signature: '(gen: Gen): GenConfig',
 								return_type: 'GenConfig',
 								parameters: [
 									{
 										name: 'gen',
 										type: 'Gen',
-										optional: false,
 									},
 								],
 							},
 						],
-						dependencies: ['input_path.ts', 'modules.ts', 'paths.ts', 'search_fs.ts'],
+						dependencies: ['input_path.ts', 'modules.ts', 'paths.ts'],
 						dependents: ['gen.task.ts', 'gen_helpers.ts', 'gro_plugin_gen.ts', 'run_gen.ts'],
 					},
 					{
@@ -34796,17 +34718,14 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'owner',
 										type: 'string',
-										optional: false,
 									},
 									{
 										name: 'repo',
 										type: 'string',
-										optional: false,
 									},
 									{
 										name: 'commit_sha',
 										type: 'string',
-										optional: false,
 									},
 									{
 										name: 'token',
@@ -35002,7 +34921,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'raw_config',
 										type: 'RawGroConfig',
-										optional: false,
 									},
 								],
 							},
@@ -35030,7 +34948,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'dir',
 										type: 'string',
-										optional: false,
 										default_value: 'paths.root',
 									},
 								],
@@ -35046,12 +34963,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'config_module',
 										type: 'any',
-										optional: false,
 									},
 									{
 										name: 'config_path',
 										type: 'string',
-										optional: false,
 									},
 								],
 							},
@@ -35074,7 +34989,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'path',
 										type: 'string',
-										optional: false,
 										default_value: "''",
 									},
 								],
@@ -35093,24 +35007,20 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'loader_path',
 										type: 'string',
-										optional: false,
 										description: 'path to loader',
 									},
 									{
 										name: 'invoke_path',
 										type: 'string',
-										optional: false,
 										description: 'path to file to spawn with `node`',
 									},
 									{
 										name: 'argv',
 										type: 'string[]',
-										optional: false,
 									},
 									{
 										name: 'js_cli',
 										type: 'string',
-										optional: false,
 										default_value: 'JS_CLI_DEFAULT',
 									},
 								],
@@ -35170,7 +35080,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: '__0',
 										type: 'GroPluginGenOptions',
-										optional: false,
 										default_value: 'EMPTY_OBJECT',
 									},
 								],
@@ -35198,7 +35107,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'path',
 										type: 'PathId',
-										optional: false,
 										default_value: 'SERVER_SOURCE_ID',
 									},
 								],
@@ -35323,7 +35231,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: '__0',
 										type: 'GroPluginServerOptions',
-										optional: false,
 										default_value: '{}',
 									},
 								],
@@ -35349,7 +35256,7 @@ export const repos_json: Array<RepoJson> = [
 							{
 								name: 'GroPluginSveltekitAppOptions',
 								kind: 'type',
-								source_line: 15,
+								source_line: 16,
 								type_signature: 'GroPluginSveltekitAppOptions',
 								properties: [
 									{
@@ -35391,19 +35298,19 @@ export const repos_json: Array<RepoJson> = [
 							{
 								name: 'HostTarget',
 								kind: 'type',
-								source_line: 45,
+								source_line: 46,
 								type_signature: 'HostTarget',
 							},
 							{
 								name: 'CopyFileFilter',
 								kind: 'type',
-								source_line: 47,
+								source_line: 48,
 								type_signature: 'CopyFileFilter',
 							},
 							{
 								name: 'gro_plugin_sveltekit_app',
 								kind: 'function',
-								source_line: 49,
+								source_line: 50,
 								type_signature:
 									'({ host_target, well_known_package_json, well_known_source_json, well_known_src_files, vite_cli, }?: GroPluginSveltekitAppOptions): Plugin<PluginContext<object>>',
 								return_type: 'Plugin<PluginContext<object>>',
@@ -35411,7 +35318,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: '__0',
 										type: 'GroPluginSveltekitAppOptions',
-										optional: false,
 										default_value: '{}',
 									},
 								],
@@ -35464,7 +35370,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: '__0',
 										type: 'GroPluginSveltekitLibraryOptions',
-										optional: false,
 										default_value: '{}',
 									},
 								],
@@ -35514,12 +35419,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'data',
 										type: 'BufferSource',
-										optional: false,
 									},
 									{
 										name: 'algorithm',
 										type: '"SHA-1" | "SHA-256" | "SHA-384" | "SHA-512"',
-										optional: false,
 										default_value: "'SHA-256'",
 									},
 								],
@@ -35559,12 +35462,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'raw_input_path',
 										type: 'RawInputPath',
-										optional: false,
 									},
 									{
 										name: 'root_path',
 										type: 'string',
-										optional: false,
 										default_value: 'process.cwd()',
 									},
 								],
@@ -35580,7 +35481,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'raw_input_paths',
 										type: 'RawInputPath[]',
-										optional: false,
 									},
 									{
 										name: 'root_path',
@@ -35619,30 +35519,27 @@ export const repos_json: Array<RepoJson> = [
 									'Gets a list of possible source ids for each input path with `extensions`,\nduplicating each under `root_dirs`, without checking the filesystem.',
 								source_line: 58,
 								type_signature:
-									'(input_path: InputPath, root_dirs: PathId[], extensions: string[]): PossiblePath[]',
-								return_type: 'PossiblePath[]',
+									'(input_path: InputPath, root_dirs: PathId[], extensions: string[]): Promise<PossiblePath[]>',
+								return_type: 'Promise<PossiblePath[]>',
 								parameters: [
 									{
 										name: 'input_path',
 										type: 'InputPath',
-										optional: false,
 									},
 									{
 										name: 'root_dirs',
 										type: 'PathId[]',
-										optional: false,
 									},
 									{
 										name: 'extensions',
 										type: 'string[]',
-										optional: false,
 									},
 								],
 							},
 							{
 								name: 'ResolvedInputPath',
 								kind: 'type',
-								source_line: 102,
+								source_line: 97,
 								type_signature: 'ResolvedInputPath',
 								properties: [
 									{
@@ -35670,7 +35567,7 @@ export const repos_json: Array<RepoJson> = [
 							{
 								name: 'ResolvedInputFile',
 								kind: 'type',
-								source_line: 109,
+								source_line: 104,
 								type_signature: 'ResolvedInputFile',
 								properties: [
 									{
@@ -35693,7 +35590,7 @@ export const repos_json: Array<RepoJson> = [
 							{
 								name: 'ResolvedInputPaths',
 								kind: 'type',
-								source_line: 115,
+								source_line: 110,
 								type_signature: 'ResolvedInputPaths',
 								properties: [
 									{
@@ -35718,32 +35615,29 @@ export const repos_json: Array<RepoJson> = [
 								kind: 'function',
 								doc_comment:
 									"Gets the path data for each input path, checking the filesystem for the possibilities\nand stopping at the first existing file or falling back to the first existing directory.\nIf none is found for an input path, it's added to `unmapped_input_paths`.",
-								source_line: 126,
+								source_line: 121,
 								type_signature:
-									'(input_paths: InputPath[], root_dirs: PathId[], extensions: string[]): ResolvedInputPaths',
-								return_type: 'ResolvedInputPaths',
+									'(input_paths: InputPath[], root_dirs: PathId[], extensions: string[]): Promise<ResolvedInputPaths>',
+								return_type: 'Promise<ResolvedInputPaths>',
 								parameters: [
 									{
 										name: 'input_paths',
 										type: 'InputPath[]',
-										optional: false,
 									},
 									{
 										name: 'root_dirs',
 										type: 'PathId[]',
-										optional: false,
 									},
 									{
 										name: 'extensions',
 										type: 'string[]',
-										optional: false,
 									},
 								],
 							},
 							{
 								name: 'ResolvedInputFiles',
 								kind: 'type',
-								source_line: 179,
+								source_line: 177,
 								type_signature: 'ResolvedInputFiles',
 								properties: [
 									{
@@ -35768,26 +35662,24 @@ export const repos_json: Array<RepoJson> = [
 								kind: 'function',
 								doc_comment:
 									'Finds all of the matching files for the given input paths.\nDe-dupes source ids.',
-								source_line: 189,
+								source_line: 187,
 								type_signature:
-									'(resolved_input_paths: ResolvedInputPath[], search?: (dir: string) => ResolvedPath[]): ResolvedInputFiles',
-								return_type: 'ResolvedInputFiles',
+									'(resolved_input_paths: ResolvedInputPath[], search?: (dir: string) => Promise<ResolvedPath[]>): Promise<ResolvedInputFiles>',
+								return_type: 'Promise<ResolvedInputFiles>',
 								parameters: [
 									{
 										name: 'resolved_input_paths',
 										type: 'ResolvedInputPath[]',
-										optional: false,
 									},
 									{
 										name: 'search',
-										type: '(dir: string) => ResolvedPath[]',
-										optional: false,
-										default_value: 'search_fs',
+										type: '(dir: string) => Promise<ResolvedPath[]>',
+										default_value: 'fs_search',
 									},
 								],
 							},
 						],
-						dependencies: ['paths.ts', 'search_fs.ts', 'task.ts'],
+						dependencies: ['paths.ts', 'task.ts'],
 						dependents: ['gen.task.ts', 'gen.ts', 'invoke_task.ts', 'resolve.task.ts', 'task.ts'],
 					},
 					{
@@ -35806,19 +35698,16 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'task_name',
 										type: 'RawInputPath',
-										optional: false,
 										description: '- The name of the task to invoke.',
 									},
 									{
 										name: 'args',
 										type: 'Args | undefined',
-										optional: false,
 										description: '- The CLI args to pass to the task.',
 									},
 									{
 										name: 'config',
 										type: 'GroConfig',
-										optional: false,
 										description: '- The Gro configuration.',
 									},
 									{
@@ -35900,7 +35789,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'module_name',
 										type: 'string',
-										optional: false,
 									},
 								],
 							},
@@ -35963,7 +35851,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'id',
 										type: 'PathId',
-										optional: false,
 									},
 									{
 										name: 'validate',
@@ -36034,17 +35921,14 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'resolved_input_files',
 										type: 'ResolvedInputFile[]',
-										optional: false,
 									},
 									{
 										name: 'validate',
 										type: '(mod: any) => mod is TModule',
-										optional: false,
 									},
 									{
 										name: 'map_module_meta',
 										type: '(resolved_input_file: ResolvedInputFile, mod: TModule) => TModuleMeta',
-										optional: false,
 									},
 									{
 										name: 'timings',
@@ -36078,14 +35962,13 @@ export const repos_json: Array<RepoJson> = [
 								kind: 'function',
 								source_line: 29,
 								type_signature:
-									'(dir?: string, cache?: Record<string, { [x: string]: unknown; name: string; version: string; private?: boolean | undefined; public?: boolean | undefined; description?: string | undefined; motto?: string | undefined; ... 25 more ...; exports?: string | ... 2 more ... | undefined; }> | undefined, parse?: boolean, log?: Logger | undefined): { ...; }',
+									'(dir?: string, cache?: Record<string, { [x: string]: unknown; name: string; version: string; private?: boolean | undefined; public?: boolean | undefined; description?: string | undefined; motto?: string | undefined; ... 25 more ...; exports?: string | ... 2 more ... | undefined; }> | undefined, parse?: boolean, log?: Logger | undefined): Promise<...>',
 								return_type:
-									'{ [x: string]: unknown; name: string; version: string; private?: boolean | undefined; public?: boolean | undefined; description?: string | undefined; motto?: string | undefined; glyph?: string | undefined; ... 24 more ...; exports?: string | ... 2 more ... | undefined; }',
+									'Promise<{ [x: string]: unknown; name: string; version: string; private?: boolean | undefined; public?: boolean | undefined; description?: string | undefined; motto?: string | undefined; glyph?: string | undefined; ... 24 more ...; exports?: string | ... 2 more ... | undefined; }>',
 								parameters: [
 									{
 										name: 'dir',
 										type: 'string',
-										optional: false,
 										default_value: 'IS_THIS_GRO ? gro_paths.root : paths.root',
 									},
 									{
@@ -36096,7 +35979,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'parse',
 										type: 'boolean',
-										optional: false,
 										default_value: 'true',
 									},
 									{
@@ -36118,29 +36000,24 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'map_package_json',
 										type: 'PackageJsonMapper',
-										optional: false,
 									},
 									{
 										name: 'log',
 										type: 'Logger',
-										optional: false,
 									},
 									{
 										name: 'write',
 										type: 'boolean',
-										optional: false,
 										default_value: 'true',
 									},
 									{
 										name: 'dir',
 										type: 'string',
-										optional: false,
 										default_value: 'paths.root',
 									},
 									{
 										name: 'exports_dir',
 										type: 'string',
-										optional: false,
 										default_value: 'paths.lib',
 									},
 								],
@@ -36150,29 +36027,28 @@ export const repos_json: Array<RepoJson> = [
 								kind: 'function',
 								source_line: 88,
 								type_signature:
-									'(): { [x: string]: unknown; name: string; version: string; private?: boolean | undefined; public?: boolean | undefined; description?: string | undefined; motto?: string | undefined; glyph?: string | undefined; ... 24 more ...; exports?: string | ... 2 more ... | undefined; }',
+									'(): Promise<{ [x: string]: unknown; name: string; version: string; private?: boolean | undefined; public?: boolean | undefined; description?: string | undefined; motto?: string | undefined; glyph?: string | undefined; ... 24 more ...; exports?: string | ... 2 more ... | undefined; }>',
 								return_type:
-									'{ [x: string]: unknown; name: string; version: string; private?: boolean | undefined; public?: boolean | undefined; description?: string | undefined; motto?: string | undefined; glyph?: string | undefined; ... 24 more ...; exports?: string | ... 2 more ... | undefined; }',
+									'Promise<{ [x: string]: unknown; name: string; version: string; private?: boolean | undefined; public?: boolean | undefined; description?: string | undefined; motto?: string | undefined; glyph?: string | undefined; ... 24 more ...; exports?: string | ... 2 more ... | undefined; }>',
 								parameters: [],
 							},
 							{
 								name: 'write_package_json',
 								kind: 'function',
 								source_line: 94,
-								type_signature: '(serialized_package_json: string): void',
-								return_type: 'void',
+								type_signature: '(serialized_package_json: string): Promise<void>',
+								return_type: 'Promise<void>',
 								parameters: [
 									{
 										name: 'serialized_package_json',
 										type: 'string',
-										optional: false,
 									},
 								],
 							},
 							{
 								name: 'serialize_package_json',
 								kind: 'function',
-								source_line: 98,
+								source_line: 97,
 								type_signature:
 									'(package_json: { [x: string]: unknown; name: string; version: string; private?: boolean | undefined; public?: boolean | undefined; description?: string | undefined; motto?: string | undefined; glyph?: string | undefined; ... 24 more ...; exports?: string | ... 2 more ... | undefined; }): string',
 								return_type: 'string',
@@ -36180,7 +36056,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'package_json',
 										type: '{ [x: string]: unknown; name: string; version: string; private?: boolean | undefined; public?: boolean | undefined; description?: string | undefined; motto?: string | undefined; glyph?: string | undefined; ... 24 more ...; exports?: string | ... 2 more ... | undefined; }',
-										optional: false,
 									},
 								],
 							},
@@ -36189,7 +36064,7 @@ export const repos_json: Array<RepoJson> = [
 								kind: 'function',
 								doc_comment:
 									'Updates package.json. Writes to the filesystem only when contents change.',
-								source_line: 104,
+								source_line: 103,
 								type_signature:
 									'(update: (package_json: { [x: string]: unknown; name: string; version: string; private?: boolean | undefined; public?: boolean | undefined; description?: string | undefined; motto?: string | undefined; glyph?: string | undefined; ... 24 more ...; exports?: string | ... 2 more ... | undefined; }) => { ...; } | ... 1 more ... | null, dir?: string, write?: boolean): Promise<...>',
 								return_type:
@@ -36198,18 +36073,15 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'update',
 										type: '(package_json: { [x: string]: unknown; name: string; version: string; private?: boolean | undefined; public?: boolean | undefined; description?: string | undefined; motto?: string | undefined; glyph?: string | undefined; ... 24 more ...; exports?: string | ... 2 more ... | undefined; }) => { ...; } | ... 1 more ... ...',
-										optional: false,
 									},
 									{
 										name: 'dir',
 										type: 'string',
-										optional: false,
 										default_value: 'paths.root',
 									},
 									{
 										name: 'write',
 										type: 'boolean',
-										optional: false,
 										default_value: 'true',
 									},
 								],
@@ -36217,21 +36089,20 @@ export const repos_json: Array<RepoJson> = [
 							{
 								name: 'to_package_exports',
 								kind: 'function',
-								source_line: 125,
+								source_line: 124,
 								type_signature: '(paths: string[]): string | Record<string, unknown> | null',
 								return_type: 'string | Record<string, unknown> | null',
 								parameters: [
 									{
 										name: 'paths',
 										type: 'string[]',
-										optional: false,
 									},
 								],
 							},
 							{
 								name: 'parse_repo_url',
 								kind: 'function',
-								source_line: 180,
+								source_line: 179,
 								type_signature:
 									'(package_json: { [x: string]: unknown; name: string; version: string; private?: boolean | undefined; public?: boolean | undefined; description?: string | undefined; motto?: string | undefined; glyph?: string | undefined; ... 24 more ...; exports?: string | ... 2 more ... | undefined; }): { ...; } | undefined',
 								return_type: '{ owner: string; repo: string; } | undefined',
@@ -36239,35 +36110,31 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'package_json',
 										type: '{ [x: string]: unknown; name: string; version: string; private?: boolean | undefined; public?: boolean | undefined; description?: string | undefined; motto?: string | undefined; glyph?: string | undefined; ... 24 more ...; exports?: string | ... 2 more ... | undefined; }',
-										optional: false,
 									},
 								],
 							},
 							{
 								name: 'has_dep',
 								kind: 'function',
-								source_line: 228,
+								source_line: 227,
 								type_signature:
-									'(dep_name: string, package_json?: { [x: string]: unknown; name: string; version: string; private?: boolean | undefined; public?: boolean | undefined; description?: string | undefined; motto?: string | undefined; ... 25 more ...; exports?: string | ... 2 more ... | undefined; }): boolean',
+									'(dep_name: string, package_json: { [x: string]: unknown; name: string; version: string; private?: boolean | undefined; public?: boolean | undefined; description?: string | undefined; motto?: string | undefined; ... 25 more ...; exports?: string | ... 2 more ... | undefined; }): boolean',
 								return_type: 'boolean',
 								parameters: [
 									{
 										name: 'dep_name',
 										type: 'string',
-										optional: false,
 									},
 									{
 										name: 'package_json',
 										type: '{ [x: string]: unknown; name: string; version: string; private?: boolean | undefined; public?: boolean | undefined; description?: string | undefined; motto?: string | undefined; glyph?: string | undefined; ... 24 more ...; exports?: string | ... 2 more ... | undefined; }',
-										optional: false,
-										default_value: 'load_package_json()',
 									},
 								],
 							},
 							{
 								name: 'PackageJsonDep',
 								kind: 'type',
-								source_line: 236,
+								source_line: 232,
 								type_signature: 'PackageJsonDep',
 								properties: [
 									{
@@ -36285,7 +36152,7 @@ export const repos_json: Array<RepoJson> = [
 							{
 								name: 'extract_deps',
 								kind: 'function',
-								source_line: 241,
+								source_line: 237,
 								type_signature:
 									'(package_json: { [x: string]: unknown; name: string; version: string; private?: boolean | undefined; public?: boolean | undefined; description?: string | undefined; motto?: string | undefined; glyph?: string | undefined; ... 24 more ...; exports?: string | ... 2 more ... | undefined; }): PackageJsonDep[]',
 								return_type: 'PackageJsonDep[]',
@@ -36293,18 +36160,11 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'package_json',
 										type: '{ [x: string]: unknown; name: string; version: string; private?: boolean | undefined; public?: boolean | undefined; description?: string | undefined; motto?: string | undefined; glyph?: string | undefined; ... 24 more ...; exports?: string | ... 2 more ... | undefined; }',
-										optional: false,
 									},
 								],
 							},
 						],
-						dependencies: [
-							'constants.ts',
-							'github.ts',
-							'paths.ts',
-							'search_fs.ts',
-							'sveltekit_helpers.ts',
-						],
+						dependencies: ['constants.ts', 'github.ts', 'paths.ts', 'sveltekit_helpers.ts'],
 						dependents: [
 							'changeset.task.ts',
 							'check.task.ts',
@@ -36349,7 +36209,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'program',
 												type: 'Program',
-												optional: false,
 											},
 											{
 												name: 'log',
@@ -36368,7 +36227,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'source_file',
 												type: 'SourceFile',
-												optional: false,
 											},
 										],
 									},
@@ -36383,17 +36241,14 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'source_file',
 												type: 'SourceFile',
-												optional: false,
 											},
 											{
 												name: 'exports',
 												type: 'Symbol[]',
-												optional: false,
 											},
 											{
 												name: 'declarations',
 												type: 'ExportDeclaration[]',
-												optional: false,
 												default_value: '[]',
 											},
 										],
@@ -36442,7 +36297,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'id',
 										type: 'PathId',
-										optional: false,
 									},
 									{
 										name: 'program',
@@ -36452,7 +36306,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'declarations',
 										type: 'ExportDeclaration[]',
-										optional: false,
 										default_value: '[]',
 									},
 									{
@@ -36473,12 +36326,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'file_path',
 										type: 'PathId',
-										optional: false,
 									},
 									{
 										name: 'declarations',
 										type: 'ExportDeclaration[]',
-										optional: false,
 										default_value: '[]',
 									},
 								],
@@ -36495,22 +36346,18 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'source_file',
 										type: 'SourceFile',
-										optional: false,
 									},
 									{
 										name: 'program',
 										type: 'Program',
-										optional: false,
 									},
 									{
 										name: 'exports',
 										type: 'Symbol[]',
-										optional: false,
 									},
 									{
 										name: 'declarations',
 										type: 'ExportDeclaration[]',
-										optional: false,
 										default_value: '[]',
 									},
 									{
@@ -36544,17 +36391,14 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'id',
 										type: 'PathId',
-										optional: false,
 									},
 									{
 										name: 'contents',
 										type: 'string',
-										optional: false,
 									},
 									{
 										name: 'ignore_types',
 										type: 'boolean',
-										optional: false,
 										default_value: 'true',
 									},
 								],
@@ -36644,7 +36488,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'root_dir',
 										type: 'string',
-										optional: false,
 									},
 								],
 							},
@@ -36658,7 +36501,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'id',
 										type: 'PathId',
-										optional: false,
 									},
 								],
 							},
@@ -36672,7 +36514,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'id',
 										type: 'PathId',
-										optional: false,
 									},
 								],
 							},
@@ -36686,12 +36527,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'id',
 										type: 'PathId',
-										optional: false,
 									},
 									{
 										name: 'p',
 										type: 'Paths',
-										optional: false,
 										default_value: 'infer_paths(id)',
 									},
 								],
@@ -36706,12 +36545,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'path_id',
 										type: 'PathId',
-										optional: false,
 									},
 									{
 										name: 'p',
 										type: 'Paths',
-										optional: false,
 										default_value: 'infer_paths(path_id)',
 									},
 								],
@@ -36726,12 +36563,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'base_path',
 										type: 'string',
-										optional: false,
 									},
 									{
 										name: 'p',
 										type: 'Paths',
-										optional: false,
 										default_value: 'infer_paths(base_path)',
 									},
 								],
@@ -36746,12 +36581,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'path',
 										type: 'string',
-										optional: false,
 									},
 									{
 										name: 'p',
 										type: 'Paths',
-										optional: false,
 										default_value: 'infer_paths(path)',
 									},
 								],
@@ -36766,12 +36599,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'path',
 										type: 'string',
-										optional: false,
 									},
 									{
 										name: 'new_extension',
 										type: 'string',
-										optional: false,
 									},
 								],
 							},
@@ -36951,12 +36782,10 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'ctx',
 												type: 'TPluginContext',
-												optional: false,
 											},
 											{
 												name: 'instances',
 												type: 'Plugin<PluginContext<object>>[]',
-												optional: false,
 											},
 										],
 									},
@@ -36971,7 +36800,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'ctx',
 												type: 'TPluginContext',
-												optional: false,
 											},
 										],
 									},
@@ -37013,19 +36841,16 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'plugins',
 										type: 'Plugin<PluginContext<object>>[]',
-										optional: false,
 										description:
 											'- accepts the same types as the return value of `CreateConfigPlugins`',
 									},
 									{
 										name: 'new_plugin',
 										type: 'Plugin<PluginContext<object>>',
-										optional: false,
 									},
 									{
 										name: 'name',
 										type: 'string',
-										optional: false,
 										description: '-',
 										default_value: 'new_plugin.name',
 									},
@@ -37113,18 +36938,16 @@ export const repos_json: Array<RepoJson> = [
 								doc_comment:
 									'Maps an import `specifier` relative to `dir`,\nand infer the correct extension following Vite conventions.\nIf no `.js` file is found for the specifier on the filesystem, it assumes `.ts`.',
 								source_line: 29,
-								type_signature: '(specifier: string, dir: string): ResolvedSpecifier',
-								return_type: 'ResolvedSpecifier',
+								type_signature: '(specifier: string, dir: string): Promise<ResolvedSpecifier>',
+								return_type: 'Promise<ResolvedSpecifier>',
 								parameters: [
 									{
 										name: 'specifier',
 										type: 'string',
-										optional: false,
 									},
 									{
 										name: 'dir',
 										type: 'string',
-										optional: false,
 									},
 								],
 							},
@@ -37148,13 +36971,13 @@ export const repos_json: Array<RepoJson> = [
 							{
 								name: 'GEN_NO_PROD_MESSAGE',
 								kind: 'variable',
-								source_line: 22,
+								source_line: 23,
 								type_signature: '"gen runs only during development"',
 							},
 							{
 								name: 'run_gen',
 								kind: 'function',
-								source_line: 24,
+								source_line: 25,
 								type_signature:
 									'(gen_modules: GenfileModuleMeta[], config: GroConfig, filer: Filer, log: Logger, timings: Timings, invoke_task: InvokeTask, format_file?: ((content: string, options: Options, base_options?: Options | ... 1 more ... | undefined) => Promise<...>) | undefined): Promise<...>',
 								return_type: 'Promise<GenResults>',
@@ -37162,32 +36985,26 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'gen_modules',
 										type: 'GenfileModuleMeta[]',
-										optional: false,
 									},
 									{
 										name: 'config',
 										type: 'GroConfig',
-										optional: false,
 									},
 									{
 										name: 'filer',
 										type: 'Filer',
-										optional: false,
 									},
 									{
 										name: 'log',
 										type: 'Logger',
-										optional: false,
 									},
 									{
 										name: 'timings',
 										type: 'Timings',
-										optional: false,
 									},
 									{
 										name: 'invoke_task',
 										type: 'InvokeTask',
-										optional: false,
 									},
 									{
 										name: 'format_file',
@@ -37220,37 +37037,30 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'task_meta',
 										type: 'TaskModuleMeta',
-										optional: false,
 									},
 									{
 										name: 'unparsed_args',
 										type: 'Args',
-										optional: false,
 									},
 									{
 										name: 'invoke_task',
 										type: '(task_name: RawInputPath, args: Args | undefined, config: GroConfig, initial_filer?: Filer | undefined, initial_timings?: Timings | null | undefined, parent_log?: Logger | undefined) => Promise<...>',
-										optional: false,
 									},
 									{
 										name: 'config',
 										type: 'GroConfig',
-										optional: false,
 									},
 									{
 										name: 'filer',
 										type: 'Filer',
-										optional: false,
 									},
 									{
 										name: 'log',
 										type: 'Logger',
-										optional: false,
 									},
 									{
 										name: 'timings',
 										type: 'Timings',
-										optional: false,
 									},
 								],
 							},
@@ -37266,109 +37076,26 @@ export const repos_json: Array<RepoJson> = [
 						dependencies: ['args.ts', 'gro_helpers.ts', 'task.ts'],
 					},
 					{
-						path: 'search_fs.ts',
-						declarations: [
-							{
-								name: 'SearchFsOptions',
-								kind: 'type',
-								source_line: 8,
-								type_signature: 'SearchFsOptions',
-								properties: [
-									{
-										name: 'filter',
-										kind: 'variable',
-										type_signature: 'PathFilter | Array<PathFilter>',
-										doc_comment:
-											'One or more filter functions, any of which can short-circuit the search by returning `false`.',
-									},
-									{
-										name: 'file_filter',
-										kind: 'variable',
-										type_signature: 'FileFilter | Array<FileFilter>',
-										doc_comment:
-											'One or more file filter functions. Every filter must pass for a file to be included.',
-									},
-									{
-										name: 'sort',
-										kind: 'variable',
-										type_signature:
-											'boolean | null | ((a: ResolvedPath, b: ResolvedPath) => number)',
-										doc_comment:
-											'Pass `null` or `false` to speed things up at the cost of volatile ordering.',
-									},
-									{
-										name: 'include_directories',
-										kind: 'variable',
-										type_signature: 'boolean',
-										doc_comment: 'Set to `true` to include directories. Defaults to `false`.',
-									},
-									{
-										name: 'cwd',
-										kind: 'variable',
-										type_signature: 'string | null',
-										doc_comment: "Sets the cwd for `dir` unless it's an absolute path or `null`.",
-									},
-								],
-							},
-							{
-								name: 'search_fs',
-								kind: 'function',
-								source_line: 31,
-								type_signature: '(dir: string, options?: SearchFsOptions): ResolvedPath[]',
-								return_type: 'ResolvedPath[]',
-								parameters: [
-									{
-										name: 'dir',
-										type: 'string',
-										optional: false,
-									},
-									{
-										name: 'options',
-										type: 'SearchFsOptions',
-										optional: false,
-										default_value: 'EMPTY_OBJECT',
-									},
-								],
-							},
-							{
-								name: 'find_first_existing_file',
-								kind: 'function',
-								source_line: 93,
-								type_signature: '(paths: string[]): string | null',
-								return_type: 'string | null',
-								parameters: [
-									{
-										name: 'paths',
-										type: 'string[]',
-										optional: false,
-									},
-								],
-							},
-						],
-						dependents: ['gen.ts', 'input_path.ts', 'package_json.ts', 'source_json.ts', 'task.ts'],
-					},
-					{
 						path: 'source_json.ts',
 						declarations: [
 							{
 								name: 'SourceJsonMapper',
 								kind: 'type',
-								source_line: 14,
+								source_line: 13,
 								type_signature: 'SourceJsonMapper',
 							},
 							{
 								name: 'source_json_create',
 								kind: 'function',
-								source_line: 18,
+								source_line: 17,
 								type_signature:
-									'(package_json: { [x: string]: unknown; name: string; version: string; private?: boolean | undefined; public?: boolean | undefined; description?: string | undefined; motto?: string | undefined; glyph?: string | undefined; ... 24 more ...; exports?: string | ... 2 more ... | undefined; }, lib_path?: string | undefined, log?: Logger | undefined): { ...; }',
+									'(package_json: { [x: string]: unknown; name: string; version: string; private?: boolean | undefined; public?: boolean | undefined; description?: string | undefined; motto?: string | undefined; glyph?: string | undefined; ... 24 more ...; exports?: string | ... 2 more ... | undefined; }, lib_path?: string | undefined, log?: Logger | undefined): Promise<...>',
 								return_type:
-									'{ [x: string]: unknown; name: string; version: string; modules?: { [x: string]: unknown; path: string; declarations?: { [x: string]: unknown; name: string; kind: "function" | "type" | "json" | "variable" | "class" | "constructor" | "component" | "css"; ... 19 more ...; alias_of?: { ...; } | undefined; }[] | undefine...',
+									'Promise<{ [x: string]: unknown; name: string; version: string; modules?: { [x: string]: unknown; path: string; declarations?: { [x: string]: unknown; name: string; kind: "function" | "type" | "json" | "variable" | "class" | "constructor" | "component" | "css"; ... 19 more ...; alias_of?: { ...; } | undefined; }[] | ...',
 								parameters: [
 									{
 										name: 'package_json',
 										type: '{ [x: string]: unknown; name: string; version: string; private?: boolean | undefined; public?: boolean | undefined; description?: string | undefined; motto?: string | undefined; glyph?: string | undefined; ... 24 more ...; exports?: string | ... 2 more ... | undefined; }',
-										optional: false,
 									},
 									{
 										name: 'lib_path',
@@ -37385,7 +37112,7 @@ export const repos_json: Array<RepoJson> = [
 							{
 								name: 'source_json_serialize',
 								kind: 'function',
-								source_line: 29,
+								source_line: 28,
 								type_signature:
 									'(source_json: { [x: string]: unknown; name: string; version: string; modules?: { [x: string]: unknown; path: string; declarations?: { [x: string]: unknown; name: string; kind: "function" | "type" | "json" | "variable" | "class" | "constructor" | "component" | "css"; ... 19 more ...; alias_of?: { ...; } | undefined; }[] | undefined; module_comment?: string | undefined; dependencies?: string[] | undefined; dependents?: string[] | undefined; }[] | undefined; }): string',
 								return_type: 'string',
@@ -37393,28 +37120,25 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'source_json',
 										type: '{ [x: string]: unknown; name: string; version: string; modules?: { [x: string]: unknown; path: string; declarations?: { [x: string]: unknown; name: string; kind: "function" | "type" | "json" | "variable" | "class" | "constructor" | "component" | "css"; ... 19 more ...; alias_of?: { ...; } | undefined; }[] | undefine...',
-										optional: false,
 									},
 								],
 							},
 							{
 								name: 'source_modules_create',
 								kind: 'function',
-								source_line: 34,
+								source_line: 33,
 								type_signature:
-									'(exports: string | Record<string, unknown> | null | undefined, lib_path?: string, log?: Logger | undefined): { [x: string]: unknown; path: string; declarations?: { [x: string]: unknown; ... 21 more ...; alias_of?: { ...; } | undefined; }[] | undefined; module_comment?: string | undefined; dependencies?: string[] | undefined; dependents?: string[] | undefined; }[] | undefined',
+									'(exports: string | Record<string, unknown> | null | undefined, lib_path?: string, log?: Logger | undefined): Promise<{ [x: string]: unknown; path: string; declarations?: { [x: string]: unknown; ... 21 more ...; alias_of?: { ...; } | undefined; }[] | undefined; module_comment?: string | undefined; dependencies?: string[] | undefined; dependents?: string[] | undefined; }[] | undefined>',
 								return_type:
-									'{ [x: string]: unknown; path: string; declarations?: { [x: string]: unknown; name: string; kind: "function" | "type" | "json" | "variable" | "class" | "constructor" | "component" | "css"; doc_comment?: string | undefined; ... 18 more ...; alias_of?: { ...; } | undefined; }[] | undefined; module_comment?: string | un...',
+									'Promise<{ [x: string]: unknown; path: string; declarations?: { [x: string]: unknown; name: string; kind: "function" | "type" | "json" | "variable" | "class" | "constructor" | "component" | "css"; doc_comment?: string | undefined; ... 18 more ...; alias_of?: { ...; } | undefined; }[] | undefined; module_comment?: str...',
 								parameters: [
 									{
 										name: 'exports',
 										type: 'string | Record<string, unknown> | null | undefined',
-										optional: false,
 									},
 									{
 										name: 'lib_path',
 										type: 'string',
-										optional: false,
 										default_value: 'paths.lib',
 									},
 									{
@@ -37425,7 +37149,7 @@ export const repos_json: Array<RepoJson> = [
 								],
 							},
 						],
-						dependencies: ['constants.ts', 'parse_exports.ts', 'paths.ts', 'search_fs.ts'],
+						dependencies: ['constants.ts', 'parse_exports.ts', 'paths.ts'],
 						dependents: ['gro_plugin_sveltekit_app.ts'],
 					},
 					{
@@ -37444,7 +37168,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: '__0',
 										type: '{ dir?: string | undefined; config_filename?: string | undefined; }',
-										optional: false,
 										default_value: 'EMPTY_OBJECT',
 									},
 								],
@@ -37540,7 +37263,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: '__0',
 										type: '{ dir_or_config?: string | Config | undefined; config_filename?: string | undefined; }',
-										optional: false,
 										default_value: 'EMPTY_OBJECT',
 									},
 								],
@@ -37556,7 +37278,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: '__0',
 										type: 'CompileOptions',
-										optional: false,
 									},
 								],
 							},
@@ -37597,7 +37318,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'svelte_config_path',
 										type: 'string',
-										optional: false,
 										default_value: 'SVELTE_CONFIG_FILENAME',
 									},
 								],
@@ -37613,18 +37333,15 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'package_json',
 										type: '{ [x: string]: unknown; name: string; version: string; private?: boolean | undefined; public?: boolean | undefined; description?: string | undefined; motto?: string | undefined; glyph?: string | undefined; ... 24 more ...; exports?: string | ... 2 more ... | undefined; }',
-										optional: false,
 									},
 									{
 										name: 'svelte_config',
 										type: 'ParsedSvelteConfig',
-										optional: false,
 										default_value: 'default_svelte_config',
 									},
 									{
 										name: 'dep_name',
 										type: 'string',
-										optional: false,
 										default_value: 'SVELTE_PACKAGE_DEP_NAME',
 									},
 								],
@@ -37639,13 +37356,11 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'sveltekit_cli',
 										type: 'string | Cli',
-										optional: false,
 										default_value: 'SVELTEKIT_CLI',
 									},
 									{
 										name: 'pm_cli',
 										type: 'string',
-										optional: false,
 										default_value: 'PM_CLI_DEFAULT',
 									},
 								],
@@ -37662,7 +37377,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'sveltekit_cli',
 										type: 'string | Cli',
-										optional: false,
 										default_value: 'SVELTEKIT_CLI',
 									},
 								],
@@ -37679,7 +37393,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'sveltekit_cli',
 										type: 'string | Cli',
-										optional: false,
 										default_value: 'SVELTEKIT_CLI',
 									},
 								],
@@ -37763,27 +37476,22 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'package_json',
 										type: '{ [x: string]: unknown; name: string; version: string; private?: boolean | undefined; public?: boolean | undefined; description?: string | undefined; motto?: string | undefined; glyph?: string | undefined; ... 24 more ...; exports?: string | ... 2 more ... | undefined; }',
-										optional: false,
 									},
 									{
 										name: 'options',
 										type: 'SveltePackageOptions | undefined',
-										optional: false,
 									},
 									{
 										name: 'cli',
 										type: 'string | Cli',
-										optional: false,
 									},
 									{
 										name: 'log',
 										type: 'Logger',
-										optional: false,
 									},
 									{
 										name: 'pm_cli',
 										type: 'string',
-										optional: false,
 									},
 								],
 							},
@@ -37798,12 +37506,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'specifier',
 										type: 'string',
-										optional: false,
 									},
 									{
 										name: 'aliases',
 										type: '[string, string][]',
-										optional: false,
 									},
 								],
 							},
@@ -37887,7 +37593,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'result',
 										type: 'string',
-										optional: false,
 									},
 								],
 							},
@@ -37902,7 +37607,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'form_element',
 										type: 'HTMLFormElement',
-										optional: false,
 									},
 									{
 										name: 'submit',
@@ -37997,7 +37701,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'args',
 										type: 'ResolveArgs<T>',
-										optional: false,
 									},
 								],
 							},
@@ -38020,7 +37723,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'file',
 										type: '"/CNAME" | "/favicon.png" | "/logo.svg" | "/robots.txt" | (string & {})',
-										optional: false,
 									},
 								],
 							},
@@ -38087,13 +37789,11 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'base_url',
 										type: '"" | `/${string}` | undefined',
-										optional: false,
 										default_value: "''",
 									},
 									{
 										name: 'assets_url',
 										type: '"" | `http://${string}` | `https://${string}` | undefined',
-										optional: false,
 										default_value: "''",
 									},
 								],
@@ -38108,7 +37808,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'dev',
 										type: 'boolean',
-										optional: false,
 									},
 								],
 							},
@@ -38130,28 +37829,23 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'dev',
 										type: 'boolean',
-										optional: false,
 									},
 									{
 										name: 'mode',
 										type: '"static" | "dynamic"',
-										optional: false,
 									},
 									{
 										name: 'visibility',
 										type: '"public" | "private"',
-										optional: false,
 									},
 									{
 										name: 'public_prefix',
 										type: 'string',
-										optional: false,
 										default_value: "'PUBLIC_'",
 									},
 									{
 										name: 'private_prefix',
 										type: 'string',
-										optional: false,
 										default_value: "''",
 									},
 									{
@@ -38194,17 +37888,14 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'log',
 										type: 'Logger',
-										optional: false,
 									},
 									{
 										name: 'loaded_tasks',
 										type: 'LoadedTasks',
-										optional: false,
 									},
 									{
 										name: 'log_intro',
 										type: 'boolean',
-										optional: false,
 										default_value: 'true',
 									},
 								],
@@ -38219,12 +37910,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'log',
 										type: 'Logger',
-										optional: false,
 									},
 									{
 										name: 'reasons',
 										type: 'string[]',
-										optional: false,
 									},
 								],
 							},
@@ -38238,12 +37927,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'log',
 										type: 'Logger',
-										optional: false,
 									},
 									{
 										name: 'meta',
 										type: 'TaskModuleMeta',
-										optional: false,
 									},
 								],
 							},
@@ -38377,7 +38064,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'path',
 										type: 'string',
-										optional: false,
 									},
 								],
 							},
@@ -38392,22 +38078,18 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'id',
 										type: 'PathId',
-										optional: false,
 									},
 									{
 										name: 'task_root_dir',
 										type: 'PathId',
-										optional: false,
 									},
 									{
 										name: 'input_path',
 										type: 'InputPath',
-										optional: false,
 									},
 									{
 										name: 'root_path',
 										type: 'PathId',
-										optional: false,
 									},
 								],
 							},
@@ -38507,23 +38189,20 @@ export const repos_json: Array<RepoJson> = [
 									'Finds modules from input paths. (see `src/lib/input_path.ts` for more)',
 								source_line: 129,
 								type_signature:
-									'(input_paths: InputPath[], task_root_dirs: PathId[], config: GroConfig, timings?: Timings | undefined): FindTasksResult',
-								return_type: 'FindTasksResult',
+									'(input_paths: InputPath[], task_root_dirs: PathId[], config: GroConfig, timings?: Timings | undefined): Promise<FindTasksResult>',
+								return_type: 'Promise<FindTasksResult>',
 								parameters: [
 									{
 										name: 'input_paths',
 										type: 'InputPath[]',
-										optional: false,
 									},
 									{
 										name: 'task_root_dirs',
 										type: 'PathId[]',
-										optional: false,
 									},
 									{
 										name: 'config',
 										type: 'GroConfig',
-										optional: false,
 									},
 									{
 										name: 'timings',
@@ -38535,7 +38214,7 @@ export const repos_json: Array<RepoJson> = [
 							{
 								name: 'LoadedTasks',
 								kind: 'type',
-								source_line: 199,
+								source_line: 201,
 								type_signature: 'LoadedTasks',
 								properties: [
 									{
@@ -38553,7 +38232,7 @@ export const repos_json: Array<RepoJson> = [
 							{
 								name: 'TaskModule',
 								kind: 'type',
-								source_line: 204,
+								source_line: 206,
 								type_signature: 'TaskModule',
 								properties: [
 									{
@@ -38566,7 +38245,7 @@ export const repos_json: Array<RepoJson> = [
 							{
 								name: 'TaskModuleMeta',
 								kind: 'type',
-								source_line: 208,
+								source_line: 210,
 								type_signature: 'TaskModuleMeta',
 								extends: ['ModuleMeta<TaskModule>'],
 								properties: [
@@ -38580,19 +38259,19 @@ export const repos_json: Array<RepoJson> = [
 							{
 								name: 'LoadTasksResult',
 								kind: 'type',
-								source_line: 212,
+								source_line: 214,
 								type_signature: 'LoadTasksResult',
 							},
 							{
 								name: 'LoadTasksFailure',
 								kind: 'type',
-								source_line: 213,
+								source_line: 215,
 								type_signature: 'LoadTasksFailure',
 							},
 							{
 								name: 'load_tasks',
 								kind: 'function',
-								source_line: 215,
+								source_line: 217,
 								type_signature:
 									'(found_tasks: FoundTasks, root_path?: PathId): Promise<LoadTasksResult>',
 								return_type: 'Promise<LoadTasksResult>',
@@ -38600,12 +38279,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'found_tasks',
 										type: 'FoundTasks',
-										optional: false,
 									},
 									{
 										name: 'root_path',
 										type: 'PathId',
-										optional: false,
 										default_value: 'process.cwd()',
 									},
 								],
@@ -38613,19 +38290,18 @@ export const repos_json: Array<RepoJson> = [
 							{
 								name: 'validate_task_module',
 								kind: 'function',
-								source_line: 243,
+								source_line: 245,
 								type_signature: '(mod: Record<string, any>): mod is TaskModule',
 								return_type: 'boolean',
 								parameters: [
 									{
 										name: 'mod',
 										type: 'Record<string, any>',
-										optional: false,
 									},
 								],
 							},
 						],
-						dependencies: ['input_path.ts', 'modules.ts', 'paths.ts', 'search_fs.ts'],
+						dependencies: ['input_path.ts', 'modules.ts', 'paths.ts'],
 						dependents: [
 							'build.task.ts',
 							'changeset.task.ts',
@@ -38790,7 +38466,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: '__0',
 										type: 'WatchDirOptions',
-										optional: false,
 									},
 								],
 							},
@@ -38820,7 +38495,7 @@ export const repos_json: Array<RepoJson> = [
 		library_json: {
 			package_json: {
 				name: '@ryanatkn/belt',
-				version: '0.40.1',
+				version: '0.41.1',
 				description: 'utility belt for JS',
 				glyph: '🦕',
 				logo: 'logo.svg',
@@ -38933,7 +38608,7 @@ export const repos_json: Array<RepoJson> = [
 			},
 			source_json: {
 				name: '@ryanatkn/belt',
-				version: '0.40.1',
+				version: '0.41.1',
 				modules: [
 					{
 						path: 'array.ts',
@@ -38992,6 +38667,7 @@ export const repos_json: Array<RepoJson> = [
 								],
 							},
 						],
+						dependents: ['fs.ts'],
 					},
 					{
 						path: 'async.ts',
@@ -39070,6 +38746,68 @@ export const repos_json: Array<RepoJson> = [
 								type_signature: '<T>(): Deferred<T>',
 								return_type: 'Deferred<T>',
 								parameters: [],
+							},
+							{
+								name: 'map_concurrent',
+								kind: 'function',
+								doc_comment: 'Maps over items with controlled concurrency, preserving input order.',
+								examples: [
+									"```ts\nconst results = await map_concurrent(\n  file_paths,\n  async (path) => readFile(path, 'utf8'),\n  5, // max 5 concurrent reads\n);\n```",
+								],
+								source_line: 54,
+								type_signature:
+									'<T, R>(items: T[], fn: (item: T, index: number) => Promise<R>, concurrency: number): Promise<R[]>',
+								return_type: 'Promise<R[]>',
+								return_description: 'promise resolving to array of results in same order as input',
+								parameters: [
+									{
+										name: 'items',
+										type: 'T[]',
+										description: 'array of items to process',
+									},
+									{
+										name: 'fn',
+										type: '(item: T, index: number) => Promise<R>',
+										description: 'async function to apply to each item',
+									},
+									{
+										name: 'concurrency',
+										type: 'number',
+										description: 'maximum number of concurrent operations',
+									},
+								],
+							},
+							{
+								name: 'map_concurrent_settled',
+								kind: 'function',
+								doc_comment:
+									'Like `map_concurrent` but collects all results/errors instead of failing fast.\nReturns an array of settlement objects matching the `Promise.allSettled` pattern.',
+								examples: [
+									"```ts\nconst results = await map_concurrent_settled(urls, fetch, 5);\nfor (const [i, result] of results.entries()) {\n  if (result.status === 'fulfilled') {\n    console.log(`${urls[i]}: ${result.value.status}`);\n  } else {\n    console.error(`${urls[i]}: ${result.reason}`);\n  }\n}\n```",
+								],
+								source_line: 133,
+								type_signature:
+									'<T, R>(items: T[], fn: (item: T, index: number) => Promise<R>, concurrency: number): Promise<PromiseSettledResult<R>[]>',
+								return_type: 'Promise<PromiseSettledResult<R>[]>',
+								return_description:
+									'promise resolving to array of `PromiseSettledResult` objects in input order',
+								parameters: [
+									{
+										name: 'items',
+										type: 'T[]',
+										description: 'array of items to process',
+									},
+									{
+										name: 'fn',
+										type: '(item: T, index: number) => Promise<R>',
+										description: 'async function to apply to each item',
+									},
+									{
+										name: 'concurrency',
+										type: 'number',
+										description: 'maximum number of concurrent operations',
+									},
+								],
 							},
 						],
 						dependents: ['throttle.ts'],
@@ -39416,12 +39154,12 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'a',
 										type: 'unknown',
-										description: '- First value to compare',
+										description: 'first value to compare',
 									},
 									{
 										name: 'b',
 										type: 'unknown',
-										description: '- Second value to compare',
+										description: 'second value to compare',
 									},
 								],
 							},
@@ -39761,7 +39499,7 @@ export const repos_json: Array<RepoJson> = [
 								name: 'fs_exists',
 								kind: 'function',
 								doc_comment: 'Checks if a file or directory exists.',
-								source_line: 8,
+								source_line: 13,
 								type_signature: '(path: string): Promise<boolean>',
 								return_type: 'Promise<boolean>',
 								parameters: [
@@ -39776,7 +39514,7 @@ export const repos_json: Array<RepoJson> = [
 								kind: 'function',
 								doc_comment:
 									'Empties a directory, recursively by default. If `should_remove` is provided, only entries where it returns `true` are removed.',
-								source_line: 20,
+								source_line: 25,
 								type_signature:
 									'(dir: string, should_remove?: ((name: string) => boolean) | undefined, options?: RmOptions | undefined): Promise<void>',
 								return_type: 'Promise<void>',
@@ -39797,7 +39535,68 @@ export const repos_json: Array<RepoJson> = [
 									},
 								],
 							},
+							{
+								name: 'FsSearchOptions',
+								kind: 'type',
+								source_line: 35,
+								type_signature: 'FsSearchOptions',
+								properties: [
+									{
+										name: 'filter',
+										kind: 'variable',
+										type_signature: 'PathFilter | Array<PathFilter>',
+										doc_comment:
+											'One or more filter functions, any of which can short-circuit the search by returning `false`.',
+									},
+									{
+										name: 'file_filter',
+										kind: 'variable',
+										type_signature: 'FileFilter | Array<FileFilter>',
+										doc_comment:
+											'One or more file filter functions. Every filter must pass for a file to be included.',
+									},
+									{
+										name: 'sort',
+										kind: 'variable',
+										type_signature:
+											'boolean | null | ((a: ResolvedPath, b: ResolvedPath) => number)',
+										doc_comment:
+											'Pass `null` or `false` to speed things up at the cost of volatile ordering.',
+									},
+									{
+										name: 'include_directories',
+										kind: 'variable',
+										type_signature: 'boolean',
+										doc_comment: 'Set to `true` to include directories. Defaults to `false`.',
+									},
+									{
+										name: 'cwd',
+										kind: 'variable',
+										type_signature: 'string | null',
+										doc_comment: "Sets the cwd for `dir` unless it's an absolute path or `null`.",
+									},
+								],
+							},
+							{
+								name: 'fs_search',
+								kind: 'function',
+								source_line: 58,
+								type_signature: '(dir: string, options?: FsSearchOptions): Promise<ResolvedPath[]>',
+								return_type: 'Promise<ResolvedPath[]>',
+								parameters: [
+									{
+										name: 'dir',
+										type: 'string',
+									},
+									{
+										name: 'options',
+										type: 'FsSearchOptions',
+										default_value: 'EMPTY_OBJECT',
+									},
+								],
+							},
 						],
+						dependencies: ['array.ts', 'object.ts', 'string.ts'],
 						dependents: ['git.ts'],
 					},
 					{
@@ -41377,7 +41176,7 @@ export const repos_json: Array<RepoJson> = [
 								],
 							},
 						],
-						dependents: ['fetch.ts', 'package_json.ts', 'throttle.ts'],
+						dependents: ['fetch.ts', 'fs.ts', 'package_json.ts', 'throttle.ts'],
 					},
 					{
 						path: 'package_json.ts',
@@ -42749,7 +42548,7 @@ export const repos_json: Array<RepoJson> = [
 							},
 						],
 						dependencies: ['iterator.ts'],
-						dependents: ['library_json.ts', 'package_json.ts', 'url.ts'],
+						dependents: ['fs.ts', 'library_json.ts', 'package_json.ts', 'url.ts'],
 					},
 					{
 						path: 'throttle.ts',
@@ -43308,7 +43107,7 @@ export const repos_json: Array<RepoJson> = [
 		library_json: {
 			package_json: {
 				name: '@ryanatkn/fuz_blog',
-				version: '0.18.0',
+				version: '0.19.0',
 				description: 'blog software from scratch with SvelteKit',
 				glyph: '🖊️',
 				logo: 'logo.svg',
@@ -43330,10 +43129,10 @@ export const repos_json: Array<RepoJson> = [
 					node: '>=22.15',
 				},
 				peerDependencies: {
-					'@ryanatkn/belt': '>=0.39.0',
-					'@ryanatkn/fuz': '>=0.162.0',
-					'@ryanatkn/fuz_mastodon': '>=0.35.0',
-					'@ryanatkn/gro': '>=0.177.1',
+					'@ryanatkn/belt': '>=0.41.1',
+					'@ryanatkn/fuz': '>=0.168.0',
+					'@ryanatkn/fuz_mastodon': '>=0.36.0',
+					'@ryanatkn/gro': '>=0.180.0',
 					'@ryanatkn/moss': '>=0.39.0',
 					'@sveltejs/kit': '^2',
 					'date-fns': '^4',
@@ -43341,16 +43140,16 @@ export const repos_json: Array<RepoJson> = [
 				},
 				devDependencies: {
 					'@changesets/changelog-git': '^0.2.1',
-					'@ryanatkn/belt': '^0.40.0',
+					'@ryanatkn/belt': '^0.41.1',
 					'@ryanatkn/eslint-config': '^0.9.0',
-					'@ryanatkn/fuz': '^0.165.0',
+					'@ryanatkn/fuz': '^0.168.0',
 					'@ryanatkn/fuz_code': '^0.36.0',
 					'@ryanatkn/fuz_mastodon': '^0.36.0',
-					'@ryanatkn/gro': '^0.179.0',
+					'@ryanatkn/gro': '^0.180.0',
 					'@ryanatkn/moss': '^0.39.0',
 					'@sveltejs/adapter-static': '^3.0.10',
 					'@sveltejs/kit': '^2.49.0',
-					'@sveltejs/package': '^2.5.6',
+					'@sveltejs/package': '^2.5.7',
 					'@sveltejs/vite-plugin-svelte': '^6.2.1',
 					'@types/node': '^24.10.1',
 					'date-fns': '^4.1.0',
@@ -43358,7 +43157,7 @@ export const repos_json: Array<RepoJson> = [
 					'eslint-plugin-svelte': '^3.13.0',
 					prettier: '^3.6.2',
 					'prettier-plugin-svelte': '^3.4.0',
-					svelte: '^5.44.1',
+					svelte: '^5.45.2',
 					'svelte-check': '^4.3.4',
 					tslib: '^2.8.1',
 					typescript: '^5.9.3',
@@ -43401,7 +43200,7 @@ export const repos_json: Array<RepoJson> = [
 			},
 			source_json: {
 				name: '@ryanatkn/fuz_blog',
-				version: '0.18.0',
+				version: '0.19.0',
 				modules: [
 					{
 						path: 'blog_helpers.ts',
@@ -43417,17 +43216,14 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'blog_post_id',
 										type: 'BlogPostId',
-										optional: false,
 									},
 									{
 										name: 'blog_url',
 										type: 'string',
-										optional: false,
 									},
 									{
 										name: 'post',
 										type: 'BlogPostData',
-										optional: false,
 									},
 								],
 							},
@@ -43443,7 +43239,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'blog_dir',
 										type: 'string',
-										optional: false,
 									},
 								],
 							},
@@ -43458,12 +43253,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'blog_dir',
 										type: 'string',
-										optional: false,
 									},
 									{
 										name: 'blog_post_ids',
 										type: 'BlogPostId[]',
-										optional: false,
 									},
 								],
 							},
@@ -43477,7 +43270,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'blog_post_ids',
 										type: 'BlogPostId[]',
-										optional: false,
 									},
 								],
 							},
@@ -43491,12 +43283,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'blog_dir',
 										type: 'string',
-										optional: false,
 									},
 									{
 										name: 'blog_post_id',
 										type: 'BlogPostId',
-										optional: false,
 									},
 								],
 							},
@@ -43688,7 +43478,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'post',
 										type: 'BlogPostData',
-										optional: false,
 									},
 									{
 										name: 'attrs',
@@ -43708,7 +43497,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'children',
 										type: 'Snippet',
-										optional: false,
 									},
 								],
 								source_line: 1,
@@ -43726,7 +43514,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'item',
 										type: 'BlogPostItem',
-										optional: false,
 									},
 								],
 								source_line: 1,
@@ -43847,7 +43634,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'data',
 										type: 'Feed',
-										optional: false,
 									},
 								],
 							},
@@ -43864,7 +43650,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'item',
 										type: 'FeedItem',
-										optional: false,
 									},
 								],
 								source_line: 1,
@@ -43883,12 +43668,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'slug',
 										type: 'string',
-										optional: false,
 									},
 									{
 										name: 'children',
 										type: 'Snippet',
-										optional: false,
 									},
 								],
 								source_line: 1,
@@ -43917,7 +43700,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'date',
 										type: 'string | number | Date',
-										optional: false,
 									},
 								],
 							},
@@ -43931,12 +43713,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'url',
 										type: 'string',
-										optional: false,
 									},
 									{
 										name: 'root',
 										type: 'string',
-										optional: false,
 									},
 								],
 							},
@@ -45226,7 +45006,7 @@ export const repos_json: Array<RepoJson> = [
 				},
 				devDependencies: {
 					'@changesets/changelog-git': '^0.2.1',
-					'@ryanatkn/belt': '^0.40.0',
+					'@ryanatkn/belt': '^0.41.1',
 					'@ryanatkn/eslint-config': '^0.9.0',
 					'@ryanatkn/fuz': '^0.165.0',
 					'@ryanatkn/gro': '^0.179.0',
@@ -46569,7 +46349,7 @@ export const repos_json: Array<RepoJson> = [
 		library_json: {
 			package_json: {
 				name: '@ryanatkn/fuz_gitops',
-				version: '0.55.0',
+				version: '0.56.0',
 				description: 'a tool for managing many repos',
 				glyph: '🪄',
 				logo: 'logo.svg',
@@ -46599,9 +46379,9 @@ export const repos_json: Array<RepoJson> = [
 					node: '>=22.15',
 				},
 				peerDependencies: {
-					'@ryanatkn/belt': '>=0.40.0',
-					'@ryanatkn/fuz': '>=0.165.0',
-					'@ryanatkn/gro': '>=0.179.0',
+					'@ryanatkn/belt': '>=0.41.1',
+					'@ryanatkn/fuz': '>=0.168.0',
+					'@ryanatkn/gro': '>=0.180.0',
 					'@ryanatkn/moss': '>=0.39.0',
 					'@sveltejs/kit': '^2',
 					svelte: '^5',
@@ -46609,22 +46389,22 @@ export const repos_json: Array<RepoJson> = [
 				},
 				devDependencies: {
 					'@changesets/changelog-git': '^0.2.1',
-					'@ryanatkn/belt': '^0.40.1',
+					'@ryanatkn/belt': '^0.41.1',
 					'@ryanatkn/eslint-config': '^0.9.0',
-					'@ryanatkn/fuz': '^0.167.0',
+					'@ryanatkn/fuz': '^0.168.0',
 					'@ryanatkn/fuz_code': '^0.36.0',
-					'@ryanatkn/gro': '^0.179.0',
+					'@ryanatkn/gro': '^0.180.0',
 					'@ryanatkn/moss': '^0.39.0',
 					'@sveltejs/adapter-static': '^3.0.10',
 					'@sveltejs/kit': '^2.49.0',
-					'@sveltejs/package': '^2.5.6',
+					'@sveltejs/package': '^2.5.7',
 					'@sveltejs/vite-plugin-svelte': '^6.2.1',
 					'@types/node': '^24.10.1',
 					eslint: '^9.39.1',
 					'eslint-plugin-svelte': '^3.13.0',
 					prettier: '^3.6.2',
 					'prettier-plugin-svelte': '^3.4.0',
-					svelte: '^5.44.1',
+					svelte: '^5.45.2',
 					'svelte-check': '^4.3.4',
 					tslib: '^2.8.1',
 					typescript: '^5.9.3',
@@ -46667,7 +46447,7 @@ export const repos_json: Array<RepoJson> = [
 			},
 			source_json: {
 				name: '@ryanatkn/fuz_gitops',
-				version: '0.55.0',
+				version: '0.56.0',
 				modules: [
 					{
 						path: 'changeset_generator.ts',
@@ -46712,7 +46492,7 @@ export const repos_json: Array<RepoJson> = [
 									'Creates a changeset file for dependency updates.\nReturns the path to the created changeset file.',
 								source_line: 28,
 								type_signature:
-									'(repo: LocalRepo, updates: DependencyVersionChange[], log?: Logger | undefined): Promise<string>',
+									'(repo: LocalRepo, updates: DependencyVersionChange[], options?: { log?: Logger | undefined; }): Promise<string>',
 								return_type: 'Promise<string>',
 								parameters: [
 									{
@@ -46724,9 +46504,9 @@ export const repos_json: Array<RepoJson> = [
 										type: 'DependencyVersionChange[]',
 									},
 									{
-										name: 'log',
-										type: 'Logger | undefined',
-										optional: true,
+										name: 'options',
+										type: '{ log?: Logger | undefined; }',
+										default_value: '{}',
 									},
 								],
 							},
@@ -46735,7 +46515,7 @@ export const repos_json: Array<RepoJson> = [
 								kind: 'function',
 								doc_comment:
 									'Generates markdown changeset content for dependency updates.\n\nCreates properly formatted changeset with YAML frontmatter, summary,\nand categorized list of breaking vs regular updates. Output format\nmatches changesets CLI for consistency.',
-								source_line: 94,
+								source_line: 95,
 								type_signature:
 									'(package_name: string, updates: DependencyVersionChange[], bump_type: "major" | "minor" | "patch"): string',
 								return_type: 'string',
@@ -46761,7 +46541,7 @@ export const repos_json: Array<RepoJson> = [
 							{
 								name: 'create_dependency_updates',
 								kind: 'function',
-								source_line: 138,
+								source_line: 139,
 								type_signature:
 									'(dependencies: Map<string, string>, published_versions: Map<string, PublishedVersion>): DependencyVersionChange[]',
 								return_type: 'DependencyVersionChange[]',
@@ -47247,6 +47027,39 @@ export const repos_json: Array<RepoJson> = [
 								type_signature: 'VersionStrategy',
 							},
 							{
+								name: 'UpdatePackageJsonOptions',
+								kind: 'type',
+								source_line: 16,
+								type_signature: 'UpdatePackageJsonOptions',
+								properties: [
+									{
+										name: 'strategy',
+										kind: 'variable',
+										type_signature: 'VersionStrategy',
+									},
+									{
+										name: 'published_versions',
+										kind: 'variable',
+										type_signature: 'Map<string, PublishedVersion>',
+									},
+									{
+										name: 'log',
+										kind: 'variable',
+										type_signature: 'Logger',
+									},
+									{
+										name: 'git_ops',
+										kind: 'variable',
+										type_signature: 'GitOperations',
+									},
+									{
+										name: 'fs_ops',
+										kind: 'variable',
+										type_signature: 'FsOperations',
+									},
+								],
+							},
+							{
 								name: 'update_package_json',
 								kind: 'function',
 								doc_comment:
@@ -47257,9 +47070,9 @@ export const repos_json: Array<RepoJson> = [
 										description: 'file operations or git operations fail',
 									},
 								],
-								source_line: 32,
+								source_line: 38,
 								type_signature:
-									'(repo: LocalRepo, updates: Map<string, string>, strategy?: VersionStrategy, published_versions?: Map<string, PublishedVersion> | undefined, log?: Logger | undefined, git_ops?: GitOperations, fs_ops?: FsOperations): Promise<...>',
+									'(repo: LocalRepo, updates: Map<string, string>, options?: UpdatePackageJsonOptions): Promise<void>',
 								return_type: 'Promise<void>',
 								parameters: [
 									{
@@ -47271,40 +47084,46 @@ export const repos_json: Array<RepoJson> = [
 										type: 'Map<string, string>',
 									},
 									{
-										name: 'strategy',
-										type: 'VersionStrategy',
-										description: 'how to format version ranges (default: caret)',
-										default_value: "'caret'",
+										name: 'options',
+										type: 'UpdatePackageJsonOptions',
+										default_value: '{}',
 									},
+								],
+							},
+							{
+								name: 'UpdateAllReposOptions',
+								kind: 'type',
+								source_line: 174,
+								type_signature: 'UpdateAllReposOptions',
+								properties: [
 									{
-										name: 'published_versions',
-										type: 'Map<string, PublishedVersion> | undefined',
-										optional: true,
-										description: 'if provided, generates auto-changesets for updates',
+										name: 'strategy',
+										kind: 'variable',
+										type_signature: 'VersionStrategy',
 									},
 									{
 										name: 'log',
-										type: 'Logger | undefined',
-										optional: true,
+										kind: 'variable',
+										type_signature: 'Logger',
 									},
 									{
 										name: 'git_ops',
-										type: 'GitOperations',
-										default_value: 'default_git_operations',
+										kind: 'variable',
+										type_signature: 'GitOperations',
 									},
 									{
 										name: 'fs_ops',
-										type: 'FsOperations',
-										default_value: 'default_fs_operations',
+										kind: 'variable',
+										type_signature: 'FsOperations',
 									},
 								],
 							},
 							{
 								name: 'update_all_repos',
 								kind: 'function',
-								source_line: 165,
+								source_line: 181,
 								type_signature:
-									'(repos: LocalRepo[], published: Map<string, string>, strategy?: VersionStrategy, log?: Logger | undefined, git_ops?: GitOperations, fs_ops?: FsOperations): Promise<...>',
+									'(repos: LocalRepo[], published: Map<string, string>, options?: UpdateAllReposOptions): Promise<{ updated: number; failed: { repo: string; error: Error; }[]; }>',
 								return_type:
 									'Promise<{ updated: number; failed: { repo: string; error: Error; }[]; }>',
 								parameters: [
@@ -47317,31 +47136,16 @@ export const repos_json: Array<RepoJson> = [
 										type: 'Map<string, string>',
 									},
 									{
-										name: 'strategy',
-										type: 'VersionStrategy',
-										default_value: "'caret'",
-									},
-									{
-										name: 'log',
-										type: 'Logger | undefined',
-										optional: true,
-									},
-									{
-										name: 'git_ops',
-										type: 'GitOperations',
-										default_value: 'default_git_operations',
-									},
-									{
-										name: 'fs_ops',
-										type: 'FsOperations',
-										default_value: 'default_fs_operations',
+										name: 'options',
+										type: 'UpdateAllReposOptions',
+										default_value: '{}',
 									},
 								],
 							},
 							{
 								name: 'find_updates_needed',
 								kind: 'function',
-								source_line: 223,
+								source_line: 242,
 								type_signature:
 									'(repo: LocalRepo, published: Map<string, string>): Map<string, { current: string; new: string; type: "dependencies" | "devDependencies" | "peerDependencies"; }>',
 								return_type:
@@ -47893,7 +47697,7 @@ export const repos_json: Array<RepoJson> = [
 								],
 								source_line: 31,
 								type_signature:
-									'(repo_info: GithubRepoInfo, cache?: Map<string, { key: string; url: string; params: any; value: any; etag: string | null; last_modified: string | null; }> | undefined, log?: Logger | undefined, token?: string | undefined, api_version?: string | undefined): Promise<...>',
+									'(repo_info: GithubRepoInfo, options?: { cache?: Map<string, { key: string; url: string; params: any; value: any; etag: string | null; last_modified: string | null; }> | undefined; log?: Logger | undefined; token?: string | undefined; api_version?: string | undefined; }): Promise<...>',
 								return_type:
 									'Promise<{ number: number; title: string; user: { login: string; }; draft: boolean; }[] | null>',
 								parameters: [
@@ -47902,24 +47706,9 @@ export const repos_json: Array<RepoJson> = [
 										type: 'GithubRepoInfo',
 									},
 									{
-										name: 'cache',
-										type: 'Map<string, { key: string; url: string; params: any; value: any; etag: string | null; last_modified: string | null; }> | undefined',
-										optional: true,
-									},
-									{
-										name: 'log',
-										type: 'Logger | undefined',
-										optional: true,
-									},
-									{
-										name: 'token',
-										type: 'string | undefined',
-										optional: true,
-									},
-									{
-										name: 'api_version',
-										type: 'string | undefined',
-										optional: true,
+										name: 'options',
+										type: '{ cache?: Map<string, { key: string; url: string; params: any; value: any; etag: string | null; last_modified: string | null; }> | undefined; log?: Logger | undefined; token?: string | undefined; api_version?: string | undefined; }',
+										default_value: '{}',
 									},
 								],
 							},
@@ -47930,14 +47719,14 @@ export const repos_json: Array<RepoJson> = [
 								see_also: [
 									'https://docs.github.com/en/rest/checks/runs?apiVersion=2022-11-28#list-check-runs-for-a-git-reference',
 								],
-								source_line: 63,
+								source_line: 66,
 								type_signature:
 									'ZodObject<{ status: ZodEnum<{ queued: "queued"; in_progress: "in_progress"; completed: "completed"; }>; conclusion: ZodNullable<ZodEnum<{ success: "success"; failure: "failure"; neutral: "neutral"; cancelled: "cancelled"; skipped: "skipped"; timed_out: "timed_out"; action_required: "action_required"; }>>; }, $strip>',
 							},
 							{
 								name: 'GithubCheckRuns',
 								kind: 'type',
-								source_line: 70,
+								source_line: 73,
 								type_signature:
 									'ZodObject<{ total_count: ZodNumber; check_runs: ZodArray<ZodObject<{ status: ZodEnum<{ queued: "queued"; in_progress: "in_progress"; completed: "completed"; }>; conclusion: ZodNullable<ZodEnum<{ success: "success"; ... 5 more ...; action_required: "action_required"; }>>; }, $strip>>; }, $strip>',
 							},
@@ -47948,9 +47737,9 @@ export const repos_json: Array<RepoJson> = [
 								see_also: [
 									'https://docs.github.com/en/rest/checks/runs?apiVersion=2022-11-28#list-check-runs-for-a-git-reference',
 								],
-								source_line: 79,
+								source_line: 82,
 								type_signature:
-									'(repo_info: GithubRepoInfo, cache?: Map<string, { key: string; url: string; params: any; value: any; etag: string | null; last_modified: string | null; }> | undefined, log?: Logger | undefined, token?: string | undefined, api_version?: string | undefined, ref?: string): Promise<...>',
+									'(repo_info: GithubRepoInfo, options?: { cache?: Map<string, { key: string; url: string; params: any; value: any; etag: string | null; last_modified: string | null; }> | undefined; log?: Logger | undefined; token?: string | undefined; api_version?: string | undefined; ref?: string | undefined; }): Promise<...>',
 								return_type:
 									'Promise<{ status: "queued" | "in_progress" | "completed"; conclusion: "success" | "failure" | "neutral" | "cancelled" | "skipped" | "timed_out" | "action_required" | null; } | null>',
 								parameters: [
@@ -47959,29 +47748,9 @@ export const repos_json: Array<RepoJson> = [
 										type: 'GithubRepoInfo',
 									},
 									{
-										name: 'cache',
-										type: 'Map<string, { key: string; url: string; params: any; value: any; etag: string | null; last_modified: string | null; }> | undefined',
-										optional: true,
-									},
-									{
-										name: 'log',
-										type: 'Logger | undefined',
-										optional: true,
-									},
-									{
-										name: 'token',
-										type: 'string | undefined',
-										optional: true,
-									},
-									{
-										name: 'api_version',
-										type: 'string | undefined',
-										optional: true,
-									},
-									{
-										name: 'ref',
-										type: 'string',
-										default_value: "'main'",
+										name: 'options',
+										type: '{ cache?: Map<string, { key: string; url: string; params: any; value: any; etag: string | null; last_modified: string | null; }> | undefined; log?: Logger | undefined; token?: string | undefined; api_version?: string | undefined; ref?: string | undefined; }',
+										default_value: '{}',
 									},
 								],
 							},
@@ -48387,7 +48156,7 @@ export const repos_json: Array<RepoJson> = [
 								],
 								source_line: 39,
 								type_signature:
-									'(repos: LocalRepo[], log?: Logger | undefined, options?: { throw_on_prod_cycles?: boolean | undefined; log_cycles?: boolean | undefined; log_order?: boolean | undefined; }): GraphValidationResult',
+									'(repos: LocalRepo[], options?: { log?: Logger | undefined; throw_on_prod_cycles?: boolean | undefined; log_cycles?: boolean | undefined; log_order?: boolean | undefined; }): GraphValidationResult',
 								return_type: 'GraphValidationResult',
 								return_description:
 									'graph validation result with graph, publishing order, and detected cycles',
@@ -48397,13 +48166,8 @@ export const repos_json: Array<RepoJson> = [
 										type: 'LocalRepo[]',
 									},
 									{
-										name: 'log',
-										type: 'Logger | undefined',
-										optional: true,
-									},
-									{
 										name: 'options',
-										type: '{ throw_on_prod_cycles?: boolean | undefined; log_cycles?: boolean | undefined; log_order?: boolean | undefined; }',
+										type: '{ log?: Logger | undefined; throw_on_prod_cycles?: boolean | undefined; log_cycles?: boolean | undefined; log_order?: boolean | undefined; }',
 										default_value: '{}',
 									},
 								],
@@ -48800,7 +48564,7 @@ export const repos_json: Array<RepoJson> = [
 								],
 							},
 						],
-						dependents: ['gitops_analyze.task.ts', 'gitops_validate.task.ts', 'publishing_plan.ts'],
+						dependents: ['gitops_analyze.task.ts', 'gitops_validate.task.ts'],
 					},
 					{
 						path: 'ModulesDetail.svelte',
@@ -48907,12 +48671,17 @@ export const repos_json: Array<RepoJson> = [
 										kind: 'variable',
 										type_signature: 'Logger',
 									},
+									{
+										name: 'ops',
+										kind: 'variable',
+										type_signature: 'GitopsOperations',
+									},
 								],
 							},
 							{
 								name: 'PublishedVersion',
 								kind: 'type',
-								source_line: 28,
+								source_line: 29,
 								type_signature: 'PublishedVersion',
 								properties: [
 									{
@@ -48955,7 +48724,7 @@ export const repos_json: Array<RepoJson> = [
 							{
 								name: 'PublishingResult',
 								kind: 'type',
-								source_line: 38,
+								source_line: 39,
 								type_signature: 'PublishingResult',
 								properties: [
 									{
@@ -48983,9 +48752,9 @@ export const repos_json: Array<RepoJson> = [
 							{
 								name: 'publish_repos',
 								kind: 'function',
-								source_line: 45,
+								source_line: 46,
 								type_signature:
-									'(repos: LocalRepo[], options: PublishingOptions, ops?: GitopsOperations): Promise<PublishingResult>',
+									'(repos: LocalRepo[], options: PublishingOptions): Promise<PublishingResult>',
 								return_type: 'Promise<PublishingResult>',
 								parameters: [
 									{
@@ -48995,11 +48764,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'options',
 										type: 'PublishingOptions',
-									},
-									{
-										name: 'ops',
-										type: 'GitopsOperations',
-										default_value: 'default_gitops_operations',
 									},
 								],
 							},
@@ -49064,6 +48828,11 @@ export const repos_json: Array<RepoJson> = [
 								type_signature: 'WaitOptions',
 								properties: [
 									{
+										name: 'log',
+										kind: 'variable',
+										type_signature: 'Logger',
+									},
+									{
 										name: 'max_attempts',
 										kind: 'variable',
 										type_signature: 'number',
@@ -49088,7 +48857,7 @@ export const repos_json: Array<RepoJson> = [
 							{
 								name: 'PackageInfo',
 								kind: 'type',
-								source_line: 13,
+								source_line: 14,
 								type_signature: 'PackageInfo',
 								properties: [
 									{
@@ -49106,9 +48875,9 @@ export const repos_json: Array<RepoJson> = [
 							{
 								name: 'check_package_available',
 								kind: 'function',
-								source_line: 18,
+								source_line: 19,
 								type_signature:
-									'(pkg: string, version: string, log?: Logger | undefined): Promise<boolean>',
+									'(pkg: string, version: string, options?: { log?: Logger | undefined; }): Promise<boolean>',
 								return_type: 'Promise<boolean>',
 								parameters: [
 									{
@@ -49120,9 +48889,9 @@ export const repos_json: Array<RepoJson> = [
 										type: 'string',
 									},
 									{
-										name: 'log',
-										type: 'Logger | undefined',
-										optional: true,
+										name: 'options',
+										type: '{ log?: Logger | undefined; }',
+										default_value: '{}',
 									},
 								],
 							},
@@ -49137,9 +48906,9 @@ export const repos_json: Array<RepoJson> = [
 										description: 'timeout reached or max attempts exceeded',
 									},
 								],
-								source_line: 55,
+								source_line: 57,
 								type_signature:
-									'(pkg: string, version: string, options?: WaitOptions, log?: Logger | undefined): Promise<void>',
+									'(pkg: string, version: string, options?: WaitOptions): Promise<void>',
 								return_type: 'Promise<void>',
 								parameters: [
 									{
@@ -49155,11 +48924,6 @@ export const repos_json: Array<RepoJson> = [
 										type: 'WaitOptions',
 										default_value: '{}',
 									},
-									{
-										name: 'log',
-										type: 'Logger | undefined',
-										optional: true,
-									},
 								],
 							},
 							{
@@ -49167,9 +48931,9 @@ export const repos_json: Array<RepoJson> = [
 								kind: 'function',
 								doc_comment:
 									"Fetches package metadata from NPM registry.\n\nReturns name and latest version. Returns null if package doesn't exist\nor registry is unreachable.",
-								source_line: 112,
+								source_line: 114,
 								type_signature:
-									'(pkg: string, log?: Logger | undefined): Promise<PackageInfo | null>',
+									'(pkg: string, options?: { log?: Logger | undefined; }): Promise<PackageInfo | null>',
 								return_type: 'Promise<PackageInfo | null>',
 								return_description: 'package info or null on error/not found',
 								parameters: [
@@ -49178,17 +48942,18 @@ export const repos_json: Array<RepoJson> = [
 										type: 'string',
 									},
 									{
-										name: 'log',
-										type: 'Logger | undefined',
-										optional: true,
+										name: 'options',
+										type: '{ log?: Logger | undefined; }',
+										default_value: '{}',
 									},
 								],
 							},
 							{
 								name: 'package_exists',
 								kind: 'function',
-								source_line: 131,
-								type_signature: '(pkg: string, log?: Logger | undefined): Promise<boolean>',
+								source_line: 137,
+								type_signature:
+									'(pkg: string, options?: { log?: Logger | undefined; }): Promise<boolean>',
 								return_type: 'Promise<boolean>',
 								parameters: [
 									{
@@ -49196,9 +48961,9 @@ export const repos_json: Array<RepoJson> = [
 										type: 'string',
 									},
 									{
-										name: 'log',
-										type: 'Logger | undefined',
-										optional: true,
+										name: 'options',
+										type: '{ log?: Logger | undefined; }',
+										default_value: '{}',
 									},
 								],
 							},
@@ -49211,50 +48976,50 @@ export const repos_json: Array<RepoJson> = [
 							{
 								name: 'default_changeset_operations',
 								kind: 'variable',
-								source_line: 44,
+								source_line: 68,
 								type_signature: 'ChangesetOperations',
 							},
 							{
 								name: 'default_git_operations',
 								kind: 'variable',
-								source_line: 80,
+								source_line: 93,
 								type_signature: 'GitOperations',
 							},
 							{
 								name: 'default_process_operations',
 								kind: 'variable',
-								source_line: 263,
+								source_line: 190,
 								type_signature: 'ProcessOperations',
 							},
 							{
 								name: 'default_npm_operations',
 								kind: 'variable',
-								source_line: 287,
+								source_line: 214,
 								type_signature: 'NpmOperations',
 							},
 							{
 								name: 'default_preflight_operations',
 								kind: 'variable',
-								source_line: 363,
+								source_line: 285,
 								type_signature: 'PreflightOperations',
 							},
 							{
 								name: 'default_fs_operations',
 								kind: 'variable',
-								source_line: 369,
+								source_line: 291,
 								type_signature: 'FsOperations',
 							},
 							{
 								name: 'default_build_operations',
 								kind: 'variable',
-								source_line: 391,
+								source_line: 303,
 								type_signature: 'BuildOperations',
 							},
 							{
 								name: 'default_gitops_operations',
 								kind: 'variable',
 								doc_comment: 'Combined default operations for all gitops functionality.',
-								source_line: 415,
+								source_line: 327,
 								type_signature: 'GitopsOperations',
 							},
 						],
@@ -49610,7 +49375,7 @@ export const repos_json: Array<RepoJson> = [
 							},
 						],
 						module_comment:
-							"Operations interfaces for dependency injection.\n\nThis is the core pattern enabling testability without mocks.\nAll side effects (git, npm, fs, process) are abstracted into interfaces.\n\n**Design principles:**\n- All operations accept a single `options` object parameter\n- All fallible operations return `Result` from `@ryanatkn/belt`\n- Never throw `Error` in operations - return `Result` with `ok: false`\n- Use `null` for expected \"not found\" cases (not errors)\n- Include `log?: Logger` in options where logging is useful\n\n**Production usage:**\n```typescript\nimport {default_gitops_operations} from './operations_defaults.js';\nconst result = await ops.git.current_branch_name({cwd: '/path'});\nif (!result.ok) {\n  throw new TaskError(result.message);\n}\nconst branch = result.value;\n```\n\n**Test usage:**\n```typescript\nconst mock_ops = create_mock_operations();\nconst result = await publish_repos(repos, options, mock_ops);\n// Assert on result without any real git/npm calls\n```\n\nSee `operations_defaults.ts` for real implementations.\nSee test files (*.test.ts) for mock implementations.",
+							"Operations interfaces for dependency injection.\n\nThis is the core pattern enabling testability without mocks.\nAll side effects (git, npm, fs, process) are abstracted into interfaces.\n\n**Design principles:**\n- All operations accept a single `options` object parameter\n- All fallible operations return `Result` from `@ryanatkn/belt`\n- Never throw `Error` in operations - return `Result` with `ok: false`\n- Use `null` for expected \"not found\" cases (not errors)\n- Include `log?: Logger` in options where logging is useful\n\n**Production usage:**\n```typescript\nimport {default_gitops_operations} from './operations_defaults.js';\nconst result = await ops.git.current_branch_name({cwd: '/path'});\nif (!result.ok) {\n  throw new TaskError(result.message);\n}\nconst branch = result.value;\n```\n\n**Test usage:**\n```typescript\nconst mock_ops = create_mock_operations();\nconst result = await publish_repos(repos, {...options, ops: mock_ops});\n// Assert on result without any real git/npm calls\n```\n\nSee `operations_defaults.ts` for real implementations.\nSee test files (*.test.ts) for mock implementations.",
 					},
 					{
 						path: 'output_helpers.ts',
@@ -49933,12 +49698,118 @@ export const repos_json: Array<RepoJson> = [
 						dependents: ['operations_defaults.ts'],
 					},
 					{
+						path: 'publishing_plan_helpers.ts',
+						declarations: [
+							{
+								name: 'calculate_dependency_updates',
+								kind: 'function',
+								doc_comment:
+									'Calculates all dependency updates between packages based on predicted versions.\n\nIterates through all repos, checking prod, peer, and dev dependencies to find\nwhich packages will need dependency version bumps after publishing.\n\nAlso tracks "breaking cascades" - when a breaking change propagates to dependents.',
+								source_line: 20,
+								type_signature:
+									'(repos: LocalRepo[], predicted_versions: Map<string, string>, breaking_packages: Set<string>): { dependency_updates: DependencyUpdate[]; breaking_cascades: Map<...>; }',
+								return_type:
+									'{ dependency_updates: DependencyUpdate[]; breaking_cascades: Map<string, string[]>; }',
+								parameters: [
+									{
+										name: 'repos',
+										type: 'LocalRepo[]',
+									},
+									{
+										name: 'predicted_versions',
+										type: 'Map<string, string>',
+									},
+									{
+										name: 'breaking_packages',
+										type: 'Set<string>',
+									},
+								],
+							},
+							{
+								name: 'get_required_bump_for_dependencies',
+								kind: 'function',
+								doc_comment:
+									'Determines the required bump type for a package based on its dependency updates.\n\nReturns null if no prod/peer dependency updates, otherwise returns the minimum\nrequired bump type (major for breaking deps, patch otherwise).\n\nRespects pre-1.0 semver conventions (minor for breaking in 0.x).',
+								source_line: 111,
+								type_signature:
+									'(repo: LocalRepo, dependency_updates: DependencyUpdate[], breaking_packages: Set<string>): BumpType | null',
+								return_type: 'BumpType | null',
+								parameters: [
+									{
+										name: 'repo',
+										type: 'LocalRepo',
+									},
+									{
+										name: 'dependency_updates',
+										type: 'DependencyUpdate[]',
+									},
+									{
+										name: 'breaking_packages',
+										type: 'Set<string>',
+									},
+								],
+							},
+						],
+						module_comment:
+							'Helper functions for publishing plan calculations.\n\nExtracted from publishing_plan.ts to reduce file size.',
+						dependencies: ['version_utils.ts'],
+						dependents: ['publishing_plan.ts'],
+					},
+					{
+						path: 'publishing_plan_logging.ts',
+						declarations: [
+							{
+								name: 'LogPlanOptions',
+								kind: 'type',
+								source_line: 21,
+								type_signature: 'LogPlanOptions',
+								properties: [
+									{
+										name: 'verbose',
+										kind: 'variable',
+										type_signature: 'boolean',
+									},
+								],
+								also_exported_from: ['publishing_plan.ts'],
+							},
+							{
+								name: 'log_publishing_plan',
+								kind: 'function',
+								doc_comment:
+									'Logs a complete publishing plan to the console.\n\nDisplays errors, publishing order, version changes grouped by scenario,\ndependency-only updates, warnings, and a summary.',
+								source_line: 136,
+								type_signature:
+									'(plan: PublishingPlan, log: Logger, options?: LogPlanOptions): void',
+								return_type: 'void',
+								parameters: [
+									{
+										name: 'plan',
+										type: 'PublishingPlan',
+									},
+									{
+										name: 'log',
+										type: 'Logger',
+									},
+									{
+										name: 'options',
+										type: 'LogPlanOptions',
+										default_value: '{}',
+									},
+								],
+								also_exported_from: ['publishing_plan.ts'],
+							},
+						],
+						module_comment:
+							'Logging and formatting functions for publishing plans.\n\nIncludes both regular plan output and verbose diagnostic sections.',
+						dependents: ['publishing_plan.ts'],
+					},
+					{
 						path: 'publishing_plan.ts',
 						declarations: [
 							{
 								name: 'VersionChange',
 								kind: 'type',
-								source_line: 18,
+								source_line: 20,
 								type_signature: 'VersionChange',
 								properties: [
 									{
@@ -49996,7 +49867,7 @@ export const repos_json: Array<RepoJson> = [
 							{
 								name: 'DependencyUpdate',
 								kind: 'type',
-								source_line: 31,
+								source_line: 33,
 								type_signature: 'DependencyUpdate',
 								properties: [
 									{
@@ -50006,6 +49877,11 @@ export const repos_json: Array<RepoJson> = [
 									},
 									{
 										name: 'updated_dependency',
+										kind: 'variable',
+										type_signature: 'string',
+									},
+									{
+										name: 'current_version',
 										kind: 'variable',
 										type_signature: 'string',
 									},
@@ -50027,9 +49903,189 @@ export const repos_json: Array<RepoJson> = [
 								],
 							},
 							{
+								name: 'VerboseChangesetDetail',
+								kind: 'type',
+								source_line: 43,
+								type_signature: 'VerboseChangesetDetail',
+								properties: [
+									{
+										name: 'package_name',
+										kind: 'variable',
+										type_signature: 'string',
+									},
+									{
+										name: 'files',
+										kind: 'variable',
+										type_signature:
+											'Array<{filename: string; bump_type: BumpType; summary: string}>',
+									},
+								],
+							},
+							{
+								name: 'VerboseIterationPackage',
+								kind: 'type',
+								source_line: 48,
+								type_signature: 'VerboseIterationPackage',
+								properties: [
+									{
+										name: 'name',
+										kind: 'variable',
+										type_signature: 'string',
+									},
+									{
+										name: 'changeset_count',
+										kind: 'variable',
+										type_signature: 'number',
+									},
+									{
+										name: 'bump_from_changesets',
+										kind: 'variable',
+										type_signature: 'BumpType | null',
+									},
+									{
+										name: 'required_bump',
+										kind: 'variable',
+										type_signature: 'BumpType | null',
+									},
+									{
+										name: 'triggering_dep',
+										kind: 'variable',
+										type_signature: 'string | null',
+									},
+									{
+										name: 'action',
+										kind: 'variable',
+										type_signature: "'publish' | 'auto_changeset' | 'escalation' | 'skip'",
+									},
+									{
+										name: 'version_to',
+										kind: 'variable',
+										type_signature: 'string | null',
+									},
+									{
+										name: 'is_breaking',
+										kind: 'variable',
+										type_signature: 'boolean',
+									},
+								],
+							},
+							{
+								name: 'VerboseIteration',
+								kind: 'type',
+								source_line: 59,
+								type_signature: 'VerboseIteration',
+								properties: [
+									{
+										name: 'iteration',
+										kind: 'variable',
+										type_signature: 'number',
+									},
+									{
+										name: 'packages',
+										kind: 'variable',
+										type_signature: 'Array<VerboseIterationPackage>',
+									},
+									{
+										name: 'new_changes',
+										kind: 'variable',
+										type_signature: 'number',
+									},
+								],
+							},
+							{
+								name: 'VerbosePropagationChain',
+								kind: 'type',
+								source_line: 65,
+								type_signature: 'VerbosePropagationChain',
+								properties: [
+									{
+										name: 'source',
+										kind: 'variable',
+										type_signature: 'string',
+									},
+									{
+										name: 'chain',
+										kind: 'variable',
+										type_signature:
+											"Array<{pkg: string; dep_type: 'prod' | 'peer'; action: string}>",
+									},
+								],
+							},
+							{
+								name: 'VerboseGraphSummary',
+								kind: 'type',
+								source_line: 70,
+								type_signature: 'VerboseGraphSummary',
+								properties: [
+									{
+										name: 'package_count',
+										kind: 'variable',
+										type_signature: 'number',
+									},
+									{
+										name: 'internal_dep_count',
+										kind: 'variable',
+										type_signature: 'number',
+									},
+									{
+										name: 'prod_peer_edges',
+										kind: 'variable',
+										type_signature: "Array<{from: string; to: string; type: 'prod' | 'peer'}>",
+									},
+									{
+										name: 'dev_edges',
+										kind: 'variable',
+										type_signature: 'Array<{from: string; to: string}>',
+									},
+									{
+										name: 'prod_cycle_count',
+										kind: 'variable',
+										type_signature: 'number',
+									},
+									{
+										name: 'dev_cycle_count',
+										kind: 'variable',
+										type_signature: 'number',
+									},
+								],
+							},
+							{
+								name: 'VerboseData',
+								kind: 'type',
+								source_line: 79,
+								type_signature: 'VerboseData',
+								properties: [
+									{
+										name: 'changeset_details',
+										kind: 'variable',
+										type_signature: 'Array<VerboseChangesetDetail>',
+									},
+									{
+										name: 'iterations',
+										kind: 'variable',
+										type_signature: 'Array<VerboseIteration>',
+									},
+									{
+										name: 'propagation_chains',
+										kind: 'variable',
+										type_signature: 'Array<VerbosePropagationChain>',
+									},
+									{
+										name: 'graph_summary',
+										kind: 'variable',
+										type_signature: 'VerboseGraphSummary',
+									},
+									{
+										name: 'total_iterations',
+										kind: 'variable',
+										type_signature: 'number',
+									},
+								],
+							},
+							{
 								name: 'PublishingPlan',
 								kind: 'type',
-								source_line: 39,
+								source_line: 87,
 								type_signature: 'PublishingPlan',
 								properties: [
 									{
@@ -50067,6 +50123,34 @@ export const repos_json: Array<RepoJson> = [
 										kind: 'variable',
 										type_signature: 'Array<string>',
 									},
+									{
+										name: 'verbose_data',
+										kind: 'variable',
+										type_signature: 'VerboseData',
+									},
+								],
+							},
+							{
+								name: 'GeneratePlanOptions',
+								kind: 'type',
+								source_line: 98,
+								type_signature: 'GeneratePlanOptions',
+								properties: [
+									{
+										name: 'log',
+										kind: 'variable',
+										type_signature: 'Logger',
+									},
+									{
+										name: 'ops',
+										kind: 'variable',
+										type_signature: 'ChangesetOperations',
+									},
+									{
+										name: 'verbose',
+										kind: 'variable',
+										type_signature: 'boolean',
+									},
 								],
 							},
 							{
@@ -50074,9 +50158,9 @@ export const repos_json: Array<RepoJson> = [
 								kind: 'function',
 								doc_comment:
 									'Generates a publishing plan showing what would happen during publishing.\nShows version changes, dependency updates, and breaking change cascades.\nUses fixed-point iteration to resolve transitive cascades.',
-								source_line: 170,
+								source_line: 109,
 								type_signature:
-									'(repos: LocalRepo[], log?: Logger | undefined, ops?: ChangesetOperations): Promise<PublishingPlan>',
+									'(repos: LocalRepo[], options?: GeneratePlanOptions): Promise<PublishingPlan>',
 								return_type: 'Promise<PublishingPlan>',
 								parameters: [
 									{
@@ -50084,31 +50168,9 @@ export const repos_json: Array<RepoJson> = [
 										type: 'LocalRepo[]',
 									},
 									{
-										name: 'log',
-										type: 'Logger | undefined',
-										optional: true,
-									},
-									{
-										name: 'ops',
-										type: 'ChangesetOperations',
-										default_value: 'default_changeset_operations',
-									},
-								],
-							},
-							{
-								name: 'log_publishing_plan',
-								kind: 'function',
-								source_line: 461,
-								type_signature: '(plan: PublishingPlan, log: Logger): void',
-								return_type: 'void',
-								parameters: [
-									{
-										name: 'plan',
-										type: 'PublishingPlan',
-									},
-									{
-										name: 'log',
-										type: 'Logger',
+										name: 'options',
+										type: 'GeneratePlanOptions',
+										default_value: '{}',
 									},
 								],
 							},
@@ -50116,8 +50178,9 @@ export const repos_json: Array<RepoJson> = [
 						dependencies: [
 							'constants.ts',
 							'graph_validation.ts',
-							'log_helpers.ts',
 							'operations_defaults.ts',
+							'publishing_plan_helpers.ts',
+							'publishing_plan_logging.ts',
 							'version_utils.ts',
 						],
 						dependents: [
@@ -51023,6 +51086,7 @@ export const repos_json: Array<RepoJson> = [
 							'dependency_updater.ts',
 							'multi_repo_publisher.ts',
 							'publishing_plan.ts',
+							'publishing_plan_helpers.ts',
 						],
 					},
 				],
@@ -51520,13 +51584,13 @@ export const repos_json: Array<RepoJson> = [
 				},
 				devDependencies: {
 					'@prettier/plugin-xml': '^3.4.2',
-					'@ryanatkn/belt': '^0.40.1',
+					'@ryanatkn/belt': '^0.41.1',
 					'@ryanatkn/eslint-config': '^0.9.0',
-					'@ryanatkn/fuz': '^0.167.0',
-					'@ryanatkn/fuz_blog': '^0.18.0',
-					'@ryanatkn/fuz_gitops': '^0.55.0',
+					'@ryanatkn/fuz': '^0.168.0',
+					'@ryanatkn/fuz_blog': '^0.19.0',
+					'@ryanatkn/fuz_gitops': '^0.56.0',
 					'@ryanatkn/fuz_mastodon': '^0.36.0',
-					'@ryanatkn/gro': '^0.179.0',
+					'@ryanatkn/gro': '^0.180.0',
 					'@ryanatkn/moss': '^0.39.0',
 					'@sveltejs/adapter-static': '^3.0.10',
 					'@sveltejs/kit': '^2.49.0',
@@ -51538,7 +51602,7 @@ export const repos_json: Array<RepoJson> = [
 					'esm-env': '^1.2.2',
 					prettier: '^3.6.2',
 					'prettier-plugin-svelte': '^3.4.0',
-					svelte: '^5.44.1',
+					svelte: '^5.45.2',
 					'svelte-check': '^4.3.4',
 					tslib: '^2.8.1',
 					typescript: '^5.9.3',
