@@ -16,22 +16,34 @@
 
 <section class="width_upto_md flex_1 p_md">
 	<section class="box">
-		<div class="panel shadow_inset_xs">
+		<div class="panel shadow_inset_xs h-card">
 			<!-- TODO specificity so we can just add `.bg` instead of `style:background-color="var(--bg)"` -->
+			<a class="u-url u-uid" href="https://www.ryanatkn.com/" hidden aria-hidden="true"
+				>https://www.ryanatkn.com/</a
+			>
+			<span class="p-category" hidden aria-hidden="true">webdev</span>
+			<span class="p-category" hidden aria-hidden="true">devtools</span>
+			<span class="p-category" hidden aria-hidden="true">systems programming</span>
+			<span class="p-category" hidden aria-hidden="true">hobby programming</span>
+			<span class="p-category" hidden aria-hidden="true">foss</span>
+			<span class="p-category" hidden aria-hidden="true">Rust</span>
+			<span class="p-category" hidden aria-hidden="true">TypeScript</span>
+			<span class="p-category" hidden aria-hidden="true">Svelte</span>
+			<span class="p-category" hidden aria-hidden="true">UI</span>
+			<span class="p-category" hidden aria-hidden="true">UX</span>
 			<header>
 				<div class="border_radius_50 shadow_md"><Me /></div>
 				<blockquote class="bg shadow_xs ml_md mt_md">
 					welcome to the homepage<br />
-					of Ryan Atkinson, he's<br />
-					an independent web developer<br />
+					of <span class="p-name">Ryan Atkinson</span>, he's<br />
+					an <span class="p-role">independent software developer</span><br />
 					making and talking about<br />
 					free and open source software<br />
 				</blockquote>
 			</header>
-			<p class="panel bg position_relative shadow_xs mt_md" style:max-width="440px">
-				Hi, I'm building free software and communicating about it. My main skill is making frontend
-				web apps and I also do some backend and devtools programming. I enjoy trying to make
-				powerful tools that are easy to use, and I like designing and implementing UIs, social
+			<p class="panel bg position_relative shadow_xs mt_md p-note" style:max-width="440px">
+				Hi, I'm building free software and communicating about it. I enjoy trying to make powerful
+				full-stack tools that are easy to use, and I like designing and implementing UIs, social
 				spaces, and integrated systems.
 			</p>
 		</div>

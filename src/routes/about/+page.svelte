@@ -1,11 +1,10 @@
 <script lang="ts">
 	import Breadcrumb from '@ryanatkn/fuz/Breadcrumb.svelte';
-	import {resolve} from '$app/paths';
+	import {resolve, asset} from '$app/paths';
 
 	import PageLinks from '$routes/PageLinks.svelte';
 	import ContactInfo from '$routes/ContactInfo.svelte';
 	import Favicon from '$routes/Favicon.svelte';
-	import Me from '$routes/Me.svelte';
 </script>
 
 <div class="about">
@@ -17,19 +16,33 @@
 			<span>🪶</span>
 		</h1>
 	</header>
-	<section class="width_upto_md panel shadow_inset_xs">
+	<section class="width_upto_md panel shadow_inset_xs h-card">
+		<a class="u-url u-uid" href="https://www.ryanatkn.com/" hidden aria-hidden="true"
+			>https://www.ryanatkn.com/</a
+		>
 		<div style:min-height="192px" style:margin-bottom="var(--space_md)">
-			<div class="float_right ml_sm border_radius_50 shadow_md"><Me /></div>
+			<div class="float_right ml_sm border_radius_50 shadow_md">
+				<img
+					class="u-photo"
+					src={asset('/me.png')}
+					alt="me smiling on a couch while holding my sister's calico cat Caramel who's out of frame"
+					style:width="var(--icon_size_xl2)"
+					style:height="var(--icon_size_xl2)"
+					style:min-width="var(--icon_size_xl2)"
+					style:min-height="var(--icon_size_xl2)"
+				/>
+			</div>
 			<p>
-				Hi I'm Ryan Atkinson and I'm an independent web developer trying to make tools that extend
-				our intent and creativity. I'm driven by curiosity and wanting to improve our lives with
-				technology.
+				Hi I'm <span class="p-name">Ryan Atkinson</span> and I'm an
+				<span class="p-role">independent software developer</span>
+				trying to make tools that extend our intent and creativity. I'm driven by curiosity and wanting
+				to improve our lives with technology.
 			</p>
 			<p>
 				My software is
-				<a href="https://github.com/ryanatkn">open source on GitHub</a>
-				and this website's homepage lists my <a href={resolve('/')}>ongoing projects</a>. I'm
-				seeking
+				<a class="u-url" rel="me" href="https://github.com/ryanatkn">open source on GitHub</a>
+				and this website's homepage lists my
+				<a class="u-url" href={resolve('/')}>ongoing projects</a>. I'm seeking
 				<a href={resolve('/funding')}>funding</a> to either remain independent or continue my work with
 				an aligned organization.
 			</p>
@@ -42,6 +55,7 @@
 		</div>
 		<p>More:</p>
 		<ul>
+			<li>using mostly Rust, TypeScript (Deno!), and Svelte</li>
 			<li>
 				in 2019 I started doing full-time open source, publishing <a
 					href="https://github.com/ryanatkn">my code</a

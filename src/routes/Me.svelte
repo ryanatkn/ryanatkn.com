@@ -3,6 +3,7 @@
 </script>
 
 <img
+	class="u-photo"
 	src={asset('/me.png')}
 	alt="me smiling on a couch while holding my sister's calico cat Caramel who's out of frame"
 />
