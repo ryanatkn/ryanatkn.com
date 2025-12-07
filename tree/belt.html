@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<script>
+			document.documentElement.classList.add(
+				((c) =>
+					c === 'dark' || (c !== 'light' && matchMedia('(prefers-color-scheme:dark)').matches)
+						? 'dark'
+						: 'light')(localStorage.getItem('fuz:color-scheme')),
+			);
+		</script>
+
+		<meta http-equiv="content-security-policy" content="child-src 'none'; default-src 'none'; frame-src 'self'; worker-src 'self' blob:; connect-src 'self' https://hci.social/; font-src 'self' data: https://*.ryanatkn.com/ https://*.spiderspace.org/ https://*.webdevladder.net/ https://*.dealt.dev/ https://*.fuz.dev/ https://*.ztack.net/ https://*.zzz.software/ https://*.cosmicplayground.org/ https://ryanatkn.github.io/ https://hci.social/ https://storage.googleapis.com/hci-social-storage/; img-src 'self' data: blob: filesystem: https://*.ryanatkn.com/ https://*.spiderspace.org/ https://*.webdevladder.net/ https://*.dealt.dev/ https://*.fuz.dev/ https://*.ztack.net/ https://*.zzz.software/ https://*.cosmicplayground.org/ https://ryanatkn.github.io/ https://hci.social/ https://storage.googleapis.com/hci-social-storage/; manifest-src 'self'; media-src 'self' data: blob: mediastream: filesystem: https://*.ryanatkn.com/ https://*.spiderspace.org/ https://*.webdevladder.net/ https://*.dealt.dev/ https://*.fuz.dev/ https://*.ztack.net/ https://*.zzz.software/ https://*.cosmicplayground.org/ https://ryanatkn.github.io/ https://hci.social/ https://storage.googleapis.com/hci-social-storage/; object-src 'none'; script-src 'self' 'sha256-QOxqn7EUzb3ydF9SALJoJGWSvywW9R0AfTDSenB83Z8=' 'sha256-0m5M0S1t4hUaZXHcnE6mFtui0naH4jN7DJVYuRNiHm8='; script-src-elem 'self' 'sha256-QOxqn7EUzb3ydF9SALJoJGWSvywW9R0AfTDSenB83Z8=' 'sha256-0m5M0S1t4hUaZXHcnE6mFtui0naH4jN7DJVYuRNiHm8='; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; style-src-elem 'self' 'unsafe-inline'; style-src-attr 'unsafe-inline'; base-uri 'none'; form-action 'self'; upgrade-insecure-requests">
+		<link rel="modulepreload" href="/_app/immutable/entry/start.DB8YNxza.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/MpbGwmhy.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/CIyHXd2A.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/DbbAPeSZ.js">
+		<link rel="modulepreload" href="/_app/immutable/entry/app.BBjVxd5e.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/DyqC4b7W.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/DM5OFx9d.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/CO7lxxqN.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/B_o9fYM0.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/CteEcGje.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/DOsM4xzg.js">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">
+			<script>
+				{
+					__sveltekit_1aysr4h = {
+						base: ""
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("/_app/immutable/entry/start.DB8YNxza.js"),
+						import("/_app/immutable/entry/app.BBjVxd5e.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element);
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
