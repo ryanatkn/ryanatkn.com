@@ -1,6 +1,6 @@
 <script lang="ts">
-	import TreePage from '@ryanatkn/fuz_gitops/TreePage.svelte';
-	import {repos_context} from '@ryanatkn/fuz_gitops/repo.svelte.js';
+	import TreePage from '@fuzdev/fuz_gitops/TreePage.svelte';
+	import {repos_context} from '@fuzdev/fuz_gitops/repo.svelte.js';
 
 	// TODO ideally there would be one `PackagesTree` mounted by the layout
 

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Breadcrumb from '@ryanatkn/fuz/Breadcrumb.svelte';
+	import Breadcrumb from '@fuzdev/fuz_ui/Breadcrumb.svelte';
 
 	import Favicon from '$routes/Favicon.svelte';
 	import GitopsMenu from '$routes/GitopsMenu.svelte';

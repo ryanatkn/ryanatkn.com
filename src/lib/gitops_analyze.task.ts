@@ -1,1 +1,1 @@
-export * from '@ryanatkn/fuz_gitops/gitops_analyze.task.js';
+export * from '@fuzdev/fuz_gitops/gitops_analyze.task.js';

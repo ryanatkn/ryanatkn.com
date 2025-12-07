@@ -1,9 +1,9 @@
 <script lang="ts">
 	import {resolve} from '$app/paths';
-	import Svg from '@ryanatkn/fuz/Svg.svelte';
-	import {github_logo} from '@ryanatkn/fuz/logos.js';
-	import Card from '@ryanatkn/fuz/Card.svelte';
-	import Breadcrumb from '@ryanatkn/fuz/Breadcrumb.svelte';
+	import Svg from '@fuzdev/fuz_ui/Svg.svelte';
+	import {github_logo} from '@fuzdev/fuz_ui/logos.js';
+	import Card from '@fuzdev/fuz_ui/Card.svelte';
+	import Breadcrumb from '@fuzdev/fuz_ui/Breadcrumb.svelte';
 
 	import PageLinks from '$routes/PageLinks.svelte';
 	import PatreonLogo from '$routes/funding/PatreonLogo.svelte'; // TODO move to fuz
@@ -84,9 +84,9 @@
 					<a href="https://www.zzz.software/">Zzz</a> - fullstack toolkit for adaptive web environments
 				</li>
 				<li>
-					<a href="https://moss.ryanatkn.com/">Moss</a> - CSS framework and design system
+					<a href="https://css.fuz.dev/">Moss</a> - CSS framework and design system
 				</li>
-				<li><a href="https://www.fuz.dev/">Fuz</a> - Svelte UI library</li>
+				<li><a href="https://ui.fuz.dev/">Fuz UI</a> - Svelte UI library</li>
 				<li>
 					<a href="https://gro.ryanatkn.com/">Gro</a> - task runner and toolkit extending SvelteKit
 				</li>

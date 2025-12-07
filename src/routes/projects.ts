@@ -36,18 +36,18 @@ export const projects: Array<ProjectInfo> = [
 	},
 	{
 		name: 'moss',
-		repo: '@ryanatkn/moss',
-		title: '<a href="https://moss.ryanatkn.com/">Moss</a>',
+		repo: '@fuzdev/fuz_css',
+		title: '<a href="https://css.fuz.dev/">Moss</a>',
 		subtitle:
-			'<a class="chip" href="https://github.com/ryanatkn/moss">source</a> <a class="chip" href="https://www.npmjs.com/package/@ryanatkn/moss">npm</a>',
+			'<a class="chip" href="https://github.com/fuzdev/fuz_css">source</a> <a class="chip" href="https://www.npmjs.com/package/@fuzdev/fuz_css">npm</a>',
 	},
 	{
 		name: 'fuz',
-		repo: '@ryanatkn/fuz',
-		title: '<a href="https://www.fuz.dev/">Fuz</a>',
+		repo: '@fuzdev/fuz_ui',
+		title: '<a href="https://ui.fuz.dev/">Fuz UI</a>',
 		description: '<a href="https://svelte.dev/">Svelte</a> UI library',
 		subtitle:
-			'<a class="chip" href="https://github.com/ryanatkn/fuz">source</a> <a class="chip" href="https://www.npmjs.com/package/@ryanatkn/fuz">npm</a>',
+			'<a class="chip" href="https://github.com/fuzdev/fuz_ui">source</a> <a class="chip" href="https://www.npmjs.com/package/@fuzdev/fuz_ui">npm</a>',
 	},
 	{
 		name: 'gro',
@@ -60,11 +60,11 @@ export const projects: Array<ProjectInfo> = [
 	},
 	{
 		name: 'belt',
-		repo: '@ryanatkn/belt',
-		title: '<a href="https://github.com/ryanatkn/belt">Belt</a>',
+		repo: '@fuzdev/fuz_util',
+		title: '<a href="https://github.com/fuzdev/fuz_util">Belt</a>',
 		description: 'utility belt for JS',
 		subtitle:
-			'<a class="chip" href="https://github.com/ryanatkn/belt">source</a> <a class="chip" href="https://www.npmjs.com/package/@ryanatkn/belt">npm</a>',
+			'<a class="chip" href="https://github.com/fuzdev/fuz_util">source</a> <a class="chip" href="https://www.npmjs.com/package/@fuzdev/fuz_util">npm</a>',
 	},
 	{
 		name: 'cosmicplayground',

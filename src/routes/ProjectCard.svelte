@@ -1,7 +1,13 @@
 <script lang="ts">
-	import Svg, {type SvgData} from '@ryanatkn/fuz/Svg.svelte';
-	import {moss_logo, zzz_logo, fuz_logo, gro_logo, webdevladder_logo} from '@ryanatkn/fuz/logos.js';
-	import {ensure_end, strip_start} from '@ryanatkn/belt/string.js';
+	import Svg, {type SvgData} from '@fuzdev/fuz_ui/Svg.svelte';
+	import {
+		moss_logo,
+		zzz_logo,
+		fuz_logo,
+		gro_logo,
+		webdevladder_logo,
+	} from '@fuzdev/fuz_ui/logos.js';
+	import {ensure_end, strip_start} from '@fuzdev/fuz_util/string.js';
 
 	import type {ProjectInfo} from '$routes/project.ts';
 

@@ -1,6 +1,6 @@
 <script lang="ts">
-	import ModulesPage from '@ryanatkn/fuz_gitops/ModulesPage.svelte';
-	import {repos_context} from '@ryanatkn/fuz_gitops/repo.svelte.js';
+	import ModulesPage from '@fuzdev/fuz_gitops/ModulesPage.svelte';
+	import {repos_context} from '@fuzdev/fuz_gitops/repo.svelte.js';
 
 	const {repo, repos} = repos_context.get();
 </script>

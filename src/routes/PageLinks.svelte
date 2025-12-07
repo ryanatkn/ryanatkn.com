@@ -1,7 +1,7 @@
 <script lang="ts">
 	import {asset} from '$app/paths';
 	import {page} from '$app/state';
-	import Card from '@ryanatkn/fuz/Card.svelte';
+	import Card from '@fuzdev/fuz_ui/Card.svelte';
 
 	const pathname = $derived(page.url.pathname);
 </script>

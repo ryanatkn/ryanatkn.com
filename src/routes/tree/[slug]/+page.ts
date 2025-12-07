@@ -1,5 +1,5 @@
 import type {EntryGenerator} from './$types.js';
-import {Repo, repos_parse} from '@ryanatkn/fuz_gitops/repo.svelte.js';
+import {Repo, repos_parse} from '@fuzdev/fuz_gitops/repo.svelte.js';
 
 import {repos_json} from '$routes/repos.ts';
 

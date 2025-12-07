@@ -1,12 +1,12 @@
 <script lang="ts">
-	import '@ryanatkn/moss/style.css';
-	import '@ryanatkn/moss/theme.css';
+	import '@fuzdev/fuz_css/style.css';
+	import '@fuzdev/fuz_css/theme.css';
 	import '$routes/moss.css';
 	import '$routes/style.css';
 
-	import Themed from '@ryanatkn/fuz/Themed.svelte';
+	import Themed from '@fuzdev/fuz_ui/Themed.svelte';
 	import type {Snippet} from 'svelte';
-	import {blog_feed_context} from '@ryanatkn/fuz_blog/blog.js';
+	import {blog_feed_context} from '@fuzdev/fuz_blog/blog.js';
 
 	import Header from '$routes/Header.svelte';
 	import Footer from '$routes/Footer.svelte';
