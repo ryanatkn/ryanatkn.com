@@ -48,7 +48,7 @@ gro deploy
 [esbuild](https://github.com/evanw/esbuild) ∙
 [Gro](https://github.com/ryanatkn/gro) ∙
 [Fuz](https://github.com/fuzdev/fuz_ui) ∙
-[Moss](https://github.com/fuzdev/fuz_css) ∙
+[Fuz CSS](https://github.com/fuzdev/fuz_css) ∙
 [ESLint](https://github.com/eslint/eslint) ∙
 [Prettier](https://github.com/prettier/prettier) ∙
 & [more](package.json)

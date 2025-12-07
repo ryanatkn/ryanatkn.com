@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Svg, {type SvgData} from '@fuzdev/fuz_ui/Svg.svelte';
 	import {
-		moss_logo,
+		fuz_css_logo,
 		zzz_logo,
 		fuz_logo,
 		gro_logo,
@@ -24,7 +24,7 @@
 
 	const logos: Record<string, SvgData | undefined> = {
 		zzz: zzz_logo,
-		moss: moss_logo,
+		moss: fuz_css_logo,
 		fuz: fuz_logo,
 		gro: gro_logo,
 		'webdevladder.net': webdevladder_logo,
