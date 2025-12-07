@@ -45,8 +45,8 @@ export const repos_json: Array<RepoJson> = [
 				},
 				devDependencies: {
 					'@changesets/changelog-git': '^0.2.1',
-					'@fuzdev/fuz_css': '^0.41.0',
-					'@fuzdev/fuz_ui': '^0.170.0',
+					'@fuzdev/fuz_css': '^0.42.0',
+					'@fuzdev/fuz_ui': '^0.171.0',
 					'@ryanatkn/eslint-config': '^0.9.0',
 					'@ryanatkn/gro': '^0.181.0',
 					'@sveltejs/adapter-node': '^5.4.0',
@@ -21437,7 +21437,7 @@ export const repos_json: Array<RepoJson> = [
 		library_json: {
 			package_json: {
 				name: '@fuzdev/fuz_css',
-				version: '0.41.0',
+				version: '0.42.0',
 				description: 'CSS framework and design system',
 				motto: 'magical organic stylesheets',
 				glyph: '🌿',
@@ -21533,7 +21533,7 @@ export const repos_json: Array<RepoJson> = [
 			},
 			source_json: {
 				name: '@fuzdev/fuz_css',
-				version: '0.41.0',
+				version: '0.42.0',
 				modules: [
 					{
 						path: 'css_class_composites.ts',
@@ -24827,7 +24827,7 @@ export const repos_json: Array<RepoJson> = [
 		library_json: {
 			package_json: {
 				name: '@fuzdev/fuz_ui',
-				version: '0.170.0',
+				version: '0.171.0',
 				description: 'Svelte UI library',
 				motto: 'friendly user zystem',
 				glyph: '🧶',
@@ -24885,7 +24885,7 @@ export const repos_json: Array<RepoJson> = [
 				devDependencies: {
 					'@changesets/changelog-git': '^0.2.1',
 					'@fuzdev/fuz_code': '^0.38.0',
-					'@fuzdev/fuz_css': '^0.41.0',
+					'@fuzdev/fuz_css': '^0.42.0',
 					'@fuzdev/fuz_util': '^0.42.0',
 					'@ryanatkn/eslint-config': '^0.9.0',
 					'@ryanatkn/gro': '^0.181.0',
@@ -24945,7 +24945,7 @@ export const repos_json: Array<RepoJson> = [
 			},
 			source_json: {
 				name: '@fuzdev/fuz_ui',
-				version: '0.170.0',
+				version: '0.171.0',
 				modules: [
 					{
 						path: 'Alert.svelte',
@@ -31283,8 +31283,8 @@ export const repos_json: Array<RepoJson> = [
 					'@changesets/changelog-git': '^0.2.1',
 					'@changesets/types': '^6.1.0',
 					'@fuzdev/fuz_code': '^0.38.0',
-					'@fuzdev/fuz_css': '^0.41.0',
-					'@fuzdev/fuz_ui': '^0.170.0',
+					'@fuzdev/fuz_css': '^0.42.0',
+					'@fuzdev/fuz_ui': '^0.171.0',
 					'@fuzdev/fuz_util': '^0.42.0',
 					'@ryanatkn/eslint-config': '^0.9.0',
 					'@sveltejs/adapter-static': '^3.0.10',
@@ -37786,8 +37786,8 @@ export const repos_json: Array<RepoJson> = [
 				devDependencies: {
 					'@changesets/changelog-git': '^0.2.1',
 					'@fuzdev/fuz_code': '^0.38.0',
-					'@fuzdev/fuz_css': '^0.41.0',
-					'@fuzdev/fuz_ui': '^0.170.0',
+					'@fuzdev/fuz_css': '^0.42.0',
+					'@fuzdev/fuz_ui': '^0.171.0',
 					'@ryanatkn/eslint-config': '^0.9.0',
 					'@ryanatkn/gro': '^0.181.0',
 					'@sveltejs/adapter-static': '^3.0.10',
@@ -42277,8 +42277,8 @@ export const repos_json: Array<RepoJson> = [
 					node: '>=22.15',
 				},
 				devDependencies: {
-					'@fuzdev/fuz_css': '^0.41.0',
-					'@fuzdev/fuz_ui': '^0.170.0',
+					'@fuzdev/fuz_css': '^0.42.0',
+					'@fuzdev/fuz_ui': '^0.171.0',
 					'@fuzdev/fuz_util': '^0.42.0',
 					'@ryanatkn/eslint-config': '^0.9.0',
 					'@ryanatkn/gro': '^0.181.0',
@@ -42374,9 +42374,9 @@ export const repos_json: Array<RepoJson> = [
 				devDependencies: {
 					'@changesets/changelog-git': '^0.2.1',
 					'@fuzdev/fuz_code': '^0.38.0',
-					'@fuzdev/fuz_css': '^0.41.0',
+					'@fuzdev/fuz_css': '^0.42.0',
 					'@fuzdev/fuz_mastodon': '^0.37.0',
-					'@fuzdev/fuz_ui': '^0.170.0',
+					'@fuzdev/fuz_ui': '^0.171.0',
 					'@fuzdev/fuz_util': '^0.42.0',
 					'@ryanatkn/eslint-config': '^0.9.0',
 					'@ryanatkn/gro': '^0.181.0',
@@ -43020,8 +43020,8 @@ export const repos_json: Array<RepoJson> = [
 				devDependencies: {
 					'@changesets/changelog-git': '^0.2.1',
 					'@fuzdev/fuz_code': '^0.38.0',
-					'@fuzdev/fuz_css': '^0.41.0',
-					'@fuzdev/fuz_ui': '^0.170.0',
+					'@fuzdev/fuz_css': '^0.42.0',
+					'@fuzdev/fuz_ui': '^0.171.0',
 					'@fuzdev/fuz_util': '^0.42.0',
 					'@ryanatkn/eslint-config': '^0.9.0',
 					'@ryanatkn/gro': '^0.181.0',
@@ -44199,8 +44199,8 @@ export const repos_json: Array<RepoJson> = [
 				},
 				devDependencies: {
 					'@changesets/changelog-git': '^0.2.1',
-					'@fuzdev/fuz_css': '^0.41.0',
-					'@fuzdev/fuz_ui': '^0.170.0',
+					'@fuzdev/fuz_css': '^0.42.0',
+					'@fuzdev/fuz_ui': '^0.171.0',
 					'@fuzdev/fuz_util': '^0.42.0',
 					'@ryanatkn/eslint-config': '^0.9.0',
 					'@ryanatkn/gro': '^0.181.0',
@@ -45528,8 +45528,8 @@ export const repos_json: Array<RepoJson> = [
 				devDependencies: {
 					'@changesets/changelog-git': '^0.2.1',
 					'@fuzdev/fuz_code': '^0.38.0',
-					'@fuzdev/fuz_css': '^0.41.0',
-					'@fuzdev/fuz_ui': '^0.170.0',
+					'@fuzdev/fuz_css': '^0.42.0',
+					'@fuzdev/fuz_ui': '^0.171.0',
 					'@fuzdev/fuz_util': '^0.42.0',
 					'@ryanatkn/eslint-config': '^0.9.0',
 					'@ryanatkn/gro': '^0.181.0',
@@ -50283,9 +50283,9 @@ export const repos_json: Array<RepoJson> = [
 				devDependencies: {
 					'@fuzdev/fuz_blog': '^0.20.0',
 					'@fuzdev/fuz_code': '^0.38.0',
-					'@fuzdev/fuz_css': '^0.41.0',
+					'@fuzdev/fuz_css': '^0.42.0',
 					'@fuzdev/fuz_mastodon': '^0.37.0',
-					'@fuzdev/fuz_ui': '^0.170.0',
+					'@fuzdev/fuz_ui': '^0.171.0',
 					'@fuzdev/fuz_util': '^0.42.0',
 					'@ryanatkn/eslint-config': '^0.9.0',
 					'@ryanatkn/gro': '^0.181.0',
@@ -50713,10 +50713,10 @@ export const repos_json: Array<RepoJson> = [
 				},
 				devDependencies: {
 					'@fuzdev/fuz_blog': '^0.20.0',
-					'@fuzdev/fuz_css': '^0.41.0',
+					'@fuzdev/fuz_css': '^0.42.0',
 					'@fuzdev/fuz_gitops': '^0.58.0',
 					'@fuzdev/fuz_mastodon': '^0.37.0',
-					'@fuzdev/fuz_ui': '^0.170.0',
+					'@fuzdev/fuz_ui': '^0.171.0',
 					'@fuzdev/fuz_util': '^0.42.0',
 					'@prettier/plugin-xml': '^3.4.2',
 					'@ryanatkn/eslint-config': '^0.9.0',
