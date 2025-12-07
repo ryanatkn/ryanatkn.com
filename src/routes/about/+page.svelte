@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Breadcrumb from '@ryanatkn/fuz/Breadcrumb.svelte';
+	import Breadcrumb from '@fuzdev/fuz_ui/Breadcrumb.svelte';
 	import {resolve, asset} from '$app/paths';
 
 	import PageLinks from '$routes/PageLinks.svelte';

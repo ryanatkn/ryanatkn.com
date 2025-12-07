@@ -1,11 +1,11 @@
 <script lang="ts">
-	import Breadcrumb from '@ryanatkn/fuz/Breadcrumb.svelte';
+	import Breadcrumb from '@fuzdev/fuz_ui/Breadcrumb.svelte';
 	import type {Snippet} from 'svelte';
 	import {DEV} from 'esm-env';
 	import {
 		MastodonCache,
 		mastodon_cache_context,
-	} from '@ryanatkn/fuz_mastodon/mastodon_cache.svelte.js';
+	} from '@fuzdev/fuz_mastodon/mastodon_cache.svelte.js';
 
 	import Favicon from '$routes/Favicon.svelte';
 

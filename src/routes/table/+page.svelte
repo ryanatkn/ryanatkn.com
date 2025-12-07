@@ -1,6 +1,6 @@
 <script lang="ts">
-	import TablePage from '@ryanatkn/fuz_gitops/TablePage.svelte';
-	import {repos_context} from '@ryanatkn/fuz_gitops/repo.svelte.js';
+	import TablePage from '@fuzdev/fuz_gitops/TablePage.svelte';
+	import {repos_context} from '@fuzdev/fuz_gitops/repo.svelte.js';
 
 	const {repo, repos} = repos_context.get();
 </script>
