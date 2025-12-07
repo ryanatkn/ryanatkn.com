@@ -45,40 +45,40 @@ export const repos_json: Array<RepoJson> = [
 				},
 				devDependencies: {
 					'@changesets/changelog-git': '^0.2.1',
+					'@fuzdev/fuz_css': '^0.41.0',
+					'@fuzdev/fuz_ui': '^0.170.0',
 					'@ryanatkn/eslint-config': '^0.9.0',
-					'@fuzdev/fuz_ui': '^0.165.0',
-					'@ryanatkn/gro': '^0.179.0',
-					'@fuzdev/fuz_css': '^0.39.0',
+					'@ryanatkn/gro': '^0.181.0',
 					'@sveltejs/adapter-node': '^5.4.0',
 					'@sveltejs/adapter-static': '^3.0.10',
-					'@sveltejs/kit': '^2.49.0',
-					'@sveltejs/package': '^2.5.6',
+					'@sveltejs/kit': '^2.49.1',
+					'@sveltejs/package': '^2.5.7',
 					'@sveltejs/vite-plugin-svelte': '^6.2.1',
 					'@types/node': '^24.10.1',
 					eslint: '^9.39.1',
-					'eslint-plugin-svelte': '^3.13.0',
+					'eslint-plugin-svelte': '^3.13.1',
 					jsdom: '^27.2.0',
 					ollama: '^0.6.3',
 					prettier: '^3.6.2',
 					'prettier-plugin-svelte': '^3.4.0',
-					svelte: '^5.44.1',
+					svelte: '^5.45.6',
 					'svelte-check': '^4.3.4',
 					tslib: '^2.8.1',
 					typescript: '^5.9.3',
-					'typescript-eslint': '^8.48.0',
-					vitest: '^4.0.14',
+					'typescript-eslint': '^8.48.1',
+					vitest: '^4.0.15',
 					zod: '^4.1.13',
 				},
 				dependencies: {
-					'@anthropic-ai/sdk': '^0.71.0',
+					'@anthropic-ai/sdk': '^0.71.2',
+					'@fuzdev/fuz_util': '^0.42.0',
 					'@google/generative-ai': '^0.24.1',
 					'@hono/node-server': '^1.19.6',
 					'@hono/node-ws': '^1.2.0',
-					'@fuzdev/fuz_util': '^0.40.0',
 					'date-fns': '^4.1.0',
 					'esm-env': '^1.2.2',
 					hono: '^4.10.7',
-					openai: '^6.9.1',
+					openai: '^6.10.0',
 				},
 				prettier: {
 					plugins: ['prettier-plugin-svelte'],
@@ -133,12 +133,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'method',
 										type: 'TMethod',
-										optional: false,
 									},
 									{
 										name: 'data',
 										type: 'unknown',
-										optional: false,
 									},
 								],
 							},
@@ -154,12 +152,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'method',
 										type: 'TMethod',
-										optional: false,
 									},
 									{
 										name: 'data',
 										type: 'unknown',
-										optional: false,
 									},
 								],
 							},
@@ -175,12 +171,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'method',
 										type: 'TMethod',
-										optional: false,
 									},
 									{
 										name: 'data',
 										type: 'unknown',
-										optional: false,
 									},
 								],
 							},
@@ -196,12 +190,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'method',
 										type: 'TMethod',
-										optional: false,
 									},
 									{
 										name: 'data',
 										type: 'unknown',
-										optional: false,
 									},
 								],
 							},
@@ -471,7 +463,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'data',
 										type: '{ kind: "request_response" | "remote_notification" | "local_call"; phase: "send_request" | "receive_request" | "send_response" | "receive_response" | "send_error" | "receive_error" | "send" | "receive" | "execute"; ... 9 more ...; notification: { ...; } | null; }',
-										optional: false,
 									},
 								],
 							},
@@ -486,7 +477,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'data',
 										type: '{ kind: "request_response" | "remote_notification" | "local_call"; phase: "send_request" | "receive_request" | "send_response" | "receive_response" | "send_error" | "receive_error" | "send" | "receive" | "execute"; ... 9 more ...; notification: { ...; } | null; }',
-										optional: false,
 									},
 								],
 							},
@@ -501,7 +491,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'data',
 										type: '{ kind: "request_response" | "remote_notification" | "local_call"; phase: "send_request" | "receive_request" | "send_response" | "receive_response" | "send_error" | "receive_error" | "send" | "receive" | "execute"; ... 9 more ...; notification: { ...; } | null; }',
-										optional: false,
 									},
 								],
 							},
@@ -516,7 +505,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'data',
 										type: '{ kind: "request_response" | "remote_notification" | "local_call"; phase: "send_request" | "receive_request" | "send_response" | "receive_response" | "send_error" | "receive_error" | "send" | "receive" | "execute"; ... 9 more ...; notification: { ...; } | null; }',
-										optional: false,
 									},
 								],
 							},
@@ -531,7 +519,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'data',
 										type: '{ kind: "request_response" | "remote_notification" | "local_call"; phase: "send_request" | "receive_request" | "send_response" | "receive_response" | "send_error" | "receive_error" | "send" | "receive" | "execute"; ... 9 more ...; notification: { ...; } | null; }',
-										optional: false,
 									},
 								],
 							},
@@ -546,7 +533,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'data',
 										type: '{ kind: "request_response" | "remote_notification" | "local_call"; phase: "send_request" | "receive_request" | "send_response" | "receive_response" | "send_error" | "receive_error" | "send" | "receive" | "execute"; ... 9 more ...; notification: { ...; } | null; }',
-										optional: false,
 									},
 								],
 							},
@@ -561,7 +547,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'data',
 										type: '{ kind: "request_response" | "remote_notification" | "local_call"; phase: "send_request" | "receive_request" | "send_response" | "receive_response" | "send_error" | "receive_error" | "send" | "receive" | "execute"; ... 9 more ...; notification: { ...; } | null; }',
-										optional: false,
 									},
 								],
 							},
@@ -576,7 +561,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'data',
 										type: '{ kind: "request_response" | "remote_notification" | "local_call"; phase: "send_request" | "receive_request" | "send_response" | "receive_response" | "send_error" | "receive_error" | "send" | "receive" | "execute"; ... 9 more ...; notification: { ...; } | null; }',
-										optional: false,
 									},
 								],
 							},
@@ -591,7 +575,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'data',
 										type: '{ kind: "request_response" | "remote_notification" | "local_call"; phase: "send_request" | "receive_request" | "send_response" | "receive_response" | "send_error" | "receive_error" | "send" | "receive" | "execute"; ... 9 more ...; notification: { ...; } | null; }',
-										optional: false,
 									},
 								],
 							},
@@ -606,7 +589,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'data',
 										type: '{ kind: "request_response" | "remote_notification" | "local_call"; phase: "send_request" | "receive_request" | "send_response" | "receive_response" | "send_error" | "receive_error" | "send" | "receive" | "execute"; ... 9 more ...; notification: { ...; } | null; }',
-										optional: false,
 									},
 								],
 							},
@@ -621,7 +603,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'data',
 										type: '{ kind: "request_response" | "remote_notification" | "local_call"; phase: "send_request" | "receive_request" | "send_response" | "receive_response" | "send_error" | "receive_error" | "send" | "receive" | "execute"; ... 9 more ...; notification: { ...; } | null; }',
-										optional: false,
 									},
 								],
 							},
@@ -636,7 +617,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'data',
 										type: '{ kind: "request_response" | "remote_notification" | "local_call"; phase: "send_request" | "receive_request" | "send_response" | "receive_response" | "send_error" | "receive_error" | "send" | "receive" | "execute"; ... 9 more ...; notification: { ...; } | null; }',
-										optional: false,
 									},
 								],
 							},
@@ -651,7 +631,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'data',
 										type: '{ kind: "request_response" | "remote_notification" | "local_call"; phase: "send_request" | "receive_request" | "send_response" | "receive_response" | "send_error" | "receive_error" | "send" | "receive" | "execute"; ... 9 more ...; notification: { ...; } | null; }',
-										optional: false,
 									},
 								],
 							},
@@ -666,7 +645,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'data',
 										type: '{ kind: "request_response" | "remote_notification" | "local_call"; phase: "send_request" | "receive_request" | "send_response" | "receive_response" | "send_error" | "receive_error" | "send" | "receive" | "execute"; ... 9 more ...; notification: { ...; } | null; }',
-										optional: false,
 									},
 								],
 							},
@@ -681,7 +659,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'data',
 										type: '{ kind: "request_response" | "remote_notification" | "local_call"; phase: "send_request" | "receive_request" | "send_response" | "receive_response" | "send_error" | "receive_error" | "send" | "receive" | "execute"; ... 9 more ...; notification: { ...; } | null; }',
-										optional: false,
 									},
 								],
 							},
@@ -696,7 +673,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'data',
 										type: '{ kind: "request_response" | "remote_notification" | "local_call"; phase: "send_request" | "receive_request" | "send_response" | "receive_response" | "send_error" | "receive_error" | "send" | "receive" | "execute"; ... 9 more ...; notification: { ...; } | null; }',
-										optional: false,
 									},
 								],
 							},
@@ -711,7 +687,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'data',
 										type: '{ kind: "request_response" | "remote_notification" | "local_call"; phase: "send_request" | "receive_request" | "send_response" | "receive_response" | "send_error" | "receive_error" | "send" | "receive" | "execute"; ... 9 more ...; notification: { ...; } | null; }',
-										optional: false,
 									},
 								],
 							},
@@ -726,12 +701,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'from',
 										type: '"initial" | "parsed" | "handling" | "handled" | "failed"',
-										optional: false,
 									},
 									{
 										name: 'to',
 										type: '"initial" | "parsed" | "handling" | "handled" | "failed"',
-										optional: false,
 									},
 								],
 							},
@@ -746,12 +719,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'kind',
 										type: '"request_response" | "remote_notification" | "local_call"',
-										optional: false,
 									},
 									{
 										name: 'phase',
 										type: '"send_request" | "receive_request" | "send_response" | "receive_response" | "send_error" | "receive_error" | "send" | "receive" | "execute"',
-										optional: false,
 									},
 								],
 							},
@@ -766,12 +737,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'from',
 										type: '"send_request" | "receive_request" | "send_response" | "receive_response" | "send_error" | "receive_error" | "send" | "receive" | "execute"',
-										optional: false,
 									},
 									{
 										name: 'to',
 										type: '"send_request" | "receive_request" | "send_response" | "receive_response" | "send_error" | "receive_error" | "send" | "receive" | "execute"',
-										optional: false,
 									},
 								],
 							},
@@ -787,17 +756,14 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'kind',
 										type: '"request_response" | "remote_notification" | "local_call"',
-										optional: false,
 									},
 									{
 										name: 'initiator',
 										type: '"frontend" | "backend" | "both"',
-										optional: false,
 									},
 									{
 										name: 'executor',
 										type: '"frontend" | "backend"',
-										optional: false,
 									},
 								],
 							},
@@ -812,12 +778,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'kind',
 										type: '"request_response" | "remote_notification" | "local_call"',
-										optional: false,
 									},
 									{
 										name: 'phase',
 										type: '"send_request" | "receive_request" | "send_response" | "receive_response" | "send_error" | "receive_error" | "send" | "receive" | "execute"',
-										optional: false,
 									},
 								],
 							},
@@ -832,7 +796,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'data',
 										type: '{ kind: "request_response" | "remote_notification" | "local_call"; phase: "send_request" | "receive_request" | "send_response" | "receive_response" | "send_error" | "receive_error" | "send" | "receive" | "execute"; ... 9 more ...; notification: { ...; } | null; }',
-										optional: false,
 									},
 								],
 							},
@@ -848,27 +811,22 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'kind',
 										type: '"request_response" | "remote_notification" | "local_call"',
-										optional: false,
 									},
 									{
 										name: 'phase',
 										type: '"send_request" | "receive_request" | "send_response" | "receive_response" | "send_error" | "receive_error" | "send" | "receive" | "execute"',
-										optional: false,
 									},
 									{
 										name: 'method',
 										type: '"completion_create" | "completion_progress" | "directory_create" | "diskfile_delete" | "diskfile_update" | "filer_change" | "ollama_copy" | "ollama_create" | "ollama_delete" | ... 10 more ... | "toggle_main_menu"',
-										optional: false,
 									},
 									{
 										name: 'executor',
 										type: '"frontend" | "backend"',
-										optional: false,
 									},
 									{
 										name: 'input',
 										type: 'unknown',
-										optional: false,
 									},
 								],
 							},
@@ -884,7 +842,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'event',
 										type: 'ActionEvent<"completion_create" | "completion_progress" | "directory_create" | "diskfile_delete" | "diskfile_update" | "filer_change" | "ollama_copy" | "ollama_create" | "ollama_delete" | ... 10 more ... | "toggle_main_menu", ActionEventEnvironment, "send_request" | ... 7 more ... | "execute", "initial" | ... 3 more...',
-										optional: false,
 									},
 								],
 							},
@@ -1039,17 +996,14 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'environment',
 												type: 'TEnvironment',
-												optional: false,
 											},
 											{
 												name: 'spec',
 												type: '{ method: "completion_create" | "completion_progress" | "directory_create" | "diskfile_delete" | "diskfile_update" | "filer_change" | "ollama_copy" | "ollama_create" | "ollama_delete" | ... 10 more ... | "toggle_main_menu"; ... 6 more ...; async: true; } | { ...; } | { ...; }',
-												optional: false,
 											},
 											{
 												name: 'data',
 												type: 'ActionEventDatas[TMethod]',
-												optional: false,
 											},
 										],
 									},
@@ -1069,7 +1023,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'listener',
 												type: 'ActionEventChangeObserver<TMethod>',
-												optional: false,
 											},
 										],
 									},
@@ -1082,7 +1035,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'new_data',
 												type: 'ActionEventDatas[TMethod]',
-												optional: false,
 											},
 										],
 									},
@@ -1122,7 +1074,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'phase',
 												type: '"send_request" | "receive_request" | "send_response" | "receive_response" | "send_error" | "receive_error" | "send" | "receive" | "execute"',
-												optional: false,
 											},
 										],
 									},
@@ -1142,7 +1093,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'progress',
 												type: 'unknown',
-												optional: false,
 											},
 										],
 									},
@@ -1156,7 +1106,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'request',
 												type: '{ [x: string]: unknown; jsonrpc: "2.0"; id: string | number; method: string; params?: { [x: string]: unknown; _meta?: { [x: string]: unknown; progressToken?: string | number | undefined; } | undefined; } | undefined; }',
-												optional: false,
 											},
 										],
 									},
@@ -1170,7 +1119,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'response',
 												type: '{ [x: string]: unknown; jsonrpc: "2.0"; id: string | number; result: { [x: string]: unknown; _meta?: { [x: string]: unknown; } | undefined; }; } | { [x: string]: unknown; jsonrpc: "2.0"; id: string | number | null; error: { [x: string]: unknown; code: -32700 | ... 4 more ... | (number & $brand<...>); message: string...',
-												optional: false,
 											},
 										],
 									},
@@ -1184,7 +1132,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'notification',
 												type: '{ [x: string]: unknown; jsonrpc: "2.0"; method: string; params?: { [x: string]: unknown; _meta?: { [x: string]: unknown; } | undefined; } | undefined; }',
-												optional: false,
 											},
 										],
 									},
@@ -1194,7 +1141,7 @@ export const repos_json: Array<RepoJson> = [
 								name: 'create_action_event',
 								kind: 'function',
 								doc_comment: 'Create an action event from a spec and initial input.',
-								source_line: 456,
+								source_line: 453,
 								type_signature:
 									'<TMethod extends ActionMethod>(environment: ActionEventEnvironment, spec: { method: "completion_create" | "completion_progress" | "directory_create" | "diskfile_delete" | ... 15 more ... | "toggle_main_menu"; ... 6 more ...; async: true; } | { ...; } | { ...; }, input: unknown, initial_phase?: "send_request" | ... 8 more ... | undefined): ActionEvent<...>',
 								return_type:
@@ -1203,17 +1150,14 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'environment',
 										type: 'ActionEventEnvironment',
-										optional: false,
 									},
 									{
 										name: 'spec',
 										type: '{ method: "completion_create" | "completion_progress" | "directory_create" | "diskfile_delete" | "diskfile_update" | "filer_change" | "ollama_copy" | "ollama_create" | "ollama_delete" | ... 10 more ... | "toggle_main_menu"; ... 6 more ...; async: true; } | { ...; } | { ...; }',
-										optional: false,
 									},
 									{
 										name: 'input',
 										type: 'unknown',
-										optional: false,
 									},
 									{
 										name: 'initial_phase',
@@ -1226,7 +1170,7 @@ export const repos_json: Array<RepoJson> = [
 								name: 'create_action_event_from_json',
 								kind: 'function',
 								doc_comment: 'Reconstruct an action event from serialized JSON data.',
-								source_line: 483,
+								source_line: 480,
 								type_signature:
 									'<TMethod extends ActionMethod>(json: ActionEventDatas[TMethod], environment: ActionEventEnvironment): ActionEvent<TMethod, ActionEventEnvironment, "send_request" | ... 7 more ... | "execute", "initial" | ... 3 more ... | "failed">',
 								return_type:
@@ -1235,19 +1179,17 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'json',
 										type: 'ActionEventDatas[TMethod]',
-										optional: false,
 									},
 									{
 										name: 'environment',
 										type: 'ActionEventEnvironment',
-										optional: false,
 									},
 								],
 							},
 							{
 								name: 'parse_action_event',
 								kind: 'function',
-								source_line: 497,
+								source_line: 494,
 								type_signature:
 									'(raw_json: unknown, environment: ActionEventEnvironment): ActionEvent<"completion_create" | "completion_progress" | "directory_create" | "diskfile_delete" | "diskfile_update" | ... 14 more ... | "toggle_main_menu", ActionEventEnvironment, "send_request" | ... 7 more ... | "execute", "initial" | ... 3 more ... | "failed">',
 								return_type:
@@ -1256,12 +1198,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'raw_json',
 										type: 'unknown',
-										optional: false,
 									},
 									{
 										name: 'environment',
 										type: 'ActionEventEnvironment',
-										optional: false,
 									},
 								],
 							},
@@ -1307,7 +1247,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'method',
 										type: '"completion_create" | "completion_progress" | "directory_create" | "diskfile_delete" | "diskfile_update" | "filer_change" | "ollama_copy" | "ollama_create" | "ollama_delete" | ... 10 more ... | "toggle_main_menu"',
-										optional: false,
 									},
 								],
 							},
@@ -1322,7 +1261,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'method',
 										type: '"completion_create" | "completion_progress" | "directory_create" | "diskfile_delete" | "diskfile_update" | "filer_change" | "ollama_copy" | "ollama_create" | "ollama_delete" | ... 10 more ... | "toggle_main_menu"',
-										optional: false,
 									},
 								],
 							},
@@ -1337,7 +1275,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'method',
 										type: '"completion_create" | "completion_progress" | "directory_create" | "diskfile_delete" | "diskfile_update" | "filer_change" | "ollama_copy" | "ollama_create" | "ollama_delete" | ... 10 more ... | "toggle_main_menu"',
-										optional: false,
 									},
 								],
 							},
@@ -1615,7 +1552,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'options',
 												type: 'ActionPeerOptions',
-												optional: false,
 											},
 										],
 									},
@@ -1630,7 +1566,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'message',
 												type: '{ [x: string]: unknown; jsonrpc: "2.0"; id: string | number; method: string; params?: { [x: string]: unknown; _meta?: { [x: string]: unknown; progressToken?: string | number | undefined; } | undefined; } | undefined; }',
-												optional: false,
 											},
 											{
 												name: 'options',
@@ -1650,7 +1585,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'message',
 												type: '{ [x: string]: unknown; jsonrpc: "2.0"; id: string | number; method: string; params?: { [x: string]: unknown; _meta?: { [x: string]: unknown; progressToken?: string | number | undefined; } | undefined; } | undefined; }',
-												optional: false,
 											},
 											{
 												name: 'options',
@@ -1670,7 +1604,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'message',
 												type: '{ [x: string]: unknown; jsonrpc: "2.0"; id: string | number; method: string; params?: { [x: string]: unknown; _meta?: { [x: string]: unknown; progressToken?: string | number | undefined; } | undefined; } | undefined; }',
-												optional: false,
 											},
 											{
 												name: 'options',
@@ -1690,7 +1623,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'message',
 												type: 'unknown',
-												optional: false,
 											},
 										],
 									},
@@ -1731,7 +1663,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'specs',
 												type: '({ method: "completion_create" | "completion_progress" | "directory_create" | "diskfile_delete" | "diskfile_update" | "filer_change" | "ollama_copy" | "ollama_create" | "ollama_delete" | ... 10 more ... | "toggle_main_menu"; ... 6 more ...; async: true; } | { ...; } | { ...; })[]',
-												optional: false,
 											},
 										],
 									},
@@ -1806,7 +1737,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'value',
 										type: 'unknown',
-										optional: false,
 									},
 								],
 							},
@@ -2013,7 +1943,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'v',
 										type: 'unknown',
-										optional: false,
 									},
 								],
 							},
@@ -2143,7 +2072,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'options',
 												type: 'ActionOptions',
-												optional: false,
 											},
 										],
 									},
@@ -2167,7 +2095,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'action_event',
 												type: 'ActionEvent<"completion_create" | "completion_progress" | "directory_create" | "diskfile_delete" | "diskfile_update" | "filer_change" | "ollama_copy" | "ollama_create" | "ollama_delete" | ... 10 more ... | "toggle_main_menu", ActionEventEnvironment, "send_request" | ... 7 more ... | "execute", "initial" | ... 3 more...',
-												optional: false,
 											},
 										],
 									},
@@ -2208,7 +2135,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'action',
 										type: 'Action',
-										optional: false,
 									},
 								],
 								source_line: 1,
@@ -2232,7 +2158,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'action',
 										type: 'Action',
-										optional: false,
 									},
 								],
 								source_line: 1,
@@ -2290,7 +2215,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'action',
 										type: 'Action',
-										optional: false,
 									},
 									{
 										name: 'selected',
@@ -2379,7 +2303,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'options',
 												type: 'ActionsOptions',
-												optional: false,
 											},
 										],
 									},
@@ -2407,7 +2330,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'action',
 												type: 'Action',
-												optional: false,
 											},
 										],
 									},
@@ -2421,7 +2343,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'action_json',
 												type: '{ method: "completion_create" | "completion_progress" | "directory_create" | "diskfile_delete" | "diskfile_update" | "filer_change" | "ollama_copy" | "ollama_create" | "ollama_delete" | ... 10 more ... | "toggle_main_menu"; id?: string | undefined; created?: string | undefined; updated?: string | undefined; action_e...',
-												optional: false,
 											},
 										],
 									},
@@ -2839,7 +2760,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'options',
 												type: 'CellOptions<ZodObject<{ id: ZodDefault<$ZodBranded<ZodUUID, "Uuid">>; created: ZodDefault<$ZodBranded<ZodISODateTime, "Datetime">>; updated: ZodDefault<...>; }, $strict>>',
-												optional: false,
 											},
 										],
 									},
@@ -2887,7 +2807,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'request_id',
 												type: 'string | number',
-												optional: false,
 											},
 										],
 									},
@@ -2900,7 +2819,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'ping_id',
 												type: 'string | number',
-												optional: false,
 											},
 										],
 									},
@@ -2913,12 +2831,10 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'ping_id',
 												type: 'string | number',
-												optional: false,
 											},
 											{
 												name: 'error_message',
 												type: 'string',
-												optional: false,
 											},
 										],
 									},
@@ -3048,7 +2964,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'provider_name',
 										type: 'ProviderName',
-										optional: false,
 									},
 								],
 								source_line: 1,
@@ -3067,7 +2982,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'provider_name',
 										type: "'claude' | 'chatgpt' | 'gemini'",
-										optional: false,
 									},
 									{
 										name: 'show_info',
@@ -3192,12 +3106,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'cell',
 										type: 'Cell<any> | null | undefined',
-										optional: false,
 									},
 									{
 										name: 'class_name',
 										type: 'K',
-										optional: false,
 									},
 								],
 							},
@@ -3349,7 +3261,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'schema',
 										type: 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | null | undefined',
-										optional: false,
 									},
 								],
 							},
@@ -3401,12 +3312,10 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'class_name',
 												type: 'string',
-												optional: false,
 											},
 											{
 												name: 'available_classes',
 												type: 'string[]',
-												optional: false,
 											},
 											{
 												name: 'options',
@@ -3450,7 +3359,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'app',
 												type: 'Frontend',
-												optional: false,
 											},
 										],
 									},
@@ -3465,7 +3373,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'constructor',
 												type: 'ClassConstructor<Cell<ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>>>',
-												optional: false,
 											},
 										],
 									},
@@ -3479,7 +3386,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'class_name',
 												type: 'string',
-												optional: false,
 											},
 										],
 									},
@@ -3495,7 +3401,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'class_name',
 												type: 'K',
-												optional: false,
 											},
 											{
 												name: 'json',
@@ -3521,7 +3426,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'class_name',
 												type: 'K',
-												optional: false,
 											},
 											{
 												name: 'json',
@@ -3544,7 +3448,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'cell',
 												type: 'Cell<any>',
-												optional: false,
 											},
 										],
 									},
@@ -3557,7 +3460,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'id',
 												type: 'string & $brand<"Uuid">',
-												optional: false,
 											},
 										],
 									},
@@ -3834,12 +3736,10 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'schema',
 												type: 'TSchema',
-												optional: false,
 											},
 											{
 												name: 'options',
 												type: 'CellOptions<TSchema>',
-												optional: false,
 											},
 										],
 									},
@@ -3918,7 +3818,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'value',
 												type: 'input<TSchema> | undefined',
-												optional: false,
 											},
 										],
 									},
@@ -3933,7 +3832,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'partial_value',
 												type: 'Partial<input<TSchema>>',
-												optional: false,
 											},
 										],
 									},
@@ -3948,12 +3846,10 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'value',
 												type: 'unknown',
-												optional: false,
 											},
 											{
 												name: '_key',
 												type: 'string',
-												optional: false,
 											},
 										],
 									},
@@ -3968,12 +3864,10 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'value',
 												type: 'unknown',
-												optional: false,
 											},
 											{
 												name: 'key',
 												type: 'K',
-												optional: false,
 											},
 										],
 									},
@@ -3989,12 +3883,10 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'key',
 												type: 'SchemaKeys<TSchema>',
-												optional: false,
 											},
 											{
 												name: 'value',
 												type: 'unknown',
-												optional: false,
 											},
 										],
 									},
@@ -4197,7 +4089,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'options',
 												type: 'ChatOptions',
-												optional: false,
 											},
 										],
 									},
@@ -4210,7 +4101,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'model',
 												type: 'Model',
-												optional: false,
 											},
 											{
 												name: 'select',
@@ -4228,7 +4118,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'tag',
 												type: 'string',
-												optional: false,
 											},
 										],
 									},
@@ -4241,7 +4130,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'id',
 												type: 'string & $brand<"Uuid">',
-												optional: false,
 											},
 										],
 									},
@@ -4254,7 +4142,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'ids',
 												type: '(string & $brand<"Uuid">)[]',
-												optional: false,
 											},
 										],
 									},
@@ -4267,7 +4154,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'tag',
 												type: 'string',
-												optional: false,
 											},
 										],
 									},
@@ -4287,7 +4173,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'content',
 												type: 'string',
-												optional: false,
 											},
 										],
 									},
@@ -4301,12 +4186,10 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'thread_id',
 												type: 'string & $brand<"Uuid">',
-												optional: false,
 											},
 											{
 												name: 'content',
 												type: 'string',
-												optional: false,
 											},
 										],
 									},
@@ -4322,12 +4205,10 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'user_content',
 												type: 'string',
-												optional: false,
 											},
 											{
 												name: 'assistant_content',
 												type: 'string',
-												optional: false,
 											},
 										],
 									},
@@ -4341,7 +4222,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'thread_id',
 												type: '(string & $brand<"Uuid">) | null',
-												optional: false,
 											},
 										],
 									},
@@ -4354,12 +4234,10 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'from_index',
 												type: 'number',
-												optional: false,
 											},
 											{
 												name: 'to_index',
 												type: 'number',
-												optional: false,
 											},
 										],
 									},
@@ -4401,7 +4279,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'chat',
 										type: 'Chat',
-										optional: false,
 									},
 								],
 								source_line: 1,
@@ -4477,7 +4354,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'chat',
 										type: 'Chat',
-										optional: false,
 									},
 									{
 										name: 'selected',
@@ -4572,7 +4448,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'options',
 												type: 'ChatsOptions',
-												optional: false,
 											},
 										],
 									},
@@ -4604,7 +4479,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'base_name',
 												type: 'string',
-												optional: false,
 												default_value: "'new chat'",
 											},
 										],
@@ -4618,7 +4492,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'chat',
 												type: 'Chat',
-												optional: false,
 											},
 											{
 												name: 'select',
@@ -4637,7 +4510,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'chats_json',
 												type: '{ id?: string | undefined; created?: string | undefined; updated?: string | undefined; name?: string | undefined; thread_ids?: string[] | undefined; main_input?: string | undefined; view_mode?: "simple" | ... 1 more ... | undefined; selected_thread_id?: string | ... 1 more ... | undefined; }[]',
-												optional: false,
 											},
 											{
 												name: 'select',
@@ -4655,7 +4527,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'id',
 												type: 'string & $brand<"Uuid">',
-												optional: false,
 											},
 										],
 									},
@@ -4668,7 +4539,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'ids',
 												type: '(string & $brand<"Uuid">)[]',
-												optional: false,
 											},
 										],
 									},
@@ -4681,7 +4551,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'chat_id',
 												type: '(string & $brand<"Uuid">) | null',
-												optional: false,
 											},
 										],
 									},
@@ -4702,12 +4571,10 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'chat_id',
 												type: '(string & $brand<"Uuid">) | null',
-												optional: false,
 											},
 											{
 												name: 'force',
 												type: 'boolean',
-												optional: false,
 												default_value: 'false',
 											},
 										],
@@ -4721,12 +4588,10 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'from_index',
 												type: 'number',
-												optional: false,
 											},
 											{
 												name: 'to_index',
 												type: 'number',
-												optional: false,
 											},
 										],
 									},
@@ -4740,7 +4605,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'value',
 												type: 'boolean',
-												optional: false,
 												default_value: '!this.show_sort_controls',
 											},
 										],
@@ -4758,7 +4622,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'id',
 												type: 'string',
-												optional: false,
 											},
 										],
 									},
@@ -4815,12 +4678,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'thread',
 										type: 'Thread',
-										optional: false,
 									},
 									{
 										name: 'onsend',
 										type: '(input: string) => Promise<void>',
-										optional: false,
 									},
 									{
 										name: 'focus_key',
@@ -4870,7 +4731,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'chat',
 										type: 'Chat',
-										optional: false,
 									},
 									{
 										name: 'attrs',
@@ -4899,7 +4759,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'chat',
 										type: 'Chat',
-										optional: false,
 									},
 								],
 								source_line: 1,
@@ -4918,7 +4777,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'chat',
 										type: 'Chat',
-										optional: false,
 									},
 								],
 								source_line: 1,
@@ -4951,7 +4809,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'chat',
 										type: 'Chat',
-										optional: false,
 									},
 								],
 								source_line: 1,
@@ -4978,12 +4835,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'chat',
 										type: 'Chat',
-										optional: false,
 									},
 									{
 										name: 'thread',
 										type: 'Thread | undefined',
-										optional: false,
 									},
 								],
 								source_line: 1,
@@ -5006,7 +4861,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'value',
 										type: 'string',
-										optional: false,
 										bindable: true,
 									},
 									{
@@ -5054,13 +4908,11 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'from',
 												type: 'string',
-												optional: false,
 												description: 'The module to import from',
 											},
 											{
 												name: 'what',
 												type: 'string',
-												optional: false,
 												description: 'What to import (value)',
 											},
 										],
@@ -5075,13 +4927,11 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'from',
 												type: 'string',
-												optional: false,
 												description: 'The module to import from',
 											},
 											{
 												name: 'what',
 												type: 'string',
-												optional: false,
 												description: 'What to import (type)',
 											},
 										],
@@ -5096,12 +4946,10 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'from',
 												type: 'string',
-												optional: false,
 											},
 											{
 												name: 'items',
 												type: 'string[]',
-												optional: false,
 											},
 										],
 									},
@@ -5115,12 +4963,10 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'from',
 												type: 'string',
-												optional: false,
 											},
 											{
 												name: 'items',
 												type: 'string[]',
-												optional: false,
 											},
 										],
 									},
@@ -5174,12 +5020,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'spec',
 										type: '{ method: "completion_create" | "completion_progress" | "directory_create" | "diskfile_delete" | "diskfile_update" | "filer_change" | "ollama_copy" | "ollama_create" | "ollama_delete" | ... 10 more ... | "toggle_main_menu"; ... 6 more ...; async: true; } | { ...; } | { ...; }',
-										optional: false,
 									},
 									{
 										name: 'executor',
 										type: '"frontend" | "backend"',
-										optional: false,
 									},
 								],
 							},
@@ -5196,22 +5040,18 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'spec',
 										type: '{ method: "completion_create" | "completion_progress" | "directory_create" | "diskfile_delete" | "diskfile_update" | "filer_change" | "ollama_copy" | "ollama_create" | "ollama_delete" | ... 10 more ... | "toggle_main_menu"; ... 6 more ...; async: true; } | { ...; } | { ...; }',
-										optional: false,
 									},
 									{
 										name: 'phase',
 										type: '"send_request" | "receive_request" | "send_response" | "receive_response" | "send_error" | "receive_error" | "send" | "receive" | "execute"',
-										optional: false,
 									},
 									{
 										name: 'imports',
 										type: 'ImportBuilder',
-										optional: false,
 									},
 									{
 										name: 'path_prefix',
 										type: 'string',
-										optional: false,
 									},
 								],
 							},
@@ -5228,17 +5068,14 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'spec',
 										type: '{ method: "completion_create" | "completion_progress" | "directory_create" | "diskfile_delete" | "diskfile_update" | "filer_change" | "ollama_copy" | "ollama_create" | "ollama_delete" | ... 10 more ... | "toggle_main_menu"; ... 6 more ...; async: true; } | { ...; } | { ...; }',
-										optional: false,
 									},
 									{
 										name: 'executor',
 										type: '"frontend" | "backend"',
-										optional: false,
 									},
 									{
 										name: 'imports',
 										type: 'ImportBuilder',
-										optional: false,
 									},
 								],
 							},
@@ -5253,7 +5090,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'origin_path',
 										type: 'string',
-										optional: false,
 									},
 								],
 							},
@@ -5492,7 +5328,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'onconfirm',
 										type: '(popover: Popover) => void',
-										optional: false,
 									},
 									{
 										name: 'popover_button_attrs',
@@ -5676,7 +5511,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'content',
 										type: 'string',
-										optional: false,
 										bindable: true,
 									},
 									{
@@ -5770,7 +5604,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'content',
 										type: 'string',
-										optional: false,
 									},
 									{
 										name: 'height',
@@ -5808,7 +5641,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'token_count',
 										type: 'number',
-										optional: false,
 									},
 								],
 								source_line: 1,
@@ -5826,7 +5658,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'content',
 										type: 'string | Thunk<string> | undefined',
-										optional: false,
 									},
 									{
 										name: 'label',
@@ -5879,7 +5710,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'enabled',
 										type: 'boolean',
-										optional: false,
 										bindable: true,
 									},
 									{
@@ -5909,7 +5739,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'children',
 										type: 'Snippet',
-										optional: false,
 									},
 								],
 								source_line: 1,
@@ -6013,12 +5842,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'header',
 										type: 'Snippet',
-										optional: false,
 									},
 									{
 										name: 'children',
 										type: 'Snippet',
-										optional: false,
 									},
 								],
 								source_line: 1,
@@ -6297,7 +6124,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'options',
 												type: '{ app: Frontend; diskfile: Diskfile; }',
-												optional: false,
 											},
 										],
 									},
@@ -6337,7 +6163,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'id',
 												type: 'string & $brand<"Uuid">',
-												optional: false,
 											},
 										],
 									},
@@ -6352,7 +6177,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'diskfile',
 												type: 'Diskfile',
-												optional: false,
 											},
 										],
 									},
@@ -6393,7 +6217,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'path',
 										type: 'string',
-										optional: false,
 									},
 								],
 							},
@@ -6407,12 +6230,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'path',
 										type: 'string',
-										optional: false,
 									},
 									{
 										name: 'parent',
 										type: 'string',
-										optional: false,
 									},
 								],
 							},
@@ -6427,7 +6248,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'type',
 										type: 'WatcherChangeType',
-										optional: false,
 									},
 								],
 							},
@@ -6445,13 +6265,11 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'disknode',
 										type: '{ id: string & $brand<"DiskfilePath">; source_dir: string & $brand<"DiskfilePath"> & $brand<"DiskfileDirectoryPath">; contents: string | null; ctime: number | null; mtime: number | null; dependents: [...][]; dependencies: [...][]; }',
-										optional: false,
 										description: 'The source file to convert',
 									},
 									{
 										name: 'existing_id',
 										type: 'string & $brand<"Uuid">',
-										optional: false,
 										description: 'Optional existing UUID to preserve id stability across updates',
 										default_value: 'create_uuid()',
 									},
@@ -6473,7 +6291,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'diskfile',
 										type: 'Diskfile',
-										optional: false,
 									},
 								],
 							},
@@ -6489,12 +6306,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'disknode',
 										type: 'Disknode',
-										optional: false,
 									},
 									{
 										name: 'dir',
 										type: 'string',
-										optional: false,
 									},
 								],
 							},
@@ -6579,7 +6394,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'options',
 												type: 'DiskfileHistoryOptions',
-												optional: false,
 											},
 										],
 									},
@@ -6595,12 +6409,10 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'content',
 												type: 'string',
-												optional: false,
 											},
 											{
 												name: 'options',
 												type: '{ is_disk_change?: boolean | undefined; is_unsaved_edit?: boolean | undefined; is_original_state?: boolean | undefined; label?: string | undefined; created?: number | undefined; }',
-												optional: false,
 												default_value: 'EMPTY_OBJECT',
 											},
 										],
@@ -6617,7 +6429,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'id',
 												type: 'string & $brand<"Uuid">',
-												optional: false,
 											},
 										],
 									},
@@ -6631,7 +6442,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'id',
 												type: 'string & $brand<"Uuid">',
-												optional: false,
 											},
 										],
 									},
@@ -6741,7 +6551,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'options',
 												type: 'DiskfileTabOptions',
-												optional: false,
 											},
 										],
 									},
@@ -6882,7 +6691,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'options',
 												type: 'DiskfileTabsOptions',
-												optional: false,
 											},
 										],
 									},
@@ -6898,7 +6706,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'exclude_id',
 												type: 'string & $brand<"Uuid">',
-												optional: false,
 											},
 										],
 									},
@@ -6912,7 +6719,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'tab_id',
 												type: 'string & $brand<"Uuid">',
-												optional: false,
 											},
 										],
 									},
@@ -6927,7 +6733,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'diskfile_id',
 												type: 'string & $brand<"Uuid">',
-												optional: false,
 											},
 										],
 									},
@@ -6942,7 +6747,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'diskfile_id',
 												type: 'string & $brand<"Uuid">',
-												optional: false,
 											},
 										],
 									},
@@ -6965,7 +6769,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'tab_id',
 												type: 'string & $brand<"Uuid">',
-												optional: false,
 											},
 										],
 									},
@@ -6984,7 +6787,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'tab_id',
 												type: 'string & $brand<"Uuid">',
-												optional: false,
 												description: 'The tab id to navigate to',
 											},
 										],
@@ -6999,7 +6801,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'tab_id',
 												type: 'string & $brand<"Uuid">',
-												optional: false,
 											},
 										],
 									},
@@ -7013,12 +6814,10 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'from_index',
 												type: 'number',
-												optional: false,
 											},
 											{
 												name: 'to_index',
 												type: 'number',
-												optional: false,
 											},
 										],
 									},
@@ -7262,7 +7061,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'options',
 												type: 'DiskfileOptions',
-												optional: false,
 											},
 										],
 									},
@@ -7288,12 +7086,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'diskfile',
 										type: 'Diskfile',
-										optional: false,
 									},
 									{
 										name: 'editor_state',
 										type: 'DiskfileEditorState',
-										optional: false,
 									},
 									{
 										name: 'readonly',
@@ -7328,12 +7124,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'diskfile',
 										type: 'Diskfile | null | undefined',
-										optional: false,
 									},
 									{
 										name: 'children',
 										type: 'Snippet',
-										optional: false,
 									},
 								],
 								source_line: 1,
@@ -7361,7 +7155,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'editor_state',
 										type: 'DiskfileEditorState',
-										optional: false,
 									},
 								],
 								source_line: 1,
@@ -7380,7 +7173,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'diskfile',
 										type: 'Diskfile',
-										optional: false,
 									},
 									{
 										name: 'onmodified',
@@ -7442,12 +7234,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'editor_state',
 										type: 'DiskfileEditorState',
-										optional: false,
 									},
 									{
 										name: 'onselectentry',
 										type: '(entry_id: Uuid) => void',
-										optional: false,
 									},
 									{
 										name: 'attrs',
@@ -7471,12 +7261,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'diskfile',
 										type: 'Diskfile',
-										optional: false,
 									},
 									{
 										name: 'editor_state',
 										type: 'DiskfileEditorState',
-										optional: false,
 									},
 								],
 								source_line: 1,
@@ -7501,7 +7289,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'diskfile',
 										type: 'Diskfile',
-										optional: false,
 									},
 									{
 										name: 'selected',
@@ -7541,7 +7328,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'editor_state',
 										type: 'DiskfileEditorState',
-										optional: false,
 									},
 								],
 								source_line: 1,
@@ -7560,7 +7346,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'diskfile',
 										type: 'Diskfile',
-										optional: false,
 									},
 								],
 								source_line: 1,
@@ -7579,7 +7364,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'onpick',
 										type: '(diskfile: Diskfile | undefined) => boolean | void',
-										optional: false,
 									},
 									{
 										name: 'filter',
@@ -7617,7 +7401,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'onpick',
 										type: '(diskfile: Diskfile | undefined) => boolean | void',
-										optional: false,
 									},
 									{
 										name: 'show',
@@ -7714,7 +7497,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'options',
 												type: 'DiskfilesEditorOptions',
-												optional: false,
 											},
 										],
 									},
@@ -7728,7 +7510,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'diskfile_id',
 												type: 'string & $brand<"Uuid">',
-												optional: false,
 											},
 										],
 									},
@@ -7742,7 +7523,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'diskfile_id',
 												type: 'string & $brand<"Uuid">',
-												optional: false,
 											},
 										],
 									},
@@ -7756,12 +7536,10 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'from_index',
 												type: 'number',
-												optional: false,
 											},
 											{
 												name: 'to_index',
 												type: 'number',
-												optional: false,
 											},
 										],
 									},
@@ -7775,7 +7553,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'tab_id',
 												type: 'string & $brand<"Uuid">',
-												optional: false,
 											},
 										],
 									},
@@ -7789,7 +7566,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'tab_id',
 												type: 'string & $brand<"Uuid">',
-												optional: false,
 											},
 										],
 									},
@@ -7819,7 +7595,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'tab_id',
 												type: 'string & $brand<"Uuid">',
-												optional: false,
 											},
 										],
 									},
@@ -7833,7 +7608,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'diskfile_id',
 												type: 'string & $brand<"Uuid">',
-												optional: false,
 											},
 										],
 									},
@@ -7855,7 +7629,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'value',
 												type: 'boolean',
-												optional: false,
 												default_value: '!this.show_sort_controls',
 											},
 										],
@@ -7941,7 +7714,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'options',
 												type: 'DiskfilesOptions',
-												optional: false,
 											},
 										],
 									},
@@ -7955,7 +7727,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'params',
 												type: '{ change: { type: "add" | "change" | "delete"; path: string & $brand<"DiskfilePath">; }; disknode: { id: string & $brand<"DiskfilePath">; source_dir: string & $brand<"DiskfilePath"> & $brand<...>; ... 4 more ...; dependencies: [...][]; }; }',
-												optional: false,
 											},
 										],
 									},
@@ -7969,12 +7740,10 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'json',
 												type: '{ source_dir: string; id?: string | undefined; created?: string | undefined; updated?: string | undefined; path?: string | null | undefined; content?: string | null | undefined; dependents?: [...][] | ... 1 more ... | undefined; dependencies?: [...][] | ... 1 more ... | undefined; }',
-												optional: false,
 											},
 											{
 												name: 'auto_select',
 												type: 'boolean',
-												optional: false,
 												default_value: 'true',
 											},
 										],
@@ -7989,12 +7758,10 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'path',
 												type: 'string & $brand<"DiskfilePath">',
-												optional: false,
 											},
 											{
 												name: 'content',
 												type: 'string',
-												optional: false,
 											},
 										],
 									},
@@ -8007,7 +7774,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'path',
 												type: 'string & $brand<"DiskfilePath">',
-												optional: false,
 											},
 										],
 									},
@@ -8020,12 +7786,10 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'filename',
 												type: 'string',
-												optional: false,
 											},
 											{
 												name: 'content',
 												type: 'string',
-												optional: false,
 												default_value: "''",
 											},
 										],
@@ -8039,7 +7803,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'dirname',
 												type: 'string',
-												optional: false,
 											},
 										],
 									},
@@ -8052,7 +7815,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'path',
 												type: 'string & $brand<"DiskfilePath">',
-												optional: false,
 											},
 										],
 									},
@@ -8067,7 +7829,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'path',
 												type: 'string',
-												optional: false,
 											},
 										],
 									},
@@ -8083,12 +7844,10 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'id',
 												type: '(string & $brand<"Uuid">) | null | undefined',
-												optional: false,
 											},
 											{
 												name: 'open_not_preview',
 												type: 'boolean',
-												optional: false,
 												default_value: 'false',
 											},
 										],
@@ -8127,22 +7886,18 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'tab',
 										type: 'DiskfileTab',
-										optional: false,
 									},
 									{
 										name: 'onselect',
 										type: '(tab: DiskfileTab) => void',
-										optional: false,
 									},
 									{
 										name: 'onclose',
 										type: '(tab: DiskfileTab) => void',
-										optional: false,
 									},
 									{
 										name: 'onopen',
 										type: '(tab: DiskfileTab) => void',
-										optional: false,
 									},
 								],
 								source_line: 1,
@@ -8161,7 +7916,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'value',
 										type: 'string',
-										optional: false,
 										bindable: true,
 									},
 									{
@@ -8221,7 +7975,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'children',
 										type: 'Snippet',
-										optional: false,
 									},
 								],
 								source_line: 1,
@@ -8240,7 +7993,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'href',
 										type: 'string',
-										optional: false,
 									},
 									{
 										name: 'open_externally',
@@ -8318,12 +8070,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'bytes',
 										type: 'number',
-										optional: false,
 									},
 									{
 										name: 'decimals',
 										type: 'number',
-										optional: false,
 										default_value: '1',
 									},
 								],
@@ -8338,7 +8088,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'gb',
 										type: 'number',
-										optional: false,
 									},
 								],
 							},
@@ -8353,17 +8102,14 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'value',
 										type: 'number',
-										optional: false,
 									},
 									{
 										name: 'total',
 										type: 'number',
-										optional: false,
 									},
 									{
 										name: 'decimals',
 										type: 'number',
-										optional: false,
 										default_value: '1',
 									},
 								],
@@ -8379,7 +8125,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'ms',
 										type: 'number',
-										optional: false,
 									},
 								],
 							},
@@ -8559,7 +8304,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'environment',
 										type: 'T',
-										optional: false,
 									},
 								],
 							},
@@ -8591,7 +8335,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'url',
 												type: 'string',
-												optional: false,
 											},
 											{
 												name: 'headers',
@@ -8611,7 +8354,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'message',
 												type: '{ [x: string]: unknown; jsonrpc: "2.0"; id: string | number; method: string; params?: { [x: string]: unknown; _meta?: { [x: string]: unknown; progressToken?: string | number | undefined; } | undefined; } | undefined; }',
-												optional: false,
 											},
 										],
 									},
@@ -8626,7 +8368,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'message',
 												type: '{ [x: string]: unknown; jsonrpc: "2.0"; id: string | number; method: string; params?: { [x: string]: unknown; _meta?: { [x: string]: unknown; progressToken?: string | number | undefined; } | undefined; } | undefined; }',
-												optional: false,
 											},
 										],
 									},
@@ -8641,7 +8382,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'message',
 												type: '{ [x: string]: unknown; jsonrpc: "2.0"; id: string | number; method: string; params?: { [x: string]: unknown; _meta?: { [x: string]: unknown; progressToken?: string | number | undefined; } | undefined; } | undefined; }',
-												optional: false,
 											},
 										],
 									},
@@ -8682,7 +8422,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'socket',
 												type: 'Socket',
-												optional: false,
 											},
 											{
 												name: 'request_timeout_ms',
@@ -8702,7 +8441,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'message',
 												type: '{ [x: string]: unknown; jsonrpc: "2.0"; id: string | number; method: string; params?: { [x: string]: unknown; _meta?: { [x: string]: unknown; progressToken?: string | number | undefined; } | undefined; } | undefined; }',
-												optional: false,
 											},
 										],
 									},
@@ -8717,7 +8455,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'message',
 												type: '{ [x: string]: unknown; jsonrpc: "2.0"; id: string | number; method: string; params?: { [x: string]: unknown; _meta?: { [x: string]: unknown; progressToken?: string | number | undefined; } | undefined; } | undefined; }',
-												optional: false,
 											},
 										],
 									},
@@ -8732,7 +8469,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'message',
 												type: '{ [x: string]: unknown; jsonrpc: "2.0"; id: string | number; method: string; params?: { [x: string]: unknown; _meta?: { [x: string]: unknown; progressToken?: string | number | undefined; } | undefined; } | undefined; }',
-												optional: false,
 											},
 										],
 									},
@@ -9007,7 +8743,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'options',
 												type: 'FrontendOptions',
-												optional: false,
 												default_value: 'EMPTY_OBJECT',
 											},
 										],
@@ -9022,7 +8757,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'data',
 												type: '{ zzz_cache_dir: string & $brand<"DiskfilePath"> & $brand<"DiskfileDirectoryPath">; files: { id: string & $brand<"DiskfilePath">; source_dir: string & $brand<...> & $brand<...>; ... 4 more ...; dependencies: [...][]; }[]; provider_status: ({ ...; } | { ...; })[]; }',
-												optional: false,
 											},
 										],
 									},
@@ -9036,7 +8770,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'providers_json',
 												type: '{ name: "ollama" | "claude" | "chatgpt" | "gemini"; title: string; url: string; homepage: string; company: string; api_key_url: string | null; id?: string | undefined; created?: string | undefined; updated?: string | undefined; }[]',
-												optional: false,
 											},
 										],
 									},
@@ -9050,7 +8783,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'provider_json',
 												type: '{ name: "ollama" | "claude" | "chatgpt" | "gemini"; title: string; url: string; homepage: string; company: string; api_key_url: string | null; id?: string | undefined; created?: string | undefined; updated?: string | undefined; }',
-												optional: false,
 											},
 										],
 									},
@@ -9065,7 +8797,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'provider_name',
 												type: 'string',
-												optional: false,
 											},
 										],
 									},
@@ -9079,7 +8810,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'status',
 												type: '{ name: string; available: true; checked_at: number; } | { name: string; available: false; error: string; checked_at: number; }',
-												optional: false,
 											},
 										],
 									},
@@ -9093,7 +8823,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'path',
 												type: 'string & $brand<"DiskfilePath">',
-												optional: false,
 											},
 										],
 									},
@@ -9106,7 +8835,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'path',
 												type: 'string & $brand<"DiskfilePath">',
-												optional: false,
 											},
 										],
 									},
@@ -9120,12 +8848,10 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'method',
 												type: '"completion_create" | "completion_progress" | "directory_create" | "diskfile_delete" | "diskfile_update" | "filer_change" | "ollama_copy" | "ollama_create" | "ollama_delete" | ... 10 more ... | "toggle_main_menu"',
-												optional: false,
 											},
 											{
 												name: 'phase',
 												type: '"send_request" | "receive_request" | "send_response" | "receive_response" | "send_error" | "receive_error" | "send" | "receive" | "execute"',
-												optional: false,
 											},
 										],
 									},
@@ -9140,7 +8866,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'method',
 												type: '"completion_create" | "completion_progress" | "directory_create" | "diskfile_delete" | "diskfile_update" | "filer_change" | "ollama_copy" | "ollama_create" | "ollama_delete" | ... 10 more ... | "toggle_main_menu"',
-												optional: false,
 											},
 										],
 									},
@@ -9155,7 +8880,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'method',
 												type: 'TMethod',
-												optional: false,
 											},
 										],
 									},
@@ -9170,7 +8894,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'method',
 												type: 'TMethod',
-												optional: false,
 											},
 										],
 									},
@@ -9184,12 +8907,10 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'method',
 												type: '"completion_create" | "completion_progress" | "directory_create" | "diskfile_delete" | "diskfile_update" | "filer_change" | "ollama_copy" | "ollama_create" | "ollama_delete" | ... 10 more ... | "toggle_main_menu"',
-												optional: false,
 											},
 											{
 												name: 'phase',
 												type: '"send_request" | "receive_request" | "send_response" | "receive_response" | "send_error" | "receive_error" | "send" | "receive" | "execute"',
-												optional: false,
 											},
 										],
 									},
@@ -9299,12 +9020,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'app',
 										type: 'Frontend',
-										optional: false,
 									},
 									{
 										name: 'children',
 										type: 'Snippet<[zzz: Frontend]>',
-										optional: false,
 									},
 								],
 								source_line: 1,
@@ -9322,7 +9041,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'glyph',
 										type: 'string',
-										optional: false,
 									},
 									{
 										name: 'size',
@@ -9825,7 +9543,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'method',
 										type: '"completion_create" | "completion_progress" | "directory_create" | "diskfile_delete" | "diskfile_update" | "filer_change" | "ollama_copy" | "ollama_create" | "ollama_delete" | ... 10 more ... | "toggle_main_menu"',
-										optional: false,
 									},
 								],
 							},
@@ -9840,7 +9557,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'kind',
 										type: '"request_response" | "remote_notification" | "local_call"',
-										optional: false,
 									},
 								],
 							},
@@ -9949,7 +9665,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'text',
 										type: 'string',
-										optional: false,
 									},
 								],
 							},
@@ -9974,12 +9689,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'name',
 										type: 'string',
-										optional: false,
 									},
 									{
 										name: 'existing_names',
 										type: '{ has: (name: string) => boolean; } | { includes: (name: string) => boolean; }',
-										optional: false,
 									},
 								],
 							},
@@ -9993,7 +9706,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'value',
 										type: 'T | undefined',
-										optional: false,
 									},
 								],
 							},
@@ -10007,12 +9719,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'content',
 										type: 'string | null | undefined',
-										optional: false,
 									},
 									{
 										name: 'max_length',
 										type: 'number',
-										optional: false,
 										default_value: 'CONTENT_PREVIEW_LENGTH',
 									},
 								],
@@ -10129,7 +9839,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'options',
 										type: 'SingleIndexOptions<T, K>',
-										optional: false,
 									},
 								],
 							},
@@ -10176,7 +9885,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'options',
 										type: 'MultiIndexOptions<T, K>',
-										optional: false,
 									},
 								],
 							},
@@ -10240,7 +9948,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'options',
 										type: 'DerivedIndexOptions<T, TResult>',
-										optional: false,
 									},
 								],
 							},
@@ -10295,7 +10002,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'options',
 										type: 'DynamicIndexOptions<T, F>',
-										optional: false,
 									},
 								],
 							},
@@ -10548,7 +10254,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'key',
 												type: 'TKeySingle | TKeyMulti | TKeyDerived | TKeyDynamic',
-												optional: false,
 											},
 										],
 									},
@@ -10562,7 +10267,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'key',
 												type: 'TKeySingle',
-												optional: false,
 											},
 										],
 									},
@@ -10576,7 +10280,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'key',
 												type: 'TKeyMulti',
-												optional: false,
 											},
 										],
 									},
@@ -10590,7 +10293,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'key',
 												type: 'TKeyDerived',
-												optional: false,
 											},
 										],
 									},
@@ -10604,7 +10306,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'key',
 												type: 'TKeyDynamic',
-												optional: false,
 											},
 										],
 									},
@@ -10620,12 +10321,10 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'key',
 												type: 'TKeySingle | TKeyMulti | TKeyDerived | TKeyDynamic',
-												optional: false,
 											},
 											{
 												name: 'query',
 												type: 'TQuery',
-												optional: false,
 											},
 										],
 									},
@@ -10639,7 +10338,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'item',
 												type: 'T',
-												optional: false,
 											},
 										],
 									},
@@ -10654,7 +10352,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'items',
 												type: 'T[]',
-												optional: false,
 											},
 										],
 									},
@@ -10668,7 +10365,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'id',
 												type: 'string & $brand<"Uuid">',
-												optional: false,
 											},
 										],
 									},
@@ -10682,7 +10378,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'ids',
 												type: '(string & $brand<"Uuid">)[]',
-												optional: false,
 											},
 										],
 									},
@@ -10696,7 +10391,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'id',
 												type: 'string & $brand<"Uuid">',
-												optional: false,
 											},
 										],
 									},
@@ -10710,7 +10404,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'id',
 												type: 'string & $brand<"Uuid">',
-												optional: false,
 											},
 										],
 									},
@@ -10733,12 +10426,10 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'index_key',
 												type: 'TKeyMulti',
-												optional: false,
 											},
 											{
 												name: 'value',
 												type: 'V',
-												optional: false,
 											},
 										],
 									},
@@ -10753,17 +10444,14 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'index_key',
 												type: 'TKeyMulti',
-												optional: false,
 											},
 											{
 												name: 'value',
 												type: 'V',
-												optional: false,
 											},
 											{
 												name: 'limit',
 												type: 'number',
-												optional: false,
 											},
 										],
 									},
@@ -10778,17 +10466,14 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'index_key',
 												type: 'TKeyMulti',
-												optional: false,
 											},
 											{
 												name: 'value',
 												type: 'V',
-												optional: false,
 											},
 											{
 												name: 'limit',
 												type: 'number',
-												optional: false,
 											},
 										],
 									},
@@ -10803,12 +10488,10 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'index_key',
 												type: 'TKeySingle',
-												optional: false,
 											},
 											{
 												name: 'value',
 												type: 'V',
-												optional: false,
 											},
 										],
 									},
@@ -10823,12 +10506,10 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'index_key',
 												type: 'TKeySingle',
-												optional: false,
 											},
 											{
 												name: 'value',
 												type: 'V',
-												optional: false,
 											},
 										],
 									},
@@ -10863,12 +10544,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'items',
 										type: 'Iterable<T>',
-										optional: false,
 									},
 									{
 										name: 'property',
 										type: 'K',
-										optional: false,
 									},
 								],
 							},
@@ -10928,12 +10607,10 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'code',
 												type: '-32700 | -32600 | -32601 | -32602 | -32603 | (number & $brand<"JsonrpcServerErrorCode">)',
-												optional: false,
 											},
 											{
 												name: 'message',
 												type: 'string',
-												optional: false,
 											},
 											{
 												name: 'data',
@@ -10988,17 +10665,14 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'method',
 										type: 'string',
-										optional: false,
 									},
 									{
 										name: 'params',
 										type: '{ [x: string]: unknown; _meta?: { [x: string]: unknown; progressToken?: string | number | undefined; } | undefined; } | undefined',
-										optional: false,
 									},
 									{
 										name: 'id',
 										type: 'string | number',
-										optional: false,
 									},
 								],
 							},
@@ -11014,12 +10688,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'id',
 										type: 'string | number',
-										optional: false,
 									},
 									{
 										name: 'result',
 										type: '{ [x: string]: unknown; _meta?: { [x: string]: unknown; } | undefined; }',
-										optional: false,
 									},
 								],
 							},
@@ -11035,12 +10707,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'method',
 										type: 'string',
-										optional: false,
 									},
 									{
 										name: 'params',
 										type: '{ [x: string]: unknown; _meta?: { [x: string]: unknown; } | undefined; } | undefined',
-										optional: false,
 									},
 								],
 							},
@@ -11056,12 +10726,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'id',
 										type: 'string | number | null',
-										optional: false,
 									},
 									{
 										name: 'error',
 										type: '{ [x: string]: unknown; code: -32700 | -32600 | -32601 | -32602 | -32603 | (number & $brand<"JsonrpcServerErrorCode">); message: string; data?: unknown; }',
-										optional: false,
 									},
 								],
 							},
@@ -11079,12 +10747,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'id',
 										type: 'string | number | null',
-										optional: false,
 									},
 									{
 										name: 'error',
 										type: 'any',
-										optional: false,
 									},
 								],
 							},
@@ -11098,7 +10764,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'message_or_id',
 										type: 'unknown',
-										optional: false,
 									},
 								],
 							},
@@ -11112,7 +10777,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'id',
 										type: 'unknown',
-										optional: false,
 									},
 								],
 							},
@@ -11126,7 +10790,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'message',
 										type: 'unknown',
-										optional: false,
 									},
 								],
 							},
@@ -11141,7 +10804,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'message',
 										type: 'unknown',
-										optional: false,
 									},
 								],
 							},
@@ -11156,7 +10818,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'message',
 										type: 'unknown',
-										optional: false,
 									},
 								],
 							},
@@ -11171,7 +10832,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'message',
 										type: 'unknown',
-										optional: false,
 									},
 								],
 							},
@@ -11186,7 +10846,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'message',
 										type: 'unknown',
-										optional: false,
 									},
 								],
 							},
@@ -11201,7 +10860,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'message',
 										type: 'unknown',
-										optional: false,
 									},
 								],
 							},
@@ -11216,7 +10874,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'message',
 										type: 'unknown',
-										optional: false,
 									},
 								],
 							},
@@ -11232,7 +10889,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'input',
 										type: 'unknown',
-										optional: false,
 									},
 								],
 							},
@@ -11248,7 +10904,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'output',
 										type: 'unknown',
-										optional: false,
 									},
 								],
 							},
@@ -11279,7 +10934,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'code',
 										type: '-32700 | -32600 | -32601 | -32602 | -32603 | (number & $brand<"JsonrpcServerErrorCode">)',
-										optional: false,
 									},
 								],
 							},
@@ -11295,7 +10949,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'status',
 										type: 'number',
-										optional: false,
 									},
 								],
 							},
@@ -11561,17 +11214,14 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'items',
 										type: 'any[]',
-										optional: false,
 									},
 									{
 										name: 'from_index',
 										type: 'number',
-										optional: false,
 									},
 									{
 										name: 'to_index',
 										type: 'number',
-										optional: false,
 									},
 								],
 							},
@@ -11586,17 +11236,14 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'items',
 										type: 'T[]',
-										optional: false,
 									},
 									{
 										name: 'from_index',
 										type: 'number',
-										optional: false,
 									},
 									{
 										name: 'to_index',
 										type: 'number',
-										optional: false,
 									},
 								],
 							},
@@ -11804,7 +11451,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'options',
 												type: 'ModelOptions',
-												optional: false,
 											},
 										],
 									},
@@ -11859,7 +11505,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'model',
 										type: 'Model',
-										optional: false,
 									},
 								],
 								source_line: 1,
@@ -11886,7 +11531,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'model',
 										type: 'Model',
-										optional: false,
 									},
 									{
 										name: 'attrs',
@@ -11917,7 +11561,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'model',
 										type: 'Model',
-										optional: false,
 									},
 									{
 										name: 'icon',
@@ -11960,7 +11603,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'model',
 										type: 'Model',
-										optional: false,
 									},
 									{
 										name: 'show_tags',
@@ -11984,7 +11626,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'onpick',
 										type: '(model: Model | undefined) => boolean | void',
-										optional: false,
 									},
 									{
 										name: 'items',
@@ -12023,13 +11664,11 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'show',
 										type: 'boolean',
-										optional: false,
 										bindable: true,
 									},
 									{
 										name: 'onpick',
 										type: '(model: Model | undefined) => boolean | void',
-										optional: false,
 									},
 									{
 										name: 'filter',
@@ -12116,7 +11755,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'options',
 												type: 'ModelsOptions',
-												optional: false,
 											},
 										],
 									},
@@ -12130,7 +11768,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'model_json',
 												type: '{ name: string; provider_name: "ollama" | "claude" | "chatgpt" | "gemini"; id?: string | undefined; created?: string | undefined; updated?: string | undefined; tags?: string[] | undefined; ... 13 more ...; ollama_show_response_error?: string | undefined; }',
-												optional: false,
 											},
 										],
 									},
@@ -12144,7 +11781,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'models_json',
 												type: '{ name: string; provider_name: "ollama" | "claude" | "chatgpt" | "gemini"; id?: string | undefined; created?: string | undefined; updated?: string | undefined; tags?: string[] | undefined; ... 13 more ...; ollama_show_response_error?: string | undefined; }[]',
-												optional: false,
 											},
 										],
 									},
@@ -12157,7 +11793,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'name',
 												type: 'string',
-												optional: false,
 											},
 										],
 									},
@@ -12170,7 +11805,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'names',
 												type: 'string[]',
-												optional: false,
 											},
 										],
 									},
@@ -12183,7 +11817,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'tag',
 												type: 'string',
-												optional: false,
 											},
 										],
 									},
@@ -12196,7 +11829,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'name',
 												type: 'string',
-												optional: false,
 											},
 										],
 									},
@@ -12230,7 +11862,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'selected_model',
 										type: 'Model',
-										optional: false,
 										bindable: true,
 									},
 									{
@@ -12254,7 +11885,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'model',
 										type: 'Model',
-										optional: false,
 									},
 									{
 										name: 'omit_provider',
@@ -12298,7 +11928,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'chat_id',
 										type: '(string & $brand<"Uuid">) | null',
-										optional: false,
 									},
 								],
 							},
@@ -12312,7 +11941,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'chat_id',
 										type: '(string & $brand<"Uuid">) | null',
-										optional: false,
 									},
 								],
 							},
@@ -12373,17 +12001,14 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'app',
 										type: 'Frontend',
-										optional: false,
 									},
 									{
 										name: 'label',
 										type: 'string',
-										optional: false,
 									},
 									{
 										name: 'href',
 										type: 'string',
-										optional: false,
 									},
 								],
 							},
@@ -12413,7 +12038,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'path',
 										type: 'string | URL',
-										optional: false,
 									},
 									{
 										name: 'options',
@@ -12435,7 +12059,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'href',
 										type: 'string',
-										optional: false,
 									},
 									{
 										name: 'selected',
@@ -12450,7 +12073,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'children',
 										type: 'Snippet<[selected: boolean, selected_descendent: boolean]>',
-										optional: false,
 									},
 								],
 								source_line: 1,
@@ -12586,7 +12208,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'parameter_size',
 										type: 'string | undefined',
-										optional: false,
 									},
 								],
 							},
@@ -12861,7 +12482,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'model_name',
 												type: 'string',
-												optional: false,
 											},
 										],
 									},
@@ -12915,7 +12535,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'options',
 												type: 'OllamaOptions',
-												optional: false,
 											},
 										],
 									},
@@ -12981,7 +12600,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'response',
 												type: '{ [x: string]: unknown; models: { [x: string]: unknown; digest: string; model: string; modified_at: string; name: string; size: number; details?: { [x: string]: unknown; families: string[]; family: string; format: string; parameter_size: string; parent_model: string; quantization_level: string; } | undefined; }[]; }...',
-												optional: false,
 											},
 										],
 									},
@@ -13004,7 +12622,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'response',
 												type: '{ [x: string]: unknown; models: { [x: string]: unknown; digest: string; expires_at: string; model: string; name: string; size: number; size_vram: number; details?: { [x: string]: unknown; families: string[]; family: string; format: string; parameter_size: string; parent_model: string; quantization_level: string; } |...',
-												optional: false,
 											},
 										],
 									},
@@ -13019,12 +12636,10 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'request',
 												type: '{ [x: string]: unknown; model: string; system?: string | undefined; template?: string | undefined; options?: any; }',
-												optional: false,
 											},
 											{
 												name: 'response',
 												type: '{ [x: string]: unknown; capabilities?: string[] | undefined; details?: { [x: string]: unknown; families: string[]; family: string; format: string; parameter_size: string; parent_model: string; quantization_level: string; } | undefined; ... 5 more ...; tensors?: any[] | undefined; } | null',
-												optional: false,
 											},
 										],
 									},
@@ -13039,7 +12654,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'request',
 												type: '{ [x: string]: unknown; model: string; }',
-												optional: false,
 											},
 										],
 									},
@@ -13053,7 +12667,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'model',
 												type: 'Model',
-												optional: false,
 											},
 										],
 									},
@@ -13099,7 +12712,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'model_name',
 												type: 'string',
-												optional: false,
 											},
 										],
 									},
@@ -13113,7 +12725,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'model_name',
 												type: 'string',
-												optional: false,
 											},
 										],
 									},
@@ -13127,7 +12738,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'model',
 												type: 'Model',
-												optional: false,
 											},
 										],
 									},
@@ -13150,7 +12760,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'view',
 												type: '"model" | "configure" | "pull" | "copy" | "create"',
-												optional: false,
 											},
 											{
 												name: 'model',
@@ -13191,7 +12800,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'action',
 										type: 'Action',
-										optional: false,
 									},
 								],
 								source_line: 1,
@@ -13210,7 +12818,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'ollama',
 										type: 'Ollama',
-										optional: false,
 									},
 								],
 								source_line: 1,
@@ -13229,17 +12836,14 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'ollama',
 										type: 'Ollama',
-										optional: false,
 									},
 									{
 										name: 'last_active_view',
 										type: 'string | null',
-										optional: false,
 									},
 									{
 										name: 'onshowpull',
 										type: '() => void',
-										optional: false,
 									},
 									{
 										name: 'onback',
@@ -13271,12 +12875,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'ollama',
 										type: 'Ollama',
-										optional: false,
 									},
 									{
 										name: 'onclose',
 										type: '() => void',
-										optional: false,
 									},
 								],
 								source_line: 1,
@@ -13295,17 +12897,14 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'ollama',
 										type: 'Ollama',
-										optional: false,
 									},
 									{
 										name: 'onclose',
 										type: '() => void',
-										optional: false,
 									},
 									{
 										name: 'onshowpull',
 										type: '() => void',
-										optional: false,
 									},
 								],
 								source_line: 1,
@@ -13324,7 +12923,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'ollama',
 										type: 'Ollama',
-										optional: false,
 									},
 								],
 								source_line: 1,
@@ -13354,12 +12952,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'model',
 										type: 'Model',
-										optional: false,
 									},
 									{
 										name: 'onshow',
 										type: '(model: Model) => void',
-										optional: false,
 									},
 									{
 										name: 'onclose',
@@ -13401,7 +12997,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'model',
 										type: 'Model',
-										optional: false,
 									},
 									{
 										name: 'onclick',
@@ -13429,12 +13024,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'model',
 										type: 'Model',
-										optional: false,
 									},
 									{
 										name: 'ollama',
 										type: 'Ollama',
-										optional: false,
 									},
 								],
 								source_line: 1,
@@ -13452,7 +13045,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'ollama',
 										type: 'Ollama',
-										optional: false,
 									},
 								],
 								source_line: 1,
@@ -13471,7 +13063,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'ollama',
 										type: 'Ollama',
-										optional: false,
 									},
 									{
 										name: 'onclose',
@@ -13515,7 +13106,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'part',
 										type: 'PartUnion',
-										optional: false,
 									},
 								],
 							},
@@ -13735,7 +13325,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'partial',
 												type: '{ id?: string | undefined; key?: string | undefined; value?: string | undefined; }',
-												optional: false,
 												default_value: 'EMPTY_OBJECT',
 											},
 										],
@@ -13753,12 +13342,10 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'id',
 												type: 'string & $brand<"Uuid">',
-												optional: false,
 											},
 											{
 												name: 'updates',
 												type: 'Partial<OmitStrict<{ id: string & $brand<"Uuid">; key: string; value: string; }, "id">>',
-												optional: false,
 											},
 										],
 									},
@@ -13771,7 +13358,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'id',
 												type: 'string & $brand<"Uuid">',
-												optional: false,
 											},
 										],
 									},
@@ -13786,12 +13372,10 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'app',
 												type: 'Frontend',
-												optional: false,
 											},
 											{
 												name: 'json',
 												type: '{ id?: string | undefined; created?: string | undefined; updated?: string | undefined; name?: string | undefined; start?: number | null | undefined; end?: number | null | undefined; has_xml_tag?: boolean | undefined; ... 6 more ...; content?: string | undefined; }',
-												optional: false,
 											},
 											{
 												name: 'options',
@@ -13811,12 +13395,10 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'app',
 												type: 'Frontend',
-												optional: false,
 											},
 											{
 												name: 'json',
 												type: '{ id?: string | undefined; created?: string | undefined; updated?: string | undefined; name?: string | undefined; start?: number | null | undefined; end?: number | null | undefined; has_xml_tag?: boolean | undefined; ... 6 more ...; content?: string | undefined; }',
-												optional: false,
 											},
 											{
 												name: 'options',
@@ -13836,12 +13418,10 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'app',
 												type: 'Frontend',
-												optional: false,
 											},
 											{
 												name: 'json',
 												type: '{ id?: string | undefined; created?: string | undefined; updated?: string | undefined; name?: string | undefined; start?: number | null | undefined; end?: number | null | undefined; has_xml_tag?: boolean | undefined; ... 6 more ...; content?: string | undefined; }',
-												optional: false,
 											},
 											{
 												name: 'options',
@@ -13861,12 +13441,10 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'app',
 												type: 'Frontend',
-												optional: false,
 											},
 											{
 												name: 'json',
 												type: '{ id?: string | undefined; created?: string | undefined; updated?: string | undefined; name?: string | undefined; start?: number | null | undefined; end?: number | null | undefined; has_xml_tag?: boolean | undefined; ... 6 more ...; content?: string | undefined; }',
-												optional: false,
 											},
 											{
 												name: 'options',
@@ -13910,7 +13488,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'options',
 												type: 'TextPartOptions',
-												optional: false,
 											},
 										],
 									},
@@ -13954,7 +13531,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'options',
 												type: 'DiskfilePartOptions',
-												optional: false,
 											},
 										],
 									},
@@ -13968,7 +13544,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'editor_state',
 												type: '{ current_content: string; } | null',
-												optional: false,
 											},
 										],
 									},
@@ -14010,7 +13585,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'part',
 										type: 'PartUnion',
-										optional: false,
 									},
 								],
 								source_line: 1,
@@ -14037,7 +13611,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'diskfile_part',
 										type: 'DiskfilePart',
-										optional: false,
 									},
 									{
 										name: 'show_actions',
@@ -14072,7 +13645,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'text_part',
 										type: 'TextPart',
-										optional: false,
 									},
 								],
 								source_line: 1,
@@ -14091,7 +13663,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'parts',
 										type: 'Array<PartUnion>',
-										optional: false,
 									},
 									{
 										name: 'prompt',
@@ -14140,7 +13711,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'part',
 										type: 'PartUnion',
-										optional: false,
 									},
 									{
 										name: 'selected',
@@ -14179,7 +13749,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'onpick',
 										type: '(part: PartUnion | undefined) => boolean | void',
-										optional: false,
 									},
 									{
 										name: 'filter',
@@ -14212,7 +13781,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'onpick',
 										type: '(part: PartUnion | undefined) => boolean | void',
-										optional: false,
 									},
 									{
 										name: 'show',
@@ -14256,7 +13824,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'part',
 										type: 'PartUnion',
-										optional: false,
 									},
 									{
 										name: 'prompt',
@@ -14321,7 +13888,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'options',
 												type: 'PartsOptions',
-												optional: false,
 											},
 										],
 									},
@@ -14336,7 +13902,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'json',
 												type: '{ id?: string | undefined; created?: string | undefined; updated?: string | undefined; name?: string | undefined; start?: number | null | undefined; end?: number | null | undefined; ... 7 more ...; content?: string | undefined; } | { ...; }',
-												optional: false,
 											},
 										],
 									},
@@ -14350,7 +13915,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'base_name',
 												type: 'string',
-												optional: false,
 												default_value: "'new part'",
 											},
 										],
@@ -14365,7 +13929,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'id',
 												type: 'string & $brand<"Uuid">',
-												optional: false,
 											},
 										],
 									},
@@ -14379,7 +13942,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'path',
 												type: 'string',
-												optional: false,
 											},
 										],
 									},
@@ -14408,7 +13970,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'part',
 										type: 'PartUnion',
-										optional: false,
 									},
 								],
 								source_line: 1,
@@ -14427,7 +13988,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'part',
 										type: 'PartUnion',
-										optional: false,
 									},
 									{
 										name: 'prompt',
@@ -14457,7 +14017,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'part',
 										type: 'PartUnion',
-										optional: false,
 									},
 									{
 										name: 'attrs',
@@ -14480,7 +14039,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'part',
 										type: 'PartUnion',
-										optional: false,
 									},
 									{
 										name: 'show_actions',
@@ -14614,7 +14172,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'options',
 												type: 'PollerOptions',
-												optional: false,
 											},
 										],
 									},
@@ -14652,7 +14209,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'interval',
 												type: 'number | undefined',
-												optional: false,
 											},
 										],
 									},
@@ -14815,7 +14371,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'params',
 												type: 'PopoverParameters',
-												optional: false,
 											},
 										],
 									},
@@ -14845,7 +14400,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'visible',
 												type: 'boolean',
-												optional: false,
 												default_value: '!this.visible',
 											},
 										],
@@ -14908,7 +14462,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'popover_content',
 										type: 'Snippet<[popover: Popover]>',
-										optional: false,
 									},
 									{
 										name: 'popover_container_attrs',
@@ -14969,21 +14522,18 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'position',
 										type: 'Position',
-										optional: false,
 										description: "- Where to position the element ('left', 'right', etc.)",
 										default_value: "'center'",
 									},
 									{
 										name: 'align',
 										type: 'Alignment',
-										optional: false,
 										description: "- Alignment along the position edge ('start', 'center', 'end')",
 										default_value: "'center'",
 									},
 									{
 										name: 'offset',
 										type: 'string',
-										optional: false,
 										description: '- Distance from the position (CSS value)',
 										default_value: "'0'",
 									},
@@ -15002,7 +14552,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'value',
 										type: 'number',
-										optional: false,
 										description: 'The percentage value of the progress bar, 0-100.',
 									},
 									{
@@ -15031,7 +14580,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'parts',
 										type: 'PartUnion[]',
-										optional: false,
 									},
 								],
 							},
@@ -15142,7 +14690,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'options',
 												type: 'PromptOptions',
-												optional: false,
 											},
 										],
 									},
@@ -15156,7 +14703,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'part',
 												type: 'PartUnion',
-												optional: false,
 											},
 										],
 									},
@@ -15169,7 +14715,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'id',
 												type: 'string & $brand<"Uuid">',
-												optional: false,
 											},
 										],
 									},
@@ -15189,12 +14734,10 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'from_index',
 												type: 'number',
-												optional: false,
 											},
 											{
 												name: 'to_index',
 												type: 'number',
-												optional: false,
 											},
 										],
 									},
@@ -15228,7 +14771,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'prompt',
 										type: 'Prompt',
-										optional: false,
 									},
 								],
 								source_line: 1,
@@ -15271,7 +14813,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'prompt',
 										type: 'Prompt',
-										optional: false,
 									},
 									{
 										name: 'selected',
@@ -15300,7 +14841,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'onpick',
 										type: '(prompt: Prompt | undefined) => boolean | void',
-										optional: false,
 									},
 									{
 										name: 'filter',
@@ -15338,7 +14878,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'onpick',
 										type: '(prompt: Prompt | undefined) => boolean | void',
-										optional: false,
 									},
 									{
 										name: 'show',
@@ -15447,7 +14986,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'options',
 												type: 'PromptsOptions',
-												optional: false,
 											},
 										],
 									},
@@ -15460,7 +14998,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'part',
 												type: 'PartUnion',
-												optional: false,
 											},
 										],
 									},
@@ -15487,7 +15024,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'base_name',
 												type: 'string',
-												optional: false,
 												default_value: "'new prompt'",
 											},
 										],
@@ -15502,7 +15038,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'prompts_json',
 												type: '{ id?: string | undefined; created?: string | undefined; updated?: string | undefined; name?: string | undefined; parts?: ({ id?: string | undefined; created?: string | undefined; updated?: string | undefined; ... 10 more ...; content?: string | undefined; } | { ...; })[] | undefined; }[]',
-												optional: false,
 											},
 										],
 									},
@@ -15515,7 +15050,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'prompt',
 												type: 'Prompt',
-												optional: false,
 											},
 										],
 									},
@@ -15528,7 +15062,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'prompt_ids',
 												type: '(string & $brand<"Uuid">)[]',
-												optional: false,
 											},
 										],
 									},
@@ -15541,7 +15074,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'prompt_id',
 												type: '(string & $brand<"Uuid">) | null',
-												optional: false,
 											},
 										],
 									},
@@ -15562,12 +15094,10 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'prompt_id',
 												type: '(string & $brand<"Uuid">) | null',
-												optional: false,
 											},
 											{
 												name: 'force',
 												type: 'boolean',
-												optional: false,
 												default_value: 'false',
 											},
 										],
@@ -15581,12 +15111,10 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'from_index',
 												type: 'number',
-												optional: false,
 											},
 											{
 												name: 'to_index',
 												type: 'number',
-												optional: false,
 											},
 										],
 									},
@@ -15599,7 +15127,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'part_id',
 												type: 'string & $brand<"Uuid">',
-												optional: false,
 											},
 										],
 									},
@@ -15613,7 +15140,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'value',
 												type: 'boolean',
-												optional: false,
 												default_value: '!this.show_sort_controls',
 											},
 										],
@@ -15651,7 +15177,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'prompt',
 										type: 'Prompt',
-										optional: false,
 									},
 								],
 								source_line: 1,
@@ -15670,7 +15195,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'prompt',
 										type: 'Prompt',
-										optional: false,
 									},
 								],
 								source_line: 1,
@@ -15851,7 +15375,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'options',
 												type: 'ProviderOptions',
-												optional: false,
 											},
 										],
 									},
@@ -15871,7 +15394,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'provider',
 										type: 'Provider',
-										optional: false,
 									},
 									{
 										name: 'attrs',
@@ -15903,7 +15425,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'provider',
 										type: 'Provider | null | undefined',
-										optional: false,
 									},
 									{
 										name: 'icon',
@@ -15955,7 +15476,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'name',
 										type: 'ProviderName',
-										optional: false,
 									},
 									{
 										name: 'fill',
@@ -16040,7 +15560,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'options',
 												type: 'ProvidersOptions',
-												optional: false,
 											},
 										],
 									},
@@ -16053,7 +15572,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'provider',
 												type: 'Provider',
-												optional: false,
 											},
 										],
 									},
@@ -16066,7 +15584,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'name',
 												type: 'string',
-												optional: false,
 											},
 										],
 									},
@@ -16079,7 +15596,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'name',
 												type: 'string',
-												optional: false,
 											},
 										],
 									},
@@ -16106,7 +15622,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'provider',
 										type: 'Provider',
-										optional: false,
 									},
 									{
 										name: 'attrs',
@@ -16133,7 +15648,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'element',
 										type: 'HTMLElement',
-										optional: false,
 									},
 								],
 							},
@@ -16150,17 +15664,14 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'direction',
 										type: 'ReorderableDirection',
-										optional: false,
 									},
 									{
 										name: 'source_index',
 										type: 'number',
-										optional: false,
 									},
 									{
 										name: 'target_index',
 										type: 'number',
-										optional: false,
 									},
 								],
 							},
@@ -16177,17 +15688,14 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'source_index',
 										type: 'number',
-										optional: false,
 									},
 									{
 										name: 'current_index',
 										type: 'number',
-										optional: false,
 									},
 									{
 										name: 'position',
 										type: 'ReorderableValidDropPosition',
-										optional: false,
 									},
 								],
 							},
@@ -16203,17 +15711,14 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'can_reorder',
 										type: '((from_index: number, to_index: number) => boolean) | undefined',
-										optional: false,
 									},
 									{
 										name: 'source_index',
 										type: 'number',
-										optional: false,
 									},
 									{
 										name: 'target_index',
 										type: 'number',
-										optional: false,
 									},
 								],
 							},
@@ -16228,12 +15733,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'target_index',
 										type: 'number',
-										optional: false,
 									},
 									{
 										name: 'max_index',
 										type: 'number',
-										optional: false,
 									},
 								],
 							},
@@ -16249,12 +15752,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'dataTransfer',
 										type: 'DataTransfer',
-										optional: false,
 									},
 									{
 										name: 'item_id',
 										type: 'ReorderableItemId',
-										optional: false,
 									},
 								],
 							},
@@ -16632,7 +16133,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'options',
 												type: 'ReorderableOptions',
-												optional: false,
 												default_value: 'EMPTY_OBJECT',
 											},
 										],
@@ -16662,17 +16162,14 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'item_id',
 												type: 'ReorderableItemId',
-												optional: false,
 											},
 											{
 												name: 'new_indicator',
 												type: 'ReorderableDropPosition',
-												optional: false,
 											},
 											{
 												name: 'is_valid',
 												type: 'boolean',
-												optional: false,
 												default_value: 'true',
 											},
 										],
@@ -16737,27 +16234,22 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'id',
 												type: 'string | number',
-												optional: false,
 											},
 											{
 												name: 'deferred',
 												type: 'Deferred<{ [x: string]: unknown; jsonrpc: "2.0"; id: string | number; result: { [x: string]: unknown; _meta?: { [x: string]: unknown; } | undefined; }; } | { [x: string]: unknown; jsonrpc: "2.0"; id: string | number | null; error: { [x: string]: unknown; code: -32700 | ... 4 more ... | (number & $brand<...>); messag...',
-												optional: false,
 											},
 											{
 												name: 'created',
 												type: 'string & $brand<"Datetime">',
-												optional: false,
 											},
 											{
 												name: 'status',
 												type: 'AsyncStatus',
-												optional: false,
 											},
 											{
 												name: 'timeout',
 												type: 'Timeout | undefined',
-												optional: false,
 											},
 										],
 									},
@@ -16790,7 +16282,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'request_timeout_ms',
 												type: 'number',
-												optional: false,
 												default_value: '120_000',
 											},
 										],
@@ -16809,7 +16300,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'id',
 												type: 'string | number',
-												optional: false,
 												description: 'The request id',
 											},
 										],
@@ -16825,13 +16315,11 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'id',
 												type: 'string | number',
-												optional: false,
 												description: 'The request id',
 											},
 											{
 												name: 'response',
 												type: '{ [x: string]: unknown; jsonrpc: "2.0"; id: string | number; result: { [x: string]: unknown; _meta?: { [x: string]: unknown; } | undefined; }; } | { [x: string]: unknown; jsonrpc: "2.0"; id: string | number | null; error: { [x: string]: unknown; code: -32700 | ... 4 more ... | (number & $brand<...>); message: string...',
-												optional: false,
 												description: 'The response data',
 											},
 										],
@@ -16847,13 +16335,11 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'id',
 												type: 'string | number',
-												optional: false,
 												description: 'The request id',
 											},
 											{
 												name: 'error_message',
 												type: '{ [x: string]: unknown; jsonrpc: "2.0"; id: string | number | null; error: { [x: string]: unknown; code: -32700 | -32600 | -32601 | -32602 | -32603 | (number & $brand<"JsonrpcServerErrorCode">); message: string; data?: unknown; }; }',
-												optional: false,
 												description: 'The complete JsonrpcErrorMessage object',
 											},
 										],
@@ -16869,7 +16355,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'message',
 												type: 'any',
-												optional: false,
 											},
 										],
 									},
@@ -16883,7 +16368,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'id',
 												type: 'string | number',
-												optional: false,
 												description: 'The request id',
 											},
 										],
@@ -16924,7 +16408,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'completion_response',
 										type: '{ created: string & $brand<"Datetime">; provider_name: "ollama" | "claude" | "chatgpt" | "gemini"; model: string; data: { type: "ollama"; value: any; } | { type: "claude"; value: any; } | { ...; } | { ...; }; } | null | undefined',
-										optional: false,
 									},
 								],
 							},
@@ -16942,17 +16425,14 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'provider_name',
 										type: '"ollama" | "claude" | "chatgpt" | "gemini"',
-										optional: false,
 									},
 									{
 										name: 'model',
 										type: 'string',
-										optional: false,
 									},
 									{
 										name: 'api_response',
 										type: 'unknown',
-										optional: false,
 									},
 									{
 										name: 'progress_token',
@@ -16971,48 +16451,6 @@ export const repos_json: Array<RepoJson> = [
 							'server/backend_provider_gemini.ts',
 							'server/backend_provider_ollama.ts',
 							'thread_helpers.ts',
-						],
-					},
-					{
-						path: 'schema_helpers.ts',
-						declarations: [
-							{
-								name: 'camel_to_snake_case',
-								kind: 'function',
-								doc_comment: 'Convert a string from camelCase to snake_case.',
-								source_line: 6,
-								type_signature: '(str: string): string',
-								return_type: 'string',
-								parameters: [
-									{
-										name: 'str',
-										type: 'string',
-										optional: false,
-									},
-								],
-							},
-							{
-								name: 'to_pascalsnake_case',
-								kind: 'function',
-								doc_comment:
-									'Convert each segment of a snake_case identifier to Pascalsnake case,\ne.g., "create_directory" -> "CreateDirectory".',
-								source_line: 16,
-								type_signature: '(str: string, from_camel?: boolean): string',
-								return_type: 'string',
-								parameters: [
-									{
-										name: 'str',
-										type: 'string',
-										optional: false,
-									},
-									{
-										name: 'from_camel',
-										type: 'boolean',
-										optional: false,
-										default_value: 'false',
-									},
-								],
-							},
 						],
 					},
 					{
@@ -17111,12 +16549,10 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'name',
 												type: 'VocabName',
-												optional: false,
 											},
 											{
 												name: 'schema',
 												type: '{ method: "completion_create" | "completion_progress" | "directory_create" | "diskfile_delete" | "diskfile_update" | "filer_change" | "ollama_copy" | "ollama_create" | "ollama_delete" | ... 10 more ... | "toggle_main_menu"; ... 6 more ...; async: true; } | { ...; } | { ...; } | ZodType<...>',
-												optional: false,
 											},
 										],
 									},
@@ -17130,7 +16566,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'schemas',
 												type: 'Record<string, any>',
-												optional: false,
 											},
 										],
 									},
@@ -17145,7 +16580,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'schema',
 												type: 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>',
-												optional: false,
 											},
 										],
 									},
@@ -17161,7 +16595,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'method',
 												type: '"completion_create" | "completion_progress" | "directory_create" | "diskfile_delete" | "diskfile_update" | "filer_change" | "ollama_copy" | "ollama_create" | "ollama_delete" | ... 10 more ... | "toggle_main_menu"',
-												optional: false,
 											},
 										],
 									},
@@ -17177,7 +16610,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'name',
 												type: 'VocabName',
-												optional: false,
 											},
 										],
 									},
@@ -17477,7 +16909,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'backend',
 										type: 'Backend',
-										optional: false,
 									},
 								],
 							},
@@ -17493,22 +16924,18 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'change',
 										type: 'WatcherChange',
-										optional: false,
 									},
 									{
 										name: 'disknode',
 										type: 'Disknode',
-										optional: false,
 									},
 									{
 										name: 'backend',
 										type: 'Backend',
-										optional: false,
 									},
 									{
 										name: 'dir',
 										type: 'string',
-										optional: false,
 									},
 								],
 							},
@@ -17544,7 +16971,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'options',
 												type: 'BackendProviderOptions',
-												optional: false,
 											},
 										],
 									},
@@ -17567,7 +16993,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'options',
 												type: 'CompletionHandlerOptions',
-												optional: false,
 											},
 										],
 									},
@@ -17582,7 +17007,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'options',
 												type: 'CompletionHandlerOptions',
-												optional: false,
 											},
 										],
 									},
@@ -17615,7 +17039,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'options',
 												type: 'BackendProviderOptions',
-												optional: false,
 											},
 										],
 									},
@@ -17638,7 +17061,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'options',
 												type: 'CompletionHandlerOptions',
-												optional: false,
 											},
 										],
 									},
@@ -17653,7 +17075,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'options',
 												type: 'CompletionHandlerOptions',
-												optional: false,
 											},
 										],
 									},
@@ -17686,7 +17107,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'options',
 												type: 'BackendProviderOptions',
-												optional: false,
 											},
 										],
 									},
@@ -17709,7 +17129,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'options',
 												type: 'CompletionHandlerOptions',
-												optional: false,
 											},
 										],
 									},
@@ -17724,7 +17143,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'options',
 												type: 'CompletionHandlerOptions',
-												optional: false,
 											},
 										],
 									},
@@ -17768,8 +17186,21 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'reload',
 												type: 'boolean',
-												optional: false,
 												default_value: 'false',
+											},
+										],
+									},
+									{
+										name: 'ensure_model',
+										kind: 'function',
+										modifiers: ['private'],
+										doc_comment: 'Ensure the model is available locally, pulling if needed.',
+										type_signature: '(model: string): Promise<void>',
+										return_type: 'Promise<void>',
+										parameters: [
+											{
+												name: 'model',
+												type: 'string',
 											},
 										],
 									},
@@ -17784,7 +17215,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'options',
 												type: 'CompletionHandlerOptions',
-												optional: false,
 											},
 										],
 									},
@@ -17799,7 +17229,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'options',
 												type: 'CompletionHandlerOptions',
-												optional: false,
 											},
 										],
 									},
@@ -17980,7 +17409,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'options',
 												type: 'BackendProviderOptions',
-												optional: false,
 											},
 										],
 									},
@@ -17996,7 +17424,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'options',
 												type: 'CompletionHandlerOptions',
-												optional: false,
 											},
 										],
 									},
@@ -18012,7 +17439,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'options',
 												type: 'CompletionHandlerOptions',
-												optional: false,
 											},
 										],
 									},
@@ -18025,7 +17451,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'streaming',
 												type: 'boolean',
-												optional: false,
 											},
 										],
 									},
@@ -18101,12 +17526,10 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'progress_token',
 												type: 'string & $brand<"Uuid">',
-												optional: false,
 											},
 											{
 												name: 'chunk',
 												type: '{ [x: string]: unknown; model?: string | undefined; created_at?: string | undefined; done?: boolean | undefined; message?: { [x: string]: unknown; role: string; content: string; } | undefined; } | undefined',
-												optional: false,
 											},
 										],
 									},
@@ -18121,7 +17544,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'chunk',
 												type: 'unknown',
-												optional: false,
 											},
 										],
 									},
@@ -18136,7 +17558,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'accumulated_length',
 												type: 'number',
-												optional: false,
 											},
 										],
 									},
@@ -18151,7 +17572,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'response',
 												type: 'unknown',
-												optional: false,
 											},
 										],
 									},
@@ -18166,7 +17586,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'api_response',
 												type: 'unknown',
-												optional: false,
 											},
 										],
 									},
@@ -18202,7 +17621,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'options',
 												type: 'BackendProviderOptions',
-												optional: false,
 											},
 										],
 									},
@@ -18216,7 +17634,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'api_key',
 												type: 'string | null',
-												optional: false,
 											},
 										],
 									},
@@ -18238,7 +17655,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'reload',
 												type: 'boolean',
-												optional: false,
 												default_value: 'false',
 											},
 										],
@@ -18269,7 +17685,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'options',
 												type: 'BackendProviderOptions',
-												optional: false,
 											},
 										],
 									},
@@ -18316,7 +17731,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'ws',
 												type: 'WSContext<unknown>',
-												optional: false,
 											},
 										],
 									},
@@ -18330,7 +17744,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'ws',
 												type: 'WSContext<unknown>',
-												optional: false,
 											},
 										],
 									},
@@ -18345,7 +17758,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'message',
 												type: '{ [x: string]: unknown; jsonrpc: "2.0"; id: string | number; method: string; params?: { [x: string]: unknown; _meta?: { [x: string]: unknown; progressToken?: string | number | undefined; } | undefined; } | undefined; }',
-												optional: false,
 											},
 										],
 									},
@@ -18360,7 +17772,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'message',
 												type: '{ [x: string]: unknown; jsonrpc: "2.0"; id: string | number; method: string; params?: { [x: string]: unknown; _meta?: { [x: string]: unknown; progressToken?: string | number | undefined; } | undefined; } | undefined; }',
-												optional: false,
 											},
 										],
 									},
@@ -18375,7 +17786,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'message',
 												type: '{ [x: string]: unknown; jsonrpc: "2.0"; id: string | number; method: string; params?: { [x: string]: unknown; _meta?: { [x: string]: unknown; progressToken?: string | number | undefined; } | undefined; } | undefined; }',
-												optional: false,
 											},
 										],
 									},
@@ -18547,7 +17957,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'options',
 												type: 'BackendOptions',
-												optional: false,
 											},
 										],
 									},
@@ -18561,12 +17970,10 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'method',
 												type: '"completion_create" | "completion_progress" | "directory_create" | "diskfile_delete" | "diskfile_update" | "filer_change" | "ollama_copy" | "ollama_create" | "ollama_delete" | ... 10 more ... | "toggle_main_menu"',
-												optional: false,
 											},
 											{
 												name: 'phase',
 												type: '"send_request" | "receive_request" | "send_response" | "receive_response" | "send_error" | "receive_error" | "send" | "receive" | "execute"',
-												optional: false,
 											},
 										],
 									},
@@ -18581,7 +17988,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'method',
 												type: '"completion_create" | "completion_progress" | "directory_create" | "diskfile_delete" | "diskfile_update" | "filer_change" | "ollama_copy" | "ollama_create" | "ollama_delete" | ... 10 more ... | "toggle_main_menu"',
-												optional: false,
 											},
 										],
 									},
@@ -18595,7 +18001,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'provider_name',
 												type: 'T',
-												optional: false,
 											},
 										],
 									},
@@ -18612,7 +18017,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'message',
 												type: 'unknown',
-												optional: false,
 											},
 										],
 									},
@@ -18633,7 +18037,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'provider',
 												type: 'BackendProvider<unknown>',
-												optional: false,
 											},
 										],
 									},
@@ -18667,19 +18070,16 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'key',
 										type: 'string',
-										optional: false,
 										description: "- The environment variable name (e.g., 'SOME_CONFIGURATION_KEY')",
 									},
 									{
 										name: 'value',
 										type: 'string',
-										optional: false,
 										description: '- The new value for the environment variable',
 									},
 									{
 										name: 'options',
 										type: 'UpdateEnvVariableOptions',
-										optional: false,
 										description: '- Optional configuration for file path and operations',
 										default_value: '{}',
 									},
@@ -18732,22 +18132,18 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'input',
 										type: '{ completion_request: { created: string & $brand<"Datetime">; provider_name: "ollama" | "claude" | "chatgpt" | "gemini"; model: string; prompt: string; completion_messages?: { ...; }[] | undefined; }; _meta?: { ...; } | undefined; }',
-										optional: false,
 									},
 									{
 										name: 'output',
 										type: '{ completion_response: { created: string & $brand<"Datetime">; provider_name: "ollama" | "claude" | "chatgpt" | "gemini"; model: string; data: { type: "ollama"; value: any; } | { ...; } | { ...; } | { ...; }; }; _meta?: { ...; } | undefined; }',
-										optional: false,
 									},
 									{
 										name: 'dir',
 										type: 'string',
-										optional: false,
 									},
 									{
 										name: 'scoped_fs',
 										type: 'ScopedFs',
-										optional: false,
 									},
 								],
 							},
@@ -18793,7 +18189,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: '__0',
 										type: 'RegisterActionsOptions',
-										optional: false,
 									},
 								],
 							},
@@ -18856,7 +18251,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: '__0',
 										type: 'RegisterWebsocketActionsOptions',
-										optional: false,
 									},
 								],
 							},
@@ -18902,7 +18296,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'allowed_paths',
 												type: 'readonly string[] | string[]',
-												optional: false,
 												description:
 													'Array of absolute paths that operations will be restricted to',
 											},
@@ -18919,7 +18312,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'path_to_check',
 												type: 'string',
-												optional: false,
 											},
 										],
 									},
@@ -18934,7 +18326,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'path_to_check',
 												type: 'string',
-												optional: false,
 											},
 										],
 									},
@@ -18948,12 +18339,10 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'file_path',
 												type: 'string',
-												optional: false,
 											},
 											{
 												name: 'options',
 												type: '(ObjectEncodingOptions & Abortable & { flag?: OpenMode | undefined; }) | BufferEncoding | null | undefined',
-												optional: false,
 												default_value: "'utf8'",
 											},
 										],
@@ -18968,17 +18357,14 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'file_path',
 												type: 'string',
-												optional: false,
 											},
 											{
 												name: 'data',
 												type: 'string | ArrayBufferView<ArrayBufferLike> | Iterable<string | ArrayBufferView<ArrayBufferLike>> | AsyncIterable<...> | Stream',
-												optional: false,
 											},
 											{
 												name: 'options',
 												type: 'BufferEncoding | (ObjectEncodingOptions & { mode?: Mode | undefined; flag?: OpenMode | undefined; flush?: boolean | undefined; } & Abortable) | null | undefined',
-												optional: false,
 												default_value: "'utf8'",
 											},
 										],
@@ -18993,7 +18379,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'path_to_remove',
 												type: 'string',
-												optional: false,
 											},
 											{
 												name: 'options',
@@ -19012,7 +18397,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'dir_path',
 												type: 'string',
-												optional: false,
 											},
 											{
 												name: 'options',
@@ -19031,7 +18415,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'path',
 												type: 'PathLike',
-												optional: false,
 											},
 											{
 												name: 'options',
@@ -19050,7 +18433,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'path',
 												type: 'PathLike',
-												optional: false,
 											},
 											{
 												name: 'options',
@@ -19069,7 +18451,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'path',
 												type: 'PathLike',
-												optional: false,
 											},
 											{
 												name: 'options',
@@ -19088,7 +18469,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'path_to_stat',
 												type: 'string',
-												optional: false,
 											},
 											{
 												name: 'options',
@@ -19107,7 +18487,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'path_to_stat',
 												type: 'string',
-												optional: false,
 											},
 											{
 												name: 'options',
@@ -19126,7 +18505,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'path_to_stat',
 												type: 'string',
-												optional: false,
 											},
 											{
 												name: 'options',
@@ -19145,12 +18523,10 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'source',
 												type: 'string',
-												optional: false,
 											},
 											{
 												name: 'destination',
 												type: 'string',
-												optional: false,
 											},
 											{
 												name: 'mode',
@@ -19168,7 +18544,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'path_to_check',
 												type: 'string',
-												optional: false,
 											},
 										],
 									},
@@ -19195,7 +18570,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'path',
 												type: 'string',
-												optional: false,
 											},
 											{
 												name: 'options',
@@ -19227,7 +18601,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'path',
 												type: 'string',
-												optional: false,
 											},
 											{
 												name: 'options',
@@ -19256,7 +18629,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'env_value',
 										type: 'string | undefined',
-										optional: false,
 									},
 								],
 							},
@@ -19272,12 +18644,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'origin',
 										type: 'string',
-										optional: false,
 									},
 									{
 										name: 'allowed_patterns',
 										type: 'RegExp[]',
-										optional: false,
 									},
 								],
 							},
@@ -19293,7 +18663,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'allowed_patterns',
 										type: 'RegExp[]',
-										optional: false,
 										description: '- Array of compiled regex patterns from parse_allowed_origins',
 									},
 								],
@@ -19314,12 +18683,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'c',
 										type: 'Context<any, any, BlankInput>',
-										optional: false,
 									},
 									{
 										name: 'next',
 										type: 'Next',
-										optional: false,
 									},
 								],
 							},
@@ -19603,7 +18970,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'options',
 												type: 'SocketOptions',
-												optional: false,
 											},
 										],
 									},
@@ -19617,7 +18983,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'url',
 												type: 'string | null',
-												optional: false,
 												description: 'The WebSocket URL to connect to',
 												default_value: 'null',
 											},
@@ -19633,7 +18998,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'code',
 												type: 'number',
-												optional: false,
 												description: 'The close code to use (default: 1000 - normal closure)',
 												default_value: 'DEFAULT_CLOSE_CODE',
 											},
@@ -19651,7 +19015,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'data',
 												type: 'object',
-												optional: false,
 												description: 'The data to send',
 											},
 										],
@@ -19667,7 +19030,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'url',
 												type: 'string',
-												optional: false,
 												description: 'The new WebSocket URL',
 											},
 										],
@@ -19722,7 +19084,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'handler',
 												type: 'SocketActionHandler',
-												optional: false,
 												description: 'The message handler to add',
 											},
 										],
@@ -19738,7 +19099,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'handler',
 												type: 'SocketErrorHandler',
-												optional: false,
 												description: 'The error handler to add',
 											},
 										],
@@ -19765,12 +19125,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'socket',
 										type: 'Socket',
-										optional: false,
 									},
 									{
 										name: 'type',
 										type: "'queued' | 'failed'",
-										optional: false,
 									},
 								],
 								source_line: 1,
@@ -19884,13 +19242,11 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'items_getter',
 												type: 'Thunk<T[]>',
-												optional: false,
 												description: 'Function that returns the current items array',
 											},
 											{
 												name: 'sorters_getter',
 												type: 'Thunk<Sorter<T>[]>',
-												optional: false,
 												description: 'Function that returns the current sorters',
 											},
 											{
@@ -19925,22 +19281,18 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'key',
 										type: 'string',
-										optional: false,
 									},
 									{
 										name: 'label',
 										type: 'string',
-										optional: false,
 									},
 									{
 										name: 'field',
 										type: 'keyof T',
-										optional: false,
 									},
 									{
 										name: 'direction',
 										type: '"asc" | "desc"',
-										optional: false,
 										default_value: "'asc'",
 									},
 								],
@@ -19958,22 +19310,18 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'key',
 										type: 'string',
-										optional: false,
 									},
 									{
 										name: 'label',
 										type: 'string',
-										optional: false,
 									},
 									{
 										name: 'field',
 										type: 'keyof T',
-										optional: false,
 									},
 									{
 										name: 'direction',
 										type: '"asc" | "desc"',
-										optional: false,
 										default_value: "'asc'",
 									},
 								],
@@ -20029,7 +19377,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'value',
 										type: 'T',
-										optional: false,
 									},
 									{
 										name: 'message',
@@ -20052,7 +19399,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'value',
 										type: 'T | undefined',
-										optional: false,
 									},
 									{
 										name: 'message',
@@ -20075,7 +19421,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'value',
 										type: 'T | null | undefined',
-										optional: false,
 									},
 									{
 										name: 'message',
@@ -20095,7 +19440,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'app',
 										type: 'T',
-										optional: false,
 									},
 								],
 							},
@@ -20118,17 +19462,14 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'role',
 										type: 'string',
-										optional: false,
 									},
 									{
 										name: 'content',
 										type: 'string',
-										optional: false,
 									},
 									{
 										name: 'tag',
 										type: 'string',
-										optional: false,
 										default_value: "'message'",
 									},
 								],
@@ -20144,12 +19485,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'turns',
 										type: 'Iterable<{ role: string; content: string; enabled?: boolean | undefined; }>',
-										optional: false,
 									},
 									{
 										name: 'tag',
 										type: 'string',
-										optional: false,
 										default_value: "'message'",
 									},
 								],
@@ -20167,12 +19506,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'turns',
 										type: 'Iterable<Turn>',
-										optional: false,
 									},
 									{
 										name: 'completion_messages',
 										type: '{ [x: string]: unknown; role: string; content: string; }[]',
-										optional: false,
 										default_value: '[]',
 									},
 								],
@@ -20276,7 +19613,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'options',
 												type: 'ThreadOptions',
-												optional: false,
 											},
 										],
 									},
@@ -20290,7 +19626,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'turn',
 												type: 'Turn',
-												optional: false,
 											},
 										],
 									},
@@ -20305,7 +19640,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'content',
 												type: 'string',
-												optional: false,
 											},
 											{
 												name: 'request',
@@ -20325,7 +19659,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'content',
 												type: 'string',
-												optional: false,
 											},
 											{
 												name: 'json',
@@ -20344,7 +19677,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'content',
 												type: 'string',
-												optional: false,
 											},
 										],
 									},
@@ -20358,12 +19690,10 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'part',
 												type: 'PartUnion',
-												optional: false,
 											},
 											{
 												name: 'role',
 												type: 'string',
-												optional: false,
 											},
 										],
 									},
@@ -20386,7 +19716,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'content',
 												type: 'string',
-												optional: false,
 											},
 										],
 									},
@@ -20399,7 +19728,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'model_id',
 												type: 'string & $brand<"Uuid">',
-												optional: false,
 											},
 										],
 									},
@@ -20428,7 +19756,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'thread',
 										type: 'Thread',
-										optional: false,
 									},
 								],
 								source_line: 1,
@@ -20473,12 +19800,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'thread',
 										type: 'Thread',
-										optional: false,
 									},
 									{
 										name: 'chat',
 										type: 'Chat',
-										optional: false,
 									},
 								],
 								source_line: 1,
@@ -20564,7 +19889,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'options',
 												type: 'ThreadsOptions',
-												optional: false,
 											},
 										],
 									},
@@ -20596,7 +19920,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'thread',
 												type: 'Thread',
-												optional: false,
 											},
 											{
 												name: 'select',
@@ -20615,7 +19938,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'threads_json',
 												type: '{ id?: string | undefined; created?: string | undefined; updated?: string | undefined; model_name?: string | undefined; turns?: { role: string; id?: string | undefined; created?: string | undefined; ... 5 more ...; error_message?: string | undefined; }[] | undefined; enabled?: boolean | undefined; }[]',
-												optional: false,
 											},
 											{
 												name: 'select',
@@ -20633,7 +19955,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'id',
 												type: 'string & $brand<"Uuid">',
-												optional: false,
 											},
 										],
 									},
@@ -20646,7 +19967,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'ids',
 												type: '(string & $brand<"Uuid">)[]',
-												optional: false,
 											},
 										],
 									},
@@ -20659,7 +19979,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'thread_id',
 												type: '(string & $brand<"Uuid">) | null',
-												optional: false,
 											},
 										],
 									},
@@ -20679,12 +19998,10 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'from_index',
 												type: 'number',
-												optional: false,
 											},
 											{
 												name: 'to_index',
 												type: 'number',
-												optional: false,
 											},
 										],
 									},
@@ -20714,7 +20031,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'thread',
 										type: 'Thread',
-										optional: false,
 									},
 									{
 										name: 'attrs',
@@ -20746,12 +20062,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'value',
 										type: 'TimeValue | null | undefined',
-										optional: false,
 									},
 									{
 										name: 'fallback',
 										type: 'string',
-										optional: false,
 										default_value: "''",
 									},
 								],
@@ -20766,12 +20080,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'value',
 										type: 'TimeValue | null | undefined',
-										optional: false,
 									},
 									{
 										name: 'fallback',
 										type: 'string',
-										optional: false,
 										default_value: "''",
 									},
 								],
@@ -20786,12 +20098,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'value',
 										type: 'TimeValue | null | undefined',
-										optional: false,
 									},
 									{
 										name: 'fallback',
 										type: 'string',
-										optional: false,
 										default_value: "''",
 									},
 								],
@@ -20806,12 +20116,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'value',
 										type: 'TimeValue | null | undefined',
-										optional: false,
 									},
 									{
 										name: 'fallback',
 										type: 'string',
-										optional: false,
 										default_value: "''",
 									},
 								],
@@ -20826,12 +20134,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'ms',
 										type: 'number',
-										optional: false,
 									},
 									{
 										name: 'decimals',
 										type: 'number',
-										optional: false,
 										default_value: '0',
 									},
 								],
@@ -20961,7 +20267,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'options',
 												type: 'TimeOptions',
-												optional: false,
 											},
 										],
 									},
@@ -21005,7 +20310,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'value',
 												type: 'number',
-												optional: false,
 												default_value: 'Date.now()',
 											},
 										],
@@ -21034,7 +20338,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'value',
 										type: 'Date',
-										optional: false,
 									},
 								],
 								source_line: 1,
@@ -21057,20 +20360,17 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'active',
 										type: 'boolean',
-										optional: false,
 										description: 'Current state of the toggle',
 										bindable: true,
 									},
 									{
 										name: 'active_content',
 										type: 'Snippet | string',
-										optional: false,
 										description: 'Content to display when toggle is active',
 									},
 									{
 										name: 'inactive_content',
 										type: 'Snippet | string',
-										optional: false,
 										description: 'Content to display when toggle is inactive',
 									},
 								],
@@ -21128,7 +20428,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'transport',
 												type: 'Transport',
-												optional: false,
 											},
 										],
 									},
@@ -21141,7 +20440,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'transport_name',
 												type: 'string',
-												optional: false,
 											},
 										],
 									},
@@ -21197,7 +20495,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'transport_name',
 												type: 'string',
-												optional: false,
 											},
 										],
 									},
@@ -21341,7 +20638,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'options',
 												type: 'TurnOptions',
-												optional: false,
 											},
 										],
 									},
@@ -21354,7 +20650,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'part',
 												type: 'PartUnion',
-												optional: false,
 											},
 										],
 									},
@@ -21367,7 +20662,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'part',
 												type: 'PartUnion',
-												optional: false,
 											},
 										],
 									},
@@ -21380,7 +20674,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'part_id',
 												type: 'string & $brand<"Uuid">',
-												optional: false,
 											},
 										],
 									},
@@ -21397,17 +20690,14 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'part',
 										type: 'PartUnion',
-										optional: false,
 									},
 									{
 										name: 'role',
 										type: 'string',
-										optional: false,
 									},
 									{
 										name: 'json',
 										type: 'Partial<OmitStrict<{ id: string & $brand<"Uuid">; created: string & $brand<"Datetime">; updated: string & $brand<"Datetime">; part_ids: (string & $brand<"Uuid">)[]; ... 4 more ...; error_message?: string | undefined; }, "role" | "part_ids">>',
-										optional: false,
 									},
 								],
 							},
@@ -21422,22 +20712,18 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'content',
 										type: 'string',
-										optional: false,
 									},
 									{
 										name: 'role',
 										type: 'string',
-										optional: false,
 									},
 									{
 										name: 'json',
 										type: 'Partial<OmitStrict<{ id: string & $brand<"Uuid">; created: string & $brand<"Datetime">; updated: string & $brand<"Datetime">; part_ids: (string & $brand<"Uuid">)[]; ... 4 more ...; error_message?: string | undefined; }, "role" | "part_ids">>',
-										optional: false,
 									},
 									{
 										name: 'app',
 										type: 'Frontend',
-										optional: false,
 									},
 								],
 							},
@@ -21452,17 +20738,14 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'parts',
 										type: 'PartUnion[]',
-										optional: false,
 									},
 									{
 										name: 'role',
 										type: 'string',
-										optional: false,
 									},
 									{
 										name: 'json',
 										type: 'Partial<OmitStrict<{ id: string & $brand<"Uuid">; created: string & $brand<"Datetime">; updated: string & $brand<"Datetime">; part_ids: (string & $brand<"Uuid">)[]; ... 4 more ...; error_message?: string | undefined; }, "role" | "part_ids">>',
-										optional: false,
 									},
 								],
 							},
@@ -21480,7 +20763,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'turn',
 										type: 'Turn',
-										optional: false,
 									},
 								],
 								source_line: 1,
@@ -21504,7 +20786,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'thread',
 										type: 'Thread',
-										optional: false,
 									},
 									{
 										name: 'attrs',
@@ -21528,7 +20809,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'turn',
 										type: 'Turn',
-										optional: false,
 									},
 								],
 								source_line: 1,
@@ -21547,7 +20827,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'turn',
 										type: 'Turn',
-										optional: false,
 									},
 									{
 										name: 'show_actions',
@@ -21696,7 +20975,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'options',
 												type: 'UiOptions',
-												optional: false,
 											},
 										],
 									},
@@ -21710,7 +20988,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'value',
 												type: 'boolean',
-												optional: false,
 												default_value: '!this.show_main_dialog',
 											},
 										],
@@ -21725,7 +21002,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'value',
 												type: 'boolean',
-												optional: false,
 												default_value: '!this.show_sidebar',
 											},
 										],
@@ -21750,7 +21026,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'value',
 										type: 'unknown',
-										optional: false,
 									},
 								],
 							},
@@ -21814,7 +21089,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'attribute',
 										type: 'XmlAttributeWithDefaults',
-										optional: false,
 									},
 									{
 										name: 'dormant',
@@ -21824,12 +21098,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'onupdate',
 										type: "(updates: Partial<OmitStrict<XmlAttributeWithDefaults, 'id'>>) => void",
-										optional: false,
 									},
 									{
 										name: 'onremove',
 										type: '() => void',
-										optional: false,
 									},
 								],
 								source_line: 1,
@@ -21848,7 +21120,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'part',
 										type: 'PartUnion',
-										optional: false,
 									},
 								],
 								source_line: 1,
@@ -21965,7 +21236,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'def',
 										type: '$ZodTypeDef',
-										optional: false,
 									},
 								],
 							},
@@ -21983,7 +21253,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'schema',
 										type: 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>',
-										optional: false,
 										description: 'The schema to unwrap',
 									},
 								],
@@ -21999,7 +21268,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'schema',
 										type: 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>',
-										optional: false,
 									},
 								],
 							},
@@ -22014,7 +21282,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'schema',
 										type: 'T',
-										optional: false,
 									},
 								],
 							},
@@ -22031,13 +21298,11 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'schema',
 										type: 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>',
-										optional: false,
 										description: 'The object schema',
 									},
 									{
 										name: 'key',
 										type: 'string',
-										optional: false,
 										description: 'The property name',
 									},
 								],
@@ -22057,13 +21322,11 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'schema',
 										type: 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>',
-										optional: false,
 										description: 'The object schema',
 									},
 									{
 										name: 'key',
 										type: 'string',
-										optional: false,
 										description: 'The property name',
 									},
 								],
@@ -22081,7 +21344,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'schema',
 										type: 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>',
-										optional: false,
 									},
 								],
 							},
@@ -22098,7 +21360,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'schema',
 										type: 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>',
-										optional: false,
 									},
 								],
 							},
@@ -22114,7 +21375,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'error',
 										type: 'ZodError<unknown>',
-										optional: false,
 									},
 								],
 							},
@@ -22177,7 +21437,7 @@ export const repos_json: Array<RepoJson> = [
 		library_json: {
 			package_json: {
 				name: '@fuzdev/fuz_css',
-				version: '0.39.0',
+				version: '0.41.0',
 				description: 'CSS framework and design system',
 				motto: 'magical organic stylesheets',
 				glyph: '🌿',
@@ -22207,28 +21467,36 @@ export const repos_json: Array<RepoJson> = [
 				engines: {
 					node: '>=22.15',
 				},
+				peerDependencies: {
+					'@fuzdev/fuz_util': '>=0.42.0',
+				},
+				peerDependenciesMeta: {
+					'@fuzdev/fuz_util': {
+						optional: true,
+					},
+				},
 				devDependencies: {
 					'@changesets/changelog-git': '^0.2.1',
-					'@fuzdev/fuz_util': '^0.40.0',
+					'@fuzdev/fuz_code': '^0.38.0',
+					'@fuzdev/fuz_ui': '^0.170.0',
+					'@fuzdev/fuz_util': '^0.42.0',
 					'@ryanatkn/eslint-config': '^0.9.0',
-					'@fuzdev/fuz_ui': '^0.165.0',
-					'@fuzdev/fuz_code': '^0.36.0',
-					'@ryanatkn/gro': '^0.179.0',
+					'@ryanatkn/gro': '^0.181.0',
 					'@sveltejs/adapter-static': '^3.0.10',
-					'@sveltejs/kit': '^2.49.0',
-					'@sveltejs/package': '^2.5.6',
+					'@sveltejs/kit': '^2.49.1',
+					'@sveltejs/package': '^2.5.7',
 					'@sveltejs/vite-plugin-svelte': '^6.2.1',
 					'@types/node': '^24.10.1',
 					eslint: '^9.39.1',
-					'eslint-plugin-svelte': '^3.13.0',
-					prettier: '^3.6.2',
+					'eslint-plugin-svelte': '^3.13.1',
+					prettier: '^3.7.4',
 					'prettier-plugin-svelte': '^3.4.0',
-					svelte: '^5.44.0',
+					svelte: '^5.45.6',
 					'svelte-check': '^4.3.4',
 					tslib: '^2.8.1',
 					typescript: '^5.9.3',
-					'typescript-eslint': '^8.48.0',
-					vitest: '^4.0.14',
+					'typescript-eslint': '^8.48.1',
+					vitest: '^4.0.15',
 					zod: '^4.1.13',
 				},
 				prettier: {
@@ -22265,7 +21533,7 @@ export const repos_json: Array<RepoJson> = [
 			},
 			source_json: {
 				name: '@fuzdev/fuz_css',
-				version: '0.39.0',
+				version: '0.41.0',
 				modules: [
 					{
 						path: 'css_class_composites.ts',
@@ -22325,14 +21593,12 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'template',
 										type: 'ClassTemplateFn<T1, T2, T3>',
-										optional: false,
 										description:
 											'- Function that generates CSS from values, can return null to skip',
 									},
 									{
 										name: 'values',
 										type: 'Iterable<T1>',
-										optional: false,
 										description: '- Primary iterable of values',
 									},
 									{
@@ -22396,7 +21662,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'str',
 										type: 'string',
-										optional: false,
 									},
 								],
 							},
@@ -22410,7 +21675,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'str',
 										type: 'string',
-										optional: false,
 									},
 								],
 							},
@@ -22424,7 +21688,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'property',
 										type: 'string',
-										optional: false,
 									},
 								],
 							},
@@ -22440,7 +21703,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'value',
 										type: 'string',
-										optional: false,
 									},
 								],
 							},
@@ -22456,7 +21718,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'value',
 										type: 'string',
-										optional: false,
 									},
 								],
 							},
@@ -22473,13 +21734,11 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'property',
 										type: 'string',
-										optional: false,
 										description: "- The CSS property name (e.g. 'display', 'gap')",
 									},
 									{
 										name: 'values',
 										type: 'Iterable<string>',
-										optional: false,
 										description: '- The values to generate classes for',
 									},
 									{
@@ -22492,7 +21751,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'prefix',
 										type: 'string',
-										optional: false,
 										description:
 											'- Optional class name prefix (defaults to property with dashes replaced by underscores)',
 										default_value: 'to_variable_name(property)',
@@ -22512,13 +21770,11 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'property',
 										type: 'string',
-										optional: false,
 										description: "- The base CSS property name (e.g. 'margin', 'padding')",
 									},
 									{
 										name: 'values',
 										type: 'Iterable<string>',
-										optional: false,
 										description: '- The values to generate classes for',
 									},
 									{
@@ -22542,13 +21798,11 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'property',
 										type: 'string',
-										optional: false,
 										description: "- The base CSS property name (e.g. 'overflow')",
 									},
 									{
 										name: 'values',
 										type: 'Iterable<string>',
-										optional: false,
 										description: '- The values to generate classes for',
 									},
 								],
@@ -22566,7 +21820,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'values',
 										type: 'Iterable<string>',
-										optional: false,
 										description: '- The values to generate classes for',
 									},
 									{
@@ -22590,13 +21843,11 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'sizes',
 										type: 'Iterable<string>',
-										optional: false,
 										description: '- The shadow size variants (xs, sm, md, lg, xl)',
 									},
 									{
 										name: 'alpha_mapping',
 										type: 'Record<string, string>',
-										optional: false,
 										description: '- Mapping of sizes to alpha numbers (1-5)',
 									},
 								],
@@ -22637,12 +21888,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'contents',
 										type: 'string',
-										optional: false,
 									},
 									{
 										name: 'extractors',
 										type: 'CssExtractor[]',
-										optional: false,
 										default_value: 'CSS_CLASS_EXTRACTORS',
 									},
 								],
@@ -22665,7 +21914,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'include_classes',
 												type: 'Set<string> | null',
-												optional: false,
 												default_value: 'null',
 											},
 										],
@@ -22679,12 +21927,10 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'id',
 												type: 'string',
-												optional: false,
 											},
 											{
 												name: 'classes',
 												type: 'Set<string>',
-												optional: false,
 											},
 										],
 									},
@@ -22697,7 +21943,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'id',
 												type: 'string',
-												optional: false,
 											},
 										],
 									},
@@ -22787,17 +22032,14 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'classes',
 										type: 'Iterable<string>',
-										optional: false,
 									},
 									{
 										name: 'classes_by_name',
 										type: 'Record<string, CssClassDeclaration | undefined>',
-										optional: false,
 									},
 									{
 										name: 'interpreters',
 										type: 'CssClassDeclarationInterpreter[]',
-										optional: false,
 									},
 									{
 										name: 'log',
@@ -22923,7 +22165,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'options',
 										type: 'GenMossCssOptions',
-										optional: false,
 										default_value: '{}',
 									},
 								],
@@ -23011,12 +22252,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'theme',
 										type: 'Theme',
-										optional: false,
 									},
 									{
 										name: 'options',
 										type: 'RenderThemeStyleOptions',
-										optional: false,
 										default_value: '{}',
 									},
 								],
@@ -23032,18 +22271,15 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'variable',
 										type: 'StyleVariable',
-										optional: false,
 									},
 									{
 										name: 'dark',
 										type: 'boolean',
-										optional: false,
 										default_value: 'false',
 									},
 									{
 										name: 'comments',
 										type: 'boolean',
-										optional: false,
 										default_value: 'true',
 									},
 								],
@@ -23538,7 +22774,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'name',
 										type: 'string',
-										optional: false,
 									},
 								],
 							},
@@ -25572,9 +24807,9 @@ export const repos_json: Array<RepoJson> = [
 				],
 			},
 			name: '@fuzdev/fuz_css',
-			repo_name: 'moss',
+			repo_name: 'fuz_css',
 			repo_url: 'https://github.com/fuzdev/fuz_css',
-			owner_name: 'ryanatkn',
+			owner_name: 'fuzdev',
 			homepage_url: 'https://css.fuz.dev/',
 			logo_url: 'https://css.fuz.dev/logo.svg',
 			logo_alt: 'a fuzzy tuft of green moss',
@@ -25592,7 +24827,7 @@ export const repos_json: Array<RepoJson> = [
 		library_json: {
 			package_json: {
 				name: '@fuzdev/fuz_ui',
-				version: '0.168.0',
+				version: '0.170.0',
 				description: 'Svelte UI library',
 				motto: 'friendly user zystem',
 				glyph: '🧶',
@@ -25626,10 +24861,10 @@ export const repos_json: Array<RepoJson> = [
 					node: '>=22.15',
 				},
 				peerDependencies: {
-					'@fuzdev/fuz_util': '>=0.41.1',
-					'@fuzdev/fuz_code': '>=0.36.0',
+					'@fuzdev/fuz_code': '>=0.37.0',
+					'@fuzdev/fuz_css': '>=0.40.0',
+					'@fuzdev/fuz_util': '>=0.42.0',
 					'@ryanatkn/gro': '>=0.180.0',
-					'@fuzdev/fuz_css': '>=0.39.0',
 					'@sveltejs/kit': '^2.47.3',
 					'esm-env': '^1',
 					svelte: '^5',
@@ -25649,29 +24884,29 @@ export const repos_json: Array<RepoJson> = [
 				},
 				devDependencies: {
 					'@changesets/changelog-git': '^0.2.1',
-					'@fuzdev/fuz_util': '^0.41.1',
+					'@fuzdev/fuz_code': '^0.38.0',
+					'@fuzdev/fuz_css': '^0.41.0',
+					'@fuzdev/fuz_util': '^0.42.0',
 					'@ryanatkn/eslint-config': '^0.9.0',
-					'@fuzdev/fuz_code': '^0.36.0',
-					'@ryanatkn/gro': '^0.180.0',
-					'@fuzdev/fuz_css': '^0.39.0',
+					'@ryanatkn/gro': '^0.181.0',
 					'@sveltejs/adapter-static': '^3.0.10',
-					'@sveltejs/kit': '^2.49.0',
+					'@sveltejs/kit': '^2.49.1',
 					'@sveltejs/package': '^2.5.7',
 					'@sveltejs/vite-plugin-svelte': '^6.2.1',
 					'@types/node': '^24.10.1',
 					eslint: '^9.39.1',
-					'eslint-plugin-svelte': '^3.13.0',
+					'eslint-plugin-svelte': '^3.13.1',
 					'esm-env': '^1.2.2',
 					jsdom: '^27.2.0',
 					prettier: '^3.6.2',
 					'prettier-plugin-svelte': '^3.4.0',
-					svelte: '^5.45.2',
+					svelte: '^5.45.6',
 					'svelte-check': '^4.3.4',
 					svelte2tsx: '^0.7.45',
 					tslib: '^2.8.1',
 					typescript: '^5.9.3',
-					'typescript-eslint': '^8.48.0',
-					vitest: '^4.0.14',
+					'typescript-eslint': '^8.48.1',
+					vitest: '^4.0.15',
 					zod: '^4.1.13',
 				},
 				prettier: {
@@ -25710,7 +24945,7 @@ export const repos_json: Array<RepoJson> = [
 			},
 			source_json: {
 				name: '@fuzdev/fuz_ui',
-				version: '0.168.0',
+				version: '0.170.0',
 				modules: [
 					{
 						path: 'Alert.svelte',
@@ -27751,13 +26986,7 @@ export const repos_json: Array<RepoJson> = [
 								source_line: 1,
 							},
 						],
-						dependencies: [
-							'Details.svelte',
-							'Mdz.svelte',
-							'ModuleLink.svelte',
-							'TypeLink.svelte',
-							'_code/Code.svelte.ts',
-						],
+						dependencies: ['Details.svelte', 'Mdz.svelte', 'ModuleLink.svelte', 'TypeLink.svelte'],
 						dependents: ['ApiDeclarationList.svelte'],
 					},
 					{
@@ -30259,12 +29488,7 @@ export const repos_json: Array<RepoJson> = [
 								source_line: 1,
 							},
 						],
-						dependencies: [
-							'DocsLink.svelte',
-							'MdzNodeView.svelte',
-							'_code/Code.svelte.ts',
-							'mdz_components.ts',
-						],
+						dependencies: ['DocsLink.svelte', 'MdzNodeView.svelte', 'mdz_components.ts'],
 						dependents: ['Mdz.svelte', 'MdzNodeView.svelte'],
 					},
 					{
@@ -31940,15 +31164,15 @@ export const repos_json: Array<RepoJson> = [
 								source_line: 1,
 							},
 						],
-						dependencies: ['DeclarationLink.svelte', '_code/Code.svelte.ts', 'library.svelte.ts'],
+						dependencies: ['DeclarationLink.svelte', 'library.svelte.ts'],
 						dependents: ['DeclarationDetail.svelte'],
 					},
 				],
 			},
 			name: '@fuzdev/fuz_ui',
-			repo_name: 'fuz',
+			repo_name: 'fuz_ui',
 			repo_url: 'https://github.com/fuzdev/fuz_ui',
-			owner_name: 'ryanatkn',
+			owner_name: 'fuzdev',
 			homepage_url: 'https://ui.fuz.dev/',
 			logo_url: 'https://ui.fuz.dev/logo.svg',
 			logo_alt: 'a friendly brown spider facing you',
@@ -31975,7 +31199,7 @@ export const repos_json: Array<RepoJson> = [
 		library_json: {
 			package_json: {
 				name: '@ryanatkn/gro',
-				version: '0.180.0',
+				version: '0.181.0',
 				description: 'task runner and toolkit extending SvelteKit',
 				motto: 'generate, run, optimize',
 				glyph: '🌰',
@@ -32037,7 +31261,7 @@ export const repos_json: Array<RepoJson> = [
 					zod: '^4.1.13',
 				},
 				peerDependencies: {
-					'@fuzdev/fuz_util': '>=0.41.1',
+					'@fuzdev/fuz_util': '>=0.42.0',
 					'@sveltejs/kit': '^2',
 					esbuild: '^0.27.0',
 					svelte: '^5',
@@ -32058,24 +31282,24 @@ export const repos_json: Array<RepoJson> = [
 				devDependencies: {
 					'@changesets/changelog-git': '^0.2.1',
 					'@changesets/types': '^6.1.0',
-					'@fuzdev/fuz_util': '^0.41.1',
+					'@fuzdev/fuz_code': '^0.38.0',
+					'@fuzdev/fuz_css': '^0.41.0',
+					'@fuzdev/fuz_ui': '^0.170.0',
+					'@fuzdev/fuz_util': '^0.42.0',
 					'@ryanatkn/eslint-config': '^0.9.0',
-					'@fuzdev/fuz_ui': '^0.168.0',
-					'@fuzdev/fuz_code': '^0.36.0',
-					'@fuzdev/fuz_css': '^0.39.0',
 					'@sveltejs/adapter-static': '^3.0.10',
-					'@sveltejs/kit': '^2.49.0',
+					'@sveltejs/kit': '^2.49.1',
 					'@sveltejs/package': '^2.5.7',
 					'@sveltejs/vite-plugin-svelte': '^6.2.1',
 					'@types/node': '^24.10.1',
-					esbuild: '^0.27.0',
+					esbuild: '^0.27.1',
 					eslint: '^9.39.1',
-					'eslint-plugin-svelte': '^3.13.0',
-					svelte: '^5.45.2',
+					'eslint-plugin-svelte': '^3.13.1',
+					svelte: '^5.45.6',
 					'svelte-check': '^4.3.4',
 					typescript: '^5.9.3',
-					'typescript-eslint': '^8.48.0',
-					vitest: '^4.0.14',
+					'typescript-eslint': '^8.48.1',
+					vitest: '^4.0.15',
 				},
 				prettier: {
 					plugins: ['prettier-plugin-svelte'],
@@ -32112,7 +31336,7 @@ export const repos_json: Array<RepoJson> = [
 			},
 			source_json: {
 				name: '@ryanatkn/gro',
-				version: '0.180.0',
+				version: '0.181.0',
 				modules: [
 					{
 						path: 'args.ts',
@@ -38489,13 +37713,22 @@ export const repos_json: Array<RepoJson> = [
 			status: 'completed',
 			conclusion: 'success',
 		},
-		pull_requests: [],
+		pull_requests: [
+			{
+				number: 584,
+				title: 'migrate deps to fuzdev',
+				user: {
+					login: 'ryanatkn',
+				},
+				draft: false,
+			},
+		],
 	},
 	{
 		library_json: {
 			package_json: {
 				name: '@fuzdev/fuz_util',
-				version: '0.41.1',
+				version: '0.42.0',
 				description: 'utility belt for JS',
 				glyph: '🦕',
 				logo: 'logo.svg',
@@ -38552,29 +37785,29 @@ export const repos_json: Array<RepoJson> = [
 				},
 				devDependencies: {
 					'@changesets/changelog-git': '^0.2.1',
+					'@fuzdev/fuz_code': '^0.38.0',
+					'@fuzdev/fuz_css': '^0.41.0',
+					'@fuzdev/fuz_ui': '^0.170.0',
 					'@ryanatkn/eslint-config': '^0.9.0',
-					'@fuzdev/fuz_ui': '^0.167.0',
-					'@fuzdev/fuz_code': '^0.36.0',
-					'@ryanatkn/gro': '^0.179.0',
-					'@fuzdev/fuz_css': '^0.39.0',
+					'@ryanatkn/gro': '^0.181.0',
 					'@sveltejs/adapter-static': '^3.0.10',
-					'@sveltejs/kit': '^2.49.0',
-					'@sveltejs/package': '^2.5.6',
+					'@sveltejs/kit': '^2.49.1',
+					'@sveltejs/package': '^2.5.7',
 					'@sveltejs/vite-plugin-svelte': '^6.2.1',
 					'@types/node': '^24.10.1',
 					dequal: '^2.0.3',
 					eslint: '^9.39.1',
-					'eslint-plugin-svelte': '^3.13.0',
+					'eslint-plugin-svelte': '^3.13.1',
 					'esm-env': '^1.2.2',
-					prettier: '^3.6.2',
+					prettier: '^3.7.4',
 					'prettier-plugin-svelte': '^3.4.0',
-					svelte: '^5.44.1',
+					svelte: '^5.45.6',
 					'svelte-check': '^4.3.4',
 					tinybench: '^5.1.0',
 					tslib: '^2.8.1',
 					typescript: '^5.9.3',
-					'typescript-eslint': '^8.48.0',
-					vitest: '^4.0.14',
+					'typescript-eslint': '^8.48.1',
+					vitest: '^4.0.15',
 					zod: '^4.1.13',
 				},
 				prettier: {
@@ -38608,7 +37841,7 @@ export const repos_json: Array<RepoJson> = [
 			},
 			source_json: {
 				name: '@fuzdev/fuz_util',
-				version: '0.41.1',
+				version: '0.42.0',
 				modules: [
 					{
 						path: 'array.ts',
@@ -43001,9 +42234,9 @@ export const repos_json: Array<RepoJson> = [
 				],
 			},
 			name: '@fuzdev/fuz_util',
-			repo_name: 'belt',
+			repo_name: 'fuz_util',
 			repo_url: 'https://github.com/fuzdev/fuz_util',
-			owner_name: 'ryanatkn',
+			owner_name: 'fuzdev',
 			homepage_url: 'https://util.fuz.dev/',
 			logo_url: 'https://util.fuz.dev/logo.svg',
 			logo_alt: 'a green sauropod wearing a brown utility belt',
@@ -43044,24 +42277,24 @@ export const repos_json: Array<RepoJson> = [
 					node: '>=22.15',
 				},
 				devDependencies: {
-					'@fuzdev/fuz_util': '^0.40.0',
+					'@fuzdev/fuz_css': '^0.41.0',
+					'@fuzdev/fuz_ui': '^0.170.0',
+					'@fuzdev/fuz_util': '^0.42.0',
 					'@ryanatkn/eslint-config': '^0.9.0',
-					'@fuzdev/fuz_ui': '^0.165.0',
-					'@ryanatkn/gro': '^0.179.0',
-					'@fuzdev/fuz_css': '^0.39.0',
+					'@ryanatkn/gro': '^0.181.0',
 					'@sveltejs/adapter-static': '^3.0.10',
-					'@sveltejs/kit': '^2.49.0',
+					'@sveltejs/kit': '^2.49.1',
 					'@sveltejs/vite-plugin-svelte': '^6.2.1',
 					eslint: '^9.39.1',
-					'eslint-plugin-svelte': '^3.13.0',
+					'eslint-plugin-svelte': '^3.13.1',
 					prettier: '^3.6.2',
 					'prettier-plugin-svelte': '^3.4.0',
-					svelte: '^5.44.1',
+					svelte: '^5.45.6',
 					'svelte-check': '^4.3.4',
 					tslib: '^2.8.1',
 					typescript: '^5.9.3',
-					'typescript-eslint': '^8.48.0',
-					vitest: '^4.0.14',
+					'typescript-eslint': '^8.48.1',
+					vitest: '^4.0.15',
 				},
 				prettier: {
 					plugins: ['prettier-plugin-svelte'],
@@ -43089,7 +42322,7 @@ export const repos_json: Array<RepoJson> = [
 			name: '@fuzdev/fuz_template',
 			repo_name: 'fuz_template',
 			repo_url: 'https://github.com/fuzdev/fuz_template',
-			owner_name: 'ryanatkn',
+			owner_name: 'fuzdev',
 			homepage_url: 'https://template.fuz.dev/',
 			logo_url: 'https://template.fuz.dev/logo.svg',
 			logo_alt: 'a friendly pixelated spider facing you',
@@ -43107,7 +42340,7 @@ export const repos_json: Array<RepoJson> = [
 		library_json: {
 			package_json: {
 				name: '@fuzdev/fuz_blog',
-				version: '0.19.0',
+				version: '0.20.0',
 				description: 'blog software from scratch with SvelteKit',
 				glyph: '🖊️',
 				logo: 'logo.svg',
@@ -43129,40 +42362,40 @@ export const repos_json: Array<RepoJson> = [
 					node: '>=22.15',
 				},
 				peerDependencies: {
-					'@fuzdev/fuz_util': '>=0.41.1',
-					'@fuzdev/fuz_ui': '>=0.168.0',
-					'@fuzdev/fuz_mastodon': '>=0.36.0',
-					'@ryanatkn/gro': '>=0.180.0',
-					'@fuzdev/fuz_css': '>=0.39.0',
+					'@fuzdev/fuz_css': '>=0.40.0',
+					'@fuzdev/fuz_mastodon': '>=0.37.0',
+					'@fuzdev/fuz_ui': '>=0.169.0',
+					'@fuzdev/fuz_util': '>=0.42.0',
+					'@ryanatkn/gro': '>=0.181.0',
 					'@sveltejs/kit': '^2',
 					'date-fns': '^4',
 					svelte: '^5',
 				},
 				devDependencies: {
 					'@changesets/changelog-git': '^0.2.1',
-					'@fuzdev/fuz_util': '^0.41.1',
+					'@fuzdev/fuz_code': '^0.38.0',
+					'@fuzdev/fuz_css': '^0.41.0',
+					'@fuzdev/fuz_mastodon': '^0.37.0',
+					'@fuzdev/fuz_ui': '^0.170.0',
+					'@fuzdev/fuz_util': '^0.42.0',
 					'@ryanatkn/eslint-config': '^0.9.0',
-					'@fuzdev/fuz_ui': '^0.168.0',
-					'@fuzdev/fuz_code': '^0.36.0',
-					'@fuzdev/fuz_mastodon': '^0.36.0',
-					'@ryanatkn/gro': '^0.180.0',
-					'@fuzdev/fuz_css': '^0.39.0',
+					'@ryanatkn/gro': '^0.181.0',
 					'@sveltejs/adapter-static': '^3.0.10',
-					'@sveltejs/kit': '^2.49.0',
+					'@sveltejs/kit': '^2.49.1',
 					'@sveltejs/package': '^2.5.7',
 					'@sveltejs/vite-plugin-svelte': '^6.2.1',
 					'@types/node': '^24.10.1',
 					'date-fns': '^4.1.0',
 					eslint: '^9.39.1',
-					'eslint-plugin-svelte': '^3.13.0',
-					prettier: '^3.6.2',
+					'eslint-plugin-svelte': '^3.13.1',
+					prettier: '^3.7.4',
 					'prettier-plugin-svelte': '^3.4.0',
-					svelte: '^5.45.2',
+					svelte: '^5.45.6',
 					'svelte-check': '^4.3.4',
 					tslib: '^2.8.1',
 					typescript: '^5.9.3',
-					'typescript-eslint': '^8.48.0',
-					vitest: '^4.0.14',
+					'typescript-eslint': '^8.48.1',
+					vitest: '^4.0.15',
 				},
 				prettier: {
 					plugins: ['prettier-plugin-svelte'],
@@ -43200,7 +42433,7 @@ export const repos_json: Array<RepoJson> = [
 			},
 			source_json: {
 				name: '@fuzdev/fuz_blog',
-				version: '0.19.0',
+				version: '0.20.0',
 				modules: [
 					{
 						path: 'blog_helpers.ts',
@@ -43728,7 +42961,7 @@ export const repos_json: Array<RepoJson> = [
 			name: '@fuzdev/fuz_blog',
 			repo_name: 'fuz_blog',
 			repo_url: 'https://github.com/fuzdev/fuz_blog',
-			owner_name: 'ryanatkn',
+			owner_name: 'fuzdev',
 			homepage_url: 'https://blog.fuz.dev/',
 			logo_url: 'https://blog.fuz.dev/logo.svg',
 			logo_alt: 'a friendly yellow spider facing you',
@@ -43746,7 +42979,7 @@ export const repos_json: Array<RepoJson> = [
 		library_json: {
 			package_json: {
 				name: '@fuzdev/fuz_mastodon',
-				version: '0.36.0',
+				version: '0.37.0',
 				description: 'Mastodon components and helpers for Svelte, SvelteKit, and Fuz',
 				glyph: '🦣',
 				logo: 'logo.svg',
@@ -43776,9 +43009,9 @@ export const repos_json: Array<RepoJson> = [
 					node: '>=22.15',
 				},
 				peerDependencies: {
-					'@fuzdev/fuz_util': '>=0.39.0',
-					'@fuzdev/fuz_ui': '>=0.162.0',
-					'@fuzdev/fuz_css': '>=0.39.0',
+					'@fuzdev/fuz_css': '>=0.40.0',
+					'@fuzdev/fuz_ui': '>=0.169.0',
+					'@fuzdev/fuz_util': '>=0.42.0',
 					'@sveltejs/kit': '^2',
 					'date-fns': '^4',
 					'esm-env': '^1',
@@ -43786,28 +43019,28 @@ export const repos_json: Array<RepoJson> = [
 				},
 				devDependencies: {
 					'@changesets/changelog-git': '^0.2.1',
-					'@fuzdev/fuz_util': '^0.40.0',
+					'@fuzdev/fuz_code': '^0.38.0',
+					'@fuzdev/fuz_css': '^0.41.0',
+					'@fuzdev/fuz_ui': '^0.170.0',
+					'@fuzdev/fuz_util': '^0.42.0',
 					'@ryanatkn/eslint-config': '^0.9.0',
-					'@fuzdev/fuz_ui': '^0.165.0',
-					'@fuzdev/fuz_code': '^0.36.0',
-					'@ryanatkn/gro': '^0.179.0',
-					'@fuzdev/fuz_css': '^0.39.0',
+					'@ryanatkn/gro': '^0.181.0',
 					'@sveltejs/adapter-static': '^3.0.10',
-					'@sveltejs/kit': '^2.49.0',
-					'@sveltejs/package': '^2.5.6',
+					'@sveltejs/kit': '^2.49.1',
+					'@sveltejs/package': '^2.5.7',
 					'@sveltejs/vite-plugin-svelte': '^6.2.1',
 					'date-fns': '^4.1.0',
 					eslint: '^9.39.1',
-					'eslint-plugin-svelte': '^3.13.0',
+					'eslint-plugin-svelte': '^3.13.1',
 					'esm-env': '^1.2.2',
-					prettier: '^3.6.2',
+					prettier: '^3.7.4',
 					'prettier-plugin-svelte': '^3.4.0',
-					svelte: '^5.44.1',
+					svelte: '^5.45.6',
 					'svelte-check': '^4.3.4',
 					tslib: '^2.8.1',
 					typescript: '^5.9.3',
-					'typescript-eslint': '^8.48.0',
-					vitest: '^4.0.14',
+					'typescript-eslint': '^8.48.1',
+					vitest: '^4.0.15',
 				},
 				prettier: {
 					plugins: ['prettier-plugin-svelte'],
@@ -43845,7 +43078,7 @@ export const repos_json: Array<RepoJson> = [
 			},
 			source_json: {
 				name: '@fuzdev/fuz_mastodon',
-				version: '0.36.0',
+				version: '0.37.0',
 				modules: [
 					{
 						path: 'mastodon_cache.svelte.ts',
@@ -43876,12 +43109,10 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'load_data',
 												type: '() => Promise<[Url, { key: string; url: string; params: any; value: any; etag: string | null; last_modified: string | null; }][] | null>',
-												optional: false,
 											},
 											{
 												name: 'load_on_mount',
 												type: 'boolean',
-												optional: false,
 												default_value: 'true',
 											},
 										],
@@ -43914,12 +43145,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'host',
 										type: 'string',
-										optional: false,
 									},
 									{
 										name: 'id',
 										type: 'string',
-										optional: false,
 									},
 								],
 							},
@@ -43933,17 +43162,14 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'host',
 										type: 'string',
-										optional: false,
 									},
 									{
 										name: 'id',
 										type: 'string',
-										optional: false,
 									},
 									{
 										name: 'author',
 										type: 'string',
-										optional: false,
 									},
 								],
 							},
@@ -43958,17 +43184,14 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'host',
 										type: 'string',
-										optional: false,
 									},
 									{
 										name: 'id',
 										type: 'string',
-										optional: false,
 									},
 									{
 										name: 'author',
 										type: 'string',
-										optional: false,
 									},
 								],
 							},
@@ -43982,12 +43205,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'host',
 										type: 'string',
-										optional: false,
 									},
 									{
 										name: 'id',
 										type: 'string',
-										optional: false,
 									},
 								],
 							},
@@ -44001,12 +43222,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'host',
 										type: 'string',
-										optional: false,
 									},
 									{
 										name: 'id',
 										type: 'string',
-										optional: false,
 									},
 								],
 							},
@@ -44020,12 +43239,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'host',
 										type: 'string',
-										optional: false,
 									},
 									{
 										name: 'id',
 										type: 'string',
-										optional: false,
 									},
 								],
 							},
@@ -44070,7 +43287,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'url',
 										type: 'string',
-										optional: false,
 									},
 								],
 							},
@@ -44085,12 +43301,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'host',
 										type: 'string',
-										optional: false,
 									},
 									{
 										name: 'id',
 										type: 'string',
-										optional: false,
 									},
 									{
 										name: 'cache',
@@ -44130,12 +43344,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'host',
 										type: 'string',
-										optional: false,
 									},
 									{
 										name: 'id',
 										type: 'string',
-										optional: false,
 									},
 									{
 										name: 'cache',
@@ -44175,12 +43387,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'host',
 										type: 'string',
-										optional: false,
 									},
 									{
 										name: 'status_id',
 										type: 'string',
-										optional: false,
 									},
 									{
 										name: 'cache',
@@ -44574,27 +43784,22 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'root_status',
 										type: 'MastodonStatus',
-										optional: false,
 									},
 									{
 										name: 'status_context',
 										type: 'MastodonStatusContext',
-										optional: false,
 									},
 									{
 										name: 'reply_filter',
 										type: 'ReplyFilter | ReplyFilter[] | null',
-										optional: false,
 									},
 									{
 										name: 'cache',
 										type: 'Map<string, { key: string; url: string; params: any; value: any; etag: string | null; last_modified: string | null; }> | null | undefined',
-										optional: false,
 									},
 									{
 										name: 'log',
 										type: 'Logger | undefined',
-										optional: false,
 									},
 								],
 							},
@@ -44611,7 +43816,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'item',
 										type: 'MastodonStatus',
-										optional: false,
 									},
 								],
 								source_line: 1,
@@ -44629,12 +43833,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'item',
 										type: 'MastodonStatus',
-										optional: false,
 									},
 									{
 										name: 'items',
 										type: 'Array<MastodonStatus>',
-										optional: false,
 									},
 								],
 								source_line: 1,
@@ -44659,12 +43861,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'key',
 										type: 'string',
-										optional: false,
 									},
 									{
 										name: 'to_default_value',
 										type: '() => T',
-										optional: false,
 									},
 									{
 										name: 'validate',
@@ -44685,12 +43885,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'key',
 										type: 'string',
-										optional: false,
 									},
 									{
 										name: 'value',
 										type: 'any',
-										optional: false,
 									},
 								],
 							},
@@ -44707,7 +43905,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'url',
 										type: 'string',
-										optional: false,
 									},
 									{
 										name: 'updated_url',
@@ -44828,7 +44025,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'url',
 										type: 'string',
-										optional: false,
 										bindable: true,
 									},
 									{
@@ -44853,13 +44049,11 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'host',
 										type: 'string | null',
-										optional: false,
 										description: "The host part of the url, like `'mastodon.ryanatkn.com'`.",
 									},
 									{
 										name: 'id',
 										type: 'string | null',
-										optional: false,
 										description: "The status id to fetch, like `'110702983310017651'`.",
 									},
 									{
@@ -44928,7 +44122,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'children',
 										type: 'Snippet<\n\t\t\t[\n\t\t\t\t{\n\t\t\t\t\t/**\n\t\t\t\t\t * `null` here is a failed loading condition.\n\t\t\t\t\t */\n\t\t\t\t\titem: MastodonStatus | null | undefined;\n\t\t\t\t\t/**\n\t\t\t\t\t * `null` here is a failed loading condition.\n\t\t\t\t\t */\n\t\t\t\t\tstatus_context: MastodonStatusContext | null | undefined;\n\t\t\t\t\t/**\n\t\t\t\t\t * `null` here is a failed loading condition for `item` or `status_context`.\n\t\t\t\t\t */\n\t\t\t\t\treplies: Array<MastodonStatus> | null | undefined;\n\t\t\t\t\tload: () => Promise<void>;\n\t\t\t\t\tloading: boolean | undefined;\n\t\t\t\t\tload_time: number | undefined;\n\t\t\t\t},\n\t\t\t]\n\t\t>',
-										optional: false,
 									},
 								],
 								source_line: 1,
@@ -44942,7 +44135,7 @@ export const repos_json: Array<RepoJson> = [
 			name: '@fuzdev/fuz_mastodon',
 			repo_name: 'fuz_mastodon',
 			repo_url: 'https://github.com/fuzdev/fuz_mastodon',
-			owner_name: 'ryanatkn',
+			owner_name: 'fuzdev',
 			homepage_url: 'https://mastodon.fuz.dev/',
 			logo_url: 'https://mastodon.fuz.dev/logo.svg',
 			logo_alt: 'a friendly purple spider facing you',
@@ -44960,7 +44153,7 @@ export const repos_json: Array<RepoJson> = [
 		library_json: {
 			package_json: {
 				name: '@fuzdev/fuz_code',
-				version: '0.36.0',
+				version: '0.38.0',
 				description: 'syntax styling utilities and components for TypeScript, Svelte, and Markdown',
 				glyph: '🎨',
 				logo: 'logo.svg',
@@ -44993,7 +44186,7 @@ export const repos_json: Array<RepoJson> = [
 					node: '>=22.15',
 				},
 				peerDependencies: {
-					'@fuzdev/fuz_css': '>=0.39.0',
+					'@fuzdev/fuz_css': '>=0.41.0',
 					svelte: '^5',
 				},
 				peerDependenciesMeta: {
@@ -45006,28 +44199,28 @@ export const repos_json: Array<RepoJson> = [
 				},
 				devDependencies: {
 					'@changesets/changelog-git': '^0.2.1',
-					'@fuzdev/fuz_util': '^0.41.1',
+					'@fuzdev/fuz_css': '^0.41.0',
+					'@fuzdev/fuz_ui': '^0.170.0',
+					'@fuzdev/fuz_util': '^0.42.0',
 					'@ryanatkn/eslint-config': '^0.9.0',
-					'@fuzdev/fuz_ui': '^0.165.0',
-					'@ryanatkn/gro': '^0.179.0',
-					'@fuzdev/fuz_css': '^0.39.0',
+					'@ryanatkn/gro': '^0.181.0',
 					'@sveltejs/adapter-static': '^3.0.10',
-					'@sveltejs/kit': '^2.49.0',
-					'@sveltejs/package': '^2.5.6',
+					'@sveltejs/kit': '^2.49.1',
+					'@sveltejs/package': '^2.5.7',
 					'@sveltejs/vite-plugin-svelte': '^6.2.1',
 					'@types/node': '^24.10.1',
 					eslint: '^9.39.1',
-					'eslint-plugin-svelte': '^3.13.0',
+					'eslint-plugin-svelte': '^3.13.1',
 					'esm-env': '^1.2.2',
-					prettier: '^3.6.2',
+					prettier: '^3.7.4',
 					'prettier-plugin-svelte': '^3.4.0',
-					svelte: '^5.44.1',
+					svelte: '^5.45.6',
 					'svelte-check': '^4.3.4',
-					tinybench: '^5.1.0',
+					tinybench: '^6.0.0',
 					tslib: '^2.8.1',
 					typescript: '^5.9.3',
-					'typescript-eslint': '^8.48.0',
-					vitest: '^4.0.14',
+					'typescript-eslint': '^8.48.1',
+					vitest: '^4.0.15',
 				},
 				prettier: {
 					plugins: ['prettier-plugin-svelte'],
@@ -45068,7 +44261,7 @@ export const repos_json: Array<RepoJson> = [
 			},
 			source_json: {
 				name: '@fuzdev/fuz_code',
-				version: '0.36.0',
+				version: '0.38.0',
 				modules: [
 					{
 						path: 'code_sample.ts',
@@ -45120,7 +44313,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'content',
 										type: 'string',
-										optional: false,
 										description: 'The source code to syntax highlight.',
 									},
 									{
@@ -45181,7 +44373,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'content',
 										type: 'string',
-										optional: false,
 										description: 'The source code to syntax highlight.',
 									},
 									{
@@ -45261,7 +44452,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'syntax_styler',
 										type: 'SyntaxStyler',
-										optional: false,
 									},
 								],
 							},
@@ -45284,7 +44474,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'syntax_styler',
 										type: 'SyntaxStyler',
-										optional: false,
 									},
 								],
 							},
@@ -45308,7 +44497,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'syntax_styler',
 										type: 'SyntaxStyler',
-										optional: false,
 									},
 								],
 							},
@@ -45332,7 +44520,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'syntax_styler',
 										type: 'SyntaxStyler',
-										optional: false,
 									},
 								],
 							},
@@ -45354,7 +44541,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'syntax_styler',
 										type: 'SyntaxStyler',
-										optional: false,
 									},
 								],
 							},
@@ -45377,7 +44563,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'syntax_styler',
 										type: 'SyntaxStyler',
-										optional: false,
 									},
 								],
 							},
@@ -45394,25 +44579,21 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'syntax_styler',
 										type: 'SyntaxStyler',
-										optional: false,
 									},
 									{
 										name: 'tag_name',
 										type: 'string',
-										optional: false,
 										description:
 											'- The name of the tag that contains the inlined language. This name will be treated as\ncase insensitive.',
 									},
 									{
 										name: 'lang',
 										type: 'string',
-										optional: false,
 										description: '- The language key.',
 									},
 									{
 										name: 'inside_lang',
 										type: 'string',
-										optional: false,
 										default_value: "'markup'",
 									},
 								],
@@ -45430,19 +44611,16 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'syntax_styler',
 										type: 'SyntaxStyler',
-										optional: false,
 									},
 									{
 										name: 'attr_name',
 										type: 'string',
-										optional: false,
 										description:
 											'- The name of the tag that contains the inlined language. This name will be treated as\ncase insensitive.',
 									},
 									{
 										name: 'lang',
 										type: 'string',
-										optional: false,
 										description: '- The language key.',
 									},
 								],
@@ -45471,7 +44649,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'syntax_styler',
 										type: 'SyntaxStyler',
-										optional: false,
 									},
 								],
 							},
@@ -45486,17 +44663,14 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'syntax_styler',
 										type: 'SyntaxStyler',
-										optional: false,
 									},
 									{
 										name: 'tag_name',
 										type: 'string',
-										optional: false,
 									},
 									{
 										name: 'lang',
 										type: 'string',
-										optional: false,
 									},
 								],
 							},
@@ -45520,7 +44694,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'syntax_styler',
 										type: 'SyntaxStyler',
-										optional: false,
 									},
 								],
 							},
@@ -45574,12 +44747,10 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'element',
 												type: 'Element',
-												optional: false,
 											},
 											{
 												name: 'tokens',
 												type: 'SyntaxTokenStream',
-												optional: false,
 											},
 										],
 									},
@@ -45681,12 +44852,10 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'id',
 												type: 'string',
-												optional: false,
 											},
 											{
 												name: 'grammar',
 												type: 'SyntaxGrammarRaw',
-												optional: false,
 											},
 											{
 												name: 'aliases',
@@ -45705,17 +44874,14 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'base_id',
 												type: 'string',
-												optional: false,
 											},
 											{
 												name: 'extension_id',
 												type: 'string',
-												optional: false,
 											},
 											{
 												name: 'extension',
 												type: 'SyntaxGrammarRaw',
-												optional: false,
 											},
 											{
 												name: 'aliases',
@@ -45733,7 +44899,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'id',
 												type: 'string',
-												optional: false,
 											},
 										],
 									},
@@ -45751,20 +44916,17 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'text',
 												type: 'string',
-												optional: false,
 												description: '- The source code to syntax highlight.',
 											},
 											{
 												name: 'lang',
 												type: 'string',
-												optional: false,
 												description:
 													"- Language identifier (e.g., 'ts', 'css', 'html'). Used for:\n- Grammar lookup when `grammar` is undefined\n- Hook context (`lang` field passed to hooks)\n- Language identification in output",
 											},
 											{
 												name: 'grammar',
 												type: 'SyntaxGrammar | undefined',
-												optional: false,
 												description:
 													'- Optional custom grammar object. When undefined, automatically\nlooks up the grammar via `this.get_lang(lang)`. Provide this to use a custom\nor modified grammar instead of the registered one.',
 												default_value: 'this.get_lang(lang)',
@@ -45784,26 +44946,22 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'inside',
 												type: 'string',
-												optional: false,
 												description:
 													'- The property of `root` (e.g. a language id in `syntax_styler.langs`) that contains the\nobject to be modified.',
 											},
 											{
 												name: 'before',
 												type: 'string',
-												optional: false,
 												description: '- The key to insert before.',
 											},
 											{
 												name: 'insert',
 												type: 'SyntaxGrammarRaw',
-												optional: false,
 												description: '- An object containing the key-value pairs to be inserted.',
 											},
 											{
 												name: 'root',
 												type: 'Record<string, any>',
-												optional: false,
 												description:
 													'- The object containing `inside`, i.e. the object that contains the\nobject to be modified.\n\nDefaults to `syntax_styler.langs`.',
 												default_value: 'this.langs',
@@ -45823,13 +44981,11 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'o',
 												type: 'string | SyntaxTokenStream | SyntaxToken',
-												optional: false,
 												description: '- The token or token stream to be converted.',
 											},
 											{
 												name: 'lang',
 												type: 'string',
-												optional: false,
 												description: '- The name of current language.',
 											},
 										],
@@ -45846,14 +45002,12 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'base_id',
 												type: 'string',
-												optional: false,
 												description:
 													'- The id of the language to extend. This has to be a key in `syntax_styler.langs`.',
 											},
 											{
 												name: 'extension',
 												type: 'SyntaxGrammarRaw',
-												optional: false,
 												description: '- The new tokens to append.',
 											},
 										],
@@ -45871,12 +45025,10 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'pattern',
 												type: 'RegExp | SyntaxGrammarTokenRaw',
-												optional: false,
 											},
 											{
 												name: 'visited',
 												type: 'Set<number>',
-												optional: false,
 											},
 										],
 									},
@@ -45892,12 +45044,10 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'grammar',
 												type: 'SyntaxGrammarRaw',
-												optional: false,
 											},
 											{
 												name: 'visited',
 												type: 'Set<number>',
-												optional: false,
 												description:
 													'- Set of grammar object IDs already normalized (for circular references)',
 											},
@@ -45932,7 +45082,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'cb',
 												type: 'HookBeforeTokenizeCallback',
-												optional: false,
 											},
 										],
 									},
@@ -45945,7 +45094,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'cb',
 												type: 'HookAfterTokenizeCallback',
-												optional: false,
 											},
 										],
 									},
@@ -45958,7 +45106,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'cb',
 												type: 'HookWrapCallback',
-												optional: false,
 											},
 										],
 									},
@@ -45971,7 +45118,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'ctx',
 												type: 'HookBeforeTokenizeCallbackContext',
-												optional: false,
 											},
 										],
 									},
@@ -45984,7 +45130,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'ctx',
 												type: 'HookAfterTokenizeCallbackContext',
-												optional: false,
 											},
 										],
 									},
@@ -45997,7 +45142,6 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'ctx',
 												type: 'HookWrapCallbackContext',
-												optional: false,
 											},
 										],
 									},
@@ -46258,22 +45402,18 @@ export const repos_json: Array<RepoJson> = [
 											{
 												name: 'type',
 												type: 'string',
-												optional: false,
 											},
 											{
 												name: 'content',
 												type: 'string | SyntaxTokenStream',
-												optional: false,
 											},
 											{
 												name: 'alias',
 												type: 'string | string[] | undefined',
-												optional: false,
 											},
 											{
 												name: 'matched_str',
 												type: 'string',
-												optional: false,
 												default_value: "''",
 											},
 										],
@@ -46310,13 +45450,11 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'text',
 										type: 'string',
-										optional: false,
 										description: '- a string with the code to be styled',
 									},
 									{
 										name: 'grammar',
 										type: 'SyntaxGrammar',
-										optional: false,
 										description:
 											"- an object containing the tokens to use\n\nUsually a language definition like `syntax_styler.get_lang('markup')`.",
 									},
@@ -46331,7 +45469,7 @@ export const repos_json: Array<RepoJson> = [
 			name: '@fuzdev/fuz_code',
 			repo_name: 'fuz_code',
 			repo_url: 'https://github.com/fuzdev/fuz_code',
-			owner_name: 'ryanatkn',
+			owner_name: 'fuzdev',
 			homepage_url: 'https://code.fuz.dev/',
 			logo_url: 'https://code.fuz.dev/logo.svg',
 			logo_alt: 'a friendly pink spider facing you',
@@ -46349,7 +45487,7 @@ export const repos_json: Array<RepoJson> = [
 		library_json: {
 			package_json: {
 				name: '@fuzdev/fuz_gitops',
-				version: '0.56.0',
+				version: '0.58.0',
 				description: 'a tool for managing many repos',
 				glyph: '🪄',
 				logo: 'logo.svg',
@@ -46379,37 +45517,37 @@ export const repos_json: Array<RepoJson> = [
 					node: '>=22.15',
 				},
 				peerDependencies: {
-					'@fuzdev/fuz_util': '>=0.41.1',
-					'@fuzdev/fuz_ui': '>=0.168.0',
-					'@ryanatkn/gro': '>=0.180.0',
-					'@fuzdev/fuz_css': '>=0.39.0',
+					'@fuzdev/fuz_css': '>=0.40.0',
+					'@fuzdev/fuz_ui': '>=0.169.0',
+					'@fuzdev/fuz_util': '>=0.42.0',
+					'@ryanatkn/gro': '>=0.181.0',
 					'@sveltejs/kit': '^2',
 					svelte: '^5',
 					zod: '^4.1.13',
 				},
 				devDependencies: {
 					'@changesets/changelog-git': '^0.2.1',
-					'@fuzdev/fuz_util': '^0.41.1',
+					'@fuzdev/fuz_code': '^0.38.0',
+					'@fuzdev/fuz_css': '^0.41.0',
+					'@fuzdev/fuz_ui': '^0.170.0',
+					'@fuzdev/fuz_util': '^0.42.0',
 					'@ryanatkn/eslint-config': '^0.9.0',
-					'@fuzdev/fuz_ui': '^0.168.0',
-					'@fuzdev/fuz_code': '^0.36.0',
-					'@ryanatkn/gro': '^0.180.0',
-					'@fuzdev/fuz_css': '^0.39.0',
+					'@ryanatkn/gro': '^0.181.0',
 					'@sveltejs/adapter-static': '^3.0.10',
-					'@sveltejs/kit': '^2.49.0',
+					'@sveltejs/kit': '^2.49.1',
 					'@sveltejs/package': '^2.5.7',
 					'@sveltejs/vite-plugin-svelte': '^6.2.1',
 					'@types/node': '^24.10.1',
 					eslint: '^9.39.1',
-					'eslint-plugin-svelte': '^3.13.0',
+					'eslint-plugin-svelte': '^3.13.1',
 					prettier: '^3.6.2',
 					'prettier-plugin-svelte': '^3.4.0',
-					svelte: '^5.45.2',
+					svelte: '^5.45.6',
 					'svelte-check': '^4.3.4',
 					tslib: '^2.8.1',
 					typescript: '^5.9.3',
-					'typescript-eslint': '^8.48.0',
-					vitest: '^4.0.14',
+					'typescript-eslint': '^8.48.1',
+					vitest: '^4.0.15',
 				},
 				prettier: {
 					plugins: ['prettier-plugin-svelte'],
@@ -46447,7 +45585,7 @@ export const repos_json: Array<RepoJson> = [
 			},
 			source_json: {
 				name: '@fuzdev/fuz_gitops',
-				version: '0.56.0',
+				version: '0.58.0',
 				modules: [
 					{
 						path: 'changeset_generator.ts',
@@ -51094,7 +50232,7 @@ export const repos_json: Array<RepoJson> = [
 			name: '@fuzdev/fuz_gitops',
 			repo_name: 'fuz_gitops',
 			repo_url: 'https://github.com/fuzdev/fuz_gitops',
-			owner_name: 'ryanatkn',
+			owner_name: 'fuzdev',
 			homepage_url: 'https://gitops.fuz.dev/',
 			logo_url: 'https://gitops.fuz.dev/logo.svg',
 			logo_alt: 'a friendly blue spider facing you',
@@ -51143,27 +50281,27 @@ export const repos_json: Array<RepoJson> = [
 					node: '>=22.15',
 				},
 				devDependencies: {
-					'@fuzdev/fuz_util': '^0.40.0',
+					'@fuzdev/fuz_blog': '^0.20.0',
+					'@fuzdev/fuz_code': '^0.38.0',
+					'@fuzdev/fuz_css': '^0.41.0',
+					'@fuzdev/fuz_mastodon': '^0.37.0',
+					'@fuzdev/fuz_ui': '^0.170.0',
+					'@fuzdev/fuz_util': '^0.42.0',
 					'@ryanatkn/eslint-config': '^0.9.0',
-					'@fuzdev/fuz_ui': '^0.165.0',
-					'@fuzdev/fuz_blog': '^0.18.0',
-					'@fuzdev/fuz_code': '^0.36.0',
-					'@fuzdev/fuz_mastodon': '^0.36.0',
-					'@ryanatkn/gro': '^0.179.0',
-					'@fuzdev/fuz_css': '^0.39.0',
+					'@ryanatkn/gro': '^0.181.0',
 					'@sveltejs/adapter-static': '^3.0.10',
-					'@sveltejs/kit': '^2.49.0',
+					'@sveltejs/kit': '^2.49.1',
 					'@sveltejs/vite-plugin-svelte': '^6.2.1',
 					eslint: '^9.39.1',
-					'eslint-plugin-svelte': '^3.13.0',
+					'eslint-plugin-svelte': '^3.13.1',
 					prettier: '^3.6.2',
 					'prettier-plugin-svelte': '^3.4.0',
-					svelte: '^5.44.1',
+					svelte: '^5.45.6',
 					'svelte-check': '^4.3.4',
 					tslib: '^2.8.1',
 					typescript: '^5.9.3',
-					'typescript-eslint': '^8.48.0',
-					vitest: '^4.0.14',
+					'typescript-eslint': '^8.48.1',
+					vitest: '^4.0.15',
 				},
 				prettier: {
 					plugins: ['prettier-plugin-svelte'],
@@ -51286,7 +50424,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'channel',
 										type: 'Channel',
-										optional: false,
 									},
 								],
 								source_line: 1,
@@ -51305,7 +50442,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'duration',
 										type: 'number',
-										optional: false,
 										description: 'Time in milliseconds.',
 									},
 								],
@@ -51324,7 +50460,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'name',
 										type: 'ChannelName | PlaylistName',
-										optional: false,
 									},
 									{
 										name: 'size',
@@ -51406,7 +50541,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'str',
 										type: 'string',
-										optional: false,
 									},
 								],
 							},
@@ -51420,7 +50554,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: '__0',
 										type: 'Time',
-										optional: false,
 									},
 								],
 							},
@@ -51440,7 +50573,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'video',
 										type: 'VideoJson',
-										optional: false,
 									},
 								],
 								source_line: 1,
@@ -51496,12 +50628,10 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'videos',
 										type: 'VideoJson[]',
-										optional: false,
 									},
 									{
 										name: 'playlist',
 										type: 'Playlist',
-										optional: false,
 									},
 								],
 							},
@@ -51518,7 +50648,6 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'channels',
 										type: 'Array<Channel>',
-										optional: false,
 									},
 								],
 								source_line: 1,
@@ -51583,31 +50712,31 @@ export const repos_json: Array<RepoJson> = [
 					node: '>=22.15',
 				},
 				devDependencies: {
+					'@fuzdev/fuz_blog': '^0.20.0',
+					'@fuzdev/fuz_css': '^0.41.0',
+					'@fuzdev/fuz_gitops': '^0.58.0',
+					'@fuzdev/fuz_mastodon': '^0.37.0',
+					'@fuzdev/fuz_ui': '^0.170.0',
+					'@fuzdev/fuz_util': '^0.42.0',
 					'@prettier/plugin-xml': '^3.4.2',
-					'@fuzdev/fuz_util': '^0.41.1',
 					'@ryanatkn/eslint-config': '^0.9.0',
-					'@fuzdev/fuz_ui': '^0.168.0',
-					'@fuzdev/fuz_blog': '^0.19.0',
-					'@fuzdev/fuz_gitops': '^0.56.0',
-					'@fuzdev/fuz_mastodon': '^0.36.0',
-					'@ryanatkn/gro': '^0.180.0',
-					'@fuzdev/fuz_css': '^0.39.0',
+					'@ryanatkn/gro': '^0.181.0',
 					'@sveltejs/adapter-static': '^3.0.10',
-					'@sveltejs/kit': '^2.49.0',
+					'@sveltejs/kit': '^2.49.1',
 					'@sveltejs/vite-plugin-svelte': '^6.2.1',
 					'@types/node': '^24.10.1',
 					'date-fns': '^4.1.0',
 					eslint: '^9.39.1',
-					'eslint-plugin-svelte': '^3.13.0',
+					'eslint-plugin-svelte': '^3.13.1',
 					'esm-env': '^1.2.2',
 					prettier: '^3.6.2',
 					'prettier-plugin-svelte': '^3.4.0',
-					svelte: '^5.45.2',
+					svelte: '^5.45.6',
 					'svelte-check': '^4.3.4',
 					tslib: '^2.8.1',
 					typescript: '^5.9.3',
-					'typescript-eslint': '^8.48.0',
-					vitest: '^4.0.14',
+					'typescript-eslint': '^8.48.1',
+					vitest: '^4.0.15',
 					zod: '^4.1.13',
 				},
 				prettier: {
