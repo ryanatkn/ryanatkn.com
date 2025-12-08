@@ -1,7 +1,7 @@
 <script lang="ts">
 	import {resolve} from '$app/paths';
 	import Svg from '@fuzdev/fuz_ui/Svg.svelte';
-	import {github_logo} from '@fuzdev/fuz_ui/logos.js';
+	import {logo_github} from '@fuzdev/fuz_ui/logos.js';
 	import Card from '@fuzdev/fuz_ui/Card.svelte';
 	import Breadcrumb from '@fuzdev/fuz_ui/Breadcrumb.svelte';
 
@@ -61,7 +61,7 @@
 			<!-- TODO hacky with max-width -->
 			<Card href="https://github.com/sponsors/ryanatkn" attrs={{style: 'max-width: 100%'}}>
 				{#snippet icon()}<Svg
-						data={github_logo}
+						data={logo_github}
 						fill="var(--color_b_5)"
 						size="var(--space_xl7, 64px)"
 					/>{/snippet}
@@ -115,7 +115,7 @@
 					class="white_space_nowrap"
 					href="https://github.com/sponsors/ryanatkn"
 					style:--link_color="var(--color_b_5)"
-					><Svg data={github_logo} size="var(--font_size_md)" fill="var(--color_b_5)" inline /> GitHub
+					><Svg data={logo_github} size="var(--font_size_md)" fill="var(--color_b_5)" inline /> GitHub
 					Sponsors</a
 				>
 				and

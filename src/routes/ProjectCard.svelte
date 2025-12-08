@@ -1,15 +1,10 @@
 <script lang="ts">
 	import Svg, {type SvgData} from '@fuzdev/fuz_ui/Svg.svelte';
-	import {
-		fuz_css_logo,
-		zzz_logo,
-		fuz_logo,
-		gro_logo,
-		webdevladder_logo,
-	} from '@fuzdev/fuz_ui/logos.js';
+	import {logo_fuz_css, logo_fuz, logo_fuz_ui, logo_gro} from '@fuzdev/fuz_ui/logos.js';
 	import {ensure_end, strip_start} from '@fuzdev/fuz_util/string.js';
 
 	import type {ProjectInfo} from '$routes/project.ts';
+	import {logo_zzz, logo_webdevladder} from '$routes/logos.js';
 
 	// TODO probably upstream to fuz_library after changing it to `PackageMeta` or w/e
 
@@ -23,11 +18,12 @@
 	} = $props();
 
 	const logos: Record<string, SvgData | undefined> = {
-		zzz: zzz_logo,
-		moss: fuz_css_logo,
-		fuz: fuz_logo,
-		gro: gro_logo,
-		'webdevladder.net': webdevladder_logo,
+		zzz: logo_zzz,
+		fuz: logo_fuz,
+		fuz_css: logo_fuz_css,
+		fuz_ui: logo_fuz_ui,
+		gro: logo_gro,
+		'webdevladder.net': logo_webdevladder,
 	};
 
 	const logo_data = $derived(logos[project.name]);

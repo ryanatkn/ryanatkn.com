@@ -35,7 +35,7 @@ export const projects: Array<ProjectInfo> = [
 			'<a class="chip" href="https://www.youtube.com/@webdevladder">channel</a> <a class="chip" href="https://www.youtube.com/@webdevladder_vods">vods</a> <a class="chip" href="https://github.com/ryanatkn/webdevladder.net">source</a>',
 	},
 	{
-		name: 'moss',
+		name: 'fuz_css',
 		repo: '@fuzdev/fuz_css',
 		title: '<a href="https://css.fuz.dev/">Fuz CSS</a>',
 		subtitle:

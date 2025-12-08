@@ -40,10 +40,10 @@ export const library_json: LibraryJson = {
 		},
 		devDependencies: {
 			'@fuzdev/fuz_blog': '^0.20.0',
-			'@fuzdev/fuz_css': '^0.42.0',
+			'@fuzdev/fuz_css': '^0.42.1',
 			'@fuzdev/fuz_gitops': '^0.58.0',
 			'@fuzdev/fuz_mastodon': '^0.37.0',
-			'@fuzdev/fuz_ui': '^0.171.0',
+			'@fuzdev/fuz_ui': '^0.172.0',
 			'@fuzdev/fuz_util': '^0.42.0',
 			'@prettier/plugin-xml': '^3.4.2',
 			'@ryanatkn/eslint-config': '^0.9.0',
