@@ -59,9 +59,9 @@ export const projects: Array<ProjectInfo> = [
 			'<a class="chip" href="https://github.com/ryanatkn/gro">source</a> <a class="chip" href="https://www.npmjs.com/package/@ryanatkn/gro">npm</a>',
 	},
 	{
-		name: 'belt',
+		name: 'fuz_util',
 		repo: '@fuzdev/fuz_util',
-		title: '<a href="https://github.com/fuzdev/fuz_util">Belt</a>',
+		title: '<a href="https://github.com/fuzdev/fuz_util">fuz_util</a>',
 		description: 'utility belt for JS',
 		subtitle:
 			'<a class="chip" href="https://github.com/fuzdev/fuz_util">source</a> <a class="chip" href="https://www.npmjs.com/package/@fuzdev/fuz_util">npm</a>',

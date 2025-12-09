@@ -1,6 +1,12 @@
 <script lang="ts">
 	import Svg, {type SvgData} from '@fuzdev/fuz_ui/Svg.svelte';
-	import {logo_fuz_css, logo_fuz, logo_fuz_ui, logo_gro} from '@fuzdev/fuz_ui/logos.js';
+	import {
+		logo_fuz_css,
+		logo_fuz,
+		logo_fuz_ui,
+		logo_gro,
+		logo_fuz_util,
+	} from '@fuzdev/fuz_ui/logos.js';
 	import {ensure_end, strip_start} from '@fuzdev/fuz_util/string.js';
 
 	import type {ProjectInfo} from '$routes/project.ts';
@@ -22,6 +28,7 @@
 		fuz: logo_fuz,
 		fuz_css: logo_fuz_css,
 		fuz_ui: logo_fuz_ui,
+		fuz_util: logo_fuz_util,
 		gro: logo_gro,
 		'webdevladder.net': logo_webdevladder,
 	};
@@ -48,7 +55,7 @@
 				<p class="display_flex flex_wrap_wrap gap_xs">{@html project.subtitle}</p>
 			{/if}
 		</div>
-		{#if project.logo}
+		{#if logo_data || project.logo}
 			<div
 				class="icon ml_xs"
 				style:min-width="var(--icon_size_xl)"
@@ -56,7 +63,7 @@
 			>
 				{#if logo_data}
 					<Svg data={logo_data} />
-				{:else if project.homepage}
+				{:else if project.homepage && project.logo}
 					<img
 						src="{ensure_end(project.homepage, '/')}{strip_start(project.logo, '/')}"
 						alt={project.logo_alt ?? `icon for ${project.name}`}

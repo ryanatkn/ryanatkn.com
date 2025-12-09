@@ -11,7 +11,7 @@
 		children: Snippet; // required
 	} = $props();
 
-	// TODO upstream to belt?
+	// TODO upstream to fuz_util?
 	const pop_path = (pathname: string): string =>
 		pathname.substring(0, pathname.lastIndexOf('/')) || '/';
 

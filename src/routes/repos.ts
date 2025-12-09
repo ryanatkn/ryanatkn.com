@@ -32002,7 +32002,7 @@ export const repos_json: Array<RepoJson> = [
 								name: 'spawn_cli',
 								kind: 'function',
 								doc_comment:
-									"Spawns a CLI if available using Belt's `spawn`.\nIf a string is provided for `name_or_cli`, it checks first local to the cwd and then globally.",
+									"Spawns a CLI if available using fuz_util's `spawn`.\nIf a string is provided for `name_or_cli`, it checks first local to the cwd and then globally.",
 								source_line: 49,
 								type_signature:
 									'(name_or_cli: string | Cli, args?: string[], log?: Logger | undefined, options?: SpawnOptions | undefined): Promise<SpawnResult | undefined>',
@@ -32034,7 +32034,7 @@ export const repos_json: Array<RepoJson> = [
 								name: 'spawn_cli_process',
 								kind: 'function',
 								doc_comment:
-									"Spawns a CLI if available using Belt's `spawn_process`.\nIf a string is provided for `name_or_cli`, it checks first local to the cwd and then globally.",
+									"Spawns a CLI if available using fuz_util's `spawn_process`.\nIf a string is provided for `name_or_cli`, it checks first local to the cwd and then globally.",
 								source_line: 65,
 								type_signature:
 									'(name_or_cli: string | Cli, args?: string[], log?: Logger | undefined, options?: SpawnOptions | undefined): Promise<SpawnedProcess | undefined>',
@@ -37756,10 +37756,10 @@ export const repos_json: Array<RepoJson> = [
 					test: 'gro test',
 					preview: 'vite preview',
 					deploy: 'gro deploy',
-					benchmark: 'gro run src/benchmarks/slugify_benchmark.ts',
-					'benchmark-deep-equal':
+					benchmark: 'gro run src/benchmarks/slugify.benchmark.ts',
+					benchmark_deep_equal:
 						'node --max-old-space-size=8192 --expose-gc --import @ryanatkn/gro/register.js src/lib/deep_equal.bench_comparison.ts',
-					'benchmark-deep-equal-deno':
+					'benchmark_deep_equal-deno':
 						'deno run --allow-read --allow-env --v8-flags=--expose-gc src/lib/deep_equal.bench_comparison.ts',
 				},
 				type: 'module',
@@ -46330,7 +46330,7 @@ export const repos_json: Array<RepoJson> = [
 										name: 'cache',
 										type: 'Map<string, { key: string; url: string; params: any; value: any; etag: string | null; last_modified: string | null; }> | undefined',
 										optional: true,
-										description: "optional cache from belt's fetch.js for response memoization",
+										description: "optional cache from fuz_util's fetch.js for response memoization",
 									},
 									{
 										name: 'log',
@@ -46385,7 +46385,7 @@ export const repos_json: Array<RepoJson> = [
 								name: 'create_fs_fetch_value_cache',
 								kind: 'function',
 								doc_comment:
-									"Creates file-system backed cache for belt's fetch.js API responses.\n\nCache invalidation strategy: If cache file can't be read or parsed, entire\ncache is cleared (delete file) and starts fresh. This handles format changes.\n\nUses `structuredClone` to track changes - only writes to disk if data modified.\nFormatted with Prettier before writing for version control friendliness.",
+									"Creates file-system backed cache for fuz_util's fetch.js API responses.\n\nCache invalidation strategy: If cache file can't be read or parsed, entire\ncache is cleared (delete file) and starts fresh. This handles format changes.\n\nUses `structuredClone` to track changes - only writes to disk if data modified.\nFormatted with Prettier before writing for version control friendliness.",
 								source_line: 32,
 								type_signature: '(name: string, dir?: string): Promise<FetchCache>',
 								return_type: 'Promise<FetchCache>',
