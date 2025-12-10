@@ -44,7 +44,7 @@ export const library_json: LibraryJson = {
 			'@fuzdev/fuz_gitops': '^0.58.0',
 			'@fuzdev/fuz_mastodon': '^0.37.0',
 			'@fuzdev/fuz_ui': '^0.172.0',
-			'@fuzdev/fuz_util': '^0.42.0',
+			'@fuzdev/fuz_util': '^0.43.0',
 			'@prettier/plugin-xml': '^3.4.2',
 			'@ryanatkn/eslint-config': '^0.9.0',
 			'@ryanatkn/gro': '^0.181.0',
