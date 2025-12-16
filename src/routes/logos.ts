@@ -17,7 +17,7 @@ export const logo_webdevladder = {
 	],
 } satisfies SvgData;
 
-// duplicated from github.com/ryanatkn/zzz
+// duplicated from github.com/fuzdev/zzz
 export const logo_zzz = {
 	label: "three sleepy z's",
 	fill: '#e55d95',

@@ -16,10 +16,10 @@ export const projects: Array<ProjectInfo> = [
 	},
 	{
 		name: 'zzz',
-		repo: '@ryanatkn/zzz',
+		repo: '@fuzdev/zzz',
 		title: '<a href="https://www.zzz.software/">Zzz</a>',
 		description: 'fullstack toolkit for adaptive web environments',
-		subtitle: '<a class="chip" href="https://github.com/ryanatkn/zzz">source</a>',
+		subtitle: '<a class="chip" href="https://github.com/fuzdev/zzz">source</a>',
 		motto: 'nice web things',
 		glyph: '💤',
 		logo: 'logo.svg',

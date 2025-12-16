@@ -62,10 +62,10 @@ const projects_metadata: Array<ProjectMetadata> = [
 	{
 		// TODO @many hack for zzz, fix after adding to gitops
 		name: 'zzz',
-		repo: '@ryanatkn/zzz',
+		repo: '@fuzdev/zzz',
 		title: '<a href="https://www.zzz.software/">Zzz</a>',
 		description: 'fullstack toolkit for adaptive web environments',
-		subtitle: `<a class="chip" href="https://github.com/ryanatkn/zzz">source</a>`, // TODO publish zzz - <a class="chip" href="https://www.npmjs.com/package/@ryanatkn/zzz">npm</a>
+		subtitle: `<a class="chip" href="https://github.com/fuzdev/zzz">source</a>`, // TODO publish zzz - <a class="chip" href="https://www.npmjs.com/package/@fuzdev/zzz">npm</a>
 		// TODO @many hack for zzz, fix after adding to gitops
 		motto: 'nice web things',
 		glyph: '💤',

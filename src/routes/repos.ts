@@ -6,7 +6,7 @@ export const repos_json: Array<RepoJson> = [
 	{
 		library_json: {
 			package_json: {
-				name: '@ryanatkn/zzz',
+				name: '@fuzdev/zzz',
 				version: '0.0.1',
 				description: 'fullstack web toolkit for power users and devs',
 				motto: 'nice web things for the tired',
@@ -16,13 +16,13 @@ export const repos_json: Array<RepoJson> = [
 				public: true,
 				license: 'MIT',
 				homepage: 'https://www.zzz.software/',
-				repository: 'https://github.com/ryanatkn/zzz',
+				repository: 'https://github.com/fuzdev/zzz',
 				author: {
 					name: 'Ryan Atkinson',
 					email: 'mail@ryanatkn.com',
 					url: 'https://www.ryanatkn.com/',
 				},
-				bugs: 'https://github.com/ryanatkn/zzz/issues',
+				bugs: 'https://github.com/fuzdev/zzz/issues',
 				funding: 'https://www.ryanatkn.com/funding',
 				scripts: {
 					start: 'gro dev',
@@ -115,7 +115,7 @@ export const repos_json: Array<RepoJson> = [
 				},
 			},
 			source_json: {
-				name: '@ryanatkn/zzz',
+				name: '@fuzdev/zzz',
 				version: '0.0.1',
 				modules: [
 					{
@@ -21443,9 +21443,9 @@ export const repos_json: Array<RepoJson> = [
 					},
 				],
 			},
-			name: '@ryanatkn/zzz',
+			name: '@fuzdev/zzz',
 			repo_name: 'zzz',
-			repo_url: 'https://github.com/ryanatkn/zzz',
+			repo_url: 'https://github.com/fuzdev/zzz',
 			owner_name: 'ryanatkn',
 			homepage_url: 'https://www.zzz.software/',
 			logo_url: 'https://www.zzz.software/logo.svg',

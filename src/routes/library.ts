@@ -41,10 +41,10 @@ export const library_json: LibraryJson = {
 		devDependencies: {
 			'@fuzdev/fuz_blog': '^0.20.0',
 			'@fuzdev/fuz_css': '^0.42.1',
-			'@fuzdev/fuz_gitops': '^0.58.0',
+			'@fuzdev/fuz_gitops': '^0.59.0',
 			'@fuzdev/fuz_mastodon': '^0.37.0',
 			'@fuzdev/fuz_ui': '^0.172.0',
-			'@fuzdev/fuz_util': '^0.43.0',
+			'@fuzdev/fuz_util': '^0.44.1',
 			'@prettier/plugin-xml': '^3.4.2',
 			'@ryanatkn/eslint-config': '^0.9.0',
 			'@ryanatkn/gro': '^0.181.0',
@@ -103,6 +103,25 @@ export const library_json: LibraryJson = {
 			{
 				path: 'gitops_publish.task.ts',
 				declarations: [],
+			},
+			{
+				path: 'gitops_run.task.ts',
+				declarations: [
+					{
+						name: 'Args',
+						kind: 'type',
+						source_line: 2,
+						type_signature:
+							'ZodObject<{ command: ZodString; config: ZodDefault<ZodString>; concurrency: ZodDefault<ZodNumber>; format: ZodDefault<ZodEnum<{ json: "json"; text: "text"; }>>; }, $strict>',
+					},
+					{
+						name: 'task',
+						kind: 'variable',
+						source_line: 2,
+						type_signature:
+							'Task<{ command: string; config: string; concurrency: number; format: "json" | "text"; }, ZodType<Args, Args, $ZodTypeInternals<Args, Args>>, unknown>',
+					},
+				],
 			},
 			{
 				path: 'gitops_sync.task.ts',
