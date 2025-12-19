@@ -8,7 +8,7 @@ export const repos_json: Array<RepoJson> = [
 			package_json: {
 				name: '@fuzdev/zzz',
 				version: '0.0.1',
-				description: 'fullstack web toolkit for power users and devs',
+				description: 'local-first forge for power users and devs',
 				motto: 'nice web things for the tired',
 				glyph: '💤',
 				logo: 'logo.svg',
@@ -33983,7 +33983,7 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'plugins',
 										kind: 'variable',
-										type_signature: 'CreateConfigPlugins',
+										type_signature: 'PluginsCreateConfig',
 										doc_comment: '',
 									},
 									{
@@ -34048,7 +34048,7 @@ export const repos_json: Array<RepoJson> = [
 									{
 										name: 'plugins',
 										kind: 'variable',
-										type_signature: 'CreateConfigPlugins',
+										type_signature: 'PluginsCreateConfig',
 									},
 									{
 										name: 'map_package_json',
@@ -35157,14 +35157,14 @@ export const repos_json: Array<RepoJson> = [
 								type_signature: 'PackageJsonMapper',
 							},
 							{
-								name: 'EMPTY_PACKAGE_JSON',
+								name: 'PACKAGE_JSON_EMPTY',
 								kind: 'variable',
 								source_line: 27,
 								type_signature:
 									'{ [x: string]: unknown; name: string; version: string; private?: boolean | undefined; public?: boolean | undefined; description?: string | undefined; motto?: string | undefined; glyph?: string | undefined; ... 24 more ...; exports?: string | ... 2 more ... | undefined; }',
 							},
 							{
-								name: 'load_package_json',
+								name: 'package_json_load',
 								kind: 'function',
 								source_line: 29,
 								type_signature:
@@ -35195,7 +35195,7 @@ export const repos_json: Array<RepoJson> = [
 								],
 							},
 							{
-								name: 'sync_package_json',
+								name: 'package_json_sync',
 								kind: 'function',
 								source_line: 54,
 								type_signature:
@@ -35229,7 +35229,7 @@ export const repos_json: Array<RepoJson> = [
 								],
 							},
 							{
-								name: 'load_gro_package_json',
+								name: 'package_json_load_for_gro',
 								kind: 'function',
 								source_line: 88,
 								type_signature:
@@ -35239,7 +35239,7 @@ export const repos_json: Array<RepoJson> = [
 								parameters: [],
 							},
 							{
-								name: 'write_package_json',
+								name: 'package_json_write',
 								kind: 'function',
 								source_line: 94,
 								type_signature: '(serialized_package_json: string): Promise<void>',
@@ -35252,7 +35252,7 @@ export const repos_json: Array<RepoJson> = [
 								],
 							},
 							{
-								name: 'serialize_package_json',
+								name: 'package_json_serialize',
 								kind: 'function',
 								source_line: 97,
 								type_signature:
@@ -35266,7 +35266,7 @@ export const repos_json: Array<RepoJson> = [
 								],
 							},
 							{
-								name: 'update_package_json',
+								name: 'package_json_update',
 								kind: 'function',
 								doc_comment:
 									'Updates package.json. Writes to the filesystem only when contents change.',
@@ -35293,7 +35293,7 @@ export const repos_json: Array<RepoJson> = [
 								],
 							},
 							{
-								name: 'to_package_exports',
+								name: 'package_json_to_exports',
 								kind: 'function',
 								source_line: 124,
 								type_signature: '(paths: string[]): string | Record<string, unknown> | null',
@@ -35306,7 +35306,7 @@ export const repos_json: Array<RepoJson> = [
 								],
 							},
 							{
-								name: 'parse_repo_url',
+								name: 'package_json_parse_repo_url',
 								kind: 'function',
 								source_line: 179,
 								type_signature:
@@ -35320,7 +35320,7 @@ export const repos_json: Array<RepoJson> = [
 								],
 							},
 							{
-								name: 'has_dep',
+								name: 'package_json_has_dependency',
 								kind: 'function',
 								source_line: 227,
 								type_signature:
@@ -35356,7 +35356,7 @@ export const repos_json: Array<RepoJson> = [
 								],
 							},
 							{
-								name: 'extract_deps',
+								name: 'package_json_extract_dependencies',
 								kind: 'function',
 								source_line: 237,
 								type_signature:
@@ -35918,10 +35918,10 @@ export const repos_json: Array<RepoJson> = [
 								also_exported_from: ['index.ts'],
 							},
 							{
-								name: 'CreateConfigPlugins',
+								name: 'PluginsCreateConfig',
 								kind: 'type',
 								source_line: 14,
-								type_signature: 'CreateConfigPlugins<TPluginContext>',
+								type_signature: 'PluginsCreateConfig<TPluginContext>',
 								generic_params: [
 									{
 										name: 'TPluginContext',
@@ -36033,7 +36033,7 @@ export const repos_json: Array<RepoJson> = [
 								],
 							},
 							{
-								name: 'replace_plugin',
+								name: 'plugin_replace',
 								kind: 'function',
 								doc_comment:
 									'Replaces a plugin by name in `plugins` without mutating the param.\nThrows if the plugin name cannot be found.',
@@ -36048,7 +36048,7 @@ export const repos_json: Array<RepoJson> = [
 										name: 'plugins',
 										type: 'Plugin<PluginContext<object>>[]',
 										description:
-											'- accepts the same types as the return value of `CreateConfigPlugins`',
+											'- accepts the same types as the return value of `PluginsCreateConfig`',
 									},
 									{
 										name: 'new_plugin',
@@ -36330,7 +36330,7 @@ export const repos_json: Array<RepoJson> = [
 								],
 							},
 							{
-								name: 'source_modules_create',
+								name: 'source_json_modules_create',
 								kind: 'function',
 								source_line: 33,
 								type_signature:
@@ -48240,7 +48240,7 @@ export const repos_json: Array<RepoJson> = [
 								],
 							},
 							{
-								name: 'update_package_json',
+								name: 'package_json_update',
 								kind: 'function',
 								doc_comment:
 									'Updates package.json dependencies and creates changeset if needed.\n\nWorkflow:\n1. Updates all dependency types (dependencies, devDependencies, peerDependencies)\n2. Writes updated package.json with tabs formatting\n3. Creates auto-changeset if published_versions provided (for transitive updates)\n4. Commits both package.json and changeset with standard message\n\nUses version strategy to determine prefix (exact, caret, tilde) while preserving\nexisting prefixes when possible.',

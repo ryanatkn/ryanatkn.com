@@ -59,7 +59,7 @@
 	<section class="box row flex_wrap_wrap gap_md">
 		<div class="display_contents" style:--link_color="var(--color_b_5)">
 			<!-- TODO hacky with max-width -->
-			<Card href="https://github.com/sponsors/ryanatkn" attrs={{style: 'max-width: 100%'}}>
+			<Card href="https://github.com/sponsors/ryanatkn" style="max-width: 100%">
 				{#snippet icon()}<Svg
 						data={logo_github}
 						fill="var(--color_b_5)"
