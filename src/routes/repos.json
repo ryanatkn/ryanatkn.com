@@ -20276,7 +20276,7 @@
 			"published": true,
 			"package_json": {
 				"name": "@fuzdev/fuz_ui",
-				"version": "0.174.0",
+				"version": "0.175.0",
 				"description": "Svelte UI library",
 				"motto": "friendly user zystem",
 				"glyph": "🧶",
@@ -20370,7 +20370,7 @@
 			},
 			"source_json": {
 				"name": "@fuzdev/fuz_ui",
-				"version": "0.174.0",
+				"version": "0.175.0",
 				"modules": [
 					{
 						"path": "Alert.svelte",
@@ -22436,7 +22436,7 @@
 							{
 								"name": "EcosystemLinks",
 								"kind": "component",
-								"props": [{"name": "selected", "type": "'www.fuz.dev'", "optional": true}],
+								"props": [{"name": "selected", "type": "'fuz.dev'", "optional": true}],
 								"source_line": 1
 							}
 						],
@@ -36771,6 +36771,16 @@
 	},
 	{
 		"library_json": {
+			"name": "@fuzdev/fuz_gitops",
+			"repo_name": "fuz_gitops",
+			"repo_url": "https://github.com/fuzdev/fuz_gitops",
+			"owner_name": "fuzdev",
+			"homepage_url": "https://gitops.fuz.dev/",
+			"logo_url": "https://gitops.fuz.dev/logo.svg",
+			"logo_alt": "a friendly blue spider facing you",
+			"npm_url": "https://www.npmjs.com/package/@fuzdev/fuz_gitops",
+			"changelog_url": "https://github.com/fuzdev/fuz_gitops/blob/main/CHANGELOG.md",
+			"published": true,
 			"package_json": {
 				"name": "@fuzdev/fuz_gitops",
 				"version": "0.61.1",
@@ -36812,8 +36822,8 @@
 					"@changesets/changelog-git": "^0.2.1",
 					"@fuzdev/fuz_code": "^0.38.0",
 					"@fuzdev/fuz_css": "^0.42.1",
-					"@fuzdev/fuz_ui": "^0.174.0",
-					"@fuzdev/fuz_util": "^0.45.0",
+					"@fuzdev/fuz_ui": "^0.175.0",
+					"@fuzdev/fuz_util": "^0.45.1",
 					"@ryanatkn/eslint-config": "^0.9.0",
 					"@ryanatkn/gro": "^0.184.0",
 					"@sveltejs/adapter-static": "^3.0.10",
@@ -36823,10 +36833,10 @@
 					"@types/node": "^24.10.1",
 					"eslint": "^9.39.1",
 					"eslint-plugin-svelte": "^3.13.1",
-					"prettier": "^3.6.2",
-					"prettier-plugin-svelte": "^3.4.0",
-					"svelte": "^5.45.6",
-					"svelte-check": "^4.3.4",
+					"prettier": "^3.7.4",
+					"prettier-plugin-svelte": "^3.4.1",
+					"svelte": "^5.46.1",
+					"svelte-check": "^4.3.5",
 					"tslib": "^2.8.1",
 					"typescript": "^5.9.3",
 					"typescript-eslint": "^8.48.1",
@@ -40127,17 +40137,7 @@
 						]
 					}
 				]
-			},
-			"name": "@fuzdev/fuz_gitops",
-			"repo_name": "fuz_gitops",
-			"repo_url": "https://github.com/fuzdev/fuz_gitops",
-			"owner_name": "fuzdev",
-			"homepage_url": "https://gitops.fuz.dev/",
-			"logo_url": "https://gitops.fuz.dev/logo.svg",
-			"logo_alt": "a friendly blue spider facing you",
-			"npm_url": "https://www.npmjs.com/package/@fuzdev/fuz_gitops",
-			"changelog_url": "https://github.com/fuzdev/fuz_gitops/blob/main/CHANGELOG.md",
-			"published": true
+			}
 		},
 		"check_runs": {"status": "completed", "conclusion": "success"},
 		"pull_requests": []
@@ -40448,6 +40448,16 @@
 	},
 	{
 		"library_json": {
+			"name": "ryanatkn.com",
+			"repo_name": "ryanatkn.com",
+			"repo_url": "https://github.com/ryanatkn/ryanatkn.com",
+			"owner_name": "ryanatkn",
+			"homepage_url": "https://www.ryanatkn.com/",
+			"logo_url": "https://www.ryanatkn.com/favicon.png",
+			"logo_alt": "a textured green nature circle with a void center",
+			"npm_url": null,
+			"changelog_url": null,
+			"published": false,
 			"package_json": {
 				"name": "ryanatkn.com",
 				"version": "0.0.1",
@@ -40480,10 +40490,10 @@
 				"devDependencies": {
 					"@fuzdev/fuz_blog": "^0.21.0",
 					"@fuzdev/fuz_css": "^0.42.1",
-					"@fuzdev/fuz_gitops": "^0.61.0",
+					"@fuzdev/fuz_gitops": "^0.61.1",
 					"@fuzdev/fuz_mastodon": "^0.37.0",
 					"@fuzdev/fuz_ui": "^0.174.0",
-					"@fuzdev/fuz_util": "^0.45.0",
+					"@fuzdev/fuz_util": "^0.45.1",
 					"@prettier/plugin-xml": "^3.4.2",
 					"@ryanatkn/eslint-config": "^0.9.0",
 					"@ryanatkn/gro": "^0.184.0",
@@ -40546,14 +40556,73 @@
 					{"path": "gitops_validate.task.ts", "declarations": []},
 					{"path": "post.task.ts", "declarations": []}
 				]
+			}
+		},
+		"check_runs": {"status": "completed", "conclusion": "success"},
+		"pull_requests": []
+	},
+	{
+		"library_json": {
+			"package_json": {
+				"name": "fuz.dev",
+				"version": "0.0.1",
+				"description": "website for the Fuz stack",
+				"motto": "friendly user zystem",
+				"glyph": "🦋",
+				"logo": "logo.svg",
+				"logo_alt": "a friendly pixelated spider facing you",
+				"homepage": "https://www.fuz.dev/",
+				"repository": "https://github.com/fuzdev/fuz.dev",
+				"scripts": {
+					"start": "gro dev",
+					"dev": "gro dev",
+					"build": "gro build",
+					"check": "gro check",
+					"test": "gro test",
+					"preview": "vite preview",
+					"deploy": "gro deploy"
+				},
+				"type": "module",
+				"engines": {"node": ">=22.15"},
+				"devDependencies": {
+					"@fuzdev/fuz_css": "^0.42.1",
+					"@fuzdev/fuz_ui": "^0.174.0",
+					"@fuzdev/fuz_util": "^0.45.0",
+					"@ryanatkn/eslint-config": "^0.9.0",
+					"@ryanatkn/gro": "^0.184.0",
+					"@sveltejs/adapter-static": "^3.0.10",
+					"@sveltejs/kit": "^2.49.1",
+					"@sveltejs/vite-plugin-svelte": "^6.2.1",
+					"eslint": "^9.39.1",
+					"eslint-plugin-svelte": "^3.13.1",
+					"prettier": "^3.6.2",
+					"prettier-plugin-svelte": "^3.4.0",
+					"svelte": "^5.45.6",
+					"svelte-check": "^4.3.4",
+					"tslib": "^2.8.1",
+					"typescript": "^5.9.3",
+					"typescript-eslint": "^8.48.1",
+					"vitest": "^4.0.15"
+				},
+				"prettier": {
+					"plugins": ["prettier-plugin-svelte"],
+					"useTabs": true,
+					"printWidth": 100,
+					"singleQuote": true,
+					"bracketSpacing": false,
+					"overrides": [{"files": "package.json", "options": {"useTabs": false}}]
+				},
+				"sideEffects": ["**/*.css"],
+				"files": ["dist"]
 			},
-			"name": "ryanatkn.com",
-			"repo_name": "ryanatkn.com",
-			"repo_url": "https://github.com/ryanatkn/ryanatkn.com",
-			"owner_name": "ryanatkn",
-			"homepage_url": "https://www.ryanatkn.com/",
-			"logo_url": "https://www.ryanatkn.com/favicon.png",
-			"logo_alt": "a textured green nature circle with a void center",
+			"source_json": {"name": "fuz.dev", "version": "0.0.1", "modules": []},
+			"name": "fuz.dev",
+			"repo_name": "fuz.dev",
+			"repo_url": "https://github.com/fuzdev/fuz.dev",
+			"owner_name": "fuzdev",
+			"homepage_url": "https://www.fuz.dev/",
+			"logo_url": "https://www.fuz.dev/logo.svg",
+			"logo_alt": "a friendly pixelated spider facing you",
 			"npm_url": null,
 			"changelog_url": null,
 			"published": false
