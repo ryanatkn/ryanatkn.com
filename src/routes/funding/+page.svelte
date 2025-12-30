@@ -45,10 +45,10 @@
 				I want to make software with the best UX possible, and as widespread
 				<a href="https://en.wikipedia.org/wiki/Enshittification">enshittification</a> suggests, I think
 				that's infinitely easier to do when unburdened by investors and profit-seeking. I'm self-funded,
-				so the situation is uncomplicated -- trust me or not. I'm not going to sell control over Zzz
-				and its dependencies or take investment for them. The goal is software designed for our benefit
-				that we can trust to serve us. If a user community forms around some projects in my stack, I
-				think the best outcome is them being owned by a community-representing org like a nonprofit.
+				so the situation is uncomplicated -- trust me or not. I'm not going to sell control over Zzz and
+				its dependencies or take investment for them. The goal is software designed for our benefit that
+				we can trust to serve us. If a user community forms around some projects in my stack, I think
+				the best outcome is them being owned by a community-representing org like a nonprofit.
 			</p>
 			<p>
 				I like my independence and I think it allows me to make software with a different set of
