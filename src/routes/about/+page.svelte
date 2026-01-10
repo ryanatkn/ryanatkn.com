@@ -10,7 +10,7 @@
 <div class="about">
 	<header class="box">
 		<h1 class="row gap_md mt_xl5 mb_xl7">
-			<div class="flip_x" style:transform="scaleX(-1)">🪶</div>
+			<div class="transform:scaleX(-1)" style:transform="scaleX(-1)">🪶</div>
 			about
 			<!-- TODO svelte5 remove the style:transform bc the CSS class will be ready -->
 			<span>🪶</span>
@@ -21,7 +21,7 @@
 			>https://www.ryanatkn.com/</a
 		>
 		<div style:min-height="192px" style:margin-bottom="var(--space_md)">
-			<div class="float_right ml_sm border_radius_50 shadow_md">
+			<div class="float:right ml_sm circular shadow_md">
 				<img
 					class="u-photo"
 					src={asset('/me.png')}

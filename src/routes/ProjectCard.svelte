@@ -41,7 +41,7 @@
 		{@html project.title}
 		{#if project.glyph}{project.glyph}{/if}
 	</header>
-	<div class="display_flex">
+	<div class="display:flex">
 		<div>
 			<!-- {#if project.motto}
 				<p>{@html project.motto}</p>
@@ -52,7 +52,7 @@
 				</p>
 			{/if}
 			{#if project.subtitle}
-				<p class="display_flex flex_wrap_wrap gap_xs">{@html project.subtitle}</p>
+				<p class="display:flex flex-wrap:wrap gap_xs">{@html project.subtitle}</p>
 			{/if}
 		</div>
 		{#if logo_data || project.logo}

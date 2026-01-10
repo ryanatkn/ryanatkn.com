@@ -3,7 +3,7 @@
 		>https://www.ryanatkn.com/</a
 	>
 	<h2 class="mb_xl2">contact me</h2>
-	<ul class="contact_info panel bg shadow_xs py_md pr_md position_relative">
+	<ul class="contact_info panel bg shadow_xs py_md pr_md position:relative">
 		<li>
 			<span class="p-nickname">@ryanatkn</span> on
 			<a class="u-url" rel="me" href="https://github.com/ryanatkn">GitHub</a>,
@@ -33,7 +33,7 @@
 					lower effort videos
 				</li>
 				<li>
-					<span class="overflow_wrap_anywhere">@webdevladder@fosstodon.org</span>
+					<span class="overflow-wrap:anywhere">@webdevladder@fosstodon.org</span>
 					on
 					<a class="u-url" rel="me" href="https://fosstodon.org/@webdevladder">Mastodon</a>
 				</li>
