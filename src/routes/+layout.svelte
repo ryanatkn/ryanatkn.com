@@ -30,7 +30,7 @@
 <Themed>
 	<main>
 		<Header />
-		<!-- TODO maybe add a flex_1 display_block here? -->
+		<!-- TODO maybe add a flex:1 display:block here? -->
 		{@render children()}
 		<Footer />
 	</main>
