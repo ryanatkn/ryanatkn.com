@@ -84,9 +84,9 @@
 					<a href="https://www.zzz.software/">Zzz</a> - fullstack toolkit for adaptive web environments
 				</li>
 				<li>
-					<a href="https://css.fuz.dev/">Fuz CSS</a> - CSS framework and design system
+					<a href="https://css.fuz.dev/">fuz_css</a> - CSS framework and design system
 				</li>
-				<li><a href="https://ui.fuz.dev/">Fuz UI</a> - Svelte UI library</li>
+				<li><a href="https://ui.fuz.dev/">fuz_ui</a> - Svelte UI library</li>
 				<li>
 					<a href="https://gro.ryanatkn.com/">Gro</a> - task runner and toolkit extending SvelteKit
 				</li>
