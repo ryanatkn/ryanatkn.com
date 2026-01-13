@@ -21,7 +21,7 @@
 			</h1>
 		</header>
 	</section>
-	<section class="panel p_sm shadow_md width_100">
+	<section class="panel p_sm shadow_md width:100%">
 		<div class="panel bg p_xl shadow_xs">
 			<div class="float:right icon_size_lg">🪶</div>
 			<p>
@@ -73,7 +73,7 @@
 			Patreon
 		</Card>
 	</section>
-	<section class="panel p_sm shadow_md width_100">
+	<section class="panel p_sm shadow_md width:100%">
 		<div class="panel bg p_xl shadow_xs">
 			<p>
 				Today my attention is on these projects, parts of a stack I plan to use to make other

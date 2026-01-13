@@ -24,6 +24,6 @@
 	library_context.set(new Library(library_json));
 </script>
 
-<div class="width_100 flex:1">
+<div class="width:100% flex:1">
 	{@render children()}
 </div>
