@@ -10,7 +10,7 @@
 	import Favicon from '$routes/Favicon.svelte';
 </script>
 
-<div class="width_upto_md flex:1">
+<div class="width_atmost_md flex:1">
 	<section class="box">
 		<header class="box">
 			<h1 class="row gap_md text-align:center mt_xl5 mb_0">

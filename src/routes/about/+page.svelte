@@ -16,7 +16,7 @@
 			<span>🪶</span>
 		</h1>
 	</header>
-	<section class="width_upto_md panel shadow_inset_xs h-card">
+	<section class="width_atmost_md panel shadow_inset_xs h-card">
 		<a class="u-url u-uid" href="https://www.ryanatkn.com/" hidden aria-hidden="true"
 			>https://www.ryanatkn.com/</a
 		>

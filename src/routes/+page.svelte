@@ -14,7 +14,7 @@
 	<title>ryanatkn.com</title>
 </svelte:head>
 
-<section class="width_upto_md flex:1 p_md">
+<section class="width_atmost_md flex:1 p_md">
 	<section class="box">
 		<div class="panel shadow_inset_xs h-card">
 			<!-- TODO specificity so we can just add `.bg` instead of `style:background-color="var(--bg)"` -->
