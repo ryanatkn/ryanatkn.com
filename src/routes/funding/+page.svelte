@@ -10,20 +10,20 @@
 	import Favicon from '$routes/Favicon.svelte';
 </script>
 
-<div class="width_upto_md flex_1">
+<div class="width_atmost_md flex:1">
 	<section class="box">
 		<header class="box">
-			<h1 class="row gap_md text_align_center mt_xl5 mb_0">
+			<h1 class="row gap_md text-align:center mt_xl5 mb_0">
 				<div>🐚</div>
 				funding
 				<!-- TODO svelte5 remove the style:transform bc the CSS class will be ready -->
-				<div class="flip_x" style:transform="scaleX(-1)">🐚</div>
+				<div class="transform:scaleX(-1)" style:transform="scaleX(-1)">🐚</div>
 			</h1>
 		</header>
 	</section>
-	<section class="panel p_sm shadow_md width_100">
+	<section class="panel p_sm shadow_md width:100%">
 		<div class="panel bg p_xl shadow_xs">
-			<div class="float_right icon_size_lg">🪶</div>
+			<div class="float:right icon_size_lg">🪶</div>
 			<p>
 				Hi thank you for reading. I'm an independent software developer and this is an attempt to
 				fund my work on free and open source software. If you enjoy my output and want more of it, a
@@ -56,8 +56,8 @@
 			</p>
 		</div>
 	</section>
-	<section class="box row flex_wrap_wrap gap_md">
-		<div class="display_contents" style:--link_color="var(--color_b_5)">
+	<section class="box row flex-wrap:wrap gap_md">
+		<div class="display:contents" style:--link_color="var(--color_b_5)">
 			<!-- TODO hacky with max-width -->
 			<Card href="https://github.com/sponsors/ryanatkn" style="max-width: 100%">
 				{#snippet icon()}<Svg
@@ -73,7 +73,7 @@
 			Patreon
 		</Card>
 	</section>
-	<section class="panel p_sm shadow_md width_100">
+	<section class="panel p_sm shadow_md width:100%">
 		<div class="panel bg p_xl shadow_xs">
 			<p>
 				Today my attention is on these projects, parts of a stack I plan to use to make other
@@ -84,9 +84,9 @@
 					<a href="https://www.zzz.software/">Zzz</a> - fullstack toolkit for adaptive web environments
 				</li>
 				<li>
-					<a href="https://css.fuz.dev/">Fuz CSS</a> - CSS framework and design system
+					<a href="https://css.fuz.dev/">fuz_css</a> - CSS framework and design system
 				</li>
-				<li><a href="https://ui.fuz.dev/">Fuz UI</a> - Svelte UI library</li>
+				<li><a href="https://ui.fuz.dev/">fuz_ui</a> - Svelte UI library</li>
 				<li>
 					<a href="https://gro.ryanatkn.com/">Gro</a> - task runner and toolkit extending SvelteKit
 				</li>
@@ -112,14 +112,14 @@
 				Donating $1 a month on
 				<!-- TODO after upgrading Fuz use `inline` instead of the classes -->
 				<a
-					class="white_space_nowrap"
+					class="white-space:nowrap"
 					href="https://github.com/sponsors/ryanatkn"
 					style:--link_color="var(--color_b_5)"
 					><Svg data={logo_github} size="var(--font_size_md)" fill="var(--color_b_5)" inline /> GitHub
 					Sponsors</a
 				>
 				and
-				<a class="white_space_nowrap" href="https://www.patreon.com/ryanatkn"
+				<a class="white-space:nowrap" href="https://www.patreon.com/ryanatkn"
 					><PatreonLogo size="var(--font_size_md)" fill="var(--color_a_5)" inline /> Patreon</a
 				> helps me a lot for the signal it sends. No rewards yet but idk.
 			</p>

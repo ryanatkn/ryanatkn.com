@@ -37,14 +37,14 @@ export const projects: Array<ProjectInfo> = [
 	{
 		name: 'fuz_css',
 		repo: '@fuzdev/fuz_css',
-		title: '<a href="https://css.fuz.dev/">Fuz CSS</a>',
+		title: '<a href="https://css.fuz.dev/">fuz_css</a>',
 		subtitle:
 			'<a class="chip" href="https://github.com/fuzdev/fuz_css">source</a> <a class="chip" href="https://www.npmjs.com/package/@fuzdev/fuz_css">npm</a>',
 	},
 	{
 		name: 'fuz',
 		repo: '@fuzdev/fuz_ui',
-		title: '<a href="https://ui.fuz.dev/">Fuz UI</a>',
+		title: '<a href="https://ui.fuz.dev/">fuz_ui</a>',
 		description: '<a href="https://svelte.dev/">Svelte</a> UI library',
 		subtitle:
 			'<a class="chip" href="https://github.com/fuzdev/fuz_ui">source</a> <a class="chip" href="https://www.npmjs.com/package/@fuzdev/fuz_ui">npm</a>',
