@@ -22,7 +22,7 @@
 		</header>
 	</section>
 	<section class="panel p_sm shadow_md width:100%">
-		<div class="panel bg p_xl shadow_xs">
+		<div class="panel shade_00 p_xl shadow_xs">
 			<div class="float:right icon_size_lg">🪶</div>
 			<p>
 				Hi thank you for reading. I'm an independent software developer and this is an attempt to
@@ -57,24 +57,24 @@
 		</div>
 	</section>
 	<section class="box row flex-wrap:wrap gap_md">
-		<div class="display:contents" style:--link_color="var(--color_b_5)">
+		<div class="display:contents" style:--link_color="var(--color_b_50)">
 			<!-- TODO hacky with max-width -->
 			<Card href="https://github.com/sponsors/ryanatkn" style="max-width: 100%">
 				{#snippet icon()}<Svg
 						data={logo_github}
-						fill="var(--color_b_5)"
+						fill="var(--color_b_50)"
 						size="var(--space_xl7, 64px)"
 					/>{/snippet}
 				GitHub Sponsors
 			</Card>
 		</div>
 		<Card href="https://www.patreon.com/ryanatkn" align="right">
-			{#snippet icon()}<PatreonLogo fill="var(--color_a_5)" />{/snippet}
+			{#snippet icon()}<PatreonLogo fill="var(--color_a_50)" />{/snippet}
 			Patreon
 		</Card>
 	</section>
 	<section class="panel p_sm shadow_md width:100%">
-		<div class="panel bg p_xl shadow_xs">
+		<div class="panel shade_00 p_xl shadow_xs">
 			<p>
 				Today my attention is on these projects, parts of a stack I plan to use to make other
 				websites and apps:
@@ -114,13 +114,13 @@
 				<a
 					class="white-space:nowrap"
 					href="https://github.com/sponsors/ryanatkn"
-					style:--link_color="var(--color_b_5)"
-					><Svg data={logo_github} size="var(--font_size_md)" fill="var(--color_b_5)" inline /> GitHub
+					style:--link_color="var(--color_b_50)"
+					><Svg data={logo_github} size="var(--font_size_md)" fill="var(--color_b_50)" inline /> GitHub
 					Sponsors</a
 				>
 				and
 				<a class="white-space:nowrap" href="https://www.patreon.com/ryanatkn"
-					><PatreonLogo size="var(--font_size_md)" fill="var(--color_a_5)" inline /> Patreon</a
+					><PatreonLogo size="var(--font_size_md)" fill="var(--color_a_50)" inline /> Patreon</a
 				> helps me a lot for the signal it sends. No rewards yet but idk.
 			</p>
 			<p>

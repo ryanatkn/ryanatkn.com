@@ -79,7 +79,7 @@
 <style>
 	.project_card {
 		max-width: var(--distance_sm);
-		background-color: var(--bg);
+		background-color: var(--shade_00);
 		/* TODO review this pattern, maybe use elsewhere */
 		box-shadow: var(
 			--card_shadow,
