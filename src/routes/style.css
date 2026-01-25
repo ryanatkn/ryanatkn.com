@@ -10,7 +10,7 @@ body {
 table {
 	border-width: var(--border_width);
 	border-style: var(--border_style);
-	border-color: var(--shade_10);
+	border-color: var(--border_color_10);
 	border-radius: var(--border_radius);
 	border-spacing: 0;
 	background-color: var(--shade_00);
@@ -19,7 +19,7 @@ td {
 	padding: var(--space_sm);
 }
 tr:hover {
-	background-color: var(--shade_20);
+	background-color: var(--fg_20);
 }
 
 /* offset to avoid visual artifacts on init,
