@@ -79,12 +79,16 @@
 <style>
 	.project_card {
 		max-width: var(--distance_sm);
-		background-color: var(--bg);
+		background-color: var(--shade_00);
 		/* TODO review this pattern, maybe use elsewhere */
 		box-shadow: var(
 			--card_shadow,
 			var(--shadow_bottom_sm)
-				color-mix(in hsl, var(--shadow_color) var(--shadow_alpha_2), transparent)
+				color-mix(
+					in hsl,
+					var(--shadow_color, var(--shadow_color_umbra)) var(--shadow_alpha_40),
+					transparent
+				)
 		);
 		border-width: var(--border_width);
 		border-style: solid;

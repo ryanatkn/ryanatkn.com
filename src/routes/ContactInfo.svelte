@@ -3,7 +3,7 @@
 		>https://www.ryanatkn.com/</a
 	>
 	<h2 class="mb_xl2">contact me</h2>
-	<ul class="contact_info panel bg shadow_xs py_md pr_md position:relative">
+	<ul class="contact_info panel shade_00 shadow_xs py_md pr_md position:relative">
 		<li>
 			<span class="p-nickname">@ryanatkn</span> on
 			<a class="u-url" rel="me" href="https://github.com/ryanatkn">GitHub</a>,
