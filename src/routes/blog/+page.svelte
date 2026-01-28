@@ -42,7 +42,11 @@
 		background-color: var(--shade_10);
 		padding: var(--space_sm) var(--space_sm) var(--space_sm) var(--space_xl4);
 		box-shadow: var(--shadow_inset_bottom_xs)
-			color-mix(in hsl, var(--shadow_color, var(--shadow_color_umbra)) var(--shadow_alpha_30), transparent);
+			color-mix(
+				in hsl,
+				var(--shadow_color, var(--shadow_color_umbra)) var(--shadow_alpha_30),
+				transparent
+			);
 	}
 	.blog_card {
 		font-size: var(--font_size_lg);
@@ -59,7 +63,11 @@
 		box-shadow: var(
 			--card_shadow,
 			var(--shadow_bottom_sm)
-				color-mix(in hsl, var(--shadow_color, var(--shadow_color_umbra)) var(--shadow_alpha_30), transparent)
+				color-mix(
+					in hsl,
+					var(--shadow_color, var(--shadow_color_umbra)) var(--shadow_alpha_30),
+					transparent
+				)
 		);
 	}
 	.date {
