@@ -33,7 +33,7 @@
 		"node": ">=22.15"
 	},
 	"devDependencies": {
-		"@fuzdev/fuz_blog": "^0.22.0",
+		"@fuzdev/fuz_blog": "^0.23.0",
 		"@fuzdev/fuz_code": "^0.41.0",
 		"@fuzdev/fuz_css": "^0.45.0",
 		"@fuzdev/fuz_gitops": "^0.63.0",
