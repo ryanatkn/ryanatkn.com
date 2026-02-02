@@ -46,10 +46,10 @@
 		"devDependencies": {
 			"@fuzdev/fuz_blog": "^0.23.0",
 			"@fuzdev/fuz_code": "^0.41.0",
-			"@fuzdev/fuz_css": "^0.46.0",
-			"@fuzdev/fuz_gitops": "^0.63.0",
+			"@fuzdev/fuz_css": "^0.47.0",
+			"@fuzdev/fuz_gitops": "^0.64.0",
 			"@fuzdev/fuz_mastodon": "^0.39.0",
-			"@fuzdev/fuz_ui": "^0.181.0",
+			"@fuzdev/fuz_ui": "^0.181.1",
 			"@fuzdev/fuz_util": "^0.48.3",
 			"@prettier/plugin-xml": "^3.4.2",
 			"@ryanatkn/eslint-config": "^0.9.0",
@@ -97,9 +97,6 @@
 		"files": [
 			"dist"
 		],
-		"dependencies": {
-			"@sveltejs/package": "^2.5.7"
-		},
 		"exports": {
 			"./package.json": "./package.json",
 			"./*.js": {
