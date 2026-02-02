@@ -90,9 +90,6 @@
 		},
 		"sideEffects": ["**/*.css"],
 		"files": ["dist"],
-		"dependencies": {
-			"@sveltejs/package": "^2.5.7"
-		},
 		"exports": {
 			"./package.json": "./package.json",
 			"./*.js": {
