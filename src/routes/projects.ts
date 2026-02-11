@@ -18,7 +18,7 @@ export const projects: Array<ProjectInfo> = [
 		name: 'zzz',
 		repo: '@fuzdev/zzz',
 		title: '<a href="https://www.zzz.software/">Zzz</a>',
-		description: 'fullstack toolkit for adaptive web environments',
+		description: 'local-first forge for power users and developers',
 		subtitle: '<a class="chip" href="https://github.com/fuzdev/zzz">source</a>',
 		motto: 'nice web things',
 		glyph: '💤',
@@ -38,11 +38,12 @@ export const projects: Array<ProjectInfo> = [
 		name: 'fuz_css',
 		repo: '@fuzdev/fuz_css',
 		title: '<a href="https://css.fuz.dev/">fuz_css</a>',
+		description: 'CSS framework and design system for semantic HTML',
 		subtitle:
 			'<a class="chip" href="https://github.com/fuzdev/fuz_css">source</a> <a class="chip" href="https://www.npmjs.com/package/@fuzdev/fuz_css">npm</a>',
 	},
 	{
-		name: 'fuz',
+		name: 'fuz_ui',
 		repo: '@fuzdev/fuz_ui',
 		title: '<a href="https://ui.fuz.dev/">fuz_ui</a>',
 		description: '<a href="https://svelte.dev/">Svelte</a> UI library',
@@ -69,6 +70,7 @@ export const projects: Array<ProjectInfo> = [
 	{
 		name: 'cosmicplayground',
 		repo: '@ryanatkn/cosmicplayground',
+		homepage: 'https://www.cosmicplayground.org/',
 		title: '<a href="https://www.cosmicplayground.org">cosmicplayground.org</a>',
 		subtitle: '<a class="chip" href="https://github.com/ryanatkn/cosmicplayground">source</a>',
 		description: 'hobby project for fun and learning',

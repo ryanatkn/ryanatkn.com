@@ -19,6 +19,7 @@ export const gen: Gen = ({origin_path}) => {
 
 interface ProjectMetadata {
 	name: string;
+	homepage?: string;
 	/**
 	 * Allows HTML.
 	 */
@@ -64,7 +65,7 @@ const projects_metadata: Array<ProjectMetadata> = [
 		name: 'zzz',
 		repo: '@fuzdev/zzz',
 		title: '<a href="https://www.zzz.software/">Zzz</a>',
-		description: 'fullstack toolkit for adaptive web environments',
+		description: 'local-first forge for power users and developers',
 		subtitle: `<a class="chip" href="https://github.com/fuzdev/zzz">source</a>`, // TODO publish zzz - <a class="chip" href="https://www.npmjs.com/package/@fuzdev/zzz">npm</a>
 		// TODO @many hack for zzz, fix after adding to gitops
 		motto: 'nice web things',
@@ -84,10 +85,11 @@ const projects_metadata: Array<ProjectMetadata> = [
 		name: 'fuz_css',
 		repo: '@fuzdev/fuz_css',
 		title: '<a href="https://css.fuz.dev/">fuz_css</a>',
+		description: 'CSS framework and design system for semantic HTML',
 		subtitle: `<a class="chip" href="https://github.com/fuzdev/fuz_css">source</a> <a class="chip" href="https://www.npmjs.com/package/@fuzdev/fuz_css">npm</a>`,
 	},
 	{
-		name: 'fuz',
+		name: 'fuz_ui',
 		repo: '@fuzdev/fuz_ui',
 		title: '<a href="https://ui.fuz.dev/">fuz_ui</a>',
 		description: '<a href="https://svelte.dev/">Svelte</a> UI library',
@@ -112,6 +114,7 @@ const projects_metadata: Array<ProjectMetadata> = [
 	{
 		name: 'cosmicplayground',
 		repo: '@ryanatkn/cosmicplayground', // TODO change to `cosmicplayground.org`
+		homepage: 'https://www.cosmicplayground.org/',
 		title: '<a href="https://www.cosmicplayground.org">cosmicplayground.org</a>', // TODO @many this is a hack because cosmicplayground hasn't been deployed (remove glyph)
 		subtitle: '<a class="chip" href="https://github.com/ryanatkn/cosmicplayground">source</a>',
 		description: 'hobby project for fun and learning', // TODO @many this is a hack because cosmicplayground hasn't been deployed
