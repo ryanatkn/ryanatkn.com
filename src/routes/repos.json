@@ -45,41 +45,46 @@
 				"peerDependencies": {"@sveltejs/kit": "^2", "svelte": "^5"},
 				"devDependencies": {
 					"@changesets/changelog-git": "^0.2.1",
-					"@fuzdev/fuz_code": "^0.41.0",
-					"@fuzdev/fuz_css": "^0.47.0",
-					"@fuzdev/fuz_ui": "^0.181.1",
-					"@fuzdev/fuz_util": "^0.48.3",
+					"@fuzdev/fuz_code": "^0.45.0",
+					"@fuzdev/fuz_css": "^0.49.1",
+					"@fuzdev/fuz_ui": "^0.183.1",
+					"@fuzdev/fuz_util": "^0.50.1",
+					"@jridgewell/trace-mapping": "^0.3.31",
 					"@ryanatkn/eslint-config": "^0.9.0",
-					"@ryanatkn/gro": "^0.190.0",
 					"@sveltejs/adapter-node": "^5.4.0",
 					"@sveltejs/adapter-static": "^3.0.10",
 					"@sveltejs/kit": "^2.50.1",
 					"@sveltejs/vite-plugin-svelte": "^6.2.4",
+					"@types/estree": "^1.0.8",
 					"@types/node": "^24.10.1",
 					"@webref/css": "^8.2.0",
 					"eslint": "^9.39.1",
 					"eslint-plugin-svelte": "^3.13.1",
 					"jsdom": "^27.2.0",
+					"magic-string": "^0.30.21",
 					"ollama": "^0.6.3",
 					"prettier": "^3.7.4",
 					"prettier-plugin-svelte": "^3.4.1",
 					"svelte": "^5.49.1",
 					"svelte-check": "^4.3.5",
+					"svelte2tsx": "^0.7.47",
 					"tslib": "^2.8.1",
 					"typescript": "^5.9.3",
 					"typescript-eslint": "^8.48.1",
 					"vitest": "^4.0.15",
-					"zod": "^4.1.13"
+					"zimmerframe": "^1.1.4"
 				},
 				"dependencies": {
 					"@anthropic-ai/sdk": "^0.71.2",
+					"@fuzdev/gro": "^0.192.1",
 					"@google/generative-ai": "^0.24.1",
 					"@hono/node-server": "^1.19.6",
 					"@hono/node-ws": "^1.2.0",
 					"date-fns": "^4.1.0",
 					"esm-env": "^1.2.2",
 					"hono": "^4.10.7",
-					"openai": "^6.10.0"
+					"openai": "^6.10.0",
+					"zod": "^4.3.6"
 				},
 				"prettier": {
 					"plugins": ["prettier-plugin-svelte"],
@@ -187,7 +192,7 @@
 								"kind": "type",
 								"doc_comment": "Action specifications indexed by method name.\nThese represent the complete action spec definitions.",
 								"source_line": 44,
-								"type_signature": "{ readonly completion_create: { method: \"completion_create\"; kind: \"request_response\"; initiator: \"frontend\"; auth: \"public\"; side_effects: true; input: ZodObject<{ completion_request: ZodObject<{ created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\">>; provider_name: ZodEnum<...>; model: ZodString; prompt: Zod..."
+								"type_signature": "{ readonly completion_create: { method: \"completion_create\"; kind: \"request_response\"; initiator: \"frontend\"; auth: \"public\"; side_effects: true; input: ZodObject<{ completion_request: ZodObject<{ created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\", \"out\">>; provider_name: ZodEnum<...>; model: ZodString; prom..."
 							},
 							{
 								"name": "action_specs",
@@ -200,14 +205,14 @@
 								"kind": "type",
 								"doc_comment": "Action parameter schemas indexed by method name.\nThese represent the input data for each action,\ne.g. JSON-RPC request/notification params and local call arguments.",
 								"source_line": 96,
-								"type_signature": "{ readonly completion_create: ZodObject<{ completion_request: ZodObject<{ created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\">>; provider_name: ZodEnum<{ ollama: \"ollama\"; claude: \"claude\"; chatgpt: \"chatgpt\"; gemini: \"gemini\"; }>; model: ZodString; prompt: ZodString; completion_messages: ZodOptional<...>; },..."
+								"type_signature": "{ readonly completion_create: ZodObject<{ completion_request: ZodObject<{ created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\", \"out\">>; provider_name: ZodEnum<...>; model: ZodString; prompt: ZodString; completion_messages: ZodOptional<...>; }, $strict>; _meta: ZodOptional<...>; }, $strict>; ... 18 more ...; r..."
 							},
 							{
 								"name": "ActionOutputs",
 								"kind": "type",
 								"doc_comment": "Action result schemas indexed by method name.\nThese represent the output data for each action,\ne.g. JSON-RPC response results and local call return values.",
 								"source_line": 146,
-								"type_signature": "{ readonly completion_create: ZodObject<{ completion_response: ZodObject<{ created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\">>; provider_name: ZodEnum<{ ollama: \"ollama\"; claude: \"claude\"; chatgpt: \"chatgpt\"; gemini: \"gemini\"; }>; model: ZodString; data: ZodDiscriminatedUnion<...>; }, $strict>; _meta: ZodOp..."
+								"type_signature": "{ readonly completion_create: ZodObject<{ completion_response: ZodObject<{ created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\", \"out\">>; provider_name: ZodEnum<...>; model: ZodString; data: ZodDiscriminatedUnion<...>; }, $strict>; _meta: ZodOptional<...>; }, $strict>; ... 18 more ...; readonly toggle_main_men..."
 							},
 							{
 								"name": "ActionEventDatas",
@@ -1521,25 +1526,25 @@
 								"name": "diskfile_update_action_spec",
 								"kind": "variable",
 								"source_line": 82,
-								"type_signature": "{ method: \"diskfile_update\"; kind: \"request_response\"; initiator: \"frontend\"; auth: \"public\"; side_effects: true; input: ZodObject<{ path: $ZodBranded<ZodString, \"DiskfilePath\">; content: ZodString; }, $strict>; output: ZodNull; async: true; }"
+								"type_signature": "{ method: \"diskfile_update\"; kind: \"request_response\"; initiator: \"frontend\"; auth: \"public\"; side_effects: true; input: ZodObject<{ path: $ZodBranded<ZodString, \"DiskfilePath\", \"out\">; content: ZodString; }, $strict>; output: ZodNull; async: true; }"
 							},
 							{
 								"name": "diskfile_delete_action_spec",
 								"kind": "variable",
 								"source_line": 96,
-								"type_signature": "{ method: \"diskfile_delete\"; kind: \"request_response\"; initiator: \"frontend\"; auth: \"public\"; side_effects: true; input: ZodObject<{ path: $ZodBranded<ZodString, \"DiskfilePath\">; }, $strict>; output: ZodNull; async: true; }"
+								"type_signature": "{ method: \"diskfile_delete\"; kind: \"request_response\"; initiator: \"frontend\"; auth: \"public\"; side_effects: true; input: ZodObject<{ path: $ZodBranded<ZodString, \"DiskfilePath\", \"out\">; }, $strict>; output: ZodNull; async: true; }"
 							},
 							{
 								"name": "directory_create_action_spec",
 								"kind": "variable",
 								"source_line": 109,
-								"type_signature": "{ method: \"directory_create\"; kind: \"request_response\"; initiator: \"frontend\"; auth: \"public\"; side_effects: true; input: ZodObject<{ path: $ZodBranded<ZodString, \"DiskfilePath\">; }, $strict>; output: ZodNull; async: true; }"
+								"type_signature": "{ method: \"directory_create\"; kind: \"request_response\"; initiator: \"frontend\"; auth: \"public\"; side_effects: true; input: ZodObject<{ path: $ZodBranded<ZodString, \"DiskfilePath\", \"out\">; }, $strict>; output: ZodNull; async: true; }"
 							},
 							{
 								"name": "completion_create_action_spec",
 								"kind": "variable",
 								"source_line": 122,
-								"type_signature": "{ method: \"completion_create\"; kind: \"request_response\"; initiator: \"frontend\"; auth: \"public\"; side_effects: true; input: ZodObject<{ completion_request: ZodObject<{ created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\">>; provider_name: ZodEnum<...>; model: ZodString; prompt: ZodString; completion_messages: Z..."
+								"type_signature": "{ method: \"completion_create\"; kind: \"request_response\"; initiator: \"frontend\"; auth: \"public\"; side_effects: true; input: ZodObject<{ completion_request: ZodObject<{ created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\", \"out\">>; provider_name: ZodEnum<...>; model: ZodString; prompt: ZodString; completion_mess..."
 							},
 							{
 								"name": "completion_progress_action_spec",
@@ -1708,7 +1713,7 @@
 								"name": "ActionJson",
 								"kind": "type",
 								"source_line": 16,
-								"type_signature": "ZodObject<{ id: ZodDefault<$ZodBranded<ZodUUID, \"Uuid\">>; created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\">>; updated: ZodDefault<...>; method: ZodEnum<...>; action_event_data: ZodOptional<...>; }, $strict>"
+								"type_signature": "ZodObject<{ id: ZodDefault<$ZodBranded<ZodUUID, \"Uuid\", \"out\">>; created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\", \"out\">>; updated: ZodDefault<...>; method: ZodEnum<...>; action_event_data: ZodOptional<...>; }, $strict>"
 							},
 							{
 								"name": "ActionJsonInput",
@@ -1928,7 +1933,7 @@
 								"name": "ActionsJson",
 								"kind": "type",
 								"source_line": 14,
-								"type_signature": "ZodObject<{ id: ZodDefault<$ZodBranded<ZodUUID, \"Uuid\">>; created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\">>; updated: ZodDefault<...>; items: ZodDefault<...>; }, $strict>"
+								"type_signature": "ZodObject<{ id: ZodDefault<$ZodBranded<ZodUUID, \"Uuid\", \"out\">>; created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\", \"out\">>; updated: ZodDefault<...>; items: ZodDefault<...>; }, $strict>"
 							},
 							{
 								"name": "ActionsJsonInput",
@@ -2073,7 +2078,7 @@
 								"name": "CapabilitiesJson",
 								"kind": "type",
 								"source_line": 23,
-								"type_signature": "ZodObject<{ id: ZodDefault<$ZodBranded<ZodUUID, \"Uuid\">>; created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\">>; updated: ZodDefault<...>; }, $strict>"
+								"type_signature": "ZodObject<{ id: ZodDefault<$ZodBranded<ZodUUID, \"Uuid\", \"out\">>; created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\", \"out\">>; updated: ZodDefault<...>; }, $strict>"
 							},
 							{
 								"name": "CapabilitiesJsonInput",
@@ -2341,11 +2346,11 @@
 									{
 										"name": "constructor",
 										"kind": "constructor",
-										"type_signature": "(options: CellOptions<ZodObject<{ id: ZodDefault<$ZodBranded<ZodUUID, \"Uuid\">>; created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\">>; updated: ZodDefault<...>; }, $strict>>): Capabilities",
+										"type_signature": "(options: CellOptions<ZodObject<{ id: ZodDefault<$ZodBranded<ZodUUID, \"Uuid\", \"out\">>; created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\", \"out\">>; updated: ZodDefault<...>; }, $strict>>): Capabilities",
 										"parameters": [
 											{
 												"name": "options",
-												"type": "CellOptions<ZodObject<{ id: ZodDefault<$ZodBranded<ZodUUID, \"Uuid\">>; created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\">>; updated: ZodDefault<...>; }, $strict>>"
+												"type": "CellOptions<ZodObject<{ id: ZodDefault<$ZodBranded<ZodUUID, \"Uuid\", \"out\">>; created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\", \"out\">>; updated: ZodDefault<...>; }, $strict>>"
 											}
 										]
 									},
@@ -2928,7 +2933,7 @@
 								"kind": "type",
 								"doc_comment": "Base schema that defines common properties for all cells.",
 								"source_line": 17,
-								"type_signature": "ZodObject<{ id: ZodDefault<$ZodBranded<ZodUUID, \"Uuid\">>; created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\">>; updated: ZodDefault<...>; }, $strict>"
+								"type_signature": "ZodObject<{ id: ZodDefault<$ZodBranded<ZodUUID, \"Uuid\", \"out\">>; created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\", \"out\">>; updated: ZodDefault<...>; }, $strict>"
 							},
 							{
 								"name": "CellJsonInput",
@@ -3318,7 +3323,7 @@
 								"name": "ChatJson",
 								"kind": "type",
 								"source_line": 18,
-								"type_signature": "ZodObject<{ id: ZodDefault<$ZodBranded<ZodUUID, \"Uuid\">>; created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\">>; ... 5 more ...; selected_thread_id: ZodDefault<...>; }, $strict>"
+								"type_signature": "ZodObject<{ id: ZodDefault<$ZodBranded<ZodUUID, \"Uuid\", \"out\">>; created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\", \"out\">>; ... 5 more ...; selected_thread_id: ZodDefault<...>; }, $strict>"
 							},
 							{
 								"name": "ChatJsonInput",
@@ -3588,7 +3593,7 @@
 								"name": "ChatsJson",
 								"kind": "type",
 								"source_line": 18,
-								"type_signature": "ZodObject<{ id: ZodDefault<$ZodBranded<ZodUUID, \"Uuid\">>; created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\">>; ... 4 more ...; show_sort_controls: ZodDefault<...>; }, $strict>"
+								"type_signature": "ZodObject<{ id: ZodDefault<$ZodBranded<ZodUUID, \"Uuid\", \"out\">>; created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\", \"out\">>; ... 4 more ...; show_sort_controls: ZodDefault<...>; }, $strict>"
 							},
 							{
 								"name": "ChatsJsonInput",
@@ -4178,13 +4183,13 @@
 								"name": "CompletionRequest",
 								"kind": "type",
 								"source_line": 16,
-								"type_signature": "ZodObject<{ created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\">>; provider_name: ZodEnum<{ ollama: \"ollama\"; claude: \"claude\"; chatgpt: \"chatgpt\"; gemini: \"gemini\"; }>; model: ZodString; prompt: ZodString; completion_messages: ZodOptional<...>; }, $strict>"
+								"type_signature": "ZodObject<{ created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\", \"out\">>; provider_name: ZodEnum<{ ollama: \"ollama\"; claude: \"claude\"; chatgpt: \"chatgpt\"; gemini: \"gemini\"; }>; model: ZodString; prompt: ZodString; completion_messages: ZodOptional<...>; }, $strict>"
 							},
 							{
 								"name": "CompletionResponse",
 								"kind": "type",
 								"source_line": 26,
-								"type_signature": "ZodObject<{ created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\">>; provider_name: ZodEnum<{ ollama: \"ollama\"; claude: \"claude\"; chatgpt: \"chatgpt\"; gemini: \"gemini\"; }>; model: ZodString; data: ZodDiscriminatedUnion<...>; }, $strict>"
+								"type_signature": "ZodObject<{ created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\", \"out\">>; provider_name: ZodEnum<{ ollama: \"ollama\"; claude: \"claude\"; chatgpt: \"chatgpt\"; gemini: \"gemini\"; }>; model: ZodString; data: ZodDiscriminatedUnion<...>; }, $strict>"
 							}
 						],
 						"dependencies": ["provider_types.ts", "zod_helpers.ts"],
@@ -5123,14 +5128,14 @@
 								"kind": "type",
 								"doc_comment": "Schema for history entries.",
 								"source_line": 14,
-								"type_signature": "ZodObject<{ id: ZodDefault<$ZodBranded<ZodUUID, \"Uuid\">>; created: ZodNumber; content: ZodString; label: ZodString; is_disk_change: ZodDefault<...>; is_unsaved_edit: ZodDefault<...>; is_original_state: ZodDefault<...>; }, $strict>"
+								"type_signature": "ZodObject<{ id: ZodDefault<$ZodBranded<ZodUUID, \"Uuid\", \"out\">>; created: ZodNumber; content: ZodString; label: ZodString; is_disk_change: ZodDefault<...>; is_unsaved_edit: ZodDefault<...>; is_original_state: ZodDefault<...>; }, $strict>"
 							},
 							{
 								"name": "DiskfileHistoryJson",
 								"kind": "type",
 								"doc_comment": "Schema for the DiskfileHistory cell.",
 								"source_line": 28,
-								"type_signature": "ZodObject<{ id: ZodDefault<$ZodBranded<ZodUUID, \"Uuid\">>; created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\">>; updated: ZodDefault<...>; path: $ZodBranded<...>; entries: ZodDefault<...>; max_entries: ZodDefault<...>; }, $strict>"
+								"type_signature": "ZodObject<{ id: ZodDefault<$ZodBranded<ZodUUID, \"Uuid\", \"out\">>; created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\", \"out\">>; updated: ZodDefault<...>; path: $ZodBranded<...>; entries: ZodDefault<...>; max_entries: ZodDefault<...>; }, $strict>"
 							},
 							{
 								"name": "DiskfileHistoryJsonInput",
@@ -5231,7 +5236,7 @@
 								"name": "DiskfileTabJson",
 								"kind": "type",
 								"source_line": 9,
-								"type_signature": "ZodObject<{ id: ZodDefault<$ZodBranded<ZodUUID, \"Uuid\">>; created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\">>; updated: ZodDefault<...>; diskfile_id: $ZodBranded<...>; }, $strict>"
+								"type_signature": "ZodObject<{ id: ZodDefault<$ZodBranded<ZodUUID, \"Uuid\", \"out\">>; created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\", \"out\">>; updated: ZodDefault<...>; diskfile_id: $ZodBranded<...>; }, $strict>"
 							},
 							{
 								"name": "DiskfileTabJsonInput",
@@ -5309,7 +5314,7 @@
 								"name": "DiskfileTabsJson",
 								"kind": "type",
 								"source_line": 14,
-								"type_signature": "ZodObject<{ id: ZodDefault<$ZodBranded<ZodUUID, \"Uuid\">>; created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\">>; ... 5 more ...; max_tab_history: ZodDefault<...>; }, $strict>"
+								"type_signature": "ZodObject<{ id: ZodDefault<$ZodBranded<ZodUUID, \"Uuid\", \"out\">>; created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\", \"out\">>; ... 5 more ...; max_tab_history: ZodDefault<...>; }, $strict>"
 							},
 							{
 								"name": "DiskfileTabsJsonInput",
@@ -5534,32 +5539,32 @@
 								"kind": "type",
 								"doc_comment": "An absolute Unix-style file path.",
 								"source_line": 11,
-								"type_signature": "$ZodBranded<ZodString, \"DiskfilePath\">"
+								"type_signature": "$ZodBranded<ZodString, \"DiskfilePath\", \"out\">"
 							},
 							{
 								"name": "DiskfileDirectoryPath",
 								"kind": "type",
 								"doc_comment": "These always have a trailing slash.",
 								"source_line": 18,
-								"type_signature": "$ZodBranded<ZodPipe<ZodPipe<ZodString, ZodTransform<string, string>>, $ZodBranded<ZodString, \"DiskfilePath\">>, \"DiskfileDirectoryPath\">"
+								"type_signature": "$ZodBranded<ZodPipe<ZodPipe<ZodString, ZodTransform<string, string>>, $ZodBranded<ZodString, \"DiskfilePath\", \"out\">>, \"DiskfileDirectoryPath\", \"out\">"
 							},
 							{
 								"name": "DiskfileChange",
 								"kind": "type",
 								"source_line": 22,
-								"type_signature": "ZodObject<{ type: ZodEnum<{ add: \"add\"; change: \"change\"; delete: \"delete\"; }>; path: $ZodBranded<ZodString, \"DiskfilePath\">; }, $strict>"
+								"type_signature": "ZodObject<{ type: ZodEnum<{ add: \"add\"; change: \"change\"; delete: \"delete\"; }>; path: $ZodBranded<ZodString, \"DiskfilePath\", \"out\">; }, $strict>"
 							},
 							{
 								"name": "SerializableDisknode",
 								"kind": "type",
 								"source_line": 29,
-								"type_signature": "ZodObject<{ id: $ZodBranded<ZodString, \"DiskfilePath\">; source_dir: $ZodBranded<ZodPipe<ZodPipe<ZodString, ZodTransform<string, string>>, $ZodBranded<...>>, \"DiskfileDirectoryPath\">; ... 4 more ...; dependencies: ZodArray<...>; }, $strict>"
+								"type_signature": "ZodObject<{ id: $ZodBranded<ZodString, \"DiskfilePath\", \"out\">; source_dir: $ZodBranded<ZodPipe<ZodPipe<ZodString, ZodTransform<string, string>>, $ZodBranded<...>>, \"DiskfileDirectoryPath\", \"out\">; ... 4 more ...; dependencies: ZodArray<...>; }, $strict>"
 							},
 							{
 								"name": "DiskfileJson",
 								"kind": "type",
 								"source_line": 41,
-								"type_signature": "ZodObject<{ id: ZodDefault<$ZodBranded<ZodUUID, \"Uuid\">>; created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\">>; ... 5 more ...; dependencies: ZodDefault<...>; }, $strict>"
+								"type_signature": "ZodObject<{ id: ZodDefault<$ZodBranded<ZodUUID, \"Uuid\", \"out\">>; created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\", \"out\">>; ... 5 more ...; dependencies: ZodDefault<...>; }, $strict>"
 							},
 							{
 								"name": "DiskfileJsonInput",
@@ -6003,7 +6008,7 @@
 								"name": "DiskfilesEditorJson",
 								"kind": "type",
 								"source_line": 10,
-								"type_signature": "ZodObject<{ id: ZodDefault<$ZodBranded<ZodUUID, \"Uuid\">>; created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\">>; updated: ZodDefault<...>; show_sort_controls: ZodDefault<...>; }, $strict>"
+								"type_signature": "ZodObject<{ id: ZodDefault<$ZodBranded<ZodUUID, \"Uuid\", \"out\">>; created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\", \"out\">>; updated: ZodDefault<...>; show_sort_controls: ZodDefault<...>; }, $strict>"
 							},
 							{
 								"name": "DiskfilesEditorJsonInput",
@@ -6165,7 +6170,7 @@
 								"name": "DiskfilesJson",
 								"kind": "type",
 								"source_line": 15,
-								"type_signature": "ZodObject<{ id: ZodDefault<$ZodBranded<ZodUUID, \"Uuid\">>; created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\">>; updated: ZodDefault<...>; diskfiles: ZodDefault<...>; selected_file_id: ZodDefault<...>; }, $strict>"
+								"type_signature": "ZodObject<{ id: ZodDefault<$ZodBranded<ZodUUID, \"Uuid\", \"out\">>; created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\", \"out\">>; updated: ZodDefault<...>; diskfiles: ZodDefault<...>; selected_file_id: ZodDefault<...>; }, $strict>"
 							},
 							{
 								"name": "DiskfilesJsonInput",
@@ -6822,7 +6827,7 @@
 								"name": "FrontendJson",
 								"kind": "type",
 								"source_line": 51,
-								"type_signature": "ZodObject<{ id: ZodDefault<$ZodBranded<ZodUUID, \"Uuid\">>; created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\">>; updated: ZodDefault<...>; ui: ZodDefault<...>; }, $strict>"
+								"type_signature": "ZodObject<{ id: ZodDefault<$ZodBranded<ZodUUID, \"Uuid\", \"out\">>; created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\", \"out\">>; updated: ZodDefault<...>; ui: ZodDefault<...>; }, $strict>"
 							},
 							{
 								"name": "FrontendJsonInput",
@@ -7138,15 +7143,15 @@
 									{
 										"name": "lookup_action_input_schema",
 										"kind": "function",
-										"type_signature": "<TMethod extends ActionMethod>(method: TMethod): { readonly completion_create: ZodObject<{ completion_request: ZodObject<{ created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\">>; provider_name: ZodEnum<...>; model: ZodString; prompt: ZodString; completion_messages: ZodOptional<...>; }, $strict>; _meta: ZodOptional<...>; }, $strict>; ... 18 more ...; readonly toggle_main_menu: ZodOptional<...>; }[TMethod] | undefined",
-										"return_type": "{ readonly completion_create: ZodObject<{ completion_request: ZodObject<{ created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\">>; provider_name: ZodEnum<{ ollama: \"ollama\"; claude: \"claude\"; chatgpt: \"chatgpt\"; gemini: \"gemini\"; }>; model: ZodString; prompt: ZodString; completion_messages: ZodOptional<...>; },...",
+										"type_signature": "<TMethod extends ActionMethod>(method: TMethod): { readonly completion_create: ZodObject<{ completion_request: ZodObject<{ created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\", \"out\">>; provider_name: ZodEnum<...>; model: ZodString; prompt: ZodString; completion_messages: ZodOptional<...>; }, $strict>; _meta: ZodOptional<...>; }, $strict>; ... 18 more ...; readonly toggle_main_menu: ZodOptional<...>; }[TMethod] | undefined",
+										"return_type": "{ readonly completion_create: ZodObject<{ completion_request: ZodObject<{ created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\", \"out\">>; provider_name: ZodEnum<...>; model: ZodString; prompt: ZodString; completion_messages: ZodOptional<...>; }, $strict>; _meta: ZodOptional<...>; }, $strict>; ... 18 more ...; r...",
 										"parameters": [{"name": "method", "type": "TMethod"}]
 									},
 									{
 										"name": "lookup_action_output_schema",
 										"kind": "function",
-										"type_signature": "<TMethod extends ActionMethod>(method: TMethod): { readonly completion_create: ZodObject<{ completion_response: ZodObject<{ created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\">>; provider_name: ZodEnum<...>; model: ZodString; data: ZodDiscriminatedUnion<...>; }, $strict>; _meta: ZodOptional<...>; }, $strict>; ... 18 more ...; readonly toggle_main_menu: ZodObject<...>; }[TMethod] | undefined",
-										"return_type": "{ readonly completion_create: ZodObject<{ completion_response: ZodObject<{ created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\">>; provider_name: ZodEnum<{ ollama: \"ollama\"; claude: \"claude\"; chatgpt: \"chatgpt\"; gemini: \"gemini\"; }>; model: ZodString; data: ZodDiscriminatedUnion<...>; }, $strict>; _meta: ZodOp...",
+										"type_signature": "<TMethod extends ActionMethod>(method: TMethod): { readonly completion_create: ZodObject<{ completion_response: ZodObject<{ created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\", \"out\">>; provider_name: ZodEnum<...>; model: ZodString; data: ZodDiscriminatedUnion<...>; }, $strict>; _meta: ZodOptional<...>; }, $strict>; ... 18 more ...; readonly toggle_main_menu: ZodObject<...>; }[TMethod] | undefined",
+										"return_type": "{ readonly completion_create: ZodObject<{ completion_response: ZodObject<{ created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\", \"out\">>; provider_name: ZodEnum<...>; model: ZodString; data: ZodDiscriminatedUnion<...>; }, $strict>; _meta: ZodOptional<...>; }, $strict>; ... 18 more ...; readonly toggle_main_men...",
 										"parameters": [{"name": "method", "type": "TMethod"}]
 									},
 									{
@@ -7978,7 +7983,7 @@
 								"kind": "type",
 								"doc_comment": "Interface for objects that can be stored in an indexed collection.",
 								"source_line": 16,
-								"type_signature": "ZodObject<{ id: ZodDefault<$ZodBranded<ZodUUID, \"Uuid\">>; }, $strict>"
+								"type_signature": "ZodObject<{ id: ZodDefault<$ZodBranded<ZodUUID, \"Uuid\", \"out\">>; }, $strict>"
 							},
 							{
 								"name": "IndexOptions",
@@ -8953,7 +8958,7 @@
 								"name": "JsonrpcServerErrorCode",
 								"kind": "type",
 								"source_line": 155,
-								"type_signature": "$ZodBranded<ZodNumber, \"JsonrpcServerErrorCode\">"
+								"type_signature": "$ZodBranded<ZodNumber, \"JsonrpcServerErrorCode\", \"out\">"
 							},
 							{
 								"name": "JsonrpcErrorCode",
@@ -9133,7 +9138,7 @@
 								"name": "ModelJson",
 								"kind": "type",
 								"source_line": 14,
-								"type_signature": "ZodObject<{ id: ZodDefault<$ZodBranded<ZodUUID, \"Uuid\">>; created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\">>; ... 17 more ...; ollama_show_response_error: ZodOptional<...>; }, $strict>"
+								"type_signature": "ZodObject<{ id: ZodDefault<$ZodBranded<ZodUUID, \"Uuid\", \"out\">>; created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\", \"out\">>; ... 17 more ...; ollama_show_response_error: ZodOptional<...>; }, $strict>"
 							},
 							{
 								"name": "ModelJsonInput",
@@ -9490,7 +9495,7 @@
 								"name": "ModelsJson",
 								"kind": "type",
 								"source_line": 14,
-								"type_signature": "ZodObject<{ id: ZodDefault<$ZodBranded<ZodUUID, \"Uuid\">>; created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\">>; updated: ZodDefault<...>; items: ZodDefault<...>; }, $strict>"
+								"type_signature": "ZodObject<{ id: ZodDefault<$ZodBranded<ZodUUID, \"Uuid\", \"out\">>; created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\", \"out\">>; updated: ZodDefault<...>; items: ZodDefault<...>; }, $strict>"
 							},
 							{
 								"name": "ModelsJsonInput",
@@ -9902,7 +9907,7 @@
 								"name": "OllamaJson",
 								"kind": "type",
 								"source_line": 38,
-								"type_signature": "ZodObject<{ id: ZodDefault<$ZodBranded<ZodUUID, \"Uuid\">>; created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\">>; updated: ZodDefault<...>; host: ZodDefault<...>; }, $strict>"
+								"type_signature": "ZodObject<{ id: ZodDefault<$ZodBranded<ZodUUID, \"Uuid\", \"out\">>; created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\", \"out\">>; updated: ZodDefault<...>; host: ZodDefault<...>; }, $strict>"
 							},
 							{
 								"name": "OllamaJsonInput",
@@ -10557,14 +10562,14 @@
 								"kind": "type",
 								"doc_comment": "Common properties for all part types.",
 								"source_line": 18,
-								"type_signature": "ZodObject<{ id: ZodDefault<$ZodBranded<ZodUUID, \"Uuid\">>; created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\">>; ... 10 more ...; summary: ZodDefault<...>; }, $strict>"
+								"type_signature": "ZodObject<{ id: ZodDefault<$ZodBranded<ZodUUID, \"Uuid\", \"out\">>; created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\", \"out\">>; ... 10 more ...; summary: ZodDefault<...>; }, $strict>"
 							},
 							{
 								"name": "TextPartJson",
 								"kind": "type",
 								"doc_comment": "Text part schema - direct content storage.",
 								"source_line": 34,
-								"type_signature": "ZodObject<{ id: ZodDefault<$ZodBranded<ZodUUID, \"Uuid\">>; created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\">>; ... 11 more ...; content: ZodDefault<...>; }, $strict>"
+								"type_signature": "ZodObject<{ id: ZodDefault<$ZodBranded<ZodUUID, \"Uuid\", \"out\">>; created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\", \"out\">>; ... 11 more ...; content: ZodDefault<...>; }, $strict>"
 							},
 							{
 								"name": "TextPartJsonInput",
@@ -10577,7 +10582,7 @@
 								"kind": "type",
 								"doc_comment": "Diskfile part schema - references a diskfile.",
 								"source_line": 42,
-								"type_signature": "ZodObject<{ id: ZodDefault<$ZodBranded<ZodUUID, \"Uuid\">>; created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\">>; ... 11 more ...; has_xml_tag: ZodDefault<...>; }, $strict>"
+								"type_signature": "ZodObject<{ id: ZodDefault<$ZodBranded<ZodUUID, \"Uuid\", \"out\">>; created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\", \"out\">>; ... 11 more ...; has_xml_tag: ZodDefault<...>; }, $strict>"
 							},
 							{
 								"name": "DiskfilePartJsonInput",
@@ -10590,7 +10595,7 @@
 								"kind": "type",
 								"doc_comment": "Union of all part types for deserialization.",
 								"source_line": 52,
-								"type_signature": "ZodDiscriminatedUnion<[ZodObject<{ id: ZodDefault<$ZodBranded<ZodUUID, \"Uuid\">>; created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\">>; ... 11 more ...; content: ZodDefault<...>; }, $strict>, ZodObject<...>], \"type\">"
+								"type_signature": "ZodDiscriminatedUnion<[ZodObject<{ id: ZodDefault<$ZodBranded<ZodUUID, \"Uuid\", \"out\">>; created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\", \"out\">>; ... 11 more ...; content: ZodDefault<...>; }, $strict>, ZodObject<...>], \"type\">"
 							},
 							{
 								"name": "PartJsonInput",
@@ -11093,7 +11098,7 @@
 								"name": "PartsJson",
 								"kind": "type",
 								"source_line": 12,
-								"type_signature": "ZodObject<{ id: ZodDefault<$ZodBranded<ZodUUID, \"Uuid\">>; created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\">>; updated: ZodDefault<...>; items: ZodDefault<...>; }, $strict>"
+								"type_signature": "ZodObject<{ id: ZodDefault<$ZodBranded<ZodUUID, \"Uuid\", \"out\">>; created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\", \"out\">>; updated: ZodDefault<...>; items: ZodDefault<...>; }, $strict>"
 							},
 							{
 								"name": "PartsJsonInput",
@@ -11737,7 +11742,7 @@
 								"name": "PromptJson",
 								"kind": "type",
 								"source_line": 18,
-								"type_signature": "ZodObject<{ id: ZodDefault<$ZodBranded<ZodUUID, \"Uuid\">>; created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\">>; updated: ZodDefault<...>; name: ZodDefault<...>; parts: ZodDefault<...>; }, $strict>"
+								"type_signature": "ZodObject<{ id: ZodDefault<$ZodBranded<ZodUUID, \"Uuid\", \"out\">>; created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\", \"out\">>; updated: ZodDefault<...>; name: ZodDefault<...>; parts: ZodDefault<...>; }, $strict>"
 							},
 							{
 								"name": "PromptJsonInput",
@@ -11969,7 +11974,7 @@
 								"name": "PromptsJson",
 								"kind": "type",
 								"source_line": 17,
-								"type_signature": "ZodObject<{ id: ZodDefault<$ZodBranded<ZodUUID, \"Uuid\">>; created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\">>; updated: ZodDefault<...>; items: ZodDefault<...>; selected_id: ZodDefault<...>; show_sort_controls: ZodDefault<...>; }, $strict>"
+								"type_signature": "ZodObject<{ id: ZodDefault<$ZodBranded<ZodUUID, \"Uuid\", \"out\">>; created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\", \"out\">>; updated: ZodDefault<...>; items: ZodDefault<...>; selected_id: ZodDefault<...>; show_sort_controls: ZodDefault<...>; }, $strict>"
 							},
 							{
 								"name": "PromptsJsonInput",
@@ -12269,7 +12274,7 @@
 								"name": "ProviderJson",
 								"kind": "type",
 								"source_line": 9,
-								"type_signature": "ZodObject<{ id: ZodDefault<$ZodBranded<ZodUUID, \"Uuid\">>; created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\">>; ... 6 more ...; api_key_url: ZodNullable<...>; }, $strict>"
+								"type_signature": "ZodObject<{ id: ZodDefault<$ZodBranded<ZodUUID, \"Uuid\", \"out\">>; created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\", \"out\">>; ... 6 more ...; api_key_url: ZodNullable<...>; }, $strict>"
 							},
 							{
 								"name": "ProviderJsonInput",
@@ -12433,7 +12438,7 @@
 								"name": "ProvidersJson",
 								"kind": "type",
 								"source_line": 8,
-								"type_signature": "ZodObject<{ id: ZodDefault<$ZodBranded<ZodUUID, \"Uuid\">>; created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\">>; updated: ZodDefault<...>; items: ZodDefault<...>; }, $strict>"
+								"type_signature": "ZodObject<{ id: ZodDefault<$ZodBranded<ZodUUID, \"Uuid\", \"out\">>; created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\", \"out\">>; updated: ZodDefault<...>; items: ZodDefault<...>; }, $strict>"
 							},
 							{
 								"name": "ProvidersJsonInput",
@@ -14577,7 +14582,7 @@
 								"kind": "type",
 								"doc_comment": "A branded type for representing safely normalized filesystem paths",
 								"source_line": 14,
-								"type_signature": "$ZodBranded<ZodPipe<ZodString, ZodTransform<string, string>>, \"ScopedFsPath\">"
+								"type_signature": "$ZodBranded<ZodPipe<ZodString, ZodTransform<string, string>>, \"ScopedFsPath\", \"out\">"
 							},
 							{
 								"name": "ScopedFs",
@@ -15014,7 +15019,7 @@
 								"name": "SocketJson",
 								"kind": "type",
 								"source_line": 22,
-								"type_signature": "ZodObject<{ id: ZodDefault<$ZodBranded<ZodUUID, \"Uuid\">>; created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\">>; ... 6 more ...; auto_reconnect: ZodDefault<...>; }, $strict>"
+								"type_signature": "ZodObject<{ id: ZodDefault<$ZodBranded<ZodUUID, \"Uuid\", \"out\">>; created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\", \"out\">>; ... 6 more ...; auto_reconnect: ZodDefault<...>; }, $strict>"
 							},
 							{
 								"name": "SocketJsonInput",
@@ -15533,7 +15538,7 @@
 								"name": "ThreadJson",
 								"kind": "type",
 								"source_line": 8,
-								"type_signature": "ZodObject<{ id: ZodDefault<$ZodBranded<ZodUUID, \"Uuid\">>; created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\">>; updated: ZodDefault<...>; model_name: ZodDefault<...>; turns: ZodDefault<...>; enabled: ZodDefault<...>; }, $strict>"
+								"type_signature": "ZodObject<{ id: ZodDefault<$ZodBranded<ZodUUID, \"Uuid\", \"out\">>; created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\", \"out\">>; updated: ZodDefault<...>; model_name: ZodDefault<...>; turns: ZodDefault<...>; enabled: ZodDefault<...>; }, $strict>"
 							},
 							{
 								"name": "ThreadJsonInput",
@@ -15773,7 +15778,7 @@
 								"name": "ThreadsJson",
 								"kind": "type",
 								"source_line": 14,
-								"type_signature": "ZodObject<{ id: ZodDefault<$ZodBranded<ZodUUID, \"Uuid\">>; created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\">>; updated: ZodDefault<...>; items: ZodDefault<...>; selected_id: ZodDefault<...>; }, $strict>"
+								"type_signature": "ZodObject<{ id: ZodDefault<$ZodBranded<ZodUUID, \"Uuid\", \"out\">>; created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\", \"out\">>; updated: ZodDefault<...>; items: ZodDefault<...>; selected_id: ZodDefault<...>; }, $strict>"
 							},
 							{
 								"name": "ThreadsJsonInput",
@@ -16024,7 +16029,7 @@
 								"name": "TimeJson",
 								"kind": "type",
 								"source_line": 9,
-								"type_signature": "ZodObject<{ id: ZodDefault<$ZodBranded<ZodUUID, \"Uuid\">>; created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\">>; updated: ZodDefault<...>; }, $strict>"
+								"type_signature": "ZodObject<{ id: ZodDefault<$ZodBranded<ZodUUID, \"Uuid\", \"out\">>; created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\", \"out\">>; updated: ZodDefault<...>; }, $strict>"
 							},
 							{
 								"name": "TimeJsonInput",
@@ -16316,7 +16321,7 @@
 								"kind": "type",
 								"doc_comment": "Turn is a conversation turn (like A2A Message) that references one or more parts (content entities).\nTurns contextualize reusable content within conversations, providing role, metadata, and ordering.",
 								"source_line": 12,
-								"type_signature": "ZodObject<{ id: ZodDefault<$ZodBranded<ZodUUID, \"Uuid\">>; created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\">>; ... 6 more ...; error_message: ZodOptional<...>; }, $strict>"
+								"type_signature": "ZodObject<{ id: ZodDefault<$ZodBranded<ZodUUID, \"Uuid\", \"out\">>; created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\", \"out\">>; ... 6 more ...; error_message: ZodOptional<...>; }, $strict>"
 							},
 							{
 								"name": "TurnJsonInput",
@@ -16616,7 +16621,7 @@
 								"name": "UiJson",
 								"kind": "type",
 								"source_line": 6,
-								"type_signature": "ZodObject<{ id: ZodDefault<$ZodBranded<ZodUUID, \"Uuid\">>; created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\">>; ... 6 more ...; tutorial_for_diskfiles: ZodDefault<...>; }, $strict>"
+								"type_signature": "ZodObject<{ id: ZodDefault<$ZodBranded<ZodUUID, \"Uuid\", \"out\">>; created: ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\", \"out\">>; ... 6 more ...; tutorial_for_diskfiles: ZodDefault<...>; }, $strict>"
 							},
 							{
 								"name": "UiJsonInput",
@@ -16741,13 +16746,13 @@
 								"name": "XmlAttribute",
 								"kind": "type",
 								"source_line": 22,
-								"type_signature": "ZodObject<{ id: $ZodBranded<ZodUUID, \"Uuid\">; key: ZodPipe<ZodPipe<ZodString, ZodTransform<string, string>>, ZodString>; value: ZodString; }, $strict>"
+								"type_signature": "ZodObject<{ id: $ZodBranded<ZodUUID, \"Uuid\", \"out\">; key: ZodPipe<ZodPipe<ZodString, ZodTransform<string, string>>, ZodString>; value: ZodString; }, $strict>"
 							},
 							{
 								"name": "XmlAttributeWithDefaults",
 								"kind": "type",
 								"source_line": 31,
-								"type_signature": "ZodObject<{ id: ZodDefault<$ZodBranded<ZodUUID, \"Uuid\">>; key: ZodDefault<ZodPipe<ZodPipe<ZodString, ZodTransform<string, string>>, ZodString>>; value: ZodDefault<...>; }, $strict>"
+								"type_signature": "ZodObject<{ id: ZodDefault<$ZodBranded<ZodUUID, \"Uuid\", \"out\">>; key: ZodDefault<ZodPipe<ZodPipe<ZodString, ZodTransform<string, string>>, ZodString>>; value: ZodDefault<...>; }, $strict>"
 							}
 						],
 						"dependencies": ["zod_helpers.ts"],
@@ -16801,7 +16806,7 @@
 								"name": "TypeLiteral",
 								"kind": "type",
 								"source_line": 13,
-								"type_signature": "$ZodBranded<ZodString, \"TypeLiteral\">"
+								"type_signature": "$ZodBranded<ZodString, \"TypeLiteral\", \"out\">"
 							},
 							{
 								"name": "PathWithTrailingSlash",
@@ -16846,13 +16851,13 @@
 								"name": "Datetime",
 								"kind": "type",
 								"source_line": 41,
-								"type_signature": "$ZodBranded<ZodISODateTime, \"Datetime\">"
+								"type_signature": "$ZodBranded<ZodISODateTime, \"Datetime\", \"out\">"
 							},
 							{
 								"name": "DatetimeNow",
 								"kind": "type",
 								"source_line": 43,
-								"type_signature": "ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\">>"
+								"type_signature": "ZodDefault<$ZodBranded<ZodISODateTime, \"Datetime\", \"out\">>"
 							},
 							{
 								"name": "create_uuid",
@@ -16866,13 +16871,13 @@
 								"name": "Uuid",
 								"kind": "type",
 								"source_line": 48,
-								"type_signature": "$ZodBranded<ZodUUID, \"Uuid\">"
+								"type_signature": "$ZodBranded<ZodUUID, \"Uuid\", \"out\">"
 							},
 							{
 								"name": "UuidWithDefault",
 								"kind": "type",
 								"source_line": 50,
-								"type_signature": "ZodDefault<$ZodBranded<ZodUUID, \"Uuid\">>"
+								"type_signature": "ZodDefault<$ZodBranded<ZodUUID, \"Uuid\", \"out\">>"
 							},
 							{
 								"name": "to_subschema",
@@ -17048,7 +17053,7 @@
 			"published": true,
 			"package_json": {
 				"name": "@fuzdev/fuz_css",
-				"version": "0.47.0",
+				"version": "0.49.1",
 				"description": "CSS framework and design system for semantic HTML",
 				"motto": "CSS with more utility",
 				"glyph": "🪴",
@@ -17077,6 +17082,7 @@
 				"engines": {"node": ">=22.15"},
 				"peerDependencies": {
 					"@fuzdev/fuz_util": ">=0.45.3",
+					"@fuzdev/gro": ">=0.192.1",
 					"@sveltejs/acorn-typescript": "^1",
 					"@webref/css": "^8",
 					"acorn-jsx": "^5",
@@ -17085,6 +17091,7 @@
 				},
 				"peerDependenciesMeta": {
 					"@fuzdev/fuz_util": {"optional": true},
+					"@fuzdev/gro": {"optional": true},
 					"@sveltejs/acorn-typescript": {"optional": true},
 					"@webref/css": {"optional": true},
 					"acorn-jsx": {"optional": true},
@@ -17093,31 +17100,36 @@
 				},
 				"devDependencies": {
 					"@changesets/changelog-git": "^0.2.1",
-					"@fuzdev/fuz_code": "^0.41.0",
-					"@fuzdev/fuz_ui": "^0.181.1",
-					"@fuzdev/fuz_util": "^0.48.3",
+					"@fuzdev/fuz_code": "^0.45.0",
+					"@fuzdev/fuz_ui": "^0.183.1",
+					"@fuzdev/fuz_util": "^0.50.1",
+					"@fuzdev/gro": "^0.192.1",
+					"@jridgewell/trace-mapping": "^0.3.31",
 					"@ryanatkn/eslint-config": "^0.9.0",
-					"@ryanatkn/gro": "^0.190.0",
 					"@sveltejs/acorn-typescript": "^1.0.8",
 					"@sveltejs/adapter-static": "^3.0.10",
 					"@sveltejs/kit": "^2.50.1",
 					"@sveltejs/package": "^2.5.7",
 					"@sveltejs/vite-plugin-svelte": "^6.2.4",
+					"@types/estree": "^1.0.8",
 					"@types/node": "^24.10.1",
 					"@webref/css": "^8.1.3",
 					"acorn-jsx": "^5.3.2",
 					"eslint": "^9.39.1",
 					"eslint-plugin-svelte": "^3.13.1",
+					"esm-env": "^1.2.2",
+					"magic-string": "^0.30.21",
 					"prettier": "^3.7.4",
 					"prettier-plugin-svelte": "^3.4.1",
 					"svelte": "^5.49.1",
 					"svelte-check": "^4.3.6",
+					"svelte2tsx": "^0.7.47",
 					"tslib": "^2.8.1",
 					"typescript": "^5.9.3",
 					"typescript-eslint": "^8.48.1",
 					"vitest": "^4.0.15",
 					"zimmerframe": "^1.1.4",
-					"zod": "^4.1.13"
+					"zod": "^4.3.6"
 				},
 				"prettier": {
 					"plugins": ["prettier-plugin-svelte"],
@@ -17138,7 +17150,7 @@
 			},
 			"source_json": {
 				"name": "@fuzdev/fuz_css",
-				"version": "0.47.0",
+				"version": "0.49.1",
 				"modules": [
 					{
 						"path": "class_variable_index.ts",
@@ -19996,7 +20008,7 @@
 								]
 							}
 						],
-						"module_comment": "[Gro generator](https://github.com/ryanatkn/gro) for creating optimized utility CSS from extracted class names.\nScans source files, extracts CSS classes with AST-based parsing, and generates\nonly the CSS for classes actually used. Includes per-file caching with content\nhash validation for fast incremental rebuilds.",
+						"module_comment": "[Gro generator](https://github.com/fuzdev/gro) for creating optimized utility CSS from extracted class names.\nScans source files, extracts CSS classes with AST-based parsing, and generates\nonly the CSS for classes actually used. Includes per-file caching with content\nhash validation for fast incremental rebuilds.",
 						"dependencies": [
 							"class_variable_index.ts",
 							"css_bundled_resolution.ts",
@@ -23801,7 +23813,7 @@
 			"published": true,
 			"package_json": {
 				"name": "@fuzdev/fuz_ui",
-				"version": "0.181.1",
+				"version": "0.183.1",
 				"description": "Svelte UI library",
 				"motto": "friendly user zystem",
 				"glyph": "🧶",
@@ -23824,18 +23836,20 @@
 					"build": "gro build",
 					"check": "gro check",
 					"test": "gro test",
+					"fixtures:update": "gro src/test/fixtures/update",
 					"preview": "vite preview",
 					"deploy": "gro deploy"
 				},
 				"type": "module",
 				"engines": {"node": ">=22.15"},
 				"peerDependencies": {
-					"@fuzdev/fuz_code": ">=0.41.0",
-					"@fuzdev/fuz_css": ">=0.45.0",
-					"@fuzdev/fuz_util": ">=0.48.2",
+					"@fuzdev/fuz_code": ">=0.45.0",
+					"@fuzdev/fuz_css": ">=0.47.0",
+					"@fuzdev/fuz_util": ">=0.50.1",
+					"@fuzdev/gro": ">=0.192.0",
 					"@jridgewell/trace-mapping": "^0.3",
-					"@ryanatkn/gro": ">=0.186.0",
 					"@sveltejs/kit": "^2.47.3",
+					"@types/estree": "^1",
 					"esm-env": "^1",
 					"svelte": "^5",
 					"svelte2tsx": "^0.7.45",
@@ -23843,38 +23857,45 @@
 				},
 				"peerDependenciesMeta": {
 					"@fuzdev/fuz_code": {"optional": true},
+					"@fuzdev/fuz_util": {"optional": true},
+					"@fuzdev/gro": {"optional": true},
 					"@jridgewell/trace-mapping": {"optional": true},
-					"@ryanatkn/gro": {"optional": true},
-					"esm-env": {"optional": true}
+					"@types/estree": {"optional": true},
+					"esm-env": {"optional": true},
+					"svelte2tsx": {"optional": true},
+					"zod": {"optional": true}
 				},
 				"devDependencies": {
 					"@changesets/changelog-git": "^0.2.1",
-					"@fuzdev/fuz_code": "^0.41.0",
-					"@fuzdev/fuz_css": "^0.47.0",
-					"@fuzdev/fuz_util": "^0.48.3",
+					"@fuzdev/fuz_code": "^0.45.0",
+					"@fuzdev/fuz_css": "^0.49.1",
+					"@fuzdev/fuz_util": "^0.50.1",
+					"@fuzdev/gro": "^0.192.1",
 					"@jridgewell/trace-mapping": "^0.3.31",
 					"@ryanatkn/eslint-config": "^0.9.0",
-					"@ryanatkn/gro": "^0.190.0",
 					"@sveltejs/adapter-static": "^3.0.10",
 					"@sveltejs/kit": "^2.50.1",
 					"@sveltejs/package": "^2.5.7",
 					"@sveltejs/vite-plugin-svelte": "^6.2.4",
+					"@types/estree": "^1.0.8",
 					"@types/node": "^24.10.1",
 					"@webref/css": "^8.2.0",
 					"eslint": "^9.39.1",
 					"eslint-plugin-svelte": "^3.13.1",
 					"esm-env": "^1.2.2",
 					"jsdom": "^27.2.0",
+					"magic-string": "^0.30.21",
 					"prettier": "^3.7.4",
 					"prettier-plugin-svelte": "^3.4.1",
 					"svelte": "^5.49.1",
 					"svelte-check": "^4.3.6",
-					"svelte2tsx": "^0.7.46",
+					"svelte2tsx": "^0.7.47",
 					"tslib": "^2.8.1",
 					"typescript": "^5.9.3",
 					"typescript-eslint": "^8.48.1",
 					"vitest": "^4.0.15",
-					"zod": "^4.1.13"
+					"zimmerframe": "^1.1.4",
+					"zod": "^4.3.6"
 				},
 				"prettier": {
 					"plugins": ["prettier-plugin-svelte"],
@@ -23899,7 +23920,7 @@
 			},
 			"source_json": {
 				"name": "@fuzdev/fuz_ui",
-				"version": "0.181.1",
+				"version": "0.183.1",
 				"modules": [
 					{
 						"path": "Alert.svelte",
@@ -25685,12 +25706,12 @@
 									{
 										"name": "constructor",
 										"kind": "constructor",
-										"type_signature": "(module: Module, declaration_json: { [x: string]: unknown; name: string; kind: \"function\" | \"type\" | \"constructor\" | \"json\" | \"variable\" | \"class\" | \"component\" | \"css\"; doc_comment?: string | undefined; ... 18 more ...; alias_of?: { ...; } | undefined; }): Declaration",
+										"type_signature": "(module: Module, declaration_json: { [x: string]: unknown; name: string; kind: \"function\" | \"type\" | \"json\" | \"variable\" | \"class\" | \"constructor\" | \"component\" | \"css\"; doc_comment?: string | undefined; ... 18 more ...; alias_of?: { ...; } | undefined; }): Declaration",
 										"parameters": [
 											{"name": "module", "type": "Module"},
 											{
 												"name": "declaration_json",
-												"type": "{ [x: string]: unknown; name: string; kind: \"function\" | \"type\" | \"constructor\" | \"json\" | \"variable\" | \"class\" | \"component\" | \"css\"; doc_comment?: string | undefined; type_signature?: string | undefined; ... 17 more ...; alias_of?: { ...; } | undefined; }"
+												"type": "{ [x: string]: unknown; name: string; kind: \"function\" | \"type\" | \"json\" | \"variable\" | \"class\" | \"constructor\" | \"component\" | \"css\"; doc_comment?: string | undefined; type_signature?: string | undefined; ... 17 more ...; alias_of?: { ...; } | undefined; }"
 											}
 										]
 									}
@@ -25710,13 +25731,7 @@
 								"source_line": 1
 							}
 						],
-						"dependencies": [
-							"Details.svelte",
-							"Mdz.svelte",
-							"ModuleLink.svelte",
-							"TypeLink.svelte",
-							"tsdoc_mdz.ts"
-						],
+						"dependencies": ["Mdz.svelte", "ModuleLink.svelte", "TypeLink.svelte", "tsdoc_mdz.ts"],
 						"dependents": ["ApiDeclarationList.svelte"]
 					},
 					{
@@ -25775,8 +25790,7 @@
 								"source_line": 1
 							}
 						],
-						"module_comment": "Like `details` but renders children lazily by default.",
-						"dependents": ["DeclarationDetail.svelte"]
+						"module_comment": "Like `details` but renders children lazily by default."
 					},
 					{
 						"path": "Dialog.svelte",
@@ -25922,7 +25936,7 @@
 								"name": "DOCS_PATH",
 								"kind": "variable",
 								"source_line": 29,
-								"type_signature": "\"/docs\" | \"/\" | \"/about\" | \"/docs/Alert\" | \"/docs/Breadcrumb\" | \"/docs/Breadcrumb/a\" | \"/docs/Breadcrumb/a/b\" | \"/docs/Breadcrumb/a/b/c\" | \"/docs/Breadcrumb/a/b/c/d\" | \"/docs/Card\" | ... 97 more ... | `/${string}/help/`"
+								"type_signature": "\"/docs\" | \"/\" | \"/about\" | \"/docs/Alert\" | \"/docs/Breadcrumb\" | \"/docs/Breadcrumb/a\" | \"/docs/Breadcrumb/a/b\" | \"/docs/Breadcrumb/a/b/c\" | \"/docs/Breadcrumb/a/b/c/d\" | \"/docs/Card\" | ... 100 more ... | `/${string}/help/`"
 							},
 							{
 								"name": "DOCS_API_PATH",
@@ -27022,7 +27036,7 @@
 									},
 									{
 										"name": "source_json",
-										"type": "{ [x: string]: unknown; name: string; version: string; modules?: { [x: string]: unknown; path: string; declarations?: { [x: string]: unknown; name: string; kind: \"function\" | \"type\" | \"constructor\" | \"json\" | \"variable\" | \"class\" | \"component\" | \"css\"; ... 19 more ...; alias_of?: { ...; } | undefined; }[] | undefine..."
+										"type": "{ [x: string]: unknown; name: string; version: string; modules?: { [x: string]: unknown; path: string; declarations?: { [x: string]: unknown; name: string; kind: \"function\" | \"type\" | \"json\" | \"variable\" | \"class\" | \"constructor\" | \"component\" | \"css\"; ... 19 more ...; alias_of?: { ...; } | undefined; }[] | undefine..."
 									}
 								]
 							}
@@ -27062,12 +27076,12 @@
 									"const duplicates = library_find_duplicates(source_json);\nif (duplicates.size > 0) {\n  for (const [name, occurrences] of duplicates) {\n    console.error(`\"${name}\" found in:`);\n    for (const {declaration, module} of occurrences) {\n      console.error(`  - ${module}:${declaration.source_line} (${declaration.kind})`);\n    }\n  }\n  throw new Error(`Found ${duplicates.size} duplicate declaration names`);\n}"
 								],
 								"source_line": 62,
-								"type_signature": "(source_json: { [x: string]: unknown; name: string; version: string; modules?: { [x: string]: unknown; path: string; declarations?: { [x: string]: unknown; name: string; kind: \"function\" | \"type\" | \"constructor\" | \"json\" | \"variable\" | \"class\" | \"component\" | \"css\"; ... 19 more ...; alias_of?: { ...; } | undefined; }[] | undefined; module_comment?: string | undefined; dependencies?: string[] | undefined; dependents?: string[] | undefined; star_exports?: string[] | undefined; }[] | undefined; }): Map<...>",
+								"type_signature": "(source_json: { [x: string]: unknown; name: string; version: string; modules?: { [x: string]: unknown; path: string; declarations?: { [x: string]: unknown; name: string; kind: \"function\" | \"type\" | \"json\" | \"variable\" | \"class\" | \"constructor\" | \"component\" | \"css\"; ... 19 more ...; alias_of?: { ...; } | undefined; }[] | undefined; module_comment?: string | undefined; dependencies?: string[] | undefined; dependents?: string[] | undefined; star_exports?: string[] | undefined; }[] | undefined; }): Map<...>",
 								"return_type": "Map<string, DuplicateInfo[]>",
 								"parameters": [
 									{
 										"name": "source_json",
-										"type": "{ [x: string]: unknown; name: string; version: string; modules?: { [x: string]: unknown; path: string; declarations?: { [x: string]: unknown; name: string; kind: \"function\" | \"type\" | \"constructor\" | \"json\" | \"variable\" | \"class\" | \"component\" | \"css\"; ... 19 more ...; alias_of?: { ...; } | undefined; }[] | undefine..."
+										"type": "{ [x: string]: unknown; name: string; version: string; modules?: { [x: string]: unknown; path: string; declarations?: { [x: string]: unknown; name: string; kind: \"function\" | \"type\" | \"json\" | \"variable\" | \"class\" | \"constructor\" | \"component\" | \"css\"; ... 19 more ...; alias_of?: { ...; } | undefined; }[] | undefine..."
 									}
 								]
 							},
@@ -27076,12 +27090,12 @@
 								"kind": "function",
 								"doc_comment": "Sort modules alphabetically by path for deterministic output and cleaner diffs.",
 								"source_line": 95,
-								"type_signature": "(modules: { [x: string]: unknown; path: string; declarations?: { [x: string]: unknown; name: string; kind: \"function\" | \"type\" | \"constructor\" | \"json\" | \"variable\" | \"class\" | \"component\" | \"css\"; doc_comment?: string | undefined; ... 18 more ...; alias_of?: { ...; } | undefined; }[] | undefined; module_comment?: string | undefined; dependencies?: string[] | undefined; dependents?: string[] | undefined; star_exports?: string[] | undefined; }[]): { ...; }[]",
-								"return_type": "{ [x: string]: unknown; path: string; declarations?: { [x: string]: unknown; name: string; kind: \"function\" | \"type\" | \"constructor\" | \"json\" | \"variable\" | \"class\" | \"component\" | \"css\"; doc_comment?: string | undefined; ... 18 more ...; alias_of?: { ...; } | undefined; }[] | undefined; module_comment?: string | un...",
+								"type_signature": "(modules: { [x: string]: unknown; path: string; declarations?: { [x: string]: unknown; name: string; kind: \"function\" | \"type\" | \"json\" | \"variable\" | \"class\" | \"constructor\" | \"component\" | \"css\"; doc_comment?: string | undefined; ... 18 more ...; alias_of?: { ...; } | undefined; }[] | undefined; module_comment?: string | undefined; dependencies?: string[] | undefined; dependents?: string[] | undefined; star_exports?: string[] | undefined; }[]): { ...; }[]",
+								"return_type": "{ [x: string]: unknown; path: string; declarations?: { [x: string]: unknown; name: string; kind: \"function\" | \"type\" | \"json\" | \"variable\" | \"class\" | \"constructor\" | \"component\" | \"css\"; doc_comment?: string | undefined; ... 18 more ...; alias_of?: { ...; } | undefined; }[] | undefined; module_comment?: string | un...",
 								"parameters": [
 									{
 										"name": "modules",
-										"type": "{ [x: string]: unknown; path: string; declarations?: { [x: string]: unknown; name: string; kind: \"function\" | \"type\" | \"constructor\" | \"json\" | \"variable\" | \"class\" | \"component\" | \"css\"; doc_comment?: string | undefined; ... 18 more ...; alias_of?: { ...; } | undefined; }[] | undefined; module_comment?: string | un..."
+										"type": "{ [x: string]: unknown; path: string; declarations?: { [x: string]: unknown; name: string; kind: \"function\" | \"type\" | \"json\" | \"variable\" | \"class\" | \"constructor\" | \"component\" | \"css\"; doc_comment?: string | undefined; ... 18 more ...; alias_of?: { ...; } | undefined; }[] | undefined; module_comment?: string | un..."
 									}
 								]
 							},
@@ -27114,12 +27128,12 @@
 									"// helpers.ts exports: foo, bar\n// index.ts does: export {foo, bar} from './helpers.js'\n//\n// After processing:\n// - helpers.ts foo declaration gets: also_exported_from: ['index.ts']\n// - helpers.ts bar declaration gets: also_exported_from: ['index.ts']"
 								],
 								"source_line": 137,
-								"type_signature": "(source_json: { [x: string]: unknown; name: string; version: string; modules?: { [x: string]: unknown; path: string; declarations?: { [x: string]: unknown; name: string; kind: \"function\" | \"type\" | \"constructor\" | \"json\" | \"variable\" | \"class\" | \"component\" | \"css\"; ... 19 more ...; alias_of?: { ...; } | undefined; }[] | undefined; module_comment?: string | undefined; dependencies?: string[] | undefined; dependents?: string[] | undefined; star_exports?: string[] | undefined; }[] | undefined; }, collected_re_exports: CollectedReExport[]): void",
+								"type_signature": "(source_json: { [x: string]: unknown; name: string; version: string; modules?: { [x: string]: unknown; path: string; declarations?: { [x: string]: unknown; name: string; kind: \"function\" | \"type\" | \"json\" | \"variable\" | \"class\" | \"constructor\" | \"component\" | \"css\"; ... 19 more ...; alias_of?: { ...; } | undefined; }[] | undefined; module_comment?: string | undefined; dependencies?: string[] | undefined; dependents?: string[] | undefined; star_exports?: string[] | undefined; }[] | undefined; }, collected_re_exports: CollectedReExport[]): void",
 								"return_type": "void",
 								"parameters": [
 									{
 										"name": "source_json",
-										"type": "{ [x: string]: unknown; name: string; version: string; modules?: { [x: string]: unknown; path: string; declarations?: { [x: string]: unknown; name: string; kind: \"function\" | \"type\" | \"constructor\" | \"json\" | \"variable\" | \"class\" | \"component\" | \"css\"; ... 19 more ...; alias_of?: { ...; } | undefined; }[] | undefine...",
+										"type": "{ [x: string]: unknown; name: string; version: string; modules?: { [x: string]: unknown; path: string; declarations?: { [x: string]: unknown; name: string; kind: \"function\" | \"type\" | \"json\" | \"variable\" | \"class\" | \"constructor\" | \"component\" | \"css\"; ... 19 more ...; alias_of?: { ...; } | undefined; }[] | undefine...",
 										"description": "The source JSON with all modules (will be mutated)"
 									},
 									{
@@ -27486,6 +27500,65 @@
 						"dependents": ["MdzNodeView.svelte"]
 					},
 					{
+						"path": "mdz_to_svelte.ts",
+						"declarations": [
+							{
+								"name": "MdzToSvelteResult",
+								"kind": "type",
+								"doc_comment": "Result of converting `MdzNode` arrays to Svelte markup.",
+								"source_line": 20,
+								"type_signature": "MdzToSvelteResult",
+								"properties": [
+									{
+										"name": "markup",
+										"kind": "variable",
+										"type_signature": "string",
+										"doc_comment": "Generated Svelte markup string."
+									},
+									{
+										"name": "imports",
+										"kind": "variable",
+										"type_signature": "Map<string, {path: string; kind: 'default' | 'named'}>",
+										"doc_comment": "Required imports: `Map<local_name, {path, kind}>`."
+									},
+									{
+										"name": "has_unconfigured_tags",
+										"kind": "variable",
+										"type_signature": "boolean",
+										"doc_comment": "Whether content references unconfigured Component or Element tags."
+									}
+								]
+							},
+							{
+								"name": "mdz_to_svelte",
+								"kind": "function",
+								"doc_comment": "Converts an array of `MdzNode` to a Svelte markup string.\n\nEach node type produces output matching what `MdzNodeView.svelte` renders at runtime.\nCollects required imports and flags unconfigured component/element references.",
+								"source_line": 43,
+								"type_signature": "(nodes: MdzNode[], components: Record<string, string>, elements: ReadonlySet<string>): MdzToSvelteResult",
+								"return_type": "MdzToSvelteResult",
+								"parameters": [
+									{
+										"name": "nodes",
+										"type": "MdzNode[]",
+										"description": "Parsed mdz nodes to render."
+									},
+									{
+										"name": "components",
+										"type": "Record<string, string>",
+										"description": "Component name to import path mapping (e.g., `{Alert: '$lib/Alert.svelte'}`).\nIf content references a component not in this map, `has_unconfigured_tags` is set."
+									},
+									{
+										"name": "elements",
+										"type": "ReadonlySet<string>",
+										"description": "Allowed HTML element names (e.g., `new Set(['aside', 'details'])`).\nIf content references an element not in this set, `has_unconfigured_tags` is set."
+									}
+								]
+							}
+						],
+						"module_comment": "Converts parsed `MdzNode` arrays to Svelte markup strings.\n\nUsed by the `svelte_preprocess_mdz` preprocessor to expand static `<Mdz content=\"...\">` usages\ninto pre-rendered Svelte markup at build time. The output for each node type matches what\n`MdzNodeView.svelte` renders at runtime, so precompiled and runtime rendering are identical.",
+						"dependents": ["svelte_preprocess_mdz.ts"]
+					},
+					{
 						"path": "Mdz.svelte",
 						"declarations": [
 							{
@@ -27697,7 +27770,7 @@
 							}
 						],
 						"module_comment": "mdz - minimal markdown dialect for Fuz documentation.\n\nParses an enhanced markdown dialect with:\n- inline formatting: `code`, **bold**, _italic_, ~strikethrough~\n- auto-detected links: external URLs (`https://...`) and internal paths (`/path`)\n- markdown links: `[text](url)` with custom display text\n- inline code in backticks (creates `Code` nodes; auto-linking to identifiers/modules\n  is handled by the rendering layer via `MdzNodeView.svelte`)\n- paragraph breaks (double newline)\n- block elements: headings, horizontal rules, code blocks\n- HTML elements and Svelte components (opt-in via context)\n\nKey constraint: preserves ALL whitespace exactly as authored,\nand is rendered with white-space pre or pre-wrap.\n\n## Design philosophy\n\n- **False negatives over false positives**: Strict syntax prevents accidentally\n  interpreting plain text as formatting. When in doubt, treat as plain text.\n- **One way to do things**: Single unambiguous syntax per feature. No alternatives.\n- **Explicit over implicit**: Clear delimiters and column-0 requirements avoid ambiguity.\n- **Simple over complete**: Prefer simple parsing rules over complex edge case handling.\n\n## Status\n\nThis is an early proof of concept with missing features and edge cases.",
-						"dependents": ["Mdz.svelte", "tsdoc_mdz.ts"]
+						"dependents": ["Mdz.svelte", "svelte_preprocess_mdz.ts", "tsdoc_mdz.ts"]
 					},
 					{
 						"path": "MdzNodeView.svelte",
@@ -27711,6 +27784,23 @@
 						],
 						"dependencies": ["DocsLink.svelte", "MdzNodeView.svelte", "mdz_components.ts"],
 						"dependents": ["Mdz.svelte", "MdzNodeView.svelte"]
+					},
+					{
+						"path": "MdzPrecompiled.svelte",
+						"declarations": [
+							{
+								"name": "MdzPrecompiled",
+								"kind": "component",
+								"doc_comment": "Wrapper for precompiled mdz content. Used by `svelte_preprocess_mdz`.\nNot intended for direct use.",
+								"props": [
+									{"name": "inline", "type": "boolean", "optional": true},
+									{"name": "nowrap", "type": "boolean", "optional": true},
+									{"name": "children", "type": "Snippet"}
+								],
+								"source_line": 1
+							}
+						],
+						"module_comment": "Wrapper for precompiled mdz content. Used by `svelte_preprocess_mdz`.\nNot intended for direct use."
 					},
 					{
 						"path": "module_contextmenu.ts",
@@ -27774,9 +27864,9 @@
 								"kind": "type",
 								"doc_comment": "Configuration for module source detection and path extraction.\n\nUses proper path semantics with `project_root` as the base for all path operations.\nPaths are matched using `startsWith` rather than substring search, which correctly\nhandles nested directories without special heuristics.",
 								"examples": [
-									"const options = module_create_source_options(process.cwd(), {\n  source_paths: ['src/lib', 'src/routes'],\n  source_root: 'src',\n});"
+									"```ts\nconst options = module_create_source_options(process.cwd(), {\n  source_paths: ['src/lib', 'src/routes'],\n  source_root: 'src',\n});\n```"
 								],
-								"source_line": 60,
+								"source_line": 62,
 								"type_signature": "ModuleSourceOptions",
 								"properties": [
 									{
@@ -27815,7 +27905,7 @@
 								"name": "module_get_analyzer_default",
 								"kind": "function",
 								"doc_comment": "Default analyzer resolver based on file extension.\n\n- `.svelte` → `'svelte'`\n- `.ts`, `.js` → `'typescript'`\n- Other extensions → `null` (skip)",
-								"source_line": 128,
+								"source_line": 149,
 								"type_signature": "(path: string): AnalyzerType | null",
 								"return_type": "AnalyzerType | null",
 								"parameters": [{"name": "path", "type": "string"}]
@@ -27824,14 +27914,14 @@
 								"name": "ModuleSourcePartial",
 								"kind": "type",
 								"doc_comment": "Partial source options without `project_root`.\n\nUse with `module_create_source_options` to build complete options.",
-								"source_line": 139,
+								"source_line": 160,
 								"type_signature": "ModuleSourcePartial"
 							},
 							{
 								"name": "MODULE_SOURCE_PARTIAL",
 								"kind": "variable",
 								"doc_comment": "Default partial options for standard SvelteKit library structure.\n\nDoes not include `project_root` - use `module_create_source_options()` to create\ncomplete options with your project root.",
-								"source_line": 147,
+								"source_line": 168,
 								"type_signature": "ModuleSourcePartial"
 							},
 							{
@@ -27839,11 +27929,11 @@
 								"kind": "function",
 								"doc_comment": "Create complete source options from project root and optional overrides.",
 								"examples": [
-									"// Standard SvelteKit library\nconst options = module_create_source_options(process.cwd());",
-									"// Multiple source directories\nconst options = module_create_source_options(process.cwd(), {\n  source_paths: ['src/lib', 'src/routes'],\n  source_root: 'src',\n});",
-									"// Custom exclusions\nconst options = module_create_source_options(process.cwd(), {\n  exclude_patterns: [/\\.test\\.ts$/, /\\.internal\\.ts$/],\n});"
+									"```ts\n// Standard SvelteKit library\nconst options = module_create_source_options(process.cwd());\n```",
+									"```ts\n// Multiple source directories\nconst options = module_create_source_options(process.cwd(), {\n  source_paths: ['src/lib', 'src/routes'],\n  source_root: 'src',\n});\n```",
+									"```ts\n// Custom exclusions\nconst options = module_create_source_options(process.cwd(), {\n  exclude_patterns: [/\\.test\\.ts$/, /\\.internal\\.ts$/],\n});\n```"
 								],
-								"source_line": 176,
+								"source_line": 203,
 								"type_signature": "(project_root: string, overrides?: Partial<ModuleSourcePartial> | undefined): ModuleSourceOptions",
 								"return_type": "ModuleSourceOptions",
 								"parameters": [
@@ -27865,12 +27955,12 @@
 								"kind": "function",
 								"doc_comment": "Validate `ModuleSourceOptions` format and consistency.\n\nChecks:\n1. `project_root` is an absolute path (starts with `/`)\n2. `source_paths` entries don't have leading/trailing slashes\n3. `source_root` (if provided) doesn't have leading/trailing slashes\n4. Multiple `source_paths` require explicit `source_root`\n5. `source_root` is a prefix of all `source_paths`",
 								"examples": [
-									"// Valid - single source path (source_root auto-derived)\nmodule_validate_source_options({\n  project_root: '/home/user/project',\n  source_paths: ['src/lib'],\n  ...\n});",
-									"// Valid - multiple source paths with explicit source_root\nmodule_validate_source_options({\n  project_root: '/home/user/project',\n  source_paths: ['src/lib', 'src/routes'],\n  source_root: 'src',\n  ...\n});",
-									"// Invalid - multiple source paths without source_root\nmodule_validate_source_options({\n  project_root: '/home/user/project',\n  source_paths: ['src/lib', 'src/routes'],  // throws\n  ...\n});"
+									"```ts\n// Valid - single source path (source_root auto-derived)\nmodule_validate_source_options({\n  project_root: '/home/user/project',\n  source_paths: ['src/lib'],\n  ...\n});\n```",
+									"```ts\n// Valid - multiple source paths with explicit source_root\nmodule_validate_source_options({\n  project_root: '/home/user/project',\n  source_paths: ['src/lib', 'src/routes'],\n  source_root: 'src',\n  ...\n});\n```",
+									"```ts\n// Invalid - multiple source paths without source_root\nmodule_validate_source_options({\n  project_root: '/home/user/project',\n  source_paths: ['src/lib', 'src/routes'],  // throws\n  ...\n});\n```"
 								],
 								"throws": [{"type": "Error", "description": "if validation fails"}],
-								"source_line": 222,
+								"source_line": 255,
 								"type_signature": "(options: ModuleSourceOptions): void",
 								"return_type": "void",
 								"parameters": [{"name": "options", "type": "ModuleSourceOptions"}]
@@ -27885,7 +27975,7 @@
 										"description": "if source_root is required but not provided (multiple source_paths)"
 									}
 								],
-								"source_line": 300,
+								"source_line": 333,
 								"type_signature": "(options: ModuleSourceOptions): string",
 								"return_type": "string",
 								"parameters": [{"name": "options", "type": "ModuleSourceOptions"}]
@@ -27895,10 +27985,10 @@
 								"kind": "function",
 								"doc_comment": "Extract module path relative to source root from absolute source ID.\n\nUses proper path semantics: strips `project_root/source_root/` prefix.",
 								"examples": [
-									"const options = module_create_source_options('/home/user/project');\nmodule_extract_path('/home/user/project/src/lib/foo.ts', options) // => 'foo.ts'\nmodule_extract_path('/home/user/project/src/lib/nested/bar.svelte', options) // => 'nested/bar.svelte'",
-									"const options = module_create_source_options('/home/user/project', {\n  source_paths: ['src/lib', 'src/routes'],\n  source_root: 'src',\n});\nmodule_extract_path('/home/user/project/src/lib/foo.ts', options) // => 'lib/foo.ts'\nmodule_extract_path('/home/user/project/src/routes/page.svelte', options) // => 'routes/page.svelte'"
+									"```ts\nconst options = module_create_source_options('/home/user/project');\nmodule_extract_path('/home/user/project/src/lib/foo.ts', options) // => 'foo.ts'\nmodule_extract_path('/home/user/project/src/lib/nested/bar.svelte', options) // => 'nested/bar.svelte'\n```",
+									"```ts\nconst options = module_create_source_options('/home/user/project', {\n  source_paths: ['src/lib', 'src/routes'],\n  source_root: 'src',\n});\nmodule_extract_path('/home/user/project/src/lib/foo.ts', options) // => 'lib/foo.ts'\nmodule_extract_path('/home/user/project/src/routes/page.svelte', options) // => 'routes/page.svelte'\n```"
 								],
-								"source_line": 334,
+								"source_line": 371,
 								"type_signature": "(source_id: string, options: ModuleSourceOptions): string",
 								"return_type": "string",
 								"parameters": [
@@ -27919,9 +28009,9 @@
 								"kind": "function",
 								"doc_comment": "Extract component name from a Svelte module path.",
 								"examples": [
-									"module_get_component_name('Alert.svelte') // => 'Alert'\nmodule_get_component_name('components/Button.svelte') // => 'Button'"
+									"```ts\nmodule_get_component_name('Alert.svelte') // => 'Alert'\nmodule_get_component_name('components/Button.svelte') // => 'Button'\n```"
 								],
-								"source_line": 353,
+								"source_line": 392,
 								"type_signature": "(module_path: string): string",
 								"return_type": "string",
 								"parameters": [{"name": "module_path", "type": "string"}]
@@ -27930,8 +28020,8 @@
 								"name": "module_get_key",
 								"kind": "function",
 								"doc_comment": "Convert module path to module key format (with ./ prefix).",
-								"examples": ["module_get_key('foo.ts') // => './foo.ts'"],
-								"source_line": 362,
+								"examples": ["```ts\nmodule_get_key('foo.ts') // => './foo.ts'\n```"],
+								"source_line": 403,
 								"type_signature": "(module_path: string): string",
 								"return_type": "string",
 								"parameters": [{"name": "module_path", "type": "string"}]
@@ -27940,7 +28030,7 @@
 								"name": "module_is_typescript",
 								"kind": "function",
 								"doc_comment": "Check if a path is a TypeScript or JS file.\n\nIncludes both `.ts` and `.js` files since JS files are valid in TS projects.\nExcludes `.d.ts` declaration files - use a custom `get_analyzer` to include them.",
-								"source_line": 370,
+								"source_line": 411,
 								"type_signature": "(path: string): boolean",
 								"return_type": "boolean",
 								"parameters": [{"name": "path", "type": "string"}]
@@ -27948,7 +28038,7 @@
 							{
 								"name": "module_is_svelte",
 								"kind": "function",
-								"source_line": 373,
+								"source_line": 414,
 								"type_signature": "(path: string): boolean",
 								"return_type": "boolean",
 								"parameters": [{"name": "path", "type": "string"}]
@@ -27956,7 +28046,7 @@
 							{
 								"name": "module_is_css",
 								"kind": "function",
-								"source_line": 375,
+								"source_line": 416,
 								"type_signature": "(path: string): boolean",
 								"return_type": "boolean",
 								"parameters": [{"name": "path", "type": "string"}]
@@ -27964,7 +28054,7 @@
 							{
 								"name": "module_is_json",
 								"kind": "function",
-								"source_line": 377,
+								"source_line": 418,
 								"type_signature": "(path: string): boolean",
 								"return_type": "boolean",
 								"parameters": [{"name": "path", "type": "string"}]
@@ -27972,7 +28062,7 @@
 							{
 								"name": "module_is_test",
 								"kind": "function",
-								"source_line": 379,
+								"source_line": 420,
 								"type_signature": "(path: string): boolean",
 								"return_type": "boolean",
 								"parameters": [{"name": "path", "type": "string"}]
@@ -27982,9 +28072,9 @@
 								"kind": "function",
 								"doc_comment": "Check if a path is an analyzable source file.\n\nCombines all filtering: exclusion patterns, source directory paths,\nand analyzer availability. This is the single check for whether a\nfile should be included in library analysis.\n\nUses proper path semantics with `startsWith` matching against\n`project_root/source_path/`. No heuristics needed - nested directories\nare correctly excluded by the prefix check.",
 								"examples": [
-									"const options = module_create_source_options('/home/user/project');\nmodule_is_source('/home/user/project/src/lib/foo.ts', options) // => true\nmodule_is_source('/home/user/project/src/lib/foo.test.ts', options) // => false (excluded)\nmodule_is_source('/home/user/project/src/fixtures/mini/src/lib/bar.ts', options) // => false (wrong prefix)"
+									"```ts\nconst options = module_create_source_options('/home/user/project');\nmodule_is_source('/home/user/project/src/lib/foo.ts', options) // => true\nmodule_is_source('/home/user/project/src/lib/foo.test.ts', options) // => false (excluded)\nmodule_is_source('/home/user/project/src/fixtures/mini/src/lib/bar.ts', options) // => false (wrong prefix)\n```"
 								],
-								"source_line": 402,
+								"source_line": 445,
 								"type_signature": "(path: string, options: ModuleSourceOptions): boolean",
 								"return_type": "boolean",
 								"return_description": "True if the path is an analyzable source file",
@@ -28001,7 +28091,7 @@
 								"name": "module_extract_dependencies",
 								"kind": "function",
 								"doc_comment": "Extract dependencies and dependents for a module from source file info.\n\nFilters to only include source modules (excludes external packages, node_modules, tests).\nReturns sorted arrays of module paths (relative to source_root) for deterministic output.",
-								"source_line": 428,
+								"source_line": 471,
 								"type_signature": "(source_file: SourceFileInfo, options: ModuleSourceOptions): { dependencies: string[]; dependents: string[]; }",
 								"return_type": "{ dependencies: string[]; dependents: string[]; }",
 								"parameters": [
@@ -28086,12 +28176,12 @@
 									{
 										"name": "constructor",
 										"kind": "constructor",
-										"type_signature": "(library: Library, module_json: { [x: string]: unknown; path: string; declarations?: { [x: string]: unknown; name: string; kind: \"function\" | \"type\" | \"constructor\" | \"json\" | \"variable\" | \"class\" | \"component\" | \"css\"; ... 19 more ...; alias_of?: { ...; } | undefined; }[] | undefined; module_comment?: string | undefined; dependencies?: string[] | undefined; dependents?: string[] | undefined; star_exports?: string[] | undefined; }): Module",
+										"type_signature": "(library: Library, module_json: { [x: string]: unknown; path: string; declarations?: { [x: string]: unknown; name: string; kind: \"function\" | \"type\" | \"json\" | \"variable\" | \"class\" | \"constructor\" | \"component\" | \"css\"; ... 19 more ...; alias_of?: { ...; } | undefined; }[] | undefined; module_comment?: string | undefined; dependencies?: string[] | undefined; dependents?: string[] | undefined; star_exports?: string[] | undefined; }): Module",
 										"parameters": [
 											{"name": "library", "type": "Library"},
 											{
 												"name": "module_json",
-												"type": "{ [x: string]: unknown; path: string; declarations?: { [x: string]: unknown; name: string; kind: \"function\" | \"type\" | \"constructor\" | \"json\" | \"variable\" | \"class\" | \"component\" | \"css\"; doc_comment?: string | undefined; ... 18 more ...; alias_of?: { ...; } | undefined; }[] | undefined; module_comment?: string | un..."
+												"type": "{ [x: string]: unknown; path: string; declarations?: { [x: string]: unknown; name: string; kind: \"function\" | \"type\" | \"json\" | \"variable\" | \"class\" | \"constructor\" | \"component\" | \"css\"; doc_comment?: string | undefined; ... 18 more ...; alias_of?: { ...; } | undefined; }[] | undefined; module_comment?: string | un..."
 											}
 										]
 									},
@@ -28149,10 +28239,10 @@
 								"kind": "function",
 								"doc_comment": "Build GitHub file URL for a repository.",
 								"examples": [
-									"url_github_file('https://github.com/foo/bar', 'src/index.ts')\n// => 'https://github.com/foo/bar/blob/main/src/index.ts'",
-									"url_github_file('https://github.com/foo/bar', './src/index.ts', 42)\n// => 'https://github.com/foo/bar/blob/main/src/index.ts#L42'"
+									"```ts\nurl_github_file('https://github.com/foo/bar', 'src/index.ts')\n// => 'https://github.com/foo/bar/blob/main/src/index.ts'\n```",
+									"```ts\nurl_github_file('https://github.com/foo/bar', './src/index.ts', 42)\n// => 'https://github.com/foo/bar/blob/main/src/index.ts#L42'\n```"
 								],
-								"source_line": 43,
+								"source_line": 47,
 								"type_signature": "(repo_url: string, file_path: string, line?: number | undefined): string",
 								"return_type": "string",
 								"return_description": "Full GitHub URL to the file on the main branch",
@@ -28180,9 +28270,9 @@
 								"kind": "function",
 								"doc_comment": "Build GitHub organization URL from repo URL and repo name.",
 								"examples": [
-									"url_github_org('https://github.com/fuzdev/fuz_ui', 'fuz_ui')\n// => 'https://github.com/fuzdev'"
+									"```ts\nurl_github_org('https://github.com/fuzdev/fuz_ui', 'fuz_ui')\n// => 'https://github.com/fuzdev'\n```"
 								],
-								"source_line": 60,
+								"source_line": 66,
 								"type_signature": "(repo_url: string, repo_name: string): string | null",
 								"return_type": "string | null",
 								"return_description": "Organization URL, or null if repo_url doesn't end with repo_name",
@@ -28204,10 +28294,10 @@
 								"kind": "function",
 								"doc_comment": "Extract GitHub owner/org name from repository URL.",
 								"examples": [
-									"repo_url_github_owner('https://github.com/fuzdev/fuz_ui')\n// => 'fuzdev'",
-									"repo_url_github_owner('https://gitlab.com/foo/bar')\n// => null (not a GitHub URL)"
+									"```ts\nrepo_url_github_owner('https://github.com/fuzdev/fuz_ui')\n// => 'fuzdev'\n```",
+									"```ts\nrepo_url_github_owner('https://gitlab.com/foo/bar')\n// => null (not a GitHub URL)\n```"
 								],
-								"source_line": 78,
+								"source_line": 88,
 								"type_signature": "(repo_url: string): string | null",
 								"return_type": "string | null",
 								"return_description": "Owner name, or null if not a valid GitHub URL",
@@ -28224,9 +28314,9 @@
 								"kind": "function",
 								"doc_comment": "Build npm package URL.",
 								"examples": [
-									"url_npm_package('@fuzdev/fuz_ui')\n// => 'https://www.npmjs.com/package/@fuzdev/fuz_ui'"
+									"```ts\nurl_npm_package('@fuzdev/fuz_ui')\n// => 'https://www.npmjs.com/package/@fuzdev/fuz_ui'\n```"
 								],
-								"source_line": 95,
+								"source_line": 107,
 								"type_signature": "(package_name: string): string",
 								"return_type": "string",
 								"return_description": "Full npm package page URL",
@@ -28242,7 +28332,7 @@
 								"name": "package_is_published",
 								"kind": "function",
 								"doc_comment": "Check if a package is published to npm.\n\nA package is considered published if:\n- It's not marked as private\n- It has exports defined\n- Its version is not the initial '0.0.1'",
-								"source_line": 109,
+								"source_line": 121,
 								"type_signature": "(package_json: { [x: string]: unknown; name: string; version: string; private?: boolean | undefined; description?: string | undefined; motto?: string | undefined; glyph?: string | undefined; logo?: string | undefined; ... 23 more ...; exports?: string | ... 2 more ... | undefined; }): boolean",
 								"return_type": "boolean",
 								"return_description": "True if the package appears to be published",
@@ -28259,11 +28349,11 @@
 								"kind": "function",
 								"doc_comment": "Extract repository name without scope from package name.",
 								"examples": [
-									"repo_name_parse('@fuzdev/fuz_ui')\n// => 'fuz_ui'",
-									"repo_name_parse('lodash')\n// => 'lodash'"
+									"```ts\nrepo_name_parse('@fuzdev/fuz_ui')\n// => 'fuz_ui'\n```",
+									"```ts\nrepo_name_parse('lodash')\n// => 'lodash'\n```"
 								],
 								"throws": [{"type": "Error", "description": "if scoped package name is malformed"}],
-								"source_line": 128,
+								"source_line": 144,
 								"type_signature": "(name: string): string",
 								"return_type": "string",
 								"return_description": "Repository name without scope",
@@ -28280,11 +28370,11 @@
 								"kind": "function",
 								"doc_comment": "Parse repository URL from package.json format.\n\nHandles both string format and object format with `url` property.\nStrips common prefixes ('git+') and suffixes ('.git', '/').",
 								"examples": [
-									"repo_url_parse('https://github.com/foo/bar')\n// => 'https://github.com/foo/bar'",
-									"repo_url_parse({url: 'git+https://github.com/foo/bar.git'})\n// => 'https://github.com/foo/bar'",
-									"repo_url_parse(undefined)\n// => null"
+									"```ts\nrepo_url_parse('https://github.com/foo/bar')\n// => 'https://github.com/foo/bar'\n```",
+									"```ts\nrepo_url_parse({url: 'git+https://github.com/foo/bar.git'})\n// => 'https://github.com/foo/bar'\n```",
+									"```ts\nrepo_url_parse(undefined)\n// => null\n```"
 								],
-								"source_line": 160,
+								"source_line": 182,
 								"type_signature": "(repository: string | { [x: string]: unknown; type: string; url: string; directory?: string | undefined; } | undefined): string | null",
 								"return_type": "string | null",
 								"return_description": "Clean repository URL, or null if not provided",
@@ -28301,9 +28391,9 @@
 								"kind": "function",
 								"doc_comment": "Build .well-known URL for package metadata files.",
 								"examples": [
-									"url_well_known('https://fuz.dev', 'package.json')\n// => 'https://fuz.dev/.well-known/package.json'"
+									"```ts\nurl_well_known('https://fuz.dev', 'package.json')\n// => 'https://fuz.dev/.well-known/package.json'\n```"
 								],
-								"source_line": 178,
+								"source_line": 202,
 								"type_signature": "(homepage_url: string, filename: string): string",
 								"return_type": "string",
 								"return_description": "Full URL to the .well-known file",
@@ -28631,7 +28721,7 @@
 								"doc_comment": "Analyze a Svelte component from its svelte2tsx transformation.",
 								"source_line": 190,
 								"type_signature": "(ts_code: string, source_file: SourceFile, checker: TypeChecker, component_name: string, file_path: string, source_map: TraceMap | null, ctx: AnalysisContext): { ...; }",
-								"return_type": "{ [x: string]: unknown; name: string; kind: \"function\" | \"type\" | \"constructor\" | \"json\" | \"variable\" | \"class\" | \"component\" | \"css\"; doc_comment?: string | undefined; type_signature?: string | undefined; ... 17 more ...; alias_of?: { ...; } | undefined; }",
+								"return_type": "{ [x: string]: unknown; name: string; kind: \"function\" | \"type\" | \"json\" | \"variable\" | \"class\" | \"constructor\" | \"component\" | \"css\"; doc_comment?: string | undefined; type_signature?: string | undefined; ... 17 more ...; alias_of?: { ...; } | undefined; }",
 								"parameters": [
 									{"name": "ts_code", "type": "string"},
 									{"name": "source_file", "type": "SourceFile"},
@@ -28671,6 +28761,75 @@
 						"module_comment": "Svelte component analysis helpers.\n\nExtracts metadata from Svelte components using svelte2tsx transformations:\n\n- Component props with types and JSDoc\n- Component-level documentation\n- Type information\n\nWorkflow: Transform Svelte to TypeScript via svelte2tsx, parse the transformed\nTypeScript with the TS Compiler API, extract component-level JSDoc from original source.\n\n**Svelte 5 only**: The svelte2tsx output format changed significantly between versions.\nThis module requires Svelte 5+ and will throw a clear error if an older version is detected.\nThere is no Svelte 4 compatibility layer.\n\nAll functions are prefixed with `svelte_` for clarity.",
 						"dependencies": ["module_helpers.ts", "ts_helpers.ts", "tsdoc_helpers.ts"],
 						"dependents": ["library_analysis.ts"]
+					},
+					{
+						"path": "svelte_preprocess_mdz.ts",
+						"declarations": [
+							{
+								"name": "SveltePreprocessMdzOptions",
+								"kind": "type",
+								"doc_comment": "Options for `svelte_preprocess_mdz`.",
+								"source_line": 52,
+								"type_signature": "SveltePreprocessMdzOptions",
+								"properties": [
+									{
+										"name": "exclude",
+										"kind": "variable",
+										"type_signature": "Array<string | RegExp>",
+										"doc_comment": "File patterns to exclude."
+									},
+									{
+										"name": "components",
+										"kind": "variable",
+										"type_signature": "Record<string, string>",
+										"doc_comment": "Component import mapping for mdz content.\nKey: component name as used in mdz (e.g., 'Alert').\nValue: import path (e.g., '$lib/Alert.svelte').\n\nIf mdz content references a component not in this map,\nthat Mdz usage is skipped (left as runtime)."
+									},
+									{
+										"name": "elements",
+										"kind": "variable",
+										"type_signature": "Array<string>",
+										"doc_comment": "Allowed HTML elements in mdz content.\nIf mdz content references an element not in this list,\nthat Mdz usage is skipped (left as runtime)."
+									},
+									{
+										"name": "component_imports",
+										"kind": "variable",
+										"type_signature": "Array<string>",
+										"doc_comment": "Import sources that resolve to the Mdz component.\nUsed to verify that `Mdz` in templates refers to fuz_ui's Mdz.svelte."
+									},
+									{
+										"name": "compiled_component_import",
+										"kind": "variable",
+										"type_signature": "string",
+										"doc_comment": "Import path for the precompiled wrapper component."
+									},
+									{
+										"name": "on_error",
+										"kind": "variable",
+										"type_signature": "'log' | 'throw'",
+										"doc_comment": "How to handle errors during mdz parsing or rendering."
+									}
+								]
+							},
+							{
+								"name": "svelte_preprocess_mdz",
+								"kind": "function",
+								"doc_comment": "Creates a Svelte preprocessor that compiles static `Mdz` content at build time.",
+								"source_line": 104,
+								"type_signature": "(options?: SveltePreprocessMdzOptions): PreprocessorGroup",
+								"return_type": "PreprocessorGroup",
+								"return_description": "A Svelte `PreprocessorGroup` for use in `svelte.config.js`.",
+								"parameters": [
+									{
+										"name": "options",
+										"type": "SveltePreprocessMdzOptions",
+										"description": "Configuration for component/element resolution and file filtering.",
+										"default_value": "{}"
+									}
+								]
+							}
+						],
+						"module_comment": "Svelte preprocessor that compiles static `Mdz` content to Svelte markup at build time.\n\nDetects `Mdz` components with static string `content` props, parses the mdz content,\nrenders each `MdzNode` to equivalent Svelte markup via `mdz_to_svelte`, and replaces\nthe `Mdz` with `MdzPrecompiled` containing pre-rendered children.\n\nAlso handles ternary chains (`content={a ? 'x' : b ? 'y' : 'z'}`) where all leaf\nvalues are statically resolvable strings, emitting `{#if a}markup_x{:else if b}markup_y{:else}markup_z{/if}`\nas children of a single `MdzPrecompiled`.\n\nTruly dynamic `content` props are left untouched.",
+						"dependencies": ["mdz.ts", "mdz_to_svelte.ts"]
 					},
 					{
 						"path": "Svg.svelte",
@@ -29301,8 +29460,8 @@
 								"kind": "function",
 								"doc_comment": "Infer declaration kind from symbol and node.\n\nMaps TypeScript constructs to `DeclarationKind`:\n- Classes → `'class'`\n- Functions (declarations, expressions, arrows) → `'function'`\n- Interfaces, type aliases → `'type'`\n- Enums (regular and const) → `'type'`\n- Variables → `'variable'` (unless function-valued → `'function'`)",
 								"source_line": 400,
-								"type_signature": "(symbol: Symbol, node: Node): \"function\" | \"type\" | \"constructor\" | \"json\" | \"variable\" | \"class\" | \"component\" | \"css\"",
-								"return_type": "\"function\" | \"type\" | \"constructor\" | \"json\" | \"variable\" | \"class\" | \"component\" | \"css\"",
+								"type_signature": "(symbol: Symbol, node: Node): \"function\" | \"type\" | \"json\" | \"variable\" | \"class\" | \"constructor\" | \"component\" | \"css\"",
+								"return_type": "\"function\" | \"type\" | \"json\" | \"variable\" | \"class\" | \"constructor\" | \"component\" | \"css\"",
 								"parameters": [
 									{"name": "symbol", "type": "Symbol"},
 									{"name": "node", "type": "Node"}
@@ -29339,7 +29498,7 @@
 								"kind": "function",
 								"doc_comment": "Extract function/method information including parameters\nwith descriptions and default values.",
 								"source_line": 491,
-								"type_signature": "(node: Node, symbol: Symbol, checker: TypeChecker, declaration: { [x: string]: unknown; name: string; kind: \"function\" | \"type\" | \"constructor\" | \"json\" | \"variable\" | \"class\" | \"component\" | \"css\"; ... 19 more ...; alias_of?: { ...; } | undefined; }, tsdoc: TsdocParsedComment | undefined, ctx: AnalysisContext): void",
+								"type_signature": "(node: Node, symbol: Symbol, checker: TypeChecker, declaration: { [x: string]: unknown; name: string; kind: \"function\" | \"type\" | \"json\" | \"variable\" | \"class\" | \"constructor\" | \"component\" | \"css\"; ... 19 more ...; alias_of?: { ...; } | undefined; }, tsdoc: TsdocParsedComment | undefined, ctx: AnalysisContext): void",
 								"return_type": "void",
 								"parameters": [
 									{"name": "node", "type": "Node"},
@@ -29347,7 +29506,7 @@
 									{"name": "checker", "type": "TypeChecker"},
 									{
 										"name": "declaration",
-										"type": "{ [x: string]: unknown; name: string; kind: \"function\" | \"type\" | \"constructor\" | \"json\" | \"variable\" | \"class\" | \"component\" | \"css\"; doc_comment?: string | undefined; type_signature?: string | undefined; ... 17 more ...; alias_of?: { ...; } | undefined; }"
+										"type": "{ [x: string]: unknown; name: string; kind: \"function\" | \"type\" | \"json\" | \"variable\" | \"class\" | \"constructor\" | \"component\" | \"css\"; doc_comment?: string | undefined; type_signature?: string | undefined; ... 17 more ...; alias_of?: { ...; } | undefined; }"
 									},
 									{"name": "tsdoc", "type": "TsdocParsedComment | undefined"},
 									{"name": "ctx", "type": "AnalysisContext"}
@@ -29358,7 +29517,7 @@
 								"kind": "function",
 								"doc_comment": "Extract type/interface information with rich property metadata.",
 								"source_line": 553,
-								"type_signature": "(node: Node, _symbol: Symbol, checker: TypeChecker, declaration: { [x: string]: unknown; name: string; kind: \"function\" | \"type\" | \"constructor\" | \"json\" | \"variable\" | \"class\" | \"component\" | \"css\"; ... 19 more ...; alias_of?: { ...; } | undefined; }, ctx: AnalysisContext): void",
+								"type_signature": "(node: Node, _symbol: Symbol, checker: TypeChecker, declaration: { [x: string]: unknown; name: string; kind: \"function\" | \"type\" | \"json\" | \"variable\" | \"class\" | \"constructor\" | \"component\" | \"css\"; ... 19 more ...; alias_of?: { ...; } | undefined; }, ctx: AnalysisContext): void",
 								"return_type": "void",
 								"parameters": [
 									{"name": "node", "type": "Node"},
@@ -29366,7 +29525,7 @@
 									{"name": "checker", "type": "TypeChecker"},
 									{
 										"name": "declaration",
-										"type": "{ [x: string]: unknown; name: string; kind: \"function\" | \"type\" | \"constructor\" | \"json\" | \"variable\" | \"class\" | \"component\" | \"css\"; doc_comment?: string | undefined; type_signature?: string | undefined; ... 17 more ...; alias_of?: { ...; } | undefined; }"
+										"type": "{ [x: string]: unknown; name: string; kind: \"function\" | \"type\" | \"json\" | \"variable\" | \"class\" | \"constructor\" | \"component\" | \"css\"; doc_comment?: string | undefined; type_signature?: string | undefined; ... 17 more ...; alias_of?: { ...; } | undefined; }"
 									},
 									{"name": "ctx", "type": "AnalysisContext"}
 								]
@@ -29376,7 +29535,7 @@
 								"kind": "function",
 								"doc_comment": "Extract class information with rich member metadata.",
 								"source_line": 628,
-								"type_signature": "(node: Node, _symbol: Symbol, checker: TypeChecker, declaration: { [x: string]: unknown; name: string; kind: \"function\" | \"type\" | \"constructor\" | \"json\" | \"variable\" | \"class\" | \"component\" | \"css\"; ... 19 more ...; alias_of?: { ...; } | undefined; }, ctx: AnalysisContext): void",
+								"type_signature": "(node: Node, _symbol: Symbol, checker: TypeChecker, declaration: { [x: string]: unknown; name: string; kind: \"function\" | \"type\" | \"json\" | \"variable\" | \"class\" | \"constructor\" | \"component\" | \"css\"; ... 19 more ...; alias_of?: { ...; } | undefined; }, ctx: AnalysisContext): void",
 								"return_type": "void",
 								"parameters": [
 									{"name": "node", "type": "Node"},
@@ -29384,7 +29543,7 @@
 									{"name": "checker", "type": "TypeChecker"},
 									{
 										"name": "declaration",
-										"type": "{ [x: string]: unknown; name: string; kind: \"function\" | \"type\" | \"constructor\" | \"json\" | \"variable\" | \"class\" | \"component\" | \"css\"; doc_comment?: string | undefined; type_signature?: string | undefined; ... 17 more ...; alias_of?: { ...; } | undefined; }"
+										"type": "{ [x: string]: unknown; name: string; kind: \"function\" | \"type\" | \"json\" | \"variable\" | \"class\" | \"constructor\" | \"component\" | \"css\"; doc_comment?: string | undefined; type_signature?: string | undefined; ... 17 more ...; alias_of?: { ...; } | undefined; }"
 									},
 									{"name": "ctx", "type": "AnalysisContext"}
 								]
@@ -29394,7 +29553,7 @@
 								"kind": "function",
 								"doc_comment": "Extract variable information.",
 								"source_line": 779,
-								"type_signature": "(node: Node, symbol: Symbol, checker: TypeChecker, declaration: { [x: string]: unknown; name: string; kind: \"function\" | \"type\" | \"constructor\" | \"json\" | \"variable\" | \"class\" | \"component\" | \"css\"; ... 19 more ...; alias_of?: { ...; } | undefined; }, ctx: AnalysisContext): void",
+								"type_signature": "(node: Node, symbol: Symbol, checker: TypeChecker, declaration: { [x: string]: unknown; name: string; kind: \"function\" | \"type\" | \"json\" | \"variable\" | \"class\" | \"constructor\" | \"component\" | \"css\"; ... 19 more ...; alias_of?: { ...; } | undefined; }, ctx: AnalysisContext): void",
 								"return_type": "void",
 								"parameters": [
 									{"name": "node", "type": "Node"},
@@ -29402,7 +29561,7 @@
 									{"name": "checker", "type": "TypeChecker"},
 									{
 										"name": "declaration",
-										"type": "{ [x: string]: unknown; name: string; kind: \"function\" | \"type\" | \"constructor\" | \"json\" | \"variable\" | \"class\" | \"component\" | \"css\"; doc_comment?: string | undefined; type_signature?: string | undefined; ... 17 more ...; alias_of?: { ...; } | undefined; }"
+										"type": "{ [x: string]: unknown; name: string; kind: \"function\" | \"type\" | \"json\" | \"variable\" | \"class\" | \"constructor\" | \"component\" | \"css\"; doc_comment?: string | undefined; type_signature?: string | undefined; ... 17 more ...; alias_of?: { ...; } | undefined; }"
 									},
 									{"name": "ctx", "type": "AnalysisContext"}
 								]
@@ -29516,12 +29675,12 @@
 								"kind": "function",
 								"doc_comment": "Apply parsed TSDoc metadata to a declaration.\n\nConsolidates the common pattern of assigning TSDoc fields to declarations,\nwith conditional assignment for array fields (only if non-empty).",
 								"source_line": 192,
-								"type_signature": "(declaration: { [x: string]: unknown; name: string; kind: \"function\" | \"type\" | \"constructor\" | \"json\" | \"variable\" | \"class\" | \"component\" | \"css\"; doc_comment?: string | undefined; type_signature?: string | undefined; ... 17 more ...; alias_of?: { ...; } | undefined; }, tsdoc: TsdocParsedComment | undefined): void",
+								"type_signature": "(declaration: { [x: string]: unknown; name: string; kind: \"function\" | \"type\" | \"json\" | \"variable\" | \"class\" | \"constructor\" | \"component\" | \"css\"; doc_comment?: string | undefined; type_signature?: string | undefined; ... 17 more ...; alias_of?: { ...; } | undefined; }, tsdoc: TsdocParsedComment | undefined): void",
 								"return_type": "void",
 								"parameters": [
 									{
 										"name": "declaration",
-										"type": "{ [x: string]: unknown; name: string; kind: \"function\" | \"type\" | \"constructor\" | \"json\" | \"variable\" | \"class\" | \"component\" | \"css\"; doc_comment?: string | undefined; type_signature?: string | undefined; ... 17 more ...; alias_of?: { ...; } | undefined; }",
+										"type": "{ [x: string]: unknown; name: string; kind: \"function\" | \"type\" | \"json\" | \"variable\" | \"class\" | \"constructor\" | \"component\" | \"css\"; doc_comment?: string | undefined; type_signature?: string | undefined; ... 17 more ...; alias_of?: { ...; } | undefined; }",
 										"description": "declaration object to update"
 									},
 									{
@@ -29564,7 +29723,7 @@
 								"source_line": 41,
 								"type_signature": "(content: string): string",
 								"return_type": "string",
-								"return_description": "mdz-formatted string ready for `<Mdz>` component",
+								"return_description": "mdz-formatted string ready for `Mdz` component",
 								"parameters": [
 									{
 										"name": "content",
@@ -29657,33 +29816,33 @@
 	},
 	{
 		"library_json": {
-			"name": "@ryanatkn/gro",
+			"name": "@fuzdev/gro",
 			"repo_name": "gro",
-			"repo_url": "https://github.com/ryanatkn/gro",
-			"owner_name": "ryanatkn",
-			"homepage_url": "https://gro.ryanatkn.com/",
-			"logo_url": "https://gro.ryanatkn.com/logo.svg",
+			"repo_url": "https://github.com/fuzdev/gro",
+			"owner_name": "fuzdev",
+			"homepage_url": "https://gro.fuzdev.com/",
+			"logo_url": "https://gro.fuzdev.com/logo.svg",
 			"logo_alt": "a pixelated green oak acorn with a glint of sun",
-			"npm_url": "https://www.npmjs.com/package/@ryanatkn/gro",
-			"changelog_url": "https://github.com/ryanatkn/gro/blob/main/CHANGELOG.md",
+			"npm_url": "https://www.npmjs.com/package/@fuzdev/gro",
+			"changelog_url": "https://github.com/fuzdev/gro/blob/main/CHANGELOG.md",
 			"published": true,
 			"package_json": {
-				"name": "@ryanatkn/gro",
-				"version": "0.190.0",
+				"name": "@fuzdev/gro",
+				"version": "0.192.1",
 				"description": "task runner and toolkit extending SvelteKit",
 				"motto": "generate, run, optimize",
 				"glyph": "🌰",
 				"logo": "logo.svg",
 				"logo_alt": "a pixelated green oak acorn with a glint of sun",
 				"license": "MIT",
-				"homepage": "https://gro.ryanatkn.com/",
+				"homepage": "https://gro.fuzdev.com/",
 				"author": {
 					"name": "Ryan Atkinson",
 					"email": "mail@ryanatkn.com",
 					"url": "https://www.ryanatkn.com/"
 				},
-				"repository": {"type": "git", "url": "git+https://github.com/ryanatkn/gro.git"},
-				"bugs": "https://github.com/ryanatkn/gro/issues",
+				"repository": {"type": "git", "url": "git+https://github.com/fuzdev/gro.git"},
+				"bugs": "https://github.com/fuzdev/gro/issues",
 				"funding": "https://www.ryanatkn.com/funding",
 				"scripts": {
 					"bootstrap": "rm -rf .gro dist && svelte-kit sync && svelte-package && chmod +x ./dist/gro.js && npm link -f",
@@ -29718,10 +29877,10 @@
 					"prettier-plugin-svelte": "^3.4.1",
 					"ts-blank-space": "^0.6.2",
 					"tslib": "^2.8.1",
-					"zod": "^4.1.13"
+					"zod": "^4.3.6"
 				},
 				"peerDependencies": {
-					"@fuzdev/fuz_util": ">=0.48.3",
+					"@fuzdev/fuz_util": ">=0.49.2",
 					"@sveltejs/kit": "^2",
 					"esbuild": "^0.27.0",
 					"svelte": "^5",
@@ -29733,25 +29892,30 @@
 				"devDependencies": {
 					"@changesets/changelog-git": "^0.2.1",
 					"@changesets/types": "^6.1.0",
-					"@fuzdev/fuz_code": "^0.41.0",
-					"@fuzdev/fuz_css": "^0.47.0",
-					"@fuzdev/fuz_ui": "^0.181.1",
-					"@fuzdev/fuz_util": "^0.48.3",
+					"@fuzdev/fuz_code": "^0.45.0",
+					"@fuzdev/fuz_css": "^0.49.1",
+					"@fuzdev/fuz_ui": "^0.183.1",
+					"@fuzdev/fuz_util": "^0.50.1",
+					"@jridgewell/trace-mapping": "^0.3.31",
 					"@ryanatkn/eslint-config": "^0.9.0",
 					"@sveltejs/adapter-static": "^3.0.10",
 					"@sveltejs/kit": "^2.50.1",
 					"@sveltejs/package": "^2.5.7",
 					"@sveltejs/vite-plugin-svelte": "^6.2.4",
+					"@types/estree": "^1.0.8",
 					"@types/node": "^24.10.1",
 					"@webref/css": "^8.2.0",
 					"esbuild": "^0.27.1",
 					"eslint": "^9.39.1",
 					"eslint-plugin-svelte": "^3.13.1",
+					"magic-string": "^0.30.21",
 					"svelte": "^5.49.1",
 					"svelte-check": "^4.3.6",
+					"svelte2tsx": "^0.7.47",
 					"typescript": "^5.9.3",
 					"typescript-eslint": "^8.48.1",
-					"vitest": "^4.0.15"
+					"vitest": "^4.0.15",
+					"zimmerframe": "^1.1.4"
 				},
 				"prettier": {
 					"plugins": ["prettier-plugin-svelte"],
@@ -29771,8 +29935,8 @@
 				}
 			},
 			"source_json": {
-				"name": "@ryanatkn/gro",
-				"version": "0.190.0",
+				"name": "@fuzdev/gro",
+				"version": "0.192.1",
 				"modules": [
 					{
 						"path": "args.ts",
@@ -30038,7 +30202,7 @@
 								"name": "GIT_SHORT_HASH_LENGTH",
 								"kind": "variable",
 								"doc_comment": "Length of git commit hash when displayed in logs (standard git convention).",
-								"source_line": 40,
+								"source_line": 44,
 								"type_signature": "7"
 							}
 						],
@@ -31622,15 +31786,15 @@
 								"name": "EMPTY_BUILD_CACHE_CONFIG_HASH",
 								"kind": "variable",
 								"doc_comment": "SHA-256 hash of empty string, used for configs without build_cache_config.\nThis ensures consistent cache behavior when no custom config is provided.",
-								"source_line": 27,
+								"source_line": 28,
 								"type_signature": "\"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\""
 							},
 							{
 								"name": "GroConfig",
 								"kind": "type",
 								"doc_comment": "The config that users can extend via `gro.config.ts`.\nThis is exposed to users in places like tasks and genfiles.",
-								"see_also": ["https://github.com/ryanatkn/gro/blob/main/src/docs/config.md"],
-								"source_line": 35,
+								"see_also": ["https://github.com/fuzdev/gro/blob/main/src/docs/config.md"],
+								"source_line": 36,
 								"type_signature": "GroConfig",
 								"extends": ["RawGroConfig"],
 								"properties": [
@@ -31681,6 +31845,12 @@
 										"kind": "variable",
 										"type_signature": "string",
 										"doc_comment": "SHA-256 hash of the user's `build_cache_config` from `gro.config.ts`.\nThis is computed during config normalization and the raw value is immediately deleted.\nIf no `build_cache_config` was provided, this is the hash of an empty string."
+									},
+									{
+										"name": "filer_options",
+										"kind": "variable",
+										"type_signature": "Partial<FilerOptions> | null",
+										"doc_comment": "Options passed to the `Filer` for file watching and import resolution."
 									}
 								],
 								"also_exported_from": ["index.ts"]
@@ -31689,8 +31859,8 @@
 								"name": "RawGroConfig",
 								"kind": "type",
 								"doc_comment": "The relaxed variant of `GroConfig` that users can provide via `gro.config.ts`.\nSuperset of `GroConfig`.",
-								"see_also": ["https://github.com/ryanatkn/gro/blob/main/src/docs/config.md"],
-								"source_line": 80,
+								"see_also": ["https://github.com/fuzdev/gro/blob/main/src/docs/config.md"],
+								"source_line": 86,
 								"type_signature": "RawGroConfig",
 								"properties": [
 									{"name": "plugins", "kind": "variable", "type_signature": "PluginsCreateConfig"},
@@ -31712,6 +31882,12 @@
 										"kind": "variable",
 										"type_signature": "| Record<string, unknown>\n\t\t| (() => Record<string, unknown> | Promise<Record<string, unknown>>)",
 										"doc_comment": "Optional object defining custom build inputs for cache invalidation.\nThis value is hashed during config normalization and used to detect\nwhen builds need to be regenerated due to non-source changes.\n\nUse cases:\n- Environment variables baked into build: `{api_url: process.env.PUBLIC_API_URL}`\n- External data files: `{data: fs.readFileSync('data.json', 'utf-8')}`\n- Build feature flags: `{enable_analytics: true}`\n\nCan be a static object or an async function that returns an object.\n\nIMPORTANT: It's safe to include secrets here because they are hashed and `delete`d\nduring config normalization. The raw value is never logged or persisted."
+									},
+									{
+										"name": "filer_options",
+										"kind": "variable",
+										"type_signature": "Partial<FilerOptions> | null",
+										"doc_comment": "Options passed to the `Filer` for file watching and import resolution."
 									}
 								],
 								"also_exported_from": ["index.ts"]
@@ -31719,14 +31895,14 @@
 							{
 								"name": "CreateGroConfig",
 								"kind": "type",
-								"source_line": 107,
+								"source_line": 118,
 								"type_signature": "CreateGroConfig",
 								"also_exported_from": ["index.ts"]
 							},
 							{
 								"name": "create_empty_gro_config",
 								"kind": "function",
-								"source_line": 112,
+								"source_line": 123,
 								"type_signature": "(): GroConfig",
 								"return_type": "GroConfig",
 								"parameters": []
@@ -31735,20 +31911,20 @@
 								"name": "SEARCH_EXCLUDER_DEFAULT",
 								"kind": "variable",
 								"doc_comment": "The regexp used by default to exclude directories and files\nwhen searching the filesystem for tasks and genfiles.\nCustomize via `search_filters` in the `GroConfig`.\nSee the test cases for the exact behavior.",
-								"source_line": 133,
+								"source_line": 145,
 								"type_signature": "RegExp"
 							},
 							{
 								"name": "EXPORTS_EXCLUDER_DEFAULT",
 								"kind": "variable",
-								"source_line": 147,
+								"source_line": 159,
 								"type_signature": "RegExp"
 							},
 							{
 								"name": "cook_gro_config",
 								"kind": "function",
 								"doc_comment": "Transforms a `RawGroConfig` to the more strict `GroConfig`.\nThis allows users to provide a more relaxed config.\nHashes the `build_cache_config` and deletes the raw value for security.",
-								"source_line": 154,
+								"source_line": 166,
 								"type_signature": "(raw_config: RawGroConfig): Promise<GroConfig>",
 								"return_type": "Promise<GroConfig>",
 								"parameters": [{"name": "raw_config", "type": "RawGroConfig"}]
@@ -31756,7 +31932,7 @@
 							{
 								"name": "GroConfigModule",
 								"kind": "type",
-								"source_line": 201,
+								"source_line": 215,
 								"type_signature": "GroConfigModule",
 								"properties": [
 									{
@@ -31770,7 +31946,7 @@
 							{
 								"name": "load_gro_config",
 								"kind": "function",
-								"source_line": 205,
+								"source_line": 219,
 								"type_signature": "(dir?: string): Promise<GroConfig>",
 								"return_type": "Promise<GroConfig>",
 								"parameters": [{"name": "dir", "type": "string", "default_value": "paths.root"}]
@@ -31778,7 +31954,7 @@
 							{
 								"name": "validate_gro_config_module",
 								"kind": "function",
-								"source_line": 228,
+								"source_line": 242,
 								"type_signature": "(config_module: any, config_path: string): asserts config_module is GroConfigModule",
 								"return_type": "void",
 								"parameters": [
@@ -33290,7 +33466,7 @@
 								"kind": "function",
 								"source_line": 17,
 								"type_signature": "(package_json: { [x: string]: unknown; name: string; version: string; private?: boolean | undefined; description?: string | undefined; motto?: string | undefined; glyph?: string | undefined; logo?: string | undefined; ... 23 more ...; exports?: string | ... 2 more ... | undefined; }, lib_path?: string | undefined, log?: Logger | undefined): Promise<...>",
-								"return_type": "Promise<{ [x: string]: unknown; name: string; version: string; modules?: { [x: string]: unknown; path: string; declarations?: { [x: string]: unknown; name: string; kind: \"function\" | \"type\" | \"constructor\" | \"json\" | \"variable\" | \"class\" | \"component\" | \"css\"; ... 19 more ...; alias_of?: { ...; } | undefined; }[] | ...",
+								"return_type": "Promise<{ [x: string]: unknown; name: string; version: string; modules?: { [x: string]: unknown; path: string; declarations?: { [x: string]: unknown; name: string; kind: \"function\" | \"type\" | \"json\" | \"variable\" | \"class\" | \"constructor\" | \"component\" | \"css\"; ... 19 more ...; alias_of?: { ...; } | undefined; }[] | ...",
 								"parameters": [
 									{
 										"name": "package_json",
@@ -33305,7 +33481,7 @@
 								"kind": "function",
 								"source_line": 28,
 								"type_signature": "(exports: string | Record<string, unknown> | null | undefined, lib_path?: string, log?: Logger | undefined): Promise<{ [x: string]: unknown; path: string; declarations?: { [x: string]: unknown; ... 21 more ...; alias_of?: { ...; } | undefined; }[] | undefined; module_comment?: string | undefined; dependencies?: string[] | undefined; dependents?: string[] | undefined; star_exports?: string[] | undefined; }[] | undefined>",
-								"return_type": "Promise<{ [x: string]: unknown; path: string; declarations?: { [x: string]: unknown; name: string; kind: \"function\" | \"type\" | \"constructor\" | \"json\" | \"variable\" | \"class\" | \"component\" | \"css\"; doc_comment?: string | undefined; ... 18 more ...; alias_of?: { ...; } | undefined; }[] | undefined; module_comment?: str...",
+								"return_type": "Promise<{ [x: string]: unknown; path: string; declarations?: { [x: string]: unknown; name: string; kind: \"function\" | \"type\" | \"json\" | \"variable\" | \"class\" | \"constructor\" | \"component\" | \"css\"; doc_comment?: string | undefined; ... 18 more ...; alias_of?: { ...; } | undefined; }[] | undefined; module_comment?: str...",
 								"parameters": [
 									{
 										"name": "exports",
@@ -34348,7 +34524,7 @@
 			"published": true,
 			"package_json": {
 				"name": "@fuzdev/fuz_util",
-				"version": "0.48.3",
+				"version": "0.50.1",
 				"description": "utility belt for JS",
 				"glyph": "🦕",
 				"logo": "logo.svg",
@@ -34381,23 +34557,33 @@
 				"type": "module",
 				"engines": {"node": ">=22.15"},
 				"keywords": ["js", "typescript", "utilities", "web"],
-				"peerDependencies": {"@types/node": "^24", "esm-env": "^1.2.2", "zod": "^4.0.14"},
+				"peerDependencies": {
+					"@types/estree": "^1",
+					"@types/node": "^24",
+					"esm-env": "^1.2.2",
+					"svelte": "^5",
+					"zod": "^4.0.14"
+				},
 				"peerDependenciesMeta": {
 					"@types/node": {"optional": true},
 					"esm-env": {"optional": true},
+					"@types/estree": {"optional": true},
+					"svelte": {"optional": true},
 					"zod": {"optional": true}
 				},
 				"devDependencies": {
 					"@changesets/changelog-git": "^0.2.1",
-					"@fuzdev/fuz_code": "^0.41.0",
-					"@fuzdev/fuz_css": "^0.47.0",
-					"@fuzdev/fuz_ui": "^0.181.1",
+					"@fuzdev/fuz_code": "^0.45.0",
+					"@fuzdev/fuz_css": "^0.49.1",
+					"@fuzdev/fuz_ui": "^0.183.1",
+					"@fuzdev/gro": "^0.192.1",
+					"@jridgewell/trace-mapping": "^0.3.31",
 					"@ryanatkn/eslint-config": "^0.9.0",
-					"@ryanatkn/gro": "^0.190.0",
 					"@sveltejs/adapter-static": "^3.0.10",
 					"@sveltejs/kit": "^2.50.1",
 					"@sveltejs/package": "^2.5.7",
 					"@sveltejs/vite-plugin-svelte": "^6.2.4",
+					"@types/estree": "^1.0.8",
 					"@types/node": "^24.10.1",
 					"@webref/css": "^8.2.0",
 					"dequal": "^2.0.3",
@@ -34405,15 +34591,18 @@
 					"eslint-plugin-svelte": "^3.14.0",
 					"esm-env": "^1.2.2",
 					"fast-deep-equal": "^3.1.3",
+					"magic-string": "^0.30.21",
 					"prettier": "^3.7.4",
 					"prettier-plugin-svelte": "^3.4.1",
 					"svelte": "^5.49.1",
 					"svelte-check": "^4.3.6",
+					"svelte2tsx": "^0.7.47",
 					"tslib": "^2.8.1",
 					"typescript": "^5.9.3",
 					"typescript-eslint": "^8.48.1",
 					"vitest": "^4.0.15",
-					"zod": "^4.1.13"
+					"zimmerframe": "^1.1.4",
+					"zod": "^4.3.6"
 				},
 				"prettier": {
 					"plugins": ["prettier-plugin-svelte"],
@@ -34433,7 +34622,7 @@
 			},
 			"source_json": {
 				"name": "@fuzdev/fuz_util",
-				"version": "0.48.3",
+				"version": "0.50.1",
 				"modules": [
 					{
 						"path": "args.ts",
@@ -34738,9 +34927,37 @@
 										"description": "maximum number of concurrent operations"
 									}
 								]
+							},
+							{
+								"name": "AsyncSemaphore",
+								"kind": "class",
+								"doc_comment": "Async semaphore for concurrency limiting.\n\nWith `Infinity` permits, `acquire()` always resolves immediately.",
+								"source_line": 258,
+								"members": [
+									{
+										"name": "constructor",
+										"kind": "constructor",
+										"type_signature": "(permits: number): AsyncSemaphore",
+										"parameters": [{"name": "permits", "type": "number"}]
+									},
+									{
+										"name": "acquire",
+										"kind": "function",
+										"type_signature": "(): Promise<void>",
+										"return_type": "Promise<void>",
+										"parameters": []
+									},
+									{
+										"name": "release",
+										"kind": "function",
+										"type_signature": "(): void",
+										"return_type": "void",
+										"parameters": []
+									}
+								]
 							}
 						],
-						"dependents": ["benchmark.ts", "throttle.ts"]
+						"dependents": ["benchmark.ts", "dag.ts", "throttle.ts"]
 					},
 					{
 						"path": "benchmark_baseline.ts",
@@ -36105,6 +36322,167 @@
 						"dependents": ["id.ts"]
 					},
 					{
+						"path": "dag.ts",
+						"declarations": [
+							{
+								"name": "DagNode",
+								"kind": "type",
+								"doc_comment": "Minimum shape for a DAG node.",
+								"source_line": 18,
+								"type_signature": "DagNode",
+								"extends": ["Sortable"],
+								"properties": [
+									{"name": "id", "kind": "variable", "type_signature": "string"},
+									{"name": "depends_on", "kind": "variable", "type_signature": "Array<string>"}
+								]
+							},
+							{
+								"name": "DagOptions",
+								"kind": "type",
+								"doc_comment": "Options for running a DAG.",
+								"source_line": 26,
+								"type_signature": "DagOptions<T>",
+								"generic_params": [{"name": "T", "constraint": "DagNode"}],
+								"properties": [
+									{
+										"name": "nodes",
+										"kind": "variable",
+										"type_signature": "Array<T>",
+										"doc_comment": "Nodes to execute."
+									},
+									{
+										"name": "execute",
+										"kind": "variable",
+										"type_signature": "(node: T) => Promise<void>",
+										"doc_comment": "Execute a node. Throw on failure."
+									},
+									{
+										"name": "on_error",
+										"kind": "variable",
+										"type_signature": "(node: T, error: Error) => Promise<void>",
+										"doc_comment": "Called after a node fails. For observability — the error is already recorded."
+									},
+									{
+										"name": "on_skip",
+										"kind": "variable",
+										"type_signature": "(node: T, reason: string) => Promise<void>",
+										"doc_comment": "Called when a node is skipped (pre-skip or dependency failure)."
+									},
+									{
+										"name": "should_skip",
+										"kind": "variable",
+										"type_signature": "(node: T) => boolean",
+										"doc_comment": "Return true to skip a node without executing. Dependents still proceed."
+									},
+									{
+										"name": "max_concurrency",
+										"kind": "variable",
+										"type_signature": "number",
+										"doc_comment": "Maximum concurrent executions. Default: Infinity."
+									},
+									{
+										"name": "stop_on_failure",
+										"kind": "variable",
+										"type_signature": "boolean",
+										"doc_comment": "Stop starting new nodes on first failure. Default: true."
+									},
+									{
+										"name": "skip_validation",
+										"kind": "variable",
+										"type_signature": "boolean",
+										"doc_comment": "Skip internal graph validation (caller already validated)."
+									}
+								]
+							},
+							{
+								"name": "DagNodeResult",
+								"kind": "type",
+								"doc_comment": "Result for a single node.",
+								"source_line": 48,
+								"type_signature": "DagNodeResult",
+								"properties": [
+									{"name": "id", "kind": "variable", "type_signature": "string"},
+									{
+										"name": "status",
+										"kind": "variable",
+										"type_signature": "'completed' | 'failed' | 'skipped'"
+									},
+									{"name": "error", "kind": "variable", "type_signature": "string"},
+									{"name": "duration_ms", "kind": "variable", "type_signature": "number"}
+								]
+							},
+							{
+								"name": "DagResult",
+								"kind": "type",
+								"doc_comment": "Result of a DAG execution.",
+								"source_line": 58,
+								"type_signature": "DagResult",
+								"properties": [
+									{
+										"name": "success",
+										"kind": "variable",
+										"type_signature": "boolean",
+										"doc_comment": "Whether all executed nodes succeeded."
+									},
+									{
+										"name": "results",
+										"kind": "variable",
+										"type_signature": "Map<string, DagNodeResult>",
+										"doc_comment": "Per-node results."
+									},
+									{
+										"name": "completed",
+										"kind": "variable",
+										"type_signature": "number",
+										"doc_comment": "Number of nodes that completed successfully."
+									},
+									{
+										"name": "failed",
+										"kind": "variable",
+										"type_signature": "number",
+										"doc_comment": "Number of nodes that failed."
+									},
+									{
+										"name": "skipped",
+										"kind": "variable",
+										"type_signature": "number",
+										"doc_comment": "Number of nodes that were skipped."
+									},
+									{
+										"name": "duration_ms",
+										"kind": "variable",
+										"type_signature": "number",
+										"doc_comment": "Total execution time in milliseconds."
+									},
+									{
+										"name": "error",
+										"kind": "variable",
+										"type_signature": "string",
+										"doc_comment": "Error message if any nodes failed."
+									}
+								]
+							},
+							{
+								"name": "run_dag",
+								"kind": "function",
+								"doc_comment": "Execute nodes in a dependency graph concurrently.\n\nIndependent nodes (no unmet dependencies) run in parallel up to\n`max_concurrency`. When a node completes, its dependents become\neligible to start. Failure cascading and stop-on-failure are handled\nper the options.",
+								"source_line": 86,
+								"type_signature": "<T extends DagNode>(options: DagOptions<T>): Promise<DagResult>",
+								"return_type": "Promise<DagResult>",
+								"return_description": "Aggregated result with per-node details.",
+								"parameters": [
+									{
+										"name": "options",
+										"type": "DagOptions<T>",
+										"description": "- DAG execution options."
+									}
+								]
+							}
+						],
+						"module_comment": "Generic concurrent DAG executor.\n\nExecutes nodes in a dependency graph with configurable concurrency,\nfailure handling, and skip semantics. Nodes without dependency edges\nrun in parallel (up to max_concurrency). Dependencies are respected\nvia per-node deferreds.",
+						"dependencies": ["async.ts", "sort.ts"]
+					},
+					{
 						"path": "deep_equal.ts",
 						"declarations": [
 							{
@@ -36121,6 +36499,138 @@
 								]
 							}
 						]
+					},
+					{
+						"path": "diff.ts",
+						"declarations": [
+							{
+								"name": "DiffLine",
+								"kind": "type",
+								"doc_comment": "Line diff result",
+								"source_line": 10,
+								"type_signature": "DiffLine",
+								"properties": [
+									{
+										"name": "type",
+										"kind": "variable",
+										"type_signature": "'same' | 'add' | 'remove'"
+									},
+									{"name": "line", "kind": "variable", "type_signature": "string"}
+								]
+							},
+							{
+								"name": "diff_lines",
+								"kind": "function",
+								"doc_comment": "Generate a line-based diff between two strings using LCS algorithm.",
+								"source_line": 22,
+								"type_signature": "(a: string, b: string): DiffLine[]",
+								"return_type": "DiffLine[]",
+								"return_description": "Array of diff lines with type annotations.",
+								"parameters": [
+									{"name": "a", "type": "string", "description": "- The original/current content."},
+									{"name": "b", "type": "string", "description": "- The new/desired content."}
+								]
+							},
+							{
+								"name": "filter_diff_context",
+								"kind": "function",
+								"doc_comment": "Filter diff to only include lines within N lines of context around changes.",
+								"source_line": 101,
+								"type_signature": "(diff: DiffLine[], context_lines?: number): DiffLine[]",
+								"return_type": "DiffLine[]",
+								"return_description": "Filtered diff with ellipsis markers for skipped regions.",
+								"parameters": [
+									{"name": "diff", "type": "DiffLine[]", "description": "- The full diff lines."},
+									{
+										"name": "context_lines",
+										"type": "number",
+										"description": "- Number of context lines to show around changes (default: 3).",
+										"default_value": "3"
+									}
+								]
+							},
+							{
+								"name": "FormatDiffOptions",
+								"kind": "type",
+								"doc_comment": "Format options for diff output.",
+								"source_line": 154,
+								"type_signature": "FormatDiffOptions",
+								"properties": [
+									{
+										"name": "prefix",
+										"kind": "variable",
+										"type_signature": "string",
+										"doc_comment": "Prefix for each line (for indentation in plan output)."
+									},
+									{
+										"name": "use_color",
+										"kind": "variable",
+										"type_signature": "boolean",
+										"doc_comment": "Whether to use ANSI colors."
+									},
+									{
+										"name": "max_lines",
+										"kind": "variable",
+										"type_signature": "number",
+										"doc_comment": "Maximum number of diff lines to show (0 = unlimited)."
+									}
+								]
+							},
+							{
+								"name": "format_diff",
+								"kind": "function",
+								"doc_comment": "Format a diff for display.",
+								"source_line": 172,
+								"type_signature": "(diff: DiffLine[], current_path: string, desired_path: string, options?: FormatDiffOptions): string",
+								"return_type": "string",
+								"return_description": "Formatted diff string.",
+								"parameters": [
+									{
+										"name": "diff",
+										"type": "DiffLine[]",
+										"description": "- The diff lines to format."
+									},
+									{
+										"name": "current_path",
+										"type": "string",
+										"description": "- Path label for \"current\" content."
+									},
+									{
+										"name": "desired_path",
+										"type": "string",
+										"description": "- Path label for \"desired\" content."
+									},
+									{
+										"name": "options",
+										"type": "FormatDiffOptions",
+										"description": "- Formatting options.",
+										"default_value": "{}"
+									}
+								]
+							},
+							{
+								"name": "generate_diff",
+								"kind": "function",
+								"doc_comment": "Generate a formatted diff between two strings.\n\nCombines diff_lines, filter_diff_context, and format_diff for convenience.\nReturns null if content is binary.",
+								"source_line": 220,
+								"type_signature": "(current: string, desired: string, path: string, options?: FormatDiffOptions): string | null",
+								"return_type": "string | null",
+								"return_description": "Formatted diff string, or null if binary.",
+								"parameters": [
+									{"name": "current", "type": "string", "description": "- Current content."},
+									{"name": "desired", "type": "string", "description": "- Desired content."},
+									{"name": "path", "type": "string", "description": "- File path for labels."},
+									{
+										"name": "options",
+										"type": "FormatDiffOptions",
+										"description": "- Formatting options.",
+										"default_value": "{}"
+									}
+								]
+							}
+						],
+						"module_comment": "Line-based diff utilities using LCS (Longest Common Subsequence).",
+						"dependencies": ["string.ts"]
 					},
 					{
 						"path": "dom.ts",
@@ -37711,9 +38221,9 @@
 								"kind": "function",
 								"doc_comment": "",
 								"examples": [
-									"parse_path_parts('./foo/bar/baz.ts') => ['foo', 'foo/bar', 'foo/bar/baz.ts']"
+									"```ts\nparse_path_parts('./foo/bar/baz.ts') // => ['foo', 'foo/bar', 'foo/bar/baz.ts']\n```"
 								],
-								"source_line": 42,
+								"source_line": 45,
 								"type_signature": "(path: string): string[]",
 								"return_type": "string[]",
 								"parameters": [{"name": "path", "type": "string"}]
@@ -37722,8 +38232,10 @@
 								"name": "parse_path_segments",
 								"kind": "function",
 								"doc_comment": "Gets the individual parts of a path, ignoring dots and separators.",
-								"examples": ["parse_path_segments('/foo/bar/baz.ts') => ['foo', 'bar', 'baz.ts']"],
-								"source_line": 58,
+								"examples": [
+									"```ts\nparse_path_segments('/foo/bar/baz.ts') // => ['foo', 'bar', 'baz.ts']\n```"
+								],
+								"source_line": 64,
 								"type_signature": "(path: string): string[]",
 								"return_type": "string[]",
 								"parameters": [{"name": "path", "type": "string"}]
@@ -37732,23 +38244,44 @@
 								"name": "PathPiece",
 								"kind": "type",
 								"doc_comment": "A piece of a parsed path, either a path segment or separator.",
-								"source_line": 64,
+								"source_line": 70,
 								"type_signature": "PathPiece"
 							},
 							{
 								"name": "parse_path_pieces",
 								"kind": "function",
 								"doc_comment": "Treats all paths as absolute, so the first piece is always a `'/'` with type `'separator'`.",
-								"source_line": 79,
+								"source_line": 85,
 								"type_signature": "(raw_path: string): PathPiece[]",
 								"return_type": "PathPiece[]",
 								"parameters": [{"name": "raw_path", "type": "string"}]
 							},
 							{
+								"name": "should_exclude_path",
+								"kind": "function",
+								"doc_comment": "Checks if a filename matches any exclusion pattern.\n\nReturns `false` when `filename` is `undefined`, empty string, or `exclude` is empty.\nString patterns use substring matching. RegExp patterns use `.test()`.",
+								"source_line": 113,
+								"type_signature": "(filename: string | undefined, exclude: (string | RegExp)[]): boolean",
+								"return_type": "boolean",
+								"return_description": "`true` if the file should be excluded from processing.",
+								"parameters": [
+									{
+										"name": "filename",
+										"type": "string | undefined",
+										"description": "The file path to check, or `undefined` for virtual files."
+									},
+									{
+										"name": "exclude",
+										"type": "(string | RegExp)[]",
+										"description": "Array of string or RegExp exclusion patterns."
+									}
+								]
+							},
+							{
 								"name": "slugify",
 								"kind": "function",
 								"doc_comment": "Converts a string into a URL-compatible slug.",
-								"source_line": 103,
+								"source_line": 129,
 								"type_signature": "(str: string, map_special_characters?: boolean): string",
 								"return_type": "string",
 								"parameters": [
@@ -38329,8 +38862,8 @@
 								"name": "print_child_process",
 								"kind": "function",
 								"doc_comment": "Formats a child process for display.",
-								"examples": ["`pid(1234) <- node server.js`"],
-								"source_line": 621,
+								"examples": ["```ts\n`pid(1234) <- node server.js`\n```"],
+								"source_line": 624,
 								"type_signature": "(child: ChildProcess): string",
 								"return_type": "string",
 								"parameters": [{"name": "child", "type": "ChildProcess"}]
@@ -38339,7 +38872,7 @@
 								"name": "print_spawn_result",
 								"kind": "function",
 								"doc_comment": "Formats a spawn result for display.\nReturns `'ok'` for success, or the error/signal/code for failures.",
-								"source_line": 628,
+								"source_line": 631,
 								"type_signature": "(result: SpawnResult): string",
 								"return_type": "string",
 								"parameters": [{"name": "result", "type": "SpawnResult"}]
@@ -38348,7 +38881,7 @@
 								"name": "spawn_result_to_message",
 								"kind": "function",
 								"doc_comment": "Formats a spawn result for use in error messages.",
-								"source_line": 638,
+								"source_line": 641,
 								"type_signature": "(result: SpawnResult): string",
 								"return_type": "string",
 								"parameters": [{"name": "result", "type": "SpawnResult"}]
@@ -38357,7 +38890,7 @@
 								"name": "RestartableProcess",
 								"kind": "type",
 								"doc_comment": "Handle for a process that can be restarted.\nExposes `closed` promise for observing exits and implementing restart policies.",
-								"source_line": 652,
+								"source_line": 655,
 								"type_signature": "RestartableProcess",
 								"properties": [
 									{
@@ -38410,7 +38943,7 @@
 									"Simple restart on crash\n```ts\nconst rp = spawn_restartable_process('node', ['server.js']);\n\nwhile (rp.active) {\nconst result = await rp.closed;\nif (result.ok) break; // Clean exit\nawait rp.restart();\n}\n```",
 									"Restart with backoff\n```ts\nconst rp = spawn_restartable_process('node', ['server.js']);\nlet failures = 0;\n\nwhile (rp.active) {\nconst result = await rp.closed;\nif (result.ok || ++failures > 5) break;\nawait new Promise((r) => setTimeout(r, 1000 * failures));\nawait rp.restart();\n}\n```"
 								],
-								"source_line": 721,
+								"source_line": 724,
 								"type_signature": "(command: string, args?: readonly string[], options?: SpawnProcessOptions | undefined): RestartableProcess",
 								"return_type": "RestartableProcess",
 								"parameters": [
@@ -38423,7 +38956,7 @@
 								"name": "process_is_pid_running",
 								"kind": "function",
 								"doc_comment": "Checks if a process with the given PID is running.\nUses signal 0 which checks existence without sending a signal.",
-								"source_line": 824,
+								"source_line": 827,
 								"type_signature": "(pid: number): boolean",
 								"return_type": "boolean",
 								"return_description": "`true` if the process exists (even without permission to signal it),\n`false` if the process doesn't exist or if pid is invalid (non-positive, non-integer, NaN, Infinity)",
@@ -38673,6 +39206,50 @@
 						]
 					},
 					{
+						"path": "sort.ts",
+						"declarations": [
+							{
+								"name": "Sortable",
+								"kind": "type",
+								"doc_comment": "Minimum shape required for topological sorting.",
+								"source_line": 13,
+								"type_signature": "Sortable",
+								"properties": [
+									{"name": "id", "kind": "variable", "type_signature": "string"},
+									{"name": "depends_on", "kind": "variable", "type_signature": "Array<string>"}
+								]
+							},
+							{
+								"name": "TopologicalSortResult",
+								"kind": "type",
+								"doc_comment": "Result of topological sort.",
+								"source_line": 21,
+								"type_signature": "TopologicalSortResult<T>",
+								"generic_params": [{"name": "T", "constraint": "Sortable"}]
+							},
+							{
+								"name": "topological_sort",
+								"kind": "function",
+								"doc_comment": "Sort items by their dependencies using Kahn's algorithm.\n\nReturns items ordered so that dependencies come before dependents.\nIf a cycle is detected, returns an error with the cycle path.",
+								"source_line": 35,
+								"type_signature": "<T extends Sortable>(items: T[], label?: string): TopologicalSortResult<T>",
+								"return_type": "TopologicalSortResult<T>",
+								"return_description": "Sorted items or error if cycle detected.",
+								"parameters": [
+									{"name": "items", "type": "T[]", "description": "- Array of items to sort."},
+									{
+										"name": "label",
+										"type": "string",
+										"description": "- Label for error messages (e.g. \"resource\", \"step\").",
+										"default_value": "'item'"
+									}
+								]
+							}
+						],
+						"module_comment": "Generic topological sort using Kahn's algorithm.\n\nOrders items so that dependencies come before dependents.\nWorks with any item type that has `id` and optional `depends_on`.",
+						"dependents": ["dag.ts"]
+					},
+					{
 						"path": "source_json.ts",
 						"declarations": [
 							{
@@ -38729,9 +39306,9 @@
 								"kind": "function",
 								"doc_comment": "Format declaration name with generic parameters for display.",
 								"examples": [
-									"declaration_get_display_name({name: 'Map', kind: 'type', generic_params: [{name: 'K'}, {name: 'V'}]})\n// => 'Map<K, V>'"
+									"```ts\ndeclaration_get_display_name({name: 'Map', kind: 'type', generic_params: [{name: 'K'}, {name: 'V'}]})\n// => 'Map<K, V>'\n```"
 								],
-								"source_line": 180,
+								"source_line": 183,
 								"type_signature": "(declaration: { [x: string]: unknown; name: string; kind: \"function\" | \"type\" | \"variable\" | \"class\" | \"constructor\" | \"component\" | \"json\" | \"css\"; doc_comment?: string | undefined; type_signature?: string | undefined; ... 17 more ...; alias_of?: { ...; } | undefined; }): string",
 								"return_type": "string",
 								"parameters": [
@@ -38746,9 +39323,9 @@
 								"kind": "function",
 								"doc_comment": "Generate TypeScript import statement for a declaration.",
 								"examples": [
-									"declaration_generate_import({name: 'Foo', kind: 'type'}, 'foo.ts', '@pkg/lib')\n// => \"import type {Foo} from '@pkg/lib/foo.js';\""
+									"```ts\ndeclaration_generate_import({name: 'Foo', kind: 'type'}, 'foo.ts', '@pkg/lib')\n// => \"import type {Foo} from '@pkg/lib/foo.js';\"\n```"
 								],
-								"source_line": 196,
+								"source_line": 202,
 								"type_signature": "(declaration: { [x: string]: unknown; name: string; kind: \"function\" | \"type\" | \"variable\" | \"class\" | \"constructor\" | \"component\" | \"json\" | \"css\"; doc_comment?: string | undefined; type_signature?: string | undefined; ... 17 more ...; alias_of?: { ...; } | undefined; }, module_path: string, library_name: string): string",
 								"return_type": "string",
 								"parameters": [
@@ -39321,16 +39898,401 @@
 									{"name": "a", "type": "string", "description": "- First string"},
 									{"name": "b", "type": "string", "description": "- Second string"}
 								]
+							},
+							{
+								"name": "escape_js_string",
+								"kind": "function",
+								"doc_comment": "Escapes a string for use inside a single-quoted JS string literal.\n\nUses a single-pass regex replacement to escape backslashes, single quotes,\nnewlines, carriage returns, and Unicode line/paragraph separators.",
+								"source_line": 218,
+								"type_signature": "(value: string): string",
+								"return_type": "string",
+								"parameters": [{"name": "value", "type": "string"}]
+							},
+							{
+								"name": "string_is_binary",
+								"kind": "function",
+								"doc_comment": "Check if content appears to be binary.\n\nChecks for null bytes in the first 8KB of content.",
+								"source_line": 246,
+								"type_signature": "(content: string): boolean",
+								"return_type": "boolean",
+								"return_description": "True if content appears to be binary.",
+								"parameters": [
+									{"name": "content", "type": "string", "description": "- Content to check."}
+								]
 							}
 						],
 						"dependencies": ["iterator.ts"],
 						"dependents": [
 							"benchmark_format.ts",
+							"diff.ts",
 							"fs.ts",
 							"library_json.ts",
 							"package_json.ts",
 							"url.ts"
 						]
+					},
+					{
+						"path": "svelte_preprocess_helpers.ts",
+						"declarations": [
+							{
+								"name": "PreprocessImportInfo",
+								"kind": "type",
+								"doc_comment": "Import metadata for a single import specifier.",
+								"source_line": 26,
+								"type_signature": "PreprocessImportInfo",
+								"properties": [
+									{
+										"name": "path",
+										"kind": "variable",
+										"type_signature": "string",
+										"doc_comment": "The module path to import from."
+									},
+									{
+										"name": "kind",
+										"kind": "variable",
+										"type_signature": "'default' | 'named'",
+										"doc_comment": "Whether this is a default or named import."
+									}
+								]
+							},
+							{
+								"name": "ResolvedComponentImport",
+								"kind": "type",
+								"doc_comment": "Information about a resolved component import.",
+								"source_line": 34,
+								"type_signature": "ResolvedComponentImport",
+								"properties": [
+									{
+										"name": "import_node",
+										"kind": "variable",
+										"type_signature": "ImportDeclaration",
+										"doc_comment": "The `ImportDeclaration` AST node that provides this name."
+									},
+									{
+										"name": "specifier",
+										"kind": "variable",
+										"type_signature": "ImportSpecifier | ImportDefaultSpecifier",
+										"doc_comment": "The specific import specifier for this name."
+									}
+								]
+							},
+							{
+								"name": "find_attribute",
+								"kind": "function",
+								"doc_comment": "Finds an attribute by name on a component AST node.\n\nIterates the node's `attributes` array and returns the first `Attribute`\nnode whose `name` matches. Skips `SpreadAttribute`, directive, and other node types.",
+								"source_line": 51,
+								"type_signature": "(node: Component, name: string): Attribute | undefined",
+								"return_type": "Attribute | undefined",
+								"return_description": "The matching `Attribute` node, or `undefined` if not found.",
+								"parameters": [
+									{
+										"name": "node",
+										"type": "Component",
+										"description": "The component AST node to search."
+									},
+									{"name": "name", "type": "string", "description": "The attribute name to find."}
+								]
+							},
+							{
+								"name": "evaluate_static_expr",
+								"kind": "function",
+								"doc_comment": "Recursively evaluates an expression AST node to a static string value.\n\nHandles string `Literal`, `TemplateLiteral` (including interpolations when all\nexpressions resolve), `BinaryExpression` with `+`, and `Identifier` lookup\nvia an optional bindings map built by `build_static_bindings`.\nReturns `null` for dynamic expressions, non-string literals, or unsupported node types.",
+								"source_line": 72,
+								"type_signature": "(expr: Expression, bindings?: ReadonlyMap<string, string> | undefined): string | null",
+								"return_type": "string | null",
+								"return_description": "The resolved static string, or `null` if the expression is dynamic.",
+								"parameters": [
+									{
+										"name": "expr",
+										"type": "Expression",
+										"description": "An ESTree expression AST node."
+									},
+									{
+										"name": "bindings",
+										"type": "ReadonlyMap<string, string> | undefined",
+										"optional": true,
+										"description": "Optional map of variable names to their resolved static string values."
+									}
+								]
+							},
+							{
+								"name": "extract_static_string",
+								"kind": "function",
+								"doc_comment": "Extracts a static string value from a Svelte attribute value AST node.\n\nHandles three forms:\n- Boolean `true` (bare attribute like `inline`) -- returns `null`.\n- Array with a single `Text` node (quoted attribute like `content=\"text\"`) --\n  returns the text data.\n- `ExpressionTag` (expression like `content={'text'}`) -- delegates to `evaluate_static_expr`.\n\nReturns `null` for null literals, mixed arrays, dynamic expressions, and non-string values.",
+								"source_line": 123,
+								"type_signature": "(value: true | ExpressionTag | (ExpressionTag | Text)[], bindings?: ReadonlyMap<string, string> | undefined): string | null",
+								"return_type": "string | null",
+								"return_description": "The resolved static string, or `null` if the value is dynamic.",
+								"parameters": [
+									{
+										"name": "value",
+										"type": "true | ExpressionTag | (ExpressionTag | Text)[]",
+										"description": "The attribute value from `AST.Attribute['value']`."
+									},
+									{
+										"name": "bindings",
+										"type": "ReadonlyMap<string, string> | undefined",
+										"optional": true,
+										"description": "Optional map of variable names to their resolved static string values."
+									}
+								]
+							},
+							{
+								"name": "ConditionalChainBranch",
+								"kind": "type",
+								"doc_comment": "A single branch in a conditional chain extracted from nested ternary expressions.",
+								"source_line": 147,
+								"type_signature": "ConditionalChainBranch",
+								"properties": [
+									{
+										"name": "test_source",
+										"kind": "variable",
+										"type_signature": "string | null",
+										"doc_comment": "The source text of the test expression, or `null` for the final else branch."
+									},
+									{
+										"name": "value",
+										"kind": "variable",
+										"type_signature": "string",
+										"doc_comment": "The resolved static string value for this branch."
+									}
+								]
+							},
+							{
+								"name": "try_extract_conditional_chain",
+								"kind": "function",
+								"doc_comment": "Extracts a chain of conditional expressions where all leaf values are static strings.\n\nHandles nested ternaries like `a ? 'x' : b ? 'y' : 'z'` by iteratively walking\nthe right-recursive `ConditionalExpression` chain. At each level, evaluates the\nconsequent via `evaluate_static_expr` and continues into the alternate if it is\nanother `ConditionalExpression`. The final alternate is the else branch.\n\nReturns `null` if the attribute value is not an `ExpressionTag` containing a\n`ConditionalExpression`, if any leaf fails to resolve to a static string, or\nif the chain exceeds 10 branches (safety limit).\n\nA 2-branch result covers the simple ternary case (`a ? 'x' : 'y'`).",
+								"source_line": 173,
+								"type_signature": "(value: true | ExpressionTag | (ExpressionTag | Text)[], source: string, bindings: ReadonlyMap<string, string>): ConditionalChainBranch[] | null",
+								"return_type": "ConditionalChainBranch[] | null",
+								"return_description": "Array of conditional chain branches, or `null` if not extractable.",
+								"parameters": [
+									{
+										"name": "value",
+										"type": "true | ExpressionTag | (ExpressionTag | Text)[]",
+										"description": "The attribute value from `AST.Attribute['value']`."
+									},
+									{
+										"name": "source",
+										"type": "string",
+										"description": "The full source string (needed to slice test expression source text)."
+									},
+									{
+										"name": "bindings",
+										"type": "ReadonlyMap<string, string>",
+										"description": "Map of variable names to their resolved static string values."
+									}
+								]
+							},
+							{
+								"name": "build_static_bindings",
+								"kind": "function",
+								"doc_comment": "Builds a map of statically resolvable `const` bindings from a Svelte AST.\n\nScans top-level `const` variable declarations in both instance and module scripts.\nFor each declarator with a plain `Identifier` pattern and a statically evaluable\ninitializer, adds the binding to the map. Processes declarations in source order\nso that chained references resolve: `const a = 'x'; const b = a;` maps `b` to `'x'`.\n\nSkips destructuring patterns, `let`/`var` declarations, and declarations\nwhose initializers reference dynamic values.",
+								"source_line": 229,
+								"type_signature": "(ast: Root): Map<string, string>",
+								"return_type": "Map<string, string>",
+								"return_description": "Map of variable names to their resolved static string values.",
+								"parameters": [
+									{"name": "ast", "type": "Root", "description": "The parsed Svelte AST root node."}
+								]
+							},
+							{
+								"name": "resolve_component_names",
+								"kind": "function",
+								"doc_comment": "Resolves local names that import from specified source paths.\n\nScans `ImportDeclaration` nodes in both the instance and module scripts.\nHandles default, named, and aliased imports. Skips namespace imports\nand `import type` declarations (both whole-declaration and per-specifier).\nReturns import node references alongside names to support import removal.",
+								"source_line": 260,
+								"type_signature": "(ast: Root, component_imports: string[]): Map<string, ResolvedComponentImport>",
+								"return_type": "Map<string, ResolvedComponentImport>",
+								"return_description": "Map of local names to their resolved import info.",
+								"parameters": [
+									{
+										"name": "ast",
+										"type": "Root",
+										"description": "The parsed Svelte AST root node."
+									},
+									{
+										"name": "component_imports",
+										"type": "string[]",
+										"description": "Array of import source paths to match against."
+									}
+								]
+							},
+							{
+								"name": "find_import_insert_position",
+								"kind": "function",
+								"doc_comment": "Finds the position to insert new import statements within a script block.\n\nReturns the end position of the last `ImportDeclaration`, or the start\nof the script body content if no imports exist.",
+								"source_line": 293,
+								"type_signature": "(script: Script): number",
+								"return_type": "number",
+								"return_description": "The character position where new imports should be inserted.",
+								"parameters": [
+									{
+										"name": "script",
+										"type": "Script",
+										"description": "The parsed `AST.Script` node."
+									}
+								]
+							},
+							{
+								"name": "generate_import_lines",
+								"kind": "function",
+								"doc_comment": "Generates indented import statement lines from an import map.\n\nDefault imports produce `import Name from 'path';` lines.\nNamed imports are grouped by path into `import {a, b} from 'path';` lines.",
+								"source_line": 317,
+								"type_signature": "(imports: Map<string, PreprocessImportInfo>, indent?: string): string",
+								"return_type": "string",
+								"return_description": "A string of newline-separated import statements.",
+								"parameters": [
+									{
+										"name": "imports",
+										"type": "Map<string, PreprocessImportInfo>",
+										"description": "Map of local names to their import info."
+									},
+									{
+										"name": "indent",
+										"type": "string",
+										"description": "Indentation prefix for each line.",
+										"default_value": "'\\t'"
+									}
+								]
+							},
+							{
+								"name": "has_identifier_in_tree",
+								"kind": "function",
+								"doc_comment": "Checks if an identifier with the given name appears anywhere in an AST subtree.\n\nRecursively walks all object and array properties of the tree, matching\nESTree `Identifier` nodes (`{type: 'Identifier', name}`). Nodes in the\n`skip` set are excluded from traversal — used to skip `ImportDeclaration`\nnodes so the import's own specifier identifier doesn't false-positive.\n\nSkips `Identifier` nodes in non-reference positions defined by\n`NON_REFERENCE_FIELDS` — for example, `obj.Mdz` (non-computed member property),\n`{ Mdz: value }` (non-computed object key), and statement labels.\n\nSafe for Svelte template ASTs: `Component.name` is a plain string property\n(not an `Identifier` node), so `<Mdz>` tags do not produce false matches.",
+								"source_line": 391,
+								"type_signature": "(node: unknown, name: string, skip?: Set<unknown> | undefined): boolean",
+								"return_type": "boolean",
+								"return_description": "`true` if a matching `Identifier` node is found.",
+								"parameters": [
+									{"name": "node", "type": "unknown", "description": "The AST subtree to search."},
+									{
+										"name": "name",
+										"type": "string",
+										"description": "The identifier name to look for."
+									},
+									{
+										"name": "skip",
+										"type": "Set<unknown> | undefined",
+										"optional": true,
+										"description": "Set of AST nodes to skip during traversal."
+									}
+								]
+							},
+							{
+								"name": "escape_svelte_text",
+								"kind": "function",
+								"doc_comment": "Escapes text for safe embedding in Svelte template markup.\n\nUses a single-pass regex replacement to avoid corruption that occurs with sequential\n`.replace()` calls (where the second replace matches characters introduced by the first).\n\nEscapes four characters:\n- `{` → `{'{'}` and `}` → `{'}'}` — prevents Svelte expression interpretation\n- `<` → `&lt;` — prevents HTML/Svelte tag interpretation\n- `&` → `&amp;` — prevents HTML entity interpretation\n\nThe `&` escaping is necessary because runtime `MdzNodeView.svelte` renders text\nwith `{node.content}` (a Svelte expression), which auto-escapes `&` to `&amp;`.\nThe preprocessor emits raw template text where `&` is NOT auto-escaped, so\nmanual escaping is required to match the runtime behavior.",
+								"source_line": 429,
+								"type_signature": "(text: string): string",
+								"return_type": "string",
+								"parameters": [{"name": "text", "type": "string"}]
+							},
+							{
+								"name": "remove_variable_declaration",
+								"kind": "function",
+								"doc_comment": "Removes a single-declarator `VariableDeclaration` from source using MagicString.\n\nConsumes leading whitespace (tabs/spaces) and trailing newline to avoid leaving\nblank lines. Only safe for single-declarator statements (`const x = 'val';`);\ncallers must verify `node.declarations.length === 1` before calling.",
+								"source_line": 456,
+								"type_signature": "(s: { remove: (start: number, end: number) => unknown; }, declaration_node: VariableDeclaration & { start: number; end: number; }, source: string): void",
+								"return_type": "void",
+								"parameters": [
+									{
+										"name": "s",
+										"type": "{ remove: (start: number, end: number) => unknown; }",
+										"description": "The MagicString instance to modify."
+									},
+									{
+										"name": "declaration_node",
+										"type": "VariableDeclaration & { start: number; end: number; }",
+										"description": "The `VariableDeclaration` AST node with Svelte position data."
+									},
+									{"name": "source", "type": "string", "description": "The original source string."}
+								]
+							},
+							{
+								"name": "remove_import_declaration",
+								"kind": "function",
+								"doc_comment": "Removes an `ImportDeclaration` from source using MagicString.\n\nConsumes leading whitespace (tabs/spaces) and trailing newline to avoid leaving\nblank lines.",
+								"source_line": 474,
+								"type_signature": "(s: { remove: (start: number, end: number) => unknown; }, import_node: ImportDeclaration & { start: number; end: number; }, source: string): void",
+								"return_type": "void",
+								"parameters": [
+									{
+										"name": "s",
+										"type": "{ remove: (start: number, end: number) => unknown; }",
+										"description": "The MagicString instance to modify."
+									},
+									{
+										"name": "import_node",
+										"type": "ImportDeclaration & { start: number; end: number; }",
+										"description": "The `ImportDeclaration` AST node with Svelte position data."
+									},
+									{"name": "source", "type": "string", "description": "The original source string."}
+								]
+							},
+							{
+								"name": "remove_import_specifier",
+								"kind": "function",
+								"doc_comment": "Removes a specifier from a multi-specifier import declaration by\nreconstructing the statement without the removed specifier.\n\nOverwrites the entire declaration range to avoid character-level comma surgery.\n\nHandles:\n- `import Mdz, {other} from '...'` → `import {other} from '...'`\n- `import {default as Mdz, other} from '...'` → `import {other} from '...'`\n- `import {Mdz, other} from '...'` → `import {other} from '...'`",
+								"source_line": 530,
+								"type_signature": "(s: { overwrite: (start: number, end: number, content: string) => unknown; }, node: ImportDeclaration & { start: number; end: number; }, specifier_to_remove: ImportSpecifier | ImportDefaultSpecifier | ImportNamespaceSpecifier, source: string, additional_lines?: string): void",
+								"return_type": "void",
+								"parameters": [
+									{
+										"name": "s",
+										"type": "{ overwrite: (start: number, end: number, content: string) => unknown; }",
+										"description": "The MagicString instance to modify."
+									},
+									{
+										"name": "node",
+										"type": "ImportDeclaration & { start: number; end: number; }",
+										"description": "The positioned `ImportDeclaration` AST node."
+									},
+									{
+										"name": "specifier_to_remove",
+										"type": "ImportSpecifier | ImportDefaultSpecifier | ImportNamespaceSpecifier",
+										"description": "The specifier to remove from the import."
+									},
+									{
+										"name": "source",
+										"type": "string",
+										"description": "The original source string."
+									},
+									{
+										"name": "additional_lines",
+										"type": "string",
+										"description": "Extra content appended after the reconstructed import\n(used to bundle new imports into the overwrite to avoid MagicString boundary conflicts).",
+										"default_value": "''"
+									}
+								]
+							},
+							{
+								"name": "handle_preprocess_error",
+								"kind": "function",
+								"doc_comment": "Handles errors during Svelte preprocessing with configurable behavior.",
+								"source_line": 593,
+								"type_signature": "(error: unknown, prefix: string, filename: string | undefined, on_error: \"log\" | \"throw\"): void",
+								"return_type": "void",
+								"parameters": [
+									{"name": "error", "type": "unknown", "description": "The caught error."},
+									{
+										"name": "prefix",
+										"type": "string",
+										"description": "Log prefix (e.g. `'[fuz-mdz]'`, `'[fuz-code]'`)."
+									},
+									{
+										"name": "filename",
+										"type": "string | undefined",
+										"description": "The file being processed."
+									},
+									{
+										"name": "on_error",
+										"type": "\"log\" | \"throw\"",
+										"description": "`'throw'` to re-throw as a new Error, `'log'` to console.error."
+									}
+								]
+							}
+						],
+						"module_comment": "Shared helper functions for Svelte preprocessors.\n\nProvides AST utilities for detecting static content, resolving imports,\nmanaging import statements, and escaping strings for Svelte templates.\nUsed by `svelte_preprocess_mdz` in fuz_ui, `svelte_preprocess_fuz_code`\nin fuz_code, and potentially other Svelte preprocessors.\n\nUses `import type` from `svelte/compiler` for AST types only — no runtime\nSvelte dependency. Consumers must have `svelte` installed for type resolution."
 					},
 					{
 						"path": "throttle.ts",
@@ -39932,26 +40894,33 @@
 				"type": "module",
 				"engines": {"node": ">=22.15"},
 				"devDependencies": {
-					"@fuzdev/fuz_code": "^0.41.0",
-					"@fuzdev/fuz_css": "^0.47.0",
-					"@fuzdev/fuz_ui": "^0.181.1",
-					"@fuzdev/fuz_util": "^0.48.3",
+					"@fuzdev/fuz_code": "^0.45.0",
+					"@fuzdev/fuz_css": "^0.49.1",
+					"@fuzdev/fuz_ui": "^0.183.1",
+					"@fuzdev/fuz_util": "^0.50.1",
+					"@fuzdev/gro": "^0.192.1",
+					"@jridgewell/trace-mapping": "^0.3.31",
 					"@ryanatkn/eslint-config": "^0.9.0",
-					"@ryanatkn/gro": "^0.190.0",
 					"@sveltejs/adapter-static": "^3.0.10",
 					"@sveltejs/kit": "^2.50.1",
 					"@sveltejs/vite-plugin-svelte": "^6.2.4",
+					"@types/estree": "^1.0.8",
 					"@webref/css": "^8.2.0",
 					"eslint": "^9.39.1",
 					"eslint-plugin-svelte": "^3.13.1",
+					"esm-env": "^1.2.2",
+					"magic-string": "^0.30.21",
 					"prettier": "^3.7.4",
 					"prettier-plugin-svelte": "^3.4.1",
 					"svelte": "^5.49.1",
 					"svelte-check": "^4.3.6",
+					"svelte2tsx": "^0.7.47",
 					"tslib": "^2.8.1",
 					"typescript": "^5.9.3",
 					"typescript-eslint": "^8.48.1",
-					"vitest": "^4.0.15"
+					"vitest": "^4.0.15",
+					"zimmerframe": "^1.1.4",
+					"zod": "^4.3.6"
 				},
 				"prettier": {
 					"plugins": ["prettier-plugin-svelte"],
@@ -40019,7 +40988,7 @@
 			"published": true,
 			"package_json": {
 				"name": "@fuzdev/fuz_blog",
-				"version": "0.23.0",
+				"version": "0.24.0",
 				"description": "blog software from scratch with SvelteKit",
 				"glyph": "🖊️",
 				"logo": "logo.svg",
@@ -40038,41 +41007,48 @@
 				"type": "module",
 				"engines": {"node": ">=22.15"},
 				"peerDependencies": {
-					"@fuzdev/fuz_css": ">=0.44.1",
-					"@fuzdev/fuz_mastodon": ">=0.38.0",
-					"@fuzdev/fuz_ui": ">=0.179.0",
-					"@fuzdev/fuz_util": ">=0.45.3",
-					"@ryanatkn/gro": ">=0.186.0",
+					"@fuzdev/fuz_css": ">=0.49.0",
+					"@fuzdev/fuz_mastodon": ">=0.39.0",
+					"@fuzdev/fuz_ui": ">=0.183.0",
+					"@fuzdev/fuz_util": ">=0.50.1",
+					"@fuzdev/gro": "^0.192.1",
 					"@sveltejs/kit": "^2",
 					"date-fns": "^4",
 					"svelte": "^5"
 				},
 				"devDependencies": {
 					"@changesets/changelog-git": "^0.2.1",
-					"@fuzdev/fuz_code": "^0.41.0",
-					"@fuzdev/fuz_css": "^0.47.0",
+					"@fuzdev/fuz_code": "^0.45.0",
+					"@fuzdev/fuz_css": "^0.49.1",
 					"@fuzdev/fuz_mastodon": "^0.39.0",
-					"@fuzdev/fuz_ui": "^0.181.1",
-					"@fuzdev/fuz_util": "^0.48.3",
+					"@fuzdev/fuz_ui": "^0.183.1",
+					"@fuzdev/fuz_util": "^0.50.1",
+					"@fuzdev/gro": "^0.192.1",
+					"@jridgewell/trace-mapping": "^0.3.31",
 					"@ryanatkn/eslint-config": "^0.9.0",
-					"@ryanatkn/gro": "^0.190.0",
 					"@sveltejs/adapter-static": "^3.0.10",
 					"@sveltejs/kit": "^2.50.1",
 					"@sveltejs/package": "^2.5.7",
 					"@sveltejs/vite-plugin-svelte": "^6.2.4",
+					"@types/estree": "^1.0.8",
 					"@types/node": "^24.10.1",
 					"@webref/css": "^8.2.0",
 					"date-fns": "^4.1.0",
 					"eslint": "^9.39.1",
 					"eslint-plugin-svelte": "^3.13.1",
+					"esm-env": "^1.2.2",
+					"magic-string": "^0.30.21",
 					"prettier": "^3.7.4",
 					"prettier-plugin-svelte": "^3.4.1",
 					"svelte": "^5.49.1",
 					"svelte-check": "^4.3.6",
+					"svelte2tsx": "^0.7.47",
 					"tslib": "^2.8.1",
 					"typescript": "^5.9.3",
 					"typescript-eslint": "^8.48.1",
-					"vitest": "^4.0.15"
+					"vitest": "^4.0.15",
+					"zimmerframe": "^1.1.4",
+					"zod": "^4.3.6"
 				},
 				"prettier": {
 					"plugins": ["prettier-plugin-svelte"],
@@ -40097,7 +41073,7 @@
 			},
 			"source_json": {
 				"name": "@fuzdev/fuz_blog",
-				"version": "0.23.0",
+				"version": "0.24.0",
 				"modules": [
 					{
 						"path": "blog_helpers.ts",
@@ -40475,29 +41451,35 @@
 				},
 				"devDependencies": {
 					"@changesets/changelog-git": "^0.2.1",
-					"@fuzdev/fuz_code": "^0.41.0",
-					"@fuzdev/fuz_css": "^0.47.0",
-					"@fuzdev/fuz_ui": "^0.181.1",
-					"@fuzdev/fuz_util": "^0.48.3",
+					"@fuzdev/fuz_code": "^0.45.0",
+					"@fuzdev/fuz_css": "^0.49.1",
+					"@fuzdev/fuz_ui": "^0.183.1",
+					"@fuzdev/fuz_util": "^0.50.1",
+					"@fuzdev/gro": "^0.192.1",
+					"@jridgewell/trace-mapping": "^0.3.31",
 					"@ryanatkn/eslint-config": "^0.9.0",
-					"@ryanatkn/gro": "^0.190.0",
 					"@sveltejs/adapter-static": "^3.0.10",
 					"@sveltejs/kit": "^2.50.1",
 					"@sveltejs/package": "^2.5.7",
 					"@sveltejs/vite-plugin-svelte": "^6.2.4",
+					"@types/estree": "^1.0.8",
 					"@webref/css": "^8.2.0",
 					"date-fns": "^4.1.0",
 					"eslint": "^9.39.1",
 					"eslint-plugin-svelte": "^3.13.1",
 					"esm-env": "^1.2.2",
+					"magic-string": "^0.30.21",
 					"prettier": "^3.7.4",
 					"prettier-plugin-svelte": "^3.4.1",
 					"svelte": "^5.49.1",
 					"svelte-check": "^4.3.6",
+					"svelte2tsx": "^0.7.47",
 					"tslib": "^2.8.1",
 					"typescript": "^5.9.3",
 					"typescript-eslint": "^8.48.1",
-					"vitest": "^4.0.15"
+					"vitest": "^4.0.15",
+					"zimmerframe": "^1.1.4",
+					"zod": "^4.3.6"
 				},
 				"prettier": {
 					"plugins": ["prettier-plugin-svelte"],
@@ -41180,7 +42162,7 @@
 			"published": true,
 			"package_json": {
 				"name": "@fuzdev/fuz_code",
-				"version": "0.41.0",
+				"version": "0.45.0",
 				"description": "syntax styling utilities and components for TypeScript, Svelte, and Markdown",
 				"glyph": "🎨",
 				"logo": "logo.svg",
@@ -41203,41 +42185,57 @@
 					"test": "gro test",
 					"preview": "vite preview",
 					"deploy": "gro deploy",
-					"benchmark": "gro run src/benchmark/run_benchmarks.ts",
-					"benchmark:compare": "gro run src/benchmark/compare/run_compare.ts",
+					"benchmark": "gro run benchmark/run_benchmarks.ts",
+					"benchmark:compare": "gro run benchmark/compare/run_compare.ts",
 					"fixtures:update": "gro src/test/fixtures/update"
 				},
 				"type": "module",
 				"engines": {"node": ">=22.15"},
-				"peerDependencies": {"@fuzdev/fuz_css": ">=0.44.1", "svelte": "^5"},
+				"peerDependencies": {
+					"@fuzdev/fuz_css": ">=0.47.0",
+					"@fuzdev/fuz_util": ">=0.49.2",
+					"esm-env": "^1",
+					"magic-string": "^0.30",
+					"svelte": "^5",
+					"zimmerframe": "^1"
+				},
 				"peerDependenciesMeta": {
 					"@fuzdev/fuz_css": {"optional": true},
-					"svelte": {"optional": true}
+					"@fuzdev/fuz_util": {"optional": true},
+					"magic-string": {"optional": true},
+					"svelte": {"optional": true},
+					"zimmerframe": {"optional": true}
 				},
 				"devDependencies": {
 					"@changesets/changelog-git": "^0.2.1",
-					"@fuzdev/fuz_css": "^0.47.0",
-					"@fuzdev/fuz_ui": "^0.181.1",
-					"@fuzdev/fuz_util": "^0.48.3",
+					"@fuzdev/fuz_css": "^0.49.1",
+					"@fuzdev/fuz_ui": "^0.183.1",
+					"@fuzdev/fuz_util": "^0.50.1",
+					"@fuzdev/gro": "^0.192.1",
+					"@jridgewell/trace-mapping": "^0.3.31",
 					"@ryanatkn/eslint-config": "^0.9.0",
-					"@ryanatkn/gro": "^0.190.0",
 					"@sveltejs/adapter-static": "^3.0.10",
 					"@sveltejs/kit": "^2.50.1",
 					"@sveltejs/package": "^2.5.7",
 					"@sveltejs/vite-plugin-svelte": "^6.2.4",
+					"@types/estree": "^1.0.8",
 					"@types/node": "^24.10.1",
 					"@webref/css": "^8.2.0",
 					"eslint": "^9.39.1",
 					"eslint-plugin-svelte": "^3.13.1",
 					"esm-env": "^1.2.2",
+					"magic-string": "^0.30.21",
 					"prettier": "^3.7.4",
 					"prettier-plugin-svelte": "^3.4.1",
 					"svelte": "^5.49.1",
 					"svelte-check": "^4.3.6",
+					"svelte2tsx": "^0.7.47",
 					"tslib": "^2.8.1",
 					"typescript": "^5.9.3",
 					"typescript-eslint": "^8.48.1",
-					"vitest": "^4.0.15"
+					"vitest": "^4.0.15",
+					"zimmerframe": "^1.1.4",
+					"zod": "^4.3.6"
 				},
 				"prettier": {
 					"plugins": ["prettier-plugin-svelte"],
@@ -41263,7 +42261,7 @@
 			},
 			"source_json": {
 				"name": "@fuzdev/fuz_code",
-				"version": "0.41.0",
+				"version": "0.45.0",
 				"modules": [
 					{
 						"path": "code_sample.ts",
@@ -41300,11 +42298,6 @@
 								"name": "Code",
 								"kind": "component",
 								"props": [
-									{
-										"name": "content",
-										"type": "string",
-										"description": "The source code to syntax highlight."
-									},
 									{
 										"name": "lang",
 										"type": "string | null",
@@ -41627,8 +42620,11 @@
 							{
 								"name": "HighlightManager",
 								"kind": "class",
-								"doc_comment": "Manages highlights for a single element.\nTracks ranges per element and only removes its own ranges when clearing.",
-								"source_line": 16,
+								"doc_comment": "Manages CSS Custom Highlight API ranges for a single element.\nTracks ranges per element and only removes its own ranges when clearing.\n\n**Experimental** — limited browser support. Use `Code` for production.",
+								"examples": [
+									"```ts\nconst manager = new HighlightManager();\nmanager.highlight_from_syntax_tokens(element, tokens);\n```"
+								],
+								"source_line": 24,
 								"members": [
 									{
 										"name": "element_ranges",
@@ -41693,12 +42689,81 @@
 						"dependents": ["highlight_manager.ts"]
 					},
 					{
+						"path": "svelte_preprocess_fuz_code.ts",
+						"declarations": [
+							{
+								"name": "PreprocessFuzCodeOptions",
+								"kind": "type",
+								"doc_comment": "Options for `svelte_preprocess_fuz_code`.",
+								"source_line": 22,
+								"type_signature": "PreprocessFuzCodeOptions",
+								"properties": [
+									{
+										"name": "exclude",
+										"kind": "variable",
+										"type_signature": "Array<string | RegExp>",
+										"doc_comment": "File patterns to exclude."
+									},
+									{
+										"name": "syntax_styler",
+										"kind": "variable",
+										"type_signature": "SyntaxStyler",
+										"doc_comment": "Custom syntax styler."
+									},
+									{
+										"name": "cache",
+										"kind": "variable",
+										"type_signature": "boolean",
+										"doc_comment": "Enable in-memory caching."
+									},
+									{
+										"name": "component_imports",
+										"kind": "variable",
+										"type_signature": "Array<string>",
+										"doc_comment": "Import sources that resolve to the Code component.\nUsed to verify that `<Code>` in templates actually refers to fuz_code's Code.svelte."
+									},
+									{
+										"name": "on_error",
+										"kind": "variable",
+										"type_signature": "'log' | 'throw'",
+										"doc_comment": "How to handle errors."
+									}
+								]
+							},
+							{
+								"name": "svelte_preprocess_fuz_code",
+								"kind": "function",
+								"doc_comment": "Svelte preprocessor that compiles static `Code` component content at build time,\nreplacing runtime syntax highlighting with pre-rendered HTML.",
+								"examples": [
+									"```ts\n// svelte.config.js\nimport {svelte_preprocess_fuz_code} from '@fuzdev/fuz_code/svelte_preprocess_fuz_code.js';\n\nexport default {\n  preprocess: [svelte_preprocess_fuz_code(), vitePreprocess()],\n};\n```"
+								],
+								"source_line": 64,
+								"type_signature": "(options?: PreprocessFuzCodeOptions): PreprocessorGroup",
+								"return_type": "PreprocessorGroup",
+								"return_description": "a Svelte preprocessor group",
+								"parameters": [
+									{
+										"name": "options",
+										"type": "PreprocessFuzCodeOptions",
+										"description": "preprocessor configuration",
+										"default_value": "{}"
+									}
+								]
+							}
+						],
+						"dependencies": ["syntax_styler_global.ts"]
+					},
+					{
 						"path": "syntax_styler_global.ts",
 						"declarations": [
 							{
 								"name": "syntax_styler_global",
 								"kind": "variable",
-								"source_line": 11,
+								"doc_comment": "Pre-configured `SyntaxStyler` instance with all built-in grammars registered.",
+								"examples": [
+									"```ts\nimport {syntax_styler_global} from '@fuzdev/fuz_code/syntax_styler_global.js';\n\nconst html = syntax_styler_global.stylize('const x = 1;', 'ts');\n```"
+								],
+								"source_line": 21,
 								"type_signature": "SyntaxStyler"
 							}
 						],
@@ -41713,7 +42778,7 @@
 							"grammar_ts.ts",
 							"syntax_styler.ts"
 						],
-						"dependents": ["Code.svelte", "CodeHighlight.svelte"]
+						"dependents": ["Code.svelte", "CodeHighlight.svelte", "svelte_preprocess_fuz_code.ts"]
 					},
 					{
 						"path": "syntax_styler.ts",
@@ -41926,20 +42991,20 @@
 							{
 								"name": "SyntaxGrammarValueRaw",
 								"kind": "type",
-								"source_line": 464,
+								"source_line": 470,
 								"type_signature": "SyntaxGrammarValueRaw"
 							},
 							{
 								"name": "SyntaxGrammarRaw",
 								"kind": "type",
-								"source_line": 469,
+								"source_line": 475,
 								"type_signature": "SyntaxGrammarRaw"
 							},
 							{
 								"name": "SyntaxGrammarTokenRaw",
 								"kind": "type",
 								"doc_comment": "The expansion of a simple `RegExp` literal to support additional properties.\n\nThe `inside` grammar will be used to tokenize the text value of each token of this kind.\n\nThis can be used to make nested and even recursive language definitions.\n\nNote: This can cause infinite recursion. Be careful when you embed different languages or even the same language into\neach another.\n\nNote: Grammar authors can use optional properties, but they will be normalized\nto required properties at registration time for optimal performance.",
-								"source_line": 486,
+								"source_line": 492,
 								"type_signature": "SyntaxGrammarTokenRaw",
 								"properties": [
 									{
@@ -41978,7 +43043,7 @@
 								"name": "SyntaxGrammarToken",
 								"kind": "type",
 								"doc_comment": "Grammar token with all properties required.\nThis is the normalized representation used at runtime.",
-								"source_line": 516,
+								"source_line": 522,
 								"type_signature": "SyntaxGrammarToken",
 								"properties": [
 									{"name": "pattern", "kind": "variable", "type_signature": "RegExp"},
@@ -41992,31 +43057,31 @@
 								"name": "SyntaxGrammar",
 								"kind": "type",
 								"doc_comment": "A grammar after normalization.\nAll values are arrays of normalized tokens with consistent shapes.",
-								"source_line": 528,
+								"source_line": 534,
 								"type_signature": "SyntaxGrammar"
 							},
 							{
 								"name": "HookBeforeTokenizeCallback",
 								"kind": "type",
-								"source_line": 552,
+								"source_line": 558,
 								"type_signature": "HookBeforeTokenizeCallback"
 							},
 							{
 								"name": "HookAfterTokenizeCallback",
 								"kind": "type",
-								"source_line": 553,
+								"source_line": 559,
 								"type_signature": "HookAfterTokenizeCallback"
 							},
 							{
 								"name": "HookWrapCallback",
 								"kind": "type",
-								"source_line": 554,
+								"source_line": 560,
 								"type_signature": "HookWrapCallback"
 							},
 							{
 								"name": "HookBeforeTokenizeCallbackContext",
 								"kind": "type",
-								"source_line": 556,
+								"source_line": 562,
 								"type_signature": "HookBeforeTokenizeCallbackContext",
 								"properties": [
 									{"name": "code", "kind": "variable", "type_signature": "string"},
@@ -42028,7 +43093,7 @@
 							{
 								"name": "HookAfterTokenizeCallbackContext",
 								"kind": "type",
-								"source_line": 562,
+								"source_line": 568,
 								"type_signature": "HookAfterTokenizeCallbackContext",
 								"properties": [
 									{"name": "code", "kind": "variable", "type_signature": "string"},
@@ -42040,7 +43105,7 @@
 							{
 								"name": "HookWrapCallbackContext",
 								"kind": "type",
-								"source_line": 568,
+								"source_line": 574,
 								"type_signature": "HookWrapCallbackContext",
 								"properties": [
 									{"name": "type", "kind": "variable", "type_signature": "string"},
@@ -42117,9 +43182,9 @@
 								"kind": "function",
 								"doc_comment": "Accepts a string of text as input and the language definitions to use,\nand returns an array with the tokenized code.\n\nWhen the language definition includes nested tokens, the function is called recursively on each of these tokens.\n\nThis method could be useful in other contexts as well, as a very crude parser.",
 								"examples": [
-									"var code = `var foo = 0;`;\nvar tokens = tokenize_syntax(code, SyntaxStyler.langs.js);\nfor (var token of tokens) {\n    if (token instanceof SyntaxToken && token.type === 'number') {\n        console.log(`Found numeric literal: ${token.content}`);\n    }\n}"
+									"```ts\nvar code = `var foo = 0;`;\nvar tokens = tokenize_syntax(code, SyntaxStyler.langs.js);\nfor (var token of tokens) {\n    if (token instanceof SyntaxToken && token.type === 'number') {\n        console.log(`Found numeric literal: ${token.content}`);\n    }\n}\n```"
 								],
-								"source_line": 28,
+								"source_line": 30,
 								"type_signature": "(text: string, grammar: SyntaxGrammar): SyntaxTokenStream",
 								"return_type": "SyntaxTokenStream",
 								"return_description": "an array of strings and tokens, a token stream",
@@ -42160,7 +43225,7 @@
 			"published": true,
 			"package_json": {
 				"name": "@fuzdev/fuz_gitops",
-				"version": "0.64.0",
+				"version": "0.65.0",
 				"description": "a tool for managing many repos",
 				"glyph": "🪄",
 				"logo": "logo.svg",
@@ -42190,35 +43255,42 @@
 					"@fuzdev/fuz_css": ">=0.44.1",
 					"@fuzdev/fuz_ui": ">=0.179.0",
 					"@fuzdev/fuz_util": ">=0.45.3",
-					"@ryanatkn/gro": ">=0.186.0",
+					"@fuzdev/gro": "^0.192.1",
 					"@sveltejs/kit": "^2",
 					"svelte": "^5",
 					"zod": "^4.1.13"
 				},
 				"devDependencies": {
 					"@changesets/changelog-git": "^0.2.1",
-					"@fuzdev/fuz_code": "^0.41.0",
-					"@fuzdev/fuz_css": "^0.47.0",
-					"@fuzdev/fuz_ui": "^0.181.1",
-					"@fuzdev/fuz_util": "^0.48.3",
+					"@fuzdev/fuz_code": "^0.45.0",
+					"@fuzdev/fuz_css": "^0.49.1",
+					"@fuzdev/fuz_ui": "^0.183.1",
+					"@fuzdev/fuz_util": "^0.50.1",
+					"@fuzdev/gro": "^0.192.1",
+					"@jridgewell/trace-mapping": "^0.3.31",
 					"@ryanatkn/eslint-config": "^0.9.0",
-					"@ryanatkn/gro": "^0.190.0",
 					"@sveltejs/adapter-static": "^3.0.10",
 					"@sveltejs/kit": "^2.50.1",
 					"@sveltejs/package": "^2.5.7",
 					"@sveltejs/vite-plugin-svelte": "^6.2.4",
+					"@types/estree": "^1.0.8",
 					"@types/node": "^24.10.1",
 					"@webref/css": "^8.2.0",
 					"eslint": "^9.39.1",
 					"eslint-plugin-svelte": "^3.13.1",
+					"esm-env": "^1.2.2",
+					"magic-string": "^0.30.21",
 					"prettier": "^3.7.4",
 					"prettier-plugin-svelte": "^3.4.1",
 					"svelte": "^5.49.1",
 					"svelte-check": "^4.3.6",
+					"svelte2tsx": "^0.7.47",
 					"tslib": "^2.8.1",
 					"typescript": "^5.9.3",
 					"typescript-eslint": "^8.48.1",
-					"vitest": "^4.0.15"
+					"vitest": "^4.0.15",
+					"zimmerframe": "^1.1.4",
+					"zod": "^4.3.6"
 				},
 				"prettier": {
 					"plugins": ["prettier-plugin-svelte"],
@@ -42243,7 +43315,7 @@
 			},
 			"source_json": {
 				"name": "@fuzdev/fuz_gitops",
-				"version": "0.64.0",
+				"version": "0.65.0",
 				"modules": [
 					{
 						"path": "changeset_generator.ts",
@@ -43198,7 +44270,7 @@
 							{
 								"name": "RawGitopsRepoConfig",
 								"kind": "type",
-								"source_line": 56,
+								"source_line": 65,
 								"type_signature": "RawGitopsRepoConfig",
 								"properties": [
 									{"name": "repo_url", "kind": "variable", "type_signature": "Url"},
@@ -43209,7 +44281,7 @@
 							{
 								"name": "create_empty_gitops_config",
 								"kind": "function",
-								"source_line": 62,
+								"source_line": 71,
 								"type_signature": "(): GitopsConfig",
 								"return_type": "GitopsConfig",
 								"parameters": []
@@ -43218,7 +44290,7 @@
 								"name": "normalize_gitops_config",
 								"kind": "function",
 								"doc_comment": "Transforms a `RawGitopsConfig` to the more strict `GitopsConfig`.\nThis allows users to provide a more relaxed config.",
-								"source_line": 71,
+								"source_line": 80,
 								"type_signature": "(raw_config: RawGitopsConfig): GitopsConfig",
 								"return_type": "GitopsConfig",
 								"parameters": [{"name": "raw_config", "type": "RawGitopsConfig"}]
@@ -43226,7 +44298,7 @@
 							{
 								"name": "GitopsConfigModule",
 								"kind": "type",
-								"source_line": 94,
+								"source_line": 103,
 								"type_signature": "GitopsConfigModule",
 								"properties": [
 									{
@@ -43240,7 +44312,7 @@
 							{
 								"name": "load_gitops_config",
 								"kind": "function",
-								"source_line": 98,
+								"source_line": 107,
 								"type_signature": "(config_path: string): Promise<GitopsConfig | null>",
 								"return_type": "Promise<GitopsConfig | null>",
 								"parameters": [{"name": "config_path", "type": "string"}]
@@ -43248,7 +44320,7 @@
 							{
 								"name": "validate_gitops_config_module",
 								"kind": "function",
-								"source_line": 113,
+								"source_line": 122,
 								"type_signature": "(config_module: any, config_path: string): asserts config_module is GitopsConfigModule",
 								"return_type": "void",
 								"parameters": [
@@ -45421,11 +46493,11 @@
 								"kind": "function",
 								"doc_comment": "Normalizes version string for comparison.\n\nStrips prefixes (^, ~, >=) to get bare version number.\nHandles wildcards as-is. Used by needs_update to compare versions.",
 								"examples": [
-									"normalize_version_for_comparison('^1.2.3') // '1.2.3'",
-									"normalize_version_for_comparison('>=2.0.0') // '2.0.0'",
-									"normalize_version_for_comparison('*') // '*'"
+									"```ts\nnormalize_version_for_comparison('^1.2.3') // '1.2.3'\n```",
+									"```ts\nnormalize_version_for_comparison('>=2.0.0') // '2.0.0'\n```",
+									"```ts\nnormalize_version_for_comparison('*') // '*'\n```"
 								],
-								"source_line": 32,
+								"source_line": 41,
 								"type_signature": "(version: string): string",
 								"return_type": "string",
 								"parameters": [{"name": "version", "type": "string"}]
@@ -45433,7 +46505,7 @@
 							{
 								"name": "needs_update",
 								"kind": "function",
-								"source_line": 45,
+								"source_line": 54,
 								"type_signature": "(current: string, new_version: string): boolean",
 								"return_type": "boolean",
 								"parameters": [
@@ -45445,7 +46517,7 @@
 								"name": "get_update_prefix",
 								"kind": "function",
 								"doc_comment": "Determines version prefix to use when updating dependencies.\n\nStrategy:\n- Wildcard (*): Use caret (^) as default\n- Has existing prefix: Preserve it (^, ~, >=, <=, etc)\n- No prefix: Use default_strategy\n\nThis preserves user intent while handling wildcard replacements sensibly.",
-								"source_line": 68,
+								"source_line": 77,
 								"type_signature": "(current_version: string, default_strategy?: \"\" | \"^\" | \"~\" | \">=\"): string",
 								"return_type": "string",
 								"parameters": [
@@ -45462,7 +46534,7 @@
 								"name": "is_breaking_change",
 								"kind": "function",
 								"doc_comment": "Determines if a bump is a breaking change based on semver rules.\nPre-1.0: minor bumps are breaking\n1.0+: major bumps are breaking",
-								"source_line": 92,
+								"source_line": 101,
 								"type_signature": "(old_version: string, bump_type: \"major\" | \"minor\" | \"patch\"): boolean",
 								"return_type": "boolean",
 								"parameters": [
@@ -45473,7 +46545,7 @@
 							{
 								"name": "detect_bump_type",
 								"kind": "function",
-								"source_line": 108,
+								"source_line": 117,
 								"type_signature": "(old_version: string, new_version: string): \"major\" | \"minor\" | \"patch\"",
 								"return_type": "\"major\" | \"minor\" | \"patch\"",
 								"parameters": [
@@ -45485,7 +46557,7 @@
 								"name": "compare_bump_types",
 								"kind": "function",
 								"doc_comment": "Compares bump types. Returns positive if a > b, negative if a < b, 0 if equal.",
-								"source_line": 123,
+								"source_line": 132,
 								"type_signature": "(a: BumpType, b: BumpType): number",
 								"return_type": "number",
 								"parameters": [
@@ -45496,7 +46568,7 @@
 							{
 								"name": "calculate_next_version",
 								"kind": "function",
-								"source_line": 132,
+								"source_line": 141,
 								"type_signature": "(current_version: string, bump_type: BumpType): string",
 								"return_type": "string",
 								"parameters": [
@@ -45562,28 +46634,35 @@
 				"type": "module",
 				"engines": {"node": ">=22.15"},
 				"devDependencies": {
-					"@fuzdev/fuz_blog": "^0.23.0",
-					"@fuzdev/fuz_code": "^0.41.0",
-					"@fuzdev/fuz_css": "^0.47.0",
+					"@fuzdev/fuz_blog": "^0.24.0",
+					"@fuzdev/fuz_code": "^0.45.0",
+					"@fuzdev/fuz_css": "^0.49.1",
 					"@fuzdev/fuz_mastodon": "^0.39.0",
-					"@fuzdev/fuz_ui": "^0.181.1",
-					"@fuzdev/fuz_util": "^0.48.3",
+					"@fuzdev/fuz_ui": "^0.183.1",
+					"@fuzdev/fuz_util": "^0.50.1",
+					"@fuzdev/gro": "^0.192.1",
+					"@jridgewell/trace-mapping": "^0.3.31",
 					"@ryanatkn/eslint-config": "^0.9.0",
-					"@ryanatkn/gro": "^0.190.0",
 					"@sveltejs/adapter-static": "^3.0.10",
 					"@sveltejs/kit": "^2.50.1",
 					"@sveltejs/vite-plugin-svelte": "^6.2.4",
+					"@types/estree": "^1.0.8",
 					"@webref/css": "^8.2.0",
 					"eslint": "^9.39.1",
 					"eslint-plugin-svelte": "^3.13.1",
+					"esm-env": "^1.2.2",
+					"magic-string": "^0.30.21",
 					"prettier": "^3.7.4",
 					"prettier-plugin-svelte": "^3.4.1",
 					"svelte": "^5.49.1",
 					"svelte-check": "^4.3.5",
+					"svelte2tsx": "^0.7.47",
 					"tslib": "^2.8.1",
 					"typescript": "^5.9.3",
 					"typescript-eslint": "^8.48.1",
-					"vitest": "^4.0.15"
+					"vitest": "^4.0.15",
+					"zimmerframe": "^1.1.4",
+					"zod": "^4.3.6"
 				},
 				"prettier": {
 					"plugins": ["prettier-plugin-svelte"],
@@ -45877,34 +46956,39 @@
 				"type": "module",
 				"engines": {"node": ">=22.15"},
 				"devDependencies": {
-					"@fuzdev/fuz_blog": "^0.23.0",
-					"@fuzdev/fuz_code": "^0.41.0",
-					"@fuzdev/fuz_css": "^0.47.0",
-					"@fuzdev/fuz_gitops": "^0.64.0",
+					"@fuzdev/fuz_blog": "^0.24.0",
+					"@fuzdev/fuz_code": "^0.45.0",
+					"@fuzdev/fuz_css": "^0.49.1",
+					"@fuzdev/fuz_gitops": "^0.65.0",
 					"@fuzdev/fuz_mastodon": "^0.39.0",
-					"@fuzdev/fuz_ui": "^0.181.1",
-					"@fuzdev/fuz_util": "^0.48.3",
+					"@fuzdev/fuz_ui": "^0.183.1",
+					"@fuzdev/fuz_util": "^0.50.1",
+					"@fuzdev/gro": "^0.192.1",
+					"@jridgewell/trace-mapping": "^0.3.31",
 					"@prettier/plugin-xml": "^3.4.2",
 					"@ryanatkn/eslint-config": "^0.9.0",
-					"@ryanatkn/gro": "^0.190.0",
 					"@sveltejs/adapter-static": "^3.0.10",
 					"@sveltejs/kit": "^2.50.1",
 					"@sveltejs/vite-plugin-svelte": "^6.2.4",
+					"@types/estree": "^1.0.8",
 					"@types/node": "^24.10.1",
 					"@webref/css": "^8.2.0",
 					"date-fns": "^4.1.0",
 					"eslint": "^9.39.1",
 					"eslint-plugin-svelte": "^3.13.1",
 					"esm-env": "^1.2.2",
+					"magic-string": "^0.30.21",
 					"prettier": "^3.7.4",
 					"prettier-plugin-svelte": "^3.4.1",
 					"svelte": "^5.49.1",
 					"svelte-check": "^4.3.5",
+					"svelte2tsx": "^0.7.47",
 					"tslib": "^2.8.1",
 					"typescript": "^5.9.3",
 					"typescript-eslint": "^8.48.1",
 					"vitest": "^4.0.15",
-					"zod": "^4.1.13"
+					"zimmerframe": "^1.1.4",
+					"zod": "^4.3.6"
 				},
 				"prettier": {
 					"plugins": ["prettier-plugin-svelte", "@prettier/plugin-xml"],
@@ -45990,25 +47074,33 @@
 				"type": "module",
 				"engines": {"node": ">=22.15"},
 				"devDependencies": {
-					"@fuzdev/fuz_css": "^0.47.0",
-					"@fuzdev/fuz_ui": "^0.181.1",
-					"@fuzdev/fuz_util": "^0.48.3",
+					"@fuzdev/fuz_code": "^0.45.0",
+					"@fuzdev/fuz_css": "^0.49.1",
+					"@fuzdev/fuz_ui": "^0.183.1",
+					"@fuzdev/fuz_util": "^0.50.1",
+					"@fuzdev/gro": "^0.192.1",
+					"@jridgewell/trace-mapping": "^0.3.31",
 					"@ryanatkn/eslint-config": "^0.9.0",
-					"@ryanatkn/gro": "^0.190.0",
 					"@sveltejs/adapter-static": "^3.0.10",
 					"@sveltejs/kit": "^2.50.1",
 					"@sveltejs/vite-plugin-svelte": "^6.2.4",
+					"@types/estree": "^1.0.8",
 					"@webref/css": "^8.2.0",
 					"eslint": "^9.39.1",
 					"eslint-plugin-svelte": "^3.13.1",
+					"esm-env": "^1.2.2",
+					"magic-string": "^0.30.21",
 					"prettier": "^3.7.4",
 					"prettier-plugin-svelte": "^3.4.1",
 					"svelte": "^5.49.1",
 					"svelte-check": "^4.3.6",
+					"svelte2tsx": "^0.7.47",
 					"tslib": "^2.8.1",
 					"typescript": "^5.9.3",
 					"typescript-eslint": "^8.48.1",
-					"vitest": "^4.0.15"
+					"vitest": "^4.0.15",
+					"zimmerframe": "^1.1.4",
+					"zod": "^4.3.6"
 				},
 				"prettier": {
 					"plugins": ["prettier-plugin-svelte"],
