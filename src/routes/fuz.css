@@ -95,8 +95,6 @@
 	--duration_5: 1.5s;
 	--fg_10: var(--darken_10);
 	--fg_20: var(--darken_20);
-	--fg_50: var(--darken_50);
-	--fg_70: var(--darken_70);
 	--font_family_mono: ui-monospace, 'Fira Mono', monospace;
 	--font_family_sans:
 		system-ui, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
@@ -261,8 +259,6 @@
 	--color_j_50: hsl(var(--hue_j) 55% 54%);
 	--fg_10: var(--lighten_10);
 	--fg_20: var(--lighten_20);
-	--fg_50: var(--lighten_50);
-	--fg_70: var(--lighten_70);
 	--link_color: hsl(var(--hue_a) 61% 58%);
 	--shade_00: hsl(var(--tint_hue) var(--tint_saturation) 6%);
 	--shade_10: hsl(var(--tint_hue) var(--tint_saturation) 12%);

@@ -33,7 +33,7 @@
 			<span class="p-category" hidden aria-hidden="true">UX</span>
 			<header>
 				<div class="circular shadow_md"><Me /></div>
-				<blockquote class="shade_00 shadow_xs ml_md mt_md">
+				<blockquote class="unstyled panel shade_00 shadow_xs ml_md mt_md">
 					welcome to the homepage<br />
 					of <span class="p-name">Ryan Atkinson</span>, he's<br />
 					an <span class="p-role">independent software developer</span><br />
