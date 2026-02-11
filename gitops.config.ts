@@ -6,7 +6,7 @@ const config: CreateGitopsConfig = () => {
 			'https://github.com/fuzdev/zzz',
 			'https://github.com/fuzdev/fuz_css',
 			'https://github.com/fuzdev/fuz_ui',
-			'https://github.com/ryanatkn/gro',
+			'https://github.com/fuzdev/gro',
 			'https://github.com/fuzdev/fuz_util',
 			'https://github.com/fuzdev/fuz_template',
 			'https://github.com/fuzdev/fuz_blog',

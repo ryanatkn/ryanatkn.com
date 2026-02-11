@@ -13,12 +13,12 @@ npm i
 # then
 npm run dev
 # or
-gro dev # npm i -g @ryanatkn/gro
+gro dev # npm i -g @fuzdev/gro
 ```
 
 See [SvelteKit](https://github.com/sveltejs/kit),
 [Vite](https://github.com/vitejs/vite),
-and [Gro](https://github.com/ryanatkn/gro) for more.
+and [Gro](https://github.com/fuzdev/gro) for more.
 
 ## build
 
@@ -30,7 +30,7 @@ gro build
 
 ## deploy
 
-[Deploy](https://github.com/ryanatkn/gro/blob/main/src/docs/deploy.md)
+[Deploy](https://github.com/fuzdev/gro/blob/main/src/docs/deploy.md)
 (build, commit, and push) to the `deploy` branch, e.g. for GitHub Pages:
 
 ```bash
@@ -46,7 +46,7 @@ gro deploy
 [SvelteKit](https://github.com/sveltejs/kit) ∙
 [Vite](https://github.com/vitejs/vite) ∙
 [esbuild](https://github.com/evanw/esbuild) ∙
-[Gro](https://github.com/ryanatkn/gro) ∙
+[Gro](https://github.com/fuzdev/gro) ∙
 [Fuz](https://github.com/fuzdev/fuz_ui) ∙
 [fuz_css](https://github.com/fuzdev/fuz_css) ∙
 [ESLint](https://github.com/eslint/eslint) ∙

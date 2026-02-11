@@ -51,12 +51,12 @@ export const projects: Array<ProjectInfo> = [
 	},
 	{
 		name: 'gro',
-		repo: '@ryanatkn/gro',
-		title: '<a href="https://github.com/ryanatkn/gro">Gro</a>',
+		repo: '@fuzdev/gro',
+		title: '<a href="https://github.com/fuzdev/gro">Gro</a>',
 		description:
 			'task runner and toolkit extending <a href="https://kit.svelte.dev/">SvelteKit</a>',
 		subtitle:
-			'<a class="chip" href="https://github.com/ryanatkn/gro">source</a> <a class="chip" href="https://www.npmjs.com/package/@ryanatkn/gro">npm</a>',
+			'<a class="chip" href="https://github.com/fuzdev/gro">source</a> <a class="chip" href="https://www.npmjs.com/package/@fuzdev/gro">npm</a>',
 	},
 	{
 		name: 'fuz_util',
