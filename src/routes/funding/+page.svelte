@@ -29,7 +29,8 @@
 				fund my work on free and open source software. If you enjoy my output and want more of it,
 				donations are helpful in two ways, 1) because money buys me time to develop free software,
 				and 2) because it's a strong signal that boosts my case for getting more funding, from both
-				users like you and maybe grants/sponsorships/fellowships to support my open source work.
+				users like you and maybe grants/sponsorships(no ad-reads)/fellowships to support my open
+				source work.
 			</p>
 			<aside>
 				Stars on GitHub are also a helpful show of appreciation 💫 <a
