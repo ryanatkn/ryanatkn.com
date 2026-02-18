@@ -132,8 +132,8 @@
 				access to websites I build on camera, maybe in 2026.
 			</p>
 			<p>
-				I hope to continue having fun building useful software, and to find collaborators around
-				these ideas and technologies as I work in public. See the <a href={resolve('/tree')}
+				I hope to continue having fun building useful software, and to find users and collaborators
+				around these ideas and technologies as I work in public. See the <a href={resolve('/tree')}
 					>repos</a
 				> for the code and discussions.
 			</p>
