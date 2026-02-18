@@ -43,18 +43,18 @@
 				>
 				and
 				<a href="https://github.com/fuzdev">github.com/fuzdev</a>. It's a set of tools to build
-				websites and powerful systems, and direct computers in general. It's build for user control,
+				websites and powerful systems, and direct computers in general. It's built for user control,
 				security, and interoperability, and idealizes an integrated system of a particular taste.
 				(TypeScript/Svelte/Rust/Postgres/Linux)
 			</p>
 			<p>
-				My plan for Fuz is to have it stewarded by some kind of a nonprofit, but that would require
-				a community to form first, users using the software. Before LLMs I thought a community
-				forming was a likely outcome, but who knows any more! (sighhh lol). I think my independence
-				allows me to make software with a different set of values from the norm, which isn't a
-				lucrative path but I find it going to interesting places. So I like what I'm doing and want
-				noncommerical projects like Fuz to exist, but I'm still figuring out how to make it
-				sustainable.
+				My plan for Fuz and its related projects is to have them stewarded by some kind of a
+				nonprofit, but that would require a community to form first, users using the software.
+				Before LLMs I thought a community forming was a likely outcome, but who knows any more!
+				¯\_(ツ)_/¯ I think my independence allows me to make software with a different set of values
+				from the norm, not a lucrative path but I find it going interesting places. So I like what
+				I'm doing and want noncommerical projects like Fuz to exist, but I'm still figuring out how
+				to make it sustainable and more collaborative.
 			</p>
 			<p>
 				Today my attention is on these projects, parts of a stack I plan to use to make other
@@ -68,9 +68,7 @@
 					<a href="https://css.fuz.dev/">fuz_css</a> - CSS framework and design system
 				</li>
 				<li><a href="https://ui.fuz.dev/">fuz_ui</a> - Svelte UI library</li>
-				<li>
-					<a href="https://gro.ryanatkn.com/">Gro</a> - task runner and toolkit extending SvelteKit
-				</li>
+				<li>several unreleased projects coming soon</li>
 			</ul>
 			<p>
 				More on my <a href="https://github.com/ryanatkn">GitHub profile</a> and
@@ -113,8 +111,8 @@
 			</p>
 			<p>
 				I love the web for its global accessibility, high capability, backwards compatibility, and
-				gatekeeper optionality, and the software is shaping up nicely, although the scope is really
-				big and it's stretching me thin. More
+				gatekeeper optionality, and I think the software I'm building for it is shaping up nicely,
+				although the scope is really big, and it'll take time to fully realize. More
 				<a href={resolve('/about')}>about me</a>.
 			</p>
 			<p>
