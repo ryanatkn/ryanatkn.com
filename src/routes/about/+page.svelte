@@ -55,7 +55,7 @@
 		</div>
 		<p>More:</p>
 		<ul>
-			<li>using mostly Rust, TypeScript (Deno!), and Svelte</li>
+			<li>using mostly Rust, TypeScript, and Svelte</li>
 			<li>
 				in 2019 I started doing full-time open source, publishing <a
 					href="https://github.com/ryanatkn">my code</a
