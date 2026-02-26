@@ -27,10 +27,7 @@
 			<p>
 				Hi thank you for reading. I'm an independent software developer and this is an attempt to
 				fund my work on free and open source software. If you enjoy my output and want more of it,
-				donations are helpful in two ways, 1) because money buys me time to develop free software,
-				and 2) because it's a strong signal that boosts my case for getting more funding, from both
-				users like you and maybe grants/sponsorships(no ad-reads)/fellowships to support my open
-				source work.
+				donate here to sustain the effort.
 			</p>
 			<aside>
 				Stars on GitHub are also a helpful show of appreciation 💫 <a
