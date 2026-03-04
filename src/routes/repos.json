@@ -33711,7 +33711,7 @@
 								"name": "SveltePackageOptions",
 								"kind": "type",
 								"doc_comment": "Options to the SvelteKit packaging CLI.",
-								"see_also": ["https://kit.svelte.dev/docs/packaging#options"],
+								"see_also": ["https://svelte.dev/docs/kit/packaging#Options"],
 								"source_line": 104,
 								"type_signature": "SveltePackageOptions",
 								"properties": [
