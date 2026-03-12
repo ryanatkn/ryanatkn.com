@@ -5,7 +5,7 @@ export interface ProjectInfo {
 	homepage?: string;
 	title: string;
 	description?: string;
-	motto?: string;
+	tagline?: string;
 	glyph?: string;
 	subtitle?: string;
 	logo?: string;

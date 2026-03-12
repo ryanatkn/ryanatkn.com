@@ -15,7 +15,7 @@
 				"name": "@fuzdev/zzz",
 				"version": "0.0.1",
 				"description": "local-first forge for power users and devs",
-				"motto": "nice web things for the tired",
+				"tagline": "nice web things for the tired",
 				"glyph": "💤",
 				"logo": "logo.svg",
 				"logo_alt": "three sleepy z's",
@@ -17055,7 +17055,7 @@
 				"name": "@fuzdev/fuz_css",
 				"version": "0.49.1",
 				"description": "CSS framework and design system for semantic HTML",
-				"motto": "CSS with more utility",
+				"tagline": "CSS with more utility",
 				"glyph": "🪴",
 				"logo": "logo.svg",
 				"logo_alt": "a fuzzy tuft of green moss",
@@ -23815,7 +23815,7 @@
 				"name": "@fuzdev/fuz_ui",
 				"version": "0.183.1",
 				"description": "Svelte UI library",
-				"motto": "friendly user zystem",
+				"tagline": "friendly user zystem",
 				"glyph": "🧶",
 				"logo": "logo.svg",
 				"logo_alt": "a friendly brown spider facing you",
@@ -24497,7 +24497,7 @@
 								"source_line": 1
 							}
 						],
-						"dependencies": ["themer.svelte.ts"]
+						"dependencies": ["theme_state.svelte.ts"]
 					},
 					{
 						"path": "constants.ts",
@@ -24531,7 +24531,7 @@
 							"library.svelte.ts",
 							"mdz_components.ts",
 							"style_variable_helpers.svelte.ts",
-							"themer.svelte.ts",
+							"theme_state.svelte.ts",
 							"tome.ts"
 						]
 					},
@@ -25321,10 +25321,10 @@
 						]
 					},
 					{
-						"path": "csp_of_ryanatkn.ts",
+						"path": "csp_of_fuzdev.ts",
 						"declarations": [
 							{
-								"name": "csp_trusted_sources_of_ryanatkn",
+								"name": "csp_trusted_sources_of_fuzdev",
 								"kind": "variable",
 								"doc_comment": "Trusted sources owned by ryanatkn.",
 								"source_line": 6,
@@ -27027,12 +27027,12 @@
 								"kind": "function",
 								"doc_comment": "Generate the library.json and library.ts file contents.\nParses at generation time so runtime only needs the pre-computed result.\n\nReturns JSON + .ts wrapper because:\n- JSON is natively importable by Node.js and Vite without TypeScript loaders\n- Works in CI environments that don't have TS compilation\n- The .ts wrapper validates with zod and exports with proper types\n  (JSON imports get widened types like `string` instead of literal unions)",
 								"source_line": 38,
-								"type_signature": "(package_json: { [x: string]: unknown; name: string; version: string; private?: boolean | undefined; description?: string | undefined; motto?: string | undefined; glyph?: string | undefined; logo?: string | undefined; ... 23 more ...; exports?: string | ... 2 more ... | undefined; }, source_json: { ...; }): LibraryOutputResult",
+								"type_signature": "(package_json: { [x: string]: unknown; name: string; version: string; private?: boolean | undefined; description?: string | undefined; tagline?: string | undefined; glyph?: string | undefined; logo?: string | undefined; ... 23 more ...; exports?: string | ... 2 more ... | undefined; }, source_json: { ...; }): LibraryOutputResult",
 								"return_type": "LibraryOutputResult",
 								"parameters": [
 									{
 										"name": "package_json",
-										"type": "{ [x: string]: unknown; name: string; version: string; private?: boolean | undefined; description?: string | undefined; motto?: string | undefined; glyph?: string | undefined; logo?: string | undefined; ... 23 more ...; exports?: string | ... 2 more ... | undefined; }"
+										"type": "{ [x: string]: unknown; name: string; version: string; private?: boolean | undefined; description?: string | undefined; tagline?: string | undefined; glyph?: string | undefined; logo?: string | undefined; ... 23 more ...; exports?: string | ... 2 more ... | undefined; }"
 									},
 									{
 										"name": "source_json",
@@ -27302,7 +27302,7 @@
 										"type": "Snippet<[description: string]>",
 										"optional": true
 									},
-									{"name": "motto", "type": "Snippet<[description: string]>", "optional": true},
+									{"name": "tagline", "type": "Snippet<[description: string]>", "optional": true},
 									{"name": "npm_url", "type": "Snippet<[npm_url: string]>", "optional": true},
 									{
 										"name": "homepage_url",
@@ -27337,8 +27337,8 @@
 										"optional": true
 									},
 									{
-										"name": "motto",
-										"type": "Snippet<[motto: string, glyph?: string]>",
+										"name": "tagline",
+										"type": "Snippet<[tagline: string, glyph?: string]>",
 										"optional": true
 									},
 									{
@@ -28333,13 +28333,13 @@
 								"kind": "function",
 								"doc_comment": "Check if a package is published to npm.\n\nA package is considered published if:\n- It's not marked as private\n- It has exports defined\n- Its version is not the initial '0.0.1'",
 								"source_line": 121,
-								"type_signature": "(package_json: { [x: string]: unknown; name: string; version: string; private?: boolean | undefined; description?: string | undefined; motto?: string | undefined; glyph?: string | undefined; logo?: string | undefined; ... 23 more ...; exports?: string | ... 2 more ... | undefined; }): boolean",
+								"type_signature": "(package_json: { [x: string]: unknown; name: string; version: string; private?: boolean | undefined; description?: string | undefined; tagline?: string | undefined; glyph?: string | undefined; logo?: string | undefined; ... 23 more ...; exports?: string | ... 2 more ... | undefined; }): boolean",
 								"return_type": "boolean",
 								"return_description": "True if the package appears to be published",
 								"parameters": [
 									{
 										"name": "package_json",
-										"type": "{ [x: string]: unknown; name: string; version: string; private?: boolean | undefined; description?: string | undefined; motto?: string | undefined; glyph?: string | undefined; logo?: string | undefined; ... 23 more ...; exports?: string | ... 2 more ... | undefined; }",
+										"type": "{ [x: string]: unknown; name: string; version: string; private?: boolean | undefined; description?: string | undefined; tagline?: string | undefined; glyph?: string | undefined; logo?: string | undefined; ... 23 more ...; exports?: string | ... 2 more ... | undefined; }",
 										"description": "The package.json object to check"
 									}
 								]
@@ -28514,7 +28514,7 @@
 								]
 							}
 						],
-						"dependents": ["Themed.svelte"]
+						"dependents": ["ThemeRoot.svelte"]
 					},
 					{
 						"path": "Spiders.svelte",
@@ -28573,7 +28573,7 @@
 								]
 							}
 						],
-						"dependents": ["themer.svelte.ts"]
+						"dependents": ["theme_state.svelte.ts"]
 					},
 					{
 						"path": "style_variable_helpers.svelte.ts",
@@ -28909,10 +28909,10 @@
 						"dependents": ["Dialog.svelte"]
 					},
 					{
-						"path": "Themed.svelte",
+						"path": "ThemeRoot.svelte",
 						"declarations": [
 							{
-								"name": "Themed",
+								"name": "ThemeRoot",
 								"kind": "component",
 								"props": [
 									{
@@ -28934,21 +28934,21 @@
 									{"name": "save_theme", "type": "typeof default_save_theme", "optional": true},
 									{"name": "theme_fallback", "type": "Theme | undefined", "optional": true},
 									{
-										"name": "themer",
-										"type": "Themer",
+										"name": "theme_state",
+										"type": "ThemeState",
 										"optional": true,
 										"description": "A reactive class containing the selected theme and color scheme.\nDefaults to the first default theme.\nThe class reference is not reactive\nbecause it's set in context without a wrapper, use `{#key theme}` if it changes."
 									},
 									{
 										"name": "children",
-										"type": "Snippet<[themer: Themer, style: string | null, theme_style_html: string | null]>"
+										"type": "Snippet<[theme_state: ThemeState, style: string | null, theme_style_html: string | null]>"
 									}
 								],
 								"source_line": 1
 							}
 						],
-						"module_comment": "`Themed` adds global color scheme and theme support to the page.\nIt also sets in the Svelte context a reactive `themer` containing the theme and color scheme.",
-						"dependencies": ["rune_helpers.svelte.ts", "themer.svelte.ts"]
+						"module_comment": "`ThemeRoot` adds global color scheme and theme support to the page.\nIt also sets in the Svelte context a reactive `theme_state` containing the theme and color scheme.",
+						"dependencies": ["rune_helpers.svelte.ts", "theme_state.svelte.ts"]
 					},
 					{
 						"path": "ThemeInput.svelte",
@@ -28971,29 +28971,29 @@
 								"source_line": 1
 							}
 						],
-						"dependencies": ["themer.svelte.ts"]
+						"dependencies": ["theme_state.svelte.ts"]
 					},
 					{
-						"path": "themer.svelte.ts",
+						"path": "theme_state.svelte.ts",
 						"declarations": [
 							{
-								"name": "ThemerJson",
+								"name": "ThemeStateJson",
 								"kind": "type",
 								"source_line": 8,
-								"type_signature": "ThemerJson",
+								"type_signature": "ThemeStateJson",
 								"properties": [
 									{"name": "theme", "kind": "variable", "type_signature": "Theme"},
 									{"name": "color_scheme", "kind": "variable", "type_signature": "ColorScheme"}
 								]
 							},
 							{
-								"name": "ThemerOptions",
+								"name": "ThemeStateOptions",
 								"kind": "type",
 								"source_line": 13,
-								"type_signature": "Partial<ThemerJson>"
+								"type_signature": "Partial<ThemeStateJson>"
 							},
 							{
-								"name": "Themer",
+								"name": "ThemeState",
 								"kind": "class",
 								"source_line": 15,
 								"members": [
@@ -29002,11 +29002,11 @@
 									{
 										"name": "constructor",
 										"kind": "constructor",
-										"type_signature": "(options?: Partial<ThemerJson> | undefined): Themer",
+										"type_signature": "(options?: Partial<ThemeStateJson> | undefined): ThemeState",
 										"parameters": [
 											{
 												"name": "options",
-												"type": "Partial<ThemerJson> | undefined",
+												"type": "Partial<ThemeStateJson> | undefined",
 												"optional": true
 											}
 										]
@@ -29014,17 +29014,17 @@
 									{
 										"name": "toJSON",
 										"kind": "function",
-										"type_signature": "(): ThemerJson",
-										"return_type": "ThemerJson",
+										"type_signature": "(): ThemeStateJson",
+										"return_type": "ThemeStateJson",
 										"parameters": []
 									}
 								]
 							},
 							{
-								"name": "themer_context",
+								"name": "theme_state_context",
 								"kind": "variable",
 								"source_line": 36,
-								"type_signature": "{ get: (error_message?: string | undefined) => Themer; get_maybe: () => Themer | undefined; set: (value: Themer) => Themer; }"
+								"type_signature": "{ get: (error_message?: string | undefined) => ThemeState; get_maybe: () => ThemeState | undefined; set: (value: ThemeState) => ThemeState; }"
 							},
 							{
 								"name": "sync_color_scheme",
@@ -29092,7 +29092,7 @@
 							}
 						],
 						"dependencies": ["context_helpers.ts", "storage.ts"],
-						"dependents": ["ColorSchemeInput.svelte", "ThemeInput.svelte", "Themed.svelte"]
+						"dependents": ["ColorSchemeInput.svelte", "ThemeInput.svelte", "ThemeRoot.svelte"]
 					},
 					{
 						"path": "tome.ts",
@@ -29830,7 +29830,7 @@
 				"name": "@fuzdev/gro",
 				"version": "0.192.1",
 				"description": "task runner and toolkit extending SvelteKit",
-				"motto": "generate, run, optimize",
+				"tagline": "generate, run, optimize",
 				"glyph": "🌰",
 				"logo": "logo.svg",
 				"logo_alt": "a pixelated green oak acorn with a glint of sun",
@@ -32648,14 +32648,14 @@
 								"name": "PACKAGE_JSON_EMPTY",
 								"kind": "variable",
 								"source_line": 27,
-								"type_signature": "{ [x: string]: unknown; name: string; version: string; private?: boolean | undefined; description?: string | undefined; motto?: string | undefined; glyph?: string | undefined; logo?: string | undefined; ... 23 more ...; exports?: string | ... 2 more ... | undefined; }"
+								"type_signature": "{ [x: string]: unknown; name: string; version: string; private?: boolean | undefined; description?: string | undefined; tagline?: string | undefined; glyph?: string | undefined; logo?: string | undefined; ... 23 more ...; exports?: string | ... 2 more ... | undefined; }"
 							},
 							{
 								"name": "package_json_load",
 								"kind": "function",
 								"source_line": 29,
-								"type_signature": "(dir?: string, cache?: Record<string, { [x: string]: unknown; name: string; version: string; private?: boolean | undefined; description?: string | undefined; motto?: string | undefined; glyph?: string | undefined; ... 24 more ...; exports?: string | ... 2 more ... | undefined; }> | undefined, parse?: boolean, log?: Logger | undefined): Promise<...>",
-								"return_type": "Promise<{ [x: string]: unknown; name: string; version: string; private?: boolean | undefined; description?: string | undefined; motto?: string | undefined; glyph?: string | undefined; logo?: string | undefined; ... 23 more ...; exports?: string | ... 2 more ... | undefined; }>",
+								"type_signature": "(dir?: string, cache?: Record<string, { [x: string]: unknown; name: string; version: string; private?: boolean | undefined; description?: string | undefined; tagline?: string | undefined; glyph?: string | undefined; ... 24 more ...; exports?: string | ... 2 more ... | undefined; }> | undefined, parse?: boolean, log?: Logger | undefined): Promise<...>",
+								"return_type": "Promise<{ [x: string]: unknown; name: string; version: string; private?: boolean | undefined; description?: string | undefined; tagline?: string | undefined; glyph?: string | undefined; logo?: string | undefined; ... 23 more ...; exports?: string | ... 2 more ... | undefined; }>",
 								"parameters": [
 									{
 										"name": "dir",
@@ -32664,7 +32664,7 @@
 									},
 									{
 										"name": "cache",
-										"type": "Record<string, { [x: string]: unknown; name: string; version: string; private?: boolean | undefined; description?: string | undefined; motto?: string | undefined; glyph?: string | undefined; logo?: string | undefined; ... 23 more ...; exports?: string | ... 2 more ... | undefined; }> | undefined",
+										"type": "Record<string, { [x: string]: unknown; name: string; version: string; private?: boolean | undefined; description?: string | undefined; tagline?: string | undefined; glyph?: string | undefined; logo?: string | undefined; ... 23 more ...; exports?: string | ... 2 more ... | undefined; }> | undefined",
 										"optional": true
 									},
 									{"name": "parse", "type": "boolean", "default_value": "true"},
@@ -32676,7 +32676,7 @@
 								"kind": "function",
 								"source_line": 54,
 								"type_signature": "(map_package_json: PackageJsonMapper, log: Logger, write?: boolean, dir?: string, exports_dir?: string): Promise<{ package_json: { [x: string]: unknown; name: string; version: string; ... 28 more ...; exports?: string | ... 2 more ... | undefined; } | null; changed: boolean; }>",
-								"return_type": "Promise<{ package_json: { [x: string]: unknown; name: string; version: string; private?: boolean | undefined; description?: string | undefined; motto?: string | undefined; glyph?: string | undefined; ... 24 more ...; exports?: string | ... 2 more ... | undefined; } | null; changed: boolean; }>",
+								"return_type": "Promise<{ package_json: { [x: string]: unknown; name: string; version: string; private?: boolean | undefined; description?: string | undefined; tagline?: string | undefined; glyph?: string | undefined; ... 24 more ...; exports?: string | ... 2 more ... | undefined; } | null; changed: boolean; }>",
 								"parameters": [
 									{"name": "map_package_json", "type": "PackageJsonMapper"},
 									{"name": "log", "type": "Logger"},
@@ -32689,8 +32689,8 @@
 								"name": "package_json_load_for_gro",
 								"kind": "function",
 								"source_line": 88,
-								"type_signature": "(): Promise<{ [x: string]: unknown; name: string; version: string; private?: boolean | undefined; description?: string | undefined; motto?: string | undefined; glyph?: string | undefined; logo?: string | undefined; ... 23 more ...; exports?: string | ... 2 more ... | undefined; }>",
-								"return_type": "Promise<{ [x: string]: unknown; name: string; version: string; private?: boolean | undefined; description?: string | undefined; motto?: string | undefined; glyph?: string | undefined; logo?: string | undefined; ... 23 more ...; exports?: string | ... 2 more ... | undefined; }>",
+								"type_signature": "(): Promise<{ [x: string]: unknown; name: string; version: string; private?: boolean | undefined; description?: string | undefined; tagline?: string | undefined; glyph?: string | undefined; logo?: string | undefined; ... 23 more ...; exports?: string | ... 2 more ... | undefined; }>",
+								"return_type": "Promise<{ [x: string]: unknown; name: string; version: string; private?: boolean | undefined; description?: string | undefined; tagline?: string | undefined; glyph?: string | undefined; logo?: string | undefined; ... 23 more ...; exports?: string | ... 2 more ... | undefined; }>",
 								"parameters": []
 							},
 							{
@@ -32705,12 +32705,12 @@
 								"name": "package_json_serialize",
 								"kind": "function",
 								"source_line": 98,
-								"type_signature": "(package_json: { [x: string]: unknown; name: string; version: string; private?: boolean | undefined; description?: string | undefined; motto?: string | undefined; glyph?: string | undefined; logo?: string | undefined; ... 23 more ...; exports?: string | ... 2 more ... | undefined; }): string",
+								"type_signature": "(package_json: { [x: string]: unknown; name: string; version: string; private?: boolean | undefined; description?: string | undefined; tagline?: string | undefined; glyph?: string | undefined; logo?: string | undefined; ... 23 more ...; exports?: string | ... 2 more ... | undefined; }): string",
 								"return_type": "string",
 								"parameters": [
 									{
 										"name": "package_json",
-										"type": "{ [x: string]: unknown; name: string; version: string; private?: boolean | undefined; description?: string | undefined; motto?: string | undefined; glyph?: string | undefined; logo?: string | undefined; ... 23 more ...; exports?: string | ... 2 more ... | undefined; }"
+										"type": "{ [x: string]: unknown; name: string; version: string; private?: boolean | undefined; description?: string | undefined; tagline?: string | undefined; glyph?: string | undefined; logo?: string | undefined; ... 23 more ...; exports?: string | ... 2 more ... | undefined; }"
 									}
 								]
 							},
@@ -32719,12 +32719,12 @@
 								"kind": "function",
 								"doc_comment": "Updates package.json. Writes to the filesystem only when contents change.",
 								"source_line": 104,
-								"type_signature": "(update: (package_json: { [x: string]: unknown; name: string; version: string; private?: boolean | undefined; description?: string | undefined; motto?: string | undefined; glyph?: string | undefined; logo?: string | undefined; ... 23 more ...; exports?: string | ... 2 more ... | undefined; }) => { ...; } | ... 1 more ... | null, dir?: string, write?: boolean): Promise<...>",
-								"return_type": "Promise<{ package_json: { [x: string]: unknown; name: string; version: string; private?: boolean | undefined; description?: string | undefined; motto?: string | undefined; glyph?: string | undefined; ... 24 more ...; exports?: string | ... 2 more ... | undefined; } | null; changed: boolean; }>",
+								"type_signature": "(update: (package_json: { [x: string]: unknown; name: string; version: string; private?: boolean | undefined; description?: string | undefined; tagline?: string | undefined; glyph?: string | undefined; logo?: string | undefined; ... 23 more ...; exports?: string | ... 2 more ... | undefined; }) => { ...; } | ... 1 more ... | null, dir?: string, write?: boolean): Promise<...>",
+								"return_type": "Promise<{ package_json: { [x: string]: unknown; name: string; version: string; private?: boolean | undefined; description?: string | undefined; tagline?: string | undefined; glyph?: string | undefined; ... 24 more ...; exports?: string | ... 2 more ... | undefined; } | null; changed: boolean; }>",
 								"parameters": [
 									{
 										"name": "update",
-										"type": "(package_json: { [x: string]: unknown; name: string; version: string; private?: boolean | undefined; description?: string | undefined; motto?: string | undefined; glyph?: string | undefined; logo?: string | undefined; ... 23 more ...; exports?: string | ... 2 more ... | undefined; }) => { ...; } | ... 1 more ... | n..."
+										"type": "(package_json: { [x: string]: unknown; name: string; version: string; private?: boolean | undefined; description?: string | undefined; tagline?: string | undefined; glyph?: string | undefined; logo?: string | undefined; ... 23 more ...; exports?: string | ... 2 more ... | undefined; }) => { ...; } | ... 1 more ... | n..."
 									},
 									{"name": "dir", "type": "string", "default_value": "paths.root"},
 									{"name": "write", "type": "boolean", "default_value": "true"}
@@ -32742,12 +32742,12 @@
 								"name": "package_json_parse_repo_url",
 								"kind": "function",
 								"source_line": 180,
-								"type_signature": "(package_json: { [x: string]: unknown; name: string; version: string; private?: boolean | undefined; description?: string | undefined; motto?: string | undefined; glyph?: string | undefined; logo?: string | undefined; ... 23 more ...; exports?: string | ... 2 more ... | undefined; }): { ...; } | undefined",
+								"type_signature": "(package_json: { [x: string]: unknown; name: string; version: string; private?: boolean | undefined; description?: string | undefined; tagline?: string | undefined; glyph?: string | undefined; logo?: string | undefined; ... 23 more ...; exports?: string | ... 2 more ... | undefined; }): { ...; } | undefined",
 								"return_type": "{ owner: string; repo: string; } | undefined",
 								"parameters": [
 									{
 										"name": "package_json",
-										"type": "{ [x: string]: unknown; name: string; version: string; private?: boolean | undefined; description?: string | undefined; motto?: string | undefined; glyph?: string | undefined; logo?: string | undefined; ... 23 more ...; exports?: string | ... 2 more ... | undefined; }"
+										"type": "{ [x: string]: unknown; name: string; version: string; private?: boolean | undefined; description?: string | undefined; tagline?: string | undefined; glyph?: string | undefined; logo?: string | undefined; ... 23 more ...; exports?: string | ... 2 more ... | undefined; }"
 									}
 								]
 							},
@@ -32755,13 +32755,13 @@
 								"name": "package_json_has_dependency",
 								"kind": "function",
 								"source_line": 228,
-								"type_signature": "(dep_name: string, package_json: { [x: string]: unknown; name: string; version: string; private?: boolean | undefined; description?: string | undefined; motto?: string | undefined; glyph?: string | undefined; ... 24 more ...; exports?: string | ... 2 more ... | undefined; }): boolean",
+								"type_signature": "(dep_name: string, package_json: { [x: string]: unknown; name: string; version: string; private?: boolean | undefined; description?: string | undefined; tagline?: string | undefined; glyph?: string | undefined; ... 24 more ...; exports?: string | ... 2 more ... | undefined; }): boolean",
 								"return_type": "boolean",
 								"parameters": [
 									{"name": "dep_name", "type": "string"},
 									{
 										"name": "package_json",
-										"type": "{ [x: string]: unknown; name: string; version: string; private?: boolean | undefined; description?: string | undefined; motto?: string | undefined; glyph?: string | undefined; logo?: string | undefined; ... 23 more ...; exports?: string | ... 2 more ... | undefined; }"
+										"type": "{ [x: string]: unknown; name: string; version: string; private?: boolean | undefined; description?: string | undefined; tagline?: string | undefined; glyph?: string | undefined; logo?: string | undefined; ... 23 more ...; exports?: string | ... 2 more ... | undefined; }"
 									}
 								]
 							},
@@ -32779,12 +32779,12 @@
 								"name": "package_json_extract_dependencies",
 								"kind": "function",
 								"source_line": 238,
-								"type_signature": "(package_json: { [x: string]: unknown; name: string; version: string; private?: boolean | undefined; description?: string | undefined; motto?: string | undefined; glyph?: string | undefined; logo?: string | undefined; ... 23 more ...; exports?: string | ... 2 more ... | undefined; }): PackageJsonDep[]",
+								"type_signature": "(package_json: { [x: string]: unknown; name: string; version: string; private?: boolean | undefined; description?: string | undefined; tagline?: string | undefined; glyph?: string | undefined; logo?: string | undefined; ... 23 more ...; exports?: string | ... 2 more ... | undefined; }): PackageJsonDep[]",
 								"return_type": "PackageJsonDep[]",
 								"parameters": [
 									{
 										"name": "package_json",
-										"type": "{ [x: string]: unknown; name: string; version: string; private?: boolean | undefined; description?: string | undefined; motto?: string | undefined; glyph?: string | undefined; logo?: string | undefined; ... 23 more ...; exports?: string | ... 2 more ... | undefined; }"
+										"type": "{ [x: string]: unknown; name: string; version: string; private?: boolean | undefined; description?: string | undefined; tagline?: string | undefined; glyph?: string | undefined; logo?: string | undefined; ... 23 more ...; exports?: string | ... 2 more ... | undefined; }"
 									}
 								]
 							}
@@ -33465,12 +33465,12 @@
 								"name": "source_json_create",
 								"kind": "function",
 								"source_line": 17,
-								"type_signature": "(package_json: { [x: string]: unknown; name: string; version: string; private?: boolean | undefined; description?: string | undefined; motto?: string | undefined; glyph?: string | undefined; logo?: string | undefined; ... 23 more ...; exports?: string | ... 2 more ... | undefined; }, lib_path?: string | undefined, log?: Logger | undefined): Promise<...>",
+								"type_signature": "(package_json: { [x: string]: unknown; name: string; version: string; private?: boolean | undefined; description?: string | undefined; tagline?: string | undefined; glyph?: string | undefined; logo?: string | undefined; ... 23 more ...; exports?: string | ... 2 more ... | undefined; }, lib_path?: string | undefined, log?: Logger | undefined): Promise<...>",
 								"return_type": "Promise<{ [x: string]: unknown; name: string; version: string; modules?: { [x: string]: unknown; path: string; declarations?: { [x: string]: unknown; name: string; kind: \"function\" | \"type\" | \"json\" | \"variable\" | \"class\" | \"constructor\" | \"component\" | \"css\"; ... 19 more ...; alias_of?: { ...; } | undefined; }[] | ...",
 								"parameters": [
 									{
 										"name": "package_json",
-										"type": "{ [x: string]: unknown; name: string; version: string; private?: boolean | undefined; description?: string | undefined; motto?: string | undefined; glyph?: string | undefined; logo?: string | undefined; ... 23 more ...; exports?: string | ... 2 more ... | undefined; }"
+										"type": "{ [x: string]: unknown; name: string; version: string; private?: boolean | undefined; description?: string | undefined; tagline?: string | undefined; glyph?: string | undefined; logo?: string | undefined; ... 23 more ...; exports?: string | ... 2 more ... | undefined; }"
 									},
 									{"name": "lib_path", "type": "string | undefined", "optional": true},
 									{"name": "log", "type": "Logger | undefined", "optional": true}
@@ -33647,12 +33647,12 @@
 								"name": "has_sveltekit_library",
 								"kind": "function",
 								"source_line": 31,
-								"type_signature": "(package_json: { [x: string]: unknown; name: string; version: string; private?: boolean | undefined; description?: string | undefined; motto?: string | undefined; glyph?: string | undefined; logo?: string | undefined; ... 23 more ...; exports?: string | ... 2 more ... | undefined; }, svelte_config?: ParsedSvelteConfig, dep_name?: string): Promise<...>",
+								"type_signature": "(package_json: { [x: string]: unknown; name: string; version: string; private?: boolean | undefined; description?: string | undefined; tagline?: string | undefined; glyph?: string | undefined; logo?: string | undefined; ... 23 more ...; exports?: string | ... 2 more ... | undefined; }, svelte_config?: ParsedSvelteConfig, dep_name?: string): Promise<...>",
 								"return_type": "Promise<Result<object, { message: string; }>>",
 								"parameters": [
 									{
 										"name": "package_json",
-										"type": "{ [x: string]: unknown; name: string; version: string; private?: boolean | undefined; description?: string | undefined; motto?: string | undefined; glyph?: string | undefined; logo?: string | undefined; ... 23 more ...; exports?: string | ... 2 more ... | undefined; }"
+										"type": "{ [x: string]: unknown; name: string; version: string; private?: boolean | undefined; description?: string | undefined; tagline?: string | undefined; glyph?: string | undefined; logo?: string | undefined; ... 23 more ...; exports?: string | ... 2 more ... | undefined; }"
 									},
 									{
 										"name": "svelte_config",
@@ -33775,12 +33775,12 @@
 								"name": "run_svelte_package",
 								"kind": "function",
 								"source_line": 150,
-								"type_signature": "(package_json: { [x: string]: unknown; name: string; version: string; private?: boolean | undefined; description?: string | undefined; motto?: string | undefined; glyph?: string | undefined; logo?: string | undefined; ... 23 more ...; exports?: string | ... 2 more ... | undefined; }, options: SveltePackageOptions | undefined, cli: string | Cli, log: Logger, pm_cli: string): Promise<...>",
+								"type_signature": "(package_json: { [x: string]: unknown; name: string; version: string; private?: boolean | undefined; description?: string | undefined; tagline?: string | undefined; glyph?: string | undefined; logo?: string | undefined; ... 23 more ...; exports?: string | ... 2 more ... | undefined; }, options: SveltePackageOptions | undefined, cli: string | Cli, log: Logger, pm_cli: string): Promise<...>",
 								"return_type": "Promise<void>",
 								"parameters": [
 									{
 										"name": "package_json",
-										"type": "{ [x: string]: unknown; name: string; version: string; private?: boolean | undefined; description?: string | undefined; motto?: string | undefined; glyph?: string | undefined; logo?: string | undefined; ... 23 more ...; exports?: string | ... 2 more ... | undefined; }"
+										"type": "{ [x: string]: unknown; name: string; version: string; private?: boolean | undefined; description?: string | undefined; tagline?: string | undefined; glyph?: string | undefined; logo?: string | undefined; ... 23 more ...; exports?: string | ... 2 more ... | undefined; }"
 									},
 									{"name": "options", "type": "SveltePackageOptions | undefined"},
 									{"name": "cli", "type": "string | Cli"},
@@ -34529,7 +34529,7 @@
 				"glyph": "🦕",
 				"logo": "logo.svg",
 				"logo_alt": "a green sauropod wearing a brown utility belt",
-				"motto": "ancient not extinct",
+				"tagline": "ancient not extinct",
 				"license": "MIT",
 				"homepage": "https://util.fuz.dev/",
 				"author": {
@@ -37550,12 +37550,12 @@
 								"kind": "function",
 								"doc_comment": "Creates a `LibraryJson` with computed properties from package.json and source metadata.",
 								"source_line": 39,
-								"type_signature": "(package_json: { [x: string]: unknown; name: string; version: string; private?: boolean | undefined; description?: string | undefined; motto?: string | undefined; glyph?: string | undefined; logo?: string | undefined; ... 23 more ...; exports?: string | ... 2 more ... | undefined; }, source_json: { ...; }): LibraryJson",
+								"type_signature": "(package_json: { [x: string]: unknown; name: string; version: string; private?: boolean | undefined; description?: string | undefined; tagline?: string | undefined; glyph?: string | undefined; logo?: string | undefined; ... 23 more ...; exports?: string | ... 2 more ... | undefined; }, source_json: { ...; }): LibraryJson",
 								"return_type": "LibraryJson",
 								"parameters": [
 									{
 										"name": "package_json",
-										"type": "{ [x: string]: unknown; name: string; version: string; private?: boolean | undefined; description?: string | undefined; motto?: string | undefined; glyph?: string | undefined; logo?: string | undefined; ... 23 more ...; exports?: string | ... 2 more ... | undefined; }"
+										"type": "{ [x: string]: unknown; name: string; version: string; private?: boolean | undefined; description?: string | undefined; tagline?: string | undefined; glyph?: string | undefined; logo?: string | undefined; ... 23 more ...; exports?: string | ... 2 more ... | undefined; }"
 									},
 									{
 										"name": "source_json",
@@ -46608,7 +46608,7 @@
 				"name": "webdevladder.net",
 				"version": "0.0.1",
 				"description": "a YouTube channel and blog for realworld webdev with TypeScript and Svelte",
-				"motto": "up ↗",
+				"tagline": "up ↗",
 				"glyph": "🪜",
 				"logo": "logo.svg",
 				"logo_alt": "a spider web between two rungs of a ladder",
@@ -46930,7 +46930,7 @@
 				"name": "ryanatkn.com",
 				"version": "0.0.1",
 				"description": "@ryanatkn's homepage and blog",
-				"motto": "all ways a wip",
+				"tagline": "all ways a wip",
 				"glyph": "🪶",
 				"logo": "favicon.png",
 				"logo_alt": "a textured green nature circle with a void center",
@@ -47056,7 +47056,7 @@
 				"name": "fuz.dev",
 				"version": "0.0.1",
 				"description": "website for the Fuz stack",
-				"motto": "friendly user zystem",
+				"tagline": "friendly user zystem",
 				"glyph": "🦋",
 				"logo": "logo.svg",
 				"logo_alt": "a friendly pixelated spider facing you",

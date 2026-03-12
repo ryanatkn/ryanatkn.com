@@ -24,7 +24,7 @@ interface ProjectMetadata {
 	 * Allows HTML.
 	 */
 	description?: string;
-	motto?: string; // TODO @many this is a hack because cosmicplayground hasn't been deployed
+	tagline?: string; // TODO @many this is a hack because cosmicplayground hasn't been deployed
 	glyph?: string; // TODO @many hack for zzz, fix after adding to gitops
 	repo?: string;
 	/**
@@ -40,7 +40,7 @@ interface ProjectMetadata {
 	logo_style?: string;
 }
 
-// TODO description, motto, icon, icon_alt, glyph
+// TODO description, tagline, icon, icon_alt, glyph
 const projects_metadata: Array<ProjectMetadata> = [
 	{
 		name: 'blog',
@@ -68,7 +68,7 @@ const projects_metadata: Array<ProjectMetadata> = [
 		description: 'local-first forge for power users and developers',
 		subtitle: `<a class="chip" href="https://github.com/fuzdev/zzz">source</a>`, // TODO publish zzz - <a class="chip" href="https://www.npmjs.com/package/@fuzdev/zzz">npm</a>
 		// TODO @many hack for zzz, fix after adding to gitops
-		motto: 'nice web things',
+		tagline: 'nice web things',
 		glyph: '💤',
 		logo: 'logo.svg',
 		logo_alt: "three sleepy z's",
@@ -118,7 +118,7 @@ const projects_metadata: Array<ProjectMetadata> = [
 		title: '<a href="https://www.cosmicplayground.org">cosmicplayground.org</a>', // TODO @many this is a hack because cosmicplayground hasn't been deployed (remove glyph)
 		subtitle: '<a class="chip" href="https://github.com/ryanatkn/cosmicplayground">source</a>',
 		description: 'hobby project for fun and learning', // TODO @many this is a hack because cosmicplayground hasn't been deployed
-		motto: 'tools and toys for expanding minds', // TODO @many this is a hack because cosmicplayground hasn't been deployed
+		tagline: 'tools and toys for expanding minds', // TODO @many this is a hack because cosmicplayground hasn't been deployed
 		logo_style: 'border-radius: 50%',
 		logo: 'favicon.png', // TODO @many this is a hack because cosmicplayground hasn't been deployed
 	},
@@ -133,10 +133,10 @@ const projects: Array<ProjectInfo> = projects_metadata.map((project_metadata) =>
 	const {
 		description,
 		homepage,
-		motto,
+		tagline,
 		logo = project_metadata.logo, // TODO @many this is a hack because cosmicplayground hasn't been deployed
 		logo_alt,
 		glyph,
 	} = repo.library_json.package_json;
-	return {description, homepage, motto, logo, logo_alt, glyph, ...project_metadata};
+	return {description, homepage, tagline, logo, logo_alt, glyph, ...project_metadata};
 });

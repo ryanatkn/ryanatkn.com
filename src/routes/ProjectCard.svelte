@@ -43,8 +43,8 @@
 	</header>
 	<div class="display:flex">
 		<div>
-			<!-- {#if project.motto}
-				<p>{@html project.motto}</p>
+			<!-- {#if project.tagline}
+				<p>{@html project.tagline}</p>
 			{/if} -->
 			{#if project.description}
 				<p>
