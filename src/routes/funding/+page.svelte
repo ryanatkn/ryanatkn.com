@@ -46,13 +46,17 @@
 				(TypeScript/Svelte/Rust/Postgres/Linux)
 			</p>
 			<p>
-				My plan for Fuz and its related projects is to have them stewarded by some kind of a
-				nonprofit, but that would require a community to form first, users using the software.
-				Before LLMs I thought a community forming was a likely outcome, but who knows any more!
-				¯\_(ツ)_/¯ I think my independence allows me to make software with a different set of values
-				from the norm, not a lucrative path but I find it going interesting places. So I like what
-				I'm doing and want noncommerical projects like Fuz to exist, but I'm still figuring out how
-				to make it sustainable and more collaborative.
+				My plan for Fuz and its related projects is to have them stewarded by a nonprofit, but that
+				would require a community to form first, people using the software. Before LLMs I thought a
+				community forming was a likely outcome, but who knows any more! As the vibe coded projects
+				become viable, users will have so very many alternatives to choose from ¯\_(ツ)_/¯
+			</p>
+			<p>
+				I think my independence allows me to make software with a different set of values from the
+				norm, not a lucrative path but I find it going interesting places, and I appreciate the
+				creative freedom (there's a reason "autonomy" is in fuz.dev's description). So I like what
+				I'm doing, and I want noncommerical projects like Fuz to exist, but I'm still figuring out
+				how to make it sustainable and more collaborative.
 			</p>
 			<p>
 				Today my attention is on these projects, parts of a stack I plan to use to make other
