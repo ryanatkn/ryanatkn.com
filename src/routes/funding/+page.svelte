@@ -96,7 +96,7 @@
 			</Card>
 		</div>
 		<Card href="https://www.patreon.com/ryanatkn" align="right">
-			{#snippet icon()}<PatreonLogo fill="var(--color_a_50)" />{/snippet}
+			{#snippet icon()}<PatreonLogo fill="var(--color_d_50)" />{/snippet}
 			Patreon
 		</Card>
 	</section>
@@ -128,8 +128,11 @@
 					Sponsors</a
 				>
 				and
-				<a class="white-space:nowrap" href="https://www.patreon.com/ryanatkn"
-					><PatreonLogo size="var(--font_size_md)" fill="var(--color_a_50)" inline /> Patreon</a
+				<a
+					class="white-space:nowrap"
+					href="https://www.patreon.com/ryanatkn"
+					style:--link_color="var(--color_d_50)"
+					><PatreonLogo size="var(--font_size_md)" fill="var(--color_d_50)" inline /> Patreon</a
 				> helps me a lot for the signal it sends. No rewards yet, but one possiblity is donors will get
 				access to websites I build on camera, maybe in 2026.
 			</p>
