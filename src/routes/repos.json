@@ -46,14 +46,14 @@
 				"devDependencies": {
 					"@changesets/changelog-git": "^0.2.1",
 					"@fuzdev/fuz_code": "^0.45.1",
-					"@fuzdev/fuz_css": "^0.56.0",
-					"@fuzdev/fuz_ui": "^0.190.0",
-					"@fuzdev/fuz_util": "^0.54.0",
+					"@fuzdev/fuz_css": "^0.57.0",
+					"@fuzdev/fuz_ui": "^0.191.1",
+					"@fuzdev/fuz_util": "^0.55.0",
 					"@jridgewell/trace-mapping": "^0.3.31",
 					"@ryanatkn/eslint-config": "^0.9.0",
 					"@sveltejs/adapter-node": "^5.4.0",
 					"@sveltejs/adapter-static": "^3.0.10",
-					"@sveltejs/kit": "^2.50.1",
+					"@sveltejs/kit": "^2.55.0",
 					"@sveltejs/vite-plugin-svelte": "^6.2.4",
 					"@types/estree": "^1.0.8",
 					"@types/node": "^24.10.1",
@@ -65,9 +65,9 @@
 					"ollama": "^0.6.3",
 					"prettier": "^3.7.4",
 					"prettier-plugin-svelte": "^3.4.1",
-					"svelte": "^5.49.1",
-					"svelte-check": "^4.3.5",
-					"svelte2tsx": "^0.7.47",
+					"svelte": "^5.54.0",
+					"svelte-check": "^4.4.5",
+					"svelte2tsx": "^0.7.52",
 					"tslib": "^2.8.1",
 					"typescript": "^5.9.3",
 					"typescript-eslint": "^8.48.1",
@@ -76,7 +76,7 @@
 				},
 				"dependencies": {
 					"@anthropic-ai/sdk": "^0.71.2",
-					"@fuzdev/gro": "^0.197.0",
+					"@fuzdev/gro": "^0.197.1",
 					"@google/generative-ai": "^0.24.1",
 					"@hono/node-server": "^1.19.6",
 					"@hono/node-ws": "^1.2.0",
@@ -11000,7 +11000,7 @@
 										"type": "((part: PartUnion) => void) | undefined",
 										"optional": true
 									},
-									{"name": "compact", "type": "boolean | undefined", "optional": true},
+									{"name": "sm", "type": "boolean | undefined", "optional": true},
 									{
 										"name": "attrs",
 										"type": "SvelteHTMLElements['button'] | undefined",
@@ -17055,7 +17055,7 @@
 			"published": true,
 			"package_json": {
 				"name": "@fuzdev/fuz_css",
-				"version": "0.56.0",
+				"version": "0.57.0",
 				"description": "CSS framework and design system for semantic HTML",
 				"tagline": "CSS with more utility",
 				"glyph": "🪴",
@@ -17106,7 +17106,7 @@
 					"@changesets/changelog-git": "^0.2.1",
 					"@fuzdev/blake3_wasm": "^0.1.0",
 					"@fuzdev/fuz_code": "^0.45.1",
-					"@fuzdev/fuz_ui": "^0.190.0",
+					"@fuzdev/fuz_ui": "^0.191.1",
 					"@fuzdev/fuz_util": "^0.54.0",
 					"@fuzdev/gro": "^0.197.0",
 					"@jridgewell/trace-mapping": "^0.3.31",
@@ -17126,7 +17126,7 @@
 					"magic-string": "^0.30.21",
 					"prettier": "^3.7.4",
 					"prettier-plugin-svelte": "^3.4.1",
-					"svelte": "^5.53.7",
+					"svelte": "^5.54.0",
 					"svelte-check": "^4.4.4",
 					"svelte2tsx": "^0.7.51",
 					"tslib": "^2.8.1",
@@ -17156,7 +17156,7 @@
 			},
 			"source_json": {
 				"name": "@fuzdev/fuz_css",
-				"version": "0.56.0",
+				"version": "0.57.0",
 				"modules": [
 					{
 						"path": "class_variable_index.ts",
@@ -18460,14 +18460,14 @@
 								"name": "css_literal_interpreter",
 								"kind": "variable",
 								"doc_comment": "Interpreter for CSS-literal classes (e.g., `display:flex`, `hover:opacity:80%`).\nGenerates full CSS rulesets including any modifier wrappers.",
-								"source_line": 151,
+								"source_line": 156,
 								"type_signature": "CssClassDefinitionInterpreter"
 							},
 							{
 								"name": "css_class_interpreters",
 								"kind": "variable",
 								"doc_comment": "Collection of all builtin interpreters for dynamic CSS class generation.\nOrder matters: modified_class_interpreter runs first to handle `hover:box` before\ncss_literal_interpreter tries to interpret it as `hover:box` (property:value).",
-								"source_line": 188,
+								"source_line": 193,
 								"type_signature": "CssClassDefinitionInterpreter[]"
 							}
 						],
@@ -18791,7 +18791,7 @@
 									{
 										"name": "properties",
 										"type": "Set<string> | null",
-										"description": "set of valid CSS properties from `load_css_properties()`.\n  Pass `null` to skip validation."
+										"description": "Set of valid CSS properties from `load_css_properties()`\n  Pass `null` to skip validation."
 									}
 								]
 							},
@@ -18808,7 +18808,7 @@
 									{
 										"name": "properties",
 										"type": "Set<string> | null",
-										"description": "set of valid CSS properties from `load_css_properties()`.\n  Pass `null` to skip suggestions."
+										"description": "Set of valid CSS properties from `load_css_properties()`\n  Pass `null` to skip suggestions."
 									}
 								]
 							},
@@ -18910,7 +18910,7 @@
 									{
 										"name": "css_properties",
 										"type": "Set<string> | null",
-										"description": "set of valid CSS properties from `load_css_properties()`.\n  Pass `null` to skip property validation."
+										"description": "Set of valid CSS properties from `load_css_properties()`\n  Pass `null` to skip property validation."
 									}
 								]
 							},
@@ -18990,7 +18990,7 @@
 									{
 										"name": "css_properties",
 										"type": "Set<string> | null",
-										"description": "set of valid CSS properties from `load_css_properties()`.\n  Pass `null` to skip property validation."
+										"description": "Set of valid CSS properties from `load_css_properties()`\n  Pass `null` to skip property validation."
 									}
 								]
 							},
@@ -23822,7 +23822,7 @@
 			"published": true,
 			"package_json": {
 				"name": "@fuzdev/fuz_ui",
-				"version": "0.190.0",
+				"version": "0.191.1",
 				"description": "Svelte UI library",
 				"tagline": "friendly user zystem",
 				"glyph": "🧶",
@@ -23847,7 +23847,8 @@
 					"fixtures:update": "gro src/test/fixtures/update",
 					"preview": "vite preview",
 					"deploy": "gro deploy",
-					"benchmark_mdz": "gro run src/benchmarks/mdz.benchmark.ts"
+					"benchmark": "gro run src/benchmarks/mdz.benchmark.ts",
+					"benchmark:save": "gro run src/benchmarks/mdz.benchmark.ts --save"
 				},
 				"type": "module",
 				"engines": {"node": ">=22.15"},
@@ -23879,8 +23880,8 @@
 				"devDependencies": {
 					"@changesets/changelog-git": "^0.2.1",
 					"@fuzdev/fuz_code": "^0.45.1",
-					"@fuzdev/fuz_css": "^0.56.0",
-					"@fuzdev/fuz_util": "^0.54.0",
+					"@fuzdev/fuz_css": "^0.57.0",
+					"@fuzdev/fuz_util": "^0.55.0",
 					"@fuzdev/gro": "^0.197.0",
 					"@jridgewell/trace-mapping": "^0.3.31",
 					"@ryanatkn/eslint-config": "^0.10.1",
@@ -23898,10 +23899,10 @@
 					"jsdom": "^27.2.0",
 					"magic-string": "^0.30.21",
 					"prettier": "^3.7.4",
-					"prettier-plugin-svelte": "^3.4.1",
-					"svelte": "^5.53.12",
+					"prettier-plugin-svelte": "^3.5.1",
+					"svelte": "^5.54.0",
 					"svelte-check": "^4.4.5",
-					"svelte2tsx": "^0.7.47",
+					"svelte2tsx": "^0.7.52",
 					"tslib": "^2.8.1",
 					"typescript": "^5.9.3",
 					"typescript-eslint": "^8.48.1",
@@ -23933,7 +23934,7 @@
 			},
 			"source_json": {
 				"name": "@fuzdev/fuz_ui",
-				"version": "0.190.0",
+				"version": "0.191.1",
 				"modules": [
 					{
 						"path": "Alert.svelte",
@@ -24246,18 +24247,18 @@
 								"source_line": 232,
 								"type_signature": "(diagnostic: Diagnostic, options?: FormatDiagnosticOptions | undefined): string",
 								"return_type": "string",
-								"return_description": "Formatted string like './file.ts:10:5: error: message'",
+								"return_description": "formatted string like './file.ts:10:5: error: message'",
 								"parameters": [
 									{
 										"name": "diagnostic",
 										"type": "Diagnostic",
-										"description": "The diagnostic to format"
+										"description": "the diagnostic to format"
 									},
 									{
 										"name": "options",
 										"type": "FormatDiagnosticOptions | undefined",
 										"optional": true,
-										"description": "Formatting options"
+										"description": "formatting options"
 									}
 								]
 							}
@@ -24969,7 +24970,7 @@
 									{
 										"name": "params",
 										"type": "U | null | undefined",
-										"description": "Contextmenu parameters or nullish to disable"
+										"description": "contextmenu parameters or nullish to disable"
 									}
 								]
 							},
@@ -25051,7 +25052,7 @@
 									{
 										"name": "get_scoped",
 										"type": "() => boolean",
-										"description": "Getter function that returns the current scoped value"
+										"description": "getter function that returns the current scoped value"
 									}
 								]
 							}
@@ -25938,41 +25939,41 @@
 							{
 								"name": "docs_slugify",
 								"kind": "function",
-								"doc_comment": "Convert a string to a URL-safe fragment identifier, preserving case for API declarations.\nOnly transforms spaces and special characters, keeping valid identifier characters intact.\nUsed for hash anchors in documentation.",
-								"source_line": 14,
+								"doc_comment": "Convert a string to a URL-safe fragment identifier, preserving case.\nUnlike `slugify` from `@fuzdev/fuz_util/path.js` which lowercases,\nthis keeps the original casing so API declarations like `AsyncStatus`\nand `async_status` produce distinct fragment IDs.\nUsed by the Tome documentation system for heading and section anchors.",
+								"source_line": 16,
 								"type_signature": "(str: string): string",
 								"return_type": "string",
-								"return_description": "A URL-safe fragment identifier",
+								"return_description": "a URL-safe fragment identifier with case preserved",
 								"parameters": [
 									{
 										"name": "str",
 										"type": "string",
-										"description": "The string to convert to a fragment"
+										"description": "the string to convert to a fragment"
 									}
 								]
 							},
 							{
 								"name": "DOCS_PATH_DEFAULT",
 								"kind": "variable",
-								"source_line": 28,
+								"source_line": 30,
 								"type_signature": "\"/docs\""
 							},
 							{
 								"name": "DOCS_PATH",
 								"kind": "variable",
-								"source_line": 29,
+								"source_line": 31,
 								"type_signature": "\"/docs\" | \"/\" | \"/about\" | \"/docs/Alert\" | \"/docs/Breadcrumb\" | \"/docs/Breadcrumb/a\" | \"/docs/Breadcrumb/a/b\" | \"/docs/Breadcrumb/a/b/c\" | \"/docs/Breadcrumb/a/b/c/d\" | \"/docs/Card\" | ... 63 more ... | `/${string}${`/docs/api/${string}` & {}}`"
 							},
 							{
 								"name": "DOCS_API_PATH",
 								"kind": "variable",
-								"source_line": 30,
+								"source_line": 32,
 								"type_signature": "string"
 							},
 							{
 								"name": "to_docs_path_info",
 								"kind": "function",
-								"source_line": 32,
+								"source_line": 34,
 								"type_signature": "(path_slug: string, pathname: string, root_path?: string): { path: string; path_is_selected: boolean; path_segment: string | undefined; }",
 								"return_type": "{ path: string; path_is_selected: boolean; path_segment: string | undefined; }",
 								"parameters": [
@@ -25984,19 +25985,19 @@
 							{
 								"name": "docs_links_context",
 								"kind": "variable",
-								"source_line": 43,
+								"source_line": 45,
 								"type_signature": "{ get: (error_message?: string | undefined) => DocsLinks; get_maybe: () => DocsLinks | undefined; set: (value: DocsLinks) => DocsLinks; }"
 							},
 							{
 								"name": "DocsLinkTag",
 								"kind": "type",
-								"source_line": 45,
+								"source_line": 47,
 								"type_signature": "DocsLinkTag"
 							},
 							{
 								"name": "DocsLinkInfo",
 								"kind": "type",
-								"source_line": 47,
+								"source_line": 49,
 								"type_signature": "DocsLinkInfo",
 								"properties": [
 									{"name": "id", "kind": "variable", "type_signature": "string"},
@@ -26011,7 +26012,7 @@
 							{
 								"name": "DocsLinks",
 								"kind": "class",
-								"source_line": 57,
+								"source_line": 59,
 								"members": [
 									{
 										"name": "root_path",
@@ -26532,7 +26533,7 @@
 									{
 										"name": "get_params",
 										"type": "() => IntersectParamsOrCallback | null | undefined",
-										"description": "Function that returns callback, params object, or nullish to disable"
+										"description": "function that returns callback, params object, or nullish to disable"
 									}
 								]
 							},
@@ -26683,12 +26684,12 @@
 								"source_line": 123,
 								"type_signature": "(source_file: SourceFileInfo, program: Program, options: ModuleSourceOptions, ctx: AnalysisContext, log?: Logger | undefined): ModuleAnalysis | undefined",
 								"return_type": "ModuleAnalysis | undefined",
-								"return_description": "Module metadata and re-exports, or undefined if source file not found in program",
+								"return_description": "module metadata and re-exports, or undefined if source file not found in program",
 								"parameters": [
 									{
 										"name": "source_file",
 										"type": "SourceFileInfo",
-										"description": "The source file info with content and optional dependency data"
+										"description": "the source file info with content and optional dependency data"
 									},
 									{
 										"name": "program",
@@ -26698,18 +26699,18 @@
 									{
 										"name": "options",
 										"type": "ModuleSourceOptions",
-										"description": "Module source options for path extraction"
+										"description": "module source options for path extraction"
 									},
 									{
 										"name": "ctx",
 										"type": "AnalysisContext",
-										"description": "Analysis context for collecting diagnostics"
+										"description": "analysis context for collecting diagnostics"
 									},
 									{
 										"name": "log",
 										"type": "Logger | undefined",
 										"optional": true,
-										"description": "Optional logger for warnings"
+										"description": "optional logger for warnings"
 									}
 								]
 							}
@@ -26768,18 +26769,18 @@
 									{
 										"name": "disknodes",
 										"type": "Iterable<Disknode>",
-										"description": "Iterator of Gro disknodes from filer"
+										"description": "iterator of Gro disknodes from filer"
 									},
 									{
 										"name": "options",
 										"type": "ModuleSourceOptions",
-										"description": "Module source options for filtering"
+										"description": "module source options for filtering"
 									},
 									{
 										"name": "log",
 										"type": "{ info: (...args: unknown[]) => void; warn: (...args: unknown[]) => void; } | undefined",
 										"optional": true,
-										"description": "Optional logger for status messages"
+										"description": "optional logger for status messages"
 									}
 								]
 							},
@@ -26795,7 +26796,7 @@
 										"name": "options",
 										"type": "LibraryGenOptions | undefined",
 										"optional": true,
-										"description": "Optional generation options"
+										"description": "optional generation options"
 									}
 								]
 							}
@@ -26938,7 +26939,7 @@
 									{
 										"name": "declaration_name",
 										"type": "string",
-										"description": "Name of the declaration to link to"
+										"description": "name of the declaration to link to"
 									}
 								]
 							},
@@ -26949,13 +26950,13 @@
 								"source_line": 33,
 								"type_signature": "(homepage: string, declaration_name: string): string",
 								"return_type": "string",
-								"return_description": "Full URL like 'https://example.com/docs/api#declaration_name'",
+								"return_description": "full URL like 'https://example.com/docs/api#declaration_name'",
 								"parameters": [
-									{"name": "homepage", "type": "string", "description": "Package homepage URL"},
+									{"name": "homepage", "type": "string", "description": "package homepage URL"},
 									{
 										"name": "declaration_name",
 										"type": "string",
-										"description": "Name of the declaration to link to"
+										"description": "name of the declaration to link to"
 									}
 								]
 							},
@@ -26971,7 +26972,7 @@
 									{
 										"name": "module_path",
 										"type": "string",
-										"description": "Module path (e.g., 'helpers.ts')"
+										"description": "module path (e.g., 'helpers.ts')"
 									}
 								]
 							},
@@ -26982,18 +26983,18 @@
 								"source_line": 51,
 								"type_signature": "(homepage_url: string | null, logo_path?: string | undefined): string | null",
 								"return_type": "string | null",
-								"return_description": "Full URL to the logo, or null if no homepage",
+								"return_description": "full URL to the logo, or null if no homepage",
 								"parameters": [
 									{
 										"name": "homepage_url",
 										"type": "string | null",
-										"description": "Package homepage URL, or null"
+										"description": "package homepage URL, or null"
 									},
 									{
 										"name": "logo_path",
 										"type": "string | undefined",
 										"optional": true,
-										"description": "Optional custom logo path (defaults to 'favicon.png')"
+										"description": "optional custom logo path (defaults to 'favicon.png')"
 									}
 								]
 							},
@@ -27007,13 +27008,13 @@
 								"source_line": 74,
 								"type_signature": "(url: string, origin?: string): string",
 								"return_type": "string",
-								"return_description": "Root-relative URL starting with '/'",
+								"return_description": "root-relative URL starting with '/'",
 								"parameters": [
-									{"name": "url", "type": "string", "description": "Full URL to convert"},
+									{"name": "url", "type": "string", "description": "full URL to convert"},
 									{
 										"name": "origin",
 										"type": "string",
-										"description": "Origin to strip (defaults to current page origin)",
+										"description": "origin to strip (defaults to current page origin)",
 										"default_value": "page.url.origin"
 									}
 								]
@@ -27159,12 +27160,12 @@
 									{
 										"name": "source_json",
 										"type": "{ [x: string]: unknown; name: string; version: string; modules?: { [x: string]: unknown; path: string; declarations?: { [x: string]: unknown; name: string; kind: \"function\" | \"json\" | \"type\" | \"variable\" | \"class\" | \"constructor\" | \"component\" | \"css\"; ... 20 more ...; alias_of?: { ...; } | undefined; }[] | undefine...",
-										"description": "The source JSON with all modules (will be mutated)"
+										"description": "the source JSON with all modules (will be mutated)"
 									},
 									{
 										"name": "collected_re_exports",
 										"type": "CollectedReExport[]",
-										"description": "Array of re-exports collected during phase 1"
+										"description": "array of re-exports collected during phase 1"
 									}
 								]
 							},
@@ -27179,18 +27180,18 @@
 									{
 										"name": "files",
 										"type": "Iterable<SourceFileInfo>",
-										"description": "Iterable of source file info (from Gro filer, file system, or other source)"
+										"description": "iterable of source file info (from Gro filer, file system, or other source)"
 									},
 									{
 										"name": "options",
 										"type": "ModuleSourceOptions",
-										"description": "Module source options for filtering"
+										"description": "module source options for filtering"
 									},
 									{
 										"name": "log",
 										"type": "Logger | undefined",
 										"optional": true,
-										"description": "Optional logger for status messages"
+										"description": "optional logger for status messages"
 									}
 								]
 							}
@@ -27451,27 +27452,33 @@
 								"type_signature": "SvgData"
 							},
 							{
-								"name": "logo_fuz_template",
+								"name": "logo_fuz_docs",
 								"kind": "variable",
 								"source_line": 103,
 								"type_signature": "SvgData"
 							},
 							{
+								"name": "logo_fuz_template",
+								"kind": "variable",
+								"source_line": 109,
+								"type_signature": "SvgData"
+							},
+							{
 								"name": "logo_fuz_util",
 								"kind": "variable",
-								"source_line": 113,
+								"source_line": 119,
 								"type_signature": "SvgData"
 							},
 							{
 								"name": "logo_github",
 								"kind": "variable",
-								"source_line": 139,
+								"source_line": 145,
 								"type_signature": "SvgData"
 							},
 							{
 								"name": "logo_mdn",
 								"kind": "variable",
-								"source_line": 152,
+								"source_line": 158,
 								"type_signature": "SvgData"
 							}
 						],
@@ -27548,101 +27555,101 @@
 					{
 						"path": "mdz_helpers.ts",
 						"declarations": [
-							{"name": "BACKTICK", "kind": "variable", "source_line": 13, "type_signature": "96"},
-							{"name": "ASTERISK", "kind": "variable", "source_line": 14, "type_signature": "42"},
-							{"name": "UNDERSCORE", "kind": "variable", "source_line": 15, "type_signature": "95"},
-							{"name": "TILDE", "kind": "variable", "source_line": 16, "type_signature": "126"},
-							{"name": "NEWLINE", "kind": "variable", "source_line": 17, "type_signature": "10"},
-							{"name": "HYPHEN", "kind": "variable", "source_line": 18, "type_signature": "45"},
-							{"name": "HASH", "kind": "variable", "source_line": 19, "type_signature": "35"},
-							{"name": "SPACE", "kind": "variable", "source_line": 20, "type_signature": "32"},
-							{"name": "TAB", "kind": "variable", "source_line": 21, "type_signature": "9"},
-							{"name": "LEFT_ANGLE", "kind": "variable", "source_line": 22, "type_signature": "60"},
+							{"name": "BACKTICK", "kind": "variable", "source_line": 14, "type_signature": "96"},
+							{"name": "ASTERISK", "kind": "variable", "source_line": 15, "type_signature": "42"},
+							{"name": "UNDERSCORE", "kind": "variable", "source_line": 16, "type_signature": "95"},
+							{"name": "TILDE", "kind": "variable", "source_line": 17, "type_signature": "126"},
+							{"name": "NEWLINE", "kind": "variable", "source_line": 18, "type_signature": "10"},
+							{"name": "HYPHEN", "kind": "variable", "source_line": 19, "type_signature": "45"},
+							{"name": "HASH", "kind": "variable", "source_line": 20, "type_signature": "35"},
+							{"name": "SPACE", "kind": "variable", "source_line": 21, "type_signature": "32"},
+							{"name": "TAB", "kind": "variable", "source_line": 22, "type_signature": "9"},
+							{"name": "LEFT_ANGLE", "kind": "variable", "source_line": 23, "type_signature": "60"},
 							{
 								"name": "RIGHT_ANGLE",
 								"kind": "variable",
-								"source_line": 23,
+								"source_line": 24,
 								"type_signature": "62"
 							},
-							{"name": "SLASH", "kind": "variable", "source_line": 24, "type_signature": "47"},
+							{"name": "SLASH", "kind": "variable", "source_line": 25, "type_signature": "47"},
 							{
 								"name": "LEFT_BRACKET",
 								"kind": "variable",
-								"source_line": 25,
+								"source_line": 26,
 								"type_signature": "91"
 							},
 							{
 								"name": "RIGHT_BRACKET",
 								"kind": "variable",
-								"source_line": 26,
+								"source_line": 27,
 								"type_signature": "93"
 							},
-							{"name": "LEFT_PAREN", "kind": "variable", "source_line": 27, "type_signature": "40"},
+							{"name": "LEFT_PAREN", "kind": "variable", "source_line": 28, "type_signature": "40"},
 							{
 								"name": "RIGHT_PAREN",
 								"kind": "variable",
-								"source_line": 28,
+								"source_line": 29,
 								"type_signature": "41"
 							},
-							{"name": "COLON", "kind": "variable", "source_line": 29, "type_signature": "58"},
-							{"name": "PERIOD", "kind": "variable", "source_line": 30, "type_signature": "46"},
-							{"name": "COMMA", "kind": "variable", "source_line": 31, "type_signature": "44"},
-							{"name": "SEMICOLON", "kind": "variable", "source_line": 32, "type_signature": "59"},
+							{"name": "COLON", "kind": "variable", "source_line": 30, "type_signature": "58"},
+							{"name": "PERIOD", "kind": "variable", "source_line": 31, "type_signature": "46"},
+							{"name": "COMMA", "kind": "variable", "source_line": 32, "type_signature": "44"},
+							{"name": "SEMICOLON", "kind": "variable", "source_line": 33, "type_signature": "59"},
 							{
 								"name": "EXCLAMATION",
 								"kind": "variable",
-								"source_line": 33,
+								"source_line": 34,
 								"type_signature": "33"
 							},
-							{"name": "QUESTION", "kind": "variable", "source_line": 34, "type_signature": "63"},
-							{"name": "DOLLAR", "kind": "variable", "source_line": 36, "type_signature": "36"},
-							{"name": "PERCENT", "kind": "variable", "source_line": 37, "type_signature": "37"},
-							{"name": "AMPERSAND", "kind": "variable", "source_line": 38, "type_signature": "38"},
-							{"name": "APOSTROPHE", "kind": "variable", "source_line": 39, "type_signature": "39"},
-							{"name": "PLUS", "kind": "variable", "source_line": 40, "type_signature": "43"},
-							{"name": "EQUALS", "kind": "variable", "source_line": 41, "type_signature": "61"},
-							{"name": "AT", "kind": "variable", "source_line": 42, "type_signature": "64"},
-							{"name": "A_UPPER", "kind": "variable", "source_line": 44, "type_signature": "65"},
-							{"name": "Z_UPPER", "kind": "variable", "source_line": 45, "type_signature": "90"},
-							{"name": "A_LOWER", "kind": "variable", "source_line": 46, "type_signature": "97"},
-							{"name": "Z_LOWER", "kind": "variable", "source_line": 47, "type_signature": "122"},
-							{"name": "ZERO", "kind": "variable", "source_line": 48, "type_signature": "48"},
-							{"name": "NINE", "kind": "variable", "source_line": 49, "type_signature": "57"},
+							{"name": "QUESTION", "kind": "variable", "source_line": 35, "type_signature": "63"},
+							{"name": "DOLLAR", "kind": "variable", "source_line": 37, "type_signature": "36"},
+							{"name": "PERCENT", "kind": "variable", "source_line": 38, "type_signature": "37"},
+							{"name": "AMPERSAND", "kind": "variable", "source_line": 39, "type_signature": "38"},
+							{"name": "APOSTROPHE", "kind": "variable", "source_line": 40, "type_signature": "39"},
+							{"name": "PLUS", "kind": "variable", "source_line": 41, "type_signature": "43"},
+							{"name": "EQUALS", "kind": "variable", "source_line": 42, "type_signature": "61"},
+							{"name": "AT", "kind": "variable", "source_line": 43, "type_signature": "64"},
+							{"name": "A_UPPER", "kind": "variable", "source_line": 45, "type_signature": "65"},
+							{"name": "Z_UPPER", "kind": "variable", "source_line": 46, "type_signature": "90"},
+							{"name": "A_LOWER", "kind": "variable", "source_line": 47, "type_signature": "97"},
+							{"name": "Z_LOWER", "kind": "variable", "source_line": 48, "type_signature": "122"},
+							{"name": "ZERO", "kind": "variable", "source_line": 49, "type_signature": "48"},
+							{"name": "NINE", "kind": "variable", "source_line": 50, "type_signature": "57"},
 							{
 								"name": "HR_HYPHEN_COUNT",
-								"kind": "variable",
-								"source_line": 51,
-								"type_signature": "3"
-							},
-							{
-								"name": "MIN_CODEBLOCK_BACKTICKS",
 								"kind": "variable",
 								"source_line": 52,
 								"type_signature": "3"
 							},
 							{
-								"name": "MAX_HEADING_LEVEL",
+								"name": "MIN_CODEBLOCK_BACKTICKS",
 								"kind": "variable",
 								"source_line": 53,
+								"type_signature": "3"
+							},
+							{
+								"name": "MAX_HEADING_LEVEL",
+								"kind": "variable",
+								"source_line": 54,
 								"type_signature": "6"
 							},
 							{
 								"name": "HTTPS_PREFIX_LENGTH",
 								"kind": "variable",
-								"source_line": 54,
+								"source_line": 55,
 								"type_signature": "8"
 							},
 							{
 								"name": "HTTP_PREFIX_LENGTH",
 								"kind": "variable",
-								"source_line": 55,
+								"source_line": 56,
 								"type_signature": "7"
 							},
 							{
 								"name": "is_letter",
 								"kind": "function",
 								"doc_comment": "Check if character code is a letter (A-Z, a-z).",
-								"source_line": 60,
+								"source_line": 61,
 								"type_signature": "(char_code: number): boolean",
 								"return_type": "boolean",
 								"parameters": [{"name": "char_code", "type": "number"}]
@@ -27651,7 +27658,7 @@
 								"name": "is_tag_name_char",
 								"kind": "function",
 								"doc_comment": "Check if character code is valid for tag name (letter, number, hyphen, underscore).",
-								"source_line": 66,
+								"source_line": 67,
 								"type_signature": "(char_code: number): boolean",
 								"return_type": "boolean",
 								"parameters": [{"name": "char_code", "type": "number"}]
@@ -27660,7 +27667,7 @@
 								"name": "is_word_char",
 								"kind": "function",
 								"doc_comment": "Check if character is part of a word for word boundary detection.\nUsed to prevent intraword emphasis with `_` and `~` delimiters.\n\nFormatting delimiters (`*`, `_`, `~`) are NOT word characters - they're transparent.\nOnly alphanumeric characters (A-Z, a-z, 0-9) are considered word characters.\n\nThis prevents false positives with snake_case identifiers while allowing\nadjacent formatting like `**bold**_italic_`.",
-								"source_line": 82,
+								"source_line": 83,
 								"type_signature": "(char_code: number): boolean",
 								"return_type": "boolean",
 								"parameters": [{"name": "char_code", "type": "number"}]
@@ -27669,7 +27676,7 @@
 								"name": "is_valid_path_char",
 								"kind": "function",
 								"doc_comment": "Check if character code is valid in URI path per RFC 3986.\nValidates against the `pchar` production plus path/query/fragment separators.\n\nValid characters:\n- unreserved: A-Z a-z 0-9 - . _ ~\n- sub-delims: ! $ & ' ( ) * + , ; =\n- path allowed: : @\n- separators: / ? #\n- percent-encoding: %",
-								"source_line": 102,
+								"source_line": 103,
 								"type_signature": "(char_code: number): boolean",
 								"return_type": "boolean",
 								"parameters": [{"name": "char_code", "type": "number"}]
@@ -27678,7 +27685,7 @@
 								"name": "trim_trailing_punctuation",
 								"kind": "function",
 								"doc_comment": "Trim trailing punctuation from URL/path per RFC 3986 and GFM rules.\n- Trims simple trailing: .,;:!?]\n- Balanced logic for () only (valid in path components)\n- Invalid chars like [] {} are already stopped by whitelist, but ] trimmed as fallback\n\nOptimized to avoid O(n²) string slicing - tracks end index and slices once at the end.",
-								"source_line": 136,
+								"source_line": 137,
 								"type_signature": "(url: string): string",
 								"return_type": "string",
 								"parameters": [{"name": "url", "type": "string"}]
@@ -27686,8 +27693,8 @@
 							{
 								"name": "is_at_absolute_path",
 								"kind": "function",
-								"doc_comment": "Check if position in text is the start of an absolute path (starts with `/`).\nMust be preceded by whitespace or be at the start of the string.\nRejects `//` (comments/protocol-relative) and `/ ` (bare slash).",
-								"source_line": 192,
+								"doc_comment": "Check if position in text is the start of an absolute path (starts with `/`).\nMust be preceded by whitespace or be at the start of the string.\nRejects `//` (comments/protocol-relative) and slash followed by whitespace.",
+								"source_line": 193,
 								"type_signature": "(text: string, index: number): boolean",
 								"return_type": "boolean",
 								"parameters": [
@@ -27698,8 +27705,8 @@
 							{
 								"name": "is_at_relative_path",
 								"kind": "function",
-								"doc_comment": "Check if position in text is the start of a relative path (`./` or `../`).\nMust be preceded by whitespace or be at the start of the string.\nRequires at least one path character after the prefix.",
-								"source_line": 208,
+								"doc_comment": "Check if position in text is the start of a relative path (`./` or `../`).\nMust be preceded by whitespace or be at the start of the string.\nRejects prefix followed by whitespace, slash, or end of string.",
+								"source_line": 209,
 								"type_signature": "(text: string, index: number): boolean",
 								"return_type": "boolean",
 								"parameters": [
@@ -27708,16 +27715,70 @@
 								]
 							},
 							{
+								"name": "mdz_text_content",
+								"kind": "function",
+								"doc_comment": "Extracts plain text content from an array of mdz nodes, recursing into children.",
+								"source_line": 236,
+								"type_signature": "(nodes: MdzNode[]): string",
+								"return_type": "string",
+								"parameters": [{"name": "nodes", "type": "MdzNode[]"}]
+							},
+							{
+								"name": "mdz_heading_id",
+								"kind": "function",
+								"doc_comment": "Generates a lowercase slug id for a heading from its child nodes.\nFollows standard markdown conventions (GitHub, etc.) where heading IDs are lowercased.\nFor case-preserving IDs (e.g. API declarations), see `docs_slugify` in `docs_helpers.svelte.ts`.",
+								"source_line": 246,
+								"type_signature": "(nodes: MdzNode[]): string",
+								"return_type": "string",
+								"parameters": [{"name": "nodes", "type": "MdzNode[]"}]
+							},
+							{
+								"name": "mdz_is_url",
+								"kind": "function",
+								"source_line": 255,
+								"type_signature": "(s: string): boolean",
+								"return_type": "boolean",
+								"parameters": [{"name": "s", "type": "string"}]
+							},
+							{
+								"name": "resolve_relative_path",
+								"kind": "function",
+								"doc_comment": "Resolves a relative path (`./` or `../`) against a base path.\nThe base is treated as a directory regardless of trailing slash\n(`'/docs/mdz'` and `'/docs/mdz/'` behave identically).\nHandles embedded `.` and `..` segments within the reference\n(e.g., `'./a/../b'` → navigates up then down).\nClamps at root — excess `..` segments stop at `/` rather than escaping.",
+								"source_line": 269,
+								"type_signature": "(reference: string, base: string): string",
+								"return_type": "string",
+								"return_description": "an absolute resolved path (e.g., `'/docs/mdz/grammar'`)",
+								"parameters": [
+									{
+										"name": "reference",
+										"type": "string",
+										"description": "a relative path starting with `./` or `../`"
+									},
+									{
+										"name": "base",
+										"type": "string",
+										"description": "An absolute base path (e.g., `'/docs/mdz/'`). Empty string is treated as root."
+									}
+								]
+							},
+							{
 								"name": "extract_single_tag",
 								"kind": "function",
-								"source_line": 232,
+								"source_line": 287,
 								"type_signature": "(nodes: MdzNode[]): MdzElementNode | MdzComponentNode | null",
 								"return_type": "MdzElementNode | MdzComponentNode | null",
 								"parameters": [{"name": "nodes", "type": "MdzNode[]"}]
 							}
 						],
 						"module_comment": "Shared constants and pure helper functions for mdz parsers.\n\nUsed by both the single-pass parser (`mdz.ts`) and the two-phase\nlexer+parser (`mdz_lexer.ts` + `mdz_token_parser.ts`).",
-						"dependents": ["mdz.ts", "mdz_lexer.ts", "mdz_token_parser.ts"]
+						"dependents": [
+							"MdzNodeView.svelte",
+							"mdz.ts",
+							"mdz_lexer.ts",
+							"mdz_to_svelte.ts",
+							"mdz_token_parser.ts",
+							"tsdoc_mdz.ts"
+						]
 					},
 					{
 						"path": "mdz_lexer.ts",
@@ -27975,7 +28036,7 @@
 							}
 						],
 						"module_comment": "mdz lexer — tokenizes input into a flat `MdzToken[]` stream.\n\nPhase 1 of the two-phase lexer+parser alternative to the single-pass parser\nin `mdz.ts`. Phase 2 is in `mdz_token_parser.ts`.",
-						"dependencies": ["mdz.ts", "mdz_helpers.ts"],
+						"dependencies": ["mdz_helpers.ts"],
 						"dependents": ["mdz_token_parser.ts"]
 					},
 					{
@@ -27985,7 +28046,7 @@
 								"name": "MdzToSvelteResult",
 								"kind": "type",
 								"doc_comment": "Result of converting `MdzNode` arrays to Svelte markup.",
-								"source_line": 20,
+								"source_line": 21,
 								"type_signature": "MdzToSvelteResult",
 								"properties": [
 									{
@@ -28012,36 +28073,36 @@
 								"name": "mdz_to_svelte",
 								"kind": "function",
 								"doc_comment": "Converts an array of `MdzNode` to a Svelte markup string.\n\nEach node type produces output matching what `MdzNodeView.svelte` renders at runtime.\nCollects required imports and flags unconfigured component/element references.",
-								"source_line": 46,
+								"source_line": 47,
 								"type_signature": "(nodes: MdzNode[], components: Record<string, string>, elements: ReadonlySet<string>, base?: string | undefined): MdzToSvelteResult",
 								"return_type": "MdzToSvelteResult",
 								"parameters": [
 									{
 										"name": "nodes",
 										"type": "MdzNode[]",
-										"description": "Parsed mdz nodes to render."
+										"description": "parsed mdz nodes to render"
 									},
 									{
 										"name": "components",
 										"type": "Record<string, string>",
-										"description": "Component name to import path mapping (e.g., `{Alert: '$lib/Alert.svelte'}`).\nIf content references a component not in this map, `has_unconfigured_tags` is set."
+										"description": "Component name to import path mapping (e.g., `{Alert: '$lib/Alert.svelte'}`)\nIf content references a component not in this map, `has_unconfigured_tags` is set."
 									},
 									{
 										"name": "elements",
 										"type": "ReadonlySet<string>",
-										"description": "Allowed HTML element names (e.g., `new Set(['aside', 'details'])`).\nIf content references an element not in this set, `has_unconfigured_tags` is set."
+										"description": "Allowed HTML element names (e.g., `new Set(['aside', 'details'])`)\nIf content references an element not in this set, `has_unconfigured_tags` is set."
 									},
 									{
 										"name": "base",
 										"type": "string | undefined",
 										"optional": true,
-										"description": "Base path for resolving relative links (e.g., `'/docs/mdz/'`).\nWhen provided, relative references (`./`, `../`) are resolved to absolute paths\nand passed through `resolve()`. Trailing slash recommended."
+										"description": "Base path for resolving relative links (e.g., `'/docs/mdz/'`)\nWhen provided, relative references (`./`, `../`) are resolved to absolute paths\nand passed through `resolve()`. Trailing slash recommended."
 									}
 								]
 							}
 						],
 						"module_comment": "Converts parsed `MdzNode` arrays to Svelte markup strings.\n\nUsed by the `svelte_preprocess_mdz` preprocessor to expand static `<Mdz content=\"...\">` usages\ninto pre-rendered Svelte markup at build time. The output for each node type matches what\n`MdzNodeView.svelte` renders at runtime, so precompiled and runtime rendering are identical.",
-						"dependencies": ["mdz.ts"],
+						"dependencies": ["mdz_helpers.ts"],
 						"dependents": ["svelte_preprocess_mdz.ts"]
 					},
 					{
@@ -28085,16 +28146,16 @@
 								"name": "mdz_parse",
 								"kind": "function",
 								"doc_comment": "Parses text to an array of `MdzNode`.",
-								"source_line": 72,
+								"source_line": 74,
 								"type_signature": "(text: string): MdzNode[]",
 								"return_type": "MdzNode[]",
 								"parameters": [{"name": "text", "type": "string"}]
 							},
-							{"name": "MdzNode", "kind": "type", "source_line": 74, "type_signature": "MdzNode"},
+							{"name": "MdzNode", "kind": "type", "source_line": 76, "type_signature": "MdzNode"},
 							{
 								"name": "MdzBaseNode",
 								"kind": "type",
-								"source_line": 88,
+								"source_line": 90,
 								"type_signature": "MdzBaseNode",
 								"properties": [
 									{"name": "type", "kind": "variable", "type_signature": "string"},
@@ -28105,7 +28166,7 @@
 							{
 								"name": "MdzTextNode",
 								"kind": "type",
-								"source_line": 94,
+								"source_line": 96,
 								"type_signature": "MdzTextNode",
 								"extends": ["MdzBaseNode"],
 								"properties": [
@@ -28116,7 +28177,7 @@
 							{
 								"name": "MdzCodeNode",
 								"kind": "type",
-								"source_line": 99,
+								"source_line": 101,
 								"type_signature": "MdzCodeNode",
 								"extends": ["MdzBaseNode"],
 								"properties": [
@@ -28127,7 +28188,7 @@
 							{
 								"name": "MdzCodeblockNode",
 								"kind": "type",
-								"source_line": 104,
+								"source_line": 106,
 								"type_signature": "MdzCodeblockNode",
 								"extends": ["MdzBaseNode"],
 								"properties": [
@@ -28139,7 +28200,7 @@
 							{
 								"name": "MdzBoldNode",
 								"kind": "type",
-								"source_line": 110,
+								"source_line": 112,
 								"type_signature": "MdzBoldNode",
 								"extends": ["MdzBaseNode"],
 								"properties": [
@@ -28150,7 +28211,7 @@
 							{
 								"name": "MdzItalicNode",
 								"kind": "type",
-								"source_line": 115,
+								"source_line": 117,
 								"type_signature": "MdzItalicNode",
 								"extends": ["MdzBaseNode"],
 								"properties": [
@@ -28161,7 +28222,7 @@
 							{
 								"name": "MdzStrikethroughNode",
 								"kind": "type",
-								"source_line": 120,
+								"source_line": 122,
 								"type_signature": "MdzStrikethroughNode",
 								"extends": ["MdzBaseNode"],
 								"properties": [
@@ -28172,7 +28233,7 @@
 							{
 								"name": "MdzLinkNode",
 								"kind": "type",
-								"source_line": 125,
+								"source_line": 127,
 								"type_signature": "MdzLinkNode",
 								"extends": ["MdzBaseNode"],
 								"properties": [
@@ -28189,7 +28250,7 @@
 							{
 								"name": "MdzParagraphNode",
 								"kind": "type",
-								"source_line": 132,
+								"source_line": 134,
 								"type_signature": "MdzParagraphNode",
 								"extends": ["MdzBaseNode"],
 								"properties": [
@@ -28200,7 +28261,7 @@
 							{
 								"name": "MdzHrNode",
 								"kind": "type",
-								"source_line": 137,
+								"source_line": 139,
 								"type_signature": "MdzHrNode",
 								"extends": ["MdzBaseNode"],
 								"properties": [{"name": "type", "kind": "variable", "type_signature": "'Hr'"}]
@@ -28208,19 +28269,20 @@
 							{
 								"name": "MdzHeadingNode",
 								"kind": "type",
-								"source_line": 141,
+								"source_line": 143,
 								"type_signature": "MdzHeadingNode",
 								"extends": ["MdzBaseNode"],
 								"properties": [
 									{"name": "type", "kind": "variable", "type_signature": "'Heading'"},
 									{"name": "level", "kind": "variable", "type_signature": "1 | 2 | 3 | 4 | 5 | 6"},
+									{"name": "id", "kind": "variable", "type_signature": "string"},
 									{"name": "children", "kind": "variable", "type_signature": "Array<MdzNode>"}
 								]
 							},
 							{
 								"name": "MdzElementNode",
 								"kind": "type",
-								"source_line": 147,
+								"source_line": 150,
 								"type_signature": "MdzElementNode",
 								"extends": ["MdzBaseNode"],
 								"properties": [
@@ -28232,7 +28294,7 @@
 							{
 								"name": "MdzComponentNode",
 								"kind": "type",
-								"source_line": 153,
+								"source_line": 156,
 								"type_signature": "MdzComponentNode",
 								"extends": ["MdzBaseNode"],
 								"properties": [
@@ -28245,7 +28307,7 @@
 								"name": "MdzParser",
 								"kind": "class",
 								"doc_comment": "Parser for mdz format.\nSingle-pass lexer/parser with text accumulation for efficiency.\nUsed by `mdz_parse`, which should be preferred for simple usage.",
-								"source_line": 164,
+								"source_line": 167,
 								"members": [
 									{
 										"name": "constructor",
@@ -28262,47 +28324,11 @@
 										"parameters": []
 									}
 								]
-							},
-							{
-								"name": "mdz_is_url",
-								"kind": "function",
-								"source_line": 1597,
-								"type_signature": "(s: string): boolean",
-								"return_type": "boolean",
-								"parameters": [{"name": "s", "type": "string"}]
-							},
-							{
-								"name": "resolve_relative_path",
-								"kind": "function",
-								"doc_comment": "Resolves a relative path (`./` or `../`) against a base path.\nThe base is treated as a directory regardless of trailing slash\n(`'/docs/mdz'` and `'/docs/mdz/'` behave identically).\nHandles embedded `.` and `..` segments within the reference\n(e.g., `'./a/../b'` → navigates up then down).\nClamps at root — excess `..` segments stop at `/` rather than escaping.",
-								"source_line": 1611,
-								"type_signature": "(reference: string, base: string): string",
-								"return_type": "string",
-								"return_description": "An absolute resolved path (e.g., `'/docs/mdz/grammar'`).",
-								"parameters": [
-									{
-										"name": "reference",
-										"type": "string",
-										"description": "A relative path starting with `./` or `../`."
-									},
-									{
-										"name": "base",
-										"type": "string",
-										"description": "An absolute base path (e.g., `'/docs/mdz/'`). Empty string is treated as root."
-									}
-								]
 							}
 						],
 						"module_comment": "mdz - minimal markdown dialect for Fuz documentation.\n\nParses an enhanced markdown dialect with:\n- inline formatting: `code`, **bold**, _italic_, ~strikethrough~\n- auto-detected links: external URLs (`https://...`) and internal paths (`/path`)\n- markdown links: `[text](url)` with custom display text\n- inline code in backticks (creates `Code` nodes; auto-linking to identifiers/modules\n  is handled by the rendering layer via `MdzNodeView.svelte`)\n- paragraph breaks (double newline)\n- block elements: headings, horizontal rules, code blocks\n- HTML elements and Svelte components (opt-in via context)\n\nKey constraint: preserves ALL whitespace exactly as authored,\nand is rendered with white-space pre or pre-wrap.\n\n## Design philosophy\n\n- **False negatives over false positives**: When in doubt, treat as plain text.\n  Block elements can interrupt paragraphs without blank lines; inline formatting is strict.\n- **One way to do things**: Single unambiguous syntax per feature. No alternatives.\n- **Explicit over implicit**: Clear delimiters and column-0 requirements avoid ambiguity.\n- **Simple over complete**: Prefer simple parsing rules over complex edge case handling.\n\n## Status\n\nThis is an early proof of concept with missing features and edge cases.",
 						"dependencies": ["mdz_helpers.ts"],
-						"dependents": [
-							"Mdz.svelte",
-							"MdzNodeView.svelte",
-							"mdz_lexer.ts",
-							"mdz_to_svelte.ts",
-							"svelte_preprocess_mdz.ts",
-							"tsdoc_mdz.ts"
-						]
+						"dependents": ["Mdz.svelte", "svelte_preprocess_mdz.ts"]
 					},
 					{
 						"path": "MdzNodeView.svelte",
@@ -28317,8 +28343,8 @@
 						"dependencies": [
 							"DocsLink.svelte",
 							"MdzNodeView.svelte",
-							"mdz.ts",
-							"mdz_components.ts"
+							"mdz_components.ts",
+							"mdz_helpers.ts"
 						],
 						"dependents": ["Mdz.svelte", "MdzNodeView.svelte"]
 					},
@@ -28477,13 +28503,13 @@
 									{
 										"name": "project_root",
 										"type": "string",
-										"description": "Absolute path to project root (typically `process.cwd()`)"
+										"description": "absolute path to project root (typically `process.cwd()`)"
 									},
 									{
 										"name": "overrides",
 										"type": "Partial<ModuleSourcePartial> | undefined",
 										"optional": true,
-										"description": "Optional overrides for default options"
+										"description": "optional overrides for default options"
 									}
 								]
 							},
@@ -28532,12 +28558,12 @@
 									{
 										"name": "source_id",
 										"type": "string",
-										"description": "Absolute path to the source file"
+										"description": "absolute path to the source file"
 									},
 									{
 										"name": "options",
 										"type": "ModuleSourceOptions",
-										"description": "Module source options for path extraction"
+										"description": "module source options for path extraction"
 									}
 								]
 							},
@@ -28614,13 +28640,13 @@
 								"source_line": 445,
 								"type_signature": "(path: string, options: ModuleSourceOptions): boolean",
 								"return_type": "boolean",
-								"return_description": "True if the path is an analyzable source file",
+								"return_description": "true if the path is an analyzable source file",
 								"parameters": [
-									{"name": "path", "type": "string", "description": "Full absolute path to check"},
+									{"name": "path", "type": "string", "description": "full absolute path to check"},
 									{
 										"name": "options",
 										"type": "ModuleSourceOptions",
-										"description": "Module source options for filtering"
+										"description": "module source options for filtering"
 									}
 								]
 							},
@@ -28635,12 +28661,12 @@
 									{
 										"name": "source_file",
 										"type": "SourceFileInfo",
-										"description": "The source file info to extract dependencies from"
+										"description": "the source file info to extract dependencies from"
 									},
 									{
 										"name": "options",
 										"type": "ModuleSourceOptions",
-										"description": "Module source options for filtering and path extraction"
+										"description": "module source options for filtering and path extraction"
 									}
 								]
 							}
@@ -28782,23 +28808,23 @@
 								"source_line": 47,
 								"type_signature": "(repo_url: string, file_path: string, line?: number | undefined): string",
 								"return_type": "string",
-								"return_description": "Full GitHub URL to the file on the main branch",
+								"return_description": "full GitHub URL to the file on the main branch",
 								"parameters": [
 									{
 										"name": "repo_url",
 										"type": "string",
-										"description": "Repository URL (e.g., 'https://github.com/owner/repo')"
+										"description": "repository URL (e.g., 'https://github.com/owner/repo')"
 									},
 									{
 										"name": "file_path",
 										"type": "string",
-										"description": "Path to the file (leading './' is stripped)"
+										"description": "path to the file (leading './' is stripped)"
 									},
 									{
 										"name": "line",
 										"type": "number | undefined",
 										"optional": true,
-										"description": "Optional line number for deep linking"
+										"description": "optional line number for deep linking"
 									}
 								]
 							},
@@ -28812,17 +28838,17 @@
 								"source_line": 66,
 								"type_signature": "(repo_url: string, repo_name: string): string | null",
 								"return_type": "string | null",
-								"return_description": "Organization URL, or null if repo_url doesn't end with repo_name",
+								"return_description": "organization URL, or null if repo_url doesn't end with repo_name",
 								"parameters": [
 									{
 										"name": "repo_url",
 										"type": "string",
-										"description": "Repository URL (e.g., 'https://github.com/owner/repo')"
+										"description": "repository URL (e.g., 'https://github.com/owner/repo')"
 									},
 									{
 										"name": "repo_name",
 										"type": "string",
-										"description": "Repository name to strip from the URL"
+										"description": "repository name to strip from the URL"
 									}
 								]
 							},
@@ -28837,12 +28863,12 @@
 								"source_line": 88,
 								"type_signature": "(repo_url: string): string | null",
 								"return_type": "string | null",
-								"return_description": "Owner name, or null if not a valid GitHub URL",
+								"return_description": "owner name, or null if not a valid GitHub URL",
 								"parameters": [
 									{
 										"name": "repo_url",
 										"type": "string",
-										"description": "Repository URL (e.g., 'https://github.com/owner/repo')"
+										"description": "repository URL (e.g., 'https://github.com/owner/repo')"
 									}
 								]
 							},
@@ -28856,12 +28882,12 @@
 								"source_line": 107,
 								"type_signature": "(package_name: string): string",
 								"return_type": "string",
-								"return_description": "Full npm package page URL",
+								"return_description": "full npm package page URL",
 								"parameters": [
 									{
 										"name": "package_name",
 										"type": "string",
-										"description": "Package name (can be scoped like '@org/package')"
+										"description": "package name (can be scoped like '@org/package')"
 									}
 								]
 							},
@@ -28872,12 +28898,12 @@
 								"source_line": 121,
 								"type_signature": "(package_json: { [x: string]: unknown; name: string; version: string; private?: boolean | undefined; description?: string | undefined; tagline?: string | undefined; glyph?: string | undefined; logo?: string | undefined; ... 23 more ...; exports?: string | ... 2 more ... | undefined; }): boolean",
 								"return_type": "boolean",
-								"return_description": "True if the package appears to be published",
+								"return_description": "`true` if the package appears to be published",
 								"parameters": [
 									{
 										"name": "package_json",
 										"type": "{ [x: string]: unknown; name: string; version: string; private?: boolean | undefined; description?: string | undefined; tagline?: string | undefined; glyph?: string | undefined; logo?: string | undefined; ... 23 more ...; exports?: string | ... 2 more ... | undefined; }",
-										"description": "The package.json object to check"
+										"description": "the package.json object to check"
 									}
 								]
 							},
@@ -28893,12 +28919,12 @@
 								"source_line": 144,
 								"type_signature": "(name: string): string",
 								"return_type": "string",
-								"return_description": "Repository name without scope",
+								"return_description": "repository name without scope",
 								"parameters": [
 									{
 										"name": "name",
 										"type": "string",
-										"description": "Package name (can be scoped like '@org/package')"
+										"description": "package name (can be scoped like '@org/package')"
 									}
 								]
 							},
@@ -28914,12 +28940,12 @@
 								"source_line": 182,
 								"type_signature": "(repository: string | { [x: string]: unknown; type: string; url: string; directory?: string | undefined; } | undefined): string | null",
 								"return_type": "string | null",
-								"return_description": "Clean repository URL, or null if not provided",
+								"return_description": "clean repository URL, or null if not provided",
 								"parameters": [
 									{
 										"name": "repository",
 										"type": "string | { [x: string]: unknown; type: string; url: string; directory?: string | undefined; } | undefined",
-										"description": "The repository field from package.json"
+										"description": "the repository field from package.json"
 									}
 								]
 							},
@@ -28933,13 +28959,13 @@
 								"source_line": 202,
 								"type_signature": "(homepage_url: string, filename: string): string",
 								"return_type": "string",
-								"return_description": "Full URL to the .well-known file",
+								"return_description": "full URL to the .well-known file",
 								"parameters": [
-									{"name": "homepage_url", "type": "string", "description": "Package homepage URL"},
+									{"name": "homepage_url", "type": "string", "description": "package homepage URL"},
 									{
 										"name": "filename",
 										"type": "string",
-										"description": "Filename in .well-known directory"
+										"description": "filename in .well-known directory"
 									}
 								]
 							}
@@ -29089,20 +29115,20 @@
 								"source_line": 26,
 								"type_signature": "<T>(key: string, is_json?: boolean, parse_fn?: ((value: unknown) => T | null) | undefined): T | null",
 								"return_type": "T | null",
-								"return_description": "The parsed value or null if not found or parsing fails",
+								"return_description": "the parsed value or null if not found or parsing fails",
 								"parameters": [
-									{"name": "key", "type": "string", "description": "The localStorage key"},
+									{"name": "key", "type": "string", "description": "the localStorage key"},
 									{
 										"name": "is_json",
 										"type": "boolean",
-										"description": "Whether to parse the value as JSON",
+										"description": "whether to parse the value as JSON",
 										"default_value": "false"
 									},
 									{
 										"name": "parse_fn",
 										"type": "((value: unknown) => T | null) | undefined",
 										"optional": true,
-										"description": "Optional custom parsing function to transform the value"
+										"description": "optional custom parsing function to transform the value"
 									}
 								]
 							}
@@ -29189,17 +29215,17 @@
 								"source_line": 86,
 								"type_signature": "(source_file: SourceFileInfo, module_path: string, checker: TypeChecker, options: ModuleSourceOptions, ctx: AnalysisContext): ModuleAnalysis",
 								"return_type": "ModuleAnalysis",
-								"return_description": "Module analysis matching ModuleAnalysis structure",
+								"return_description": "module analysis matching `ModuleAnalysis` structure",
 								"parameters": [
 									{
 										"name": "source_file",
 										"type": "SourceFileInfo",
-										"description": "The source file info (from Gro filer, file system, or other source)"
+										"description": "the source file info (from Gro filer, file system, or other source)"
 									},
 									{
 										"name": "module_path",
 										"type": "string",
-										"description": "The module path (relative to source root)"
+										"description": "the module path (relative to source root)"
 									},
 									{
 										"name": "checker",
@@ -29209,12 +29235,12 @@
 									{
 										"name": "options",
 										"type": "ModuleSourceOptions",
-										"description": "Module source options for path extraction"
+										"description": "module source options for path extraction"
 									},
 									{
 										"name": "ctx",
 										"type": "AnalysisContext",
-										"description": "Analysis context for collecting diagnostics"
+										"description": "analysis context for collecting diagnostics"
 									}
 								]
 							},
@@ -29225,17 +29251,17 @@
 								"source_line": 127,
 								"type_signature": "(source_file: SourceFileInfo, module_path: string, checker: TypeChecker, ctx: AnalysisContext): SvelteFileAnalysis",
 								"return_type": "SvelteFileAnalysis",
-								"return_description": "Component declaration and optional module-level comment",
+								"return_description": "component declaration and optional module-level comment",
 								"parameters": [
 									{
 										"name": "source_file",
 										"type": "SourceFileInfo",
-										"description": "Source file info with path and content"
+										"description": "source file info with path and content"
 									},
 									{
 										"name": "module_path",
 										"type": "string",
-										"description": "Module path relative to source root (e.g., 'Alert.svelte')"
+										"description": "module path relative to source root (e.g., 'Alert.svelte')"
 									},
 									{
 										"name": "checker",
@@ -29245,7 +29271,7 @@
 									{
 										"name": "ctx",
 										"type": "AnalysisContext",
-										"description": "Analysis context for collecting diagnostics"
+										"description": "analysis context for collecting diagnostics"
 									}
 								]
 							},
@@ -29282,12 +29308,12 @@
 								"source_line": 265,
 								"type_signature": "(script_content: string): string | undefined",
 								"return_type": "string | undefined",
-								"return_description": "The cleaned module comment text, or undefined if none found.",
+								"return_description": "the cleaned module comment text, or undefined if none found",
 								"parameters": [
 									{
 										"name": "script_content",
 										"type": "string",
-										"description": "The content of the `<script>` tag."
+										"description": "the content of the `<script>` tag"
 									}
 								]
 							}
@@ -29351,12 +29377,12 @@
 								"source_line": 104,
 								"type_signature": "(options?: SveltePreprocessMdzOptions): PreprocessorGroup",
 								"return_type": "PreprocessorGroup",
-								"return_description": "A Svelte `PreprocessorGroup` for use in `svelte.config.js`.",
+								"return_description": "a Svelte `PreprocessorGroup` for use in `svelte.config.js`",
 								"parameters": [
 									{
 										"name": "options",
 										"type": "SveltePreprocessMdzOptions",
-										"description": "Configuration for component/element resolution and file filtering.",
+										"description": "configuration for component/element resolution and file filtering",
 										"default_value": "{}"
 									}
 								]
@@ -29654,7 +29680,7 @@
 										"name": "hash",
 										"type": "string | undefined",
 										"optional": true,
-										"description": "URL fragment to append, with or without the `#`."
+										"description": "URL fragment to append, with or without the `#`"
 									}
 								]
 							},
@@ -29860,19 +29886,19 @@
 								"source_line": 71,
 								"type_signature": "(options?: TsProgramOptions | undefined, log?: Logger | undefined): TsProgram",
 								"return_type": "TsProgram",
-								"return_description": "The program and type checker",
+								"return_description": "the program and type checker",
 								"parameters": [
 									{
 										"name": "options",
 										"type": "TsProgramOptions | undefined",
 										"optional": true,
-										"description": "Configuration options for program creation"
+										"description": "configuration options for program creation"
 									},
 									{
 										"name": "log",
 										"type": "Logger | undefined",
 										"optional": true,
-										"description": "Optional logger for info messages"
+										"description": "optional logger for info messages"
 									}
 								]
 							},
@@ -29883,12 +29909,12 @@
 								"source_line": 111,
 								"type_signature": "(source_file_info: SourceFileInfo, ts_source_file: SourceFile, module_path: string, checker: TypeChecker, options: ModuleSourceOptions, ctx: AnalysisContext): ModuleAnalysis",
 								"return_type": "ModuleAnalysis",
-								"return_description": "Module metadata and re-export information",
+								"return_description": "module metadata and re-export information",
 								"parameters": [
 									{
 										"name": "source_file_info",
 										"type": "SourceFileInfo",
-										"description": "The source file info (from Gro filer, file system, or other source)"
+										"description": "the source file info (from Gro filer, file system, or other source)"
 									},
 									{
 										"name": "ts_source_file",
@@ -29898,7 +29924,7 @@
 									{
 										"name": "module_path",
 										"type": "string",
-										"description": "The module path (relative to source root)"
+										"description": "the module path (relative to source root)"
 									},
 									{
 										"name": "checker",
@@ -29908,12 +29934,12 @@
 									{
 										"name": "options",
 										"type": "ModuleSourceOptions",
-										"description": "Module source options for path extraction"
+										"description": "module source options for path extraction"
 									},
 									{
 										"name": "ctx",
 										"type": "AnalysisContext",
-										"description": "Analysis context for collecting diagnostics"
+										"description": "analysis context for collecting diagnostics"
 									}
 								]
 							},
@@ -29924,27 +29950,27 @@
 								"source_line": 160,
 								"type_signature": "(source_file: SourceFile, checker: TypeChecker, options: ModuleSourceOptions, ctx: AnalysisContext): ModuleExportsAnalysis",
 								"return_type": "ModuleExportsAnalysis",
-								"return_description": "Module comment, declarations, re-exports, and star exports",
+								"return_description": "module comment, declarations, re-exports, and star exports",
 								"parameters": [
 									{
 										"name": "source_file",
 										"type": "SourceFile",
-										"description": "The TypeScript source file to analyze"
+										"description": "the TypeScript source file to analyze"
 									},
 									{
 										"name": "checker",
 										"type": "TypeChecker",
-										"description": "The TypeScript type checker"
+										"description": "the TypeScript type checker"
 									},
 									{
 										"name": "options",
 										"type": "ModuleSourceOptions",
-										"description": "Module source options for path extraction in re-exports"
+										"description": "module source options for path extraction in re-exports"
 									},
 									{
 										"name": "ctx",
 										"type": "AnalysisContext",
-										"description": "Analysis context for collecting diagnostics"
+										"description": "analysis context for collecting diagnostics"
 									}
 								]
 							},
@@ -29955,27 +29981,27 @@
 								"source_line": 284,
 								"type_signature": "(symbol: Symbol, source_file: SourceFile, checker: TypeChecker, ctx: AnalysisContext): DeclarationAnalysis",
 								"return_type": "DeclarationAnalysis",
-								"return_description": "Complete declaration metadata including docs, types, and parameters, plus nodocs flag",
+								"return_description": "complete declaration metadata including docs, types, and parameters, plus nodocs flag",
 								"parameters": [
 									{
 										"name": "symbol",
 										"type": "Symbol",
-										"description": "The TypeScript symbol to analyze"
+										"description": "the TypeScript symbol to analyze"
 									},
 									{
 										"name": "source_file",
 										"type": "SourceFile",
-										"description": "The source file containing the symbol"
+										"description": "the source file containing the symbol"
 									},
 									{
 										"name": "checker",
 										"type": "TypeChecker",
-										"description": "The TypeScript type checker"
+										"description": "the TypeScript type checker"
 									},
 									{
 										"name": "ctx",
 										"type": "AnalysisContext",
-										"description": "Optional analysis context for collecting diagnostics"
+										"description": "optional analysis context for collecting diagnostics"
 									}
 								]
 							},
@@ -30008,12 +30034,12 @@
 								"source_line": 439,
 								"type_signature": "(sig: Signature, checker: TypeChecker, tsdoc_params: Map<string, string> | undefined): { name: string; type: string; optional?: boolean | undefined; description?: string | undefined; default_value?: string | undefined; }[]",
 								"return_type": "{ name: string; type: string; optional?: boolean | undefined; description?: string | undefined; default_value?: string | undefined; }[]",
-								"return_description": "Array of parameter info objects",
+								"return_description": "array of parameter info objects",
 								"parameters": [
 									{
 										"name": "sig",
 										"type": "Signature",
-										"description": "The TypeScript signature to extract parameters from"
+										"description": "the TypeScript signature to extract parameters from"
 									},
 									{
 										"name": "checker",
@@ -30023,7 +30049,7 @@
 									{
 										"name": "tsdoc_params",
 										"type": "Map<string, string> | undefined",
-										"description": "Map of parameter names to TSDoc descriptions (from tsdoc.params)"
+										"description": "map of parameter names to TSDoc descriptions (from tsdoc.params)"
 									}
 								]
 							},
@@ -30195,12 +30221,12 @@
 									{
 										"name": "node",
 										"type": "Node",
-										"description": "The TypeScript node to extract JSDoc from"
+										"description": "the TypeScript node to extract JSDoc from"
 									},
 									{
 										"name": "source_file",
 										"type": "SourceFile",
-										"description": "Source file (used for extracting full` @see` tag text)"
+										"description": "source file (used for extracting full ` @see` tag text)"
 									}
 								]
 							},
@@ -30231,12 +30257,12 @@
 								"source_line": 225,
 								"type_signature": "(comment_text: string): string | undefined",
 								"return_type": "string | undefined",
-								"return_description": "Cleaned comment text, or undefined if empty after cleaning",
+								"return_description": "cleaned comment text, or undefined if empty after cleaning",
 								"parameters": [
 									{
 										"name": "comment_text",
 										"type": "string",
-										"description": "The raw comment text including `/**` and `*\\/` markers"
+										"description": "the raw comment text including `/**` and `*\\/` markers"
 									}
 								]
 							}
@@ -30268,7 +30294,7 @@
 							}
 						],
 						"module_comment": "Bridge between TSDoc format and mdz for rendering.\n\nThis module converts raw TSDoc syntax (from the analysis library) to mdz format\n(Fuz's documentation rendering dialect). It lives in fuz_ui, not the extracted\nanalysis library, to keep that library format-agnostic.",
-						"dependencies": ["mdz.ts"],
+						"dependencies": ["mdz_helpers.ts"],
 						"dependents": ["DeclarationDetail.svelte"]
 					},
 					{
@@ -30362,7 +30388,7 @@
 			"published": true,
 			"package_json": {
 				"name": "@fuzdev/gro",
-				"version": "0.197.0",
+				"version": "0.197.1",
 				"description": "task runner and toolkit extending SvelteKit",
 				"tagline": "generate, run, optimize",
 				"glyph": "🌰",
@@ -30408,7 +30434,7 @@
 					"esm-env": "^1.2.2",
 					"oxc-parser": "^0.99.0",
 					"prettier": "^3.7.4",
-					"prettier-plugin-svelte": "^3.4.1",
+					"prettier-plugin-svelte": "^3.5.1",
 					"ts-blank-space": "^0.6.2",
 					"tslib": "^2.8.1",
 					"zod": "^4.3.6"
@@ -30430,13 +30456,13 @@
 					"@fuzdev/blake3_wasm": "^0.1.0",
 					"@fuzdev/fuz_code": "^0.45.1",
 					"@fuzdev/fuz_css": "^0.56.0",
-					"@fuzdev/fuz_ui": "^0.190.0",
-					"@fuzdev/fuz_util": "^0.54.0",
+					"@fuzdev/fuz_ui": "^0.191.1",
+					"@fuzdev/fuz_util": "^0.55.0",
 					"@jridgewell/trace-mapping": "^0.3.31",
 					"@ryanatkn/eslint-config": "^0.10.1",
 					"@sveltejs/acorn-typescript": "^1.0.9",
 					"@sveltejs/adapter-static": "^3.0.10",
-					"@sveltejs/kit": "^2.54.0",
+					"@sveltejs/kit": "^2.55.0",
 					"@sveltejs/package": "^2.5.7",
 					"@sveltejs/vite-plugin-svelte": "^6.2.4",
 					"@types/estree": "^1.0.8",
@@ -30446,7 +30472,7 @@
 					"eslint": "^9.39.1",
 					"eslint-plugin-svelte": "^3.13.1",
 					"magic-string": "^0.30.21",
-					"svelte": "^5.53.10",
+					"svelte": "^5.54.0",
 					"svelte-check": "^4.4.5",
 					"svelte2tsx": "^0.7.52",
 					"typescript": "^5.9.3",
@@ -30474,7 +30500,7 @@
 			},
 			"source_json": {
 				"name": "@fuzdev/gro",
-				"version": "0.197.0",
+				"version": "0.197.1",
 				"modules": [
 					{
 						"path": "args.ts",
@@ -30621,7 +30647,7 @@
 										"name": "git_commit",
 										"type": "string | null | undefined",
 										"optional": true,
-										"description": "Optional pre-computed git commit hash (optimization to avoid re-reading)"
+										"description": "optional pre-computed git commit hash (optimization to avoid re-reading)"
 									}
 								]
 							},
@@ -30677,7 +30703,7 @@
 										"name": "git_commit",
 										"type": "string | null | undefined",
 										"optional": true,
-										"description": "Optional pre-computed git commit hash (optimization)"
+										"description": "optional pre-computed git commit hash (optimization)"
 									}
 								]
 							},
@@ -30692,7 +30718,7 @@
 									{
 										"name": "build_dirs",
 										"type": "string[]",
-										"description": "Array of output directories to scan (e.g., ['build', 'dist', 'dist_server'])"
+										"description": "array of output directories to scan (e.g., ['build', 'dist', 'dist_server'])"
 									}
 								]
 							},
@@ -30719,13 +30745,13 @@
 										"name": "git_commit",
 										"type": "string | null | undefined",
 										"optional": true,
-										"description": "Optional pre-computed git commit hash (optimization)"
+										"description": "optional pre-computed git commit hash (optimization)"
 									},
 									{
 										"name": "build_dirs",
 										"type": "string[] | undefined",
 										"optional": true,
-										"description": "Optional pre-discovered build directories (optimization to avoid redundant filesystem scans)"
+										"description": "optional pre-discovered build directories (optimization to avoid redundant filesystem scans)"
 									}
 								]
 							}
@@ -32515,7 +32541,7 @@
 								"kind": "function",
 								"doc_comment": "Runs a file using the Gro loader.\n\nUses conditional exports to correctly set up `esm-env` as development by default,\nso if you want production set `NODE_ENV=production`.",
 								"see_also": ["https://nodejs.org/api/packages.html#conditional-exports"],
-								"source_line": 83,
+								"source_line": 82,
 								"type_signature": "(loader_path: string, invoke_path: string, argv: string[], js_cli?: string): Promise<SpawnResult>",
 								"return_type": "Promise<SpawnResult>",
 								"parameters": [
@@ -33124,20 +33150,20 @@
 									{
 										"name": "task_name",
 										"type": "RawInputPath",
-										"description": "The name of the task to invoke."
+										"description": "the name of the task to invoke"
 									},
 									{
 										"name": "args",
 										"type": "Args | undefined",
-										"description": "The CLI args to pass to the task."
+										"description": "the CLI args to pass to the task"
 									},
-									{"name": "config", "type": "GroConfig", "description": "The Gro configuration."},
+									{"name": "config", "type": "GroConfig", "description": "the Gro configuration"},
 									{"name": "initial_filer", "type": "Filer | undefined", "optional": true},
 									{
 										"name": "initial_timings",
 										"type": "Timings | null | undefined",
 										"optional": true,
-										"description": "The timings to use for the top-level task, `null` for composed tasks."
+										"description": "the timings to use for the top-level task, `null` for composed tasks"
 									},
 									{"name": "parent_log", "type": "Logger | undefined", "optional": true}
 								]
@@ -35193,7 +35219,7 @@
 			"published": true,
 			"package_json": {
 				"name": "@fuzdev/fuz_util",
-				"version": "0.54.0",
+				"version": "0.55.0",
 				"description": "utility belt for JS",
 				"glyph": "🦕",
 				"logo": "logo.svg",
@@ -35298,7 +35324,7 @@
 			},
 			"source_json": {
 				"name": "@fuzdev/fuz_util",
-				"version": "0.54.0",
+				"version": "0.55.0",
 				"modules": [
 					{
 						"path": "args.ts",
@@ -35357,12 +35383,12 @@
 								"source_line": 190,
 								"type_signature": "(schema: ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>): { success: true; } | { success: false; error: ZodError<unknown>; }",
 								"return_type": "{ success: true; } | { success: false; error: ZodError<unknown>; }",
-								"return_description": "Validation result with success flag and optional error",
+								"return_description": "validation result with success flag and optional error",
 								"parameters": [
 									{
 										"name": "schema",
 										"type": "ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>",
-										"description": "Zod object schema with optional alias metadata"
+										"description": "zod object schema with optional alias metadata"
 									}
 								]
 							},
@@ -35378,12 +35404,12 @@
 									{
 										"name": "unparsed_args",
 										"type": "Args",
-										"description": "Args object from CLI parser (mri, minimist, etc.)"
+										"description": "args object from CLI parser (mri, minimist, etc.)"
 									},
 									{
 										"name": "schema",
 										"type": "ZodType<TOutput, unknown, $ZodTypeInternals<TOutput, unknown>>",
-										"description": "Zod object schema with optional alias metadata"
+										"description": "zod object schema with optional alias metadata"
 									}
 								]
 							},
@@ -35394,14 +35420,14 @@
 								"source_line": 283,
 								"type_signature": "(args: Args, schema?: ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | undefined): string[]",
 								"return_type": "string[]",
-								"return_description": "Array of CLI argument strings",
+								"return_description": "array of CLI argument strings",
 								"parameters": [
-									{"name": "args", "type": "Args", "description": "Args object to serialize"},
+									{"name": "args", "type": "Args", "description": "args object to serialize"},
 									{
 										"name": "schema",
 										"type": "ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | undefined",
 										"optional": true,
-										"description": "Optional zod schema to extract aliases for short form preference"
+										"description": "optional zod schema to extract aliases for short form preference"
 									}
 								]
 							},
@@ -35412,12 +35438,12 @@
 								"source_line": 355,
 								"type_signature": "(schema: ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>): ArgsAliasesResult",
 								"return_type": "ArgsAliasesResult",
-								"return_description": "Object with aliases map and canonical_keys set",
+								"return_description": "object with aliases map and canonical_keys set",
 								"parameters": [
 									{
 										"name": "schema",
 										"type": "ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>",
-										"description": "Zod object schema with optional `.meta({aliases})` on fields"
+										"description": "zod object schema with optional `.meta({aliases})` on fields"
 									}
 								]
 							},
@@ -35428,12 +35454,12 @@
 								"source_line": 425,
 								"type_signature": "(argv: string[]): ParsedArgs",
 								"return_type": "ParsedArgs",
-								"return_description": "Parsed Args object with guaranteed `_` array (null prototype)",
+								"return_description": "parsed `Args` object with guaranteed `_` array (null prototype)",
 								"parameters": [
 									{
 										"name": "argv",
 										"type": "string[]",
-										"description": "Raw argument array (typically process.argv.slice(2))"
+										"description": "raw argument array (typically process.argv.slice(2))"
 									}
 								]
 							}
@@ -35731,6 +35757,12 @@
 										"kind": "variable",
 										"type_signature": "number",
 										"doc_comment": "Number of days after which to warn about stale baseline.\nDefault: undefined (no staleness warning)"
+									},
+									{
+										"name": "min_percent_difference",
+										"kind": "variable",
+										"type_signature": "number",
+										"doc_comment": "Minimum percentage difference to consider meaningful, as a ratio.\nPassed through to `benchmark_stats_compare`. See `BenchmarkCompareOptions`.\nDefault: 0.10 (10%)"
 									}
 								]
 							},
@@ -35738,7 +35770,7 @@
 								"name": "BenchmarkBaselineComparisonResult",
 								"kind": "type",
 								"doc_comment": "Result of comparing current results against a baseline.",
-								"source_line": 97,
+								"source_line": 103,
 								"type_signature": "BenchmarkBaselineComparisonResult",
 								"properties": [
 									{
@@ -35813,7 +35845,7 @@
 								"name": "BenchmarkBaselineTaskComparison",
 								"kind": "type",
 								"doc_comment": "Comparison result for a single task.",
-								"source_line": 125,
+								"source_line": 131,
 								"type_signature": "BenchmarkBaselineTaskComparison",
 								"properties": [
 									{"name": "name", "kind": "variable", "type_signature": "string"},
@@ -35841,19 +35873,19 @@
 								"examples": [
 									"```ts\nconst bench = new Benchmark();\nbench.add('test', () => fn());\nawait bench.run();\nawait benchmark_baseline_save(bench.results());\n```"
 								],
-								"source_line": 169,
+								"source_line": 175,
 								"type_signature": "(results: BenchmarkResult[], options?: BenchmarkBaselineSaveOptions): Promise<void>",
 								"return_type": "Promise<void>",
 								"parameters": [
 									{
 										"name": "results",
 										"type": "BenchmarkResult[]",
-										"description": "Benchmark results to save"
+										"description": "benchmark results to save"
 									},
 									{
 										"name": "options",
 										"type": "BenchmarkBaselineSaveOptions",
-										"description": "Save options",
+										"description": "save options",
 										"default_value": "{}"
 									}
 								]
@@ -35865,15 +35897,15 @@
 								"examples": [
 									"```ts\nconst baseline = await benchmark_baseline_load();\nif (baseline) {\n  console.log(`Baseline from ${baseline.timestamp}`);\n}\n```"
 								],
-								"source_line": 212,
+								"source_line": 218,
 								"type_signature": "(options?: BenchmarkBaselineLoadOptions): Promise<{ version: number; timestamp: string; git_commit: string | null; git_branch: string | null; node_version: string; entries: { ...; }[]; } | null>",
 								"return_type": "Promise<{ version: number; timestamp: string; git_commit: string | null; git_branch: string | null; node_version: string; entries: { name: string; mean_ns: number; p50_ns: number; std_dev_ns: number; ... 7 more ...; sample_size: number; }[]; } | null>",
-								"return_description": "The baseline, or null if not found or invalid",
+								"return_description": "the baseline, or null if not found or invalid",
 								"parameters": [
 									{
 										"name": "options",
 										"type": "BenchmarkBaselineLoadOptions",
-										"description": "Load options",
+										"description": "load options",
 										"default_value": "{}"
 									}
 								]
@@ -35885,20 +35917,20 @@
 								"examples": [
 									"```ts\nconst bench = new Benchmark();\nbench.add('test', () => fn());\nawait bench.run();\n\nconst comparison = await benchmark_baseline_compare(bench.results(), {\n  regression_threshold: 1.05, // Only flag regressions 5% or more slower\n  staleness_warning_days: 7,  // Warn if baseline is older than 7 days\n});\nif (comparison.regressions.length > 0) {\n  console.log('Performance regressions detected!');\n  for (const r of comparison.regressions) {\n    console.log(`  ${r.name}: ${r.comparison.speedup_ratio.toFixed(2)}x slower`);\n  }\n  process.exit(1);\n}\n```"
 								],
-								"source_line": 275,
+								"source_line": 281,
 								"type_signature": "(results: BenchmarkResult[], options?: BenchmarkBaselineCompareOptions): Promise<BenchmarkBaselineComparisonResult>",
 								"return_type": "Promise<BenchmarkBaselineComparisonResult>",
-								"return_description": "Comparison result with regressions, improvements, and unchanged tasks",
+								"return_description": "comparison result with regressions, improvements, and unchanged tasks",
 								"parameters": [
 									{
 										"name": "results",
 										"type": "BenchmarkResult[]",
-										"description": "Current benchmark results"
+										"description": "current benchmark results"
 									},
 									{
 										"name": "options",
 										"type": "BenchmarkBaselineCompareOptions",
-										"description": "Comparison options including regression threshold and staleness warning",
+										"description": "comparison options including regression threshold and staleness warning",
 										"default_value": "{}"
 									}
 								]
@@ -35907,15 +35939,15 @@
 								"name": "benchmark_baseline_format",
 								"kind": "function",
 								"doc_comment": "Format a baseline comparison result as a human-readable string.",
-								"source_line": 417,
+								"source_line": 426,
 								"type_signature": "(result: BenchmarkBaselineComparisonResult): string",
 								"return_type": "string",
-								"return_description": "Formatted string summary",
+								"return_description": "formatted string summary",
 								"parameters": [
 									{
 										"name": "result",
 										"type": "BenchmarkBaselineComparisonResult",
-										"description": "Comparison result from benchmark_baseline_compare"
+										"description": "comparison result from benchmark_baseline_compare"
 									}
 								]
 							},
@@ -35923,7 +35955,7 @@
 								"name": "benchmark_baseline_format_json",
 								"kind": "function",
 								"doc_comment": "Format a baseline comparison result as JSON for programmatic consumption.",
-								"source_line": 498,
+								"source_line": 513,
 								"type_signature": "(result: BenchmarkBaselineComparisonResult, options?: { pretty?: boolean | undefined; }): string",
 								"return_type": "string",
 								"return_description": "JSON string",
@@ -35931,12 +35963,12 @@
 									{
 										"name": "result",
 										"type": "BenchmarkBaselineComparisonResult",
-										"description": "Comparison result from benchmark_baseline_compare"
+										"description": "comparison result from benchmark_baseline_compare"
 									},
 									{
 										"name": "options",
 										"type": "{ pretty?: boolean | undefined; }",
-										"description": "Formatting options",
+										"description": "formatting options",
 										"default_value": "{}"
 									}
 								]
@@ -35958,18 +35990,18 @@
 								"source_line": 24,
 								"type_signature": "(results: BenchmarkResult[], baseline?: string | undefined): string",
 								"return_type": "string",
-								"return_description": "Formatted table string with enhanced metrics",
+								"return_description": "formatted table string with enhanced metrics",
 								"parameters": [
 									{
 										"name": "results",
 										"type": "BenchmarkResult[]",
-										"description": "Array of benchmark results"
+										"description": "array of benchmark results"
 									},
 									{
 										"name": "baseline",
 										"type": "string | undefined",
 										"optional": true,
-										"description": "Optional task name to use as baseline for comparison (defaults to fastest)"
+										"description": "optional task name to use as baseline for comparison (defaults to fastest)"
 									}
 								]
 							},
@@ -35983,18 +36015,18 @@
 								"source_line": 142,
 								"type_signature": "(results: BenchmarkResult[], baseline?: string | undefined): string",
 								"return_type": "string",
-								"return_description": "Formatted markdown table string",
+								"return_description": "formatted markdown table string",
 								"parameters": [
 									{
 										"name": "results",
 										"type": "BenchmarkResult[]",
-										"description": "Array of benchmark results"
+										"description": "array of benchmark results"
 									},
 									{
 										"name": "baseline",
 										"type": "string | undefined",
 										"optional": true,
-										"description": "Optional task name to use as baseline for comparison (defaults to fastest)"
+										"description": "optional task name to use as baseline for comparison (defaults to fastest)"
 									}
 								]
 							},
@@ -36008,17 +36040,17 @@
 								"source_line": 263,
 								"type_signature": "(results: BenchmarkResult[], groups: BenchmarkGroup[]): string",
 								"return_type": "string",
-								"return_description": "Formatted markdown string with group headers and tables",
+								"return_description": "formatted markdown string with group headers and tables",
 								"parameters": [
 									{
 										"name": "results",
 										"type": "BenchmarkResult[]",
-										"description": "Array of benchmark results"
+										"description": "array of benchmark results"
 									},
 									{
 										"name": "groups",
 										"type": "BenchmarkGroup[]",
-										"description": "Array of group definitions"
+										"description": "array of group definitions"
 									}
 								]
 							},
@@ -36057,13 +36089,13 @@
 									{
 										"name": "results",
 										"type": "BenchmarkResult[]",
-										"description": "Array of benchmark results"
+										"description": "array of benchmark results"
 									},
 									{
 										"name": "options",
 										"type": "BenchmarkFormatJsonOptions | undefined",
 										"optional": true,
-										"description": "Formatting options"
+										"description": "formatting options"
 									}
 								]
 							},
@@ -36077,17 +36109,17 @@
 								"source_line": 374,
 								"type_signature": "(results: BenchmarkResult[], groups: BenchmarkGroup[]): string",
 								"return_type": "string",
-								"return_description": "Formatted table string with group separators",
+								"return_description": "formatted table string with group separators",
 								"parameters": [
 									{
 										"name": "results",
 										"type": "BenchmarkResult[]",
-										"description": "Array of benchmark results"
+										"description": "array of benchmark results"
 									},
 									{
 										"name": "groups",
 										"type": "BenchmarkGroup[]",
-										"description": "Array of group definitions"
+										"description": "array of group definitions"
 									}
 								]
 							},
@@ -36155,7 +36187,7 @@
 										"name": "significant",
 										"kind": "variable",
 										"type_signature": "boolean",
-										"doc_comment": "Whether the difference is statistically significant at the given alpha"
+										"doc_comment": "Whether the difference is both statistically and practically significant"
 									},
 									{
 										"name": "p_value",
@@ -36164,16 +36196,22 @@
 										"doc_comment": "P-value from Welch's t-test (lower = more confident the difference is real)"
 									},
 									{
+										"name": "percent_difference",
+										"kind": "variable",
+										"type_signature": "number",
+										"doc_comment": "Percentage difference between means as a ratio (0.05 = 5%, 1.0 = 100%)"
+									},
+									{
 										"name": "effect_size",
 										"kind": "variable",
 										"type_signature": "number",
-										"doc_comment": "Cohen's d effect size (magnitude of difference independent of sample size)"
+										"doc_comment": "Cohen's d effect size (informational — not used for classification)"
 									},
 									{
 										"name": "effect_magnitude",
 										"kind": "variable",
 										"type_signature": "EffectMagnitude",
-										"doc_comment": "Interpretation of effect size"
+										"doc_comment": "Interpretation of practical significance based on percentage difference"
 									},
 									{
 										"name": "ci_overlap",
@@ -36193,7 +36231,7 @@
 								"name": "BenchmarkCompareOptions",
 								"kind": "type",
 								"doc_comment": "Options for benchmark comparison.",
-								"source_line": 64,
+								"source_line": 66,
 								"type_signature": "BenchmarkCompareOptions",
 								"properties": [
 									{
@@ -36201,6 +36239,12 @@
 										"kind": "variable",
 										"type_signature": "number",
 										"doc_comment": "Significance level for hypothesis testing (default: 0.05)"
+									},
+									{
+										"name": "min_percent_difference",
+										"kind": "variable",
+										"type_signature": "number",
+										"doc_comment": "Minimum percentage difference to consider practically meaningful, as a ratio.\nBelow this threshold, differences are classified as 'negligible' and\n`significant` is forced to `false`, regardless of p-value.\nThis prevents the t-test's oversensitivity at large sample sizes from\nflagging system-level noise (thermal throttle, OS scheduler, cache pressure)\nas meaningful differences.\n\nEffect magnitude thresholds scale from this value:\nnegligible < min, small < min*3, medium < min*5, large >= min*5.\n\nDefault: 0.10 (10%)."
 									}
 								]
 							},
@@ -36208,7 +36252,7 @@
 								"name": "BenchmarkStats",
 								"kind": "class",
 								"doc_comment": "Complete statistical analysis of timing measurements.\nIncludes outlier detection, descriptive statistics, and performance metrics.\nAll timing values are in nanoseconds.",
-								"source_line": 74,
+								"source_line": 90,
 								"members": [
 									{
 										"name": "mean_ns",
@@ -36348,30 +36392,30 @@
 							{
 								"name": "benchmark_stats_compare",
 								"kind": "function",
-								"doc_comment": "Compare two benchmark results for statistical significance.\nUses Welch's t-test (handles unequal variances) and Cohen's d effect size.",
+								"doc_comment": "Compare two benchmark results for practical and statistical significance.\nUses percentage difference for effect magnitude classification, with Welch's\nt-test for statistical confidence. Cohen's d is computed as an informational\nmetric but does not drive classification — its thresholds (0.2/0.5/0.8) are\ncalibrated for social science and produce false positives in benchmarking\nwhere within-run variance is tight.",
 								"examples": [
 									"```ts\nconst comparison = benchmark_stats_compare(result_a.stats, result_b.stats);\nif (comparison.significant) {\n  console.log(`${comparison.faster} is ${comparison.speedup_ratio.toFixed(2)}x faster`);\n}\n```"
 								],
-								"source_line": 200,
+								"source_line": 220,
 								"type_signature": "(a: BenchmarkStatsComparable, b: BenchmarkStatsComparable, options?: BenchmarkCompareOptions | undefined): BenchmarkComparison",
 								"return_type": "BenchmarkComparison",
-								"return_description": "Comparison result with significance, effect size, and recommendation",
+								"return_description": "comparison result with significance, effect size, and recommendation",
 								"parameters": [
 									{
 										"name": "a",
 										"type": "BenchmarkStatsComparable",
-										"description": "First benchmark stats (or any object with required properties)"
+										"description": "first benchmark stats (or any object with required properties)"
 									},
 									{
 										"name": "b",
 										"type": "BenchmarkStatsComparable",
-										"description": "Second benchmark stats (or any object with required properties)"
+										"description": "second benchmark stats (or any object with required properties)"
 									},
 									{
 										"name": "options",
 										"type": "BenchmarkCompareOptions | undefined",
 										"optional": true,
-										"description": "Comparison options"
+										"description": "comparison options"
 									}
 								]
 							}
@@ -36593,23 +36637,23 @@
 								"source_line": 103,
 								"type_signature": "(fn: () => unknown, iterations: number, async_hint?: boolean | undefined): Promise<boolean>",
 								"return_type": "Promise<boolean>",
-								"return_description": "Whether the function is async",
+								"return_description": "whether the function is async",
 								"parameters": [
 									{
 										"name": "fn",
 										"type": "() => unknown",
-										"description": "Function to warmup (sync or async)"
+										"description": "function to warmup (sync or async)"
 									},
 									{
 										"name": "iterations",
 										"type": "number",
-										"description": "Number of warmup iterations"
+										"description": "number of warmup iterations"
 									},
 									{
 										"name": "async_hint",
 										"type": "boolean | undefined",
 										"optional": true,
-										"description": "If provided, use this instead of detecting"
+										"description": "if provided, use this instead of detecting"
 									}
 								]
 							},
@@ -36633,12 +36677,12 @@
 										"doc_comment": "Add a benchmark task.",
 										"type_signature": "(name: string, fn: () => unknown): this",
 										"return_type": "this",
-										"return_description": "This Benchmark instance for chaining",
+										"return_description": "this `Benchmark` instance for chaining",
 										"parameters": [
 											{
 												"name": "name",
 												"type": "string",
-												"description": "Task name or full task object"
+												"description": "task name or full task object"
 											},
 											{
 												"name": "fn",
@@ -36673,12 +36717,12 @@
 										"doc_comment": "Remove a benchmark task by name.",
 										"type_signature": "(name: string): this",
 										"return_type": "this",
-										"return_description": "This Benchmark instance for chaining",
+										"return_description": "this `Benchmark` instance for chaining",
 										"parameters": [
 											{
 												"name": "name",
 												"type": "string",
-												"description": "Name of the task to remove"
+												"description": "name of the task to remove"
 											}
 										],
 										"throws": [
@@ -36691,9 +36735,9 @@
 										"doc_comment": "Mark a task to be skipped during benchmark runs.",
 										"type_signature": "(name: string): this",
 										"return_type": "this",
-										"return_description": "This Benchmark instance for chaining",
+										"return_description": "this `Benchmark` instance for chaining",
 										"parameters": [
-											{"name": "name", "type": "string", "description": "Name of the task to skip"}
+											{"name": "name", "type": "string", "description": "name of the task to skip"}
 										],
 										"throws": [
 											{"type": "Error", "description": "if task with given name doesn't exist"}
@@ -36705,12 +36749,12 @@
 										"doc_comment": "Mark a task to run exclusively (along with other `only` tasks).",
 										"type_signature": "(name: string): this",
 										"return_type": "this",
-										"return_description": "This Benchmark instance for chaining",
+										"return_description": "this `Benchmark` instance for chaining",
 										"parameters": [
 											{
 												"name": "name",
 												"type": "string",
-												"description": "Name of the task to run exclusively"
+												"description": "name of the task to run exclusively"
 											}
 										],
 										"throws": [
@@ -36723,7 +36767,7 @@
 										"doc_comment": "Run all benchmark tasks.",
 										"type_signature": "(): Promise<BenchmarkResult[]>",
 										"return_type": "Promise<BenchmarkResult[]>",
-										"return_description": "Array of benchmark results",
+										"return_description": "array of benchmark results",
 										"parameters": []
 									},
 									{
@@ -36732,13 +36776,13 @@
 										"doc_comment": "Format results as an ASCII table with percentiles, min/max, and relative performance.",
 										"type_signature": "(options?: BenchmarkFormatTableOptions | undefined): string",
 										"return_type": "string",
-										"return_description": "Formatted table string",
+										"return_description": "formatted table string",
 										"parameters": [
 											{
 												"name": "options",
 												"type": "BenchmarkFormatTableOptions | undefined",
 												"optional": true,
-												"description": "Formatting options"
+												"description": "formatting options"
 											}
 										]
 									},
@@ -36748,13 +36792,13 @@
 										"doc_comment": "Format results as a Markdown table.",
 										"type_signature": "(options?: BenchmarkFormatTableOptions | undefined): string",
 										"return_type": "string",
-										"return_description": "Formatted markdown string",
+										"return_description": "formatted markdown string",
 										"parameters": [
 											{
 												"name": "options",
 												"type": "BenchmarkFormatTableOptions | undefined",
 												"optional": true,
-												"description": "Formatting options (groups for organized output with optional baselines)"
+												"description": "formatting options (groups for organized output with optional baselines)"
 											}
 										]
 									},
@@ -36770,7 +36814,7 @@
 												"name": "options",
 												"type": "BenchmarkFormatJsonOptions | undefined",
 												"optional": true,
-												"description": "Formatting options (pretty, include_timings)"
+												"description": "formatting options (pretty, include_timings)"
 											}
 										]
 									},
@@ -36780,7 +36824,7 @@
 										"doc_comment": "Get the benchmark results.\nReturns a shallow copy to prevent external mutation.",
 										"type_signature": "(): BenchmarkResult[]",
 										"return_type": "BenchmarkResult[]",
-										"return_description": "Array of benchmark results",
+										"return_description": "array of benchmark results",
 										"parameters": []
 									},
 									{
@@ -36789,7 +36833,7 @@
 										"doc_comment": "Get results as a map for convenient lookup by task name.\nReturns a new Map each call to prevent external mutation.",
 										"type_signature": "(): Map<string, BenchmarkResult>",
 										"return_type": "Map<string, BenchmarkResult>",
-										"return_description": "Map of task name to benchmark result",
+										"return_description": "map of task name to benchmark result",
 										"parameters": []
 									},
 									{
@@ -36798,7 +36842,7 @@
 										"doc_comment": "Reset the benchmark results.\nKeeps tasks intact so benchmarks can be rerun.",
 										"type_signature": "(): this",
 										"return_type": "this",
-										"return_description": "This Benchmark instance for chaining",
+										"return_description": "this `Benchmark` instance for chaining",
 										"parameters": []
 									},
 									{
@@ -36807,7 +36851,7 @@
 										"doc_comment": "Clear everything (results and tasks).\nUse this to start fresh with a new set of benchmarks.",
 										"type_signature": "(): this",
 										"return_type": "this",
-										"return_description": "This Benchmark instance for chaining",
+										"return_description": "this `Benchmark` instance for chaining",
 										"parameters": []
 									},
 									{
@@ -36816,7 +36860,7 @@
 										"doc_comment": "Get a quick text summary of the fastest task.",
 										"type_signature": "(): string",
 										"return_type": "string",
-										"return_description": "Human-readable summary string",
+										"return_description": "human-readable summary string",
 										"parameters": []
 									}
 								]
@@ -36835,12 +36879,12 @@
 								"source_line": 16,
 								"type_signature": "(data: string | BufferSource): Uint8Array<ArrayBufferLike>",
 								"return_type": "Uint8Array<ArrayBufferLike>",
-								"return_description": "`Uint8Array` view of the data.",
+								"return_description": "`Uint8Array` view of the data",
 								"parameters": [
 									{
 										"name": "data",
 										"type": "string | BufferSource",
-										"description": "String or `BufferSource` to convert."
+										"description": "string or `BufferSource` to convert"
 									}
 								]
 							},
@@ -36851,8 +36895,8 @@
 								"source_line": 29,
 								"type_signature": "(n: number): string",
 								"return_type": "string",
-								"return_description": "formatted string like `'1.2 KB'` or `'3.4 MB'`.",
-								"parameters": [{"name": "n", "type": "number", "description": "byte count."}]
+								"return_description": "formatted string like `'1.2 KB'` or `'3.4 MB'`",
+								"parameters": [{"name": "n", "type": "number", "description": "byte count"}]
 							}
 						],
 						"module_comment": "Binary data conversion helpers.",
@@ -37192,12 +37236,12 @@
 								"source_line": 86,
 								"type_signature": "<T extends DagNode>(options: DagOptions<T>): Promise<DagResult>",
 								"return_type": "Promise<DagResult>",
-								"return_description": "Aggregated result with per-node details.",
+								"return_description": "aggregated result with per-node details",
 								"parameters": [
 									{
 										"name": "options",
 										"type": "DagOptions<T>",
-										"description": "DAG execution options."
+										"description": "DAG execution options"
 									}
 								]
 							}
@@ -37248,10 +37292,10 @@
 								"source_line": 22,
 								"type_signature": "(a: string, b: string): DiffLine[]",
 								"return_type": "DiffLine[]",
-								"return_description": "Array of diff lines with type annotations.",
+								"return_description": "array of diff lines with type annotations",
 								"parameters": [
-									{"name": "a", "type": "string", "description": "The original/current content."},
-									{"name": "b", "type": "string", "description": "The new/desired content."}
+									{"name": "a", "type": "string", "description": "the original/current content"},
+									{"name": "b", "type": "string", "description": "the new/desired content"}
 								]
 							},
 							{
@@ -37261,13 +37305,13 @@
 								"source_line": 101,
 								"type_signature": "(diff: DiffLine[], context_lines?: number): DiffLine[]",
 								"return_type": "DiffLine[]",
-								"return_description": "Filtered diff with ellipsis markers for skipped regions.",
+								"return_description": "filtered diff with ellipsis markers for skipped regions",
 								"parameters": [
-									{"name": "diff", "type": "DiffLine[]", "description": "The full diff lines."},
+									{"name": "diff", "type": "DiffLine[]", "description": "the full diff lines"},
 									{
 										"name": "context_lines",
 										"type": "number",
-										"description": "Number of context lines to show around changes (default: 3).",
+										"description": "number of context lines to show around changes (default: 3)",
 										"default_value": "3"
 									}
 								]
@@ -37306,27 +37350,23 @@
 								"source_line": 172,
 								"type_signature": "(diff: DiffLine[], current_path: string, desired_path: string, options?: FormatDiffOptions): string",
 								"return_type": "string",
-								"return_description": "Formatted diff string.",
+								"return_description": "formatted diff string",
 								"parameters": [
-									{
-										"name": "diff",
-										"type": "DiffLine[]",
-										"description": "The diff lines to format."
-									},
+									{"name": "diff", "type": "DiffLine[]", "description": "the diff lines to format"},
 									{
 										"name": "current_path",
 										"type": "string",
-										"description": "Path label for \"current\" content."
+										"description": "path label for \"current\" content"
 									},
 									{
 										"name": "desired_path",
 										"type": "string",
-										"description": "Path label for \"desired\" content."
+										"description": "path label for \"desired\" content"
 									},
 									{
 										"name": "options",
 										"type": "FormatDiffOptions",
-										"description": "Formatting options.",
+										"description": "formatting options",
 										"default_value": "{}"
 									}
 								]
@@ -37338,15 +37378,15 @@
 								"source_line": 220,
 								"type_signature": "(current: string, desired: string, path: string, options?: FormatDiffOptions): string | null",
 								"return_type": "string | null",
-								"return_description": "Formatted diff string, or null if binary.",
+								"return_description": "formatted diff string, or null if binary",
 								"parameters": [
-									{"name": "current", "type": "string", "description": "Current content."},
-									{"name": "desired", "type": "string", "description": "Desired content."},
-									{"name": "path", "type": "string", "description": "File path for labels."},
+									{"name": "current", "type": "string", "description": "current content"},
+									{"name": "desired", "type": "string", "description": "desired content"},
+									{"name": "path", "type": "string", "description": "file path for labels"},
 									{
 										"name": "options",
 										"type": "FormatDiffOptions",
-										"description": "Formatting options.",
+										"description": "formatting options",
 										"default_value": "{}"
 									}
 								]
@@ -37392,8 +37432,9 @@
 								"source_line": 69,
 								"type_signature": "<T extends Pick<Event, \"preventDefault\" | \"stopPropagation\" | \"stopImmediatePropagation\">>(event: T, immediate?: boolean, preventDefault?: boolean): T",
 								"return_type": "T",
+								"return_description": "the swallowed event",
 								"parameters": [
-									{"name": "event", "type": "T"},
+									{"name": "event", "type": "T", "description": "the event to swallow"},
 									{
 										"name": "immediate",
 										"type": "boolean",
@@ -37814,7 +37855,7 @@
 									{
 										"name": "stdout",
 										"type": "string | null",
-										"description": "The raw output from `git status --porcelain -z`"
+										"description": "the raw output from `git status --porcelain -z`"
 									}
 								]
 							},
@@ -38057,7 +38098,7 @@
 								"source_line": 30,
 								"type_signature": "(data: string | BufferSource): string",
 								"return_type": "string",
-								"return_description": "64-character hexadecimal hash string (32 bytes).",
+								"return_description": "64-character hexadecimal hash string (32 bytes)",
 								"parameters": [
 									{
 										"name": "data",
@@ -38087,7 +38128,7 @@
 								"source_line": 34,
 								"type_signature": "(data: string | BufferSource): Promise<string>",
 								"return_type": "Promise<string>",
-								"return_description": "40-character hexadecimal hash string.",
+								"return_description": "40-character hexadecimal hash string",
 								"parameters": [
 									{
 										"name": "data",
@@ -38103,7 +38144,7 @@
 								"source_line": 43,
 								"type_signature": "(data: string | BufferSource): Promise<string>",
 								"return_type": "Promise<string>",
-								"return_description": "64-character hexadecimal hash string.",
+								"return_description": "64-character hexadecimal hash string",
 								"parameters": [
 									{
 										"name": "data",
@@ -38119,7 +38160,7 @@
 								"source_line": 52,
 								"type_signature": "(data: string | BufferSource): Promise<string>",
 								"return_type": "Promise<string>",
-								"return_description": "96-character hexadecimal hash string.",
+								"return_description": "96-character hexadecimal hash string",
 								"parameters": [
 									{
 										"name": "data",
@@ -38135,7 +38176,7 @@
 								"source_line": 61,
 								"type_signature": "(data: string | BufferSource): Promise<string>",
 								"return_type": "Promise<string>",
-								"return_description": "128-character hexadecimal hash string.",
+								"return_description": "128-character hexadecimal hash string",
 								"parameters": [
 									{
 										"name": "data",
@@ -38151,12 +38192,12 @@
 								"source_line": 74,
 								"type_signature": "(data: string | BufferSource): string",
 								"return_type": "string",
-								"return_description": "8-character hex-encoded unsigned 32-bit hash.",
+								"return_description": "8-character hex-encoded unsigned 32-bit hash",
 								"parameters": [
 									{
 										"name": "data",
 										"type": "string | BufferSource",
-										"description": "String or binary data to hash."
+										"description": "string or binary data to hash"
 									}
 								]
 							}
@@ -38174,12 +38215,12 @@
 								"source_line": 13,
 								"type_signature": "(bytes: Uint8Array<ArrayBufferLike>): string",
 								"return_type": "string",
-								"return_description": "Hex string with two characters per byte.",
+								"return_description": "hex string with two characters per byte",
 								"parameters": [
 									{
 										"name": "bytes",
 										"type": "Uint8Array<ArrayBufferLike>",
-										"description": "Binary data to encode."
+										"description": "binary data to encode"
 									}
 								]
 							},
@@ -38190,12 +38231,12 @@
 								"source_line": 29,
 								"type_signature": "(hex: string): Uint8Array<ArrayBufferLike> | null",
 								"return_type": "Uint8Array<ArrayBufferLike> | null",
-								"return_description": "Decoded bytes, or `null` if the input is not valid hex.",
+								"return_description": "decoded bytes, or `null` if the input is not valid hex",
 								"parameters": [
 									{
 										"name": "hex",
 										"type": "string",
-										"description": "Hex string to decode (case-insensitive, whitespace allowed)."
+										"description": "hex string to decode (case-insensitive, whitespace allowed)"
 									}
 								]
 							}
@@ -38325,9 +38366,9 @@
 								"source_line": 50,
 								"type_signature": "(value: unknown): string",
 								"return_type": "string",
-								"return_description": "Deterministic JSON string representation",
+								"return_description": "deterministic JSON string representation",
 								"parameters": [
-									{"name": "value", "type": "unknown", "description": "Any JSON-serializable value"}
+									{"name": "value", "type": "unknown", "description": "any JSON-serializable value"}
 								]
 							}
 						],
@@ -38451,9 +38492,9 @@
 								"source_line": 48,
 								"type_signature": "(level: LogLevel): number",
 								"return_type": "number",
-								"return_description": "Numeric value (0-4)",
+								"return_description": "numeric value (0-4)",
 								"parameters": [
-									{"name": "level", "type": "LogLevel", "description": "The log level to convert"}
+									{"name": "level", "type": "LogLevel", "description": "the log level to convert"}
 								]
 							},
 							{
@@ -38464,12 +38505,12 @@
 								"source_line": 56,
 								"type_signature": "(value: string | undefined): LogLevel | undefined",
 								"return_type": "LogLevel | undefined",
-								"return_description": "The validated log level, or undefined if value is undefined",
+								"return_description": "the validated log level, or undefined if value is undefined",
 								"parameters": [
 									{
 										"name": "value",
 										"type": "string | undefined",
-										"description": "The value to parse as a log level"
+										"description": "the value to parse as a log level"
 									}
 								]
 							},
@@ -38504,12 +38545,12 @@
 												"name": "label",
 												"type": "string | undefined",
 												"optional": true,
-												"description": "Optional label for this logger. Can be `undefined` for no label, or an\nempty string `''` which is functionally equivalent (both produce no brackets in output).\nNote: Empty strings are only allowed for root loggers - child loggers cannot have empty labels."
+												"description": "optional label for this logger. Can be `undefined` for no label, or an\nempty string `''` which is functionally equivalent (both produce no brackets in output).\nNote: Empty strings are only allowed for root loggers - child loggers cannot have empty labels."
 											},
 											{
 												"name": "options",
 												"type": "LoggerOptions",
-												"description": "Optional configuration for level, colors, and console",
+												"description": "optional configuration for level, colors, and console",
 												"default_value": "{}"
 											}
 										]
@@ -38544,17 +38585,17 @@
 										"doc_comment": "Creates a child logger with automatic label concatenation.\nChildren inherit parent configuration unless overridden.",
 										"type_signature": "(label: string, options?: LoggerOptions): Logger",
 										"return_type": "Logger",
-										"return_description": "New Logger instance with concatenated label",
+										"return_description": "new `Logger` instance with concatenated label",
 										"parameters": [
 											{
 												"name": "label",
 												"type": "string",
-												"description": "Child label (will be concatenated with parent label using `:`).\nCannot be an empty string - empty labels would result in confusing output like `parent:`\nwith a trailing colon. Use `undefined` or `''` only for root loggers."
+												"description": "child label (will be concatenated with parent label using `:`)\nCannot be an empty string - empty labels would result in confusing output like `parent:`\nwith a trailing colon. Use `undefined` or `''` only for root loggers."
 											},
 											{
 												"name": "options",
 												"type": "LoggerOptions",
-												"description": "Optional configuration overrides",
+												"description": "optional configuration overrides",
 												"default_value": "{}"
 											}
 										],
@@ -38602,7 +38643,7 @@
 											{
 												"name": "args",
 												"type": "unknown[]",
-												"description": "Values to log directly to console"
+												"description": "values to log directly to console"
 											}
 										]
 									}
@@ -38908,7 +38949,7 @@
 								"type_signature": "<T extends Record<string | number, any>>(obj: T): T",
 								"return_type": "T",
 								"return_description": "`obj` with all `undefined` properties removed",
-								"parameters": [{"name": "obj", "type": "T"}]
+								"parameters": [{"name": "obj", "type": "T", "description": "the object to filter"}]
 							},
 							{
 								"name": "reorder",
@@ -39105,17 +39146,17 @@
 								"source_line": 113,
 								"type_signature": "(filename: string | undefined, exclude: (string | RegExp)[]): boolean",
 								"return_type": "boolean",
-								"return_description": "`true` if the file should be excluded from processing.",
+								"return_description": "`true` if the file should be excluded from processing",
 								"parameters": [
 									{
 										"name": "filename",
 										"type": "string | undefined",
-										"description": "The file path to check, or `undefined` for virtual files."
+										"description": "the file path to check, or `undefined` for virtual files"
 									},
 									{
 										"name": "exclude",
 										"type": "(string | RegExp)[]",
-										"description": "Array of string or RegExp exclusion patterns."
+										"description": "array of string or RegExp exclusion patterns"
 									}
 								]
 							},
@@ -39481,20 +39522,20 @@
 										"doc_comment": "Spawns a process and tracks it in this registry.\nThe process is automatically unregistered when it exits.",
 										"type_signature": "(command: string, args?: readonly string[], options?: SpawnProcessOptions | undefined): SpawnedProcess",
 										"return_type": "SpawnedProcess",
-										"return_description": "Handle with `child` process and `closed` promise",
+										"return_description": "handle with `child` process and `closed` promise",
 										"parameters": [
-											{"name": "command", "type": "string", "description": "The command to run"},
+											{"name": "command", "type": "string", "description": "the command to run"},
 											{
 												"name": "args",
 												"type": "readonly string[]",
-												"description": "Arguments to pass to the command",
+												"description": "arguments to pass to the command",
 												"default_value": "[]"
 											},
 											{
 												"name": "options",
 												"type": "SpawnProcessOptions | undefined",
 												"optional": true,
-												"description": "Spawn options including `signal` and `timeout_ms`"
+												"description": "spawn options including `signal` and `timeout_ms`"
 											}
 										]
 									},
@@ -39504,20 +39545,20 @@
 										"doc_comment": "Spawns a process and captures stdout/stderr as strings.\nSets `stdio: 'pipe'` automatically.",
 										"type_signature": "(command: string, args?: readonly string[], options?: SpawnProcessOptions | undefined): Promise<SpawnedOut>",
 										"return_type": "Promise<SpawnedOut>",
-										"return_description": "Result with captured `stdout` and `stderr`.\n- `null` means spawn failed (ENOENT, etc.) or stream was unavailable\n- `''` (empty string) means process ran but produced no output\n- non-empty string contains the captured output",
+										"return_description": "result with captured `stdout` and `stderr`\n- `null` means spawn failed (ENOENT, etc.) or stream was unavailable\n- `''` (empty string) means process ran but produced no output\n- non-empty string contains the captured output",
 										"parameters": [
-											{"name": "command", "type": "string", "description": "The command to run"},
+											{"name": "command", "type": "string", "description": "the command to run"},
 											{
 												"name": "args",
 												"type": "readonly string[]",
-												"description": "Arguments to pass to the command",
+												"description": "arguments to pass to the command",
 												"default_value": "[]"
 											},
 											{
 												"name": "options",
 												"type": "SpawnProcessOptions | undefined",
 												"optional": true,
-												"description": "Spawn options"
+												"description": "spawn options"
 											}
 										]
 									},
@@ -39527,18 +39568,18 @@
 										"doc_comment": "Kills a child process and waits for it to exit.",
 										"type_signature": "(child: ChildProcess, options?: DespawnOptions | undefined): Promise<SpawnResult>",
 										"return_type": "Promise<SpawnResult>",
-										"return_description": "The spawn result after the process exits",
+										"return_description": "the spawn result after the process exits",
 										"parameters": [
 											{
 												"name": "child",
 												"type": "ChildProcess",
-												"description": "The child process to kill"
+												"description": "the child process to kill"
 											},
 											{
 												"name": "options",
 												"type": "DespawnOptions | undefined",
 												"optional": true,
-												"description": "Kill options including signal and timeout"
+												"description": "kill options including signal and timeout"
 											}
 										]
 									},
@@ -39548,13 +39589,13 @@
 										"doc_comment": "Kills all processes in this registry.",
 										"type_signature": "(options?: DespawnOptions | undefined): Promise<SpawnResult[]>",
 										"return_type": "Promise<SpawnResult[]>",
-										"return_description": "Array of spawn results",
+										"return_description": "array of spawn results",
 										"parameters": [
 											{
 												"name": "options",
 												"type": "DespawnOptions | undefined",
 												"optional": true,
-												"description": "Kill options applied to all processes"
+												"description": "kill options applied to all processes"
 											}
 										]
 									},
@@ -39564,13 +39605,13 @@
 										"doc_comment": "Attaches an `uncaughtException` handler that kills all processes before exiting.\nPrevents zombie processes when the parent crashes.\n\nBy default uses SIGKILL for immediate termination. Set `graceful_timeout_ms`\nto attempt SIGTERM first (allowing processes to clean up) before escalating\nto SIGKILL after the timeout.\n\nNote: Node's uncaughtException handler cannot await async operations, so\ngraceful shutdown uses a blocking busy-wait. This may not be sufficient\nfor processes that need significant cleanup time.",
 										"type_signature": "(options?: { to_error_label?: ((err: Error, origin: UncaughtExceptionOrigin) => string | null) | undefined; map_error_text?: ((err: Error, origin: UncaughtExceptionOrigin) => string | null) | undefined; handle_error?: ((err: Error, origin: UncaughtExceptionOrigin) => void) | undefined; graceful_timeout_ms?: number | ... 1 more ... | undefined; } | undefined): () => void",
 										"return_type": "() => void",
-										"return_description": "Cleanup function to remove the handler",
+										"return_description": "cleanup function to remove the handler",
 										"parameters": [
 											{
 												"name": "options",
 												"type": "{ to_error_label?: ((err: Error, origin: UncaughtExceptionOrigin) => string | null) | undefined; map_error_text?: ((err: Error, origin: UncaughtExceptionOrigin) => string | null) | undefined; handle_error?: ((err: Error, origin: UncaughtExceptionOrigin) => void) | undefined; graceful_timeout_ms?: number | ... 1 more...",
 												"optional": true,
-												"description": "Configuration options"
+												"description": "configuration options"
 											}
 										]
 									}
@@ -39683,20 +39724,20 @@
 								"source_line": 587,
 								"type_signature": "(command: string, args?: readonly string[], options?: SpawnOptions | undefined): SpawnDetachedResult",
 								"return_type": "SpawnDetachedResult",
-								"return_description": "Result with pid on success, or error message on failure",
+								"return_description": "result with pid on success, or error message on failure",
 								"parameters": [
-									{"name": "command", "type": "string", "description": "The command to run"},
+									{"name": "command", "type": "string", "description": "the command to run"},
 									{
 										"name": "args",
 										"type": "readonly string[]",
-										"description": "Arguments to pass to the command",
+										"description": "arguments to pass to the command",
 										"default_value": "[]"
 									},
 									{
 										"name": "options",
 										"type": "SpawnOptions | undefined",
 										"optional": true,
-										"description": "Spawn options (use `stdio` to redirect output to file descriptors)"
+										"description": "spawn options (use `stdio` to redirect output to file descriptors)"
 									}
 								]
 							},
@@ -39806,7 +39847,7 @@
 									{
 										"name": "pid",
 										"type": "number",
-										"description": "The process ID to check (must be a positive integer)"
+										"description": "the process ID to check (must be a positive integer)"
 									}
 								]
 							}
@@ -40010,18 +40051,18 @@
 								"source_line": 28,
 								"type_signature": "<TValue extends { value?: unknown; }, TError extends { message?: string; }>(result: Result<TValue, TError>, message?: string | undefined): TValue[\"value\"]",
 								"return_type": "TValue[\"value\"]",
-								"return_description": "The wrapped value.",
+								"return_description": "the wrapped value",
 								"parameters": [
 									{
 										"name": "result",
 										"type": "Result<TValue, TError>",
-										"description": "Some `Result` object."
+										"description": "some `Result` object"
 									},
 									{
 										"name": "message",
 										"type": "string | undefined",
 										"optional": true,
-										"description": "Optional custom error message."
+										"description": "optional custom error message"
 									}
 								]
 							},
@@ -40059,17 +40100,17 @@
 								"source_line": 61,
 								"type_signature": "<TError extends object>(result: Result<object, TError>, message?: string): { ok: false; } & TError",
 								"return_type": "{ ok: false; } & TError",
-								"return_description": "The type-narrowed result.",
+								"return_description": "the type-narrowed result",
 								"parameters": [
 									{
 										"name": "result",
 										"type": "Result<object, TError>",
-										"description": "Some `Result` object."
+										"description": "some `Result` object"
 									},
 									{
 										"name": "message",
 										"type": "string",
-										"description": "Optional custom error message.",
+										"description": "optional custom error message",
 										"default_value": "'Failed to unwrap result error'"
 									}
 								]
@@ -40105,13 +40146,13 @@
 								"source_line": 35,
 								"type_signature": "<T extends Sortable>(items: T[], label?: string): TopologicalSortResult<T>",
 								"return_type": "TopologicalSortResult<T>",
-								"return_description": "Sorted items or error if cycle detected.",
+								"return_description": "sorted items or error if cycle detected",
 								"parameters": [
-									{"name": "items", "type": "T[]", "description": "Array of items to sort."},
+									{"name": "items", "type": "T[]", "description": "array of items to sort"},
 									{
 										"name": "label",
 										"type": "string",
-										"description": "Label for error messages (e.g. \"resource\", \"step\").",
+										"description": "label for error messages (e.g. \"resource\", \"step\")",
 										"default_value": "'item'"
 									}
 								]
@@ -40266,11 +40307,11 @@
 								"type_signature": "(values: number[], p: number): number",
 								"return_type": "number",
 								"parameters": [
-									{"name": "values", "type": "number[]", "description": "Array of numbers"},
+									{"name": "values", "type": "number[]", "description": "array of numbers"},
 									{
 										"name": "p",
 										"type": "number",
-										"description": "Percentile (0-1, e.g., 0.95 for 95th percentile)"
+										"description": "percentile (0-1, e.g., 0.95 for 95th percentile)"
 									}
 								]
 							},
@@ -40475,12 +40516,12 @@
 								"return_type": "[number, number]",
 								"return_description": "[lower_bound, upper_bound]",
 								"parameters": [
-									{"name": "values", "type": "number[]", "description": "Array of numbers"},
+									{"name": "values", "type": "number[]", "description": "array of numbers"},
 									{
 										"name": "options",
 										"type": "StatsConfidenceIntervalOptions | undefined",
 										"optional": true,
-										"description": "Configuration options"
+										"description": "configuration options"
 									}
 								]
 							},
@@ -40493,18 +40534,18 @@
 								"return_type": "[number, number]",
 								"return_description": "[lower_bound, upper_bound]",
 								"parameters": [
-									{"name": "mean", "type": "number", "description": "Mean of the data"},
+									{"name": "mean", "type": "number", "description": "mean of the data"},
 									{
 										"name": "std_dev",
 										"type": "number",
-										"description": "Standard deviation of the data"
+										"description": "standard deviation of the data"
 									},
-									{"name": "sample_size", "type": "number", "description": "Number of samples"},
+									{"name": "sample_size", "type": "number", "description": "number of samples"},
 									{
 										"name": "options",
 										"type": "StatsConfidenceIntervalOptions | undefined",
 										"optional": true,
-										"description": "Configuration options"
+										"description": "configuration options"
 									}
 								]
 							},
@@ -40537,20 +40578,20 @@
 								"type_signature": "(mean1: number, std1: number, n1: number, mean2: number, std2: number, n2: number): StatsWelchTTestResult",
 								"return_type": "StatsWelchTTestResult",
 								"parameters": [
-									{"name": "mean1", "type": "number", "description": "Mean of first sample"},
+									{"name": "mean1", "type": "number", "description": "mean of first sample"},
 									{
 										"name": "std1",
 										"type": "number",
-										"description": "Standard deviation of first sample"
+										"description": "standard deviation of first sample"
 									},
-									{"name": "n1", "type": "number", "description": "Size of first sample"},
-									{"name": "mean2", "type": "number", "description": "Mean of second sample"},
+									{"name": "n1", "type": "number", "description": "size of first sample"},
+									{"name": "mean2", "type": "number", "description": "mean of second sample"},
 									{
 										"name": "std2",
 										"type": "number",
-										"description": "Standard deviation of second sample"
+										"description": "standard deviation of second sample"
 									},
-									{"name": "n2", "type": "number", "description": "Size of second sample"}
+									{"name": "n2", "type": "number", "description": "size of second sample"}
 								]
 							},
 							{
@@ -40591,10 +40632,10 @@
 								"source_line": 523,
 								"type_signature": "(t: number, df: number): number",
 								"return_type": "number",
-								"return_description": "Two-tailed p-value",
+								"return_description": "two-tailed p-value",
 								"parameters": [
-									{"name": "t", "type": "number", "description": "Absolute value of t-statistic"},
-									{"name": "df", "type": "number", "description": "Degrees of freedom"}
+									{"name": "t", "type": "number", "description": "absolute value of t-statistic"},
+									{"name": "df", "type": "number", "description": "degrees of freedom"}
 								]
 							}
 						],
@@ -40766,10 +40807,10 @@
 								"source_line": 175,
 								"type_signature": "(a: string, b: string): number",
 								"return_type": "number",
-								"return_description": "The edit distance between the strings",
+								"return_description": "the edit distance between the strings",
 								"parameters": [
-									{"name": "a", "type": "string", "description": "First string"},
-									{"name": "b", "type": "string", "description": "Second string"}
+									{"name": "a", "type": "string", "description": "first string"},
+									{"name": "b", "type": "string", "description": "second string"}
 								]
 							},
 							{
@@ -40788,9 +40829,9 @@
 								"source_line": 246,
 								"type_signature": "(content: string): boolean",
 								"return_type": "boolean",
-								"return_description": "True if content appears to be binary.",
+								"return_description": "true if content appears to be binary",
 								"parameters": [
-									{"name": "content", "type": "string", "description": "Content to check."}
+									{"name": "content", "type": "string", "description": "content to check"}
 								]
 							}
 						],
@@ -40856,14 +40897,14 @@
 								"source_line": 51,
 								"type_signature": "(node: Component, name: string): Attribute | undefined",
 								"return_type": "Attribute | undefined",
-								"return_description": "The matching `Attribute` node, or `undefined` if not found.",
+								"return_description": "the matching `Attribute` node, or `undefined` if not found",
 								"parameters": [
 									{
 										"name": "node",
 										"type": "Component",
-										"description": "The component AST node to search."
+										"description": "the component AST node to search"
 									},
-									{"name": "name", "type": "string", "description": "The attribute name to find."}
+									{"name": "name", "type": "string", "description": "the attribute name to find"}
 								]
 							},
 							{
@@ -40873,18 +40914,18 @@
 								"source_line": 72,
 								"type_signature": "(expr: Expression, bindings?: ReadonlyMap<string, string> | undefined): string | null",
 								"return_type": "string | null",
-								"return_description": "The resolved static string, or `null` if the expression is dynamic.",
+								"return_description": "the resolved static string, or `null` if the expression is dynamic",
 								"parameters": [
 									{
 										"name": "expr",
 										"type": "Expression",
-										"description": "An ESTree expression AST node."
+										"description": "an ESTree expression AST node"
 									},
 									{
 										"name": "bindings",
 										"type": "ReadonlyMap<string, string> | undefined",
 										"optional": true,
-										"description": "Optional map of variable names to their resolved static string values."
+										"description": "optional map of variable names to their resolved static string values"
 									}
 								]
 							},
@@ -40895,18 +40936,18 @@
 								"source_line": 123,
 								"type_signature": "(value: true | ExpressionTag | (ExpressionTag | Text)[], bindings?: ReadonlyMap<string, string> | undefined): string | null",
 								"return_type": "string | null",
-								"return_description": "The resolved static string, or `null` if the value is dynamic.",
+								"return_description": "the resolved static string, or `null` if the value is dynamic",
 								"parameters": [
 									{
 										"name": "value",
 										"type": "true | ExpressionTag | (ExpressionTag | Text)[]",
-										"description": "The attribute value from `AST.Attribute['value']`."
+										"description": "the attribute value from `AST.Attribute['value']`"
 									},
 									{
 										"name": "bindings",
 										"type": "ReadonlyMap<string, string> | undefined",
 										"optional": true,
-										"description": "Optional map of variable names to their resolved static string values."
+										"description": "optional map of variable names to their resolved static string values"
 									}
 								]
 							},
@@ -40938,22 +40979,22 @@
 								"source_line": 173,
 								"type_signature": "(value: true | ExpressionTag | (ExpressionTag | Text)[], source: string, bindings: ReadonlyMap<string, string>): ConditionalChainBranch[] | null",
 								"return_type": "ConditionalChainBranch[] | null",
-								"return_description": "Array of conditional chain branches, or `null` if not extractable.",
+								"return_description": "array of conditional chain branches, or `null` if not extractable",
 								"parameters": [
 									{
 										"name": "value",
 										"type": "true | ExpressionTag | (ExpressionTag | Text)[]",
-										"description": "The attribute value from `AST.Attribute['value']`."
+										"description": "the attribute value from `AST.Attribute['value']`"
 									},
 									{
 										"name": "source",
 										"type": "string",
-										"description": "The full source string (needed to slice test expression source text)."
+										"description": "the full source string (needed to slice test expression source text)"
 									},
 									{
 										"name": "bindings",
 										"type": "ReadonlyMap<string, string>",
-										"description": "Map of variable names to their resolved static string values."
+										"description": "map of variable names to their resolved static string values"
 									}
 								]
 							},
@@ -40964,9 +41005,9 @@
 								"source_line": 229,
 								"type_signature": "(ast: Root): Map<string, string>",
 								"return_type": "Map<string, string>",
-								"return_description": "Map of variable names to their resolved static string values.",
+								"return_description": "map of variable names to their resolved static string values",
 								"parameters": [
-									{"name": "ast", "type": "Root", "description": "The parsed Svelte AST root node."}
+									{"name": "ast", "type": "Root", "description": "the parsed Svelte AST root node"}
 								]
 							},
 							{
@@ -40976,17 +41017,13 @@
 								"source_line": 260,
 								"type_signature": "(ast: Root, component_imports: string[]): Map<string, ResolvedComponentImport>",
 								"return_type": "Map<string, ResolvedComponentImport>",
-								"return_description": "Map of local names to their resolved import info.",
+								"return_description": "map of local names to their resolved import info",
 								"parameters": [
-									{
-										"name": "ast",
-										"type": "Root",
-										"description": "The parsed Svelte AST root node."
-									},
+									{"name": "ast", "type": "Root", "description": "the parsed Svelte AST root node"},
 									{
 										"name": "component_imports",
 										"type": "string[]",
-										"description": "Array of import source paths to match against."
+										"description": "array of import source paths to match against"
 									}
 								]
 							},
@@ -40997,12 +41034,12 @@
 								"source_line": 293,
 								"type_signature": "(script: Script): number",
 								"return_type": "number",
-								"return_description": "The character position where new imports should be inserted.",
+								"return_description": "the character position where new imports should be inserted",
 								"parameters": [
 									{
 										"name": "script",
 										"type": "Script",
-										"description": "The parsed `AST.Script` node."
+										"description": "the parsed `AST.Script` node"
 									}
 								]
 							},
@@ -41013,17 +41050,17 @@
 								"source_line": 317,
 								"type_signature": "(imports: Map<string, PreprocessImportInfo>, indent?: string): string",
 								"return_type": "string",
-								"return_description": "A string of newline-separated import statements.",
+								"return_description": "a string of newline-separated import statements",
 								"parameters": [
 									{
 										"name": "imports",
 										"type": "Map<string, PreprocessImportInfo>",
-										"description": "Map of local names to their import info."
+										"description": "map of local names to their import info"
 									},
 									{
 										"name": "indent",
 										"type": "string",
-										"description": "Indentation prefix for each line.",
+										"description": "indentation prefix for each line",
 										"default_value": "'\\t'"
 									}
 								]
@@ -41035,19 +41072,19 @@
 								"source_line": 391,
 								"type_signature": "(node: unknown, name: string, skip?: Set<unknown> | undefined): boolean",
 								"return_type": "boolean",
-								"return_description": "`true` if a matching `Identifier` node is found.",
+								"return_description": "`true` if a matching `Identifier` node is found",
 								"parameters": [
-									{"name": "node", "type": "unknown", "description": "The AST subtree to search."},
+									{"name": "node", "type": "unknown", "description": "the AST subtree to search"},
 									{
 										"name": "name",
 										"type": "string",
-										"description": "The identifier name to look for."
+										"description": "the identifier name to look for"
 									},
 									{
 										"name": "skip",
 										"type": "Set<unknown> | undefined",
 										"optional": true,
-										"description": "Set of AST nodes to skip during traversal."
+										"description": "set of AST nodes to skip during traversal"
 									}
 								]
 							},
@@ -41071,14 +41108,14 @@
 									{
 										"name": "s",
 										"type": "{ remove: (start: number, end: number) => unknown; }",
-										"description": "The MagicString instance to modify."
+										"description": "the MagicString instance to modify"
 									},
 									{
 										"name": "declaration_node",
 										"type": "VariableDeclaration & { start: number; end: number; }",
-										"description": "The `VariableDeclaration` AST node with Svelte position data."
+										"description": "the `VariableDeclaration` AST node with Svelte position data"
 									},
-									{"name": "source", "type": "string", "description": "The original source string."}
+									{"name": "source", "type": "string", "description": "the original source string"}
 								]
 							},
 							{
@@ -41092,14 +41129,14 @@
 									{
 										"name": "s",
 										"type": "{ remove: (start: number, end: number) => unknown; }",
-										"description": "The MagicString instance to modify."
+										"description": "the MagicString instance to modify"
 									},
 									{
 										"name": "import_node",
 										"type": "ImportDeclaration & { start: number; end: number; }",
-										"description": "The `ImportDeclaration` AST node with Svelte position data."
+										"description": "the `ImportDeclaration` AST node with Svelte position data"
 									},
-									{"name": "source", "type": "string", "description": "The original source string."}
+									{"name": "source", "type": "string", "description": "the original source string"}
 								]
 							},
 							{
@@ -41113,27 +41150,23 @@
 									{
 										"name": "s",
 										"type": "{ overwrite: (start: number, end: number, content: string) => unknown; }",
-										"description": "The MagicString instance to modify."
+										"description": "the MagicString instance to modify"
 									},
 									{
 										"name": "node",
 										"type": "ImportDeclaration & { start: number; end: number; }",
-										"description": "The positioned `ImportDeclaration` AST node."
+										"description": "the positioned `ImportDeclaration` AST node"
 									},
 									{
 										"name": "specifier_to_remove",
 										"type": "ImportSpecifier | ImportDefaultSpecifier | ImportNamespaceSpecifier",
-										"description": "The specifier to remove from the import."
+										"description": "the specifier to remove from the import"
 									},
-									{
-										"name": "source",
-										"type": "string",
-										"description": "The original source string."
-									},
+									{"name": "source", "type": "string", "description": "the original source string"},
 									{
 										"name": "additional_lines",
 										"type": "string",
-										"description": "Extra content appended after the reconstructed import\n(used to bundle new imports into the overwrite to avoid MagicString boundary conflicts).",
+										"description": "extra content appended after the reconstructed import\n(used to bundle new imports into the overwrite to avoid MagicString boundary conflicts).",
 										"default_value": "''"
 									}
 								]
@@ -41146,21 +41179,21 @@
 								"type_signature": "(error: unknown, prefix: string, filename: string | undefined, on_error: \"log\" | \"throw\"): void",
 								"return_type": "void",
 								"parameters": [
-									{"name": "error", "type": "unknown", "description": "The caught error."},
+									{"name": "error", "type": "unknown", "description": "the caught error"},
 									{
 										"name": "prefix",
 										"type": "string",
-										"description": "Log prefix (e.g. `'[fuz-mdz]'`, `'[fuz-code]'`)."
+										"description": "log prefix (e.g. `'[fuz-mdz]'`, `'[fuz-code]'`)"
 									},
 									{
 										"name": "filename",
 										"type": "string | undefined",
-										"description": "The file being processed."
+										"description": "the file being processed"
 									},
 									{
 										"name": "on_error",
 										"type": "\"log\" | \"throw\"",
-										"description": "`'throw'` to re-throw as a new Error, `'log'` to console.error."
+										"description": "`'throw'` to re-throw as a new Error, `'log'` to console.error"
 									}
 								]
 							}
@@ -41312,12 +41345,12 @@
 								"source_line": 126,
 								"type_signature": "(values_ns: number[]): TimeUnit",
 								"return_type": "TimeUnit",
-								"return_description": "Best unit to use for all values",
+								"return_description": "best unit to use for all values",
 								"parameters": [
 									{
 										"name": "values_ns",
 										"type": "number[]",
-										"description": "Array of times in nanoseconds"
+										"description": "array of times in nanoseconds"
 									}
 								]
 							},
@@ -41328,18 +41361,18 @@
 								"source_line": 156,
 								"type_signature": "(ns: number, unit: TimeUnit, decimals?: number): string",
 								"return_type": "string",
-								"return_description": "Formatted string like \"3.87μs\"",
+								"return_description": "formatted string like \"3.87μs\"",
 								"parameters": [
-									{"name": "ns", "type": "number", "description": "Time in nanoseconds"},
+									{"name": "ns", "type": "number", "description": "time in nanoseconds"},
 									{
 										"name": "unit",
 										"type": "TimeUnit",
-										"description": "Unit to use ('ns', 'us', 'ms', 's')"
+										"description": "unit to use ('ns', 'us', 'ms', 's')"
 									},
 									{
 										"name": "decimals",
 										"type": "number",
-										"description": "Number of decimal places (default: 2)",
+										"description": "number of decimal places (default: 2)",
 										"default_value": "2"
 									}
 								]
@@ -41354,13 +41387,13 @@
 								"source_line": 185,
 								"type_signature": "(ns: number, decimals?: number): string",
 								"return_type": "string",
-								"return_description": "Formatted string like \"3.87μs\" or \"1.23ms\"",
+								"return_description": "formatted string like \"3.87μs\" or \"1.23ms\"",
 								"parameters": [
-									{"name": "ns", "type": "number", "description": "Time in nanoseconds"},
+									{"name": "ns", "type": "number", "description": "time in nanoseconds"},
 									{
 										"name": "decimals",
 										"type": "number",
-										"description": "Number of decimal places (default: 2)",
+										"description": "number of decimal places (default: 2)",
 										"default_value": "2"
 									}
 								]
@@ -41414,17 +41447,17 @@
 								"source_line": 232,
 								"type_signature": "<T>(fn: () => Promise<T>, timer?: Timer): Promise<{ result: T; timing: TimeResult; }>",
 								"return_type": "Promise<{ result: T; timing: TimeResult; }>",
-								"return_description": "Object containing the function result and timing information",
+								"return_description": "object containing the function result and timing information",
 								"parameters": [
 									{
 										"name": "fn",
 										"type": "() => Promise<T>",
-										"description": "Async function to time"
+										"description": "async function to time"
 									},
 									{
 										"name": "timer",
 										"type": "Timer",
-										"description": "Timer to use (defaults to timer_default)",
+										"description": "timer to use (defaults to timer_default)",
 										"default_value": "timer_default"
 									}
 								]
@@ -41439,13 +41472,13 @@
 								"source_line": 267,
 								"type_signature": "<T>(fn: () => T, timer?: Timer): { result: T; timing: TimeResult; }",
 								"return_type": "{ result: T; timing: TimeResult; }",
-								"return_description": "Object containing the function result and timing information",
+								"return_description": "object containing the function result and timing information",
 								"parameters": [
-									{"name": "fn", "type": "() => T", "description": "Sync function to time"},
+									{"name": "fn", "type": "() => T", "description": "sync function to time"},
 									{
 										"name": "timer",
 										"type": "Timer",
-										"description": "Timer to use (defaults to timer_default)",
+										"description": "timer to use (defaults to timer_default)",
 										"default_value": "timer_default"
 									}
 								]
@@ -41460,22 +41493,22 @@
 								"source_line": 306,
 								"type_signature": "(fn: () => unknown, iterations: number, timer?: Timer): Promise<number[]>",
 								"return_type": "Promise<number[]>",
-								"return_description": "Array of elapsed times in nanoseconds",
+								"return_description": "array of elapsed times in nanoseconds",
 								"parameters": [
 									{
 										"name": "fn",
 										"type": "() => unknown",
-										"description": "Function to measure (sync or async)"
+										"description": "function to measure (sync or async)"
 									},
 									{
 										"name": "iterations",
 										"type": "number",
-										"description": "Number of times to execute"
+										"description": "number of times to execute"
 									},
 									{
 										"name": "timer",
 										"type": "Timer",
-										"description": "Timer to use (defaults to timer_default)",
+										"description": "timer to use (defaults to timer_default)",
 										"default_value": "timer_default"
 									}
 								]
@@ -41730,12 +41763,12 @@
 								"source_line": 22,
 								"type_signature": "(def: $ZodTypeDef): ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | undefined",
 								"return_type": "ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | undefined",
-								"return_description": "Inner schema if wrapped, undefined otherwise.",
+								"return_description": "inner schema if wrapped, undefined otherwise",
 								"parameters": [
 									{
 										"name": "def",
 										"type": "$ZodTypeDef",
-										"description": "Zod type definition to unwrap."
+										"description": "Zod type definition to unwrap"
 									}
 								]
 							},
@@ -41876,12 +41909,12 @@
 								"source_line": 164,
 								"type_signature": "(schema: ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>): string | null",
 								"return_type": "string | null",
-								"return_description": "Description string or null if not found.",
+								"return_description": "description string or null if not found",
 								"parameters": [
 									{
 										"name": "schema",
 										"type": "ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>",
-										"description": "Zod schema to extract description from."
+										"description": "Zod schema to extract description from"
 									}
 								]
 							},
@@ -41892,12 +41925,12 @@
 								"source_line": 182,
 								"type_signature": "(schema: ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>): unknown",
 								"return_type": "unknown",
-								"return_description": "Default value or undefined.",
+								"return_description": "default value or undefined",
 								"parameters": [
 									{
 										"name": "schema",
 										"type": "ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>",
-										"description": "Zod schema to extract default from."
+										"description": "Zod schema to extract default from"
 									}
 								]
 							},
@@ -41908,12 +41941,12 @@
 								"source_line": 200,
 								"type_signature": "(schema: ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>): string[]",
 								"return_type": "string[]",
-								"return_description": "Array of alias strings.",
+								"return_description": "array of alias strings",
 								"parameters": [
 									{
 										"name": "schema",
 										"type": "ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>",
-										"description": "Zod schema to extract aliases from."
+										"description": "Zod schema to extract aliases from"
 									}
 								]
 							},
@@ -41924,12 +41957,12 @@
 								"source_line": 218,
 								"type_signature": "(schema: ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>): string",
 								"return_type": "string",
-								"return_description": "Human-readable type string.",
+								"return_description": "human-readable type string",
 								"parameters": [
 									{
 										"name": "schema",
 										"type": "ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>",
-										"description": "Zod schema to get type string for."
+										"description": "Zod schema to get type string for"
 									}
 								]
 							},
@@ -41940,9 +41973,9 @@
 								"source_line": 270,
 								"type_signature": "(value: unknown): string",
 								"return_type": "string",
-								"return_description": "Formatted string representation.",
+								"return_description": "formatted string representation",
 								"parameters": [
-									{"name": "value", "type": "unknown", "description": "Value to format."}
+									{"name": "value", "type": "unknown", "description": "value to format"}
 								]
 							},
 							{
@@ -41966,12 +41999,12 @@
 								"source_line": 301,
 								"type_signature": "(schema: ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>): ZodSchemaProperty[]",
 								"return_type": "ZodSchemaProperty[]",
-								"return_description": "Array of property definitions.",
+								"return_description": "array of property definitions",
 								"parameters": [
 									{
 										"name": "schema",
 										"type": "ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>",
-										"description": "Zod object schema to extract from."
+										"description": "Zod object schema to extract from"
 									}
 								]
 							},
@@ -41982,12 +42015,12 @@
 								"source_line": 332,
 								"type_signature": "(schema: ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>): Set<string>",
 								"return_type": "Set<string>",
-								"return_description": "Set of all names and aliases.",
+								"return_description": "set of all names and aliases",
 								"parameters": [
 									{
 										"name": "schema",
 										"type": "ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>",
-										"description": "Zod object schema."
+										"description": "Zod object schema"
 									}
 								]
 							}
@@ -42042,15 +42075,15 @@
 				"engines": {"node": ">=22.15"},
 				"devDependencies": {
 					"@fuzdev/fuz_code": "^0.45.1",
-					"@fuzdev/fuz_css": "^0.56.0",
-					"@fuzdev/fuz_ui": "^0.190.0",
-					"@fuzdev/fuz_util": "^0.54.0",
-					"@fuzdev/gro": "^0.197.0",
+					"@fuzdev/fuz_css": "^0.57.0",
+					"@fuzdev/fuz_ui": "^0.191.1",
+					"@fuzdev/fuz_util": "^0.55.0",
+					"@fuzdev/gro": "^0.197.1",
 					"@jridgewell/trace-mapping": "^0.3.31",
 					"@ryanatkn/eslint-config": "^0.10.1",
 					"@sveltejs/acorn-typescript": "^1.0.9",
 					"@sveltejs/adapter-static": "^3.0.10",
-					"@sveltejs/kit": "^2.50.1",
+					"@sveltejs/kit": "^2.55.0",
 					"@sveltejs/vite-plugin-svelte": "^6.2.4",
 					"@types/estree": "^1.0.8",
 					"@webref/css": "^8.2.0",
@@ -42059,10 +42092,10 @@
 					"esm-env": "^1.2.2",
 					"magic-string": "^0.30.21",
 					"prettier": "^3.7.4",
-					"prettier-plugin-svelte": "^3.4.1",
-					"svelte": "^5.49.1",
-					"svelte-check": "^4.3.6",
-					"svelte2tsx": "^0.7.47",
+					"prettier-plugin-svelte": "^3.5.1",
+					"svelte": "^5.54.0",
+					"svelte-check": "^4.4.5",
+					"svelte2tsx": "^0.7.52",
 					"tslib": "^2.8.1",
 					"typescript": "^5.9.3",
 					"typescript-eslint": "^8.48.1",
@@ -42170,14 +42203,14 @@
 					"@fuzdev/fuz_code": "^0.45.1",
 					"@fuzdev/fuz_css": "^0.56.0",
 					"@fuzdev/fuz_mastodon": "^0.39.0",
-					"@fuzdev/fuz_ui": "^0.190.0",
+					"@fuzdev/fuz_ui": "^0.191.1",
 					"@fuzdev/fuz_util": "^0.54.0",
-					"@fuzdev/gro": "^0.197.0",
+					"@fuzdev/gro": "^0.197.1",
 					"@jridgewell/trace-mapping": "^0.3.31",
 					"@ryanatkn/eslint-config": "^0.10.1",
 					"@sveltejs/acorn-typescript": "^1.0.9",
 					"@sveltejs/adapter-static": "^3.0.10",
-					"@sveltejs/kit": "^2.50.1",
+					"@sveltejs/kit": "^2.55.0",
 					"@sveltejs/package": "^2.5.7",
 					"@sveltejs/vite-plugin-svelte": "^6.2.4",
 					"@types/estree": "^1.0.8",
@@ -42189,10 +42222,10 @@
 					"esm-env": "^1.2.2",
 					"magic-string": "^0.30.21",
 					"prettier": "^3.7.4",
-					"prettier-plugin-svelte": "^3.4.1",
-					"svelte": "^5.49.1",
-					"svelte-check": "^4.3.6",
-					"svelte2tsx": "^0.7.47",
+					"prettier-plugin-svelte": "^3.5.1",
+					"svelte": "^5.54.0",
+					"svelte-check": "^4.4.5",
+					"svelte2tsx": "^0.7.52",
 					"tslib": "^2.8.1",
 					"typescript": "^5.9.3",
 					"typescript-eslint": "^8.48.1",
@@ -42310,7 +42343,7 @@
 							{
 								"name": "BlogPostData",
 								"kind": "type",
-								"doc_comment": "The author-defined data for each post.",
+								"doc_comment": "the author-defined data for each post",
 								"source_line": 20,
 								"type_signature": "BlogPostData",
 								"properties": [
@@ -42375,19 +42408,19 @@
 										"name": "id",
 										"kind": "variable",
 										"type_signature": "string",
-										"doc_comment": "Blog post path with `blog_post_id`."
+										"doc_comment": "blog post path with `blog_post_id`"
 									},
 									{
 										"name": "url",
 										"kind": "variable",
 										"type_signature": "string",
-										"doc_comment": "Blog post path with `slug`."
+										"doc_comment": "blog post path with `slug`"
 									},
 									{
 										"name": "blog_post_id",
 										"kind": "variable",
 										"type_signature": "BlogPostId",
-										"doc_comment": "Incrementing 1-based integer."
+										"doc_comment": "incrementing 1-based integer"
 									},
 									{"name": "tags", "kind": "variable", "type_signature": "Array<string>"}
 								]
@@ -42609,16 +42642,16 @@
 				},
 				"devDependencies": {
 					"@changesets/changelog-git": "^0.2.1",
-					"@fuzdev/fuz_code": "^0.45.0",
-					"@fuzdev/fuz_css": "^0.56.0",
-					"@fuzdev/fuz_ui": "^0.190.0",
-					"@fuzdev/fuz_util": "^0.54.0",
-					"@fuzdev/gro": "^0.197.0",
+					"@fuzdev/fuz_code": "^0.45.1",
+					"@fuzdev/fuz_css": "^0.57.0",
+					"@fuzdev/fuz_ui": "^0.191.1",
+					"@fuzdev/fuz_util": "^0.55.0",
+					"@fuzdev/gro": "^0.197.1",
 					"@jridgewell/trace-mapping": "^0.3.31",
 					"@ryanatkn/eslint-config": "^0.10.1",
 					"@sveltejs/acorn-typescript": "^1.0.9",
 					"@sveltejs/adapter-static": "^3.0.10",
-					"@sveltejs/kit": "^2.50.1",
+					"@sveltejs/kit": "^2.55.0",
 					"@sveltejs/package": "^2.5.7",
 					"@sveltejs/vite-plugin-svelte": "^6.2.4",
 					"@types/estree": "^1.0.8",
@@ -42629,10 +42662,10 @@
 					"esm-env": "^1.2.2",
 					"magic-string": "^0.30.21",
 					"prettier": "^3.7.4",
-					"prettier-plugin-svelte": "^3.4.1",
-					"svelte": "^5.49.1",
-					"svelte-check": "^4.3.6",
-					"svelte2tsx": "^0.7.47",
+					"prettier-plugin-svelte": "^3.5.1",
+					"svelte": "^5.54.0",
+					"svelte-check": "^4.4.5",
+					"svelte2tsx": "^0.7.52",
 					"tslib": "^2.8.1",
 					"typescript": "^5.9.3",
 					"typescript-eslint": "^8.48.1",
@@ -42796,7 +42829,7 @@
 							{
 								"name": "parse_mastodon_status_url",
 								"kind": "function",
-								"doc_comment": "Parses a url to a post or API endpoint for a post, aka Mastodon status context.",
+								"doc_comment": "parses a url to a post or API endpoint for a post, aka Mastodon status context",
 								"source_line": 58,
 								"type_signature": "(url: string): MastodonStatusUrl | null",
 								"return_type": "MastodonStatusUrl | null",
@@ -42878,7 +42911,7 @@
 							{
 								"name": "MastodonStatusContext",
 								"kind": "type",
-								"doc_comment": "Result from `https://:host/api/v1/statuses/:id/context`.",
+								"doc_comment": "result from `https://:host/api/v1/statuses/:id/context`",
 								"see_also": ["https://docs.joinmastodon.org/entities/Context/"],
 								"source_line": 144,
 								"type_signature": "MastodonStatusContext",
@@ -43692,7 +43725,7 @@
 								"name": "grammar_markup_add_inlined",
 								"kind": "function",
 								"doc_comment": "Adds an inlined language to markup.\n\nAn example of an inlined language is CSS with `<style>` tags.",
-								"source_line": 105,
+								"source_line": 104,
 								"type_signature": "(syntax_styler: SyntaxStyler, tag_name: string, lang: string, inside_lang?: string): void",
 								"return_type": "void",
 								"parameters": [
@@ -43700,9 +43733,9 @@
 									{
 										"name": "tag_name",
 										"type": "string",
-										"description": "The name of the tag that contains the inlined language. This name will be treated as\ncase insensitive."
+										"description": "the name of the tag that contains the inlined language, treated as case insensitive"
 									},
-									{"name": "lang", "type": "string", "description": "The language key."},
+									{"name": "lang", "type": "string", "description": "the language key"},
 									{"name": "inside_lang", "type": "string", "default_value": "'markup'"}
 								]
 							},
@@ -43710,7 +43743,7 @@
 								"name": "grammar_markup_add_attribute",
 								"kind": "function",
 								"doc_comment": "Adds an pattern to style languages embedded in HTML attributes.\n\nAn example of an inlined language is CSS with `style` attributes.",
-								"source_line": 156,
+								"source_line": 154,
 								"type_signature": "(syntax_styler: SyntaxStyler, attr_name: string, lang: string): void",
 								"return_type": "void",
 								"parameters": [
@@ -43718,9 +43751,9 @@
 									{
 										"name": "attr_name",
 										"type": "string",
-										"description": "The name of the tag that contains the inlined language. This name will be treated as\ncase insensitive."
+										"description": "the name of the tag that contains the inlined language, treated as case insensitive"
 									},
-									{"name": "lang", "type": "string", "description": "The language key."}
+									{"name": "lang", "type": "string", "description": "the language key"}
 								]
 							}
 						],
@@ -43789,7 +43822,7 @@
 							{
 								"name": "supports_css_highlight_api",
 								"kind": "function",
-								"doc_comment": "Check for CSS Highlights API support.",
+								"doc_comment": "check for CSS Highlights API support",
 								"source_line": 9,
 								"type_signature": "(): boolean",
 								"return_type": "boolean",
@@ -43818,7 +43851,7 @@
 									{
 										"name": "highlight_from_syntax_tokens",
 										"kind": "function",
-										"doc_comment": "Highlight from syntax styler token stream.",
+										"doc_comment": "highlight from syntax styler token stream",
 										"type_signature": "(element: Element, tokens: SyntaxTokenStream): void",
 										"return_type": "void",
 										"parameters": [
@@ -43829,7 +43862,7 @@
 									{
 										"name": "clear_element_ranges",
 										"kind": "function",
-										"doc_comment": "Clear only this element's ranges from highlights.",
+										"doc_comment": "clear only this element's ranges from highlights",
 										"type_signature": "(): void",
 										"return_type": "void",
 										"parameters": []
@@ -43872,7 +43905,7 @@
 							{
 								"name": "PreprocessFuzCodeOptions",
 								"kind": "type",
-								"doc_comment": "Options for `svelte_preprocess_fuz_code`.",
+								"doc_comment": "options for `svelte_preprocess_fuz_code`",
 								"source_line": 22,
 								"type_signature": "PreprocessFuzCodeOptions",
 								"properties": [
@@ -43911,7 +43944,7 @@
 							{
 								"name": "svelte_preprocess_fuz_code",
 								"kind": "function",
-								"doc_comment": "Svelte preprocessor that compiles static `Code` component content at build time,\nreplacing runtime syntax highlighting with pre-rendered HTML.",
+								"doc_comment": "Svelte preprocessor that compiles static `Code` component content at build time,\nreplacing runtime syntax highlighting with pre-rendered HTML",
 								"examples": [
 									"```ts\n// svelte.config.js\nimport {svelte_preprocess_fuz_code} from '@fuzdev/fuz_code/svelte_preprocess_fuz_code.js';\n\nexport default {\n  preprocess: [svelte_preprocess_fuz_code(), vitePreprocess()],\n};\n```"
 								],
@@ -44021,17 +44054,17 @@
 											{
 												"name": "text",
 												"type": "string",
-												"description": "The source code to syntax highlight."
+												"description": "the source code to syntax highlight"
 											},
 											{
 												"name": "lang",
 												"type": "string",
-												"description": "Language identifier (e.g., 'ts', 'css', 'html'). Used for:\n- Grammar lookup when `grammar` is undefined\n- Hook context (`lang` field passed to hooks)\n- Language identification in output"
+												"description": "language identifier (e.g., 'ts', 'css', 'html'), used for:\n- grammar lookup when `grammar` is undefined\n- hook context (`lang` field passed to hooks)\n- language identification in output"
 											},
 											{
 												"name": "grammar",
 												"type": "SyntaxGrammar | undefined",
-												"description": "Optional custom grammar object. When undefined, automatically\nlooks up the grammar via `this.get_lang(lang)`. Provide this to use a custom\nor modified grammar instead of the registered one.",
+												"description": "optional custom grammar object; when undefined, automatically\nlooks up the grammar via `this.get_lang(lang)`; provide this to use a custom\nor modified grammar instead of the registered one",
 												"default_value": "this.get_lang(lang)"
 											}
 										]
@@ -44047,22 +44080,22 @@
 											{
 												"name": "inside",
 												"type": "string",
-												"description": "The property of `root` (e.g. a language id in `syntax_styler.langs`) that contains the\nobject to be modified."
+												"description": "the property of `root` (e.g. a language id in `syntax_styler.langs`) that contains the\nobject to be modified"
 											},
 											{
 												"name": "before",
 												"type": "string",
-												"description": "The key to insert before."
+												"description": "the key to insert before"
 											},
 											{
 												"name": "insert",
 												"type": "SyntaxGrammarRaw",
-												"description": "An object containing the key-value pairs to be inserted."
+												"description": "an object containing the key-value pairs to be inserted"
 											},
 											{
 												"name": "root",
 												"type": "Record<string, any>",
-												"description": "The object containing `inside`, i.e. the object that contains the\nobject to be modified.\n\nDefaults to `syntax_styler.langs`.",
+												"description": "the object containing `inside`, i.e. the object that contains the\nobject to be modified; defaults to `syntax_styler.langs`",
 												"default_value": "this.langs"
 											}
 										]
@@ -44073,17 +44106,17 @@
 										"doc_comment": "Converts the given token or token stream to an HTML representation.\n\nRuns the `wrap` hook on each `SyntaxToken`.",
 										"type_signature": "(o: string | SyntaxTokenStream | SyntaxToken, lang: string): string",
 										"return_type": "string",
-										"return_description": "The HTML representation of the token or token stream.",
+										"return_description": "HTML representation of the token or token stream",
 										"parameters": [
 											{
 												"name": "o",
 												"type": "string | SyntaxTokenStream | SyntaxToken",
-												"description": "The token or token stream to be converted."
+												"description": "the token or token stream to be converted"
 											},
 											{
 												"name": "lang",
 												"type": "string",
-												"description": "The name of current language."
+												"description": "the name of current language"
 											}
 										]
 									},
@@ -44098,12 +44131,12 @@
 											{
 												"name": "base_id",
 												"type": "string",
-												"description": "The id of the language to extend. This has to be a key in `syntax_styler.langs`."
+												"description": "the id of the language to extend, must be a key in `syntax_styler.langs`"
 											},
 											{
 												"name": "extension",
 												"type": "SyntaxGrammarRaw",
-												"description": "The new tokens to append."
+												"description": "the new tokens to append"
 											}
 										]
 									},
@@ -44170,51 +44203,51 @@
 							{
 								"name": "SyntaxGrammarValueRaw",
 								"kind": "type",
-								"source_line": 470,
+								"source_line": 466,
 								"type_signature": "SyntaxGrammarValueRaw"
 							},
 							{
 								"name": "SyntaxGrammarRaw",
 								"kind": "type",
-								"source_line": 475,
+								"source_line": 471,
 								"type_signature": "SyntaxGrammarRaw"
 							},
 							{
 								"name": "SyntaxGrammarTokenRaw",
 								"kind": "type",
 								"doc_comment": "The expansion of a simple `RegExp` literal to support additional properties.\n\nThe `inside` grammar will be used to tokenize the text value of each token of this kind.\n\nThis can be used to make nested and even recursive language definitions.\n\nNote: This can cause infinite recursion. Be careful when you embed different languages or even the same language into\neach another.\n\nNote: Grammar authors can use optional properties, but they will be normalized\nto required properties at registration time for optimal performance.",
-								"source_line": 492,
+								"source_line": 488,
 								"type_signature": "SyntaxGrammarTokenRaw",
 								"properties": [
 									{
 										"name": "pattern",
 										"kind": "variable",
 										"type_signature": "RegExp",
-										"doc_comment": "The regular expression of the token."
+										"doc_comment": "the regular expression of the token"
 									},
 									{
 										"name": "lookbehind",
 										"kind": "variable",
 										"type_signature": "boolean",
-										"doc_comment": "If `true`, then the first capturing group of `pattern` will (effectively)\nbehave as a lookbehind group meaning that the captured text will not be part of the matched text of the new token."
+										"doc_comment": "if `true`, then the first capturing group of `pattern` will (effectively)\nbehave as a lookbehind group meaning that the captured text will not be part of the matched text of the new token"
 									},
 									{
 										"name": "greedy",
 										"kind": "variable",
 										"type_signature": "boolean",
-										"doc_comment": "Whether the token is greedy."
+										"doc_comment": "whether the token is greedy"
 									},
 									{
 										"name": "alias",
 										"kind": "variable",
 										"type_signature": "string | Array<string>",
-										"doc_comment": "An optional alias or list of aliases."
+										"doc_comment": "an optional alias or list of aliases"
 									},
 									{
 										"name": "inside",
 										"kind": "variable",
 										"type_signature": "SyntaxGrammarRaw | null",
-										"doc_comment": "The nested grammar of this token."
+										"doc_comment": "the nested grammar of this token"
 									}
 								]
 							},
@@ -44222,7 +44255,7 @@
 								"name": "SyntaxGrammarToken",
 								"kind": "type",
 								"doc_comment": "Grammar token with all properties required.\nThis is the normalized representation used at runtime.",
-								"source_line": 522,
+								"source_line": 518,
 								"type_signature": "SyntaxGrammarToken",
 								"properties": [
 									{"name": "pattern", "kind": "variable", "type_signature": "RegExp"},
@@ -44236,31 +44269,31 @@
 								"name": "SyntaxGrammar",
 								"kind": "type",
 								"doc_comment": "A grammar after normalization.\nAll values are arrays of normalized tokens with consistent shapes.",
-								"source_line": 534,
+								"source_line": 530,
 								"type_signature": "SyntaxGrammar"
 							},
 							{
 								"name": "HookBeforeTokenizeCallback",
 								"kind": "type",
-								"source_line": 558,
+								"source_line": 554,
 								"type_signature": "HookBeforeTokenizeCallback"
 							},
 							{
 								"name": "HookAfterTokenizeCallback",
 								"kind": "type",
-								"source_line": 559,
+								"source_line": 555,
 								"type_signature": "HookAfterTokenizeCallback"
 							},
 							{
 								"name": "HookWrapCallback",
 								"kind": "type",
-								"source_line": 560,
+								"source_line": 556,
 								"type_signature": "HookWrapCallback"
 							},
 							{
 								"name": "HookBeforeTokenizeCallbackContext",
 								"kind": "type",
-								"source_line": 562,
+								"source_line": 558,
 								"type_signature": "HookBeforeTokenizeCallbackContext",
 								"properties": [
 									{"name": "code", "kind": "variable", "type_signature": "string"},
@@ -44272,7 +44305,7 @@
 							{
 								"name": "HookAfterTokenizeCallbackContext",
 								"kind": "type",
-								"source_line": 568,
+								"source_line": 564,
 								"type_signature": "HookAfterTokenizeCallbackContext",
 								"properties": [
 									{"name": "code", "kind": "variable", "type_signature": "string"},
@@ -44284,7 +44317,7 @@
 							{
 								"name": "HookWrapCallbackContext",
 								"kind": "type",
-								"source_line": 574,
+								"source_line": 570,
 								"type_signature": "HookWrapCallbackContext",
 								"properties": [
 									{"name": "type", "kind": "variable", "type_signature": "string"},
@@ -44442,15 +44475,15 @@
 				"devDependencies": {
 					"@changesets/changelog-git": "^0.2.1",
 					"@fuzdev/fuz_code": "^0.45.1",
-					"@fuzdev/fuz_css": "^0.56.0",
-					"@fuzdev/fuz_ui": "^0.190.0",
+					"@fuzdev/fuz_css": "^0.57.0",
+					"@fuzdev/fuz_ui": "^0.191.1",
 					"@fuzdev/fuz_util": "^0.54.0",
-					"@fuzdev/gro": "^0.197.0",
+					"@fuzdev/gro": "^0.197.1",
 					"@jridgewell/trace-mapping": "^0.3.31",
 					"@ryanatkn/eslint-config": "^0.10.1",
 					"@sveltejs/acorn-typescript": "^1.0.9",
 					"@sveltejs/adapter-static": "^3.0.10",
-					"@sveltejs/kit": "^2.50.1",
+					"@sveltejs/kit": "^2.55.0",
 					"@sveltejs/package": "^2.5.7",
 					"@sveltejs/vite-plugin-svelte": "^6.2.4",
 					"@types/estree": "^1.0.8",
@@ -44461,10 +44494,10 @@
 					"esm-env": "^1.2.2",
 					"magic-string": "^0.30.21",
 					"prettier": "^3.7.4",
-					"prettier-plugin-svelte": "^3.4.1",
-					"svelte": "^5.49.1",
-					"svelte-check": "^4.3.6",
-					"svelte2tsx": "^0.7.47",
+					"prettier-plugin-svelte": "^3.5.1",
+					"svelte": "^5.54.0",
+					"svelte-check": "^4.4.5",
+					"svelte2tsx": "^0.7.52",
 					"tslib": "^2.8.1",
 					"typescript": "^5.9.3",
 					"typescript-eslint": "^8.48.1",
@@ -44803,7 +44836,7 @@
 											{
 												"name": "exclude_dev",
 												"type": "boolean",
-												"description": "if true, excludes dev dependencies to break cycles.\nPublishing uses exclude_dev=true to handle circular dev deps.",
+												"description": "if true, excludes dev dependencies to break cycles\nPublishing uses exclude_dev=true to handle circular dev deps.",
 												"default_value": "false"
 											}
 										],
@@ -44972,7 +45005,7 @@
 								"source_line": 24,
 								"type_signature": "(resolved_repos: LocalRepo[], token?: string | undefined, cache?: Map<string, { key: string; url: string; params: any; value: any; etag: string | null; last_modified: string | null; }> | undefined, log?: Logger | undefined, delay?: number, github_api_version?: string | undefined): Promise<...>",
 								"return_type": "Promise<RepoJson[]>",
-								"return_description": "array of Repo objects with GitHub metadata attached",
+								"return_description": "array of `Repo` objects with GitHub metadata attached",
 								"parameters": [
 									{"name": "resolved_repos", "type": "LocalRepo[]"},
 									{"name": "token", "type": "string | undefined", "optional": true},
@@ -46155,18 +46188,18 @@
 									{
 										"name": "repo",
 										"type": "LocalRepo",
-										"description": "The repository to install dependencies for"
+										"description": "the repository to install dependencies for"
 									},
 									{
 										"name": "ops",
 										"type": "GitopsOperations",
-										"description": "Gitops operations (for dependency injection)"
+										"description": "gitops operations (for dependency injection)"
 									},
 									{
 										"name": "log",
 										"type": "Logger | undefined",
 										"optional": true,
-										"description": "Optional logger"
+										"description": "optional logger"
 									}
 								]
 							}
@@ -47186,12 +47219,12 @@
 								"type_signature": "(dir: string, options?: WalkOptions | undefined): AsyncGenerator<string, void, undefined>",
 								"return_type": "AsyncGenerator<string, void, undefined>",
 								"parameters": [
-									{"name": "dir", "type": "string", "description": "Directory to walk"},
+									{"name": "dir", "type": "string", "description": "directory to walk"},
 									{
 										"name": "options",
 										"type": "WalkOptions | undefined",
 										"optional": true,
-										"description": "Walk options for exclusions and filtering"
+										"description": "walk options for exclusions and filtering"
 									}
 								]
 							},
@@ -47265,13 +47298,13 @@
 								"source_line": 89,
 								"type_signature": "(config_path?: string | undefined): Promise<RepoPath[]>",
 								"return_type": "Promise<RepoPath[]>",
-								"return_description": "Array of repo info with name, path, and url",
+								"return_description": "array of repo info with name, path, and url",
 								"parameters": [
 									{
 										"name": "config_path",
 										"type": "string | undefined",
 										"optional": true,
-										"description": "Path to gitops.config.ts (defaults to `./gitops.config.ts`)"
+										"description": "path to gitops.config.ts (defaults to `./gitops.config.ts`)"
 									}
 								]
 							},
@@ -48150,15 +48183,15 @@
 					"@fuzdev/fuz_css": "^0.56.0",
 					"@fuzdev/fuz_gitops": "^0.68.0",
 					"@fuzdev/fuz_mastodon": "^0.39.0",
-					"@fuzdev/fuz_ui": "^0.190.0",
+					"@fuzdev/fuz_ui": "^0.191.1",
 					"@fuzdev/fuz_util": "^0.54.0",
-					"@fuzdev/gro": "^0.197.0",
+					"@fuzdev/gro": "^0.197.1",
 					"@jridgewell/trace-mapping": "^0.3.31",
 					"@prettier/plugin-xml": "^3.4.2",
 					"@ryanatkn/eslint-config": "^0.10.1",
 					"@sveltejs/acorn-typescript": "^1.0.9",
 					"@sveltejs/adapter-static": "^3.0.10",
-					"@sveltejs/kit": "^2.50.1",
+					"@sveltejs/kit": "^2.55.0",
 					"@sveltejs/vite-plugin-svelte": "^6.2.4",
 					"@types/estree": "^1.0.8",
 					"@types/node": "^24.10.1",
@@ -48169,10 +48202,10 @@
 					"esm-env": "^1.2.2",
 					"magic-string": "^0.30.21",
 					"prettier": "^3.7.4",
-					"prettier-plugin-svelte": "^3.4.1",
-					"svelte": "^5.49.1",
-					"svelte-check": "^4.3.5",
-					"svelte2tsx": "^0.7.47",
+					"prettier-plugin-svelte": "^3.5.1",
+					"svelte": "^5.54.0",
+					"svelte-check": "^4.4.5",
+					"svelte2tsx": "^0.7.52",
 					"tslib": "^2.8.1",
 					"typescript": "^5.9.3",
 					"typescript-eslint": "^8.48.1",
@@ -48246,7 +48279,7 @@
 			"package_json": {
 				"name": "fuz.dev",
 				"version": "0.0.1",
-				"description": "website for the Fuz stack",
+				"description": "website for the Fuz, a zippy stack for autonomy",
 				"tagline": "friendly user zystem",
 				"glyph": "🦋",
 				"logo": "logo.svg",
@@ -48267,14 +48300,14 @@
 				"devDependencies": {
 					"@fuzdev/fuz_code": "^0.45.1",
 					"@fuzdev/fuz_css": "^0.56.0",
-					"@fuzdev/fuz_ui": "^0.190.0",
+					"@fuzdev/fuz_ui": "^0.191.1",
 					"@fuzdev/fuz_util": "^0.54.0",
 					"@fuzdev/gro": "^0.197.0",
 					"@jridgewell/trace-mapping": "^0.3.31",
 					"@ryanatkn/eslint-config": "^0.10.1",
 					"@sveltejs/acorn-typescript": "^1.0.9",
 					"@sveltejs/adapter-static": "^3.0.10",
-					"@sveltejs/kit": "^2.50.1",
+					"@sveltejs/kit": "^2.55.0",
 					"@sveltejs/vite-plugin-svelte": "^6.2.4",
 					"@types/estree": "^1.0.8",
 					"@webref/css": "^8.2.0",
@@ -48283,10 +48316,10 @@
 					"esm-env": "^1.2.2",
 					"magic-string": "^0.30.21",
 					"prettier": "^3.7.4",
-					"prettier-plugin-svelte": "^3.4.1",
-					"svelte": "^5.49.1",
-					"svelte-check": "^4.3.6",
-					"svelte2tsx": "^0.7.47",
+					"prettier-plugin-svelte": "^3.5.1",
+					"svelte": "^5.54.0",
+					"svelte-check": "^4.4.5",
+					"svelte2tsx": "^0.7.52",
 					"tslib": "^2.8.1",
 					"typescript": "^5.9.3",
 					"typescript-eslint": "^8.48.1",
@@ -48308,7 +48341,7 @@
 			},
 			"source_json": {"name": "fuz.dev", "version": "0.0.1", "modules": []}
 		},
-		"check_runs": {"status": "in_progress", "conclusion": null},
+		"check_runs": {"status": "completed", "conclusion": "success"},
 		"pull_requests": []
 	}
 ]
