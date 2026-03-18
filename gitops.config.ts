@@ -13,6 +13,7 @@ const config: CreateGitopsConfig = () => {
 			'https://github.com/fuzdev/fuz_mastodon',
 			'https://github.com/fuzdev/fuz_code',
 			'https://github.com/fuzdev/fuz_gitops',
+			'https://github.com/fuzdev/fuz_docs',
 			'https://github.com/ryanatkn/webdevladder.net',
 			{
 				repo_url: 'https://github.com/ryanatkn/ryanatkn.com',
