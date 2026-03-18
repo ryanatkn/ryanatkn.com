@@ -95,7 +95,11 @@
 				GitHub Sponsors
 			</Card>
 		</div>
-		<Card href="https://www.patreon.com/ryanatkn" align="right">
+		<Card
+			href="https://www.patreon.com/ryanatkn"
+			align="right"
+			style="--link_color: var(--color_d_50)"
+		>
 			{#snippet icon()}<PatreonLogo fill="var(--color_d_50)" />{/snippet}
 			Patreon
 		</Card>
