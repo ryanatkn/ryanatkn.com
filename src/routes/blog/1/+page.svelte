@@ -133,7 +133,7 @@
 				their friend their favorites in person
 			</li>
 			<li>
-				today is Saturday! view the flurry activity with random sorting, excluding posts they've
+				today is Saturday! view the flurry of activity with random sorting, excluding posts they've
 				already seen
 			</li>
 		</ul>
