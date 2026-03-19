@@ -127,7 +127,7 @@
 		<ul>
 			<li>view all of the posts in a single feed with the most recent at the top</li>
 			<li>view posts sorted by most all-time big emoji reactions, excluding the text reactions</li>
-			<li>view posts grouped by cat, so we can see each cat change over time</li>
+			<li>view posts grouped by cat, so they can see each cat change over time</li>
 			<li>
 				view only the posts they've reacted to, with the most recent listed first, so they can show
 				their friend their favorites in person
