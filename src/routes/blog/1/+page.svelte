@@ -142,11 +142,11 @@
 			In our model, we define these meta-interactions of organizing and managing posts as <strong
 				>curation</strong
 			>. Depending on your point of view, good curation may be even more important than the core
-			interactions of posting and reacting. If our goal is to maximize our collaborative agency,
-			creativity, and utility (joy) within the constraints of the space, which it is in this case,
-			we want users to be able to create those views themselves, and then easily share them with
-			others. So, I exercise control over the space to grant participants various powers of
-			curation.
+			interactions of posting and reacting -- it's an influential input that shapes user attention.
+			If our goal is to maximize our collaborative agency, creativity, and utility (joy) within the
+			constraints of the space, which it is in this case, we want users to be able to create those
+			views themselves, and then easily share them with others. So, I exercise control over the
+			space to grant participants various powers of curation.
 		</p>
 		<h3>distribution</h3>
 		<p>
