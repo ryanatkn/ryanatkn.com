@@ -33,8 +33,7 @@
 				<li>
 					@webdevladder on
 					<a class="u-url" rel="me" href="https://www.youtube.com/@webdevladder">YouTube</a>,
-					<a class="u-url" rel="me" href="https://www.reddit.com/user/webdevladder/">Reddit</a>,
-					<a class="u-url" rel="me" href="https://x.com/webdevladder/">Twitter</a>, and
+					<a class="u-url" rel="me" href="https://www.reddit.com/user/webdevladder/">Reddit</a>, and
 					<a class="u-url" rel="me" href="https://news.ycombinator.com/user?id=webdevladder">HN</a>
 				</li>
 				<li>
