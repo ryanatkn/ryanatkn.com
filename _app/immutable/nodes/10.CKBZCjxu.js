@@ -28,7 +28,7 @@ import{f as D,a as b,d as ne,t as ie}from"../chunks/BXoKnw2U.js";import{l as Ce,
 				a BIG emoji, or a tiny bit of text (let's say max 24 characters)</li></ul> <h3>curation</h3> <p>Now that we've defined the rules of interaction, let's talk about the meta layer of activities
 			around those interactions. When people visit the space with cat pictures, I want them to be
 			able to choose how they see and use the content. People may choose to:</p> <ul><li>view all of the posts in a single feed with the most recent at the top</li> <li>view posts sorted by most all-time big emoji reactions, excluding the text reactions</li> <li>view posts grouped by cat, so we can see each cat change over time</li> <li>view only the posts they've reacted to, with the most recent listed first, so they can show
-				their friend their favorites in person</li> <li>today is Saturday! view the flurry activity with random sorting, excluding posts they've
+				their friend their favorites in person</li> <li>today is Saturday! view the flurry of activity with random sorting, excluding posts they've
 				already seen</li></ul> <p>And so on, deep into the kaleidoscope of human creativity.</p> <p>In our model, we define these meta-interactions of organizing and managing posts as <strong>curation</strong>. Depending on your point of view, good curation may be even more important than the core
 			interactions of posting and reacting. If our goal is to maximize our collaborative agency,
 			creativity, and utility (joy) within the constraints of the space, which it is in this case,
