@@ -2025,7 +2025,7 @@
 							{
 								"name": "app_context",
 								"kind": "variable",
-								"doc_comment": "This is an example of a user-typed alias of `frontend_context`.\nI like this pattern in my apps but there are other patterns too!",
+								"doc_comment": "This is an example of a user-typed alias of `frontend_context`.\nI like this pattern in my apps but there are other patterns too.",
 								"source_line": 17,
 								"type_signature": "{ get: (error_message?: string | undefined) => App; get_maybe: () => App | undefined; set: (value: App) => App; }"
 							},
@@ -2040,7 +2040,7 @@
 							{
 								"name": "App",
 								"kind": "class",
-								"doc_comment": "The `App` is the user's implementation of the Zzz client app.\nIt extends Zzz and should be able to customize as much as possible,\nincluding both behaviors and types. (both a work in progress)",
+								"doc_comment": "The `App` is the user's implementation of the Zzz client app.\nIt extends `Frontend` and should be able to customize as much as possible,\nincluding both behaviors and types. (both a work in progress)",
 								"source_line": 26,
 								"extends": ["Frontend"],
 								"implements": [],
@@ -2122,7 +2122,7 @@
 										"name": "error_message",
 										"kind": "variable",
 										"type_signature": "string | null",
-										"doc_comment": "Error message if any"
+										"doc_comment": "Error message if any."
 									},
 									{
 										"name": "updated",
@@ -2675,7 +2675,7 @@
 							{
 								"name": "HANDLED",
 								"kind": "variable",
-								"doc_comment": "Sentinel value to indicate a parser has completely handled a property",
+								"doc_comment": "Sentinel value to indicate a parser has completely handled a property.",
 								"source_line": 5,
 								"type_signature": "unique symbol"
 							},
@@ -2727,7 +2727,7 @@
 							{
 								"name": "CellValueDecoder",
 								"kind": "type",
-								"doc_comment": "Type helper for decoders that includes base schema properties.\nUse this instead of ValueParser when creating decoders for cells\nto properly type the base properties.",
+								"doc_comment": "Type helper for decoders that includes base schema properties.\nUse this instead of `ValueParser` when creating decoders for cells\nto properly type the base properties.",
 								"source_line": 35,
 								"type_signature": "CellValueDecoder<TSchema, TKey>",
 								"generic_params": [
@@ -2807,7 +2807,7 @@
 							{
 								"name": "CellRegistry",
 								"kind": "class",
-								"doc_comment": "Registry for managing cell classes and their instances.\nThe goal is to allow dynamic instantiation of all cells from serializable JSON.\nThis class does not currently justify its weight/complexity and may be removed in the future,\nbut I want to continue exploring the ideas behind it until we get fully snapshottable UI.",
+								"doc_comment": "Registry for managing cell classes and their instances.\nThe goal is to allow dynamic instantiation of all cells from serializable JSON.\n`CellRegistry` does not currently justify its weight/complexity and may be removed in the future,\nbut I want to continue exploring the ideas behind it until we get fully snapshottable UI.",
 								"source_line": 32,
 								"members": [
 									{
@@ -3064,7 +3064,7 @@
 										"name": "decoders",
 										"kind": "variable",
 										"modifiers": ["protected"],
-										"doc_comment": "Type-safe decoders for custom field decoding.\nOverride in subclasses to handle special field types.\n\nEach decoder function takes a value of any type and should either:\n1. Return a value (including null) to be assigned to the property\n2. Return undefined to use the default decoding behavior\n3. Return HANDLED to indicate the decoder has fully processed the property\n   (virtual properties MUST return HANDLED if they exist in schema but not in class)",
+										"doc_comment": "Type-safe decoders for custom field decoding.\nOverride in subclasses to handle special field types.\n\nEach decoder function takes a value of any type and should either:\n1. Return a value (including null) to be assigned to the property\n2. Return undefined to use the default decoding behavior\n3. Return `HANDLED` to indicate the decoder has fully processed the property\n   (virtual properties MUST return `HANDLED` if they exist in schema but not in class)",
 										"type_signature": "CellValueDecoder<TSchema>"
 									},
 									{
@@ -3128,7 +3128,7 @@
 										"name": "init",
 										"kind": "function",
 										"modifiers": ["protected"],
-										"doc_comment": "Initialize the instance with `options.json` data if provided.\nMust be called before using the instance -\nthe current pattern is calling it at the end of subclass constructors.\n\nWe should investigate deferring to callers so e.g. instantiating from the registry\nwould init automatically, subclasses need no init logic (which can get unwieldy with inheritance),\nand then callers could always do custom init patterns if they wanted.\n\nCan't be called automatically by the Cell's constructor because\nthe subclass' constructor needs to run first to support field initialization.\nA design goal behind the Cell is to support normal TS and Svelte patterns\nwith the most power and least intrusion. (there's a balance to find from Zzz's POV)",
+										"doc_comment": "Initialize the instance with `options.json` data if provided.\nMust be called before using the instance -\nthe current pattern is calling it at the end of subclass constructors.\n\nWe should investigate deferring to callers so e.g. instantiating from the registry\nwould init automatically, subclasses need no init logic (which can get unwieldy with inheritance),\nand then callers could always do custom init patterns if they wanted.\n\nCan't be called automatically by the `Cell`'s constructor because\nthe subclass' constructor needs to run first to support field initialization.\nA design goal behind the `Cell` is to support normal TS and Svelte patterns\nwith the most power and least intrusion. (there's a balance to find from Zzz's POV)",
 										"type_signature": "(): void",
 										"return_type": "void",
 										"parameters": []
@@ -3153,7 +3153,7 @@
 										"name": "register",
 										"kind": "function",
 										"modifiers": ["protected"],
-										"doc_comment": "Register this cell in the global cell registry.\nCalled automatically by init().",
+										"doc_comment": "Register this cell in the global cell registry.\nCalled automatically by `init()`.",
 										"type_signature": "(): void",
 										"return_type": "void",
 										"parameters": []
@@ -3162,7 +3162,7 @@
 										"name": "unregister",
 										"kind": "function",
 										"modifiers": ["protected"],
-										"doc_comment": "Unregister this cell from the global cell registry.\nCalled automatically by dispose().",
+										"doc_comment": "Unregister this cell from the global cell registry.\nCalled automatically by `dispose()`.",
 										"type_signature": "(): void",
 										"return_type": "void",
 										"parameters": []
@@ -3202,7 +3202,7 @@
 									{
 										"name": "encode_property",
 										"kind": "function",
-										"doc_comment": "Encode a value during serialization. Can be overridden for custom encoding logic.\nDefaults to Svelte's `$state.snapshot`,\nwhich handles most cases and uses `toJSON` when available,\nso overriding `to_json` is sufficient for most cases before overriding `encode`.",
+										"doc_comment": "Encode a value during serialization. Can be overridden for custom encoding logic.\nDefaults to Svelte's `$state.snapshot`,\nwhich handles most cases and uses `toJSON` when available,\nso overriding `to_json` is sufficient for most cases before overriding `encode_property`.",
 										"type_signature": "(value: unknown, _key: string): unknown",
 										"return_type": "unknown",
 										"parameters": [
@@ -3225,7 +3225,7 @@
 										"name": "assign_property",
 										"kind": "function",
 										"modifiers": ["protected"],
-										"doc_comment": "Process a single schema property during JSON deserialization.\nThis method handles the workflow for mapping schema properties to instance properties.\n\nFlow:\n1. If a decoder exists for this property, try to use it\n2. If decoder returns HANDLED, consider the property fully handled (short circuit)\n3. If decoder returns a value other than HANDLED or undefined, use that value\n4. If decoder returns undefined, fall through to standard decoding\n5. For properties not directly represented in the class instance but defined\n   in the schema, the decoder MUST return HANDLED to indicate proper handling",
+										"doc_comment": "Process a single schema property during JSON deserialization.\nThis method handles the workflow for mapping schema properties to instance properties.\n\nFlow:\n1. If a decoder exists for this property, try to use it\n2. If decoder returns `HANDLED`, consider the property fully handled (short circuit)\n3. If decoder returns a value other than `HANDLED` or undefined, use that value\n4. If decoder returns undefined, fall through to standard decoding\n5. For properties not directly represented in the class instance but defined\n   in the schema, the decoder MUST return `HANDLED` to indicate proper handling",
 										"type_signature": "(key: SchemaKeys<TSchema>, value: unknown): void",
 										"return_type": "void",
 										"parameters": [
@@ -3999,7 +3999,7 @@
 								"kind": "class",
 								"doc_comment": "Manages imports for generated code, building them on demand.\nAutomatically optimizes type-only imports to use `import type` syntax.\n\nWhy this matters:\n- `import type` statements are completely removed during compilation\n- Mixed imports like `import { type A, B }` cannot be safely removed\n- This ensures optimal tree-shaking and smaller bundle sizes",
 								"examples": [
-									"```typescript\nconst imports = new ImportBuilder();\nimports.add_types('./types.js', 'Foo', 'Bar');\nimports.add('./utils.js', 'helper');\nimports.add_type('./utils.js', 'HelperOptions');\nimports.add('./action_specs.js', '* as specs');\n\n// Generates:\n// import type {Foo, Bar} from './types.js';\n// import {helper, type HelperOptions} from './utils.js';\n// import * as specs from './action_specs.js';\n```"
+									"```ts\nconst imports = new ImportBuilder();\nimports.add_types('./types.js', 'Foo', 'Bar');\nimports.add('./utils.js', 'helper');\nimports.add_type('./utils.js', 'HelperOptions');\nimports.add('./action_specs.js', '* as specs');\n\n// Generates:\n// import type {Foo, Bar} from './types.js';\n// import {helper, type HelperOptions} from './utils.js';\n// import * as specs from './action_specs.js';\n```"
 								],
 								"source_line": 43,
 								"members": [
@@ -4063,7 +4063,7 @@
 									{
 										"name": "build",
 										"kind": "function",
-										"doc_comment": "Generate the import statements.\nIf all imports from a module are types, uses `import type` syntax.",
+										"doc_comment": "Generates the import statements.\nIf all imports from a module are types, uses `import type` syntax.",
 										"type_signature": "(): string",
 										"return_type": "string",
 										"parameters": []
@@ -4113,7 +4113,7 @@
 							{
 								"name": "get_handler_return_type",
 								"kind": "function",
-								"doc_comment": "Gets the handler return type for a specific phase and spec.\nAlso adds necessary imports to the ImportBuilder.",
+								"doc_comment": "Gets the handler return type for a specific phase and spec.\nAlso adds necessary imports to the `ImportBuilder`.",
 								"source_line": 278,
 								"type_signature": "(spec: { method: \"completion_create\" | \"completion_progress\" | \"directory_create\" | \"diskfile_delete\" | \"diskfile_update\" | \"filer_change\" | \"ollama_copy\" | \"ollama_create\" | ... 11 more ... | \"toggle_main_menu\"; ... 6 more ...; async: true; } | { ...; } | { ...; }, phase: \"send_request\" | ... 7 more ... | \"execute\", imports: ImportBuilder, path_prefix: string): string",
 								"return_type": "string",
@@ -4133,7 +4133,7 @@
 							{
 								"name": "generate_phase_handlers",
 								"kind": "function",
-								"doc_comment": "Generates the phase handlers for an action spec using the unified ActionEvent type\nwith the new phase/step type parameters.",
+								"doc_comment": "Generates the phase handlers for an action spec using the unified `ActionEvent` type\nwith the new phase/step type parameters.",
 								"source_line": 307,
 								"type_signature": "(spec: { method: \"completion_create\" | \"completion_progress\" | \"directory_create\" | \"diskfile_delete\" | \"diskfile_update\" | \"filer_change\" | \"ollama_copy\" | \"ollama_create\" | ... 11 more ... | \"toggle_main_menu\"; ... 6 more ...; async: true; } | { ...; } | { ...; }, executor: \"frontend\" | \"backend\", imports: ImportBuilder): string",
 								"return_type": "string",
@@ -5058,7 +5058,7 @@
 							{
 								"name": "map_watcher_change_to_diskfile_change",
 								"kind": "function",
-								"doc_comment": "Maps watcher change types to diskfile change types",
+								"doc_comment": "Maps watcher change types to diskfile change types.",
 								"source_line": 25,
 								"type_signature": "(type: WatcherChangeType): \"add\" | \"change\" | \"delete\"",
 								"return_type": "\"add\" | \"change\" | \"delete\"",
@@ -5067,7 +5067,7 @@
 							{
 								"name": "disknode_to_diskfile_json",
 								"kind": "function",
-								"doc_comment": "Helper function to convert a `SerializableDisknode` to the `DiskfileJson` format.",
+								"doc_comment": "Converts a `SerializableDisknode` to the `DiskfileJson` format.",
 								"source_line": 38,
 								"type_signature": "(disknode: { id: string & $brand<\"DiskfilePath\">; source_dir: string & $brand<\"DiskfilePath\"> & $brand<\"DiskfileDirectoryPath\">; contents: string | null; ctime: number | null; mtime: number | null; dependents: [...][]; dependencies: [...][]; }, existing_id?: string & $brand<...>): { ...; }",
 								"return_type": "{ id: string & $brand<\"Uuid\">; created: string & $brand<\"Datetime\">; updated: string & $brand<\"Datetime\">; path: (string & $brand<\"DiskfilePath\">) | null; source_dir: string & ... 1 more ... & $brand<...>; content: string | null; dependents: [...][] | null; dependencies: [...][] | null; }",
@@ -5080,7 +5080,7 @@
 									{
 										"name": "existing_id",
 										"type": "string & $brand<\"Uuid\">",
-										"description": "Optional existing UUID to preserve id stability across updates",
+										"description": "Optional existing `Uuid` to preserve id stability across updates",
 										"default_value": "create_uuid()"
 									}
 								]
@@ -5273,14 +5273,14 @@
 										"name": "is_preview",
 										"kind": "variable",
 										"modifiers": ["readonly"],
-										"doc_comment": "Derived from parent collection's state",
+										"doc_comment": "Derived from parent collection's state.",
 										"type_signature": "boolean"
 									},
 									{
 										"name": "is_selected",
 										"kind": "variable",
 										"modifiers": ["readonly"],
-										"doc_comment": "Derived from parent collection's state",
+										"doc_comment": "Derived from parent collection's state.",
 										"type_signature": "boolean"
 									},
 									{
@@ -6288,7 +6288,7 @@
 									{
 										"name": "to_relative_path",
 										"kind": "function",
-										"doc_comment": "The value `undefined` means uninitialized, `null` means loading, `''` means none",
+										"doc_comment": "The value `undefined` means uninitialized, `null` means loading, `''` means none.",
 										"type_signature": "(path: string): string | null | undefined",
 										"return_type": "string | null | undefined",
 										"parameters": [{"name": "path", "type": "string"}]
@@ -6882,7 +6882,7 @@
 							{
 								"name": "Frontend",
 								"kind": "class",
-								"doc_comment": "The base frontend app, typically used by creating your own `App extends Frontend`.\nGettable with `frontend_context.get()` inside a `<FrontendRoot>`.",
+								"doc_comment": "The base frontend app, typically used by creating your own `App extends Frontend`.\nGettable with `frontend_context.get()` inside a `FrontendRoot`.",
 								"source_line": 78,
 								"extends": ["Cell<typeof FrontendJson>"],
 								"implements": ["ActionEventEnvironment"],
@@ -7897,7 +7897,7 @@
 							{
 								"name": "estimate_token_count",
 								"kind": "function",
-								"doc_comment": "Quick and dirty token count estimate using `ESTIMATED_CHARS_PER_TOKEN`.\nReal tokenizers are heavy and little benefit for our cases right now,\nespecially because each LLM may tokenize differently!",
+								"doc_comment": "Quick and dirty token count estimate using `ESTIMATED_CHARS_PER_TOKEN`.\nReal tokenizers are heavy and of little benefit for our cases right now,\nespecially because each LLM may tokenize differently.",
 								"source_line": 17,
 								"type_signature": "(text: string): number",
 								"return_type": "number",
@@ -7981,7 +7981,7 @@
 							{
 								"name": "IndexedItem",
 								"kind": "type",
-								"doc_comment": "Interface for objects that can be stored in an indexed collection.",
+								"doc_comment": "Interface for objects that can be stored in an `IndexedCollection`.",
 								"source_line": 16,
 								"type_signature": "ZodObject<{ id: ZodDefault<$ZodBranded<ZodUUID, \"Uuid\", \"out\">>; }, $strict>"
 							},
@@ -8029,7 +8029,7 @@
 										"name": "extractor",
 										"kind": "variable",
 										"type_signature": "(item: T) => K",
-										"doc_comment": "Function that extracts the key from an item"
+										"doc_comment": "Function that extracts the key from an item."
 									}
 								]
 							},
@@ -8115,7 +8115,7 @@
 							{
 								"name": "create_derived_index",
 								"kind": "function",
-								"doc_comment": "Create an incremental derived collection index.",
+								"doc_comment": "Creates an incremental derived collection index.",
 								"source_line": 215,
 								"type_signature": "<T extends IndexedItem, TResult extends Array<T> = T[]>(options: DerivedIndexOptions<T, TResult>): IndexDefinition<T, TResult, void>",
 								"return_type": "IndexDefinition<T, TResult, void>",
@@ -8137,19 +8137,19 @@
 										"name": "factory",
 										"kind": "variable",
 										"type_signature": "(collection: IndexedCollection<T>) => F",
-										"doc_comment": "Function that creates a query function from the collection"
+										"doc_comment": "Function that creates a query function from the collection."
 									},
 									{
 										"name": "onadd",
 										"kind": "variable",
 										"type_signature": "(fn: F, item: T, collection: IndexedCollection<T>) => F",
-										"doc_comment": "Optional custom add handler"
+										"doc_comment": "Optional custom add handler."
 									},
 									{
 										"name": "onremove",
 										"kind": "variable",
 										"type_signature": "(fn: F, item: T, collection: IndexedCollection<T>) => F",
-										"doc_comment": "Optional custom remove handler"
+										"doc_comment": "Optional custom remove handler."
 									}
 								]
 							},
@@ -8290,7 +8290,7 @@
 										"name": "by_id",
 										"kind": "variable",
 										"modifiers": ["readonly"],
-										"doc_comment": "The main source of turth, the full collection keyed by Uuid.",
+										"doc_comment": "The main source of truth, the full collection keyed by `Uuid`.",
 										"type_signature": "SvelteMap<Uuid, T>"
 									},
 									{
@@ -8383,7 +8383,7 @@
 									{
 										"name": "query",
 										"kind": "function",
-										"doc_comment": "Query an index with parameters.\n\nThis method is type-aware when the index has a `query_schema` that defines `TQuery`.",
+										"doc_comment": "Query an index with parameters.\n\nThis method is type-aware when the index has a `query_schema` that defines TQuery.",
 										"type_signature": "<TResult = any, TQuery = any>(key: TKeySingle | TKeyMulti | TKeyDerived | TKeyDynamic, query: TQuery): TResult",
 										"return_type": "TResult",
 										"parameters": [
@@ -8673,7 +8673,7 @@
 							{
 								"name": "create_jsonrpc_error_message_from_thrown",
 								"kind": "function",
-								"doc_comment": "Creates a JSON-RPC error response from any error.\nHandles JsonrpcError and regular Error objects.",
+								"doc_comment": "Creates a JSON-RPC error response from any error.\nHandles `ThrownJsonrpcError` and regular Error objects.",
 								"source_line": 75,
 								"type_signature": "(id: string | number | null, error: any): { [x: string]: unknown; jsonrpc: \"2.0\"; id: string | number | null; error: { [x: string]: unknown; code: -32700 | -32600 | -32601 | -32602 | -32603 | (number & $brand<...>); message: string; data?: unknown; }; }",
 								"return_type": "{ [x: string]: unknown; jsonrpc: \"2.0\"; id: string | number | null; error: { [x: string]: unknown; code: -32700 | -32600 | -32601 | -32602 | -32603 | (number & $brand<\"JsonrpcServerErrorCode\">); message: string; data?: unknown; }; }",
@@ -9012,7 +9012,7 @@
 								"type_signature": "ZodUnion<readonly [ZodObject<{ jsonrpc: ZodLiteral<\"2.0\">; id: ZodUnion<readonly [ZodString, ZodNumber]>; method: ZodString; params: ZodOptional<ZodObject<{ _meta: ZodOptional<ZodObject<{ progressToken: ZodOptional<...>; }, $loose>>; }, $loose>>; }, $loose>, ZodObject<...>, ZodObject<...>, ZodObject<...>]>"
 							}
 						],
-						"module_comment": "Following MCP, Zzz supports a subset of JSON-RPC 2.0 as its message format\n(A2A too, but I haven't looked into if they support the full spec).\nIt can be used by multiple transports including http and websocket.\n\nThese are the JSON-RPC types from the MCP draft in May 2025,\nchanged to include a prefix on all identifiers.\nIt's also defined with Zod schemas instead of plain TS like the MCP library.\n\nMCP messages are a subset of JSON-RPC:\n\n- `params` does not support the positional array format,\n\t\tand `result` supports only `object` values, instead of being any JSON value.\n- MCP does not support batching,\n\t\tsee https://github.com/modelcontextprotocol/modelcontextprotocol/pull/416\n\t\tand https://github.com/modelcontextprotocol/modelcontextprotocol/pull/228\n\n@source https://github.com/modelcontextprotocol/typescript-sdk\n@see https://modelcontextprotocol.io/\n@license https://github.com/modelcontextprotocol/typescript-sdk/blob/main/LICENSE\n\nMIT License\n\nCopyright (c) 2024 Anthropic, PBC\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.",
+						"module_comment": "Following MCP, Zzz supports a subset of JSON-RPC 2.0 as its message format\n(A2A too, but I haven't looked into if they support the full spec).\nIt can be used by multiple transports including HTTP and WebSocket.\n\nThese are the JSON-RPC types from the MCP draft in May 2025,\nchanged to include a prefix on all identifiers.\nIt's also defined with Zod schemas instead of plain TS like the MCP library.\n\nMCP messages are a subset of JSON-RPC:\n\n- `params` does not support the positional array format,\n\t\tand `result` supports only `object` values, instead of being any JSON value.\n- MCP does not support batching,\n\t\tsee https://github.com/modelcontextprotocol/modelcontextprotocol/pull/416\n\t\tand https://github.com/modelcontextprotocol/modelcontextprotocol/pull/228\n\n@source https://github.com/modelcontextprotocol/typescript-sdk\n@see https://modelcontextprotocol.io/\n@license https://github.com/modelcontextprotocol/typescript-sdk/blob/main/LICENSE\n\nMIT License\n\nCopyright (c) 2024 Anthropic, PBC\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.",
 						"dependents": [
 							"action_event_data.ts",
 							"action_peer.ts",
@@ -9924,7 +9924,7 @@
 							{
 								"name": "Ollama",
 								"kind": "class",
-								"doc_comment": "Ollama client state management with simplified API.\nModel data is stored in app.models, not here.\n\n## Status Display Pattern\n\nFor unified status display (available/unavailable/checking), components should use:\n- `app.capabilities.ollama.status` - unified status (prioritizes provider status)\n- `app.capabilities.ollama.error_message` - unified error message\n\nThis ensures consistency with other providers (Claude, ChatGPT, Gemini) and maintains\na single source of truth. The capabilities layer prioritizes backend provider status\n(authoritative - checks if Ollama is installed) over action-level status (checks if API responds).\n\nThe lower-level properties here (`list_status`, `list_error`, `provider_error`, etc.) are\noperational state that `capabilities.ollama` derives from. Use these for:\n- Operational state (models, pulling, creating, etc.)\n- Action-specific error handling\n- Internal state management",
+								"doc_comment": "Ollama client state management with simplified API.\nModel data is stored in `app.models`, not here.\n\n## Status Display Pattern\n\nFor unified status display (available/unavailable/checking), components should use:\n- `app.capabilities.ollama.status` - unified status (prioritizes provider status)\n- `app.capabilities.ollama.error_message` - unified error message\n\nThis ensures consistency with other providers (Claude, ChatGPT, Gemini) and maintains\na single source of truth. The `Capabilities` layer prioritizes backend provider status\n(authoritative - checks if Ollama is installed) over action-level status (checks if API responds).\n\nThe lower-level properties here (`list_status`, `list_error`, `provider_error`, etc.) are\noperational state that `capabilities.ollama` derives from. Use these for:\n- Operational state (models, pulling, creating, etc.)\n- Action-specific error handling\n- Internal state management",
 								"source_line": 66,
 								"extends": ["Cell<typeof OllamaJson>"],
 								"implements": [],
@@ -10679,7 +10679,7 @@
 										"name": "content_preview",
 										"kind": "variable",
 										"modifiers": ["readonly"],
-										"doc_comment": "`content` with a max length"
+										"doc_comment": "`content` with a max length."
 									},
 									{"name": "name", "kind": "variable", "type_signature": "string"},
 									{"name": "has_xml_tag", "kind": "variable", "type_signature": "boolean"},
@@ -13028,7 +13028,7 @@
 							{
 								"name": "RequestTracker",
 								"kind": "class",
-								"doc_comment": "Tracks RPC requests and their responses to manage promises and timeouts.\nUsed by transports to handle the request-response lifecycle.",
+								"doc_comment": "Tracks JSON-RPC requests and their responses to manage promises and timeouts.\nUsed by transports to handle the request-response lifecycle.",
 								"source_line": 47,
 								"members": [
 									{
@@ -13080,7 +13080,7 @@
 									{
 										"name": "reject_request",
 										"kind": "function",
-										"doc_comment": "Reject a pending request with the given error.",
+										"doc_comment": "Rejects a pending request with the given error.",
 										"type_signature": "(id: string | number, error_message: { [x: string]: unknown; jsonrpc: \"2.0\"; id: string | number | null; error: { [x: string]: unknown; code: -32700 | -32600 | -32601 | -32602 | -32603 | (number & $brand<\"JsonrpcServerErrorCode\">); message: string; data?: unknown; }; }): void",
 										"return_type": "void",
 										"parameters": [
@@ -13088,14 +13088,14 @@
 											{
 												"name": "error_message",
 												"type": "{ [x: string]: unknown; jsonrpc: \"2.0\"; id: string | number | null; error: { [x: string]: unknown; code: -32700 | -32600 | -32601 | -32602 | -32603 | (number & $brand<\"JsonrpcServerErrorCode\">); message: string; data?: unknown; }; }",
-												"description": "The complete JsonrpcErrorMessage object"
+												"description": "The complete `JsonrpcErrorMessage` object"
 											}
 										]
 									},
 									{
 										"name": "handle_message",
 										"kind": "function",
-										"doc_comment": "Handle an incoming JSON-RPC message. Resolves or rejects the associated request.\nIgnores notifications and unknown/invalid messages.",
+										"doc_comment": "Handles an incoming JSON-RPC message. Resolves or rejects the associated request.\nIgnores notifications and unknown/invalid messages.",
 										"type_signature": "(message: any): void",
 										"return_type": "void",
 										"parameters": [{"name": "message", "type": "any"}]
@@ -13137,7 +13137,7 @@
 							{
 								"name": "to_completion_response_text",
 								"kind": "function",
-								"doc_comment": "Extracts the text content from a completion response",
+								"doc_comment": "Extracts the text content from a completion response.",
 								"source_line": 12,
 								"type_signature": "(completion_response: { created: string & $brand<\"Datetime\">; provider_name: \"ollama\" | \"claude\" | \"chatgpt\" | \"gemini\"; model: string; data: { type: \"ollama\"; value: any; } | { type: \"claude\"; value: any; } | { ...; } | { ...; }; } | null | undefined): string | null",
 								"return_type": "string | null",
@@ -13151,7 +13151,7 @@
 							{
 								"name": "to_completion_result",
 								"kind": "function",
-								"doc_comment": "Creates a standardized completion response message from provider-specific responses.",
+								"doc_comment": "Creates a standardized `CompletionResponse` message from provider-specific responses.",
 								"source_line": 38,
 								"type_signature": "(provider_name: \"ollama\" | \"claude\" | \"chatgpt\" | \"gemini\", model: string, api_response: unknown, progress_token?: (string & $brand<\"Uuid\">) | undefined): { completion_response: { ...; }; _meta?: { ...; } | undefined; }",
 								"return_type": "{ completion_response: { created: string & $brand<\"Datetime\">; provider_name: \"ollama\" | \"claude\" | \"chatgpt\" | \"gemini\"; model: string; data: { type: \"ollama\"; value: any; } | { ...; } | { ...; } | { ...; }; }; _meta?: { ...; } | undefined; }",
@@ -13984,7 +13984,7 @@
 										"name": "send_streaming_progress",
 										"kind": "function",
 										"modifiers": ["protected"],
-										"doc_comment": "Sends streaming progress notification to frontend",
+										"doc_comment": "Sends streaming progress notification to frontend.",
 										"type_signature": "(progress_token: string & $brand<\"Uuid\">, chunk: { [x: string]: unknown; model?: string | undefined; created_at?: string | undefined; done?: boolean | undefined; message?: { [x: string]: unknown; role: string; content: string; } | undefined; } | undefined): Promise<...>",
 										"return_type": "Promise<void>",
 										"parameters": [
@@ -13999,7 +13999,7 @@
 										"name": "log_streaming_chunk",
 										"kind": "function",
 										"modifiers": ["protected"],
-										"doc_comment": "Logs streaming chunk information",
+										"doc_comment": "Logs streaming chunk information.",
 										"type_signature": "(chunk: unknown): void",
 										"return_type": "void",
 										"parameters": [{"name": "chunk", "type": "unknown"}]
@@ -14008,7 +14008,7 @@
 										"name": "log_streaming_completion",
 										"kind": "function",
 										"modifiers": ["protected"],
-										"doc_comment": "Logs streaming completion information",
+										"doc_comment": "Logs streaming completion information.",
 										"type_signature": "(accumulated_length: number): void",
 										"return_type": "void",
 										"parameters": [{"name": "accumulated_length", "type": "number"}]
@@ -14017,7 +14017,7 @@
 										"name": "log_non_streaming_response",
 										"kind": "function",
 										"modifiers": ["protected"],
-										"doc_comment": "Logs non-streaming response information",
+										"doc_comment": "Logs non-streaming response information.",
 										"type_signature": "(response: unknown): void",
 										"return_type": "void",
 										"parameters": [{"name": "response", "type": "unknown"}]
@@ -14026,7 +14026,7 @@
 										"name": "log_api_response",
 										"kind": "function",
 										"modifiers": ["protected"],
-										"doc_comment": "Logs final API response information",
+										"doc_comment": "Logs final API response information.",
 										"type_signature": "(api_response: unknown): void",
 										"return_type": "void",
 										"parameters": [{"name": "api_response", "type": "unknown"}]
@@ -14313,7 +14313,7 @@
 										"name": "scoped_fs",
 										"kind": "variable",
 										"modifiers": ["readonly"],
-										"doc_comment": "Scoped filesystem interface that restricts operations to allowed directories.",
+										"doc_comment": "`ScopedFs` filesystem interface that restricts operations to allowed directories.",
 										"type_signature": "ScopedFs"
 									},
 									{
@@ -14559,7 +14559,7 @@
 							{
 								"name": "register_websocket_actions",
 								"kind": "function",
-								"doc_comment": "Registers websocket endpoints for all service actions in the schema registry.",
+								"doc_comment": "Registers WebSocket endpoints for all service actions in the schema registry.",
 								"source_line": 28,
 								"type_signature": "({ path, app, backend, upgradeWebSocket, transport, }: RegisterWebsocketActionsOptions): void",
 								"return_type": "void",
@@ -14587,7 +14587,7 @@
 							{
 								"name": "ScopedFs",
 								"kind": "class",
-								"doc_comment": "Provides a secure wrapper around filesystem operations to prevent path traversal attacks and\nunauthorized file access.\n\nSecurity features:\n- Restricts operations to specified allowed paths\n- Prevents path traversal attacks by normalizing all paths\n- Blocks access to symlinks to avoid arbitrary file access\n- Requires absolute paths to avoid relative path confusion\n- Validates the entire path hierarchy for each operation\n\nThis class should be used whenever performing filesystem operations on\nuser-provided or untrusted input paths to ensure proper access boundaries.",
+								"doc_comment": "Provides a secure wrapper around filesystem operations to prevent path traversal attacks and\nunauthorized file access.\n\nSecurity features:\n- Restricts operations to specified allowed paths\n- Prevents path traversal attacks by normalizing all paths\n- Blocks access to symlinks to avoid arbitrary file access\n- Requires absolute paths to avoid relative path confusion\n- Validates the entire path hierarchy for each operation\n\n`ScopedFs` should be used whenever performing filesystem operations on\nuser-provided or untrusted input paths to ensure proper access boundaries.",
 								"source_line": 35,
 								"members": [
 									{
@@ -14851,7 +14851,7 @@
 									{
 										"name": "allowed_patterns",
 										"type": "RegExp[]",
-										"description": "Array of compiled regex patterns from parse_allowed_origins"
+										"description": "Array of compiled regex patterns from `parse_allowed_origins`"
 									}
 								]
 							}
@@ -15366,7 +15366,7 @@
 									{
 										"name": "active_key",
 										"kind": "variable",
-										"doc_comment": "Current active sort key",
+										"doc_comment": "Current active sort key.",
 										"type_signature": "string"
 									},
 									{
@@ -15393,7 +15393,7 @@
 									{
 										"name": "constructor",
 										"kind": "constructor",
-										"doc_comment": "Create a new Sortable instance with reactive sources.",
+										"doc_comment": "Creates a new `Sortable` instance with reactive sources.",
 										"type_signature": "<T>(items_getter: Thunk<T[]>, sorters_getter: Thunk<Sorter<T>[]>, key_getter_default?: Thunk<string | undefined> | undefined): Sortable<T>",
 										"parameters": [
 											{
@@ -15427,7 +15427,7 @@
 							{
 								"name": "sort_by_text",
 								"kind": "function",
-								"doc_comment": "Create a text sorter with optional direction.\nFalls back to cell's cid for equal values.",
+								"doc_comment": "Creates a text sorter with optional direction.\nFalls back to cell's `cid` for equal values.",
 								"source_line": 121,
 								"type_signature": "<T extends Cell<any>>(key: string, label: string, field: keyof T, direction?: \"asc\" | \"desc\"): Sorter<T>",
 								"return_type": "Sorter<T>",
@@ -15441,7 +15441,7 @@
 							{
 								"name": "sort_by_numeric",
 								"kind": "function",
-								"doc_comment": "Create a numeric sorter with optional direction.\nFalls back to cell's cid for equal values.",
+								"doc_comment": "Creates a numeric sorter with optional direction.\nFalls back to cell's `cid` for equal values.",
 								"source_line": 144,
 								"type_signature": "<T extends Cell<any>>(key: string, label: string, field: keyof T, direction?: \"asc\" | \"desc\"): Sorter<T>",
 								"return_type": "Sorter<T>",
@@ -16162,7 +16162,7 @@
 									{
 										"name": "destroy",
 										"kind": "function",
-										"doc_comment": "Override Cell's destroy method to ensure timer cleanup.",
+										"doc_comment": "Override `Cell`'s destroy method to ensure timer cleanup.",
 										"type_signature": "(): void",
 										"return_type": "void",
 										"parameters": []
@@ -16882,7 +16882,7 @@
 							{
 								"name": "to_subschema",
 								"kind": "function",
-								"doc_comment": "Helper to extract subschema from a Zod def, following Zod 4 patterns.",
+								"doc_comment": "Extracts subschema from a Zod def, following Zod 4 patterns.",
 								"source_line": 56,
 								"type_signature": "(def: $ZodTypeDef): ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | undefined",
 								"return_type": "ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | undefined",
@@ -16891,7 +16891,7 @@
 							{
 								"name": "get_innermost_type",
 								"kind": "function",
-								"doc_comment": "Gets the innermost type of a zod schema by unwrapping wrappers like transforms, ZodOptional, ZodDefault, etc.",
+								"doc_comment": "Gets the innermost type of a Zod schema by unwrapping wrappers like transforms, `ZodOptional`, `ZodDefault`, etc.",
 								"source_line": 72,
 								"type_signature": "(schema: ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>): ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>",
 								"return_type": "ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>",
@@ -16929,7 +16929,7 @@
 							{
 								"name": "get_field_schema",
 								"kind": "function",
-								"doc_comment": "Get the Zod schema for a specific field in an object schema.",
+								"doc_comment": "Gets the Zod schema for a specific field in an object schema.",
 								"source_line": 122,
 								"type_signature": "(schema: ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>, key: string): ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>",
 								"return_type": "ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>",
@@ -16946,7 +16946,7 @@
 							{
 								"name": "maybe_get_field_schema",
 								"kind": "function",
-								"doc_comment": "Get the Zod schema for a specific field in an object schema, returning undefined if not found.",
+								"doc_comment": "Gets the Zod schema for a specific field in an object schema, returning undefined if not found.",
 								"source_line": 137,
 								"type_signature": "(schema: ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>, key: string): ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | undefined",
 								"return_type": "ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | undefined",
@@ -17055,7 +17055,7 @@
 			"published": true,
 			"package_json": {
 				"name": "@fuzdev/fuz_css",
-				"version": "0.57.0",
+				"version": "0.58.0",
 				"description": "CSS framework and design system for semantic HTML",
 				"tagline": "CSS with more utility",
 				"glyph": "🪴",
@@ -17106,9 +17106,9 @@
 					"@changesets/changelog-git": "^0.2.1",
 					"@fuzdev/blake3_wasm": "^0.1.0",
 					"@fuzdev/fuz_code": "^0.45.1",
-					"@fuzdev/fuz_ui": "^0.191.1",
-					"@fuzdev/fuz_util": "^0.54.0",
-					"@fuzdev/gro": "^0.197.0",
+					"@fuzdev/fuz_ui": "^0.191.3",
+					"@fuzdev/fuz_util": "^0.55.0",
+					"@fuzdev/gro": "^0.197.2",
 					"@jridgewell/trace-mapping": "^0.3.31",
 					"@ryanatkn/eslint-config": "^0.10.1",
 					"@sveltejs/acorn-typescript": "^1.0.9",
@@ -17126,7 +17126,7 @@
 					"magic-string": "^0.30.21",
 					"prettier": "^3.7.4",
 					"prettier-plugin-svelte": "^3.4.1",
-					"svelte": "^5.54.0",
+					"svelte": "^5.55.0",
 					"svelte-check": "^4.4.4",
 					"svelte2tsx": "^0.7.51",
 					"tslib": "^2.8.1",
@@ -17156,7 +17156,7 @@
 			},
 			"source_json": {
 				"name": "@fuzdev/fuz_css",
-				"version": "0.57.0",
+				"version": "0.58.0",
 				"modules": [
 					{
 						"path": "class_variable_index.ts",
@@ -17286,13 +17286,13 @@
 										"name": "included_rules",
 										"kind": "variable",
 										"type_signature": "number",
-										"doc_comment": "Number of rules included from style.css"
+										"doc_comment": "Number of rules included from `style.css`"
 									},
 									{
 										"name": "total_rules",
 										"kind": "variable",
 										"type_signature": "number",
-										"doc_comment": "Total number of rules in style.css"
+										"doc_comment": "Total number of rules in `style.css`"
 									},
 									{
 										"name": "variable_count",
@@ -17319,7 +17319,7 @@
 										"name": "base_css",
 										"kind": "variable",
 										"type_signature": "string",
-										"doc_comment": "CSS for base styles (from style.css)"
+										"doc_comment": "CSS for base styles (from `style.css`)"
 									},
 									{
 										"name": "resolved_variables",
@@ -17349,7 +17349,7 @@
 										"name": "stats",
 										"kind": "variable",
 										"type_signature": "CssResolutionStats",
-										"doc_comment": "Resolution statistics (only when include_stats is true)"
+										"doc_comment": "Resolution statistics (only when `include_stats` is true)"
 									}
 								]
 							},
@@ -17364,7 +17364,7 @@
 										"name": "style_rule_index",
 										"kind": "variable",
 										"type_signature": "StyleRuleIndex",
-										"doc_comment": "Index of style.css rules"
+										"doc_comment": "Index of `style.css` rules"
 									},
 									{
 										"name": "variable_graph",
@@ -17448,13 +17448,13 @@
 										"name": "explicit_elements",
 										"kind": "variable",
 										"type_signature": "Set<string> | null",
-										"doc_comment": "Elements explicitly annotated via"
+										"doc_comment": "Elements explicitly annotated via `@fuz-elements` comments.\nThese produce errors (not warnings) if they have no matching style rules."
 									},
 									{
 										"name": "explicit_variables",
 										"kind": "variable",
 										"type_signature": "Set<string> | null",
-										"doc_comment": "Variables explicitly annotated via"
+										"doc_comment": "Variables explicitly annotated via `@fuz-variables` comments.\nThese produce errors (not warnings) if they don't exist in the theme."
 									}
 								]
 							},
@@ -17550,7 +17550,7 @@
 							{
 								"name": "CSS_CACHE_VERSION",
 								"kind": "variable",
-								"doc_comment": "CSS cache version. Bump when any of these change:\n- `CachedExtraction` schema\n- `extract_css_classes_with_locations()` logic or output\n- `ExtractionDiagnostic` or `SourceLocation` structure\n\nv1: Initial version with classes and diagnostics\nv2: Use null instead of empty arrays, add explicit_classes, elements, css_variables\nv3: Add explicit_elements, explicit_variables for",
+								"doc_comment": "CSS cache version. Bump when any of these change:\n- `CachedExtraction` schema\n- `extract_css_classes_with_locations()` logic or output\n- `ExtractionDiagnostic` or `SourceLocation` structure\n\nv1: Initial version with classes and diagnostics\nv2: Use null instead of empty arrays, add `explicit_classes`, `elements`, `css_variables`.\nv3: Add `explicit_elements`, `explicit_variables` for `@fuz-elements`/`@fuz-variables` comments.\nv4: Filter incomplete CSS variables in dynamic templates (e.g., `var(--prefix_{expr})`).\nv5: Remove `css_variables` and `explicit_variables` (now detected via simple regex scan).\nv6: Re-add `explicit_variables` for `@fuz-variables` comments (regex scan misses dynamic templates).",
 								"source_line": 35,
 								"type_signature": "6"
 							},
@@ -17583,7 +17583,7 @@
 										"name": "explicit_classes",
 										"kind": "variable",
 										"type_signature": "Array<string> | null",
-										"doc_comment": "Classes from"
+										"doc_comment": "Classes from `@fuz-classes` comments, or null if none"
 									},
 									{
 										"name": "diagnostics",
@@ -17601,13 +17601,13 @@
 										"name": "explicit_elements",
 										"kind": "variable",
 										"type_signature": "Array<string> | null",
-										"doc_comment": "Elements from"
+										"doc_comment": "Elements from `@fuz-elements` comments, or null if none"
 									},
 									{
 										"name": "explicit_variables",
 										"kind": "variable",
 										"type_signature": "Array<string> | null",
-										"doc_comment": "Variables from"
+										"doc_comment": "Variables from `@fuz-variables` comments, or null if none"
 									}
 								]
 							},
@@ -17841,7 +17841,7 @@
 										"name": "elements",
 										"kind": "variable",
 										"type_signature": "Set<string> | null",
-										"doc_comment": "HTML elements found in the file, or null if none.\nUsed for including only the style.css rules needed."
+										"doc_comment": "HTML elements found in the file, or null if none.\nUsed for including only the `style.css` rules needed."
 									},
 									{
 										"name": "explicit_elements",
@@ -18227,7 +18227,7 @@
 										"name": "explicit_classes",
 										"kind": "variable",
 										"type_signature": "Set<string> | null",
-										"doc_comment": "Classes that were explicitly annotated (via"
+										"doc_comment": "Classes that were explicitly annotated (via `@fuz-classes` or `additional_classes`).\nUnresolved explicit classes produce warnings."
 									}
 								]
 							},
@@ -18452,7 +18452,7 @@
 							{
 								"name": "modified_class_interpreter",
 								"kind": "variable",
-								"doc_comment": "Interpreter for modified token/composite classes (e.g., `hover:p_md`, `md:box`, `dark:hover:panel`).\nApplies modifiers to existing declaration-based or ruleset-based classes.\n\nThis interpreter must run BEFORE css_literal_interpreter to handle cases like `hover:box`\nwhere `box` is a known class (not a CSS property).",
+								"doc_comment": "Interpreter for modified token/composite classes (e.g., `hover:p_md`, `md:box`, `dark:hover:panel`).\nApplies modifiers to existing declaration-based or ruleset-based classes.\n\nThis interpreter must run BEFORE `css_literal_interpreter` to handle cases like `hover:box`\nwhere `box` is a known class (not a CSS property).",
 								"source_line": 20,
 								"type_signature": "CssClassDefinitionInterpreter"
 							},
@@ -18466,7 +18466,7 @@
 							{
 								"name": "css_class_interpreters",
 								"kind": "variable",
-								"doc_comment": "Collection of all builtin interpreters for dynamic CSS class generation.\nOrder matters: modified_class_interpreter runs first to handle `hover:box` before\ncss_literal_interpreter tries to interpret it as `hover:box` (property:value).",
+								"doc_comment": "Collection of all builtin interpreters for dynamic CSS class generation.\nOrder matters: `modified_class_interpreter` runs first to handle `hover:box` before\n`css_literal_interpreter` tries to interpret it as `hover:box` (property:value).",
 								"source_line": 193,
 								"type_signature": "CssClassDefinitionInterpreter[]"
 							}
@@ -18630,7 +18630,7 @@
 									{
 										"name": "get_with_locations",
 										"kind": "function",
-										"doc_comment": "Gets all classes with their source locations (with exclude filter applied).\nLocations from additional_classes are null.",
+										"doc_comment": "Gets all classes with their source locations (with exclude filter applied).\nLocations from `additional_classes` are null.",
 										"type_signature": "(): Map<string, SourceLocation[] | null>",
 										"return_type": "Map<string, SourceLocation[] | null>",
 										"parameters": []
@@ -18638,7 +18638,7 @@
 									{
 										"name": "get_all",
 										"kind": "function",
-										"doc_comment": "Gets all classes and their locations in a single call.\nMore efficient than calling `get()` and `get_with_locations()` separately\nwhen both are needed (avoids potential double recalculation).\n\nResults have exclude filter applied and explicit_classes includes additional_classes.",
+										"doc_comment": "Gets all classes and their locations in a single call.\nMore efficient than calling `get()` and `get_with_locations()` separately\nwhen both are needed (avoids potential double recalculation).\n\nResults have exclude filter applied and `explicit_classes` includes `additional_classes`.",
 										"type_signature": "(): { all_classes: Set<string>; all_classes_with_locations: Map<string, SourceLocation[] | null>; explicit_classes: Set<string> | null; all_elements: Set<...>; explicit_elements: Set<...> | null; explicit_variables: Set<...> | null; }",
 										"return_type": "{ all_classes: Set<string>; all_classes_with_locations: Map<string, SourceLocation[] | null>; explicit_classes: Set<string> | null; all_elements: Set<...>; explicit_elements: Set<...> | null; explicit_variables: Set<...> | null; }",
 										"parameters": []
@@ -19125,7 +19125,7 @@
 							{
 								"name": "BaseCssOption",
 								"kind": "type",
-								"doc_comment": "Type for the base_css option used by CSS generators.\n\nSupports four forms:\n- `undefined` - Use default style.css (framework defaults)\n- `null` - Disable base styles entirely (explicit opt-out)\n- `string` - Custom CSS to replace defaults\n- `(default_css) => string` - Callback to modify default CSS\n\nSee module documentation for the `undefined` vs `null` convention.",
+								"doc_comment": "Type for the base_css option used by CSS generators.\n\nSupports four forms:\n- `undefined` - Use default `style.css` (framework defaults)\n- `null` - Disable base styles entirely (explicit opt-out)\n- `string` - Custom CSS to replace defaults\n- `(default_css) => string` - Callback to modify default CSS\n\nSee module documentation for the `undefined` vs `null` convention.",
 								"source_line": 95,
 								"type_signature": "BaseCssOption"
 							},
@@ -19778,7 +19778,7 @@
 										"name": "locations",
 										"kind": "variable",
 										"type_signature": "Array<SourceLocation> | null",
-										"doc_comment": "Source locations where this class was used, or null if from additional_classes"
+										"doc_comment": "Source locations where this class was used, or null if from `additional_classes`"
 									}
 								]
 							},
@@ -19986,12 +19986,12 @@
 							{
 								"name": "fromComment",
 								"kind": "variable",
-								"doc_comment": "Comment hint - extracted via",
+								"doc_comment": "Comment hint - extracted via `@fuz-classes`, NOT via variable name pattern.\nVariable name `fromComment` doesn't end in class/classes/className.",
 								"source_line": 93,
 								"type_signature": "\"shadow_lg\""
 							}
 						],
-						"module_comment": "Example CSS class exports demonstrating node_modules extraction.\n\nThis module exists to verify that the Vite plugin extracts classes from\ndependencies in node_modules. The exports test specific extraction patterns\nthat require being in a separate module.\n\n**Important:** Variable names must match `CLASS_NAME_PATTERN` in css_class_extractor.ts.\nSupported suffixes: `class`, `classes`, `className`, `classNames`, `classList`, `classLists`\n(also snake_case variants like `class_name`, `class_names`, `class_list`, `class_lists`).\n\n**Patterns demonstrated:**\n- Naming patterns: All CLASS_NAME_PATTERN suffix variants\n- Expression patterns: Ternary, logical AND, arrays\n- Comment hints: `@fuz-classes` directive\n\nToken, composite, and literal classes are demonstrated inline in the examples\nsince they don't require special extraction testing."
+						"module_comment": "Example CSS class exports demonstrating node_modules extraction.\n\nThis module exists to verify that the Vite plugin extracts classes from\ndependencies in node_modules. The exports test specific extraction patterns\nthat require being in a separate module.\n\n**Important:** Variable names must match `CLASS_NAME_PATTERN` in `css_class_extractor.ts`.\nSupported suffixes: `class`, `classes`, `className`, `classNames`, `classList`, `classLists`\n(also snake_case variants like `class_name`, `class_names`, `class_list`, `class_lists`).\n\n**Patterns demonstrated:**\n- Naming patterns: All `CLASS_NAME_PATTERN` suffix variants\n- Expression patterns: Ternary, logical AND, arrays\n- Comment hints: `@fuz-classes` directive\n\nToken, composite, and literal classes are demonstrated inline in the examples\nsince they don't require special extraction testing."
 					},
 					{
 						"path": "file_filter.ts",
@@ -20304,7 +20304,7 @@
 										"name": "order",
 										"kind": "variable",
 										"type_signature": "number",
-										"doc_comment": "Original order in style.css (for preserving cascade)"
+										"doc_comment": "Original order in `style.css` (for preserving cascade)"
 									}
 								]
 							},
@@ -20391,7 +20391,7 @@
 									{
 										"name": "css",
 										"type": "string",
-										"description": "raw CSS string (e.g., contents of style.css)"
+										"description": "raw CSS string (e.g., contents of `style.css`)"
 									},
 									{
 										"name": "content_hash",
@@ -20403,7 +20403,7 @@
 							{
 								"name": "load_style_rule_index",
 								"kind": "function",
-								"doc_comment": "Loads and parses the default style.css file.",
+								"doc_comment": "Loads and parses the default `style.css` file.",
 								"source_line": 497,
 								"type_signature": "(deps: CacheDeps, style_css_path?: string | undefined): Promise<StyleRuleIndex>",
 								"return_type": "Promise<StyleRuleIndex>",
@@ -20418,7 +20418,7 @@
 										"name": "style_css_path",
 										"type": "string | undefined",
 										"optional": true,
-										"description": "path to style.css (defaults to package's style.css)"
+										"description": "path to `style.css` (defaults to package's `style.css`)"
 									}
 								]
 							},
@@ -20437,7 +20437,7 @@
 							{
 								"name": "load_default_style_css",
 								"kind": "function",
-								"doc_comment": "Loads the raw default style.css content.",
+								"doc_comment": "Loads the raw default `style.css` content.",
 								"source_line": 529,
 								"type_signature": "(deps: CacheDeps, style_css_path?: string | undefined): Promise<string>",
 								"return_type": "Promise<string>",
@@ -20452,7 +20452,7 @@
 										"name": "style_css_path",
 										"type": "string | undefined",
 										"optional": true,
-										"description": "path to style.css (defaults to package's style.css)"
+										"description": "path to `style.css` (defaults to package's `style.css`)"
 									}
 								]
 							},
@@ -20546,7 +20546,7 @@
 								]
 							}
 						],
-						"module_comment": "Style.css rule parser for bundled CSS generation.\n\nParses the fuz_css style.css file into a structured index that maps\nCSS rules to the HTML elements and classes they style. This enables\nthe bundled CSS generator to include only the rules needed for\nelements actually used in the project.",
+						"module_comment": "Style.css rule parser for bundled CSS generation.\n\nParses the fuz_css `style.css` file into a structured index that maps\nCSS rules to the HTML elements and classes they style. This enables\nthe bundled CSS generator to include only the rules needed for\nelements actually used in the project.",
 						"dependencies": ["css_variable_utils.ts"],
 						"dependents": ["css_bundled_resolution.ts", "gen_fuz_css.ts", "vite_plugin_fuz_css.ts"]
 					},
@@ -23822,7 +23822,7 @@
 			"published": true,
 			"package_json": {
 				"name": "@fuzdev/fuz_ui",
-				"version": "0.191.1",
+				"version": "0.191.4",
 				"description": "Svelte UI library",
 				"tagline": "friendly user zystem",
 				"glyph": "🧶",
@@ -23880,9 +23880,9 @@
 				"devDependencies": {
 					"@changesets/changelog-git": "^0.2.1",
 					"@fuzdev/fuz_code": "^0.45.1",
-					"@fuzdev/fuz_css": "^0.57.0",
+					"@fuzdev/fuz_css": "^0.58.0",
 					"@fuzdev/fuz_util": "^0.55.0",
-					"@fuzdev/gro": "^0.197.0",
+					"@fuzdev/gro": "^0.197.2",
 					"@jridgewell/trace-mapping": "^0.3.31",
 					"@ryanatkn/eslint-config": "^0.10.1",
 					"@sveltejs/acorn-typescript": "^1.0.9",
@@ -23900,7 +23900,7 @@
 					"magic-string": "^0.30.21",
 					"prettier": "^3.7.4",
 					"prettier-plugin-svelte": "^3.5.1",
-					"svelte": "^5.54.0",
+					"svelte": "^5.55.0",
 					"svelte-check": "^4.4.5",
 					"svelte2tsx": "^0.7.52",
 					"tslib": "^2.8.1",
@@ -23934,7 +23934,7 @@
 			},
 			"source_json": {
 				"name": "@fuzdev/fuz_ui",
-				"version": "0.191.1",
+				"version": "0.191.4",
 				"modules": [
 					{
 						"path": "Alert.svelte",
@@ -23943,7 +23943,7 @@
 								"name": "Alert",
 								"kind": "component",
 								"doc_comment": "",
-								"see_also": ["https://www.w3.org/WAI/ARIA/apg/patterns/alert/"],
+								"see_also": ["{@link https://www.w3.org/WAI/ARIA/apg/patterns/alert/}"],
 								"props": [
 									{"name": "status", "type": "AlertStatus", "optional": true},
 									{"name": "color", "type": "string", "optional": true},
@@ -23959,7 +23959,7 @@
 								"source_line": 1
 							}
 						],
-						"module_comment": "@see https://www.w3.org/WAI/ARIA/apg/patterns/alert/",
+						"module_comment": "@see {@link https://www.w3.org/WAI/ARIA/apg/patterns/alert/}",
 						"dependencies": ["alert.ts"]
 					},
 					{
@@ -23997,21 +23997,21 @@
 								"name": "DiagnosticSeverity",
 								"kind": "type",
 								"doc_comment": "Diagnostic severity levels.\n\n- `error`: Analysis failed, declaration may be incomplete or missing data\n- `warning`: Partial success, something seems off but analysis continued",
-								"source_line": 64,
+								"source_line": 66,
 								"type_signature": "DiagnosticSeverity"
 							},
 							{
 								"name": "DiagnosticKind",
 								"kind": "type",
 								"doc_comment": "Discriminant for diagnostic types.",
-								"source_line": 69,
+								"source_line": 71,
 								"type_signature": "DiagnosticKind"
 							},
 							{
 								"name": "BaseDiagnostic",
 								"kind": "type",
 								"doc_comment": "Base diagnostic fields shared by all diagnostic types.",
-								"source_line": 79,
+								"source_line": 81,
 								"type_signature": "BaseDiagnostic",
 								"properties": [
 									{"name": "kind", "kind": "variable", "type_signature": "DiagnosticKind"},
@@ -24046,7 +24046,7 @@
 								"name": "TypeExtractionDiagnostic",
 								"kind": "type",
 								"doc_comment": "Type extraction failed (e.g., complex or recursive types).",
-								"source_line": 95,
+								"source_line": 97,
 								"type_signature": "TypeExtractionDiagnostic",
 								"extends": ["BaseDiagnostic"],
 								"properties": [
@@ -24067,7 +24067,7 @@
 								"name": "SignatureAnalysisDiagnostic",
 								"kind": "type",
 								"doc_comment": "Function/method signature analysis failed.",
-								"source_line": 104,
+								"source_line": 106,
 								"type_signature": "SignatureAnalysisDiagnostic",
 								"extends": ["BaseDiagnostic"],
 								"properties": [
@@ -24088,7 +24088,7 @@
 								"name": "ClassMemberDiagnostic",
 								"kind": "type",
 								"doc_comment": "Class member analysis failed.",
-								"source_line": 113,
+								"source_line": 115,
 								"type_signature": "ClassMemberDiagnostic",
 								"extends": ["BaseDiagnostic"],
 								"properties": [
@@ -24111,7 +24111,7 @@
 								"name": "SveltePropDiagnostic",
 								"kind": "type",
 								"doc_comment": "Svelte prop type resolution failed.",
-								"source_line": 124,
+								"source_line": 126,
 								"type_signature": "SveltePropDiagnostic",
 								"extends": ["BaseDiagnostic"],
 								"properties": [
@@ -24134,7 +24134,7 @@
 								"name": "ModuleSkippedDiagnostic",
 								"kind": "type",
 								"doc_comment": "Module was skipped during analysis.\nCould be due to missing source file in program or no analyzer available.",
-								"source_line": 136,
+								"source_line": 138,
 								"type_signature": "ModuleSkippedDiagnostic",
 								"extends": ["BaseDiagnostic"],
 								"properties": [
@@ -24151,7 +24151,7 @@
 								"name": "Diagnostic",
 								"kind": "type",
 								"doc_comment": "Union of all diagnostic types.",
-								"source_line": 145,
+								"source_line": 147,
 								"type_signature": "Diagnostic"
 							},
 							{
@@ -24159,9 +24159,9 @@
 								"kind": "class",
 								"doc_comment": "Context for collecting diagnostics during source analysis.\n\nThread an instance through analysis functions to collect errors and warnings\nwithout halting analysis. After analysis completes, check `has_errors()` and\nreport collected diagnostics.",
 								"examples": [
-									"const ctx = new AnalysisContext();\nts_analyze_module_exports(source_file, checker, options, ctx);\nif (ctx.has_errors()) {\n  console.error('Analysis completed with errors:');\n  for (const d of ctx.errors()) {\n    console.error(format_diagnostic(d));\n  }\n}"
+									"```ts\nconst ctx = new AnalysisContext();\nts_analyze_module_exports(source_file, checker, options, ctx);\nif (ctx.has_errors()) {\n  console.error('Analysis completed with errors:');\n  for (const d of ctx.errors()) {\n    console.error(format_diagnostic(d));\n  }\n}\n```"
 								],
-								"source_line": 169,
+								"source_line": 173,
 								"members": [
 									{
 										"name": "diagnostics",
@@ -24172,7 +24172,7 @@
 									{
 										"name": "add",
 										"kind": "function",
-										"doc_comment": "Add a diagnostic to the collection.",
+										"doc_comment": "Add a `Diagnostic` to the collection.",
 										"type_signature": "(diagnostic: Diagnostic): void",
 										"return_type": "void",
 										"parameters": [{"name": "diagnostic", "type": "Diagnostic"}]
@@ -24212,7 +24212,7 @@
 									{
 										"name": "by_kind",
 										"kind": "function",
-										"doc_comment": "Get diagnostics of a specific kind.",
+										"doc_comment": "Get diagnostics of a specific `DiagnosticKind`.",
 										"type_signature": "<K extends DiagnosticKind>(kind: K): (Extract<TypeExtractionDiagnostic, { kind: K; }> | Extract<SignatureAnalysisDiagnostic, { ...; }> | Extract<...> | Extract<...> | Extract<...>)[]",
 										"return_type": "(Extract<TypeExtractionDiagnostic, { kind: K; }> | Extract<SignatureAnalysisDiagnostic, { kind: K; }> | Extract<...> | Extract<...> | Extract<...>)[]",
 										"parameters": [{"name": "kind", "type": "K"}]
@@ -24223,7 +24223,7 @@
 								"name": "FormatDiagnosticOptions",
 								"kind": "type",
 								"doc_comment": "Options for formatting diagnostics.",
-								"source_line": 218,
+								"source_line": 222,
 								"type_signature": "FormatDiagnosticOptions",
 								"properties": [
 									{
@@ -24244,7 +24244,7 @@
 								"name": "format_diagnostic",
 								"kind": "function",
 								"doc_comment": "Format a diagnostic for display.",
-								"source_line": 232,
+								"source_line": 236,
 								"type_signature": "(diagnostic: Diagnostic, options?: FormatDiagnosticOptions | undefined): string",
 								"return_type": "string",
 								"return_description": "formatted string like './file.ts:10:5: error: message'",
@@ -24263,7 +24263,7 @@
 								]
 							}
 						],
-						"module_comment": "Diagnostic collection for source analysis.\n\nProvides structured error/warning collection during TypeScript and Svelte\nanalysis, replacing silent catch blocks with actionable diagnostics.\n\n## Error Handling Contract\n\nAnalysis functions follow a two-tier error model:\n\n**Accumulated (non-fatal)** - Collected in AnalysisContext, analysis continues:\n- Type resolution failures (complex generics, circular refs)\n- Missing or unparseable JSDoc\n- Individual member/prop extraction failures\n- The return value is still valid but may have partial data\n\n**Thrown (fatal)** - Analysis cannot continue for this file:\n- File not found or unreadable\n- Syntax errors preventing parsing\n- svelte2tsx transformation failures\n- Svelte version incompatibility\n\n## Usage Pattern\n\n```ts\nconst ctx = new AnalysisContext();\nconst results = files.map(f => {\n  try {\n    return library_analyze_module(f, program, options, ctx);\n  } catch (e) {\n    // Fatal error - log and skip this file\n    console.error(`Failed to analyze ${f.id}: ${e}`);\n    return null;\n  }\n});\n\n// Results are valid even with accumulated errors\n// Check ctx for diagnostics to display to user\nif (ctx.has_errors()) {\n  for (const err of ctx.errors()) {\n    console.error(format_diagnostic(err));\n  }\n}\n```\n\n@example\nconst ctx = new AnalysisContext();\n// ... analysis functions add diagnostics via ctx.add(...)\nif (ctx.has_errors()) {\n  for (const err of ctx.errors()) {\n    console.error(`${err.file}:${err.line}: ${err.message}`);\n  }\n}",
+						"module_comment": "Diagnostic collection for source analysis.\n\nProvides structured error/warning collection during TypeScript and Svelte\nanalysis, replacing silent catch blocks with actionable diagnostics.\n\n## Error Handling Contract\n\nAnalysis functions follow a two-tier error model:\n\n**Accumulated (non-fatal)** - Collected in `AnalysisContext`, analysis continues:\n- Type resolution failures (complex generics, circular refs)\n- Missing or unparseable JSDoc\n- Individual member/prop extraction failures\n- The return value is still valid but may have partial data\n\n**Thrown (fatal)** - Analysis cannot continue for this file:\n- File not found or unreadable\n- Syntax errors preventing parsing\n- svelte2tsx transformation failures\n- Svelte version incompatibility\n\n## Usage Pattern\n\n```ts\nconst ctx = new AnalysisContext();\nconst results = files.map(f => {\n  try {\n    return library_analyze_module(f, program, options, ctx);\n  } catch (e) {\n    // Fatal error - log and skip this file\n    console.error(`Failed to analyze ${f.id}: ${e}`);\n    return null;\n  }\n});\n\n// Results are valid even with accumulated errors\n// Check ctx for diagnostics to display to user\nif (ctx.has_errors()) {\n  for (const err of ctx.errors()) {\n    console.error(format_diagnostic(err));\n  }\n}\n```\n\n@example\n```ts\nconst ctx = new AnalysisContext();\n// ... analysis functions add diagnostics via ctx.add(...)\nif (ctx.has_errors()) {\n  for (const err of ctx.errors()) {\n    console.error(`${err.file}:${err.line}: ${err.message}`);\n  }\n}\n```",
 						"dependents": ["library_generate.ts"]
 					},
 					{
@@ -24798,9 +24798,9 @@
 							{
 								"name": "ContextmenuState",
 								"kind": "class",
-								"doc_comment": "Creates a `contextmenu` store.\nSee usage with `ContextmenuRoot.svelte` and `Contextmenu.svelte`.",
+								"doc_comment": "Creates a contextmenu store.\nSee usage with `ContextmenuRoot.svelte` and `Contextmenu.svelte`.",
 								"see_also": [
-									"https://developer.mozilla.org/en-US/docs/Web/API/Element/contextmenu_event"
+									"{@link https://developer.mozilla.org/en-US/docs/Web/API/Element/contextmenu_event}"
 								],
 								"source_line": 84,
 								"members": [
@@ -24941,7 +24941,7 @@
 									{
 										"name": "add_entry",
 										"kind": "function",
-										"doc_comment": "Used by `ContextmenuEntry` and custom entry components",
+										"doc_comment": "Used by `ContextmenuEntry.svelte` and custom entry components.",
 										"type_signature": "(run: () => ContextmenuRun, disabled?: () => boolean): EntryState",
 										"return_type": "EntryState",
 										"parameters": [
@@ -25446,7 +25446,7 @@
 							{
 								"name": "csp_trust_level_value",
 								"kind": "variable",
-								"doc_comment": "Numeric values for CSP trust levels, `csp_trust_levels`.\nLower is less trusted.\nIncludes `undefined` in the type for safety.",
+								"doc_comment": "Numeric values for CSP trust levels. See `csp_trust_levels`.\nLower is less trusted.\nIncludes `undefined` in the type for safety.",
 								"source_line": 191,
 								"type_signature": "Record<\"low\" | \"medium\" | \"high\", number | undefined>"
 							},
@@ -25527,7 +25527,7 @@
 							{
 								"name": "csp_directive_value_defaults",
 								"kind": "variable",
-								"doc_comment": "The base CSP directive defaults.\nPrioritizes safety but loosens around media and styles, relying on defense-in-depth.\nCustomizable via `CreateCspDirectivesOptions.defaults`.",
+								"doc_comment": "The base CSP directive defaults.\nPrioritizes safety but loosens around media and styles, relying on defense-in-depth.\nCustomizable via `CreateCspDirectivesOptions`.",
 								"source_line": 270,
 								"type_signature": "Record<keyof CspDirectives, boolean | (CspSource | CspActionSource)[] | CspSources | CspFrameSource[] | string[] | \"script\"[] | (\"allow-downloads-without-user-activation\" | ... 11 more ... | \"allow-top-navigation-by-user-activation\")[] | null>"
 							},
@@ -25541,9 +25541,9 @@
 							{
 								"name": "csp_directive_specs",
 								"kind": "variable",
-								"doc_comment": "Static data descriptors for the CSP directives.\nFuz excludes deprecated directives, so those are intentionally omitted,\nbut any newer missing directives are bugs.\n\nCould be moved to `csp.ts` but is currently here to keep that module smaller.",
+								"doc_comment": "Static data descriptors for the CSP directives.\nFuz excludes deprecated directives, so those are intentionally omitted,\nbut any newer missing directives are bugs.\n\nCould be co-located but is currently here to keep that module smaller.",
 								"see_also": [
-									"https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Content-Security-Policy"
+									"{@link https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Content-Security-Policy}"
 								],
 								"source_line": 343,
 								"type_signature": "CspDirectiveSpec[]"
@@ -25939,7 +25939,7 @@
 							{
 								"name": "docs_slugify",
 								"kind": "function",
-								"doc_comment": "Convert a string to a URL-safe fragment identifier, preserving case.\nUnlike `slugify` from `@fuzdev/fuz_util/path.js` which lowercases,\nthis keeps the original casing so API declarations like `AsyncStatus`\nand `async_status` produce distinct fragment IDs.\nUsed by the Tome documentation system for heading and section anchors.",
+								"doc_comment": "Convert a string to a URL-safe fragment identifier, preserving case.\nUnlike `slugify` from `@fuzdev/fuz_util/path.js` which lowercases,\nthis keeps the original casing so API declarations like `AsyncStatus`\nand `async_status` produce distinct fragment IDs.\nUsed by the `Tome` documentation system for heading and section anchors.",
 								"source_line": 16,
 								"type_signature": "(str: string): string",
 								"return_type": "string",
@@ -26601,7 +26601,7 @@
 										"name": "nodocs",
 										"kind": "variable",
 										"type_signature": "boolean",
-										"doc_comment": "Whether the declaration is marked"
+										"doc_comment": "Whether the declaration is marked `@nodocs` (should be excluded from documentation)."
 									}
 								]
 							},
@@ -26715,7 +26715,7 @@
 								]
 							}
 						],
-						"module_comment": "Library source analysis - unified entry point and shared types.\n\nProvides a single function for analyzing TypeScript and Svelte source files,\ndispatching to the appropriate domain-specific analyzer.\n\nThis module also exports shared types used by both analyzers:\n- `DeclarationAnalysis` - A declaration with its nodocs flag\n- `ReExportInfo` - Information about a same-name re-export\n- `ModuleAnalysis` - Result of analyzing a module (unified structure)\n\n@example\n```ts\nimport {library_analyze_module} from '@fuzdev/fuz_ui/library_analysis.js';\nimport {ts_create_program} from '@fuzdev/fuz_ui/ts_helpers.js';\nimport {module_create_source_options} from '@fuzdev/fuz_ui/module_helpers.js';\nimport {AnalysisContext} from '@fuzdev/fuz_ui/analysis_context.js';\n\nconst {program} = ts_create_program({root: './my-project'});\nconst ctx = new AnalysisContext();\nconst options = module_create_source_options('/my-project');\n\nconst result = library_analyze_module(\n  {id: '/my-project/src/lib/file.ts', content: '...'},\n  program,\n  options,\n  ctx,\n);\n\nif (result) {\n  // Filter out @nodocs declarations\n  const declarations = result.declarations\n    .filter(d => !d.nodocs)\n    .map(d => d.declaration);\n  console.log('Declarations:', declarations);\n}\n```\n\n@see ts_helpers.ts for TypeScript-specific analysis\n@see svelte_helpers.ts for Svelte component analysis\n@see module_helpers.ts for path utilities and SourceFileInfo",
+						"module_comment": "Library source analysis - unified entry point and shared types.\n\nProvides a single function for analyzing TypeScript and Svelte source files,\ndispatching to the appropriate domain-specific analyzer.\n\nThis module also exports shared types used by both analyzers:\n- `DeclarationAnalysis` - A declaration with its nodocs flag\n- `ReExportInfo` - Information about a same-name re-export\n- `ModuleAnalysis` - Result of analyzing a module (unified structure)\n\n@example\n```ts\nimport {library_analyze_module} from '@fuzdev/fuz_ui/library_analysis.js';\nimport {ts_create_program} from '@fuzdev/fuz_ui/ts_helpers.js';\nimport {module_create_source_options} from '@fuzdev/fuz_ui/module_helpers.js';\nimport {AnalysisContext} from '@fuzdev/fuz_ui/analysis_context.js';\n\nconst {program} = ts_create_program({root: './my-project'});\nconst ctx = new AnalysisContext();\nconst options = module_create_source_options('/my-project');\n\nconst result = library_analyze_module(\n  {id: '/my-project/src/lib/file.ts', content: '...'},\n  program,\n  options,\n  ctx,\n);\n\nif (result) {\n  // Filter out @nodocs declarations\n  const declarations = result.declarations\n    .filter(d => !d.nodocs)\n    .map(d => d.declaration);\n  console.log('Declarations:', declarations);\n}\n```\n\n@see `ts_helpers.ts` for TypeScript-specific analysis\n@see `svelte_helpers.ts` for Svelte component analysis\n@see `module_helpers.ts` for path utilities and `SourceFileInfo`",
 						"dependencies": ["module_helpers.ts", "svelte_helpers.ts", "ts_helpers.ts"],
 						"dependents": ["library_generate.ts"]
 					},
@@ -26746,14 +26746,14 @@
 							{
 								"name": "source_file_from_disknode",
 								"kind": "function",
-								"doc_comment": "Convert Gro's Disknode to the build-tool agnostic SourceFileInfo interface.\n\nUse this when you want to analyze files using Gro's filer directly.",
+								"doc_comment": "Convert Gro's `Disknode` to the build-tool agnostic `SourceFileInfo` interface.\n\nUse this when you want to analyze files using Gro's filer directly.",
 								"throws": [
 									{
 										"type": "Error",
 										"description": "if disknode has no content (should be loaded by Gro filer)"
 									}
 								],
-								"source_line": 71,
+								"source_line": 73,
 								"type_signature": "(disknode: Disknode): SourceFileInfo",
 								"return_type": "SourceFileInfo",
 								"parameters": [{"name": "disknode", "type": "Disknode"}]
@@ -26761,8 +26761,8 @@
 							{
 								"name": "library_collect_source_files_from_disknodes",
 								"kind": "function",
-								"doc_comment": "Collect source files from Gro disknodes, filtering BEFORE conversion to SourceFileInfo.\n\nThis avoids errors from files outside source directories (like test fixtures that may\nhave malformed paths or missing content). The filtering uses `module_is_source` which\nchecks `source_paths` to only include files in configured source directories.",
-								"source_line": 96,
+								"doc_comment": "Collect source files from Gro disknodes, filtering BEFORE conversion to `SourceFileInfo`.\n\nThis avoids errors from files outside source directories (like test fixtures that may\nhave malformed paths or missing content). The filtering uses `module_is_source` which\nchecks `source_paths` to only include files in configured source directories.",
+								"source_line": 98,
 								"type_signature": "(disknodes: Iterable<Disknode>, options: ModuleSourceOptions, log?: { info: (...args: unknown[]) => void; warn: (...args: unknown[]) => void; } | undefined): SourceFileInfo[]",
 								"return_type": "SourceFileInfo[]",
 								"parameters": [
@@ -26787,8 +26787,8 @@
 							{
 								"name": "library_gen",
 								"kind": "function",
-								"doc_comment": "Creates a Gen object for generating library metadata with full TypeScript analysis.\n\nThis is the Gro-specific entry point. It handles:\n- Reading files from Gro's filer\n- Loading package.json via Gro utilities\n- Returning output in Gro's Gen format\n\nFor build-tool agnostic usage, use `library_generate` directly.\n\nUsage in a `.gen.ts` file:\n\n```ts\nimport {library_gen} from '@fuzdev/fuz_ui/library_gen.js';\n\nexport const gen = library_gen();\n```",
-								"source_line": 151,
+								"doc_comment": "Creates a `Gen` object for generating library metadata with full TypeScript analysis.\n\nThis is the Gro-specific entry point. It handles:\n- Reading files from Gro's filer\n- Loading `package.json` via Gro utilities\n- Returning output in Gro's `Gen` format\n\nFor build-tool agnostic usage, use `library_generate` directly.\n\nUsage in a `.gen.ts` file:\n\n```ts\nimport {library_gen} from '@fuzdev/fuz_ui/library_gen.js';\n\nexport const gen = library_gen();\n```",
+								"source_line": 153,
 								"type_signature": "(options?: LibraryGenOptions | undefined): Gen",
 								"return_type": "Gen",
 								"parameters": [
@@ -26801,7 +26801,7 @@
 								]
 							}
 						],
-						"module_comment": "Gro-specific library metadata generation.\n\nThis module provides Gro integration for library generation. It wraps the generic\n`library_generate` function with Gro's `Gen` interface and provides adapters for\nconverting Gro's `Disknode` to the build-tool agnostic `SourceFileInfo`.\n\nFor build-tool agnostic usage, see `library_generate.ts`.\n\n@see library_generate.ts for the generic generation entry point\n@see library_pipeline.ts for pipeline helpers\n@see library_output.ts for output file generation",
+						"module_comment": "Gro-specific library metadata generation.\n\nThis module provides Gro integration for library generation. It wraps the generic\n`library_generate` function with Gro's `Gen` interface and provides adapters for\nconverting Gro's `Disknode` to the build-tool agnostic `SourceFileInfo`.\n\nFor build-tool agnostic usage, see `library_generate.ts`.\n\n@see `library_generate.ts` for the generic generation entry point\n@see `library_pipeline.ts` for pipeline helpers\n@see `library_output.ts` for output file generation",
 						"dependencies": ["library_generate.ts", "module_helpers.ts"]
 					},
 					{
@@ -26914,7 +26914,7 @@
 								"parameters": [{"name": "input", "type": "LibraryGenerateInput"}]
 							}
 						],
-						"module_comment": "Generic library metadata generation.\n\nThis module provides build-tool agnostic library generation. It takes source files\nand package metadata, analyzes them, and produces structured metadata with:\n- JSDoc/TSDoc comments with full tag support\n- Full type signatures\n- Source code locations\n- Parameter information with descriptions and defaults\n- Return value documentation\n- Usage examples\n- Dependency graphs\n- Svelte component props\n\nFor Gro integration, see `library_gen.ts` which wraps this with Gro's Gen interface.\n\n@see @fuzdev/fuz_util/source_json.js for type definitions\n@see `library_analysis.ts` for the unified analysis entry point\n@see `library_pipeline.ts` for pipeline helpers\n@see `library_output.ts` for JSON/TS file generation",
+						"module_comment": "Generic library metadata generation.\n\nThis module provides build-tool agnostic library generation. It takes source files\nand package metadata, analyzes them, and produces structured metadata with:\n- JSDoc/TSDoc comments with full tag support\n- Full type signatures\n- Source code locations\n- Parameter information with descriptions and defaults\n- Return value documentation\n- Usage examples\n- Dependency graphs\n- Svelte component props\n\nFor Gro integration, see `library_gen.ts` which wraps this with Gro's `Gen` interface.\n\n@see `@fuzdev/fuz_util/source_json.js` for type definitions\n@see `library_analysis.ts` for the unified analysis entry point\n@see `library_pipeline.ts` for pipeline helpers\n@see `library_output.ts` for JSON/TS file generation",
 						"dependencies": [
 							"analysis_context.ts",
 							"library_analysis.ts",
@@ -27003,9 +27003,9 @@
 								"kind": "function",
 								"doc_comment": "Convert a full URL to root-relative format by removing the origin.\n\nUses SvelteKit's page state for the current origin by default.",
 								"examples": [
-									"// Assuming page.url.origin is 'https://example.com'\nurl_to_root_relative('https://example.com/docs/api')\n// => '/docs/api'"
+									"```ts\n// Assuming page.url.origin is 'https://example.com'\nurl_to_root_relative('https://example.com/docs/api')\n// => '/docs/api'\n```"
 								],
-								"source_line": 74,
+								"source_line": 76,
 								"type_signature": "(url: string, origin?: string): string",
 								"return_type": "string",
 								"return_description": "root-relative URL starting with '/'",
@@ -27038,20 +27038,20 @@
 										"name": "json_content",
 										"kind": "variable",
 										"type_signature": "string",
-										"doc_comment": "JSON content for library.json"
+										"doc_comment": "JSON content for `library.json`."
 									},
 									{
 										"name": "ts_content",
 										"kind": "variable",
 										"type_signature": "string",
-										"doc_comment": "TypeScript wrapper content for library.ts"
+										"doc_comment": "TypeScript wrapper content for `library.ts`."
 									}
 								]
 							},
 							{
 								"name": "library_generate_output",
 								"kind": "function",
-								"doc_comment": "Generate the library.json and library.ts file contents.\nParses at generation time so runtime only needs the pre-computed result.\n\nReturns JSON + .ts wrapper because:\n- JSON is natively importable by Node.js and Vite without TypeScript loaders\n- Works in CI environments that don't have TS compilation\n- The .ts wrapper validates with zod and exports with proper types\n  (JSON imports get widened types like `string` instead of literal unions)",
+								"doc_comment": "Generate the `library.json` and `library.ts` file contents.\nParses at generation time so runtime only needs the pre-computed result.\n\nReturns JSON + .ts wrapper because:\n- JSON is natively importable by Node.js and Vite without TypeScript loaders\n- Works in CI environments that don't have TS compilation\n- The .ts wrapper validates with zod and exports with proper types\n  (JSON imports get widened types like `string` instead of literal unions)",
 								"source_line": 38,
 								"type_signature": "(package_json: { [x: string]: unknown; name: string; version: string; private?: boolean | undefined; description?: string | undefined; tagline?: string | undefined; glyph?: string | undefined; logo?: string | undefined; ... 23 more ...; exports?: string | ... 2 more ... | undefined; }, source_json: { ...; }): LibraryOutputResult",
 								"return_type": "LibraryOutputResult",
@@ -27067,7 +27067,7 @@
 								]
 							}
 						],
-						"module_comment": "Library output generation.\n\nGenerates the library.json and library.ts files from analyzed metadata.\n\n@see library_generate.ts for the main generation entry point\n@see library_pipeline.ts for pipeline orchestration functions\n@see library_gen.ts for Gro-specific integration",
+						"module_comment": "Library output generation.\n\nGenerates the `library.json` and `library.ts` files from analyzed metadata.\n\n@see `library_generate.ts` for the main generation entry point\n@see `library_pipeline.ts` for pipeline orchestration functions\n@see `library_gen.ts` for Gro-specific integration",
 						"dependents": ["library_generate.ts"]
 					},
 					{
@@ -27099,9 +27099,9 @@
 								"kind": "function",
 								"doc_comment": "Find duplicate declaration names across modules.\n\nReturns a Map of declaration names to their full metadata (only includes duplicates).\nCallers can decide how to handle duplicates (throw, warn, ignore).",
 								"examples": [
-									"const duplicates = library_find_duplicates(source_json);\nif (duplicates.size > 0) {\n  for (const [name, occurrences] of duplicates) {\n    console.error(`\"${name}\" found in:`);\n    for (const {declaration, module} of occurrences) {\n      console.error(`  - ${module}:${declaration.source_line} (${declaration.kind})`);\n    }\n  }\n  throw new Error(`Found ${duplicates.size} duplicate declaration names`);\n}"
+									"```ts\nconst duplicates = library_find_duplicates(source_json);\nif (duplicates.size > 0) {\n  for (const [name, occurrences] of duplicates) {\n    console.error(`\"${name}\" found in:`);\n    for (const {declaration, module} of occurrences) {\n      console.error(`  - ${module}:${declaration.source_line} (${declaration.kind})`);\n    }\n  }\n  throw new Error(`Found ${duplicates.size} duplicate declaration names`);\n}\n```"
 								],
-								"source_line": 62,
+								"source_line": 64,
 								"type_signature": "(source_json: { [x: string]: unknown; name: string; version: string; modules?: { [x: string]: unknown; path: string; declarations?: { [x: string]: unknown; name: string; kind: \"function\" | \"json\" | \"type\" | \"variable\" | \"class\" | \"constructor\" | \"component\" | \"css\"; ... 20 more ...; alias_of?: { ...; } | undefined; }[] | undefined; module_comment?: string | undefined; dependencies?: string[] | undefined; dependents?: string[] | undefined; star_exports?: string[] | undefined; }[] | undefined; }): Map<...>",
 								"return_type": "Map<string, DuplicateInfo[]>",
 								"parameters": [
@@ -27115,7 +27115,7 @@
 								"name": "library_sort_modules",
 								"kind": "function",
 								"doc_comment": "Sort modules alphabetically by path for deterministic output and cleaner diffs.",
-								"source_line": 95,
+								"source_line": 97,
 								"type_signature": "(modules: { [x: string]: unknown; path: string; declarations?: { [x: string]: unknown; name: string; kind: \"function\" | \"json\" | \"type\" | \"variable\" | \"class\" | \"constructor\" | \"component\" | \"css\"; doc_comment?: string | undefined; ... 19 more ...; alias_of?: { ...; } | undefined; }[] | undefined; module_comment?: string | undefined; dependencies?: string[] | undefined; dependents?: string[] | undefined; star_exports?: string[] | undefined; }[]): { ...; }[]",
 								"return_type": "{ [x: string]: unknown; path: string; declarations?: { [x: string]: unknown; name: string; kind: \"function\" | \"json\" | \"type\" | \"variable\" | \"class\" | \"constructor\" | \"component\" | \"css\"; doc_comment?: string | undefined; ... 19 more ...; alias_of?: { ...; } | undefined; }[] | undefined; module_comment?: string | un...",
 								"parameters": [
@@ -27129,7 +27129,7 @@
 								"name": "CollectedReExport",
 								"kind": "type",
 								"doc_comment": "A collected re-export with its source module context.\n\nUsed during the two-phase re-export resolution:\n1. Phase 1: Collect re-exports from each module during analysis\n2. Phase 2: Group by original module and merge into `also_exported_from`",
-								"source_line": 106,
+								"source_line": 108,
 								"type_signature": "CollectedReExport",
 								"properties": [
 									{
@@ -27151,9 +27151,9 @@
 								"kind": "function",
 								"doc_comment": "Build `also_exported_from` arrays from collected re-export data.\n\nThis function resolves the two-phase re-export problem:\n\n**Problem**: When module A re-exports from module B, we discover this while\nanalyzing A, but need to update B's declarations. However, B may already be\nprocessed or may be processed later.\n\n**Solution**: Collect all re-exports in phase 1, then merge them in phase 2\nafter all modules are analyzed.",
 								"examples": [
-									"// helpers.ts exports: foo, bar\n// index.ts does: export {foo, bar} from './helpers.js'\n//\n// After processing:\n// - helpers.ts foo declaration gets: also_exported_from: ['index.ts']\n// - helpers.ts bar declaration gets: also_exported_from: ['index.ts']"
+									"```ts\n// helpers.ts exports: foo, bar\n// index.ts does: export {foo, bar} from './helpers.js'\n//\n// After processing:\n// - helpers.ts foo declaration gets: also_exported_from: ['index.ts']\n// - helpers.ts bar declaration gets: also_exported_from: ['index.ts']\n```"
 								],
-								"source_line": 137,
+								"source_line": 141,
 								"type_signature": "(source_json: { [x: string]: unknown; name: string; version: string; modules?: { [x: string]: unknown; path: string; declarations?: { [x: string]: unknown; name: string; kind: \"function\" | \"json\" | \"type\" | \"variable\" | \"class\" | \"constructor\" | \"component\" | \"css\"; ... 20 more ...; alias_of?: { ...; } | undefined; }[] | undefined; module_comment?: string | undefined; dependencies?: string[] | undefined; dependents?: string[] | undefined; star_exports?: string[] | undefined; }[] | undefined; }, collected_re_exports: CollectedReExport[]): void",
 								"return_type": "void",
 								"parameters": [
@@ -27173,7 +27173,7 @@
 								"name": "library_collect_source_files",
 								"kind": "function",
 								"doc_comment": "Collect and filter source files.\n\nReturns source files for TypeScript/JS files and Svelte components, excluding test files.\nReturns an empty array with a warning if no source files are found.\n\nFile types are determined by `options.get_analyzer`. By default, `.ts`, `.js`, and `.svelte`\nfiles are supported. Customize `get_analyzer` to support additional file types like `.svx`.",
-								"source_line": 187,
+								"source_line": 191,
 								"type_signature": "(files: Iterable<SourceFileInfo>, options: ModuleSourceOptions, log?: Logger | undefined): SourceFileInfo[]",
 								"return_type": "SourceFileInfo[]",
 								"parameters": [
@@ -27196,7 +27196,7 @@
 								]
 							}
 						],
-						"module_comment": "Library metadata generation pipeline.\n\nThese functions handle collection, validation, and transformation of library metadata\nduring the generation pipeline.\n\nPipeline stages:\n1. **Collection** - `library_collect_source_files` gathers and filters source files\n2. **Analysis** - `library_analyze_module` (in library_analysis.ts) extracts metadata\n3. **Validation** - `library_find_duplicates` checks flat namespace constraints\n4. **Transformation** - `library_merge_re_exports` resolves re-export relationships\n5. **Output** - `library_sort_modules` prepares deterministic output\n\n@see library_generate.ts for the main generation entry point\n@see library_analysis.ts for module-level analysis\n@see library_output.ts for output file generation (JSON/TS wrapper)\n@see library_gen.ts for Gro-specific integration",
+						"module_comment": "Library metadata generation pipeline.\n\nThese functions handle collection, validation, and transformation of library metadata\nduring the generation pipeline.\n\nPipeline stages:\n1. **Collection** - `library_collect_source_files` gathers and filters source files\n2. **Analysis** - `library_analyze_module` (in `library_analysis.ts`) extracts metadata\n3. **Validation** - `library_find_duplicates` checks flat namespace constraints\n4. **Transformation** - `library_merge_re_exports` resolves re-export relationships\n5. **Output** - `library_sort_modules` prepares deterministic output\n\n@see `library_generate.ts` for the main generation entry point\n@see `library_analysis.ts` for module-level analysis\n@see `library_output.ts` for output file generation (JSON/TS wrapper)\n@see `library_gen.ts` for Gro-specific integration",
 						"dependencies": ["module_helpers.ts"],
 						"dependents": ["library_generate.ts"]
 					},
@@ -27215,10 +27215,10 @@
 							{
 								"name": "Library",
 								"kind": "class",
-								"doc_comment": "Rich runtime representation of a library.\n\nWraps `LibraryJson` with computed properties and provides the root\nof the API documentation hierarchy: Library → modules → declarations",
+								"doc_comment": "Rich runtime representation of a library.\n\nWraps `LibraryJson` with computed properties and provides the root\nof the API documentation hierarchy: `Library` → `Module` → `Declaration`.",
 								"see_also": [
-									"module.svelte.ts for Module class",
-									"declaration.svelte.ts for Declaration class"
+									"`module.svelte.ts` for `Module` class",
+									"`declaration.svelte.ts` for `Declaration` class"
 								],
 								"source_line": 25,
 								"members": [
@@ -27257,7 +27257,7 @@
 										"name": "modules",
 										"kind": "variable",
 										"modifiers": ["readonly"],
-										"doc_comment": "All modules as rich Module instances."
+										"doc_comment": "All modules as rich `Module` instances."
 									},
 									{
 										"name": "modules_sorted",
@@ -27416,7 +27416,7 @@
 								"type_signature": "SvgData"
 							},
 							{
-								"name": "logo_fuz_ui",
+								"name": "logo_fuz_app",
 								"kind": "variable",
 								"source_line": 66,
 								"type_signature": "SvgData"
@@ -27428,57 +27428,63 @@
 								"type_signature": "SvgData"
 							},
 							{
-								"name": "logo_fuz_code",
+								"name": "logo_fuz_ui",
 								"kind": "variable",
 								"source_line": 79,
 								"type_signature": "SvgData"
 							},
 							{
-								"name": "logo_fuz_blog",
+								"name": "logo_fuz_code",
 								"kind": "variable",
 								"source_line": 85,
 								"type_signature": "SvgData"
 							},
 							{
-								"name": "logo_fuz_mastodon",
+								"name": "logo_fuz_blog",
 								"kind": "variable",
 								"source_line": 91,
 								"type_signature": "SvgData"
 							},
 							{
-								"name": "logo_fuz_gitops",
+								"name": "logo_fuz_mastodon",
 								"kind": "variable",
 								"source_line": 97,
 								"type_signature": "SvgData"
 							},
 							{
-								"name": "logo_fuz_docs",
+								"name": "logo_fuz_gitops",
 								"kind": "variable",
 								"source_line": 103,
 								"type_signature": "SvgData"
 							},
 							{
-								"name": "logo_fuz_template",
+								"name": "logo_fuz_docs",
 								"kind": "variable",
 								"source_line": 109,
 								"type_signature": "SvgData"
 							},
 							{
+								"name": "logo_fuz_template",
+								"kind": "variable",
+								"source_line": 115,
+								"type_signature": "SvgData"
+							},
+							{
 								"name": "logo_fuz_util",
 								"kind": "variable",
-								"source_line": 119,
+								"source_line": 125,
 								"type_signature": "SvgData"
 							},
 							{
 								"name": "logo_github",
 								"kind": "variable",
-								"source_line": 145,
+								"source_line": 151,
 								"type_signature": "SvgData"
 							},
 							{
 								"name": "logo_mdn",
 								"kind": "variable",
-								"source_line": 158,
+								"source_line": 164,
 								"type_signature": "SvgData"
 							}
 						],
@@ -28392,7 +28398,7 @@
 							{
 								"name": "SourceFileInfo",
 								"kind": "type",
-								"doc_comment": "File information for source analysis.\n\nCan be constructed from Gro's Disknode or from plain file system access.\nThis abstraction enables non-Gro usage while keeping Gro support via adapter.\n\nNote: `content` is required to keep analysis functions pure (no hidden I/O).\nCallers are responsible for reading file content before analysis.",
+								"doc_comment": "File information for source analysis.\n\nCan be constructed from Gro's `Disknode` or from plain file system access.\nThis abstraction enables non-Gro usage while keeping Gro support via adapter.\n\nNote: `content` is required to keep analysis functions pure (no hidden I/O).\nCallers are responsible for reading file content before analysis.",
 								"source_line": 29,
 								"type_signature": "SourceFileInfo",
 								"properties": [
@@ -28535,7 +28541,7 @@
 								"throws": [
 									{
 										"type": "Error",
-										"description": "if source_root is required but not provided (multiple source_paths)"
+										"description": "if `source_root` is required but not provided (multiple `source_paths`)"
 									}
 								],
 								"source_line": 333,
@@ -28716,7 +28722,7 @@
 									{
 										"name": "declarations",
 										"kind": "variable",
-										"doc_comment": "Array of Declaration instances. Filters out default exports."
+										"doc_comment": "Array of `Declaration` instances. Filters out default exports."
 									},
 									{
 										"name": "url_api",
@@ -28903,7 +28909,7 @@
 									{
 										"name": "package_json",
 										"type": "{ [x: string]: unknown; name: string; version: string; private?: boolean | undefined; description?: string | undefined; tagline?: string | undefined; glyph?: string | undefined; logo?: string | undefined; ... 23 more ...; exports?: string | ... 2 more ... | undefined; }",
-										"description": "the package.json object to check"
+										"description": "the `package.json` object to check"
 									}
 								]
 							},
@@ -28931,7 +28937,7 @@
 							{
 								"name": "repo_url_parse",
 								"kind": "function",
-								"doc_comment": "Parse repository URL from package.json format.\n\nHandles both string format and object format with `url` property.\nStrips common prefixes ('git+') and suffixes ('.git', '/').",
+								"doc_comment": "Parse repository URL from `package.json` format.\n\nHandles both string format and object format with `url` property.\nStrips common prefixes ('git+') and suffixes ('.git', '/').",
 								"examples": [
 									"```ts\nrepo_url_parse('https://github.com/foo/bar')\n// => 'https://github.com/foo/bar'\n```",
 									"```ts\nrepo_url_parse({url: 'git+https://github.com/foo/bar.git'})\n// => 'https://github.com/foo/bar'\n```",
@@ -28945,7 +28951,7 @@
 									{
 										"name": "repository",
 										"type": "string | { [x: string]: unknown; type: string; url: string; directory?: string | undefined; } | undefined",
-										"description": "the repository field from package.json"
+										"description": "the repository field from `package.json`"
 									}
 								]
 							},
@@ -28970,7 +28976,7 @@
 								]
 							}
 						],
-						"module_comment": "Package and repository URL helpers.\n\nGeneric utilities for building URLs and parsing package/repository metadata.\nThese functions have no framework dependencies and can be used at build-time or runtime.\n\nURL builders:\n- `url_github_file` - GitHub file permalink\n- `url_github_org` - GitHub organization page\n- `url_npm_package` - npm package page\n- `url_well_known` - .well-known metadata file\n\nParsers:\n- `repo_url_parse` - extract repo URL from package.json repository field\n- `repo_name_parse` - extract repo name from scoped package name\n- `repo_url_github_owner` - extract GitHub owner from repo URL\n\nPredicates:\n- `package_is_published` - check if package is published to npm",
+						"module_comment": "Package and repository URL helpers.\n\nGeneric utilities for building URLs and parsing package/repository metadata.\nThese functions have no framework dependencies and can be used at build-time or runtime.\n\nURL builders:\n- `url_github_file` - GitHub file permalink\n- `url_github_org` - GitHub organization page\n- `url_npm_package` - npm package page\n- `url_well_known` - .well-known metadata file\n\nParsers:\n- `repo_url_parse` - extract repo URL from `package.json` repository field\n- `repo_name_parse` - extract repo name from scoped package name\n- `repo_url_github_owner` - extract GitHub owner from repo URL\n\nPredicates:\n- `package_is_published` - check if package is published to npm",
 						"dependents": ["LibraryDetail.svelte", "declaration.svelte.ts", "module.svelte.ts"]
 					},
 					{
@@ -29342,19 +29348,19 @@
 										"name": "components",
 										"kind": "variable",
 										"type_signature": "Record<string, string>",
-										"doc_comment": "Component import mapping for mdz content.\nKey: component name as used in mdz (e.g., 'Alert').\nValue: import path (e.g., '$lib/Alert.svelte').\n\nIf mdz content references a component not in this map,\nthat Mdz usage is skipped (left as runtime)."
+										"doc_comment": "Component import mapping for mdz content.\nKey: component name as used in mdz (e.g., 'Alert').\nValue: import path (e.g., '$lib/Alert.svelte').\n\nIf mdz content references a component not in this map,\nthat `Mdz` usage is skipped (left as runtime)."
 									},
 									{
 										"name": "elements",
 										"kind": "variable",
 										"type_signature": "Array<string>",
-										"doc_comment": "Allowed HTML elements in mdz content.\nIf mdz content references an element not in this list,\nthat Mdz usage is skipped (left as runtime)."
+										"doc_comment": "Allowed HTML elements in mdz content.\nIf mdz content references an element not in this list,\nthat `Mdz` usage is skipped (left as runtime)."
 									},
 									{
 										"name": "component_imports",
 										"kind": "variable",
 										"type_signature": "Array<string>",
-										"doc_comment": "Import sources that resolve to the Mdz component.\nUsed to verify that `Mdz` in templates refers to fuz_ui's Mdz.svelte."
+										"doc_comment": "Import sources that resolve to the `Mdz` component.\nUsed to verify that `Mdz` in templates refers to fuz_ui's `Mdz.svelte`."
 									},
 									{
 										"name": "compiled_component_import",
@@ -29824,7 +29830,7 @@
 										"name": "tsconfig",
 										"kind": "variable",
 										"type_signature": "string",
-										"doc_comment": "Path to tsconfig.json (relative to root)."
+										"doc_comment": "Path to `tsconfig.json` (relative to root)."
 									},
 									{
 										"name": "compiler_options",
@@ -29868,7 +29874,7 @@
 										"name": "re_exports",
 										"kind": "variable",
 										"type_signature": "Array<ReExportInfo>",
-										"doc_comment": "Same-name re-exports (for building also_exported_from in post-processing)."
+										"doc_comment": "Same-name re-exports (for building `also_exported_from` in post-processing)."
 									},
 									{
 										"name": "star_exports",
@@ -29882,7 +29888,7 @@
 								"name": "ts_create_program",
 								"kind": "function",
 								"doc_comment": "Create TypeScript program for analysis.",
-								"throws": [{"type": "Error", "description": "if tsconfig.json is not found"}],
+								"throws": [{"type": "Error", "description": "if `tsconfig.json` is not found"}],
 								"source_line": 71,
 								"type_signature": "(options?: TsProgramOptions | undefined, log?: Logger | undefined): TsProgram",
 								"return_type": "TsProgram",
@@ -30009,7 +30015,7 @@
 								"name": "ts_extract_module_comment",
 								"kind": "function",
 								"doc_comment": "Extract module-level comment.\n\nRequires `@module` tag to identify module comments. The tag line is stripped\nfrom the output. Supports optional module renaming: `@module custom-name`.",
-								"see_also": ["https://typedoc.org/documents/Tags._module.html"],
+								"see_also": ["{@link https://typedoc.org/documents/Tags._module.html}"],
 								"source_line": 337,
 								"type_signature": "(source_file: SourceFile): string | undefined",
 								"return_type": "string | undefined",
@@ -30331,14 +30337,14 @@
 										"name": "library_path",
 										"kind": "variable",
 										"type_signature": "string",
-										"doc_comment": "Path to the library.json file (relative to vite.config.ts)."
+										"doc_comment": "Path to the `library.json` file (relative to `vite.config.ts`)."
 									}
 								]
 							},
 							{
 								"name": "vite_plugin_library_well_known",
 								"kind": "function",
-								"doc_comment": "Vite plugin that publishes `package.json` and `library.json` to `.well-known/`.\n\nRequires a generated library.json file (created by `library_gen` from `gro gen`).\nThe plugin reads this JSON file and publishes its metadata to `.well-known/` for\nboth dev and production builds.\n\nNote: This plugin respects SvelteKit's `base` path configuration, so `.well-known/`\nwill be served at `{base}.well-known/` (e.g., `/my-app/.well-known/`). This deviates\nfrom RFC 8615 which specifies `.well-known` should be at the domain root. This tradeoff\nallows the plugin to work correctly when apps are deployed to non-root paths.\n\nNote: CORS headers are only set for the dev server. For production, configure\nCORS at the server level (nginx, Caddy, etc.) if cross-origin access is needed.",
+								"doc_comment": "Vite plugin that publishes `package.json` and `library.json` to `.well-known/`.\n\nRequires a generated `library.json` file (created by `library_gen` from `gro gen`).\nThe plugin reads this JSON file and publishes its metadata to `.well-known/` for\nboth dev and production builds.\n\nNote: This plugin respects SvelteKit's `base` path configuration, so `.well-known/`\nwill be served at `{base}.well-known/` (e.g., `/my-app/.well-known/`). This deviates\nfrom RFC 8615 which specifies `.well-known` should be at the domain root. This tradeoff\nallows the plugin to work correctly when apps are deployed to non-root paths.\n\nNote: CORS headers are only set for the dev server. For production, configure\nCORS at the server level (nginx, Caddy, etc.) if cross-origin access is needed.",
 								"examples": [
 									"```ts\n// vite.config.ts\nimport {defineConfig} from 'vite';\nimport {sveltekit} from '@sveltejs/kit/vite';\nimport {vite_plugin_library_well_known} from '@fuzdev/fuz_ui/vite_plugin_library_well_known.js';\n\nexport default defineConfig({\n  plugins: [sveltekit(), vite_plugin_library_well_known()],\n});\n```"
 								],
@@ -30388,7 +30394,7 @@
 			"published": true,
 			"package_json": {
 				"name": "@fuzdev/gro",
-				"version": "0.197.1",
+				"version": "0.197.2",
 				"description": "task runner and toolkit extending SvelteKit",
 				"tagline": "generate, run, optimize",
 				"glyph": "🌰",
@@ -30455,8 +30461,8 @@
 					"@changesets/types": "^6.1.0",
 					"@fuzdev/blake3_wasm": "^0.1.0",
 					"@fuzdev/fuz_code": "^0.45.1",
-					"@fuzdev/fuz_css": "^0.56.0",
-					"@fuzdev/fuz_ui": "^0.191.1",
+					"@fuzdev/fuz_css": "^0.58.0",
+					"@fuzdev/fuz_ui": "^0.191.3",
 					"@fuzdev/fuz_util": "^0.55.0",
 					"@jridgewell/trace-mapping": "^0.3.31",
 					"@ryanatkn/eslint-config": "^0.10.1",
@@ -30472,7 +30478,7 @@
 					"eslint": "^9.39.1",
 					"eslint-plugin-svelte": "^3.13.1",
 					"magic-string": "^0.30.21",
-					"svelte": "^5.54.0",
+					"svelte": "^5.55.0",
 					"svelte-check": "^4.4.5",
 					"svelte2tsx": "^0.7.52",
 					"typescript": "^5.9.3",
@@ -30500,7 +30506,7 @@
 			},
 			"source_json": {
 				"name": "@fuzdev/gro",
-				"version": "0.197.1",
+				"version": "0.197.2",
 				"modules": [
 					{
 						"path": "args.ts",
@@ -30640,7 +30646,7 @@
 									{
 										"name": "config",
 										"type": "GroConfig",
-										"description": "Gro config (build_cache_config_hash is already computed during config load)"
+										"description": "Gro config (`build_cache_config_hash` is already computed during config load)"
 									},
 									{"name": "log", "type": "Logger", "description": "Logger"},
 									{
@@ -31870,7 +31876,7 @@
 									{
 										"name": "base_options",
 										"type": "Options | null | undefined",
-										"description": "defaults to the the cwd's package.json `prettier` value",
+										"description": "defaults to the cwd's `package.json` `prettier` value",
 										"default_value": "cached_base_options"
 									}
 								]
@@ -32349,7 +32355,7 @@
 							{
 								"name": "EMPTY_BUILD_CACHE_CONFIG_HASH",
 								"kind": "variable",
-								"doc_comment": "BLAKE3 hash of empty string, used for configs without build_cache_config.\nThis ensures consistent cache behavior when no custom config is provided.",
+								"doc_comment": "BLAKE3 hash of empty string, used for configs without `build_cache_config`.\nThis ensures consistent cache behavior when no custom config is provided.",
 								"source_line": 28,
 								"type_signature": "\"af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262\""
 							},
@@ -32616,7 +32622,7 @@
 								"parameters": [{"name": "options", "type": "GroPluginDenoCompileOptions"}]
 							}
 						],
-						"module_comment": "Gro build plugin for compiling TypeScript to a standalone binary via `deno compile`.\n\nRuns during the `adapt` phase (production build only).\nOptionally generates a SHA-256 hash file for verification.\n\nTo avoid bundling all npm devDependencies from package.json, we:\n1. Extract just the \"imports\" from root deno.json\n2. Rebase relative paths (e.g. `../fuz_app/` → `../../fuz_app/`) since\n   compilation runs from the output subdirectory\n3. Write a minimal deno.json to the output directory\n4. Compile from that directory (which has no package.json)",
+						"module_comment": "Gro build plugin for compiling TypeScript to a standalone binary via `deno compile`.\n\nRuns during the `adapt` phase (production build only).\nOptionally generates a SHA-256 hash file for verification.\n\nTo avoid bundling all npm devDependencies from `package.json`, we:\n1. Extract just the \"imports\" from root deno.json\n2. Rebase relative paths (e.g. `../fuz_app/` → `../../fuz_app/`) since\n   compilation runs from the output subdirectory\n3. Write a minimal deno.json to the output directory\n4. Compile from that directory (which has no `package.json`)",
 						"dependencies": ["task.ts"]
 					},
 					{
@@ -33404,7 +33410,7 @@
 							{
 								"name": "package_json_update",
 								"kind": "function",
-								"doc_comment": "Updates package.json. Writes to the filesystem only when contents change.",
+								"doc_comment": "Updates `package.json`. Writes to the filesystem only when contents change.",
 								"source_line": 104,
 								"type_signature": "(update: (package_json: { [x: string]: unknown; name: string; version: string; private?: boolean | undefined; description?: string | undefined; tagline?: string | undefined; glyph?: string | undefined; logo?: string | undefined; ... 23 more ...; exports?: string | ... 2 more ... | undefined; }) => { ...; } | ... 1 more ... | null, dir?: string, write?: boolean): Promise<...>",
 								"return_type": "Promise<{ package_json: { [x: string]: unknown; name: string; version: string; private?: boolean | undefined; description?: string | undefined; tagline?: string | undefined; glyph?: string | undefined; ... 24 more ...; exports?: string | ... 2 more ... | undefined; } | null; changed: boolean; }>",
@@ -33779,7 +33785,7 @@
 							{
 								"name": "paths",
 								"kind": "variable",
-								"doc_comment": "Paths for the user repo.",
+								"doc_comment": "`Paths` for the user repo.",
 								"source_line": 90,
 								"type_signature": "Paths"
 							},
@@ -33799,7 +33805,7 @@
 							{
 								"name": "gro_paths",
 								"kind": "variable",
-								"doc_comment": "Paths for the Gro package being used by the user repo.",
+								"doc_comment": "`Paths` for the Gro package being used by the user repo.",
 								"source_line": 109,
 								"type_signature": "Paths"
 							},
@@ -34430,7 +34436,7 @@
 										"name": "output",
 										"kind": "variable",
 										"type_signature": "string",
-										"doc_comment": "The output directory where the processed files are written to.\nYour package.json's exports should point to files inside there,\nand the files array should include that folder.\nDefaults to dist"
+										"doc_comment": "The output directory where the processed files are written to.\nYour `package.json`'s exports should point to files inside there,\nand the files array should include that folder.\nDefaults to dist"
 									},
 									{
 										"name": "o",
@@ -35274,9 +35280,9 @@
 					"@changesets/changelog-git": "^0.2.1",
 					"@fuzdev/blake3_wasm": "^0.1.0",
 					"@fuzdev/fuz_code": "^0.45.1",
-					"@fuzdev/fuz_css": "^0.56.0",
-					"@fuzdev/fuz_ui": "^0.190.0",
-					"@fuzdev/gro": "^0.197.0",
+					"@fuzdev/fuz_css": "^0.58.0",
+					"@fuzdev/fuz_ui": "^0.191.3",
+					"@fuzdev/gro": "^0.197.2",
 					"@jridgewell/trace-mapping": "^0.3.31",
 					"@ryanatkn/eslint-config": "^0.10.1",
 					"@sveltejs/acorn-typescript": "^1.0.9",
@@ -35295,7 +35301,7 @@
 					"magic-string": "^0.30.21",
 					"prettier": "^3.7.4",
 					"prettier-plugin-svelte": "^3.4.1",
-					"svelte": "^5.53.10",
+					"svelte": "^5.55.0",
 					"svelte-check": "^4.3.6",
 					"svelte2tsx": "^0.7.47",
 					"tslib": "^2.8.1",
@@ -35356,7 +35362,7 @@
 							{
 								"name": "ArgSchema",
 								"kind": "type",
-								"doc_comment": "Schema description for help text generation.\nNot used by args_parse/args_serialize directly - provided for consumers\nbuilding CLI help output.",
+								"doc_comment": "Schema description for help text generation.\nNot used by `args_parse`/`args_serialize` directly - provided for consumers\nbuilding CLI help output.",
 								"source_line": 31,
 								"type_signature": "ArgSchema",
 								"properties": [
@@ -35947,7 +35953,7 @@
 									{
 										"name": "result",
 										"type": "BenchmarkBaselineComparisonResult",
-										"description": "comparison result from benchmark_baseline_compare"
+										"description": "comparison result from `benchmark_baseline_compare`"
 									}
 								]
 							},
@@ -35963,7 +35969,7 @@
 									{
 										"name": "result",
 										"type": "BenchmarkBaselineComparisonResult",
-										"description": "comparison result from benchmark_baseline_compare"
+										"description": "comparison result from `benchmark_baseline_compare`"
 									},
 									{
 										"name": "options",
@@ -36127,9 +36133,7 @@
 								"name": "benchmark_format_number",
 								"kind": "variable",
 								"doc_comment": "Format a number with fixed decimal places and thousands separators.",
-								"see_also": [
-									"{@link format_number} in maths.ts for the underlying implementation."
-								],
+								"see_also": ["`format_number` in `maths.ts` for the underlying implementation."],
 								"source_line": 410,
 								"type_signature": "(n: number, decimals?: number) => string"
 							}
@@ -36420,7 +36424,7 @@
 								]
 							}
 						],
-						"module_comment": "Benchmark-specific statistical analysis.\nUses the general stats utilities from stats.ts for timing/performance analysis.\nAll timing values are in nanoseconds.",
+						"module_comment": "Benchmark-specific statistical analysis.\nUses the general stats utilities from `stats.ts` for timing/performance analysis.\nAll timing values are in nanoseconds.",
 						"dependencies": ["stats.ts", "time.ts"],
 						"dependents": ["benchmark.ts", "benchmark_baseline.ts"]
 					},
@@ -36468,7 +36472,7 @@
 										"name": "timer",
 										"kind": "variable",
 										"type_signature": "Timer",
-										"doc_comment": "Custom timer to use for measurements.\nDefault: timer_default (auto-detects environment)"
+										"doc_comment": "Custom timer to use for measurements.\nDefault: `timer_default` (auto-detects environment)"
 									},
 									{
 										"name": "on_iteration",
@@ -37374,7 +37378,7 @@
 							{
 								"name": "generate_diff",
 								"kind": "function",
-								"doc_comment": "Generate a formatted diff between two strings.\n\nCombines diff_lines, filter_diff_context, and format_diff for convenience.\nReturns null if content is binary.",
+								"doc_comment": "Generate a formatted diff between two strings.\n\nCombines `diff_lines`, `filter_diff_context`, and `format_diff` for convenience.\nReturns null if content is binary.",
 								"source_line": 220,
 								"type_signature": "(current: string, desired: string, path: string, options?: FormatDiffOptions): string | null",
 								"return_type": "string | null",
@@ -37548,7 +37552,7 @@
 							{
 								"name": "fetch_value",
 								"kind": "function",
-								"doc_comment": "Specializes `fetch` with some slightly different behavior and additional features:\n\n- throws on ratelimit errors to mitigate unintentional abuse\n- optional `parse` function called on the return value\n- optional cache (different from the browser cache,\n\t the caller can serialize it so e.g. dev setups can avoid hitting the network)\n- optional simplified API for authorization and data types\n  (you can still provide headers directly)\n\nUnlike `fetch`, this throws on ratelimits (status code 429)\nto halt whatever is happpening in its tracks to avoid accidental abuse,\nbut returns a `Result` in all other cases.\nHandling ratelimit headers with more sophistication gets tricky because behavior\ndiffers across services.\n(e.g. Mastodon returns an ISO string for `x-ratelimit-reset`,\nbut GitHub returns `Date.now()/1000`,\nand other services may do whatever, or even use a different header)\n\nIt's also stateless to avoid the complexity and bugs,\nso we don't try to track `x-ratelimit-remaining` per domain.\n\nIf the `value` is cached, only the cached safe subset of the `headers` are returned.\n(currently just `etag` and `last-modified`)\nOtherwise the full `res.headers` are included.",
+								"doc_comment": "Specializes `fetch` with some slightly different behavior and additional features:\n\n- throws on ratelimit errors to mitigate unintentional abuse\n- optional `parse` function called on the return value\n- optional cache (different from the browser cache,\n\t the caller can serialize it so e.g. dev setups can avoid hitting the network)\n- optional simplified API for authorization and data types\n  (you can still provide headers directly)\n\nUnlike `fetch`, this throws on ratelimits (status code 429)\nto halt whatever is happening in its tracks to avoid accidental abuse,\nbut returns a `Result` in all other cases.\nHandling ratelimit headers with more sophistication gets tricky because behavior\ndiffers across services.\n(e.g. Mastodon returns an ISO string for `x-ratelimit-reset`,\nbut GitHub returns `Date.now()/1000`,\nand other services may do whatever, or even use a different header)\n\nIt's also stateless to avoid the complexity and bugs,\nso we don't try to track `x-ratelimit-remaining` per domain.\n\nIf the `value` is cached, only the cached safe subset of the `headers` are returned.\n(currently just `etag` and `last-modified`)\nOtherwise the full `res.headers` are included.",
 								"source_line": 53,
 								"type_signature": "<TValue = any, TParams = undefined>(url: string | URL, options?: FetchValueOptions<TValue, TParams> | undefined): Promise<Result<{ value: TValue; headers: Headers; }, { ...; }>>",
 								"return_type": "Promise<Result<{ value: TValue; headers: Headers; }, { status: number; message: string; }>>",
@@ -38481,7 +38485,7 @@
 							{
 								"name": "LogConsole",
 								"kind": "type",
-								"doc_comment": "Console interface subset used by Logger for output.\nAllows custom console implementations for testing.",
+								"doc_comment": "Console interface subset used by `Logger` for output.\nAllows custom console implementations for testing.",
 								"source_line": 18,
 								"type_signature": "LogConsole"
 							},
@@ -38684,7 +38688,7 @@
 							{
 								"name": "sort_map",
 								"kind": "function",
-								"doc_comment": "Sorts a map by `comparator`, a function that compares two entries,\ndefaulting to using `localCompare` and `>`.",
+								"doc_comment": "Sorts a map by `comparator`, a function that compares two entries,\ndefaulting to using `localeCompare` and `>`.",
 								"source_line": 5,
 								"type_signature": "<T extends Map<any, any>>(map: T, comparator?: (a: [any, any], b: [any, any]) => number): T",
 								"return_type": "T",
@@ -39702,7 +39706,7 @@
 								"name": "attach_process_error_handler",
 								"kind": "function",
 								"doc_comment": "Attaches an `uncaughtException` handler to the default registry.",
-								"see_also": ["ProcessRegistry.attach_error_handler"],
+								"see_also": ["`ProcessRegistry.attach_error_handler`"],
 								"source_line": 557,
 								"type_signature": "(options?: { to_error_label?: ((err: Error, origin: UncaughtExceptionOrigin) => string | null) | undefined; map_error_text?: ((err: Error, origin: UncaughtExceptionOrigin) => string | null) | undefined; handle_error?: ((err: Error, origin: UncaughtExceptionOrigin) => void) | undefined; graceful_timeout_ms?: number | ... 1 more ... | undefined; } | undefined): () => void",
 								"return_type": "() => void",
@@ -39717,7 +39721,7 @@
 							{
 								"name": "spawn_detached",
 								"kind": "function",
-								"doc_comment": "Spawns a detached process that continues after parent exits.\n\nUnlike other spawn functions, this is NOT tracked in any ProcessRegistry.\nThe spawned process is meant to outlive the parent (e.g., daemon processes).",
+								"doc_comment": "Spawns a detached process that continues after parent exits.\n\nUnlike other spawn functions, this is NOT tracked in any `ProcessRegistry`.\nThe spawned process is meant to outlive the parent (e.g., daemon processes).",
 								"examples": [
 									"```ts\n// Simple detached process\nconst result = spawn_detached('node', ['daemon.js'], {cwd: '/app'});\n\n// With log file (caller handles file opening)\nimport {openSync, closeSync} from 'node:fs';\nconst log_fd = openSync('/var/log/daemon.log', 'a');\nconst result = spawn_detached('node', ['daemon.js'], {\n  cwd: '/app',\n  stdio: ['ignore', log_fd, log_fd],\n});\ncloseSync(log_fd);\n```"
 								],
@@ -39991,7 +39995,7 @@
 								]
 							}
 						],
-						"module_comment": "Random helpers that accept an optional `random` parameter,\ndefaulting to `Math.random`. Pass a seeded PRNG for reproducible results:\n\n- {@link create_random_xoshiro} — fast, high-quality numeric seeding (recommended)\n- {@link create_random_alea} — supports string and variadic seeds"
+						"module_comment": "Random helpers that accept an optional `random` parameter,\ndefaulting to `Math.random`. Pass a seeded PRNG for reproducible results:\n\n- `create_random_xoshiro` — fast, high-quality numeric seeding (recommended)\n- `create_random_alea` — supports string and variadic seeds"
 					},
 					{
 						"path": "regexp.ts",
@@ -40181,14 +40185,14 @@
 							{
 								"name": "ParameterInfo",
 								"kind": "type",
-								"doc_comment": "Parameter information for functions and methods.\n\nKept distinct from ComponentPropInfo despite structural similarity.\nFunction parameters form a tuple with positional semantics:\ncalling order matters (`fn(a, b)` vs `fn(b, a)`),\nmay include rest parameters and destructuring patterns.",
+								"doc_comment": "Parameter information for functions and methods.\n\nKept distinct from `ComponentPropInfo` despite structural similarity.\nFunction parameters form a tuple with positional semantics:\ncalling order matters (`fn(a, b)` vs `fn(b, a)`),\nmay include rest parameters and destructuring patterns.",
 								"source_line": 51,
 								"type_signature": "ZodObject<{ name: ZodString; type: ZodString; optional: ZodOptional<ZodBoolean>; description: ZodOptional<ZodString>; default_value: ZodOptional<...>; }, $loose>"
 							},
 							{
 								"name": "ComponentPropInfo",
 								"kind": "type",
-								"doc_comment": "Component prop information for Svelte components.\n\nKept distinct from ParameterInfo despite structural similarity.\nComponent props are named attributes with different semantics:\nno positional order when passing (`<Foo {a} {b} />` = `<Foo {b} {a} />`),\nsupport two-way binding via `$bindable` rune.",
+								"doc_comment": "Component prop information for Svelte components.\n\nKept distinct from `ParameterInfo` despite structural similarity.\nComponent props are named attributes with different semantics:\nno positional order when passing (`<Foo {a} {b} />` = `<Foo {b} {a} />`),\nsupport two-way binding via `$bindable` rune.",
 								"source_line": 68,
 								"type_signature": "ZodObject<{ name: ZodString; type: ZodString; optional: ZodOptional<ZodBoolean>; description: ZodOptional<ZodString>; ... 6 more ...; since: ZodOptional<...>; }, $loose>"
 							},
@@ -40252,7 +40256,7 @@
 								]
 							}
 						],
-						"module_comment": "Metadata types for library source code analysis.\n\nThese types represent the structure of `src/lib/` exports,\nextracted at build time via TypeScript compiler analysis.\nUsed for generating API documentation and enabling code search.\n\nHierarchy: SourceJson → ModuleJson → DeclarationJson"
+						"module_comment": "Metadata types for library source code analysis.\n\nThese types represent the structure of `src/lib/` exports,\nextracted at build time via TypeScript compiler analysis.\nUsed for generating API documentation and enabling code search.\n\nHierarchy: `SourceJson` → `ModuleJson` → `DeclarationJson`"
 					},
 					{
 						"path": "stats.ts",
@@ -40763,7 +40767,7 @@
 							{
 								"name": "strip_ansi",
 								"kind": "function",
-								"doc_comment": "Strips ANSI escape sequences from a string",
+								"doc_comment": "Strips ANSI escape sequences from a string.",
 								"source_line": 91,
 								"type_signature": "(str: string): string",
 								"return_type": "string",
@@ -41457,7 +41461,7 @@
 									{
 										"name": "timer",
 										"type": "Timer",
-										"description": "timer to use (defaults to timer_default)",
+										"description": "timer to use (defaults to `timer_default`)",
 										"default_value": "timer_default"
 									}
 								]
@@ -41478,7 +41482,7 @@
 									{
 										"name": "timer",
 										"type": "Timer",
-										"description": "timer to use (defaults to timer_default)",
+										"description": "timer to use (defaults to `timer_default`)",
 										"default_value": "timer_default"
 									}
 								]
@@ -41508,7 +41512,7 @@
 									{
 										"name": "timer",
 										"type": "Timer",
-										"description": "timer to use (defaults to timer_default)",
+										"description": "timer to use (defaults to `timer_default`)",
 										"default_value": "timer_default"
 									}
 								]
@@ -42075,10 +42079,10 @@
 				"engines": {"node": ">=22.15"},
 				"devDependencies": {
 					"@fuzdev/fuz_code": "^0.45.1",
-					"@fuzdev/fuz_css": "^0.57.0",
-					"@fuzdev/fuz_ui": "^0.191.1",
+					"@fuzdev/fuz_css": "^0.58.0",
+					"@fuzdev/fuz_ui": "^0.191.3",
 					"@fuzdev/fuz_util": "^0.55.0",
-					"@fuzdev/gro": "^0.197.1",
+					"@fuzdev/gro": "^0.197.2",
 					"@jridgewell/trace-mapping": "^0.3.31",
 					"@ryanatkn/eslint-config": "^0.10.1",
 					"@sveltejs/acorn-typescript": "^1.0.9",
@@ -42093,7 +42097,7 @@
 					"magic-string": "^0.30.21",
 					"prettier": "^3.7.4",
 					"prettier-plugin-svelte": "^3.5.1",
-					"svelte": "^5.54.0",
+					"svelte": "^5.55.0",
 					"svelte-check": "^4.4.5",
 					"svelte2tsx": "^0.7.52",
 					"tslib": "^2.8.1",
@@ -42201,11 +42205,11 @@
 				"devDependencies": {
 					"@changesets/changelog-git": "^0.2.1",
 					"@fuzdev/fuz_code": "^0.45.1",
-					"@fuzdev/fuz_css": "^0.56.0",
+					"@fuzdev/fuz_css": "^0.58.0",
 					"@fuzdev/fuz_mastodon": "^0.39.0",
-					"@fuzdev/fuz_ui": "^0.191.1",
-					"@fuzdev/fuz_util": "^0.54.0",
-					"@fuzdev/gro": "^0.197.1",
+					"@fuzdev/fuz_ui": "^0.191.3",
+					"@fuzdev/fuz_util": "^0.55.0",
+					"@fuzdev/gro": "^0.197.2",
 					"@jridgewell/trace-mapping": "^0.3.31",
 					"@ryanatkn/eslint-config": "^0.10.1",
 					"@sveltejs/acorn-typescript": "^1.0.9",
@@ -42223,7 +42227,7 @@
 					"magic-string": "^0.30.21",
 					"prettier": "^3.7.4",
 					"prettier-plugin-svelte": "^3.5.1",
-					"svelte": "^5.54.0",
+					"svelte": "^5.55.0",
 					"svelte-check": "^4.4.5",
 					"svelte2tsx": "^0.7.52",
 					"tslib": "^2.8.1",
@@ -42343,7 +42347,7 @@
 							{
 								"name": "BlogPostData",
 								"kind": "type",
-								"doc_comment": "the author-defined data for each post",
+								"doc_comment": "The author-defined data for each post.",
 								"source_line": 20,
 								"type_signature": "BlogPostData",
 								"properties": [
@@ -42408,19 +42412,19 @@
 										"name": "id",
 										"kind": "variable",
 										"type_signature": "string",
-										"doc_comment": "blog post path with `blog_post_id`"
+										"doc_comment": "Blog post path with `blog_post_id`."
 									},
 									{
 										"name": "url",
 										"kind": "variable",
 										"type_signature": "string",
-										"doc_comment": "blog post path with `slug`"
+										"doc_comment": "Blog post path with `slug`."
 									},
 									{
 										"name": "blog_post_id",
 										"kind": "variable",
 										"type_signature": "BlogPostId",
-										"doc_comment": "incrementing 1-based integer"
+										"doc_comment": "Incrementing 1-based integer."
 									},
 									{"name": "tags", "kind": "variable", "type_signature": "Array<string>"}
 								]
@@ -42643,10 +42647,10 @@
 				"devDependencies": {
 					"@changesets/changelog-git": "^0.2.1",
 					"@fuzdev/fuz_code": "^0.45.1",
-					"@fuzdev/fuz_css": "^0.57.0",
-					"@fuzdev/fuz_ui": "^0.191.1",
+					"@fuzdev/fuz_css": "^0.58.0",
+					"@fuzdev/fuz_ui": "^0.191.3",
 					"@fuzdev/fuz_util": "^0.55.0",
-					"@fuzdev/gro": "^0.197.1",
+					"@fuzdev/gro": "^0.197.2",
 					"@jridgewell/trace-mapping": "^0.3.31",
 					"@ryanatkn/eslint-config": "^0.10.1",
 					"@sveltejs/acorn-typescript": "^1.0.9",
@@ -42663,7 +42667,7 @@
 					"magic-string": "^0.30.21",
 					"prettier": "^3.7.4",
 					"prettier-plugin-svelte": "^3.5.1",
-					"svelte": "^5.54.0",
+					"svelte": "^5.55.0",
 					"svelte-check": "^4.4.5",
 					"svelte2tsx": "^0.7.52",
 					"tslib": "^2.8.1",
@@ -42771,7 +42775,7 @@
 							{
 								"name": "to_mastodon_status_url_with_users_author",
 								"kind": "function",
-								"doc_comment": "longhand for `to_mastodon_status_url_with_author`, apperas",
+								"doc_comment": "longhand for `to_mastodon_status_url_with_author`, apperas.",
 								"source_line": 30,
 								"type_signature": "(host: string, id: string, author: string): string",
 								"return_type": "string",
@@ -42829,7 +42833,7 @@
 							{
 								"name": "parse_mastodon_status_url",
 								"kind": "function",
-								"doc_comment": "parses a url to a post or API endpoint for a post, aka Mastodon status context",
+								"doc_comment": "parses a url to a post or API endpoint for a post, aka Mastodon status context.",
 								"source_line": 58,
 								"type_signature": "(url: string): MastodonStatusUrl | null",
 								"return_type": "MastodonStatusUrl | null",
@@ -42911,7 +42915,7 @@
 							{
 								"name": "MastodonStatusContext",
 								"kind": "type",
-								"doc_comment": "result from `https://:host/api/v1/statuses/:id/context`",
+								"doc_comment": "result from `https://:host/api/v1/statuses/:id/context`.",
 								"see_also": ["https://docs.joinmastodon.org/entities/Context/"],
 								"source_line": 144,
 								"type_signature": "MastodonStatusContext",
@@ -43401,10 +43405,10 @@
 				},
 				"devDependencies": {
 					"@changesets/changelog-git": "^0.2.1",
-					"@fuzdev/fuz_css": "^0.56.0",
-					"@fuzdev/fuz_ui": "^0.190.0",
-					"@fuzdev/fuz_util": "^0.54.0",
-					"@fuzdev/gro": "^0.197.0",
+					"@fuzdev/fuz_css": "^0.58.0",
+					"@fuzdev/fuz_ui": "^0.191.3",
+					"@fuzdev/fuz_util": "^0.55.0",
+					"@fuzdev/gro": "^0.197.2",
 					"@jridgewell/trace-mapping": "^0.3.31",
 					"@ryanatkn/eslint-config": "^0.10.1",
 					"@sveltejs/acorn-typescript": "^1.0.9",
@@ -43421,7 +43425,7 @@
 					"magic-string": "^0.30.21",
 					"prettier": "^3.7.4",
 					"prettier-plugin-svelte": "^3.4.1",
-					"svelte": "^5.49.1",
+					"svelte": "^5.55.0",
 					"svelte-check": "^4.3.6",
 					"svelte2tsx": "^0.7.47",
 					"tslib": "^2.8.1",
@@ -43503,7 +43507,7 @@
 										"name": "grammar",
 										"type": "SyntaxGrammar | undefined",
 										"optional": true,
-										"description": "Optional custom grammar object for syntax tokenization.\n\n**When to use:**\n- To provide a custom language definition not registered in `syntax_styler.langs`\n- To use a modified/extended version of an existing grammar\n- For one-off grammar variations without registering globally\n\n**Behavior:**\n- When provided, this grammar is used for tokenization instead of looking up via `lang`\n- Enables highlighting even if `lang` is not in the registry (useful for custom languages)\n- The `lang` parameter is still used for metadata (data-lang attribute)\n- When undefined, the grammar is automatically looked up via `syntax_styler.get_lang(lang)`"
+										"description": "Optional custom `SyntaxGrammar` object for syntax tokenization.\n\n**When to use:**\n- To provide a custom language definition not registered in `syntax_styler.langs`\n- To use a modified/extended version of an existing grammar\n- For one-off grammar variations without registering globally\n\n**Behavior:**\n- When provided, this grammar is used for tokenization instead of looking up via `lang`\n- Enables highlighting even if `lang` is not in the registry (useful for custom languages)\n- The `lang` parameter is still used for metadata (data-lang attribute)\n- When undefined, the grammar is automatically looked up via `syntax_styler.get_lang(lang)`"
 									},
 									{
 										"name": "inline",
@@ -43527,7 +43531,7 @@
 										"name": "syntax_styler",
 										"type": "SyntaxStyler",
 										"optional": true,
-										"description": "Custom SyntaxStyler instance to use for highlighting.\nAllows using a different styler with custom grammars or configuration."
+										"description": "Custom `SyntaxStyler` instance to use for highlighting.\nAllows using a different styler with custom grammars or configuration."
 									},
 									{
 										"name": "children",
@@ -43569,7 +43573,7 @@
 										"name": "grammar",
 										"type": "SyntaxGrammar | undefined",
 										"optional": true,
-										"description": "Optional custom grammar object for syntax tokenization.\n\n**When to use:**\n- To provide a custom language definition not registered in `syntax_styler.langs`\n- To use a modified/extended version of an existing grammar\n- For one-off grammar variations without registering globally\n\n**Behavior:**\n- When provided, this grammar is used for tokenization instead of looking up via `lang`\n- Enables highlighting even if `lang` is not in the registry (useful for custom languages)\n- The `lang` parameter is still used for metadata (data-lang attribute)\n- When undefined, the grammar is automatically looked up via `syntax_styler.get_lang(lang)`"
+										"description": "Optional custom `SyntaxGrammar` object for syntax tokenization.\n\n**When to use:**\n- To provide a custom language definition not registered in `syntax_styler.langs`\n- To use a modified/extended version of an existing grammar\n- For one-off grammar variations without registering globally\n\n**Behavior:**\n- When provided, this grammar is used for tokenization instead of looking up via `lang`\n- Enables highlighting even if `lang` is not in the registry (useful for custom languages)\n- The `lang` parameter is still used for metadata (data-lang attribute)\n- When undefined, the grammar is automatically looked up via `syntax_styler.get_lang(lang)`"
 									},
 									{
 										"name": "inline",
@@ -43587,7 +43591,7 @@
 										"name": "syntax_styler",
 										"type": "SyntaxStyler",
 										"optional": true,
-										"description": "Custom SyntaxStyler instance to use for highlighting.\nAllows using a different styler with custom grammars or configuration."
+										"description": "Custom `SyntaxStyler` instance to use for highlighting.\nAllows using a different styler with custom grammars or configuration."
 									},
 									{
 										"name": "children",
@@ -43725,33 +43729,46 @@
 								"name": "grammar_markup_add_inlined",
 								"kind": "function",
 								"doc_comment": "Adds an inlined language to markup.\n\nAn example of an inlined language is CSS with `<style>` tags.",
-								"source_line": 104,
+								"source_line": 106,
 								"type_signature": "(syntax_styler: SyntaxStyler, tag_name: string, lang: string, inside_lang?: string): void",
 								"return_type": "void",
 								"parameters": [
-									{"name": "syntax_styler", "type": "SyntaxStyler"},
+									{
+										"name": "syntax_styler",
+										"type": "SyntaxStyler",
+										"description": "the `SyntaxStyler` instance to modify"
+									},
 									{
 										"name": "tag_name",
 										"type": "string",
 										"description": "the name of the tag that contains the inlined language, treated as case insensitive"
 									},
 									{"name": "lang", "type": "string", "description": "the language key"},
-									{"name": "inside_lang", "type": "string", "default_value": "'markup'"}
+									{
+										"name": "inside_lang",
+										"type": "string",
+										"description": "the language to insert into, defaults to `'markup'`",
+										"default_value": "'markup'"
+									}
 								]
 							},
 							{
 								"name": "grammar_markup_add_attribute",
 								"kind": "function",
-								"doc_comment": "Adds an pattern to style languages embedded in HTML attributes.\n\nAn example of an inlined language is CSS with `style` attributes.",
-								"source_line": 154,
+								"doc_comment": "Adds a pattern to style languages embedded in HTML attributes.\n\nAn example of an inlined language is CSS with `style` attributes.",
+								"source_line": 157,
 								"type_signature": "(syntax_styler: SyntaxStyler, attr_name: string, lang: string): void",
 								"return_type": "void",
 								"parameters": [
-									{"name": "syntax_styler", "type": "SyntaxStyler"},
+									{
+										"name": "syntax_styler",
+										"type": "SyntaxStyler",
+										"description": "the `SyntaxStyler` instance to modify"
+									},
 									{
 										"name": "attr_name",
 										"type": "string",
-										"description": "the name of the tag that contains the inlined language, treated as case insensitive"
+										"description": "the name of the attribute that contains the inlined language, treated as case insensitive"
 									},
 									{"name": "lang", "type": "string", "description": "the language key"}
 								]
@@ -43822,7 +43839,7 @@
 							{
 								"name": "supports_css_highlight_api",
 								"kind": "function",
-								"doc_comment": "check for CSS Highlights API support",
+								"doc_comment": "Checks for CSS Highlights API support.",
 								"source_line": 9,
 								"type_signature": "(): boolean",
 								"return_type": "boolean",
@@ -43831,7 +43848,7 @@
 							{
 								"name": "HighlightManager",
 								"kind": "class",
-								"doc_comment": "Manages CSS Custom Highlight API ranges for a single element.\nTracks ranges per element and only removes its own ranges when clearing.\n\n**Experimental** — limited browser support. Use `Code` for production.",
+								"doc_comment": "Manages CSS Custom Highlight API ranges for a single element.\nTracks ranges per element and only removes its own ranges when clearing.\n\n**Experimental** — limited browser support. Use `Code.svelte` for production.",
 								"examples": [
 									"```ts\nconst manager = new HighlightManager();\nmanager.highlight_from_syntax_tokens(element, tokens);\n```"
 								],
@@ -43851,7 +43868,7 @@
 									{
 										"name": "highlight_from_syntax_tokens",
 										"kind": "function",
-										"doc_comment": "highlight from syntax styler token stream",
+										"doc_comment": "Highlights from a `SyntaxTokenStream` produced by `tokenize_syntax`.",
 										"type_signature": "(element: Element, tokens: SyntaxTokenStream): void",
 										"return_type": "void",
 										"parameters": [
@@ -43862,7 +43879,7 @@
 									{
 										"name": "clear_element_ranges",
 										"kind": "function",
-										"doc_comment": "clear only this element's ranges from highlights",
+										"doc_comment": "Clears only this element's ranges from highlights.",
 										"type_signature": "(): void",
 										"return_type": "void",
 										"parameters": []
@@ -43905,7 +43922,7 @@
 							{
 								"name": "PreprocessFuzCodeOptions",
 								"kind": "type",
-								"doc_comment": "options for `svelte_preprocess_fuz_code`",
+								"doc_comment": "Options for `svelte_preprocess_fuz_code`.",
 								"source_line": 22,
 								"type_signature": "PreprocessFuzCodeOptions",
 								"properties": [
@@ -43919,7 +43936,7 @@
 										"name": "syntax_styler",
 										"kind": "variable",
 										"type_signature": "SyntaxStyler",
-										"doc_comment": "Custom syntax styler."
+										"doc_comment": "Custom `SyntaxStyler` instance."
 									},
 									{
 										"name": "cache",
@@ -43931,7 +43948,7 @@
 										"name": "component_imports",
 										"kind": "variable",
 										"type_signature": "Array<string>",
-										"doc_comment": "Import sources that resolve to the Code component.\nUsed to verify that `<Code>` in templates actually refers to fuz_code's Code.svelte."
+										"doc_comment": "Import sources that resolve to the `Code` component.\nUsed to verify that `<Code>` in templates actually refers to `Code.svelte`."
 									},
 									{
 										"name": "on_error",
@@ -43944,7 +43961,7 @@
 							{
 								"name": "svelte_preprocess_fuz_code",
 								"kind": "function",
-								"doc_comment": "Svelte preprocessor that compiles static `Code` component content at build time,\nreplacing runtime syntax highlighting with pre-rendered HTML",
+								"doc_comment": "Svelte preprocessor that compiles static `Code` component content at build time,\nreplacing runtime syntax highlighting with pre-rendered HTML.",
 								"examples": [
 									"```ts\n// svelte.config.js\nimport {svelte_preprocess_fuz_code} from '@fuzdev/fuz_code/svelte_preprocess_fuz_code.js';\n\nexport default {\n  preprocess: [svelte_preprocess_fuz_code(), vitePreprocess()],\n};\n```"
 								],
@@ -43956,7 +43973,7 @@
 									{
 										"name": "options",
 										"type": "PreprocessFuzCodeOptions",
-										"description": "preprocessor configuration",
+										"description": "`PreprocessFuzCodeOptions` configuration",
 										"default_value": "{}"
 									}
 								]
@@ -44064,7 +44081,7 @@
 											{
 												"name": "grammar",
 												"type": "SyntaxGrammar | undefined",
-												"description": "optional custom grammar object; when undefined, automatically\nlooks up the grammar via `this.get_lang(lang)`; provide this to use a custom\nor modified grammar instead of the registered one",
+												"description": "optional custom `SyntaxGrammar` object; when undefined, automatically\nlooks up the grammar via `this.get_lang(lang)`; provide this to use a custom\nor modified grammar instead of the registered one",
 												"default_value": "this.get_lang(lang)"
 											}
 										]
@@ -44072,10 +44089,10 @@
 									{
 										"name": "grammar_insert_before",
 										"kind": "function",
-										"doc_comment": "Inserts tokens _before_ another token in a language definition or any other grammar.\n\n## Usage\n\nThis helper method makes it easy to modify existing languages. For example, the CSS language definition\nnot only defines CSS styling for CSS documents, but also needs to define styling for CSS embedded\nin HTML through `<style>` elements. To do this, it needs to modify `syntax_styler.get_lang('markup')` and add the\nappropriate tokens. However, `syntax_styler.get_lang('markup')` is a regular JS object literal, so if you do\nthis:\n\n```js\nsyntax_styler.get_lang('markup').style = {\n    // token\n};\n```\n\nthen the `style` token will be added (and processed) at the end. `insert_before` allows you to insert tokens\nbefore existing tokens. For the CSS example above, you would use it like this:\n\n```js\ngrammar_insert_before('markup', 'cdata', {\n    'style': {\n        // token\n    }\n});\n```\n\n## Special cases\n\nIf the grammars of `inside` and `insert` have tokens with the same name, the tokens in `inside`'s grammar\nwill be ignored.\n\nThis behavior can be used to insert tokens after `before`:\n\n```js\ngrammar_insert_before('markup', 'comment', {\n    'comment': syntax_styler.get_lang('markup').comment,\n    // tokens after 'comment'\n});\n```\n\n## Limitations\n\nThe main problem `insert_before` has to solve is iteration order. Since ES2015, the iteration order for object\nproperties is guaranteed to be the insertion order (except for integer keys) but some browsers behave\ndifferently when keys are deleted and re-inserted. So `insert_before` can't be implemented by temporarily\ndeleting properties which is necessary to insert at arbitrary positions.\n\nTo solve this problem, `insert_before` doesn't actually insert the given tokens into the target object.\nInstead, it will create a new object and replace all references to the target object with the new one. This\ncan be done without temporarily deleting properties, so the iteration order is well-defined.\n\nHowever, only references that can be reached from `syntax_styler.langs` or `insert` will be replaced. I.e. if\nyou hold the target object in a variable, then the value of the variable will not change.\n\n```js\nvar oldMarkup = syntax_styler.get_lang('markup');\nvar newMarkup = grammar_insert_before('markup', 'comment', { ... });\n\nassert(oldMarkup !== syntax_styler.get_lang('markup'));\nassert(newMarkup === syntax_styler.get_lang('markup'));\n```",
+										"doc_comment": "Inserts tokens _before_ another token in a language definition or any other grammar.\n\n## Usage\n\nThis helper method makes it easy to modify existing languages. For example, the CSS language definition\nnot only defines CSS styling for CSS documents, but also needs to define styling for CSS embedded\nin HTML through `<style>` elements. To do this, it needs to modify `syntax_styler.get_lang('markup')` and add the\nappropriate tokens. However, `syntax_styler.get_lang('markup')` is a regular JS object literal, so if you do\nthis:\n\n```js\nsyntax_styler.get_lang('markup').style = {\n    // token\n};\n```\n\nthen the `style` token will be added (and processed) at the end. `grammar_insert_before` allows you to insert tokens\nbefore existing tokens. For the CSS example above, you would use it like this:\n\n```js\ngrammar_insert_before('markup', 'cdata', {\n    'style': {\n        // token\n    }\n});\n```\n\n## Special cases\n\nIf the grammars of `inside` and `insert` have tokens with the same name, the tokens in `inside`'s grammar\nwill be ignored.\n\nThis behavior can be used to insert tokens after `before`:\n\n```js\ngrammar_insert_before('markup', 'comment', {\n    'comment': syntax_styler.get_lang('markup').comment,\n    // tokens after 'comment'\n});\n```\n\n## Limitations\n\nThe main problem `grammar_insert_before` has to solve is iteration order. Since ES2015, the iteration order for object\nproperties is guaranteed to be the insertion order (except for integer keys) but some browsers behave\ndifferently when keys are deleted and re-inserted. So `grammar_insert_before` can't be implemented by temporarily\ndeleting properties which is necessary to insert at arbitrary positions.\n\nTo solve this problem, `grammar_insert_before` doesn't actually insert the given tokens into the target object.\nInstead, it will create a new object and replace all references to the target object with the new one. This\ncan be done without temporarily deleting properties, so the iteration order is well-defined.\n\nHowever, only references that can be reached from `syntax_styler.langs` or `insert` will be replaced. I.e. if\nyou hold the target object in a variable, then the value of the variable will not change.\n\n```js\nvar oldMarkup = syntax_styler.get_lang('markup');\nvar newMarkup = grammar_insert_before('markup', 'comment', { ... });\n\nassert(oldMarkup !== syntax_styler.get_lang('markup'));\nassert(newMarkup === syntax_styler.get_lang('markup'));\n```",
 										"type_signature": "(inside: string, before: string, insert: SyntaxGrammarRaw, root?: Record<string, any>): SyntaxGrammar",
 										"return_type": "SyntaxGrammar",
-										"return_description": "the new grammar object",
+										"return_description": "the new `SyntaxGrammar` object",
 										"parameters": [
 											{
 												"name": "inside",
@@ -44111,7 +44128,7 @@
 											{
 												"name": "o",
 												"type": "string | SyntaxTokenStream | SyntaxToken",
-												"description": "the token or token stream to be converted"
+												"description": "the token or `SyntaxTokenStream` to be converted"
 											},
 											{
 												"name": "lang",
@@ -44126,7 +44143,7 @@
 										"doc_comment": "Creates a deep copy of the language with the given id and appends the given tokens.\n\nIf a token in `extension` also appears in the copied language, then the existing token in the copied language\nwill be overwritten at its original position.\n\n## Best practices\n\nSince the position of overwriting tokens (token in `extension` that overwrite tokens in the copied language)\ndoesn't matter, they can technically be in any order. However, this can be confusing to others that trying to\nunderstand the language definition because, normally, the order of tokens matters in the grammars.\n\nTherefore, it is encouraged to order overwriting tokens according to the positions of the overwritten tokens.\nFurthermore, all non-overwriting tokens should be placed after the overwriting ones.",
 										"type_signature": "(base_id: string, extension: SyntaxGrammarRaw): SyntaxGrammar",
 										"return_type": "SyntaxGrammar",
-										"return_description": "the new grammar",
+										"return_description": "the new `SyntaxGrammar`",
 										"parameters": [
 											{
 												"name": "base_id",
@@ -44223,38 +44240,38 @@
 										"name": "pattern",
 										"kind": "variable",
 										"type_signature": "RegExp",
-										"doc_comment": "the regular expression of the token"
+										"doc_comment": "The regular expression of the token."
 									},
 									{
 										"name": "lookbehind",
 										"kind": "variable",
 										"type_signature": "boolean",
-										"doc_comment": "if `true`, then the first capturing group of `pattern` will (effectively)\nbehave as a lookbehind group meaning that the captured text will not be part of the matched text of the new token"
+										"doc_comment": "If `true`, then the first capturing group of `pattern` will (effectively)\nbehave as a lookbehind group meaning that the captured text will not be part of the matched text of the new token."
 									},
 									{
 										"name": "greedy",
 										"kind": "variable",
 										"type_signature": "boolean",
-										"doc_comment": "whether the token is greedy"
+										"doc_comment": "Whether the token is greedy."
 									},
 									{
 										"name": "alias",
 										"kind": "variable",
 										"type_signature": "string | Array<string>",
-										"doc_comment": "an optional alias or list of aliases"
+										"doc_comment": "An optional alias or list of aliases."
 									},
 									{
 										"name": "inside",
 										"kind": "variable",
 										"type_signature": "SyntaxGrammarRaw | null",
-										"doc_comment": "the nested grammar of this token"
+										"doc_comment": "The nested `SyntaxGrammarRaw` of this token."
 									}
 								]
 							},
 							{
 								"name": "SyntaxGrammarToken",
 								"kind": "type",
-								"doc_comment": "Grammar token with all properties required.\nThis is the normalized representation used at runtime.",
+								"doc_comment": "Grammar token with all properties required.\nThis is the normalized representation of `SyntaxGrammarTokenRaw` used at runtime.",
 								"source_line": 518,
 								"type_signature": "SyntaxGrammarToken",
 								"properties": [
@@ -44268,7 +44285,7 @@
 							{
 								"name": "SyntaxGrammar",
 								"kind": "type",
-								"doc_comment": "A grammar after normalization.\nAll values are arrays of normalized tokens with consistent shapes.",
+								"doc_comment": "A grammar after normalization.\nAll values are arrays of normalized `SyntaxGrammarToken` with consistent shapes.",
 								"source_line": 530,
 								"type_signature": "SyntaxGrammar"
 							},
@@ -44347,13 +44364,13 @@
 									{
 										"name": "type",
 										"kind": "variable",
-										"doc_comment": "The type of the token.\n\nThis is usually the key of a pattern in a `Grammar`.",
+										"doc_comment": "The type of the token.\n\nThis is usually the key of a pattern in a `SyntaxGrammar`.",
 										"type_signature": "string"
 									},
 									{
 										"name": "content",
 										"kind": "variable",
-										"doc_comment": "The strings or tokens contained by this token.\n\nThis will be a token stream if the pattern matched also defined an `inside` grammar.",
+										"doc_comment": "The strings or tokens contained by this token.\n\nThis will be a `SyntaxTokenStream` if the pattern matched also defined an `inside` grammar.",
 										"type_signature": "string | SyntaxTokenStream"
 									},
 									{
@@ -44379,7 +44396,7 @@
 							{
 								"name": "SyntaxTokenStream",
 								"kind": "type",
-								"doc_comment": "A token stream is an array of strings and `SyntaxToken` objects.\n\nSyntax token streams have to fulfill a few properties that are assumed by most functions (mostly internal ones) that process\nthem.\n\n1. No adjacent strings.\n2. No empty strings.\n\n   The only exception here is the token stream that only contains the empty string and nothing else.",
+								"doc_comment": "A token stream is an array of strings and `SyntaxToken` objects.\n\n`SyntaxTokenStream` values have to fulfill a few properties that are assumed by most functions\n(mostly internal ones) that process them.\n\n1. No adjacent strings.\n2. No empty strings.\n\n   The only exception here is the token stream that only contains the empty string and nothing else.",
 								"source_line": 49,
 								"type_signature": "SyntaxTokenStream"
 							}
@@ -44396,10 +44413,10 @@
 								"examples": [
 									"```ts\nvar code = `var foo = 0;`;\nvar tokens = tokenize_syntax(code, SyntaxStyler.langs.js);\nfor (var token of tokens) {\n    if (token instanceof SyntaxToken && token.type === 'number') {\n        console.log(`Found numeric literal: ${token.content}`);\n    }\n}\n```"
 								],
-								"source_line": 30,
+								"source_line": 28,
 								"type_signature": "(text: string, grammar: SyntaxGrammar): SyntaxTokenStream",
 								"return_type": "SyntaxTokenStream",
-								"return_description": "an array of strings and tokens, a token stream",
+								"return_description": "a `SyntaxTokenStream` array of strings and tokens",
 								"parameters": [
 									{
 										"name": "text",
@@ -44409,7 +44426,7 @@
 									{
 										"name": "grammar",
 										"type": "SyntaxGrammar",
-										"description": "an object containing the tokens to use\n\nUsually a language definition like `syntax_styler.get_lang('markup')`."
+										"description": "a `SyntaxGrammar` object containing the tokens to use.\nUsually a language definition like `syntax_styler.get_lang('markup')`."
 									}
 								]
 							}
@@ -44475,10 +44492,10 @@
 				"devDependencies": {
 					"@changesets/changelog-git": "^0.2.1",
 					"@fuzdev/fuz_code": "^0.45.1",
-					"@fuzdev/fuz_css": "^0.57.0",
-					"@fuzdev/fuz_ui": "^0.191.1",
-					"@fuzdev/fuz_util": "^0.54.0",
-					"@fuzdev/gro": "^0.197.1",
+					"@fuzdev/fuz_css": "^0.58.0",
+					"@fuzdev/fuz_ui": "^0.191.3",
+					"@fuzdev/fuz_util": "^0.55.0",
+					"@fuzdev/gro": "^0.197.2",
 					"@jridgewell/trace-mapping": "^0.3.31",
 					"@ryanatkn/eslint-config": "^0.10.1",
 					"@sveltejs/acorn-typescript": "^1.0.9",
@@ -44495,7 +44512,7 @@
 					"magic-string": "^0.30.21",
 					"prettier": "^3.7.4",
 					"prettier-plugin-svelte": "^3.5.1",
-					"svelte": "^5.54.0",
+					"svelte": "^5.55.0",
 					"svelte-check": "^4.4.5",
 					"svelte2tsx": "^0.7.52",
 					"tslib": "^2.8.1",
@@ -44575,7 +44592,7 @@
 								"source_line": 103,
 								"type_signature": "(package_name: string, updates: DependencyVersionChange[], bump_type: \"major\" | \"minor\" | \"patch\"): string",
 								"return_type": "string",
-								"return_description": "markdown content ready to write to .changeset/*.md file",
+								"return_description": "markdown content ready to write to `.changeset/*.md` file",
 								"parameters": [
 									{
 										"name": "package_name",
@@ -44631,8 +44648,8 @@
 							{
 								"name": "parse_changeset_content",
 								"kind": "function",
-								"doc_comment": "Parses changeset content string from markdown format.\n\nPure function for testability - no file I/O, just string parsing.\nExtracts package names, bump types, and summary from YAML frontmatter format.\nReturns null if format is invalid or no packages found.\n\nExpected format:\n---\n\"package-name\": patch\n\"@scope/package\": minor\n---\n\nSummary of changes",
-								"source_line": 44,
+								"doc_comment": "Parses changeset content string from markdown format.\n\nPure function for testability - no file I/O, just string parsing.\nExtracts package names, bump types, and summary from YAML frontmatter format.\nReturns null if format is invalid or no packages found.\n\nExpected format:\n```\n---\n\"package-name\": patch\n\"@scope/package\": minor\n---\n\nSummary of changes\n```",
+								"source_line": 46,
 								"type_signature": "(content: string, filename?: string): ChangesetInfo | null",
 								"return_type": "ChangesetInfo | null",
 								"return_description": "parsed changeset info or null if invalid format",
@@ -44653,7 +44670,7 @@
 							{
 								"name": "parse_changeset_file",
 								"kind": "function",
-								"source_line": 84,
+								"source_line": 86,
 								"type_signature": "(filepath: string, log?: Logger | undefined): Promise<ChangesetInfo | null>",
 								"return_type": "Promise<ChangesetInfo | null>",
 								"parameters": [
@@ -44664,7 +44681,7 @@
 							{
 								"name": "read_changesets",
 								"kind": "function",
-								"source_line": 105,
+								"source_line": 107,
 								"type_signature": "(repo: LocalRepo, log?: Logger | undefined): Promise<ChangesetInfo[]>",
 								"return_type": "Promise<ChangesetInfo[]>",
 								"parameters": [
@@ -44676,7 +44693,7 @@
 								"name": "determine_bump_from_changesets",
 								"kind": "function",
 								"doc_comment": "Determines the bump type for a package from its changesets.\n\nWhen multiple changesets exist for the same package, returns the highest\nbump type (major > minor > patch) to ensure the most significant change\nis reflected in the version bump.",
-								"source_line": 141,
+								"source_line": 143,
 								"type_signature": "(changesets: ChangesetInfo[], package_name: string): BumpType | null",
 								"return_type": "BumpType | null",
 								"return_description": "the highest bump type, or null if package has no changesets",
@@ -44688,8 +44705,8 @@
 							{
 								"name": "has_changesets",
 								"kind": "function",
-								"doc_comment": "Checks if a repo has any changeset files (excluding README.md).\n\nUsed by preflight checks and publishing workflow to determine which packages\nneed to be published. Returns false if .changeset directory doesn't exist\nor contains only README.md.",
-								"source_line": 169,
+								"doc_comment": "Checks if a repo has any changeset files (excluding README.md).\n\nUsed by preflight checks and publishing workflow to determine which packages\nneed to be published. Returns false if `.changeset` directory doesn't exist\nor contains only `README.md`.",
+								"source_line": 171,
 								"type_signature": "(repo: LocalRepo): Promise<boolean>",
 								"return_type": "Promise<boolean>",
 								"return_description": "true if repo has unpublished changesets",
@@ -44699,7 +44716,7 @@
 								"name": "predict_next_version",
 								"kind": "function",
 								"doc_comment": "Predicts the next version by analyzing all changesets in a repo.\n\nReads all changesets, determines the highest bump type for the package,\nand calculates the next version. Returns null if no changesets found.\n\nCritical for dry-run mode accuracy - allows simulating publishes without\nactually running `gro publish` which consumes changesets.",
-								"source_line": 195,
+								"source_line": 197,
 								"type_signature": "(repo: LocalRepo, log?: Logger | undefined): Promise<{ version: string; bump_type: BumpType; } | null>",
 								"return_type": "Promise<{ version: string; bump_type: BumpType; } | null>",
 								"return_description": "predicted version and bump type, or null if no changesets",
@@ -44836,7 +44853,7 @@
 											{
 												"name": "exclude_dev",
 												"type": "boolean",
-												"description": "if true, excludes dev dependencies to break cycles\nPublishing uses exclude_dev=true to handle circular dev deps.",
+												"description": "if true, excludes dev dependencies to break cycles\nPublishing uses `exclude_dev`=true to handle circular dev deps.",
 												"default_value": "false"
 											}
 										],
@@ -44853,7 +44870,7 @@
 										"doc_comment": "Detects circular dependencies, categorized by severity.\n\nProduction/peer cycles prevent publishing (impossible to order packages).\nDev cycles are normal (test utils, shared configs) and safely ignored.\n\nUses DFS traversal with recursion stack to identify back edges.\nDeduplicates cycles using sorted cycle keys.",
 										"type_signature": "(): { production_cycles: string[][]; dev_cycles: string[][]; }",
 										"return_type": "{ production_cycles: string[][]; dev_cycles: string[][]; }",
-										"return_description": "object with production_cycles (errors) and dev_cycles (info)",
+										"return_description": "object with `production_cycles` (errors) and `dev_cycles` (info)",
 										"parameters": []
 									},
 									{
@@ -44941,7 +44958,7 @@
 							{
 								"name": "update_package_json",
 								"kind": "function",
-								"doc_comment": "Updates package.json dependencies and creates changeset if needed.\n\nWorkflow:\n1. Updates all dependency types (dependencies, devDependencies, peerDependencies)\n2. Writes updated package.json with tabs formatting\n3. Creates auto-changeset if published_versions provided (for transitive updates)\n4. Commits both package.json and changeset with standard message\n\nUses version strategy to determine prefix (exact, caret, tilde) while preserving\nexisting prefixes when possible.",
+								"doc_comment": "Updates `package.json` dependencies and creates changeset if needed.\n\nWorkflow:\n1. Updates all dependency types (dependencies, devDependencies, peerDependencies)\n2. Writes updated `package.json` with tabs formatting\n3. Creates auto-changeset if `published_versions` provided (for transitive updates)\n4. Commits both `package.json` and changeset with standard message\n\nUses version strategy to determine prefix (exact, caret, tilde) while preserving\nexisting prefixes when possible.",
 								"throws": [{"type": "if", "description": "file operations or git operations fail"}],
 								"source_line": 38,
 								"type_signature": "(repo: LocalRepo, updates: Map<string, string>, options?: UpdatePackageJsonOptions): Promise<void>",
@@ -45001,7 +45018,7 @@
 							{
 								"name": "fetch_repo_data",
 								"kind": "function",
-								"doc_comment": "Fetches GitHub metadata (CI status, PRs) for all repos.\n\nFetches sequentially with delay between requests to respect GitHub API rate limits.\nUses `await_in_loop` intentionally to avoid parallel requests overwhelming the API.\n\nError handling: Logs fetch failures but continues processing remaining repos.\nRepos with failed fetches will have `null` for check_runs or pull_requests.",
+								"doc_comment": "Fetches GitHub metadata (CI status, PRs) for all repos.\n\nFetches sequentially with delay between requests to respect GitHub API rate limits.\nUses `await_in_loop` intentionally to avoid parallel requests overwhelming the API.\n\nError handling: Logs fetch failures but continues processing remaining repos.\nRepos with failed fetches will have `null` for `check_runs` or `pull_requests`.",
 								"source_line": 24,
 								"type_signature": "(resolved_repos: LocalRepo[], token?: string | undefined, cache?: Map<string, { key: string; url: string; params: any; value: any; etag: string | null; last_modified: string | null; }> | undefined, log?: Logger | undefined, delay?: number, github_api_version?: string | undefined): Promise<...>",
 								"return_type": "Promise<RepoJson[]>",
@@ -45013,7 +45030,7 @@
 										"name": "cache",
 										"type": "Map<string, { key: string; url: string; params: any; value: any; etag: string | null; last_modified: string | null; }> | undefined",
 										"optional": true,
-										"description": "optional cache from fuz_util's fetch.js for response memoization"
+										"description": "optional cache from `fuz_util`'s `fetch.js` for response memoization"
 									},
 									{"name": "log", "type": "Logger | undefined", "optional": true},
 									{
@@ -45051,11 +45068,11 @@
 							{
 								"name": "create_fs_fetch_value_cache",
 								"kind": "function",
-								"doc_comment": "Creates file-system backed cache for fuz_util's fetch.js API responses.\n\nCache invalidation strategy: If cache file can't be read or parsed, entire\ncache is cleared (delete file) and starts fresh. This handles format changes.\n\nUses `structuredClone` to track changes - only writes to disk if data modified.\nFormatted with Prettier before writing for version control friendliness.",
+								"doc_comment": "Creates file-system backed cache for `fuz_util`'s `fetch.js` API responses.\n\nCache invalidation strategy: If cache file can't be read or parsed, entire\ncache is cleared (delete file) and starts fresh. This handles format changes.\n\nUses `structuredClone` to track changes - only writes to disk if data modified.\nFormatted with Prettier before writing for version control friendliness.",
 								"source_line": 32,
 								"type_signature": "(name: string, dir?: string): Promise<FetchCache>",
 								"return_type": "Promise<FetchCache>",
-								"return_description": "cache object with Map-based data and save() method",
+								"return_description": "cache object with Map-based data and `save()` method",
 								"parameters": [
 									{
 										"name": "name",
@@ -45212,7 +45229,7 @@
 							{
 								"name": "git_current_branch_name_required",
 								"kind": "function",
-								"doc_comment": "Wrapper for gro's git_current_branch_name that throws if null.",
+								"doc_comment": "Wrapper for gro's `git_current_branch_name` that throws if null.",
 								"source_line": 165,
 								"type_signature": "(options?: SpawnOptions | undefined): Promise<string>",
 								"return_type": "Promise<string>",
@@ -45223,7 +45240,7 @@
 							{
 								"name": "git_current_commit_hash_required",
 								"kind": "function",
-								"doc_comment": "Wrapper for gro's git_current_commit_hash that throws if null.",
+								"doc_comment": "Wrapper for gro's `git_current_commit_hash` that throws if null.",
 								"source_line": 176,
 								"type_signature": "(branch?: string | undefined, options?: SpawnOptions | undefined): Promise<string>",
 								"return_type": "Promise<string>",
@@ -45235,7 +45252,7 @@
 							{
 								"name": "git_check_clean_workspace_as_boolean",
 								"kind": "function",
-								"doc_comment": "Wrapper for gro's git_check_clean_workspace that returns a boolean.",
+								"doc_comment": "Wrapper for gro's `git_check_clean_workspace` that returns a boolean.",
 								"source_line": 190,
 								"type_signature": "(options?: SpawnOptions | undefined): Promise<boolean>",
 								"return_type": "Promise<boolean>",
@@ -45318,7 +45335,7 @@
 							{
 								"name": "GithubRepoInfo",
 								"kind": "type",
-								"doc_comment": "Minimal interface for GitHub API calls - works with both Pkg and Repo.",
+								"doc_comment": "Minimal interface for GitHub API calls - works with both `Pkg` and `Repo`.",
 								"source_line": 8,
 								"type_signature": "GithubRepoInfo",
 								"properties": [
@@ -45657,7 +45674,7 @@
 							{
 								"name": "get_gitops_ready",
 								"kind": "function",
-								"doc_comment": "Central initialization function for all gitops tasks.\n\nInitialization sequence:\n1. Loads and normalizes config from `gitops.config.ts`\n2. Resolves local repo paths (creates missing with `--download`)\n3. Switches branches and pulls latest changes (in parallel by default)\n4. Auto-installs deps if package.json changed during pull\n\nPriority for path resolution:\n- `dir` argument (explicit override)\n- Config `repos_dir` setting\n- `DEFAULT_REPOS_DIR` constant",
+								"doc_comment": "Central initialization function for all gitops tasks.\n\nInitialization sequence:\n1. Loads and normalizes config from `gitops.config.ts`\n2. Resolves local repo paths (creates missing with `--download`)\n3. Switches branches and pulls latest changes (in parallel by default)\n4. Auto-installs deps if `package.json` changed during pull\n\nPriority for path resolution:\n- `dir` argument (explicit override)\n- Config `repos_dir` setting\n- `DEFAULT_REPOS_DIR` constant",
 								"throws": [
 									{"type": "if", "description": "config loading or repo resolution fails"}
 								],
@@ -45754,11 +45771,11 @@
 							{
 								"name": "validate_dependency_graph",
 								"kind": "function",
-								"doc_comment": "Shared utility for building dependency graph, detecting cycles, and computing publishing order.\nThis centralizes logic that was duplicated across multi_repo_publisher, publishing_plan, and gitops_analyze.",
+								"doc_comment": "Shared utility for building dependency graph, detecting cycles, and computing publishing order.\nThis centralizes logic that was duplicated across `multi_repo_publisher`, `publishing_plan`, and `gitops_analyze`.",
 								"throws": [
 									{
 										"type": "if",
-										"description": "production cycles detected and throw_on_prod_cycles is true"
+										"description": "production cycles detected and `throw_on_prod_cycles` is true"
 									}
 								],
 								"source_line": 41,
@@ -45790,7 +45807,7 @@
 							{
 								"name": "LocalRepo",
 								"kind": "type",
-								"doc_comment": "Fully loaded local repo with Library and extracted dependency data.\nDoes not extend LocalRepoPath - Library is source of truth for name/repo_url/etc.",
+								"doc_comment": "Fully loaded local repo with `Library` and extracted dependency data.\nDoes not extend `LocalRepoPath` - `Library` is source of truth for name/repo_url/etc.",
 								"source_line": 21,
 								"type_signature": "LocalRepo",
 								"properties": [
@@ -45848,11 +45865,11 @@
 							{
 								"name": "local_repo_load",
 								"kind": "function",
-								"doc_comment": "Loads repo data with automatic syncing and dependency management.\n\nWorkflow:\n1. Records current commit hash (for detecting changes)\n2. Switches to target branch if needed (requires clean workspace)\n3. Pulls latest changes from remote (skipped for local-only repos)\n4. Validates workspace is clean after pull\n5. Auto-installs dependencies if package.json changed\n6. Imports library_json from src/routes/library.ts\n7. Creates Library and extracts dependency maps\n\nThis ensures repos are always in sync with their configured branch\nbefore being used by gitops commands.",
+								"doc_comment": "Loads repo data with automatic syncing and dependency management.\n\nWorkflow:\n1. Records current commit hash (for detecting changes)\n2. Switches to target branch if needed (requires clean workspace)\n3. Pulls latest changes from remote (skipped for local-only repos)\n4. Validates workspace is clean after pull\n5. Auto-installs dependencies if `package.json` changed\n6. Imports `library_json` from `src/routes/library.ts`\n7. Creates `Library` and extracts dependency maps\n\nThis ensures repos are always in sync with their configured branch\nbefore being used by gitops commands.",
 								"throws": [
 									{
 										"type": "if",
-										"description": "workspace dirty, branch switch fails, install fails, or library.ts missing"
+										"description": "workspace dirty, branch switch fails, install fails, or `library.ts` missing"
 									}
 								],
 								"source_line": 73,
@@ -46394,7 +46411,7 @@
 										"name": "predict_next_version",
 										"kind": "variable",
 										"type_signature": "(options: {\n\t\trepo: LocalRepo;\n\t\tlog?: Logger;\n\t}) => Promise<Result<{version: string; bump_type: BumpType}, {message: string}> | null>",
-										"doc_comment": "Predicts the next version based on changesets.\nReturns null if no changesets found (expected, not an error).\nReturns error Result if changesets exist but can't be read/parsed."
+										"doc_comment": "Predicts the next version based on changesets.\nReturns null if no changesets found (expected, not an error).\nReturns error `Result` if changesets exist but can't be read/parsed."
 									}
 								]
 							},
@@ -46535,7 +46552,7 @@
 										"name": "build_package",
 										"kind": "variable",
 										"type_signature": "(options: {\n\t\trepo: LocalRepo;\n\t\tlog?: Logger;\n\t}) => Promise<Result<object, {message: string; output?: string}>>",
-										"doc_comment": "Builds a package using gro build."
+										"doc_comment": "Builds a package using `gro build`."
 									}
 								]
 							},
@@ -46657,7 +46674,7 @@
 								]
 							}
 						],
-						"module_comment": "Operations interfaces for dependency injection.\n\nThis is the core pattern enabling testability without mocks.\nAll side effects (git, npm, fs, process) are abstracted into interfaces.\n\n**Design principles:**\n- All operations accept a single `options` object parameter\n- All fallible operations return `Result` from `@fuzdev/fuz_util`\n- Never throw `Error` in operations - return `Result` with `ok: false`\n- Use `null` for expected \"not found\" cases (not errors)\n- Include `log?: Logger` in options where logging is useful\n\n**Production usage:**\n```typescript\nimport {default_gitops_operations} from './operations_defaults.js';\nconst result = await ops.git.current_branch_name({cwd: '/path'});\nif (!result.ok) {\n  throw new TaskError(result.message);\n}\nconst branch = result.value;\n```\n\n**Test usage:**\n```typescript\nconst mock_ops = create_mock_operations();\nconst result = await publish_repos(repos, {...options, ops: mock_ops});\n// Assert on result without any real git/npm calls\n```\n\nSee `operations_defaults.ts` for real implementations.\nSee test files (*.test.ts) for mock implementations."
+						"module_comment": "Operations interfaces for dependency injection.\n\nThis is the core pattern enabling testability without mocks.\nAll side effects (git, npm, fs, process) are abstracted into interfaces.\n\n**Design principles:**\n- All operations accept a single `options` object parameter\n- All fallible operations return `Result` from `@fuzdev/fuz_util`\n- Never throw `Error` in operations - return `Result` with `ok: false`\n- Use `null` for expected \"not found\" cases (not errors)\n- Include `log?: Logger` in options where logging is useful\n\n**Production usage:**\n```typescript\nimport {default_gitops_operations} from './operations_defaults.js';\nconst result = await ops.git.current_branch_name({cwd: '/path'});\nif (!result.ok) {\n  throw new TaskError(result.message);\n}\nconst branch = result.value;\n```\n\n**Test usage:**\n```typescript\nconst mock_ops = create_mock_operations();\nconst result = await publish_repos(repos, {...options, ops: mock_ops});\n// Assert on result without any real git/npm calls\n```\n\nSee `operations_defaults.ts` for real implementations.\nSee test files (`*.test.ts`) for mock implementations."
 					},
 					{
 						"path": "output_helpers.ts",
@@ -46703,11 +46720,11 @@
 							{
 								"name": "format_and_output",
 								"kind": "function",
-								"doc_comment": "Formats data and outputs to file or stdout based on options.\n\nSupports three formats:\n- stdout: Uses logger for colored/styled output (cannot use with --outfile)\n- json: Stringified JSON\n- markdown: Formatted markdown text",
+								"doc_comment": "Formats data and outputs to file or stdout based on options.\n\nSupports three formats:\n- stdout: Uses logger for colored/styled output (cannot use with `--outfile`)\n- json: Stringified JSON\n- markdown: Formatted markdown text",
 								"throws": [
 									{
 										"type": "if",
-										"description": "stdout format used with outfile, or if logger missing for stdout"
+										"description": "stdout format used with `outfile`, or if logger missing for stdout"
 									}
 								],
 								"source_line": 31,
@@ -46777,7 +46794,7 @@
 							{
 								"name": "DEFAULT_REPOS_DIR",
 								"kind": "variable",
-								"doc_comment": "Default repos directory relative to gitops config file.\nResolves to the parent of the directory with the config\n(e.g., ~/dev/repo/gitops.config.ts resolves to ~/dev/).",
+								"doc_comment": "Default repos directory relative to gitops config file.\nResolves to the parent of the directory with the config\n(e.g., `~/dev/repo/gitops.config.ts` resolves to `~/dev/`).",
 								"source_line": 11,
 								"type_signature": "\"..\""
 							}
@@ -46853,11 +46870,11 @@
 							{
 								"name": "run_preflight_checks",
 								"kind": "function",
-								"doc_comment": "Validates all requirements before publishing can proceed.\n\nPerforms comprehensive pre-flight validation:\n- Clean workspaces (100% clean required - no uncommitted changes)\n- Correct branch (usually main)\n- Changesets present (unless skip_changesets=true)\n- Builds successful (fail-fast to prevent broken state)\n- Git remote reachability\n- NPM authentication with username\n- NPM registry connectivity\n\nBuild validation runs BEFORE any publishing to prevent the scenario where\nversion is bumped but build fails, leaving repo in broken state.",
+								"doc_comment": "Validates all requirements before publishing can proceed.\n\nPerforms comprehensive pre-flight validation:\n- Clean workspaces (100% clean required - no uncommitted changes)\n- Correct branch (usually main)\n- Changesets present (unless `skip_changesets`=true)\n- Builds successful (fail-fast to prevent broken state)\n- Git remote reachability\n- NPM authentication with username\n- NPM registry connectivity\n\nBuild validation runs BEFORE any publishing to prevent the scenario where\nversion is bumped but build fails, leaving repo in broken state.",
 								"source_line": 65,
 								"type_signature": "({ repos, preflight_options, git_ops, npm_ops, build_ops, changeset_ops, }: RunPreflightChecksOptions): Promise<PreflightResult>",
 								"return_type": "Promise<PreflightResult>",
-								"return_description": "result with ok=false if any errors, plus warnings and detailed status",
+								"return_description": "result with `ok`=false if any errors, plus warnings and detailed status",
 								"parameters": [{"name": "__0", "type": "RunPreflightChecksOptions"}]
 							}
 						],
@@ -46894,7 +46911,7 @@
 								]
 							}
 						],
-						"module_comment": "Helper functions for publishing plan calculations.\n\nExtracted from publishing_plan.ts to reduce file size.",
+						"module_comment": "Helper functions for publishing plan calculations.\n\nExtracted from `publishing_plan.ts` to reduce file size.",
 						"dependencies": ["version_utils.ts"],
 						"dependents": ["publishing_plan.ts"]
 					},
@@ -47304,7 +47321,7 @@
 										"name": "config_path",
 										"type": "string | undefined",
 										"optional": true,
-										"description": "path to gitops.config.ts (defaults to `./gitops.config.ts`)"
+										"description": "path to `gitops.config.ts` (defaults to `./gitops.config.ts`)"
 									}
 								]
 							},
@@ -47323,7 +47340,7 @@
 							{
 								"name": "collect_repo_files",
 								"kind": "function",
-								"doc_comment": "Collect all files from walk_repo_files into an array.\nConvenience function for when you need all paths upfront.",
+								"doc_comment": "Collect all files from `walk_repo_files` into an array.\nConvenience function for when you need all paths upfront.",
 								"source_line": 207,
 								"type_signature": "(dir: string, options?: WalkOptions | undefined): Promise<string[]>",
 								"return_type": "Promise<string[]>",
@@ -47333,7 +47350,7 @@
 								]
 							}
 						],
-						"module_comment": "Generic repository operations for scripts that work across repos.\n\nProvides lightweight utilities for:\n- Getting repo paths from gitops config (without full git sync)\n- Walking files in repos with sensible exclusions\n- Common exclusion patterns for node/svelte projects\n\nFor full git sync/clone functionality, use `get_gitops_ready()` from gitops_task_helpers.",
+						"module_comment": "Generic repository operations for scripts that work across repos.\n\nProvides lightweight utilities for:\n- Getting repo paths from gitops config (without full git sync)\n- Walking files in repos with sensible exclusions\n- Common exclusion patterns for node/svelte projects\n\nFor full git sync/clone functionality, use `get_gitops_ready()` from `gitops_task_helpers`.",
 						"dependencies": ["gitops_config.ts", "gitops_constants.ts", "paths.ts"],
 						"dependents": ["gitops_run.task.ts"]
 					},
@@ -47343,7 +47360,7 @@
 							{
 								"name": "RepoJson",
 								"kind": "type",
-								"doc_comment": "Serialized repo data as stored in repos.ts (JSON).",
+								"doc_comment": "Serialized repo data as stored in `repos.ts` (JSON).",
 								"source_line": 14,
 								"type_signature": "RepoJson",
 								"properties": [
@@ -47363,7 +47380,7 @@
 							{
 								"name": "Repo",
 								"kind": "class",
-								"doc_comment": "Runtime repo with Library composition for package metadata.\n\nWraps a Library instance and adds GitHub-specific data (CI status, PRs).\nConvenience getters delegate to `this.library.*` for common properties.",
+								"doc_comment": "Runtime repo with `Library` composition for package metadata.\n\nWraps a `Library` instance and adds GitHub-specific data (CI status, PRs).\nConvenience getters delegate to `this.library.*` for common properties.",
 								"source_line": 26,
 								"members": [
 									{
@@ -47711,7 +47728,7 @@
 							{
 								"name": "normalize_version_for_comparison",
 								"kind": "function",
-								"doc_comment": "Normalizes version string for comparison.\n\nStrips prefixes (^, ~, >=) to get bare version number.\nHandles wildcards as-is. Used by needs_update to compare versions.",
+								"doc_comment": "Normalizes version string for comparison.\n\nStrips prefixes (^, ~, >=) to get bare version number.\nHandles wildcards as-is. Used by `needs_update` to compare versions.",
 								"examples": [
 									"```ts\nnormalize_version_for_comparison('^1.2.3') // '1.2.3'\n```",
 									"```ts\nnormalize_version_for_comparison('>=2.0.0') // '2.0.0'\n```",
@@ -47848,11 +47865,11 @@
 					"@fuzdev/blake3_wasm": "^0.1.0",
 					"@fuzdev/fuz_blog": "^0.24.1",
 					"@fuzdev/fuz_code": "^0.45.1",
-					"@fuzdev/fuz_css": "^0.57.0",
+					"@fuzdev/fuz_css": "^0.58.0",
 					"@fuzdev/fuz_mastodon": "^0.39.0",
-					"@fuzdev/fuz_ui": "^0.191.1",
+					"@fuzdev/fuz_ui": "^0.191.3",
 					"@fuzdev/fuz_util": "^0.55.0",
-					"@fuzdev/gro": "^0.197.1",
+					"@fuzdev/gro": "^0.197.2",
 					"@jridgewell/trace-mapping": "^0.3.31",
 					"@ryanatkn/eslint-config": "^0.10.1",
 					"@sveltejs/acorn-typescript": "^1.0.9",
@@ -47869,7 +47886,7 @@
 					"magic-string": "^0.30.21",
 					"prettier": "^3.7.4",
 					"prettier-plugin-svelte": "^3.5.1",
-					"svelte": "^5.54.0",
+					"svelte": "^5.55.0",
 					"svelte-check": "^4.4.5",
 					"svelte2tsx": "^0.7.52",
 					"tslib": "^2.8.1",
@@ -47932,7 +47949,7 @@
 				]
 			}
 		},
-		"check_runs": {"status": "completed", "conclusion": "failure"},
+		"check_runs": {"status": "completed", "conclusion": "success"},
 		"pull_requests": []
 	},
 	{
@@ -47978,12 +47995,12 @@
 				"engines": {"node": ">=22.15"},
 				"devDependencies": {
 					"@fuzdev/fuz_blog": "^0.24.1",
-					"@fuzdev/fuz_code": "^0.45.0",
-					"@fuzdev/fuz_css": "^0.55.0",
+					"@fuzdev/fuz_code": "^0.45.1",
+					"@fuzdev/fuz_css": "^0.58.0",
 					"@fuzdev/fuz_mastodon": "^0.39.0",
-					"@fuzdev/fuz_ui": "^0.189.0",
-					"@fuzdev/fuz_util": "^0.54.0",
-					"@fuzdev/gro": "^0.197.0",
+					"@fuzdev/fuz_ui": "^0.191.3",
+					"@fuzdev/fuz_util": "^0.55.0",
+					"@fuzdev/gro": "^0.197.2",
 					"@jridgewell/trace-mapping": "^0.3.31",
 					"@ryanatkn/eslint-config": "^0.10.1",
 					"@sveltejs/acorn-typescript": "^1.0.9",
@@ -47998,7 +48015,7 @@
 					"magic-string": "^0.30.21",
 					"prettier": "^3.7.4",
 					"prettier-plugin-svelte": "^3.4.1",
-					"svelte": "^5.49.1",
+					"svelte": "^5.55.0",
 					"svelte-check": "^4.3.5",
 					"svelte2tsx": "^0.7.47",
 					"tslib": "^2.8.1",
@@ -48303,12 +48320,12 @@
 				"devDependencies": {
 					"@fuzdev/fuz_blog": "^0.24.1",
 					"@fuzdev/fuz_code": "^0.45.1",
-					"@fuzdev/fuz_css": "^0.56.0",
+					"@fuzdev/fuz_css": "^0.58.0",
 					"@fuzdev/fuz_gitops": "^0.68.0",
 					"@fuzdev/fuz_mastodon": "^0.39.0",
-					"@fuzdev/fuz_ui": "^0.191.1",
-					"@fuzdev/fuz_util": "^0.54.0",
-					"@fuzdev/gro": "^0.197.1",
+					"@fuzdev/fuz_ui": "^0.191.3",
+					"@fuzdev/fuz_util": "^0.55.0",
+					"@fuzdev/gro": "^0.197.2",
 					"@jridgewell/trace-mapping": "^0.3.31",
 					"@prettier/plugin-xml": "^3.4.2",
 					"@ryanatkn/eslint-config": "^0.10.1",
@@ -48326,7 +48343,7 @@
 					"magic-string": "^0.30.21",
 					"prettier": "^3.7.4",
 					"prettier-plugin-svelte": "^3.5.1",
-					"svelte": "^5.54.0",
+					"svelte": "^5.55.0",
 					"svelte-check": "^4.4.5",
 					"svelte2tsx": "^0.7.52",
 					"tslib": "^2.8.1",
@@ -48422,10 +48439,10 @@
 				"engines": {"node": ">=22.15"},
 				"devDependencies": {
 					"@fuzdev/fuz_code": "^0.45.1",
-					"@fuzdev/fuz_css": "^0.56.0",
-					"@fuzdev/fuz_ui": "^0.191.1",
-					"@fuzdev/fuz_util": "^0.54.0",
-					"@fuzdev/gro": "^0.197.0",
+					"@fuzdev/fuz_css": "^0.58.0",
+					"@fuzdev/fuz_ui": "^0.191.3",
+					"@fuzdev/fuz_util": "^0.55.0",
+					"@fuzdev/gro": "^0.197.2",
 					"@jridgewell/trace-mapping": "^0.3.31",
 					"@ryanatkn/eslint-config": "^0.10.1",
 					"@sveltejs/acorn-typescript": "^1.0.9",
@@ -48440,7 +48457,7 @@
 					"magic-string": "^0.30.21",
 					"prettier": "^3.7.4",
 					"prettier-plugin-svelte": "^3.5.1",
-					"svelte": "^5.54.0",
+					"svelte": "^5.55.0",
 					"svelte-check": "^4.4.5",
 					"svelte2tsx": "^0.7.52",
 					"tslib": "^2.8.1",
