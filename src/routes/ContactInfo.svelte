@@ -3,7 +3,7 @@
 		>https://www.ryanatkn.com/</a
 	>
 	<h2 class="mb_xl2">contact me</h2>
-	<ul class="contact_info panel shade_00 shadow_xs py_md pr_md position:relative">
+	<ul class="contact-info panel shade_00 shadow_xs py_md pr_md position:relative">
 		<li>
 			<a class="u-email" href="mailto:mail@ryanatkn.com">mail@ryanatkn.com</a>
 		</li>
@@ -52,7 +52,7 @@
 </div>
 
 <style>
-	.contact_info {
+	.contact-info {
 		display: block;
 		max-width: initial;
 	}

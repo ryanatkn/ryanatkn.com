@@ -16,8 +16,8 @@
 	// these extra images hide the asymmetries of pixelated circles
 </script>
 
-<img class="img_2 pixelated" src={path} alt="" />
-<img class="img_3 pixelated" src={path} alt="" />
+<img class="img-2 pixelated" src={path} alt="" />
+<img class="img-3 pixelated" src={path} alt="" />
 <img class="pixelated" src={path} {alt} />
 
 <style>
@@ -32,12 +32,12 @@
 		transform-origin: center;
 		animation: rotating 1260s linear infinite;
 	}
-	.img_2 {
+	.img-2 {
 		position: absolute;
 		opacity: 0.62;
 		rotate: 55deg;
 	}
-	.img_3 {
+	.img-3 {
 		position: absolute;
 		opacity: 0.62;
 		rotate: -55deg;

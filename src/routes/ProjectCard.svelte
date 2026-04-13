@@ -36,7 +36,7 @@
 	const logo_data = $derived(logos[project.name]);
 </script>
 
-<div class="project_card">
+<div class="project-card">
 	<header class="title">
 		{@html project.title}
 		{#if project.glyph}{project.glyph}{/if}
@@ -77,7 +77,7 @@
 </div>
 
 <style>
-	.project_card {
+	.project-card {
 		max-width: var(--distance_sm);
 		background-color: var(--shade_00);
 		/* TODO review this pattern, maybe use elsewhere */
@@ -96,12 +96,6 @@
 		border-radius: var(--border_radius_xs);
 		margin-bottom: var(--space_lg);
 		padding: var(--space_md);
-	}
-	.logo {
-		width: var(--icon_size_xl);
-		height: var(--icon_size_xl);
-		padding-left: var(--space_sm);
-		flex-shrink: 0;
 	}
 	.title {
 		font-size: var(--font_size_lg);

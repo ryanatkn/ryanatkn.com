@@ -19,7 +19,7 @@ const config: CreateGitopsConfig = () => {
 				repo_url: 'https://github.com/ryanatkn/ryanatkn.com',
 				branch: 'main',
 			},
-			'https://github.com/fuzdev/fuz.dev',
+			// 'https://github.com/fuzdev/fuz.dev',
 		],
 	};
 };
