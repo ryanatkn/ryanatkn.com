@@ -1281,6 +1281,10 @@ a.chip {
 .ml_md {
 	margin-left: var(--space_md);
 }
+.mx_auto {
+	margin-left: auto;
+	margin-right: auto;
+}
 .gap_xs2 {
 	gap: var(--space_xs2);
 }
