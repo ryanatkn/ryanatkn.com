@@ -18,7 +18,7 @@ export const projects: Array<ProjectInfo> = [
 		name: 'zzz',
 		repo: '@fuzdev/zzz',
 		title: '<a href="https://www.zzz.software/">Zzz</a>',
-		description: 'local-first forge for power users and developers',
+		description: 'software garage for power users and devs',
 		subtitle: '<a class="chip" href="https://github.com/fuzdev/zzz">source</a>',
 		tagline: 'nice web things',
 		glyph: '💤',

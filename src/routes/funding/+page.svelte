@@ -64,7 +64,7 @@
 			</p>
 			<ul>
 				<li>
-					<a href="https://www.zzz.software/">Zzz</a> - local-first forge for power users and developers
+					<a href="https://www.zzz.software/">Zzz</a> - software garage for power users and devs
 				</li>
 				<li>
 					<a href="https://css.fuz.dev/">fuz_css</a> - CSS framework and design system
