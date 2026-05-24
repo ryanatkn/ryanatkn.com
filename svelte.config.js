@@ -27,8 +27,6 @@ export default {
 				],
 			}),
 		},
-		version: {
-			name: execSync('git rev-parse HEAD').toString().trim(),
-		},
+		version: {name: execSync('git rev-parse HEAD').toString().trim()},
 	},
 };
