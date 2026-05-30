@@ -3,7 +3,10 @@ import type {CreateGitopsConfig} from '@fuzdev/fuz_gitops/gitops_config.js';
 const config: CreateGitopsConfig = () => {
 	return {
 		repos: [
-			'https://github.com/fuzdev/zzz',
+			// {
+			// 	repo_url: 'https://github.com/fuzdev/zzz',
+			// 	branch: 'fuz-app',
+			// },
 			'https://github.com/fuzdev/fuz_css',
 			'https://github.com/fuzdev/fuz_ui',
 			'https://github.com/fuzdev/gro',
