@@ -104,12 +104,27 @@ const projects_metadata: Array<ProjectMetadata> = [
 		subtitle: `<a class="chip" href="https://github.com/fuzdev/gro">source</a> <a class="chip" href="https://www.npmjs.com/package/@fuzdev/gro">npm</a>`,
 	},
 	{
+		name: 'svelte-docinfo',
+		repo: 'svelte-docinfo',
+		title: '<a href="https://svelte-docinfo.fuz.dev/">svelte-docinfo</a>',
+		description:
+			'static analysis for <a href="https://typescriptlang.org/">TypeScript</a> and <a href="https://svelte.dev/">Svelte</a>',
+		subtitle: `<a class="chip" href="https://github.com/fuzdev/svelte-docinfo">source</a> <a class="chip" href="https://www.npmjs.com/package/svelte-docinfo">npm</a>`,
+	},
+	{
 		name: 'fuz_util',
 		repo: '@fuzdev/fuz_util',
 		title: '<a href="https://github.com/fuzdev/fuz_util">fuz_util</a>',
 		description: 'utility belt for JS',
 		subtitle:
 			'<a class="chip" href="https://github.com/fuzdev/fuz_util">source</a> <a class="chip" href="https://www.npmjs.com/package/@fuzdev/fuz_util">npm</a>',
+	},
+	{
+		name: 'fuz_app',
+		repo: '@fuzdev/fuz_app',
+		title: '<a href="https://app.fuz.dev/">fuz_app</a>',
+		description: 'fullstack app library with sessions, auth, and db',
+		subtitle: `<a class="chip" href="https://github.com/fuzdev/fuz_app">source</a> <a class="chip" href="https://www.npmjs.com/package/@fuzdev/fuz_app">npm</a>`,
 	},
 	{
 		name: 'cosmicplayground',
@@ -137,6 +152,6 @@ const projects: Array<ProjectInfo> = projects_metadata.map((project_metadata) =>
 		logo = project_metadata.logo, // TODO @many this is a hack because cosmicplayground hasn't been deployed
 		logo_alt,
 		glyph,
-	} = repo.library_json.package_json;
+	} = repo.library_json.pkg_json;
 	return {description, homepage, tagline, logo, logo_alt, glyph, ...project_metadata};
 });

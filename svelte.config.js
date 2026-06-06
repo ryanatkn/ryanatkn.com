@@ -22,7 +22,10 @@ export default {
 					// Mastodon comments for https://hci.social/@ryanatkn
 					{
 						'connect-src': ['https://hci.social/'],
-						'img-src': ['https://storage.googleapis.com/hci-social-storage/'],
+						'img-src': [
+							'https://storage.googleapis.com/hci-social-storage/',
+							'https://www.cosmicplayground.org/',
+						],
 					},
 				],
 			}),

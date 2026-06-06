@@ -36,9 +36,8 @@
 				and <a href="https://github.com/ryanatkn">@ryanatkn</a>
 			</aside>
 			<p>
-				I'm working on several projects, but the main one is Fuz, "a zippy stack for autonomy", see <a
-					href="https://www.fuz.dev/">fuz.dev</a
-				>
+				I'm working on several projects, but the main one is Fuz, "a zippy stack for human agency",
+				see <a href="https://www.fuz.dev/">fuz.dev</a>
 				and
 				<a href="https://github.com/fuzdev">github.com/fuzdev</a>. It's a set of tools to build
 				websites and powerful systems, and direct computers in general. It's built for user control,
@@ -54,9 +53,9 @@
 			<p>
 				I think my independence allows me to make software with a different set of values from the
 				norm, not a lucrative path but I find it going interesting places, and I appreciate the
-				creative freedom (there's a reason "autonomy" is in fuz.dev's description). So I like what
-				I'm doing, and I want noncommerical projects like Fuz to exist, but I'm still figuring out
-				how to make it sustainable and more collaborative.
+				creative freedom (there's a reason "human agency" is in fuz.dev's description). So I like
+				what I'm doing, and I want noncommerical projects like Fuz to exist, but I'm still figuring
+				out how to make it sustainable and more collaborative.
 			</p>
 			<p>
 				Today my attention is on these projects, parts of a stack I plan to use to make other
