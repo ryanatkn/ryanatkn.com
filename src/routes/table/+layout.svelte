@@ -21,7 +21,8 @@
 		),
 	);
 
-	library_context.set(new Library(library_json));
+	const library = new Library(library_json);
+	library_context.set(() => library);
 </script>
 
 <div class="width:100% flex:1">
