@@ -20,6 +20,8 @@ const config: CreateGitopsConfig = () => {
 			'https://github.com/fuzdev/svelte-docinfo',
 			'https://github.com/fuzdev/fuz_app',
 			'https://github.com/fuzdev/fuz_docs',
+			'https://github.com/fuzdev/tsv',
+			'https://github.com/fuzdev/tsv.fuz.dev',
 			'https://github.com/ryanatkn/webdevladder.net',
 			'https://github.com/ryanatkn/cosmicplayground',
 			{
