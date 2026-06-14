@@ -37,7 +37,7 @@
     "@fuzdev/fuz_blog": "^0.28.0",
     "@fuzdev/fuz_code": "^0.46.1",
     "@fuzdev/fuz_css": "^0.63.2",
-    "@fuzdev/fuz_gitops": "^0.76.0",
+    "@fuzdev/fuz_gitops": "^0.77.0",
     "@fuzdev/fuz_mastodon": "^0.43.0",
     "@fuzdev/fuz_ui": "^0.205.1",
     "@fuzdev/fuz_util": "^0.65.1",

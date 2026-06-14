@@ -23,7 +23,6 @@ const config: CreateGitopsConfig = () => {
 			'https://github.com/fuzdev/tsv',
 			'https://github.com/fuzdev/tsv.fuz.dev',
 			'https://github.com/ryanatkn/webdevladder.net',
-			'https://github.com/ryanatkn/cosmicplayground',
 			{
 				repo_url: 'https://github.com/ryanatkn/ryanatkn.com',
 				branch: 'main',
