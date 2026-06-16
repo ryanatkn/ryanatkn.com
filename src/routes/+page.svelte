@@ -1,13 +1,13 @@
 <script lang="ts">
 	import Breadcrumb from '@fuzdev/fuz_ui/Breadcrumb.svelte';
 
-	import Favicon from '$routes/Favicon.svelte';
-	import GitopsMenu from '$routes/GitopsMenu.svelte';
-	import PageLinks from '$routes/PageLinks.svelte';
-	import ContactInfo from '$routes/ContactInfo.svelte';
-	import Me from '$routes/Me.svelte';
-	import ProjectCard from '$routes/ProjectCard.svelte';
-	import {projects} from '$routes/projects.ts';
+	import Favicon from './Favicon.svelte';
+	import GitopsMenu from './GitopsMenu.svelte';
+	import PageLinks from './PageLinks.svelte';
+	import ContactInfo from './ContactInfo.svelte';
+	import Me from './Me.svelte';
+	import ProjectCard from './ProjectCard.svelte';
+	import {projects} from './projects.ts';
 </script>
 
 <svelte:head>

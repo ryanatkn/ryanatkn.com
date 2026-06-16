@@ -1,12 +1,12 @@
 <script lang="ts">
 	import {resolve} from '$app/paths';
 	import Svg from '@fuzdev/fuz_ui/Svg.svelte';
-	import {logo_github} from '@fuzdev/fuz_ui/logos.js';
+	import {logo_github} from '@fuzdev/fuz_ui/logos.ts';
 	import Card from '@fuzdev/fuz_ui/Card.svelte';
 	import Breadcrumb from '@fuzdev/fuz_ui/Breadcrumb.svelte';
 
 	import PageLinks from '$routes/PageLinks.svelte';
-	import PatreonLogo from '$routes/funding/PatreonLogo.svelte'; // TODO move to fuz
+	import PatreonLogo from './PatreonLogo.svelte'; // TODO move to fuz
 	import Favicon from '$routes/Favicon.svelte';
 </script>
 

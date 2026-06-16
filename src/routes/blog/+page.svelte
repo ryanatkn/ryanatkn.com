@@ -1,8 +1,8 @@
 <script lang="ts">
 	import {asset, resolve} from '$app/paths';
 	import FeedItemDate from '@fuzdev/fuz_blog/FeedItemDate.svelte';
-	import {blog_feed_context} from '@fuzdev/fuz_blog/blog.js';
-	import {to_pathname} from '@fuzdev/fuz_blog/util.js';
+	import {blog_feed_context} from '@fuzdev/fuz_blog/blog.ts';
+	import {to_pathname} from '@fuzdev/fuz_blog/util.ts';
 
 	import PageLinks from '$routes/PageLinks.svelte';
 

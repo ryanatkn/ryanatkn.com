@@ -1,8 +1,8 @@
 import type {Gen} from '@fuzdev/gro';
 import {resolve} from '$app/paths';
 
-import type {ProjectInfo} from '$routes/project.ts';
-import {repos_json} from '$routes/repos.ts';
+import type {ProjectInfo} from './project.ts';
+import {repos_json} from './repos.ts';
 
 /**
  * Generating `projects.ts` to avoid loading the whole `repos.ts` on the homepage.

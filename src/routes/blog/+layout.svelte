@@ -5,7 +5,7 @@
 	import {
 		MastodonCache,
 		mastodon_cache_context,
-	} from '@fuzdev/fuz_mastodon/mastodon_cache.svelte.js';
+	} from '@fuzdev/fuz_mastodon/mastodon_cache.svelte.ts';
 
 	import Favicon from '$routes/Favicon.svelte';
 
@@ -18,7 +18,7 @@
 	if (DEV) {
 		mastodon_cache_context.set(
 			new MastodonCache(
-				async () => (await import('./mastodon_dev_cache_data.js')).mastodon_dev_cache_data,
+				async () => (await import('./mastodon_dev_cache_data.ts')).mastodon_dev_cache_data,
 			),
 		);
 		// To get the latest cache data, add these lines:

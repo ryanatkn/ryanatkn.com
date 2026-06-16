@@ -1,1 +1,1 @@
-export * from '@fuzdev/fuz_blog/blog.gen.js';
+export * from '@fuzdev/fuz_blog/blog.gen.ts';

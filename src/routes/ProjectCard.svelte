@@ -1,17 +1,17 @@
 <script lang="ts">
 	import Svg from '@fuzdev/fuz_ui/Svg.svelte';
-	import type {SvgData} from '@fuzdev/fuz_ui/svg.js';
+	import type {SvgData} from '@fuzdev/fuz_ui/svg.ts';
 	import {
 		logo_fuz_css,
 		logo_fuz,
 		logo_fuz_ui,
 		logo_gro,
 		logo_fuz_util,
-	} from '@fuzdev/fuz_ui/logos.js';
-	import {ensure_end, strip_start} from '@fuzdev/fuz_util/string.js';
+	} from '@fuzdev/fuz_ui/logos.ts';
+	import {ensure_end, strip_start} from '@fuzdev/fuz_util/string.ts';
 
-	import type {ProjectInfo} from '$routes/project.ts';
-	import {logo_zzz, logo_webdevladder} from '$routes/logos.js';
+	import type {ProjectInfo} from './project.ts';
+	import {logo_zzz, logo_webdevladder} from './logos.ts';
 
 	// TODO probably upstream to fuz_library after changing it to `PackageMeta` or w/e
 

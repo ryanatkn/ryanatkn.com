@@ -1,9 +1,9 @@
 <script lang="ts">
 	import type {SvelteHTMLElements} from 'svelte/elements';
 
-	import RotatingHeaderLogo from '$routes/RotatingHeaderLogo.svelte';
-	import PrimaryLink from '$routes/PrimaryLink.svelte';
-	import {LOGO_ALT, LOGO_SRC} from '$routes/project.ts';
+	import RotatingHeaderLogo from './RotatingHeaderLogo.svelte';
+	import PrimaryLink from './PrimaryLink.svelte';
+	import {LOGO_ALT, LOGO_SRC} from './project.ts';
 
 	const {
 		src = LOGO_SRC,

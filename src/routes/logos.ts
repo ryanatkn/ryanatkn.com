@@ -1,4 +1,4 @@
-import type {SvgData} from '@fuzdev/fuz_ui/svg.js';
+import type {SvgData} from '@fuzdev/fuz_ui/svg.ts';
 
 // duplicated from github.com/ryanatkn/webdevladder.net
 export const logo_webdevladder = {

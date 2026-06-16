@@ -1,7 +1,7 @@
 <script lang="ts">
 	import {asset} from '$app/paths';
 
-	import {LOGO_ALT, LOGO_SRC} from '$routes/project.ts';
+	import {LOGO_ALT, LOGO_SRC} from './project.ts';
 
 	const {
 		src = LOGO_SRC,

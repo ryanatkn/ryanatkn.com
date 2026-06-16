@@ -1,5 +1,5 @@
 <script lang="ts" module>
-	import type {BlogPostData} from '@fuzdev/fuz_blog/blog.js';
+	import type {BlogPostData} from '@fuzdev/fuz_blog/blog.ts';
 
 	export const post = {
 		title: 'Modeling virtual social spaces: in this house we post cat pics on Saturday',
@@ -22,7 +22,7 @@
 	// TODO cache for Mastodon
 	// import {onMount} from 'svelte';
 	// import {DEV} from 'esm-env';
-	// import type {FetchValueCache} from '@fuzdev/fuz_util/fetch.js';
+	// import type {FetchValueCache} from '@fuzdev/fuz_util/fetch.ts';
 	// let cache: FetchValueCache | undefined | null = $state();
 	// onMount(async () => {
 	// 	if (DEV) {

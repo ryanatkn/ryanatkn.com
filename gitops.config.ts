@@ -1,4 +1,4 @@
-import type {CreateGitopsConfig} from '@fuzdev/fuz_gitops/gitops_config.js';
+import type {CreateGitopsConfig} from '@fuzdev/fuz_gitops/gitops_config.ts';
 
 const config: CreateGitopsConfig = () => {
 	return {
