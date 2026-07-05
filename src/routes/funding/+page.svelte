@@ -30,10 +30,8 @@
 				donate here to sustain the effort.
 			</p>
 			<aside>
-				starring projects on GitHub also helps (not for any reasons I chose but
-				the attention upvote is a valued signal for many)  💫 <a
-					href="https://github.com/fuzdev">@fuzdev</a
-				>
+				starring projects on GitHub also helps (not for any reasons I chose but the attention upvote
+				is a valued signal for many) 💫 <a href="https://github.com/fuzdev">@fuzdev</a>
 				and <a href="https://github.com/ryanatkn">@ryanatkn</a>
 			</aside>
 			<p>
@@ -41,22 +39,14 @@
 				see <a href="https://www.fuz.dev/">fuz.dev</a>
 				and
 				<a href="https://github.com/fuzdev">github.com/fuzdev</a>. It's a set of tools to build
-				websites and powerful systems, and direct computers in general. It's built for user control,
+				websites and powerful systems, and direct computers in general. It values user control,
 				security, and interoperability, and idealizes an integrated system of a particular taste.
-				(TypeScript/Svelte/Rust/Postgres/Linux)
+				(Rust/TypeScript/Svelte/Postgres/Linux)
 			</p>
 			<p>
 				My plan for Fuz and its related projects is to have them stewarded by a nonprofit, but that
-				would require a community to form first, people using the software. Before LLMs I thought a
-				community forming was a likely outcome, but who knows any more! As the vibe coded projects
-				become viable, users will have so very many alternatives to choose from ¯\_(ツ)_/¯
-			</p>
-			<p>
-				I think my independence allows me to make software with a different set of values from the
-				norm, not a lucrative path but I find it going interesting places, and I appreciate the
-				creative freedom (there's a reason "human agency" is in fuz.dev's description). So I like
-				what I'm doing, and I want noncommerical projects like Fuz to exist, but I'm still figuring
-				out how to make it sustainable and more collaborative.
+				would require a community to form first, people using the software. In the meantime Fuz will
+				keep its autonomy and centered on its values.
 			</p>
 			<p>
 				Today my attention is on these projects, parts of a stack I plan to use to make other
