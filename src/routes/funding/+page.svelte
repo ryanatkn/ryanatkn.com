@@ -30,7 +30,8 @@
 				donate here to sustain the effort.
 			</p>
 			<aside>
-				Stars on GitHub are also a helpful show of appreciation 💫 <a
+				starring projects on GitHub also helps (not for any reasons I chose but
+				the attention upvote is a valued signal for many)  💫 <a
 					href="https://github.com/fuzdev">@fuzdev</a
 				>
 				and <a href="https://github.com/ryanatkn">@ryanatkn</a>
