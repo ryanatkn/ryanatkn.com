@@ -105,8 +105,8 @@
 					href="https://www.patreon.com/ryanatkn"
 					style:--link_color="var(--color_d_50)"
 					><PatreonLogo size="var(--font_size_md)" fill="var(--color_d_50)" inline /> Patreon</a
-				> helps me a lot for the signal it sends. Rewards are intrinsic only, no donor perks (which get
-				complicated, especially socially).
+				> helps me a lot for the signal it sends. Rewards are intrinsic only, no donor perks, except maybe
+				a reminder to smile.
 			</p>
 			<p>
 				I hope to continue having fun building useful software, and to find users and collaborators
