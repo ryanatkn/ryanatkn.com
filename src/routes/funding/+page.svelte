@@ -40,7 +40,7 @@
 			</p>
 			<p>
 				My plan for Fuz and its related projects is to have them stewarded by a nonprofit, either
-				forming or joining one, but that's steps ahead of a community forming first.
+				forming or joining one, if enough users like you will this to happen.
 			</p>
 			<p>
 				Today my attention is on these projects, parts of a stack I plan to use to make other
