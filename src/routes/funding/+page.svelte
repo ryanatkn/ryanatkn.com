@@ -25,51 +25,31 @@
 		<div class="panel shade_00 p_xl shadow_xs">
 			<div class="float:right icon_size_lg">🪶</div>
 			<p>
-				Hi thank you for reading. I'm an independent software developer and this is an attempt to
-				fund my work on free and open source software. If you enjoy my output and want more of it,
-				donate here to sustain the effort.
+				I'm an independent software developer and this is an attempt to fund my work on free and
+				open source software, a full-time endeavor since 2019. If you enjoy my output and want more
+				of it, donate here to sustain the effort.
 			</p>
-			<aside>
-				starring projects on GitHub also helps (not for any reasons I chose but the attention upvote
-				is a valued signal for many) 💫 <a href="https://github.com/fuzdev">@fuzdev</a>
-				and <a href="https://github.com/ryanatkn">@ryanatkn</a>
-			</aside>
 			<p>
 				I'm working on several projects, but the main one is Fuz, "a zippy stack for human agency",
-				see <a href="https://www.fuz.dev/">fuz.dev</a>
+				online at <a href="https://www.fuz.dev/">fuz.dev</a>
 				and
-				<a href="https://github.com/fuzdev">github.com/fuzdev</a>. It's a set of tools to build
-				websites and powerful systems, and direct computers in general. It values user control,
-				security, and interoperability, and idealizes an integrated system of a particular taste.
-				(Rust/TypeScript/Svelte/Postgres/Linux)
+				<a href="https://github.com/fuzdev">github.com/fuzdev</a>. It's a set of tools, libraries,
+				and apps for easily building websites and powerful native systems. Fuz values user control,
+				security, and interoperability, and idealizes an integrated system of a particular taste,
+				centered on Rust, TypeScript, CSS, and Svelte.
 			</p>
 			<p>
-				My plan for Fuz and its related projects is to have them stewarded by a nonprofit, but that
-				would require a community to form first, people using the software. In the meantime Fuz will
-				keep its autonomy and centered on its values.
+				My plan for Fuz and its related projects is to have them stewarded by a nonprofit, either
+				forming or joining one, but that's steps ahead of a community forming first.
 			</p>
 			<p>
 				Today my attention is on these projects, parts of a stack I plan to use to make other
-				websites and apps:
+				websites and apps.
 			</p>
-			<ul>
-				<li>
-					<a href="https://www.zzz.software/">Zzz</a> - software garage for power users and devs
-				</li>
-				<li>
-					<a href="https://css.fuz.dev/">fuz_css</a> - CSS framework and design system
-				</li>
-				<li><a href="https://ui.fuz.dev/">fuz_ui</a> - Svelte UI library</li>
-				<li>several unreleased projects coming soon</li>
-			</ul>
 			<p>
-				More on my <a href="https://github.com/ryanatkn">GitHub profile</a> and
-				<a href="https://www.ryanatkn.com/tree">website</a>. I'm also communicating about my
-				projects and process with <a href="https://www.webdevladder.net/">webdevladder.net</a>, and
-				I shared more plans in the blog post
-				<a href="https://www.webdevladder.net/blog/introducing-webdevladder"
-					>"Introducing Webdevladder"</a
-				>.
+				On GitHub I'm <a href="https://github.com/ryanatkn">@ryanatkn</a> and I manage
+				<a href="https://github.com/fuzdev">@fuzdev</a>, and I blog on this website and
+				<a href="https://www.webdevladder.net/">webdevladder.net</a>.
 			</p>
 		</div>
 	</section>
@@ -127,8 +107,8 @@
 					href="https://www.patreon.com/ryanatkn"
 					style:--link_color="var(--color_d_50)"
 					><PatreonLogo size="var(--font_size_md)" fill="var(--color_d_50)" inline /> Patreon</a
-				> helps me a lot for the signal it sends. No rewards yet, but one possiblity is donors will get
-				access to websites I build on camera, maybe in 2026.
+				> helps me a lot for the signal it sends. Rewards are intrinsic only, no donor perks (which get
+				complicated, especially socially).
 			</p>
 			<p>
 				I hope to continue having fun building useful software, and to find users and collaborators
