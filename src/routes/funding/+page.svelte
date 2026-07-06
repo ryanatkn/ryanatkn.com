@@ -74,7 +74,9 @@
 		<div class="panel shade_00 p_xl shadow_xs">
 			<p>
 				In 2011 I began my first job as a professional web developer focusing on JS, and many years
-				later I'm still enjoying it, programming both as a profession and hobby. In 2019 I started <a
+				later I'm still enjoying it, programming both as a profession and hobby. I posted a number
+				of projects to GitHub over the years, and in 2015 learned Rust, but didn't get very far
+				making my dream games. In 2019 I started <a
 					href="https://github.com/ryanatkn?tab=overview&from=2019-12-01&to=2019-12-31"
 					>publishing most of my code</a
 				>
