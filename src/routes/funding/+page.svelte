@@ -40,11 +40,7 @@
 			</p>
 			<p>
 				My plan for Fuz and its related projects is to have them stewarded by a nonprofit, either
-				forming or joining one, if enough users like you will this to happen.
-			</p>
-			<p>
-				Today my attention is on these projects, parts of a stack I plan to use to make other
-				websites and apps.
+				forming or joining one, if enough users like you will it into being.
 			</p>
 			<p>
 				On GitHub I'm <a href="https://github.com/ryanatkn">@ryanatkn</a> and I manage
