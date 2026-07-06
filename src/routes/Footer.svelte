@@ -3,7 +3,7 @@
 
 	import RotatingFooterLogo from './RotatingFooterLogo.svelte';
 	import PrimaryLink from './PrimaryLink.svelte';
-	import {LOGO_ALT, LOGO_SRC} from './project.ts';
+	import {LOGO_ALT, LOGO_SRC} from '$lib/project.ts';
 
 	const {
 		src = LOGO_SRC,

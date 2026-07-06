@@ -1,17 +1,6 @@
 <script lang="ts">
-	import Svg from '@fuzdev/fuz_ui/Svg.svelte';
-	import type {SvgData} from '@fuzdev/fuz_ui/svg.ts';
-	import {
-		logo_fuz_css,
-		logo_fuz,
-		logo_fuz_ui,
-		logo_gro,
-		logo_fuz_util,
-	} from '@fuzdev/fuz_ui/logos.ts';
-	import {ensure_end, strip_start} from '@fuzdev/fuz_util/string.ts';
-
-	import type {ProjectInfo} from './project.ts';
-	import {logo_zzz, logo_webdevladder} from './logos.ts';
+	import type {ProjectInfo} from '$lib/project.ts';
+	import ProjectLogo from './ProjectLogo.svelte';
 
 	// TODO probably upstream to fuz_library after changing it to `PackageMeta` or w/e
 
@@ -23,18 +12,6 @@
 	}: {
 		project: ProjectInfo;
 	} = $props();
-
-	const logos: Record<string, SvgData | undefined> = {
-		zzz: logo_zzz,
-		fuz: logo_fuz,
-		fuz_css: logo_fuz_css,
-		fuz_ui: logo_fuz_ui,
-		fuz_util: logo_fuz_util,
-		gro: logo_gro,
-		'webdevladder.net': logo_webdevladder,
-	};
-
-	const logo_data = $derived(logos[project.name]);
 </script>
 
 <div class="project-card">
@@ -56,24 +33,7 @@
 				<p class="display:flex flex-wrap:wrap gap_xs">{@html project.subtitle}</p>
 			{/if}
 		</div>
-		{#if logo_data || project.logo}
-			<div
-				class="icon ml_xs"
-				style:min-width="var(--icon_size_xl)"
-				style:min-height="var(--icon_size_xl)"
-			>
-				{#if logo_data}
-					<Svg data={logo_data} />
-				{:else if project.homepage && project.logo}
-					<img
-						src="{ensure_end(project.homepage, '/')}{strip_start(project.logo, '/')}"
-						alt={project.logo_alt ?? `icon for ${project.name}`}
-						class={project.logo_classes}
-						style={project.logo_style}
-					/>
-				{/if}
-			</div>
-		{/if}
+		<ProjectLogo {project} />
 	</div>
 </div>
 
