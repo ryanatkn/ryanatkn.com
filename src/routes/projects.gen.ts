@@ -53,34 +53,6 @@ const projects_metadata: Array<ProjectMetadata> = [
 		title: '<a href="https://github.com/ryanatkn">github.com/ryanatkn</a>',
 		description: 'my free and open source software',
 	},
-	// {
-	// 	name: 'spiderspace',
-	//  repo: '@ryanatkn/spiderspace.org',
-	// 	title: '<a href="https://www.spiderspace.org/">spiderspace.org</a>',
-	// 	description: 'community website with a YouTube channel about building it',
-	// 	subtitle: `<a class="chip" href="https://www.youtube.com/@spiderspace_8000">YouTube</a> <a class="chip" href="https://github.com/ryanatkn/spiderspace.org">source</a>`,
-	// },
-	{
-		// TODO @many hack for zzz, fix after adding to gitops
-		name: 'zzz',
-		repo: '@fuzdev/zzz',
-		title: '<a href="https://www.zzz.software/">Zzz</a>',
-		description: 'software garage for power users and devs',
-		subtitle: `<a class="chip" href="https://github.com/fuzdev/zzz">source</a>`, // TODO publish zzz - <a class="chip" href="https://www.npmjs.com/package/@fuzdev/zzz">npm</a>
-		// TODO @many hack for zzz, fix after adding to gitops
-		tagline: 'nice web things',
-		glyph: '💤',
-		logo: 'logo.svg',
-		logo_alt: "three sleepy z's",
-	},
-	{
-		name: 'webdevladder.net',
-		repo: 'webdevladder.net',
-		title: '<a href="https://www.webdevladder.net/">webdevladder.net</a>',
-		description:
-			'a YouTube channel and blog for realworld webdev with <a href="https://typescriptlang.org/">TypeScript</a> and <a href="https://svelte.dev/">Svelte</a>',
-		subtitle: `<a class="chip" href="https://www.youtube.com/@webdevladder">channel</a> <a class="chip" href="https://www.youtube.com/@webdevladder_vods">vods</a> <a class="chip" href="https://github.com/ryanatkn/webdevladder.net">source</a>`,
-	},
 	{
 		name: 'fuz_css',
 		repo: '@fuzdev/fuz_css',
@@ -127,6 +99,27 @@ const projects_metadata: Array<ProjectMetadata> = [
 		subtitle: `<a class="chip" href="https://github.com/fuzdev/fuz_app">source</a> <a class="chip" href="https://www.npmjs.com/package/@fuzdev/fuz_app">npm</a>`,
 	},
 	{
+		// TODO @many hack for zzz, fix after adding to gitops
+		name: 'zzz',
+		repo: '@fuzdev/zzz',
+		title: '<a href="https://www.zzz.software/">Zzz</a>',
+		description: 'software garage for power users and devs',
+		subtitle: `<a class="chip" href="https://github.com/fuzdev/zzz">source</a>`, // TODO publish zzz - <a class="chip" href="https://www.npmjs.com/package/@fuzdev/zzz">npm</a>
+		// TODO @many hack for zzz, fix after adding to gitops
+		tagline: 'nice web things',
+		glyph: '💤',
+		logo: 'logo.svg',
+		logo_alt: "three sleepy z's",
+	},
+	{
+		name: 'webdevladder.net',
+		repo: 'webdevladder.net',
+		title: '<a href="https://www.webdevladder.net/">webdevladder.net</a>',
+		description:
+			'a YouTube channel and blog for realworld webdev with <a href="https://typescriptlang.org/">TypeScript</a> and <a href="https://svelte.dev/">Svelte</a>',
+		subtitle: `<a class="chip" href="https://www.youtube.com/@webdevladder">channel</a> <a class="chip" href="https://www.youtube.com/@webdevladder_vods">vods</a> <a class="chip" href="https://github.com/ryanatkn/webdevladder.net">source</a>`,
+	},
+	{
 		name: 'cosmicplayground',
 		repo: '@ryanatkn/cosmicplayground', // TODO change to `cosmicplayground.org`
 		homepage: 'https://www.cosmicplayground.org/',
@@ -137,6 +130,13 @@ const projects_metadata: Array<ProjectMetadata> = [
 		logo_style: 'border-radius: 50%',
 		logo: 'favicon.png', // TODO @many this is a hack because cosmicplayground hasn't been deployed
 	},
+	// {
+	// 	name: 'spiderspace',
+	//  repo: '@ryanatkn/spiderspace.org',
+	// 	title: '<a href="https://www.spiderspace.org/">spiderspace.org</a>',
+	// 	description: 'community website with a YouTube channel about building it',
+	// 	subtitle: `<a class="chip" href="https://www.youtube.com/@spiderspace_8000">YouTube</a> <a class="chip" href="https://github.com/ryanatkn/spiderspace.org">source</a>`,
+	// },
 ];
 
 const projects: Array<ProjectInfo> = projects_metadata.map((project_metadata) => {

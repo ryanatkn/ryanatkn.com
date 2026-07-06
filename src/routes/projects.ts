@@ -15,26 +15,6 @@ export const projects: Array<ProjectInfo> = [
 		description: 'my free and open source software',
 	},
 	{
-		name: 'zzz',
-		repo: '@fuzdev/zzz',
-		title: '<a href="https://www.zzz.software/">Zzz</a>',
-		description: 'software garage for power users and devs',
-		subtitle: '<a class="chip" href="https://github.com/fuzdev/zzz">source</a>',
-		tagline: 'nice web things',
-		glyph: '💤',
-		logo: 'logo.svg',
-		logo_alt: "three sleepy z's",
-	},
-	{
-		name: 'webdevladder.net',
-		repo: 'webdevladder.net',
-		title: '<a href="https://www.webdevladder.net/">webdevladder.net</a>',
-		description:
-			'a YouTube channel and blog for realworld webdev with <a href="https://typescriptlang.org/">TypeScript</a> and <a href="https://svelte.dev/">Svelte</a>',
-		subtitle:
-			'<a class="chip" href="https://www.youtube.com/@webdevladder">channel</a> <a class="chip" href="https://www.youtube.com/@webdevladder_vods">vods</a> <a class="chip" href="https://github.com/ryanatkn/webdevladder.net">source</a>',
-	},
-	{
 		name: 'fuz_css',
 		repo: '@fuzdev/fuz_css',
 		title: '<a href="https://css.fuz.dev/">fuz_css</a>',
@@ -83,6 +63,26 @@ export const projects: Array<ProjectInfo> = [
 		description: 'fullstack app library with sessions, auth, and db',
 		subtitle:
 			'<a class="chip" href="https://github.com/fuzdev/fuz_app">source</a> <a class="chip" href="https://www.npmjs.com/package/@fuzdev/fuz_app">npm</a>',
+	},
+	{
+		name: 'zzz',
+		repo: '@fuzdev/zzz',
+		title: '<a href="https://www.zzz.software/">Zzz</a>',
+		description: 'software garage for power users and devs',
+		subtitle: '<a class="chip" href="https://github.com/fuzdev/zzz">source</a>',
+		tagline: 'nice web things',
+		glyph: '💤',
+		logo: 'logo.svg',
+		logo_alt: "three sleepy z's",
+	},
+	{
+		name: 'webdevladder.net',
+		repo: 'webdevladder.net',
+		title: '<a href="https://www.webdevladder.net/">webdevladder.net</a>',
+		description:
+			'a YouTube channel and blog for realworld webdev with <a href="https://typescriptlang.org/">TypeScript</a> and <a href="https://svelte.dev/">Svelte</a>',
+		subtitle:
+			'<a class="chip" href="https://www.youtube.com/@webdevladder">channel</a> <a class="chip" href="https://www.youtube.com/@webdevladder_vods">vods</a> <a class="chip" href="https://github.com/ryanatkn/webdevladder.net">source</a>',
 	},
 	{
 		name: 'cosmicplayground',
