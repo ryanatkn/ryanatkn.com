@@ -42,6 +42,16 @@ export const projects: Array<ProjectInfo> = [
 	},
 	{
 		description:
+			'<a href="https://typescriptlang.org/">TypeScript</a> and <a href="https://svelte.dev/">Svelte</a> parser and formatter in <a href="https://www.rust-lang.org/">Rust</a>',
+		homepage: 'https://tsv.fuz.dev/',
+		name: 'tsv',
+		repo: 'tsv',
+		title: '<a href="https://tsv.fuz.dev/">tsv</a>',
+		subtitle:
+			'<a class="chip" href="https://github.com/fuzdev/tsv">source</a> <a class="chip" href="https://tsv.fuz.dev/">playground</a>',
+	},
+	{
+		description:
 			'task runner and toolkit extending <a href="https://kit.svelte.dev/">SvelteKit</a>',
 		homepage: 'https://gro.fuz.dev/',
 		tagline: 'generate, run, optimize',
@@ -66,17 +76,6 @@ export const projects: Array<ProjectInfo> = [
 		title: '<a href="https://svelte-docinfo.fuz.dev/">svelte-docinfo</a>',
 		subtitle:
 			'<a class="chip" href="https://github.com/fuzdev/svelte-docinfo">source</a> <a class="chip" href="https://www.npmjs.com/package/svelte-docinfo">npm</a>',
-	},
-	{
-		description:
-			'<a href="https://typescriptlang.org/">TypeScript</a> and <a href="https://svelte.dev/">Svelte</a> parser and formatter in <a href="https://www.rust-lang.org/">Rust</a>',
-		homepage: 'https://tsv.fuz.dev/',
-		logo: 'logo.svg',
-		name: 'tsv',
-		repo: 'tsv',
-		title: '<a href="https://tsv.fuz.dev/">tsv</a>',
-		subtitle:
-			'<a class="chip" href="https://github.com/fuzdev/tsv">source</a> <a class="chip" href="https://tsv.fuz.dev/">playground</a>',
 	},
 	{
 		description: 'utility belt for JS',
@@ -116,8 +115,7 @@ export const projects: Array<ProjectInfo> = [
 		subtitle: '<a class="chip" href="https://github.com/fuzdev/zzz">source</a>',
 	},
 	{
-		description:
-			'a YouTube channel and blog for realworld webdev with <a href="https://typescriptlang.org/">TypeScript</a> and <a href="https://svelte.dev/">Svelte</a>',
+		description: 'a blog and YouTube channel for web and native dev',
 		homepage: 'https://www.webdevladder.net/',
 		tagline: 'up ↗',
 		logo: 'logo.svg',

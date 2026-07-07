@@ -45,6 +45,15 @@ const projects_metadata: Array<ProjectMetadata> = [
 		subtitle: `<a class="chip" href="https://github.com/fuzdev/fuz_ui">source</a> <a class="chip" href="https://www.npmjs.com/package/@fuzdev/fuz_ui">npm</a>`,
 	},
 	{
+		name: 'tsv',
+		repo: 'tsv',
+		homepage: 'https://tsv.fuz.dev/',
+		title: '<a href="https://tsv.fuz.dev/">tsv</a>',
+		description:
+			'<a href="https://typescriptlang.org/">TypeScript</a> and <a href="https://svelte.dev/">Svelte</a> parser and formatter in <a href="https://www.rust-lang.org/">Rust</a>',
+		subtitle: `<a class="chip" href="https://github.com/fuzdev/tsv">source</a> <a class="chip" href="https://tsv.fuz.dev/">playground</a>`,
+	},
+	{
 		name: 'gro',
 		repo: '@fuzdev/gro',
 		title: '<a href="https://github.com/fuzdev/gro">Gro</a>',
@@ -59,17 +68,6 @@ const projects_metadata: Array<ProjectMetadata> = [
 		description:
 			'static analysis for <a href="https://typescriptlang.org/">TypeScript</a> and <a href="https://svelte.dev/">Svelte</a>',
 		subtitle: `<a class="chip" href="https://github.com/fuzdev/svelte-docinfo">source</a> <a class="chip" href="https://www.npmjs.com/package/svelte-docinfo">npm</a>`,
-	},
-	{
-		name: 'tsv',
-		repo: 'tsv',
-		homepage: 'https://tsv.fuz.dev/',
-		title: '<a href="https://tsv.fuz.dev/">tsv</a>',
-		description:
-			'<a href="https://typescriptlang.org/">TypeScript</a> and <a href="https://svelte.dev/">Svelte</a> parser and formatter in <a href="https://www.rust-lang.org/">Rust</a>',
-		subtitle: `<a class="chip" href="https://github.com/fuzdev/tsv">source</a> <a class="chip" href="https://tsv.fuz.dev/">playground</a>`,
-		// TODO no dedicated SVG logo yet; falls back to the tsv.fuz.dev site logo
-		logo: 'logo.svg',
 	},
 	{
 		name: 'fuz_util',
@@ -103,8 +101,7 @@ const projects_metadata: Array<ProjectMetadata> = [
 		name: 'webdevladder.net',
 		repo: 'webdevladder.net',
 		title: '<a href="https://www.webdevladder.net/">webdevladder.net</a>',
-		description:
-			'a YouTube channel and blog for realworld webdev with <a href="https://typescriptlang.org/">TypeScript</a> and <a href="https://svelte.dev/">Svelte</a>',
+		description: 'a blog and YouTube channel for web and native dev',
 		subtitle: `<a class="chip" href="https://www.youtube.com/@webdevladder">channel</a> <a class="chip" href="https://www.youtube.com/@webdevladder_vods">vods</a> <a class="chip" href="https://github.com/ryanatkn/webdevladder.net">source</a>`,
 	},
 	{

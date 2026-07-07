@@ -9,6 +9,7 @@
 		logo_gro,
 		logo_fuz_util,
 		logo_svelte_docinfo,
+		logo_tsv,
 	} from '@fuzdev/fuz_ui/logos.ts';
 	import {ensure_end, strip_start} from '@fuzdev/fuz_util/string.ts';
 
@@ -31,6 +32,7 @@
 		fuz_util: logo_fuz_util,
 		gro: logo_gro,
 		'svelte-docinfo': logo_svelte_docinfo,
+		tsv: logo_tsv,
 		'webdevladder.net': logo_webdevladder,
 	};
 
