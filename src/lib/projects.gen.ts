@@ -50,7 +50,7 @@ const projects_metadata: Array<ProjectMetadata> = [
 		homepage: 'https://tsv.fuz.dev/',
 		title: '<a href="https://tsv.fuz.dev/">tsv</a>',
 		description:
-			'<a href="https://typescriptlang.org/">TypeScript</a> and <a href="https://svelte.dev/">Svelte</a> parser and formatter in <a href="https://www.rust-lang.org/">Rust</a>',
+			'precise language tools for <a href="https://typescriptlang.org/">TypeScript</a>/JS, CSS, and <a href="https://svelte.dev/">Svelte</a> in <a href="https://www.rust-lang.org/">Rust</a>',
 		subtitle: `<a class="chip" href="https://github.com/fuzdev/tsv">source</a> <a class="chip" href="https://tsv.fuz.dev/">playground</a>`,
 	},
 	{

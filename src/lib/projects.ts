@@ -42,7 +42,7 @@ export const projects: Array<ProjectInfo> = [
 	},
 	{
 		description:
-			'<a href="https://typescriptlang.org/">TypeScript</a> and <a href="https://svelte.dev/">Svelte</a> parser and formatter in <a href="https://www.rust-lang.org/">Rust</a>',
+			'precise language tools for <a href="https://typescriptlang.org/">TypeScript</a>/JS, CSS, and <a href="https://svelte.dev/">Svelte</a> in <a href="https://www.rust-lang.org/">Rust</a>',
 		homepage: 'https://tsv.fuz.dev/',
 		name: 'tsv',
 		repo: 'tsv',

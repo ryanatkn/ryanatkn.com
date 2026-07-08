@@ -50,12 +50,12 @@
 		</div>
 	</section>
 	<section class="box row flex-wrap:wrap gap_md">
-		<div class="display:contents" style:--link_color="var(--color_b_50)">
+		<div class="display:contents" style:--link_color="var(--palette_b_50)">
 			<!-- TODO hacky with max-width -->
 			<Card href="https://github.com/sponsors/ryanatkn" style="max-width: 100%">
 				{#snippet icon()}<Svg
 						data={logo_github}
-						fill="var(--color_b_50)"
+						fill="var(--palette_b_50)"
 						size="var(--space_xl7, 64px)"
 					/>{/snippet}
 				GitHub Sponsors
@@ -64,9 +64,9 @@
 		<Card
 			href="https://www.patreon.com/ryanatkn"
 			align="right"
-			style="--link_color: var(--color_d_50)"
+			style="--link_color: var(--palette_d_50)"
 		>
-			{#snippet icon()}<PatreonLogo fill="var(--color_d_50)" />{/snippet}
+			{#snippet icon()}<PatreonLogo fill="var(--palette_d_50)" />{/snippet}
 			Patreon
 		</Card>
 	</section>
@@ -95,16 +95,16 @@
 				<a
 					class="white-space:nowrap"
 					href="https://github.com/sponsors/ryanatkn"
-					style:--link_color="var(--color_b_50)"
-					><Svg data={logo_github} size="var(--font_size_md)" fill="var(--color_b_50)" inline /> GitHub
+					style:--link_color="var(--palette_b_50)"
+					><Svg data={logo_github} size="var(--font_size_md)" fill="var(--palette_b_50)" inline /> GitHub
 					Sponsors</a
 				>
 				and
 				<a
 					class="white-space:nowrap"
 					href="https://www.patreon.com/ryanatkn"
-					style:--link_color="var(--color_d_50)"
-					><PatreonLogo size="var(--font_size_md)" fill="var(--color_d_50)" inline /> Patreon</a
+					style:--link_color="var(--palette_d_50)"
+					><PatreonLogo size="var(--font_size_md)" fill="var(--palette_d_50)" inline /> Patreon</a
 				> helps me a lot for the signal it sends. Rewards are intrinsic only, no donor perks, except maybe
 				a reminder to smile.
 			</p>
