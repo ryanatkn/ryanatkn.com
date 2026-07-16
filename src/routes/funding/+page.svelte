@@ -90,7 +90,7 @@
 				<a href={resolve('/about')}>about me</a>.
 			</p>
 			<p>
-				Donating $1 a month on
+				Donating $1 or more on
 				<!-- TODO after upgrading Fuz use `inline` instead of the classes -->
 				<a
 					class="white-space:nowrap"
@@ -105,8 +105,8 @@
 					href="https://www.patreon.com/ryanatkn"
 					style:--link_color="var(--palette_d_50)"
 					><PatreonLogo size="var(--font_size_md)" fill="var(--palette_d_50)" inline /> Patreon</a
-				> helps me a lot for the signal it sends. Rewards are intrinsic only, no donor perks, except maybe
-				a reminder to smile.
+				> helps me a lot for the signal it sends to others. Rewards are intrinsic only, no donor perks,
+				except maybe a reminder to smile.
 			</p>
 			<p>
 				I hope to continue having fun building useful software, and to find users and collaborators
