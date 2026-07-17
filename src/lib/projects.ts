@@ -15,7 +15,7 @@ export const projects: Array<ProjectInfo> = [
 		description: 'my free and open source software',
 	},
 	{
-		description: 'CSS framework and design system for semantic HTML',
+		description: 'semantic-first CSS framework and design system',
 		homepage: 'https://css.fuz.dev/',
 		tagline: 'CSS with more utility',
 		logo: 'logo.svg',

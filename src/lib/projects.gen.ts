@@ -34,7 +34,7 @@ const projects_metadata: Array<ProjectMetadata> = [
 		name: 'fuz_css',
 		repo: '@fuzdev/fuz_css',
 		title: '<a href="https://css.fuz.dev/">fuz_css</a>',
-		description: 'CSS framework and design system for semantic HTML',
+		description: 'semantic-first CSS framework and design system',
 		subtitle: `<a class="chip" href="https://github.com/fuzdev/fuz_css">source</a> <a class="chip" href="https://www.npmjs.com/package/@fuzdev/fuz_css">npm</a>`,
 	},
 	{
