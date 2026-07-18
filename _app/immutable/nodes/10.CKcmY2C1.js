@@ -67,12 +67,13 @@ Set the \`cycles\` parameter to \`"ref"\` to resolve cyclical schemas with defs.
 			around those interactions. When people visit the space with cat pictures, I want them to be
 			able to choose how they see and use the content. People may choose to:</p> <ul><li>view all of the posts in a single feed with the most recent at the top</li> <li>view posts sorted by most all-time big emoji reactions, excluding the text reactions</li> <li>view posts grouped by cat, so they can see each cat change over time</li> <li>view only the posts they've reacted to, with the most recent listed first, so they can show
 				their friend their favorites in person</li> <li>today is Saturday! view the flurry of activity with random sorting, excluding posts they've
-				already seen</li></ul> <p>And so on, deep into the kaleidoscope of human creativity.</p> <p>In our model, we define these meta-interactions of organizing and managing posts as <strong>curation</strong>. Depending on your point of view, good curation may be even more important than the core
-			interactions of posting and reacting -- it's an influential input that shapes user attention.
-			If our goal is to maximize our collaborative agency, creativity, and utility (joy) within the
-			constraints of the space, which it is in this case, we want users to be able to create those
-			views themselves, and then easily share them with others. So, I exercise control over the
-			space to grant participants various powers of curation.</p> <h3>distribution</h3> <p>We now have posts, reactions, and all sorts of ways to view them. The final power in our model
+				already seen</li></ul> <p>And so on, deep into the kaleidoscope of human creativity.</p> <p>In our model, we define these meta-interactions of organizing and managing posts as <strong>curation</strong>. Moderation is considered one expression of curation. Depending on your point of view, good
+			curation may be even more important than the core interactions of posting and reacting -- it's
+			an influential input that shapes user attention. If our goal is to maximize our collaborative
+			agency, creativity, and utility (joy) within the constraints of the space, which it is in this
+			case, we want users to be able to create those views themselves, and then easily share them
+			with others. So, I exercise control over the space to grant participants various powers of
+			curation.</p> <h3>distribution</h3> <p>We now have posts, reactions, and all sorts of ways to view them. The final power in our model
 			is <strong>distribution</strong>, the ability to communicate the space's data beyond its
 			boundaries. In our hypothetical, we explicitly support distribution in a few open-ended ways,
 			so the joy of each post can spread wherever it's wanted:</p> <ul><li>social media share buttons (only to the good sites in our case)</li> <li>a lightweight way to embed a post on any website</li> <li>a data service that sends post data to anyone who asks for it (an API)</li></ul> <p>By intentionally designing how distribution works in the space, we unlock another dimension of
