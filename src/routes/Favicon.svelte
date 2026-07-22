@@ -1,6 +1,6 @@
 <script lang="ts">
-	import {asset} from '$app/paths';
-	import type {SvelteHTMLElements} from 'svelte/elements';
+	import { asset } from '$app/paths';
+	import type { SvelteHTMLElements } from 'svelte/elements';
 
 	const {
 		src = 'favicon.png',

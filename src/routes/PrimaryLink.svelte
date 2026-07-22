@@ -1,8 +1,8 @@
 <script lang="ts">
-	import {resolve} from '$app/paths';
-	import {page} from '$app/state';
-	import type {Snippet} from 'svelte';
-	import type {SvelteHTMLElements} from 'svelte/elements';
+	import { resolve } from '$app/paths';
+	import { page } from '$app/state';
+	import type { Snippet } from 'svelte';
+	import type { SvelteHTMLElements } from 'svelte/elements';
 
 	const {
 		children,

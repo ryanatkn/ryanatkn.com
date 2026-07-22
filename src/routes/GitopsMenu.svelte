@@ -1,5 +1,5 @@
 <script lang="ts">
-	import {resolve} from '$app/paths';
+	import { resolve } from '$app/paths';
 
 	// TODO rethink this, is just for repos (which also needs to be renamed because it's more like repos)
 </script>

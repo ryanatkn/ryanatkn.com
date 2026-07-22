@@ -1,8 +1,8 @@
 <script lang="ts">
 	import PullRequestsPage from '@fuzdev/fuz_gitops/PullRequestsPage.svelte';
-	import {repos_context} from '@fuzdev/fuz_gitops/repo.svelte.ts';
+	import { repos_context } from '@fuzdev/fuz_gitops/repo.svelte.ts';
 
-	const {repo, repos} = repos_context.get();
+	const { repo, repos } = repos_context.get();
 </script>
 
 <!-- TODO remove the `: any` after fixing the fuz_gitops published types -->

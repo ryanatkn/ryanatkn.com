@@ -1,5 +1,5 @@
 <script lang="ts" module>
-	import type {BlogPostData} from '@fuzdev/fuz_blog/blog.ts';
+	import type { BlogPostData } from '@fuzdev/fuz_blog/blog.ts';
 
 	export const post = {
 		title: 'Modeling virtual social spaces: in this house we post cat pics on Saturday',
@@ -11,8 +11,8 @@
 		tags: ['web', 'community', 'social media', 'design', 'technology', 'software'],
 		comments: {
 			url: 'https://hci.social/@ryanatkn/109768104377997044',
-			type: 'mastodon',
-		},
+			type: 'mastodon'
+		}
 	} satisfies BlogPostData;
 </script>
 

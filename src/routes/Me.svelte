@@ -1,5 +1,5 @@
 <script lang="ts">
-	import {asset} from '$app/paths';
+	import { asset } from '$app/paths';
 </script>
 
 <img

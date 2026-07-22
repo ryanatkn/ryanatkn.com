@@ -7,7 +7,7 @@
 	import ContactInfo from './ContactInfo.svelte';
 	import Me from './Me.svelte';
 	import ProjectCard from './ProjectCard.svelte';
-	import {projects} from '$lib/projects.ts';
+	import { projects } from '$lib/projects.ts';
 </script>
 
 <svelte:head>

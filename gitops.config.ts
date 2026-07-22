@@ -1,4 +1,4 @@
-import type {CreateGitopsConfig} from '@fuzdev/fuz_gitops/gitops_config.ts';
+import type { CreateGitopsConfig } from '@fuzdev/fuz_gitops/gitops_config.ts';
 
 const config: CreateGitopsConfig = () => {
 	return {
@@ -20,14 +20,14 @@ const config: CreateGitopsConfig = () => {
 			'https://github.com/ryanatkn/webdevladder.net',
 			{
 				repo_url: 'https://github.com/fuzdev/zzz',
-				branch: 'fuz-app',
+				branch: 'fuz-app'
 			},
 			{
 				repo_url: 'https://github.com/ryanatkn/ryanatkn.com',
-				branch: 'main',
-			},
+				branch: 'main'
+			}
 			// 'https://github.com/fuzdev/fuz.dev',
-		],
+		]
 	};
 };
 

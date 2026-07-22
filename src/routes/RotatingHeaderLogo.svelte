@@ -1,11 +1,11 @@
 <script lang="ts">
-	import {asset} from '$app/paths';
+	import { asset } from '$app/paths';
 
-	import {LOGO_ALT, LOGO_SRC} from '$lib/project.ts';
+	import { LOGO_ALT, LOGO_SRC } from '$lib/project.ts';
 
 	const {
 		src = LOGO_SRC,
-		alt = LOGO_ALT,
+		alt = LOGO_ALT
 	}: {
 		src?: string;
 		alt?: string;

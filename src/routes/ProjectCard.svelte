@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type {ProjectInfo} from '$lib/project.ts';
+	import type { ProjectInfo } from '$lib/project.ts';
 	import ProjectLogo from './ProjectLogo.svelte';
 
 	// TODO probably upstream to fuz_library after changing it to `PackageMeta` or w/e
@@ -8,7 +8,7 @@
 	/* eslint-disable svelte/no-at-html-tags */
 
 	const {
-		project,
+		project
 	}: {
 		project: ProjectInfo;
 	} = $props();

@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Svg from '@fuzdev/fuz_ui/Svg.svelte';
-	import type {SvgData} from '@fuzdev/fuz_ui/svg.ts';
+	import type { SvgData } from '@fuzdev/fuz_ui/svg.ts';
 	import {
 		logo_fuz_css,
 		logo_fuz,
@@ -9,15 +9,15 @@
 		logo_gro,
 		logo_fuz_util,
 		logo_svelte_docinfo,
-		logo_tsv,
+		logo_tsv
 	} from '@fuzdev/fuz_ui/logos.ts';
-	import {ensure_end, strip_start} from '@fuzdev/fuz_util/string.ts';
+	import { ensure_end, strip_start } from '@fuzdev/fuz_util/string.ts';
 
-	import type {ProjectInfo} from '$lib/project.ts';
-	import {logo_zzz, logo_webdevladder} from './logos.ts';
+	import type { ProjectInfo } from '$lib/project.ts';
+	import { logo_zzz, logo_webdevladder } from './logos.ts';
 
 	const {
-		project,
+		project
 	}: {
 		project: ProjectInfo;
 	} = $props();
@@ -33,7 +33,7 @@
 		gro: logo_gro,
 		'svelte-docinfo': logo_svelte_docinfo,
 		tsv: logo_tsv,
-		'webdevladder.net': logo_webdevladder,
+		'webdevladder.net': logo_webdevladder
 	};
 
 	const logo_data = $derived(logos[project.name]);

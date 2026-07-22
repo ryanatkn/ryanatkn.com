@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type {SvelteHTMLElements} from 'svelte/elements';
+	import type { SvelteHTMLElements } from 'svelte/elements';
 
 	const {
 		size = 'var(--space_xl7, 64px)',

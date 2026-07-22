@@ -1,7 +1,7 @@
 <script lang="ts">
-	import {resolve} from '$app/paths';
+	import { resolve } from '$app/paths';
 	import Svg from '@fuzdev/fuz_ui/Svg.svelte';
-	import {logo_github} from '@fuzdev/fuz_ui/logos.ts';
+	import { logo_github } from '@fuzdev/fuz_ui/logos.ts';
 	import Card from '@fuzdev/fuz_ui/Card.svelte';
 	import Breadcrumb from '@fuzdev/fuz_ui/Breadcrumb.svelte';
 
