@@ -1,8 +1,8 @@
 <script lang="ts">
 	import { asset, resolve } from '$app/paths';
+	import type { Pathname } from '$app/types';
 	import FeedItemDate from '@fuzdev/fuz_blog/FeedItemDate.svelte';
 	import { blog_feed_context } from '@fuzdev/fuz_blog/blog.ts';
-	import { to_pathname } from '@fuzdev/fuz_blog/util.ts';
 
 	import PageLinks from '$routes/PageLinks.svelte';
 
@@ -17,9 +17,9 @@
 
 <section class="blog">
 	<ol class="panel" reversed>
-		{#each items as item (item)}
+		{#each items as item (item.id)}
 			<li class="blog-card">
-				<a href={resolve(to_pathname(item.url, feed.home_page_url) as any)}>{item.title}</a>
+				<a href={resolve(item.pathname as Pathname)}>{item.title}</a>
 				<div class="date"><FeedItemDate {item} /></div>
 			</li>
 		{/each}

@@ -1,5 +1,5 @@
 <script lang="ts" module>
-	import type { BlogPostData } from '@fuzdev/fuz_blog/blog.ts';
+	import type { BlogPostMetadata } from '@fuzdev/fuz_blog/blog.ts';
 
 	export const post = {
 		title: 'Modeling virtual social spaces: in this house we post cat pics on Saturday',
@@ -13,11 +13,12 @@
 			url: 'https://hci.social/@ryanatkn/109768104377997044',
 			type: 'mastodon'
 		}
-	} satisfies BlogPostData;
+	} satisfies BlogPostMetadata;
 </script>
 
 <script lang="ts">
 	import BlogPost from '@fuzdev/fuz_blog/BlogPost.svelte';
+	import BlogPostComments from '@fuzdev/fuz_blog/BlogPostComments.svelte';
 
 	// TODO cache for Mastodon
 	// import {onMount} from 'svelte';
@@ -235,4 +236,7 @@
 			</li>
 		</ul>
 	</section>
+	{#snippet comments(item)}
+		<BlogPostComments {item} />
+	{/snippet}
 </BlogPost>
