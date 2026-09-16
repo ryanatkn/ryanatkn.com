@@ -31,8 +31,7 @@
 			</p>
 			<p>
 				I'm working on several projects, but the main one is Fuz, "a zippy stack for human agency",
-				online at <a href="https://www.fuz.dev/">fuz.dev</a>
-				and
+				online at <a href="https://www.fuz.dev/">fuz.dev</a> and
 				<a href="https://github.com/fuzdev">github.com/fuzdev</a>. It's a set of tools, libraries,
 				and apps for easily building websites and powerful native systems. Fuz values user control,
 				security, and interoperability, and idealizes an integrated system of a particular taste,
@@ -53,11 +52,9 @@
 		<div class="display:contents" style:--link_color="var(--palette_b_50)">
 			<!-- TODO hacky with max-width -->
 			<Card href="https://github.com/sponsors/ryanatkn" style="max-width: 100%">
-				{#snippet icon()}<Svg
-						data={logo_github}
-						fill="var(--palette_b_50)"
-						size="var(--space_xl7, 64px)"
-					/>{/snippet}
+				{#snippet icon()}
+					<Svg data={logo_github} fill="var(--palette_b_50)" size="var(--space_xl7, 64px)" />
+				{/snippet}
 				GitHub Sponsors
 			</Card>
 		</div>
@@ -76,12 +73,12 @@
 				In 2011 I began my first job as a professional web developer focusing on JS, and many years
 				later I'm still enjoying it, programming both as a profession and hobby. I posted a number
 				of projects to GitHub over the years, and in 2015 learned Rust, but didn't get very far
-				making my dream games. In 2019 I started <a
-					href="https://github.com/ryanatkn?tab=overview&from=2019-12-01&to=2019-12-31"
-					>publishing most of my code</a
-				>
-				as I wrote it, and set out to produce high quality and reusable software with TypeScript, Svelte,
-				and Rust, working full-time in public and continuing today.
+				making my dream games. In 2019 I started
+				<a href="https://github.com/ryanatkn?tab=overview&from=2019-12-01&to=2019-12-31">
+					publishing most of my code
+				</a>
+				as I wrote it, and set out to produce high quality and reusable software with TypeScript,
+				Svelte, and Rust, working full-time in public and continuing today.
 			</p>
 			<p>
 				I love the web for its global accessibility, high capability, backwards compatibility, and
@@ -96,23 +93,24 @@
 					class="white-space:nowrap"
 					href="https://github.com/sponsors/ryanatkn"
 					style:--link_color="var(--palette_b_50)"
-					><Svg data={logo_github} size="var(--font_size_md)" fill="var(--palette_b_50)" inline /> GitHub
-					Sponsors</a
 				>
+					<Svg data={logo_github} size="var(--font_size_md)" fill="var(--palette_b_50)" inline />
+					GitHub Sponsors
+				</a>
 				and
 				<a
 					class="white-space:nowrap"
 					href="https://www.patreon.com/ryanatkn"
 					style:--link_color="var(--palette_d_50)"
-					><PatreonLogo size="var(--font_size_md)" fill="var(--palette_d_50)" inline /> Patreon</a
-				> helps me a lot for the signal it sends to others. Rewards are intrinsic only, no donor perks,
-				except maybe a reminder to smile.
+				>
+					<PatreonLogo size="var(--font_size_md)" fill="var(--palette_d_50)" inline /> Patreon
+				</a> helps me a lot for the signal it sends to others. Rewards are intrinsic only, no donor
+				perks, except maybe a reminder to smile.
 			</p>
 			<p>
 				I hope to continue having fun building useful software, and to find users and collaborators
-				around these ideas and technologies as I work in public. See the <a href={resolve('/tree')}
-					>repos</a
-				> for the code and discussions.
+				around these ideas and technologies as I work in public. See the
+				<a href={resolve('/tree')}>repos</a> for the code and discussions.
 			</p>
 		</div>
 	</section>

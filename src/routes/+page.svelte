@@ -18,9 +18,9 @@
 	<section class="box">
 		<div class="panel shadow_inset_xs h-card">
 			<!-- TODO specificity so we can just add `.shade_00` instead of `style:background-color="var(--shade_00)"` -->
-			<a class="u-url u-uid" href="https://www.ryanatkn.com/" hidden aria-hidden="true"
-				>https://www.ryanatkn.com/</a
-			>
+			<a class="u-url u-uid" href="https://www.ryanatkn.com/" hidden aria-hidden="true">
+				https://www.ryanatkn.com/
+			</a>
 			<span class="p-category" hidden aria-hidden="true">webdev</span>
 			<span class="p-category" hidden aria-hidden="true">devtools</span>
 			<span class="p-category" hidden aria-hidden="true">systems programming</span>
@@ -76,14 +76,14 @@
 	</section>
 </section>
 <section class="box">
-	<Breadcrumb
-		><div class="linkpath">
-			<span class="row"
-				><Favicon />
-				<div class="pl_md">ryanatkn.com</div></span
-			>
-		</div></Breadcrumb
-	>
+	<Breadcrumb>
+		<div class="linkpath">
+			<span class="row">
+				<Favicon />
+				<div class="pl_md">ryanatkn.com</div>
+			</span>
+		</div>
+	</Breadcrumb>
 </section>
 
 <style>

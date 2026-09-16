@@ -89,23 +89,20 @@
 		</p>
 		<h3>access</h3>
 		<p>
-			Now that I have control over my tiny world, I want others to join so we can enjoy it together. <strong
-				>Access</strong
-			>
-			is the ability to enter the space. It's similar to the "read permission" of a document. For Caturday
-			I exercise my control over the space to choose public access, meaning everyone is welcome, even
-			those creepy surveillance drones disguised as well-meaning people, because I'm prioritizing open
-			participation over privacy to get more cat pics and joy. Additionally, even though we have a Saturday-themed
-			space, actors can <em>read</em> posts any time. Now that people can access it, our virtual space
-			is social!
+			Now that I have control over my tiny world, I want others to join so we can enjoy it together.
+			<strong>Access</strong> is the ability to enter the space. It's similar to the "read
+			permission" of a document. For Caturday I exercise my control over the space to choose public
+			access, meaning everyone is welcome, even those creepy surveillance drones disguised as
+			well-meaning people, because I'm prioritizing open participation over privacy to get more cat
+			pics and joy. Additionally, even though we have a Saturday-themed space, actors can
+			<em>read</em> posts any time. Now that people can access it, our virtual space is social!
 		</p>
 		<h3>interaction</h3>
 		<p>
-			We have a publicly accessible social space, but nothing much is happening yet. <strong
-				>Interaction</strong
-			> describes the things people can do in the space. It's like the "write permission" of a document.
-			To make Caturday live up to its name, I again exercise my control, this time defining the rules
-			of interaction in the space:
+			We have a publicly accessible social space, but nothing much is happening yet.
+			<strong>Interaction</strong> describes the things people can do in the space. It's like the
+			"write permission" of a document. To make Caturday live up to its name, I again exercise my
+			control, this time defining the rules of interaction in the space:
 		</p>
 		<ul>
 			<li>actors can <em>post</em> only on Saturday</li>
@@ -114,8 +111,8 @@
 				the poster personally knows, with an optional short bit of text
 			</li>
 			<li>
-				actors can <em>react</em> to each others' posts, on Saturday only, in one of three ways: an emoji,
-				a BIG emoji, or a tiny bit of text (let's say max 24 characters)
+				actors can <em>react</em> to each others' posts, on Saturday only, in one of three ways: an
+				emoji, a BIG emoji, or a tiny bit of text (let's say max 24 characters)
 			</li>
 		</ul>
 		<h3>curation</h3>
@@ -139,15 +136,14 @@
 		</ul>
 		<p>And so on, deep into the kaleidoscope of human creativity.</p>
 		<p>
-			In our model, we define these meta-interactions of organizing and managing posts as <strong
-				>curation</strong
-			>. Moderation is considered one expression of curation. Depending on your point of view, good
-			curation may be even more important than the core interactions of posting and reacting -- it's
-			an influential input that shapes user attention. If our goal is to maximize our collaborative
-			agency, creativity, and utility (joy) within the constraints of the space, which it is in this
-			case, we want users to be able to create those views themselves, and then easily share them
-			with others. So, I exercise control over the space to grant participants various powers of
-			curation.
+			In our model, we define these meta-interactions of organizing and managing posts as
+			<strong>curation</strong>. Moderation is considered one expression of curation. Depending on
+			your point of view, good curation may be even more important than the core interactions of
+			posting and reacting -- it's an influential input that shapes user attention. If our goal is
+			to maximize our collaborative agency, creativity, and utility (joy) within the constraints of
+			the space, which it is in this case, we want users to be able to create those views
+			themselves, and then easily share them with others. So, I exercise control over the space to
+			grant participants various powers of curation.
 		</p>
 		<h3>distribution</h3>
 		<p>
@@ -195,10 +191,10 @@
 	<section>
 		<h2>Acknowledgements</h2>
 		<p>
-			Special thanks to <a
-				href="https://sipa.fiu.edu/people/faculty/modern-languages/rosario-medardo.html"
-				>Medardo Rosario</a
-			> for help with revisions.
+			Special thanks to
+			<a href="https://sipa.fiu.edu/people/faculty/modern-languages/rosario-medardo.html">
+				Medardo Rosario
+			</a> for help with revisions.
 		</p>
 		<p>
 			One of my primary influences on this work is "Modular Politics: Toward a Governance Layer for
