@@ -9,8 +9,3 @@ Personal site (`@ryanatkn/ryanatkn.com`) — a SvelteKit app.
 - `src/routes/projects.gen.ts` — curated homepage project list (merges
   metadata from `repos.json`). Edit here, then `gro gen` to regenerate
   `src/routes/projects.ts`.
-
-## Committing
-
-`git add` and `git commit` are denied by `.claude/settings.local.json` in
-this repo — make the edits and stop, the user commits.
