@@ -13,7 +13,10 @@ const config: CreateGitopsConfig = () => {
 			'https://github.com/fuzdev/fuz_blog',
 			'https://github.com/fuzdev/fuz_mastodon',
 			'https://github.com/fuzdev/fuz_code',
-			'https://github.com/fuzdev/fuz_gitops',
+			{
+				repo_url: 'https://github.com/fuzdev/fuz_repos',
+				repo_dir: '../fuz_gitops'
+			},
 			'https://github.com/fuzdev/svelte-docinfo',
 			'https://github.com/fuzdev/tsv',
 			'https://github.com/fuzdev/tsv.fuz.dev',
