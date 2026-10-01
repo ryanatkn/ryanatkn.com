@@ -1,1 +1,1 @@
-export * from '@fuzdev/fuz_gitops/gitops_sync.task.ts';
+export * from '@fuzdev/fuz_repos/gitops_sync.task.ts';

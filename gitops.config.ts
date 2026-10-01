@@ -1,4 +1,4 @@
-import type { GitopsConfig } from '@fuzdev/fuz_gitops/gitops_config.ts';
+import type { GitopsConfig } from '@fuzdev/fuz_repos/gitops_config.ts';
 
 // repos.toml registry keys; everything else about each repo comes from the registry
 const config: GitopsConfig = {

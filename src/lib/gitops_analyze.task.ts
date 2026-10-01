@@ -1,1 +1,1 @@
-export * from '@fuzdev/fuz_gitops/gitops_analyze.task.ts';
+export * from '@fuzdev/fuz_repos/gitops_analyze.task.ts';

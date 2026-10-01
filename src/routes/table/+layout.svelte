@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Repo, repos_parse, repos_context } from '@fuzdev/fuz_gitops/repo.svelte.ts';
+	import { Repo, repos_parse, repos_context } from '@fuzdev/fuz_repos/repo.svelte.ts';
 	import type { Snippet } from 'svelte';
 	import { Library, library_context } from '@fuzdev/fuz_ui/library.svelte.ts';
 
