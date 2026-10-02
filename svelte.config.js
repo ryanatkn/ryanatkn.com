@@ -24,6 +24,7 @@ export default {
 						'connect-src': ['https://hci.social/'],
 						'img-src': [
 							'https://storage.googleapis.com/hci-social-storage/',
+							'https://www.webdevladder.net/',
 							'https://www.cosmicplayground.org/'
 						]
 					}
