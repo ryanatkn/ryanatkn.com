@@ -11,8 +11,6 @@ table {
 	border-width: var(--border_width);
 	border-style: var(--border_style);
 	border-color: var(--border_color_10);
-	border-radius: var(--border_radius);
-	border-spacing: 0;
 	background-color: var(--shade_00);
 }
 td {
