@@ -73,11 +73,8 @@
 				<a href="https://www.cosmicplayground.org/">cosmicplayground.org</a>,
 				<a href="https://earbetter.ryanatkn.com/">Earbetter</a>,
 				<a href="https://ryanatkn.github.io/svelte-snake-sports/">Svelte Snake Sports</a>, and other
-				<a href="https://github.com/ryanatkn#archives">abandonings</a> and future projects
-			</li>
-			<li>
-				I like <a href="https://svelte.dev/">Svelte</a> and SvelteKit so much that you shouldn't
-				trust my opinion on it
+				<a href="https://github.com/ryanatkn#archives">abandonings</a> and future/unannounced
+				projects
 			</li>
 		</ul>
 	</section>
