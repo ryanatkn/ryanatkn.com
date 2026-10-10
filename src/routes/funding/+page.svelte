@@ -60,7 +60,7 @@
 		</div>
 		<Card
 			href="https://www.patreon.com/ryanatkn"
-			align="right"
+			align="end"
 			style="--link_color: var(--palette_d_50)"
 		>
 			{#snippet icon()}<PatreonLogo fill="var(--palette_d_50)" />{/snippet}
