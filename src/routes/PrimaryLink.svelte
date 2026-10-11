@@ -15,8 +15,6 @@
 	const pop_path = (pathname: string): string =>
 		pathname.substring(0, pathname.lastIndexOf('/')) || '/';
 
-	// TODO the `strip_start` usage is a hack to get SSR working the same as CSR,
-	// `base` is `'.'` in SSR but `''` in CSR?
 	const pathname = $derived(page.url.pathname);
 	const at_root_path = $derived(pathname === resolve('/'));
 	const href = $derived(at_root_path ? resolve('/blog') : pop_path(pathname));
