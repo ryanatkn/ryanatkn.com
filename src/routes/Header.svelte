@@ -1,16 +1,17 @@
 <script lang="ts">
+	import type { AssetPath } from '$app/types';
 	import type { SvelteHTMLElements } from 'svelte/elements';
 
 	import RotatingHeaderLogo from './RotatingHeaderLogo.svelte';
 	import PrimaryLink from './PrimaryLink.svelte';
-	import { LOGO_ALT, LOGO_SRC } from '$lib/project.ts';
+	import { LOGO_ALT, LOGO_SRC } from '#lib/project.ts';
 
 	const {
 		src = LOGO_SRC,
 		alt = LOGO_ALT,
 		...rest
 	}: SvelteHTMLElements['header'] & {
-		src?: string;
+		src?: AssetPath;
 		alt?: string;
 	} = $props();
 </script>

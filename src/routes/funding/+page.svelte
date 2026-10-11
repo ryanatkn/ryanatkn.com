@@ -5,9 +5,9 @@
 	import Card from '@fuzdev/fuz_ui/Card.svelte';
 	import Breadcrumb from '@fuzdev/fuz_ui/Breadcrumb.svelte';
 
-	import PageLinks from '$routes/PageLinks.svelte';
+	import PageLinks from '#routes/PageLinks.svelte';
 	import PatreonLogo from './PatreonLogo.svelte'; // TODO move to fuz
-	import Favicon from '$routes/Favicon.svelte';
+	import Favicon from '#routes/Favicon.svelte';
 </script>
 
 <div class="width_atmost_md flex:1">

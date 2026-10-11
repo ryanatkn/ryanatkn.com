@@ -13,7 +13,7 @@
 	} from '@fuzdev/fuz_ui/logos.ts';
 	import { ensure_end, strip_start } from '@fuzdev/fuz_util/string.ts';
 
-	import type { ProjectInfo } from '$lib/project.ts';
+	import type { ProjectInfo } from '#lib/project.ts';
 	import { logo_zzz, logo_webdevladder } from './logos.ts';
 
 	const {

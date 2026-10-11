@@ -7,7 +7,7 @@
 		mastodon_cache_context
 	} from '@fuzdev/fuz_mastodon/mastodon_cache.svelte.ts';
 
-	import Favicon from '$routes/Favicon.svelte';
+	import Favicon from '#routes/Favicon.svelte';
 
 	const {
 		children

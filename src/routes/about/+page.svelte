@@ -2,9 +2,9 @@
 	import Breadcrumb from '@fuzdev/fuz_ui/Breadcrumb.svelte';
 	import { resolve, asset } from '$app/paths';
 
-	import PageLinks from '$routes/PageLinks.svelte';
-	import ContactInfo from '$routes/ContactInfo.svelte';
-	import Favicon from '$routes/Favicon.svelte';
+	import PageLinks from '#routes/PageLinks.svelte';
+	import ContactInfo from '#routes/ContactInfo.svelte';
+	import Favicon from '#routes/Favicon.svelte';
 </script>
 
 <div class="about">
@@ -24,7 +24,7 @@
 			<div class="float:right ml_sm circular shadow_md">
 				<img
 					class="u-photo"
-					src={asset('/me.png')}
+					src={asset('me.png')}
 					alt="me smiling on a couch while holding my sister's calico cat Caramel who's out of frame"
 					style:width="var(--icon_size_xl2)"
 					style:height="var(--icon_size_xl2)"

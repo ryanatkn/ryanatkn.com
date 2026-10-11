@@ -1,17 +1,18 @@
 <script lang="ts">
 	import { asset } from '$app/paths';
+	import type { AssetPath } from '$app/types';
 
-	import { LOGO_ALT, LOGO_SRC } from '$lib/project.ts';
+	import { LOGO_ALT, LOGO_SRC } from '#lib/project.ts';
 
 	const {
 		src = LOGO_SRC,
 		alt = LOGO_ALT
 	}: {
-		src?: string;
+		src?: AssetPath;
 		alt?: string;
 	} = $props();
 
-	const path = $derived(asset(`/${src}`));
+	const path = $derived(asset(src));
 
 	// these extra images hide the asymmetries of pixelated circles
 </script>

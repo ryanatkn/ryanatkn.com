@@ -3,8 +3,8 @@
 	import type { Snippet } from 'svelte';
 	import { Library, library_context } from '@fuzdev/fuz_ui/library.svelte.ts';
 
-	import { repos_json } from '$routes/repos.ts';
-	import { library_json } from '$routes/library.ts';
+	import { repos_json } from '#routes/repos.ts';
+	import { library_json } from '#routes/library.ts';
 
 	const {
 		children
