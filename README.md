@@ -55,4 +55,4 @@ gro deploy
 
 ## license [🐦](https://wikipedia.org/wiki/Free_and_open-source_software)
 
-[MIT](LICENSE)
+[0BSD](LICENSE)
