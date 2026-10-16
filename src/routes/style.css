@@ -17,7 +17,7 @@ td {
 	padding: var(--space_sm);
 }
 tr:hover {
-	background-color: var(--fg_20);
+	background-color: var(--ink_20);
 }
 
 /* offset to avoid visual artifacts on init,
