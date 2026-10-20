@@ -8,30 +8,12 @@
 		date_modified: '2023-01-28T17:20:51.259Z',
 		summary:
 			'Proposing a model for one of the central aspects of online communities: the virtual social space.',
-		tags: ['web', 'community', 'social media', 'design', 'technology', 'software'],
-		comments: {
-			url: 'https://hci.social/@ryanatkn/109768104377997044',
-			type: 'mastodon'
-		}
+		tags: ['web', 'community', 'social media', 'design', 'technology', 'software']
 	} satisfies BlogPostMetadata;
 </script>
 
 <script lang="ts">
 	import BlogPost from '@fuzdev/fuz_blog/BlogPost.svelte';
-	import BlogPostComments from '@fuzdev/fuz_blog/BlogPostComments.svelte';
-
-	// TODO cache for Mastodon
-	// import {onMount} from 'svelte';
-	// import {DEV} from 'esm-env';
-	// import type {FetchValueCache} from '@fuzdev/fuz_util/fetch.ts';
-	// let cache: FetchValueCache | undefined | null = $state();
-	// onMount(async () => {
-	// 	if (DEV) {
-	// 		cache = new Map((await import('../mastodon_dev_cache_data.js')).mastodon_dev_cache_data);
-	// 	} else {
-	// 		cache = null;
-	// 	}
-	// });
 </script>
 
 <BlogPost {post}>
@@ -236,7 +218,4 @@
 			</li>
 		</ul>
 	</section>
-	{#snippet comments(item)}
-		<BlogPostComments {item} />
-	{/snippet}
 </BlogPost>

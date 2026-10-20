@@ -26,18 +26,7 @@ export default defineConfig({
 			paths: { relative: false }, // use root-absolute paths for SSR path comparison: https://svelte.dev/docs/kit/configuration#paths
 			csp: {
 				directives: create_csp_directives({
-					extend: [
-						csp_directives_of_fuzdev,
-						// Mastodon comments for https://hci.social/@ryanatkn
-						{
-							'connect-src': ['https://hci.social/'],
-							'img-src': [
-								'https://storage.googleapis.com/hci-social-storage/',
-								'https://www.webdevladder.net/',
-								'https://www.cosmicplayground.org/'
-							]
-						}
-					]
+					extend: [csp_directives_of_fuzdev]
 				})
 			},
 			version: { name: execSync('git rev-parse HEAD').toString().trim() }

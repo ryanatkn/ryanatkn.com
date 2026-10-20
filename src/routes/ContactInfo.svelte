@@ -15,8 +15,7 @@
 		</li>
 		<li>
 			Mastodon as
-			<a class="u-url" rel="me" href="https://fosstodon.org/@ryanatkn">@ryanatkn@fosstodon.org</a>
-			and <a class="u-url" rel="me" href="https://hci.social/@ryanatkn">@ryanatkn@hci.social</a>
+			<a class="u-url" rel="me" href="https://hci.social/@ryanatkn">@ryanatkn@hci.social</a>
 		</li>
 		<li>
 			Bluesky as
@@ -36,11 +35,6 @@
 					@webdevladder_vods on
 					<a class="u-url" rel="me" href="https://www.youtube.com/@webdevladder_vods">YouTube</a>
 					for lower effort videos
-				</li>
-				<li>
-					<span class="overflow-wrap:anywhere">@webdevladder@fosstodon.org</span>
-					on
-					<a class="u-url" rel="me" href="https://fosstodon.org/@webdevladder">Mastodon</a>
 				</li>
 			</ul>
 		</li>
