@@ -24138,7 +24138,7 @@
 							{
 								"name": "csp_directives_of_fuzdev",
 								"kind": "variable",
-								"docComment": "Per-directive sources that allow full interop between fuzdev/sister sites\n(`*.fuz.dev`, `*.zzz.software`) — loading assets and APIs from each other,\nand iframing in both directions.\n\nPass into `create_csp_directives({extend: [csp_directives_of_fuzdev]})`.\nIntended for sites within the ecosystem; external apps usually want a\nnarrower, hand-written allow-list.\n\nDeliberately scoped — `script-src`, `style-src`, `worker-src`, etc. are not\ngranted, even between sister sites. Add at the call site if a specific page\nneeds them.",
+								"docComment": "Per-directive sources that allow full interop between fuzdev/sister sites\n(`*.fuz.dev`) — loading assets and APIs from each other,\nand iframing in both directions.\n\nPass into `create_csp_directives({extend: [csp_directives_of_fuzdev]})`.\nIntended for sites within the ecosystem; external apps usually want a\nnarrower, hand-written allow-list.\n\nDeliberately scoped — `script-src`, `style-src`, `worker-src`, etc. are not\ngranted, even between sister sites. Add at the call site if a specific page\nneeds them.",
 								"typeSignature": "Partial<CspDirectives>",
 								"sourceLine": 16,
 								"typeInfo": {
@@ -232619,7 +232619,7 @@
 				"logo": "logo.svg",
 				"logo_alt": "three sleepy z's",
 				"license": "0BSD",
-				"homepage": "https://www.zzz.software/",
+				"homepage": "https://github.com/fuzdev/zzz",
 				"repository": "https://github.com/fuzdev/zzz",
 				"funding": "https://www.ryanatkn.com/funding",
 				"exports": {
@@ -284677,7 +284677,7 @@
 			"logo": "logo.svg",
 			"logo_alt": "three sleepy z's",
 			"license": "0BSD",
-			"homepage": "https://www.zzz.software/",
+			"homepage": "https://github.com/fuzdev/zzz",
 			"repository": "https://github.com/fuzdev/zzz",
 			"author": {
 				"name": "Ryan Atkinson",

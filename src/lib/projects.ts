@@ -103,14 +103,14 @@ export const projects: Array<ProjectInfo> = [
 	},
 	{
 		description: 'software garage for power users and devs',
-		homepage: 'https://www.zzz.software/',
+		homepage: 'https://github.com/fuzdev/zzz',
 		tagline: 'nice web things',
 		logo: 'logo.svg',
 		logo_alt: "three sleepy z's",
 		glyph: '💤',
 		name: 'zzz',
 		repo: '@fuzdev/zzz',
-		title: '<a href="https://www.zzz.software/">Zzz</a>',
+		title: '<a href="https://github.com/fuzdev/zzz">Zzz</a>',
 		subtitle: '<a class="chip" href="https://github.com/fuzdev/zzz">source</a>'
 	},
 	{

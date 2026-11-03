@@ -87,7 +87,7 @@ const projects_metadata: Array<ProjectMetadata> = [
 		// TODO @many hack for zzz, fix after adding to gitops
 		name: 'zzz',
 		repo: '@fuzdev/zzz',
-		title: '<a href="https://www.zzz.software/">Zzz</a>',
+		title: '<a href="https://github.com/fuzdev/zzz">Zzz</a>',
 		description: 'software garage for power users and devs',
 		subtitle: `<a class="chip" href="https://github.com/fuzdev/zzz">source</a>`, // TODO publish zzz - <a class="chip" href="https://www.npmjs.com/package/@fuzdev/zzz">npm</a>
 		// TODO @many hack for zzz, fix after adding to gitops
