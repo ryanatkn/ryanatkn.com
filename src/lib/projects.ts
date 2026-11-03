@@ -28,7 +28,7 @@ export const projects: Array<ProjectInfo> = [
 			'<a class="chip" href="https://github.com/fuzdev/fuz_css">source</a> <a class="chip" href="https://www.npmjs.com/package/@fuzdev/fuz_css">npm</a>'
 	},
 	{
-		description: '<a href="https://svelte.dev/">Svelte</a> UI library',
+		description: '<a href="https://svelte.dev/">Svelte</a> component library and frontend helpers',
 		homepage: 'https://ui.fuz.dev/',
 		tagline: 'friendly user zystem',
 		logo: 'logo.svg',
@@ -41,18 +41,17 @@ export const projects: Array<ProjectInfo> = [
 			'<a class="chip" href="https://github.com/fuzdev/fuz_ui">source</a> <a class="chip" href="https://www.npmjs.com/package/@fuzdev/fuz_ui">npm</a>'
 	},
 	{
-		description:
-			'precise language tools for <a href="https://typescriptlang.org/">TypeScript</a>/JS, CSS, and <a href="https://svelte.dev/">Svelte</a> in <a href="https://www.rust-lang.org/">Rust</a>',
-		homepage: 'https://tsv.fuz.dev/',
 		name: 'tsv',
 		repo: 'tsv',
+		homepage: 'https://tsv.fuz.dev/',
 		title: '<a href="https://tsv.fuz.dev/">tsv</a>',
+		description:
+			'precise language tools for <a href="https://typescriptlang.org/">TypeScript</a>/JS, CSS, and <a href="https://svelte.dev/">Svelte</a> in <a href="https://www.rust-lang.org/">Rust</a>',
 		subtitle:
 			'<a class="chip" href="https://github.com/fuzdev/tsv">source</a> <a class="chip" href="https://tsv.fuz.dev/">playground</a>'
 	},
 	{
-		description:
-			'task runner and toolkit extending <a href="https://kit.svelte.dev/">SvelteKit</a>',
+		description: 'security-first JS runtime and toolchain on V8',
 		homepage: 'https://gro.fuz.dev/',
 		tagline: 'generate, run, optimize',
 		logo: 'logo.svg',

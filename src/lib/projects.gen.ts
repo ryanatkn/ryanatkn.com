@@ -41,7 +41,7 @@ const projects_metadata: Array<ProjectMetadata> = [
 		name: 'fuz_ui',
 		repo: '@fuzdev/fuz_ui',
 		title: '<a href="https://ui.fuz.dev/">fuz_ui</a>',
-		description: '<a href="https://svelte.dev/">Svelte</a> UI library',
+		description: '<a href="https://svelte.dev/">Svelte</a> component library and frontend helpers',
 		subtitle: `<a class="chip" href="https://github.com/fuzdev/fuz_ui">source</a> <a class="chip" href="https://www.npmjs.com/package/@fuzdev/fuz_ui">npm</a>`
 	},
 	{
@@ -57,8 +57,7 @@ const projects_metadata: Array<ProjectMetadata> = [
 		name: 'gro',
 		repo: '@fuzdev/gro',
 		title: '<a href="https://github.com/fuzdev/gro">Gro</a>',
-		description:
-			'task runner and toolkit extending <a href="https://kit.svelte.dev/">SvelteKit</a>',
+		description: 'security-first JS runtime and toolchain on V8',
 		subtitle: `<a class="chip" href="https://github.com/fuzdev/gro">source</a> <a class="chip" href="https://www.npmjs.com/package/@fuzdev/gro">npm</a>`
 	},
 	{
