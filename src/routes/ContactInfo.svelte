@@ -38,6 +38,18 @@
 				</li>
 			</ul>
 		</li>
+		<li>
+			<a href="https://www.fuz.dev/">fuz.dev</a> - free software for human agency
+			<ul>
+				<li>
+					@fuzdev on <a href="https://github.com/fuzdev">GitHub</a> and
+					<a href="https://www.npmjs.com/org/fuzdev">npm</a>
+				</li>
+				<li>
+					Bluesky as <a href="https://bsky.app/profile/fuz.dev">@fuz.dev</a>
+				</li>
+			</ul>
+		</li>
 	</ul>
 </div>
 
