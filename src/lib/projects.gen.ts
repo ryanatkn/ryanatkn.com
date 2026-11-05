@@ -97,13 +97,6 @@ const projects_metadata: Array<ProjectMetadata> = [
 		logo_alt: "three sleepy z's"
 	},
 	{
-		name: 'webdevladder.net',
-		repo: 'webdevladder.net',
-		title: '<a href="https://www.webdevladder.net/">webdevladder.net</a>',
-		description: 'a blog and YouTube channel for web and native dev',
-		subtitle: `<a class="chip" href="https://www.youtube.com/@webdevladder">channel</a> <a class="chip" href="https://www.youtube.com/@webdevladder_vods">vods</a> <a class="chip" href="https://github.com/ryanatkn/webdevladder.net">source</a>`
-	},
-	{
 		name: 'cosmicplayground',
 		repo: '@ryanatkn/cosmicplayground', // TODO change to `cosmicplayground.org`
 		homepage: 'https://www.cosmicplayground.org/',

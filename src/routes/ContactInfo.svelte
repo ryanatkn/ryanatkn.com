@@ -22,23 +22,6 @@
 			<a class="u-url" rel="me" href="https://bsky.app/profile/ryanatkn.com">@ryanatkn.com</a>
 		</li>
 		<li>
-			<a class="u-url" rel="me" href="https://www.webdevladder.net/">webdevladder.net</a> is my
-			professional blog and public alias
-			<ul>
-				<li>
-					@webdevladder on
-					<a class="u-url" rel="me" href="https://www.youtube.com/@webdevladder">YouTube</a>,
-					<a class="u-url" rel="me" href="https://www.reddit.com/user/webdevladder/">Reddit</a>, and
-					<a class="u-url" rel="me" href="https://news.ycombinator.com/user?id=webdevladder">HN</a>
-				</li>
-				<li>
-					@webdevladder_vods on
-					<a class="u-url" rel="me" href="https://www.youtube.com/@webdevladder_vods">YouTube</a>
-					for lower effort videos
-				</li>
-			</ul>
-		</li>
-		<li>
 			<a href="https://www.fuz.dev/">fuz.dev</a> - free software for human agency
 			<ul>
 				<li>

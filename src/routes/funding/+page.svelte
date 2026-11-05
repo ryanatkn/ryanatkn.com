@@ -43,8 +43,7 @@
 			</p>
 			<p>
 				On GitHub I'm <a href="https://github.com/ryanatkn">@ryanatkn</a> and I manage
-				<a href="https://github.com/fuzdev">@fuzdev</a>, and I blog on this website and
-				<a href="https://www.webdevladder.net/">webdevladder.net</a>.
+				<a href="https://github.com/fuzdev">@fuzdev</a>, and I blog on this website.
 			</p>
 		</div>
 	</section>

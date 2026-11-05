@@ -114,19 +114,6 @@ export const projects: Array<ProjectInfo> = [
 		subtitle: '<a class="chip" href="https://github.com/fuzdev/zzz">source</a>'
 	},
 	{
-		description: 'a blog and YouTube channel for web and native dev',
-		homepage: 'https://www.webdevladder.net/',
-		tagline: 'up ↗',
-		logo: 'logo.svg',
-		logo_alt: 'a spider web between two rungs of a ladder',
-		glyph: '🪜',
-		name: 'webdevladder.net',
-		repo: 'webdevladder.net',
-		title: '<a href="https://www.webdevladder.net/">webdevladder.net</a>',
-		subtitle:
-			'<a class="chip" href="https://www.youtube.com/@webdevladder">channel</a> <a class="chip" href="https://www.youtube.com/@webdevladder_vods">vods</a> <a class="chip" href="https://github.com/ryanatkn/webdevladder.net">source</a>'
-	},
-	{
 		name: 'cosmicplayground',
 		repo: '@ryanatkn/cosmicplayground',
 		homepage: 'https://www.cosmicplayground.org/',

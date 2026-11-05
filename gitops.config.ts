@@ -16,7 +16,6 @@ const config: GitopsConfig = {
 		'svelte-docinfo',
 		'tsv',
 		'tsv.fuz.dev',
-		'webdevladder.net',
 		'zzz',
 		'ryanatkn.com'
 		// 'fuz.dev',

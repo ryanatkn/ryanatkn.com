@@ -14,7 +14,7 @@
 	import { ensure_end, strip_start } from '@fuzdev/fuz_util/string.ts';
 
 	import type { ProjectInfo } from '#lib/project.ts';
-	import { logo_zzz, logo_webdevladder } from './logos.ts';
+	import { logo_zzz } from './logos.ts';
 
 	const {
 		project
@@ -32,8 +32,7 @@
 		fuz_util: logo_fuz_util,
 		gro: logo_gro,
 		'svelte-docinfo': logo_svelte_docinfo,
-		tsv: logo_tsv,
-		'webdevladder.net': logo_webdevladder
+		tsv: logo_tsv
 	};
 
 	const logo_data = $derived(logos[project.name]);
