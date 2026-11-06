@@ -2,13 +2,14 @@
 	import { asset, resolve } from '$app/paths';
 	import type { Path } from '$app/types';
 	import FeedItemDate from '@fuzdev/fuz_blog/FeedItemDate.svelte';
-	import { blog_feed_context } from '@fuzdev/fuz_blog/blog.ts';
+	import { blog_feed_context } from '@fuzdev/fuz_blog/blog_feed_context.ts';
+	import { sort_feed_items } from '@fuzdev/fuz_blog/feed.ts';
 
 	import PageLinks from '#routes/PageLinks.svelte';
 
 	const feed = blog_feed_context.get();
 
-	const items = feed.items.slice().reverse();
+	const items = sort_feed_items(feed.items);
 </script>
 
 <svelte:head>
@@ -27,6 +28,15 @@
 	</ol>
 	<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
 	<a class="feed-link chip" href={asset('blog/feed.xml')} download>Atom feed</a>
+	<!-- the archived pre-reset post, off the feed and the list but still reachable -->
+	<a
+		class="archive-link"
+		href={resolve(
+			'/blog/modeling-virtual-social-spaces-in-this-house-we-post-cat-pics-on-saturday'
+		)}
+	>
+		archive
+	</a>
 </section>
 <section class="box gap_xl2 mb_xl7">
 	<PageLinks />
@@ -77,5 +87,10 @@
 	}
 	.feed-link {
 		margin-top: var(--space_xl);
+	}
+	.archive-link {
+		margin-top: var(--space_lg);
+		font-size: var(--font_size_sm);
+		opacity: 0.4;
 	}
 </style>

@@ -14,16 +14,15 @@ export const feed: BlogFeed = {
 	items: [
 		{
 			id: 'https://www.ryanatkn.com/blog/1',
-			url: 'https://www.ryanatkn.com/blog/modeling-virtual-social-spaces-in-this-house-we-post-cat-pics-on-saturday',
-			pathname: '/blog/modeling-virtual-social-spaces-in-this-house-we-post-cat-pics-on-saturday',
+			url: 'https://www.ryanatkn.com/blog/1-im-building-free-software-for-human-agency',
+			pathname: '/blog/1-im-building-free-software-for-human-agency',
 			blog_post_id: 1,
-			title: 'Modeling virtual social spaces: in this house we post cat pics on Saturday',
-			slug: 'modeling-virtual-social-spaces-in-this-house-we-post-cat-pics-on-saturday',
-			date_published: '2023-01-22T21:44:17.224Z',
-			date_modified: '2023-01-28T17:20:51.259Z',
-			summary:
-				'Proposing a model for one of the central aspects of online communities: the virtual social space.',
-			tags: ['web', 'community', 'social media', 'design', 'technology', 'software']
+			slug: 'im-building-free-software-for-human-agency',
+			title: "I'm building free software for human agency",
+			date_published: '2026-11-06T21:15:06.000Z',
+			date_modified: '2026-11-06T21:15:06.000Z',
+			summary: 'introducing my blog',
+			tags: ['announcement']
 		}
 	]
 };

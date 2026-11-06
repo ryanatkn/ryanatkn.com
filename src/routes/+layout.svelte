@@ -6,12 +6,12 @@
 	import ThemeRoot from '@fuzdev/fuz_ui/ThemeRoot.svelte';
 	import { SiteState, site_context } from '@fuzdev/fuz_ui/site.svelte.ts';
 	import type { Snippet } from 'svelte';
-	import { blog_feed_context } from '@fuzdev/fuz_blog/blog.ts';
+	import { to_blog_feed_url } from '@fuzdev/fuz_blog/blog.ts';
 	import pkg_json from 'virtual:pkg.json';
 
 	import Header from './Header.svelte';
 	import Footer from './Footer.svelte';
-	import { feed } from './blog/feed.ts';
+	import { blogs } from './blogs.ts';
 
 	const {
 		children
@@ -20,13 +20,18 @@
 	} = $props();
 
 	site_context.set(new SiteState({ pkg_json }));
-	blog_feed_context.set(feed);
 </script>
 
 <svelte:head>
 	<title>ryanatkn.com</title>
-	<!-- TODO add JSONFeed -->
-	<link rel="alternate" type="application/atom+xml" title="Atom" href={feed.atom.feed_url} />
+	{#each blogs as blog (blog.dirname)}
+		<link
+			rel="alternate"
+			type="application/atom+xml"
+			title={blog.feed.title}
+			href={to_blog_feed_url(blog.feed.home_page_url)}
+		/>
+	{/each}
 </svelte:head>
 
 <ThemeRoot>

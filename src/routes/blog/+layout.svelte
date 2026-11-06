@@ -1,8 +1,10 @@
 <script lang="ts">
 	import Breadcrumb from '@fuzdev/fuz_ui/Breadcrumb.svelte';
 	import type { Snippet } from 'svelte';
+	import { blog_feed_context } from '@fuzdev/fuz_blog/blog_feed_context.ts';
 
 	import Favicon from '#routes/Favicon.svelte';
+	import { feed } from './feed.ts';
 
 	const {
 		children
@@ -10,7 +12,7 @@
 		children: Snippet;
 	} = $props();
 
-	// TODO redirect from the numbers or render UI to navigate to it, maybe in `BlogPost`
+	blog_feed_context.set(feed);
 </script>
 
 <div class="column align-items:center mt_xl3">

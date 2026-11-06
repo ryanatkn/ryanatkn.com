@@ -26,7 +26,15 @@ export default defineConfig({
 			paths: { relative: false }, // use root-absolute paths for SSR path comparison: https://svelte.dev/docs/kit/configuration#paths
 			csp: {
 				directives: create_csp_directives({
-					extend: [csp_directives_of_fuzdev]
+					extend: [csp_directives_of_fuzdev],
+					// Svelte's SSR adds `onload`/`onerror="this.__e=event"` to media elements with spread
+					// props (e.g. fuz_ui's `ImgOrSvg`) to replay early events on hydration; allow only that handler
+					overrides: {
+						'script-src-attr': [
+							'unsafe-hashes',
+							'sha256-7dQwUgLau1NFCCGjfn9FsYptB6ZtWxJin6VohGIu20I='
+						]
+					}
 				})
 			},
 			version: { name: execSync('git rev-parse HEAD').toString().trim() }
