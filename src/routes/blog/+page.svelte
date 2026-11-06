@@ -30,12 +30,12 @@
 	<a class="feed-link chip" href={asset('blog/feed.xml')} download>Atom feed</a>
 	<!-- the archived pre-reset post, off the feed and the list but still reachable -->
 	<a
-		class="archive-link"
+		hidden
 		href={resolve(
 			'/blog/modeling-virtual-social-spaces-in-this-house-we-post-cat-pics-on-saturday'
 		)}
 	>
-		archive
+		cat archive
 	</a>
 </section>
 <section class="box gap_xl2 mb_xl7">
@@ -87,10 +87,5 @@
 	}
 	.feed-link {
 		margin-top: var(--space_xl);
-	}
-	.archive-link {
-		margin-top: var(--space_lg);
-		font-size: var(--font_size_sm);
-		opacity: 0.4;
 	}
 </style>
