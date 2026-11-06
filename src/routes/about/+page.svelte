@@ -42,8 +42,7 @@
 				My software is
 				<a class="u-url" rel="me" href="https://github.com/ryanatkn">open source on GitHub</a> and
 				this website's homepage lists my <a class="u-url" href={resolve('/')}>ongoing projects</a>.
-				I'm seeking <a href={resolve('/funding')}>funding</a> to either remain independent or
-				continue my work with an aligned organization.
+				My work is funded by public <a href={resolve('/funding')}>donations</a>.
 			</p>
 			<p>
 				I work on the web because for all its flaws, it's our best collectively-governed platform

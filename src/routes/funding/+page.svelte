@@ -38,8 +38,9 @@
 				centered on Rust, TypeScript, CSS, and Svelte.
 			</p>
 			<p>
-				My plan for Fuz and its related projects is to have them stewarded by a nonprofit, either
-				forming or joining one, if enough users like you will it into being.
+				My plan is for Fuz to accept donations directly and transparently. Until then, my personal
+				<a href="https://github.com/sponsors/ryanatkn">GitHub Sponsors</a> and
+				<a href="https://www.patreon.com/ryanatkn">Patreon</a> are the ways to support it.
 			</p>
 			<p>
 				On GitHub I'm <a href="https://github.com/ryanatkn">@ryanatkn</a> and I manage
