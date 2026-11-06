@@ -43,8 +43,7 @@
 				<a href="https://www.ryanatkn.com/about">about me</a>
 			</li>
 			<li>
-				<a href="https://www.ryanatkn.com/funding">funding</a> - public donations, for now on GitHub
-				Sponsors and Patreon
+				<a href="https://www.ryanatkn.com/funding">funding</a>
 			</li>
 			<li>
 				Bluesky as <a rel="me" href="https://bsky.app/profile/ryanatkn.com">@ryanatkn.com</a> and
