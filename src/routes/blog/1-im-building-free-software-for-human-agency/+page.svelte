@@ -19,13 +19,13 @@
 	<section>
 		<p>
 			My name is Ryan Atkinson and this is my personal blog. I'm an independent software developer
-			building Fuz, a free software stack for human agency
-			(<a href="https://www.fuz.dev/">fuz.dev</a>), and I have some unannounced apps on the way that
-			build on it. Fuz is independent and noncommercial, and I've been working on it full-time in
-			public since 2019. I started working professionally as a programmer at startups in 2011 and
-			have been relying on open source ever since, and I'm trying to make a career of free software.
-			My goal is to build a sustainable foundation for simple, secure, and optimal software, to help
-			people use technology to improve their lives. For more about Fuz see its
+			building Fuz, a zippy stack for human agency (<a href="https://www.fuz.dev/">fuz.dev</a>), and
+			I have some unannounced apps on the way that build on it. Fuz is independent and
+			noncommercial, and I've been working on it full-time in public since 2019. I started working
+			professionally as a programmer at startups in 2011 and have been relying on open source ever
+			since, and I'm trying to make a career of free software. My goal is to build a sustainable
+			foundation for simple, secure, and optimal software, to help people use technology to improve
+			their lives. For more about Fuz see its
 			<a href="https://www.fuz.dev/blog/1-fuz-is-a-free-software-stack-for-human-agency">
 				intro post
 			</a>.
