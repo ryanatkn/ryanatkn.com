@@ -36,12 +36,12 @@ export const projects: Array<ProjectInfo> = [
 		subtitle: '<a class="chip" href="https://github.com/fuzdev/zzz">source</a>'
 	},
 	{
-		name: 'tsv',
-		repo: 'tsv',
-		homepage: 'https://tsv.fuz.dev/',
-		title: '<a href="https://tsv.fuz.dev/">tsv</a>',
 		description:
 			'precise language tools for <a href="https://typescriptlang.org/">TypeScript</a>/JS, CSS, and <a href="https://svelte.dev/">Svelte</a> in <a href="https://www.rust-lang.org/">Rust</a>',
+		homepage: 'https://tsv.fuz.dev/',
+		name: 'tsv',
+		repo: 'tsv',
+		title: '<a href="https://tsv.fuz.dev/">tsv</a>',
 		status: 'ready',
 		subtitle:
 			'<a class="chip" href="https://github.com/fuzdev/tsv">source</a> <a class="chip" href="https://tsv.fuz.dev/">playground</a>'
