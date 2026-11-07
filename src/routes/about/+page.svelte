@@ -21,7 +21,7 @@
 			https://www.ryanatkn.com/
 		</a>
 		<div style:min-height="192px" style:margin-bottom="var(--space_md)">
-			<div class="float:right ml_sm circular shadow_md">
+			<div class="float:right ml_sm border-radius:50% shadow_md">
 				<img
 					class="u-photo"
 					src={asset('me.png')}

@@ -32,7 +32,7 @@
 			<span class="p-category" hidden aria-hidden="true">UI</span>
 			<span class="p-category" hidden aria-hidden="true">UX</span>
 			<header>
-				<div class="circular shadow_md"><Me /></div>
+				<div class="border-radius:50% shadow_md"><Me /></div>
 				<blockquote class="unstyled panel shade_00 shadow_xs ml_md mt_md">
 					welcome to the homepage<br />
 					of <span class="p-name">Ryan Atkinson</span>, he's<br />
