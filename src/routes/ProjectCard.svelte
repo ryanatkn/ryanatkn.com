@@ -22,7 +22,7 @@
 		{@html project.title}
 		{#if project.glyph}{project.glyph}{/if}
 	</header>
-	<div class="display:flex">
+	<div class="flex">
 		<div>
 			{#if project.description}
 				<p>
@@ -30,7 +30,7 @@
 				</p>
 			{/if}
 			{#if project.subtitle || show_status}
-				<p class="display:flex flex-wrap:wrap gap_xs">
+				<p class="flex flex-wrap:wrap gap_xs">
 					{#if show_status && project.status}
 						<span class={['chip', PROJECT_STATUS_COLORS[project.status]]}>{project.status}</span>
 					{/if}

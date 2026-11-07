@@ -48,7 +48,7 @@
 			</p>
 		</div>
 	</section>
-	<section class="box row flex-wrap:wrap gap_md">
+	<section class="box row_wrap gap_md">
 		<div class="display:contents" style:--link_color="var(--palette_b_50)">
 			<!-- TODO hacky with max-width -->
 			<Card href="https://github.com/sponsors/ryanatkn" style="max-width: 100%">

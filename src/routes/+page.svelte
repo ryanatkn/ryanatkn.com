@@ -41,14 +41,14 @@
 					free and open source software<br />
 				</blockquote>
 			</header>
-			<p class="panel shade_00 position:relative shadow_xs mt_md p-note" style:max-width="440px">
+			<p class="panel shade_00 relative shadow_xs mt_md p-note" style:max-width="440px">
 				Hi, I'm building free software and communicating about it. I enjoy trying to make powerful
 				full-stack tools that are easy to use, and I like designing and implementing UIs, social
 				spaces, and integrated systems.
 			</p>
 		</div>
 	</section>
-	<section class="box row flex-wrap:wrap gap_xl2">
+	<section class="box row_wrap gap_xl2">
 		<PageLinks />
 	</section>
 	<section class="box">
