@@ -20,22 +20,21 @@
 		<p>
 			My name is Ryan Atkinson and this is my personal blog. I'm an independent software developer
 			building Fuz, a zippy stack for human agency (<a href="https://www.fuz.dev/">fuz.dev</a>), and
-			I have some unannounced apps on the way that build on it. Fuz is independent and
-			noncommercial, and I've been working on it full-time in public since 2019. I started working
-			professionally as a programmer at startups in 2011 and have been relying on open source ever
-			since, and I'm trying to make a career of free software. My goal is to build a sustainable
-			foundation for simple, secure, and optimal software, to help people use technology to improve
-			their lives. For more about Fuz see its
+			I have some unannounced apps on the way that use it. Fuz is independent and noncommercial, and
+			I've been working on it full-time in public since 2019. I have been relying on open source
+			software since I started working professionally as a programmer at startups in 2011, and I'm
+			trying to make a career of it. My goal is to build a sustainable foundation for simple,
+			secure, and optimal software, to help people use technology to improve their lives. For more
+			about Fuz see its
 			<a href="https://www.fuz.dev/blog/1-fuz-is-a-free-software-stack-for-human-agency">
 				intro post
 			</a>.
 		</p>
 		<p>
-			I plan to blog here mainly about my work and technology, but I'm leaving it open-ended.
-			Fuz-specific articles will be posted to <a href="https://www.fuz.dev/blog">its blog</a>. Some
-			posts will be technical, others more accessible - I'll try to label things helpfully. Although
-			I use AI to develop software, I don't and won't use it to imitate human writing. Follow the
-			<a href={asset('blog/feed.xml')}>feed</a> for updates.
+			I plan to blog here mainly about my work and technology. Fuz-specific articles will be posted
+			to <a href="https://www.fuz.dev/blog">its blog</a>. Some posts will be technical, others more
+			accessible, sometimes personal. Although I use AI to develop software, I don't and won't use
+			it to imitate human writing. Follow the <a href={asset('blog/feed.xml')}>feed</a> for updates.
 		</p>
 		<p>Key posts will be linked here as I write them. Some other links:</p>
 		<ul>
