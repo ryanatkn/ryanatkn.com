@@ -12,33 +12,28 @@ export const projects: Array<ProjectInfo> = [
 	{
 		name: 'github',
 		title: '<a href="https://github.com/ryanatkn">github.com/ryanatkn</a>',
-		description: 'my free and open source software'
+		description:
+			'my free and open source software; the Fuz repos live at <a href="https://github.com/fuzdev">github.com/fuzdev</a>'
 	},
 	{
-		description: 'semantic-first CSS framework and design system',
-		homepage: 'https://css.fuz.dev/',
-		tagline: 'CSS with more utility',
-		logo: 'logo.svg',
-		logo_alt: 'a fuzzy tuft of green moss',
-		glyph: '🪴',
-		name: 'fuz_css',
-		repo: '@fuzdev/fuz_css',
-		title: '<a href="https://css.fuz.dev/">fuz_css</a>',
+		name: 'fuz',
+		title: '<a href="https://www.fuz.dev/">Fuz</a>',
+		description:
+			'free software stack for human agency: libraries and tools in TypeScript, CSS, Svelte, and Rust',
 		subtitle:
-			'<a class="chip" href="https://github.com/fuzdev/fuz_css">source</a> <a class="chip" href="https://www.npmjs.com/package/@fuzdev/fuz_css">npm</a>'
+			'<a class="chip" href="https://www.fuz.dev/stack">the stack</a> <a class="chip" href="https://github.com/fuzdev">source</a>'
 	},
 	{
-		description: '<a href="https://svelte.dev/">Svelte</a> component library and frontend helpers',
-		homepage: 'https://ui.fuz.dev/',
-		tagline: 'friendly user zystem',
+		description: 'software garage for power users and devs',
+		homepage: 'https://github.com/fuzdev/zzz',
 		logo: 'logo.svg',
-		logo_alt: 'a friendly red spider facing you',
-		glyph: '🧶',
-		name: 'fuz_ui',
-		repo: '@fuzdev/fuz_ui',
-		title: '<a href="https://ui.fuz.dev/">fuz_ui</a>',
-		subtitle:
-			'<a class="chip" href="https://github.com/fuzdev/fuz_ui">source</a> <a class="chip" href="https://www.npmjs.com/package/@fuzdev/fuz_ui">npm</a>'
+		logo_alt: "three sleepy z's",
+		glyph: '💤',
+		name: 'zzz',
+		repo: '@fuzdev/zzz',
+		title: '<a href="https://github.com/fuzdev/zzz">zzz</a>',
+		status: 'experimental',
+		subtitle: '<a class="chip" href="https://github.com/fuzdev/zzz">source</a>'
 	},
 	{
 		name: 'tsv',
@@ -47,81 +42,21 @@ export const projects: Array<ProjectInfo> = [
 		title: '<a href="https://tsv.fuz.dev/">tsv</a>',
 		description:
 			'precise language tools for <a href="https://typescriptlang.org/">TypeScript</a>/JS, CSS, and <a href="https://svelte.dev/">Svelte</a> in <a href="https://www.rust-lang.org/">Rust</a>',
+		status: 'ready',
 		subtitle:
 			'<a class="chip" href="https://github.com/fuzdev/tsv">source</a> <a class="chip" href="https://tsv.fuz.dev/">playground</a>'
 	},
 	{
-		description: 'security-first JS runtime and toolchain on V8',
+		description: 'task runner, codegen, and checks for web projects, becoming its own V8 runtime',
 		homepage: 'https://gro.fuz.dev/',
-		tagline: 'generate, run, optimize',
 		logo: 'logo.svg',
 		logo_alt: 'a pixelated green oak acorn with a glint of sun',
 		glyph: '🌰',
 		name: 'gro',
 		repo: '@fuzdev/gro',
-		title: '<a href="https://github.com/fuzdev/gro">Gro</a>',
+		title: '<a href="https://github.com/fuzdev/gro">gro</a>',
+		status: 'ready',
 		subtitle:
 			'<a class="chip" href="https://github.com/fuzdev/gro">source</a> <a class="chip" href="https://www.npmjs.com/package/@fuzdev/gro">npm</a>'
-	},
-	{
-		description:
-			'static analysis for <a href="https://typescriptlang.org/">TypeScript</a> and <a href="https://svelte.dev/">Svelte</a>',
-		homepage: 'https://svelte-docinfo.fuz.dev/',
-		logo: 'logo.svg',
-		logo_alt: 'a cyan scroll with curling ends',
-		glyph: '📜',
-		name: 'svelte-docinfo',
-		repo: 'svelte-docinfo',
-		title: '<a href="https://svelte-docinfo.fuz.dev/">svelte-docinfo</a>',
-		subtitle:
-			'<a class="chip" href="https://github.com/fuzdev/svelte-docinfo">source</a> <a class="chip" href="https://www.npmjs.com/package/svelte-docinfo">npm</a>'
-	},
-	{
-		description: 'utility belt for JS',
-		homepage: 'https://util.fuz.dev/',
-		tagline: 'ancient not extinct',
-		logo: 'logo.svg',
-		logo_alt: 'a green sauropod wearing a brown belt',
-		glyph: '🦕',
-		name: 'fuz_util',
-		repo: '@fuzdev/fuz_util',
-		title: '<a href="https://github.com/fuzdev/fuz_util">fuz_util</a>',
-		subtitle:
-			'<a class="chip" href="https://github.com/fuzdev/fuz_util">source</a> <a class="chip" href="https://www.npmjs.com/package/@fuzdev/fuz_util">npm</a>'
-	},
-	{
-		description: 'fullstack app library with sessions, auth, and db',
-		homepage: 'https://app.fuz.dev/',
-		logo: 'logo.svg',
-		logo_alt: 'a friendly teal spider facing you',
-		glyph: '🗝',
-		name: 'fuz_app',
-		repo: '@fuzdev/fuz_app',
-		title: '<a href="https://app.fuz.dev/">fuz_app</a>',
-		subtitle:
-			'<a class="chip" href="https://github.com/fuzdev/fuz_app">source</a> <a class="chip" href="https://www.npmjs.com/package/@fuzdev/fuz_app">npm</a>'
-	},
-	{
-		description: 'software garage for power users and devs',
-		homepage: 'https://github.com/fuzdev/zzz',
-		tagline: 'nice web things',
-		logo: 'logo.svg',
-		logo_alt: "three sleepy z's",
-		glyph: '💤',
-		name: 'zzz',
-		repo: '@fuzdev/zzz',
-		title: '<a href="https://github.com/fuzdev/zzz">Zzz</a>',
-		subtitle: '<a class="chip" href="https://github.com/fuzdev/zzz">source</a>'
-	},
-	{
-		name: 'cosmicplayground',
-		repo: '@ryanatkn/cosmicplayground',
-		homepage: 'https://www.cosmicplayground.org/',
-		title: '<a href="https://www.cosmicplayground.org">cosmicplayground.org</a>',
-		subtitle: '<a class="chip" href="https://github.com/ryanatkn/cosmicplayground">source</a>',
-		description: 'hobby project for fun and learning',
-		tagline: 'tools and toys for expanding minds',
-		logo_style: 'border-radius: 50%',
-		logo: 'favicon.png'
 	}
 ];

@@ -50,8 +50,6 @@
 			<img
 				src="{ensure_end(project.homepage, '/')}{strip_start(project.logo, '/')}"
 				alt={project.logo_alt ?? `icon for ${project.name}`}
-				class={project.logo_classes}
-				style={project.logo_style}
 			/>
 		{/if}
 	</div>

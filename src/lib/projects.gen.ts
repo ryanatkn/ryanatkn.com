@@ -17,7 +17,7 @@ export const gen: Gen = ({ origin_path }) => {
   `;
 };
 
-// TODO description, tagline, icon, icon_alt, glyph
+// TODO description, icon, icon_alt, glyph
 const projects_metadata: Array<ProjectMetadata> = [
 	{
 		name: 'blog',
@@ -28,21 +28,23 @@ const projects_metadata: Array<ProjectMetadata> = [
 	{
 		name: 'github',
 		title: '<a href="https://github.com/ryanatkn">github.com/ryanatkn</a>',
-		description: 'my free and open source software'
+		description:
+			'my free and open source software; the Fuz repos live at <a href="https://github.com/fuzdev">github.com/fuzdev</a>'
 	},
 	{
-		name: 'fuz_css',
-		repo: '@fuzdev/fuz_css',
-		title: '<a href="https://css.fuz.dev/">fuz_css</a>',
-		description: 'semantic-first CSS framework and design system',
-		subtitle: `<a class="chip" href="https://github.com/fuzdev/fuz_css">source</a> <a class="chip" href="https://www.npmjs.com/package/@fuzdev/fuz_css">npm</a>`
+		name: 'fuz',
+		title: '<a href="https://www.fuz.dev/">Fuz</a>',
+		description:
+			'free software stack for human agency: libraries and tools in TypeScript, CSS, Svelte, and Rust',
+		subtitle: `<a class="chip" href="https://www.fuz.dev/stack">the stack</a> <a class="chip" href="https://github.com/fuzdev">source</a>`
 	},
 	{
-		name: 'fuz_ui',
-		repo: '@fuzdev/fuz_ui',
-		title: '<a href="https://ui.fuz.dev/">fuz_ui</a>',
-		description: '<a href="https://svelte.dev/">Svelte</a> component library and frontend helpers',
-		subtitle: `<a class="chip" href="https://github.com/fuzdev/fuz_ui">source</a> <a class="chip" href="https://www.npmjs.com/package/@fuzdev/fuz_ui">npm</a>`
+		name: 'zzz',
+		repo: '@fuzdev/zzz',
+		title: '<a href="https://github.com/fuzdev/zzz">zzz</a>',
+		description: 'software garage for power users and devs',
+		status: 'experimental',
+		subtitle: `<a class="chip" href="https://github.com/fuzdev/zzz">source</a>` // TODO publish zzz - <a class="chip" href="https://www.npmjs.com/package/@fuzdev/zzz">npm</a>
 	},
 	{
 		name: 'tsv',
@@ -51,61 +53,16 @@ const projects_metadata: Array<ProjectMetadata> = [
 		title: '<a href="https://tsv.fuz.dev/">tsv</a>',
 		description:
 			'precise language tools for <a href="https://typescriptlang.org/">TypeScript</a>/JS, CSS, and <a href="https://svelte.dev/">Svelte</a> in <a href="https://www.rust-lang.org/">Rust</a>',
+		status: 'ready',
 		subtitle: `<a class="chip" href="https://github.com/fuzdev/tsv">source</a> <a class="chip" href="https://tsv.fuz.dev/">playground</a>`
 	},
 	{
 		name: 'gro',
 		repo: '@fuzdev/gro',
-		title: '<a href="https://github.com/fuzdev/gro">Gro</a>',
-		description: 'security-first JS runtime and toolchain on V8',
+		title: '<a href="https://github.com/fuzdev/gro">gro</a>',
+		description: 'task runner, codegen, and checks for web projects, becoming its own V8 runtime',
+		status: 'ready',
 		subtitle: `<a class="chip" href="https://github.com/fuzdev/gro">source</a> <a class="chip" href="https://www.npmjs.com/package/@fuzdev/gro">npm</a>`
-	},
-	{
-		name: 'svelte-docinfo',
-		repo: 'svelte-docinfo',
-		title: '<a href="https://svelte-docinfo.fuz.dev/">svelte-docinfo</a>',
-		description:
-			'static analysis for <a href="https://typescriptlang.org/">TypeScript</a> and <a href="https://svelte.dev/">Svelte</a>',
-		subtitle: `<a class="chip" href="https://github.com/fuzdev/svelte-docinfo">source</a> <a class="chip" href="https://www.npmjs.com/package/svelte-docinfo">npm</a>`
-	},
-	{
-		name: 'fuz_util',
-		repo: '@fuzdev/fuz_util',
-		title: '<a href="https://github.com/fuzdev/fuz_util">fuz_util</a>',
-		description: 'utility belt for JS',
-		subtitle:
-			'<a class="chip" href="https://github.com/fuzdev/fuz_util">source</a> <a class="chip" href="https://www.npmjs.com/package/@fuzdev/fuz_util">npm</a>'
-	},
-	{
-		name: 'fuz_app',
-		repo: '@fuzdev/fuz_app',
-		title: '<a href="https://app.fuz.dev/">fuz_app</a>',
-		description: 'fullstack app library with sessions, auth, and db',
-		subtitle: `<a class="chip" href="https://github.com/fuzdev/fuz_app">source</a> <a class="chip" href="https://www.npmjs.com/package/@fuzdev/fuz_app">npm</a>`
-	},
-	{
-		// TODO @many hack for zzz, fix after adding to gitops
-		name: 'zzz',
-		repo: '@fuzdev/zzz',
-		title: '<a href="https://github.com/fuzdev/zzz">Zzz</a>',
-		description: 'software garage for power users and devs',
-		subtitle: `<a class="chip" href="https://github.com/fuzdev/zzz">source</a>`, // TODO publish zzz - <a class="chip" href="https://www.npmjs.com/package/@fuzdev/zzz">npm</a>
-		// TODO @many hack for zzz, fix after adding to gitops
-		tagline: 'nice web things',
-		glyph: '💤',
-		logo: 'logo.svg',
-		logo_alt: "three sleepy z's"
-	},
-	{
-		name: 'cosmicplayground',
-		repo: '@ryanatkn/cosmicplayground', // TODO change to `cosmicplayground.org`
-		homepage: 'https://www.cosmicplayground.org/',
-		title: '<a href="https://www.cosmicplayground.org">cosmicplayground.org</a>', // TODO @many this is a hack because cosmicplayground hasn't been deployed (remove glyph)
-		subtitle: '<a class="chip" href="https://github.com/ryanatkn/cosmicplayground">source</a>',
-		description: 'hobby project for fun and learning', // TODO @many this is a hack because cosmicplayground hasn't been deployed
-		tagline: 'tools and toys for expanding minds', // TODO @many this is a hack because cosmicplayground hasn't been deployed
-		logo_style: 'border-radius: 50%',
-		logo: 'favicon.png' // TODO @many this is a hack because cosmicplayground hasn't been deployed
 	}
 	// {
 	// 	name: 'spiderspace',
@@ -119,13 +76,6 @@ const projects_metadata: Array<ProjectMetadata> = [
 const projects: Array<ProjectInfo> = projects_metadata.map((project_metadata) => {
 	const repo = repos_json.find((d) => d.library_json.pkg_json.name === project_metadata.repo);
 	if (!repo) return project_metadata;
-	const {
-		description,
-		homepage,
-		tagline,
-		logo = project_metadata.logo, // TODO @many this is a hack because cosmicplayground hasn't been deployed
-		logo_alt,
-		glyph
-	} = repo.library_json.pkg_json;
-	return { description, homepage, tagline, logo, logo_alt, glyph, ...project_metadata };
+	const { description, homepage, logo, logo_alt, glyph } = repo.library_json.pkg_json;
+	return { description, homepage, logo, logo_alt, glyph, ...project_metadata };
 });

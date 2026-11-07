@@ -1,6 +1,20 @@
 // TODO use `Pkg` and delete this module
 
 /**
+ * Where a project stands, matching the tiers on the Fuz stack page.
+ */
+export type ProjectStatus = 'ready' | 'early' | 'experimental';
+
+/**
+ * fuz_css `palette_*` class tinting each status chip, as on the Fuz stack page.
+ */
+export const PROJECT_STATUS_COLORS: Record<ProjectStatus, string> = {
+	ready: 'palette_b',
+	early: 'palette_e',
+	experimental: 'palette_g'
+};
+
+/**
  * Curated homepage project, ready to render.
  */
 export interface ProjectInfo {
@@ -9,13 +23,11 @@ export interface ProjectInfo {
 	homepage?: string;
 	title: string;
 	description?: string;
-	tagline?: string;
+	status?: ProjectStatus;
 	glyph?: string;
 	subtitle?: string;
 	logo?: string;
 	logo_alt?: string;
-	logo_style?: string;
-	logo_classes?: string;
 }
 
 /**
@@ -29,8 +41,7 @@ export interface ProjectMetadata {
 	 * Allows HTML.
 	 */
 	description?: string;
-	tagline?: string; // TODO @many this is a hack because cosmicplayground hasn't been deployed
-	glyph?: string; // TODO @many hack for zzz, fix after adding to gitops
+	status?: ProjectStatus;
 	repo?: string;
 	/**
 	 * Allows HTML.
@@ -40,9 +51,6 @@ export interface ProjectMetadata {
 	 * Allows HTML.
 	 */
 	subtitle?: string;
-	logo?: string; // TODO @many this is a hack because cosmicplayground hasn't been deployed
-	logo_alt?: string; // TODO @many hack for zzz, fix after adding to gitops
-	logo_style?: string;
 }
 
 // TODO where do this belong?

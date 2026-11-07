@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { ProjectInfo } from '#lib/project.ts';
+	import { PROJECT_STATUS_COLORS, type ProjectInfo } from '#lib/project.ts';
 	import ProjectLogo from './ProjectLogo.svelte';
 
 	// TODO probably upstream to fuz_library after changing it to `PackageMeta` or w/e
@@ -12,6 +12,9 @@
 	}: {
 		project: ProjectInfo;
 	} = $props();
+
+	// only the experimental tier is worth flagging on the homepage
+	const show_status = $derived(project.status === 'experimental');
 </script>
 
 <div class="project-card">
@@ -21,16 +24,18 @@
 	</header>
 	<div class="display:flex">
 		<div>
-			<!-- {#if project.tagline}
-				<p>{@html project.tagline}</p>
-			{/if} -->
 			{#if project.description}
 				<p>
 					{@html project.description}
 				</p>
 			{/if}
-			{#if project.subtitle}
-				<p class="display:flex flex-wrap:wrap gap_xs">{@html project.subtitle}</p>
+			{#if project.subtitle || show_status}
+				<p class="display:flex flex-wrap:wrap gap_xs">
+					{#if show_status && project.status}
+						<span class={['chip', PROJECT_STATUS_COLORS[project.status]]}>{project.status}</span>
+					{/if}
+					{#if project.subtitle}{@html project.subtitle}{/if}
+				</p>
 			{/if}
 		</div>
 		<ProjectLogo {project} />
