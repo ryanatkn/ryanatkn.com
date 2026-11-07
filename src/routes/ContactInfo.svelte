@@ -10,8 +10,8 @@
 		<li>
 			<span class="p-nickname">@ryanatkn</span> on
 			<a class="u-url" rel="me" href="https://github.com/ryanatkn">GitHub</a>,
-			<a class="u-url" rel="me" href="https://www.npmjs.com/~ryanatkn">npm</a>, and (not really
-			active) <a class="u-url" rel="me" href="https://www.youtube.com/@ryanatkn">YouTube</a>
+			<a class="u-url" rel="me" href="https://www.npmjs.com/~ryanatkn">npm</a>, and
+			<a class="u-url" rel="me" href="https://www.youtube.com/@ryanatkn">YouTube</a>
 		</li>
 		<li>
 			Mastodon as
