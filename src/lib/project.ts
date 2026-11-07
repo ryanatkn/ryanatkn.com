@@ -44,6 +44,10 @@ export interface ProjectMetadata {
 	status?: ProjectStatus;
 	repo?: string;
 	/**
+	 * Overrides the repo's `package.json` glyph; `null` hides it.
+	 */
+	glyph?: string | null;
+	/**
 	 * Allows HTML.
 	 */
 	title: string;

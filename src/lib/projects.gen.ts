@@ -59,7 +59,8 @@ const projects_metadata: Array<ProjectMetadata> = [
 	{
 		name: 'gro',
 		repo: '@fuzdev/gro',
-		title: '<a href="https://github.com/fuzdev/gro">gro</a>',
+		title: '<a href="https://github.com/fuzdev/gro">Gro</a>',
+		glyph: null,
 		description: 'task runner, codegen, and checks for web projects, becoming its own V8 runtime',
 		status: 'ready',
 		subtitle: `<a class="chip" href="https://github.com/fuzdev/gro">source</a> <a class="chip" href="https://www.npmjs.com/package/@fuzdev/gro">npm</a>`
@@ -75,7 +76,10 @@ const projects_metadata: Array<ProjectMetadata> = [
 
 const projects: Array<ProjectInfo> = projects_metadata.map((project_metadata) => {
 	const repo = repos_json.find((d) => d.library_json.pkg_json.name === project_metadata.repo);
-	if (!repo) return project_metadata;
-	const { description, homepage, logo, logo_alt, glyph } = repo.library_json.pkg_json;
-	return { description, homepage, logo, logo_alt, glyph, ...project_metadata };
+	const { glyph: glyph_override, ...metadata } = project_metadata;
+	const pkg_json = repo?.library_json.pkg_json;
+	const glyph = glyph_override === undefined ? pkg_json?.glyph : (glyph_override ?? undefined);
+	if (!pkg_json) return { ...metadata, glyph };
+	const { description, homepage, logo, logo_alt } = pkg_json;
+	return { description, homepage, logo, logo_alt, glyph, ...metadata };
 });

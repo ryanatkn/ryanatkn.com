@@ -51,10 +51,9 @@ export const projects: Array<ProjectInfo> = [
 		homepage: 'https://gro.fuz.dev/',
 		logo: 'logo.svg',
 		logo_alt: 'a pixelated green oak acorn with a glint of sun',
-		glyph: '🌰',
 		name: 'gro',
 		repo: '@fuzdev/gro',
-		title: '<a href="https://github.com/fuzdev/gro">gro</a>',
+		title: '<a href="https://github.com/fuzdev/gro">Gro</a>',
 		status: 'ready',
 		subtitle:
 			'<a class="chip" href="https://github.com/fuzdev/gro">source</a> <a class="chip" href="https://www.npmjs.com/package/@fuzdev/gro">npm</a>'
