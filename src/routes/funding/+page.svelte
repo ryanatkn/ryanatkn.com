@@ -35,7 +35,7 @@
 				<a href="https://github.com/fuzdev">github.com/fuzdev</a>. It's a set of tools, libraries,
 				and apps for easily building websites and powerful native systems. Fuz values user control,
 				security, and interoperability, and idealizes an integrated system of a particular taste,
-				centered on Rust, TypeScript, CSS, and Svelte.
+				centered on Linux, Rust, and the web (TypeScript/CSS/Svelte).
 			</p>
 			<p>
 				My plan is for Fuz to accept donations directly and transparently. Until then, my personal
@@ -83,8 +83,8 @@
 			<p>
 				I love the web for its global accessibility, high capability, backwards compatibility, and
 				gatekeeper optionality, and I think the software I'm building for it is shaping up nicely,
-				although the scope is really big, and it'll take time to fully realize. More
-				<a href={resolve('/about')}>about me</a>.
+				although the scope is big (and expanding to include native systems), so it'll take time to
+				realize. More <a href={resolve('/about')}>about me</a>.
 			</p>
 			<p>
 				Donating $1 or more on
