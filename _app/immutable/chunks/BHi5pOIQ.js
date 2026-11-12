@@ -1,0 +1,1 @@
+import{t as e}from"./yWx_1vUe.js";var t=(e,t)=>e.flatMap(e=>(e.pull_requests??[]).filter(n=>!t||t(n,e)).map(t=>({repo:e,pull_request:t}))),n=(t,n)=>e(t,`/`)+`pull/`+n.number;export{n,t};

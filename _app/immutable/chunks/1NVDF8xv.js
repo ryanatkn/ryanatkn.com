@@ -1,0 +1,1 @@
+var e={ready:`palette_b`,early:`palette_e`,experimental:`palette_g`},t=`favicon.png`,n=`my avatar image, a naturally textured flat green torus`;export{t as n,e as r,n as t};
