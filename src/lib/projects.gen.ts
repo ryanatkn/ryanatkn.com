@@ -62,7 +62,7 @@ const projects_metadata: Array<ProjectMetadata> = [
 		title: '<a href="https://github.com/fuzdev/gro">Gro</a>',
 		glyph: null,
 		description: 'task runner, codegen, and checks for web projects, becoming its own V8 runtime',
-		status: 'ready',
+		status: 'experimental',
 		subtitle: `<a class="chip" href="https://github.com/fuzdev/gro">source</a> <a class="chip" href="https://www.npmjs.com/package/@fuzdev/gro">npm</a>`
 	}
 	// {

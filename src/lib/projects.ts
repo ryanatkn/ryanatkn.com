@@ -54,7 +54,7 @@ export const projects: Array<ProjectInfo> = [
 		name: 'gro',
 		repo: '@fuzdev/gro',
 		title: '<a href="https://github.com/fuzdev/gro">Gro</a>',
-		status: 'ready',
+		status: 'experimental',
 		subtitle:
 			'<a class="chip" href="https://github.com/fuzdev/gro">source</a> <a class="chip" href="https://www.npmjs.com/package/@fuzdev/gro">npm</a>'
 	}
