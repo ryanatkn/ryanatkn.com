@@ -34,17 +34,21 @@
 				online at <a href="https://www.fuz.dev/">fuz.dev</a> and
 				<a href="https://github.com/fuzdev">github.com/fuzdev</a>. It's a set of tools, libraries,
 				and apps for easily building websites and powerful native systems. Fuz values user control,
-				security, and interoperability, and idealizes an integrated system of a particular taste,
-				centered on Linux, Rust, and the web (TypeScript/CSS/Svelte).
+				security, performance, and interoperability, and idealizes an integrated system of a
+				particular taste, centered on Linux, Rust, and the web with TypeScript/CSS/Svelte,
+				supporting Windows and macOS in some tools, and mobile aspirationally.
 			</p>
 			<p>
-				My plan is for Fuz to accept donations directly and transparently. Until then, my personal
+				My plan is for Fuz to accept donations directly and transparently, if such support
+				materializes. Until then, my personal
 				<a href="https://github.com/sponsors/ryanatkn">GitHub Sponsors</a> and
-				<a href="https://www.patreon.com/ryanatkn">Patreon</a> are the ways to support it.
+				<a href="https://www.patreon.com/ryanatkn">Patreon</a> are the ways to support it (no perks
+				besides intrinsics).
 			</p>
 			<p>
 				On GitHub I'm <a href="https://github.com/ryanatkn">@ryanatkn</a> and I manage
-				<a href="https://github.com/fuzdev">@fuzdev</a>, and I blog on this website.
+				<a href="https://github.com/fuzdev">@fuzdev</a>, and I blog on this website and
+				<a href="https://www.fuz.dev/blog">fuz.dev/blog</a>.
 			</p>
 		</div>
 	</section>
@@ -70,21 +74,14 @@
 	<section class="panel p_sm shadow_md width:100%">
 		<div class="panel shade_00 p_xl shadow_xs">
 			<p>
-				In 2011 I began my first job as a professional web developer focusing on JS, and many years
-				later I'm still enjoying it, programming both as a profession and hobby. I posted a number
-				of projects to GitHub over the years, and in 2015 learned Rust, but didn't get very far
-				making my dream games. In 2019 I started
+				In 2011 I began my first job as a professional web developer, and I was quickly hooked by
+				open source. In 2019 I started
 				<a href="https://github.com/ryanatkn?tab=overview&from=2019-12-01&to=2019-12-31">
 					publishing most of my code
 				</a>
 				as I wrote it, and set out to produce high quality and reusable software with TypeScript,
-				Svelte, and Rust, working full-time in public and continuing today.
-			</p>
-			<p>
-				I love the web for its global accessibility, high capability, backwards compatibility, and
-				gatekeeper optionality, and I think the software I'm building for it is shaping up nicely,
-				although the scope is big (and expanding to include native systems), so it'll take time to
-				realize. More <a href={resolve('/about')}>about me</a>.
+				Svelte, and Rust, working full-time in public and continuing today. Some apps and tools that
+				build on the stack are in progress. More <a href={resolve('/about')}>about me</a>.
 			</p>
 			<p>
 				Donating $1 or more on
@@ -104,12 +101,13 @@
 					style:--link_color="var(--palette_d_50)"
 				>
 					<PatreonLogo size="var(--font_size_md)" fill="var(--palette_d_50)" inline /> Patreon
-				</a> helps me a lot for the signal it sends to others. The only rewards are intrinsic.
+				</a> helps me a lot for the signal it sends to potential funders. The only rewards are
+				intrinsic.
 			</p>
 			<p>
 				I hope to continue having fun building useful software, and to find users and collaborators
-				around these ideas and technologies as I work in public. See the
-				<a href={resolve('/tree')}>repos</a> for the code and discussions.
+				around these ideas and technologies as I work in public. See
+				<a href="https://www.fuz.dev/">fuz.dev</a> for more.
 			</p>
 		</div>
 	</section>
