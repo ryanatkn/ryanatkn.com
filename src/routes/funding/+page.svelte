@@ -46,7 +46,7 @@
 				besides intrinsics).
 			</p>
 			<p>
-				On GitHub I'm <a href="https://github.com/ryanatkn">@ryanatkn</a> and I manage
+				On GitHub I'm <a href="https://github.com/ryanatkn">@ryanatkn</a> and I maintain
 				<a href="https://github.com/fuzdev">@fuzdev</a>, and I blog on this website and
 				<a href="https://www.fuz.dev/blog">fuz.dev/blog</a>.
 			</p>
