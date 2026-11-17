@@ -31,9 +31,8 @@
 			</p>
 			<p>
 				I'm working on several projects, but the main one is Fuz, "a zippy stack for human agency",
-				online at <a href="https://www.fuz.dev/">fuz.dev</a> and
-				<a href="https://github.com/fuzdev">github.com/fuzdev</a>. It's a set of tools, libraries,
-				and apps for easily building websites and powerful native systems. Fuz values user control,
+				online at <a href="https://www.fuz.dev/">fuz.dev</a>. It's a set of tools, libraries, and
+				apps for easily building websites and powerful native systems. Fuz values user control,
 				security, performance, and interoperability, and idealizes an integrated system of a
 				particular taste, centered on Linux, Rust, and the web with TypeScript/CSS/Svelte,
 				supporting Windows and macOS in some tools, and mobile aspirationally.
@@ -42,12 +41,12 @@
 				My plan is for Fuz to accept donations directly and transparently, if such support
 				materializes. Until then, my personal
 				<a href="https://github.com/sponsors/ryanatkn">GitHub Sponsors</a> and
-				<a href="https://www.patreon.com/ryanatkn">Patreon</a> are the ways to support it (no perks
-				besides intrinsics).
+				<a href="https://www.patreon.com/ryanatkn">Patreon</a> are the ways to support it.
 			</p>
 			<p>
 				On GitHub I'm <a href="https://github.com/ryanatkn">@ryanatkn</a> and I maintain
-				<a href="https://github.com/fuzdev">@fuzdev</a>, and I blog on this website and
+				<a href="https://github.com/fuzdev">@fuzdev</a>, and I blog on
+				<a href={resolve('/blog')}>this website</a> and
 				<a href="https://www.fuz.dev/blog">fuz.dev/blog</a>.
 			</p>
 		</div>
@@ -106,8 +105,9 @@
 			</p>
 			<p>
 				I hope to continue having fun building useful software, and to find users and collaborators
-				around these ideas and technologies as I work in public. See
-				<a href="https://www.fuz.dev/">fuz.dev</a> for more.
+				around these ideas and technologies as I work in public. For more see
+				<a href="https://www.fuz.dev/">fuz.dev</a> and my
+				<a href={resolve('/blog/1-im-building-free-software-for-human-agency')}>intro post</a>.
 			</p>
 		</div>
 	</section>

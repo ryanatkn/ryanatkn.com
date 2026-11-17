@@ -40,9 +40,10 @@
 			</p>
 			<p>
 				My software is
-				<a class="u-url" rel="me" href="https://github.com/ryanatkn">open source on GitHub</a> and
-				this website's homepage lists my <a class="u-url" href={resolve('/')}>ongoing projects</a>.
-				My work is funded by public <a href={resolve('/funding')}>donations</a>.
+				<a class="u-url" rel="me" href="https://github.com/ryanatkn">open source on GitHub</a>, and
+				my main project is <a href="https://www.fuz.dev/">Fuz</a>, a zippy stack for human agency.
+				This website's homepage lists my <a class="u-url" href={resolve('/')}>ongoing projects</a>,
+				and my work is funded by public <a href={resolve('/funding')}>donations</a>.
 			</p>
 			<p>
 				I work on the web because for all its flaws, it's our best collectively-governed platform
@@ -55,8 +56,10 @@
 		<ul>
 			<li>using mostly Rust, TypeScript, and Svelte</li>
 			<li>
-				in 2019 I started doing full-time open source, publishing
-				<a href="https://github.com/ryanatkn">my code</a> for free with permissive licenses
+				in 2019 I started doing
+				<a href="https://github.com/ryanatkn?tab=overview&from=2019-12-01&to=2019-12-31">
+					full-time open source
+				</a>, publishing my code for free with permissive licenses
 			</li>
 			<li>
 				I was initially self-taught (ty internet ppl) and I've been working as a JS-oriented web dev
@@ -76,6 +79,10 @@
 				projects
 			</li>
 		</ul>
+		<p>
+			I blog about my work on this site, see the
+			<a href={resolve('/blog/1-im-building-free-software-for-human-agency')}>intro post</a>.
+		</p>
 	</section>
 	<section class="box">
 		<div class="panel box shadow_inset_xs">
