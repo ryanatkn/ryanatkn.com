@@ -1,6 +1,7 @@
 {
   "name": "ryanatkn.com",
   "version": "0.0.1",
+  "private": true,
   "description": "@ryanatkn's homepage and blog",
   "tagline": "all ways a wip",
   "glyph": "🪶",
