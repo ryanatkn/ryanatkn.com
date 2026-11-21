@@ -17,6 +17,7 @@ const config: GitopsConfig = {
 		'tsv',
 		'tsv.fuz.dev',
 		'zzz',
+		'cord',
 		'ryanatkn.com'
 		// 'fuz.dev',
 	]

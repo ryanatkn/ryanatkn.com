@@ -14,7 +14,7 @@
 	import { ensure_end, strip_start } from '@fuzdev/fuz_util/string.ts';
 
 	import type { ProjectInfo } from '#lib/project.ts';
-	import { logo_zzz } from './logos.ts';
+	import { logo_cord, logo_zzz } from './logos.ts';
 
 	const {
 		project
@@ -24,6 +24,7 @@
 
 	// keyed by `project.name`
 	const logos: Record<string, SvgData | undefined> = {
+		cord: logo_cord,
 		zzz: logo_zzz,
 		fuz: logo_fuz,
 		fuz_css: logo_fuz_css,

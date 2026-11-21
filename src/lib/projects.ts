@@ -24,6 +24,15 @@ export const projects: Array<ProjectInfo> = [
 			'<a class="chip" href="https://www.fuz.dev/stack">the stack</a> <a class="chip" href="https://github.com/fuzdev">source</a>'
 	},
 	{
+		name: 'cord',
+		repo: '@fuzdev/cord',
+		homepage: 'https://cord.fuz.dev/',
+		title: '<a href="https://cord.fuz.dev/">Cord</a>',
+		description: 'self-hosted voice, video, chat, and forums for connection with your people',
+		status: 'early',
+		subtitle: '<a class="chip" href="https://github.com/fuzdev/cord">source</a>'
+	},
+	{
 		description: 'software garage for power users and devs',
 		homepage: 'https://github.com/fuzdev/zzz',
 		logo: 'logo.svg',
