@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { resolve } from '$app/paths';
+	import { asset, resolve } from '$app/paths';
 	import Svg from '@fuzdev/fuz_ui/Svg.svelte';
 	import { logo_github } from '@fuzdev/fuz_ui/logos.ts';
 	import Card from '@fuzdev/fuz_ui/Card.svelte';
@@ -82,6 +82,13 @@
 				Svelte, and Rust, working full-time in public and continuing today. Some apps and tools that
 				build on the stack are in progress. More <a href={resolve('/about')}>about me</a>.
 			</p>
+			<img
+				class="mb_lg"
+				src={asset('my-github-activity-2019-to-2026.webp')}
+				width="800"
+				height="919"
+				alt="a calendar heatmap of my public GitHub activity from 2019 to 2026, mostly in @fuzdev repos, with a row per year from November to November; it shows steady activity every year, getting denser and brighter through 2025 and 2026. A note says not pictured: a project rewritten as fuz_app and cord, Jan 2020 to Apr 2024"
+			/>
 			<p>
 				Donating $1 or more on
 				<!-- TODO after upgrading Fuz use `inline` instead of the classes -->
